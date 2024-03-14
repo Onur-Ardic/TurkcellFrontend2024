@@ -38,6 +38,18 @@
                 <input type="radio" id="man" name="gender">
             </div>
         </div>
+        <br>
+        <div>
+            <label for="favcolor">En Sevdiğin Renk:</label>
+            <input type="color" id="favcolor" name="favcolor">
+        </div>
+        <br>
+        <div>
+            <label for="datemax">2024-03-14 önce bir tarih seçiniz:</label>
+            <input type="date" id="datemax" name="datemax" max="2024-03-14"><br><br>
+            <label for="datemin">1924-01-14 sonra bir tarih seçiniz:</label>
+            <input type="date" id="datemin" name="datemin" min="1924-01-14">
+        </div>
         <div>
             <h4>Programlama Dilleri :</h4>
             <div>
@@ -48,6 +60,41 @@
                 <label for="java">Java</label>
                 <input type="checkbox" id="java">
             </div>
+        </div>
+        <br>
+        <div>
+            <label for="birthdaytime">Olay saatini seçiniz:</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        </div>
+        <br>
+        <div>
+            <label for="myfile">Dosya Seçiniz:</label>
+            <input type="file" id="myfile" name="myfile">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="hidden" id="custId" name="custId" value="3487">
+            <input type="submit" value="Submit">
+          
+          <p><strong>Note:</strong>Gizli input kullanıcıya gösterilmez ancak form gönderildiğinde veriler gönderilir.</p>
+        </div>
+        <hr>
+        <div>
+            <label for="quantity">1 ile 15 arasında sayı giriniz:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="15">
+        </div>
+        <br>
+        <div>
+            <label for="vol">Ses Ayarı:</label>
+            <input type="range" id="vol" name="vol" min="0" max="100">
+        </div>
+        <br>
+        <div>
+            <label for="homepage">Sayfanızın Url bilgisini ekleyiniz:</label>
+            <input type="url" id="homepage" name="homepage">
         </div>
         <br>
         <div>
