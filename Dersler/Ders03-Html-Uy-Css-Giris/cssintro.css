@@ -1,0 +1,19 @@
+p {
+  color: red;
+}
+
+.paragraf {
+  color: green;
+}
+
+#paragraf {
+  color: blue !important;
+}
+
+body .yellow {
+  color: yellow;
+}
+h1 {
+  color: rgb(22, 151, 244);
+  font-size: 36px;
+}
