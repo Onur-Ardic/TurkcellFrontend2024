@@ -1,0 +1,23 @@
+
+*{ margin: 0; padding: 0; box-sizing: border-box; } 
+
+.box{ height: 50px;
+     width: 250px;
+      margin: 10px; 
+      background-color: aquamarine; } 
+
+.header{ width: 470px; } 
+
+.footer{ width: 470px;}
+
+.nav{ height: 200px; 
+    width: 100px; 
+    float: left; } 
+
+.main{ float: left;
+     height: 200px; 
+    width: 350px;} 
+
+.clear{ clear: both; }
+
+
