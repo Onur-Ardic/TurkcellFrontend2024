@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        background-color: pink;
+        text-align: center;
+      }
+      .nav {
+        background-color: green;
+        text-align: center;
+      }
+      .aside {
+        background-color: pink;
+        text-align: center;
+      }
+      .footer {
+        background-color: purple;
+        text-align: center;
+      }
+      .main {
+        background-color: aquamarine;
+        text-align: center;
+      }
+      .article {
+        background-color: blue;
+        text-align: center;
+      }
+      .figur {
+        background-color: yellow;
+        text-align: center;
+      }
+      .p {
+        background-color: greenyellow;
+        text-align: center;
+      }
+      .section {
+        background-color: purple;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1" width="1000">
+      <tr>
+        <td colspan="2" class="header">Header</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="nav">nav</td>
+      </tr>
+      <tr>
+        <td rowspan="1" class="aside">aside</td>
+        <td class="main">
+          main
+          <table width="100%">
+            <tr>
+              <td colspan="2" class="article">
+                article
+                <table width="100%">
+                  <tr>
+                    <td colspan="2" class="figur">figur</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="p">p</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table width="100%">
+            <tr>
+              <td colspan="2" class="section">section</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="footer">footer</td>
+      </tr>
+    </table>
+  </body>
+</html>
