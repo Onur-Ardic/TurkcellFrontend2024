@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            background-color: blue;
+            color: aliceblue;
+        }
+
+        .nav{
+            background-color: blueviolet;
+            color: aliceblue;
+        }
+        .aside{
+            background-color: cadetblue;
+            color: antiquewhite;
+        }
+        .main{
+            background-color: rgb(11, 48, 49);
+            color: antiquewhite;
+        }
+        .article{
+            background-color: rgb(104, 185, 37);
+            color: antiquewhite;
+        }
+        .figure{
+            background-color: rgb(214, 81, 47);
+            color: antiquewhite;
+        }
+        .p{
+            background-color: rgb(75, 23, 197);
+            color: antiquewhite;
+        }
+        .section{
+            background-color: rgb(163, 21, 144);
+            color: antiquewhite;
+        }
+        .footer{
+            background-color: rgb(220, 247, 103);
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Semantic</h1>
+    <table border="1px" width="100%"  cellspacing="10" cellpadding="1px">
+        <thead> 
+            <tr>
+                <th class="header" colspan="2">Header</th>
+            </tr>
+            <tr>
+                <th class="nav" colspan="2">nav</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td class="aside">Aside</td>
+            <th class="main">
+                Main 
+                <table border="1px"  width="90%"  cellspacing="20" cellpadding="20px">
+                    <thead>
+                        <tr>
+                            <th class="article">Article
+                                <table border="1px" width="80%"  cellspacing="20" cellpadding="20px">
+                                    <tbody>
+                                        <tr>
+                                            <td class="figure">Figure</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p">P</td>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </th>
+                        <tr>
+                            <td class="section">Section</td>
+                        </tr>
+                        </tr>
+                    </thead>
+                </table>
+
+            </th>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="footer" colspan="2">
+                    Footer
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
