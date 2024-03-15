@@ -1,0 +1,3 @@
+.clear { clear: both; }
+.header { min-width: 100%; background-color: rgb(113, 213, 198); } 
+.nav { background-color: rgb(56, 94, 229); min-width: 50%; } .main { min-width: 50%; background-color: rgb(131, 195, 63); } .footer { min-width: 100%; background-color: rgb(241, 155, 240); } .box { color: white; font-size: 30px; padding-top: 10px; /* width: 760px; */ height: 100px; text-align: center; } .floatleft { float: left; } .floatright { float: right; }
