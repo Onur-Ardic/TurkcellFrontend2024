@@ -1,0 +1,30 @@
+div{
+    background-color: aqua;
+    margin:20px;}
+
+.header{
+    width: 95%;
+    height:75px;
+
+
+}
+.nav{
+    width: 20%; 
+    height: 150px;
+    float: left;
+
+}
+.clear{
+    clear: both;
+}
+.main{
+    width: 72%;
+     height: 150px;
+     float: right;
+
+}
+.footer{
+    width: 95%; 
+    height: 60px;
+
+}
