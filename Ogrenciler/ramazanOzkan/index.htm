@@ -1,52 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>        
+    <title>Input Türleri Örneği</title>
 </head>
 <body>
-    <form>
-        <div>
-            <label for="name"> Ad: </label>
-            <input type="text" id="name"/>            
-        </div>
-        <br />
-        <div>
-            <label for="surname">Soyad: </label>
-            <input type="text" id="surname"/> 
-        </div>
-        <br />
-        <div>
-            <label for="password">Parola: </label>
-            <input type="password" id="password"/>
-        </div>
-        <br/>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" />
-        </div>
-        <div>
-            <label>Cinsiyet:</label>
-            <label for="woman">Kadın</label>
-            <input type="radio" id="woman" name="gender" />
-            <label for="man">Erkek</label>
-            <input type="radio" id="man" name="gender" />
-        </div>
-        <div>
-            <label>Programlama Dilleri</label>
-            <br/>
-            <label for="Matlab">Matlab</label>
-            <input type="checkbox" id="Matlab" />
-            <br/>
-            <label for="c">c</label>
-            <input type="checkbox" id="c" />
-            <br/>
-            <label for="c++">c++</label>
-            <input type="checkbox" id="c++" />    
-        </div>
-        <br/>   
-        <input type="submit" value="kaydet" />
+    <form action="#">
+        <label for="checkbox">Checkbox:</label>
+        <input type="checkbox" id="checkbox"><br><br>
+        <label for="color">Color:</label>
+        <input type="color" id="color"><br><br>
+        <label for="time">Time:</label>
+        <input type="time" id="time"><br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date"><br><br>
+        <label for="datetime-local">Datetime-local:</label>
+        <input type="datetime-local" id="datetime-local"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br><br>
+       <!-- <label for="hidden">Hidden:</label>
+        <input type="hidden" id="hidden" value="hidden"><br><br>   Bunun kullanım amacı  nedir ?--> 
+        <label for="month">Month:</label>
+        <input type="month" id="month"><br><br>
+        <label for="number">Number:</label>
+        <input type="number" id="number"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password"><br><br>
+        <label for="radio1">Radio 1:</label>
+        <input type="radio" id="radio1" name="radioGroup"><br><br>
+        <label for="radio2">Radio 2:</label>
+        <input type="radio" id="radio2" name="radioGroup"><br><br>
+        <label for="range">Range (0-100):</label>
+        <input type="range" id="range" min="0" max="100"><br><br>
+        <label for="search">Search:</label>
+        <input type="search" id="search"><br><br>
+        <label for="tel">Tel:</label>
+        <input type="tel" id="tel"><br><br>
+        <label for="text">Text  :</label>
+        <input type="text" id="text" placeholder="Default Value"><br><br>
+        <label for="url">URL:</label>
+        <input type="url" id="url"><br><br>
+        <label for="week">Week:</label>
+        <input type="week" id="week"><br><br>
+        <label for="file">File:</label>
+        <input type="file" id="file"><br><br>
+        <label for="reset">Reset:</label>
+        <input type="reset" id="reset"><br><br> 
+        <label for="button">Button:</label>
+        <input type="button" id="button" value="Button"><br><br>
+        <label for="submit">Submit:</label>
+        <input type="submit" id="submit" value="Submit"><br><br>
     </form>
 </body>
 </html>
