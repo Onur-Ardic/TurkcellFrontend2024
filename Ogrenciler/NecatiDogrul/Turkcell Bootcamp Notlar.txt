@@ -1,0 +1,10 @@
+Block büyün sayfayı kaplar
+Inline sadece kapsadığı alan kadar
+ctrl + k + c commente alır
+ctrl + k + u geri alır
+google lighthouse seo toolu
+
+id classı ezer
+!important ezer ama kullanma
+mdn baya iyi site gözat
+border-box kullan
