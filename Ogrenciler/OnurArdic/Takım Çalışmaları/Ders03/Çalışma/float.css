@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.box {
+  background-color: aquamarine;
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  font-size: 36px;
+}
+.header {
+  width: 97%;
+  text-align: center;
+  font-size: 36px;
+}
+
+.floatLeft {
+  float: left;
+  width: 680px;
+}
+
+.floatRight {
+  width: 680px;
+  margin-right: 33px;
+  float: right;
+}
+
+.footer {
+  width: 97%;
+  text-align: center;
+  font-size: 36px;
+}
+
+.clear {
+  clear: both;
+}
