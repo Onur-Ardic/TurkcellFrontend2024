@@ -2,35 +2,36 @@
 
 .box{
   background-color: aquamarine;  
-  width: 460px;
+  width: 300px;
   height: 100px;
   padding: 20px;
-  margin: 10px 0;
+  margin: 10px;
   text-align: center;
   font-size: 36px;
 }
 .header{
-    width: 100%;
+    width: 97%;
     text-align: center;
     font-size: 36px;
 }
 
 .floatLeft{
     float: left;
-    width: 700px;
-    margin-left: 30px;
+    width: 680px;
 }
 
 .floatRight{
     width: 680px;
-    margin-right: 20px;
+    margin-right: 33px;
     float: right;
 
 }
 
 
 .footer{
-    width: 100%;
+    width: 97%;
+    text-align: center;
+    font-size: 36px;
 }
 
 
