@@ -1,0 +1,17 @@
+.box {
+  height: 50px;
+  width: 250px;
+  margin: 10px;
+  background-color: red;
+}
+
+.floatLeft {
+  float: left;
+}
+.floatRight {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
