@@ -1,0 +1,28 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; } 
+
+.box{ height: 50px;
+     width: 250px;
+      margin: 10px; 
+      background-color: aquamarine;
+    text-align: center; } 
+
+.header{ width: 470px; 
+text-align: center;} 
+
+
+.footer{ width: 470px;
+text-align: center;}
+
+
+.nav{ height: 200px; 
+    width: 100px; 
+    float: left; } 
+
+.main{ float: left;
+     height: 200px; 
+    width: 350px;
+text-align: center;} 
+
+.clear{ clear: both; }
+
+
