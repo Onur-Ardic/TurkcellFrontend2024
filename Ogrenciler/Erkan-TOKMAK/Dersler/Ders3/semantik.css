@@ -1,0 +1,48 @@
+body {
+    background-color: rgba(0, 0, 255, 0.865);
+    text-align: center;
+    color: blue;
+    font-size: 32px;
+    font-weight: bold;
+}
+.header {
+background-color: rgba(255, 255, 255, 1);
+width: 90%;
+height: 100px;
+margin-left: 5%;
+border-radius: 10px;
+
+}
+.nav {
+background-color: rgba(255, 255, 255, 0.9);
+width: 25%;
+height: 690px;
+margin-left: 5%;
+margin-top: 10px;
+border-radius: 10px;
+}
+.main {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 64%;
+    height: 690px;
+    margin-right: 5%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+.clearFloat {
+    clear: both;
+}
+.footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 90%;
+    height: 100px;
+    margin-left: 5%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
