@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Semantic Tags</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        background-color: rgb(192, 7, 38);
+        width: 33.5rem;
+        height: 100px;
+        text-align: center;
+        color: white;
+      }
+
+      .nav {
+        background-color: rgb(5, 162, 5);
+        width: 33.5rem;
+        height: 70px;
+        text-align: center;
+        color: white;
+      }
+
+      .aside {
+        background-color: rgb(255, 57, 90);
+        width: 150px;
+        height: 500px;
+        text-align: center;
+        color: white;
+      }
+
+      .main {
+        background-color: rgb(112, 169, 255);
+        width: 350px;
+        height: 500px;
+        text-align: center;
+        color: white;
+      }
+
+      .article {
+        background-color: blue;
+        height: 300px;
+        text-align: center;
+      }
+
+      .section {
+        background-color: rgb(56, 56, 255);
+        height: 75px;
+        text-align: center;
+      }
+
+      .figure {
+        background-color: yellow;
+        color: black;
+        height: 100px;
+      }
+      .p {
+        background-color: green;
+        height: 100px;
+        width: 300px;
+      }
+      .footer {
+        background-color: purple;
+        width: 33.5rem;
+        height: 100px;
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">header</header>
+
+    <nav class="nav">nav</nav>
+
+    <table>
+      <tbody>
+        <td class="aside"><aside>aside</aside></td>
+        <td class="main">
+          <main>
+            main
+            <article class="article">
+              article
+              <figure class="figure">figure</figure>
+              <figure class="p">p</figure>
+            </article>
+            <br />
+            <section class="section">section</section>
+          </main>
+        </td>
+      </tbody>
+    </table>
+    <footer class="footer">footer</footer>
+  </body>
+</html>
