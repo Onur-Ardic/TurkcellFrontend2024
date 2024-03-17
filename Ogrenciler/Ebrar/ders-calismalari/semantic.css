@@ -1,0 +1,53 @@
+* {
+  text-align: center;
+
+  text-transform: uppercase;
+}
+.header {
+  background-color: gray;
+  height: 50px;
+  width: 500px;
+  margin-bottom: 2px;
+}
+.nav {
+  background-color: cornflowerblue;
+  height: 30px;
+  width: 500px;
+}
+
+.aside {
+  background-color: rgb(17, 145, 17);
+  height: 300px;
+  width: 100px;
+}
+.main {
+  background-color: coral;
+  height: 300px;
+  width: 395px;
+}
+.article {
+  background-color: rgb(240, 243, 54);
+  height: 200px;
+  width: 300px;
+  margin-left: 40px;
+}
+.figure {
+  background-color: rgb(139, 63, 158);
+  height: 80px;
+}
+.p {
+  background-color: deepskyblue;
+  height: 80px;
+  width: 300px;
+}
+.section {
+  background-color: darksalmon;
+  height: 50px;
+  width: 300px;
+  margin-left: 40px;
+}
+.footer {
+  background-color: deeppink;
+  height: 50px;
+  width: 500px;
+}
