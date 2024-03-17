@@ -1,21 +1,26 @@
 .box{
-    height: 50px;
-    width: 250px;
-    margin: 10px;
+    height: 150px;
+    width: 50%;
+
+}
+.topbot{
+    width: 100%;
 }
 
 .red{
     background-color: red;
-    margin-left: 50px;
-    padding-top: 20px;
+
 }
 .blue{
     background-color: blue;
-    margin-bottom: 50px;
+
 }
 .green{
     background-color: green;
-    margin: 100 10 50;
+}
+
+.yellow{
+    background-color: yellow;
 }
 
 .clear{
