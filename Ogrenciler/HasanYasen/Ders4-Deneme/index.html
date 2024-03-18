@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Class/Element Exercise - Ders4/Bireysel Deneme</title>
+    <!-- Hasan YASEN -->
+</head>
+
+<style>
+    .link {
+        color: red;
+    }
+
+    .link:visited {
+        color: purple;
+    }
+
+    .link:hover {
+        color: navy;
+        font-weight: bold;
+    }
+
+    .listItem {
+        font-size: 20px;
+        color: rgb(239, 187, 120);
+        list-style-type: none;
+    }
+
+    .listItem::first-letter {
+        color: red;
+        font-weight: bold;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+
+    .listItem:nth-child(even) {
+        color: navy;
+    }
+</style>
+
+<body>
+
+    <div>
+        <div style="margin-bottom: 10px;">
+            <strong>Links</strong>
+        </div>
+        <a class="link" href="https://www.google.com.tr">Google</a>
+        <a class="link" href="http://www.youtube.com.tr">Youtube</a>
+    </div>
+
+    <div style="margin-top: 30px; border: 1px solid black; width: 300px;">
+        <strong>List Elements</strong>
+        <ul>
+            <li class="listItem">List Item</li>
+            <li class="listItem">List Item</li>
+            <li class="listItem">List Item</li>
+            <li class="listItem">List Item</li>
+            <li class="listItem">List Item</li>
+            <li class="listItem">List Item</li>
+            <li class="listItem">List Item</li>
+            <li class="listItem">List Item</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
