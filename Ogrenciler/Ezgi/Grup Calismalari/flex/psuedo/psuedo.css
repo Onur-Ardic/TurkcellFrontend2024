@@ -32,7 +32,9 @@
 }
 .text::after{
     content: "Merhaba ben sona eklendim.";
+    color: red;
 }
 .text::before{
     content: "Merhaba ben oncesine eklendim.";
+    color: blueviolet;
 }
