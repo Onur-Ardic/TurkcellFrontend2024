@@ -1,0 +1,9 @@
+.bgImage{
+    background-image: url("https://unsplash.com/photos/a-sea-turtle-swimming-over-a-coral-reef-ne3RC_Q9UEA");
+    width: 500px;
+    height: 500 px;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    color: brown;
+}
