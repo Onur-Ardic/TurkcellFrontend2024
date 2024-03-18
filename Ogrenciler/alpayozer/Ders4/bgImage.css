@@ -1,0 +1,28 @@
+.bgImage {
+  background-image: url("https://www.w3schools.com/w3images/forestbridge.jpg");
+  width: 500px;
+  height: 300px;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  color: crimson;
+}
+.title {
+  font-size: 30px;
+}
+.paragraph {
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .bgImage {
+    width: 300px;
+    height: 150px;
+    color: blueviolet;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .paragraph {
+    font-size: 18px;
+  }
+}
