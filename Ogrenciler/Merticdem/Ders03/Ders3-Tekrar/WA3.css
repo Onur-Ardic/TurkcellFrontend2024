@@ -1,0 +1,53 @@
+
+
+.header{
+    background-color: blanchedalmond;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+
+}
+
+.nav{
+    background-color: chocolate;
+    text-align: center;
+    width: 40%;
+    height: 250px;
+    float: left;
+
+}
+
+.clear{
+
+    clear: both;
+}
+
+
+.main{
+    background-color: brown;
+    text-align: center;
+    width: 60%;
+    height: 250px;
+    float: right;
+
+}
+
+.footer{
+    background-color: rgb(40, 241, 57);
+    text-align: center;
+    width: 100%;
+    height: 120px;
+}
+.main2{   
+    background-color: brown;
+    width: 60%;
+    height: 250px;
+    float: right;
+}
+.nav2{
+    background-color: chocolate;
+    width: 40%;
+    height: 250px;
+    float: left;
+    
+}
