@@ -1,0 +1,29 @@
+.container a:hover {
+  background-color: cornsilk;
+}
+
+.container a:visited {
+  background-color: cadetblue;
+}
+
+.container input:focus {
+  border: 1px solid red;
+  outline: none;
+  border-radius: 4px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* ul li:last-child {
+  background-color: red;
+} */
+
+/* ul li:first-child {
+  background-color: blue;
+} */
+
+ul li:nth-child(even) {
+  background-color: brown;
+}
