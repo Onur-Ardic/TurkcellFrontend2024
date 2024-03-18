@@ -1,0 +1,51 @@
+/*PSEUDO CLASS*/
+
+.link{
+    color: crimson;
+}
+
+
+.link:active{
+    color:magenta;
+}
+
+.link:visited{
+    color:orange;
+}
+
+.link:hover{
+    color: yellowgreen;
+}
+
+.listItem{
+    list-style-type: none;
+    font-size: 18px;
+    color: sienna;
+}
+
+
+.listItem:last-child{
+    color: blue;
+}
+
+.listItem:first-child{
+    color: rgb(18, 207, 90);
+}
+
+.listItem:nth-child(7n-1){
+    color: blue;
+}
+
+.text::first-letter{
+    font-size: 50px;
+}
+
+.text::after{
+    content: "Merhaba ben Sona Eklendim";
+    color: red;
+}
+
+.text::before{
+    content: "Ben başa eklendim.";
+    color: blueviolet;
+}

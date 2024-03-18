@@ -5,6 +5,12 @@ ctrl + k + u geri alır
 google lighthouse seo toolu
 
 id classı ezer
-!important ezer ama kullanma
+!important ezer ama kullanma önerilmiyor
 mdn baya iyi site gözat
 border-box kullan
+div block element 
+css flex sitesi çok iyi
+https://flexboxfroggy.com/
+order özelliği - değer alabilir. - değer + değerlerden önce gelir.
+https://www.frontendmentor.io/
+css wars
