@@ -1,0 +1,62 @@
+/* Psuedo class */
+.link {
+    color: crimson;
+}
+
+.link:active {
+    color: #0826ac;
+}
+
+.link:visited {
+    color: #c09fba;
+}
+
+.link:hover {
+    color: #5fd114;
+}
+
+.listItem {
+    list-style-type: none;
+    font-size: 18px;
+    color: crimson;
+}
+
+/* .listItem:last-child {
+    color: blue;
+} */
+
+/* .listItem:nth-child(even) {
+    color: blueviolet;
+}
+
+.listItem:nth-child(odd) {
+    color: rgb(87, 212, 38);
+} */
+
+/* .listItem:nth-child(2n-1) {
+    color: rgb(87, 212, 38);
+} */
+
+.listItem:nth-child(-n+6) {
+    color: rgb(13, 15, 141);
+}
+
+/* Psuedeo Element */
+
+.text::first-letter{
+    font-size: 60px;
+}
+
+.text::first-line{
+    color: blue;
+}
+
+.text::before{
+    content: "Merhaba ben başa eklenen metin!";
+    color: rgb(8, 163, 47);
+}
+
+.text::after{
+    content: "Merhaba ben sona eklenen metin!";
+    color: tomato;
+}

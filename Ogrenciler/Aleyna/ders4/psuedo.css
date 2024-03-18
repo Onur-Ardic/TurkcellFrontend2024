@@ -1,0 +1,53 @@
+/* Psuedo Class */
+.link{
+    color: crimson;
+}
+
+.link:active{
+    color: blueviolet;
+}
+
+.link:visited{
+    color: orange;
+}
+
+.link:hover{
+    color: green;
+}
+
+.listItem{
+    list-style-type: none;
+    font-size: 18px;
+    color: teal;
+}
+
+/* .listItem:last-child{
+    color:black;
+}
+
+.listItem:nth-child(odd){
+    color: blue;
+} */
+
+.listItem:nth-child(-n+3){
+    color: red;
+}
+
+/* Psuedo Element */
+
+.text::first-letter{
+font-size: 50px;
+}
+
+.text::first-line{
+    color: chocolate;
+}
+
+.text::before{
+    content:"önce";
+}
+
+.text::after{
+    content: "sonra";
+}
+
