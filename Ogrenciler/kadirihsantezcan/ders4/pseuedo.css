@@ -1,0 +1,42 @@
+/* Psuedo Class */
+.link{
+    color: darkgreen;
+}
+.link:hover{
+    color: green;
+}
+.link:active{
+    color: orangered;
+}
+.link:visited{
+    color: aqua;
+}
+.listItem{
+    list-style-type: none;
+    font-size: 18px;
+    color: red;
+}
+/*listItem:first-child{
+color blue;  
+}  */
+/* listItem:nth-child(add){
+color blue */
+/* add tek even çift */
+/* listItem:nth-child(2n-1){
+color blue */
+/* listItem:nth-child(-n+6){
+color blue */
+
+/* Psuedo Elements */
+.textt::first-letter{
+    font-size: 50px;
+}
+.textt::first-line{
+    color: red;
+}
+.textt::after{
+    content: "Sona eklendin";
+}
+.textt::before{
+    content: "Oncesine eklendin";
+}

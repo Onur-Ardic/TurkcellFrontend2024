@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Exercise</title>
+    <!-- Hasan YASEN -->
+
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            border: 3px solid red;
+            border-radius: 20px;
+            background-color: black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            /* to center the container */
+            width: 80%;
+            margin-left: 10%;
+            
+            margin-top: 100px;
+        }
+
+        .item {
+            width: 150px;
+            height: 150px;
+            border: 1px solid yellow;
+            border-radius: 20px;
+            background-color: azure;
+            font-size: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    
+</body>
+</html>

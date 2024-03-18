@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        background-color: pink;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      .nav {
+        background-color: green;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      .aside {
+        background-color: pink;
+        text-align: center;
+        height: 100%;
+      }
+      .main {
+        background-color: blue;
+        text-align: center;
+        height: 100%;
+        padding: 10px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+      }
+      .article {
+        background-color: rgb(113, 113, 220);
+        text-align: center;
+        padding: 5px;
+      }
+      .section {
+        background-color: rgb(113, 113, 220);
+        text-align: center;
+      }
+      .figure {
+        background-color: yellow;
+        text-align: center;
+        margin: 0;
+      }
+      .p {
+        background-color: greenyellow;
+        text-align: center;
+      }
+      .footer {
+        background-color: purple;
+        text-align: center;
+      }
+      .table {
+        width: 100%;
+        border-spacing: 0;
+        margin-bottom: 5px;
+      }
+      .padding {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header padding">Header</header>
+    <nav class="nav padding">nav</nav>
+    <table class="table">
+      <tbody>
+        <tr>
+          <td class="aside"><aside>Aside</aside></td>
+          <td></td>
+          <td class="main">
+            <main>
+              Main
+              <article class="article">
+                Article
+                <figure class="figure padding">figure</figure>
+                <p class="p padding">p</p>
+              </article>
+              <br />
+              <section class="section padding">section</section>
+            </main>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <footer class="footer padding">footer</footer>
+  </body>
+</html>

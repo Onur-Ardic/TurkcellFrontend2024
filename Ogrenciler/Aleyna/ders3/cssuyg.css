@@ -1,0 +1,16 @@
+
+p{
+    color: red;
+}
+
+.paragraf{
+    color: green;
+}
+
+#paragraf{
+    color: blue !important;
+}
+
+h1{
+    color: palevioletred;
+}

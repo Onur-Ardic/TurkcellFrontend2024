@@ -1,0 +1,34 @@
+.link {
+  color: crimson;
+}
+
+.link:active {
+  color: orange;
+}
+
+.link:visited {
+  color: purple;
+}
+
+.link:hover {
+  color: green;
+}
+
+.listItem {
+  list-style-type: none;
+  font-size: 18px;
+  color: cornflowerblue;
+}
+
+/* .listItem:first-child {
+  color: blue;
+}
+
+.listItem:last-child {
+  color: red;
+}
+ */
+
+.listItem:nth-child(-n + 6) {
+  color: red;
+}
