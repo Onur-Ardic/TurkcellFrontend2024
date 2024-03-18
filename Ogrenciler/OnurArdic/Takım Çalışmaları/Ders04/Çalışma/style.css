@@ -27,3 +27,11 @@ ul li {
 ul li:nth-child(even) {
   background-color: brown;
 }
+
+.text::first-letter {
+  text-transform: uppercase;
+}
+
+.text::first-line {
+  text-decoration: underline;
+}
