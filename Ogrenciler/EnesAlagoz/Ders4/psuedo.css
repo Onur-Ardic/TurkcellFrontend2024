@@ -1,0 +1,37 @@
+.link{
+    color:blueviolet;
+}
+.link:active{
+    color: aqua;
+}
+.link:visited{
+    color: blue;
+}
+.link:hover{
+    color: cadetblue;
+}
+
+.listItem{list-style-type: none;}
+.listItem:first-child{
+    color: blue;
+}
+.listItem:nth-child(odd){
+    color: chartreuse;
+}
+
+.listItem:nth-child(3n){
+    color: aquamarine;
+}
+
+.text::first-line{
+    color: blueviolet;
+}
+.text::first-line{
+    color: blueviolet;
+}
+.text::first-letter{
+    font-size: 30px;
+}
+.text::before{
+    content: "Merhabalar";
+}
