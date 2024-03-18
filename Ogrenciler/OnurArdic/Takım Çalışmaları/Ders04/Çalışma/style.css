@@ -35,3 +35,11 @@ ul li:nth-child(even) {
 .text::first-line {
   text-decoration: underline;
 }
+
+.text::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: aqua;
+  display: block;
+}
