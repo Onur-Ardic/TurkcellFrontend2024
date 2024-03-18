@@ -42,12 +42,14 @@
     background-color: brown;
     width: 60%;
     height: 250px;
-    float: right;
+    flex: 1;
+    float: left;
 }
 .nav2{
     background-color: chocolate;
     width: 40%;
     height: 250px;
-    float: left;
+    flex: 2;
+    float: right;
     
 }

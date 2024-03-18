@@ -1,0 +1,37 @@
+.link {
+    background-color: darkred;
+    padding: 10px;
+    color: palevioletred;
+}
+.link:active {
+    color: tomato;
+    background-color: antiquewhite;
+}
+.link:visited {
+    color: aquamarine;
+    background-color: cadetblue;
+    
+}
+.link:hover {
+    color: chocolate;
+    background-color: beige;
+}
+.listItem {
+    list-style-type: circle;
+}
+.listItem:nth-child(even){
+    color: blueviolet;
+}
+.text::first-letter {
+    font-size: 30px;
+}
+.text::first-line{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.text::after {
+    content: "Bitti!";
+    font-size: 50px;
+}
+.text::before {
+    content: "Başladı!";
+}

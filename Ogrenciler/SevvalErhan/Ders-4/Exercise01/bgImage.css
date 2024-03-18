@@ -1,0 +1,29 @@
+.bgImage{
+    width: 500px;
+    height: 300px;
+    background-image: url(bg.jpg);
+    background-position-y: center;
+    background-position-x:center ;
+    background-size: cover;
+    text-align: center;
+    color: rgb(224, 14, 14);
+}
+.title {
+font-size: 30px;
+}
+.paragraf {
+font-size: 23px;
+}
+@media screen and (max-width:768px) {
+.title {
+font-size: 24px;
+}
+.paragraf {
+font-size: 15px;
+}
+.bgImage {
+width: 300px;
+height: 150px;
+color: rgb(236, 187, 108);
+}
+}
