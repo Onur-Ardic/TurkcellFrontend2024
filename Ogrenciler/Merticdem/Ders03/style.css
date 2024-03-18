@@ -3,14 +3,17 @@ div{
     margin:20px;}
 
 .header{
+    background-color: blue;
     width: 95%;
     height:75px;
 
 
 }
 .nav{
+    background-color: blueviolet;
     width: 20%; 
     height: 150px;
+    margin-left: 20px;
     float: left;
 
 }
@@ -18,12 +21,14 @@ div{
     clear: both;
 }
 .main{
+    background-color: bisque;
     width: 72%;
      height: 150px;
-     float: right;
+     float: inline-end;
 
 }
 .footer{
+    background-color: darkgreen;
     width: 95%; 
     height: 60px;
 
