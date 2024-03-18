@@ -1,0 +1,40 @@
+/* Psuedo Class */
+ .link{
+    color: crimson;
+ }
+ .link:active{
+    color: blueviolet;
+ }
+ .link:visited{
+    color: rgb(215, 161, 90);
+ }
+ .link:hover{
+    color: rgb(215, 161, 90);
+ }
+ .listItem{
+    list-style-type: none;
+    font-size: 18px;
+    color: cadetblue;
+ }
+ /* .listItem:first-child{
+    color: blue;
+ }
+ .listItem:nth-child(odd){
+    color: blue;
+ }
+ .listItem:nth-child(2n-1){
+    color: blue;
+ } */
+
+ .listItem:nth-child(-n+6) {
+    color: blue;
+ }
+
+ /* Psuedo Element */
+
+ .text::first-letter{
+    font-size: 50px;
+ }
+ .text::first-line{
+    color: blue;
+ }

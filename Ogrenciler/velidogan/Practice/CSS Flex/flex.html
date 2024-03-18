@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .container{
+            width: 70%;
+            height: 400px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            justify-content: space-between;
+            /* flex-wrap: wrap; */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            margin: 0 auto;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: navy;
+        }
+        .box-1{
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">
+            <h2>Başlık 1</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, blanditiis?
+            </p>
+        </div>
+        <div class="box box-2">
+            <h2>Başlık 2</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, blanditiis?
+            </p>
+        </div>
+        <div class="box box-3">
+            <h2>Başlık 3</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, blanditiis?
+            </p>
+        </div>
+    </div>
+</body>
+</html>
