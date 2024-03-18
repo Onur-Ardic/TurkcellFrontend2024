@@ -1,0 +1,37 @@
+.link {
+    color: crimson;
+}
+.link:active {
+    color: blueviolet;
+}
+.link:visited {
+    color: pink;
+}
+.link:hover {
+    color: aqua;
+}
+
+.listItem {
+    list-style-type: none;
+    font-size: 18px;
+    color: crimson;
+}
+.listItem:hover {
+    color: green;
+}
+.listItem:nth-child(2n-1) {
+    color: black;
+}
+
+.texts::first-letter {
+    font-size: 50px;
+}
+.texts::first-line {
+    color: bisque;
+}
+.text::after {
+    content: "sona eklenen metindir deneme için yazılmıştır";
+}
+.text::before {
+    content: "bu başa eklenen metindir deneme için yazılmıştır";
+}
