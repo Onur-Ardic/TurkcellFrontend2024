@@ -1,0 +1,57 @@
+ .link {
+     color: crimson;
+ }
+ 
+ .link:active {
+     color: violet;
+ }
+ 
+ .link:visited {
+     color: turquoise;
+ }
+ 
+ .link:hover {
+     color: rgb(59, 152, 75);
+ }
+ 
+ .listItem {
+     list-style-type: none;
+     font-size: 18px;
+     color: crimson;
+ }
+ 
+ .listItem:last-child {
+     color: blue;
+ }
+ 
+ listItem:first-child {
+     color: rgb(172, 172, 233);
+ }
+ 
+ .listItem:nth-child(2) {
+     color: rgb(164, 164, 193);
+ }
+ 
+ .listItem:nth-child(even) {
+     color: blue;
+ }
+ 
+ .listItem:nth-child(odd) {
+     color: rgb(249, 56, 56);
+ }
+ 
+ .listItem:nth-child(2n) {
+     color: blue;
+ }
+ 
+ .text::first-letter {
+     font-size: 50px;
+ }
+ 
+ .text::first-line {
+     color: aqua;
+ }
+ 
+ .text::after {
+     content: "Merhaba ben sona eklendim!!";
+ }

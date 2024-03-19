@@ -1,4 +1,5 @@
 11-03-2024: Meet and talk about HTML
 13-03-2024: Using tables, input types and making applications about them
-15-03-2024: Make a lot HTML application and introduction to CSS
-18-03-2024:
+15-03-2024: Make HTML applications and introduction to CSS
+18-03-2024: CSS, sudo class, sudo element, responsive design and flex usage, CSS game (https://flexboxfroggy.com)
+20-03-2024

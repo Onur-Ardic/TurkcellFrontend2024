@@ -1,0 +1,34 @@
+.bgimage{
+    background-image: url("https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=1974&");
+    width: 500px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    color: crimson;
+}
+.title{
+    font-size: 30px;
+}
+.paraghraf {
+    font-size: 24px;
+}
+@media screen and (max-width: 760px) {
+    .title {
+        font-size: 24px;
+    }
+    .paraghraf {
+        font-size: 18px;
+    }
+    .bgimage{
+        width: 300px;
+        height: 150px;
+        color: rgb(221, 232, 19);
+    }
+}
+.box {
+    height: 250px;
+    width: 250px;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 20%;
+}

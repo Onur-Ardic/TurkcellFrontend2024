@@ -1,0 +1,49 @@
+.box{
+    height: 50px;
+    width: 250px;
+    margin: 10px;
+    background-color: red;
+    
+}
+
+.header, .footer {
+    width: 520px;
+    background-color: rgba(121, 23, 23, 0.993);
+    color: antiquewhite;
+    text-align: center;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight{
+    float: right;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.thirdRow {
+    height: 50px;
+    width: 160px;
+    float: right;
+    float: left;
+    margin: 10px;
+    background-color: rgb(255, 103, 103);
+}
+
+.fourthRow {
+    background-color: rgb(178, 96, 255);
+    height: 50px;
+    width: 115px;
+    float: right;
+    float: left;
+    margin: 10px;
+}
+
+.secondDiv {
+    float: right;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table border="1" width="1000" height="250">
+        <tr>
+            <td colspan="2" class="header">Header</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="nav">Nav</td>
+        </tr>
+        <tr>
+            <td rowspan="1" class="aside">Aside</td>
+            <td class="main">
+                Main
+                <table width="100%">
+                    <tr>
+                        <td colspan="2" class="article">
+                            Article
+                            <table width="100%">
+                                <tr>
+                                    <td colspan="2" class="figur">Figür</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="p">p</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%">
+                    <tr>
+                        <td colspan="2" class="section">Section</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer">Footer</td>
+        </tr>
+    </table>
+</body>
+
+</html>

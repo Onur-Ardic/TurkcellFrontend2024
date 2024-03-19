@@ -1,0 +1,53 @@
+.background-image {
+    background-image: url("https://images.pexels.com/photos/5868435/pexels-photo-5868435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    width: 500px;
+    height: 300px;
+    /* background-position-y: center;
+    background-position-x: center; */
+    background-position: center;
+    background-size: cover;
+    /* background-size: contain; */
+    color: white;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.paragraf {
+    font-size: 24px;
+}
+
+.box {
+    height: 250px;
+    width: 250px;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 20%;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .background-image {
+        width: 300px;
+        height: 150px;
+        color: crimson;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .paragraf {
+        font-size: 18px;
+    }
+
+    .box {
+        height: 150px;
+        width: 150px;
+        background-color: rgb(70, 250, 211);
+        border: 1px solid rgb(70, 250, 211);
+        border-radius: 50%;
+        margin-top: 15px;
+    }
+}

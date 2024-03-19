@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1c64c8;
+  color: #185ce4;
+  font-weight: 600;
+  font-size: large;
+}
+
+.box {
+  height: 50px;
+  width: 250px;
+  margin: 8px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.header {
+  width: 500px;
+}
+
+.nav {
+  height: 200px;
+  width: 100px;
+  float: left;
+}
+
+.main {
+  height: 200px;
+  width: 385px;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+.footer {
+  width: 500px;
+}
