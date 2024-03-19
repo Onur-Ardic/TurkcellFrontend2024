@@ -250,9 +250,38 @@
 }
 .planCard {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
 }
 .planCard h1 {
   font-size: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.planCard .button{
+  margin-top: 35px;
+  width: 100%;
+  color: orangered;
+  background-color: rgb(254, 225, 214);
+}
+
+.ourTeam {
+  margin-top: 100px;
+  padding-top: 100px;
+  background-color: #f8f9fc;
+}
+
+.ourTeamCard{
+  border-radius: 10px;
+  width: 320px;
+  height: 250px;
+  padding: 20px;
+  background-image: url(./assets/about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (max-width: 1800px) {
