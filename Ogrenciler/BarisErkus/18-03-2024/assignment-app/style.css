@@ -64,7 +64,7 @@ nav {
 
 /* Section - 1 */
 .section-1 {
-    background-image: url('https://r.resimlink.com/UapyD6jWgbL4.jpg');
+    background-image: linear-gradient(to bottom, rgba(22, 28, 45, 0.75), rgba(22, 28, 45, 0.75)), url('https://r.resimlink.com/UapyD6jWgbL4.jpg');
     background-size: cover;
     width: 100%;
     height: 800px;
@@ -159,7 +159,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 1%;
 }
 
 .section-3-list-item {
@@ -196,9 +196,10 @@ nav {
 .section-3-container-2 {
     margin: 100px 370px 0 370px;
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .section-3-container-2-title {
@@ -246,4 +247,197 @@ nav {
 
 .timeline-item-right-side {
     margin-top: -100px;
+}
+
+/* Section - 4 */
+.section-4 {
+    padding: 100px 0;
+    background-color: #F8F9FC;
+}
+
+.section-4-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.portfolio-item {
+    width: 260px;
+    height: 195px;
+    background-color: red;
+}
+
+.portfolio {
+    margin: 60px 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+/* Section - 5 */
+.section-5 {
+    background-image: linear-gradient(to bottom, rgba(22, 28, 45, 0.75), rgba(22, 28, 45, 0.75)), url('https://media.discordapp.net/attachments/1219345169091006495/1219740918119399576/cta.png?ex=660c6740&is=65f9f240&hm=09f325e72ccf09fbb8584e8762086ec73c3fba25dae16348f723955c9d44a7d5&=&format=webp&quality=lossless&width=550&height=309');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-5-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-5-paragraph {
+    width: 700px;
+    text-align: center;
+}
+
+/* Section - 6 */
+.section-6 {
+    padding: 100px 0;
+}
+
+.section-6-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-6-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.section-6-content-item {
+    padding: 48px 24px;
+    box-shadow: 0px 0px 10px 0px #0000001A;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    height: 370px;
+}
+
+.section-6-content-item-pricing-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.section-6-content-item-title {
+    font-size: 26px;
+    margin: 0 0 20px 0;
+}
+
+.section-6-content-item-dollor {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.section-6-content-item-amount {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.section-6-content-item-date {
+    font-weight: bold;
+}
+
+.section-6-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    text-align: left;
+}
+
+.section-6-list-item {
+    color: #8492a6;
+    padding: 0;
+}
+
+.get-started-button-container-2 {
+    width: 100%;
+    background-color: #FF57141A;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.get-started-button-2 {
+    font-size: 20px;
+    color: #FF5714;
+}
+
+/* Section - 7 */
+.section-7 {
+    padding: 100px 0;
+    background-color: #F8F9FC;
+}
+
+.section-7-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.portfolio-under-info {
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.portfolio-under-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.portfolio-under-info-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.section-8-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
