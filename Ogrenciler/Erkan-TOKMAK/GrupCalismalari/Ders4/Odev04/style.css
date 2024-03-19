@@ -7,7 +7,7 @@ body {
     font-family: "Roboto", serif;
   }
 .container {
-    width: 80%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -115,3 +115,51 @@ h3 {
 }
 
 /* Section 2 */
+
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.section2-p{
+    color: #8492a6;
+    font-family: "Roboto", serif;
+    margin-top: 20px;
+   
+}
+
+.about-image{
+    width: 350px;
+    height: 400px;
+    margin-right: 50px;
+}
+
+/* Section 3 */
+
+.section3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-between;
+    
+}
+
+.section3-p{
+    color: #8492a6;
+    font-family: "Roboto", serif;
+}
+
+.section3-h3{
+    margin-bottom: 10px;
+}
+
+.section3-content1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
