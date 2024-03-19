@@ -30,14 +30,14 @@ li{
 }
 
 
-.containerHeader {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100px;
-    flex-direction: column;
-    text-align: center;
 
+.containerHeader  {  
+    display: flex ; 
+    justify-content: center ; 
+    align-items: center    ; 
+    height: 100px ;
+    flex-direction: column ;
+    text-align: center ;
 }
 
 .containerResim {
@@ -150,6 +150,6 @@ li{
     display: block; /* Blok element olarak görüntüle */
     width: 1px; /* Çizgi genişliği */
     height: 100%; /* Yükseklik */
-    border-left: 1px dashed rgba(54, 47, 47, 0.61); /* Kesik çizgi */
-    margin: 0 auto; /* Dikey hizalama 
+    border-left: 1px dashed rgba(14, 12, 12, 0.61); /* Kesik çizgi */
+    margin: 0 auto; /* Dikey hizalama */
 }
