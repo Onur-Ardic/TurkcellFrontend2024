@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+/* Base Css */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +16,9 @@
   margin: 0 auto;
 }
 
+/* Base Css End */
+
+/* Header */
 .header {
   background: url(assets/img/bg.jpeg);
   height: 100vh;
@@ -21,6 +27,7 @@
   position: relative;
 }
 
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -85,8 +92,9 @@
   color: #000;
 }
 
-/* overlay */
+/* Navbar End */
 
+/* overlay */
 .overlay {
   background-color: rgba(22, 28, 45, 0.75);
   position: absolute;
@@ -98,6 +106,8 @@
   height: 100%;
   z-index: 1;
 }
+
+/* header text start */
 
 .header .text-wrapper {
   position: relative;
@@ -130,3 +140,5 @@
   opacity: 0.9;
   transition: 0.2s ease;
 }
+
+/* Header Text End */
