@@ -1,0 +1,10 @@
+.text::after {
+    content: "  Sona  ekle    ";
+}
+
+.text::before {
+    content: "  Başlangıça  ekle    ";
+}
+.text::first-line{
+    color: burlywood;
+}

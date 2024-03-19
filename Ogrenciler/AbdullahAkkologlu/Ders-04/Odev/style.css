@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.paddingHandler {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.bgImage {
+  background-image: url(./assets/indir.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: cover;
+  min-height: 80vh;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.navLinks {
+  display: flex;
+  gap: 40px;
+}
+.navLinks a {
+  color: rgb(231, 231, 231);
+  text-decoration: none;
+  font-size: x-large;
+}
+.navLinks a:hover {
+  color: orangered;
+}
+.navImg {
+  width: 150%;
+}
+.landing {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.landing h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+}
+.landing p {
+  color: rgb(228, 228, 228);
+  font-size: xx-large;
+}
+.button {
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: orangered;
+  color: white;
+  font-size: larger;
+  border: none;
+}
+.button:hover {
+  background-color: rgb(204, 54, 0);
+  cursor: pointer;
+}
+.landing h1 span {
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+.about {
+  min-height: 70vh;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  background-color: rgb(235, 235, 235);
+}
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.orangeTitle {
+  color: orangered;
+  font-size: x-large;
+  font-weight: lighter;
+}
+.aboutText h1 {
+  color: rgb(51, 51, 51);
+  font-size: 50px;
+}
+.aboutText p {
+  color: gray;
+  font-size: x-large;
+}
+.aboutImg img {
+  border-radius: 20px;
+}
+.whatWeDo {
+  padding-top: 50px;
+}
+.whatWeDoTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.whatWeDoTitle h1 {
+  font-size: 50px;
+  font-weight: normal;
+}
+.whatWeDoTitle p {
+  font-size: x-large;
+  color: gray;
+}
+@media screen and (max-width: 1800px) {
+  .navLinks {
+    display: none;
+  }
+  .paddingHandler {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .paddingHandler {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .landing h1 {
+    font-size: xx-large;
+  }
+  .landing p {
+    font-size: x-large;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .aboutImg img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .whatWeDoTitle {
+    flex-direction: column;
+  }
+}
