@@ -163,3 +163,9 @@ h3 {
     flex-direction: row;
     justify-content:space-between;
 }
+
+.section3-content2{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
