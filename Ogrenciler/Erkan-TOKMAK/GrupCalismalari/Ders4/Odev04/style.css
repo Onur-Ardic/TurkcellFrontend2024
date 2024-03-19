@@ -121,6 +121,7 @@ h3 {
   flex-direction: row;
   align-items: center;
   margin-top: 50px;
+  height: 550px;
 }
 
 .section2-p {
@@ -172,15 +173,31 @@ h3 {
   color: #e04000;
   font-size: 30px;
 }
+
 .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 300px;
+  height: 300px;
   border-radius: 20px;
   padding: 20px;
+}
+.box-active {
+  background-color: white;
+  box-shadow: 0 25px 25px rgba(36,39,44,0.05);
+}
+
+.box:hover {
+  box-shadow: 0 25px 25px rgba(36,39,44,0.05);
 }
 
 .section3-content2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .box-h4 {
   color: black;
@@ -193,3 +210,66 @@ h3 {
   font-size: 14px;
   margin-top: 10px;
 }
+
+/* Section 4 */
+
+.section4 {
+height: 900px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.section4-heading {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.section4-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section4-image {
+  width: 200px;
+  height: 200px;
+}
+.strategy , .development , .launch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.l-img {
+  width: 48%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+} 
+.l-content {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: end;
+}
+.r-img {
+width: 48%;
+}
+.r-content {
+  width: 48%;
+}
+.timeline {
+  border: 1px solid #e04000;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-style: dashed;
+  height: 200px;
+}
+
+/* Section 5 */
+
