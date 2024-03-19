@@ -1,0 +1,15 @@
+.bgImage {
+  background-image: url(https://images.unsplash.com/photo-1682687220063-4742bd7fd538?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .bgImage {
+    width: 300px;
+    height: 300px;
+    color: aqua;
+  }
+}

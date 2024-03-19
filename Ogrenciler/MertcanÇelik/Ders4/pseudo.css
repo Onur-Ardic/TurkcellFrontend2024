@@ -1,0 +1,38 @@
+.link{
+    color:crimson;
+}
+.link:active {
+    color: pink;
+}
+
+.link:visited{
+
+    color: orange;
+
+ }
+ link:hover{
+
+    color: green;
+ }
+ .listItem{
+    list-style-type: none;
+    front-size: 18px;
+    color:crimson;
+ }
+
+ .listItem:nth-child(-n+6){
+    color:blue;
+ }
+.text::first-letter{
+    font-size:50px;
+}
+.text::first-line{
+    color:blue;
+
+}
+.text::after{
+    content: "Merhaba ben önce eklendim";
+}
+.text::before{
+    content:" Merhaba ben sonra eklendim";
+}

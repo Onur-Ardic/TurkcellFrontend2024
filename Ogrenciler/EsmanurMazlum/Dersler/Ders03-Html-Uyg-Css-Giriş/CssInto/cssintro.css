@@ -1,0 +1,17 @@
+p{  
+    color: red;
+}
+.paragraf{
+    color: green;
+}
+#paragraf{
+    color: blue !important;  /*öncelik sırası : inline style css - id - class - tag*/
+}
+body .yellow {
+    color: yellow;
+}
+
+h1{
+    color: rgb(113, 84, 243);
+    font-size: 36px;
+}

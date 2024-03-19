@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Psuedo Class */
+        .Link{
+            color: aqua;
+        }
+        .Link:active{
+            color: crimson;
+        }
+        .Link:visited{
+            color:chocolate;
+        }
+        .Link:hover{
+            color: navy;
+        }
+        .ListItem{
+            font-size: 18px;
+            color: crimson;
+            list-style-type: none;
+        }
+        /* .ListItem:last-child{
+            color: navy;
+        } */
+        /* .ListItem:nth-child(odd){
+            color: navy;
+        } */
+        .ListItem:nth-child(4n){
+            color: navy;
+        }
+
+
+
+        /* Psuedo Elements */
+        .text::first-letter{
+            font-size: 45px;
+        }
+        .text::first-line{
+            color: navy;
+        }
+        .text::after{
+            content: '\1F605';
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <!-- <a href="https://www.w3schools.com" class="Link">w3schools</a>
+    <a href="https://developer.mozilla.org/en-US/" class="Link">MDN</a>
+
+
+    <ul>
+        <li class="ListItem">Deneme Liste Elemanı</li>
+        <li class="ListItem">Deneme Liste Elemanı</li>
+        <li class="ListItem">Deneme Liste Elemanı</li>
+        <li class="ListItem">Deneme Liste Elemanı</li>
+        <li class="ListItem">Deneme Liste Elemanı</li>
+        <li class="ListItem">Deneme Liste Elemanı</li>
+        <li class="ListItem">Deneme Liste Elemanı</li>
+        <li class="ListItem">Deneme Liste Elemanı</li>
+        <li class="ListItem">Deneme Liste Elemanı</li>
+        <li class="ListItem">Deneme Liste Elemanı</li>
+    </ul> -->
+
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat delectus aut culpa possimus ipsam quaerat distinctio, voluptatum vero reprehenderit labore repellendus quam modi totam minus quod! Magnam nesciunt iusto consequuntur!</p>
+</body>
+</html>

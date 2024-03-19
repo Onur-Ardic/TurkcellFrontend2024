@@ -1,0 +1,10 @@
+.bgImage {
+ background-image: url()
+ width:500 px;
+ height: 300 px;
+ background-position-y : center;
+ background-position-x :center;
+ background-size : cover;
+color: crimson;
+
+}

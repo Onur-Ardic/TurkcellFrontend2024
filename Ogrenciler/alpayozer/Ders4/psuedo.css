@@ -1,0 +1,36 @@
+.link {
+  color: crimson;
+}
+.link:active {
+  color: blueviolet;
+}
+.link:visited {
+  color: darkorange;
+}
+.link:hover {
+  color: greenyellow;
+}
+.listItem {
+  list-style-type: none;
+  font-size: 18px;
+  color: crimson;
+}
+/* .listItem:last-child {
+  color: blueviolet;
+} */
+/* even - çift odd - tek */
+.listItem:nth-child(3n) {
+  color: darkorange;
+}
+
+/* Psuedo Element */
+
+.text::first-letter {
+  font-size: 50px;
+  color: blueviolet;
+}
+
+.text::after {
+  content: " - Alpay Özer";
+  color: darkorange;
+}

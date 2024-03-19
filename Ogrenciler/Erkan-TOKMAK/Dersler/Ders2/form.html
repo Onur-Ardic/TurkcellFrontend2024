@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <h1>Kurs Kayıt Formu</h1>
+        <div>
+            <label for="name">Ad: </label>
+            <input type="text" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="surname">Soyad: </label>
+            <input type="text" id="surname">
+        </div>
+        <br>
+        <div>
+            <label for="email">E-Posta: </label>
+            <input type="email" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="password">Parola: </label>
+            <input type="text" id="password">
+        </div>
+        <br>
+        <div>
+            <label for="passwordcheck">Parola: </label>
+            <input type="password" id="password">
+        </div>
+        <br>
+        <div>
+            <label for="tel">Telefon: </label>
+            <input type="tel" id="tel" maxlength="11" pattern="[0-9]">
+        </div>
+        <br>
+        <div>
+            <label for="gender">Cinsiyet: </label><br>
+            <label for="man">Erkek: </label>
+            <input type="radio" name="gender" id="man"><br>
+            <label for="woman">Kadın: </label>
+            <input type="radio" name="gender" id="woman"><br>
+            <label for="none">Belirtmek İstemiyorum.</label>
+            <input type="radio" name="gender" id="none">
+        </div>
+        <br>
+        <div>
+            <label for="cv">CV: </label>
+            <input type="file" id="cv">
+        </div>
+        <br>
+        <div>
+            <label for="durum">Öğrenci Durumunuz: </label>
+            <input list="ogrenci">
+            <datalist id="ogrenci">
+                <option value="3. Sınıf">3. Sınıf</option>
+                <option value="4. Sınıf">4. Sınıf</option>
+                <option value="Mezun">Mezun</option>
+            </datalist>
+        </div>
+        <br>
+        <div>
+            <label for="">Bildiğiniz Diller: </label><br>
+            <label for="javascript">javascript</label>
+            <input type="checkbox" id="javascript"><br>
+            <label for="java">java</label>
+            <input type="checkbox" id="java"><br>
+            <label for="python">Python</label>
+            <input type="checkbox" id="python"><br>
+            <label for="c#">c#</label>
+            <input type="checkbox" id="c#">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Kaydet">
+            <input type="reset" value="Formu Temizle">
+        </div>
+        <br>
+    </form>
+</body>
+</html>
