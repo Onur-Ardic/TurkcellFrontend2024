@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  background-color: #343231;
+}
+.logo {
+  width: 100px;
+}
+
+.navbar-li {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-size: 14px;
+}
+
+.navbar-li button {
+  background-color: #343231;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+}
+
+.navbar-li button:hover {
+  color: white;
+  background-color: #343231;
+}
+
+/* End Navbar */
+
+/* Start Hero */
+
+/*  */
+
+.hero-section {
+  background-image: url(https://shreethemes.in/upstart/layouts/images/bg/1.jpg);
+  padding: 265px 0;
+  background-size: cover !important;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  margin-left: 180px;
+  font-family: "Roboto Slab", serif;
+}
+
+.hero-title h1 {
+  font-size: 40px;
+}
+
+.hero-title button {
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hero-title button:hover {
+  background-color: rgb(250, 83, 22);
+}
+
+.marketing {
+  text-decoration: underline yellow;
+}
