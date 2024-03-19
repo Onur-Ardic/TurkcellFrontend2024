@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
 }
 .paddingHandler {
   padding-left: 20%;
@@ -66,8 +67,7 @@
   cursor: pointer;
 }
 .landing h1 span {
-  text-decoration: underline;
-  text-decoration-color: yellow;
+  border-bottom: 5px solid yellow;
 }
 .about {
   min-height: 70vh;
@@ -76,7 +76,7 @@
   display: flex;
   align-items: center;
   gap: 10%;
-  background-color: rgb(235, 235, 235);
+  background-color: #f8f9fc;
 }
 .aboutText {
   display: flex;
@@ -107,13 +107,154 @@
   justify-content: space-between;
 }
 .whatWeDoTitle h1 {
-  font-size: 50px;
+  font-size: 35px;
   font-weight: normal;
 }
 .whatWeDoTitle p {
   font-size: x-large;
   color: gray;
 }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  border-radius: 30px;
+  width: 450px;
+  height: 350px;
+  padding: 20px;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.card img {
+  background-color: #ffeee7;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.card h1 {
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: x-large;
+}
+.card p {
+  color: gray;
+  margin-bottom: 25px;
+  font-size: large;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+}
+
+.card a:hover {
+  color: orangered;
+  border-bottom: 1px solid orangered;
+}
+
+.texts {
+  text-align: center;
+}
+.texts p {
+  color: gray;
+  font-size: large;
+  margin-top: 20px;
+}
+.texts h1 {
+  margin-top: 20px;
+}
+.cizgi {
+  border: 1px dashed gray;
+  width: 2px;
+  height: 1300px;
+  margin: 0px 25px;
+}
+.workProcess {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.workProcessLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 48%;
+  justify-content: space-around;
+}
+.workProcessRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 48%;
+  justify-content: space-around;
+}
+.workProcessTitle {
+  color: gray;
+  font-size: large;
+  margin-top: 15px;
+}
+.portfolio {
+  margin-top: 30px;
+  background-color: #f8f9fc;
+  padding-top: 40px;
+}
+.portfolioCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+.portfolioCard {
+  border-radius: 10px;
+  width: 320px;
+  height: 250px;
+  padding: 20px;
+  background-image: url(./assets/work.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.portfolioCard:hover {
+  filter: grayscale(50%);
+}
+.webProject {
+  margin-top: 100px;
+  background-image: url(./assets/indir.png);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: cover;
+  margin-bottom: 100px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.webProject p {
+  font-size: larger;
+  color: gray;
+}
+.planCard {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.planCard h1 {
+  font-size: 50px;
+}
+
 @media screen and (max-width: 1800px) {
   .navLinks {
     display: none;
