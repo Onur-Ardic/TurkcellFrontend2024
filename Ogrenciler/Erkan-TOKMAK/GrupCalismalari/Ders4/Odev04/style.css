@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", serif;
+  }
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+
+.header {
+    position: relative;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+    justify-content: space-between;
+    color: white;
+}
+.menu-list {
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Roboto Slab", serif;
+}
+.logo {
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+.menu-list-item{
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+.social-media-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 10px;
+}
+.fa-brands {
+    background-color: #E04000;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section 1 */
+.section1 {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    margin-top: -75px;
+    display: flex;
+    align-items: center;
+  }
+  .section1::before {
+    content: "";
+    background: linear-gradient(rgba(22, 28, 45, 0.75), rgba(22, 28, 45, 0.75)),
+      url(./assets/images/bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .section1-header {
+    color: white;
+    font-size: 50px;
+  }
+
+  .section1-p{
+    color: #ffffff80;
+    font-size: 24px;
+    padding-top: 10px;
+  }
+  
+.button {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-weight:500;
+    font-size: 16px;
+    color: white;
+    margin-top: 20px;
+    background-color: #E04000;
+}
+h3 {
+    color: #E04000;
+}
+
+/* Section 2 */
