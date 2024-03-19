@@ -23,8 +23,11 @@
     text-decoration: none;
     color:black
 }
-.link-part:active {
+.link:active {
     color: orange;
+}
+.link:hover {
+    color: orangered;
 }
 .s-media {
     display: flex;
@@ -124,23 +127,30 @@
     color: gray;
     margin-top: 100px;
 }
-.fourth-cards {
-    max-width: 300px;
-    max-height:fit-content;
+.arrangement {
     margin-left: 200px;
     margin-right: 200px;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: baseline;
 }
-.card {
+.container4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-top: 100px;
 }
 .fourth-img {
-    
     border-radius: 6px;
     width: 85px;
     height: 85px;
+}
+.box {
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+.link4 {
+    font-size: 18px;
+}
+.fourth-card-p {
+    max-width: 300px;
+    color: gray;
+    font-size: 15px;
 }
