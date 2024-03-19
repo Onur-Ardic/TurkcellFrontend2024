@@ -9,6 +9,11 @@ ol {
     list-style-type: none;
 }
 
+li {
+    display: inline;
+    font-weight: bold;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -17,6 +22,7 @@ a {
 
 nav {
     position: absolute;
+    padding: 10px;
 }
 
 .image-container {
