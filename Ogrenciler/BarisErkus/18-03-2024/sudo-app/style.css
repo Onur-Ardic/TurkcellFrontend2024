@@ -1,0 +1,55 @@
+/* Psuedo Class */
+.link {
+    color: crimson;
+}
+
+.link:active {
+    color: aquamarine;
+}
+
+.link:visited {
+    color: orange;
+}
+
+.link:hover {
+    color: greenyellow;
+}
+
+.listItem {
+    list-style-type: none;
+    font-size: 18px;
+    color: crimson;
+}
+
+/* .listItem:first-child {
+    color: blue;
+} */
+
+.listItem:nth-child(odd) {
+    color: blue;
+}
+
+/* .listItem:nth-child(2n-1) {
+    color: blue;
+} */
+
+/* .listItem:nth-child(-2n+6) {
+    color: blue;
+} */
+
+/* Psuedo Element */
+.text::first-letter {
+    font-size: 50px;
+}
+
+.text::first-line {
+    color: blue;
+}
+
+.text::after {
+    content: "Merhaba ben sona eklendim!";
+}
+
+.text::before {
+    content: "Merhaba ben başa eklendim!";
+}
