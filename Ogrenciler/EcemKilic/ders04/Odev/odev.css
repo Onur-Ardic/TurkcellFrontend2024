@@ -1,0 +1,156 @@
+.container {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar-brand {
+    justify-content: center;
+    margin-left: 200px;
+}
+.parts {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 200px;
+    font-size: 12px;
+    font-family: Roboto Slab, serif;
+}
+.link {
+    text-decoration: none;
+    color:black
+}
+.link:active {
+    color: orange;
+}
+.link:hover {
+    color: orangered;
+}
+.s-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;
+}
+
+.second {
+    background-image: url("https://shreethemes.in/upstart/layouts/images/bg/1.jpg");
+    width: 100%;
+    height: 800px;
+    position:absolute;
+    background-size: cover;
+    background-attachment:local;
+    font-family: Roboto Slab, serif;
+}
+.second-h1 {
+    color: white;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+.second-p {
+    color: gray;
+    font-size: 17px;
+    margin-left: 200px;
+    margin-top: 50px;
+    max-width: 600px;
+}
+.btn {
+    background-color: darkorange;
+    color: white;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    width: 150px;
+    height: 50px;
+    margin-top: 50px;
+}
+.second-btn {
+    margin-left: 200px;
+}
+.btn:hover {
+    background-color: orangered;
+}
+
+.third {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 900px;
+    font-family: Roboto Slab, serif;
+}
+.floatLeft {
+    float: left;
+    margin-left: 200px;
+}
+.third-left {
+    background-image: url("https://shreethemes.in/upstart/layouts/images/about.jpg");
+    background-size: cover;
+    border-radius: 6px;
+    width: 450px;
+    height: 525px;
+}
+.floatRight {
+    float: right;
+    margin-right: 200px;
+    max-width: 600px;
+}
+.clear {
+    clear: both;
+}
+.third-h6 {
+    color: orange;
+    font-size: 15px;
+}
+.third-h4 {
+    font-size: 24px;
+}
+.third-p {
+    color: gray;
+}
+
+.fourth {
+    margin-top: 200px;
+    font-family: Roboto Slab, serif;
+}
+.fourth-h6 {
+    color: orange;
+    font-size: 15px;
+}
+.fourth-h4 {
+    font-size: 28px;
+    max-width: 400px;
+}
+.fourth-p {
+    color: gray;
+    margin-top: 100px;
+}
+.arrangement {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.container4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-top: 100px;
+}
+.fourth-img {
+    border-radius: 6px;
+    width: 85px;
+    height: 85px;
+}
+.box {
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+.link4 {
+    font-size: 18px;
+}
+.fourth-card-p {
+    max-width: 300px;
+    color: gray;
+    font-size: 15px;
+}
