@@ -146,7 +146,7 @@
 /* ! -------------- Our Team Start ------------- */
 .our-team {
   background-color: #f8f9fc;
-  padding-top: 3rem;
+  padding: 3rem 0rem;
 }
 
 .our-team .our-team-wrapper .our-team-content .section-title {
@@ -271,9 +271,42 @@
 
 /* ?Portfolyo */
 
-.our-team .portfolio {
+.our-team .portfolio-our-team {
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   text-align: center;
+}
+
+.our-team .portfolio-our-team h4 {
+  font-size: 32px;
+}
+
+.our-team .portfolio-our-team p {
+  color: #8492a6;
+}
+
+/* ? Brands */
+.brands {
+  display: flex;
+  margin: 3rem 0;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brands img {
+  width: 80px;
+}
+
+.brands img:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .our-team .our-team-image-card {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
