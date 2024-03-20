@@ -180,7 +180,7 @@ h1 {
   margin-top: 20px;
 }
 .cizgi {
-  border: 1px dashed gray;
+  border: 1px dashed rgb(177, 177, 177);
   width: 2px;
   height: 1300px;
   margin: 0px 25px;
@@ -289,6 +289,28 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.portfolio-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.portfolio-logo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.portfolio-logo div {
+  margin-left: 100px;
+  margin-bottom: 80px;
+  flex: 1; /* Her bir div'in eşit miktarda genişlemesini sağlar */
+}
+
+.portfolio-logo img {
+  width: 70px; /* Resimleri div'in içine sığdırır */
 }
 
 @media screen and (max-width: 1800px) {
