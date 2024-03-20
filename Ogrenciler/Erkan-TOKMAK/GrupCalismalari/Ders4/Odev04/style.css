@@ -11,6 +11,16 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.section-h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-family: "Roboto,serif";
+}
+.section-h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 
 /* Header */
 
@@ -24,6 +34,9 @@ body {
   align-items: start;
   justify-content: space-between;
   color: white;
+}
+.menu {
+  width: 70%;
 }
 .menu-list {
   height: 75px;
@@ -42,6 +55,7 @@ body {
   list-style: none;
   margin-left: 10px;
   margin-right: 2px;
+  color: #ffffffcc;
 }
 
 .social-media-icon {
@@ -52,11 +66,11 @@ body {
   margin-left: 10px;
 }
 .fa-brands {
-  background-color: #e04000;
-  color: white;
+  background-color: white;
+  color: black;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,9 +164,9 @@ h3 {
   color: #8492a6;
   font-family: "Roboto", serif;
 }
-
-.section3-h3 {
-  margin-bottom: 10px;
+.section3-read:hover {
+  color: #e04000;
+  border-bottom: 1px solid #e04000;
 }
 
 .section3-content1 {
@@ -201,7 +215,8 @@ h3 {
 }
 .box-h4 {
   color: black;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 500;
   margin-top: 10px;
 }
 
@@ -214,7 +229,7 @@ h3 {
 /* Section 4 */
 
 .section4 {
-  height: 900px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,6 +243,7 @@ h3 {
   align-items: center;
   margin-bottom: 40px;
 }
+
 .section4-content {
   display: flex;
   flex-direction: column;
@@ -266,20 +282,20 @@ h3 {
   width: 48%;
 }
 .timeline {
-  border: 1px solid #e04000;
+  border: 1px solid #dadbdb;
   margin-left: 10px;
   margin-right: 10px;
   border-style: dashed;
   height: 200px;
+  border-width: 0 0 0 2px;
 }
 
 /* Section 5 */
 .section5 {
-  height: 700px;
+  height: 800px;
 }
 
 .section5-heading {
-  font-family: "Roboto,serif";
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -387,12 +403,12 @@ h3 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
- /* Section 7 */
- .section7{
-  height: 700px;
+/* Section 7 */
+.section7 {
+  height: 900px;
   padding: 100px 0px;
 }
-.section7-header{
+.section7-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -410,7 +426,7 @@ h3 {
   /* border: 0.5px solid gray; */
   width: 30%;
   border-radius: 10px;
-  height: 350px;
+  height: 450px;
   padding: 50px;
   background-color: white;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.09);
@@ -421,11 +437,11 @@ h3 {
 .pricing-button {
   margin-top: 24px;
   border-radius: 8px;
-  border: 0.5px solid #ff5714;
+  border: 0.5px solid #fcb69a;
   width: 100%;
   height: 30px;
   background-color: rgba(255, 87, 20, 0.1);
-  color: #f5714A;
+  color: #f5714a;
   font-size: 16px;
 }
 .section7-p {
@@ -440,8 +456,10 @@ h3 {
 }
 .section7-list-item {
   list-style: none;
+  margin-bottom: 10px;
+  color: #8492a6;
 }
-.sc7-icon{
+.sc7-icon {
   margin-right: 7px;
 }
 .section7-price {
@@ -543,14 +561,14 @@ h3 {
   margin-top: 10px;
 }
 
-.section8{
-  height: 550px;
+.section8 {
+  height: 650px;
 }
 
 /* SECTION 9 */
 
-.section9 { 
-  height:900px;
+.section9 {
+  height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -561,43 +579,47 @@ h3 {
   height: 150px;
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 40px;
 }
 
-.card{
+.card {
   box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0);
   border-radius: 10px;
   margin: 15px 15px;
-  border: 1px solid gainsboro; 
-  height: 350px;
+  border: 1px solid gainsboro;
+  height: 450px;
   width: 30%;
 }
 
-.card-body{
+.card-body {
   padding: 25px;
   display: flex;
   flex-direction: column;
-  align-items:start;
+  align-items: start;
   justify-content: space-around;
   height: 200px;
 }
 
-.section9-img{
+.section9-img {
   width: 100%;
-  height: 150px;
+  height: 250px;
   border-radius: 10px;
 }
 
-#card-group{
-display: flex;
-flex-direction: row;
-justify-content:space-between;
+#card-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.card-heading:hover{
-  color:#ff5714;
+.card-heading:hover {
+  color: #ff5714;
+}
+.card-p {
+  color: #8492a6;
+  margin-top: 10px;
 }
 
 /* SECTION 10 */
