@@ -11,7 +11,7 @@
     }
     
     .container {
-        max-width: 1100px;
+        max-width: 1200px;
         margin: 0 auto;
     }
     /* Base Css End */
@@ -191,7 +191,7 @@
     }
     
     .cards .card {
-        width: 330px;
+        width: 369px;
         height: 300px;
         border-radius: 30px;
         background-color: #ffffff;
@@ -253,9 +253,21 @@
         color: #24272c;
         font-size: 16px;
         font-weight: 400;
-        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
         text-decoration: none;
+    }
+    
+    .cards .card .card-content .card-link a:hover {
         transition: all 0.5s ease;
+        color: #ff5714;
+    }
+    
+    .cards .card .card-content .card-link a svg {
+        margin-left: 6px;
+        height: 18px;
+        width: 18px;
     }
     /* Section Services Cards End*/
     /* Section Contact Us Start */
@@ -336,7 +348,7 @@
         padding: 10px;
         margin: 0 12px 24px 12px;
         border-radius: 5px;
-        height: 118px;
+        height: 120px;
     }
     
     .contact-form textarea:focus {
