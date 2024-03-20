@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* linear-gradient(to bottom, #4A00E0, #8E2DE2) */
+nav {
+    background-color: #4C01E0;
+    border-bottom: 1px solid gray;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+li {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 380px;
+}
+
+.nav-links ul li {
+    display: inline;
+    padding: 20px;
+}
+
+.nav-links ul a {
+    color: white;
+}
+
+.login {
+    padding: 10px 20px;
+    background-color: #032055;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
