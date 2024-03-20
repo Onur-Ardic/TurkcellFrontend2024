@@ -1,0 +1,391 @@
+/* EGEMEN KAPLAN */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    /* align-items: center; */
+    width: 100%;
+    /* background-color: black; */
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+}
+.container{
+    width: 1140px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 12px;
+    align-items: center;
+
+}
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+.navbar-collapse ul{
+    margin-left: 30px;
+}
+.navbar-nav, .list-inline{
+    display: flex;
+    list-style: none;
+}
+.list-inline{
+    display: flex;
+}
+.navbar-nav li a, .list-inline li a, .section1-content a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.section1{
+    background: url("./section1-img.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    padding: 260px 0;
+}
+/* .section1-filter{
+    background-color: rgba(22, 28, 45, 0.75);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+} */
+.section1-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    /* height: 1154px; */
+}
+.section1-content h1{
+    font-size: 42px;
+    margin-bottom:24px;
+}
+.section1-content p{
+    font-size: 17px;
+    color: rgb(255, 255, 255, 0.5);
+    max-width: 600px;
+}
+.section1-content-button{
+    margin-top: 20px;
+}
+.section1-content a{
+    margin-top: 50px;
+    padding: 8px 20px;
+    background-color: #ff5714;
+    border: 1px solid #ff5714;
+    border-radius: 10px;
+}
+/* FOOTER */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin: 0 auto;
+    background-color: #202942;
+    color: white;
+}
+.footer{
+    width: 1140px;
+}
+.footer-sideItem{
+    width: 25%;
+}
+.footer-item{
+    width: 50%;
+}
+.footer-social{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* EGEMEN KAPLAN */
+
+/* RUMEYSANUR GULTEKIN */
+/* .portfolio{
+
+} */
+.container28{
+    padding: 100px 0;
+    margin: 0 auto;
+    background-color: rgb(244, 239, 239);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio-genelbaslik {
+        text-align: center;
+        margin-top: 40px;
+
+}
+.portfolio-baslik1{
+        color: red;
+        margin-top: 3%; 
+}
+.portfolio-baslik2{
+        color: black;
+}
+.portfolio-baslik3 {
+        max-width: 600px;
+        color:  rgb(88, 87, 87);
+}
+.portfolio-gorseller{
+        width: 1140px;
+        display:flex;
+        margin: 40px 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+}
+
+.portfolio-gorseller img{
+        width: 216px;
+        height: 162px;
+        margin-top: 20px;
+        border-radius: 10px;
+
+}
+.portfolio-gorseller div{
+    margin: 0 5px;
+
+}
+
+.whoweare{
+    padding: 100px 0;
+    background-color: whitesmoke;
+    
+}
+
+.container20{
+    width: 1140px;
+    padding: 0 12px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.imgwhoweare img{
+    width: 376px;
+    height: 439px;
+}
+
+.whowearetext{
+    margin-left: 50px;
+}
+.title1{
+    color: red;
+}
+.title2{
+    color: black;
+}
+.p1{
+    color:grey
+}
+/* .button2{
+    
+} */
+
+/* RUMEYSANUR GULTEKIN */
+
+
+/* MUHAMMED SAKA */
+/* body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+} */
+
+/* nav {
+    position: absolute;
+    padding: 10px;
+} */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+}
+
+/* .container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 370px;
+    padding: 0 12px;
+
+} */
+
+.navbar-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-item-list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.navbar-left-item-list {
+    margin-left: 200px;
+}
+
+.navbar-right-item {
+    gap: 10px;
+}
+
+/* Section - 1 */
+.section-1 {
+    padding: 100px 0;
+}
+
+.section-1-container {
+    margin: 0 370px;
+}
+
+.section-1-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.section-1-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.section-1-list-item {
+    padding: 24px;
+    width: 308px;
+    height: 266px;
+    box-shadow: 0px 0px 10px 0px #0000001A;
+    border-radius: 10%;
+}
+
+.shape {
+    border-radius: 20%;
+    background-color: #FF57141A;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 30px;
+}
+
+.section-1-list-item-content-link {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.section-1-list-item-footer-link {
+    color: black;
+    font-size: 20px;
+}
+
+.section-1-paragraph {
+    width: 300px;
+}
+
+.section-1-container-2 {
+    margin: 100px 370px 0 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-1-container-2-title {
+    text-align: center;
+}
+
+.section-1-container-2-little-title {
+    text-align: center;
+}
+
+.section-1-header-right-side-paragraph {
+    margin-left: 270px;
+    text-align: center;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px 0;
+    justify-content: space-evenly;
+}
+
+.timeline-item-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.timeline-title {
+    font-size: 20px;
+    color: black;
+    margin: 20px 0;
+}
+
+.timeline-paragraph {
+    color: gray;
+    width: 500px;
+}
+
+.timeline-line {
+    border: 1px solid #FF5714;
+    height: 500px;
+}
+
+.timeline-item-right-side {
+    margin-top: -100px;
+}   
+
+/* MUHAMMED SAKA */
