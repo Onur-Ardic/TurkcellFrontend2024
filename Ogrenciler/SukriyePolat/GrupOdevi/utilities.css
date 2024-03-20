@@ -52,7 +52,10 @@ img{
     flex: 30%;
 }
 .col-4{
-    flex: 25%;
+    flex: 20%;
+}
+.col-6{
+    flex: 16%;
 }
 
 /* buttons */
@@ -65,6 +68,9 @@ img{
 }
 .btn:hover{
     opacity: .7;
+}
+.btn-block{
+    display: block;
 }
 .btn-secondary{
     background-color: #ff5714;

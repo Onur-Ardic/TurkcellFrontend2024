@@ -1,0 +1,201 @@
+/* General Container Structure */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Column Start */
+
+.container-1-col {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.col-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.col-between-center {
+    justify-content: space-between;
+    align-items: center;
+}
+.col-between-start {
+    justify-content: space-between;
+    align-items: start;
+}
+.col-between-end {
+    justify-content: space-between;
+    align-items: end;
+}
+
+.col-around-center {
+    justify-content: space-around;
+    align-items: center;
+}
+.col-around-start {
+    justify-content: space-around;
+    align-items: start;
+}
+.col-around-end {
+    justify-content: space-around;
+    align-items: end;
+}
+
+.col-evenly-center {
+    justify-content: space-evenly;
+    align-items: center;
+}
+.col-evenly-start {
+    justify-content: space-evenly;
+    align-items: start;
+}
+.col-evenly-end {
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+/* Column End */
+
+/* Row Start*/
+.container-1-row {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.row-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.row-between-center {
+    justify-content: space-between;
+    align-items: center;
+}
+.row-between-start {
+    justify-content: space-between;
+    align-items: start;
+}
+.row-between-end {
+    justify-content: space-between;
+    align-items: end;
+}
+
+.row-around {
+    justify-content: space-around;
+    align-items: center;
+}
+.row-around-start {
+    justify-content: space-around;
+    align-items: start;
+}
+.row-around-end {
+    justify-content: space-around;
+    align-items: end;
+}
+
+.row-evenly {
+    justify-content: space-evenly;
+    align-items: center;
+}
+.row-evenly-start {
+    justify-content: space-evenly;
+    align-items: start;
+}
+.row-evenly-end {
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+/* Row End */
+
+/* Header Start */
+
+.header-text {
+    font-size: 16px;
+    color: white;
+}
+
+.slider-background {
+    background-color: linear-gradient(50deg, #6e00ff, #bb00ff 100%);
+}
+
+/* Header End */
+
+/* NavBar Start */
+
+/* NavBar End */
+
+/* Slider Start */
+
+/* Slider End */
+
+/* Total Cards Start */
+
+/* Total Cards End */
+
+/* About Us Start */
+
+/* About Us End */
+
+/* Why Choose Us Start */
+
+/* Why Choose Us End */
+
+/* Investment Plans Start */
+
+/* Investment Plans End */
+
+/* How Does It Works Start */
+
+/* How Does It Work End */
+
+/* Get Started Area Start */
+
+/* Get Started Area End */
+
+/* Latest Transaction Start */
+
+/* Latest Transaction End */
+
+/* Our Bigest Advantage Start */
+
+/* Our Bigest Advantage End */
+
+/* Our Top 10 Investors Start */
+
+/* Our Top 10 Investors End */
+
+/* What Users Says Start */
+
+/* What Users Says End */
+
+/* Tax & Profit Calculator Start */
+
+/* Tax & Profit Calculator End */
+
+/* FAQ Start */
+
+/* FAQ End */
+
+/* Blog Start */
+
+/* Blog End */
+
+/* Footer Start */
+
+/* Footer End */
+
+/* Copyright Start */
+
+/* Copyright End */
