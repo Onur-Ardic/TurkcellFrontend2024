@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 h2 {
   font-size: 40px;
 }
@@ -20,6 +25,7 @@ p {
   padding-left: 20%;
   padding-right: 20%;
 }
+
 /* :root {
   --main-color: #4c01e0;
   --pane-padding: 5px 42px;
@@ -46,6 +52,11 @@ p {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+nav {
+  height: 67px;
+  width: 100%;
+  background-color: #4c01e0;
 }
 /* .paragraf {
   color: var(--main-color);
