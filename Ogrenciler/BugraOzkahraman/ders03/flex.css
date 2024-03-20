@@ -1,0 +1,20 @@
+.container {
+  background-color: grey;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+h2 {
+  font-size: 35px;
+}
+p {
+  font-size: 25px;
+}
+.box {
+  width: 200px;
+  height: 150px;
+  background-color: aqua;
+}
+@media screen and(max-width: 768px) {
+}
