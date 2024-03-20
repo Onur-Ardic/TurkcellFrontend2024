@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 nav {
+    z-index: 1;
     display: flex;
     /* align-items: center; */
     width: 100%;
@@ -57,7 +58,7 @@ nav {
     justify-content: center; */
     padding: 260px 0;
 }
-/* .section1-filter{
+.section1-filter{
     background-color: rgba(22, 28, 45, 0.75);
     position: absolute;
     top: 0;
@@ -66,9 +67,11 @@ nav {
     bottom: 0;
     width: 100%;
     height: 100%;
-} */
+    width: fit-content;
+    height: fit-content;
+}
 .section1-content{
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -212,49 +215,18 @@ footer{
 
 /* RUMEYSANUR GULTEKIN */
 
-
 /* MUHAMMED SAKA */
-/* body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-ul,
-ol {
-    list-style-type: none;
-}
-
-li {
-    display: inline;
-    font-weight: bold;
-}
-
-a {
+.section-1-list-item-content a {
     text-decoration: none;
     color: white;
     font-size: 12px;
-} */
-
-/* nav {
-    position: absolute;
-    padding: 10px;
-} */
-
+}
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 200px;
 }
-
-/* .container {
-    display: flex;
-    flex-direction: row;
-    margin: 0 370px;
-    padding: 0 12px;
-
-} */
 
 .navbar-items-container {
     display: flex;
