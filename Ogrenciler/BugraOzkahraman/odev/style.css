@@ -122,3 +122,70 @@
 .about-title button:hover {
   background-color: rgb(250, 83, 22);
 }
+.our-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ingredien {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+.ingredien h4 {
+  margin-left: 48%;
+  color: orangered;
+}
+.ingredien h1 {
+  margin-left: 43%;
+}
+.ingredien p {
+  margin-left: 30%;
+  color: #343231;
+  max-width: 630px;
+  line-height: 30px;
+}
+.setting {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+.bir-img {
+  height: 255px;
+  width: 255px;
+  border-radius: 5px;
+}
+.iki-img {
+  height: 255px;
+  width: 255px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.uc-img {
+  height: 255px;
+  width: 255px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.dort-img {
+  height: 255px;
+  width: 255px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.theme {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+}
+.meaning {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #343231;
+}
