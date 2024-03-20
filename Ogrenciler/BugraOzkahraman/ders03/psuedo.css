@@ -1,0 +1,17 @@
+.link:active {
+  color: aqua;
+}
+
+.link {
+  color: rgb(221, 59, 0);
+}
+.text::first-letter {
+  font-size: 50px;
+}
+.text::first-line {
+  color: brown;
+}
+.text::after {
+  content: "ben sona eklenen yazıyım";
+  color: rgb(0, 255, 0);
+}
