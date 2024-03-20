@@ -1,13 +1,24 @@
 /* General Container Structure */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .container {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Colors & Sizes */
+:root {
+    --bg-gradiant: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+    --bg-primary: #001232;
+    --bg-secondary: #032055;
+    --text-primary: #ffffff;
+    --text-secondary: #DBE2FB;
+    --p-size: 16px;
 }
 
 /* Column Start */
@@ -28,10 +39,12 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .col-between-start {
     justify-content: space-between;
     align-items: start;
 }
+
 .col-between-end {
     justify-content: space-between;
     align-items: end;
@@ -41,10 +54,12 @@
     justify-content: space-around;
     align-items: center;
 }
+
 .col-around-start {
     justify-content: space-around;
     align-items: start;
 }
+
 .col-around-end {
     justify-content: space-around;
     align-items: end;
@@ -54,10 +69,12 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
 .col-evenly-start {
     justify-content: space-evenly;
     align-items: start;
 }
+
 .col-evenly-end {
     justify-content: space-evenly;
     align-items: end;
@@ -82,10 +99,12 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .row-between-start {
     justify-content: space-between;
     align-items: start;
 }
+
 .row-between-end {
     justify-content: space-between;
     align-items: end;
@@ -95,10 +114,12 @@
     justify-content: space-around;
     align-items: center;
 }
+
 .row-around-start {
     justify-content: space-around;
     align-items: start;
 }
+
 .row-around-end {
     justify-content: space-around;
     align-items: end;
@@ -108,10 +129,12 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
 .row-evenly-start {
     justify-content: space-evenly;
     align-items: start;
 }
+
 .row-evenly-end {
     justify-content: space-evenly;
     align-items: end;
@@ -120,23 +143,66 @@
 /* Row End */
 
 /* Header Start */
+#header {
+    background: var(--bg-gradiant);
+    height: 50px;
+}
+
+
+
+/* Header End */
+
+/* NavBar Start */
+#nav {
+    width: 100%;
+    height: 100%;
+}
 
 .header-text {
     font-size: 16px;
     color: white;
 }
 
-.slider-background {
-    background-color: linear-gradient(50deg, #6e00ff, #bb00ff 100%);
+.logo {
+    width: 30%;
 }
 
-/* Header End */
+.menu {
+    width: 70%;
+    align-items: center;
+}
 
-/* NavBar Start */
+.menu-item {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
 
+.menu-item:active {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.menu-item:hover {
+    cursor:grab;
+}
+.menu-button {
+    height: 30px;
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--bg-secondary);
+    color: white;
+}
+.menu-button:hover {
+    background: var(--bg-gradiant);
+}
 /* NavBar End */
 
 /* Slider Start */
+#slider {
+    height: 700px;
+    background: var(--bg-gradiant);
+}
 
 /* Slider End */
 
