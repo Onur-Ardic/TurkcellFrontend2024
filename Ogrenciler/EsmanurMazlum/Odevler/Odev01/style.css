@@ -163,13 +163,9 @@
 
 }
 
-.container-img {
-
-}
-
-.video-img{
+.video-img {
   border-radius:10px;
-  width: 100%;
+  height: 451px;
 }
 
 .section .container .container-text {
@@ -200,6 +196,128 @@
   border-radius: 6px;
   font-size: 16px;
 }
+
+/* Section Services Content Start*/
+    
+.services {
+  background-color: #ffffff;
+  padding: 100px 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.content-right {
+  color: #8492a6;
+  max-width: 600px;
+}
+
+.content-right p {
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.content-left {
+  max-width: 600px;
+}
+
+.content-left h6 {
+  color: #ff5714;
+  font-size: 15px;
+  margin-bottom: 0.6rem;
+}
+
+.content-left h4 {
+  letter-spacing: 0.5px;
+  font-size: 28px;
+}
+/* Section Services Content End*/
+/* Section Services Cards Start*/
+
+.cards {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.cards .card {
+  width: 330px;
+  height: 300px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  padding: 1rem;
+  text-align: start;
+  transition: all 0.5s ease;
+  margin: 0;
+}
+
+.cards .card:nth-child(even) {
+  box-shadow: 0 25px 25px rgba(36, 39, 44, 0.05);
+}
+
+.cards .card .card-content {
+  margin-top: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.cards .card-content p {
+  color: #8492a6;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.cards .card .card-content a {
+  color: #24272c;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.cards .card:hover {
+  box-shadow: 0 25px 25px rgba(36, 39, 44, 0.05);
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.cards .card-icon {
+  background-color: #ffede3;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  margin-bottom: 20px;
+  height: 85px;
+  width: 85px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards .card .card-content .card-link {
+  padding-top: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.cards .card .card-content .card-link a {
+  color: #24272c;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+/* Section Services Cards End*/
 
 /* ! -------------- Our Team Start ------------- */
 .our-team {
