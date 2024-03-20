@@ -501,7 +501,6 @@
 }
 .pricingSection {
     margin-top: 600px;
-    text-align: center;
 }
 .pricingContainer{
     display: flex;
@@ -524,17 +523,61 @@
 }
 .rowCards{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 50px;
 }
 .cardInfo{
     border: 1px solid rgb(220, 218, 218);
-    margin: 40px 50px;
-    padding-left: 50px;
+    border-radius: 10px;
+    margin: 40px 30px;
+    padding: 40px 30px 40px 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    width: 300px;
 }
 .cardInfo ul li{
     list-style-type: none;
+}
+.cardInfo h5{
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.price{
+    margin-bottom: 1.5rem;
+}
+.spanPrice{
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+    font-weight: 600;
+}
+.number{
+    font-size: 42px;
+}
+.cardFeature{
+    color: #8492a6;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+.getStarted{
+    background-color: rgba(255, 87, 20, 0.1) !important;
+    border: 1px solid rgba(255, 87, 20, 0.1) !important;
+    color: #ff5714 !important;
+    box-shadow: 0 3px 5px 0 rgba(255,87,20,0.1);
+    padding: 10px 20px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    
 }
