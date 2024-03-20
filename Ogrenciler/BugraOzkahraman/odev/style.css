@@ -132,19 +132,18 @@
   flex-direction: column;
   gap: 20px;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 40px;
 }
 .ingredien h4 {
-  margin-left: 48%;
+  text-align: center;
   color: orangered;
 }
 .ingredien h1 {
-  margin-left: 43%;
 }
 .ingredien p {
-  margin-left: 30%;
-  color: #343231;
+  text-align: center;
+  color: grey;
   max-width: 630px;
   line-height: 30px;
 }
@@ -154,10 +153,24 @@
   justify-content: center;
   margin-top: 50px;
 }
+.setting h1 {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+}
+.setting p {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: #343231;
+}
 .bir-img {
   height: 255px;
   width: 255px;
   border-radius: 5px;
+}
+.bir-img:hover {
+  cursor: pointer;
 }
 .iki-img {
   height: 255px;
@@ -177,15 +190,14 @@
   margin-left: 20px;
   border-radius: 5px;
 }
-.theme {
+.sponsored {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  margin-top: 100px;
+  align-items: center;
+  margin-top: 75px;
+  gap: 125px;
 }
-.meaning {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  color: #343231;
+.sponsored img {
+  width: 75px;
+  height: 25px;
 }
