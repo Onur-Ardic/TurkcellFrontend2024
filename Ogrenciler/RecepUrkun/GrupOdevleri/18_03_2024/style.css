@@ -1,0 +1,731 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .body {
+    color: rgba(22, 28, 45, 0.75);
+    box-shadow: 20px;
+    transition-duration: 0.3s;
+    opacity: 0.9; 
+} */
+
+/*HOME SECTION*/
+.homeSection::before {
+    background-color: rgba(22, 28, 45, 0.75);
+    opacity: 0.1;
+    box-shadow: 20px;
+    transition-duration: 0.3s;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    color: white;
+}
+
+.bg-image {
+    background-image: url("https://shreethemes.in/upstart/layouts/images/bg/1.jpg");
+    width: 100% !important;
+    background-size: cover !important;
+}
+
+.Upstart {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 25%;
+    height: 2cm;
+    color: aliceblue;
+}
+
+.navbar {
+    display: flex;
+    align-items: baseline;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    list-style-type: none;
+    font-size: 14px;
+    color: aliceblue;
+    letter-spacing: 0.05rem;
+    gap: 30px;
+    justify-content: flex-start;
+    padding-bottom: 12px;
+    cursor: pointer;
+}
+
+.LogoImages {
+    display: flex;
+    align-content: center;
+    align-items: baseline;
+    width: 20px;
+    gap: 5px;
+}
+
+.LogoUpstart {
+    width: 25%;
+}
+
+.content {
+    margin-top: 200px;
+    margin-left: 80px;
+}
+
+.content .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.headingTitle {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 42px;
+    color: white;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+}
+
+.headingText {
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn {
+    margin-top: 30px;
+    margin-bottom: 300px;
+}
+
+.headingBtn {
+    padding: 10px 20px;
+    font-family: "Roboto", sans-serif;
+    background-color: #ff5714 !important;
+    border: 1px solid #ff5714 !important;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.headingBtn:hover {
+    background-color: #ce3c02;
+    transition: all 0.3s;
+}
+
+.storySection {
+    background-color: #f8f9fc !important;
+}
+
+/*HOME SECTION END*/
+
+/*STORY SECTION*/
+.storySection .container {
+    display: flex;
+    gap: 40px;
+}
+
+.infoImg {
+    width: 450px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 100px 60px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 60px;
+}
+
+.info .title {
+    font-family: "Roboto Slab", serif;
+}
+
+.infoTitle1 {
+    font-size: 15px;
+    color: #ff5714;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.infoTitle2 {
+    font-size: 28px !important;
+    margin-bottom: 1.5rem !important;
+    font-weight: 600 !important;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem !important;
+}
+
+.infoText {
+    color: #8492a6 !important;
+    opacity: 1;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+.infoBtn {
+    padding: 10px 20px;
+    color: white;
+    background-color: #ff5714;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+
+.infoBtn:hover {
+    background-color: #f24703;
+    transition: all 0.3s;
+}
+
+/*STORY SECTION END*/
+
+/*SERVICES SECTION*/
+.servicesSection {
+    background-color: white;
+    margin: 100px 60px 300px 60px
+}
+
+.containerItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerItems .topbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title1 {
+    color: #ff5714;
+    font-size: 15px;
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.title2 {
+    letter-spacing: 0.5px;
+    font-size: 28px;
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.containerItems .paragraph {
+    color: #8492a6;
+    max-width: 600px;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px 20px;
+    padding: 20px 30px;
+    border: 1px solid hidden;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 3px #f8f5f5;
+    cursor: pointer;
+}
+
+.icon {
+    width: 85px;
+    height: 85px;
+    background-color: #fadfd4;
+    border-radius: 10px;
+    font-size: 30px;
+    color: #ff5714;
+}
+
+.boxTitle {
+    color: #24272c;
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.boxTitle:hover {
+    color: #f24703;
+    transition: all 0.5s
+}
+
+.boxText {
+    color: #8492a6;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.boxTag {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #2f333a;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.boxTag:hover {
+    color: #f24703;
+    transition: all 0.5s
+}
+
+.containerItems .bottom-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px;
+    gap: 20px;
+}
+
+.bottomTitle1 {
+    margin: 0 auto;
+    font-weight: 600;
+    color: #ff5714;
+    font-size: 15px;
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+}
+
+.bottomTitle2 {
+    color: #2f333a;
+    letter-spacing: 0.5px;
+    font-size: 28px;
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.bottomText {
+    color: #8492a6;
+    max-width: 600px;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.mapImg {
+    width: 250px;
+    height: 250px;
+}
+
+.map .row {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.mapInfo {
+    margin: 20px 100px;
+}
+
+.mapInfo h4 {
+    transition: all 0.2s;
+    margin-bottom: .25rem;
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.mapInfo p {
+    color: #8492a6;
+    margin-top: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+}
+
+/*SERVICES SECTION END*/
+
+/*POTFOLIO SECTION*/
+.PortfolioMS {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 600px;
+}
+
+.infoPortfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+}
+
+.infoPortfolio .title1 {
+    text-align: center;
+}
+
+.infoPortfolio .paragraph {
+    color: #8492a6;
+    max-width: 600px;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.ImagePortfolio {
+    object-fit: cover;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 45% !important;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.ImagePortfolioSection {
+    margin-top: 60px;
+}
+
+.imageItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40% !important;
+    height: 100px;
+    gap: 20px;
+}
+
+.portfolioFooter {
+    width: 100%;
+    margin-top: 250px;
+}
+
+.portfolioContainer {
+    background-image: url("https://shreethemes.in/upstart/layouts/images/bg/cta.png");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    margin: 100px 0;
+    position: relative;
+}
+
+.rowContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.rowContent h4 {
+    letter-spacing: 0.5px;
+    font-size: 28px;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.bg-overlay {
+    background-color: rgba(22, 28, 45, 0.75);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.rowContent p {
+    max-width: 600px;
+    line-height: 1.6;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #8492a6;
+    z-index: 2;
+}
+
+.rowContent a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    border-radius: 6px;
+    background-color: #ff5714 !important;
+    border: 1px solid #ff5714 !important;
+    color: white;
+    box-shadow: 0 3px 5px 0;
+    z-index: 2;
+    font-family: "Roboto", sans-serif;
+}
+
+.pricingSection {
+    margin-top: 600px;
+}
+
+.pricingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricingInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+}
+
+.pricingInfo .paragraph {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: #8492a6;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.rowCards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.cardInfo {
+    border: 1px solid rgb(220, 218, 218);
+    border-radius: 10px;
+    margin: 40px 12px;
+    padding: 40px 30px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    width: 320px;
+}
+
+.cardInfo:hover {
+    box-shadow: 0 5px 13px rgba(36, 39, 44, 0.2) !important;
+    transform: translateY(-10px);
+
+}
+
+.cardInfo ul li {
+    list-style-type: none;
+}
+
+.cardInfo h5 {
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.price {
+    margin-bottom: 1.5rem;
+}
+
+.spanPrice {
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.dolar {
+    position: relative;
+    top: -22px;
+    left: 3px;
+    font-size: 18px;
+}
+
+.number {
+    font-size: 42px;
+}
+
+.cardFeature {
+    color: #8492a6;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.getStarted {
+    background-color: rgba(255, 87, 20, 0.1) !important;
+    border: 1px solid rgba(255, 87, 20, 0.1) !important;
+    box-shadow: 0 3px 5px 0 rgba(255, 87, 20, 0.1);
+    color: #ff5714 !important;
+    box-shadow: 0 3px 5px 0 rgba(255, 87, 20, 0.1);
+    padding: 10px 20px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.getStarted:hover {
+    background-color: #ff5714 !important;
+    border-color: #ff5714 !important;
+    color: #fff !important;
+}
+
+.ourTeamSection {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f8f9fc !important;
+}
+
+.ourTeamCardInfo {
+    margin: 40px 12px 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    width: 216px;
+    border: none;
+    box-shadow: 0 5px 13px rgba(36, 39, 44, 0.2);
+}
+
+.ourTeamCardInfo img {
+    border-radius: 5px;
+}
+
+.projectContainer {
+    margin-top: 3rem;
+    width: 960px;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden !important;
+    font-size: 15px;
+    color: #24272c;
+}
+
+.ourTeamRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 960px;
+    align-items: center;
+}
+
+.ourTeamRow .col-6 {
+    width: 25%;
+    text-align: center;
+}
+
+.ourTeamRow .col-6 h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.special-span {
+    color: #8492a6 !important;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden !important;
+    font-size: 15px;
+}
+
+.ourTeamRow span {
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+}
+
+.sirket_images {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: all 0.5s ease;
+    width: 165px;
+}
+
+.sirket_images .avatar {
+    max-height: 25px;
+}
+
+.rowSirketCards {
+    display: flex;
+}
+
+.sirketCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 12px 0px 12px;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.emailContainer {
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f8f9fc !important;
+}
+
+.bg-footer{
+    background-color: #202942 !important;
+}
+
+.footer{
+    padding: 30px 0;
+}
+
+.text-center{
+    text-align: center;
+}
