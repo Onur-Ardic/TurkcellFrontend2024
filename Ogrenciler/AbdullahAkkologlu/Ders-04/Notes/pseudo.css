@@ -1,0 +1,39 @@
+.link {
+  color: crimson;
+}
+
+.link:active {
+  color: pink;
+}
+
+.link:visited {
+  color: green;
+}
+
+.link:hover {
+  color: blue;
+}
+
+.listItem {
+  list-style-type: none;
+  font-size: 20px;
+  color: crimson;
+}
+
+.listItem:nth-child(3n) {
+  background-color: blue;
+}
+
+.text::first-letter {
+  font-size: 100px;
+  color: blue;
+}
+
+.text::first-line {
+  font-size: 30px;
+  color: green;
+}
+
+.text::after {
+  content: " - The end of the text";
+}

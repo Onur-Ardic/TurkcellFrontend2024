@@ -1,0 +1,353 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: lighter;
+}
+h1 {
+  font-weight: bold;
+}
+.paddingHandler {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.bgImage {
+  background-image: url(./assets/indir.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: cover;
+  min-height: 80vh;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.navLinks {
+  display: flex;
+  gap: 40px;
+}
+.navLinks a {
+  color: rgb(231, 231, 231);
+  text-decoration: none;
+  font-size: large;
+}
+.navLinks a:hover {
+  color: orangered;
+}
+.navImg {
+  width: 150%;
+}
+.landing {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.landing h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+}
+.landing p {
+  color: rgb(228, 228, 228);
+  font-size: xx-large;
+}
+.button {
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: orangered;
+  color: white;
+  font-size: larger;
+  border: none;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: rgb(204, 54, 0);
+  cursor: pointer;
+}
+.landing h1 span {
+  border-bottom: 5px solid yellow;
+}
+.about {
+  min-height: 70vh;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  background-color: #f8f9fc;
+}
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.orangeTitle {
+  color: orangered;
+  font-size: x-large;
+  font-weight: bold;
+}
+.aboutText h1 {
+  color: rgb(51, 51, 51);
+  font-size: 50px;
+}
+.aboutText p {
+  color: gray;
+  font-size: x-large;
+}
+.aboutImg img {
+  border-radius: 20px;
+}
+.whatWeDo {
+  padding-top: 50px;
+}
+.whatWeDoTitle {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.whatWeDoTitle h1 {
+  font-size: 35px;
+  font-weight: normal;
+}
+.whatWeDoTitle p {
+  font-size: x-large;
+  color: gray;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  border-radius: 30px;
+  width: 30%;
+  min-width: 300px;
+  height: 350px;
+  padding: 20px;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.card img {
+  background-color: #ffeee7;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.card h1 {
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: x-large;
+}
+.card p {
+  color: gray;
+  margin-bottom: 25px;
+  font-size: large;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+}
+
+.card a:hover {
+  color: orangered;
+  border-bottom: 1px solid orangered;
+}
+
+.texts {
+  text-align: center;
+}
+.texts p {
+  color: gray;
+  font-size: large;
+  margin-top: 20px;
+}
+.texts h1 {
+  margin-top: 20px;
+}
+.cizgi {
+  border: 1px dashed gray;
+  width: 2px;
+  height: 1300px;
+  margin: 0px 25px;
+}
+.workProcess {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.workProcessLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 48%;
+  justify-content: space-around;
+}
+.workProcessRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 48%;
+  justify-content: space-around;
+}
+.workProcessTitle {
+  color: gray;
+  font-size: large;
+  margin-top: 15px;
+}
+.portfolio {
+  margin-top: 30px;
+  background-color: #f8f9fc;
+  padding-top: 40px;
+}
+.portfolioCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+.portfolioCard {
+  border-radius: 10px;
+  width: 20%;
+  min-width: 250px;
+  height: 250px;
+  padding: 20px;
+  background-image: url(./assets/work.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.portfolioCard:hover {
+  filter: grayscale(50%);
+}
+.webProject {
+  margin-top: 100px;
+  background-image: url(./assets/indir.png);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: cover;
+  margin-bottom: 100px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.webProject p {
+  font-size: larger;
+  color: gray;
+}
+.planCard {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.planCard h1 {
+  font-size: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.planCard .button {
+  margin-top: 35px;
+  width: 100%;
+  color: orangered;
+  background-color: rgb(254, 225, 214);
+}
+
+.ourTeam {
+  margin-top: 100px;
+  padding-top: 100px;
+  background-color: #f8f9fc;
+}
+
+.ourTeamCard {
+  border-radius: 10px;
+  width: 20%;
+  min-width: 250px;
+  height: 250px;
+  padding: 20px;
+  background-image: url(./assets/about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1800px) {
+  .navLinks {
+    display: none;
+  }
+  .paddingHandler {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .paddingHandler {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .landing h1 {
+    font-size: xx-large;
+  }
+  .landing p {
+    font-size: x-large;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .aboutImg img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .whatWeDoTitle {
+    flex-direction: column;
+  }
+}
+
+.logo img {
+  height: 30px;
+  width: 130px;
+}
+.footer {
+  margin-top: 20px; /*footer kısmını rahat görebilmek için yazdım. Proje tamamlanınca silebiliriz!*/
+  background-color: #202942;
+  height: 100px;
+  color: #d1d7e6b0;
+  font-size: large;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-title img {
+  height: 20px;
+}
+a img {
+  height: 40px;
+  padding: 5px;
+  border: 0.5px solid rgb(107, 106, 106);
+  border-radius: 10px;
+}
+
+.footer-links {
+  display: flex;
+}
