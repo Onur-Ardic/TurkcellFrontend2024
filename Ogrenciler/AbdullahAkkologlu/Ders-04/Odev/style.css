@@ -32,7 +32,7 @@ h1 {
 .navLinks a {
   color: rgb(231, 231, 231);
   text-decoration: none;
-  font-size: x-large;
+  font-size: large;
 }
 .navLinks a:hover {
   color: orangered;
@@ -109,6 +109,7 @@ h1 {
 .whatWeDoTitle {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 .whatWeDoTitle h1 {
   font-size: 35px;
@@ -128,7 +129,8 @@ h1 {
 
 .card {
   border-radius: 30px;
-  width: 450px;
+  width: 30%;
+  min-width: 300px;
   height: 350px;
   padding: 20px;
 }
@@ -221,7 +223,8 @@ h1 {
 }
 .portfolioCard {
   border-radius: 10px;
-  width: 320px;
+  width: 20%;
+  min-width: 250px;
   height: 250px;
   padding: 20px;
   background-image: url(./assets/work.jpg);
@@ -278,7 +281,8 @@ li {
 
 .ourTeamCard {
   border-radius: 10px;
-  width: 320px;
+  width: 20%;
+  min-width: 250px;
   height: 250px;
   padding: 20px;
   background-image: url(./assets/about.jpg);
@@ -342,4 +346,8 @@ a img {
   padding: 5px;
   border: 0.5px solid rgb(107, 106, 106);
   border-radius: 10px;
+}
+
+.footer-links {
+  display: flex;
 }
