@@ -1,0 +1,54 @@
+.link{
+    color: yellowgreen;
+}
+
+.link:active{
+    color: rgb(94, 60, 60);
+}
+
+.link:visited{
+    color: orange;
+}
+
+.link:hover{
+    color: blueviolet;
+}
+
+.listItem {
+    list-style-type: none;
+    font-size: 18px;
+    color: yellowgreen;
+}
+
+/* .listItem:first-child{
+    color: brown;
+} */
+
+/* .listItem:nth-child(even){
+    color: brown;
+} */
+
+/* .listItem:nth-child(2n-1){
+    color: brown;
+} */
+
+.listItem:nth-child(-n+4){
+    color: brown;
+}
+
+/* psuedo */
+
+.text::first-letter{
+    font-size: 50px;
+}
+
+.text::first-line{
+    color: blue;
+}
+
+.text::after{
+    content: "Sona eklendim";
+}
+.text::before{
+    content: "Başa eklendim";
+}

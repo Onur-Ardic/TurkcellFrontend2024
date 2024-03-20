@@ -1,0 +1,35 @@
+.bgImage {
+    background-image: url("https://img.vivense.com/1920x1280/images/65b230d21b784804929a28444cf6e45e.jpg");
+    width: 500px;
+    height: 300px;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: cover;
+    color: crimson;
+}
+.title{
+    font-size: 30px;
+}
+.paragraf{
+    font-size: 24px;
+}
+@media screen and(max-width: 768px) {
+    .title{
+        font-size: 24px;
+    }
+    .paragraf{
+        font-size: 18px;
+    }
+    .bgImage{
+        width: 300px;
+        height: 150px;
+        color: greenyellow;
+    }
+}
+.box {
+    height: 250px;
+    width: 250px;
+    background-color: purple;
+    border: 1px solid purple;
+    border-radius: 20px;
+}
