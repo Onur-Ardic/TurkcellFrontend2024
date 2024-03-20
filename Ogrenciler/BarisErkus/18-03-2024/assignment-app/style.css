@@ -434,10 +434,35 @@ nav {
     margin-top: 50px;
 }
 
+/* Section - 8 */
+
+.section-8 {
+    padding: 100px 0;
+}
+
 .section-8-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+
+}
+
+.section-8-content-item-image {
+    width: 356px;
+    height: 222px;
+}
+
+.section-8-content-item {
+    box-shadow: #0000001A 0px 0px 10px 0px;
+}
+
+.section-8-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
