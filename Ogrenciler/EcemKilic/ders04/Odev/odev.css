@@ -1,3 +1,16 @@
+/* .baslangic {
+    
+}
+.navbar .sticked {
+    background-color: white;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+} */
 .container {
     background-color: white;
     width: 100%;
@@ -43,6 +56,18 @@
     position:absolute;
     background-size: cover;
     background-attachment:local;
+}
+.bg-overlay {
+    background-color: rgba(22, 28, 45, 0.75);
+    position: absolute;
+    opacity: 0.9;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0.003;
 }
 .second-h1 {
     color: white;
@@ -143,6 +168,11 @@
 .box {
     box-sizing: border-box;
     margin-bottom: 100px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 6px;
+    box-shadow: 0 0 3px rgba(36,39,44,0.15) !important;
+    padding: 3rem 1.5rem 3rem 1.5rem;
+    margin-bottom: 2.5rem;
 }
 .link4 {
     font-size: 18px;
