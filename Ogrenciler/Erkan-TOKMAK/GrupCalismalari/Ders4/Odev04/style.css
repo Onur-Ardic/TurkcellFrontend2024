@@ -387,3 +387,98 @@ h3 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+/* Section 8 */
+.section8-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.section8-heading-h2 {
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.section8-heading-p {
+  color: #8492a6;
+  font-size: 16px;
+  text-align: center;
+}
+.section8-team {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.team-image {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.section8-content {
+  position: relative;
+}
+
+.section8-content-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  width: 230px;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section8-content:hover .section8-content-text {
+  visibility: visible;
+  opacity: 1;
+  background: white;
+}
+.section8-content-text-p {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.section8-values {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.section8-values-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-image {
+  width: 75px;
+  height: 25px;
+}
+.section8-companies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.section8-values-content p {
+  color: #8492a6;
+  font-size: 16px;
+  margin-top: 10px;
+}
