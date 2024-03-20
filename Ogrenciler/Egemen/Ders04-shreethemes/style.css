@@ -212,7 +212,180 @@ footer{
 
 /* RUMEYSANUR GULTEKIN */
 
-/* MUHAMMED SAKA */
 
+/* MUHAMMED SAKA */
+/* body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+} */
+
+/* nav {
+    position: absolute;
+    padding: 10px;
+} */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+}
+
+/* .container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 370px;
+    padding: 0 12px;
+
+} */
+
+.navbar-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-item-list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.navbar-left-item-list {
+    margin-left: 200px;
+}
+
+.navbar-right-item {
+    gap: 10px;
+}
+
+/* Section - 1 */
+.section-1 {
+    padding: 100px 0;
+}
+
+.section-1-container {
+    margin: 0 370px;
+}
+
+.section-1-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.section-1-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.section-1-list-item {
+    padding: 24px;
+    width: 308px;
+    height: 266px;
+    box-shadow: 0px 0px 10px 0px #0000001A;
+    border-radius: 10%;
+}
+
+.shape {
+    border-radius: 20%;
+    background-color: #FF57141A;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 30px;
+}
+
+.section-1-list-item-content-link {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.section-1-list-item-footer-link {
+    color: black;
+    font-size: 20px;
+}
+
+.section-1-paragraph {
+    width: 300px;
+}
+
+.section-1-container-2 {
+    margin: 100px 370px 0 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-1-container-2-title {
+    text-align: center;
+}
+
+.section-1-container-2-little-title {
+    text-align: center;
+}
+
+.section-1-header-right-side-paragraph {
+    margin-left: 270px;
+    text-align: center;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px 0;
+    justify-content: space-evenly;
+}
+
+.timeline-item-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.timeline-title {
+    font-size: 20px;
+    color: black;
+    margin: 20px 0;
+}
+
+.timeline-paragraph {
+    color: gray;
+    width: 500px;
+}
+
+.timeline-line {
+    border: 1px solid #FF5714;
+    height: 500px;
+}
+
+.timeline-item-right-side {
+    margin-top: -100px;
+}   
 
 /* MUHAMMED SAKA */
