@@ -144,9 +144,8 @@
 
 /* Header Text End */
 
-/* Who Are We Start */
+/* About Start */
 
- 
 .section {
   padding: 100px 0px;
   background-color:#f8f9fc;
@@ -196,6 +195,8 @@
   border-radius: 6px;
   font-size: 16px;
 }
+
+/* About End */
 
 /* Section Services Content Start*/
     
@@ -318,6 +319,141 @@
   transition: all 0.5s ease;
 }
 /* Section Services Cards End*/
+
+/* ? Plans Start */
+
+.plans {
+  padding: 100px 0px;
+  background-color: #fff;
+}
+
+.plans .content{
+  flex-direction: column;
+}
+
+.col {
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 24px;
+}
+
+.col h6 {
+  color: #ff5714;
+  font-size: 15px;
+  margin: 0 0 18px;
+  font-weight: 600px;
+  line-height: 1.5;
+}
+
+.col h4 {
+  font-size: 28px;
+  margin: 0 0 16px;
+}
+
+.col p {
+  color: #8492a6;
+  width: 55%;
+  margin: 0 258px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+/* * Plans Card Start */
+
+.row{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 12px;
+}
+
+.row .card {
+  height: 400px;
+  padding: 48px 24px;
+  padding: 3rem 1.5rem;
+  box-shadow:0 0 3px rgba(36,39,44,0.15);
+  border: 1px solid black;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  margin: 15px;
+}
+
+.row .card:hover{
+  box-shadow:0 5px 13px rgba(36,39,44,0.2) !important;
+  transform: translateY(-10px);
+  transition: all 0.5s ease 0s;
+}
+
+
+.row .card h5 {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+.row .card .price {
+  display: flex;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.row .card .price .money {
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+.row .card .price .number {
+  font-size: 42px;
+  font-family: "Roboto Slab",serif;
+  margin-bottom: 0;
+}
+
+.row .card .price .mo {
+  font-size: 18px;
+  font-family: "Roboto Slab",serif;
+  margin-bottom: 0.25rem;
+  align-self: flex-end;
+}
+
+.card .features li{
+  color: #8492a6;
+  margin-bottom: 0.7rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.card .features span {
+  margin-right: 0.5rem;
+}
+
+.card .get-started {
+  background-color: rgba(255, 87, 20, 0.1);
+  border:1px solid rgba(255, 87, 20, 0.1);
+  color:#ff5714;
+  box-shadow: 0 3px 5px 0 rgba(255, 87, 20, 0.1);
+  padding: 8px 20px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  display: block;
+  align-self: flex-end;
+  text-align: center;
+  margin: 24px 0px 0px;
+}
+
+.card .get-started:hover {
+  background: #ff5714;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+/* * Plans Card End */
+
+
+/* ? Plans End */
 
 /* ! -------------- Our Team Start ------------- */
 .our-team {
