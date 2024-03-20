@@ -1,0 +1,44 @@
+
+.portfolio {
+  
+  text-align: center;
+  color: #ff5714;
+  font-size: 10px;
+  font-family: "Roboto Slap",serif;
+  line-height: 1.5;
+  margin: 60px;
+}
+
+.header {
+  text-align: center;
+  margin-top: -50px;
+  letter-spacing: 0.5px;
+  font-family: "Roboto Slap",serif;
+}
+
+.p {
+  text-align: center;
+  color: #8492a6;
+  margin-bottom: 0;
+}
+
+.photos {
+  margin-top: 1.5rem;
+  padding-top: 0.5rem; 
+  border-radius: 10px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.photos img {
+  width: 250px;
+  height: 180px;
+  border-radius: 10px; 
+  
+}
+
+
