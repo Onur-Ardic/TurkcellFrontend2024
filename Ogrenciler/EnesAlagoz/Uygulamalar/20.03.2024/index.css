@@ -1,0 +1,73 @@
+.static-element{
+    position: static;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(31, 133, 168);
+    margin: 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.relative-container {
+    position: relative;
+    height: 120px;
+    width: 190px;
+    background-color: lightgreen;
+    margin: 40px 40px;
+}
+
+.relative-element {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    height: 80px;
+    background-color: lightcoral;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.absolute-container {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(169, 140, 94);
+    margin: 40px 60px;
+
+}
+
+.absolute-element {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 150px;
+    height: 80px;
+    background-color: rgb(136, 184, 120);
+    display: flex;
+    justify-content: center;
+align-items: flex-start;
+    font-weight: bold;
+}
+.fixed-container {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(208, 104, 104);
+}
+
+.fixed-element {
+    position: fixed;
+    bottom: 20px;
+    left: 250px;
+    width: 240px;
+    height: 120px;
+    background-color: lightsalmon;
+    display:  flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: bold;
+    font-style: italic;
+    color: blue;
+    font-size: 30px;
+}
