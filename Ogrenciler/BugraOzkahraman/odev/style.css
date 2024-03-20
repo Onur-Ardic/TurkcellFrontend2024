@@ -82,6 +82,8 @@
   text-decoration: underline yellow;
 }
 
+/* About Section */
+
 .about-img {
   width: 400px;
   height: 400px;
@@ -122,6 +124,8 @@
 .about-title button:hover {
   background-color: rgb(250, 83, 22);
 }
+/* About end */
+
 .our-title {
   display: flex;
   justify-content: center;
