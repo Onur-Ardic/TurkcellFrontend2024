@@ -623,53 +623,53 @@ h3 {
 }
 
 /* SECTION 10 */
-.section-on-item{
-width: 49%;
-height: 50px;
-margin-bottom: 20px;
-border-radius: 10px;
-border:0.5px solid gray; 
-padding-left: 10px;
-}
-.section-on-item2{
+.section-on-item {
   width: 49%;
   height: 50px;
   margin-bottom: 20px;
   border-radius: 10px;
-  border:0.5px solid gray; 
+  border: 1px solid #dee2e6;
   padding-left: 10px;
 }
-.section-on-item3{
+.section-on-item2 {
+  width: 49%;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #dee2e6;
+  padding-left: 10px;
+}
+.section-on-item3 {
   width: 100%;
   height: 50px;
   margin-bottom: 20px;
   border-radius: 10px;
-  border:0.5px solid gray; 
+  border: 1px solid #dee2e6;
   padding-left: 10px;
 }
-.section-on-item4{
+.section-on-item4 {
   width: 100%;
   height: 100px;
   margin-bottom: 20px;
   border-radius: 10px;
-  border:0.5px solid gray; 
+  border: 1px solid #dee2e6;
   padding-left: 10px;
 }
 
-.input-group{
+.input-group {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.section10-content{
+.section10-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.section10-info{
+.section10-info {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -677,51 +677,46 @@ padding-left: 10px;
   height: 350px;
 }
 
-.section10-form{
-display: flex;
-height: 400px;
-padding: 50px;
-flex-direction: column;
-justify-content: space-around;
-width: 70%;
-background-color: white;
- border:0.5px solid whitesmoke; 
-border-radius: 10px;
+.section10-form {
+  display: flex;
+  height: 400px;
+  padding: 50px;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 3px rgba(36, 39, 44, 0.15);
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
- 
 }
 
-.sc10-bg{
-  background-color: #F8F9FC;
+.sc10-bg {
+  background-color: #f8f9fc;
 }
 
-
-.sct-title{
-margin-left:20px ;
+.sct-title {
+  margin-left: 20px;
 }
 
-
-.section10{
+.section10 {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.section10-info-p{
-color: #8492a6;
-margin-top: 10px;
+.section10-info-p {
+  color: #8492a6;
+  margin-top: 10px;
 }
 
-.section10-info-content{
+.section10-info-content {
   display: flex;
   flex-direction: row;
   align-items: start;
   justify-content: space-between;
-
-
 }
