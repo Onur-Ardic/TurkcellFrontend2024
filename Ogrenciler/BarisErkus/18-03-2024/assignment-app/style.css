@@ -159,7 +159,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1%;
+    gap: 2%;
 }
 
 .section-3-list-item {
@@ -168,6 +168,7 @@ nav {
     height: 266px;
     box-shadow: 0px 0px 10px 0px #0000001A;
     border-radius: 10%;
+    margin-bottom: 20px;
 }
 
 .shape {
