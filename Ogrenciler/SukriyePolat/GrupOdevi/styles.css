@@ -88,3 +88,41 @@
 #section-a .process-reverse .process-right {
     text-align: end;
 }
+/* Portfolio */
+#portfolio .content{
+    width: 60%;
+    margin: 0 auto;
+}
+#portfolio img{
+    width: 100%;
+}
+/* section-b */
+#section-b{
+    background-image: linear-gradient(to bottom,rgba(22,28,45,0.75),rgba(22,28,45,0.75)), 
+    url("images/cta.png"); 
+    padding: 50px;
+    color: #fff;
+  background-position: center;
+  height: 380px;
+
+}
+/* Pricing */
+#pricing #plans h2{
+  margin-bottom: 20px;
+}
+#pricing #plans h1{
+ display: inline-block;
+ font-size: 4rem;
+}
+#pricing #plans i{
+    vertical-align: top;
+    margin-right: 10px;
+    font-size: 20px;
+}
+#pricing #plans li{
+    margin: 10px 0;
+}
+#pricing #plans button{
+    margin: 30px 0 10px;
+    width: 100%;
+}
