@@ -35,7 +35,6 @@
   padding: 1.3rem;
   position: relative;
   z-index: 2;
-
 }
 
 .nav-links {
@@ -146,25 +145,23 @@
 
 /* Who Are We Start */
 
- 
 .section {
   padding: 100px 0px;
-  background-color:#f8f9fc;
+  background-color: #f8f9fc;
   position: relative;
-}              
+}
 
-.section .container .about-wrapper{
+.section .container .about-wrapper {
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-
 }
 
 .video-img {
-  border-radius:10px;
+  border-radius: 10px;
   height: 451px;
 }
 
@@ -179,17 +176,17 @@
   margin: 0 0 8px;
 }
 
-.container-text h4{
+.container-text h4 {
   font-size: 28px;
   margin: 0 0 24px;
 }
 
-.paragraph{
+.paragraph {
   color: #8492a6;
   margin: 0 0 16px;
 }
 
-.btn-buy-now{
+.btn-buy-now {
   background-color: #ff5714;
   padding: 8px 20px;
   color: #fff;
@@ -198,7 +195,7 @@
 }
 
 /* Section Services Content Start*/
-    
+
 .services {
   background-color: #ffffff;
   padding: 100px 0;
@@ -346,7 +343,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .our-team .our-team-image-card .card {
@@ -487,7 +484,7 @@
 }
 
 /* Section Contact Us Start */
-    
+
 .contact {
   background-color: #f8f9fc;
   padding: 100px 0;
@@ -689,4 +686,3 @@
   color: white;
 }
 /*  Footer Us End */
-
