@@ -466,3 +466,53 @@ nav {
     align-items: center;
     margin-top: 50px;
 }
+
+/* Section - 9 */
+
+.section-9 {
+    padding: 100px 0;
+    background-color: #F8F9FC;
+}
+
+.section-9-content {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px
+}
+
+.section-9-left-side {
+    background-color: white;
+    box-shadow: #0000001A 0px 0px 10px 0px;
+    padding: 24px;
+    width: 688px;
+    height: 350px;
+}
+
+.input {
+    border: grey 1px solid;
+    padding: 10px 20px;
+    width: 40%;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.input-subject {
+    width: 90%;
+}
+
+.input-message {
+    margin-top: 10px;
+    width: 90%;
+    height: 100px;
+    margin-bottom: 0;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
