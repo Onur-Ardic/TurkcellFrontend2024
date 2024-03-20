@@ -381,6 +381,10 @@
   color: #000;
 }
 
+.latest-news .blogs-card-wrapper .news-card .btn-news svg {
+  margin-top: 20px;
+}
+
 /* ?Responsive */
 @media (max-width: 768px) {
   .latest-news .blogs-card-wrapper {
