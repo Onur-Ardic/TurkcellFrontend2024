@@ -2981,12 +2981,7 @@ button:not(:disabled) {
 .project .content .title {
   transition: all 0.5s ease;
 }
-.project img,
-.project .overlay-work,
-.project .content,
-.project .icons {
-  transition: all 0.5s ease;
-}
+
 .project .overlay-work,
 .project .content,
 .project .icons {
@@ -3012,9 +3007,7 @@ button:not(:disabled) {
   z-index: 2;
   opacity: 0;
 }
-.project:hover img {
-  transform: scale(1.1) rotate(3deg);
-}
+
 .project:hover .overlay-work {
   opacity: 0.65;
 }
