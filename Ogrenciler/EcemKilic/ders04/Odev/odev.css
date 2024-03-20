@@ -154,6 +154,9 @@
     color: gray;
     font-size: 15px;
 }
+.fiyat {
+    font-size: 20px;
+}
 
 
 
@@ -166,7 +169,7 @@
   }
 .turuncu{
     color:#FF7F24;
-    padding: 2px;    
+    padding: 2px;  
 }
 .gri{
     color:grey;
@@ -175,6 +178,7 @@
 }
 .aciklamaGenislik{
     width: 700px;
+    margin-bottom: 50px;
 }
 .containerR{
     display: flex;
@@ -188,11 +192,13 @@
     height: 100px ;
     flex-direction: column ;
     text-align: center ;
+    margin-top: 50px;
 }
 .containerResim {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 .kucukResim {
     width: 25%; 
@@ -604,4 +610,10 @@
   }
   .boxRight .contact-number .number .number_link{
     color: #8492a6;
+  }
+  .boxRight .contact-number .number .icons {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 20px;
   }
