@@ -601,6 +601,10 @@ button:hover {
   color: #595c5f;
   padding-left: 5px;
 }
+.main-label #subject::placeholder {
+  padding-left: 10px;
+}
+
 .main-label #message {
   height: 100px;
   width: 620px;
@@ -608,6 +612,15 @@ button:hover {
   border-radius: 5px;
   border: 0.1px solid rgb(228, 228, 228);
 }
+
+.main-label #name:focus,
+#mail:focus,
+#subject:focus,
+#message:focus {
+  outline: none;
+  border: 1px solid orangered;
+}
+
 .send-message {
   padding: 10px 20px;
   background-color: orangered;
