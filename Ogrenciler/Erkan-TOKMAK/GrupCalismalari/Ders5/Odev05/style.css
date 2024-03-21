@@ -5,10 +5,23 @@
     box-sizing: border-box;
 }
 
+.width-50 {
+
+    width: 50%;
+}
+
 .container {
-    width: 80%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.h2-size {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
 }
 
 /* Colors & Sizes */
@@ -17,7 +30,7 @@
     --bg-primary: #001232;
     --bg-secondary: #032055;
     --text-primary: #ffffff;
-    --text-secondary: #DBE2FB;
+    --text-secondary: #dbe2fb;
     --p-size: 16px;
 }
 
@@ -145,10 +158,8 @@
 /* Header Start */
 #header {
     background: var(--bg-gradiant);
-    height: 50px;
+    height: 60px;
 }
-
-
 
 /* Header End */
 
@@ -182,9 +193,11 @@
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
+
 .menu-item:hover {
-    cursor:grab;
+    cursor: grab;
 }
+
 .menu-button {
     height: 30px;
     width: 50px;
@@ -193,24 +206,151 @@
     background-color: var(--bg-secondary);
     color: white;
 }
+
 .menu-button:hover {
     background: var(--bg-gradiant);
 }
+
 /* NavBar End */
 
 /* Slider Start */
 #slider {
     height: 700px;
     background: var(--bg-gradiant);
+    padding-bottom: 600px;
+    padding-top: 300px;
+}
+
+.slider-header {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.slider-p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.slider-image {
+    height: 80%;
+    width: 80%;
+}
+
+.slider-form {
+    background-color: #032055;
+    border-radius: 50px;
+    border: none;
+    flex: 1;
+    position: relative;
+    width: 100%;
+}
+
+.slider-input {
+    /* background-color: #032055;
+    color: white;
+    padding: 0px 190px 0px 30px;
+    width: 70%; */
+}
+
+.slider-button {
+    background: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+    border: none;
+    width: 30%;
+    border-radius: 50px;
+    height: 51px;
+    line-height: 51px;
+    padding: 0px 30px;
+    color: #ffffff;
 }
 
 /* Slider End */
 
 /* Total Cards Start */
 
+.icon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 19px;
+    display: inline-block;
+    line-height: 100px;
+}
+#total-cards{
+   margin-top: -180px;
+   margin-bottom: -200px;
+   
+}
+
+.card {
+    background-color: #032055;
+    text-align: center;
+    padding: 30px 30px 27px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
+    height: 350px;
+    /* position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px; */
+
+}
+
+.card-heading {
+    font-size: 40px;
+    line-height: 50px;
+    color: white;
+}
+
+.card-content {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.card-p {
+    font-size: 16px;
+    color: #dbe2fb;
+}
+
 /* Total Cards End */
 
 /* About Us Start */
+#about-us{
+    background-color: var(--bg-primary);
+    margin-top: -200px;
+    padding-top: 350px;
+
+
+}
+.about-p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color:var(--text-secondary)
+}
+
+.about-img{
+    width: 400px;
+    height: 400px;
+    /* position: absolute; */
+    margin-right: 50px;
+}
+
+.h4-about{
+    font-size: 24px;
+    line-height: 34px;
+    color: white;
+}
+
+.p-size{
+    font-size: 16px;
+    color: #dbe2fb;
+}
+
 
 /* About Us End */
 
