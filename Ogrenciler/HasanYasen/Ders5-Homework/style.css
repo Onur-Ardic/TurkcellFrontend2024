@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#home {
+    width: 100%;
+    height: 120vh;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+
+#home .top {
+    height: 80px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+    position: relative;
+    font-weight: bold;
+}
+
+#home .top .logo {
+    position: absolute;
+    left: 15%;
+    top: 32%;
+}
+
+#home .top .logo img {
+    width: 115px;
+    height: 32px;
+}
+
+#home .top .logo:hover {
+    cursor: pointer;
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+#home .top .nav-items {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 60%;
+    font-size: 24px;
+    color: white;
+}
+
+#home .top .nav-items .select svg {
+    padding-top: 8px;
+}
+
+#home .top .nav-items .login button {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px 50px;
+    color: white;
+    background-color: #032055;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .top .nav-items>div:hover {
+    cursor: pointer;
+    color: rgb(189, 197, 203);
+}
+
+#home .top .nav-items button:hover {
+    cursor: pointer;
+    background-color: #8E2DE2;
+}
+
+#home .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    gap: 6.5rem;
+
+    color: white;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#home .bottom .left h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+#home .bottom .left p {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+#home .bottom .left .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+#home .bottom .left .flex input {
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #032055;
+}
+
+#home .bottom .left .flex input::placeholder {
+    color: rgb(228, 228, 228);
+    font-size: 16px;
+}
+
+#home .bottom .left .flex button {
+    width: 32%;
+    height: 45px;
+    border-radius: 50px;
+    padding: 15px 25px;
+    border: none;
+    background-color: #8E2DE2;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    right: 3px;
+    top: 0.5px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .bottom .left .flex button:hover {
+    cursor: pointer;
+    background-color: #7418c6;
+}
+
+#home .bottom .left .flex div {
+    width: 12.5%;
+    height: 55px;
+    border-radius: 50px;
+    padding: 15px;
+    border: none;
+    background-color: #032055;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    right: -70px;
+    top: -4px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .bottom .left .flex div svg {
+    width: 23px;
+    height: 23px;
+}
+
+#home .bottom .left .flex div:hover {
+    cursor: pointer;
+    background-color: rgb(3, 34, 93);
+}
+
+#home .bottom .right img {
+    width: 500px;
+    height: 450px;
+}
