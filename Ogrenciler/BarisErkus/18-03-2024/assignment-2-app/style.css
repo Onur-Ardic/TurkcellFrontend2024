@@ -160,7 +160,7 @@ a {
     gap: 30px;
     /* margin-top: -142px; */
     position: absolute;
-    top: 120%;
+    top: 75%;
     left: 20%;
 }
 
@@ -211,4 +211,11 @@ a {
 /* Section 2 */
 .section-2 {
     background-color: #001232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    height: 1000px;
 }
