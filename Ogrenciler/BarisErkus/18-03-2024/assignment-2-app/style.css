@@ -1,0 +1,152 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #4C01E0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+li {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 380px;
+}
+
+.nav-links ul li {
+    display: inline;
+    padding: 20px;
+}
+
+.nav-links ul a {
+    color: white;
+}
+
+.login {
+    padding: 10px 20px;
+    background-color: #032055;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* Section 1 */
+
+.section-1 {
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    color: white;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0 200px 0;
+    max-width: 1100px;
+}
+
+.section-1-container-left-side {
+    padding: 0 15px;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.section-1-container-right-side {
+    padding: 0 30px;
+}
+
+.section-1-left-side-header {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 19px;
+}
+
+.section-1-left-side-paragraph {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 47px;
+}
+
+.main-input {
+    position: relative;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 50px;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: #032055;
+    font-size: 18px;
+    color: white;
+}
+
+.main-input::placeholder {
+    color: #9CCAF0;
+}
+
+.main-image {
+    width: 480px;
+    height: 491px;
+}
+
+.section-1-left-side-play-button {
+    border-radius: 50%;
+    background-color: #032055;
+    color: #9CCAF0;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-left-side-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+}
+
+.main-button {
+    position: absolute;
+    line-height: 55px;
+    padding: 0 30px;
+    background: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+    border: 0px;
+    border-radius: 50px;
+    cursor: pointer;
+    /* Temp */
+    margin-left: 297px;
+    margin-top: 4px;
+}
+
+.main-button-text {
+    color: white;
+}

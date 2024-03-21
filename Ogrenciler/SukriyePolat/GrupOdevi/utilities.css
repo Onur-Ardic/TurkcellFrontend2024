@@ -45,8 +45,11 @@ img{
 .flex-wrap{
     flex-wrap: wrap;
 }
+.col-1 {
+    flex: 100%;
+}
 .col-2{
-    flex: 50%;
+    flex: 1;
 }
 .col-3{
     flex: 30%;
@@ -57,12 +60,15 @@ img{
 .col-6{
     flex: 16%;
 }
+.col-7 {
+    flex: 2;
+}
 
 /* buttons */
 .btn{
     display: inline-block;
     padding: 10px 20px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     border-radius: 5px;
     border: none;
 }
