@@ -88,3 +88,12 @@
 #section-a .process-reverse .process-right {
     text-align: end;
 }
+/* blogs */
+#blogs #news img{
+    width: 100%;
+}
+#blogs #news .paragraph {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
