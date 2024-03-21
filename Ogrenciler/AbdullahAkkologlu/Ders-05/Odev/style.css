@@ -316,7 +316,99 @@ nav {
   font-size: 30px;
   margin-bottom: 10px;
 }
+.investment {
+  background-color: #001232;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.investmentButtons {
+  display: flex;
+  gap: 20px;
+}
 
+.investmentDailyButton {
+  padding: 12px 30px;
+  color: white;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #8325e0;
+  border: none;
+}
+.investmentWeeklyButton {
+  padding: 12px 30px;
+  color: white;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #001232;
+  border: 1px solid rgba(224, 224, 224, 0.397);
+}
+.investmentPlans {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.investmentPlan {
+  width: 31%;
+  min-width: 300px;
+  background-color: #032055;
+  padding-right: 25px;
+  padding-left: 25px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.investmentPlan button {
+  width: 140px;
+}
+.investmentPlanPercent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 30px;
+  height: 70px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+}
+.work {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.workCards {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.workCard {
+  width: 31%;
+  min-width: 300px;
+  background-color: #032055;
+  padding-right: 25px;
+  padding-left: 25px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
 @media screen and (max-width: 1800px) {
   .paddingHandler {
     padding-left: 10%;
@@ -347,6 +439,12 @@ nav {
     padding-bottom: 20px;
   }
   .chooseIcons {
+    justify-content: center;
+  }
+  .investmentPlans {
+    justify-content: center;
+  }
+  .workCards {
     justify-content: center;
   }
 }
