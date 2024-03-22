@@ -14,3 +14,14 @@ https://flexboxfroggy.com/
 order özelliği - değer alabilir. - değer + değerlerden önce gelir.
 https://www.frontendmentor.io/
 css wars
+
+----
+ödev 2 benim yerim
+start investment
+what user says
+----
+
+seo için sayfaların en başında h1 olmalı 1 tane gerisi
+h2 olabilir
+
+px yerine rem kullanabilirsin

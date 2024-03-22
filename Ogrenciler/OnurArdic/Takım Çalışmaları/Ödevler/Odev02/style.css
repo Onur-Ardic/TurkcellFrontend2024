@@ -13,6 +13,33 @@
   width: 100%;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mt-30 {
+  margin-top: 2rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
 /* !---------------- Header Start -------------------- */
 .header {
   background: rgb(142, 45, 226);
@@ -238,3 +265,35 @@
 }
 
 /* !---------------- Header End -------------------- */
+
+/* !----------------About Us Start------------------ */
+
+.about-card {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.about-card .about-us-card {
+}
+.about-card .about-card-top {
+  width: 100px;
+  height: 100px;
+  background: rgb(74, 0, 224);
+  background: linear-gradient(
+    0deg,
+    rgba(74, 0, 224, 1) 0%,
+    rgba(142, 45, 226, 1) 100%
+  );
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+.about-card .about-card-top i {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+/* !----------------About Us End------------------ */
