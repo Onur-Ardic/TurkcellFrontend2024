@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+.main-div {
+    width: 1000px;
+    height: 600px;
+    text-align: center;
+}
+
+.box-header {
+    background-color: rgb(198, 198, 241);
+    height: 50px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.box-left{
+    background-color: rgb(0, 128, 119);
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding-top: 200px;
+}
+
+.box-right {
+    background-color: rgb(255, 255, 216);
+    width: 800px;
+    height: 200px;
+    float: right;
+    padding-top: 200px;
+}
+
+.box-footer{
+    background-color: rgb(126, 112, 114);
+    height: 100px;
+    padding-top: 100px;
+}
