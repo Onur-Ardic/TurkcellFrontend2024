@@ -277,7 +277,7 @@
 
 .slider-form {
   background-color: #032055;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   border-radius: 50px;
   border: none;
   width: 465px;
@@ -297,8 +297,8 @@
   background: var(--button-gradiant);
   border: none;
   border-radius: 50px;
-  margin-top: 2px;
-  margin-left: 135px;
+  margin: 2px;
+  /* margin-left: 135px; */
   height: 51px;
   line-height: 51px;
   padding: 0px 30px;
@@ -310,7 +310,7 @@
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-left: 20px;
   box-shadow: 0px 0px 20px var(--bg-secondary);
 }
@@ -523,7 +523,7 @@
   margin-bottom: 30px;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
   height: 350px;
-  width: 350px;
+  width: 30%;
   margin-top: 30px;
 }
 .investment-card-h3 {
@@ -533,7 +533,7 @@
   color: white;
 }
 .investment-card-price {
-  width: 300px;
+  width: 90%;
   height: 100px;
   background: var(--bg-gradiant);
   border-radius: 10px;
@@ -608,25 +608,24 @@
 /* FAQ End */
 
 /* Blog Start */
-#blog{
+#blog {
   background: var(--bg-primary);
 }
-.li-latest{
+.li-latest {
   list-style: none;
   color: #ffffff;
   margin-left: 10px;
   padding: 5px;
 }
 
-.top-meta{
-    align-items: start;
-
+.top-meta {
+  align-items: start;
 }
 
-.h4-latest{
+.h4-latest {
   font-family: "Poppins", sans-serif;
-  color:white;
-  font-size:22px;
+  color: white;
+  font-size: 22px;
   margin-top: 0;
   font-weight: bold;
 }
