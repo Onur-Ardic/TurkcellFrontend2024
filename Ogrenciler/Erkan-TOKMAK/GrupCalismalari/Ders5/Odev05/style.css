@@ -178,7 +178,7 @@
   align-items: center;
 }
 .row-center-start {
-  justify-content: scenter;
+  justify-content: center;
   align-items: start;
 }
 .row-center-end {
@@ -398,6 +398,7 @@
 .p-size {
   font-size: 16px;
   color: #dbe2fb;
+  text-align: center;
 }
 
 /* About Us End */
@@ -607,7 +608,28 @@
 /* FAQ End */
 
 /* Blog Start */
+#blog{
+  background: var(--bg-primary);
+}
+.li-latest{
+  list-style: none;
+  color: #ffffff;
+  margin-left: 10px;
+  padding: 5px;
+}
 
+.top-meta{
+    align-items: start;
+
+}
+
+.h4-latest{
+  font-family: "Poppins", sans-serif;
+  color:white;
+  font-size:22px;
+  margin-top: 0;
+  font-weight: bold;
+}
 /* Blog End */
 
 /* Footer Start */
