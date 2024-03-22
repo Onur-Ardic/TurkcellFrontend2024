@@ -23,16 +23,24 @@
     text-align: center;
     color: #ffffff;
 }
+.i-large {
+    font-size:3em;
+}
+.i-medium {
+    font-size:2em;
+}
 
 /* Colors & Sizes */
 :root {
-    --bg-gradiant: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+    --bg-gradiant: linear-gradient(to bottom, #4A00E0, #8E2DE2);
     --bg-primary: #001232;
     --bg-secondary: #032055;
     --text-primary: #ffffff;
     --text-secondary: #dbe2fb;
     --p-size: 16px;
     --icon-active: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    --button-gradiant:linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    --button-gradiant2:linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
 }
 
 /* Column Start */
@@ -250,6 +258,7 @@
     font-size: 50px;
     font-weight: 600;
     line-height: 60px;
+    margin-bottom: 25px;
 }
 
 .slider-p {
@@ -258,35 +267,52 @@
 }
 
 .slider-image {
-    height: 80%;
-    width: 80%;
+    height: 480px;
+    width: 100%;
+    margin-left: 70px;
+}
+.slider-content {
+    height: 300px;
 }
 
 .slider-form {
     background-color: #032055;
+    margin-top: 20px;
     border-radius: 50px;
     border: none;
-    flex: 1;
-    position: relative;
-    width: 100%;
+    width: 465px;
+    height: 55px;
 }
 
 .slider-input {
-    /* background-color: #032055;
+    background-color: #032055;
     color: white;
-    padding: 0px 190px 0px 30px;
-    width: 70%; */
+    font-size: 16px;
+    margin-left: 25px;
+    height: 80%;
+    border: none;
 }
 
 .slider-button {
-    background: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+    background: var(--button-gradiant);
     border: none;
-    width: 30%;
     border-radius: 50px;
+    margin-top: 2px;
+    margin-left: 135px;
     height: 51px;
     line-height: 51px;
     padding: 0px 30px;
     color: #ffffff;
+}
+.slider-icon {
+    background-color: var(--bg-secondary); 
+    color: var(--text-primary);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 20px var(--bg-secondary);
 }
 
 /* Slider End */
@@ -296,12 +322,13 @@
 .icon {
     width: 100px;
     height: 100px;
-    background: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+    background: var(--button-gradiant2);
+    color: white;
     border: none;
     border-radius: 50%;
     margin-bottom: 19px;
     display: inline-block;
-    line-height: 100px;
+    line-height: 130px;
 }
 #total-cards{
    margin-top: -180px;
@@ -347,7 +374,8 @@
 #about-us{
     background-color: var(--bg-primary);
     margin-top: -200px;
-    padding-top: 350px;
+    padding-top: 300px;
+    padding-bottom: 100px;
 
 
 }
