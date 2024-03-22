@@ -732,36 +732,7 @@ nav {
   margin-right: 5px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-html {
-  scroll-behavior: smooth;
-}
-h2 {
-  font-size: 40px;
-  color: white;
-}
-h3 {
-  font-size: 24px;
-  color: white;
-}
-h4 {
-  font-size: 18px;
-  color: white;
-}
-p {
-  font-size: 16px;
-  color: #dbe2fb;
-}
-a {
-  text-decoration: none;
-  color: white;
-}
-
+/*necati*/
 .top10 div{
   width: 100%;
 }
@@ -770,65 +741,6 @@ a {
   font-size: 30px;
 }
 
-/*Geçişli renk için: */
-.fadeEffect {
-  background-image: linear-gradient(#4c01e0, #8325e0);
-}
-.mainColor {
-  color: #4c01e0;
-}
-.darkColor {
-  color: #001232;
-}
-.blueColor {
-  color: #032055;
-}
-.purpleColor {
-  color: #8325e0;
-}
-.paddingHandler {
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-/* :root {
-  --main-color: #4c01e0;
-  --pane-padding: 5px 42px;
-} */
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-
-/* .paragraf {
-  color: var(--main-color);
-} */
-
-.mainColor {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .priceBox {
   width: 350px;
   height: 338.33px;
@@ -846,7 +758,6 @@ a {
   justify-content: space-around;
   gap: 30px;
 }
-
 
 .getStartedButton{
   width: 170px;
@@ -899,7 +810,6 @@ a {
   height: 315px;
 }
 
-
 .about {
   background-color: #001232;
   padding-top: 100px;
@@ -921,7 +831,6 @@ a {
   transition: all 0.3s ease-in;
   position: relative;
 }
-
 
 .buttonNec {
   padding: 16px 25px;
