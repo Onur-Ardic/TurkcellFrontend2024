@@ -29,3 +29,10 @@
 .main-header-content-right img {
   height: 70vh;
 }
+.subscribe-area input{
+  text-decoration-color: none;
+  width: 100%;
+ 
+  color: white;
+
+}
