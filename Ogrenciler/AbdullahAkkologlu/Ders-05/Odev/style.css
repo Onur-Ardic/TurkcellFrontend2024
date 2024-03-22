@@ -806,7 +806,15 @@ nav {
   height: 315px;
 }
 
+<<<<<<< Updated upstream
 .priceRate {
+=======
+<<<<<<< HEAD
+.priceRate{
+=======
+.priceRate {
+>>>>>>> 0ea669bde4de01293a131421701f48f75d4f74b4
+>>>>>>> Stashed changes
   width: 100%;
   text-align: center;
   border-radius: 4px;
@@ -834,16 +842,41 @@ nav {
   height: 80px;
 }
 
+<<<<<<< Updated upstream
+.dailyWeeklyButton {
+=======
+<<<<<<< HEAD
+=======
 .dailyWeeklyButton {
   display: flex;
   justify-content: center;
 }
+>>>>>>> 0ea669bde4de01293a131421701f48f75d4f74b4
 
 .flexCenter {
+>>>>>>> Stashed changes
   display: flex;
   justify-content: center;
 }
 
+<<<<<<< Updated upstream
+.flexCenter {
+=======
+<<<<<<< HEAD
+=======
+.investmentPlans {
+  padding-top: 150px;
+  background-color: #001232;
+>>>>>>> Stashed changes
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding-bottom: 150px;
+}
+
+<<<<<<< Updated upstream
 .investmentPlans {
   padding-top: 150px;
   background-color: #001232;
@@ -855,6 +888,9 @@ nav {
   padding-bottom: 150px;
 }
 
+=======
+>>>>>>> 0ea669bde4de01293a131421701f48f75d4f74b4
+>>>>>>> Stashed changes
 .works {
   padding-top: 150px;
   height: 750px;
@@ -898,12 +934,29 @@ nav {
 }
 
 .advantage {
+<<<<<<< Updated upstream
   text-align: start;
   display: flex;
   justify-content: space-between;
 }
 
 .insideAdvantage {
+=======
+<<<<<<< HEAD
+  height: 265px;
+  display: flex;
+  justify-content: space-between;
+}
+.insideAdvantage{
+=======
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.insideAdvantage {
+>>>>>>> 0ea669bde4de01293a131421701f48f75d4f74b4
+>>>>>>> Stashed changes
   padding-top: 7%;
 }
 
