@@ -32,6 +32,7 @@
     --text-primary: #ffffff;
     --text-secondary: #dbe2fb;
     --p-size: 16px;
+    --icon-active: linear-gradient(to bottom, #4A00E0, #8E2DE2);
 }
 
 /* Column Start */
@@ -394,6 +395,9 @@
     text-decoration: none;
     color: white;
 }
+.active-icon {
+    background: var(--icon-active);
+}
 
 .w-c-u-title {
     color: var(--text-primary);
@@ -424,6 +428,8 @@
     box-shadow: 0px 0px 10px #4e3b7b;
     margin-bottom: 15px;
 }
+
+
 .w-c-u-tab {
     margin-top: 50px;
     border-radius: 10px;
