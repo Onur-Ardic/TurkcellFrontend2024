@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+.logo {
+  width: 100%;
+}
+button {
+  border: none;
+  background-color: #032055;
+  padding: 7px 18px;
+  border-radius: 18px;
+}
