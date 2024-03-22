@@ -15,6 +15,13 @@
   margin-right: auto;
 }
 
+body{
+   font-family: "Open Sans", sans-serif; 
+  } 
+   h1, h2, h3, h4, h5, h6 { font-family: "Poppins", sans-serif; 
+}
+
+
 .h2-size {
   font-size: 40px;
   line-height: 50px;
@@ -28,6 +35,8 @@
 .i-medium {
   font-size: 2em;
 }
+
+
 
 /* Colors & Sizes */
 :root {
@@ -395,10 +404,21 @@
   color: white;
 }
 
+.about-icon{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--bg-gradiant);
+}
+
 .p-size {
   font-size: 16px;
   color: #dbe2fb;
   text-align: center;
+}
+.content-p{
+  font-size: 16px;
+  color: var(--text-secondary);
 }
 
 /* About Us End */
