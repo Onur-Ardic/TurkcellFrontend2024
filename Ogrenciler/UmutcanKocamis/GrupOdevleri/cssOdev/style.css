@@ -263,6 +263,56 @@ button:hover {
 }
 
 /* Portfolio End */
+/* Cta Start */
+.cta-h1 {
+  text-align: center;
+  padding-top: 85px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.cta-p {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  color: grey;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  text-align: center;
+}
+.cta-btn-str {
+  padding: 10px 20px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.cta-btn-str:hover {
+  background-color: #ff5714;
+  color: white;
+}
+
+.cta {
+  background-image: url(https://shreethemes.in/upstart/layouts/images/bg/cta.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  margin-top: 100px;
+}
+
+.bg-black {
+  width: 100%;
+  height: 350px;
+  background-color: rgba(22, 28, 45, 0.75);
+}
+/* Cta end */
 
 /* Price Start */
 
@@ -408,3 +458,232 @@ button:hover {
 }
 
 /* Work Process End */
+/* Our Team Start */
+
+.our-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ingredien {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.ingredien h4 {
+  text-align: center;
+  color: orangered;
+}
+
+.ingredien p {
+  text-align: center;
+  color: grey;
+  max-width: 630px;
+  line-height: 30px;
+}
+.setting {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+.setting h1 {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+}
+.setting p {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: #343231;
+}
+.bir-img {
+  height: 255px;
+  width: 255px;
+  border-radius: 5px;
+}
+.bir-img:hover {
+  cursor: pointer;
+}
+.iki-img {
+  height: 255px;
+  width: 255px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.uc-img {
+  height: 255px;
+  width: 255px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.dort-img {
+  height: 255px;
+  width: 255px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.sponsored {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+  gap: 125px;
+  margin-bottom: 100px;
+}
+.sponsored img {
+  width: 75px;
+  height: 25px;
+}
+/* Our Team End */
+/* Blogs Start */
+/* Blogs End */
+
+/* Contact Us Start */
+
+#contact-us {
+  background-color: #f8f9fc;
+}
+
+.contact-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 70px;
+}
+
+.contact-title h5 {
+  color: orangered;
+}
+
+.contact-title p {
+  max-width: 600px;
+  text-align: center;
+  color: gray;
+  margin-bottom: 40px;
+}
+
+.main-label {
+  width: 680px;
+  height: 350px;
+  border: 0.1px solid rgb(228, 228, 228);
+  padding: 20px 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.main-label #name,
+#mail {
+  height: 40px;
+  width: 300px;
+  border-radius: 5px;
+  border: 0.1px solid rgb(228, 228, 228);
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.main-label #subject {
+  height: 40px;
+  width: 620px;
+  border: 0.1px solid rgb(228, 228, 228);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.main-label #name,
+#mail,
+::placeholder {
+  color: #595c5f;
+  padding-left: 5px;
+}
+.main-label #subject::placeholder {
+  padding-left: 10px;
+}
+
+.main-label #message {
+  height: 100px;
+  width: 620px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: 0.1px solid rgb(228, 228, 228);
+}
+
+.main-label #name:focus,
+#mail:focus,
+#subject:focus,
+#message:focus {
+  outline: none;
+  border: 1px solid orangered;
+}
+
+.send-message {
+  padding: 10px 20px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.send-message:hover {
+  background-color: #ff5714;
+  color: white;
+}
+
+.contact-info {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  padding-bottom: 150px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+.info .phone,
+.email,
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.phone p,
+.email p,
+.location p {
+  color: gray;
+  max-width: 260px;
+}
+
+/* Contact Us end */
+
+/* Footer Starts */
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #202942;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  color: gray;
+}
+.footer img {
+  margin-left: 175px;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin-left: 350px;
+  margin-top: 40px;
+}
