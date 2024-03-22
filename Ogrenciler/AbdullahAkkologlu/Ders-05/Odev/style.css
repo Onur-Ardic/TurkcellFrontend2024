@@ -844,7 +844,7 @@ nav {
   justify-content: center;
 }
 
-/* .investmentPlans {
+.investmentPlans {
   padding-top: 150px;
   background-color: #001232;
   display: flex;
@@ -853,7 +853,7 @@ nav {
   text-align: center;
   gap: 30px;
   padding-bottom: 150px;
-} */
+}
 
 .works {
   padding-top: 150px;
