@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* !---------------- Header Start -------------------- */
+.header {
+  background: rgb(142, 45, 226);
+  background: linear-gradient(
+    0deg,
+    rgba(142, 45, 226, 1) 0%,
+    rgba(74, 0, 224, 1) 100%
+  );
+  height: 100vh;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: "Poppins", sans-serif;
+  z-index: 99;
+}
+
+.header .navbar .logo {
+  padding-left: 50px;
+}
+
+.header .navbar .navbar-items {
+  padding-right: 50px;
+}
+
+.header .navbar .navbar-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header .navbar .navbar-items .navbar-item a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header .navbar .navbar-items .navbar-item i {
+  font-size: 15px;
+}
+
+.header .navbar .navbar-items .navbar-item {
+  position: relative;
+}
+
+.header .navbar .navbar-items .navbar-item .effect {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  display: block;
+  top: -23px;
+  left: -5px;
+  width: 120%;
+  height: 296%;
+  z-index: 99;
+}
+
+.header .navbar .navbar-items .navbar-item .dropdown {
+  position: absolute;
+  background-color: #fff;
+  width: 150px;
+  top: 25px;
+  left: -20px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+}
+.header .navbar #dropdown-link:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+.header .navbar .navbar-items .navbar-item .dropdown .dropdown-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.header .navbar .navbar-items .navbar-item .dropdown .dropdown-item a {
+  color: #000;
+  text-align: center;
+}
+
+.header .navbar .navbar-items .navbar-item .dropdown .dropdown-item:hover {
+  background: rgb(74, 0, 224);
+  background: linear-gradient(
+    0deg,
+    rgba(74, 0, 224, 1) 0%,
+    rgba(142, 45, 226, 1) 100%
+  );
+  transition: 0.2s ease;
+}
+
+.header .navbar .navbar-items .navbar-item .dropdown .dropdown-item:hover a {
+  color: #fff;
+}
+
+.header .navbar .login-btn a {
+  padding: 7px 20px;
+  color: #fff;
+  background-color: #032055;
+  border-radius: 10px;
+}
+
+.header .navbar .login-btn a:hover {
+  background: rgb(74, 0, 224);
+  background: linear-gradient(
+    0deg,
+    rgba(74, 0, 224, 1) 0%,
+    rgba(142, 45, 226, 1) 100%
+  );
+  transition: 0.2s ease;
+}
+
+/* ?Hero Start */
+
+.header .hero {
+  position: relative;
+  top: 10%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.hero-wrapper .hero-content h2 {
+  font-size: 50px;
+  color: #fff;
+  line-height: 60px;
+  margin-bottom: 19px;
+  font-weight: bold;
+}
+
+.hero-wrapper .hero-content p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 47px;
+}
+
+.hero-wrapper .hero-input {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-wrapper .hero-input input {
+  width: 90%;
+  padding: 1.1rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #032055;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.hero-wrapper .hero-input button {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #bb00ff;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  right: 70px;
+  top: 2px;
+}
+
+.hero-wrapper .hero-input button:hover {
+  background-color: #6e00ff;
+  transition: 0.8s ease;
+}
+
+.hero-wrapper .play-btn {
+  background-color: #032055;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 1600ms ease-out infinite;
+  margin-left: 20px;
+}
+
+.hero-wrapper .play-btn a {
+  color: #fff;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.hero-wrapper .right-hero img {
+  width: 500px;
+}
+
+/* !---------------- Header End -------------------- */
