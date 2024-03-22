@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 .mt-30 {
@@ -266,6 +267,7 @@
 /* !---------------- Header End -------------------- */
 
 /* !----------------About Us Start------------------ */
+
 .about-card {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -273,6 +275,8 @@
   padding: 20px;
 }
 
+.about-card .about-us-card {
+}
 .about-card .about-card-top {
   width: 100px;
   height: 100px;
@@ -292,7 +296,4 @@
   margin-top: 30px;
 }
 
-.about-card .about-card-content {
-  text-align: center;
-}
 /* !----------------About Us End------------------ */
