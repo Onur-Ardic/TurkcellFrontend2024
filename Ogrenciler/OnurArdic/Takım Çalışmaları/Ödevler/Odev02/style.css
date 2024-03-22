@@ -85,6 +85,7 @@
   left: -20px;
   visibility: hidden;
   opacity: 0;
+  z-index: 99;
 }
 .header .navbar #dropdown-link:hover .dropdown {
   visibility: visible;
@@ -100,6 +101,7 @@
   color: #000;
   text-align: center;
 }
+
 .header .navbar .navbar-items .navbar-item .dropdown .dropdown-item:hover {
   background: rgb(74, 0, 224);
   background: linear-gradient(
