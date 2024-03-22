@@ -859,6 +859,7 @@ nav {
   justify-content: center;
 }
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 .flexCenter {
 =======
@@ -878,6 +879,9 @@ nav {
 
 <<<<<<< Updated upstream
 .investmentPlans {
+=======
+/* .investmentPlans {
+>>>>>>> 782d8611f25d8a3b80988893873a7093faa59f4c
   padding-top: 150px;
   background-color: #001232;
   display: flex;
@@ -886,7 +890,7 @@ nav {
   text-align: center;
   gap: 30px;
   padding-bottom: 150px;
-}
+} */
 
 =======
 >>>>>>> 0ea669bde4de01293a131421701f48f75d4f74b4
