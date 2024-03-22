@@ -71,6 +71,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-position: fixed; */
 }
 
 .section-1-container {
@@ -267,7 +268,7 @@ nav {
 .portfolio-item {
     width: 260px;
     height: 195px;
-    background-color: red;
+   
 }
 
 .portfolio {
@@ -312,6 +313,8 @@ nav {
 /* Section - 6 */
 .section-6 {
     padding: 100px 0;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .section-6-container {
@@ -365,6 +368,7 @@ nav {
 
 .section-6-content-item-date {
     font-weight: bold;
+    margin-top: 30px;
 }
 
 .section-6-list-container {

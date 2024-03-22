@@ -1,0 +1,238 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* linear-gradient(to bottom, #4A00E0, #8E2DE2) */
+nav {
+    background-color: #4C01E0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+li {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 380px;
+}
+
+.nav-links ul li {
+    display: inline;
+    padding: 20px;
+}
+
+.nav-links ul a {
+    color: white;
+}
+
+.login {
+    padding: 10px 20px;
+    background-color: #032055;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* Section 1 */
+
+.section-1 {
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    color: white;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 165px 0 249px 0;
+    max-width: 1100px;
+}
+
+.section-1-container-left-side {
+    padding: 0 15px;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.section-1-container-right-side {
+    padding: 0 30px;
+}
+
+.section-1-left-side-header {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 19px;
+}
+
+.section-1-left-side-paragraph {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 47px;
+}
+
+.main-input {
+    position: relative;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 50px;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: #032055;
+    font-size: 18px;
+    color: white;
+}
+
+.main-input::placeholder {
+    color: #9CCAF0;
+}
+
+.main-image {
+    width: 480px;
+    height: 491px;
+}
+
+.section-1-left-side-play-button {
+    border-radius: 50%;
+    background-color: #032055;
+    color: #9CCAF0;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-left-side-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+}
+
+.main-button {
+    position: absolute;
+    line-height: 55px;
+    padding: 0 30px;
+    background: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+    color: white;
+    border: 0px;
+    border-radius: 50px;
+    margin-left: 295px;
+    margin-top: 3px;
+}
+
+
+/* Enes Alagöz*/
+
+.section-our-advantage{
+width: 1903px;
+height: 809px;
+padding: 120px 0px 130px;
+color: #dbe2fb;
+font: 16px "open sans ","sans serif";
+background: #032055;
+}
+.container{
+    width: 1140px;
+    height: 559px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+width: 1140px;
+height: 182px;
+display: flex;
+flex-wrap:  wrap;
+margin-left:-15px;
+margin-right: -15px;
+}
+.justify-content-center{
+
+justify-content: center !important;
+}
+.md10{
+width: 760px;
+height: 182px;
+}
+.section-heading{
+width: 730px;
+height: 125px;
+}
+.title{
+width: 730px;
+height: 50px;
+display: flex;
+justify-content: center;
+font-size: 40px;
+color: white;
+margin:  0 0 23px;
+}
+.text{
+width: 730px;
+height: 52px;
+display: flex;
+justify-content: center;
+font-size: 16px "open sans","sans serif";
+margin: 0 0 16px;
+line-height: 26px;
+color:  #dbe2fb;
+}
+.row2{
+width: 1140px;
+height: 377px;
+display: flex;
+flex-wrap: wrap;
+}
+.col{
+max-width: 50%;
+height: 100%;
+display: flex;
+}
+.align-self-center{
+align-self: center !important;
+margin-top: 100px;
+font-size: 18px;
+}
+.content{
+width: 540px;
+height: 226px;
+}
+.title2{
+width: 540px;
+height: 34px;
+color: #ffffff;
+font-size: 24px;
+margin: 0 0 20px;
+}
+.img{
+display: flex;
+justify-content: center;
+}

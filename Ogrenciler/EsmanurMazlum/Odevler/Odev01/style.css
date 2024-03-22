@@ -11,6 +11,10 @@
   font-family: "Roboto Slab", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -330,6 +334,253 @@
 }
 /* Section Services Cards End*/
 
+/* !--------- Work Process Start------- */
+.work-process {
+  margin-top: 30px;
+}
+
+.work-process .work-process-content .work-process-title {
+  font-size: 15px;
+  color: #ff5714;
+  text-align: center;
+}
+
+.work-process .work-process-content .work-process-title-1 {
+  font-size: 28px;
+  color: #24272c;
+  text-align: center;
+}
+
+.work-process .work-process-content .work-process-text {
+  color: #8492a6;
+  text-align: center;
+}
+
+.work-process .work-process-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.work-process .work-process-wrapper img {
+  width: 250px;
+  height: 250px;
+}
+
+.work-process .work-process-wrapper::after {
+  width: 1px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: "";
+  height: 100%;
+  border-right: 1px dashed #dee2e6;
+  display: block;
+  margin-top: 10px;
+}
+
+.work-process .work-process-wrapper .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.work-process .work-process-wrapper .item .item-content {
+  width: 300px;
+}
+
+.work-process .work-process-wrapper .item .item-content .item-title {
+  font-size: 18px;
+  color: #24272c;
+  text-align: start;
+  margin: 0 0 4px;
+  position: relative;
+}
+
+.work-process .work-process-wrapper .item .item-content .item-title::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 2px dashed #dee2e6;
+  border-radius: 50%;
+  padding: 0.3rem;
+  display: block;
+  margin-right: 10px;
+  position: absolute;
+  right: 105%;
+  z-index: 1;
+}
+.work-process .work-process-wrapper .item .item-content .item-title::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #ff5714;
+  border-radius: 50%;
+  padding: 0.3rem;
+  display: block;
+  margin-right: 10px;
+  position: absolute;
+  z-index: 2;
+  right: 106.8%;
+  top: 5px;
+}
+
+.work-process .work-process-wrapper .item .item-content .item-content {
+  text-align: start;
+  color: #8492a6;
+  margin-top: 1rem;
+}
+
+.work-process .work-process-wrapper .item-2 .item-img {
+  display: flex;
+  justify-content: end;
+}
+
+.work-process .work-process-wrapper .item-2 .item-title-2 {
+  text-align: end !important;
+  font-size: 18px;
+  position: relative;
+}
+
+.work-process .work-process-wrapper .item-2 .item-title-2::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 2px dashed #dee2e6;
+  border-radius: 50%;
+  padding: 0.3rem;
+  display: block;
+  margin-right: 10px;
+  position: absolute;
+  left: 109%;
+  z-index: 1;
+}
+
+.work-process .work-process-wrapper .item-2 .item-title-2::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #ff5714;
+  border-radius: 50%;
+  padding: 0.3rem;
+  display: block;
+  margin-right: 10px;
+  position: absolute;
+  z-index: 2;
+  right: -18.3%;
+  top: 5px;
+}
+
+/* !--------- Work Process End------- */
+/* PORTFOLIO SECTION */
+.portfolioContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.portfolio {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fc;
+}
+
+.portfolioTitle {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #ff5714;
+  font-size: 15px;
+}
+.portfolioSectionTitle {
+  letter-spacing: 0.5px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.portfolioDescription {
+  color: #8492a6;
+  margin-bottom: 50px;
+}
+
+.images {
+  max-width: 300px;
+}
+.imagesContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.imageWrapper {
+  position: relative; /* Ensures proper positioning for overlay */
+}
+
+.imageWrapper .images {
+  max-width: 300px;
+  transition: filter 0.3s ease; /* Add transition for smooth effect */
+}
+
+.imageWrapper:hover .images {
+  filter: brightness(70%);
+  transition: filter 0.3s ease;
+  transform: rotate(5deg);
+  transition: transform 0.3s ease;
+}
+.imageWrapper:hover {
+  cursor: pointer;
+}
+.cameraIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+.imageWrapper:hover .cameraIcon {
+  opacity: 0.7;
+}
+.cameraIcon img {
+  max-width: 50px;
+  position: relative;
+  left: 80%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(59, 74, 116, 0.459);
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
+
+.imageWrapper:hover .overlay {
+  opacity: 0.7;
+}
+
+.overlayText {
+  opacity: 1;
+  color: white;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* PORTFOLIO SECTION END*/
 /* ? Plans Start */
 
 .plans {
@@ -337,7 +588,7 @@
   background-color: #fff;
 }
 
-.plans .content{
+.plans .content {
   flex-direction: column;
 }
 
@@ -371,7 +622,7 @@
 
 /* * Plans Card Start */
 
-.row{
+.row {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -383,7 +634,7 @@
   height: 400px;
   padding: 48px 24px;
   padding: 3rem 1.5rem;
-  box-shadow:0 0 3px rgba(36,39,44,0.15);
+  box-shadow: 0 0 3px rgba(36, 39, 44, 0.15);
   border: 1px solid black;
   border: none;
   border-radius: 5px;
@@ -391,12 +642,11 @@
   margin: 15px;
 }
 
-.row .card:hover{
-  box-shadow:0 5px 13px rgba(36,39,44,0.2) !important;
+.row .card:hover {
+  box-shadow: 0 5px 13px rgba(36, 39, 44, 0.2) !important;
   transform: translateY(-10px);
   transition: all 0.5s ease 0s;
 }
-
 
 .row .card h5 {
   font-size: 18px;
@@ -417,18 +667,18 @@
 
 .row .card .price .number {
   font-size: 42px;
-  font-family: "Roboto Slab",serif;
+  font-family: "Roboto Slab", serif;
   margin-bottom: 0;
 }
 
 .row .card .price .mo {
   font-size: 18px;
-  font-family: "Roboto Slab",serif;
+  font-family: "Roboto Slab", serif;
   margin-bottom: 0.25rem;
   align-self: flex-end;
 }
 
-.card .features li{
+.card .features li {
   color: #8492a6;
   margin-bottom: 0.7rem;
   font-family: sans-serif;
@@ -441,8 +691,8 @@
 
 .card .get-started {
   background-color: rgba(255, 87, 20, 0.1);
-  border:1px solid rgba(255, 87, 20, 0.1);
-  color:#ff5714;
+  border: 1px solid rgba(255, 87, 20, 0.1);
+  color: #ff5714;
   box-shadow: 0 3px 5px 0 rgba(255, 87, 20, 0.1);
   padding: 8px 20px;
   border-radius: 6px;
@@ -461,7 +711,6 @@
 }
 
 /* * Plans Card End */
-
 
 /* ? Plans End */
 
@@ -664,6 +913,7 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 30px;
+  gap: 1rem;
 }
 
 .latest-news .blogs-card-wrapper .news-card {
@@ -713,7 +963,6 @@
 }
 
 /* ! Latest News End*/
-
 
 /* Section Contact Us Start */
 
