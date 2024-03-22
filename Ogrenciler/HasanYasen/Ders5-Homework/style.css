@@ -811,6 +811,188 @@
 
 #latest-transaction {
     width: 100%;
-    height: 190vh;
+    height: 160vh;
     background-color: #032055;
+}
+
+#latest-transaction .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#latest-transaction .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#latest-transaction .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 40px;
+}
+
+#latest-transaction .middle {
+    width: 70%;
+    margin-left: 15%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#latest-transaction .middle div {
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #4e3b7b;
+    padding: 25px 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#latest-transaction .middle div:nth-child(1) {
+    /* all bets */
+    background-color: #7418c6;
+}
+
+#latest-transaction .middle div:hover {
+    cursor: pointer;
+    background-color: #7418c6;
+}
+
+#latest-transaction .bottom {
+    width: 70%;
+    margin-left: 15%;
+    background-color: #001232;
+}
+
+#latest-transaction .bottom .bottom-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    padding: 30px;
+    box-shadow: 0 2px 2px -2px rgb(200, 200, 200);
+    position: relative;
+}
+
+#latest-transaction .bottom .bottom-top div {
+    position: absolute;
+}
+
+#latest-transaction .bottom .bottom-top div:nth-child(1) {
+    left: 50px;
+}
+
+#latest-transaction .bottom .bottom-top div:nth-child(2) {
+    left: 310px;
+}
+
+#latest-transaction .bottom .bottom-top div:nth-child(3) {
+    left: 515px;
+}
+
+#latest-transaction .bottom .bottom-top div:nth-child(4) {
+    right: 210px;
+}
+
+#latest-transaction .bottom .bottom-top div:nth-child(5) {
+    right: 10px;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10rem;
+    color: white;
+    font-weight: bold;
+    height: 80px;
+    padding: 0 50px;
+    box-shadow: 0 2px 2px -2px rgb(200, 200, 200);
+    margin-top: 1px;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex div {
+    width: 100px;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex:last-child {
+    box-shadow: none;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex:hover {
+    background-color: rgb(2, 28, 77)
+}
+
+#latest-transaction .bottom .bottom-bottom .flex .div-with-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex .amount-container {
+    display: flex;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex .amount-container .amount {
+    color: #045cf0;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex .amount-container svg {
+    width: 25px;
+    height: 35px;
+    margin-left: 5px;
+    margin-top: -7px;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex .deposit-by {
+    color: #f0ad4e;
+}
+
+/* our-bigest-advantage */
+
+#our-bigest-advantage {
+    width: 100%;
+    height: 195vh;
+    background-color: #032055;
+}
+
+#our-bigest-advantage .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#our-bigest-advantage .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#our-bigest-advantage .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 40px;
 }
