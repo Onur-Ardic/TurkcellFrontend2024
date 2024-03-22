@@ -41,8 +41,6 @@
 
 /* Start Hero */
 
-/*  */
-
 .hero-section {
   background-image: url(https://shreethemes.in/upstart/layouts/images/bg/1.jpg);
   padding: 265px 0;
@@ -76,6 +74,7 @@
 
 .hero-title button:hover {
   background-color: rgb(250, 83, 22);
+  color: white;
 }
 
 .marketing {
@@ -123,6 +122,7 @@
 }
 .about-title button:hover {
   background-color: rgb(250, 83, 22);
+  color: white;
 }
 /* About end */
 /* What we do section */
@@ -541,6 +541,68 @@ button:hover {
 }
 /* Our Team End */
 /* Blogs Start */
+
+.blogs-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 70px;
+}
+
+.blogs-title h5 {
+  color: orangered;
+}
+
+.blogs-title p {
+  max-width: 600px;
+  text-align: center;
+  color: gray;
+  margin-bottom: 40px;
+}
+
+.blog-cards-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.blog-card h4 {
+  max-width: 300px;
+  cursor: pointer;
+}
+.blog-card h4:hover {
+  color: orangered;
+}
+.blog-card p {
+  max-width: 300px;
+  color: gray;
+}
+
+.blog-card img {
+  width: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.blog-card button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
 /* Blogs End */
 
 /* Contact Us Start */

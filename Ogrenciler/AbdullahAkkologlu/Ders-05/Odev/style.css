@@ -448,3 +448,538 @@ nav {
     justify-content: center;
   }
 }
+
+/*EBRAR*/
+.calculator {
+  color: white;
+
+  height: 780px;
+}
+
+.calculator-texts,
+.blog-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+.tax-profit-calculator {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box-calculator {
+  margin: 60px 0px 0px 0px;
+}
+.box-calculator h3 {
+  background: linear-gradient(#4c01e0, #8325e0);
+  padding: 12px 30px 11px;
+  width: 540px;
+  height: 57px;
+}
+
+.tax-calculator,
+.profit-calculator {
+  background-color: #032055;
+  width: 540px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tax-calculator label,
+.profit-calculator label {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+}
+
+.tax-calculator select {
+  margin-top: 10px;
+  width: 220px;
+  height: 40px;
+  padding-left: 20px;
+  color: #ffffff;
+  background-color: #032055;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+.tax-calculator .income input {
+  width: 220px;
+  height: 40px;
+  padding: 20px;
+  margin-top: 10px;
+  color: #ffffff;
+  background-color: #032055;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+.tax-calculator .payment input {
+  margin-top: 10px;
+  width: 460px;
+  height: 40px;
+  background-color: #032055;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.tax-calculator .payment #payment::placeholder,
+.tax-calculator .income #income::placeholder {
+  color: #dbe2fb;
+}
+
+.profit-calculator {
+  background-color: #032055;
+  width: 540px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.profit-calculator input {
+  margin-top: 10px;
+  width: 460px;
+  height: 40px;
+  background-color: #032055;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.profit-calculator input::placeholder {
+  color: #dbe2fb;
+}
+
+.questions {
+  background-color: #032055;
+  height: 590px;
+  display: flex;
+  justify-content: center;
+}
+.questions-top {
+  display: flex;
+  justify-content: center;
+  padding: 130px;
+  gap: 30px;
+}
+
+.questions-texts {
+  width: 570px;
+  height: 306px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.questions-texts button {
+  background: linear-gradient(#4c01e0, #8325e0);
+  color: white;
+  border-radius: 80px;
+  border-width: 0;
+  padding: 10px;
+  width: 150px;
+  font-size: 16px;
+  margin-top: 60px;
+}
+
+.questions-link {
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.links {
+  background: linear-gradient(#4c01e0, #8325e0);
+  width: 540px;
+  height: 60px;
+  border: 1px solid #8325e0;
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  padding-left: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.links img {
+  background: none;
+  height: 20px;
+  padding-right: 20px;
+}
+
+.blog {
+  height: 774px;
+  background-color: #001232;
+}
+
+.blog-texts {
+  margin-top: 60px;
+}
+.blog-section {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+.cards {
+  width: auto;
+}
+.cards img {
+  height: 220px;
+}
+
+.cards p {
+  padding: 10px;
+  font-size: 20px;
+}
+.footer {
+  height: 479px;
+}
+
+.footer-top {
+  background: linear-gradient(#4c01e0, #8325e0);
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-info-text img {
+  margin-bottom: 20px;
+}
+.footer-info-text p {
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+.footer-info-text {
+  width: 380px;
+  margin-left: 80px;
+}
+.footer-info-text input {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  width: 250px;
+  height: 50px;
+  padding: 0px 60px 0px 20px;
+  border: none;
+}
+.footer-info-text input::placeholder {
+  color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-line {
+  border-top: 1px dashed rgba(218, 214, 214, 0.589);
+  width: 300px;
+  height: 10px;
+  margin: 5px 0px 0px 5px;
+}
+.footer-info-account,
+.footer-info-company {
+  width: 350px;
+  padding-right: 30px;
+  padding-left: 30px;
+  list-style-type: none;
+}
+.footer-info-account h4,
+.footer-info-company h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.footer-info-account a,
+.footer-info-company a {
+  font-size: 16px;
+  color: #cdb0f8;
+  margin-left: 3px;
+}
+.footer-info-company {
+  margin-right: 50px;
+}
+.footer-bottom {
+  background: linear-gradient(#4c01e0, #8325e0);
+  height: 75px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 500px;
+}
+.footer img {
+  height: 20px;
+  background: none;
+}
+.footer-links a {
+  margin-right: 5px;
+}
+/*--nec----*/
+
+.top10 div{
+  width: 100%;
+}
+
+.priceBox {
+  width: 350px;
+  height: 338.33px;
+  background-color: #032055;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0px 15px;
+}
+.priceBoxes {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.getStartedButton{
+  width: 170px;
+  height: 50px;
+  margin-top: 500px;
+}
+.marginTop200{
+  margin-top: 200px;
+}
+
+.marTop15{
+  margin-top: 15px;
+}
+
+.font16{
+  font-size: 16px;
+}
+
+.latestParagraf {
+  margin-top: 15px;
+  font-size: 16px;
+}
+.priceBox p {
+  color: #dbe2fb;
+}
+.priceBox h4 {
+  color: white;
+  font-size: 24px;
+  background-color: #8325E0;
+}
+
+.flexEven{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.marBot20{
+  margin-bottom: 20px;
+}
+.top10 img {
+  width: 100%;
+  height: 200px;
+}
+.flexAround{
+  display: flex;
+  justify-content: space-around;
+}
+
+.advPic{
+  width: 650px;
+  height: 315px;
+}
+
+
+
+.priceRate{
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+  padding: 16px 20px 16px;
+  margin: 22px 0px 17px;
+  background: -webkit-moz-gradient(to bottom, #4A00E0, #8E2DE2);
+  background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+  transition: all 0.3s ease-in;
+  position: relative;
+}
+
+
+.buttonNec {
+  padding: 16px 25px;
+  border-radius: 30px;
+  border: none;
+  background-color: #8325e0;
+  color: white;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.buttonCreate{
+  width: 295px;
+  height: 80px;
+}
+
+.dailyWeeklyButton{
+  display: flex;
+  justify-content: center;
+}
+
+.flexCenter{
+  display: flex;
+  justify-content: center;
+}
+
+
+.works {
+  padding-top: 150px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding-bottom: 150px;
+}
+
+.top10 {
+  padding-top: 150px;
+  background-color: #001232;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding-bottom: 150px;
+}
+
+.users {
+  padding-top: 150px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding-bottom: 150px;
+}
+.createBetter {
+
+  height: 265px;
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+.insideCreate{
+  padding-top: 7%;
+}
+
+.advantage {
+
+  height: 265px;
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+.insideAdvantage{
+  padding-top: 7%;
+}
+
+.start {
+  padding-top: 150px;
+  background-color: #032055;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding-bottom: 150px;
+}
+
+.latest {
+  padding-top: 150px;
+  background-color: #032055;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding-bottom: 150px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  background-color: #001232;
+  width: 1100px;
+  color: white;
+  font-weight: bold;
+}
+
+td, th {
+  
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  padding: 20px 15px;
+  background-color: #001232;
+  
+}
+
+td{
+  border: 1px solid #032055;
+  padding: 20px;
+}
+
+td.deposit {
+  text-align: right;
+}
+tr:hover{
+  background-color: #032055;
+}
+
+.currency {
+  color: orange;
+}
+
+.amount {
+  color: rgb(61, 84, 239);
+}
+
+@media (max-width: 600px) {
+  table {
+    width: auto;
+  }
+
+  th, td {
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+
