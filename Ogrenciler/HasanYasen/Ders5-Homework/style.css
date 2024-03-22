@@ -546,3 +546,271 @@
     border-radius: 50px;
     margin-bottom: 40px;
 }
+
+#investment-plans .bottom div button:hover {
+    cursor: pointer;
+    background-color: #4A00E0;
+}
+
+/* how-does-it-works */
+
+#how-does-it-works {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+
+#how-does-it-works .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#how-does-it-works .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#how-does-it-works .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 40px;
+}
+
+#how-does-it-works .bottom {
+    width: 70%;
+    margin-left: 15%;
+    height: 350px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+
+#how-does-it-works .bottom>div {
+    width: 35%;
+    height: 320px;
+    background-color: #032055;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px 15px 15px;
+}
+
+#how-does-it-works .bottom>div:hover {
+    margin-bottom: 15px;
+    transition: 0.4s ease-in;
+}
+
+#how-does-it-works .bottom>div img {
+    width: 120px;
+    height: 110px;
+    margin-bottom: 8px;
+}
+
+#how-does-it-works .bottom>div h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+#how-does-it-works .bottom>div p {
+    color: rgb(228, 228, 228);
+}
+
+/* start-investment */
+
+#start-investment {
+    width: 100%;
+    height: 195vh;
+    background-color: #032055;
+}
+
+#start-investment .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#start-investment .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#start-investment .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 40px;
+}
+
+#start-investment .middle {
+    width: 70%;
+    margin-left: 15%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#start-investment .middle div {
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #4e3b7b;
+    padding: 25px 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-investment .middle div:nth-child(1) {
+    /* all bets */
+    background-color: #7418c6;
+}
+
+#start-investment .middle div:hover {
+    cursor: pointer;
+    background-color: #7418c6;
+}
+
+#start-investment .bottom {
+    width: 70%;
+    margin-left: 15%;
+    background-color: #001232;
+}
+
+#start-investment .bottom .bottom-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    padding: 30px;
+    box-shadow: 0 2px 2px -2px rgb(200, 200, 200);
+    position: relative;
+}
+
+#start-investment .bottom .bottom-top div {
+    position: absolute;
+}
+
+#start-investment .bottom .bottom-top div:nth-child(1) {
+    left: 58px;
+}
+
+#start-investment .bottom .bottom-top div:nth-child(2) {
+    left: 332px;
+}
+
+#start-investment .bottom .bottom-top div:nth-child(3) {
+    right: 386px;
+}
+
+#start-investment .bottom .bottom-top div:nth-child(4) {
+    right: 170px;
+}
+
+#start-investment .bottom .bottom-bottom .flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10rem;
+    color: white;
+    font-weight: bold;
+    height: 80px;
+    padding: 0 50px;
+    box-shadow: 0 2px 2px -2px rgb(200, 200, 200);
+    margin-top: 1px;
+}
+
+#start-investment .bottom .bottom-bottom .flex:last-child {
+    box-shadow: none;
+}
+
+#start-investment .bottom .bottom-bottom .flex:hover {
+    background-color: rgb(2, 28, 77)
+}
+
+#start-investment .bottom .bottom-bottom .flex .div-with-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#start-investment .bottom .bottom-bottom .flex .price {
+    color: #045cf0;
+}
+
+#start-investment .bottom .bottom-bottom .flex .currency {
+    color: #f0ad4e;
+}
+
+/* better-experiences */
+
+#better-experiences {
+    width: 100%;
+    height: 35vh;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+
+#better-experiences .container {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#better-experiences .container h2 {
+    color: white;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+#better-experiences .container button {
+    background-color: white;
+    color: #8E2DE2;
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+}
+
+#better-experiences .container button:hover {
+    cursor: pointer;
+    background-color: #8E2DE2;
+    color: white;
+    border: 1px solid white;
+    transition: 0.4s ease-out;
+}
+
+/* latest-transaction */
+
+#latest-transaction {
+    width: 100%;
+    height: 190vh;
+    background-color: #032055;
+}
