@@ -899,11 +899,11 @@
 }
 
 #latest-transaction .bottom .bottom-top div:nth-child(2) {
-    left: 310px;
+    left: 400px;
 }
 
 #latest-transaction .bottom .bottom-top div:nth-child(3) {
-    left: 515px;
+    left: 575px;
 }
 
 #latest-transaction .bottom .bottom-top div:nth-child(4) {
@@ -911,14 +911,14 @@
 }
 
 #latest-transaction .bottom .bottom-top div:nth-child(5) {
-    right: 10px;
+    right: 45px;
 }
 
 #latest-transaction .bottom .bottom-bottom .flex {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    gap: 10rem;
+    gap: 5rem;
     color: white;
     font-weight: bold;
     height: 80px;
@@ -941,13 +941,15 @@
 
 #latest-transaction .bottom .bottom-bottom .flex .div-with-image {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
+    width: 300px;
 }
 
 #latest-transaction .bottom .bottom-bottom .flex .amount-container {
     display: flex;
+    margin-top: 6px;
 }
 
 #latest-transaction .bottom .bottom-bottom .flex .amount-container .amount {
