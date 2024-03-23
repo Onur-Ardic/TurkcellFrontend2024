@@ -731,10 +731,14 @@ nav {
 .footer-links a {
   margin-right: 5px;
 }
-/*--nec----*/
 
-.top10 div {
+/*necati*/
+.top10 div{
   width: 100%;
+}
+
+.font30px{
+  font-size: 30px;
 }
 
 .priceBox {
@@ -748,29 +752,29 @@ nav {
   text-align: center;
   padding: 0px 15px;
 }
+
 .priceBoxes {
   display: flex;
   justify-content: space-around;
   gap: 30px;
 }
 
-.getStartedButton {
+.getStartedButton{
   width: 170px;
   height: 50px;
   margin-top: 500px;
 }
-.marginTop200 {
+
+.marginTop200{
   margin-top: 200px;
 }
 
-.marTop15 {
+.marTop15{
   margin-top: 15px;
 }
-
-.font16 {
+.font16{
   font-size: 16px;
 }
-
 .latestParagraf {
   margin-top: 15px;
   font-size: 16px;
@@ -781,40 +785,49 @@ nav {
 .priceBox h4 {
   color: white;
   font-size: 24px;
-  background-color: #8325e0;
+  background-color: #8325E0;
 }
 
-.flexEven {
+.flexEven{
   display: flex;
   justify-content: space-evenly;
 }
 
-.marBot20 {
+.marBot20{
   margin-bottom: 20px;
 }
 .top10 img {
   width: 100%;
   height: 200px;
 }
-.flexAround {
+.flexAround{
   display: flex;
   justify-content: space-around;
 }
 
-.advPic {
+.advPic{
   width: 650px;
   height: 315px;
 }
 
-.priceRate {
+.about {
+  background-color: #001232;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.priceRate{
   width: 100%;
   text-align: center;
   border-radius: 4px;
   color: #fff;
   padding: 16px 20px 16px;
   margin: 22px 0px 17px;
-  background: -webkit-moz-gradient(to bottom, #4a00e0, #8e2de2);
-  background: linear-gradient(to bottom, #4a00e0, #8e2de2);
+  background: -webkit-moz-gradient(to bottom, #4A00E0, #8E2DE2);
+  background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
   transition: all 0.3s ease-in;
   position: relative;
 }
@@ -829,31 +842,21 @@ nav {
   margin: 10px;
 }
 
-.buttonCreate {
+.buttonCreate{
   width: 295px;
   height: 80px;
 }
 
-.dailyWeeklyButton {
+.dailyWeeklyButton{
   display: flex;
   justify-content: center;
 }
 
-.flexCenter {
+.flexCenter{
   display: flex;
   justify-content: center;
 }
 
-.investmentPlans {
-  padding-top: 150px;
-  background-color: #001232;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 30px;
-  padding-bottom: 150px;
-}
 
 .works {
   padding-top: 150px;
@@ -888,22 +891,28 @@ nav {
   padding-bottom: 150px;
 }
 .createBetter {
+
   height: 265px;
   display: flex;
   justify-content: space-between;
+  
+
 }
 
-.insideCreate {
+.insideCreate{
   padding-top: 7%;
 }
 
 .advantage {
-  text-align: start;
+
+  height: 265px;
   display: flex;
   justify-content: space-between;
+  
+
 }
 
-.insideAdvantage {
+.insideAdvantage{
   padding-top: 7%;
 }
 
@@ -938,8 +947,8 @@ table {
   font-weight: bold;
 }
 
-td,
-th {
+td, th {
+  
   text-align: left;
   padding: 8px;
 }
@@ -947,9 +956,10 @@ th {
 th {
   padding: 20px 15px;
   background-color: #001232;
+  
 }
 
-td {
+td{
   border: 1px solid #032055;
   padding: 20px;
 }
@@ -957,7 +967,7 @@ td {
 td.deposit {
   text-align: right;
 }
-tr:hover {
+tr:hover{
   background-color: #032055;
 }
 
@@ -974,9 +984,25 @@ tr:hover {
     width: auto;
   }
 
-  th,
-  td {
+  th, td {
     display: block;
     text-align: left;
   }
 }
+
+
+@media screen and (max-width: 1800px) {
+  .paddingHandler {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .paddingHandler {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+
+
