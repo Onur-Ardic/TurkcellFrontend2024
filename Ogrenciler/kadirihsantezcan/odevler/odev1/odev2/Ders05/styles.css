@@ -52,3 +52,32 @@
 .row {
   text-align: center;
 }
+/* latest transaction */
+#latest-transaction {
+  background-color: #032054;
+}
+.table {
+  background-color: rgb(0, 19, 51);
+  width: 100%;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+}
+thead {
+  text-transform: uppercase;
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+tbody{
+   text-align: center;
+}
+td:nth-child(1){
+  text-align: left;
+}
+th:nth-child(1){
+  text-align: left;
+}
+th, td {
+  border-bottom: 1px solid rgb(209, 204, 204);
+  padding-left: 10px;
+  }
