@@ -278,6 +278,7 @@
 .about-us {
   background-color: #001232;
   font-family: "Open Sans", sans-serif;
+  padding-bottom: 30px;
 }
 .about-card {
   background-color: #fff;
@@ -402,3 +403,87 @@
 }
 
 /* !----------------About Us End------------------ */
+
+/* !----------------Why Choose Us Start------------------ */
+.why-choose-us {
+  background-color: #032055;
+  font-family: "Open Sans", sans-serif;
+  padding: 30px 0;
+}
+
+.why-choose-us-content h3 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.why-choose-us-content .why-choose-us-text {
+  color: #dbe2fb;
+  font-size: 17px;
+}
+
+.why-choose-us .why-choose-us-card {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.why-choose-us .why-choose-us-card .why-choose-us-item .why-icon {
+  width: 80px;
+  height: 80px;
+  background: rgb(142, 45, 226);
+  background: linear-gradient(
+    0deg,
+    rgba(142, 45, 226, 1) 57%,
+    rgba(74, 0, 224, 1) 97%
+  );
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.why-choose-us .why-choose-us-card .why-choose-us-item {
+  text-align: center;
+  color: #fff;
+  padding-top: 10px;
+  max-width: 1100px !important;
+  cursor: pointer;
+}
+.why-choose-us .why-choose-us-card .why-choose-us-item p {
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.why-choose-us .big-card {
+  height: 400px;
+  box-shadow: 0px 0px 10px #d4d4d4;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 20px;
+  gap: 2rem;
+}
+
+.why-choose-us .big-card img {
+  width: 300px;
+}
+
+.why-choose-us .big-card h3 {
+  font-size: 30px;
+  color: #fff;
+  padding: 0px 15px;
+}
+
+.why-choose-us .big-card p {
+  font-size: 16px;
+  padding: 15px;
+  color: #dbe2fb;
+}
+
+/* !----------------Why Choose Us End------------------ */
