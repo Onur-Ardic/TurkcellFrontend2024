@@ -899,11 +899,11 @@
 }
 
 #latest-transaction .bottom .bottom-top div:nth-child(2) {
-    left: 310px;
+    left: 400px;
 }
 
 #latest-transaction .bottom .bottom-top div:nth-child(3) {
-    left: 515px;
+    left: 575px;
 }
 
 #latest-transaction .bottom .bottom-top div:nth-child(4) {
@@ -911,14 +911,14 @@
 }
 
 #latest-transaction .bottom .bottom-top div:nth-child(5) {
-    right: 10px;
+    right: 45px;
 }
 
 #latest-transaction .bottom .bottom-bottom .flex {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    gap: 10rem;
+    gap: 5rem;
     color: white;
     font-weight: bold;
     height: 80px;
@@ -941,13 +941,15 @@
 
 #latest-transaction .bottom .bottom-bottom .flex .div-with-image {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
+    width: 300px;
 }
 
 #latest-transaction .bottom .bottom-bottom .flex .amount-container {
     display: flex;
+    margin-top: 6px;
 }
 
 #latest-transaction .bottom .bottom-bottom .flex .amount-container .amount {
@@ -969,7 +971,7 @@
 
 #our-bigest-advantage {
     width: 100%;
-    height: 195vh;
+    height: 110vh;
     background-color: #032055;
 }
 
@@ -977,7 +979,6 @@
     width: 70%;
     margin-left: 15%;
     padding-top: 100px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -995,4 +996,152 @@
     font-size: 16px;
     color: rgb(228, 228, 228);
     margin-bottom: 40px;
+}
+
+#our-bigest-advantage .bottom {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#our-bigest-advantage .bottom>div {
+    flex: 1;
+    text-align: center;
+}
+
+#our-bigest-advantage .bottom h2 {
+    color: white;
+    text-align: left;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+
+#our-bigest-advantage .bottom p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 40px;
+    text-align: left;
+    line-height: 1.625;
+}
+
+.our-bigest-advantage-bottom-right {
+    width: 60%;
+    float: right;
+}
+
+.our-bigest-advantage-bottom-left img {
+    width: 100%;
+    float: left;
+}
+
+/* top-10-inventors */
+
+#top-10-inventors {
+    width: 100%;
+    height: 100vh;
+    background-color: #001232;
+}
+
+#top-10-inventors .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#top-10-inventors .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#top-10-inventors .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 40px;
+}
+
+/* what-users-says */
+
+#what-users-says {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #4a00e0, #8e2de2);
+}
+
+#what-users-says .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#what-users-says .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#what-users-says .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 40px;
+}
+
+#what-users-says .bottom {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+#what-users-says .bottom>div {
+    flex: 1;
+    text-align: center;
+    background-color: #032055;
+    padding: 26px 30px 30px;
+    border-radius: 7px;
+    margin-left: 2%;
+}
+
+#what-users-says .bottom>div:hover {
+    transition: 0.3s ease-in;
+    background-color: #031434;
+}
+
+#what-users-says .bottom div div {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+}
+
+#what-users-says .bottom p {
+    text-align: left;
+    color: #fff;
+    line-height: 1.625;
+    font-size: 16px;
+}
+
+#what-users-says h3 {
+    align-items: left;
+    text-align: left;
+}
+
+#what-users-says h3 img {
+    width: 9%;
+    text-align: left;
 }
