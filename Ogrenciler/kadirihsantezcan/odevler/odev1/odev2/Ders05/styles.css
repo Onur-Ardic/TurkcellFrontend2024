@@ -29,3 +29,26 @@
 .main-header-content-right img {
   height: 70vh;
 }
+/*  */
+.subcribe-area {
+  align-self: center;
+  position: relative;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  flex: 1;
+  background-color: rgb(3, 32, 84);
+}
+#userssay {
+  background: rgb(81, 4, 224);
+}
+.fa-solid {
+  color: yellow;
+  font-size: 15px;
+  margin-left: 5px;
+}
+.tax-calculator {
+  background-color: rgb(0, 19, 51);
+}
+.row {
+  text-align: center;
+}
