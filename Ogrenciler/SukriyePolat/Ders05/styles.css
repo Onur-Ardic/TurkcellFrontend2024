@@ -1,0 +1,31 @@
+#main-header {
+  background-image: linear-gradient(to bottom, #4a00e0, #8e2de2);
+  height: 100vh;
+}
+#main-header-nav {
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+}
+#main-nav-links {
+  justify-content: flex-end;
+  align-items: center;
+}
+#main-nav-links li {
+  padding: 8px 20px;
+  font-weight: bold;
+}
+#main-header a:last-child {
+  height: 45px;
+}
+.main-header-content-left .title {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 19px;
+}
+.main-header-content-left .text {
+  margin-bottom: 47px;
+}
+.main-header-content-right img {
+  height: 70vh;
+}

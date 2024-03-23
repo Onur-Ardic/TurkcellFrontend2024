@@ -8,9 +8,11 @@
     font-style: normal;
 }
 
+/* home */
+
 #home {
     width: 100%;
-    height: 120vh;
+    height: 130vh;
     background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
 }
 
@@ -100,6 +102,7 @@
 #home .bottom .left p {
     margin-bottom: 5px;
     font-size: 18px;
+    white-space: nowrap;
 }
 
 #home .bottom .left .flex {
@@ -150,7 +153,7 @@
 }
 
 #home .bottom .left .flex div {
-    width: 12.5%;
+    width: 10.5%;
     height: 55px;
     border-radius: 50px;
     padding: 15px;
@@ -174,10 +177,971 @@
 
 #home .bottom .left .flex div:hover {
     cursor: pointer;
-    background-color: rgb(3, 34, 93);
+    background-color: rgb(3, 41, 110);
 }
 
 #home .bottom .right img {
     width: 500px;
     height: 450px;
+}
+
+/* divs-in-the-middle */
+
+#divs-in-the-middle {
+    width: 70%;
+    margin-left: 15%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+
+    position: absolute;
+    top: 640px;
+    color: white;
+}
+
+#divs-in-the-middle>div {
+    width: 35%;
+    height: 380px;
+    background-color: #032055;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px 35px 15px;
+}
+
+#divs-in-the-middle>div:hover {
+    margin-bottom: 15px;
+    transition: 0.4s ease-in;
+}
+
+#divs-in-the-middle>div img {
+    width: 120px;
+    height: 110px;
+    margin-bottom: 8px;
+}
+
+#divs-in-the-middle>div h2 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+#divs-in-the-middle>div h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+#divs-in-the-middle>div p {
+    color: rgb(228, 228, 228);
+}
+
+/* about */
+
+#about {
+    width: 100%;
+    height: 170vh;
+    background-color: #001232;
+}
+
+#about .top {
+    width: 70%;
+    margin-left: 15%;
+    position: absolute;
+    top: 1250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#about .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#about .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+}
+
+#about .bottom {
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    position: absolute;
+    top: 1400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+#about .bottom .left {
+    width: 40%;
+    height: 80%;
+}
+
+#about .bottom .left img {
+    width: 480px;
+    height: 450px;
+}
+
+#about .bottom .right {
+    width: 100%;
+    height: 80%;
+}
+
+#about .bottom .right .right-top {
+    margin-left: 25px;
+}
+
+#about .bottom .right .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#about .bottom .right h3 {
+    color: white;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+#about .bottom .right p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 15px;
+}
+
+#about .bottom .right img {
+    width: 90px;
+    height: 90px;
+}
+
+#about .bottom .right h4 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+/* why-choose-us */
+
+#why-choose-us {
+    width: 100%;
+    height: 140vh;
+    background-color: #032055;
+}
+
+#why-choose-us .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#why-choose-us .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#why-choose-us .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 70px;
+}
+
+#why-choose-us .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 30px;
+}
+
+#why-choose-us .middle img {
+    width: 115px;
+    height: 110px;
+    margin-bottom: 5px;
+}
+
+#why-choose-us .middle img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
+}
+
+#why-choose-us .middle p {
+    font-size: 18px;
+}
+
+#why-choose-us .middle p:hover {
+    cursor: pointer;
+}
+
+#why-choose-us .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 70%;
+    margin-left: 15%;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #4e3b7b;
+    padding: 30px 15px;
+}
+
+#why-choose-us .bottom .left img {
+    width: 420px;
+    height: 350px;
+}
+
+#why-choose-us .bottom .right {
+    width: 100%;
+}
+
+#why-choose-us .bottom .right h3 {
+    color: white;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+#why-choose-us .bottom .right p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+}
+
+/* investment-plans */
+
+#investment-plans {
+    width: 100%;
+    height: 115vh;
+    background-color: #001232;
+}
+
+#investment-plans .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#investment-plans .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#investment-plans .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 40px;
+}
+
+#investment-plans .middle {
+    width: 70%;
+    margin-left: 15%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+}
+
+#investment-plans .middle div {
+    width: 60px;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #4e3b7b;
+    padding: 25px 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#investment-plans .middle div:nth-child(1) {
+    /* daily */
+    background-color: #7418c6;
+}
+
+#investment-plans .middle div:hover {
+    cursor: pointer;
+    background-color: #7418c6;
+}
+
+#investment-plans .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 15px;
+}
+
+#investment-plans .bottom div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #032055;
+
+    width: 350px;
+    height: 100%;
+}
+
+#investment-plans .bottom div h3 {
+    color: white;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+#investment-plans .bottom div img {
+    width: 280px;
+    height: 70px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#investment-plans .bottom div p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 20px;
+}
+
+#investment-plans .bottom div button {
+    width: 120px;
+    height: 50px;
+    background-color: #7418c6;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+
+#investment-plans .bottom div button:hover {
+    cursor: pointer;
+    background-color: #4A00E0;
+}
+
+/* how-does-it-works */
+
+#how-does-it-works {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+
+#how-does-it-works .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#how-does-it-works .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#how-does-it-works .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 40px;
+}
+
+#how-does-it-works .bottom {
+    width: 70%;
+    margin-left: 15%;
+    height: 350px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+
+#how-does-it-works .bottom>div {
+    width: 35%;
+    height: 320px;
+    background-color: #032055;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px 15px 15px;
+}
+
+#how-does-it-works .bottom>div:hover {
+    margin-bottom: 15px;
+    transition: 0.4s ease-in;
+}
+
+#how-does-it-works .bottom>div img {
+    width: 120px;
+    height: 110px;
+    margin-bottom: 8px;
+}
+
+#how-does-it-works .bottom>div h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+#how-does-it-works .bottom>div p {
+    color: rgb(228, 228, 228);
+}
+
+/* start-investment */
+
+#start-investment {
+    width: 100%;
+    height: 195vh;
+    background-color: #032055;
+}
+
+#start-investment .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#start-investment .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#start-investment .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 40px;
+}
+
+#start-investment .middle {
+    width: 70%;
+    margin-left: 15%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#start-investment .middle div {
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #4e3b7b;
+    padding: 25px 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-investment .middle div:nth-child(1) {
+    /* all bets */
+    background-color: #7418c6;
+}
+
+#start-investment .middle div:hover {
+    cursor: pointer;
+    background-color: #7418c6;
+}
+
+#start-investment .bottom {
+    width: 70%;
+    margin-left: 15%;
+    background-color: #001232;
+}
+
+#start-investment .bottom .bottom-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    padding: 30px;
+    box-shadow: 0 2px 2px -2px rgb(200, 200, 200);
+    position: relative;
+}
+
+#start-investment .bottom .bottom-top div {
+    position: absolute;
+}
+
+#start-investment .bottom .bottom-top div:nth-child(1) {
+    left: 58px;
+}
+
+#start-investment .bottom .bottom-top div:nth-child(2) {
+    left: 332px;
+}
+
+#start-investment .bottom .bottom-top div:nth-child(3) {
+    right: 386px;
+}
+
+#start-investment .bottom .bottom-top div:nth-child(4) {
+    right: 170px;
+}
+
+#start-investment .bottom .bottom-bottom .flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10rem;
+    color: white;
+    font-weight: bold;
+    height: 80px;
+    padding: 0 50px;
+    box-shadow: 0 2px 2px -2px rgb(200, 200, 200);
+    margin-top: 1px;
+}
+
+#start-investment .bottom .bottom-bottom .flex:last-child {
+    box-shadow: none;
+}
+
+#start-investment .bottom .bottom-bottom .flex:hover {
+    background-color: rgb(2, 28, 77)
+}
+
+#start-investment .bottom .bottom-bottom .flex .div-with-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#start-investment .bottom .bottom-bottom .flex .price {
+    color: #045cf0;
+}
+
+#start-investment .bottom .bottom-bottom .flex .currency {
+    color: #f0ad4e;
+}
+
+/* better-experiences */
+
+#better-experiences {
+    width: 100%;
+    height: 35vh;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+
+#better-experiences .container {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#better-experiences .container h2 {
+    color: white;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+#better-experiences .container button {
+    background-color: white;
+    color: #8E2DE2;
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+}
+
+#better-experiences .container button:hover {
+    cursor: pointer;
+    background-color: #8E2DE2;
+    color: white;
+    border: 1px solid white;
+    transition: 0.4s ease-out;
+}
+
+/* latest-transaction */
+
+#latest-transaction {
+    width: 100%;
+    height: 160vh;
+    background-color: #032055;
+}
+
+#latest-transaction .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#latest-transaction .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#latest-transaction .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 40px;
+}
+
+#latest-transaction .middle {
+    width: 70%;
+    margin-left: 15%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#latest-transaction .middle div {
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #4e3b7b;
+    padding: 25px 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#latest-transaction .middle div:nth-child(1) {
+    /* all bets */
+    background-color: #7418c6;
+}
+
+#latest-transaction .middle div:hover {
+    cursor: pointer;
+    background-color: #7418c6;
+}
+
+#latest-transaction .bottom {
+    width: 70%;
+    margin-left: 15%;
+    background-color: #001232;
+}
+
+#latest-transaction .bottom .bottom-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    padding: 30px;
+    box-shadow: 0 2px 2px -2px rgb(200, 200, 200);
+    position: relative;
+}
+
+#latest-transaction .bottom .bottom-top div {
+    position: absolute;
+}
+
+#latest-transaction .bottom .bottom-top div:nth-child(1) {
+    left: 50px;
+}
+
+#latest-transaction .bottom .bottom-top div:nth-child(2) {
+    left: 400px;
+}
+
+#latest-transaction .bottom .bottom-top div:nth-child(3) {
+    left: 575px;
+}
+
+#latest-transaction .bottom .bottom-top div:nth-child(4) {
+    right: 210px;
+}
+
+#latest-transaction .bottom .bottom-top div:nth-child(5) {
+    right: 45px;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    color: white;
+    font-weight: bold;
+    height: 80px;
+    padding: 0 50px;
+    box-shadow: 0 2px 2px -2px rgb(200, 200, 200);
+    margin-top: 1px;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex div {
+    width: 100px;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex:last-child {
+    box-shadow: none;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex:hover {
+    background-color: rgb(2, 28, 77)
+}
+
+#latest-transaction .bottom .bottom-bottom .flex .div-with-image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex .amount-container {
+    display: flex;
+    margin-top: 6px;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex .amount-container .amount {
+    color: #045cf0;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex .amount-container svg {
+    width: 25px;
+    height: 35px;
+    margin-left: 5px;
+    margin-top: -7px;
+}
+
+#latest-transaction .bottom .bottom-bottom .flex .deposit-by {
+    color: #f0ad4e;
+}
+
+/* our-bigest-advantage */
+
+#our-bigest-advantage {
+    width: 100%;
+    height: 110vh;
+    background-color: #032055;
+}
+
+#our-bigest-advantage .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#our-bigest-advantage .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#our-bigest-advantage .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 40px;
+}
+
+#our-bigest-advantage .bottom {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#our-bigest-advantage .bottom>div {
+    flex: 1;
+    text-align: center;
+}
+
+#our-bigest-advantage .bottom h2 {
+    color: white;
+    text-align: left;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+
+#our-bigest-advantage .bottom p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 40px;
+    text-align: left;
+    line-height: 1.625;
+}
+
+.our-bigest-advantage-bottom-right {
+    width: 60%;
+    float: right;
+}
+
+.our-bigest-advantage-bottom-left img {
+    width: 100%;
+    float: left;
+}
+
+/* top-10-inventors */
+
+#top-10-inventors {
+    width: 100%;
+    height: 100vh;
+    background-color: #001232;
+}
+
+#top-10-inventors .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#top-10-inventors .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#top-10-inventors .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 40px;
+}
+
+/* what-users-says */
+
+#what-users-says {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #4a00e0, #8e2de2);
+}
+
+#what-users-says .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#what-users-says .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#what-users-says .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 40px;
+}
+
+#what-users-says .bottom {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+#what-users-says .bottom>div {
+    flex: 1;
+    text-align: center;
+    background-color: #032055;
+    padding: 26px 30px 30px;
+    border-radius: 7px;
+    margin-left: 2%;
+}
+
+#what-users-says .bottom>div:hover {
+    transition: 0.3s ease-in;
+    background-color: #031434;
+}
+
+#what-users-says .bottom div div {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+}
+
+#what-users-says .bottom p {
+    text-align: left;
+    color: #fff;
+    line-height: 1.625;
+    font-size: 16px;
+}
+
+#what-users-says h3 {
+    align-items: left;
+    text-align: left;
+}
+
+#what-users-says h3 img {
+    width: 9%;
+    text-align: left;
 }
