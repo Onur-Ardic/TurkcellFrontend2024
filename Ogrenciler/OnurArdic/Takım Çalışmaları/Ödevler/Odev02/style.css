@@ -24,6 +24,10 @@
   margin-top: 2rem;
 }
 
+.mb-30 {
+  margin-bottom: 2rem;
+}
+
 .p-1 {
   padding: 1rem;
 }
@@ -38,6 +42,10 @@
 
 .center {
   text-align: center;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 /* !---------------- Header Start -------------------- */
@@ -164,7 +172,7 @@
 
 .header .hero {
   position: relative;
-  top: 10%;
+  top: 2%;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -267,16 +275,26 @@
 /* !---------------- Header End -------------------- */
 
 /* !----------------About Us Start------------------ */
-
+.about-us {
+  background-color: #001232;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 30px;
+}
 .about-card {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  background: #032055;
   padding: 20px;
+  font-family: "open-sans", sans-serif;
+  margin-top: -180px;
 }
 
-.about-card .about-us-card {
+.about-card:hover {
+  transform: translateY(-10px);
+  transition: 1s ease all;
 }
+
 .about-card .about-card-top {
   width: 100px;
   height: 100px;
@@ -296,4 +314,176 @@
   margin-top: 30px;
 }
 
+.about-card .about-card-content h3 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.about-card .about-card-content h4 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.about-card .about-card-content .subtitle {
+  margin-top: 10px;
+}
+
+.about-card .about-card-content-p {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* ? about us content */
+.about-us-content h3 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+}
+
+.about-us-content .about-us-text {
+  color: #dbe2fb;
+  font-size: 16px;
+}
+.about-us .about-us-content .left-about-us-img img {
+  max-width: 100%;
+}
+
+.about-us .about-us-content .right-about-us h4 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.about-us .about-us-content .right-about-us .about-us-right-text {
+  color: #dbe2fb;
+  margin-top: 24px;
+  font-size: 17px;
+}
+
+.about-us
+  .about-us-content
+  .right-about-us
+  .right-about-content
+  .right-about-content-items {
+  color: #dbe2fb;
+}
+
+.about-us
+  .about-us-content
+  .right-about-us
+  .right-about-content
+  .right-about-content-item {
+  margin-top: 30px;
+}
+
+.right-about-content .right-about-content-items .right-about-content-item h5 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.right-about-content .right-about-content-items .right-about-content-item i {
+  width: 100px;
+  height: 75px;
+  font-size: 40px;
+  background: rgb(142, 45, 226);
+  background: linear-gradient(
+    0deg,
+    rgba(142, 45, 226, 1) 57%,
+    rgba(74, 0, 224, 1) 97%
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* !----------------About Us End------------------ */
+
+/* !----------------Why Choose Us Start------------------ */
+.why-choose-us {
+  background-color: #032055;
+  font-family: "Open Sans", sans-serif;
+  padding: 30px 0;
+}
+
+.why-choose-us-content h3 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.why-choose-us-content .why-choose-us-text {
+  color: #dbe2fb;
+  font-size: 17px;
+}
+
+.why-choose-us .why-choose-us-card {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.why-choose-us .why-choose-us-card .why-choose-us-item .why-icon {
+  width: 80px;
+  height: 80px;
+  background: rgb(142, 45, 226);
+  background: linear-gradient(
+    0deg,
+    rgba(142, 45, 226, 1) 57%,
+    rgba(74, 0, 224, 1) 97%
+  );
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.why-choose-us .why-choose-us-card .why-choose-us-item {
+  text-align: center;
+  color: #fff;
+  padding-top: 10px;
+  max-width: 1100px !important;
+  cursor: pointer;
+}
+.why-choose-us .why-choose-us-card .why-choose-us-item p {
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.why-choose-us .big-card {
+  height: 400px;
+  box-shadow: 0px 0px 10px #d4d4d4;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 20px;
+  gap: 2rem;
+}
+
+.why-choose-us .big-card img {
+  width: 300px;
+}
+
+.why-choose-us .big-card h3 {
+  font-size: 30px;
+  color: #fff;
+  padding: 0px 15px;
+}
+
+.why-choose-us .big-card p {
+  font-size: 16px;
+  padding: 15px;
+  color: #dbe2fb;
+}
+
+/* !----------------Why Choose Us End------------------ */
