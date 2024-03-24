@@ -39,3 +39,74 @@ input:focus {
   padding: 15px 30px;
   left: 600px;
 }
+#about-us {
+  background-color: #001232;
+  width: 100%;
+  height: 1000px;
+  padding-top: 200px;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+#why-choose-us {
+  width: 100%;
+  background-color: #032055;
+  height: 1000px;
+  padding-top: 100px;
+}
+.whychoose {
+  width: 500px;
+  cursor: pointer;
+}
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.options-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 10px;
+  gap: 45px;
+}
+.options-paragraph {
+  font-size: 18px;
+  font-weight: 700;
+}
+.profit {
+  width: 1100px;
+  box-shadow: 0px 0px 10px #4e3b7b;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 230px;
+  padding: 15px;
+}
+.fast-profit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fast-profit img {
+  width: 450px;
+}
+.profit-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.profit-paragraph {
+  max-width: 600px;
+  color: #d4e2fb;
+}
