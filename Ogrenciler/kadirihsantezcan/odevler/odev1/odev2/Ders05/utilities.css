@@ -102,6 +102,9 @@ ul {
 .bg-darkblue {
   background-color: #001333;
 }
+.bg-to-bottom {
+  background-image: linear-gradient(to bottom, #4a00e0, #8e2de2);
+}
 .card-1 {
   border-radius: 5px;
   margin: 0;
@@ -116,4 +119,7 @@ ul {
 .date {
   opacity: 0.5;
   margin: 10px 10px 10px 0;
+}
+.footer-padding {
+  padding: 10px 0;
 }
