@@ -9,18 +9,29 @@
   width: 50%;
 }
 
+.title {
+  padding: 40px 0;
+  text-align: center;
+}
+
 .container {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
-body{
-   font-family: "Open Sans", sans-serif; 
-  } 
-   h1, h2, h3, h4, h5, h6 { font-family: "Poppins", sans-serif; 
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
 
 .h2-size {
   font-size: 40px;
@@ -29,14 +40,35 @@ body{
   text-align: center;
   color: #ffffff;
 }
+
 .i-large {
   font-size: 3em;
 }
+
 .i-medium {
   font-size: 2em;
 }
 
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.column-gap {
+  column-gap: 20px;
+}
+
+.col-1 {
+  flex: 100%;
+}
+.col-2 {
+  flex: 50%;
+}
 
 /* Colors & Sizes */
 :root {
@@ -110,14 +142,17 @@ body{
   justify-content: space-evenly;
   align-items: end;
 }
+
 .col-center-center {
   justify-content: center;
   align-items: center;
 }
+
 .col-center-start {
   justify-content: center;
   align-items: start;
 }
+
 .col-center-end {
   justify-content: center;
   align-items: end;
@@ -182,14 +217,17 @@ body{
   justify-content: space-evenly;
   align-items: end;
 }
+
 .row-center-center {
   justify-content: center;
   align-items: center;
 }
+
 .row-center-start {
   justify-content: center;
   align-items: start;
 }
+
 .row-center-end {
   justify-content: center;
   align-items: end;
@@ -280,6 +318,7 @@ body{
   width: 100%;
   margin-left: 70px;
 }
+
 .slider-content {
   height: 300px;
 }
@@ -313,6 +352,7 @@ body{
   padding: 0px 30px;
   color: #ffffff;
 }
+
 .slider-icon {
   background-color: var(--bg-secondary);
   color: var(--text-primary);
@@ -339,6 +379,7 @@ body{
   display: inline-block;
   line-height: 130px;
 }
+
 #total-cards {
   margin-top: -180px;
   margin-bottom: -200px;
@@ -384,6 +425,7 @@ body{
   padding-top: 300px;
   padding-bottom: 100px;
 }
+
 .about-p {
   font-size: 16px;
   line-height: 26px;
@@ -404,11 +446,22 @@ body{
   color: white;
 }
 
-.about-icon{
+.about-icon {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   background: var(--bg-gradiant);
+  text-align: center;
+  line-height: 100px;
+  border: none;
+  color: white;
+  margin: 0 30px 20px 0;
+  font-size: 10px;
+}
+
+#about-us .p-size {
+  text-align: start;
+  margin: 20px 0;
 }
 
 .p-size {
@@ -416,7 +469,8 @@ body{
   color: #dbe2fb;
   text-align: center;
 }
-.content-p{
+
+.content-p {
   font-size: 16px;
   color: var(--text-secondary);
 }
@@ -429,16 +483,19 @@ body{
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
 .w-c-u-menu {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
 }
+
 .w-c-u-menu a {
   text-decoration: none;
   color: white;
 }
+
 .active-icon {
   background: var(--icon-active);
 }
@@ -449,21 +506,25 @@ body{
   line-height: 50px;
   font-weight: 600;
 }
+
 .w-c-u-menu-title {
   color: var(--text-primary);
   font-size: 24px;
 }
+
 .w-c-u-menu-subtitle {
   font-size: 16px;
   margin-top: 16px;
   color: var(--text-secondary);
 }
+
 .w-c-u-subtitle {
   text-align: center;
   font-size: 16px;
   margin-top: 16px;
   color: var(--text-secondary);
 }
+
 .w-c-u-icon {
   background-color: var(--bg-secondary);
   width: 90px;
@@ -480,9 +541,11 @@ body{
   box-shadow: 0px 0px 10px #4e3b7b;
   height: 350px;
 }
+
 #fast-profit-tab img {
   width: 420px;
 }
+
 /* Why Choose Us End */
 
 /* Investment Plans Start */
@@ -500,9 +563,11 @@ body{
   text-align: center;
   margin-top: 30px;
 }
+
 .investment-button-group {
   margin-top: 50px;
 }
+
 .investment-button {
   background: var(--button-gradiant);
   border: none;
@@ -513,6 +578,7 @@ body{
   color: #ffffff;
   margin-right: 50px;
 }
+
 .investment-button-dark {
   background: var(--bg-primary);
   border: 0.5px solid #ffffff;
@@ -522,6 +588,7 @@ body{
   padding: 0px 30px;
   color: #ffffff;
 }
+
 .investment-button-dark:hover {
   background: var(--button-gradiant);
   border: none;
@@ -531,10 +598,12 @@ body{
   padding: 0px 30px;
   color: #ffffff;
 }
+
 .investment-card-group {
   width: 90%;
   margin: auto;
 }
+
 .investment-card {
   background: var(--bg-secondary);
   color: white;
@@ -546,18 +615,21 @@ body{
   width: 30%;
   margin-top: 30px;
 }
+
 .investment-card-h3 {
   font-size: 25px;
   line-height: 30px;
   font-weight: 600;
   color: white;
 }
+
 .investment-card-price {
   width: 90%;
   height: 100px;
   background: var(--bg-gradiant);
   border-radius: 10px;
 }
+
 .investment-card-icon {
   font-size: 70px;
   transform: rotate(15deg);
@@ -566,14 +638,17 @@ body{
   justify-content: end;
   align-items: end;
 }
+
 .investment-card-p {
   font-size: 30px;
   font-weight: 700;
 }
+
 .investment-card-content-p {
   font-size: 20px;
   color: #dbe2fb;
 }
+
 .investment-card-button {
   background: var(--button-gradiant);
   border: none;
@@ -583,6 +658,7 @@ body{
   padding: 0px 30px;
   color: #ffffff;
 }
+
 .investment-card-button:hover {
   background: var(--button-gradiant-top);
   border: none;
@@ -610,19 +686,23 @@ body{
   padding-bottom: 100px;
   height: 1000px;
 }
+
 .lt-heading {
   text-align: center;
   padding-bottom: 65px;
 }
-.lt-heading-title{
-  margin-bottom:16px;
+
+.lt-heading-title {
+  margin-bottom: 16px;
   color: var(--text-primary);
   font-size: 34px;
 }
-.lt-menu{
+
+.lt-menu {
   margin-bottom: 25px;
   height: 66px;
 }
+
 .lt-button-active {
   color: white;
   font-size: 18px;
@@ -634,6 +714,7 @@ body{
   background: var(--button-gradiant);
   box-shadow: 0px 0px 10px #4e3b7b;
 }
+
 .lt-button {
   color: white;
   font-size: 18px;
@@ -645,31 +726,38 @@ body{
   background: var(--bg-secondary);
   box-shadow: 0px 0px 10px #4e3b7b;
 }
+
 .lt-table {
-width: 100%;
-color: var(--text-primary);
-border-collapse: collapse;
+  width: 100%;
+  color: var(--text-primary);
+  border-collapse: collapse;
 }
-.lt-text-start{
+
+.lt-text-start {
   text-align: start !important;
 }
-.lt-table th{
-background-color: var(--bg-primary);
-border-bottom: 0.1px solid white;
-padding: 20px 15px;
+
+.lt-table th {
+  background-color: var(--bg-primary);
+  border-bottom: 0.1px solid white;
+  padding: 20px 15px;
 }
+
 .lt-table tr td:nth-child(4) {
   color: #f0ad4e;
 }
+
 .lt-table tr td:nth-child(3) {
   color: #045cf0;
 }
-.lt-table td{
-background-color: var(--bg-primary);
-padding: 20px 15px;
-border-bottom: 0.1px solid white;
-text-align: center;
+
+.lt-table td {
+  background-color: var(--bg-primary);
+  padding: 20px 15px;
+  border-bottom: 0.1px solid white;
+  text-align: center;
 }
+
 /* Latest Transaction End */
 
 /* Our Bigest Advantage Start */
@@ -685,17 +773,98 @@ text-align: center;
 /* What Users Says End */
 
 /* Tax & Profit Calculator Start */
+#tax-profit-calculator {
+  background: var(--bg-primary);
+  color: #fff;
+  padding: 50px;
+}
+
+#tax-profit-calculator h4 {
+  background: var(--bg-gradiant);
+  padding: 15px;
+  font-size: 20px;
+}
+#calculator-tax,
+#calculator-profit {
+  background: var(--bg-secondary);
+}
+#calculator-tax .row,
+#calculator-profit .row {
+  padding: 30px;
+}
+
+#calculator-tax .col-2 {
+  padding-right: 15px;
+}
+
+#tax-profit-calculator select,
+#tax-profit-calculator input {
+  width: 100%;
+  background: var(--bg-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 10px;
+}
+
+#tax-profit-calculator input::placeholder,
+#tax-profit-calculator select {
+  color: #fff;
+}
+
+.tpc-p {
+  color: white;
+}
 
 /* Tax & Profit Calculator End */
 
 /* FAQ Start */
+
+#faq {
+  background: var(--bg-secondary);
+  padding: 50px;
+  color: #fff;
+}
+
+#faq h4 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.faq-bg div h3 {
+  background: var(--bg-gradiant);
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.faq-bg div p {
+  padding: 15px;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.faq-p {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.faq-bg h3 i {
+  font-size: 20px;
+  margin-right: 10px;
+}
 
 /* FAQ End */
 
 /* Blog Start */
 #blog {
   background: var(--bg-primary);
+  padding: 50px 0;
 }
+
+#blog #latest-card {
+  column-gap: 20px;
+}
+
 .li-latest {
   list-style: none;
   color: #ffffff;
@@ -714,12 +883,41 @@ text-align: center;
   margin-top: 0;
   font-weight: bold;
 }
+
 /* Blog End */
 
 /* Footer Start */
 
+#footer {
+  background: var(--bg-gradiant);
+}
+
 /* Footer End */
 
 /* Copyright Start */
+#copyright {
+  background: var(--bg-gradiant);
+  margin-top: 87px;
+  padding: 24px 0px 25px;
+  line-height: 26px;
+}
+
+#copyright .container {
+  display: flex;
+}
+
+.authors {
+  color: #ffffffcc;
+  font-size: 16px;
+}
+
+.footer-social-media-icon-group {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  font-size: 14px;
+}
 
 /* Copyright End */
