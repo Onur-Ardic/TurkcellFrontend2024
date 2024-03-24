@@ -81,6 +81,7 @@ ul {
 .title {
   font-size: 40px;
   font-weight: bold;
+  margin: 15px;
 }
 .paragraph {
   opacity: 0.8;
@@ -90,4 +91,29 @@ ul {
 .subTitle {
   font-size: 30;
   font-weight: bold;
+}
+.sub-title{
+  font-size: 20px;
+  text-align: left;
+}
+.text-parapraph{
+  text-align: left;
+}
+.bg-darkblue {
+  background-color: #001333;
+}
+.card-1 {
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+}
+.card-body-1 {
+  margin: 5px;
+}
+.text {
+  margin: 20px 20px 20px 0;
+}
+.date {
+  opacity: 0.5;
+  margin: 10px 10px 10px 0;
 }
