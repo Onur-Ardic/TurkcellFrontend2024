@@ -1,0 +1,64 @@
+.static-element{
+    position: static;
+    width: 200px;
+    height: 120px;
+    background-color: rgb(31, 133, 168);
+}
+.relative-container {
+    position: relative;
+    height: 120px;
+    width: 200px;
+    background-color: lightgreen;
+}
+
+.relative-element {
+    position: relative;
+    width: 150px;
+    height: 80px;
+    background-color: lightcoral;
+    top: 20px;
+    left: 20px;
+}
+
+.absolute-container {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(169, 140, 94);
+}
+
+.absolute-element {
+    position: absolute;
+    top: 10px;
+    left:  0;
+    width: 150px;
+    height: 80px;
+    background-color: rgb(136, 184, 120);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: bold;
+}
+
+.fixed-container {
+    position: relative;
+    height: 900px;
+    width: 50%;
+    background-color: rgb(208, 104, 104);
+}
+
+.fixed-element {
+    position: fixed;
+    top: 20px;
+    left: 250px;
+    width: 240px;
+    height: 120px;
+    background-color: lightsalmon;
+    display:  flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: bold;
+    font-style: italic;
+    color: blue;
+    font-size: 30px;
+}

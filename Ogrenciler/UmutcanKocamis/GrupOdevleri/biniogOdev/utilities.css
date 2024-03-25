@@ -34,6 +34,7 @@ button {
 .large-title {
   font-size: 48px;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 .mid-title {
   font-size: 18px;
@@ -44,8 +45,9 @@ button {
 }
 .card {
   width: 350px;
-  height: 300px;
+  height: 350px;
   background-color: #032055;
+  padding-bottom: 20px;
 }
 .card img {
   width: 120px;
@@ -69,4 +71,36 @@ button {
   position: absolute;
   top: 700px;
   left: 200px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.about-img {
+  width: 550px;
+}
+.paragraph-large {
+  max-width: 690px;
+  text-align: center;
+  color: #d4e2fb;
+}
+.left {
+  text-align: left;
+  max-width: 530px;
+}
+
+.title-header {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.about-title {
+  display: flex;
+}
+
+.about-title img {
+  width: 120px;
 }

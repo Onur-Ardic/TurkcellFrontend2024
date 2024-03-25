@@ -1,0 +1,102 @@
+ 
+  #investment {
+    padding-top: 100px;
+    width: 100%;
+    height: 800px;
+    background-color: #001232;
+  }
+  .investment-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .investment-btn button {
+    padding: 15px 25px;
+    font-weight: 700;
+  }
+  .investment-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  .investment-card {
+    background-color: #032055;
+    width: 350px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .investment-card img {
+    width: 300px;
+  }
+  .investment-title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  #how-does-it-works {
+    padding-top: 100px;
+    width: 100%;
+    height: 700px;
+  }
+  .how-does-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  #start-investment {
+    width: 100%;
+    height: 1400px;
+    background-color: #032055;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mybets {
+    box-shadow: 0px 0px 10px #4e3b7b;
+  }
+  .bets {
+    width: 1100px;
+    height: 800px;
+    background-color: #001232;
+    margin-top: 50px;
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+  .left {
+    text-align: left;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 20px 0px;
+  }
+  .top {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+  td {
+    border-top: 1px solid rgba(255, 255, 255, 0.09);
+  }
+  .date {
+    font-weight: 700;
+  }
+  .price {
+    color: #045cf0;
+    font-weight: 700;
+  }
+  .bitcoin {
+    color: #f0ad4e;
+    font-weight: 700;
+  }
+  
