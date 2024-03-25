@@ -1035,11 +1035,10 @@ h6 {
 .footer-button {
   background: var(--button-gradiant);
   border: none;
-  border-radius: 50px;
   margin: 2px;
-  height: 51px;
-  line-height: 51px;
-  padding: 0px 30px;
+  border-radius: 50%;
+  height: 45px;
+  padding: 0 15px;
   color: #ffffff;
 }
 
