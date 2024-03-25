@@ -1,0 +1,19 @@
+.container {
+  height: 100vh;
+  background-color: #ccc;
+  padding: 1.3rem;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.container .item {
+  background-color: #001232;
+  color: #dbe2fb;
+  padding: 120px 0px 119px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+}
