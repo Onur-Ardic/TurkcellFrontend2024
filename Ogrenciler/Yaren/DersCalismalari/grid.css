@@ -1,0 +1,25 @@
+body {
+margin:0;
+
+}
+
+.container {
+
+    height:600 px;
+    background-color:azure;
+    padding:20 px;
+    gap:10 px;
+  /*  grid-template-columns: 150 px; 150 px;  150 px; */
+   /* grid-template-columns: repeat(3,300px);*/
+   /*grid-template-columns: repeat(auto-fit,minmax(300px,1fr));*/
+   grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+   justify-content: center;
+   align-items: center;
+
+}
+
+.item
+{
+    background-color: crimson;
+    padding:20 px;
+}
