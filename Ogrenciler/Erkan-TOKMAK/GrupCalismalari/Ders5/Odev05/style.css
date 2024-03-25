@@ -800,12 +800,12 @@ h6 {
   text-align: center;
   padding-bottom: 65px;
 }
-.lt-heading-title{
-  margin-bottom:16px;
+.lt-heading-title {
+  margin-bottom: 16px;
   color: var(--text-primary);
   font-size: 34px;
 }
-.lt-menu{
+.lt-menu {
   margin-bottom: 25px;
   height: 66px;
 }
@@ -832,11 +832,11 @@ h6 {
   box-shadow: 0px 0px 10px #4e3b7b;
 }
 .lt-table {
-width: 100%;
-color: var(--text-primary);
-border-collapse: collapse;
+  width: 100%;
+  color: var(--text-primary);
+  border-collapse: collapse;
 }
-.lt-text-start{
+.lt-text-start {
   text-align: start !important;
   display: flex;
   align-items: center;
@@ -844,10 +844,10 @@ border-collapse: collapse;
 .lt-user-avatar {
   margin-right: 10px;
 }
-.lt-table th{
-background-color: var(--bg-primary);
-border-bottom: 0.1px solid white;
-padding: 20px 15px;
+.lt-table th {
+  background-color: var(--bg-primary);
+  border-bottom: 0.1px solid white;
+  padding: 20px 15px;
 }
 .lt-table tr td:nth-child(4) {
   color: #f0ad4e;
@@ -855,12 +855,12 @@ padding: 20px 15px;
 .lt-table tr td:nth-child(3) {
   color: #045cf0;
 }
-.lt-table td{
-background-color: var(--bg-primary);
-padding: 20px 15px;
-border-bottom: 0.1px solid white;
-text-align: center;
-font-weight: 600;
+.lt-table td {
+  background-color: var(--bg-primary);
+  padding: 20px 15px;
+  border-bottom: 0.1px solid white;
+  text-align: center;
+  font-weight: 600;
 }
 /* Latest Transaction End */
 
@@ -872,13 +872,13 @@ font-weight: 600;
 .obg-title {
   margin-bottom: 60px;
 }
-.obg-content{
+.obg-content {
   color: white;
   height: 200px;
   width: 500px;
 }
-.obg-heading-title{
-  margin-bottom:16px;
+.obg-heading-title {
+  margin-bottom: 16px;
   color: var(--text-primary);
   font-size: 34px;
 }
@@ -894,13 +894,13 @@ font-weight: 600;
 /* Our Bigest Advantage End */
 
 /* Our Top 10 Investors Start */
-#our-top-10-investors{
+#our-top-10-investors {
   background-color: var(--bg-primary);
   padding: 121px 0px 115px;
   height: 750px;
 }
-.oti-heading-title{
-  margin-bottom:16px;
+.oti-heading-title {
+  margin-bottom: 16px;
   color: var(--text-primary);
   font-size: 34px;
 }
@@ -937,7 +937,7 @@ font-weight: 600;
 /* Our Top 10 Investors End */
 
 /* What Users Says Start */
-#what-users-says{
+#what-users-says {
   background: var(--bg-gradiant);
   height: 750px;
   padding: 121px 0px 151px;
@@ -951,8 +951,8 @@ font-weight: 600;
   padding: 10px 0px;
 }
 .wus-card-group {
-width: 100%;
-margin-top: 60px;
+  width: 100%;
+  margin-top: 60px;
 }
 .wus-card {
   background-color: var(--bg-secondary);
