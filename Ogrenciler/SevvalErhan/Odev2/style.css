@@ -30,7 +30,7 @@ body {
   .main-menu .navbar .navbar-brand img {
    max-width: 40px;
   }
-  
+
   .container {
     width: 100%;
     padding-right: 15px;
@@ -123,32 +123,31 @@ body {
   margin-left: -15px;
   padding-right: 15px;
   padding-left: 15px;
+  gap: 2rem;
 }
 .tp-calculator .cards .tax-card .tax-calculator .calculator-content .group-2 {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
     margin-left: -15px;
     padding-right: 15px;
     padding-left: 15px;
+    gap: 1rem;
   }
   .tp-calculator .cards .tax-card .tax-calculator .calculator-content .group-3 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
+    
     margin-left: -15px;
     padding-right: 15px;
     padding-left: 15px;
   }
 .tp-calculator .cards .tax-card .tax-calculator .calculator-content .form-group{
     margin-bottom: 0px;
-} 
+}
 .tp-calculator .cards .tax-card .tax-calculator .calculator-content .form-group label{
    color: #fff;
    font-weight: 600;
    margin-bottom: 0.5rem;
    display: inline-block;
-} 
+}
 .tp-calculator .cards .tax-card .tax-calculator .form-group  .input-field{
     background: #032055;
     height: 40px;
@@ -193,38 +192,32 @@ body {
     color: #fff;
   }
   .tp-calculator .cards .profit-card .profit-calculator .calculator-content .group-1 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
+    
     margin-left: -15px;
     padding-right: 15px;
     padding-left: 15px;
   }
   .tp-calculator .cards .profit-card .profit-calculator .calculator-content .group-2 {
-      display: flex;
-      flex-wrap: wrap;
-      margin-right: -15px;
+    
       margin-left: -15px;
       padding-right: 15px;
       padding-left: 15px;
     }
     .tp-calculator .cards .profit-card .profit-calculator .calculator-content .group-3 {
-      display: flex;
-      flex-wrap: wrap;
-      margin-right: -15px;
+     
       margin-left: -15px;
       padding-right: 15px;
       padding-left: 15px;
     }
   .tp-calculator .cards .profit-card .profit-calculator .calculator-content .form-group{
       margin-bottom: 0px;
-  } 
+  }
   .tp-calculator .cards .profit-card .profit-calculator .calculator-content .form-group label{
      color: #fff;
      font-weight: 600;
      margin-bottom: 0.5rem;
      display: inline-block;
-  } 
+  }
   .tp-calculator .cards .profit-card .profit-calculator .form-group  .input-field{
       background: #032055;
       height: 40px;
@@ -240,5 +233,5 @@ body {
       margin-bottom: 20px;
       border: 1px solid rgba(0, 0, 0, 0.1);
   }
-  
+
 
