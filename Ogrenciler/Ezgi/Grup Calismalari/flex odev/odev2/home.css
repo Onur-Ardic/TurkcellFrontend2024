@@ -411,7 +411,6 @@ table tr:hover {
     padding: 121px 0px 115px;
     display: flex;
     justify-content: center !important;
-    box-sizing: border-box;
     flex-direction: column;
     text-align: center;
 }
@@ -421,6 +420,7 @@ table tr:hover {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-top: 50px;
 }
 .team {
     background: #032055;
@@ -436,6 +436,8 @@ table tr:hover {
     gap: 30px;
     padding: 60px 15px 25px;
     border-radius: 10px;
+}.team img{
+    width: 207px; height: 207px;
 }
 .socialLinks {
     display: flex;
