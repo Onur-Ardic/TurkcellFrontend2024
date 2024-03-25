@@ -9,6 +9,7 @@
 }
 
 /* home */
+
 #home {
     width: 100%;
     height: 130vh;
@@ -234,6 +235,7 @@
 }
 
 /* about */
+
 #about {
     width: 100%;
     height: 170vh;
@@ -326,6 +328,7 @@
 }
 
 /* why-choose-us */
+
 #why-choose-us {
     width: 100%;
     height: 140vh;
@@ -421,6 +424,7 @@
 }
 
 /* investment-plans */
+
 #investment-plans {
     width: 100%;
     height: 115vh;
@@ -537,6 +541,7 @@
 }
 
 /* how-does-it-works */
+
 #how-does-it-works {
     width: 100%;
     height: 100vh;
@@ -610,6 +615,7 @@
 }
 
 /* start-investment */
+
 #start-investment {
     width: 100%;
     height: 195vh;
@@ -746,6 +752,7 @@
 }
 
 /* better-experiences */
+
 #better-experiences {
     width: 100%;
     height: 35vh;
@@ -786,6 +793,7 @@
 }
 
 /* latest-transaction */
+
 #latest-transaction {
     width: 100%;
     height: 160vh;
@@ -1194,9 +1202,7 @@
     background-color: #001232;
 }
 
-#tax-profit-calculator .top {
-    width: 70%;
-    margin-left: 15%;
+#tax-profit-calculator .same {
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -1205,19 +1211,75 @@
     text-align: center;
 }
 
-#tax-profit-calculator .top h2 {
+#tax-profit-calculator .same h2 {
     font-size: 40px;
     color: white;
+}
+
+#tax-profit-calculator .same p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+}
+
+#tax-profit-calculator .bottom .top {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#tax-profit-calculator .bottom .top .top-flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#tax-profit-calculator .bottom .top .top-flex-item label {
     margin-bottom: 10px;
 }
 
-#tax-profit-calculator .top p {
-    font-size: 16px;
-    color: rgb(228, 228, 228);
-    margin-bottom: 100px;
+#tax-profit-calculator .bottom .top .top-flex-item select {
+    width: 220px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #b9c1c8;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: #032055;
+    color: white;
 }
 
-/* ??? */
+#tax-profit-calculator .bottom .middle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#tax-profit-calculator .bottom .middle .middle-flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#tax-profit-calculator .bottom .middle .middle-flex-item label {
+    margin-bottom: 10px;
+}
+
+#tax-profit-calculator .bottom .middle .middle-flex-item input,
+select {
+    width: 220px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #b9c1c8;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: #032055;
+    color: white;
+}
+
+#tax-profit-calculator .bottom .middle .middle-flex-item input::placeholder {
+    color: white;
+}
 
 #tax-profit-calculator .bottom {
     display: flex;
@@ -1244,34 +1306,67 @@
 }
 
 #tax-profit-calculator .bottom .left {
-    border: 3px solid springgreen;
+    margin-top: 50px;
 }
 
 #tax-profit-calculator .bottom .left .top {
-    display: flex;
-    padding: 50px;
-    color: crimson;
-    border: 1px solid yellow;
-}
-
-#tax-profit-calculator .bottom .left .top .top-flex-item {
-    border: 2px solid orangered;
+    padding-bottom: 20px;
 }
 
 #tax-profit-calculator .bottom .left .middle {
     display: flex;
-
-    color: crimson;
-    border: 1px solid crimson;
 }
 
 #tax-profit-calculator .bottom .left .bottom {
-    display: flex;
-    color: crimson;
-    border: 1px solid white;
+    margin-top: 10px;
 }
 
-/* ??? */
+#tax-profit-calculator .bottom .left .bottom label {
+    margin-bottom: 10px;
+}
+
+#tax-profit-calculator .bottom .left .bottom input {
+    width: 460px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #b9c1c8;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: #032055;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#tax-profit-calculator .bottom .left .bottom input::placeholder {
+    color: white;
+}
+
+#tax-profit-calculator .bottom .right .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tax-profit-calculator .bottom .right .bottom>div {
+    width: 450px;
+}
+
+#tax-profit-calculator .bottom .right .bottom>div>input {
+    width: 460px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #b9c1c8;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: #032055;
+    color: white;
+    margin-bottom: 13px;
+}
+
+#tax-profit-calculator .bottom .right .bottom>div>input::placeholder {
+    color: white;
+}
 
 /* fequently-asked-questions */
 
@@ -1473,7 +1568,7 @@
     background: linear-gradient(to top, #4A00E0, #8E2DE2);
 }
 
-#last-div h3{
+#last-div h3 {
     color: white;
     font-size: 22px;
     margin-bottom: 20px;
@@ -1489,7 +1584,7 @@
 
 #last-div .info:hover {
     cursor: pointer;
-    font-weight: bold;   
+    font-weight: bold;
 }
 
 /* footer */
@@ -1536,6 +1631,7 @@ footer .socials svg:hover {
 }
 
 /* arrow-to-up */
+
 #arrow-to-up {
     width: 55px;
     height: 55px;
