@@ -1,0 +1,32 @@
+.body {
+  margin: 0;
+}
+
+.container {
+  height: 600px;
+  background-color: gainsboro;
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  /* grid-template-columns: 150px..
+                         auto
+                         1 fr ..2 fr..
+                         150px auto...150px
+                         repeat(6,1fr);
+ 
+ */
+
+  /* grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 100px); */
+
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  background-color: orangered;
+  padding: 20px;
+}
