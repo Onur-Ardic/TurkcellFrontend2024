@@ -584,7 +584,6 @@
 .start-investment-table {
   font-size: 16px;
   font-weight: 600;
-
   background: #001232;
   width: 1000px;
 }
@@ -594,10 +593,10 @@
 }
 tr {
   border-bottom: 0.5px solid #fff;
+  text-align: left;
 }
 tr td {
   padding: 10px;
-  padding-left: 0;
 }
 tr:hover {
   background: #032055;
@@ -609,7 +608,7 @@ tr:hover {
   text-transform: uppercase;
   border-top: 0px;
   border-bottom: 0px;
-  padding: 20px 15px;
+  padding: 25px 10px;
 }
 table tr td:nth-child(3) {
   color: #045cf0;
