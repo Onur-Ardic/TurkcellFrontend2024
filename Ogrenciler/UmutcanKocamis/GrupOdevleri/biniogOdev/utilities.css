@@ -45,8 +45,9 @@ button {
 }
 .card {
   width: 350px;
-  height: 300px;
+  height: 350px;
   background-color: #032055;
+  padding-bottom: 20px;
 }
 .card img {
   width: 120px;

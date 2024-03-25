@@ -46,11 +46,19 @@ h6 {
     color: white;
 }
 
-label{
+label {
     color: #fff;
     font-weight: 600;
     margin-bottom: .5rem;
     display: inline-block;
+}
+
+::placeholder {
+    color: white;
+}
+
+:focus {
+    outline: none;
 }
 
 .text-center {
@@ -63,6 +71,10 @@ label{
 
 .text-right {
     text-align: right;
+}
+
+.align-self {
+    align-self: center;
 }
 
 .justify-content-center {
@@ -148,24 +160,17 @@ a {
 }
 
 .sectionPadding {
-    padding: 125px 0px 125px;
+    padding: 125px 0px;
+}
+
+.transition_05_ease_in {
+    transition: all 0.5s ease-in !important;
 }
 
 /* footer start */
-
 .footer {
     padding-top: 100px;
-    overflow: hidden;
-    background-position: center 140px;
     background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
-    display: block;
-}
-
-.footer .copy-bg .left-area p {
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 0px;
-    color: rgba(255, 255, 255, 0.8);
 }
 
 .footer .copy-bg {
@@ -181,7 +186,6 @@ a {
 
 .footer .copy-bg .social-links li a {
     font-size: 14px;
-    border-radius: 50%;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -199,7 +203,7 @@ a {
 }
 
 .submit-btn:hover .far.fa-paper-plane {
-    padding-bottom: 7px;
+    transform: scale(1.2);
 }
 
 .footer .about-widget .subscribe-form {
@@ -210,14 +214,11 @@ a {
     width: 100%;
     height: 50px;
     font-size: 15px;
-    border: 0px;
     background: rgba(255, 255, 255, 0.25);
     border-radius: 50px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
     border: 1px solid rgba(0, 0, 0, 0.05);
     padding: 0px 60px 0px 20px;
     color: #fff;
-    overflow: visible;
 }
 
 .footer .info-link-widget ul li a {
@@ -240,21 +241,6 @@ a {
 
 .footer .info-link-widget ul li:last-child {
     border-bottom: 0px;
-}
-
-.footer .footer-widget .title {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 600;
-    color: #fff;
-}
-
-::placeholder {
-    color: white;
-}
-
-:focus {
-    outline: none;
 }
 
 /* BLOG AREA */
@@ -283,10 +269,6 @@ a {
 
 .blogCards img:hover {
     opacity: 0.7;
-}
-
-.transition_05_ease_in {
-    transition: all 0.5s ease-in !important;
 }
 
 /* Frequently Asked Qestions */
@@ -324,33 +306,33 @@ a {
     cursor: pointer;
 }
 
-.accordion-content{
+.accordion-content {
     font-size: 16px;
     line-height: 26px;
     padding: 15px 25px;
     color: #dbe2fb;
 }
 
-.accordion-header i{
+.accordion-header i {
     padding-right: 10px;
 }
 
 /* Tax Calculator */
-.calculate-title{
+.calculate-title {
     font-size: 24px;
     line-height: 34px;
     margin-bottom: 15px;
-    padding-bottom: 5px;;
+    padding-bottom: 5px;
     background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
     padding: 12px 30px 11px;
     color: #fff;
 }
 
-.calculate-wrapper{
+.calculate-wrapper {
     padding: 10px 30px 16px;
 }
 
-.input-field{
+.input-field {
     width: 100%;
     height: 40px;
     padding: 0 20px;
@@ -361,6 +343,60 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.what_users_says{
+/* What users says  */
+.what_users_says {
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+
+.single-review .stars i {
+    font-size: 14px;
+    color: #ffcc00;
+    padding-bottom: 19px;
+}
+
+.single-review {
+    padding: 26px 30px 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in;
+    width: 340px;
+    height: 298px;
+    border-radius: 7px;
+    margin: 15px;
+}
+
+.img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.single-review .content .name {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.single-review:hover {
+    transform: translateY(-5px);
+}
+
+.bottomtotop i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    bottom: 15px;
+    right: 15px;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    background: -webkit-moz-gradient(to bottom, #4A00E0, #8E2DE2);
     background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
 }

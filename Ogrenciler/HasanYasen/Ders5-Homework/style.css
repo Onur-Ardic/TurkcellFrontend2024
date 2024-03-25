@@ -2,14 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 /* home */
-
 #home {
     width: 100%;
     height: 130vh;
@@ -66,7 +65,6 @@
     border: none;
     font-size: 20px;
     font-weight: bold;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +86,6 @@
     align-items: center;
     margin-top: 120px;
     gap: 6.5rem;
-
     color: white;
     width: 70%;
     margin-left: 15%;
@@ -186,7 +183,6 @@
 }
 
 /* divs-in-the-middle */
-
 #divs-in-the-middle {
     width: 70%;
     margin-left: 15%;
@@ -195,7 +191,6 @@
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
-
     position: absolute;
     top: 640px;
     color: white;
@@ -239,7 +234,6 @@
 }
 
 /* about */
-
 #about {
     width: 100%;
     height: 170vh;
@@ -251,7 +245,6 @@
     margin-left: 15%;
     position: absolute;
     top: 1250px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -276,7 +269,6 @@
     margin-left: 15%;
     position: absolute;
     top: 1400px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -334,7 +326,6 @@
 }
 
 /* why-choose-us */
-
 #why-choose-us {
     width: 100%;
     height: 140vh;
@@ -345,7 +336,6 @@
     width: 70%;
     margin-left: 15%;
     padding-top: 100px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -405,7 +395,6 @@
     gap: 0.5rem;
     width: 70%;
     margin-left: 15%;
-
     border-radius: 10px;
     box-shadow: 0px 0px 10px #4e3b7b;
     padding: 30px 15px;
@@ -432,7 +421,6 @@
 }
 
 /* investment-plans */
-
 #investment-plans {
     width: 100%;
     height: 115vh;
@@ -443,7 +431,6 @@
     width: 70%;
     margin-left: 15%;
     padding-top: 100px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -480,7 +467,6 @@
     border-radius: 30px;
     box-shadow: 0px 0px 10px #4e3b7b;
     padding: 25px 60px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -501,7 +487,6 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-
     width: 70%;
     margin-left: 15%;
     margin-top: 15px;
@@ -513,7 +498,6 @@
     justify-content: center;
     align-items: center;
     background-color: #032055;
-
     width: 350px;
     height: 100%;
 }
@@ -553,7 +537,6 @@
 }
 
 /* how-does-it-works */
-
 #how-does-it-works {
     width: 100%;
     height: 100vh;
@@ -564,7 +547,6 @@
     width: 70%;
     margin-left: 15%;
     padding-top: 100px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -628,7 +610,6 @@
 }
 
 /* start-investment */
-
 #start-investment {
     width: 100%;
     height: 195vh;
@@ -639,7 +620,6 @@
     width: 70%;
     margin-left: 15%;
     padding-top: 100px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -677,7 +657,6 @@
     border-radius: 30px;
     box-shadow: 0px 0px 10px #4e3b7b;
     padding: 25px 60px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -767,7 +746,6 @@
 }
 
 /* better-experiences */
-
 #better-experiences {
     width: 100%;
     height: 35vh;
@@ -808,7 +786,6 @@
 }
 
 /* latest-transaction */
-
 #latest-transaction {
     width: 100%;
     height: 160vh;
@@ -819,7 +796,6 @@
     width: 70%;
     margin-left: 15%;
     padding-top: 100px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -857,7 +833,6 @@
     border-radius: 30px;
     box-shadow: 0px 0px 10px #4e3b7b;
     padding: 25px 60px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1065,7 +1040,72 @@
 #top-10-inventors .top p {
     font-size: 16px;
     color: rgb(228, 228, 228);
-    margin-bottom: 40px;
+    margin-bottom: 100px;
+}
+
+#top-10-inventors .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    width: 70%;
+    margin-left: 15%;
+}
+
+#top-10-inventors .bottom>div {
+    width: 300px;
+    height: 300px;
+    background-color: #032055;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#top-10-inventors .bottom>div:hover {
+    cursor: pointer;
+    background-color: #001232;
+    transition: 0.3s ease-in-out;
+}
+
+#top-10-inventors .bottom img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: -50px;
+}
+
+#top-10-inventors .bottom>div * {
+    color: white;
+}
+
+#top-10-inventors .bottom .name {
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#top-10-inventors .bottom .dollar {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#top-10-inventors .bottom .socials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.7rem;
+    position: absolute;
+    bottom: 30px;
+}
+
+#top-10-inventors .bottom .socials>svg:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
 }
 
 /* what-users-says */
@@ -1144,4 +1184,378 @@
 #what-users-says h3 img {
     width: 9%;
     text-align: left;
+}
+
+/* tax-profit-calculator */
+
+#tax-profit-calculator {
+    width: 100%;
+    height: 100vh;
+    background-color: #001232;
+}
+
+#tax-profit-calculator .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#tax-profit-calculator .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#tax-profit-calculator .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 100px;
+}
+
+/* not done! */
+
+#tax-profit-calculator .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#tax-profit-calculator h3 {
+    font-weight: bold;
+    font-size: 24px;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    padding: 10px 20px;
+}
+
+#tax-profit-calculator .bottom>div {
+    background-color: #032055;
+    color: white;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#tax-profit-calculator .bottom .left {
+    border: 3px solid springgreen;
+}
+
+#tax-profit-calculator .bottom .left .top {
+    display: flex;
+    padding: 50px;
+    color: crimson;
+    border: 1px solid yellow;
+}
+
+#tax-profit-calculator .bottom .left .top .top-flex-item {
+    border: 2px solid orangered;
+}
+
+#tax-profit-calculator .bottom .left .middle {
+    display: flex;
+
+    color: crimson;
+    border: 1px solid crimson;
+}
+
+#tax-profit-calculator .bottom .left .bottom {
+    display: flex;
+    color: crimson;
+    border: 1px solid white;
+}
+
+/* not done! */
+
+/* fequently-asked-questions */
+
+#fequently-asked-questions {
+    width: 100%;
+    height: 80vh;
+    background-color: #032055;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    color: white;
+    padding-top: 130px;
+}
+
+#fequently-asked-questions>.left>h2 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+#fequently-asked-questions>.left>p {
+    color: rgb(203, 209, 214);
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+#fequently-asked-questions>.left>button {
+    width: 150px;
+    height: 35px;
+    border: none;
+    color: white;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fequently-asked-questions>.left>button:hover {
+    cursor: pointer;
+    background: linear-gradient(to top, #4A00E0, #8E2DE2);
+}
+
+#fequently-asked-questions>.right>div {
+    width: 500px;
+    height: 58px;
+    font-weight: bold;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    padding: 0 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* latest-blog */
+
+#latest-blog {
+    width: 100%;
+    height: 100vh;
+    background-color: #001232;
+}
+
+#latest-blog .top {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#latest-blog .top h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#latest-blog .top p {
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 100px;
+}
+
+#latest-blog .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    width: 70%;
+    margin-left: 15%;
+}
+
+#latest-blog .bottom>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    color: white;
+}
+
+#latest-blog .bottom img {
+    border-radius: 10px;
+}
+
+#latest-blog .bottom img:hover {
+    cursor: pointer;
+    filter: grayscale(1)
+}
+
+#latest-blog .bottom .spans {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 14px;
+    color: rgb(189, 197, 203);
+    margin: 15px 0;
+}
+
+#latest-blog .bottom .spans:hover {
+    cursor: default;
+}
+
+#latest-blog .bottom h2 {
+    font-size: 20px;
+}
+
+#latest-blog .bottom h2:hover {
+    cursor: pointer;
+    color: #7418c6;
+}
+
+/* last-div */
+
+#last-div {
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+}
+
+#last-div .left p {
+    color: rgb(228, 231, 234);
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#last-div .left input {
+    outline: none;
+    border: none;
+    margin: 15px 0;
+    color: white;
+    background-color: #a154e4;
+    padding: 15px 20px;
+    width: 350px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#last-div .left input::placeholder {
+    color: rgb(228, 231, 234);
+    font-size: 15px;
+}
+
+#last-div .left .svg-outer-container {
+    position: relative;
+}
+
+#last-div .left .svg-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    position: absolute;
+    bottom: 5px;
+    right: 6px;
+}
+
+#last-div .left .svg-container:hover {
+    cursor: pointer;
+    background: linear-gradient(to top, #4A00E0, #8E2DE2);
+}
+
+#last-div h3{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#last-div .info {
+    width: 300px;
+    color: rgb(228, 231, 234);
+    border-bottom: 1px dashed rgb(228, 231, 234);
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#last-div .info:hover {
+    cursor: pointer;
+    font-weight: bold;   
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    color: rgb(228, 231, 234);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer span {
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+
+footer .year {
+    color: rgb(241, 182, 193);
+}
+
+footer span:hover {
+    cursor: pointer;
+    color: rgb(232, 230, 230);
+}
+
+footer .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .socials svg {
+    width: 20px;
+    height: 20px;
+}
+
+footer .socials svg:hover {
+    cursor: pointer;
+}
+
+/* arrow-to-up */
+#arrow-to-up {
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#arrow-to-up:hover {
+    cursor: pointer;
+    background: linear-gradient(to left, #4A00E0, #8E2DE2);
+}
+
+#arrow-to-up svg {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
 }

@@ -26,29 +26,257 @@
 .main-header-content-left .text {
   margin-bottom: 47px;
 }
-.main-header-content-right img {
-  height: 70vh;
-}
 /*  */
-.subcribe-area {
-  align-self: center;
-  position: relative;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 50px;
-  flex: 1;
+.subscribe-area-submit {
+  width: 465px;
+  height: 55px;
+  border-radius: 25px;
   background-color: rgb(3, 32, 84);
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
 }
+.subscribe-area-submit button{
+  height: 55px;
+}
+input[type=email] {
+  border: none;
+  background-color: rgb(3, 32, 84);
+  text-decoration-color: white;
+  border-radius: 25px;
+  margin-left: 10px;
+}
+
+input:focus {
+  color: white;
+}
+
 #userssay {
   background: rgb(81, 4, 224);
 }
-.fa-solid {
+#userssay img{
+  width: auto;
+}
+#userssay .fa-solid {
   color: yellow;
   font-size: 15px;
   margin-left: 5px;
 }
+#userssay .card-body.row{
+  flex-direction: column;
+  align-items: flex-start;
+}
 .tax-calculator {
   background-color: rgb(0, 19, 51);
 }
-.row {
-  text-align: center;
+
+/* latest transaction */
+#latest-transaction {
+  background-color: #032054;
+}
+#top-bar{
+  margin: 15px;
+}
+.table {
+  background-color: rgb(0, 19, 51);
+  width: 100%;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  border-collapse: collapse;
+}
+thead {
+  text-transform: uppercase;
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+tbody{
+   text-align: center;
+}
+td:nth-child(1){
+  text-align: left;
+}
+th:nth-child(1){
+  text-align: left;
+}
+th, td {
+  
+  padding: 15px;
+}
+td{
+  border-top: 1px solid rgba(209, 204, 204,.25);
+}
+td img{
+  vertical-align: middle;
+  margin-right: 15px;
+  width: auto;
+}
+.our-bigest-content-left{
+  justify-content: left;
+}
+#latest-blog-card{
+  width: 100%;
+  padding-bottom: 50px;
+}
+/* total-cards */
+#total-cards{
+  margin-top: -170px;
+}
+#total-cards .card-body{
+  padding: 31px;
+}
+/* about-us */
+#about-us{
+  margin-top: -230px;
+  padding: 300px 0;
+}
+
+#about-us #about-us-content-right #about-us-list .row{
+  margin-bottom: 40px;
+}
+#about-us #about-us-content-right > p{
+  margin-bottom: 30px;
+}
+#about-us #about-us-content-right .icon{
+  line-height: 80px;
+  width: 125px;
+  height: 80px;
+  margin-right: 30px;
+  padding: 5px;
+}
+#about-us #about-us-content-right .icon i{
+  font-size: 30px;
+}
+#about-us #about-us-content-right #about-us-list .inner-content .title{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+/* investment-plan */
+#investment-plan-info {
+  margin-top: 40px;
+}
+#investment-plan-info .row{
+  flex-direction: column;
+  row-gap: 20px;
+}
+#investment-plan-info .title{
+  margin: 0;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+  width: 100%;
+  padding: 10px;
+}
+
+/* how-does-it-works */
+#how-does-it-works{
+  background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+#how-does-it-works-info .title{
+  padding-top: 25px;
+}
+/* section-a */
+#section-a{
+  background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+#section-a .container{
+  padding: 85px 0 70px;
+}
+/* our-top-ten-inventors */
+#our-top-ten-inventors img{
+  width: 75%;
+}
+#our-top-ten-inventors .card{
+  width: 235px;
+  border-radius: 5px;
+}
+#our-top-ten-inventors .card-body{
+  margin-top: -185px;
+  padding: 190px 20px 25px;
+}
+#our-top-ten-inventors .inventor-icons{
+  margin-top: 20px;
+}
+/* calculator */
+#calculator {
+  height: 800px;
+}
+#calculator h4{
+  padding: 8px 20px;
+  background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+.calculator-left,.calculator-right{
+  height: 300px;
+     
+}
+.calculator-inner{
+  background: #032055;
+  padding: 20px;
+  margin-top: -15px; 
+}
+.calculator-right .calculator-inner{
+  height: 321px;
+}
+#calculator input,#calculator select{
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, .1);
+  margin: 15px 0;
+  color: #fff;
+}
+.calculator-inner input::placeholder{
+  color: #fff;
+}
+/* frequently-asked-questions */
+#frequently-asked-questions{
+  background: rgb(81, 4, 224);
+}
+#frequently-asked-questions .card{
+  box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.2);
+}
+.questions-right h4{
+  padding: 18px 20px;
+}
+.questions-right .card-body{
+  padding: 20px;
+}
+/* why-choose-us */
+#why-choose-us {
+  background-color: #032055;
+}
+#why-choose-us #why-choose-us-menu{
+  column-gap: 35px;
+  justify-content: center;
+}
+#why-choose-us #why-choose-us-menu-content img{
+  width: 85%;
+}
+#why-choose-us-menu-content{
+  margin: 50px 0 0;
+  padding: 35px;    
+  border-radius: 10px;
+}
+/* footer */
+.footer {
+  padding: 50px 0 25px
+}
+#footer li {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+  opacity: 0.9;
+  padding: 5px 0;
+}
+#copy-bg > div:first-child .row{
+  justify-content: space-between; 
+}
+#copy-bg > div:first-child {
+  padding: 20px 0 10px 5px ;
+  
+}
+.footer-social-icon {
+  align-items: right;
+}
+#footer img {
+  width: auto;
 }
