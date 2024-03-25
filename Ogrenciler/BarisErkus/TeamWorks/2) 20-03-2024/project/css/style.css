@@ -1,4 +1,8 @@
 /* Navbar */
+nav {
+    background-color: #4C01E0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
 
 .nav-container {
     justify-content: space-between;
@@ -23,7 +27,6 @@
 }
 
 /* Home 1 */
-
 .home {
     background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
     color: white;
@@ -46,18 +49,6 @@
     padding: 0 1.875rem;
 }
 
-.home-left-side-header {
-    font-size: 3.125rem;
-    line-height: 3.75rem;
-    margin-bottom: 1.25rem;
-}
-
-.home-left-side-paragraph {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    margin-bottom: 3rem;
-}
-
 .main-input {
     padding: 1.25rem 1.563rem;
     border-radius: 3.125rem;
@@ -75,6 +66,18 @@
 .main-image {
     width: 30rem;
     height: 31.25rem;
+}
+
+.home-left-side-header {
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.home-left-side-paragraph {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 3rem;
 }
 
 .home-left-side-play-button {
@@ -107,7 +110,7 @@
 .top-card-container {
     gap: 1.875rem;
     top: 75%;
-    left: 25%;
+    left: 22%;
 }
 
 .top-card-item {
@@ -153,30 +156,8 @@
 }
 
 .about-container {
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 0.938rem;
     padding-right: 0.938rem;
-}
-
-.about-container-header {
-    margin-left: -0.938rem;
-    margin-right: -0.938rem;
-    margin-bottom: 6.25rem;
-    width: 70%;
-}
-
-.about-container-title {
-    font-size: 2.5rem;
-    line-height: 3.125rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-}
-
-.about-container-paragraph {
-    font-size: 1rem;
-    line-height: 1.625rem;
-    color: #dbe2fb;
 }
 
 .about-container-content {
@@ -248,4 +229,9 @@
     font-size: 16px;
     line-height: 26px;
     color: #dbe2fb;
+}
+
+/* Investment */
+.investment {
+    background-color: #032055;
 }
