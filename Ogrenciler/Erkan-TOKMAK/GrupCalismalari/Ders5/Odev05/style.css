@@ -937,7 +937,48 @@ font-weight: 600;
 /* Our Top 10 Investors End */
 
 /* What Users Says Start */
-
+#what-users-says{
+  background: var(--bg-gradiant);
+  height: 750px;
+  padding: 121px 0px 151px;
+}
+.wus-heading {
+  color: var(--text-primary);
+  text-align: center;
+}
+.wus-title {
+  font-size: 40px;
+  padding: 10px 0px;
+}
+.wus-card-group {
+width: 100%;
+margin-top: 60px;
+}
+.wus-card {
+  background-color: var(--bg-secondary);
+  width: 30%;
+  height: 300px;
+  border-radius: 10px;
+  padding: 30px;
+  color: var(--text-secondary);
+}
+.wus-author {
+  width: 200px;
+  height: 100px;
+  align-items: center;
+  color: white;
+}
+.wus-author img {
+  width: 70px;
+  height: 70px;
+}
+.wus-author p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.wus-star-i {
+  color: gold;
+}
 /* What Users Says End */
 
 /* Tax & Profit Calculator Start */
