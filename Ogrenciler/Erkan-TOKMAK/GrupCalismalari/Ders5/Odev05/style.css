@@ -8,7 +8,9 @@
 .width-50 {
   width: 50%;
 }
-
+.width-100 {
+  width: 100%;
+}
 .title {
   padding: 40px 0;
   text-align: center;
@@ -892,7 +894,46 @@ font-weight: 600;
 /* Our Bigest Advantage End */
 
 /* Our Top 10 Investors Start */
-
+#our-top-10-investors{
+  background-color: var(--bg-primary);
+  padding: 121px 0px 115px;
+  height: 750px;
+}
+.oti-heading-title{
+  margin-bottom:16px;
+  color: var(--text-primary);
+  font-size: 34px;
+}
+.oti-card-group {
+  width: 100%;
+  margin-top: 140px;
+}
+.oti-card {
+  background-color: var(--bg-secondary);
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+.oti-name {
+  color: var(--text-primary);
+  font-size: 18px;
+}
+.oti-p {
+  color: var(--text-primary);
+  font-size: 14px;
+}
+.oti-card-img {
+  width: 205px;
+  height: 205px;
+  border-radius: 10px;
+  margin-top: -70px;
+  margin-bottom: 10px;
+}
+.oti-social-media-group {
+  color: white;
+  font-size: 12px;
+  width: 100px;
+}
 /* Our Top 10 Investors End */
 
 /* What Users Says Start */
