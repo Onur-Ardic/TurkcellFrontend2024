@@ -1,4 +1,4 @@
-.container {
+/* .container {
   height: 100vh;
   background-color: #ccc;
   padding: 1.3rem;
@@ -15,4 +15,33 @@
   flex-direction: column;
   text-align: center;
   border-radius: 10px;
+} */
+
+.container {
+  display: grid;
+  height: 600px;
+  background-color: #ccc;
+  gap: 5px;
+  grid-template-areas:
+    "header header header"
+    "sidebar section section"
+    "sidebar . ."
+    "box-1 box-1 box-1";
+}
+
+.header {
+  grid-area: header;
+  background-color: orangered;
+}
+
+.section {
+  grid-area: section;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.box-1 {
+  grid-area: box-1;
 }
