@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+    }
+    
+    .item1,
+    .item2,
+    .item3,
+    .item4,
+    .item5 {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <!--
+        CSS'in grid özelliği, 
+        bir web sayfasının düzenini ayarlamak için kullanılan bir kısayoldur.
+         Bu özellikle, satırları grid-template-rows ve sütunları grid-template-columns
+          ile ayarlayıp, diğer kısımların otomatik olarak nasıl sıralanacağını grid-auto-rows,
+           grid-auto-columns ve grid-auto-flow ile belinmesini sağlar.
+    -->
+    <!--
+        Grid Container: Grid sisteminin uygulandığı ana element.
+
+        Gisplay: grid; veya display: inline-grid; kullanılarak tanımlanır.
+
+        Grid Item: Grid container içindeki çocuk elementler.Bu elementler otomatik olarak grid ögeleri haline gelir.
+
+        Grid Line: Grid hücrelerini ayıran çizgilerdir. Satır ve sütun çizgileri olarak düşünülebilir.
+
+        Grid Track: Grid çizgileri arasındaki alan. Bir satır veya sütun olabilir.
+
+        Grid Cell: Grid'in tek bir hücresi, iki bitişik satır ve iki bitişik sütun arasındaki alan.
+
+        Grid Area: Birden fazla hücreyi kapsayan daha büyük bir alan.
+    -->
+
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+</body>
+
+</html>

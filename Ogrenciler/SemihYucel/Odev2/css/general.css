@@ -6,9 +6,7 @@
   font-size: 16px;
   color: white;
 }
-.logo {
-  width: 100%;
-}
+
 button {
   border: none;
   background-color: #032055;
@@ -36,22 +34,14 @@ button {
   font-weight: 600;
   margin-bottom: 15px;
 }
-.mid-title {
-  font-size: 18px;
-}
-.btncolor {
-  background: linear-gradient(50deg, #6e00ff 0, #bb00ff);
-  color: #fff;
-}
+
 .card {
   width: 350px;
   height: 350px;
   background-color: #032055;
   padding-bottom: 20px;
 }
-.card img {
-  width: 120px;
-}
+
 .center {
   display: flex;
   justify-content: center;
@@ -59,7 +49,14 @@ button {
   flex-direction: column;
   text-align: center;
   gap: 10px;
+  
 }
+.center:hover{
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in;
+}
+
 .paragraph {
   color: #d4e2fb;
   max-width: 300px;
@@ -79,11 +76,9 @@ button {
   flex-direction: column;
   margin-bottom: 60px;
 }
-.about-img {
-  width: 550px;
-}
+
 .paragraph-large {
-  max-width: 690px;
+  max-width: 700px;
   text-align: center;
   color: #d4e2fb;
 }
@@ -92,15 +87,30 @@ button {
   max-width: 530px;
 }
 
-.title-header {
-  font-size: 26px;
-  font-weight: 600;
+.investment-btn .btnn:hover{
+  background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+  color: white;
+}
+.investment-card:hover{
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in;
 }
 
-.about-title {
-  display: flex;
+
+ .btn2{
+  padding: 12px 30px!important;
+}
+ .btn2:hover{
+  background: linear-gradient(to top, #4A00E0, #8E2DE2);
+  color: #fff;
 }
 
-.about-title img {
-  width: 120px;
+.bets tr{
+  transition: all 0.5s ease-in;
 }
+.bets tr:hover{
+  background:#4A00E0 ;
+}
+
+

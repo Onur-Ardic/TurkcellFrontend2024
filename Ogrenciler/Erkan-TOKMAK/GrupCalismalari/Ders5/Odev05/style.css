@@ -8,7 +8,9 @@
 .width-50 {
   width: 50%;
 }
-
+.width-100 {
+  width: 100%;
+}
 .title {
   padding: 40px 0;
   text-align: center;
@@ -264,7 +266,7 @@ h6 {
 }
 
 .logo {
-  width: 30%;
+  width: 80%;
 }
 
 .menu {
@@ -792,25 +794,21 @@ h6 {
   background-color: var(--bg-secondary);
   padding-top: 100px;
   padding-bottom: 100px;
-  height: 1000px;
+  height: 1150px;
 }
-
 .lt-heading {
   text-align: center;
   padding-bottom: 65px;
 }
-
-.lt-heading-title {
-  margin-bottom: 16px;
+.lt-heading-title{
+  margin-bottom:16px;
   color: var(--text-primary);
   font-size: 34px;
 }
-
-.lt-menu {
+.lt-menu{
   margin-bottom: 25px;
   height: 66px;
 }
-
 .lt-button-active {
   color: white;
   font-size: 18px;
@@ -822,7 +820,6 @@ h6 {
   background: var(--button-gradiant);
   box-shadow: 0px 0px 10px #4e3b7b;
 }
-
 .lt-button {
   color: white;
   font-size: 18px;
@@ -834,46 +831,109 @@ h6 {
   background: var(--bg-secondary);
   box-shadow: 0px 0px 10px #4e3b7b;
 }
-
 .lt-table {
-  width: 100%;
-  color: var(--text-primary);
-  border-collapse: collapse;
+width: 100%;
+color: var(--text-primary);
+border-collapse: collapse;
 }
-
-.lt-text-start {
+.lt-text-start{
   text-align: start !important;
+  display: flex;
+  align-items: center;
 }
-
-.lt-table th {
-  background-color: var(--bg-primary);
-  border-bottom: 0.1px solid white;
-  padding: 20px 15px;
+.lt-user-avatar {
+  margin-right: 10px;
 }
-
+.lt-table th{
+background-color: var(--bg-primary);
+border-bottom: 0.1px solid white;
+padding: 20px 15px;
+}
 .lt-table tr td:nth-child(4) {
   color: #f0ad4e;
 }
-
 .lt-table tr td:nth-child(3) {
   color: #045cf0;
 }
-
-.lt-table td {
-  background-color: var(--bg-primary);
-  padding: 20px 15px;
-  border-bottom: 0.1px solid white;
-  text-align: center;
+.lt-table td{
+background-color: var(--bg-primary);
+padding: 20px 15px;
+border-bottom: 0.1px solid white;
+text-align: center;
+font-weight: 600;
 }
-
 /* Latest Transaction End */
 
 /* Our Bigest Advantage Start */
-
+#our-bigest-advantage {
+  background-color: var(--bg-secondary);
+  height: 750px;
+}
+.obg-title {
+  margin-bottom: 60px;
+}
+.obg-content{
+  color: white;
+  height: 200px;
+  width: 500px;
+}
+.obg-heading-title{
+  margin-bottom:16px;
+  color: var(--text-primary);
+  font-size: 34px;
+}
+.obg-image {
+  width: 600px;
+  height: 400px;
+  margin-right: 200px;
+}
+.obg-p {
+  font-size: 16px;
+  color: #dbe2fb;
+}
 /* Our Bigest Advantage End */
 
 /* Our Top 10 Investors Start */
-
+#our-top-10-investors{
+  background-color: var(--bg-primary);
+  padding: 121px 0px 115px;
+  height: 750px;
+}
+.oti-heading-title{
+  margin-bottom:16px;
+  color: var(--text-primary);
+  font-size: 34px;
+}
+.oti-card-group {
+  width: 100%;
+  margin-top: 140px;
+}
+.oti-card {
+  background-color: var(--bg-secondary);
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+.oti-name {
+  color: var(--text-primary);
+  font-size: 18px;
+}
+.oti-p {
+  color: var(--text-primary);
+  font-size: 14px;
+}
+.oti-card-img {
+  width: 205px;
+  height: 205px;
+  border-radius: 10px;
+  margin-top: -70px;
+  margin-bottom: 10px;
+}
+.oti-social-media-group {
+  color: white;
+  font-size: 12px;
+  width: 100px;
+}
 /* Our Top 10 Investors End */
 
 /* What Users Says Start */
@@ -1010,33 +1070,35 @@ h6 {
 #footer li {
   border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
   padding: 5px 0;
+  list-style-type: none;
+}
+
+#footer ul {
+  width: 90%;
 }
 
 .footer-input {
   background-color: #ffffff40;
-  color: white;
   font-size: 16px;
   margin-left: 25px;
-  height: 80%;
   border: none;
+  height: 100%;
 }
 
 .footer-form {
   background-color: #ffffff40;
   border-radius: 50px;
   border: none;
-  width: 465px;
   height: 55px;
 }
 
 .footer-button {
   background: var(--button-gradiant);
   border: none;
-  border-radius: 50px;
   margin: 2px;
-  height: 51px;
-  line-height: 51px;
-  padding: 0px 30px;
+  border-radius: 50%;
+  height: 45px;
+  padding: 0 15px;
   color: #ffffff;
 }
 
