@@ -863,7 +863,32 @@ font-weight: 600;
 /* Latest Transaction End */
 
 /* Our Bigest Advantage Start */
-
+#our-bigest-advantage {
+  background-color: var(--bg-secondary);
+  height: 750px;
+}
+.obg-title {
+  margin-bottom: 60px;
+}
+.obg-content{
+  color: white;
+  height: 200px;
+  width: 500px;
+}
+.obg-heading-title{
+  margin-bottom:16px;
+  color: var(--text-primary);
+  font-size: 34px;
+}
+.obg-image {
+  width: 600px;
+  height: 400px;
+  margin-right: 200px;
+}
+.obg-p {
+  font-size: 16px;
+  color: #dbe2fb;
+}
 /* Our Bigest Advantage End */
 
 /* Our Top 10 Investors Start */
