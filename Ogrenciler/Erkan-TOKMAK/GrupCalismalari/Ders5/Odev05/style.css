@@ -70,6 +70,10 @@ h6 {
   flex: 50%;
 }
 
+.col-3 {
+  flex: 30%;
+}
+
 /* Colors & Sizes */
 :root {
   --bg-gradiant: linear-gradient(to bottom, #4a00e0, #8e2de2);
@@ -306,11 +310,13 @@ h6 {
   font-weight: 600;
   line-height: 60px;
   margin-bottom: 25px;
+  color: #fff;
 }
 
 .slider-p {
   font-size: 18px;
   line-height: 28px;
+  color: #fff;
 }
 
 .slider-image {
@@ -890,8 +896,51 @@ h6 {
 
 #footer {
   background: var(--bg-gradiant);
+  padding: 50px 0 25px;
+  line-height: 25px;
 }
 
+.footer-p {
+  color: white;
+  padding: 10px 0;
+}
+
+#footer li {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+  padding: 5px 0;
+}
+
+.footer-input {
+  background-color: #ffffff40;
+  color: white;
+  font-size: 16px;
+  margin-left: 25px;
+  height: 80%;
+  border: none;
+}
+
+.footer-form {
+  background-color: #ffffff40;
+  border-radius: 50px;
+  border: none;
+  width: 465px;
+  height: 55px;
+}
+
+.footer-button {
+  background: var(--button-gradiant);
+  border: none;
+  border-radius: 50px;
+  margin: 2px;
+  height: 51px;
+  line-height: 51px;
+  padding: 0px 30px;
+  color: #ffffff;
+}
+
+.footer-content {
+  color: white;
+}
 /* Footer End */
 
 /* Copyright Start */
