@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Open Sans", sans-serif;
 }
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -13,42 +15,64 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
+
 p {
     color: #dbe2fb;
     font-size: 16px;
 }
-a {color: white;}
-h1,h2,h3,h4,h5,h6 {
+
+a {
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: white;
 }
+
 .row {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
+
 .row h2 {
     margin-bottom: 20px;
     font-size: 40px;
     line-height: 50px;
     font-weight: 600;
 }
+
 .row p {
     line-height: 26px;
     margin-bottom: 3rem;
 }
+
+.button2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 /*CHOOSE SECTION START*/
 .chooseSection {
     background-color: #032055;
     padding: 110px 0 100px;
 }
+
 .chooseNav {
     display: flex;
     justify-content: center;
     list-style: none;
     margin-top: 30px;
 }
+
 .chooseNavItem a {
     display: block;
     text-align: center;
@@ -56,10 +80,12 @@ h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
     margin: 0 10px 0 10px;
 }
+
 .chooseNavItem a h4 {
     font-size: 18px;
     line-height: 28px;
 }
+
 .chooseIcon {
     line-height: 90px;
     width: 90px;
@@ -74,9 +100,11 @@ h1,h2,h3,h4,h5,h6 {
     cursor: pointer;
     background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
 }
+
 .chooseTable {
     padding: 60px;
 }
+
 .table-content {
     display: flex;
     justify-content: center;
@@ -85,6 +113,7 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 10px;
     padding: 20px 30px;
 }
+
 .chooseTable img {
     width: 350px;
     height: 350px;
@@ -92,24 +121,28 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0 auto;
     padding: 20px 0 20px 0;
 }
+
 .table-content-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 50px;
 }
+
 .table-content-info h4 {
     margin-bottom: 20px;
     font-size: 30px;
     line-height: 30px;
     margin-top: 10px;
 }
+
 /*CHOOSE SECTION END*/
 /*PLANS SECTION START*/
 .plansSection {
     background-color: #001232;
     padding: 110px 0px 100px;
 }
+
 .buttons a {
     text-decoration: none;
     padding: 12px 30px;
@@ -118,12 +151,14 @@ h1,h2,h3,h4,h5,h6 {
     margin: 10px;
     box-shadow: 0px 0px 10px 3px #4e3b7b;
 }
+
 .plansRow2 {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-top: 70px;
 }
+
 .planBox {
     background-color: #032055;
     text-align: center;
@@ -131,10 +166,12 @@ h1,h2,h3,h4,h5,h6 {
     transition: all 0.3s ease-in;
     line-height: 1.5;
 }
+
 .planBox h3 {
     font-size: 20px;
     line-height: 30px;
 }
+
 .price-rate {
     width: 100%;
     text-align: center;
@@ -146,6 +183,7 @@ h1,h2,h3,h4,h5,h6 {
     transition: all 0.3s ease-in;
     position: relative;
 }
+
 .price-rate p {
     font-size: 30px;
     line-height: 40px;
@@ -154,18 +192,22 @@ h1,h2,h3,h4,h5,h6 {
     color: #fff;
     padding: 0 85px 0;
 }
+
 .service-feature-list {
     list-style: none;
 }
+
 .service-feature-list li {
     font-size: 16px;
     line-height: 38px;
     color: white;
 }
+
 .deposit {
     margin: 40px 0 30px;
     text-decoration: none;
 }
+
 .deposit a {
     font-size: 16px;
     font-weight: 400;
@@ -177,6 +219,7 @@ h1,h2,h3,h4,h5,h6 {
     background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
     text-decoration: none;
 }
+
 /*PLANS SECTION END*/
 /*HOW IT WORKS SECTION START*/
 .howItWorkSection {
@@ -184,18 +227,21 @@ h1,h2,h3,h4,h5,h6 {
     background: -webkit-moz-gradient(to bottom, #4A00E0, #8E2DE2);
     background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
 }
+
 .work-row-2 {
     display: flex;
     text-align: center;
     margin: 0 60px;
     gap: 10px;
 }
+
 .work-cards {
     background-color: #032055;
     text-align: center;
     padding: 30px 30px 26px;
     transition: all 0.3s ease-in;
 }
+
 .work-icon {
     font-size: 50px;
     line-height: 100px;
@@ -209,6 +255,7 @@ h1,h2,h3,h4,h5,h6 {
     color: #fff;
     transition: all 0.3s ease-in;
 }
+
 .work-content h4 {
     font-size: 24px;
     line-height: 34px;
@@ -216,32 +263,186 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 15px;
     margin-top: 3px;
 }
+
 .work-content p {
     line-height: 1.625;
 }
+
 /*HOW IT WORKS SECTION END*/
 /*INVESTMENT SECTION START*/
 .investmentSection {
     background-color: #032055;
     padding: 110px 0px 100px;
-}.investment-row-1 {margin-bottom: 60px;}
+}
+
+.investment-row-1 {
+    margin-bottom: 60px;
+}
+
 table {
     background-color: #001232;
     color: white;
-    margin: 0 auto;  /*sagdan soldan ortalar*/
+    margin: 0 auto;
+    /*sagdan soldan ortalar*/
     text-align: start;
-    border-collapse: separate; /*seperate:ayrı*/
+    border-collapse: separate;
+    /*seperate:ayrı*/
     border-spacing: 10px;
     padding: 10px;
 }
-table tr,table td,table th{
+
+table tr,
+table td,
+table th {
     padding: 30px;
     margin: 0 60px 0;
 }
-.userInfo{
+
+table tr:hover {
+    background-color: #032055;
+    transition: all 0.3s ease-in;
+}
+
+.userInfo {
     display: flex;
     align-items: center;
     gap: 15px;
     text-align: center;
-}.second-td h4{color: #045cf0;}.fifth-td h4{color: #f0ad4e;}
+}
+
+.second-td h4 {
+    color: #045cf0;
+}
+
+.fifth-td h4 {
+    color: #f0ad4e;
+}
+
 /*INVESTMENT SECTION END*/
+/*GETSTART SECTION START */
+.getStartedRow {
+    padding: 95px 0px 82px;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    color: #dbe2fb;
+}
+.getStartedBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    background: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+}
+.getStartedBtn {
+    color: #5e00d9;
+    text-decoration: none;
+}
+/* GETSTART SECTION END */
+/* ADVANTAGE SECTION START */
+.advantageRow {
+    background: #032055;
+    padding: 120px 0px 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -15px;
+    margin-left: -15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.advantageRowTop {
+    display: flex;
+    font-size: 1.5em;
+    line-height: 50px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 23px;
+    text-align: center;
+}.advantageRowTop p{line-height: 30px;}
+.advantageRowBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.advantageRow1 {
+    font-size: 24px;
+    align-self: center !important;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    text-align: left;
+    margin-bottom: 23px; margin-right: 23px;
+}
+.advantageRow2 {
+    margin: 30px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* ADVANCED SECTION END */
+/* INVENTORS SECTION START */
+.inventorsSection {
+    background: #03173b;
+}
+.inventorsTop {
+    font-size: 24px;
+    padding: 121px 0px 115px;
+    display: flex;
+    justify-content: center !important;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+}
+.inventorsBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.team {
+    background: #032055;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    transition: all 0.3s ease-in;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 15px 25px;
+    border-radius: 10px;
+}
+.socialLinks {
+    display: flex;
+    flex-direction: row;
+}
+.inventorsFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
