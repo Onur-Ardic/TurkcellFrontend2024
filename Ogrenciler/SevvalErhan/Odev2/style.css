@@ -1,0 +1,237 @@
+* {
+  border: box-sizing;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  overflow-x: hidden;
+}
+/* .main-menu {
+    position: fixed;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.main-menu .nav-fixed {
+    border-bottom: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.main-menu .navbar{
+    padding: 0px 0px;
+}
+.main-menu .navbar .navbar-brand {
+    padding: 0px;
+    margin: 0px;
+  }
+  .main-menu .navbar .navbar-brand img {
+   max-width: 40px;
+  }
+
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+}
+.row .nav-content{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+  .navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+} */
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.tp-calculator {
+  background-color: #131333;
+  padding: 120px 0px 130px;
+}
+.tp-calculator .tp-calculator-wrapper{
+    padding: 10px 30px 16px;
+}
+.tp-calculator .tp-calculator-wrapper .tp-calculator-content .section-title {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.tp-calculator .tp-calculator-wrapper .tp-calculator-content .tp-content {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 26px;
+  margin-top: 10px;
+}
+.tp-calculator .cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.tp-calculator .cards .tax-card .tax-calculator {
+  background: #032055;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+.tp-calculator .cards .tax-card .tax-calculator .calculator-title {
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 15px;
+  background: linear-gradient(to bottom, #4a00e0, #8e2de2);
+  padding: 12px 30px 11px;
+  color: #fff;
+}
+.tp-calculator .cards .tax-card .tax-calculator .calculator-content {
+  padding: 10px 30px 16px;
+  color: #fff;
+}
+.tp-calculator .cards .tax-card .tax-calculator .calculator-content .group-1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  gap: 2rem;
+}
+.tp-calculator .cards .tax-card .tax-calculator .calculator-content .group-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    gap: 1rem;
+  }
+  .tp-calculator .cards .tax-card .tax-calculator .calculator-content .group-3 {
+    
+    margin-left: -15px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+.tp-calculator .cards .tax-card .tax-calculator .calculator-content .form-group{
+    margin-bottom: 0px;
+}
+.tp-calculator .cards .tax-card .tax-calculator .calculator-content .form-group label{
+   color: #fff;
+   font-weight: 600;
+   margin-bottom: 0.5rem;
+   display: inline-block;
+}
+.tp-calculator .cards .tax-card .tax-calculator .form-group  .input-field{
+    background: #032055;
+    height: 40px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.input-field{
+    width: 100%!important;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tp-calculator .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .tp-calculator .cards .profit-card {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .tp-calculator .cards .profit-card .profit-calculator {
+    background: #032055;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    margin-left: 3rem;
+  }
+  .tp-calculator .cards .profit-card .profit-calculator .calculator-title {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 15px;
+    background: linear-gradient(to bottom, #4a00e0, #8e2de2);
+    padding: 12px 30px 11px;
+    color: #fff;
+  }
+  .tp-calculator .cards .profit-card .profit-calculator .calculator-content {
+    padding: 10px 30px 16px;
+    color: #fff;
+  }
+  .tp-calculator .cards .profit-card .profit-calculator .calculator-content .group-1 {
+    
+    margin-left: -15px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .tp-calculator .cards .profit-card .profit-calculator .calculator-content .group-2 {
+    
+      margin-left: -15px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .tp-calculator .cards .profit-card .profit-calculator .calculator-content .group-3 {
+     
+      margin-left: -15px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  .tp-calculator .cards .profit-card .profit-calculator .calculator-content .form-group{
+      margin-bottom: 0px;
+  }
+  .tp-calculator .cards .profit-card .profit-calculator .calculator-content .form-group label{
+     color: #fff;
+     font-weight: 600;
+     margin-bottom: 0.5rem;
+     display: inline-block;
+  }
+  .tp-calculator .cards .profit-card .profit-calculator .form-group  .input-field{
+      background: #032055;
+      height: 40px;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .input-field{
+      width: 100%!important;
+      height: 50px;
+      padding: 0 20px;
+      font-size: 14px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+
