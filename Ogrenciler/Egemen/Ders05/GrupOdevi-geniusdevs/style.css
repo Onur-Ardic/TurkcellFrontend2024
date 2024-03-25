@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
     font-family: "Open Sans", sans-serif;
     color: #dbe2fb;
     /* background: #001232; */
+}
+img{
+    max-width: 100%;
 }
 .container{
     width: 1140px;
@@ -18,8 +22,16 @@
 a{
     text-decoration: none;
 }
-ul{
+ul li{
     list-style: none;
+}
+.poppins{
+    font-family: "Poppins", sans-serif;
+}
+.btn{
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 400;
 }
 .box{
     width: 300px;
@@ -29,29 +41,256 @@ ul{
 }
 .section-info{
     text-align: center;
+    margin-bottom: 60px;
+
 }
 .section-title{
+    color: white;
     font-size: 2.5rem;
     font-family: "Poppins", sans-serif;
     margin-bottom: 20px;
 }
 .section-desc{
     margin-bottom: 16px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 .navbar{
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 4rem;
     z-index: 999;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
 }
 .navbar-container{
     justify-content: space-between;
 }
+.nav-link{
+    font-weight: 600;
+    line-height: 1.5;
+    position: relative;
+    padding: 20px 15px;
+    color: #fff;
+}
+.navbar-button{
+    color: #fff;
+    background: #032055;
+    margin-left: 15px;
+    padding: 7px 20px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+/* HERO SECTION */
 .hero-area{
     width: 100%;
     background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
     padding: 165px 0px 249px;
 }
+.hero-area-content{
+    padding-right: 15px;
+}
+.hero-title{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero-text{
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    line-height: 28px;
+}
+.subscribe-form{
+    position: relative;
+}
+.subscribe-form input{
+    background: #032055;
+    font-size: 1.05rem;
+    border: none;
+    border-radius: 50px;
+    height: 55px;
+    padding: 0px 190px 0px 30px;
+}
+input::placeholder{
+    color: white;
+}
+.subscribe-form input:focus{
+    outline: none;
+}
+.subscribe-form-btn{
+    background: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 0 30px;
+    height: 51px;
+    border: none;
+}
+.video-play-btn{
+    background: #032055;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    justify-content: center;
+}
+.hero-area-img{
+    max-width: 50%;
+    padding: 0 45px;
+}
+/* HERO SECTION */
+
+/*START INVESTMENT SECTION*/
+.start-investment{
+    padding: 120px 0;
+    background: #032055;
+    text-align: center;
+}
+.table-menu{
+    margin-bottom: 40px;
+}
+.table-list{
+    justify-content: center;
+}
+.table-link{
+    box-shadow: 0px 0px 10px #4e3b7b;
+    padding: 0 50px;
+    margin: 0 5px;
+    line-height: 50px;
+    display: block;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.table-link:focus{
+    background: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+}
+.table-content table{
+    width: 100%;
+    text-align: left;
+    background: #001232;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+}
+th, td{
+    padding: 20px 15px;
+}
+th{
+    font-size: 1.1rem;
+}
+td img{
+    margin-right: 10px;
+}
+tr{
+    font-weight: 700;
+}
+tr:hover{
+    background: #032055;
+    transition: all 0.3s ease-in;
+}
+tr td:nth-child(3){
+    color: #045cf0;
+}
+tr td:nth-child(4){
+    color: #f0ad4e;
+}
+/*START INVESTMENT SECTION*/
+
+/* GET STARTED SECTION */
+.get-started{
+    padding: 90px 0;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+.get-started-container{
+    justify-content: space-between;
+}
+.get-started-h{
+    color: white;
+    font-size: 2rem;
+    max-width: 450px;
+}
+.get-started-btn{
+    padding: 12px 35px;
+    background: white;
+    border: 1px solid white;
+    color: #5e00d9;
+}
+.get-started-btn:hover{
+    background: none;
+    color: white;
+}
+/* GET STARTED SECTION */
+
+/* LATEST TRANSACTION */
+.latest-transaction{
+    padding: 120px 0;
+    background: #032055;
+}
+/* LATEST TRANSACTION */
+
+/* FOOTER */
+.footer{
+    padding-top: 100px;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+.footer-widget{
+    max-width: 34%;
+    padding-right:15px;
+}
+.fwp{
+    padding-left: 15px;
+}
+.footer-widget h4{
+    font-size: 1.2rem;
+}
+.footer-content-info{
+    margin-top: 24px;
+    hyphens: auto;
+}
+.footer-form{
+    margin-top: 24px;
+}
+.footer-form input{
+    background: rgba(255, 255, 255, 0.25);
+    padding: 0 60px 0 20px;
+    width: 350px;
+    font-size: 0.9rem;
+}
+.footer-btn{
+    top: 5px;
+    right: 5px;
+    height: 45px;
+    width: 45px;
+    padding: 10px;
+}
+.footer-list li{
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+    width: 350px;
+}
+.footer-list a{
+    line-height: 35px;
+}
+.footer-list a:hover{
+    transition: all 0.3s ease-in;
+    margin-left: 5px;
+    color: white;
+}
+.footer-list i{
+    font-size: 0.9rem;
+    margin: 0 4px 0 2px;
+}
+.footer-footer{
+    margin-top: 90px;
+    padding: 25px 0;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+.footer-footer-container{
+    justify-content: space-between;
+}
+.social-links li{
+    margin-right: 10px;
+}
+.social-links li i{
+    font-size: 0.9rem;
+}
+/* FOOTER */

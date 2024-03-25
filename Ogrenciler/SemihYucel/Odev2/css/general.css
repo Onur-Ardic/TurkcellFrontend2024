@@ -49,7 +49,14 @@ button {
   flex-direction: column;
   text-align: center;
   gap: 10px;
+  
 }
+.center:hover{
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in;
+}
+
 .paragraph {
   color: #d4e2fb;
   max-width: 300px;
@@ -79,4 +86,37 @@ button {
   text-align: left;
   max-width: 530px;
 }
+
+.investment-btn .btnn:hover{
+  background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+  color: white;
+}
+.investment-card:hover{
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in;
+}
+
+
+ .btn2{
+  padding: 12px 30px!important;
+}
+ .btn2:hover{
+  background: linear-gradient(to top, #4A00E0, #8E2DE2);
+  color: #fff;
+}
+
+.mybets:hover{
+  
+  background: linear-gradient(to top, #4A00E0, #8E2DE2);
+  color: #fff;
+}
+
+.bets tr{
+  transition: all 0.5s ease-in;
+}
+.bets tr:hover{
+  background:#4A00E0 ;
+}
+
 
