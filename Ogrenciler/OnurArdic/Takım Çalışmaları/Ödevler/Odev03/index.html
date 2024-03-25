@@ -6,6 +6,100 @@
     <title>Druco</title>
 
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap İcon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <div class="orders">
+            <h4>FREE DELİVERY on all orders</h4>
+          </div>
+
+          <div class="sale">
+            <i class="bi bi-lightning-fill color-orange"></i>
+            <p>
+              <span class="color-orange">FLASH SALE :</span> 60% OFF CAR
+              BATTERIES | USE CODE "BATT60"
+            </p>
+          </div>
+
+          <div class="header-top-links">
+            <ul class="header-top-links">
+              <li class="header-top-link"><a href="#">Help</a></li>
+              <li class="header-top-link"><a href="#">About Us</a></li>
+              <li class="header-top-link"><a href="#">Contact US</a></li>
+              <li class="header-top-link"><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="navbar-top-wrapper">
+          <div class="container">
+            <div class="navbar-top">
+              <div class="logo">
+                <img src="assets/img/logo.png" alt="" />
+              </div>
+
+              <div class="search-bar">
+                <select name="categories" id="categories">
+                  <option value="option-1">Option-1</option>
+                  <option value="option-2">Option-2</option>
+                </select>
+                <span>|</span>
+                <input type="text" placeholder="search-for-products" />
+                <i class="bi bi-search bg-orange flex flex-center"></i>
+              </div>
+
+              <div class="other-icon flex flex-between">
+                <select class="navbar-top-select" name="lang" id="lang">
+                  <option value="english">English</option>
+                </select>
+
+                <div>
+                  <select class="navbar-top-select" name="mon" id="mon">
+                    <option value="USD">USD</option>
+                    <option value="EURO">EURO</option>
+                  </select>
+                </div>
+
+                <div class="navbar-top-icons flex flex-between">
+                  <i class="bi bi-person-circle"></i>
+                  <a href="#">
+                    <i class="bi bi-heart-fill"></i>
+                    <span class="bg-orange flex flex-center">0</span>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-cart-fill"></i>
+                    <span class="bg-orange flex flex-center">0</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-bottom">
+          <ul class="navbar-items">
+            <li class="navbar-item"><a href="#">HOME</a></li>
+            <li class="navbar-item"><a href="#">PAGES</a></li>
+            <li class="navbar-item"><a href="#">SERVICE PATS</a></li>
+            <li class="navbar-item"><a href="#">BRAKE</a></li>
+            <li class="navbar-item"><a href="#">CAR BATTEİRES</a></li>
+            <li class="navbar-item"><a href="#">TOOLS & GARAGE</a></li>
+          </ul>
+
+          <div class="contact-area">
+            <!-- TODO : İLETİŞİMDEN DEVAM EDECEĞİM -->
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
