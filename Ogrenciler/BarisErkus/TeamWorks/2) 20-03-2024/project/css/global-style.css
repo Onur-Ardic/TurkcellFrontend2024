@@ -6,11 +6,6 @@
     color: white;
 }
 
-nav {
-    background-color: #4C01E0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-}
-
 ul,
 ol {
     list-style: none;
@@ -80,8 +75,42 @@ a {
     border: none;
 }
 
-/* cursor */
-
+/* Cursor */
 .pointer {
     cursor: pointer;
+}
+
+/* Margin */
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+
+.header {
+    margin-left: -0.938rem;
+    margin-right: -0.938rem;
+    margin-bottom: 6.25rem;
+    width: 70%;
+}
+
+.title {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.paragraph {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: #dbe2fb;
 }

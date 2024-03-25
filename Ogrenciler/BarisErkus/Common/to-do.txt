@@ -3,4 +3,5 @@
 15-03-2024: Learn basic CSS
 18-03-2024: Assignment: https://shreethemes.in/upstart/layouts/index.html (No text animation)
 20-03-2024: Assignment: https://geniusdevs.com/themeforest/biniog/biniog-dark1/index.html
-22-03-2024: 
+22-03-2024: Assignment: https://geniusdevs.com/themeforest/biniog/biniog-dark1/index.html
+25-03-2024: 
