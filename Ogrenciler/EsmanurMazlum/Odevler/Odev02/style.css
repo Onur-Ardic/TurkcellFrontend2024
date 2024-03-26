@@ -39,6 +39,14 @@
   text-align: center;
 }
 
+p, a{
+  font-family: "Open Sans",sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Poppins",sans-serif;
+}
+
 /* ? FREQUENTLY ASKED QUESTIONS START */
 
 .question-section {
@@ -64,7 +72,6 @@
 
 .col1 .content h2{
   color: #fff;
-  font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 600;
   width: 90%;
@@ -72,7 +79,6 @@
 
 .col1 .content p {
   color: #dbe2fb;
-  font-family: "Open Sans", sans-serif;
   margin: 0 0 16px;
 }
 
@@ -82,8 +88,12 @@
   padding: 12px 30px;
   color: #fff;
   border-radius: 50px;
-  font-family:"Open Sans", sans-serif;
   display: inline-block;
+  transition: all 0.3s ease-in;
+}
+
+.col1 .content > a:hover{
+  background: linear-gradient(to top, #4A00E0, #8E2DE2);
 }
 
 .col2 .content .acordions .acordion {
@@ -98,7 +108,6 @@
   padding: 15px 20px;
   width: 540px;
   color: #fff;
-  font-family: "Poppins",sans-serif;
   font-size: 18px;
 }
 
@@ -108,7 +117,6 @@
 
 .col2 .content .acordions .acordion > p{
   color: #dbe2fb;
-  font-family: "Open Sans", sans-serif;
   width: 540px;
   padding: 18px 25px 19px;
 }
@@ -146,7 +154,6 @@
 
 .blog-section .col .content h2 {
     color: #fff;
-    font-family: "Poppins",sans-serif;
     font-size: 40px;
     margin: 0 0 23px;
     font-weight: 600;
@@ -223,3 +230,147 @@
 /* ? LATEST BLOG CARD START */
 
 /* * LATEST BLOG START */
+
+/* ! FOOTER START */
+
+.footer {
+  padding-top:100px;
+  background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+
+.footer .row {
+  display: flex;
+}
+
+.footer .row .col {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.footer .row .col p{
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Open Sans",sans-serif;
+  margin-top: 23px;
+  margin-bottom: 1rem;
+  line-height: 1.625;
+}
+
+.footer .row .col > form {
+  position: relative;
+}
+
+.footer .row .col > form > input {
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  border:1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+  padding: 0px 60px 0px 20px;
+  outline: none;
+  margin-top: 15px;
+}
+
+.footer .row .col > form > input::placeholder{
+  color: #dbe2fb;
+  font-family: "Open Sans",sans-serif;
+}
+
+.footer .row .col > form > button {
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  border: 0px;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+
+.footer .row .col > h4 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+.footer .row .col > ul{
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.footer .row .col > ul > li{
+  border-bottom: 1px dashed rgba(255,255,255, 0.25);
+}
+
+.footer .row .col > ul > li:last-child{
+  border-bottom: 0px;
+}
+
+.footer .row .col > ul > li > a{
+  font-size: 16px;
+  line-height: 35px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease-in;
+}
+
+.footer .row .col > ul > li > a:hover {
+  color: #fff;
+  padding-left: 7px;
+}
+
+.footer-links {
+  margin-top: 87px;
+  padding: 24px 0 25px;
+  background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-links .copyright{
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-links .links {
+  width: 50%;
+
+}
+
+.footer-links .links > ul{
+  display: flex;
+  justify-content: end;
+}
+
+.footer-links .links > ul > li {
+  margin-right: 20px;
+}
+/* ! FOOTER END */
+
+/* ? BUTTON TO UP */
+
+.buttontoup{
+  display: block;
+}
+
+.buttontoup i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  bottom: 15px;
+  right: 15px;
+  z-index: 999;
+  position: fixed;
+  cursor: pointer;
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+}
+
+/* ? BUTTON TO END */
+
+
