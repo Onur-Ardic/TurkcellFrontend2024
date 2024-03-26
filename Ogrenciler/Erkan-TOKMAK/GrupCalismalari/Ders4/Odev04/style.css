@@ -3,6 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary: #FFB91F;
+  --secondary: #233F92;
+  --text: #202020;
+  --button-text: #202020;
+  --span-text: #AFAFAF;
+  --date-time: #848484;
+  --discount: rgba(212,56,17,1);
+}
+
 
 body {
   font-family: "Roboto", serif;

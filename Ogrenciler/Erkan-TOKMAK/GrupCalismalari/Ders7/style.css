@@ -1,45 +1,110 @@
-#header {
-    display: grid;
-    height: 200px;
-    grid-template-areas:
-        "header-top header-top header-top"
-        "header-middle header-middle header-middle"
-        "header-bottom header-bottom header-bottom";
+:root {
+    --primary: #FFB91F;
+    --secondary: #233F92;
+    --text: #202020;
+    --button-text: #202020;
+    --span-text: #AFAFAF;
+    --date-time: #848484;
+    --discount: rgba(212, 56, 17, 1);
 }
-.header-top {
-    grid-area: header-top;
-    background-color: blue;
-    display: grid;
-    grid-template-columns: 307px auto 350px;
-    text-align: center;
+/* Slider */
+#slider {
+    height: 630px;
+    background-image: url("https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/07/slide1_1.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
 }
-.header-middle {
-    grid-area: header-middle;
-    background-color: aquamarine;
-}
-.header-bottom {
-    grid-area: header-bottom;
-    background-color: black;
-}
-.header-item{
-    background-color: aquamarine;
-    display: grid;
-    grid-area: header-item;
-}
-.header-top-menu{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.header-top-menu-item {
-    font-size: 15px;
-}
-
-#slider{
-    background-color: bisque;
-}
-.slider{
+.slider {
     display: grid;
     gap: 20px;
     height: 300px;
-    grid-template-areas: "slider-item slider-item";
+    grid-template-columns: 1fr 1.5fr;
+}
+.slider-title {
+    font-size: 70px;
+    color: white;
+}
+.slider-subtitle {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+}
+.slider-p {
+    font-size: 18px;
+    color: white;
+}
+.slider-content {
+    /* margin-top: 25%; */
+    padding: 200px 0px;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 30px 90px 60px 50px;
+}
+.slider-searchbar {
+    display: grid;
+    padding: 50px 0px 0px 100px;
+}
+.slider-card {
+    display: grid;
+    padding: 30px;
+    gap: 10px;
+    background-color: white;
+    border-radius: 20px;
+    height: 350px;
+    width: 300px;
+    text-align: center;
+    align-self: center;
+}
+select {
+    border-radius: 10px;
+    color: #AFAFAF;
+}
+/* Special Offers */
+#special-offers {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.banner-1 {
+    height: 500px;
+    background-image: url(./images/banner-1.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+.banner-2 {
+    height: 500px;
+    background-image: url(./images/banner-2.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+.banner-title {
+    font-size: 48px;
+    color: white;
+}
+.banner-p {
+    font-size: 18px;
+    color: white;
+}
+#features {
+    height: 300px;
+    background-image: url("https://demothemesky-be87.kxcdn.com/druco/wp-content/uploads/2022/08/banner-3.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+.features {
+    display: grid;
+    padding: 35px 0px;
+    grid-template-columns: 1fr;
+}
+.features-title {
+    font-size: 90px;
+    color: var(--primary);
+}
+.features-p {
+    color: white;
 }

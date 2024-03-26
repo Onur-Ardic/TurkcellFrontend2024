@@ -5,9 +5,6 @@
 body{
     font-family:"Outfit";
 }
-ul {
-    list-style: none;
-}
 :root {
     --primary: #FFB91F;
     --secondary: #233F92;
@@ -17,8 +14,85 @@ ul {
     --date-time: #848484;
     --discount: rgba(212,56,17,1);
 }
-.container{
-    width: 80%;
+
+ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+li:hover {
+    color: var(--primary);
+}
+
+a {
+    cursor: pointer;
+    background: transparent;
+    transition: 150ms ease 0s;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.container {
+    width: 1260px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.px-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+.text-primary{
+    color: var(--primary);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text);
+}
+
+.button-white{
+    font-size: 14px;
+    color: var(--text);
+    font-weight: 600;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 70px;
+}
+.button-white:hover{
+    background-color: var(--primary);
+    cursor:pointer;
+}
+.button-yellow{
+    font-size: 14px;
+    background-color: var(--primary);
+    color: var(--text);
+    font-weight: 600;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 42px;
+}
+.button-yellow:hover{
+    background-color: black;
+    color: var(--primary);
 }
