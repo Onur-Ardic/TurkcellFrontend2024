@@ -26,7 +26,6 @@
 .main-header-content-left .text {
   margin-bottom: 47px;
 }
-<<<<<<< Updated upstream
 /*  */
 .subscribe-area-submit {
   width: 465px;
@@ -75,70 +74,6 @@ input:focus {
 /* latest transaction */
 #latest-transaction {
   background-color: #032054;
-=======
-.main-header-content-right img {
-  height: 70vh;
-}
-/* what-says-users */
-#what-users-says {
-  background: linear-gradient(to bottom, #4a00e0, #8e2de2);
-}
-#what-users-says i {
-  color: orange;
-}
-#what-users-says img {
-  width: 70px;
-}
-#what-users-says #users .row {
-  justify-content: flex-start;
-  margin-top: 15px;
-}
-#what-users-says #users .card {
-  border-radius: 5px;
-}
-#what-users-says #users .card-body {
-  padding: 20px;
-}
-#what-users-says #users .card-body > .paragraph {
-  margin: 20px 0;
-}
-#what-users-says #users .subTitle {
-  margin-bottom: 0;
-}
-
-/* calculator */
-#calculator {
-  height: 800px;
-}
-#calculator h4 {
-  padding: 8px 20px;
-  background: linear-gradient(to bottom, #4a00e0, #8e2de2);
-}
-.calculator-left,
-.calculator-right {
-  height: 300px;
-}
-.calculator-inner {
-  background: #032055;
-  padding: 20px;
-  margin-top: -15px;
-}
-.calculator-right .calculator-inner {
-  height: 321px;
-}
-#calculator input,
-#calculator select {
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  margin: 15px 0;
-  color: #fff;
-}
-.calculator-inner input::placeholder {
-  color: #fff;
->>>>>>> Stashed changes
 }
 #top-bar{
   margin: 15px;
