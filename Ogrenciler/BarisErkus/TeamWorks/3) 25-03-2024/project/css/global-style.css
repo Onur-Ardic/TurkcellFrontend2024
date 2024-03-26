@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: black;
+  color: #202020;
   font-weight: 500;
 }
 ul,
@@ -48,4 +48,16 @@ button {
 }
 .main-background-color {
   background-color: #ffb91f;
+}
+.hover-text-main:hover {
+  color: #ffb91f;
+}
+.pointer {
+  cursor: pointer;
+}
+.blog-main-right {
+  gap: 2rem;
+}
+.blog-main-right hr {
+  border: 1px solid rgb(231, 231, 231);
 }

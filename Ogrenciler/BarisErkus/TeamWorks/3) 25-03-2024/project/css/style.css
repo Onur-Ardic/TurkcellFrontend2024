@@ -225,9 +225,6 @@ select option {
   background-color: black;
   color: #ffb91f;
 }
-.product-name:hover {
-  color: #ffb91f;
-}
 .product-price {
   color: #233f92;
   font-weight: bold;
@@ -265,5 +262,33 @@ select option {
 }
 .banner-content {
   width: 1300px;
+}
+.blog-main {
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 5rem;
+  margin-top: 3rem;
+}
+.blog-main-left {
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 1rem;
+}
+.blog-main-left-content {
+  padding: 2rem;
+  gap: 1rem;
+}
+.blog-main-left-content span {
+  font-size: 12.75px;
+  color: #afafaf;
+}
+.blog-main-left-content a {
+  font-size: 12.75px;
+  font-weight: 300;
+}
+.read-more-btn {
+  font-size: 16px;
+  width: 10rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
 }
 /* Abdullah */
