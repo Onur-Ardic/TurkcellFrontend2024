@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+
+.container{
+    height: 600px;
+    background-color: rgb(71, 75, 73);
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+
+.item{
+    background-color: crimson;
+    padding: 20px;
+}
