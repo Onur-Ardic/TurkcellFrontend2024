@@ -35,6 +35,9 @@
 .fs-36 {
   font-size: 36px;
 }
+.fs-48 {
+  font-size: 48px;
+}
 .fs-60 {
   font-size: 60px;
 }
@@ -50,6 +53,9 @@
 .bg-yellow {
   background-color: #ffb91f;
 }
+.bg-red {
+  background-color: #d43811;
+}
 .color-black {
   color: #202020;
 }
@@ -59,6 +65,9 @@
 .color-yellow {
   color: #ffb91f;
 }
+.color-blue {
+  color: #233f92;
+}
 .color-gray {
   color: #848484;
 }
@@ -66,4 +75,22 @@
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+}
+.pl-15 {
+  padding-left: 15px;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.hover {
+  cursor: pointer;
+}
+.hover:hover {
+  color: #ffb91f;
 }
