@@ -1,0 +1,161 @@
+/* Header */
+
+.header-container {
+    font-weight: 400;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.header-top {
+    background-color: #233F92;
+    border-color: #233F92;
+    color: white;
+}
+
+.header-top-container {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    line-height: 1.125rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.header-top,
+.header-bottom {
+    border-width: 0 0 0.063rem;
+    border-style: solid;
+}
+
+.flash-sale,
+.header-icon {
+    color: rgba(255, 185, 31, 1);
+}
+
+.search-icon {
+    color: #000000;
+}
+
+.search-icon {
+    font-size: 1rem;
+    border-radius: 50%;
+    padding: 0.75rem;
+    background-color: rgba(255, 185, 31, 1);
+}
+
+.menu-top-header-menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-middle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.625rem;
+    padding-bottom: 1.625rem;
+    margin: 0 20.625rem;
+}
+
+.logo {
+    width: 9.375rem;
+    height: 3.75rem;
+}
+
+.search-by-category {
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 2rem;
+}
+
+.search-table {
+    display: flex;
+    align-items: center;
+}
+
+form {
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 3.75rem;
+}
+
+select {
+    width: 11.875rem;
+    border-width: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1.875rem;
+    padding-right: 1.125rem;
+    margin-right: 0.438rem;
+    text-transform: capitalize;
+    color: black;
+    border-radius: 2rem;
+}
+
+select option {
+    padding: 0.313rem 0.5rem;
+    color: black;
+}
+
+input {
+    color: #000000;
+}
+
+.search-input {
+    padding: 0.75rem 3.75rem 0.75rem 1.125rem;
+    border-width: 0;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 3.75rem;
+}
+
+.header-middle-right-container li,
+i {
+    color: black;
+}
+
+.header-middle-right-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header-middle-right-container ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header-middle {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-footer li,
+p {
+    color: #000000;
+    font-weight: 600
+}
+
+.header-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-footer ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-footer li:first-child {
+    color: rgba(255, 185, 31, 1);
+}
+
+.header-footer .card {
+    background-color: rgba(255, 185, 31, 1);
+    padding: 0.75rem 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
