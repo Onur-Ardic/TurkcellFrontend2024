@@ -1,0 +1,79 @@
+footer {
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .footer h4 {
+    color: #f8b400;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    color: #f8b400;
+  }
+  
+  .footer ul li i {
+    margin-right: 10px;
+  }
+  .footer-bottom {
+    background-color: #454141;
+    padding: 20px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-bottom p a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Footer logo */
+.footer-area .logo img {
+    max-width: 150px;
+}
+
+/* Footer sosyal medya ikonları */
+.footer-area .social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.paragraf {
+  float: left;
+  
+  }
+  .text{
+    float: right;
+    
+    justify-content: space-between;
+  
+   
+  }
+/* Footer hızlı bağlantılar */
+.footer-area .quick-links li {
+    margin-bottom: 10px;
+}
+
+
+/* Footer iletişim bilgileri */
+.footer-area .contact-info li {
+    margin-bottom: 10px;
+}
