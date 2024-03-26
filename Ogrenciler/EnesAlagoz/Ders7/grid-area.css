@@ -1,14 +1,14 @@
 .container{
     display: grid;
-    height: 600px;
+    height: 700px;
     background-color: rgb(188, 188, 188);
     gap: 5px;
     grid-template-areas:
-    "header header header"
-    "sidebar section section"
-    "sidebar . ."
-    "footer footer footer"
-    "box-1 box-1 box-1";
+    "header header header header"
+    "sidebar sidebar section ."
+    "sidebar . . ."
+    "footer footer footer footer"
+    "box-1 box-1 box-1 box-1";  
   }
   
   .header{
