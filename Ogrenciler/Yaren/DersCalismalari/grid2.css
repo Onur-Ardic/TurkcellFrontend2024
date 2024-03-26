@@ -1,0 +1,56 @@
+*{
+ margin:0 px;
+ padding: 0px;
+ box-sizing:border-box;
+}
+
+    body{
+        background-color:bisque
+    }
+
+.container
+{
+    width:600 px;
+    height:auto;
+    margin:0 px auto;
+    display:grid;
+    /*grid-template-columns: 200px 200px 200px;/*Grid Sütun Genişliğii*/
+    /*grid-template-rows:200px 200px 200px ;/*Grid Satır Yüksekliği*/
+    /*grid-template:200 px 200px/1fr 1fr 1 fr;*/
+    /*grid-template:200 px 200px/100px 100px 100px;*/
+    grid-template:repeat(2,200 px)/ 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+    "menu aside main"
+    "item1 footer footer";
+
+    gap:20px;
+}
+.kutu1{
+    background-color: red;
+    grid-area:header;
+    
+}
+.kutu2{
+    background-color: rgb(77, 187, 44);
+    grid-area:menu;
+}
+.kutu3
+{
+    background-color: rgb(240, 248, 165);
+    grid-area:aside;
+    grid-column:span 2;
+}
+.kutu4
+{
+    background-color: aqua;
+    grid-area:main;
+}
+.kutu5
+{
+    background-color: rgb(49, 139, 139);
+    grid-area:item1;
+}
+.kutu6
+{
+    background-color: rgb(60, 80, 80);
+}
