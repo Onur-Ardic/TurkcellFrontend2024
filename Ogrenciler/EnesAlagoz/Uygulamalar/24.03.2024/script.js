@@ -16,11 +16,11 @@ let foodX;
 let foodY;
 let score = 0;
 let snake=[
-    {x:unitSize * 4, y:0},
-    {x:unitSize * 3, y:0},
-    {x:unitSize * 2, y:0},
-    {x:unitSize, y:0},
-    {x:0, y:0}
+    {x:25, y:0},
+    {x:25, y:0},
+    {x:25, y:0},
+    {x:25, y:0},
+    {x:25, y:0}
 ];
 
 window.addEventListener("keydown", changeDirection);
@@ -71,7 +71,7 @@ function drawFood(){
 function moveSnake(){
     const head={x: snake[0].x + xVelocity,
                 y: snake[0].y + yVelocity};
-    snake.unshift(head);
+   snake.unshift(head);
     // if food is eaten
     if(snake[0].x == foodX && snake[0].y == foodY){
         score+=1;
@@ -80,7 +80,8 @@ function moveSnake(){
     }
     else{
         snake.pop();
-    }            
+    }    
+       
 }
 function drawSnake(){
     ctx.fillStyle=snakeColor;
@@ -157,11 +158,11 @@ function resetGame(){
     xVelocity = unitSize;
     yVelocity= 0;
     snake=[
-        {x:unitSize * 4, y:0},
-        {x:unitSize * 3, y:0},
-        {x:unitSize * 2, y:0},
-        {x:unitSize, y:0},
-        {x:0, y:0}
+        {x:25, y:0},
+        {x:25, y:0},
+        {x:25, y:0},
+        {x:25, y:0},
+        {x:25, y:0}
     ];
     gameStart();
 }
