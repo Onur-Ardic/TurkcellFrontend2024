@@ -25,3 +25,6 @@ seo için sayfaların en başında h1 olmalı 1 tane gerisi
 h2 olabilir
 
 px yerine rem kullanabilirsin
+
+null javascriptte primitive bir deger
+margin x auto tam ortalar

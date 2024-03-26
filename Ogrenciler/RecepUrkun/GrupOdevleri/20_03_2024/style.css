@@ -402,7 +402,8 @@ a {
 }
 
 /* BIRLESTİRME  */
-*CHOOSE SECTION START*/ .chooseSection {
+/*CHOOSE SECTION START*/ 
+.chooseSection {
     background-color: #032055;
     padding: 110px 0 100px;
 }
@@ -479,10 +480,6 @@ a {
 
 /*CHOOSE SECTION END*/
 /*PLANS SECTION START*/
-/* .plansSection {
-    /* background-color: #001232;
-    padding: 110px 0px 100px;
-} */
 
 .buttons a {
     text-decoration: none;
@@ -621,10 +618,6 @@ a {
 
 /*HOW IT WORKS SECTION END*/
 /*INVESTMENT SECTION START*/
-/* .investmentSection {
-    background-color: #032055;
-    padding: 110px 0px 100px;
-} */
 
 .investment-row-1 {
     margin-bottom: 60px;
@@ -1015,13 +1008,15 @@ table tr:hover {
     margin-bottom: 10px;
 }
 
-.contentBox1 .subscribe-area{
+.contentBox1 .subscribe-area {
     width: 540px;
     display: flex;
 }
-.contentBox1 .subscribe-form{
+
+.contentBox1 .subscribe-form {
     width: 465px;
 }
+
 .submit-btn2 {
     position: absolute;
     right: 2px;
@@ -1063,6 +1058,7 @@ table tr:hover {
         opacity: 0;
     }
 }
-.cardSection{
+
+.cardSection {
     margin-top: 100px;
 }

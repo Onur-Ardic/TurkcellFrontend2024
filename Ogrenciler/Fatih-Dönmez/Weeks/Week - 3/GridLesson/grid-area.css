@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  height: 600px;
+  background-color: rgb(188, 188, 188);
+  gap: 5px;
+  grid-template-areas:
+    "header header header"
+    "sidebar section section"
+    "sidebar . ."
+    "footer footer footer";
+}

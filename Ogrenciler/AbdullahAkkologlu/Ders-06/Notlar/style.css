@@ -1,0 +1,18 @@
+body {
+  margin: 20px;
+}
+.container {
+  height: 600px;
+  background-color: rgb(160, 160, 160);
+  padding: 20px;
+  gap: 20px;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 100px); */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.item {
+  background-color: orange;
+  padding: 20px;
+}

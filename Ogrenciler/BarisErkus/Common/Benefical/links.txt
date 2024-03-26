@@ -1,9 +1,12 @@
 # Learn
 - https://www.w3schools.com/
 - https://developer.mozilla.org/
-- https://www.frontendmentor.io/challenges/
 - https://devdocs.io/
-- https://cssgridgarden.com
+
+# Challenge
+- https://www.frontendmentor.io/challenges/
+- https://cssgridgarden.com/#tr
+- https://flexboxfroggy.com
 
 # Design
 - https://coolors.co/59e3bc/

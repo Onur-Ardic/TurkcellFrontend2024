@@ -27,8 +27,6 @@ a {
   text-decoration: none;
   color: white;
 }
-
-/*Geçişli renk için: */
 .fadeEffect {
   background-image: linear-gradient(#4c01e0, #8325e0);
 }
@@ -44,15 +42,6 @@ a {
 .purpleColor {
   color: #8325e0;
 }
-.paddingHandler {
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-/* :root {
-  --main-color: #4c01e0;
-  --pane-padding: 5px 42px;
-} */
 .poppins-light {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -166,7 +155,6 @@ nav {
   width: 55px;
   height: 55px;
 }
-
 .homeForm button {
   position: absolute;
   right: 1%;
@@ -178,16 +166,11 @@ nav {
   color: white;
   font-size: 16px;
 }
-/* .paragraf {
-  color: var(--main-color);
-} */
-
 .mainColor {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .counters {
   display: flex;
   justify-content: space-around;
@@ -260,7 +243,6 @@ nav {
   padding: 15px;
   border-radius: 50%;
 }
-
 .aboutListItem {
   display: flex;
   align-items: center;
@@ -291,6 +273,10 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+.paddingHandler {
+  padding-left: 20%;
+  padding-right: 20%;
 }
 .fastProfit {
   border: 1px solid #8225e049;
@@ -330,7 +316,6 @@ nav {
   display: flex;
   gap: 20px;
 }
-
 .investmentDailyButton {
   padding: 12px 30px;
   color: white;
@@ -409,53 +394,10 @@ nav {
   justify-content: space-evenly;
   align-items: center;
 }
-@media screen and (max-width: 1800px) {
-  .paddingHandler {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .paddingHandler {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .navItems {
-    display: none;
-  }
-  .home {
-    justify-content: center;
-  }
-  .aboutContent {
-    justify-content: center;
-    align-items: center;
-  }
-  .aboutListItemIcon {
-    display: none;
-  }
-  .fastProfit {
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .chooseIcons {
-    justify-content: center;
-  }
-  .investmentPlans {
-    justify-content: center;
-  }
-  .workCards {
-    justify-content: center;
-  }
-}
-
-/*EBRAR*/
 .calculator {
   color: white;
-
   height: 780px;
 }
-
 .calculator-texts,
 .blog-texts {
   display: flex;
@@ -479,7 +421,6 @@ nav {
   width: 540px;
   height: 57px;
 }
-
 .tax-calculator,
 .profit-calculator {
   background-color: #032055;
@@ -490,14 +431,12 @@ nav {
   gap: 20px;
   justify-content: center;
 }
-
 .tax-calculator label,
 .profit-calculator label {
   font-size: 16px;
   font-weight: 600;
   display: block;
 }
-
 .tax-calculator select {
   margin-top: 10px;
   width: 220px;
@@ -527,12 +466,10 @@ nav {
   border-radius: 5px;
   padding: 20px;
 }
-
 .tax-calculator .payment #payment::placeholder,
 .tax-calculator .income #income::placeholder {
   color: #dbe2fb;
 }
-
 .profit-calculator {
   background-color: #032055;
   width: 540px;
@@ -543,7 +480,6 @@ nav {
   gap: 20px;
   justify-content: center;
 }
-
 .profit-calculator input {
   margin-top: 10px;
   width: 460px;
@@ -553,11 +489,9 @@ nav {
   border-radius: 5px;
   padding: 20px;
 }
-
 .profit-calculator input::placeholder {
   color: #dbe2fb;
 }
-
 .questions {
   background-color: #032055;
   height: 590px;
@@ -570,7 +504,6 @@ nav {
   padding: 130px;
   gap: 30px;
 }
-
 .questions-texts {
   width: 570px;
   height: 306px;
@@ -579,7 +512,6 @@ nav {
   flex-direction: column;
   justify-content: left;
 }
-
 .questions-texts button {
   background: linear-gradient(#4c01e0, #8325e0);
   color: white;
@@ -590,14 +522,12 @@ nav {
   font-size: 16px;
   margin-top: 60px;
 }
-
 .questions-link {
   width: 570px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-
 .links {
   background: linear-gradient(#4c01e0, #8325e0);
   width: 540px;
@@ -606,24 +536,20 @@ nav {
   display: flex;
   align-items: center;
 }
-
 .links a {
   padding-left: 20px;
   font-size: 18px;
   text-align: center;
 }
-
 .links img {
   background: none;
   height: 20px;
   padding-right: 20px;
 }
-
 .blog {
   height: 774px;
   background-color: #001232;
 }
-
 .blog-texts {
   margin-top: 60px;
 }
@@ -633,7 +559,6 @@ nav {
   flex-direction: column;
   justify-content: center;
 }
-
 .blog-cards-section {
   display: flex;
   justify-content: center;
@@ -646,7 +571,6 @@ nav {
 .cards img {
   height: 220px;
 }
-
 .cards p {
   padding: 10px;
   font-size: 20px;
@@ -654,7 +578,6 @@ nav {
 .footer {
   height: 479px;
 }
-
 .footer-top {
   background: linear-gradient(#4c01e0, #8325e0);
   display: flex;
@@ -685,7 +608,6 @@ nav {
   color: #f8f9fa;
   font-family: "Poppins", sans-serif;
 }
-
 .footer-line {
   border-top: 1px dashed rgba(218, 214, 214, 0.589);
   width: 300px;
@@ -704,7 +626,6 @@ nav {
   margin-bottom: 20px;
   font-size: 20px;
 }
-
 .footer-info-account a,
 .footer-info-company a {
   font-size: 16px;
@@ -731,16 +652,12 @@ nav {
 .footer-links a {
   margin-right: 5px;
 }
-
-/*necati*/
-.top10 div{
+.top10 div {
   width: 100%;
 }
-
-.font30px{
+.font30px {
   font-size: 30px;
 }
-
 .priceBox {
   width: 350px;
   height: 338.33px;
@@ -752,27 +669,23 @@ nav {
   text-align: center;
   padding: 0px 15px;
 }
-
 .priceBoxes {
   display: flex;
   justify-content: space-around;
   gap: 30px;
 }
-
-.getStartedButton{
+.getStartedButton {
   width: 170px;
   height: 50px;
   margin-top: 500px;
 }
-
-.marginTop200{
+.marginTop200 {
   margin-top: 200px;
 }
-
-.marTop15{
+.marTop15 {
   margin-top: 15px;
 }
-.font16{
+.font16 {
   font-size: 16px;
 }
 .latestParagraf {
@@ -785,31 +698,27 @@ nav {
 .priceBox h4 {
   color: white;
   font-size: 24px;
-  background-color: #8325E0;
+  background-color: #8325e0;
 }
-
-.flexEven{
+.flexEven {
   display: flex;
   justify-content: space-evenly;
 }
-
-.marBot20{
+.marBot20 {
   margin-bottom: 20px;
 }
 .top10 img {
   width: 100%;
   height: 200px;
 }
-.flexAround{
+.flexAround {
   display: flex;
   justify-content: space-around;
 }
-
-.advPic{
+.advPic {
   width: 650px;
   height: 315px;
 }
-
 .about {
   background-color: #001232;
   padding-top: 100px;
@@ -818,20 +727,18 @@ nav {
   align-items: center;
   padding-bottom: 100px;
 }
-
-.priceRate{
+.priceRate {
   width: 100%;
   text-align: center;
   border-radius: 4px;
   color: #fff;
   padding: 16px 20px 16px;
   margin: 22px 0px 17px;
-  background: -webkit-moz-gradient(to bottom, #4A00E0, #8E2DE2);
-  background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+  background: -webkit-moz-gradient(to bottom, #4a00e0, #8e2de2);
+  background: linear-gradient(to bottom, #4a00e0, #8e2de2);
   transition: all 0.3s ease-in;
   position: relative;
 }
-
 .buttonNec {
   padding: 16px 25px;
   border-radius: 30px;
@@ -841,23 +748,18 @@ nav {
   font-size: 16px;
   margin: 10px;
 }
-
-.buttonCreate{
+.buttonCreate {
   width: 295px;
   height: 80px;
 }
-
-.dailyWeeklyButton{
+.dailyWeeklyButton {
   display: flex;
   justify-content: center;
 }
-
-.flexCenter{
+.flexCenter {
   display: flex;
   justify-content: center;
 }
-
-
 .works {
   padding-top: 150px;
   height: 750px;
@@ -868,7 +770,6 @@ nav {
   gap: 30px;
   padding-bottom: 150px;
 }
-
 .top10 {
   padding-top: 150px;
   background-color: #001232;
@@ -879,7 +780,6 @@ nav {
   gap: 30px;
   padding-bottom: 150px;
 }
-
 .users {
   padding-top: 150px;
   height: 750px;
@@ -891,31 +791,21 @@ nav {
   padding-bottom: 150px;
 }
 .createBetter {
-
   height: 265px;
   display: flex;
   justify-content: space-between;
-  
-
 }
-
-.insideCreate{
+.insideCreate {
   padding-top: 7%;
 }
-
 .advantage {
-
   height: 265px;
   display: flex;
   justify-content: space-between;
-  
-
 }
-
-.insideAdvantage{
+.insideAdvantage {
   padding-top: 7%;
 }
-
 .start {
   padding-top: 150px;
   background-color: #032055;
@@ -926,7 +816,6 @@ nav {
   gap: 30px;
   padding-bottom: 150px;
 }
-
 .latest {
   padding-top: 150px;
   background-color: #032055;
@@ -937,7 +826,6 @@ nav {
   gap: 30px;
   padding-bottom: 150px;
 }
-
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -946,63 +834,28 @@ table {
   color: white;
   font-weight: bold;
 }
-
-td, th {
-  
+td,
+th {
   text-align: left;
   padding: 8px;
 }
-
 th {
   padding: 20px 15px;
   background-color: #001232;
-  
 }
-
-td{
+td {
   border: 1px solid #032055;
   padding: 20px;
 }
-
 td.deposit {
   text-align: right;
 }
-tr:hover{
+tr:hover {
   background-color: #032055;
 }
-
 .currency {
   color: orange;
 }
-
 .amount {
   color: rgb(61, 84, 239);
 }
-
-@media (max-width: 600px) {
-  table {
-    width: auto;
-  }
-
-  th, td {
-    display: block;
-    text-align: left;
-  }
-}
-
-
-@media screen and (max-width: 1800px) {
-  .paddingHandler {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .paddingHandler {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-}
-
-
-
