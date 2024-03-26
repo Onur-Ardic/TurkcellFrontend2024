@@ -17,8 +17,8 @@
                 <div class="header-top-container grid text-center">
                     <div class="header-delivery-note white">FREE DELIVERY on all orders</div>
                     <div class="header-store-notice white">
-                        <span class="flash-sale">
-                            <i class="fas fa-bolt header-icon"></i>
+                        <span class="flash-sale main-text-color">
+                            <i class="fas fa-bolt header-icon main-text-color"></i>
                             FLASH SALE:
                         </span> 60% OFF CAR BATTERIES | USE CODE "BATT60"
                     </div>
@@ -34,13 +34,14 @@
                     </div>
                 </div>
             </div>
+            <!-- Burası header-middle. Header'ın ortasında kalan bölge -->
             <div class="header-bottom">
                 <div class="header-middle">
                     <div class="header-middle-container grid align-center">
-                        <img src="./assets/logo.png" alt="logo" class="logo">
+                        <img src="./assets/logo.png" alt="logo" class="main-logo">
                         <div class="search-by-category">
-                            <form action="https://demo.theme-sky.com/druco/" class="grid">
-                                <select name="term">
+                            <form action="https://demo.theme-sky.com/druco/" class="grid search-category-form">
+                                <select name="term" class="select-categories">
                                     <option value="">All categories</option>
                                     <option value="car-batteries">Batteries</option>
                                     <option value="brake">Brake</option>
@@ -142,7 +143,7 @@
                                 </select>
                                 <div class="search-table grid">
                                     <input type="text" name="s" placeholder="Search For Products" class="search-input">
-                                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                    <i class="fa-solid fa-magnifying-glass search-icon main-background-color"></i>
                                 </div>
                             </form>
                         </div>
@@ -164,14 +165,14 @@
             </div>
             <div class="header-footer grid align-center">
                 <ul class="grid">
-                    <li>HOME</li>
+                    <li class="main-text-color">HOME</li>
                     <li>PAGES</li>
                     <li>SERVİCE PARTS</li>
                     <li>BRAKE</li>
                     <li>CAR BATTERIES</li>
                     <li>TOOLS & GARAGE</li>
                 </ul>
-                <div class="card grid align-center">
+                <div class="card grid align-center main-background-color">
                     <i class="fa-solid fa-phone phone-icon"></i>
                     <div class="card-container">
                         <p>Call us 24/7</p>
@@ -220,7 +221,9 @@
                             <option value="1-3" data-stylerecorder="true">1.3</option>
                             <option value="1-4" data-stylerecorder="true">1.4</option>
                         </select>
-                        <input type="submit" value="Go" data-stylerecorder="true">
+                        <div class="text-center">
+                            <input type="submit" value="Go" data-stylerecorder="true" class="main-background-color">
+                        </div>
                     </form>
                 </div>
             </div>
@@ -234,7 +237,7 @@
             </div>
         </div>
     </div>
-    <section class="categories">
+    <section class="categories main-background-color">
         <div class="categories-container grid align-center">
             <div>
                 <h3>Categories</h3>
@@ -270,7 +273,7 @@
     </section>
     <section class="best-sellers">
         <div class="best-sellers-headers grid justify-center">
-            <h2>Bestsellers</h2>
+            <h2 class="main-text-color">Bestsellers</h2>
             <h2>Popular items</h2>
         </div>
         <div class="best-sellers-items grid justify-center">

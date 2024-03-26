@@ -1,7 +1,5 @@
 /* Header */
-
 .header-container {
-    font-weight: 400;
     grid-template-rows: auto auto;
 }
 
@@ -16,17 +14,11 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.flash-sale,
-.header-icon {
-    color: rgba(255, 185, 31, 1);
-}
-
 .search-icon {
     color: #5a5a5a;
     font-size: 1rem;
     border-radius: 50%;
     padding: 0.75rem;
-    background-color: rgba(255, 185, 31, 1);
 }
 
 .menu-top-header-menu {
@@ -39,13 +31,12 @@
     padding: 1.625rem 20.625rem;
 }
 
-.logo {
+.main-logo {
     width: 9.375rem;
     height: 3.75rem;
 }
 
 .search-by-category {
-    border: 0.063rem solid rgb(202, 202, 202);
     border-radius: 2rem;
 }
 
@@ -54,7 +45,6 @@
 }
 
 form {
-    max-width: 100%;
     grid-template-columns: auto auto;
     border-radius: 3.75rem;
 }
@@ -70,13 +60,21 @@ select option {
     padding: 0.313rem 0.5rem;
 }
 
+.select-categories {
+    background-color: transparent;
+}
+
+.search-category-form {
+    background-color: #f8f8f8;
+}
+
 .search-input {
     padding: 0.75rem 3.75rem 0.75rem 1.125rem;
     border-width: 0;
     max-width: 100%;
     border-radius: 3.75rem;
+    background-color: transparent;
 }
-
 
 .header-middle-right-container {
     grid-template-columns: auto auto;
@@ -102,12 +100,7 @@ select option {
     gap: 2rem;
 }
 
-.header-footer li:first-child {
-    color: rgba(255, 185, 31, 1);
-}
-
 .header-footer .card {
-    background-color: rgba(255, 185, 31, 1);
     padding: 0.75rem 3rem;
     grid-template-columns: auto auto;
     gap: 2rem;
@@ -116,7 +109,7 @@ select option {
 /* Top Slide Show */
 
 .top-slideshow {
-    background-image: linear-gradient(to bottom, rgba(67, 81, 122, 0.247), rgba(67, 81, 122, 0.247)), url(../assets/bg.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.548)), url(../assets/bg.jpg);
     background-size: cover;
 }
 
@@ -149,7 +142,6 @@ select option {
 }
 
 .top-slideshow-left-container input {
-    background-color: #FFB91F;
     border: 0.063rem solid rgb(255, 185, 31);
     padding: 0.688rem 3.25rem;
     border-radius: 2.625rem;
@@ -169,11 +161,6 @@ select option {
 }
 
 /* Categories */
-
-.categories {
-    background-color: #FFB91F;
-}
-
 .categories-container {
     grid-template-columns: auto auto;
     padding: 2rem 15rem;
@@ -225,13 +212,9 @@ select option {
     margin-bottom: 0.5rem;
 }
 
-.best-sellers-headers h2:first-child {
-    color: #FFB91F;
-}
-
 .best-sellers-headers {
     grid-template-columns: auto auto;
-    gap: 10rem;
+    gap: 6rem;
     margin-bottom: 3rem;
 }
 
