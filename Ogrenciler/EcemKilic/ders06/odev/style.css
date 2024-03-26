@@ -1,0 +1,73 @@
+/* genel kullanım */
+.body {
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 400;
+}
+/* genel kullanım */
+a {
+    cursor: pointer;
+    background: transparent;
+    transition: 150ms ease 0s;
+    text-decoration: none;
+}
+/* genel kullanım */
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.categories {
+    height: 260px;
+    background-color: #ffb91f;
+    width: 100% !important;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 1%;
+    margin-left: 10%;
+}
+.categories-header {
+    text-align: left;
+}
+.categories-btn .btn{
+    border: none;
+    color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 50px;
+    opacity: 0.5;
+}
+.categories-btn .ileri {
+    right: 85%;
+}
+.categories-btn .geri {
+    left: 5%;
+}
+.categories-left {
+    margin-right: 20px;
+}
+.category {
+    box-sizing: border-box;
+    border-color: rgba(235, 235, 235, 1);
+    text-align: center;
+}
+.category-img {
+    max-width: 170px;
+    border-radius: 6px;
+}
