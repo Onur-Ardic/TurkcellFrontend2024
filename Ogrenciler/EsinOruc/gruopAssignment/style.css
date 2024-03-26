@@ -107,7 +107,7 @@ html {
 
 /* overlay */
 
-.overlay {
+.overlay-header {
     background-color: rgba(22, 28, 45, 0.75);
     position: absolute;
     top: 0;
