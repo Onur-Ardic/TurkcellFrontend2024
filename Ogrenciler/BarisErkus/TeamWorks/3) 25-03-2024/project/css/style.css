@@ -29,21 +29,16 @@
   width: 9.375rem;
   height: 3.75rem;
 }
-.search-by-category {
-  border-radius: 2rem;
-}
 .search-table {
   grid-template-columns: auto auto;
 }
 form {
   grid-template-columns: auto auto;
-  border-radius: 3.75rem;
 }
 select {
   border-width: 0;
   padding: 0.25rem 1.125rem;
   margin-right: 0.438rem;
-  border-radius: 2rem;
 }
 select option {
   padding: 0.313rem 0.5rem;
@@ -58,16 +53,13 @@ select option {
   padding: 0.75rem 3.75rem 0.75rem 1.125rem;
   border-width: 0;
   max-width: 100%;
-  border-radius: 3.75rem;
   background-color: transparent;
 }
 .header-middle-right-container {
   grid-template-columns: auto auto;
-  gap: 3rem;
 }
 .header-middle-right-container ul {
   grid-template-columns: auto auto auto;
-  gap: 2rem;
 }
 .header-middle {
   border-bottom: 0.063rem solid #e5e5e5;
@@ -78,12 +70,10 @@ select option {
 }
 .header-footer ul {
   grid-template-columns: auto auto auto auto auto auto;
-  gap: 2rem;
 }
 .header-footer .card {
   padding: 0.75rem 3rem;
   grid-template-columns: auto auto;
-  gap: 2rem;
 }
 .top-slideshow {
   background-image: linear-gradient(
@@ -104,7 +94,6 @@ select option {
   background-color: white;
   padding: 3.125rem 4rem;
   border-radius: 1rem;
-  gap: 2rem;
 }
 .top-slideshow-left-container form {
   grid-template-columns: auto;
@@ -121,7 +110,6 @@ select option {
 .top-slideshow-left-container input {
   border: 0.063rem solid rgb(255, 185, 31);
   padding: 0.688rem 3.25rem;
-  border-radius: 2.625rem;
   margin-top: 1.563rem;
 }
 .top-slideshow-right-container h1 {
@@ -129,7 +117,6 @@ select option {
 }
 .top-slideshow-right-container button {
   padding: 1rem 3rem;
-  border-radius: 3rem;
   margin-top: 3rem;
   font-weight: bold;
   border: none;
@@ -146,7 +133,6 @@ select option {
 }
 .categories-items {
   grid-template-columns: auto auto auto auto auto;
-  gap: 2rem;
 }
 .categories-container h3 {
   font-size: 2.5rem;
@@ -164,7 +150,6 @@ select option {
 }
 .best-sellers-items {
   grid-template-columns: auto auto auto auto;
-  gap: 2.5rem;
 }
 .best-sellers-item {
   border: 0.063rem solid #e5e5e5;
@@ -212,9 +197,9 @@ select option {
   padding-bottom: 1.5rem;
 }
 .cart-button {
+  border-radius: 2rem;
   outline: none;
   border: none;
-  border-radius: 2rem;
   width: 7rem;
   font-weight: bold;
   padding: 0.2rem 0.5rem;
@@ -285,10 +270,18 @@ select option {
   font-weight: 300;
 }
 .read-more-btn {
+  border-radius: 2rem;
   font-size: 16px;
   width: 10rem;
   border: none;
-  border-radius: 2rem;
   padding: 0.75rem 2rem;
+}
+.read-more-btn:hover {
+  background-color: #202020;
+  color: #ffb91f;
+}
+.blog-main-left-content h4 {
+  font-size: 20px;
+  font-weight: bolder;
 }
 /* Abdullah */

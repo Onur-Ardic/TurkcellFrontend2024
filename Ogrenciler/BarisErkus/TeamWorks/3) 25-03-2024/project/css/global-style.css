@@ -61,3 +61,9 @@ button {
 .blog-main-right hr {
   border: 1px solid rgb(231, 231, 231);
 }
+.gap {
+  gap: 2rem;
+}
+.radius {
+  border-radius: 2.5rem;
+}
