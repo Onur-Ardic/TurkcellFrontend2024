@@ -117,3 +117,7 @@ img{
 .text-center{
     text-align: center;
 }
+.star i{
+    color: rgba(255,185,31,1);
+    margin: 10px 0;
+}
