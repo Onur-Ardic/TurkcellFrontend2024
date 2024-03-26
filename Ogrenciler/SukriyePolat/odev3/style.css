@@ -12,7 +12,7 @@ body{
     font-family: "Outfit", sans-serif;
     line-height: 1.6;
     font-size: 1.6rem;
-    color: #000;
+    color: #fff;
 }
 #main-header{
     background-color: #233f91;
@@ -50,7 +50,7 @@ img{
     border-radius: 5px;
 }
 .container{
-    width: 1260px;
+    /* width: 1260px; */
     margin: 0 auto;
 }
 .row{
@@ -184,6 +184,7 @@ img{
     padding: 30px;
     justify-content: space-between;
     border-color: rgba(24, 24, 24, 1);
+    background:black;
 }
 #black-bottom a{ 
     color: #fff;
