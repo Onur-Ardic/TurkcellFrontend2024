@@ -1,0 +1,1177 @@
+/* General Container Structure */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.width-50 {
+  width: 50%;
+}
+.width-100 {
+  width: 100%;
+}
+.title {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+.h2-size {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+
+.i-large {
+  font-size: 3em;
+}
+
+.i-medium {
+  font-size: 2em;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.column-gap {
+  column-gap: 20px;
+}
+
+.col-1 {
+  flex: 100%;
+}
+.col-2 {
+  flex: 50%;
+}
+
+.col-3 {
+  flex: 30%;
+}
+
+/* Colors & Sizes */
+:root {
+  --bg-gradiant: linear-gradient(to bottom, #4a00e0, #8e2de2);
+  --bg-primary: #001232;
+  --bg-secondary: #032055;
+  --text-primary: #ffffff;
+  --text-secondary: #dbe2fb;
+  --p-size: 16px;
+  --icon-active: linear-gradient(to bottom, #4a00e0, #8e2de2);
+  --button-gradiant: linear-gradient(to bottom, #4a00e0, #8e2de2);
+  --button-gradiant2: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+  --button-gradiant-top: linear-gradient(to top, #4a00e0, #8e2de2);
+}
+
+/* Column Start */
+
+.container-1-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.col-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.col-between-center {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-between-start {
+  justify-content: space-between;
+  align-items: start;
+}
+
+.col-between-end {
+  justify-content: space-between;
+  align-items: end;
+}
+
+.col-around-center {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.col-around-start {
+  justify-content: space-around;
+  align-items: start;
+}
+
+.col-around-end {
+  justify-content: space-around;
+  align-items: end;
+}
+
+.col-evenly-center {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.col-evenly-start {
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.col-evenly-end {
+  justify-content: space-evenly;
+  align-items: end;
+}
+
+.col-center-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.col-center-start {
+  justify-content: center;
+  align-items: start;
+}
+
+.col-center-end {
+  justify-content: center;
+  align-items: end;
+}
+
+/* Column End */
+
+/* Row Start*/
+.container-1-row {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.row-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.row-between-center {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-between-start {
+  justify-content: space-between;
+  align-items: start;
+}
+
+.row-between-end {
+  justify-content: space-between;
+  align-items: end;
+}
+
+.row-around {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row-around-start {
+  justify-content: space-around;
+  align-items: start;
+}
+
+.row-around-end {
+  justify-content: space-around;
+  align-items: end;
+}
+
+.row-evenly {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.row-evenly-start {
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.row-evenly-end {
+  justify-content: space-evenly;
+  align-items: end;
+}
+
+.row-center-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.row-center-start {
+  justify-content: center;
+  align-items: start;
+}
+
+.row-center-end {
+  justify-content: center;
+  align-items: end;
+}
+
+.row-start-center {
+  justify-content: start;
+  align-items: center;
+}
+
+/* Row End */
+
+/* Header Start */
+#header {
+  background: var(--bg-gradiant);
+  height: 60px;
+}
+
+/* Header End */
+
+/* NavBar Start */
+#nav {
+  width: 100%;
+  height: 100%;
+}
+
+.header-text {
+  font-size: 16px;
+  color: white;
+}
+
+.logo {
+  width: 80%;
+}
+
+.menu {
+  width: 70%;
+  align-items: center;
+}
+
+.menu-item {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.menu-item:active {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.menu-item:hover {
+  cursor: grab;
+}
+
+.menu-button {
+  height: 30px;
+  width: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--bg-secondary);
+  color: white;
+}
+
+.menu-button:hover {
+  background: var(--bg-gradiant);
+}
+
+/* NavBar End */
+
+/* Slider Start */
+#slider {
+  height: 700px;
+  background: var(--bg-gradiant);
+  padding-bottom: 600px;
+  padding-top: 300px;
+}
+
+.slider-header {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.slider-p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.slider-image {
+  height: 480px;
+  width: 100%;
+  margin-left: 70px;
+}
+
+.slider-content {
+  height: 300px;
+}
+
+.slider-form {
+  background-color: #032055;
+  /* margin-top: 20px; */
+  border-radius: 50px;
+  border: none;
+  width: 465px;
+  height: 55px;
+}
+
+.slider-input {
+  background-color: #032055;
+  color: white;
+  font-size: 16px;
+  margin-left: 25px;
+  height: 80%;
+  border: none;
+}
+
+.slider-button {
+  background: var(--button-gradiant);
+  border: none;
+  border-radius: 50px;
+  margin: 2px;
+  /* margin-left: 135px; */
+  height: 51px;
+  line-height: 51px;
+  padding: 0px 30px;
+  color: #ffffff;
+}
+
+.slider-icon {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  /* margin-top: 20px; */
+  margin-left: 20px;
+  box-shadow: 0px 0px 20px var(--bg-secondary);
+}
+
+/* Slider End */
+
+/* Total Cards Start */
+
+.icon {
+  width: 100px;
+  height: 100px;
+  background: var(--button-gradiant2);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  margin-bottom: 19px;
+  display: inline-block;
+  line-height: 130px;
+}
+
+#total-cards {
+  margin-top: -180px;
+  margin-bottom: -200px;
+}
+
+.card {
+  background-color: #032055;
+  text-align: center;
+  padding: 30px 30px 27px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
+  height: 350px;
+  /* position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px; */
+}
+
+.card-heading {
+  font-size: 40px;
+  line-height: 50px;
+  color: white;
+}
+
+.card-content {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+.card-p {
+  font-size: 16px;
+  color: #dbe2fb;
+}
+
+/* Total Cards End */
+
+/* About Us Start */
+#about-us {
+  background-color: var(--bg-primary);
+  margin-top: -200px;
+  padding-top: 300px;
+  padding-bottom: 100px;
+}
+
+.about-p {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.about-img {
+  width: 400px;
+  height: 400px;
+  /* position: absolute; */
+  margin-right: 50px;
+}
+
+.h4-about {
+  font-size: 24px;
+  line-height: 34px;
+  color: white;
+}
+
+.about-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--bg-gradiant);
+  text-align: center;
+  line-height: 100px;
+  border: none;
+  color: white;
+  margin: 0 30px 20px 0;
+  font-size: 10px;
+}
+
+#about-us .p-size {
+  text-align: start;
+  margin: 20px 0;
+}
+
+.p-size {
+  font-size: 16px;
+  color: #dbe2fb;
+  text-align: center;
+}
+
+.content-p {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+/* About Us End */
+
+/* Why Choose Us Start */
+#why-choose-us {
+  background-color: var(--bg-secondary);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.w-c-u-menu {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.w-c-u-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.active-icon {
+  background: var(--icon-active);
+}
+
+.w-c-u-title {
+  color: var(--text-primary);
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.w-c-u-menu-title {
+  color: var(--text-primary);
+  font-size: 24px;
+}
+
+.w-c-u-menu-subtitle {
+  font-size: 16px;
+  margin-top: 16px;
+  color: var(--text-secondary);
+}
+
+.w-c-u-subtitle {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 16px;
+  color: var(--text-secondary);
+}
+
+.w-c-u-icon {
+  background-color: var(--bg-secondary);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #4e3b7b;
+  margin-bottom: 15px;
+}
+
+.w-c-u-tab {
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 10px #4e3b7b;
+  height: 350px;
+}
+
+#fast-profit-tab img {
+  width: 420px;
+}
+
+/* Why Choose Us End */
+
+/* Investment Plans Start */
+
+#investment-plans {
+  background-color: var(--bg-primary);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.investment-plans-p {
+  color: #dbe2fb;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.investment-button-group {
+  margin-top: 50px;
+}
+
+.investment-button {
+  background: var(--button-gradiant);
+  border: none;
+  border-radius: 50px;
+  height: 51px;
+  line-height: 51px;
+  padding: 0px 30px;
+  color: #ffffff;
+  margin-right: 50px;
+}
+
+.investment-button-dark {
+  background: var(--bg-primary);
+  border: 0.5px solid #ffffff;
+  border-radius: 50px;
+  height: 51px;
+  line-height: 51px;
+  padding: 0px 30px;
+  color: #ffffff;
+}
+
+.investment-button-dark:hover {
+  background: var(--button-gradiant);
+  border: none;
+  border-radius: 50px;
+  height: 51px;
+  line-height: 51px;
+  padding: 0px 30px;
+  color: #ffffff;
+}
+
+.investment-card-group {
+  width: 90%;
+  margin: auto;
+}
+
+.investment-card {
+  background: var(--bg-secondary);
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
+  height: 350px;
+  width: 30%;
+  margin-top: 30px;
+}
+
+.investment-card-h3 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.investment-card-price {
+  width: 90%;
+  height: 100px;
+  background: var(--bg-gradiant);
+  border-radius: 10px;
+}
+
+.investment-card-icon {
+  font-size: 70px;
+  transform: rotate(15deg);
+  opacity: 0.2;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.investment-card-p {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.investment-card-content-p {
+  font-size: 20px;
+  color: #dbe2fb;
+}
+
+.investment-card-button {
+  background: var(--button-gradiant);
+  border: none;
+  border-radius: 50px;
+  height: 51px;
+  line-height: 51px;
+  padding: 0px 30px;
+  color: #ffffff;
+}
+
+.investment-card-button:hover {
+  background: var(--button-gradiant-top);
+  border: none;
+  border-radius: 50px;
+  height: 51px;
+  line-height: 51px;
+  padding: 0px 30px;
+  color: #ffffff;
+}
+
+/* Investment Plans End */
+
+/* How Does It Works Start */
+
+#how-does-it-works {
+  background: var(--bg-gradiant);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.how-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--bg-gradiant);
+  text-align: center;
+  line-height: 100px;
+  border: none;
+  color: white;
+  margin: 10;
+  font-size: 40px;
+}
+
+.how-card {
+  background: var(--bg-secondary);
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
+  height: 350px;
+  width: 30%;
+  margin-top: 30px;
+}
+/* How Does It Work End */
+
+/* Start Investment Start */
+#start-investment {
+  background: var(--bg-secondary);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.si-table {
+  width: 90%;
+  color: var(--text-primary);
+  border-collapse: collapse;
+  margin: auto;
+}
+.si-table-head {
+  text-align: justify;
+  padding: 40px;
+}
+.si-table th {
+  background-color: var(--bg-primary);
+  padding: 10px;
+}
+.si-tr-user {
+  margin-left: 15px;
+}
+.si-table tr {
+  border-bottom: 0.1px solid #212529;
+}
+
+.si-table tr td:nth-child(4) {
+  color: #f0ad4e;
+}
+
+.si-table tr td:nth-child(3) {
+  color: #045cf0;
+}
+
+.si-table td {
+  background-color: var(--bg-primary);
+  padding: 10px;
+}
+/* Start Investment End */
+
+/* Get Started Area Start */
+#get-started-area {
+  background: var(--bg-gradiant);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+}
+.get-started-area-h1 {
+  font-size: 35px;
+}
+.get-started-area-button {
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  height: 50px;
+  padding: 0px 30px;
+  color: var(--bg-primary);
+}
+
+.get-started-area-button:hover {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 50px;
+  height: 50px;
+  padding: 0px 30px;
+  color: white;
+}
+
+/* Get Started Area End */
+
+/* Latest Transaction Start */
+#latest-transaction {
+  background-color: var(--bg-secondary);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 1150px;
+}
+.lt-heading {
+  text-align: center;
+  padding-bottom: 65px;
+}
+.lt-heading-title {
+  margin-bottom: 16px;
+  color: var(--text-primary);
+  font-size: 34px;
+}
+.lt-menu {
+  margin-bottom: 25px;
+  height: 66px;
+}
+.lt-button-active {
+  color: white;
+  font-size: 18px;
+  margin: 0px 5px;
+  padding: 0px 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background: var(--button-gradiant);
+  box-shadow: 0px 0px 10px #4e3b7b;
+}
+.lt-button {
+  color: white;
+  font-size: 18px;
+  margin: 0px 5px;
+  padding: 0px 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background: var(--bg-secondary);
+  box-shadow: 0px 0px 10px #4e3b7b;
+}
+.lt-table {
+  width: 100%;
+  color: var(--text-primary);
+  border-collapse: collapse;
+}
+.lt-text-start {
+  text-align: start !important;
+  display: flex;
+  align-items: center;
+}
+.lt-user-avatar {
+  margin-right: 10px;
+}
+.lt-table th {
+  background-color: var(--bg-primary);
+  border-bottom: 0.1px solid white;
+  padding: 20px 15px;
+}
+.lt-table tr td:nth-child(4) {
+  color: #f0ad4e;
+}
+.lt-table tr td:nth-child(3) {
+  color: #045cf0;
+}
+.lt-table td {
+  background-color: var(--bg-primary);
+  padding: 20px 15px;
+  border-bottom: 0.1px solid white;
+  text-align: center;
+  font-weight: 600;
+}
+/* Latest Transaction End */
+
+/* Our Bigest Advantage Start */
+#our-bigest-advantage {
+  background-color: var(--bg-secondary);
+  height: 750px;
+}
+.obg-title {
+  margin-bottom: 60px;
+}
+.obg-content {
+  color: white;
+  height: 200px;
+  width: 500px;
+}
+.obg-heading-title {
+  margin-bottom: 16px;
+  color: var(--text-primary);
+  font-size: 34px;
+}
+.obg-image {
+  width: 600px;
+  height: 400px;
+  margin-right: 200px;
+}
+.obg-p {
+  font-size: 16px;
+  color: #dbe2fb;
+}
+/* Our Bigest Advantage End */
+
+/* Our Top 10 Investors Start */
+#our-top-10-investors {
+  background-color: var(--bg-primary);
+  padding: 121px 0px 115px;
+  height: 750px;
+}
+.oti-heading-title {
+  margin-bottom: 16px;
+  color: var(--text-primary);
+  font-size: 34px;
+}
+.oti-card-group {
+  width: 100%;
+  margin-top: 140px;
+}
+.oti-card {
+  background-color: var(--bg-secondary);
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+.oti-name {
+  color: var(--text-primary);
+  font-size: 18px;
+}
+.oti-p {
+  color: var(--text-primary);
+  font-size: 14px;
+}
+.oti-card-img {
+  width: 205px;
+  height: 205px;
+  border-radius: 10px;
+  margin-top: -70px;
+  margin-bottom: 10px;
+}
+.oti-social-media-group {
+  color: white;
+  font-size: 12px;
+  width: 100px;
+}
+/* Our Top 10 Investors End */
+
+/* What Users Says Start */
+#what-users-says {
+  background: var(--bg-gradiant);
+  height: 750px;
+  padding: 121px 0px 151px;
+}
+.wus-heading {
+  color: var(--text-primary);
+  text-align: center;
+}
+.wus-title {
+  font-size: 40px;
+  padding: 10px 0px;
+}
+.wus-card-group {
+  width: 100%;
+  margin-top: 60px;
+}
+.wus-card {
+  background-color: var(--bg-secondary);
+  width: 30%;
+  height: 300px;
+  border-radius: 10px;
+  padding: 30px;
+  color: var(--text-secondary);
+}
+.wus-author {
+  width: 200px;
+  height: 100px;
+  align-items: center;
+  color: white;
+}
+.wus-author img {
+  width: 70px;
+  height: 70px;
+}
+.wus-author p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.wus-star-i {
+  color: gold;
+}
+/* What Users Says End */
+
+/* Tax & Profit Calculator Start */
+#tax-profit-calculator {
+  background: var(--bg-primary);
+  color: #fff;
+  padding: 50px;
+}
+
+#tax-profit-calculator h4 {
+  background: var(--bg-gradiant);
+  padding: 15px;
+  font-size: 20px;
+}
+#calculator-tax,
+#calculator-profit {
+  background: var(--bg-secondary);
+}
+#calculator-tax .row,
+#calculator-profit .row {
+  padding: 30px;
+}
+
+#calculator-tax .col-2 {
+  padding-right: 15px;
+}
+
+#tax-profit-calculator select,
+#tax-profit-calculator input {
+  width: 100%;
+  background: var(--bg-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 10px;
+}
+
+#tax-profit-calculator input::placeholder,
+#tax-profit-calculator select {
+  color: #fff;
+}
+
+.tpc-p {
+  color: white;
+}
+
+/* Tax & Profit Calculator End */
+
+/* FAQ Start */
+
+#faq {
+  background: var(--bg-secondary);
+  padding: 50px;
+  color: #fff;
+}
+
+#faq h4 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.faq-bg div h3 {
+  background: var(--bg-gradiant);
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.faq-bg div p {
+  padding: 15px;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.faq-p {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.faq-bg h3 i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* FAQ End */
+
+/* Blog Start */
+#blog {
+  background: var(--bg-primary);
+  padding: 50px 0;
+}
+
+#blog #latest-card {
+  column-gap: 20px;
+}
+
+.li-latest {
+  list-style: none;
+  color: #ffffff;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.top-meta {
+  align-items: start;
+}
+
+.h4-latest {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 22px;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+/* Blog End */
+
+/* Footer Start */
+
+#footer {
+  background: var(--bg-gradiant);
+  padding: 50px 0 25px;
+  line-height: 25px;
+}
+
+.footer-p {
+  color: white;
+  padding: 10px 0;
+}
+
+#footer li {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+  padding: 5px 0;
+  list-style-type: none;
+}
+
+#footer ul {
+  width: 90%;
+}
+
+.footer-input {
+  background-color: #ffffff40;
+  font-size: 16px;
+  margin-left: 25px;
+  border: none;
+  height: 100%;
+}
+
+.footer-form {
+  background-color: #ffffff40;
+  border-radius: 50px;
+  border: none;
+  height: 55px;
+}
+
+.footer-button {
+  background: var(--button-gradiant);
+  border: none;
+  margin: 2px;
+  border-radius: 50%;
+  height: 45px;
+  padding: 0 15px;
+  color: #ffffff;
+}
+
+.footer-content {
+  color: white;
+}
+/* Footer End */
+
+/* Copyright Start */
+#copyright {
+  background: var(--bg-gradiant);
+  margin-top: 87px;
+  padding: 24px 0px 25px;
+  line-height: 26px;
+}
+
+#copyright .container {
+  display: flex;
+}
+
+.authors {
+  color: #ffffffcc;
+  font-size: 16px;
+}
+
+.footer-social-media-icon-group {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  font-size: 14px;
+}
+
+/* Copyright End */
