@@ -117,3 +117,12 @@ img{
 .text-center{
     text-align: center;
 }
+.star i{
+    color: rgba(255,185,31,1);
+    margin: 10px 0;
+}
+.price{
+    color:rgb(35, 63, 146);
+    font-weight: bold;
+    font-size: 20px;
+}

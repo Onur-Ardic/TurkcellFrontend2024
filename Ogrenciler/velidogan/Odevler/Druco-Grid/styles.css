@@ -130,11 +130,3 @@
 #bestsellers #bestsellers-products .card-body{
     padding: 20px;
 }
-#bestsellers #bestsellers-products .star i{
-    color: rgba(255,185,31,1);
-    margin: 10px 0;
-}
-#bestsellers #bestsellers-products .price{
-    color: rgb(4, 0, 255);
-    font-size: 20px;
-}
