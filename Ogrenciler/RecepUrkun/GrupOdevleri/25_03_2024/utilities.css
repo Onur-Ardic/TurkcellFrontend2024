@@ -7,6 +7,7 @@
     --date-time: #848484;
     --discount: rgba(212, 56, 17, 1);
     --white: #ffffff;
+    --border-color: #ebebeb;
 }
 
 * {
@@ -24,6 +25,10 @@ body {
 ul {
     list-style: none;
     cursor: pointer;
+}
+
+li{
+    list-style: none;
 }
 
 li:hover {
