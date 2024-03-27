@@ -50,6 +50,9 @@ a {
   align-items: center;
   gap: 1rem;
 }
+.mt-15 {
+  margin-top: 1rem;
+}
 
 .mt-30 {
   margin-top: 2rem;
@@ -108,4 +111,33 @@ select {
 
 .bg-color-yellow {
   background-color: rgb(255, 185, 31);
+}
+.bg-color-gray {
+  background-color: rgba(255, 255, 255, 0.165);
+}
+.bg-color-white {
+  background-color: rgb(255, 255, 255);
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.font-color-white {
+  color: rgb(255, 255, 255);
+}
+
+.btn {
+  border-radius: 42px;
+  padding: 12px 32px;
+  border: none;
+  max-width: max-content;
+  font-weight: bold;
+}
+.btn-round {
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  max-width: max-content;
+}
+h2 {
+  font-size: 40px;
 }

@@ -15,8 +15,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="global-style.css" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="grid-container">
@@ -56,7 +57,7 @@
                 type="text"
                 placeholder="Search for products"
               />
-              <button class="bg-color-yellow">
+              <button class="btn btn-round bg-color-yellow">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
@@ -88,10 +89,10 @@
           </div>
         </div>
 
-        <div class="header-bottom p-1">
+        <div class="header-bottom">
           <div class="container flex">
             <nav>
-              <ul class="grid left">
+              <ul class="grid left p-1">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">PAGES</a></li>
                 <li><a href="#">SERVICE PARTS</a></li>
@@ -104,35 +105,99 @@
               <img src="assets/phone-icon.png" alt="phone-icon" />
               <div class="call-us">
                 <p>Call us 24/7</p>
-                <h2>+08 9229 8228</h2>
+                <h3>+08 9229 8228</h3>
               </div>
             </div>
           </div>
         </div>
-        <!--
-       
-          <div class="vehicle">
-            <div class="vehicle-left">
-              <h2></h2>
-              <select name="" id=""></select
-              ><select name="" id=""></select
-              ><select name="" id=""></select
-              ><select name="" id=""></select>
-            </div>
-            <div class="vehicle-right">
-              <h5></h5>
-              <h1></h1>
-              <p></p>
-              <button></button>
-            </div>
-          </div>
-
-
--->
       </header>
 
-      <section class="categories">
-        <div class="container"></div>
+      <section class="vehicle w-100">
+        <div class="container grid">
+          <div class="vehicle-left mt-30 grid p-2 center bg-color-white">
+            <h2>SEARCH BY VEHICLE</h2>
+            <select name="" id="">
+              <option value="">Select Make</option></select
+            ><select name="" id="">
+              <option value="">Select Model</option></select
+            ><select name="" id="">
+              <option value="">Select Year</option></select
+            ><select name="" id="">
+              <option value="">Select Engine</option>
+            </select>
+            <div class="vehicle-right-btn center">
+              <button class="btn bg-color-yellow">GO</button>
+            </div>
+          </div>
+          <div class="vehicle-right font-color-white mt-30">
+            <h2>BIG SALE</h2>
+            <h1>40% off Sale Is Back</h1>
+            <p>
+              Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut
+              <br />
+              labore et dolore magna aliqua.
+            </p>
+            <button class="btn bg-color-white mt-30">SHOP NOW</button>
+          </div>
+        </div>
+        <div class="overlay-vehicle"></div>
+      </section>
+
+      <section class="categories bg-color-yellow">
+        <div class="container grid center">
+          <div class="product mt-30 left">
+            <h2>Categories</h2>
+            <p>March Favorites</p>
+            <div class="product-btn mt-15">
+              <button class="btn btn-round bg-color-gray">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button class="btn btn-round bg-color-gray">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <img src="assets/exteriors-310x310.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <p>Wheels & Tires</p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <img src="assets/entertainment-310x310.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <p>Wheels & Tires</p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <img src="assets/interior-310x310.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <p>Wheels & Tires</p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <img src="assets/interior-310x310.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <p>Wheels & Tires</p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <img src="assets/oils-310x310.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <p>Wheels & Tires</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="bestsellers-popular-itemss">
