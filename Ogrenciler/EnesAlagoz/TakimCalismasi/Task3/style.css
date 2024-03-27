@@ -1,0 +1,362 @@
+.section-shop{
+    width: 900;
+    height: 520px;
+}
+.container-shop{
+    width: 1240px;
+    height: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title-shop{
+width: 1240px;
+height: 100px;
+font-weight: bold;
+font-size: 35px;
+}
+.list-categories-shop ul{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(4,auto);
+}
+.list-categories-shop ul li{
+    width: 230px;
+    height: 70px;
+    padding: 0 10px 20px;
+}
+.list-categories-shop li h4{
+    border: 1px solid #908f8f;
+    border-radius: 5px;
+    padding: 15px 5px;
+}
+.list-categories-shop h4:hover {
+    background-color: #fcc631;
+}
+.genuine-part-background-section{
+    width: 1920px;
+    height: 298px;
+    margin-bottom: 40px;
+}
+.genuine-part-background-section {
+    position: relative;
+}
+.overlay {
+    position: relative;
+}
+.genuine-part-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: left-center;   
+}
+.genuine-part-content h2{
+    width: 1230px;
+    height: 190px;
+    font-size: 75px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color: #FFB91F;
+}
+.writing{
+    font-size: 20px;
+}
+.writing span {
+    color: #FFB91F; 
+}
+.section-from{
+    width: 1260px;
+    height: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title-from-container{
+    width: 1260px;
+    height: 80px;
+    
+}
+.title-from h3{
+    width: 1230px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+}
+.img-container{
+    width: 640px;
+    height: 370px;
+    grid-area: img;
+}
+.entry-container{
+    width: 640px;
+    height: 235px;
+    margin-top: 0;
+    grid-area: container;
+}
+.entry-content{
+    width: 640px;
+    height: 236px;
+    padding: 25px 30px 30px;
+    display: flex;
+    justify-content: left-center;
+    border: 1px solid #b6b4b4;
+}
+.entry-meta{
+    width: 580px;
+    height: 22px;
+    margin: 0 0 11px;
+}
+span {
+    margin-right: 7px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.entry-meta a{
+    color: black;
+    font-size: 15px;
+    margin-right: 7px;
+}
+a:hover{
+    color: #FFB91F;
+}
+.entry-title-container{
+    margin-top: 12px;
+}
+.entry-title{
+    width: 425px;
+    height: 25px;
+    color: #202020;
+    font: 20px Outfit;
+    font-weight: bold;
+}
+.excerpt{
+    width: 580px;
+    height: 65px;
+    margin-top: 12px;
+}
+.entry-meta-bottom a{
+    text-align: center;
+    padding: 10px 40px;
+}
+.button-readmore{
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-color: orange; 
+    color: white; 
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+.button-readmore:hover {
+    background-color: black; 
+    color: orange; 
+}
+
+/*  hhj*/
+
+.entry-container-right-up {
+    width: 640px;
+    height: 235px;
+    grid-area: right-up;  
+}
+.entry-content-right-up{
+    width: 640px;
+    height: 236px;
+    padding: 25px 30px 30px;
+    display: flex;
+    justify-content: left-center;
+    border: 1px solid #c8c5c5;
+    display: block;
+}
+.entry-meta-right-up{
+    width: 580px;
+    height: 22px;
+    margin: 0 0 11px;
+}
+.entry-meta-right-up a{
+    color: black;
+    font-size: 15px;
+    margin-right: 7px;   
+   
+}
+.entry-meta-right-up a:hover{
+    color: #FFB91F;
+}
+.What-Is-Car-Suspansion{
+    width: 640;
+    height: 38px;
+}
+.What-Is-Car-Suspansion a{
+    font-size: 22px;
+    color: #202020;
+    font-weight: bold;
+}
+.What-Is-Car-Suspansion a:hover{
+   color: #FFB91F;
+}
+.entry-title-right-up{
+    width: 640px;
+    height: 40px;
+    font-size: 16px;
+}
+.entry-meta-right-up {
+    text-align: left;
+   
+}
+.button-readmore-right-up{
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-color: orange; 
+    color: white; 
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+.button-readmore-right-up:hover{
+    background-color: black; 
+    color: orange; 
+}
+.entry-meta-button-right-up a{
+    text-align: center;
+    padding: 10px 40px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+}
+/*dehofdesp*/
+.entry-container-right-middle{
+    width: 640px;
+    height: 235px;
+    grid-area: right-middle;
+}
+.entry-content-right-middle{
+    width: 640px;
+    height: 236px;
+    padding: 25px 30px 30px;
+    display: flex;
+    justify-content: left-center;
+    border: 1px solid #c8c5c5;
+    display: block;
+}
+.entry-meta-right-middle a{
+    color: black;
+    font-size: 15px;
+    margin-right: 7px;   
+   
+}
+.entry-meta-right-middle a:hover{
+    color: #FFB91F;
+}
+.What-Does-A-Car-Servise-Include {
+    width: 640px;
+    height: 40px;
+    padding-top: 10px;
+}
+.What-Does-A-Car-Servise-Include a:hover{
+    color: #FFB91F;
+}
+.What-Does-A-Car-Servise-Include a{
+    font-size: 22px;
+    color: #202020;
+    font-weight: bold;
+}
+.entry-title-right-middle{
+    width: 640px;
+    height: 35px;
+    margin-top: 10px;
+}
+.entry-meta-button-right-middle a{
+    text-align: center;
+    padding: 10px 40px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px; 
+}
+.button-readmore-right-middle{
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-color: orange; 
+    color: white; 
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+.button-readmore-right-middle:hover{
+    background-color: black; 
+    color: orange; 
+}
+/*sdakg*/
+.entry-container-right-bottom{
+    width: 640px;
+    height: 235px;
+    grid-area: right-bottom;
+}
+.entry-content-right-bottom{
+    width: 640px;
+    height: 236px;
+    padding: 25px 30px 30px;
+    display: flex;
+    justify-content: left-center;
+    border: 1px solid #c8c5c5;
+    display: block;
+}
+.entry-meta-right-bottom a{
+    color: black;
+    font-size: 15px;
+    margin-right: 7px;   
+   
+}
+.entry-meta-right-bottom a:hover{
+    color: #FFB91F;
+}
+.Wiper-Blade-Size-Guide a{
+    font-size: 22px;
+    color: #202020;
+    font-weight: bold;
+}
+.Wiper-Blade-Size-Guide a:hover{
+    color: #FFB91F;
+}
+.Wiper-Blade-Size-Guide{
+    width: 640px;
+    height: 40px;
+    padding-top: 10px;
+}
+.entry-title-right-bottom{
+    width: 640px;
+    height: 35px;
+    margin-top: 10px;
+}
+.entry-meta-button-right-bottom a{
+    text-align: center;
+    padding: 10px 40px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px; 
+}
+.button-readmore-right-bottom{
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-color: orange; 
+    color: white; 
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+.button-readmore-right-bottom:hover{
+    background-color: black; 
+    color: orange; 
+}
+.grid-section {
+    display: grid;
+    grid-template-areas: 
+        "img right-up"
+        "img right-middle"
+        "container  right-bottom";
+}
