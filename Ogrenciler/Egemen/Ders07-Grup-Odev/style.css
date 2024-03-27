@@ -23,9 +23,10 @@ ul li{
     border: none;
     border-radius: 42px;
     margin: 0 auto;
-    margin-top: 24px;
+    /* margin-top: 24px; */
     font-weight: 600;
     line-height: 25px;
+    cursor: pointer;
 }
 .container{
     width: 1140px;
@@ -33,7 +34,7 @@ ul li{
     padding: 0 15px;
 }
 .search-by-vehicle{
-    z-index: -1;
+    /* z-index: -1; */
     background: url("./section1-bg.jpg") center center no-repeat;
     background-size: cover;
     width: 100%;
@@ -41,7 +42,7 @@ ul li{
     padding: 100px 0;
 }
 .search-by-vehicle::before {
-    z-index: -1;
+    /* z-index: -1; */
     content: "";
     position: absolute;
     top: 0;
@@ -59,6 +60,7 @@ ul li{
 }
 .search-by-vehicle-form-side{
     /* grid-area: search-by-vehicle-form-side; */
+    z-index: 1;
     background: white;
     padding: 40px 32px;
     border-radius: 10px;
@@ -71,24 +73,44 @@ ul li{
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 20px;
 }
 .search-form-selects{
     display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 .search-form-select{
     padding: 12px 30px 12px 15px;
     margin-bottom: 15px;
-    margin-right: 10px;
-    border-radius: 10px;
+    /* margin-right: 10px; */
+    border: 0.1px solid rgb(203, 200, 200);
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    font-weight: 500;
 }
 .search-by-vehicle-content{
     /* grid-area: search-by-vehicle-content; */
+    z-index: 1;
     color: white;
     display: grid;
     align-items: center;
 }
 .vehicle-content-h{
     font-size: 3rem;
+}
+.vehicle-content-btn{
+    background: white;
+    padding: 16px 35px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 42px;
+    cursor: pointer;
+}
+.vehicle-content-btn:hover{
+    background: #FFB91F;
 }
 @media screen and (max-width: 991px) {
     .container {
@@ -126,7 +148,7 @@ ul li{
     }
     .search-form-select{
         height: 80%;
-        padding: 15px;
+        padding: 10px;
     }
     .search-form{
         grid-template-columns: 1fr;

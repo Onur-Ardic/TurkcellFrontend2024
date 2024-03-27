@@ -183,6 +183,10 @@ select option {
     color: var(--text);
 }
 
+.popular-parts{
+    margin-bottom: 90px;
+}
+
 .popular-parts h2 {
     font-size: 36px;
     letter-spacing: 0.9px;
@@ -242,7 +246,7 @@ select option {
 
 .best-sellers-menu {
     display: grid;
-    grid-template-rows: 50px 600px;
+    grid-template-rows: auto auto;
 }
 
 .menu-tabs {
