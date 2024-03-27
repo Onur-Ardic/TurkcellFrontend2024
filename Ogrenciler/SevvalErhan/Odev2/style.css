@@ -1,237 +1,519 @@
+/* General Container Structure */
 * {
-  border: box-sizing;
-}
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
   margin: 0;
-  overflow-x: hidden;
-}
-/* .main-menu {
-    position: fixed;
-    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-}
-.main-menu .nav-fixed {
-    border-bottom: 0px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-.main-menu .navbar{
-    padding: 0px 0px;
-}
-.main-menu .navbar .navbar-brand {
-    padding: 0px;
-    margin: 0px;
-  }
-  .main-menu .navbar .navbar-brand img {
-   max-width: 40px;
-  }
-
-  .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-
-}
-.row .nav-content{
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-  .navbar {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
-} */
+.width-50 {
+  width: 50%;
+}
+.width-100 {
+  width: 100%;
+}
+.title {
+  padding: 40px 0;
+  text-align: center;
+}
 
 .container {
-  max-width: 1300px;
-  margin: 0 auto;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.tp-calculator {
-  background-color: #131333;
-  padding: 120px 0px 130px;
+
+body {
+  font-family: "Open Sans", sans-serif;
 }
-.tp-calculator .tp-calculator-wrapper{
-    padding: 10px 30px 16px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
 }
-.tp-calculator .tp-calculator-wrapper .tp-calculator-content .section-title {
-  color: #fff;
-  text-align: center;
+
+.h2-size {
   font-size: 40px;
   line-height: 50px;
   font-weight: 600;
-  margin-bottom: 12px;
-}
-
-.tp-calculator .tp-calculator-wrapper .tp-calculator-content .tp-content {
-  font-size: 16px;
-  color: #fff;
   text-align: center;
-  line-height: 26px;
-  margin-top: 10px;
-}
-.tp-calculator .cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  color: #ffffff;
 }
 
-.tp-calculator .cards .tax-card .tax-calculator {
-  background: #032055;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+.i-large {
+  font-size: 3em;
 }
-.tp-calculator .cards .tax-card .tax-calculator .calculator-title {
-  font-size: 24px;
-  line-height: 34px;
-  margin-bottom: 15px;
-  background: linear-gradient(to bottom, #4a00e0, #8e2de2);
-  padding: 12px 30px 11px;
-  color: #fff;
+
+.i-medium {
+  font-size: 2em;
 }
-.tp-calculator .cards .tax-card .tax-calculator .calculator-content {
-  padding: 10px 30px 16px;
-  color: #fff;
-}
-.tp-calculator .cards .tax-card .tax-calculator .calculator-content .group-1 {
+
+.row {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-wrap {
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+}
+
+.column-gap {
+  column-gap: 20px;
+}
+
+.col-1 {
+  flex: 100%;
+}
+.col-2 {
+  flex: 50%;
+}
+
+.col-3 {
+  flex: 30%;
+}
+
+/* Colors & Sizes */
+:root {
+  --bg-gradiant: linear-gradient(to bottom, #4a00e0, #8e2de2);
+  --bg-primary: #001232;
+  --bg-secondary: #032055;
+  --text-primary: #ffffff;
+  --text-secondary: #dbe2fb;
+  --p-size: 16px;
+  --icon-active: linear-gradient(to bottom, #4a00e0, #8e2de2);
+  --button-gradiant: linear-gradient(to bottom, #4a00e0, #8e2de2);
+  --button-gradiant2: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+  --button-gradiant-top: linear-gradient(to top, #4a00e0, #8e2de2);
+}
+
+/* Column Start */
+
+.container-1-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.col-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.col-between-center {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-between-start {
+  justify-content: space-between;
+  align-items: start;
+}
+
+.col-between-end {
+  justify-content: space-between;
+  align-items: end;
+}
+
+.col-around-center {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.col-around-start {
+  justify-content: space-around;
+  align-items: start;
+}
+
+.col-around-end {
+  justify-content: space-around;
+  align-items: end;
+}
+
+.col-evenly-center {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.col-evenly-start {
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.col-evenly-end {
+  justify-content: space-evenly;
+  align-items: end;
+}
+
+.col-center-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.col-center-start {
+  justify-content: center;
+  align-items: start;
+}
+
+.col-center-end {
+  justify-content: center;
+  align-items: end;
+}
+
+/* Column End */
+
+/* Row Start*/
+.container-1-row {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.row-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.row-between-center {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-between-start {
+  justify-content: space-between;
+  align-items: start;
+}
+
+.row-between-end {
+  justify-content: space-between;
+  align-items: end;
+}
+
+.row-around {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row-around-start {
+  justify-content: space-around;
+  align-items: start;
+}
+
+.row-around-end {
+  justify-content: space-around;
+  align-items: end;
+}
+
+.row-evenly {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.row-evenly-start {
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.row-evenly-end {
+  justify-content: space-evenly;
+  align-items: end;
+}
+
+.row-center-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.row-center-start {
+  justify-content: center;
+  align-items: start;
+}
+
+.row-center-end {
+  justify-content: center;
+  align-items: end;
+}
+
+.row-start-center {
+  justify-content: start;
+  align-items: center;
+}
+
+/* Row End */
+
+
+/* Latest Transaction Start */
+#latest-transaction {
+  background-color: var(--bg-secondary);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 1150px;
+}
+.lt-heading {
+  text-align: center;
+  padding-bottom: 65px;
+}
+.lt-heading-title {
+  margin-bottom: 16px;
+  color: var(--text-primary);
+  font-size: 34px;
+}
+.lt-menu {
+  margin-bottom: 25px;
+  height: 66px;
+}
+.lt-button-active {
+  color: white;
+  font-size: 18px;
+  margin: 0px 5px;
+  padding: 0px 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background: var(--button-gradiant);
+  box-shadow: 0px 0px 10px #4e3b7b;
+}
+.lt-button {
+  color: white;
+  font-size: 18px;
+  margin: 0px 5px;
+  padding: 0px 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background: var(--bg-secondary);
+  box-shadow: 0px 0px 10px #4e3b7b;
+}
+.lt-table {
+  width: 100%;
+  color: var(--text-primary);
+  border-collapse: collapse;
+}
+.lt-text-start {
+  text-align: start !important;
+  display: flex;
+  align-items: center;
+}
+.lt-user-avatar {
+  margin-right: 10px;
+}
+.lt-table th {
+  background-color: var(--bg-primary);
+  border-bottom: 0.1px solid white;
+  padding: 20px 15px;
+}
+.lt-table tr td:nth-child(4) {
+  color: #f0ad4e;
+}
+.lt-table tr td:nth-child(3) {
+  color: #045cf0;
+}
+.lt-table td {
+  background-color: var(--bg-primary);
+  padding: 20px 15px;
+  border-bottom: 0.1px solid white;
+  text-align: center;
+  font-weight: 600;
+}
+/* Latest Transaction End */
+
+
+/* Tax & Profit Calculator Start */
+#tax-profit-calculator {
+  background: var(--bg-primary);
+  color: #fff;
+  padding: 50px;
+}
+
+#tax-profit-calculator h4 {
+  background: var(--bg-gradiant);
+  padding: 15px;
+  font-size: 20px;
+}
+#calculator-tax,
+#calculator-profit {
+  background: var(--bg-secondary);
+}
+#calculator-tax .row,
+#calculator-profit .row {
+  padding: 30px;
+}
+
+#calculator-tax .col-2 {
   padding-right: 15px;
-  padding-left: 15px;
-  gap: 2rem;
-}
-.tp-calculator .cards .tax-card .tax-calculator .calculator-content .group-2 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    padding-right: 15px;
-    padding-left: 15px;
-    gap: 1rem;
-  }
-  .tp-calculator .cards .tax-card .tax-calculator .calculator-content .group-3 {
-    
-    margin-left: -15px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-.tp-calculator .cards .tax-card .tax-calculator .calculator-content .form-group{
-    margin-bottom: 0px;
-}
-.tp-calculator .cards .tax-card .tax-calculator .calculator-content .form-group label{
-   color: #fff;
-   font-weight: 600;
-   margin-bottom: 0.5rem;
-   display: inline-block;
-}
-.tp-calculator .cards .tax-card .tax-calculator .form-group  .input-field{
-    background: #032055;
-    height: 40px;
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-.input-field{
-    width: 100%!important;
-    height: 50px;
-    padding: 0 20px;
-    font-size: 14px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.tp-calculator .cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-  .tp-calculator .cards .profit-card {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .tp-calculator .cards .profit-card .profit-calculator {
-    background: #032055;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-    margin-left: 3rem;
-  }
-  .tp-calculator .cards .profit-card .profit-calculator .calculator-title {
-    font-size: 24px;
-    line-height: 34px;
-    margin-bottom: 15px;
-    background: linear-gradient(to bottom, #4a00e0, #8e2de2);
-    padding: 12px 30px 11px;
-    color: #fff;
-  }
-  .tp-calculator .cards .profit-card .profit-calculator .calculator-content {
-    padding: 10px 30px 16px;
-    color: #fff;
-  }
-  .tp-calculator .cards .profit-card .profit-calculator .calculator-content .group-1 {
-    
-    margin-left: -15px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .tp-calculator .cards .profit-card .profit-calculator .calculator-content .group-2 {
-    
-      margin-left: -15px;
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-    .tp-calculator .cards .profit-card .profit-calculator .calculator-content .group-3 {
-     
-      margin-left: -15px;
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-  .tp-calculator .cards .profit-card .profit-calculator .calculator-content .form-group{
-      margin-bottom: 0px;
-  }
-  .tp-calculator .cards .profit-card .profit-calculator .calculator-content .form-group label{
-     color: #fff;
-     font-weight: 600;
-     margin-bottom: 0.5rem;
-     display: inline-block;
-  }
-  .tp-calculator .cards .profit-card .profit-calculator .form-group  .input-field{
-      background: #032055;
-      height: 40px;
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  .input-field{
-      width: 100%!important;
-      height: 50px;
-      padding: 0 20px;
-      font-size: 14px;
-      border-radius: 5px;
-      margin-bottom: 20px;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-  }
+#tax-profit-calculator select,
+#tax-profit-calculator input {
+  width: 100%;
+  background: var(--bg-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 10px;
+}
 
+#tax-profit-calculator input::placeholder,
+#tax-profit-calculator select {
+  color: #fff;
+}
 
+.tpc-p {
+  color: white;
+}
+
+/* Tax & Profit Calculator End */
+
+/* FAQ Start */
+
+#faq {
+  background: var(--bg-secondary);
+  padding: 50px;
+  color: #fff;
+}
+
+#faq h4 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.faq-bg div h3 {
+  background: var(--bg-gradiant);
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.faq-bg div p {
+  padding: 15px;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.faq-p {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.faq-bg h3 i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* FAQ End */
+
+/* Blog Start */
+#blog {
+  background: var(--bg-primary);
+  padding: 50px 0;
+}
+
+#blog #latest-card {
+  column-gap: 20px;
+}
+
+.li-latest {
+  list-style: none;
+  color: #ffffff;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.top-meta {
+  align-items: start;
+}
+
+.h4-latest {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 22px;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+/* Blog End */
+
+/* Footer Start */
+
+#footer {
+  background: var(--bg-gradiant);
+  padding: 50px 0 25px;
+  line-height: 25px;
+}
+
+.footer-p {
+  color: white;
+  padding: 10px 0;
+}
+
+#footer li {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+  padding: 5px 0;
+  list-style-type: none;
+}
+
+#footer ul {
+  width: 90%;
+}
+
+.footer-input {
+  background-color: #ffffff40;
+  font-size: 16px;
+  margin-left: 25px;
+  border: none;
+  height: 100%;
+}
+
+.footer-form {
+  background-color: #ffffff40;
+  border-radius: 50px;
+  border: none;
+  height: 55px;
+}
+
+.footer-button {
+  background: var(--button-gradiant);
+  border: none;
+  margin: 2px;
+  border-radius: 50%;
+  height: 45px;
+  padding: 0 15px;
+  color: #ffffff;
+}
+
+.footer-content {
+  color: white;
+}
+/* Footer End */
+
+/* Copyright Start */
+#copyright {
+  background: var(--bg-gradiant);
+  margin-top: 87px;
+  padding: 24px 0px 25px;
+  line-height: 26px;
+}
+
+#copyright .container {
+  display: flex;
+}
+
+.authors {
+  color: #ffffffcc;
+  font-size: 16px;
+}
+
+.footer-social-media-icon-group {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  font-size: 14px;
+}
+
+/* Copyright End */
