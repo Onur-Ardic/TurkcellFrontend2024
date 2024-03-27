@@ -440,6 +440,7 @@ select option {
 .newsletter-header-title-p{
     line-height: 1.2cm;
     font-size: 15px;
+    color: var(--text);
 }
 input{
     background-color: #FFFFFF00;
@@ -491,7 +492,6 @@ input{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
-
 .newproducts-products-imgtab-img img{
     height: 140px;
     width: 140px;
@@ -700,4 +700,60 @@ select {
     display: grid;
     grid-template-columns: repeat(6,1fr);
     padding-bottom: 120px;
+}
+#footer{
+    background-color: black;
+    width: 100%;
+}
+.footer-container{
+    max-width: 100%;
+}
+.footer-menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 120px 0px;
+}
+.footer-icon-group{
+    display: grid;
+    margin-left: 10px;
+    margin-top: 20px;
+    grid-template-columns:repeat(4,20px);
+    gap: 30px;
+    color: var(--span-text);
+}
+.footer-icon-group a{
+    width: 30px;
+    height: 30px;
+    text-align:center;
+    color: var(--white);
+}
+.footer-icon-group i{
+    margin-top:7px;
+}
+.footer-icon-group a:hover{
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.icon-f:hover{
+    background-color: blue;
+}
+.icon-t:hover{
+    background-color: aqua;
+}.icon-p:hover{
+    background-color: #CB2027;
+}
+.icon-fr:hover{
+    background-color: #cb2073;
+}
+.footer-menu ul li,.footer-menu p {
+    color: var(--span-text);
+    margin-bottom: 10px;
+}
+#footer h5 {
+    color: var(--white);
+    font-size: 16px;
+    margin-bottom: 17px;
+    font-weight: 600;
 }

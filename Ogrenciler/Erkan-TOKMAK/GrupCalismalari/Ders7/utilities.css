@@ -14,6 +14,7 @@ body{
     --date-time: #848484;
     --discount: rgba(212,56,17,1);
 }
+
 ul {
     list-style: none;
     cursor: pointer;
@@ -29,7 +30,7 @@ a {
     color: var(--text);
 }
 .container {
-    width: 1260px;
+    max-width: 1260px;
     margin-left: auto;
     margin-right: auto;
 }
