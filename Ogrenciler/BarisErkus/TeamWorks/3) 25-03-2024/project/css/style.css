@@ -1,4 +1,3 @@
-/* Header */
 .header-container {
   grid-template-rows: auto auto;
 }
@@ -248,7 +247,7 @@ select option {
   background-size: cover;
 }
 .banner-content {
-  width: 1300px;
+  width: 100%;
 }
 .blog-main {
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
@@ -283,7 +282,72 @@ select option {
   color: #ffb91f;
 }
 .blog-main-left-content h4 {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: bolder;
 }
 /* Abdullah */
+/* Hüseyin */
+.container {
+  background-image: url(https://demothemesky-be87.kxcdn.com/druco/wp-content/uploads/2022/08/home-about.jpg);
+  background-position: center;
+  padding-bottom: 2rem;
+  height: 600px;
+  padding: 7rem 5rem 0 5rem;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.logo img {
+  width: 5rem;
+}
+.newsletter {
+  grid-template-columns: auto auto auto auto auto;
+  height: 9rem;
+}
+.grid-part1 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.grid-part2 {
+  grid-area: 1 / 4 / 3 / 5;
+  position: relative;
+}
+.newsletter button {
+  background-color: black;
+  padding: 0.75rem 1.25rem;
+  position: absolute;
+  right: 5.8rem;
+  top: 0.15rem;
+}
+.newsletter input {
+  background-color: #ffffff00;
+  width: 30rem;
+  height: 3rem;
+  border: 1px solid black;
+}
+input::placeholder {
+  padding-left: 1rem;
+}
+.grid-last-page {
+  background-color: black;
+  height: 480px;
+  display: grid;
+  grid-template-columns: 22rem auto auto auto;
+  padding: 4rem 6rem;
+  justify-content: center;
+  gap: 5rem;
+}
+.last-page ul {
+  text-align: left;
+}
+.list li {
+  color: #aaaa;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.icon {
+}
+.footer-h2 {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+}
