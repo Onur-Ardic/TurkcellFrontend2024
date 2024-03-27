@@ -9,7 +9,7 @@
 }
 /* Slider */
 #slider {
-    height: 630px;
+    height: 745px;
     background-image: url("https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/07/slide1_1.jpg");
     background-position-x: center;
     background-position-y: center;
@@ -37,6 +37,7 @@
 .slider-content {
     /* margin-top: 25%; */
     padding: 200px 0px;
+    width: 700px;
     display: grid;
     align-items: center;
     grid-template-rows: 30px 90px 60px 50px;
@@ -44,6 +45,7 @@
 .slider-searchbar {
     display: grid;
     padding: 50px 0px 0px 100px;
+    margin-right: 20px;
 }
 .slider-card {
     display: grid;
@@ -51,14 +53,27 @@
     gap: 10px;
     background-color: white;
     border-radius: 20px;
-    height: 350px;
-    width: 300px;
+    height: 480px;
+    width: 420px;
     text-align: center;
     align-self: center;
 }
+.slider-card-title{
+    font-size: 30px;
+    font-weight: 600;
+}
+.slider-button{
+    width: 160px;
+    height: 50px;
+}
+.slider-search-button{
+    width: 160px;
+    height: 50px;
+    margin-left: 130px;
+}
 select {
     border-radius: 10px;
-    color: #AFAFAF;
+    color: var(--span-text);
 }
 /* Special Offers */
 #special-offers {
@@ -82,29 +97,72 @@ select {
     background-size: cover;
 }
 .banner-title {
+    margin-top: 150px;
+    margin-left: 30px;
     font-size: 48px;
     color: white;
+    font-weight: 600;
 }
 .banner-p {
+    margin-top: 20px;
+    margin-left: 30px;
     font-size: 18px;
     color: white;
 }
-#features {
+.banner-button{
+    width: 250px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 14px;
+    background-color: var(--primary);
+    color: var(--text);
+    font-weight: 600;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 42px;
+}
+.banner-button:hover{
+    background-color: white;
+}
+.offers-item:hover{
+    transform: scale(1.05);
+}
+#special-offers2 {
     height: 300px;
     background-image: url("https://demothemesky-be87.kxcdn.com/druco/wp-content/uploads/2022/08/banner-3.jpg");
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
 }
-.features {
+.special-offers {
     display: grid;
     padding: 35px 0px;
     grid-template-columns: 1fr;
 }
-.features-title {
+.so-title {
     font-size: 90px;
     color: var(--primary);
 }
-.features-p {
+.so-p {
     color: white;
+}
+#features{
+    height: 350px;
+    padding: 100px 0 px;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.features-heading{
+    padding-top: 120px;
+}
+.features-title{
+    font-size: 36px;
+    color: #202020;
+    text-align: center;
+}
+.features-logos{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding-bottom: 120px;
 }
