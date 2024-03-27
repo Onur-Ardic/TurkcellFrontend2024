@@ -189,13 +189,20 @@
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border: 1px solid;
+  padding: 15px;
 }
-
 #new-products .new-product-title {
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+#new-products .item-container img{
+  size: 400px;
+  padding: 10px;
+}
+
+
 /* popular-parts */
 #popular-parts #shop-by-content {
   display: grid;
