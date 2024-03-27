@@ -1,0 +1,262 @@
+#categories3{
+    background-color: orange;
+}
+.categories{ 
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;   
+    padding: 30px 0;   
+}
+.categories-head{
+    text-align: left;
+    margin-top: 25px;
+} 
+.categories h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.categories h3{
+    font-size: 17px;
+    margin-top: 10px;
+}
+.categories-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+.catagories-items-img{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    margin: 5%;
+}
+.catagories-items-img img{
+    height: 131px;
+    width: 131px; 
+    align-content: center;
+    margin-bottom: 10px;
+    
+}
+.categories-items-tanım{
+    font-size: 17px;
+    /* yazıyı ortalayamadım */
+}
+.categories-items:hover{
+    /* hover yapamadım */
+} 
+.ok-butonu{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: rgba(255,255,255,0.2);  
+    border-color: rgba(255,185,31,1);
+}
+.ok-butonu:hover{
+    background-color: rgba(235,235,235,1); 
+}
+/* FROM OUR BLOG*/
+.blog-part1{
+    margin: 15px 20px;
+}
+.blog-part1-paragraf{
+    padding: 0 30px;
+}
+.blog-part1-paragraf-meta {
+    font-size: 11px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    margin-top: 15px;
+}
+.meta-by-admin{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:0 15px;
+    text-align: left;
+}
+.meta-uncolor{
+    text-align: left;
+    color: grey;
+}
+.meta-in{
+    display: grid;
+    grid-template-columns: 20px 75px 60px 60px;
+}
+.meta-orange:hover{
+    color: #FFB91F;
+}
+.fromourblog-title{
+    text-align: center;
+    margin: 40px 0;
+    font-family: font-family: 'Outfit';font-size: 22px;
+    Letter-spacing: 0.75px;
+}
+.blog-part1 img{
+    height: 320px;
+    width: 100%
+}
+.blog-part1-paragraf-paragraf{
+    line-height: 25px;
+}
+.from-our-blog-table{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.blog-part2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ; 
+    margin-left: 40px;   
+}
+.blog-part1-paragraf1-header{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    Letter-spacing: 0.75px;
+    margin: 10px 0;
+}
+.blog-part1-paragraf1-header:hover{
+    color:#FFB91F;
+    transition: 150ms ease 0s;
+}
+.blog-part1{
+    /* border-width: 0 0 1px;
+    border-style: solid;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-color: rgba(235,235,235,1); */
+}
+.blog-part2-paragraf1{
+    border-width: 0 0 1px;
+    border-style: solid;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-color: rgba(235,235,235,1); 
+}
+.readmore-buton{
+    background-color: #FFB91F;
+    text-align: center;
+    color: #000;
+    margin: 20px 0px;
+    padding: 8px 25px;
+    border-radius: 3cm;
+    border-width: 0 0 0;
+}
+.readmore-buton:hover{
+    background-color: black;
+    color:#FFB91F;
+    transition: 150ms ease 0;
+}
+/* newsletter */
+.newsletter{
+    background-color: #FFB91F;        
+}
+.newsletter-tab{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 40px;
+}
+.newsletter-header-title{
+    font-size: 30px;
+}
+.newsletter-header-title-p{
+    line-height: 1.2cm;
+    font-size: 15px;
+}
+input{
+    background-color: #FFFFFF00;
+    border-color: #202020;
+    /*width: 600px;*/
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 60px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 150px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+.buton-subscribe{
+    border-style: solid;
+    border-radius: 30%;
+    border-color: rgba(255,185,31,1);
+    background-color: #000;
+    color: #FFF;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-align: left;
+    position: absolute;
+}
+.buton-subscribe:hover{
+    background-color: #FFB91F;
+    border-color: black;
+    border-width: 1px;
+    color: black;
+    transition: 350ms ease 0s;
+} 
+/* NEW PRODUCTS */
+.newproducts-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.newproducts-header-part{
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 40px 0px;    
+}
+.newproducts-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.newproducts-products-imgtab-img img{
+    height: 140px;
+    width: 140px;
+}
+
+.newproducts-products-imgtab{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border: 1px solid rgba(235, 235, 235, 1);
+    padding: 25px 25px;
+}
+.newproducts-products-imgtab-img:hover{
+    background-color: red;
+    z-index: 9999;
+    /* hover düzenle */
+}
+.newproducts-products-imgtab-text p{
+    font-size: 15px ;
+}
+.iconstar i{
+    color:  rgba(255,210,0,1);
+    font-size: 12px;
+    margin: 13px 0;
+}
+.price{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.pricedolar{
+    color: darkblue;
+    font-weight: bold;
+}
+
+.discountprice{
+    color: grey;
+    text-decoration: line-through;
+}
+.button-addtocart{
+    background-color: #FFB91F;
+    text-align: center;
+    color: #000;
+    margin: 20px 0px;
+    padding: 7px 10px;
+    border-radius: 3cm;
+    border-width: 0 0 0;
+}
+.button-addtocart:hover{
+    background-color: black;
+    color:#FFB91F;   
+}

@@ -1,0 +1,33 @@
+.container{
+    display: grid;
+    height: 600px;
+    background-color: antiquewhite;
+    gap: 5px;
+    grid-template-areas: 
+    "header header header"
+    "sidebar section section"
+    "sidebar . ."
+    "footer footer footer"
+    "box-1 box-1 box-1";
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(192, 26, 26);
+}
+.section{
+    grid-area: section;
+    background-color: yellowgreen;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: blue;
+}
+.footer{
+    grid-area: footer;
+    background-color: #82136f;
+}
+.box-1{
+    grid-area: box-1;
+    background-color: #400835;
+}

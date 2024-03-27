@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+}
+        /* Third-page-from-end */
+.container {
+  background-image: url(https://demothemesky-be87.kxcdn.com/druco/wp-content/uploads/2022/08/home-about.jpg);
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding-bottom: 30px; 
+  box-sizing: border-box;
+  height: 600px;
+}
+.h1 {
+  font-size: 60px;
+  font-weight: 1000;
+}
+.h3 {
+  padding-top: 100px;
+}
+.h4 {
+  color: #FFB91F;
+  font-size: 20px;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.logo img {
+  width: 80px;
+}
+.Featured {
+  text-align: center;
+  margin-top: 100px;
+}
+.Featured h1 {
+  font-size: 40px;
+}
+        /* Sekond-page-from-end */
+.newsletter {
+  display: grid;
+  grid-template-columns: 10% 1fr 20% 1fr 10%;
+  grid-template-rows: 100px 100px;
+  background-color: #FFB91F;
+  height: 150px;
+}
+
+.grid-part1 {
+  grid-area: 1 / 2 / 2 / 3 ;
+}
+
+.grid-part2 {
+  grid-area: 1 / 4 / 3 / 5;
+}
+
+.newsletter h2 {
+  text-align: left;
+  font-size: 40px;
+  margin-bottom: 3px;
+  display: grid;
+  grid-area: 1/2/2/3;
+}
+.newsletter p {
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  
+}
+.newsletter button {
+  background-color: black;
+  color: white;
+  border: black solid 1px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  position: absolute;
+  margin-top: 55px;
+  margin-left: 380px;
+  
+}
+.newsletter input {
+  justify-self: start;
+  align-self: center;
+  border-color: #202020;
+  background-color: #FFFFFF00;
+  width: 500px;
+  height: 45px;
+  border: 0.1px solid black;
+  border-radius: 20px;
+  position: absolute;
+  margin-top: 50px;
+}
+input::placeholder {
+  padding-left: 20px;
+} 
+.grid-last-page {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 480px;
+}
+.last-page  ul {
+  text-align: left;
+  margin-bottom: 200px;
+}
+.list li {
+  color: #AAAA;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.sayhello {
+  color: white;
+  text-align: left;
+  margin-left: 40px;
+}
+.my-accunt {
+  color: white;
+  margin-top:135px;
+  margin-left: 40px;
+}
+.product {
+  color: white;
+  margin-top:135px;
+}
+.reader {
+  color: white;
+  margin-top:95px;
+  margin-left: 40px;
+}
+.icon {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -150px;
+}
+
+  
+  
+  
+  
+
+
+

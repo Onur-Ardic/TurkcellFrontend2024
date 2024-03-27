@@ -122,7 +122,8 @@ select option {
     color: var(--primary);
 }
 
-.ts-menu ul li:first-child {
+.ts-menu ul li:first-child,
+.menu-tabs li:first-child {
     color: var(--primary);
 }
 
@@ -182,6 +183,10 @@ select option {
     color: var(--text);
 }
 
+.popular-parts{
+    margin-bottom: 90px;
+}
+
 .popular-parts h2 {
     font-size: 36px;
     letter-spacing: 0.9px;
@@ -192,10 +197,122 @@ select option {
 .why-choose-us {
     background-image: url(https://demothemesky-be87.kxcdn.com/druco/wp-content/uploads/2022/08/home-about.jpg);
     background-position: center center;
-    background-repeat: no-repeat;
     background-size: cover;
-    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    margin-top: 0px;
     margin-bottom: 78px;
     padding: 112px 0px 103px 0px
+}
+
+.why-choose-us .icons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.why-choose-us-text {
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.why-choose-us p {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.why-choose-us h2 {
+    color: var(--white);
+    font-size: 60px;
+    line-height: 1.16em;
+    margin-bottom: 25px;
+}
+
+.element img {
+    max-width: 70px;
+    height: auto;
+}
+
+.element h4 {
+    color: var(--primary);
+    margin-bottom: 12px;
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.element p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.best-sellers-menu {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.menu-tabs {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 56px;
+    font-weight: 700;
+}
+
+.menu-tabs li {
+    font-size: 36px;
+    letter-spacing: 0.9px;
+    line-height: 1.3;
+}
+
+.menu-content {
+    display: grid;
+    grid-template-columns: repeat(4, 307px);
+    grid-template-rows: repeat(2, 434px);
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    border-color: var(--border-color);
+}
+
+.product{
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-color: var(--border-color);
+}
+
+.menu-content img {
+    width: 300px;
+    height: 300px;
+}
+
+.product-info {
+    padding: 25px 20px;
+}
+
+.product-name {
+    margin-bottom: 8px;
+    line-height: 20px;
+    display: block;
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.price-real {
+    font-size: 78%;
+    line-height: 18px;
+    font-weight: normal;
+    text-decoration: line-through;
+    color: var(--date-time);
+}
+
+.price-discount {
+    margin-right: 10px;
+    color: var(--secondary);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product-star {
+    line-height: 1;
+    color: var(--primary);
 }

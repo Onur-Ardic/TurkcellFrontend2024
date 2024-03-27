@@ -34,8 +34,8 @@ ul li{
     font-weight: 400;
 }
 .box{
-    width: 300px;
-    height: 300px;
+    min-width: 300px;
+    min-height: 300px;
     background-color: #032055;
     padding: 30px;
 }
@@ -86,6 +86,7 @@ ul li{
     width: 100%;
     background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
     padding: 165px 0px 249px;
+    position: relative;
 }
 .hero-area-content{
     padding-right: 15px;
@@ -294,3 +295,213 @@ tr td:nth-child(4){
     font-size: 0.9rem;
 }
 /* FOOTER */
+
+/* rümeysanur */
+.topcounter{
+    background: #001232;
+    margin-top: -150px;
+    padding-bottom: 100px;
+}
+.content1{
+    text-align: center;
+}
+.topcounter-box, .howitworks-box{
+    z-index: 2;
+    text-align: center;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.topcounter-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.feature-content{
+    text-align: 10px;
+}
+.icontopcounter{
+    border-radius: 50%;
+    background-color:  #8E2DE2;
+    min-width: 70px;
+    min-height: 70px;  
+    justify-content: center; 
+    margin-bottom: 10px;
+}
+.icontopcounter i{
+    font-size: 40px;
+    color: white;
+}
+.baslik-topcounter{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.subtitle1-topcounter{
+    font-size: 24px;
+    font-weight: 600px;
+}
+
+/* About us */
+.aboutus{
+    background-color: #001232;
+    padding-bottom: 130px;
+}
+.container-aboutus{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;  
+}
+.imageaboutus img{
+    height: 448px;
+    width: 450px;
+    margin-right:50px;
+}
+.aboutus-text{
+    max-width: 50%;
+}
+.container2-aboutus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 40px;  
+    margin-bottom: 60px;
+}
+.topheadinganabaslik{
+    max-width: 600px;
+}
+.topheadingtitle{
+    font-size: 24px;
+}
+.titleaboutus{
+    font-size: 22px;
+}
+.aboutus-list-icon{
+    margin-top: 20px;
+}
+.feature-content p{
+    hyphens: auto;
+}
+
+.iconaboutus{
+    height: 60px;
+    width: 60px;
+    background-color: #8E2DE2;
+    border-radius: 50%;
+    justify-content: center;
+    margin-right: 24px;
+}
+.iconaboutus i{
+    color: white;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* ınvestment plan */
+
+.investmentplan{
+    background-color:#8E2DE2;
+}
+.container-investmentplan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.investmentplantable{
+    display: flex;
+    flex-direction: row;
+}
+
+/* How it works */
+.howitworkspart{
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    padding: 100px 0;
+}
+.container-card-howitworks{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+.iconhowitworks{
+    border-radius: 50%;
+    background-color:  #8E2DE2;
+    width: 70px;
+    height: 70px;  
+    justify-content: center;
+    margin-bottom: 18px;
+}
+.iconhowitworks i{
+    font-size: 40px;
+    color: white;
+}
+.content1-title{
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+.section-desc{
+    margin-top: 27px;
+}
+
+/* What Users Says */
+.whatuserssays{
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    padding: 100px 0;
+}
+.container-whatuserssays{
+    padding-bottom: 50px ;
+}
+.topbox-whatuserssays{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+.containerusers{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+}
+.pricerate i{
+    color: yellow;
+    font-size: 12px;
+}
+.content1-whatuserssays{
+    margin: 5% 0;     
+}
+.usersname{
+    margin: 0 6%;
+}
+.users-middle{
+    margin: 0 20px;
+}
+/* rümeysanur */
+
+/* EGEMEN KAPLAN tax&profit */
+.tax-profit{
+    background: #001232;
+    padding: 120px 0;
+}
+.calculator{
+    margin: 0 15px;
+    background: #032055;
+    box-shadow:  0px 30px rgba(0, 0, 0, 0.1);
+}
+.calculator-title{
+    width: 540px;
+    font-size: 1.5rem;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    padding: 12px 30px 11px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.input-grup{
+    flex-direction: column;
+    width: 50%;
+}
+/* EGEMEN KAPLAN tax&profit */

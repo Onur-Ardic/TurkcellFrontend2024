@@ -1,0 +1,39 @@
+.header-top {
+    background-color: rgba(35, 63, 146, 1);
+    border-color: rgba(35, 63, 146, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+  }
+  .header-middle {
+    border-style: inset;
+  }
+  .header-middle .logo img {
+    width: 150px;
+  }
+  .header-middle .container {
+    grid-template-columns: 260px 550px 200px 150px;
+  }
+  .search {
+    max-width: 500px;
+    height: 3rem;
+    border-radius: 50px;
+    position: relative;
+  }
+  .search button {
+    border-radius: 50%;
+    padding: 0.8rem;
+    position: absolute;
+    right: 3px;
+    border: none;
+  }
+  .header-bottom ul {
+    grid-template-columns: repeat(6, minmax(auto, max-content));
+    gap: 2rem;
+  }
+  /*Geniune Parts*/
+  .genius-parts {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
