@@ -247,7 +247,7 @@ select option {
   background-size: cover;
 }
 .banner-content {
-  width: 1300px;
+  width: 100%;
 }
 .blog-main {
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
@@ -302,7 +302,7 @@ select option {
   width: 5rem;
 }
 .newsletter {
-  grid-template-columns: 15% 1fr 10% 1fr 15%;
+  grid-template-columns: auto auto auto auto auto;
   height: 9rem;
 }
 .grid-part1 {
@@ -327,4 +327,27 @@ select option {
 }
 input::placeholder {
   padding-left: 1rem;
+}
+.grid-last-page {
+  background-color: black;
+  height: 480px;
+  display: grid;
+  grid-template-columns: 22rem auto auto auto;
+  padding: 4rem 6rem;
+  justify-content: center;
+  gap: 5rem;
+}
+.last-page ul {
+  text-align: left;
+}
+.list li {
+  color: #aaaa;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.icon {
+}
+.footer-h2 {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
 }
