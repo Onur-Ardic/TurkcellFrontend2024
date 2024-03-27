@@ -11,7 +11,7 @@
   <body>
 
     <nav>
-      <div class="navFirstElement navElement">
+      <div style="height: 40px;" class="navFirstElement navElement">
         <div >FREE DELIVERY on all orders</div>
         <div >
          <span style="color: rgba(255, 185, 31, 1)">FLASH SALE</span> : 60% OFF
@@ -23,7 +23,7 @@
         </div>
       </div>
     
-      <div class="navSecondElement navElement">
+      <div  class="navSecondElement navElement">
         <div >
          <img
           src="https://druco-be87.kxcdn.com/druco/wp-content/themes/druco/images/logo.png"
@@ -31,16 +31,43 @@
          />
         </div>
         <div >
-         <span style="color: rgba(255, 185, 31, 1)">bunu nasıl ekleyeceğimi bilmiyorum
+         <span style="color: rgba(255, 185, 31, 1)">
+			<div class="grid selectandinput position-relative" >
+				<select>
+				  <option value="0">All Categories</option>
+				  <option></option>
+				</select>
+				<input type="text" placeholder="Search for Product">
+				<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7"/></svg>
+			 </div>
         </div>
         <div class="icons_">
-        <span><img width="32" height="32" src="https://img.icons8.com/windows/32/hearts.png" alt="hearts"/></span>
-          <span><img width="48" height="48" src="https://img.icons8.com/parakeet-line/48/user.png" alt="user"/></span>
-         <span><img width="32" height="32" src="https://img.icons8.com/windows/32/shopping-cart.png" alt="shopping-cart"/></span>
-         
-        </div>
+			<select>
+				<option value="0">English</option>
+				<option></option>
+			 </select>
+			 <select>
+				<option value="0">USD</option>
+				<option></option>
+			 </select>
+			<span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M15.71 12.71a6 6 0 1 0-7.42 0a10 10 0 0 0-6.22 8.18a1 1 0 0 0 2 .22a8 8 0 0 1 15.9 0a1 1 0 0 0 1 .89h.11a1 1 0 0 0 .88-1.1a10 10 0 0 0-6.25-8.19M12 12a4 4 0 1 1 4-4a4 4 0 0 1-4 4"/></svg></span>
+			<span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M20.16 5A6.29 6.29 0 0 0 12 4.36a6.27 6.27 0 0 0-8.16 9.48l6.21 6.22a2.78 2.78 0 0 0 3.9 0l6.21-6.22a6.27 6.27 0 0 0 0-8.84m-1.41 7.46l-6.21 6.21a.76.76 0 0 1-1.08 0l-6.21-6.24a4.29 4.29 0 0 1 0-6a4.27 4.27 0 0 1 6 0a1 1 0 0 0 1.42 0a4.27 4.27 0 0 1 6 0a4.29 4.29 0 0 1 .08 6Z"/></svg></span>
+			  <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M8.5 19a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 8.5 19M19 16H7a1 1 0 0 1 0-2h8.491a3.013 3.013 0 0 0 2.885-2.176l1.585-5.55A1 1 0 0 0 19 5H6.74a3.007 3.007 0 0 0-2.82-2H3a1 1 0 0 0 0 2h.921a1.005 1.005 0 0 1 .962.725l.155.545v.005l1.641 5.742A3 3 0 0 0 7 18h12a1 1 0 0 0 0-2m-1.326-9l-1.22 4.274a1.005 1.005 0 0 1-.963.726H8.754l-.255-.892L7.326 7ZM16.5 19a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5"/></svg></span>
+			
+			 
+			</div>
       </div>
-      <div class="navThirdElement">
+		<div  class="menu">
+			<div class="menu-item"></div>
+			<div class="menu-item">HOME</div>
+			<div class="menu-item">PAGES</div>
+			<div class="menu-item">SERVICE PARTS</div>
+			<div class="menu-item">BRAKE</div>
+			<div class="menu-item">CAR BATTERIES</div>
+			<div class="menu-item">TOOLS & GARAGE</div>
+			<div class="menu-item text-center call-us">CALL US</div>
+		</div>
+      <div  class="navThirdElement">
         <div class="seach-by-vehicle"> 
           <div><h1>SEARCH BY VEHICLE</h1></div>
           <div><select name="" id=""> <option value="" disabled selected hidden>Select Make</option></select></div>
@@ -60,7 +87,25 @@
         </div>
       </div>
      </nav>
-
+	
+	  <div class="categories  ">
+		<div style="grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr; " class="width80-left10 grid">
+			<div class="category-item category1"><div><h1>Categories</h1></div>
+		<div><p>MARCH FAVORITES</p></div>
+	<div>
+		<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M8.29 11.29a1 1 0 0 0-.21.33a1 1 0 0 0 0 .76a1 1 0 0 0 .21.33l3 3a1 1 0 0 0 1.42-1.42L11.41 13H15a1 1 0 0 0 0-2h-3.59l1.3-1.29a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0ZM2 12A10 10 0 1 0 12 2A10 10 0 0 0 2 12m18 0a8 8 0 1 1-8-8a8 8 0 0 1 8 8"/></svg>
+		<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M15.71 12.71a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76a1 1 0 0 0-.21-.33l-3-3a1 1 0 0 0-1.42 1.42l1.3 1.29H9a1 1 0 0 0 0 2h3.59l-1.3 1.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0ZM22 12a10 10 0 1 0-10 10a10 10 0 0 0 10-10M4 12a8 8 0 1 1 8 8a8 8 0 0 1-8-8"/></svg></div></div>
+		<div class="category-item text-center">
+			<img src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/tires-310x310.jpg" alt="">
+			   Wheels & Tires
+		</div>
+		<div class="category-item text-center "><img src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/interior-310x310.jpg" alt="">
+		Interiors</div>
+		<div class="category-item text-center"><img src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/entertainment-310x310.jpg" alt="">Entertainment</div>
+		<div class="category-item text-center"><img src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/oils-310x310.jpg" alt="">Fluids & Chemicals</div>
+		<div class="category-item text-center"><img src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/exteriors-310x310.jpg" alt="">Exteriors</div>
+		</div>
+	  </div>
     <!-- Bestseller -->
     <section>
       <div class="container">
