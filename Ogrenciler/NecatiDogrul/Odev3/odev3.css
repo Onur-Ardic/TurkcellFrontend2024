@@ -1,0 +1,96 @@
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+h2{
+  font-size: 40px;
+  color: black;
+}
+
+.categories{
+  background-color: #FFB91F;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  column-gap: 10px;
+  padding: 20px; 
+}
+
+.insideCategories{
+  padding-top: 25px;
+  display: grid;
+  grid-template-rows: 250px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  
+}
+.cardCat{
+  height: 250px;
+  width: 100%; 
+}
+
+.insideCategories img{
+  border-radius: 10%;
+  height: 173.4px;
+  width: auto;
+}
+
+.bestSeller{
+  background-color: red;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 250px 250px;
+  gap: 10px;
+  
+}
+
+.insideBest{
+    display: grid;
+    grid-template-rows: 250px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box{
+  min-width: 250px;
+  min-height: 250px;
+}
+
+img{
+   width: 100%; border-radius: 5px; 
+  }
+
+p{
+  margin-left: 10px;
+}
+
+.col-4{
+  padding: 25%;
+
+
+}
