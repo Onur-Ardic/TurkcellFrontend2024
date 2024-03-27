@@ -10,8 +10,8 @@ body{
     /* grid-template-columns: 150px 150px 150px 150px 150px 150px; */
     /* grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 100px); */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     /* justify-content: center;
     align-items: center; */
 }
