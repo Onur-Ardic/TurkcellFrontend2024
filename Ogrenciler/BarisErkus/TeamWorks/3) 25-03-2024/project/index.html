@@ -1,704 +1,723 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 3</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="./css/global-style.css" />
     <link rel="stylesheet" href="./css/style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="header-container grid">
-        <div class="header-top">
-          <div class="header-top-container grid text-center">
-            <div class="header-delivery-note white">
-              FREE DELIVERY on all orders
-            </div>
-            <div class="header-store-notice white">
-              <span class="flash-sale main-text-color">
-                <i class="fas fa-bolt header-icon main-text-color"></i>
-                FLASH SALE:
-              </span>
-              60% OFF CAR BATTERIES | USE CODE "BATT60"
-            </div>
-            <div class="header-right">
-              <nav class="top-header-menu">
-                <ul class="menu-top-header-menu grid">
-                  <li class="menu-item white">Help</li>
-                  <li class="menu-item white">About Us</li>
-                  <li class="menu-item white">Contact Us</li>
-                  <li class="menu-item white">Blog</li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <!-- Burası header-middle. Header'ın ortasında kalan bölge -->
-        <div class="header-bottom">
-          <div class="header-middle">
-            <div class="header-middle-container grid align-center">
-              <img src="./assets/logo.png" alt="logo" class="main-logo" />
-              <div class="search-by-category radius">
-                <form
-                  action="https://demo.theme-sky.com/druco/"
-                  class="grid search-category-form radius"
-                >
-                  <select name="term" class="select-categories radius">
-                    <option value="">All categories</option>
-                    <option value="car-batteries">Batteries</option>
-                    <option value="brake">Brake</option>
-                    <option value="electric-brakes">
-                      &nbsp;&nbsp;&nbsp;Electric Brakes
-                    </option>
-                    <option value="emergency-brakes">
-                      &nbsp;&nbsp;&nbsp;Emergency Brakes
-                    </option>
-                    <option value="hydraulic-brakes">
-                      &nbsp;&nbsp;&nbsp;Hydraulic Brakes
-                    </option>
-                    <option value="mechanical-brakes">
-                      &nbsp;&nbsp;&nbsp;Mechanical Brakes
-                    </option>
-                    <option value="parking-brakes">
-                      &nbsp;&nbsp;&nbsp;Parking Brakes
-                    </option>
-                    <option value="brake-pad-set">Brake Pad Set</option>
-                    <option value="car-seats">Car Seats</option>
-                    <option value="car-speakers">Car Speakers</option>
-                    <option value="affordability">
-                      &nbsp;&nbsp;&nbsp;Affordability
-                    </option>
-                    <option value="sealed-enclosure">
-                      &nbsp;&nbsp;&nbsp;Sealed Enclosure
-                    </option>
-                    <option value="sound-quality">
-                      &nbsp;&nbsp;&nbsp;Sound quality
-                    </option>
-                    <option value="subwoofers">
-                      &nbsp;&nbsp;&nbsp;Subwoofers
-                    </option>
-                    <option value="tweeters">&nbsp;&nbsp;&nbsp;Tweeters</option>
-                    <option value="engine-oils">Engine oils</option>
-                    <option value="entertainments">Entertainments</option>
-                    <option value="exhaust-pipes">Exhaust</option>
-                    <option value="dual-rear-exit">
-                      &nbsp;&nbsp;&nbsp;Dual Rear Exit
-                    </option>
-                    <option value="dual-side-exhaust">
-                      &nbsp;&nbsp;&nbsp;Dual Side Exhaust
-                    </option>
-                    <option value="high-performance">
-                      &nbsp;&nbsp;&nbsp;High-Performance
-                    </option>
-                    <option value="opposite-dual-exhaust">
-                      &nbsp;&nbsp;&nbsp;Opposite Dual Exhaust
-                    </option>
-                    <option value="single-exit-pipe">
-                      &nbsp;&nbsp;&nbsp;Single Exit Pipe
-                    </option>
-                    <option value="exteriors">Exteriors</option>
-                    <option value="filters">Filters</option>
-                    <option value="air-filter">
-                      &nbsp;&nbsp;&nbsp;Air Filter
-                    </option>
-                    <option value="brake-disc">
-                      &nbsp;&nbsp;&nbsp;Brake Disc
-                    </option>
-                    <option value="brake-pad-fitting-kit">
-                      &nbsp;&nbsp;&nbsp;Brake Pad Fitting Kit
-                    </option>
-                    <option value="brake-pad-wear-sensor">
-                      &nbsp;&nbsp;&nbsp;Brake Pad Wear Sensor
-                    </option>
-                    <option value="sump-plug">
-                      &nbsp;&nbsp;&nbsp;Sump Plug
-                    </option>
-                    <option value="sump-plug-seal">
-                      &nbsp;&nbsp;&nbsp;Sump Plug Seal
-                    </option>
-                    <option value="fluids-chemicals">
-                      Fluids &amp; Chemicals
-                    </option>
-                    <option value="antifreeze-coolant">
-                      &nbsp;&nbsp;&nbsp;Antifreeze &amp; Coolant
-                    </option>
-                    <option value="automatic-transmission-oil">
-                      &nbsp;&nbsp;&nbsp;Automatic Transmission Oil
-                    </option>
-                    <option value="brake-fluid">
-                      &nbsp;&nbsp;&nbsp;Brake Fluid
-                    </option>
-                    <option value="engine-oils-fluids-chemicals">
-                      &nbsp;&nbsp;&nbsp;Engine Oils
-                    </option>
-                    <option value="manual-transmission-oil">
-                      &nbsp;&nbsp;&nbsp;Manual Transmission Oil
-                    </option>
-                    <option value="power-steering-oil">
-                      &nbsp;&nbsp;&nbsp;Power Steering Oil
-                    </option>
-                    <option value="headlights">Headlights</option>
-                    <option value="halogen">&nbsp;&nbsp;&nbsp;Halogen</option>
-                    <option value="lasers">&nbsp;&nbsp;&nbsp;Lasers</option>
-                    <option value="led">&nbsp;&nbsp;&nbsp;Led</option>
-                    <option value="xenon-or-hid">
-                      &nbsp;&nbsp;&nbsp;Xenon or HID
-                    </option>
-                    <option value="xenon-hid">
-                      &nbsp;&nbsp;&nbsp;Xenon or HID
-                    </option>
-                    <option value="interiors">Interiors</option>
-                    <option value="popular-parts">Popular Parts</option>
-                    <option value="brake-disc-and-pad-kit">
-                      &nbsp;&nbsp;&nbsp;Brake Disc and Pad Kit
-                    </option>
-                    <option value="bumper">&nbsp;&nbsp;&nbsp;Bumper</option>
-                    <option value="bumper-cover">
-                      &nbsp;&nbsp;&nbsp;Bumper Cover
-                    </option>
-                    <option value="control-arm">
-                      &nbsp;&nbsp;&nbsp;Control Arm
-                    </option>
-                    <option value="control-arm-kit">
-                      &nbsp;&nbsp;&nbsp;Control Arm Kit
-                    </option>
-                    <option value="cooling-fan-assembly">
-                      &nbsp;&nbsp;&nbsp;Cooling Fan Assembly
-                    </option>
-                    <option value="door-lock-actuator">
-                      &nbsp;&nbsp;&nbsp;Door Lock Actuator
-                    </option>
-                    <option value="driveshaft">
-                      &nbsp;&nbsp;&nbsp;Driveshaft
-                    </option>
-                    <option value="exterior-door-handle">
-                      &nbsp;&nbsp;&nbsp;Exterior Door Handle
-                    </option>
-                    <option value="fender">&nbsp;&nbsp;&nbsp;Fender</option>
-                    <option value="fuel-pump">
-                      &nbsp;&nbsp;&nbsp;Fuel Pump
-                    </option>
-                    <option value="grille-assembly">
-                      &nbsp;&nbsp;&nbsp;Grille Assembly
-                    </option>
-                    <option value="headlight">
-                      &nbsp;&nbsp;&nbsp;Headlight
-                    </option>
-                    <option value="hood">&nbsp;&nbsp;&nbsp;Hood</option>
-                    <option value="mirror">&nbsp;&nbsp;&nbsp;Mirror</option>
-                    <option value="oxygen-sensor">
-                      &nbsp;&nbsp;&nbsp;Oxygen Sensor
-                    </option>
-                    <option value="radiator">&nbsp;&nbsp;&nbsp;Radiator</option>
-                    <option value="step-bumper">
-                      &nbsp;&nbsp;&nbsp;Step Bumper
-                    </option>
-                    <option value="tail-light">
-                      &nbsp;&nbsp;&nbsp;Tail Light
-                    </option>
-                    <option value="wheel-hub">
-                      &nbsp;&nbsp;&nbsp;Wheel Hub
-                    </option>
-                    <option value="steering-wheel">Steering Wheel</option>
-                    <option value="suspension-parts">Suspension</option>
-                    <option value="brake-pads">
-                      &nbsp;&nbsp;&nbsp;Brake Pads
-                    </option>
-                    <option value="drum-brakes">
-                      &nbsp;&nbsp;&nbsp;Drum Brakes
-                    </option>
-                    <option value="shock-absorbers">
-                      &nbsp;&nbsp;&nbsp;Shock Absorbers
-                    </option>
-                    <option value="springs-accessories">
-                      &nbsp;&nbsp;&nbsp;Springs Accessories
-                    </option>
-                    <option value="stabilization-system">
-                      &nbsp;&nbsp;&nbsp;Stabilization System
-                    </option>
-                    <option value="timing-belts-parts">
-                      Timing Belts &amp; Parts
-                    </option>
-                    <option value="cam-dephaser-pulley">
-                      &nbsp;&nbsp;&nbsp;Cam Dephaser Pulley
-                    </option>
-                    <option value="timing-belt">
-                      &nbsp;&nbsp;&nbsp;Timing Belt
-                    </option>
-                    <option value="timing-belt-deflection-guide-pulley">
-                      &nbsp;&nbsp;&nbsp;Timing Belt Deflection/Guide Pulley
-                    </option>
-                    <option value="timing-belt-kit">
-                      &nbsp;&nbsp;&nbsp;Timing Belt Kit
-                    </option>
-                    <option value="timing-belt-tensioner">
-                      &nbsp;&nbsp;&nbsp;Timing Belt Tensioner
-                    </option>
-                    <option value="timing-belt-tensioner-pulley">
-                      &nbsp;&nbsp;&nbsp;Timing Belt Tensioner Pulley
-                    </option>
-                    <option value="wheels-tires">Wheels &amp; Tires</option>
-                    <option value="atturo-tires">
-                      &nbsp;&nbsp;&nbsp;Atturo Tires
-                    </option>
-                    <option value="fuel">&nbsp;&nbsp;&nbsp;Fuel</option>
-                    <option value="moto-metals">
-                      &nbsp;&nbsp;&nbsp;Moto Metals
-                    </option>
-                    <option value="tire-wheel">
-                      &nbsp;&nbsp;&nbsp;Wheels Tires
-                    </option>
-                    <option value="xd-wheels">
-                      &nbsp;&nbsp;&nbsp;XD Wheels
-                    </option>
-                  </select>
-                  <div class="search-table grid">
-                    <input
-                      type="text"
-                      name="s"
-                      placeholder="Search For Products"
-                      class="search-input radius"
-                    />
-                    <i
-                      class="fa-solid fa-magnifying-glass search-icon main-background-color"
-                    ></i>
-                  </div>
-                </form>
-              </div>
-              <div class="header-middle-right">
-                <div class="header-middle-right-container gap grid">
-                  <ul class="grid gap">
-                    <li>English</li>
-                    <li>USD</li>
-                  </ul>
-                  <ul class="grid">
-                    <li><i class="fa-regular fa-user icon icon-user"></i></li>
-                    <li><i class="fa-regular fa-heart icon icon-heart"></i></li>
-                    <li><i class="fa-solid fa-bars icon icon-bars"></i></li>
-                  </ul>
+        <div class="header-container grid">
+            <div class="header-top">
+                <div class="header-top-container grid text-center">
+                    <div class="header-delivery-note white">
+                        FREE DELIVERY on all orders
+                    </div>
+                    <div class="header-store-notice white">
+                        <span class="flash-sale main-text-color">
+                            <i class="fas fa-bolt header-icon main-text-color"></i>
+                            FLASH SALE:
+                        </span>
+                        60% OFF CAR BATTERIES | USE CODE "BATT60"
+                    </div>
+                    <div class="header-right">
+                        <nav class="top-header-menu">
+                            <ul class="menu-top-header-menu grid">
+                                <li class="menu-item white">Help</li>
+                                <li class="menu-item white">About Us</li>
+                                <li class="menu-item white">Contact Us</li>
+                                <li class="menu-item white">Blog</li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="header-footer grid align-center">
-          <ul class="grid gap">
-            <li class="main-text-color">HOME</li>
-            <li>PAGES</li>
-            <li>SERVİCE PARTS</li>
-            <li>BRAKE</li>
-            <li>CAR BATTERIES</li>
-            <li>TOOLS & GARAGE</li>
-          </ul>
-          <div class="card grid align-center main-background-color gap">
-            <i class="fa-solid fa-phone phone-icon"></i>
-            <div class="card-container">
-              <p>Call us 24/7</p>
-              <p>+08 9229 8228</p>
+            <!-- Burası header-middle. Header'ın ortasında kalan bölge -->
+            <div class="header-middle">
+                <div class="header-middle-container grid align-center">
+                    <img src="./assets/logo.png" alt="logo" class="main-logo" />
+                    <div class="search-by-category radius">
+                        <form action="https://demo.theme-sky.com/druco/" class="grid search-category-form radius">
+                            <select name="term" class="select-categories radius">
+                                <option value="">All categories</option>
+                                <option value="car-batteries">Batteries</option>
+                                <option value="brake">Brake</option>
+                                <option value="electric-brakes">
+                                    &nbsp;&nbsp;&nbsp;Electric Brakes
+                                </option>
+                                <option value="emergency-brakes">
+                                    &nbsp;&nbsp;&nbsp;Emergency Brakes
+                                </option>
+                                <option value="hydraulic-brakes">
+                                    &nbsp;&nbsp;&nbsp;Hydraulic Brakes
+                                </option>
+                                <option value="mechanical-brakes">
+                                    &nbsp;&nbsp;&nbsp;Mechanical Brakes
+                                </option>
+                                <option value="parking-brakes">
+                                    &nbsp;&nbsp;&nbsp;Parking Brakes
+                                </option>
+                                <option value="brake-pad-set">Brake Pad Set</option>
+                                <option value="car-seats">Car Seats</option>
+                                <option value="car-speakers">Car Speakers</option>
+                                <option value="affordability">
+                                    &nbsp;&nbsp;&nbsp;Affordability
+                                </option>
+                                <option value="sealed-enclosure">
+                                    &nbsp;&nbsp;&nbsp;Sealed Enclosure
+                                </option>
+                                <option value="sound-quality">
+                                    &nbsp;&nbsp;&nbsp;Sound quality
+                                </option>
+                                <option value="subwoofers">
+                                    &nbsp;&nbsp;&nbsp;Subwoofers
+                                </option>
+                                <option value="tweeters">&nbsp;&nbsp;&nbsp;Tweeters</option>
+                                <option value="engine-oils">Engine oils</option>
+                                <option value="entertainments">Entertainments</option>
+                                <option value="exhaust-pipes">Exhaust</option>
+                                <option value="dual-rear-exit">
+                                    &nbsp;&nbsp;&nbsp;Dual Rear Exit
+                                </option>
+                                <option value="dual-side-exhaust">
+                                    &nbsp;&nbsp;&nbsp;Dual Side Exhaust
+                                </option>
+                                <option value="high-performance">
+                                    &nbsp;&nbsp;&nbsp;High-Performance
+                                </option>
+                                <option value="opposite-dual-exhaust">
+                                    &nbsp;&nbsp;&nbsp;Opposite Dual Exhaust
+                                </option>
+                                <option value="single-exit-pipe">
+                                    &nbsp;&nbsp;&nbsp;Single Exit Pipe
+                                </option>
+                                <option value="exteriors">Exteriors</option>
+                                <option value="filters">Filters</option>
+                                <option value="air-filter">
+                                    &nbsp;&nbsp;&nbsp;Air Filter
+                                </option>
+                                <option value="brake-disc">
+                                    &nbsp;&nbsp;&nbsp;Brake Disc
+                                </option>
+                                <option value="brake-pad-fitting-kit">
+                                    &nbsp;&nbsp;&nbsp;Brake Pad Fitting Kit
+                                </option>
+                                <option value="brake-pad-wear-sensor">
+                                    &nbsp;&nbsp;&nbsp;Brake Pad Wear Sensor
+                                </option>
+                                <option value="sump-plug">
+                                    &nbsp;&nbsp;&nbsp;Sump Plug
+                                </option>
+                                <option value="sump-plug-seal">
+                                    &nbsp;&nbsp;&nbsp;Sump Plug Seal
+                                </option>
+                                <option value="fluids-chemicals">
+                                    Fluids &amp; Chemicals
+                                </option>
+                                <option value="antifreeze-coolant">
+                                    &nbsp;&nbsp;&nbsp;Antifreeze &amp; Coolant
+                                </option>
+                                <option value="automatic-transmission-oil">
+                                    &nbsp;&nbsp;&nbsp;Automatic Transmission Oil
+                                </option>
+                                <option value="brake-fluid">
+                                    &nbsp;&nbsp;&nbsp;Brake Fluid
+                                </option>
+                                <option value="engine-oils-fluids-chemicals">
+                                    &nbsp;&nbsp;&nbsp;Engine Oils
+                                </option>
+                                <option value="manual-transmission-oil">
+                                    &nbsp;&nbsp;&nbsp;Manual Transmission Oil
+                                </option>
+                                <option value="power-steering-oil">
+                                    &nbsp;&nbsp;&nbsp;Power Steering Oil
+                                </option>
+                                <option value="headlights">Headlights</option>
+                                <option value="halogen">&nbsp;&nbsp;&nbsp;Halogen</option>
+                                <option value="lasers">&nbsp;&nbsp;&nbsp;Lasers</option>
+                                <option value="led">&nbsp;&nbsp;&nbsp;Led</option>
+                                <option value="xenon-or-hid">
+                                    &nbsp;&nbsp;&nbsp;Xenon or HID
+                                </option>
+                                <option value="xenon-hid">
+                                    &nbsp;&nbsp;&nbsp;Xenon or HID
+                                </option>
+                                <option value="interiors">Interiors</option>
+                                <option value="popular-parts">Popular Parts</option>
+                                <option value="brake-disc-and-pad-kit">
+                                    &nbsp;&nbsp;&nbsp;Brake Disc and Pad Kit
+                                </option>
+                                <option value="bumper">&nbsp;&nbsp;&nbsp;Bumper</option>
+                                <option value="bumper-cover">
+                                    &nbsp;&nbsp;&nbsp;Bumper Cover
+                                </option>
+                                <option value="control-arm">
+                                    &nbsp;&nbsp;&nbsp;Control Arm
+                                </option>
+                                <option value="control-arm-kit">
+                                    &nbsp;&nbsp;&nbsp;Control Arm Kit
+                                </option>
+                                <option value="cooling-fan-assembly">
+                                    &nbsp;&nbsp;&nbsp;Cooling Fan Assembly
+                                </option>
+                                <option value="door-lock-actuator">
+                                    &nbsp;&nbsp;&nbsp;Door Lock Actuator
+                                </option>
+                                <option value="driveshaft">
+                                    &nbsp;&nbsp;&nbsp;Driveshaft
+                                </option>
+                                <option value="exterior-door-handle">
+                                    &nbsp;&nbsp;&nbsp;Exterior Door Handle
+                                </option>
+                                <option value="fender">&nbsp;&nbsp;&nbsp;Fender</option>
+                                <option value="fuel-pump">
+                                    &nbsp;&nbsp;&nbsp;Fuel Pump
+                                </option>
+                                <option value="grille-assembly">
+                                    &nbsp;&nbsp;&nbsp;Grille Assembly
+                                </option>
+                                <option value="headlight">
+                                    &nbsp;&nbsp;&nbsp;Headlight
+                                </option>
+                                <option value="hood">&nbsp;&nbsp;&nbsp;Hood</option>
+                                <option value="mirror">&nbsp;&nbsp;&nbsp;Mirror</option>
+                                <option value="oxygen-sensor">
+                                    &nbsp;&nbsp;&nbsp;Oxygen Sensor
+                                </option>
+                                <option value="radiator">&nbsp;&nbsp;&nbsp;Radiator</option>
+                                <option value="step-bumper">
+                                    &nbsp;&nbsp;&nbsp;Step Bumper
+                                </option>
+                                <option value="tail-light">
+                                    &nbsp;&nbsp;&nbsp;Tail Light
+                                </option>
+                                <option value="wheel-hub">
+                                    &nbsp;&nbsp;&nbsp;Wheel Hub
+                                </option>
+                                <option value="steering-wheel">Steering Wheel</option>
+                                <option value="suspension-parts">Suspension</option>
+                                <option value="brake-pads">
+                                    &nbsp;&nbsp;&nbsp;Brake Pads
+                                </option>
+                                <option value="drum-brakes">
+                                    &nbsp;&nbsp;&nbsp;Drum Brakes
+                                </option>
+                                <option value="shock-absorbers">
+                                    &nbsp;&nbsp;&nbsp;Shock Absorbers
+                                </option>
+                                <option value="springs-accessories">
+                                    &nbsp;&nbsp;&nbsp;Springs Accessories
+                                </option>
+                                <option value="stabilization-system">
+                                    &nbsp;&nbsp;&nbsp;Stabilization System
+                                </option>
+                                <option value="timing-belts-parts">
+                                    Timing Belts &amp; Parts
+                                </option>
+                                <option value="cam-dephaser-pulley">
+                                    &nbsp;&nbsp;&nbsp;Cam Dephaser Pulley
+                                </option>
+                                <option value="timing-belt">
+                                    &nbsp;&nbsp;&nbsp;Timing Belt
+                                </option>
+                                <option value="timing-belt-deflection-guide-pulley">
+                                    &nbsp;&nbsp;&nbsp;Timing Belt Deflection/Guide Pulley
+                                </option>
+                                <option value="timing-belt-kit">
+                                    &nbsp;&nbsp;&nbsp;Timing Belt Kit
+                                </option>
+                                <option value="timing-belt-tensioner">
+                                    &nbsp;&nbsp;&nbsp;Timing Belt Tensioner
+                                </option>
+                                <option value="timing-belt-tensioner-pulley">
+                                    &nbsp;&nbsp;&nbsp;Timing Belt Tensioner Pulley
+                                </option>
+                                <option value="wheels-tires">Wheels &amp; Tires</option>
+                                <option value="atturo-tires">
+                                    &nbsp;&nbsp;&nbsp;Atturo Tires
+                                </option>
+                                <option value="fuel">&nbsp;&nbsp;&nbsp;Fuel</option>
+                                <option value="moto-metals">
+                                    &nbsp;&nbsp;&nbsp;Moto Metals
+                                </option>
+                                <option value="tire-wheel">
+                                    &nbsp;&nbsp;&nbsp;Wheels Tires
+                                </option>
+                                <option value="xd-wheels">
+                                    &nbsp;&nbsp;&nbsp;XD Wheels
+                                </option>
+                            </select>
+                            <div class="search-table grid">
+                                <input type="text" name="s" placeholder="Search For Products"
+                                    class="search-input radius" />
+                                <i class="fa-solid fa-magnifying-glass search-icon main-background-color"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="header-middle-right">
+                        <div class="header-middle-right-container gap grid">
+                            <ul class="grid gap">
+                                <li>English</li>
+                                <li>USD</li>
+                            </ul>
+                            <ul class="grid">
+                                <li><i class="fa-regular fa-user icon icon-user"></i></li>
+                                <li><i class="fa-regular fa-heart icon icon-heart"></i></li>
+                                <li><i class="fa-solid fa-bars icon icon-bars"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="header-footer grid align-center">
+                <ul class="grid gap">
+                    <li class="main-text-color">HOME</li>
+                    <li>PAGES</li>
+                    <li>SERVİCE PARTS</li>
+                    <li>BRAKE</li>
+                    <li>CAR BATTERIES</li>
+                    <li>TOOLS & GARAGE</li>
+                </ul>
+                <div class="card grid align-center main-background-color gap">
+                    <i class="fa-solid fa-phone phone-icon"></i>
+                    <div class="card-container">
+                        <p>Call us 24/7</p>
+                        <p>+08 9229 8228</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </header>
     <div class="top-slideshow">
-      <div class="top-slideshow-container grid align-center">
-        <div class="top-slideshow-left">
-          <div class="top-slideshow-left-container gap text-center grid">
-            <h2 class="search-by-vehicle">SEARCH BY VEHICLE</h2>
-            <form
-              action="https://demo.theme-sky.com/druco/shop/"
-              data-stylerecorder="true"
-              class="grid"
-            >
-              <select data-name="filter_make" data-stylerecorder="true">
-                <option value="" data-stylerecorder="true">Select Make</option>
-                <option value="make-bmw" data-stylerecorder="true">BMW</option>
-                <option value="make-ford" data-stylerecorder="true">
-                  Ford
-                </option>
-                <option value="make-hyundai" data-stylerecorder="true">
-                  Hyundai
-                </option>
-                <option value="make-lexus" data-stylerecorder="true">
-                  Lexus
-                </option>
-                <option value="make-mazda" data-stylerecorder="true">
-                  Mazda
-                </option>
-                <option value="make-mercerdess" data-stylerecorder="true">
-                  Mercerdess
-                </option>
-                <option value="make-toyota" data-stylerecorder="true">
-                  Toyota
-                </option>
-              </select>
-              <select data-name="filter_model" data-stylerecorder="true">
-                <option value="" data-stylerecorder="true">Select Model</option>
-                <option value="124-gt" data-stylerecorder="true">124 GT</option>
-                <option value="124-spider" data-stylerecorder="true">
-                  124 SPIDER
-                </option>
-                <option value="500" data-stylerecorder="true">500</option>
-                <option value="500c" data-stylerecorder="true">500C</option>
-                <option value="595" data-stylerecorder="true">595</option>
-                <option value="595c" data-stylerecorder="true">595C</option>
-              </select>
-              <select data-name="filter_year" data-stylerecorder="true">
-                <option value="" data-stylerecorder="true">Select Year</option>
-                <option value="2019" data-stylerecorder="true">2019</option>
-                <option value="2020" data-stylerecorder="true">2020</option>
-                <option value="2021" data-stylerecorder="true">2021</option>
-                <option value="2022" data-stylerecorder="true">2022</option>
-              </select>
-              <select data-name="filter_engine" data-stylerecorder="true">
-                <option value="" data-stylerecorder="true">
-                  Select Engine
-                </option>
-                <option value="1-1" data-stylerecorder="true">1.1</option>
-                <option value="1-2" data-stylerecorder="true">1.2</option>
-                <option value="1-3" data-stylerecorder="true">1.3</option>
-                <option value="1-4" data-stylerecorder="true">1.4</option>
-              </select>
-              <div class="text-center">
-                <input
-                  type="submit"
-                  value="Go"
-                  data-stylerecorder="true"
-                  class="main-background-color radius"
-                />
-              </div>
-            </form>
-          </div>
+        <div class="top-slideshow-container grid align-center">
+            <div class="top-slideshow-left">
+                <div class="top-slideshow-left-container gap text-center grid">
+                    <h2 class="search-by-vehicle">SEARCH BY VEHICLE</h2>
+                    <form action="https://demo.theme-sky.com/druco/shop/" data-stylerecorder="true" class="grid">
+                        <select data-name="filter_make" data-stylerecorder="true">
+                            <option value="" data-stylerecorder="true">Select Make</option>
+                            <option value="make-bmw" data-stylerecorder="true">BMW</option>
+                            <option value="make-ford" data-stylerecorder="true">
+                                Ford
+                            </option>
+                            <option value="make-hyundai" data-stylerecorder="true">
+                                Hyundai
+                            </option>
+                            <option value="make-lexus" data-stylerecorder="true">
+                                Lexus
+                            </option>
+                            <option value="make-mazda" data-stylerecorder="true">
+                                Mazda
+                            </option>
+                            <option value="make-mercerdess" data-stylerecorder="true">
+                                Mercerdess
+                            </option>
+                            <option value="make-toyota" data-stylerecorder="true">
+                                Toyota
+                            </option>
+                        </select>
+                        <select data-name="filter_model" data-stylerecorder="true">
+                            <option value="" data-stylerecorder="true">Select Model</option>
+                            <option value="124-gt" data-stylerecorder="true">124 GT</option>
+                            <option value="124-spider" data-stylerecorder="true">
+                                124 SPIDER
+                            </option>
+                            <option value="500" data-stylerecorder="true">500</option>
+                            <option value="500c" data-stylerecorder="true">500C</option>
+                            <option value="595" data-stylerecorder="true">595</option>
+                            <option value="595c" data-stylerecorder="true">595C</option>
+                        </select>
+                        <select data-name="filter_year" data-stylerecorder="true">
+                            <option value="" data-stylerecorder="true">Select Year</option>
+                            <option value="2019" data-stylerecorder="true">2019</option>
+                            <option value="2020" data-stylerecorder="true">2020</option>
+                            <option value="2021" data-stylerecorder="true">2021</option>
+                            <option value="2022" data-stylerecorder="true">2022</option>
+                        </select>
+                        <select data-name="filter_engine" data-stylerecorder="true">
+                            <option value="" data-stylerecorder="true">
+                                Select Engine
+                            </option>
+                            <option value="1-1" data-stylerecorder="true">1.1</option>
+                            <option value="1-2" data-stylerecorder="true">1.2</option>
+                            <option value="1-3" data-stylerecorder="true">1.3</option>
+                            <option value="1-4" data-stylerecorder="true">1.4</option>
+                        </select>
+                        <div class="text-center">
+                            <input type="submit" value="Go" data-stylerecorder="true"
+                                class="main-background-color radius" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="top-slideshow-right">
+                <div class="top-slideshow-right-container">
+                    <h3 class="white">NEVER MISS A SALE</h3>
+                    <h1 class="white">Rocket Racing Wheels</h1>
+                    <p class="white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reprehenderit, rem?
+                    </p>
+                    <button class="radius">SHOP NOW</button>
+                </div>
+            </div>
         </div>
-        <div class="top-slideshow-right">
-          <div class="top-slideshow-right-container">
-            <h3 class="white">NEVER MISS A SALE</h3>
-            <h1 class="white">Rocket Racing Wheels</h1>
-            <p class="white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit, rem?
-            </p>
-            <button class="radius">SHOP NOW</button>
-          </div>
-        </div>
-      </div>
     </div>
     <section class="categories main-background-color">
-      <div class="categories-container grid align-center">
-        <div>
-          <h3>Categories</h3>
-          <h5>MARCH FAVORITES</h5>
+        <div class="categories-container grid align-center">
+            <div>
+                <h3>Categories</h3>
+                <h5>MARCH FAVORITES</h5>
+            </div>
+            <div class="categories-items gap grid text-center">
+                <div class="categories-item">
+                    <img src="./assets/1.jpg" alt="category" class="categories-item-image" />
+                    <h4>Wheels & Tires</h4>
+                </div>
+                <div class="categories-item">
+                    <img src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/interior-310x310.jpg"
+                        alt="category" class="categories-item-image" />
+                    <h4>Interiors</h4>
+                </div>
+                <div class="categories-item">
+                    <img src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/entertainment-310x310.jpg"
+                        alt="category" class="categories-item-image" />
+                    <h4>Entertainments</h4>
+                </div>
+                <div class="categories-item">
+                    <img src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/oils-310x310.jpg"
+                        alt="category" class="categories-item-image" />
+                    <h4>Fluids</h4>
+                </div>
+                <div class="categories-item">
+                    <img src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/exteriors-310x310.jpg"
+                        alt="category" class="categories-item-image" />
+                    <h4>Exteriors</h4>
+                </div>
+            </div>
         </div>
-        <div class="categories-items gap grid text-center">
-          <div class="categories-item">
-            <img
-              src="./assets/1.jpg"
-              alt="category"
-              class="categories-item-image"
-            />
-            <h4>Wheels & Tires</h4>
-          </div>
-          <div class="categories-item">
-            <img
-              src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/interior-310x310.jpg"
-              alt="category"
-              class="categories-item-image"
-            />
-            <h4>Interiors</h4>
-          </div>
-          <div class="categories-item">
-            <img
-              src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/entertainment-310x310.jpg"
-              alt="category"
-              class="categories-item-image"
-            />
-            <h4>Entertainments</h4>
-          </div>
-          <div class="categories-item">
-            <img
-              src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/oils-310x310.jpg"
-              alt="category"
-              class="categories-item-image"
-            />
-            <h4>Fluids</h4>
-          </div>
-          <div class="categories-item">
-            <img
-              src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/exteriors-310x310.jpg"
-              alt="category"
-              class="categories-item-image"
-            />
-            <h4>Exteriors</h4>
-          </div>
-        </div>
-      </div>
     </section>
     <section class="best-sellers">
-      <div class="best-sellers-headers grid justify-center">
-        <h2 class="main-text-color">Bestsellers</h2>
-        <h2>Popular items</h2>
-      </div>
-      <div class="best-sellers-items gap grid justify-center">
-        <div class="best-sellers-item grid">
-          <img src="./assets/1.jpg" alt="product" class="product-image" />
-          <div>
-            <h5>Valvoline Oil Stockists</h5>
-            <span class="span-1">$106.58</span>
-            <span class="span-2">$202.87</span>
-          </div>
+        <div class="best-sellers-headers grid justify-center">
+            <h2 class="main-text-color">Bestsellers</h2>
+            <h2>Popular items</h2>
         </div>
-        <div class="best-sellers-item">
-          <img src="./assets/2.jpg" alt="product" class="product-image" />
-          <div>
-            <h5>Valvoline Oil Stockists</h5>
-            <span class="span-1">$106.58</span>
-            <span class="span-2">$202.87</span>
-          </div>
+        <div class="best-sellers-items gap grid">
+            <div class="best-sellers-item">
+                <div class="grid justify-center align-center">
+                    <img src="./assets/1.jpg" alt="product" class="product-image" />
+                </div>
+                <div>
+                    <h5>Valvoline Oil Stockists</h5>
+                    <img src="./assets/5star.png" style="width: 20%; display: block; margin: 0;" alt="star" />
+                    <span class="span-1">$106.58</span>
+                    <span class="span-2">$202.87</span>
+                </div>
+            </div>
+            <div class="best-sellers-item">
+                <div class="grid justify-center align-center">
+                    <img src="./assets/2.jpg" alt="product" class="product-image" />
+                </div>
+                <div>
+                    <h5>Racing Custom Wheels VF577</h5>
+                    <img src="./assets/5star.png" style="width: 20%; display: block; margin: 0;" alt="star" />
+                    <span class="span-1">$179.49</span>
+                    <span class="span-2">$209.99</span>
+                </div>
+            </div>
+            <div class="best-sellers-item">
+                <div class="grid justify-center align-center">
+                    <img src="./assets/3.jpg" alt="product" class="product-image" />
+                </div>
+                <div>
+                    <h5>Racing Custom Wheels VF421</h5>
+                    <img src="./assets/5star.png" style="width: 20%; display: block; margin: 0;" alt="star" />
+                    <span class="span-1">$38.24</span>
+                    <span class="span-2">$58.47</span>
+                </div>
+            </div>
+            <div class="best-sellers-item">
+                <div class="grid justify-center align-center">
+                    <img src="./assets/4.jpg" alt="product" class="product-image" />
+                </div>
+                <div>
+                    <h5>Kit Brembo DT BMW</h5>
+                    <img src="./assets/5star.png" style="width: 20%; display: block; margin: 0;" alt="star" />
+                    <span class="span-1">$69.75</span>
+                    <span class="span-2">$98.65</span>
+                </div>
+            </div>
+            <div class="best-sellers-item">
+                <div class="grid justify-center align-center">
+                    <img src="./assets/5.jpg" alt="product" class="product-image" />
+                </div>
+                <div>
+                    <h5>Kit Brembo GT BMW/h5>
+                        <img src="./assets/5star.png" style="width: 20%; display: block; margin: 0;" alt="star" />
+                        <span class="span-1">$69.75</span>
+                        <span class="span-2">$89.74</span>
+                </div>
+            </div>
+            <div class="best-sellers-item">
+                <div class="grid justify-center align-center">
+                    <img src="./assets/6.jpg" alt="product" class="product-image" />
+                </div>
+                <div>
+                    <h5>Kit Brembo DT BMW</h5>
+                    <img src="./assets/5star.png" style="width: 20%; display: block; margin: 0;" alt="star" />
+                    <span class="span-1">$26.45</span>
+                    <span class="span-2">$38.24</span>
+                </div>
+            </div>
+            <div class="best-sellers-item">
+                <div class="grid justify-center align-center">
+                    <img src="./assets/7.jpg" alt="product" class="product-image" />
+                </div>
+                <div>
+                    <h5>Zipp Battery New 12V</h5>
+                    <img src="./assets/5star.png" style="width: 20%; display: block; margin: 0;" alt="star" />
+                    <span class="span-1">$26.45</span>
+                    <span class="span-2">$45.94</span>
+                </div>
+            </div>
+            <div class="best-sellers-item">
+                <div class="grid justify-center align-center">
+                    <img src="./assets/8.jpg" alt="product" class="product-image" />
+                </div>
+                <div>
+                    <h5>Racing Custom Wheels </h5>
+                    <img src="./assets/5star.png" style="width: 20%; display: block; margin: 0;" alt="star" />
+                    <span class="span-1">$35.38</span>
+                    <span class="span-2">$38.24</span>
+                </div>
+            </div>
         </div>
-        <div class="best-sellers-item">
-          <img src="./assets/3.jpg" alt="product" class="product-image" />
-          <div>
-            <h5>Valvoline Oil Stockists</h5>
-            <span class="span-1">$106.58</span>
-            <span class="span-2">$202.87</span>
-          </div>
-        </div>
-        <div class="best-sellers-item">
-          <img src="./assets/4.jpg" alt="product" class="product-image" />
-          <div>
-            <h5>Valvoline Oil Stockists</h5>
-            <span class="span-1">$106.58</span>
-            <span class="span-2">$202.87</span>
-          </div>
-        </div>
-      </div>
     </section>
     <!--Abdullah-->
     <section class="products grid justify-center section">
-      <div class="product-col grid gap justify-center">
-        <h2 class="product-header">New Products</h2>
-        <div class="product-card grid">
-          <div class="product-image">
-            <img src="./assets/product1.jpg" style="width: 100%" alt="" />
-          </div>
-          <div class="product-content grid">
-            <a class="product-name hover-text-main">Altra Industrial Motion</a>
-            <img src="./assets/5star.png" style="width: 60%" alt="" />
-            <h3 class="product-price">$185.99</h3>
-            <button class="cart-button main-background-color">
-              ADD TO CART
-            </button>
-          </div>
+        <div class="product-col grid gap justify-center">
+            <h2 class="product-header">New Products</h2>
+            <div class="product-card grid">
+                <div class="product-image">
+                    <img src="./assets/product1.jpg" style="width: 100%" alt="" />
+                </div>
+                <div class="product-content grid">
+                    <a class="product-name hover-text-main">Altra Industrial Motion</a>
+                    <img src="./assets/5star.png" style="width: 60%" alt="" />
+                    <h3 class="product-price">$185.99</h3>
+                    <button class="cart-button main-background-color">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+            <div class="product-card grid justify-center">
+                <div class="product-image">
+                    <img src="./assets/product2.jpg" style="width: 100%" alt="" />
+                </div>
+                <div class="product-content grid">
+                    <a class="product-name hover-text-main">Kit Brembo GT BMW</a>
+                    <img src="./assets/5star.png" style="width: 60%" alt="" />
+                    <h3 class="product-price">$69.75</h3>
+                    <button class="cart-button main-background-color">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+            <div class="product-card grid justify-center">
+                <div class="product-image">
+                    <img src="./assets/product3.jpg" style="width: 100%" alt="" />
+                </div>
+                <div class="product-content grid">
+                    <a class="product-name hover-text-main">Driver Side Headlight</a>
+                    <img src="./assets/5star.png" style="width: 60%" alt="" />
+                    <h3 class="product-price">$53.75</h3>
+                    <button class="cart-button main-background-color ">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="product-card grid justify-center">
-          <div class="product-image">
-            <img src="./assets/product2.jpg" style="width: 100%" alt="" />
-          </div>
-          <div class="product-content grid">
-            <a class="product-name hover-text-main">Kit Brembo GT BMW</a>
-            <img src="./assets/5star.png" style="width: 60%" alt="" />
-            <h3 class="product-price">$69.75</h3>
-            <button class="cart-button main-background-color">
-              ADD TO CART
-            </button>
-          </div>
+        <div class="product-col grid gap justify-center">
+            <h2 class="product-header">Specials</h2>
+            <div class="product-card grid">
+                <div class="product-image">
+                    <img src="./assets/product4.jpg" style="width: 100%" alt="" />
+                </div>
+                <div class="product-content grid">
+                    <a class="product-name hover-text-main">Dual Stack PowerTech</a>
+                    <img src="./assets/5star.png" style="width: 60%" alt="" />
+                    <h3 class="product-price">$38.24</h3>
+                    <button class="cart-button main-background-color">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+            <div class="product-card grid">
+                <div class="product-image">
+                    <img src="./assets/product5.jpg" style="width: 100%" alt="" />
+                </div>
+                <div class="product-content grid">
+                    <a class="product-name hover-text-main">Racing Custom Wheels</a>
+                    <img src="./assets/5star.png" style="width: 60%" alt="" />
+                    <h3 class="product-price">$35.38</h3>
+                    <button class="cart-button main-background-color">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+            <div class="product-card grid">
+                <div class="product-image">
+                    <img src="./assets/product6.jpg" style="width: 100%" alt="" />
+                </div>
+                <div class="product-content grid">
+                    <a class="product-name hover-text-main">Racing Custom Wheels VF123</a>
+                    <img src="./assets/5star.png" style="width: 60%" alt="" />
+                    <h3 class="product-price">$38.24</h3>
+                    <button class="cart-button main-background-color">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="product-card grid justify-center">
-          <div class="product-image">
-            <img src="./assets/product3.jpg" style="width: 100%" alt="" />
-          </div>
-          <div class="product-content grid">
-            <a class="product-name hover-text-main">Driver Side Headlight</a>
-            <img src="./assets/5star.png" style="width: 60%" alt="" />
-            <h3 class="product-price">$53.75</h3>
-            <button class="cart-button main-background-color ">
-              ADD TO CART
-            </button>
-          </div>
+        <div class="product-col grid gap justify-center">
+            <h2 class="product-header">Sale</h2>
+            <div class="product-card grid">
+                <div class="product-image">
+                    <img src="./assets/product7.jpg" style="width: 100%" alt="" />
+                </div>
+                <div class="product-content grid">
+                    <a class="product-name hover-text-main">Kit Brembo GT BMW</a>
+                    <img src="./assets/5star.png" style="width: 60%" alt="" />
+                    <h3 class="product-price">$69.75</h3>
+                    <button class="cart-button main-background-color">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+            <div class="product-card grid">
+                <div class="product-image">
+                    <img src="./assets/product8.jpg" style="width: 100%" alt="" />
+                </div>
+                <div class="product-content grid">
+                    <a class="product-name hover-text-main">Nuna car seats S134</a>
+                    <img src="./assets/5star.png" style="width: 60%" alt="" />
+                    <h3 class="product-price">$38.24</h3>
+                    <button class="cart-button main-background-color">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+            <div class="product-card grid">
+                <div class="product-image">
+                    <img src="./assets/product9.jpg" style="width: 100%" alt="" />
+                </div>
+                <div class="product-content grid">
+                    <a class="product-name hover-text-main">Racing Custom Wheels</a>
+                    <img src="./assets/5star.png" style="width: 60%" alt="" />
+                    <h3 class="product-price">$35.38</h3>
+                    <button class="cart-button main-background-color">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="product-col grid gap justify-center">
-        <h2 class="product-header">Specials</h2>
-        <div class="product-card grid">
-          <div class="product-image">
-            <img src="./assets/product4.jpg" style="width: 100%" alt="" />
-          </div>
-          <div class="product-content grid">
-            <a class="product-name hover-text-main">Dual Stack PowerTech</a>
-            <img src="./assets/5star.png" style="width: 60%" alt="" />
-            <h3 class="product-price">$38.24</h3>
-            <button class="cart-button main-background-color">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="product-card grid">
-          <div class="product-image">
-            <img src="./assets/product5.jpg" style="width: 100%" alt="" />
-          </div>
-          <div class="product-content grid">
-            <a class="product-name hover-text-main">Racing Custom Wheels</a>
-            <img src="./assets/5star.png" style="width: 60%" alt="" />
-            <h3 class="product-price">$35.38</h3>
-            <button class="cart-button main-background-color">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="product-card grid">
-          <div class="product-image">
-            <img src="./assets/product6.jpg" style="width: 100%" alt="" />
-          </div>
-          <div class="product-content grid">
-            <a class="product-name hover-text-main">Racing Custom Wheels VF123</a>
-            <img src="./assets/5star.png" style="width: 60%" alt="" />
-            <h3 class="product-price">$38.24</h3>
-            <button class="cart-button main-background-color">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="product-col grid gap justify-center">
-        <h2 class="product-header">Sale</h2>
-        <div class="product-card grid">
-          <div class="product-image">
-            <img src="./assets/product7.jpg" style="width: 100%" alt="" />
-          </div>
-          <div class="product-content grid">
-            <a class="product-name hover-text-main">Kit Brembo GT BMW</a>
-            <img src="./assets/5star.png" style="width: 60%" alt="" />
-            <h3 class="product-price">$69.75</h3>
-            <button class="cart-button main-background-color">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="product-card grid">
-          <div class="product-image">
-            <img src="./assets/product8.jpg" style="width: 100%" alt="" />
-          </div>
-          <div class="product-content grid">
-            <a class="product-name hover-text-main">Nuna car seats S134</a>
-            <img src="./assets/5star.png" style="width: 60%" alt="" />
-            <h3 class="product-price">$38.24</h3>
-            <button class="cart-button main-background-color">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="product-card grid">
-          <div class="product-image">
-            <img src="./assets/product9.jpg" style="width: 100%" alt="" />
-          </div>
-          <div class="product-content grid">
-            <a class="product-name hover-text-main">Racing Custom Wheels</a>
-            <img src="./assets/5star.png" style="width: 60%" alt="" />
-            <h3 class="product-price">$35.38</h3>
-            <button class="cart-button main-background-color">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-      </div>
     </section>
     <section class="popular-parts grid justify-center text-center section">
-      <h2>Shop by Popular Parts</h2>
-      <div class="parts gap grid justify-center">
-        <a href="#" class="part">Brake Disc and Pad Kit (9)</a>
-        <a href="#" class="part">Bumper (4)</a>
-        <a href="#" class="part">Bumper Cover (4))</a>
-        <a href="#" class="part">Control Arm (5)</a>
-        <a href="#" class="part">Control Arm Kit (5)</a>
-        <a href="#" class="part">Cooling Fan Assembly (5)</a>
-        <a href="#" class="part">Door Lock Actuator (3)</a>
-        <a href="#" class="part">Driveshaft (5)</a>
-        <a href="#" class="part">Exterior Door Handle (2)</a>
-        <a href="#" class="part">Fender (5)</a>
-        <a href="#" class="part">Fuel Pump (5)</a>
-        <a href="#" class="part">Grille Assembly (6)</a>
-        <a href="#" class="part">Headlight (7)</a>
-        <a href="#" class="part">Hood (3)</a>
-        <a href="#" class="part">Mirror (3)</a>
-        <a href="#" class="part">Oxygen Sensor (3)</a>
-        <a href="#" class="part">Radiator (4)</a>
-        <a href="#" class="part">Step Bumper (2)</a>
-        <a href="#" class="part">Tail Light (4)</a>
-        <a href="#" class="part">Wheel Hub (9)</a>
-      </div>
+        <h2>Shop by Popular Parts</h2>
+        <div class="parts gap grid justify-center">
+            <a href="#" class="part">Brake Disc and Pad Kit (9)</a>
+            <a href="#" class="part">Bumper (4)</a>
+            <a href="#" class="part">Bumper Cover (4)</a>
+            <a href="#" class="part">Control Arm (5)</a>
+            <a href="#" class="part">Control Arm Kit (5)</a>
+            <a href="#" class="part">Cooling Fan Assembly (5)</a>
+            <a href="#" class="part">Door Lock Actuator (3)</a>
+            <a href="#" class="part">Driveshaft (5)</a>
+            <a href="#" class="part">Exterior Door Handle (2)</a>
+            <a href="#" class="part">Fender (5)</a>
+            <a href="#" class="part">Fuel Pump (5)</a>
+            <a href="#" class="part">Grille Assembly (6)</a>
+            <a href="#" class="part">Headlight (7)</a>
+            <a href="#" class="part">Hood (3)</a>
+            <a href="#" class="part">Mirror (3)</a>
+            <a href="#" class="part">Oxygen Sensor (3)</a>
+            <a href="#" class="part">Radiator (4)</a>
+            <a href="#" class="part">Step Bumper (2)</a>
+            <a href="#" class="part">Tail Light (4)</a>
+            <a href="#" class="part">Wheel Hub (9)</a>
+        </div>
     </section>
-    <section
-      class="banner grid justify-center section"
-      style="background-image: url(./assets/banner.jpg)"
-    >
-      <div class="banner-content">
-        <h2 style="font-size: 90px" class="main-text-color">
-          GENUINE <br />
-          PARTS
-        </h2>
-        <p class="white" style="font-size: 18px">
-          YOU CAN NOW BENEFIT WITH
-          <span class="main-text-color">15%</span> SPECIAL DISCOUNT*
-        </p>
-      </div>
+    <section class="banner grid justify-center section" style="background-image: url(./assets/banner.jpg)">
+        <div class="banner-content">
+            <h2 style="font-size: 90px" class="main-text-color">
+                GENUINE <br />
+                PARTS
+            </h2>
+            <p class="white" style="font-size: 18px">
+                YOU CAN NOW BENEFIT WITH
+                <span class="main-text-color">15%</span> SPECIAL DISCOUNT*
+            </p>
+        </div>
     </section>
     <section class="section grid justify-center">
-      <h2 class="text-center">From Our Blog</h2>
-      <div class="blog-main grid justify-center">
-        <div class="blog-main-left">
-          <img src="./assets/blog-1-1.jpg" style="width: 100%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;" alt="" />
-          <div class="blog-main-left-content grid">
-            <p><span>BY</span> <a href="#">ADMIN</a> <span>IN</span> <a href="">EXHAUST</a>, <a href="">WHEELS & TIRES</a></p>
-            <h4 class="hover-text-main pointer">How to Check and Maintain Your Suspension</h4>
-            <p style="font-size: 15px; font-weight: 400;">
-              The small round table in the dinette may be great for casual meals
-              with your family, but inviting overnight guests
-            </p>
-            <button class="read-more-btn main-background-color">Read More</button>
-          </div>
-        </div>
-        <div class="blog-main-right grid">
-          <div class="blog-main-left-content grid" style="padding: 0;">
-            <p><span>BY</span> <a href="#">ADMIN</a> <span>IN</span> <a href="">EXHAUST</a>, <a href="">WHEELS & TIRES</a></p>
-            <h4 class="hover-text-main pointer">What Is Car Suspension?</h4>
-            <p style="font-size: 15px; font-weight: 400;">
-              The small round table in the dinette may be great for casual meals
-            </p>
-            <button class="read-more-btn main-background-color">Read More</button>
-          </div>
-          <hr>
-          <div class="blog-main-left-content grid"  style="padding: 0;">
-            <p><span>BY</span> <a href="#">ADMIN</a> <span>IN</span> <a href="">EXHAUST</a>, <a href="">WHEELS & TIRES</a></p>
-            <h4 class="hover-text-main pointer">What Does A Car Service Include?</h4>
-            <p style="font-size: 15px; font-weight: 400;">
-              The small round table in the dinette may be great for casual meals
-            </p>
-            <button class="read-more-btn main-background-color">Read More</button>
-          </div>
-          <hr>
-          <div class="blog-main-left-content grid" style="padding: 0;">
-            <p><span>BY</span> <a href="#">ADMIN</a> <span>IN</span> <a href="">EXHAUST</a>, <a href="">WHEELS & TIRES</a></p>
-            <h4 class="hover-text-main pointer">Wiper Blade Size Guide</h4>
-            <p style="font-size: 15px; font-weight: 400;">
-             The small round table in the dinette may be great for casual meals
-            </p>
-            <button class="read-more-btn main-background-color ">Read More</button>
-          </div>
-        </div>
- 
+        <h2 class="text-center">From Our Blog</h2>
+        <div class="blog-main grid justify-center">
+            <div class="blog-main-left">
+                <img src="./assets/blog-1-1.jpg"
+                    style="width: 100%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;" alt="" />
+                <div class="blog-main-left-content grid">
+                    <p><span>BY</span> <a href="#">ADMIN</a> <span>IN</span> <a href="">EXHAUST</a>, <a href="">WHEELS &
+                            TIRES</a></p>
+                    <h4 class="hover-text-main pointer">How to Check and Maintain Your Suspension</h4>
+                    <p style="font-size: 15px; font-weight: 400;">
+                        The small round table in the dinette may be great for casual meals
+                        with your family, but inviting overnight guests
+                    </p>
+                    <button class="read-more-btn main-background-color">Read More</button>
+                </div>
+            </div>
+            <div class="blog-main-right grid">
+                <div class="blog-main-left-content grid" style="padding: 0;">
+                    <p><span>BY</span> <a href="#">ADMIN</a> <span>IN</span> <a href="">EXHAUST</a>, <a href="">WHEELS &
+                            TIRES</a></p>
+                    <h4 class="hover-text-main pointer">What Is Car Suspension?</h4>
+                    <p style="font-size: 15px; font-weight: 400;">
+                        The small round table in the dinette may be great for casual meals
+                    </p>
+                    <button class="read-more-btn main-background-color">Read More</button>
+                </div>
+                <hr>
+                <div class="blog-main-left-content grid" style="padding: 0;">
+                    <p><span>BY</span> <a href="#">ADMIN</a> <span>IN</span> <a href="">EXHAUST</a>, <a href="">WHEELS &
+                            TIRES</a></p>
+                    <h4 class="hover-text-main pointer">What Does A Car Service Include?</h4>
+                    <p style="font-size: 15px; font-weight: 400;">
+                        The small round table in the dinette may be great for casual meals
+                    </p>
+                    <button class="read-more-btn main-background-color">Read More</button>
+                </div>
+                <hr>
+                <div class="blog-main-left-content grid" style="padding: 0;">
+                    <p><span>BY</span> <a href="#">ADMIN</a> <span>IN</span> <a href="">EXHAUST</a>, <a href="">WHEELS &
+                            TIRES</a></p>
+                    <h4 class="hover-text-main pointer">Wiper Blade Size Guide</h4>
+                    <p style="font-size: 15px; font-weight: 400;">
+                        The small round table in the dinette may be great for casual meals
+                    </p>
+                    <button class="read-more-btn main-background-color ">Read More</button>
+                </div>
+            </div>
+
     </section>
     <!--Abdullah-->
-  </body>
+</body>
+
 </html>
