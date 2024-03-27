@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.featured {
+  height: 300px;
+  background-color: white;
+}
+
+.featured h1 {
+  text-align: center;
+  margin-top: 75px;
+  font-size: 36px;
+  font-family: "outfit";
+  font-style: normal;
+}
+.logo {
+  padding: 30px;
+  display: grid;
+  grid-template-areas: "toyota hyundai auto jaguar japan kia";
+}
+.logo img {
+  width: 180px;
+}
+.toyota {
+  grid-template-areas: toyota;
+}
+.hyundai {
+  grid-template-areas: hyundai;
+}
+.auto {
+  grid-template-areas: auto;
+}
+.jaguar {
+  grid-template-areas: jaguar;
+}
+.japan {
+  grid-template-areas: japan;
+}
+.kia {
+  grid-template-areas: kia;
+}
+.new {
+  display: grid;
+  grid-template-areas: "newsletter" "subscribe";
+  gap: 5px;
+}
+.news {
+  background-color: #ffb91f;
+  height: 150px;
+  display: grid;
+  grid-template-areas: "new mail";
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+}
+.mail input {
+  width: 500px;
+  height: 63px;
+  border-radius: 20px;
+  background-color: #ffb91f;
+}
+.mail button {
+  color: white;
+  width: 120px;
+  height: 55px;
+  border-radius: 30px;
+  background-color: black;
+  cursor: pointer;
+  font: 24px;
+}
+.new {
+  grid-template-areas: new;
+}
+.newsletter {
+  grid-template-areas: newsletter;
+  font-size: 24px;
+}
+.subscribe {
+  grid-template-areas: subscribe;
+}
+.mail {
+  grid-template-areas: mail;
+}
+.end {
+  background-color: black;
+  height: 600px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 250px;
+  justify-content: center;
+  padding-top: 100px;
+}
+.say {
+  width: 420px;
+  gap: 50px;
+}
+.acccount {
+  width: 275px;
+}
+.product {
+  width: 275px;
+}
+.reader {
+  width: 275px;
+}
+.socialicon {
+  display: grid;
+  grid-template-columns: repeat(2, 40px);
+  gap: 1px;
+}
