@@ -247,7 +247,7 @@ select option {
   background-size: cover;
 }
 .banner-content {
-  width: 1300px;
+  width: 100%;
 }
 .blog-main {
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
@@ -302,7 +302,7 @@ select option {
   width: 5rem;
 }
 .newsletter {
-  grid-template-columns: 15% 1fr 10% 1fr 15%;
+  grid-template-columns: auto auto auto auto auto;
   height: 9rem;
 }
 .grid-part1 {
@@ -330,42 +330,24 @@ input::placeholder {
 }
 .grid-last-page {
   background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   height: 480px;
+  display: grid;
+  grid-template-columns: 22rem auto auto auto;
+  padding: 4rem 6rem;
+  justify-content: center;
+  gap: 5rem;
 }
 .last-page ul {
   text-align: left;
-  margin-bottom: 200px;
 }
 .list li {
   color: #aaaa;
   list-style-type: none;
   margin-bottom: 20px;
 }
-.sayhello {
-  color: white;
-  text-align: left;
-  margin-left: 40px;
-}
-.my-accunt {
-  color: white;
-  margin-top: 135px;
-  margin-left: 40px;
-}
-.product {
-  color: white;
-  margin-top: 135px;
-}
-.reader {
-  color: white;
-  margin-top: 95px;
-  margin-left: 40px;
-}
 .icon {
-  position: absolute;
-  margin-left: 50px;
-  margin-top: -150px;
+}
+.footer-h2 {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
 }
