@@ -328,3 +328,44 @@ select option {
 input::placeholder {
   padding-left: 1rem;
 }
+.grid-last-page {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 480px;
+}
+.last-page ul {
+  text-align: left;
+  margin-bottom: 200px;
+}
+.list li {
+  color: #aaaa;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.sayhello {
+  color: white;
+  text-align: left;
+  margin-left: 40px;
+}
+.my-accunt {
+  color: white;
+  margin-top: 135px;
+  margin-left: 40px;
+}
+.product {
+  color: white;
+  margin-top: 135px;
+}
+.reader {
+  color: white;
+  margin-top: 95px;
+  margin-left: 40px;
+}
+.icon {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -150px;
+}
