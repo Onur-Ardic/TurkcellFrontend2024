@@ -159,7 +159,62 @@
 #bestsellers #bestsellers-products .card-body {
   padding: 20px;
 }
+/* section-a */
+#section-a #section-a-grid{
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+ }
 
+#section-a #section-a-left {
+  height: 500px;
+}
+#section-a #section-a-right{
+  height: 500px;
+}
+/* new-products */
+#new-products .item-container {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#new-products .item {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#new-products .new-product-title {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr)
+}
+/* popular-parts */
+#popular-parts #shop-by-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+#popular-parts #shop-by-content .shop-by-item {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0.1px solid gray;
+}
+/* section-b */
+#section-b {
+  margin: 50px 0;
+  width: auto;
+  background-image: url(images/banner-3.jpg);
+  background-repeat:no-repeat ;
+  background-position: center center;
+  height: 300px;
+}
+#section-b .section-b-content {
+  height: 300px;
+  padding-top: 50px;
+}
 /* blog */
 #blog {
   flex-direction: column;
