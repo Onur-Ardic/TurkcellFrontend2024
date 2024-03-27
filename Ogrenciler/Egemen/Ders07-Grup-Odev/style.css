@@ -4,6 +4,17 @@
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+.link:hover {
+    color: #FFB91F;
+    transition: color 0.2s ease;
+}
+ul li{
+    list-style: none;
+}
 .btn-yellow{
     min-width: 115px;
     background-color: #FFB91F;
@@ -121,10 +132,34 @@
         grid-template-columns: 1fr;
     }
   }
-  /* .search-by-vehicle-container{
+/* shop by popular parts */
+.shop-by-popular-parts{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    /* max-width: 100%; */
+}
+.popular-parts-container{
     max-width: 100%;
+}
+.popular-parts-title{
+    margin-bottom: 55px;
+    font-size: 1.25rem;
+}
+.popular-parts-list{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-columns: repeat(auto-fill, minmax(495px, 1fr));
-    gap: 50px;
-  } */
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.popular-part{
+    padding:10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(235, 235, 235, 1);
+    border-radius: 10px;
+}
+.popular-part:hover{
+    cursor: pointer;
+    background: #FFB91F;
+}
