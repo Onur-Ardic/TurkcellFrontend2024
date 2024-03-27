@@ -197,11 +197,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-#new-products .item-container img{
+#new-products .item-container img {
   size: 400px;
   padding: 10px;
 }
-
 
 /* popular-parts */
 #popular-parts #shop-by-content {
@@ -335,6 +334,27 @@
   background-color: rgba(255, 185, 31, 1) !important;
   border: 0.1px solid rgba(0, 0, 0, 0.2);
 }
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px 100px 0 100px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(170, 170, 170);
+  text-align: left;
+  gap: 50px;
+}
+.footer-grid div h1 {
+  color: #fff;
+}
+
+.footer-grid-lists div ul li {
+  padding: 10px 0;
+}
+.footer-grid-lists div ul li:hover {
+  color: rgba(255, 185, 31, 1);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .brands-items {
     grid-template-columns: repeat(2, 1fr);
@@ -344,10 +364,18 @@
     grid-template-columns: auto;
     gap: 20px;
   }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 20px 0 20px;
+  }
 }
 @media screen and (max-width: 576px) {
   .brands-items {
     grid-template-columns: repeat(1, 1fr);
     margin: 0 50px;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 20px 0 20px;
   }
 }
