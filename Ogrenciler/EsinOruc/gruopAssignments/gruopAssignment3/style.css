@@ -103,3 +103,73 @@
   width: 100%;
   height: 100%;
 }
+.products .container {
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 25rem));
+}
+.product-card {
+  grid-template-columns: 12rem 12rem;
+  margin: 20px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+}
+/*- global olabilir-*/
+.product-name:hover {
+  color: #ffb91f;
+}
+
+.part {
+  display: block;
+  color: #202020;
+  width: 230px;
+  height: 50px;
+  padding: 14px 5px 14px 5px;
+  border: 1px solid #cbcbcb;
+  border-radius: 0.2rem;
+}
+.part:hover {
+  background-color: #ffb91f;
+}
+
+.parts {
+  grid-template-columns: repeat(auto-fill, minmax(50px, 220px));
+  gap: 1.5rem;
+}
+
+footer ul li a:hover {
+  color: #f8b400;
+}
+
+.footer ul li i {
+  margin-right: 10px;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+.footer-bottom {
+  background-color: #454141;
+  padding: 20px 0;
+}
+.footer-area .logo img {
+  max-width: 150px;
+}
+.footer-area .social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.paragraf {
+  float: left;
+}
+.text {
+  float: right;
+  justify-content: space-between;
+}
+.footer-area .quick-links li {
+  margin-bottom: 10px;
+}
+.footer-area .contact-info li {
+  margin-bottom: 10px;
+}
+.elementors .single-footer {
+  width: 20%;
+}

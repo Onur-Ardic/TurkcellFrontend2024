@@ -14,7 +14,7 @@
     color: var(--white);
     display: grid;
     /* grid-template-columns: 307px auto 307px; */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(307px, auto));
     padding-top: 9px;
     padding-bottom: 9px;
     line-height: 18px;
@@ -37,7 +37,7 @@
 .menu-top-header-menu {
     display: grid;
     /* grid-template-columns: auto auto auto auto; */
-    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
     text-align: center;
     margin: 0 33px;
 }
@@ -217,7 +217,6 @@ select option {
     font-weight: 300;
 }
 .best-sellers{
-    height: 1000px;
     padding: 120px 0px;
 }
 .best-sellers-menu {
@@ -236,8 +235,10 @@ select option {
 }
 .menu-content {
     display: grid;
-    grid-template-columns: repeat(4, 307px);
-    grid-template-rows: repeat(2, 434px);
+    /* grid-template-columns: repeat(4, 307px);
+    grid-template-rows: repeat(2, 434px); */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 307px));   
+    grid-template-rows: repeat(auto-fill, minmax(300px, 434px));   
     border-width: 0 0 0 1px;
     border-style: solid;
     border-color: var(--border-color);
@@ -286,7 +287,7 @@ select option {
 .categories{ 
     display: grid;
     /* grid-template-columns: 1fr 2.5fr; */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));   
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));   
     padding: 30px 0; 
 }
 .categories-head{
@@ -303,8 +304,8 @@ select option {
 }
 .categories-items{
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));   
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    */
     gap: 20px;  
 }
 .catagories-items-img{
@@ -436,7 +437,8 @@ select option {
 }
 .newsletter-tab{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 40px 40px;
 }
 .newsletter-header-title{
@@ -459,10 +461,11 @@ input{
     padding-right: 150px;
     padding-left: 15px;
     font-size: 15px;
+    position: absolute;
 }
 .buton-subscribe{
     border-style: solid;
-    border-radius: 30%;
+    border-radius: 50px;
     border-color: rgba(255,185,31,1);
     background-color: #000;
     color: #FFF;
@@ -470,6 +473,12 @@ input{
     padding: 10px 20px;
     text-align: left;
     position: absolute;
+    margin-left: 231px;
+}
+.buton-email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .buton-subscribe:hover{
     background-color: #FFB91F;
@@ -688,10 +697,8 @@ select {
     color: white;
 }
 #features{
-    height: 350px;
+
     padding: 100px 0 px;
-    display: grid;
-    grid-template-rows: auto auto;
 }
 .features-heading{
     padding-top: 120px;
@@ -703,7 +710,7 @@ select {
 }
 .features-logos{
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding-bottom: 120px;
 }
 #footer{
@@ -761,4 +768,15 @@ select {
     font-size: 16px;
     margin-bottom: 17px;
     font-weight: 600;
+}
+
+.footer-alt{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+    padding: 17px 0 24px;
+}
+
+.footer-alt p{
+    color: var(--white);
 }
