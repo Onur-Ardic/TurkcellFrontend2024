@@ -300,17 +300,6 @@
   grid-template-columns: repeat(6, 1fr);
 }
 
-@media screen and (max-width: 768px) {
-  .brands-items {
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0 50px;
-  }
-  .why-choose-us-reasons {
-    grid-template-columns: auto;
-    gap: 20px;
-  }
-}
-
 /* NEWSLETTER AND FOOTER */
 .newsletter {
   justify-content: space-between !important;
@@ -338,4 +327,20 @@
 .newsletter-email-container > button:hover {
   background-color: rgba(255, 185, 31, 1) !important;
   border: 0.1px solid rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 768px) {
+  .brands-items {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 50px;
+  }
+  .why-choose-us-reasons {
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .brands-items {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 50px;
+  }
 }
