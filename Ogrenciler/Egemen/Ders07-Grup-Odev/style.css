@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+.btn-yellow{
+    min-width: 115px;
+    background-color: #FFB91F;
+    color: black;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 42px;
+    margin: 0 auto;
+    margin-top: 24px;
+    font-weight: 600;
+    line-height: 25px;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.search-by-vehicle{
+    z-index: -1;
+    background: url("./section1-bg.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    padding: 100px 0;
+}
+.search-by-vehicle::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.search-by-vehicle-container{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 0.5fr)); */
+    gap: 50px;
+}
+.search-by-vehicle-form-side{
+    /* grid-area: search-by-vehicle-form-side; */
+    background: white;
+    padding: 40px 32px;
+    border-radius: 10px;
+    text-align: center;
+}
+.form-title{
+    margin-bottom: 34px;
+}
+.search-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.search-form-selects{
+    display: grid;
+}
+.search-form-select{
+    padding: 12px 30px 12px 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.search-by-vehicle-content{
+    /* grid-area: search-by-vehicle-content; */
+    color: white;
+    display: grid;
+    align-items: center;
+}
+.vehicle-content-h{
+    font-size: 3rem;
+}
+@media screen and (max-width: 991px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+    .search-by-vehicle-form-side{
+        padding: 20px 16px;
+    }
+    .search-by-vehicle-content{
+        order: -1;
+    }
+    .search-form{
+        grid-template-columns: auto auto;
+    }
+    .search-form input{
+        margin: 0;
+    }
+    .search-form-selects{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .search-form-select{
+        height: 100%;
+
+    }
+    .search-by-vehicle-content{
+        text-align: center;
+    }
+  }
+  @media screen and (max-width: 790px) {
+    .search-by-vehicle-form-side{
+        padding: 10px 8px;
+    }
+    .search-form-selects{
+    grid-template-columns: 1fr 1fr;
+    }
+    .search-form-select{
+        height: 80%;
+        padding: 15px;
+    }
+    .search-form{
+        grid-template-columns: 1fr;
+    }
+  }
+  /* .search-by-vehicle-container{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fill, minmax(495px, 1fr));
+    gap: 50px;
+  } */

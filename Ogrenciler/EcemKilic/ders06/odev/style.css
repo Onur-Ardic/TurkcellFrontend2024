@@ -21,23 +21,42 @@ h3 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
+/* genel kullanım */
+.left {
+    float: left;
+    margin: 5px;
+}
+.right {
+    float: right;
+    margin: 5px;
+}
+.clear {
+    clear: both;
+}
 .categories {
-    height: 260px;
+    max-height: 260px;
     background-color: #ffb91f;
     width: 100% !important;
 }
-.container {
+.categories .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
     padding: 1%;
-    margin-left: 10%;
+    margin-left: 7%;
+    max-height: 250px !important;
+    overflow: auto;
 }
 .categories-header {
     text-align: left;
 }
+/* .categories-btn {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+} */
 .categories-btn .btn{
     border: none;
     color: black;
@@ -53,13 +72,10 @@ h3 {
     line-height: 50px;
     opacity: 0.5;
 }
-.categories-btn .ileri {
-    right: 85%;
+.categories-btn .btn:hover {
+    opacity: 1;
 }
-.categories-btn .geri {
-    left: 5%;
-}
-.categories-left {
+.categories-1 {
     margin-right: 20px;
 }
 .category {
@@ -68,6 +84,147 @@ h3 {
     text-align: center;
 }
 .category-img {
-    max-width: 170px;
+    max-width: 170px !important;
     border-radius: 6px;
+    transition: transform 0.3s;
+}
+.category:hover .category-img {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+.bestseller-header {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.bestseller-header .yellow{
+    color: #ffb91f;
+    margin-left: 75%;
+}
+.bestseller-header .black {
+    color: black;
+    margin-right: 75%;
+}
+.bestseller-header .black:hover{
+    color: #ffb91f;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 5px;
+    grid-auto-rows: 420px;
+}
+.product {
+    width: 305px;
+    height: 310px;
+    box-sizing: border-box;
+    position: relative;
+}
+.border {
+    border: 1px solid #e3dede;
+    padding: 10px;
+}
+.product-label {
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    background-color: rgba(212,56,17,1);
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    font-size: 12px;
+}
+.product-image {
+    flex: 0 0 200px;
+    margin-right: 20px;
+}
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: left;
+}
+.rating > input {
+    display: none;
+}
+.rating > label {
+    display: inline-block;
+    font-size: 15px;
+    color: #ccc;
+    cursor: pointer;
+}
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+    color: #ffb91f;
+}
+.price {
+    margin-bottom: 10px;
+}
+.discounted-price {
+    font-weight: bold;
+    color: rgba(35, 63, 146, 1);
+}
+.original-price {
+    text-decoration: line-through;
+    color: rgba(134, 134, 134, 1);
+}
+/* .hidden {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: transparent;
+}
+.products-product:hover .hidden {
+    opacity: 1;
+}
+.hidden .hdnbtn {
+    padding: 5px 10px;
+    background-color: rgba(240, 240, 240, 1);
+    border: none;
+    border-radius: 5px;
+}
+.hidden .hdnbtn:hover {
+    background-color: #0056b3;
+}
+.hidden {
+    display: none;
+} */
+.buttons-hidden {
+    display: block;
+}
+.hdnbtn {
+    cursor: pointer;
+    box-sizing: border-box;
+    color: white;
+    background-color: transparent;
+    opacity: 0;
+    text-align: center;
+    padding: 2%;
+}
+.hdnbtn-icons {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.hdnbtn-icons .img {
+    width: 40px;
+    height: 40px;
+}
+.product:hover .hdnbtn{
+    color: white;
+    background-color: rgba(134, 134, 134, 1);
+    opacity: 1;
+    box-sizing: border-box;
 }
