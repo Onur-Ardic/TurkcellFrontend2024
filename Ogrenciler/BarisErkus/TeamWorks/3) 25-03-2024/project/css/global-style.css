@@ -58,7 +58,7 @@ button {
 .blog-main-right {
   gap: 2rem;
 }
-.blog-main-right hr {
+hr {
   border: 1px solid rgb(231, 231, 231);
 }
 .gap {
