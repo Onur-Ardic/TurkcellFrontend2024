@@ -9,6 +9,7 @@ a{
     cursor: pointer;
     font-size: 12px;
     text-decoration: none;
+    display: block;
 }
 h3{
     font-size: 32px;
