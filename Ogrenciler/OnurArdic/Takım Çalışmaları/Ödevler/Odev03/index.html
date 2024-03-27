@@ -85,21 +85,138 @@
           </div>
         </div>
 
-        <div class="navbar-bottom">
-          <ul class="navbar-items">
-            <li class="navbar-item"><a href="#">HOME</a></li>
-            <li class="navbar-item"><a href="#">PAGES</a></li>
-            <li class="navbar-item"><a href="#">SERVICE PATS</a></li>
-            <li class="navbar-item"><a href="#">BRAKE</a></li>
-            <li class="navbar-item"><a href="#">CAR BATTEİRES</a></li>
-            <li class="navbar-item"><a href="#">TOOLS & GARAGE</a></li>
+        <div class="navbar-bottom container">
+          <ul class="navbar-item flex">
+            <li class="navbar-item" id="dropdown">
+              <a href="#">HOME</a>
+              <i class="bi bi-caret-down"></i>
+
+              <div class="home-dropdown">
+                <div class="img">
+                  <div class="img-item">
+                    <img src="assets/img/mg-home-1.jpg" alt="mg-home" />
+                    <h4 class="text-center">Home</h4>
+                  </div>
+                  <div class="img-item">
+                    <img src="assets/img/mg-home-2.jpg" alt="mg-home-1" />
+                    <h4 class="text-center">Home - 1</h4>
+                  </div>
+                  <div class="img-item">
+                    <img src="assets/img/mg-home-3.jpg" alt="mg-home-2" />
+                    <h4 class="text-center">Home - 2</h4>
+                  </div>
+                  <div class="img-item">
+                    <img src="assets/img/mg-home-4.jpg" alt="mg-home-3" />
+                    <h4 class="text-center">Home - 3</h4>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="navbar-item">
+              <a href="#" id="dropdown-second">PAGES</a>
+              <i class="bi bi-caret-down"></i>
+              <!-- 
+              <div class="dropdown-second">
+                <ul class="dropdown-items">
+                  <h5>Home</h5>
+                  <li>İtem</li>
+                  <li>İtem1</li>
+                  <li>İtem2</li>
+                  <li>İtem3</li>
+                </ul>
+
+                <ul>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                </ul>
+
+                <ul>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                </ul>
+              </div> -->
+            </li>
+            <li class="navbar-item">
+              <a href="#" id="dropdown">SERVICE PATS</a>
+              <i class="bi bi-caret-down"></i>
+            </li>
+            <li class="navbar-item">
+              <a href="#" id="dropdown">BRAKE</a>
+              <i class="bi bi-caret-down"></i>
+            </li>
+            <li class="navbar-item">
+              <a href="#" id="dropdown">CAR BATTEİRES</a>
+              <i class="bi bi-caret-down"></i>
+            </li>
+            <li class="navbar-item">
+              <a href="#" id="dropdown">TOOLS & GARAGE</a>
+              <i class="bi bi-caret-down"></i>
+            </li>
           </ul>
 
-          <div class="contact-area">
-            <!-- TODO : İLETİŞİMDEN DEVAM EDECEĞİM -->
+          <div class="contact-area bg-orange flex flex-center">
+            <div class="icon">
+              <i class="bi bi-headset"></i>
+            </div>
+
+            <div class="contact-headphone">
+              <span>Call us 24/7</span>
+              <p>+08 9229 8228</p>
+            </div>
           </div>
         </div>
       </nav>
+
+      <div class="hero">
+        <div class="container">
+          <div class="hero-content grid">
+            <div class="left-hero-content flex">
+              <h2 class="mt-10">SEARCH BY VEHİCLE</h2>
+              <select name="hero-option" id="hero-option">
+                <option value="item1">Select Make</option>
+                <option value="item2">İtem-2</option>
+              </select>
+
+              <select name="hero-option" id="hero-option">
+                <option value="item1">Select Model</option>
+                <option value="item2">İtem-2</option>
+              </select>
+
+              <select name="hero-option" id="hero-option">
+                <option value="item1">Select Year</option>
+                <option value="item2">İtem-2</option>
+              </select>
+
+              <select name="hero-option" id="hero-option">
+                <option value="item1">Select Engine</option>
+                <option value="item2">İtem-2</option>
+              </select>
+
+              <div class="btn-wrapper">
+                <a href="#" class="btn btn-hero-left">GO</a>
+              </div>
+            </div>
+
+            <div class="right-hero-content">
+              <h2>BIG SALE</h2>
+              <h4 class="mt-10">40% off Sale Is Black</h4>
+              <p class="mt-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse?
+              </p>
+
+              <div class="right-hero-btn-wrapper">
+                <a href="#" class="btn mt-10">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
   </body>
 </html>
