@@ -13,7 +13,8 @@
 .header-top {
     color: var(--white);
     display: grid;
-    grid-template-columns: 307px auto 307px;
+    /* grid-template-columns: 307px auto 307px; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding-top: 9px;
     padding-bottom: 9px;
     line-height: 18px;
@@ -35,7 +36,8 @@
 }
 .menu-top-header-menu {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
     text-align: center;
     margin: 0 33px;
 }
@@ -283,8 +285,9 @@ select option {
 }
 .categories{ 
     display: grid;
-    grid-template-columns: 1fr 2.5fr;   
-    padding: 30px 0;   
+    /* grid-template-columns: 1fr 2.5fr; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));   
+    padding: 30px 0; 
 }
 .categories-head{
     text-align: left;
@@ -300,8 +303,9 @@ select option {
 }
 .categories-items{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));   
+    gap: 20px;  
 }
 .catagories-items-img{
     display: grid;
@@ -319,9 +323,9 @@ select option {
     font-size: 17px;
     /* yazıyı ortalayamadım */
 }
-.categories-items:hover{
-    /* hover yapamadım */
-} 
+/* .categories-items:hover{
+    hover yapamadım 
+}  */
 .ok-butonu{
     width: 40px;
     height: 40px;
@@ -397,13 +401,14 @@ select option {
     color:#FFB91F;
     transition: 150ms ease 0s;
 }
-.blog-part1{
-    /* border-width: 0 0 1px;
+
+/* .blog-part1{
+     border-width: 0 0 1px;
     border-style: solid;
     padding-bottom: 30px;
     margin-bottom: 30px;
-    border-color: rgba(235,235,235,1); */
-}
+    border-color: rgba(235,235,235,1); 
+} */
 .blog-part2-paragraf1{
     border-width: 0 0 1px;
     border-style: solid;
