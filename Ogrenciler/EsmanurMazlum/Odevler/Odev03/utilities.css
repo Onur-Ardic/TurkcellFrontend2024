@@ -40,6 +40,9 @@
 .fs-36 {
   font-size: 36px;
 }
+.fs-40 {
+  font-size: 40px;
+}
 .fs-48 {
   font-size: 48px;
 }
@@ -83,6 +86,12 @@
 }
 .pl-15 {
   padding-left: 15px;
+}
+.pl-40 {
+  padding-left: 40px;
+}
+.fw-400 {
+  font-weight: 400;
 }
 .fw-500 {
   font-weight: 500;
