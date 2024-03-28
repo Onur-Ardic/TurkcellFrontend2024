@@ -189,7 +189,7 @@
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 1px solid;
+  border: 1px solid rgba(rgba(101, 8, 8, 0.636));
   padding: 15px;
 }
 #new-products .new-product-title {
@@ -201,7 +201,10 @@
   size: 400px;
   padding: 10px;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 /* popular-parts */
 #popular-parts #shop-by-content {
   display: grid;
