@@ -1,0 +1,79 @@
+.text-style1 {
+    text-align: center;
+    font-weight: 600;
+    color: #ff5714;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+}
+.text-style2 {
+    text-align: center;
+    font-size: 28px;
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+    font-weight: 600;
+}
+.text-style3 {
+    text-align: center;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+.bottom-box {
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+}
+.box {
+    border: 1px solid;
+    border-color: rgb(199, 195, 195);
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.boxImage {
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    width: 400px;
+    height: 200px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.title {
+    color: #24272c;
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+.title:hover {
+    color: #ff5714;
+    transition: all 0.3s;
+}
+.paragraf {
+    color: #8492a6;
+    margin-top: 0.5rem;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+.readMore {
+    color: #24272c;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.readMore:hover {
+    color: #ff5714;
+    transition: all 0.3s;
+}

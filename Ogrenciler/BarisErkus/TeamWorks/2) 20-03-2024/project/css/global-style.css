@@ -5,112 +5,101 @@
     box-sizing: border-box;
     color: white;
 }
-
 ul,
 ol {
     list-style: none;
 }
-
 li {
     color: red;
 }
-
 a {
     text-decoration: none;
 }
-
 /* Flex */
 .flex-row {
     display: flex;
     flex-direction: row;
 }
-
 .flex-column {
     display: flex;
     flex-direction: column;
 }
-
 .align-center {
     align-items: center;
 }
-
 .justify-center {
     justify-content: center;
 }
-
 .flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 /* Position */
 .relative {
     position: relative;
 }
-
 .absolute {
     position: absolute;
 }
-
 /* Text */
 .text-center {
     text-align: center;
 }
-
 .wrap {
     flex-wrap: wrap;
 }
-
 .bold {
     font-weight: bold;
 }
-
 /* Border */
 .circle-border {
     border-radius: 50%;
 }
-
 .border-none {
     border: none;
 }
-
 /* Cursor */
 .pointer {
     cursor: pointer;
 }
-
 /* Margin */
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
 }
-
 .ml-auto {
     margin-left: auto;
 }
-
 .mr-auto {
     margin-right: auto;
 }
-
-
 .header {
     margin-left: -0.938rem;
     margin-right: -0.938rem;
     margin-bottom: 6.25rem;
     width: 70%;
 }
-
 .title {
     font-size: 2.5rem;
     line-height: 3.125rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
 }
-
 .paragraph {
     font-size: 1rem;
     line-height: 1.625rem;
+    color: #dbe2fb;
+}
+.main-background-color{
+    background-color: #032055;
+}
+.main-background-color-2 {
+    background-color: #001232;
+}
+.linear-background-color {
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+.main-text-color {
     color: #dbe2fb;
 }
