@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.button {
+  font-family: Outfit;
+  font-style: normal;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.mt-30 {
+  margin-top: 2rem;
+}
+
+.mb-30 {
+  margin-bottom: 2rem;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+.pt-30 {
+  padding-top: 2rem;
+}
+
+.pb-30 {
+  padding-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-orange {
+  background-color: #feb91f;
+}
+
+.color-orange {
+  color: #feb91f;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+.bannerSection .grid {
+  background-color: white;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+.banner1 {
+  background-image: url(https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/banner-1.jpg);
+  background-size: cover;
+}
+.banner2 {
+  background-image: url(https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/banner-2.jpg);
+  background-size: cover;
+}
+.bannerSection h2 {
+  font-size: 48px;
+  color: #fff;
+  line-height: 1.2;
+  padding-top: 40px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 0.9px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+.bannerSection p {
+  margin: 0 0 20px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  padding-left: 30px;
+}
+.bannerSection .bannerButton {
+  padding: 30px 0px 50px 30px;
+}
+.bannerSection .bannerButton .button {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #feb91f;
+  color: black;
+  font-weight: 400;
+  cursor: pointer;
+}
+.bannerSection .bannerButton .button:hover {
+  background-color: white;
+  color: #feb91f;
+  transition: 0.1s ease;
+}
+.productSection .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.productSection .itemHeading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 1;
+  font-size: 27px;
+  letter-spacing: 0.9px;
+  font-weight: 700;
+}
+.productSection .item {
+  display: flex;
+  justify-content: stretch;
+  border: 1px solid whitesmoke;
+}
+.productSection .item .image {
+  width: 180px;
+  height: auto;
+}
+.productSection .item .itemInfo h5 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+.productSection .item .itemInfo .icon {
+  color: #feb91f;
+}
+.productSection .item .itemInfo .itemButton button {
+  background: rgba(255, 185, 31, 1);
+  border-color: rgba(255, 185, 31, 1);
+  border-radius: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.productSection .item .itemInfo .itemButton button:hover {
+  background: black;
+  border-color: black;
+  color: #feb91f;
+}
+.popularSection .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  font-size: 23px;
+  letter-spacing: 0.9px;
+  font-weight: 700;
+  margin: 100px 0px 75px 0px;
+}
+.popularSection .grid {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.popularSection .grid .part {
+  width: 100%;
+  border: 1px solid #cbcbcb;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 20px;
+  padding: 14px 5px;
+  cursor: pointer;
+  font-family: Outfit;
+  font-style: normal;
+}
+.popularSection .grid .part:hover {
+  background-color: #feb91f;
+}
+.popularSection .grid .part a {
+  color: black;
+}

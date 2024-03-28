@@ -1,0 +1,30 @@
+.box {
+    text-align: center;
+}
+.outer-div {
+    width: 1000px;
+    height: 500px;
+}
+.header-box {
+    background-color: aqua;
+    height: 50px;
+}
+.nav-box {
+    background-color: green;
+    width: 500px;
+    height: 400px;
+    float: left;
+}
+.main-box {
+    background-color: greenyellow;
+    width: 500px;
+    height: 400px;
+    float: right;
+}
+.clear {
+    clear: both;
+}
+.footer-box {
+    background-color: blue;
+    height: 50px;
+}
