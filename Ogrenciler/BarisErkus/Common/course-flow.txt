@@ -1,8 +1,9 @@
 11-03-2024: Meet and talk about HTML
 13-03-2024: Using tables, input types and making applications about them
 15-03-2024: Make HTML applications and introduction to CSS
-18-03-2024: CSS, sudo class, sudo element, responsive design and flex usage, CSS game (https://flexboxfroggy.com), Making a application ( (No text animation))
+18-03-2024: CSS, sudo class, sudo element, responsive design and flex usage, CSS game (https://flexboxfroggy.com), Making a application (https://shreethemes.in/upstart/layouts/index.html)
 20-03-2024: Making a application (https://geniusdevs.com/themeforest/biniog/biniog-dark1/index.html)
 22-03-2024: Making a application (https://geniusdevs.com/themeforest/biniog/biniog-dark1/index.html) and have a chat
 25-03-2024: Grid, Grid game (https://cssgridgarden.com/#tr)
-27-03-2024: 
+27-03-2024: Making a application (https://demo.theme-sky.com/druco/)
+29-03-2024: 

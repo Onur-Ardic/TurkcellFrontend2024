@@ -7,6 +7,7 @@
 - [Github for Desktop uygulaması](https://desktop.github.com/)
 - [Github](https://github.com)
 - [Bizim proje](https://github.com/waroi/TurkcellFrontend2024)
+- [Bazı kursların ücretsiz yüklenmişleri] https://courseflix.net/
 
 ## Extra Kaynaklar
 

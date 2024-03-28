@@ -1,0 +1,54 @@
+/* Pseudo Class */
+
+.link{
+    color: crimson;
+  }
+  .link:active{
+    color: rgb(238, 0, 255);
+  }
+  .link:visited{
+    color: rgb(255, 136, 0);
+  }
+  .link:hover {
+    color: rgb(0, 255, 8);
+  }
+  
+  .listItem{
+    list-style-type: none;
+    font-size: 18px;
+    color: crimson;
+  }
+  
+  /* .listItem:first-child{
+    color: blue;
+  } */
+  
+  /* .listItem:nth-child(odd){
+    color: blue;
+  } */
+  
+  /* .listItem:nth-child(2n-1) {
+    color: blue;
+  } */
+  
+  .listItem:nth-child(-n+6) {
+    color: blue;
+  }
+  
+  /* Psuedo Element */
+  
+  .text::first-letter{
+    font-size: 50px;
+  }
+  
+  .text::first-line{
+    color: blue;
+  }
+  
+  .text::after{
+    content: "Merhaba Ben Sona Eklendim!!!";
+  }
+  
+  .text::before {
+    content: "Merhaba Ben Öncesine Eklendim!!!";
+  }
