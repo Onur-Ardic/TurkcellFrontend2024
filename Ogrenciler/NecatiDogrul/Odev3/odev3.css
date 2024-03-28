@@ -64,7 +64,7 @@ h2{
   background-color: red;
   height: 600px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(4,1fr)
   grid-template-rows: 250px 250px;
   gap: 10px;
   
@@ -73,7 +73,7 @@ h2{
 .insideBest{
     display: grid;
     grid-template-rows: 250px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4,1fr);
 }
 
 .box{
@@ -90,7 +90,5 @@ p{
 }
 
 .col-4{
-  padding: 25%;
-
-
+  padding: 50px;
 }
