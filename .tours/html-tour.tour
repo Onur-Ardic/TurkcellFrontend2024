@@ -1,0 +1,11 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "html-tour",
+  "steps": [
+    {
+      "file": "Ogrenciler/EsinOruc/gruopAssignments/gruopAssignment3/index.html",
+      "description": "aaa\n",
+      "line": 10
+    }
+  ]
+}

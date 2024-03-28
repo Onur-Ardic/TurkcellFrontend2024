@@ -1,17 +1,24 @@
 .header-blue{
     background-color: rgba(35,63,146,1);
     width: 100%;
-    height: 45px;
+    padding: 10px 0;
+    /* height: 45px; */
+}
+.header-blue .container{
+  max-width: 100%;
+  /* height: 45px; */
     color: whitesmoke; 
     display: grid;
+grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
 }   
 .header-link{
     display: flex;
+justify-content: flex-end;
 } 
-.padding15px{padding-left: 25px;}
+.padding15px{padding-left: 15px;}
 
 .header-sticky {
   background-color: white;
@@ -27,10 +34,13 @@
   margin-bottom: 20px;
   }
 .header-middle{
+    background-color: white;
     display: flex;
+    /* grid-template-columns: 1fr 1fr 2fr 1fr; */
     text-align: center;
     justify-content: center;
     justify-content: space-evenly;
+
 }
 .logo{
     width: 150px;
@@ -106,6 +116,701 @@
   .col ul {
         list-style-type: none; 
   }
-  .test{
+.test{
     list-style-type: none;
   }
+
+  .car-pipes{
+    width: 100%;
+    display:flex;
+    color: white; 
+    justify-content: space-between ; 
+    flex-wrap: wrap;
+    margin-bottom: 100px;  
+  }
+  .img-div1 {
+    width: 48%;
+    height: 360px;
+    overflow: hidden;
+    position: relative; /* Mutlak konumlandırma için */
+  }
+  
+  .img-div1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  .overlay-text-img {
+    position: absolute;
+    bottom: 25%;
+    left: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .overlay-text-img h2{
+    font-size: 48px;
+    margin: 0;
+
+  } 
+  .overlay-text-img h3 {
+    font-size: 24px;
+    margin: 0;
+}
+.overlay-text-img button {
+  margin-top: 10px; 
+  padding: 10px 20px; 
+  background-color: #ffb91f; 
+  color: black; 
+  border: none; 
+  border-radius: 25px; 
+  cursor: pointer; 
+}
+  
+  .img-div1:hover img {
+    transform: scale(1.1);
+  }
+
+  .overlay-text-img button:hover{
+    background-color: white;
+    color: #FFB91F;    
+  }
+
+  .new-products-ramco {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Öğeler arasındaki boşluk */
+    width: 100%; /* Container genişliği */
+  }  
+  .new-products-ramco .grid-col1 {
+
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    pad: 10px;
+  }
+
+  .items {
+    position: relative;
+  }
+  
+  .items .overlay {
+    position: absolute; 
+    top: 0;
+    left: 2.5%;
+    width: 45%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .items:hover .overlay {
+    opacity: 1; 
+  }
+  
+  .items .overlay-content {
+    color: white;
+  }
+  
+  .items img {
+    max-width: 100%; 
+    vertical-align: middle; 
+  }
+  
+
+
+
+  .new-products-ramco .grid-col1 .items{
+    height: 180px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+    border-bottom:1px black;
+  }
+  .new-products-ramco .grid-col1 .items img{
+    width: 180px;
+    height: 180px;
+    display: block;    
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .item-name{
+    font-size: 20px;
+    margin-bottom: 10px; 
+    transition: transform 0.5s ease;    
+  }
+  .item-name:hover{
+    color:#FFB91F;
+  }
+  .price{
+    color: #233F92;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  .point{
+    height: 24px !important;
+    width: 78px  !important  ;
+  }
+  .buy-item{
+    background-color: #FFB91F;
+    color: black;
+    width: 150px;
+    height: 35px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 0;
+    transition: transform 0.5s ease;
+  }
+
+  .buy-item:hover{
+      background-color: black;
+      color: #FFB91F;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .new-products-ramco {
+      grid-template-columns: 1fr; /* Tek sütun */
+    }  
+  }
+  .genuine-parts{
+    width: 100%;
+    height: 300px;
+    background-image:url('img/section7.jpg');
+    margin-bottom: 50px;
+    background-size: cover; /* Arka plan resmini kapla */
+    background-repeat: no-repeat; /* Tekrar etmeyi engelle */
+    background-position: center; /* Arka plan resmini ortala */
+    position: relative;
+  }
+  .genuine-parts .container{
+    color: white;
+    display: grid;
+  }
+  .genuine-parts .container h1{
+    font-size: 72px;
+  }
+  .genuine-parts .overlay {
+    position: absolute; /* Overlay'ı diğer içeriklerin üstüne yerleştir */
+    top: 0;
+    left: 0;
+    width: 100%; /* Container'ın genişliği kadar */
+    height: 100%; /* Container'ın yüksekliği kadar */
+    background-color: rgba(0, 0, 0, 0.5); /* Siyah yarı saydam arka plan */
+    opacity: 0; /* Başlangıçta görünmez */
+    transition: opacity 0.3s ease; /* Opaklık geçiş efekti */
+    pointer-events: none; /* Overlay üzerindeki tıklamaları engelle */
+}
+.genuine-parts:hover .overlay {
+  opacity: 1; /* Hover durumunda overlay'i görünür yap */
+  pointer-events: auto; /* Overlay üzerindeki tıklamaları etkinleştir */
+}
+
+
+
+
+  @media screen and (max-width: 768px) {
+   
+    .genuine-parts .container{
+      padding-top: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    } 
+    
+    .genuine-parts .overlay {
+      opacity: 1; /* Küçük ekranlarda overlay'i görünür yap */
+      pointer-events: auto; /* Overlay üzerindeki tıklamaları etkinleştir */
+  }
+  
+  
+  }
+  
+ 
+
+  
+
+
+
+
+
+
+
+
+
+
+  /* Ecem Kılıç */
+  /* genel kullanım */
+.body {
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 400;
+}
+/* genel kullanım */
+a {
+  cursor: pointer;
+  background: transparent;
+  transition: 150ms ease 0s;
+  text-decoration: none;
+}
+/* genel kullanım */
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+/* genel kullanım */
+.left {
+  float: left;
+  margin: 5px;
+}
+.right {
+  float: right;
+  margin: 5px;
+}
+.clear {
+  clear: both;
+}
+.categories {
+  /* max-height: 260px; */
+  background-color: #ffb91f;
+  width: 100% !important;
+}
+.categories .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 1%;
+  /* margin-left: 7%; */
+  /* max-height: 250px !important; */
+  overflow: auto;
+  max-width: 100%;
+}
+.categories-header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.categories-btn .btn{
+  border: none;
+  color: black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  opacity: 0.5;
+}
+.categories-btn .btn:hover {
+  opacity: 1;
+}
+.categories-1 {
+  margin-right: 20px;
+}
+.category {
+  box-sizing: border-box;
+  border-color: rgba(235, 235, 235, 1);
+  text-align: center;
+}
+.category-img {
+  max-width: 170px !important;
+  border-radius: 6px;
+  transition: transform 0.3s;
+}
+.category:hover .category-img {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+.bestseller{
+  padding: 50px 0;
+}
+.bestseller .container{
+  max-width: 100%;
+}
+.bestseller-header {
+  /* text-align: center; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: center;
+  align-items: center; */
+  max-width: 600px;
+  margin: 0 auto;
+}
+.bestseller-header .yellow{
+  color: #ffb91f;
+  text-align: center;
+}
+.bestseller-header .black {
+  color: black;
+  text-align: center;
+}
+.bestseller-header .black:hover{
+  color: #ffb91f;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 5px;
+  grid-auto-rows: 420px;
+}
+.product {
+  width: 305px;
+  height: 310px;
+  box-sizing: border-box;
+  position: relative;
+}
+@media (max-witdh:940px) {
+  .product{
+    width: 200px;
+  }
+}
+.border {
+  border: 1px solid #e3dede;
+  padding: 10px;
+}
+.product-label {
+  width: 50px;
+  height: 25px;
+  cursor: pointer;
+  background-color: rgba(212,56,17,1);
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 2%;
+  font-size: 12px;
+}
+.product-image {
+  flex: 0 0 200px;
+  margin-right: 20px;
+}
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+}
+.rating > input {
+  display: none;
+}
+.rating > label {
+  display: inline-block;
+  font-size: 15px;
+  color: #ccc;
+  cursor: pointer;
+}
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  color: #ffb91f;
+}
+.price {
+  margin-bottom: 10px;
+}
+.discounted-price {
+  font-weight: bold;
+  color: rgba(35, 63, 146, 1);
+}
+.original-price {
+  text-decoration: line-through;
+  color: rgba(134, 134, 134, 1);
+}
+/* .hidden {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: transparent;
+}
+.products-product:hover .hidden {
+  opacity: 1;
+}
+.hidden .hdnbtn {
+  padding: 5px 10px;
+  background-color: rgba(240, 240, 240, 1);
+  border: none;
+  border-radius: 5px;
+}
+.hidden .hdnbtn:hover {
+  background-color: #0056b3;
+}
+.hidden {
+  display: none;
+} */
+.buttons-hidden {
+  display: block;
+}
+.hdnbtn {
+  cursor: pointer;
+  box-sizing: border-box;
+  color: white;
+  background-color: transparent;
+  opacity: 0;
+  text-align: center;
+  padding: 2%;
+}
+.hdnbtn-icons {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.hdnbtn-icons .img {
+  width: 40px;
+  height: 40px;
+}
+.product:hover .hdnbtn{
+  color: white;
+  background-color: rgba(134, 134, 134, 1);
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+/* ecem kılıç */
+
+/* egemen kaplan */
+.link:hover {
+  color: #FFB91F;
+  transition: color 0.2s ease;
+}
+ul li{
+  list-style: none;
+}
+.btn-yellow{
+  min-width: 115px;
+  background-color: #FFB91F;
+  color: black;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 42px;
+  margin: 0 auto;
+  /* margin-top: 24px; */
+  font-weight: 600;
+  line-height: 25px;
+  cursor: pointer;
+}
+.search-by-vehicle{
+  /* z-index: -1; */
+  background: url("./img/section1-bg.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  padding: 100px 0;
+}
+.search-by-vehicle::before {
+  /* z-index: -1; */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.search-by-vehicle-container{
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 0.5fr)); */
+  gap: 50px;
+}
+.search-by-vehicle-form-side{
+  /* grid-area: search-by-vehicle-form-side; */
+  z-index: 1;
+  background: white;
+  padding: 40px 32px;
+  border-radius: 10px;
+  text-align: center;
+}
+.header-search-form{
+  display: flex;
+  display: inline;
+}
+.dropdown-search{
+  border: none;
+}
+.button-header-search{
+  border-radius:100%   ;
+  background-color: #FFB91F;
+  
+}
+.button-header-search img{
+  height: 80%;
+  width: 80%;
+}
+
+.header-middle-search{
+  background-color: rgb(248, 246, 246);
+  border-radius: 15 px;
+  width: 350px;
+  height: 35px; 
+  justify-content: center;
+  align-items: center;  
+}
+.form-title{
+  margin-bottom: 34px;
+}
+.search-form{
+  display:grid    ;
+  grid-template-columns: 1fr;
+  text-align: center; 
+  gap: 20px;
+}
+.search-form-selects{
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.search-form-select{
+  padding: 12px 30px 12px 15px;
+  margin-bottom: 15px;
+  /* margin-right: 10px; */
+  border: 0.1px solid rgb(203, 200, 200);
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.search-by-vehicle-content{
+  /* grid-area: search-by-vehicle-content; */
+  z-index: 1;
+  color: white;
+  display: grid;
+  align-items: center;
+}
+.vehicle-content-h{
+  font-size: 3rem;
+}
+.vehicle-content-btn{
+  background: white;
+  padding: 16px 35px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 42px;
+  cursor: pointer;
+}
+.vehicle-content-btn:hover{
+  background: #FFB91F;
+}
+@media screen and (max-width: 991px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .search-by-vehicle-form-side{
+      padding: 20px 16px;
+  }
+  .search-by-vehicle-content{
+      order: -1;
+  }
+  .search-form{
+      grid-template-columns: auto auto;
+  }
+  .search-form input{
+      margin: 0;
+  }
+  .search-form-selects{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .search-form-select{
+      height: 100%;
+
+  }
+  .search-by-vehicle-content{
+      text-align: center;
+  }
+}
+@media screen and (max-width: 790px) {
+  .search-by-vehicle-form-side{
+      padding: 10px 8px;
+  }
+  .search-form-selects{
+  grid-template-columns: 1fr 1fr;
+  }
+  .search-form-select{
+      height: 80%;
+      padding: 10px;
+  }
+  .search-form{
+      grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header-middle{
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+  .header-bottom{
+    display: none;
+  }
+  .header-blue .container{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* shop by popular parts */
+.shop-by-popular-parts{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 90px;
+  /* max-width: 100%; */
+}
+.popular-parts-container{
+  max-width: 100%;
+}
+.popular-parts-title{
+  margin-bottom: 55px;
+  font-size: 1.25rem;
+}
+.popular-parts-list{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.popular-part{
+  padding:10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(235, 235, 235, 1);
+  border-radius: 10px;
+}
+.popular-part a{
+  color: black;
+}
+.popular-part:hover{
+  cursor: pointer;
+  background: #FFB91F;
+}
+
+/* egemen kaplan */
