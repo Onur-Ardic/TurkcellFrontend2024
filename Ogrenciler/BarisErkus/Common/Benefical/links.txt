@@ -3,10 +3,13 @@
 - https://developer.mozilla.org/
 - https://devdocs.io/
 
-# Challenge
+# Challenges
 - https://www.frontendmentor.io/challenges/
 - https://cssgridgarden.com/#tr
 - https://flexboxfroggy.com
 
-# Design
+# Design Tools
 - https://coolors.co/59e3bc/
+
+# Examples
+- https://github.com/1BarisErkus/HTML-CSS-Examples
