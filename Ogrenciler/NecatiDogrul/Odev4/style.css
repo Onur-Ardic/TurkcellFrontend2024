@@ -3,6 +3,13 @@
     box-sizing: border-box;
 }
 
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .container{
     background-color: #FFB91F;
     width: 100%; 
@@ -11,14 +18,17 @@
     justify-items: space-evenly;
     padding: 40px 200px;
 }
+
 .card-img img{
     width: 183px;
     height: auto;
     border-radius: 20px;
 }
+
 .card-header{
     display: flex;
 }
+
 .discount-badge {
     grid-column: 1;
     grid-row: 1; 
@@ -29,73 +39,76 @@
     position: absolute; 
     top: 10; 
     left: 10; 
-    font-size: 12px;
     font-family: "Outfit", sans-serif;
+    font-size: 12px;
     font-optical-sizing: auto;
     font-weight: bold;
-    font-style: normal;
-  }
-
-  .outfit{
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
   }
 
 .card-header h3 {
-    font-size: 17px;
-    font-weight: 400;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
+    font-size: 17px;
+    font-weight: 400;
     font-style: normal;
     margin: 0px auto;
 }
+
 .categories-h2{
     margin-top: 30px;
-    font-weight: bold;
     font-size: 40px;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
+    font-weight: bold;
     font-style: normal;
 }
+
 .font{
-    font-size: 18px;
-    font-weight: 600;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
+    font-size: 18px;
+    font-weight: 600;
     font-style: normal;
     color: #233F92;
     text-align: start;
 }
+
 .rating img{
     width: 14px;
     height: 14px;
 }
+
 .rating{
     margin-top: 7px;
 }
+
 .card:first-child{
     margin-right: 90px;
     transition: none;
 }
+
 .card:first-child:hover {
-    color: inherit; /* Renk değerini kalıtılan değere geri getir */
-    transform: scale(1); /* Normal boyuta dönüş */
-    background-color: initial; /* Arka plan rengini varsayılana geri döndür */
+    color: inherit;
+    transform: scale(1); 
+    background-color: initial; 
 }
+
 .card:hover {
     color: white;
-    transform: scale(0.95); /* Kartın küçülme efekti */
-    transition: transform 0.3s; /* Dönüşüm efekti süresi */
+    transform: scale(0.95); 
+    transition: transform 0.3s; 
 }
+
 .subtitle{
     margin-top: 6px;
     font-size: 17px;
-    font-weight: 500;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
+    font-weight: 500;
     font-style: normal;
 }
+
 .left-arrow{
     margin-top: 20px;
     margin-right: 10px;
@@ -112,10 +125,12 @@
     border-radius: 50%;
     opacity: 0.8;
 }
+
 .right-arrow:hover{
     transition: ease 0.2s;
     background-color: white;
 }
+
 .left-arrow:hover{
     background-color: white;
 }
@@ -125,26 +140,16 @@
         width: 100%;
         padding: 10px;
     }
-    .container-best{
-        background-color: #FFFFFF;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        padding: 0px;
-    }
 }
+
 @media (max-width: 768px){
     .container{
         grid-template-columns: repeat(2,1fr);
         width: 100%;
         padding: 10px;
     }
-    .container-best{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows:repeat(8,1fr) ;
-        width: 100%;
-        padding: 0px;
-    }
 }
+
 .container-best{
     background-color: #FFFFFF;
     width: 100%;
@@ -153,14 +158,17 @@
     padding: 50px 200px;
     grid-template-columns: 310px 310px 310px 310px;
 }
+
 .card-best{
     padding: 20px;
     border:0.3px solid rgb(218, 218, 218);
     position: relative;
 }
+
 .card-best:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
 .best-header{
     grid-column: 1/span 4;
     text-align: center;
@@ -171,25 +179,112 @@
     align-items: flex-start;
     gap: 5px;
 }
+
 .bestSellerParagraf{
     font-size:36px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 700;
+    font-style: normal;
 }
+
 .orange{
     color: #FFB91F;
 }
+
 .best-img img{
     width: 270px;
     height: auto;
     border-radius: 20px;
 }
+
 .best-header2{
     display: flex;
     justify-content: center;
     column-gap: 50px;
     padding-top: 60px;
 }
+
 .best-header h4 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 500;
+    font-style: normal;
     text-align: start;
+}
+
+@media (max-width: 1000px){
+    .container-best{
+        background-color: #FFFFFF;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 768px){
+    .container-best{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:repeat(4,1fr) ;
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+.container-why{
+    height: 600px;
+    background-image: url(../Odev3/images/home-about.jpg);
+    width: 100%;
+    display: grid;
+    padding: 0px 270px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.card-why{
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.card-why:nth-of-type(1){
+    grid-column: 1/span 3;
+    align-self: flex-end;
+    
+    
+}
+
+.card-why:nth-of-type(2){
+    grid-column: 1/span 3;
+    font-size: 40px;
+    align-self: center;
+    
+}
+
+.card-why-img img{
+    width: 70px;
+    height: auto;
+}
+
+.card-why h4{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card-why p{
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .container-why {
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(5, 1fr); 
+        padding: 0;
+    }
 }
