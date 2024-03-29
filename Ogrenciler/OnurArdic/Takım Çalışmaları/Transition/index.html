@@ -25,13 +25,25 @@
         font-weight: bold;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        transform: translateX(-30px) rotate(60deg) scale(0.5);
-        transition: all 0.4s ease-in-out;
+        /* transform: translateX(-30px) rotate(60deg) scale(0.5);
+        transition: all 0.4s ease-in-out; */
+        animation: key 2s infinite ease-in-out;
       }
 
+      @keyframes key {
+        from {
+          background-color: aqua;
+          transform: translateY(-30px);
+        }
+
+        to {
+          background-color: blue;
+          transform: translateY(30px);
+        }
+      }
       .box:hover {
-        transform: translateX(30px);
-        background-color: aqua;
+        /* transform: translateX(30px);
+        background-color: aqua; */
       }
     </style>
   </head>
