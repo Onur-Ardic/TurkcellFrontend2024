@@ -5,15 +5,17 @@
   grid-template-columns: auto auto auto;
   column-gap: 10px;
   padding: 9px 15px;
+  align-items: center;
 }
 
 .header-top .header-delivery {
   padding: 5px;
 }
 
-.header-menu > ul {
+.header-menu  ul {
   grid-template-columns: auto auto auto auto;
   column-gap: 20px;
+  align-items: center;
 }
 
 .header-menu > ul > li > a:hover {
@@ -477,7 +479,7 @@ footer {
 ul {
   list-style-type: none;
 }
-li {
+footer > li {
   margin-bottom: 20px;
 }
 li:hover {
