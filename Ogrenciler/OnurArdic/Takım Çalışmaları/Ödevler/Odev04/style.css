@@ -16,7 +16,9 @@
 }
 
 /* Hero Start */
-
+main .hero {
+  height: 100vh;
+}
 main .hero .hero-wrapper {
   top: 100px;
 }

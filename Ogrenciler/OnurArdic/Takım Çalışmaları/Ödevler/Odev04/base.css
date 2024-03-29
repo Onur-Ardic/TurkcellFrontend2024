@@ -10,6 +10,7 @@ font-family: "Chivo", sans-serif;
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  font-family: "Chivo", sans-serif;
 }
 
 .container {
@@ -42,6 +43,10 @@ font-family: "Chivo", sans-serif;
 
 .flex-start {
   justify-content: flex-start;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .mt-10 {
@@ -118,4 +123,20 @@ font-family: "Chivo", sans-serif;
 
 .size-xl {
   font-size: 64px;
+}
+
+.size-l {
+  font-size: 40px;
+}
+
+.size-m {
+  font-size: 24px;
+}
+
+.size-s {
+  font-size: 16px;
+}
+
+.size-xs {
+  font-size: 12px;
 }
