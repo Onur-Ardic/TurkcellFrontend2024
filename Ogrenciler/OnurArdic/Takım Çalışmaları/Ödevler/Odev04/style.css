@@ -15,15 +15,52 @@
   font-size: 24px;
 }
 
-/* Hero Start */
+/* !------------Hero Start------------- */
 main .hero {
   height: 100vh;
 }
 main .hero .hero-wrapper {
-  top: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(48%, 50%));
 }
+
+main .hero .container .hero-left .front-text {
+  background-color: var(--color-green);
+  display: inline-block;
+  border-radius: 20px;
+}
+
+main .hero .container .hero-left .back-text {
+  color: var(--p-shadow);
+}
+
+main .hero .container .hero-left .hero-btn {
+  background-color: var(--color-black);
+  border-radius: 8px;
+}
+
+main .hero .container .hero-left .hero-btn-how {
+  margin-left: 30px;
+}
+
+main .hero .container .hero-left .hero-ref {
+  font-weight: bold;
+}
+
+main .hero .container .hero-left .hero-ref span:last-child {
+  color: var(--p-shadow);
+}
+
+main .hero .container .hero-left .hero-btn-how span {
+  color: var(--color-green);
+}
+
+main .hero .container .hero-right {
+  padding-left: 70px;
+  margin-top: 110px;
+}
+
 main .hero .container .hero-right img {
-  width: 400px;
+  width: 100%;
 }
 
 main .hero .container .hero-right .main-hero img {
@@ -79,4 +116,19 @@ main .hero .container .hero-right .hero-balance img {
   100% {
     transform: translateX(0);
   }
+}
+
+/* Companies */
+.companies .compaines-wrapper .companies-img {
+  flex-wrap: wrap;
+}
+
+.companies .compaines-wrapper .companies-img img {
+  width: 200px;
+}
+
+.companies .compaines-wrapper .companies-img img:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease-in-out all;
+  transform: translateY(-5px);
 }

@@ -4,6 +4,16 @@
 
 font-family: "Chivo", sans-serif;
  */
+
+:root {
+  --title-text: #101828;
+  --p-shadow: #475467;
+  --color-black: #101828;
+  --color-green: #006d77;
+  --ice-blue: #bee1e6;
+  --color-beige: #fff3ea;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +36,9 @@ font-family: "Chivo", sans-serif;
 
 .flex {
   display: flex;
+}
+
+.align-center {
   align-items: center;
 }
 
@@ -65,12 +78,20 @@ font-family: "Chivo", sans-serif;
   margin-bottom: 30px;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
 .p-1 {
   padding: 1rem;
 }
 
 .p-2 {
   padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
 }
 
 .pt-10 {
@@ -103,6 +124,10 @@ font-family: "Chivo", sans-serif;
 
 .color-black {
   color: black;
+}
+
+.color-white {
+  color: white;
 }
 
 .text-center {
