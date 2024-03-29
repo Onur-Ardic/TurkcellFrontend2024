@@ -410,3 +410,63 @@
     gap: 15px;
   }
 }
+.chooseUs{
+  background-image: url("https://demothemesky-be87.kxcdn.com/druco/wp-content/uploads/2022/08/home-about.jpg");
+}
+
+.chooseUsMain{
+grid-template-areas: 
+ "header2 header1 header2"
+ "mainblock1 mainblock2 mainblock3";
+}
+
+.mainHeader{
+text-align: center;
+color: #EBEBEB;;
+font-size:20px;
+
+}
+.headline-tittle{
+ line-height: 1.16em;
+ letter-spacing: 0.9px;
+ font-style: normal;
+ font-family: "Outfit", sans-serif;
+ font-weight: 700;
+}
+.mainBlock{
+ padding: 0 20px 0 20px;
+ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ gap: 200px;
+ justify-self:center;
+ text-align: center;
+}
+.imageText{
+ color: #FFB91F;
+ margin-bottom: 12px;
+ line-height: 26px;
+ font-size: 24px;
+ text-align: center;
+}
+.imageTextHead{
+ color: #FFF;
+ font-size: 16px;
+ font-weight: 300;
+ line-height: 1.2;
+ text-align: center;
+
+}
+.featureHead{
+ text-align: center;
+}
+.featureBottom{
+ text-align: center;
+}
+
+.newsLetter{
+ flex-direction: row;
+}
+
