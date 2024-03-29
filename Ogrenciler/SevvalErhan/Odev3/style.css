@@ -12,13 +12,11 @@
     gap: 10rem;
     padding: 0.5rem;
   }
-  
   .header .header-top .orders h4 {
     font-size: 16px;
     font-family: "Outfit", sans-serif;
     font-weight: 200;
   }
-  
   .header .header-top .sale {
     font-size: 12px;
     display: flex;
@@ -26,12 +24,10 @@
   .header .header-top .sale i {
     font-size: 16px;
   }
-  
   .header .header-top .sale span {
     font-size: 14px;
     font-weight: 600;
   }
-  
   .header .header-top-links {
     display: flex;
     grid-template-columns: repeat(5, 20px);
@@ -52,7 +48,6 @@
   .navbar .navbar-top-wrapper {
     border-bottom: 1px solid #ccc;
   }
-  
   .navbar .navbar-top {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
@@ -63,7 +58,6 @@
   .navbar .navbar-top .logo img {
     width: 150px;
   }
-  
   .navbar .navbar-top .search-bar {
     display: flex;
     justify-content: center;
@@ -76,19 +70,16 @@
     background-color: #f8f8f8;
     position: relative;
   }
-  
   .navbar .navbar-top .search-bar select {
     border: none;
     background-color: transparent;
     font-size: 16px;
     padding: 0rem 1rem;
   }
-  
   .navbar .navbar-top .search-bar span {
     padding: 0px 5px;
     color: #ccc;
   }
-  
   .navbar .navbar-top .search-bar input {
     width: 100%;
     padding: 0.5rem 1rem;
@@ -96,7 +87,6 @@
     background-color: transparent;
     outline: none;
   }
-  
   .navbar .navbar-top .search-bar i {
     width: 40px;
     height: 40px;
@@ -110,18 +100,15 @@
     border: none;
     background-color: transparent;
   }
-  
   .navbar .navbar-top .other-icon .navbar-top-icons {
     gap: 1rem;
     color: black;
     font-size: 1.2rem;
   }
-  
   .navbar .navbar-top .other-icon .navbar-top-icons a {
     color: black;
     position: relative;
   }
-  
   .navbar .navbar-top .other-icon .navbar-top-icons a > span {
     position: absolute;
     top: -13px;
@@ -131,38 +118,30 @@
     border-radius: 50%;
     font-size: 14px;
   }
-  
   .navbar .navbar-bottom {
     display: grid;
     grid-template-columns: 3fr 1fr;
   }
-  
   .navbar .navbar-bottom .navbar-item {
     gap: 2rem;
     padding: 0.5rem 0rem;
   }
-  
   .navbar .navbar-bottom .navbar-item a {
     color: black;
   }
-  
   .navbar .navbar-bottom .navbar-item a:hover {
     color: #feb91f;
     transition: 0.2s ease;
   }
-  
   .navbar .navbar-bottom .contact-area {
     width: 100%;
   }
-  
   .navbar .navbar-bottom .contact-area .icon {
     font-size: 30px;
   }
-  
   .navbar .navbar-bottom {
     position: relative;
   }
-  
   .navbar .navbar-bottom .home-dropdown {
     position: absolute;
     background-color: #f1f1f1;
@@ -173,14 +152,12 @@
     visibility: hidden;
     left: -10px;
   }
-  
   .navbar .navbar-bottom .home-dropdown .img {
     display: grid;
     grid-template-columns: repeat(3, 300px);
     gap: 3rem;
     padding: 3rem;
   }
-  
   .navbar .navbar-bottom #dropdown:hover .home-dropdown {
     opacity: 1;
     transition: 1s ease;
@@ -201,7 +178,6 @@
     position: relative;
     top: 100px;
   }
-  
   .hero .hero-content .left-hero-content {
     flex-direction: column;
     gap: 1rem;
@@ -211,7 +187,6 @@
     border-radius: 10px;
     line-height: 100px;
   }
-  
   .hero .hero-content .left-hero-content select {
     width: 80%;
     padding: 1rem 1rem;
@@ -220,52 +195,42 @@
     color: #ccc;
     border-radius: 10px;
   }
-  
   .hero .hero-content .left-hero-content a {
     background-color: #feb91f;
     color: #000;
   }
-  
   .hero .hero-content .left-hero-content a:hover {
     background-color: #000;
     color: #feb91f;
     transition: 0.2s ease;
   }
-  
   .hero .hero-content .right-hero-content {
     top: 40%;
     position: relative;
     color: #fff;
   }
-  
   .hero .hero-content .right-hero-content h2 {
     font-size: 40px;
   }
-  
   .hero .hero-content .right-hero-content h4 {
     font-size: 35px;
   }
-  
   .hero .hero-content .right-hero-content p {
     font-size: 20px;
   }
-  
   .hero .hero-content .right-hero-content .right-hero-btn-wrapper {
     margin-top: 30px;
   }
-  
   .hero .hero-content .right-hero-content a {
     background-color: #fff;
     margin-top: 30px;
     color: #000;
   }
-  
   .hero .hero-content .right-hero-content a:hover {
     background-color: #feb91f;
     color: #fff;
     transition: 0.2s ease;
   }
-  
   /* Categories */
   
   .categories-slider {
