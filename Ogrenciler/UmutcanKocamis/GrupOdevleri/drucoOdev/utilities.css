@@ -4,6 +4,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 .fs-12 {
   font-size: 12px;
@@ -29,11 +31,17 @@
 .fs-20 {
   font-size: 20px;
 }
+.fs-22 {
+  font-size: 22px;
+}
 .fs-30 {
   font-size: 30px;
 }
 .fs-36 {
   font-size: 36px;
+}
+.fs-40 {
+  font-size: 40px;
 }
 .fs-48 {
   font-size: 48px;
@@ -79,6 +87,12 @@
 .pl-15 {
   padding-left: 15px;
 }
+.pl-40 {
+  padding-left: 40px;
+}
+.fw-400 {
+  font-weight: 400;
+}
 .fw-500 {
   font-weight: 500;
 }
@@ -93,4 +107,55 @@
 }
 .hover:hover {
   color: #ffb91f;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.txt-center {
+  text-align: center;
+}
+.pt-150 {
+  padding-top: 150px;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
 }

@@ -134,10 +134,28 @@
   grid-template-columns: repeat(auto-fill, minmax(50px, 220px));
   gap: 1.5rem;
 }
+ 
+ .banner-image{
+  background-image:url(https://demothemesky-be87.kxcdn.com/druco/wp-content/uploads/2022/08/banner-3.jpg);
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+ }
 
-footer ul li a:hover {
-  color: #f8b400;
+ .banner-info{
+  margin-left: 150px;
+  padding-top: 50px;
+  max-width: 500px;
+  line-height: 78px;
+  font-size:18 px;
+ }
+.banner-info>h1{
+  font-size: 90px;
+
 }
+
 
 .footer ul li i {
   margin-right: 10px;
