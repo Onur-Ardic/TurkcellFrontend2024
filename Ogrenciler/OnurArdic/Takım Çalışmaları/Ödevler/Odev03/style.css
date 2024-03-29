@@ -436,6 +436,10 @@
   opacity: 0;
 }
 
+.favori-items .fav-card-items .fav-card-item .fav-card-icon i:hover {
+  background-color: #feb91f;
+}
+
 .favori-items .fav-card-items .fav-card-item:hover .fav-card-icon i {
   visibility: visible;
   opacity: 1;

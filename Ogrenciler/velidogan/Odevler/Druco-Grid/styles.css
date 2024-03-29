@@ -372,6 +372,35 @@
 }
 
 @media screen and (max-width: 768px) {
+  .row{
+    flex: 100%;
+    flex-wrap: wrap;
+  }
+  #header #header-links.container,#categories .container,#bestsellers .row,#new-products .container {
+    width: 740px;
+  }
+  #header #header-top .container,#header #header-content .container,#check-maintain .container  {
+    grid-template-columns: repeat(1, 1fr);
+    width: 740px;
+    gap: 20px;
+  }
+  #header #header-content .container img{
+    justify-self: center;
+  }
+  #header #header-links ul li a {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  #check-maintain {
+    height: 1000px;
+  }
+  #categories .container {
+    grid-template-columns: repeat(3,1fr);
+  }
+  #bestsellers #bestsellers-products,#new-products .item-container,#popular-parts #shop-by-content  {
+    width: 740px;
+    grid-template-columns: repeat(2,1fr);
+  }
   .brands-items {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 50px;
@@ -384,8 +413,36 @@
     grid-template-columns: repeat(2, 1fr);
     padding: 50px 20px 0 20px;
   }
+  #new-products .new-product-title {display: none;}
+  #shop-by-popular-parts .text-center{text-align: left;}
 }
 @media screen and (max-width: 576px) {
+  #header #header-links.container,#categories .container,#bestsellers .row,#bestsellers.container,#new-products .container {
+    width: 520px;
+  }
+  #header #header-top .container,#header #header-content .container,#check-maintain .container,#popular-parts #shop-by-content  {
+    grid-template-columns: repeat(1, 1fr);
+    width: 520px;
+    gap: 20px;
+  }
+  #header #header-content .container img{
+    justify-self: center;
+  }
+  #header #header-links ul li a {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  #check-maintain {
+    height: 1200px;
+  }
+  #categories .container {
+    grid-template-columns: repeat(1,1fr);
+  }
+  #categories .container img,#bestsellers #bestsellers-products img{width: 70%;}
+  #bestsellers #bestsellers-products,#new-products .item-container {
+    width: 520px;
+    grid-template-columns: repeat(1,1fr);
+  }
   .brands-items {
     grid-template-columns: repeat(1, 1fr);
     margin: 0 50px;
