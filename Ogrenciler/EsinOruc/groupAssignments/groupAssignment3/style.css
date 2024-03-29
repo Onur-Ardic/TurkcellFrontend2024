@@ -43,7 +43,6 @@
   width: 100%;
   height: 100%;
 }
-
 .vehicle .container {
   position: relative;
   z-index: 1;
@@ -92,8 +91,28 @@
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   gap: 10px;
-  border: 1px solid #dadada;
+  border: 1px solid #dadada57;
   padding: 20px;
+  position: relative;
+}
+.item .add-to-cart-btn {
+  position: absolute;
+  bottom: -7px;
+  left: 50px;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  margin: 10px;
+}
+.item:hover {
+  background-color: white;
+  transform: scale(1.08);
+  z-index: 10;
+}
+.item:hover .add-to-cart-btn {
+  opacity: 1;
+  visibility: visible;
 }
 .item-img {
   height: auto;
@@ -106,6 +125,21 @@
 .products .container {
   grid-template-columns: repeat(auto-fit, minmax(24rem, 25rem));
 }
+.left-track {
+  height: 350px;
+  width: 700px;
+  background-image: url("assets/banner-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.right-track {
+  height: 350px;
+  width: 700px;
+  background-image: url("assets/banner-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .product-card {
   grid-template-columns: 12rem 12rem;
   margin: 20px;
@@ -116,7 +150,6 @@
 .product-name:hover {
   color: #ffb91f;
 }
-
 .part {
   display: block;
   color: #202020;
@@ -129,38 +162,37 @@
 .part:hover {
   background-color: #ffb91f;
 }
-
 .parts {
   grid-template-columns: repeat(auto-fill, minmax(50px, 220px));
   gap: 1.5rem;
 }
- 
- .banner-image{
-  background-image:url(https://demothemesky-be87.kxcdn.com/druco/wp-content/uploads/2022/08/banner-3.jpg);
+footer ul li a:hover {
+  color: #f8b400;
+}
+
+.banner-image {
+  background-image: url(https://demothemesky-be87.kxcdn.com/druco/wp-content/uploads/2022/08/banner-3.jpg);
   background-position: center;
   width: 100%;
   height: 300px;
   margin-top: 100px;
   margin-bottom: 100px;
- }
+}
 
- .banner-info{
+.banner-info {
   margin-left: 150px;
   padding-top: 50px;
   max-width: 500px;
   line-height: 78px;
-  font-size:18 px;
- }
-.banner-info>h1{
-  font-size: 90px;
-
+  font-size: 18 px;
 }
-
+.banner-info > h1 {
+  font-size: 90px;
+}
 
 .footer ul li i {
   margin-right: 10px;
 }
-
 .footer ul li {
   margin-bottom: 10px;
 }
@@ -190,4 +222,13 @@
 }
 .elementors .single-footer {
   width: 20%;
+}
+.choose-us {
+  background: url(assets/home-about.jpg);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+.choose-us-icon img {
+  max-width: 50%;
 }

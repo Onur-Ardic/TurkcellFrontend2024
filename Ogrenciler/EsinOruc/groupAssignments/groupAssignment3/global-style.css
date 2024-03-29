@@ -64,12 +64,21 @@ a {
 .fz-18 {
   font-size: 18px;
 }
+.fz-24 {
+  font-size: 24px;
+}
 .fz-14 {
   font-size: 14px;
 }
 
+.fz-10 {
+  font-size: 10px;
+}
 .fz-70 {
   font-size: 70px;
+}
+.m-2 {
+  margin: 2rem;
 }
 .mt-15 {
   margin-top: 1rem;
@@ -79,11 +88,17 @@ a {
   margin-top: 2rem;
 }
 
+.mb-15 {
+  margin-bottom: 1rem;
+}
 .mb-30 {
   margin-bottom: 2rem;
 }
 .mb-60 {
   margin-bottom: 3rem;
+}
+.p-btn {
+  padding: 6px 17px !important;
 }
 
 .p-1 {
@@ -91,6 +106,9 @@ a {
 }
 .p-2 {
   padding: 2rem;
+}
+.pl-2 {
+  padding-left: 2rem;
 }
 .pt-1 {
   padding-top: 1rem;
@@ -104,10 +122,10 @@ a {
 .pb-2 {
   padding-bottom: 2rem;
 }
-.pt-80{
+.pt-80 {
   padding-top: 80px;
 }
-.pt-30{
+.pt-30 {
   padding-top: 30px;
 }
 .m-auto {
@@ -166,6 +184,9 @@ select {
 .bg-color-black {
   background-color: rgb(20, 20, 20);
 }
+.bg-color-red {
+  background-color: rgb(255, 43, 11);
+}
 .font-color-white {
   color: rgb(255, 255, 255);
 }
@@ -175,6 +196,7 @@ select {
 .font-color-blue {
   color: #233f92;
 }
+
 .font-bold {
   font-weight: bold;
 }
@@ -190,6 +212,11 @@ select {
   border-radius: 45px;
   border: none;
   max-width: max-content;
+}
+.font-line {
+  font-size: 15px;
+  color: #ccc;
+  text-decoration: line-through;
 }
 .hover {
   cursor: pointer;
