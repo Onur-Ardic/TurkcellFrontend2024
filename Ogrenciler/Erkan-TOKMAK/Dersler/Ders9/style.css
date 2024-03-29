@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    height: 100vh;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    /* transition-property: background-color; */
+    /* transition-duration: 1s; */
+    /* transition-timing-function: ease-in-out; */
+    /* transition: background-color 1s, width .5s ease-in-out; */
+    transition: all .5s ease-in-out;
+    /* animation-name: deneme-animasyon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-direction: alternate; */
+    animation: deneme-animasyon 2s infinite ease-in-out;
+}
+
+.box:hover h1{
+    background-color: greenyellow;
+    /* width: 200px; */
+    /* height: 75px; */
+    /* border-radius: 50px; */
+    /* transform: scale(2); */
+    /* transform: rotate(45deg); */
+    transform: scale(1) rotate(45deg) translate(100px, 100px);
+}
+
+@keyframes deneme-animasyon{
+    0%{
+        transform: translateX(0px);
+        background-color: orangered;
+    }
+    50%{
+        transform: translateX(100px);
+        background-color: greenyellow;
+    }
+    100%{
+        transform: translateX(0px);
+        background-color: orangered;
+    }
+}
