@@ -57,6 +57,7 @@ a {
 .fz-36 {
   font-size: 36px;
 }
+
 .fz-40 {
   font-size: 40px;
 }
@@ -102,6 +103,12 @@ a {
 }
 .pb-2 {
   padding-bottom: 2rem;
+}
+.pt-80{
+  padding-top: 80px;
+}
+.pt-30{
+  padding-top: 30px;
 }
 .m-auto {
   margin: 0 auto;
@@ -183,4 +190,10 @@ select {
   border-radius: 45px;
   border: none;
   max-width: max-content;
+}
+.hover {
+  cursor: pointer;
+}
+.hover:hover {
+  color: #ffffff;
 }
