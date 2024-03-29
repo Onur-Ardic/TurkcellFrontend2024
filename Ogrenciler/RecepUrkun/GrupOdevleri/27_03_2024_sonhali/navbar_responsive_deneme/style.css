@@ -75,24 +75,12 @@
 
 .header-search form {
     color: rgba(32, 32, 32, 1);
-    background-color: rgba(248, 248, 248, 1);
+    background-color: rgba(235, 235, 235, 1);
     max-width: 100%;
     display: flex;
+    flex-flow: row wrap;
     border-radius: 60px;
-}
-
-.search-field {
-    display: grid;
-    grid-template-columns: 300px 40px;
-}
-
-.logo-wrapper {
-    max-height: 70px;
-    padding: 0 134px 0 0;
-}
-
-.logo-wrapper img {
-    width: 150px;
+    padding: 4px 18px 4px 30px;
 }
 
 .select-category {
@@ -105,6 +93,48 @@
     margin-right: 7px;
     text-transform: capitalize;
     background-color: transparent;
+    position: relative;
+}
+.search-table{
+    flex: 1;
+    position: relative;
+}
+
+.search-field {
+    display: flex;
+    width: 100%;
+}
+
+.search-field input[type="text"] {
+    padding: 12px 60px 12px 18px;
+    border-width: 0;
+    background: transparent;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    font-weight: 400;
+    border-radius: 60px;
+}
+
+.search-field .search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 42px;
+    width: 40px;
+    height: 40px;
+    right: -14px;
+    position: absolute;
+    background-color: var(--primary);
+}
+
+.logo-wrapper {
+    max-height: 70px;
+    padding: 0 134px 0 0;
+}
+
+.logo-wrapper img {
+    width: 150px;
 }
 
 select option {
@@ -212,7 +242,7 @@ select option {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 184px;
+        width: 203px;
         justify-content: flex-start;
         gap: 0px;
     }
@@ -226,6 +256,7 @@ select option {
         order: 2;
         gap: 0 !important;
         flex-direction: column;
+        margin-right: 50px;
     }
 
     .header-middle .language-currency {
@@ -239,8 +270,9 @@ select option {
     .header-top .call_us {
         font-weight: 700;
         display: flex;
-        flex-direction: column;
-        margin-left: 15px;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
     }
 
     .header-top .call_us a{
@@ -250,6 +282,10 @@ select option {
     .header-top {
         display: flex;
         justify-content: space-between;;
+    }
+
+    .header-search{
+        width: 825px;
     }
 
 }
