@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Exercise - 29.03.2024</title>
+    
+    <!-- Hasan YASEN -->
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .box {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+
+        /* animation-duration: 4s, animation-delay: 3s */
+        animation: my-box-animation 4s infinite linear 3s;
+      }
+
+      @keyframes my-box-animation {
+        0% {
+          transform: translateX(0px);
+        }
+
+        50% {
+          transform: translateX(-200px);
+          background-color: navy;
+        }
+
+        100% {
+          transform: translateX(200px);
+          background-color: yellow;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
