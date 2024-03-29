@@ -271,3 +271,15 @@ footer ul li a:hover {
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(228, 227, 228);
 }
+
+@media (max-width: 768px) {
+  .header-middle .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-middle .container {
+    grid-template-columns: 1fr;
+  }
+}
