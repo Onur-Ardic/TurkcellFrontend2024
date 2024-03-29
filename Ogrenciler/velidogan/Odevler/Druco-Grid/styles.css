@@ -376,7 +376,7 @@
     flex: 100%;
     flex-wrap: wrap;
   }
-  #header #header-links.container,#categories .container,#bestsellers .row,#new-products .container {
+  #header #header-links.container,#categories .container,#bestsellers.container,#new-products .container {
     width: 740px;
   }
   #header #header-top .container,#header #header-content .container,#check-maintain .container  {
