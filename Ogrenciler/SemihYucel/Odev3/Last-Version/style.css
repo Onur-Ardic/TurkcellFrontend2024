@@ -52,12 +52,12 @@ select {
 .icons_ svg {
   width: 24px;
   height: 24px;
-  margin-right: 5px; /* İkonlar arasında biraz boşluk bırakmak için */
+  margin-right: 5px; 
 }
 .icons_ span {
-  margin-right: 10px; /* Metin ve ikonlar arasında biraz boşluk bırakmak için */
-  font-size: 14px; /* Metin boyutunu ayarlamak için */
-  text-transform: capitalize; /* Metinleri baş harfi büyük olarak ayarlar */
+  margin-right: 10px; 
+  font-size: 14px; 
+  text-transform: capitalize; 
 }
 .menu {
   display: grid;
@@ -107,7 +107,7 @@ footer h1 {
   outline: none;
   margin-bottom: 5px;
   border: none;
-  color: #000; /* Yazı rengi */
+  color: #000; 
   font-size: 16px;
   margin: 10px;
   width: 400px;
@@ -127,10 +127,10 @@ footer h1 {
   width: 110px;
 }
 .a {
-  height: 100%; /* .a etiketinin yüksekliğini dolduracak */
+  height: 100%; 
   display: flex;
-  align-items: center; /* İçeriği dikeyde hizalama */
-  justify-content: center; /* İçeriği yatayda hizalama */
+  align-items: center; 
+  justify-content: center; 
 }
 .navThirdElement {
   background-color: red;
