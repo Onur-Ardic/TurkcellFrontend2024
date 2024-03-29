@@ -1,0 +1,80 @@
+/* !Navbar Start */
+.navbar {
+  padding: 2rem 0.5rem;
+}
+
+.navbar-wrapper .navbar-links .navbar-link a {
+  color: #000;
+  font-size: 18px;
+  font-family: "Chivo", sans-serif;
+  font-weight: 400;
+}
+
+.navbar-wrapper .sidebar-icon i {
+  color: #000;
+  font-size: 24px;
+}
+
+/* Hero Start */
+
+main .hero .hero-wrapper {
+  top: 100px;
+}
+main .hero .container .hero-right img {
+  width: 400px;
+}
+
+main .hero .container .hero-right .main-hero img {
+  animation: hero-thumb 3.4s infinite ease-in-out;
+}
+
+@keyframes hero-thumb {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+
+  60% {
+    transform: translateY(-5%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+main .hero .container .hero-right .hero-payment img {
+  top: 50px;
+  right: -80px;
+  width: 150px;
+  animation: hero-thumb 2s infinite ease-in-out;
+  border-radius: 15px;
+}
+
+main .hero .container .hero-right .hero-balance img {
+  bottom: 0;
+  left: -80px;
+  width: 150px;
+  animation: hero-balance 2s infinite ease-in-out;
+  border-radius: 15px;
+  width: 200px;
+}
+
+@keyframes hero-balance {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20%);
+  }
+
+  60% {
+    transform: translateX(-20%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
