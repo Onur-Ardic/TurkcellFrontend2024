@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>Semantic HTML</title>
+        <style>
+            .header {
+                background-color: palevioletred;
+            }
+            .nav {
+                background-color: greenyellow;
+            }
+            .aside {
+                background-color: palevioletred;
+            }
+            .main {
+                background-color: aqua;
+            }
+            .article {
+                background-color: blue;
+            }
+            .figure {
+                background-color: yellow;
+            }
+            .p {
+                background-color: yellowgreen;
+            }
+            .section {
+                background-color: blue;
+                color: white;
+            }
+            .footer {
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;"><b>Semantic HTML</b></h1>
+        <table border="1" cellpadding="10" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th colspan="2" class="header"><b>Header</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="2" class="nav">Nav</th>
+                </tr>
+                <tr>
+                    <th class="aside">Aside</th>
+                    <th class="main">Main
+                        <table border="1" cellpadding="10" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th class="article">Article
+                                        <table border="1" cellpadding="10" cellspacing="0" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th class="figure">Figure</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="p">P</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="section">Section</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </th>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2" class="footer"><b>Footer</b></th>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

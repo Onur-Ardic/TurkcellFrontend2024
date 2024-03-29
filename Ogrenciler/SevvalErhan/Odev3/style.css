@@ -97,8 +97,9 @@
 
 .blog .blog-wrapper {
   grid-template-columns: 50% 50%;
+  gap: 4rem;
 }
-.blog .blog-wrapper .blog-news-content .section-title {
+.blog .blog-news-content .section-title {
   text-align: center;
   color: rgba(32, 32, 32, 1);
   font-size: 36px;
@@ -129,13 +130,14 @@
 }
 .blog .blog-image-card .card-body {
   width: 580px;
-  height: 527px;
+  height: 545px;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
-  box-shadow: 0 0 3px rgba(36, 39, 44, 0.15) !important;
+  box-shadow: 0 0 3px rgba(36, 39, 44, 0.15);
   grid-template-columns: 50% 50%;
 }
+
 .blog .blog-image-card .card-body img {
   width: 100%;
   height: 100%;
@@ -151,6 +153,90 @@
   margin-bottom: 10px;
   padding: 10px;
   visibility: visible;
+
+}
+.blog .blog-image-card .card-body .card-body-content-1 {
+    bottom: 0;
+    left: 18%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    visibility: visible;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+  
+  }
+  .blog .blog-image-card .card-body .card-body-content-2 {
+    bottom: 0;
+    left: 18%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    visibility: visible; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+
+  }
+  .blog .blog-image-card .card-body .card-body-content .card-body-info{
+    color: rgb(150, 149, 149);
+    font-size: 85%;
+    text-transform: uppercase;
+    line-height: 28px;
+    font-family: Outfit;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+.blog .blog-image-card .card-body .card-body-content .card-body-info span{
+    font-size: 85%;
+    text-transform: uppercase;
+    line-height: 18px;
+    color: black;
+}
+.blog .blog-image-card .card-body .card-body-content .card-body-info span:hover{
+    font-size: 85%;
+    text-transform: uppercase;
+    line-height: 18px;
+    color: #feb91f;
+}
+.blog .blog-image-card .card-body .card-body-content-1 .card-body-info{
+    color: rgb(150, 149, 149);
+    font-size: 85%;
+    text-transform: uppercase;
+    line-height: 28px;
+    font-family: Outfit;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+.blog .blog-image-card .card-body .card-body-content-1 .card-body-info span{
+    font-size: 85%;
+    text-transform: uppercase;
+    line-height: 18px;
+    color: black;
+}
+.blog .blog-image-card .card-body .card-body-content-1 .card-body-info span:hover{
+    font-size: 85%;
+    text-transform: uppercase;
+    line-height: 18px;
+    color: #feb91f;
+}
+.blog .blog-image-card .card-body .card-body-content-2 .card-body-info{
+    color: rgb(150, 149, 149);
+    font-size: 85%;
+    text-transform: uppercase;
+    line-height: 28px;
+    font-family: Outfit;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+.blog .blog-image-card .card-body .card-body-content-2 .card-body-info span{
+    font-size: 85%;
+    text-transform: uppercase;
+    line-height: 18px;
+    color: black;
+}
+.blog .blog-image-card .card-body .card-body-content-2 .card-body-info span:hover{
+    font-size: 85%;
+    text-transform: uppercase;
+    line-height: 18px;
+    color: #feb91f;
 }
 .blog .blog-image-card .card-body .card-body-title {
   margin-bottom: 10px;
@@ -184,3 +270,48 @@
   font-size: 14px;
   font-weight: 600;
 }
+
+
+.team-support {
+    background-image: url(assets/img/home-about.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 92px 0px 37px 0px;
+    color: #fff;
+    font-family: Outfit;
+    margin-bottom: 3rem;
+    height: 80vh;
+  }
+  .team-support .container .section-support .section-title {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 75px;
+    text-align: center;
+  }
+  .team-support .container .section-support  .support-text{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+  }
+  .team-support .container .row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    align-items: center;
+  }
+  .team-support .container .row .icons{
+    text-align: center;
+  }
+  .team-support .container .row .icons img{
+    max-width: 70px;
+  }
+  .team-support .container .row .icons .icon-text .baslik{
+    color: #ffb91f;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .team-support .container .row .icons .icon-text  .baslik-text{
+    color: #fff;
+    font-weight: 300;
+  }

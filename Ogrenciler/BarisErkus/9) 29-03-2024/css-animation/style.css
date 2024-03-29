@@ -1,0 +1,77 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(170, 171, 172);
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: orangered;
+
+    /* transition-property: background-color, width, height, transform;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out; */
+
+    /* transition: background-color .5s ease-in-out, width .2s linear, height .2s linear; */
+
+    /* transition: all .5s ease-in-out; */
+
+    /* animation-name: animasyon-deneme;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse; */
+
+    animation: animasyon-deneme 1s infinite ease-in-out alternate-reverse;
+}
+
+.box:hover {
+    background-color: greenyellow;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+
+    /* transform: scale(2); */
+    /* transform: rotate(180deg); */
+
+    /* transform: translate(200px, 100px) rotate(180deg) scale(2); */
+}
+
+@keyframes animasyon-deneme {
+    0% {
+        background-color: orangered;
+        width: 200px;
+        height: 200px;
+    }
+
+    25% {
+        background-color: greenyellow;
+        width: 300px;
+        height: 300px;
+    }
+
+    50% {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+    }
+
+    75% {
+        background-color: yellow;
+        width: 300px;
+        height: 300px;
+    }
+
+    100% {
+        background-color: orangered;
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,143 @@
+/* Navbar */
+nav {
+    background-color: #4C01E0;
+    border-bottom: 0.063rem solid rgba(255, 255, 255, 0.15);
+}
+.nav-container {
+    justify-content: space-between;
+    padding: 1.375rem 23.75rem;
+}
+.nav-links ul li {
+    display: inline;
+    padding: 1.25rem;
+}
+.login {
+    padding: 0.625rem 1.25rem;
+    border-radius: 3.125rem;
+}
+/* Home 1 */
+.home-container {
+    padding: 9.375rem 0 12.5rem 0;
+    max-width: 68.75rem;
+}
+.home-container-left-side {
+    padding: 0 0.938rem;
+    width: 50%;
+}
+.home-container-right-side {
+    padding: 0 2rem;
+}
+.main-input {
+    padding: 1.25rem 1.563rem;
+    border-radius: 3.125rem;
+    width: 80%;
+}
+.main-input::placeholder {
+    color: #9CCAF0;
+}
+.main-image {
+    width: 30rem;
+    height: 31.25rem;
+}
+.home-left-side-header {
+    font-size: 3.125rem;
+    margin-bottom: 1.25rem;
+}
+.home-left-side-paragraph {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 3rem;
+}
+.home-left-side-play-button {
+    color: #9CCAF0;
+    width: 3.75rem;
+    height: 3.75rem;
+}
+.home-left-side-footer {
+    gap: 1.875rem
+}
+.main-button {
+    line-height: 3.25rem;
+    padding: 0 1.8rem;
+    background: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+    border: 0;
+    border-radius: 3.125rem;
+    /* Temp */
+    margin-left: 18.75rem;
+    margin-top: 0.25rem;
+}
+/* Top Card */
+.top-card-container {
+    gap: 1.875rem;
+    top: 75%;
+    left: 22%;
+}
+.top-card-item {
+    justify-content: space-around;
+    padding: 1.563rem;
+    width: 20.625rem;
+}
+.top-card-item-icon {
+    padding: 1.25rem;
+    font-size: 1.875rem;
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-bottom: 1.25rem;
+}
+.top-card-item-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.938rem;
+}
+.top-card-item-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.top-card-item-paragraph {
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+/* About 2 */
+.about {
+    padding: 18.75rem 0 6.25rem 0;
+}
+.about-container {
+    padding: 0 0.938rem;
+}
+.about-container-content {
+    gap: 6.25rem;
+    max-width: 77.5rem;
+}
+.about-container-content-right-side-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.375rem;
+}
+.about-container-content-right-side-paragraph {
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+.about-container-content-right-side-item {
+    margin: 1.25rem 0;
+}
+.about-container-content-right-side-item-icon {
+    font-size: 1.25rem;
+    width: 4.375rem;
+    height: 4.375rem;
+    margin-right: 1.25rem;
+    border-radius: 50%;
+    padding: 2.5rem;
+}
+.about-container-content-right-side-item-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+.about-container-content-right-side-item-paragraph {
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+/* Investment */
+.investment {
+}
+.investment-container {
+    margin: 8rem 0;
+}
