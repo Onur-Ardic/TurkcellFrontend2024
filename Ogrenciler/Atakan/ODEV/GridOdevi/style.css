@@ -152,9 +152,30 @@ p,
   margin-top: 12px;
   margin-bottom: 12px;
   line-height: 1.2;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.4px;
 }
 .productSection .item .itemInfo .icon {
   color: #feb91f;
+  font-family: Outfit;
+  font-style: normal;
+}
+.productSection .item .itemInfo .price {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+.productSection .item .itemInfo .blue {
+  color: blue;
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: normal;
+}
+.productSection .item .itemInfo .line {
+  text-decoration: line-through;
+  font-family: Outfit;
+  font-style: normal;
 }
 .productSection .item .itemInfo .itemButton button {
   background: rgba(255, 185, 31, 1);

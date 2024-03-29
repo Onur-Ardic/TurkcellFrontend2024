@@ -14,6 +14,7 @@
   font-size: 36px;
   font-family: "outfit";
   font-style: normal;
+  font-weight: 900;
 }
 .logo {
   padding: 30px;
@@ -55,11 +56,16 @@
   align-items: center;
   gap: 300px;
 }
+.mail {
+  position: relative;
+}
 .mail input {
   width: 500px;
   height: 63px;
-  border-radius: 20px;
+  border-radius: 40px;
   background-color: #ffb91f;
+  padding: 0px 10px;
+  outline: none;
 }
 .mail button {
   color: white;
@@ -69,6 +75,13 @@
   background-color: black;
   cursor: pointer;
   font: 24px;
+  position: absolute;
+  right: 4px;
+  top: 5px;
+}
+.mail button:hover {
+  background-color: #ffb91f;
+  transition: 0.3s ease;
 }
 .new {
   grid-template-areas: new;
@@ -97,17 +110,58 @@
   width: 420px;
   gap: 50px;
 }
+.say p {
+  padding-top: 20px;
+}
 .acccount {
   width: 275px;
+}
+.acccount p {
+  padding-top: 20px;
 }
 .product {
   width: 275px;
 }
+.product p {
+  padding-top: 20px;
+}
 .reader {
   width: 275px;
 }
+.reader p {
+  padding-top: 20px;
+}
 .socialicon {
+  padding-top: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 40px);
+  grid-template-columns: repeat(4, 40px);
   gap: 1px;
+  cursor: pointer;
+}
+.finish {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 100px;
+  gap: 700px;
+  background-color: black;
+  height: 100px;
+  color: white;
+}
+.acccount p {
+  cursor: pointer;
+}
+.acccount p:hover {
+  color: #ffb91f;
+}
+.product p {
+  cursor: pointer;
+}
+.product p:hover {
+  color: #ffb91f;
+}
+.reader p {
+  cursor: pointer;
+}
+.reader p:hover {
+  color: #ffb91f;
 }
