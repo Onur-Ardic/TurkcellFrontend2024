@@ -1,0 +1,54 @@
+.home-page {
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+.container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    
+    gap: 20px; 
+  }
+.block-pricing
+{
+    box-sizing: border-box;
+    width: 1296px;
+    height:551px;
+   
+}
+
+.pricing-cards{
+    width:1320px;
+    height:551px;
+}
+.grid-price{
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 20px;     
+ 
+}
+
+.list-package-feature{
+    font-size:1 rem;
+}
+.box-pricing-item {
+    padding-bottom: 40px;
+    padding-top: 40 px;
+    padding-left: 32 px;
+    padding-left: 32 px;
+    
+}
+.box-info-price
+{
+    width: 240px;
+    height:58px;
+    background-color: aqua;
+}
+.line-bd-bottom{
+    width:240 px;
+    height:112px;
+}
+.list-package-feature{
+
+    width:240 px;
+    height:112px;
+}

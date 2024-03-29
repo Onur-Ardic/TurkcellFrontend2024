@@ -1,0 +1,23 @@
+body{
+    display:flex;
+    height:100 vh;
+    background-color: rgb(247, 247, 247);
+    align-items: center;
+    justify-content: center;
+
+}
+.box{
+    width: 100px;
+    height: 100px;
+    transition:background-color 1s,width .5s ease-in-out;
+    background-color: blue;
+}
+
+.box:hover{
+    background-color: aqua;
+    width:200 px;
+   /* transform:scale(2);
+   transition-timing-function:ease-in-out;
+    transform:translateX(100 px); */
+    transform:translate(100 px,100px)rotate(180deg) scale(.5);
+}
