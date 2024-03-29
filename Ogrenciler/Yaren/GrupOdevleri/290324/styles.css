@@ -1,0 +1,85 @@
+.home-page {
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+.container {
+    width: 100%;
+    max-width: 1200px; /* İsteğe bağlı, container'ın maksimum genişliğini belirler */
+    margin: 0 auto; /* Sayfada ortalamak için */
+     /* 12 birimlik grid */
+    gap: 20px; /* Sütunlar arası boşluk */
+  }
+.block-pricing
+{
+    box-sizing: border-box;
+    width: 1296px;
+    height:551px;
+   
+}
+
+.card-list{
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 20px;     
+ 
+}
+.list-package-feature{
+    font-size:1 rem;
+}
+.box-pricing-item {
+    padding-bottom: 40px;
+    padding-top: 40 px;
+    padding-left: 32 px;
+    padding-left: 32 px;
+    
+}
+.box-info-price
+{
+    width: 240px;
+    height:58px;
+    background-color: aqua;
+}
+.line-bd-bottom{
+    width:240 px;
+    height:112px;
+}
+.list-package-feature{
+
+    width:240 px;
+    height:112px;
+}
+.text-billed{
+    font-weight: 400;
+    font-family: Noto Sans, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.bill-stick.text-billed{
+    color:black;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 65px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.slider-round{
+    position:absolute;
+    cursor:pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px;
+}
+
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
