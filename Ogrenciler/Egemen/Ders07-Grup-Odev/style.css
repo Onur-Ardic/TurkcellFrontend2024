@@ -1,64 +1,52 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Outfit", sans-serif;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
 .link:hover {
-    color: #FFB91F;
+    color: #ffb91f;
     transition: color 0.2s ease;
 }
-ul li{
+
+ul li {
     list-style: none;
 }
-.btn-yellow{
+
+.btn-yellow {
     min-width: 115px;
-    background-color: #FFB91F;
+    background-color: #ffb91f;
     color: black;
     padding: 11px 20px;
     border: none;
     border-radius: 42px;
     margin: 0 auto;
-    /* margin-top: 24px; */
     font-weight: 600;
     line-height: 25px;
     cursor: pointer;
 }
-.container{
-    width: 1140px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-.search-by-vehicle{
-    /* z-index: -1; */
-    background: url("./section1-bg.jpg") center center no-repeat;
+
+.search-by-vehicle {
+    background: url("./img/section1-bg.jpg") center center no-repeat;
     background-size: cover;
     width: 100%;
     position: relative;
     padding: 100px 0;
 }
+
 .search-by-vehicle::before {
-    /* z-index: -1; */
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
 }
-.search-by-vehicle-container{
+
+.search-by-vehicle-container {
     max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
     /* grid-template-columns: repeat(auto-fill, minmax(300px, 0.5fr)); */
     gap: 50px;
 }
-.search-by-vehicle-form-side{
+
+.search-by-vehicle-form-side {
     /* grid-area: search-by-vehicle-form-side; */
     z-index: 1;
     background: white;
@@ -66,21 +54,53 @@ ul li{
     border-radius: 10px;
     text-align: center;
 }
-.form-title{
+
+.header-search-form {
+    display: flex;
+    display: inline;
+}
+
+.dropdown-search {
+    border: none;
+}
+
+.button-header-search {
+    border-radius: 100%;
+    background-color: #ffb91f;
+}
+
+.button-header-search img {
+    height: 80%;
+    width: 80%;
+}
+
+.header-middle-search {
+    background-color: rgb(248, 246, 246);
+    border-radius: 15 px;
+    width: 350px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title {
     margin-bottom: 34px;
 }
-.search-form{
+
+.search-form {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
     gap: 20px;
 }
-.search-form-selects{
+
+.search-form-selects {
     display: grid;
     column-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
-.search-form-select{
+
+.search-form-select {
     padding: 12px 30px 12px 15px;
     margin-bottom: 15px;
     /* margin-right: 10px; */
@@ -91,17 +111,20 @@ ul li{
     font-size: 1rem;
     font-weight: 500;
 }
-.search-by-vehicle-content{
+
+.search-by-vehicle-content {
     /* grid-area: search-by-vehicle-content; */
     z-index: 1;
     color: white;
     display: grid;
     align-items: center;
 }
-.vehicle-content-h{
+
+.vehicle-content-h {
     font-size: 3rem;
 }
-.vehicle-content-btn{
+
+.vehicle-content-btn {
     background: white;
     padding: 16px 35px;
     margin-top: 20px;
@@ -109,79 +132,326 @@ ul li{
     border-radius: 42px;
     cursor: pointer;
 }
-.vehicle-content-btn:hover{
-    background: #FFB91F;
-}
-@media screen and (max-width: 991px) {
-    .container {
-      grid-template-columns: 1fr;
-    }
-    .search-by-vehicle-form-side{
-        padding: 20px 16px;
-    }
-    .search-by-vehicle-content{
-        order: -1;
-    }
-    .search-form{
-        grid-template-columns: auto auto;
-    }
-    .search-form input{
-        margin: 0;
-    }
-    .search-form-selects{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    .search-form-select{
-        height: 100%;
 
-    }
-    .search-by-vehicle-content{
-        text-align: center;
-    }
-  }
-  @media screen and (max-width: 790px) {
-    .search-by-vehicle-form-side{
-        padding: 10px 8px;
-    }
-    .search-form-selects{
-    grid-template-columns: 1fr 1fr;
-    }
-    .search-form-select{
-        height: 80%;
-        padding: 10px;
-    }
-    .search-form{
-        grid-template-columns: 1fr;
-    }
-  }
+.vehicle-content-btn:hover {
+    background: #ffb91f;
+}
+
 /* shop by popular parts */
-.shop-by-popular-parts{
+.shop-by-popular-parts {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 90px;
     /* max-width: 100%; */
 }
-.popular-parts-container{
+
+.popular-parts-container {
     max-width: 100%;
 }
-.popular-parts-title{
+
+.popular-parts-title {
     margin-bottom: 55px;
     font-size: 1.25rem;
 }
-.popular-parts-list{
+
+.popular-parts-list {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
-.popular-part{
-    padding:10px;
+
+.popular-part {
+    padding: 10px;
     display: grid;
     align-items: center;
     justify-content: center;
     border: 2px solid rgba(235, 235, 235, 1);
     border-radius: 10px;
 }
-.popular-part:hover{
-    cursor: pointer;
-    background: #FFB91F;
+
+.popular-part a {
+    color: black;
 }
+
+.popular-part:hover {
+    cursor: pointer;
+    background: #ffb91f;
+}
+
+/* professional team support */
+.professional-team-support {
+    background: url("./professional-team-support.jpg") center center no-repeat;
+    /* background-size: cover; */
+    width: 100%;
+    padding: 50px 0;
+    color: white;
+}
+.professional-team-support .container{
+    max-width: 100%;
+    display: grid;
+    text-align: center;
+}
+.team-support-title{
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+.team-support-content{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.team-support-content-item{
+    display: grid;
+    gap: 10px;
+}
+.team-support-content-item h4{
+    color: #ffb91f;
+}
+.team-support-item-logo img{
+    max-height: 70px;
+}
+/* professional team support */
+
+/* Featured Brands */
+.featured-brands {
+    padding: 50px 0;
+}
+
+.featured-brands .container {
+    max-width: 100%;
+    text-align: center;
+}
+
+.featured-brands-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.featured-brands-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(204px, 1fr));
+}
+
+/* Featured Brands */
+
+/* newsletter */
+.newsletter {
+    background: #ffb91f;
+    padding: 30px 0;
+}
+
+.newsletter-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+}
+
+.newsletter-title {
+    font-size: 1.25rem;
+}
+
+.newsletter-subscribe-area {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.subscribe-form {
+    position: relative;
+}
+
+.subscribe-form input {
+    background: #FFFFFF00;
+    border: 1px solid grey;
+    border-radius: 50px;
+    height: 55px;
+    padding: 15px 0;
+    padding-left: 26px;
+    padding-right: 150px;
+}
+
+.subscribe-form input:focus {
+    outline: none;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.subscribe-form-btn {
+    background: black;
+    color: white;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 0 30px;
+    height: 51px;
+    border: none;
+}
+
+/* newsletter */
+
+/* seyhello */
+.sayhello {
+    padding: 50px 0;
+    background: black;
+    color: rgba(170, 170, 170, 1);
+}
+
+.sayhello .container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 34% 20% 20% 20%;
+    gap: 2%;
+}
+
+.sayhello-title {
+    margin-bottom: 16px;
+    color: white;
+}
+
+.sayhello-list-item {
+    padding: 10px 0;
+}
+
+.sayhello-list-item a {
+    color: rgba(170, 170, 170, 1);
+}
+
+.sayhello-icons {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 12.5%);
+}
+
+.sayhello-icons i {
+    cursor: pointer;
+}
+
+/* seyhello */
+/* footer */
+.footer {
+    padding: 30px 0;
+    border-top: 1px solid rgb(61, 61, 61);
+    background: black;
+    color: white;
+}
+
+.footer .container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.footer-druco span {
+    color: #ffb91f;
+}
+
+.footer-payment {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* footer */
+@media screen and (max-width: 991px) {
+    .search-by-vehicle .container {
+        grid-template-columns: 1fr;
+    }
+
+    .search-by-vehicle-form-side {
+        padding: 20px 16px;
+    }
+
+    .search-by-vehicle-content {
+        order: -1;
+    }
+
+    .search-form {
+        grid-template-columns: auto auto;
+    }
+
+    .search-form input {
+        margin: 0;
+    }
+
+    .search-form-selects {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .search-form-select {
+        height: 100%;
+        padding-right: 15px;
+    }
+
+    .search-by-vehicle-content {
+        text-align: center;
+    }
+
+    .sayhello .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 6%;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .search-by-vehicle-form-side {
+        padding: 10px 8px;
+    }
+
+    .search-form-selects {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .search-form-select {
+        height: 80%;
+        padding: 10px;
+    }
+
+    .search-form {
+        grid-template-columns: 1fr;
+    }
+    .team-support-content{
+        grid-template-columns: 1fr;
+    }
+    .newsletter-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .newsletter-subscribe-area {
+        justify-content: center;
+        margin-top: 24px;
+    }
+
+    .footer .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-payment {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-middle {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .header-bottom {
+        display: none;
+    }
+
+    .header-blue .container {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-subscribe-area input {
+        padding-right: 100px;
+    }
+}
+
+/* egemen kaplan */
