@@ -251,3 +251,23 @@ footer ul li a:hover {
   top: 10px;
   position: absolute;
 }
+.card-image img {
+  width: 650px;
+  height: 400px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.cards {
+  grid-template-columns: 2fr 2fr;
+  gap: 2rem;
+  line-height: 40px;
+}
+.card-left {
+  border: 1px solid rgb(228, 227, 228);
+  border-radius: 20px;
+}
+.card-right-info {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(228, 227, 228);
+}
