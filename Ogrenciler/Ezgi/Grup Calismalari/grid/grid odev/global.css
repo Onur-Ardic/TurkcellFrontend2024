@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+ul li{list-style-type: none; cursor: pointer;}
+p{
+    font-size: 16px;
+    line-height: 1.625;;
+}
+a{cursor: pointer;text-decoration: none;}
+.colorw{color: white;}
+.text-center{text-align: center;}
+.fs-20{font-size: 20px;}
+.grid{display: grid;}
+.flex{display: flex;}
+.flex-between{display: flex; justify-content: space-between;}
+.flex-around{display: flex; justify-content: space-around;}
+.flex-baseline{display: flex; justify-content: baseline; align-items: baseline;}
+.flex-evenly{display: flex;  justify-content: space-evenly;}
+.flex-ycenter{display: flex; align-items: center;}
+.flex-xcenter{display: flex; justify-content: center;}
+.text-center{text-align: center;}
+.fw-700{font-weight: 700;}.fw-600{font-weight: 600;}
+.gap-10{gap: 10px;}
+.gap-20{gap: 20px;}
+.gap-30{gap: 30px;}
+.gap-40{gap: 40px;}
+.px-40{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.px-10{
+    padding-left: 10px; padding-right: 10px;
+}
+.py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}.py-20{padding-top: 20px; padding-bottom: 20px;}
+.py-70{padding-top: 70px; padding-bottom: 70px;}
+.py-30{padding-top: 30px; padding-bottom: 30px;}
+.mt-5{margin-top: 5px;}
+.mt-10{margin-top: 10px;}.mt-5rem{margin-top: 5rem;}
+.mt-20 {margin-top: 20px;}
+.mb-20{margin-bottom: 20px;}
+.ml-10{margin-left: 10px;}
+.mr-20{margin-right: 20px;}
+.mr-10{margin-right: 10px;}
+.mx-auto{margin: 0 auto;}
+.primary-text-color{color: #FFB91F;}
+.secondary-text-color{color: #233F92;}
+.global-text-color{color: #202020;}
+.primary-bg-color{background-color: #FFB91F;}
+.secondary-bg-color{background-color: #233F92;}
+.btn-yellow{
+    background-color: #FFB91F;
+    color: rgba(32, 32, 32, 1);
+    padding: 11px 20px;
+    width: 30%;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 42px;
+    text-decoration: none;
+    border: none;
+}
+.btn-yellow:hover{background-color: black; color: #FFB91F; transition: 150ms;}
+.btn-white{
+    background-color: #FFB91F;
+    color: black;
+    padding: 11px 20px;
+    width: 30%;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 42px;
+    text-decoration: none;
+    border: none;
+}
+.btn-white:hover{background-color: white; color:#FFB91F; transition: 150ms;}
