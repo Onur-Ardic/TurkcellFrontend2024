@@ -1,0 +1,29 @@
+body{
+        display: flex;
+        height: 100vh;
+        background-color: azure;
+        align-items: center;
+        justify-content: center;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    transition: all .5s ease-in-out;
+    animation: animasyon-deneme 3s infinite ease-in-out;
+}
+
+.box:hover{
+    background-color: greenyellow;
+    width: 100px;
+    /* transform :rotate(180deg) scale(2); */
+    transform: translateX(100px);
+    /* transform:scale3d(1,1,.9); */
+}
+
+@keyframes animasyon-deneme {
+    0%   {transform: translateX(0px) ; }
+    50%  {transform: translateX(100px) ;}
+    100% {transform: translateX(0px) ;}
+}
+
