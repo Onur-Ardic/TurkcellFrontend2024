@@ -234,18 +234,28 @@
     text-align:center;
     text-indent:0px;
 }
+@media (max-width:1443px){
+    .container{
+        width: fit-content;
+    }
+}
 
 @media (max-width: 1000px){
     .container{
         grid-template-columns: repeat(3,1fr);
-        width: 100%;
-        padding: 10px;
+        
     }
     .container-best{
         background-color: #FFFFFF;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: 1fr 1fr 1fr 1fr;
         padding: 0px;
+    }
+    .container-why {
+        background-position: center;
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(5, 1fr); 
+        margin: 0;
     }
 }
 
