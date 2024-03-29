@@ -311,3 +311,7 @@
     font-weight: 600;
     margin-bottom: 0.5rem;
   }
+  .team-support .container .row .icons .icon-text  .baslik-text{
+    color: #fff;
+    font-weight: 300;
+  }
