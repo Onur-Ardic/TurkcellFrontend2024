@@ -136,6 +136,18 @@ a {
     font-weight: 400;
 }
 
+.white {
+    color: white;
+}
+
+.gray {
+    color: gray;
+}
+
+.radius-1 {
+    border-radius: 1rem;
+}
+
 /* Border */
 .circle-border {
     border-radius: 50%;
