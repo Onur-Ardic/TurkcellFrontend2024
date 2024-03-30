@@ -195,3 +195,98 @@ nav ul li a {
 .item-icon p {
     margin-top: 1rem;
 }
+
+@media screen and (max-width: 1500px) {
+    .header-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .header-left {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .main-menu {
+        flex-direction: column;
+    }
+
+    .text-heading-2 {
+        font-size: 26px;
+    }
+
+    .text-heading-3 {
+        font-size: 22px;
+    }
+
+    .text-heading-4 {
+        font-size: 18px;
+    }
+
+    .text-heading-5 {
+        font-size: 12px;
+    }
+
+    .text-heading-6 {
+        font-size: 8px;
+    }
+
+    .text-body-lead-large {
+        font-size: 14px;
+    }
+
+    .text-display-3 {
+        font-size: 44px;
+    }
+
+    .text-display-4,
+    .text-heading-1 {
+        font-size: 36px;
+    }
+
+    .home-right .main-image {
+        width: 25rem;
+    }
+
+    .home-right .balance-image {
+        width: 8rem;
+    }
+
+    .home-right .payment-image {
+        width: 6rem;
+    }
+
+    .home-right .border {
+        padding: 14.5rem 12rem;
+    }
+
+    .list-partners img {
+        width: 8rem;
+    }
+
+    .ideas-image {
+        width: 25rem;
+    }
+
+    .chart-image {
+        width: 14rem;
+        bottom: 75rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .home-container {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .ideas-container {
+        flex-direction: column;
+    }
+
+    .chart-image {
+        width: 14rem;
+        bottom: -5rem;
+        right: -10rem;
+    }
+}
