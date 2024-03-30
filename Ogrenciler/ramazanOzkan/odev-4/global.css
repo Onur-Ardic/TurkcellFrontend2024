@@ -7,7 +7,14 @@
     width: 80%;
     margin: auto;
 }
-h1{
+h1,h2,h3,h4,h5,h6,.h7{
+    font-family: 'Chivo';
+}
+p{
+    font-family: 'Noto Sans';
+}
+
+h1{ 
     font-size: 64px;
 }
 h2{
@@ -29,11 +36,6 @@ h6{
     font-size: 14px;
 }
 
-
-
-
-p{ font-family: 'Times New Roman', Times, serif;}
-
 .p-24   {
     font-size: 24px;
 }
@@ -52,3 +54,4 @@ p{ font-family: 'Times New Roman', Times, serif;}
 .p-13{
     font-size:13px;
 }
+
