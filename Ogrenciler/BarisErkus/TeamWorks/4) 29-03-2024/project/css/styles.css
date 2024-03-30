@@ -31,7 +31,7 @@ nav ul li a {
 }
 
 .home-container {
-    padding: 3rem 20rem;
+    padding: 3rem 18rem;
 }
 
 .home-left .digital-marketing {
@@ -88,4 +88,73 @@ nav ul li a {
 .home-left .item-p {
     margin-top: 1rem;
     color: gray;
+}
+
+.home-right {
+    position: relative;
+}
+
+.home-right .main-image {
+    animation: main-animation 2s linear infinite alternate;
+    border-radius: 1rem;
+}
+
+@keyframes main-animation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-1rem);
+    }
+}
+
+.home-right .little-image {
+    position: absolute;
+}
+
+.home-right .balance-image {
+    width: 15rem;
+    animation: sub-animation-balance 3s linear infinite alternate;
+    bottom: 0;
+    left: -4rem;
+    border-radius: 1rem;
+}
+
+@keyframes sub-animation-balance {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-1rem);
+    }
+}
+
+.home-right .payment-image {
+    width: 10rem;
+    animation: sub-animation-payment 3s linear infinite alternate;
+    right: -5rem;
+    top: 5rem;
+    border-radius: 1rem;
+}
+
+@keyframes sub-animation-payment {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-1rem);
+    }
+}
+
+.deneme {
+    position: absolute;
+    border: 2px solid #006D77;
+    left: -1.5rem;
+    top: 1.5rem;
+    padding: 20rem 17rem;
+    border-radius: 1rem;
+    animation: main-animation 2s linear infinite alternate;
 }
