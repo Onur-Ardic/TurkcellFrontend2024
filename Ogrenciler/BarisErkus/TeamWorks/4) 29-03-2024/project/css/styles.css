@@ -81,7 +81,11 @@ nav ul li a {
     width: 35rem;
 }
 
-.happy-clients {
+.home-left .items {
+    gap: 5rem;
+}
+
+.home-left .item-p {
     margin-top: 1rem;
     color: gray;
 }
