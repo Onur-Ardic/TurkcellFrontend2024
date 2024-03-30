@@ -33,3 +33,21 @@
 .color-gray {
   color: #667085;
 }
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.txt-align-center {
+  text-align: center;
+  max-width: 100%;
+  padding: 15px;
+}
