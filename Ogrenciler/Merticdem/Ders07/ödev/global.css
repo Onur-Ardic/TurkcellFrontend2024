@@ -1,10 +1,41 @@
-.mt-40{
-    margin-top: 40px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.mt-50{
-    margin-top: 50px;
+body {
+  color: #101828;
+  font-family: Chivo, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  background: #fff;
+  background-size: contain;
 }
-.text-display-3{
-    font-size: 56px;
-    font-family: "Chivo", sans-serif;
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.text-display-3 {
+  font-size: 56px;
+  font-family: "Chivo", sans-serif;
+}
+.bg-green {
+  background-color: #006d77;
+}
+.bg-lightgreen {
+  background-color: #bee1e6;
+}
+.bg-button {
+  background-color: #101828;
 }
