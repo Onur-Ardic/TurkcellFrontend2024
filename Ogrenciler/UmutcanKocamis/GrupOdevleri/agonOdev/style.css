@@ -1,6 +1,77 @@
 @media screen and (min-width: 450px) {
-  body {
-    background-color: blue;
+  header {
+    width: 100%;
+    height: 50px;
+  }
+  header img {
+    width: 110px;
+    margin-left: 10px;
+  }
+  .hero {
+    width: 100%;
+    height: 650px;
+    gap: 40px;
+    padding-left: 10px;
+  }
+  .pattern-6 {
+    position: absolute;
+    top: 500px;
+    z-index: 0;
+    width: 200px;
+    left: 0;
+  }
+  .digital-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+  }
+  .how-it-works button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  .companies {
+    height: 700px;
+    padding-top: 40px;
+  }
+  .company-img {
+    padding-top: 50px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+  }
+  .company-img img {
+    width: 100px;
+  }
+  .back-img {
+    width: 430px;
+    border-radius: 20px;
+    z-index: 1;
+    position: relative;
+  }
+  .front-img {
+    width: 250px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 20px;
+    right: 30px;
+    margin-top: 340px;
+  }
+  .what-we-do-btn {
+    margin-top: 40px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 20px;
+  }
+  .fresh-content {
+    gap: 30px;
+  }
+  .work-smarter {
+    gap: 15px;
   }
 }
 
