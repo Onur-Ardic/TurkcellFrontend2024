@@ -11,9 +11,6 @@ p {
   font-family: "Noto Sans", sans-serif;
   color: #475467;
 }
-a {
-  text-decoration: none;
-}
 .fs-13 {
   font-size: 13px;
 }
@@ -28,6 +25,9 @@ a {
 }
 .fs-18 {
   font-size: 18px;
+}
+.fs-20 {
+  font-size: 20px;
 }
 .fs-22 {
   font-size: 22px;
@@ -89,10 +89,19 @@ a {
 .color-green {
   color: #006d77;
 }
+.color-white {
+  color: white;
+}
+.color-black {
+  color: #101828;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 90%;
+}
+.text-center {
+  text-align: center;
 }
 .card-rad {
   border-radius: 16px;
@@ -109,11 +118,11 @@ a {
 .flex-row {
   flex-direction: row;
 }
-.flex-wrap {
-  flex-wrap: wrap;
-}
 .align-center {
   align-items: center;
+}
+.align-start {
+  align-items: flex-start;
 }
 .justify-center {
   justify-content: center;
@@ -127,37 +136,12 @@ a {
 .justify-evenly {
   justify-content: space-evenly;
 }
-.text-center {
-  text-align: center;
+.gap10 {
+  gap: 10px;
 }
-.color-lightgray {
-  color: #98a2b3;
+.gap20 {
+  gap: 20px;
 }
-.color-white {
-  color: #ffffff;
-}
-.cursor-pointer {
-  cursor: pointer;
-}
-.transition {
-  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
-}
-ul,
-ol {
-  list-style-type: none;
-}
-.font-noto {
-  font-family: "Noto Sans", sans-serif;
-}
-input:focus {
-  outline: none;
-}
-.width-100 {
-  width: 100%;
-}
-.gap-1 {
-  gap: 1rem;
-}
-.gap-2 {
-  gap: 2rem;
+.gap-30 {
+  gap: 30px;
 }
