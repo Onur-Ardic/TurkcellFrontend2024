@@ -149,7 +149,7 @@ nav ul li a {
     }
 }
 
-.deneme {
+.home-right .border {
     position: absolute;
     border: 2px solid #006D77;
     left: -1.5rem;
@@ -157,4 +157,24 @@ nav ul li a {
     padding: 20rem 17rem;
     border-radius: 1rem;
     animation: main-animation 2s linear infinite alternate;
+}
+
+.partners-container {
+    padding: 5rem 22rem;
+}
+
+.parners-title {
+    margin-bottom: 4rem;
+}
+
+.list-partners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    border-bottom: 1px solid #d0d5dd;
+    padding-bottom: 5.5rem;
+}
+
+.list-partners img {
+    width: 12rem;
 }
