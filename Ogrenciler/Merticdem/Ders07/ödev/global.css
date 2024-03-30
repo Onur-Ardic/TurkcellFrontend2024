@@ -13,13 +13,19 @@ body {
   background: #fff;
   background-size: contain;
 }
-.container {
-  width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
-  margin-left: auto;
+.container{
+  background-color:#fff;
+  padding: 20px;
+  display:block;
+  gap :10px;
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+
 }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
 .mt-40 {
   margin-top: 40px;
 }
@@ -30,12 +36,44 @@ body {
   font-size: 56px;
   font-family: "Chivo", sans-serif;
 }
+.text-display-2{
+  font-family: "Chivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #101828;
+}
 .bg-green {
   background-color: #006d77;
 }
 .bg-lightgreen {
   background-color: #bee1e6;
 }
+.bg-white{
+  background-color:white;
+}
 .bg-button {
   background-color: #101828;
+}
+.flex {
+  display: flex;
+}
+.fd-row{
+  flex-direction: row;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-flex-start {
+  align-items: flex-start;
+}
+.grid {
+  display: grid;
+}
+.gap-30{
+  gap: 30px;
+  list-style-type:none;
 }

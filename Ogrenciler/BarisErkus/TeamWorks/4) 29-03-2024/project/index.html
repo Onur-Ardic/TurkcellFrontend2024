@@ -7,10 +7,263 @@
     <title>Assignment 4</title>
     <link rel="stylesheet" href="./css/global-styles.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
 <body>
-
+    <header>
+        <div class="header-container flex-row align-center">
+            <div class="header-left flex-row align-center">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="./assets/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="header-nav">
+                    <nav class="nav-main-menu">
+                        <ul class="main-menu flex-row">
+                            <li>
+                                <a href="#">Home</a>
+                                <i class="fa-solid fa-sort-down"></i>
+                                <!-- <ul class="sub-menu">
+                                        <li><a href="/"><i class="fi fi-rr-home"></i>Homepage - 1</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-home"></i>Homepage - 2</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-home"></i>Homepage - 3</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-home"></i>Homepage - 4</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-home"></i>Homepage - 5</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-home"></i>Homepage - 6</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-home"></i>Homepage - 7</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-home"></i>Homepage - 8</a></li>
+                                    </ul> -->
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                                <i class="fa-solid fa-sort-down"></i>
+                                <!-- <ul class="sub-menu">
+                                        <li><a href="#"><i class="fi fi-rr-star"></i>About Us - 1</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-star"></i>About Us - 2</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-star"></i>About Us - 3</a></li>
+                                    </ul> -->
+                            </li>
+                            <li>
+                                <a href="#">Company</a>
+                                <i class="fa-solid fa-sort-down"></i>
+                                <!-- <ul class="sub-menu">
+                                        <li><a href="#"><i class="fi fi-rr-gem"></i>Services - 1</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-gem"></i>Services - 2</a></li>
+                                        <li class="hr"><span></span></li>
+                                        <li><a href="#"><i class="fi fi-rr-database"></i>Pricing - 1</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-database"></i>Pricing - 2</a></li>
+                                        <li class="hr"><span></span></li>
+                                        <li><a href="#"><i class="fi fi-rr-headset"></i>FAQs - 1</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-headset"></i>FAQs - 2</a></li>
+                                        <li class="hr"><span></span></li>
+                                        <li><a href="#"><i class="fi fi-rr-briefcase"></i>Career</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-briefcase"></i>Career Detail</a></li>
+                                    </ul> -->
+                            </li>
+                            <li>
+                                <a href="#">Pages</a>
+                                <i class="fa-solid fa-sort-down"></i>
+                                <!-- <ul class="sub-menu">
+                                        <li><a href="#"><i class="fi fi-rr-paper-plane"></i>Contact</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-user-add"></i>Sign Up</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-fingerprint"></i>Log In</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-settings"></i>Reset Password</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-exclamation"></i>Error 404</a></li>
+                                    </ul> -->
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                                <i class="fa-solid fa-sort-down"></i>
+                                <!-- <ul class="sub-menu">
+                                        <li><a href="#"><i class="fi fi-rr-edit"></i>Blog Archive - 1</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-edit"></i>Blog Archive - 2</a></li>
+                                        <li class="hr"><span></span></li>
+                                        <li><a href="#"><i class="fi fi-rr-document-signed"></i>BlogSingle</a></li>
+                                    </ul> -->
+                            </li>
+                            <li>
+                                <a href="#">Shop</a>
+                                <i class="fa-solid fa-sort-down"></i>
+                                <!-- <ul class="sub-menu">
+                                        <li><a href="#"><i class="fi fi-rr-edit"></i>Shop Grid - 1</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-edit"></i>Shop Grid - 2</a></li>
+                                        <li><a href="#"><i class="fi fi-rr-edit"></i>Product Details</a></li>
+                                    </ul> -->
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-right-container flex-row">
+                    <a class="get-started-button bold">Get Started</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <div class="home-container flex-row align-center justify-center">
+            <div class="home-left">
+                <span class="digital-marketing white">Digital Marketing Agency</span>
+                <h1 class="text-display-3">Advanced analytics to grow your business</h1>
+                <p class="text-body-lead-large paragraph">Integrated workflow designed for product
+                    teams. We create world-class development and branding</p>
+                <div class="home-buttons-container flex-row align-center">
+                    <a class="get-started-button white bold" href="#">
+                        Get Start
+                        <i class="fa-solid fa-arrow-right white"></i>
+                    </a>
+                    <a class="how-it-works-button flex-row align-center" href="#">
+                        <i class="fa-solid fa-caret-right"></i>
+                        How it works
+                    </a>
+                </div>
+                <div class="items flex-row">
+                    <div>
+                        <h3 class="text-heading-4">
+                            +<span>38</span>k
+                        </h3>
+                        <p class="item-p gray">Happy Clients</p>
+                    </div>
+                    <div>
+                        <h3 class="text-heading-4">
+                            +<span>45</span>k
+                        </h3>
+                        <p class="item-p">Project Done</p>
+                    </div>
+                    <div>
+                        <h3 class="text-heading-4">
+                            <span>100</span>%
+                        </h3>
+                        <p class="item-p">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home-right relative">
+                <div class="border radius-1 absolute"></div>
+                <img class="main-image radius-1" src="./assets/home.png" alt="home-image">
+                <img class="little-image balance-image radius-1 absolute" src="./assets/balance.png" alt="balance">
+                <img class="little-image payment-image radius-1 absolute" src="./assets/payment.png" alt="payment">
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="partners-container">
+            <h2 class="parners-title text-heading-3 text-center">
+                Trusted by the world’s leading companies
+            </h2>
+            <ul class="list-partners flex-row justify-center wrap">
+                <li>
+                    <a href="/#">
+                        <img alt="Agon" src="./assets/sample-logo-1.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="/#">
+                        <img alt="Agon" src="./assets/sample-logo-2.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="/#">
+                        <img alt="Agon" src="./assets/sample-logo-3.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="/#">
+                        <img alt="Agon" src="./assets/sample-logo-4.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="/#">
+                        <img alt="Agon" src="./assets/sample-logo-5.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="/#">
+                        <img alt="Agon" src="./assets/sample-logo-6.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="/#">
+                        <img alt="Agon" src="./assets/sample-logo-7.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="/#">
+                        <img alt="Agon" src="./assets/sample-logo-8.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="/#">
+                        <img alt="Agon" src="./assets/sample-logo-9.svg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="ideas">
+        <div class="ideas-container flex-row">
+            <div class="ideas-left relative">
+                <img class="ideas-image radius-1" src="./assets/img-2.png" alt="ideas-image">
+                <img class="chart-image absolute radius-1" src="./assets/chart.png" alt="chart">
+            </div>
+            <div class="ideas-right">
+                <span class="what-we-do-button">What We Do, What You Get</span>
+                <h3 class="text-heading-1 ideas-title">Fresh Ideas. Thoughtful Design.</h3>
+                <p class="text-body-lead-large">
+                    Feugiat primis ligula risus auctor egestas and
+                    augue viverra mauri tortor in iaculis magna a feugiat mauris ipsum and placerat viverra tortor
+                    gravida purus.
+                </p>
+                <div class="list-icons flex-column">
+                    <div class="item-icon flex-row">
+                        <span class="icon-left">
+                            <img src="./assets/icon-work.svg" alt="ideas-icon">
+                        </span>
+                        <div>
+                            <h4 class="text-heading-4">
+                                Work smarter with powerful features</h4>
+                            <p class="gray">
+                                Aliquam a augue suscipit, luctus neque purus
+                                ipsum neque at dolor primis libero tempus, blandit
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-icon flex-row">
+                        <span class="icon-left">
+                            <img src="./assets/icon-design.svg" alt="ideas-icon">
+                        </span>
+                        <div>
+                            <h4 class="text-heading-4">
+                                Designed for teams of all sorts and sizes
+                            </h4>
+                            <p class="gray">
+                                Aliquam a augue suscipit, luctus neque purus
+                                ipsum neque at dolor primis libero tempus, blandit
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-icon flex-row">
+                        <span class="icon-left">
+                            <img src="./assets/icon-advance.svg" alt="ideas-icon">
+                        </span>
+                        <div>
+                            <h4 class="text-heading-4">
+                                Advanced analytics to grow your business
+                            </h4>
+                            <p class="gray">
+                                Aliquam a augue suscipit, luctus neque purus
+                                ipsum neque at dolor primis libero tempus, blandit
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

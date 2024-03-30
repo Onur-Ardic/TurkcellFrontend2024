@@ -1,0 +1,110 @@
+/* GLOBAL CSS START */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* scrollbar-width: thin; */
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* body {
+    background-color: #bee1e6
+} */
+
+img {
+    border-radius: 10px;
+}
+
+.mt-80 {
+    /* margin-top: 80px !important; */
+    margin-top: 120px !important;
+}
+
+.mb-60 {
+    margin-bottom: 60px !important;
+}
+
+.text-heading-3 {
+    font-size: 35px;
+    line-height: 38px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/* grow business start */
+
+.block-1 {
+    position: absolute;
+    bottom: 20px;
+    z-index: 3;
+    width: 220px;
+    height: 260px;
+    margin-left: -420px;
+    margin-bottom: -50px;
+}
+
+.block-2 {
+    z-index: 3;
+    position: absolute;
+    top: 25%;
+    height: 169px;
+    width: 155px;
+    /* right:80px; */
+    margin-right: -465px;
+}
+
+/* leading-companies */
+
+.list-partners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list-partners li {
+    width: 18%;
+    margin-bottom: 30px;
+}
+
+.item-logo {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    line-height: 40px;
+    max-width: 170px;
+    max-height: 40px;
+}
+
+.item-logo:hover {
+    box-shadow: 14px 14px 36px rgba(49, 48, 48, 0.2);
+    transform: translateY(-5px);
+    transition: all .5s ease;
+}

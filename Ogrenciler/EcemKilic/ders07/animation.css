@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    height: 100vh;
+    background-color: azure;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    animation: animasyon-deneme 2s infinite ease-in-out;
+}
+.box:hover {
+    background-color: fuchsia;
+    width: 100px;
+}
+
+@keyframes animasyon-deneme {
+    0%{
+        transform: translateX(0px);
+        background-color: darkgreen;
+    }
+}
