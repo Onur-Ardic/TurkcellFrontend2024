@@ -39,3 +39,18 @@ body {
 .bg-button {
   background-color: #101828;
 }
+.flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-flex-start {
+  align-items: flex-start;
+}
+.grid {
+  display: grid;
+}
