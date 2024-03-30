@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+}
+ul li{list-style-type: none;}
+p{
+    font-size: 16px;
+    line-height: 1.625;;
+}
+a{cursor: pointer;text-decoration: none;}
+.grid{display: grid;}
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.p-20{
+    padding: 20px;
+}
+.fs-24{
+    font-size: 36px !important;
+}
+.mt-20 {margin-top: 20px;}
+.mb-20{margin-bottom: 20px;}
+.mx-auto{margin: 0 auto;}
+.primary-text-color{color: #FFB91F;}
+.secondary-text-color{color: #233F92;}
+.global-text-color{color: #202020;}
+.primary-bg-color{background-color: #FFB91F;}
+.secondary-bg-color{background-color: #233F92;}
+.btn-yellow{
+    background-color: #FFB91F;
+    color: rgba(32, 32, 32, 1);
+    padding: 11px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 42px;
+    text-decoration: none;
+    border: none;
+}
+.btn-yellow:hover{background-color: black; color: #FFB91F;}
+
+.chooseUs{
+     background-image: url("https://demothemesky-be87.kxcdn.com/druco/wp-content/uploads/2022/08/home-about.jpg");
+}
+
+.chooseUsMain{
+grid-template-areas: 
+    "header2 header1 header2"
+    "mainblock1 mainblock2 mainblock3";
+}
+
+.mainHeader{
+ text-align: center;
+ color: #EBEBEB;;
+ font-size:20px;
+
+}
+.headline-tittle{
+    line-height: 1.16em;
+    letter-spacing: 0.9px;
+    font-style: normal;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+}
+.mainBlock{
+    padding: 0 20px 0 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    justify-self:center;
+    text-align: center;
+}
+.imageText{
+    color: #FFB91F;
+    margin-bottom: 12px;
+    line-height: 26px;
+    font-size: 24px;
+    text-align: center;
+}
+.imageTextHead{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+
+}
+.featureHead{
+    text-align: center;
+}
+.featureBottom{
+    text-align: center;
+}
+
+.newsLetter{
+    flex-direction: row;
+}

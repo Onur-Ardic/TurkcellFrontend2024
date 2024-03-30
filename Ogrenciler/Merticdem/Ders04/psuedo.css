@@ -1,0 +1,16 @@
+.link{
+    color: crimson;
+}
+
+.link:active{
+    color: rgb(1, 212, 47);
+
+}
+
+.link:visited{
+    color: blueviolet;
+}
+
+.link:hover{
+    color: cyan;
+}
