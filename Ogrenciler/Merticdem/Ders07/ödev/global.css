@@ -13,16 +13,25 @@ body {
   background: #fff;
   background-size: contain;
 }
-.container{
-  background-color:#fff;
+.container {
+  background-color: #fff;
   padding: 20px;
-  display:block;
-  gap :10px;
-  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
-
+  display: block;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -36,11 +45,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 56px;
   font-family: "Chivo", sans-serif;
 }
-.text-display-2{
+.text-display-2 {
   font-family: "Chivo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  color: #101828;
+}
+.color-black {
   color: #101828;
 }
 .bg-green {
@@ -49,20 +61,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .bg-lightgreen {
   background-color: #bee1e6;
 }
-.bg-white{
-  background-color:white;
-}
-.bg-button {
-  background-color: #101828;
+.bg-white {
+  background-color: white;
 }
 .flex {
   display: flex;
 }
-.fd-row{
+.fd-row {
   flex-direction: row;
 }
 .justify-content-center {
   justify-content: center;
+}
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
+.justify-content-flex-end {
+  justify-content: flex-end;
+}
+.justify-content-space-between {
+  justify-content: space-between;
 }
 .align-items-center {
   align-items: center;
@@ -70,10 +88,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .align-items-flex-start {
   align-items: flex-start;
 }
+.align-items-baseline {
+  align-items: baseline;
+}
 .grid {
   display: grid;
 }
-.gap-30{
+.gap-30 {
   gap: 30px;
-  list-style-type:none;
+  list-style-type: none;
+}
+.blackButton {
+  border-radius: 4px;
+  background-color: #101828;
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  padding: 18px 20px;
+  border: 2px solid transparent;
+  text-decoration: none;
 }
