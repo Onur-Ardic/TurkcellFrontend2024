@@ -47,9 +47,6 @@ nav ul li a {
 
 .home-left .paragraph {
     margin: 2.5rem 0;
-    padding-right: 2.5rem;
-    color: gray;
-    font-size: 1.5rem;
 }
 
 .home-buttons-container {
@@ -77,10 +74,6 @@ nav ul li a {
     padding-right: 0.75rem;
 }
 
-.home-right img {
-    width: 35rem;
-}
-
 .home-left .items {
     gap: 5rem;
 }
@@ -95,6 +88,7 @@ nav ul li a {
 }
 
 .home-right .main-image {
+    width: 35rem;
     animation: main-animation 2s linear infinite alternate;
     border-radius: 1rem;
 }
@@ -177,4 +171,33 @@ nav ul li a {
 
 .list-partners img {
     width: 12rem;
+}
+
+.ideas-container {
+    padding: 5rem 22rem;
+    gap: 5rem;
+}
+
+.what-we-do-button {
+    color: #558d96;
+    background-color: #BEE1E6;
+    border-radius: 3.125rem;
+    padding: 1rem 2rem;
+}
+
+.ideas-title,
+.ideas-p {
+    margin: 2.5rem 0;
+}
+
+.ideas-image {
+    width: 35rem;
+    border-radius: 1rem;
+}
+
+.chart-image {
+    width: 18rem;
+    border-radius: 1rem;
+    bottom: -5rem;
+    right: -5rem;
 }
