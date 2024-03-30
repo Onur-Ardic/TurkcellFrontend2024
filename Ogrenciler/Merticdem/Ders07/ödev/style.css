@@ -1,0 +1,16 @@
+.header .main-header .header-left .header-nav {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.header-left{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.header-Logo{
+    justify-content: flex-end;
+
+}
+.header-nav{
+}
