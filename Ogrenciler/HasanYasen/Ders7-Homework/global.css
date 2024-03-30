@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h7 {
+    font-family: 'Chivo';
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 56px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+.h7 {
+    font-size: 14px;
+}
+
+p {
+    font-family: 'Noto Sans';
+}
+
+.p-24 {
+    font-size: 24px;
+}
+
+.p-20 {
+    font-size: 20px;
+}
+
+.p-18 {
+    font-size: 18px;
+}
+
+.p-16 {
+    font-size: 16px;
+}
+
+.p-14 {
+    font-size: 14px;
+}
+
+.p-13 {
+    font-size: 13px;
+}
