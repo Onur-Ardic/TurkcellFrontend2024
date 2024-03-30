@@ -1,0 +1,19 @@
+/* responsive  */
+@media screen and (max-width: 992px) {
+    .list-partners li {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list-partners li {
+        width: 24%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .list-partners li {
+        width: 32%;
+        padding: 15px;
+    }
+}

@@ -96,6 +96,12 @@ a {
     letter-spacing: 0;
 }
 
+.text-body-lead-large {
+    font-size: 24px;
+    line-height: 32px;
+    color: #475467;
+}
+
 .text-heading-4,
 .text-heading-5 {
     font-weight: 700;
@@ -122,6 +128,24 @@ a {
 .text-display-4,
 .text-heading-1 {
     font-size: 56px;
+}
+
+.text-body-lead-large,
+.text-body-text-md {
+    font-family: Noto Sans, sans-serif;
+    font-weight: 400;
+}
+
+.white {
+    color: white;
+}
+
+.gray {
+    color: gray;
+}
+
+.radius-1 {
+    border-radius: 1rem;
 }
 
 /* Border */
