@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="styles.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -12,17 +12,266 @@
     <title>Document</title>
 </head>
 <body>
-    <header id="header"></header>
+    <header id="header">
+        <div class="container">
+            <div class="main-header row">
+                <a href="home"><img src="images/logo.svg" alt=""></a>
+                <ul class="row">
+                    <li> <a href="#">Home <i></i> </a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+                <button class="btn"><a href="#">Get Started</a></button>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
-        <section id="advanced"></section>
-        <section id="trusted"></section>
-        <section id="fresh"></section>
-        <section id="discover"></section>
-        <section id="built"></section>
-        <section id="section-a"></section>
-        <section id="our-happy-customers"></section>
+        <section id="advanced">
+            <div class="container row flex-wrap">
+                <div id="advanced-left" class="col-2 p-50">
+                    <h4 class="badge">Digital Marketing Agency</h4>
+                    <h1 class="supTitle">Advanced analytics to grow your business</h1>
+                    <p class="paragraph">Integrated workflow designed for product teams. We create world-class development and branding</p>
+                    <button class="btn">Get Started!</button><span><i class="fa-solid fa-play"></i> How it works ?</span>
+                    <div class="row">
+                        <div class="col-3">
+                            <h3>+38K</h3>
+                            <small>Happy Clients</small>
+                        </div>
+                        <div class="col-3">
+                            <h3>+45K</h3>
+                            <small>Project Done</small>
+                        </div>
+                        <div class="col-3">
+                            <h3>100%</h3>
+                            <small>Client Satisfaction</small>
+                        </div>
+                    </div>
+                </div>
+                <div id="advanced-right" class="col-2">
+                    <img id="payment" src="images/payment.png" alt="">
+                    <img id="balance" src="images/balance.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="trusted">
+            <div class="container text-center p-50">
+                <h2 class="title">Trusted by the world’s leading companies</h2>
+                <ul class="trusted-companies-list row flex-wrap  column-gap">
+                        <li><img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-1.svg" alt="agon-logo"></li>
+                        <li><img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-2.svg" alt="monst-logo"></li>
+                        <li><img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-3.svg" alt="figwire-logo"></li>
+                        <li><img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-4.svg" alt="evara-logo"></li>
+                        <li><img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-5.svg" alt="frox-logo"></li>
+                        <li><img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-6.svg" alt="alithemes-logo"></li>
+                        <li><img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-7.svg" alt="nestmart-logo"></li>
+                        <li><img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-8.svg" alt="theflow-logo"></li>
+                        <li><img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-9.svg" alt="stacker-logo"></li>
+                </ul>
+            </div>
+        </section>
+        <section id="fresh">
+            <div class="container">
+                <div class="freshideas row column-gap p-50">
+                    <div class="freshideas-left col-2">
+                            <img src="https://agon-nextjs-13.vercel.app/assets/imgs/page/homepage2/chart.png" alt="freshideas-grafic">
+                    </div>
+                    <div class="freshideas-right col-2">
+                        <h4 class="badge">What We Do, What You Get</h4>
+                        <h3 class="supTitle">Fresh Ideas. <br> Thoughtful Design.</h3>
+                        <p class="paragraph">Feugiat primis ligula risus auctor egestas and augue viverra mauri tortor in iaculis magna a feugiat mauris ipsum and placerat viverra tortor gravida purus.</p>
+                        <div class="freshideas-columntab">
+                            <div class="freshideas-column row">
+                                <span class="freshideas-column-icon">
+                                    <img src="https://agon-nextjs-13.vercel.app/assets/imgs/page/homepage2/icon-work.svg" alt="agon">
+                                </span>
+                                <div class="freshideas-column-text">
+                                    <h4 class="freshideastitle title">Work smarter with powerful features</h4>
+                                    <p class="paragraph-freshideas">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</p>
+                                </div>
+                            </div>    
+                            <div class="freshideas-column row">
+                                <span class="freshideas-column-icon">
+                                    <img src="https://agon-nextjs-13.vercel.app/assets/imgs/page/homepage2/icon-design.svg" alt="agon">
+                                </span>
+                                <div class="freshideas-column-text">
+                                    <h4 class="freshideastitle title">Designed for teams of all sorts and sizes</h4>
+                                    <p class="paragraph-freshideas">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</p>
+                                </div>
+                            </div>
+                            <div class="freshideas-column row">
+                                <span class="freshideas-column-icon">
+                                    <img src="https://agon-nextjs-13.vercel.app/assets/imgs/page/homepage2/icon-advance.svg" alt="agon">
+                                </span>
+                                <div class="freshideas-column-text">
+                                    <h4 class="freshideastitle title">Advanced analytics to grow your business</h4>
+                                    <p class="paragraph-freshideas">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>    
+        </section>
+        <section id="discover">
+            <div class="container text-center p-100">
+                    <h3 class="supTitle">Discover powerful features to boost your productivity</h3>
+                    <p class="paragraph">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla.</p>
+                <div class="discover-table row">
+                    <div class="discover-left card-discover col-2">
+                        <h3>Cross-Platform</h3>
+                        <p>Your site is not complete with only landings. Get essential inner pages using our ready demos.</small></p>
+                        <div class="discover-img">
+                            <img src="https://agon-nextjs-13.vercel.app/assets/imgs/page/homepage2/temp-1.png" alt="discover1">
+                        </div>
+                    </div>
+                    <div class="discover-right card-discover col-2">
+                        <h3>Extremely Flexible</h3>
+                        <p>Your site is not complete with only landings. Get essential inner pages using our ready demos.</small></p>
+                        <div class="discover-img">
+                            <img src="https://agon-nextjs-13.vercel.app/assets/imgs/page/homepage2/temp-2.png" alt="discover1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="built" class="container p-50">
+            <h2 class="supTitle text-center">Built exclusively for you</h2>
+            <p class="paragraph text-center">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla.</p>
+            <div class="row column-gap">
+                <div class="col-3 row column-gap align-items-start">
+                    <i class="fa-solid fa-shapes text-center icon"></i>
+                    <div>
+                        <h2>1. Acquisition</h2>
+                        <p><small>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla.</small></p>
+                    </div>
+                </div>
+                <div class="col-3 row column-gap align-items-start">
+                    <i class="fa-solid fa-heart-circle-bolt text-center icon"></i>
+                    <div>
+                        <h2>2. Activation</h2>
+                        <p><small>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla.</small></p>
+                    </div>
+                </div>
+                <div class="col-3 row column-gap align-items-start">
+                    <i class="fa-solid fa-chart-column text-center icon"></i>
+                    <div>
+                        <h2>3. Retention</h2>
+                        <p><small>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla.</small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-a" class="container row p-50">
+            <div id="section-a-left" class="col-2 p-50">
+                <h4 class="badge">Built Exclusively For You</h4>
+                <h2 class="supTitle">From the big picture to every tiny detail, we got you covered.</h2>
+                <p class="paragraph">Necessary to deliver white glove, fully managed campaigns that surpass industry benchmarks.Take your career to next level. Apply to our team and see what we can do together. You’re good enough.</p>
+                <div class="row flex-wrap">
+                    <div class="col-2">
+                        <div class="row column-gap">
+                            <i class="fa-brands fa-canadian-maple-leaf"></i>
+                            <h2><small>Automated reports</small></h2>
+                        </div>
+                        <p><small>Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</small></p>
+                    </div>
+                    <div class="col-2">
+                        <div class="row column-gap">
+                            <i class="fa-brands fa-canadian-maple-leaf"></i>
+                            <h2><small>Realtime analytics</small></h2>
+                        </div>
+                        <p><small>Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</small></p>
+                    </div>
+                    <div class="col-2">
+                        <div class="row column-gap">
+                            <i class="fa-brands fa-canadian-maple-leaf"></i>
+                            <h2><small>Funnel optimization</small></h2>
+                        </div>
+                        <p><small>Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</small></p>
+                    </div>
+                    <div class="col-2">
+                        <div class="row column-gap">
+                            <i class="fa-brands fa-canadian-maple-leaf"></i>
+                            <h2><small>User journey</small></h2>
+                        </div>
+                        <p><small>Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</small></p>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="section-a-right" class="col-2">
+                <img class="box-shadow" src="images/img-built-2.png" alt="">
+            </div>            
+        </section>
+        <section id="our-happy-customers" class="container p-50">
+            <h2 class="supTitle text-center">Our Happy Customers</h2>
+            <p class="paragraph text-center">Know about our clients, we are a woldwide corporate brand</p>
+            <div id="customers" class="row flex-wrap">
+                <div class="col-2 card">
+                    <div class="card-body">
+                        <h4 class="subTitle">Satisfied client testimonial</h4>
+                        <p class="paragraph"><small>Even factoring differences in body weight between children and adults into account, it would still not reach an intoxicating level in children.</small></p>
+                        <div class="row column-gap">
+                            <img src="images/user-1.png" alt="">
+                            <div>
+                                <h5>Jane Cooper</h5>
+                                <p>Biffco Enterprises Ltd.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 card">
+                    <div class="card-body">
+                        <h4 class="subTitle">Satisfied client testimonial</h4>
+                        <p class="paragraph"><small>Even factoring differences in body weight between children and adults into account, it would still not reach an intoxicating level in children.</small></p>
+                        <div class="row column-gap">
+                            <img src="images/user-2.png" alt="">
+                            <div>
+                                <h5>Jane Cooper</h5>
+                                <p>Biffco Enterprises Ltd.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 card">
+                    <div class="card-body">
+                        <h4 class="subTitle">Satisfied client testimonial</h4>
+                        <p class="paragraph"><small>Even factoring differences in body weight between children and adults into account, it would still not reach an intoxicating level in children.</small></p>
+                        <div class="row column-gap">
+                            <img src="images/user-3.png" alt="">
+                            <div>
+                                <h5>Jane Cooper</h5>
+                                <p>Biffco Enterprises Ltd.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 card">
+                    <div class="card-body">
+                        <h4 class="subTitle">Satisfied client testimonial</h4>
+                        <p class="paragraph"><small>Even factoring differences in body weight between children and adults into account, it would still not reach an intoxicating level in children.</small></p>
+                        <div class="row column-gap">
+                            <img src="images/user-4.png" alt="">
+                            <div>
+                                <h5>Jane Cooper</h5>
+                                <p>Biffco Enterprises Ltd.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="choose-plan"></section>
-        <section id="subscribe"></section>
+        <section id="subscribe" class="container row flex-wrap">
+            <div class="col-3">
+                <p>NEWSLETTER</p>
+            </div>
+            <div class="col-4"></div>
+        </section>
     </main>    
     <footer id="footer"></footer>
 </body>

@@ -201,12 +201,11 @@
 }
 #new-products .item-left {
   width: 180px;
-  height:180px;
+  height: 180px;
 }
-/* #new-products .item-right{
-  justify-content: center;
-  align-content: center;
-} */
+#new-products .item-right{
+  padding: 10px 0;
+}
 #new-products .new-product-title {
   margin-bottom: 20px;
   display: grid;

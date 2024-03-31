@@ -20,7 +20,7 @@
 }
 .categories-items{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
     
 }
 .catagories-items-img{
@@ -54,7 +54,7 @@
 .ok-butonu:hover{
     background-color: rgba(235,235,235,1); 
 }
-/* FROM OUR BLOG*/
+    /* FROM OUR BLOG*/
 .blog-part1{
     margin: 15px 20px;
 }
