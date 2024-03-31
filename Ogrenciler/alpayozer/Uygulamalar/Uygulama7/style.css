@@ -74,6 +74,18 @@
 }
 
 .brands-logo {
-  width: 170px;
+  width: 250px;
   height: 50px;
+}
+
+.brands-logo:hover {
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.brands-content {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
