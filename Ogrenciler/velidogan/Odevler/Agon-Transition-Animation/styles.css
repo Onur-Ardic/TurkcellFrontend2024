@@ -19,3 +19,16 @@
         flex: 50%;
     }
 }
+#header {
+    padding: 10px 0;
+}
+#header .main-header{
+    justify-content: space-between;
+}
+#header .main-header ul{
+    column-gap: 15px;
+}
+#header .main-header a{
+    font-size: 2rem;
+    margin: 1.8rem;
+}
