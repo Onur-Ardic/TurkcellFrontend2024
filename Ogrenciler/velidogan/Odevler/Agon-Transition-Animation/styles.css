@@ -154,6 +154,40 @@
 #our-happy-customers #customers .row img{
     width: 50px;
 }
+
+/* subscribe */
+#subscribe{
+    background-color: rgba(190,225, 230,1);
+    border-radius: 10px;
+    height: 350px;
+    padding: 10px 80px;
+    margin-bottom: 100px;
+}
+#subscribe .row{
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 20px 0;
+}
+#subscribe .row input{
+    padding: 20px;
+    width: 100%;
+    border-radius: 50px;
+    margin-right: 5px;
+    border: none;
+}
+#subscribe .row button{
+    border-radius: 50%;
+    padding: 15px 18px;
+    margin-right: 5px;
+}
+#subscribe .col-4{
+    background: url("images/banner.png") no-repeat center/contain;
+    height: 400px;
+}
+#subscribe .col-4 img{
+    animation: advanced-y 1s forwards infinite alternate;
+    width: 200px;
+}
 @keyframes advanced-xy{
     0%{
         transform: translate(0,0);
@@ -220,6 +254,11 @@
     }
     #section-a{
         height: 1450px;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    #section-a-right img{
+        margin: 500px 0 0 550px;
     }
     #section-a #section-a-left > .row .col-2{
         flex: 50%;
@@ -266,5 +305,14 @@
         height: 348px;
         width: 416px;
         margin-bottom: -10px;
+    }
+    #section-a {
+        margin: 0 0 350px 0;
+    }
+    #section-a-right img{
+        margin: 480px 0 0 300px;
+    }
+    #subscribe{
+        height: 480px;
     }
  }
