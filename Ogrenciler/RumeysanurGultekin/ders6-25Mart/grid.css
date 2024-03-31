@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+.container{
+    display: grid;
+    height: 600px;
+    background-color: aliceblue;
+    gap: 5px;
+}
+.header{
+    grid-area: header;
+    background-color: aquamarine;
+    padding: 20px;
+}
+.section{
+    grid-area: section;
+    background-color: aquamarine;
+    padding: 20px;
+}    
+.aside{
+    grid-area: sidebar;
+    background-color: aquamarine;
+    padding: 20px;
+}  
+.aside{
+    grid-area: sidebar;
+    background-color: aquamarine;
+    padding: 20px;
+}      

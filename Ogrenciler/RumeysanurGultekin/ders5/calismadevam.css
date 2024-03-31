@@ -1,0 +1,32 @@
+.section6{
+        background-image: url("https://shreethemes.in/upstart/layouts/images/bg/cta.png")  ;
+        background-size: cover;  
+        background-position: center;
+        background-blend-mode: soft-light;
+        padding: 100px 0 ; 
+}
+.container17{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.get-started-text{
+    color: white;
+}
+.get-started-text2{
+    color:grey;
+    max-width: 600px;
+    text-align: center;
+}
+.button1{
+    padding: 8px 20px;
+    background-color: #ff5714;
+    border: 1px solid #ff5714;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.5px;
+    
+}
