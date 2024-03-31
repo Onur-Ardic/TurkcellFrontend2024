@@ -1,0 +1,11 @@
+:root{
+    --title-text: #101828;
+    --p-text:#475467;
+    --primary:#101828;
+    --secondary:#006D77;
+    --third:#BEE1E6;
+    --fourth:#FFF3EA;
+}
+@media screen and (max-width:768px ){
+
+}

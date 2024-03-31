@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  height: 100vh;
+  background-color: antiquewhite;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orangered;
+  /* transition-property: background-color, width, height;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out; */
+  /* transition: all 0.5s ease-in-out; */
+  animation: animasyon-deneme 2s infinite ease-in-out;
+}
+
+.box:hover {
+  background-color: greenyellow;
+  width: 100px;
+  /* border-radius: 50%;
+  transform: scale(2);
+  transform: rotate(180deg);
+  transform: translateX(100px); */
+  /* transform: translate(100px, 100px) rotate(180deg) scale(0.5); */
+}
+
+@keyframes animasyon-deneme {
+  0% {
+    transform: translateX(0px);
+    background-color: orangered;
+  }
+  50% {
+    transform: translateX(100px);
+    background-color: greenyellow;
+  }
+  100% {
+    transform: translateX(0px);
+    background-color: orangered;
+  }
+}

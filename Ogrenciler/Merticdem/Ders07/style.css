@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    height: 100vh;
+    background-color: azure;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    /* transition: background-color 1s, width .5s ease-in-out; */
+    /* transition: all .5s ease-in-out; */
+    /* animation-name: animasyon-deneme;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse; */
+    animation: animasyon-deneme 2s infinite ease-in-out;
+}
+
+.box:hover{
+    background-color: chartreuse;
+    /* width: 200px;
+    height: 300px;
+    border-radius: 50%;
+    transform: scale(2);
+    transform: rotate(180deg);
+    transform: translateX(100px); */
+    /* transform: translate(100px , 100px) rotate(180deg)scale(.5); */
+
+}
+
+@keyframes animasyon-deneme {
+    0%{
+        transform: translateX((0px));
+        background-color: rgb(19, 32, 201);
+    }
+
+    50%{
+        transform: translateX(50px);
+        background-color: rgb(7, 213, 250);
+    }
+    
+    100%{
+        transform: translateX(0px);
+        background-color: rgb(0, 255, 98);
+    }
+}

@@ -1,0 +1,292 @@
+.header-container {
+    padding: 1.5rem 20rem;
+    justify-content: space-between;
+}
+
+.header-left {
+    gap: 10rem;
+}
+
+.header-logo a img {
+    width: 8rem;
+}
+
+nav ul {
+    gap: 4rem;
+}
+
+nav ul li a {
+    gap: 0.5rem;
+}
+
+.header-right-container {
+    /* 3 */
+    padding: 1.5rem 2rem;
+    border-radius: 5rem;
+    background-color: #F2F4F7;
+    gap: 1rem;
+}
+
+.home {
+    background-color: #BEE1E6;
+}
+
+.home-container {
+    padding: 3rem 18rem;
+}
+
+.home-left .digital-marketing {
+    background-color: #006d77;
+    border-radius: 3.125rem;
+    padding: 1rem 2rem;
+}
+
+.home-left h1 {
+    margin-top: 2rem;
+}
+
+.home-left .paragraph {
+    margin: 2.5rem 0;
+}
+
+.home-buttons-container {
+    margin-bottom: 2rem;
+}
+
+.home-left .get-started-button {
+    background-color: #101828;
+    padding: 1.5rem 2rem;
+}
+
+.home-left .get-started-button i {
+    padding-left: 1rem;
+}
+
+.home-left .how-it-works-button {
+    padding: 1.5rem 2rem;
+}
+
+.home-left .how-it-works-button i {
+    color: #006D77;
+    font-size: 3rem;
+    padding-right: 0.75rem;
+}
+
+.home-left .items {
+    gap: 5rem;
+}
+
+.home-left .item-p {
+    margin-top: 1rem;
+}
+
+.home-right .main-image {
+    width: 35rem;
+    animation: main-animation 2s linear infinite alternate;
+}
+
+@keyframes main-animation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-1rem);
+    }
+}
+
+.home-right .balance-image {
+    width: 15rem;
+    animation: sub-animation-balance 3s linear infinite alternate;
+    bottom: 0;
+    left: -4rem;
+}
+
+@keyframes sub-animation-balance {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-1rem);
+    }
+}
+
+.home-right .payment-image {
+    width: 10rem;
+    animation: sub-animation-payment 3s linear infinite alternate;
+    right: -5rem;
+    top: 5rem;
+}
+
+@keyframes sub-animation-payment {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-1rem);
+    }
+}
+
+.home-right .border {
+    border: 2px solid #006D77;
+    left: -1.5rem;
+    top: 1.5rem;
+    padding: 20rem 17rem;
+    animation: main-animation 2s linear infinite alternate;
+}
+
+.partners-container {
+    padding: 5rem 22rem;
+}
+
+.parners-title {
+    margin-bottom: 4rem;
+}
+
+.list-partners {
+    gap: 3rem;
+    border-bottom: 1px solid #d0d5dd;
+    padding-bottom: 5.5rem;
+}
+
+.list-partners img {
+    width: 12rem;
+}
+
+.ideas-container {
+    padding: 5rem 20rem;
+    gap: 5rem;
+}
+
+.what-we-do-button {
+    color: #558d96;
+    background-color: #BEE1E6;
+    border-radius: 3.125rem;
+    padding: 1rem 2rem;
+}
+
+.ideas-title,
+.ideas-p {
+    margin: 2.5rem 0;
+}
+
+.ideas-image {
+    width: 35rem;
+}
+
+.chart-image {
+    width: 18rem;
+    bottom: 2rem;
+    right: -2rem;
+    box-shadow: 0 47px 65px rgba(21, 28, 38, .1);
+}
+
+.list-icons {
+    margin-top: 4rem;
+    gap: 3rem;
+}
+
+.item-icon {
+    gap: 2rem;
+}
+
+.item-icon p {
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 1500px) {
+    .header-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .header-left {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .main-menu {
+        flex-direction: column;
+    }
+
+    .text-heading-2 {
+        font-size: 26px;
+    }
+
+    .text-heading-3 {
+        font-size: 22px;
+    }
+
+    .text-heading-4 {
+        font-size: 18px;
+    }
+
+    .text-heading-5 {
+        font-size: 12px;
+    }
+
+    .text-heading-6 {
+        font-size: 8px;
+    }
+
+    .text-body-lead-large {
+        font-size: 14px;
+    }
+
+    .text-display-3 {
+        font-size: 44px;
+    }
+
+    .text-display-4,
+    .text-heading-1 {
+        font-size: 36px;
+    }
+
+    .home-right .main-image {
+        width: 25rem;
+    }
+
+    .home-right .balance-image {
+        width: 8rem;
+    }
+
+    .home-right .payment-image {
+        width: 6rem;
+    }
+
+    .home-right .border {
+        padding: 14.5rem 12rem;
+    }
+
+    .list-partners img {
+        width: 8rem;
+    }
+
+    .ideas-image {
+        width: 25rem;
+    }
+
+    .chart-image {
+        width: 14rem;
+        bottom: 75rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .home-container {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .ideas-container {
+        flex-direction: column;
+    }
+
+    .chart-image {
+        width: 14rem;
+        bottom: -5rem;
+        right: -10rem;
+    }
+}

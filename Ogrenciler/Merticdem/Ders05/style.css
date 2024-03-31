@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.body{
+    font-family: "Open Sans", sans-serif;
+}
+
+.container{
+    max-width: fit-content;
+    width: fit-content;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p{
+    color: #dbe2fb;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.row h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+}
+.row p {
+    line-height: 26px;
+    margin-bottom: 3rem;
+}
+.buttons a {
+    text-decoration: none;
+    padding: 12px 30px;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    border-radius: 50px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 3px #4e3b7b;
+}
+.button2{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* SECTION START GETSTART */
+
+.getStartedRow{
+    padding: 95px 0px 82px;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    color: #dbe2fb;
+}
+.getStartedRow1{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+    justify-content: space-between;
+    padding-left: 20%;
+    align-items: center;
+}
+.getStartedBox{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+    padding: 12px 35px;
+    color: #5e00d9;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    background: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    outline: none;
+    margin-right: 250px;
+}
+.getStartedRow2{
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+    justify-content: center;
+    text-decoration: none;
+}
+/* GETSTART SECTION END */
+
+/*INVESTMENT SECTION START*/
+.investmentSection {
+    background-color: #032055;
+    padding: 110px 0px 100px;
+}.investment-row-1 {margin-bottom: 60px;}
+table {
+    background-color: #001232;
+    color: white;
+    margin: 0 auto;  /*sagdan soldan ortalar*/
+    text-align: start;
+    border-collapse: separate; /*seperate:ayrı*/
+    border-spacing: 10px;
+    padding: 10px;
+}
+table tr,table td,table th{
+    padding: 30px;
+    margin: 0 60px 0;
+}
+.userInfo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}.second-td h4{color: #045cf0;}.fifth-td h4{color: #f0ad4e;}
+/*INVESTMENT SECTION END*/
+
+/* ADVANTAGE SECTION START */
+.advantageRow{
+    background: #032055;
+    padding: 120px 0px 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -15px;
+    margin-left: -15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.advantageRowTop{
+    display: flex;
+    font-size: 1.5em;
+    line-height: 50px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 23px;
+    text-align: center;
+}
+.advantageRowBottom{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+.advantageRow1{
+        font-size: 24px;
+        align-self: center !important;
+        max-width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items:stretch ;
+        position: relative;
+        box-sizing: border-box;
+        text-align: left;
+        margin-bottom: 23px;
+}
+.advantageRow2{
+    margin: 30px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+/* ADVANCED SECTION END */
+
+/* INVENTORS SECTION START */
+
+.inventorsSection{
+    background: #03173b;
+}
+
+.inventorsTop{
+    font-size: 24px;
+    padding: 121px 0px 115px;
+    display: flex;
+    justify-content: center !important;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+.inventorsBottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+}
+
+.team{
+    background:  #032055;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    padding: 40px 40px 35px;
+    border-radius: 7px;
+    transition: all 0.3s ease-in;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 15px 15px;
+    border-radius: 10px;
+}
+.socialLinks{
+    display: flex;
+    flex-direction: row;
+}
+.inventorsFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grid Odev</title>
+    <title>Druco</title>
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="base.css">
+
     <!-- Bootstrap İcon -->
     <link
       rel="stylesheet"
@@ -12,6 +15,889 @@
     />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <div class="orders">
+            <h4>FREE DELİVERY on all orders</h4>
+          </div>
+
+          <div class="sale">
+            <i class="bi bi-lightning-fill color-orange"></i>
+            <p>
+              <span class="color-orange">FLASH SALE :</span> 60% OFF CAR
+              BATTERIES | USE CODE "BATT60"
+            </p>
+          </div>
+
+          <div class="header-top-links">
+            <ul class="header-top-links">
+              <li class="header-top-link"><a href="#">Help</a></li>
+              <li class="header-top-link"><a href="#">About Us</a></li>
+              <li class="header-top-link"><a href="#">Contact US</a></li>
+              <li class="header-top-link"><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="navbar-top-wrapper">
+          <div class="container">
+            <div class="navbar-top">
+              <div class="logo">
+                <img src="assets/img/logo.png" alt="" />
+              </div>
+
+              <div class="search-bar">
+                <select name="categories" id="categories">
+                  <option value="option-1">Option-1</option>
+                  <option value="option-2">Option-2</option>
+                </select>
+                <span>|</span>
+                <input type="text" placeholder="search-for-products" />
+                <i class="bi bi-search bg-orange flex flex-center"></i>
+              </div>
+
+              <div class="other-icon flex flex-between">
+                <select class="navbar-top-select" name="lang" id="lang">
+                  <option value="english">English</option>
+                </select>
+
+                <div>
+                  <select class="navbar-top-select" name="mon" id="mon">
+                    <option value="USD">USD</option>
+                    <option value="EURO">EURO</option>
+                  </select>
+                </div>
+
+                <div class="navbar-top-icons flex flex-between">
+                  <i class="bi bi-person-circle"></i>
+                  <a href="#">
+                    <i class="bi bi-heart-fill"></i>
+                    <span class="bg-orange flex flex-center">0</span>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-cart-fill"></i>
+                    <span class="bg-orange flex flex-center">0</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-bottom container">
+          <ul class="navbar-item flex">
+            <li class="navbar-item" id="dropdown">
+              <a href="#">HOME</a>
+              <i class="bi bi-caret-down"></i>
+
+              <div class="home-dropdown">
+                <div class="img">
+                  <div class="img-item">
+                    <img src="assets/img/mg-home-1.jpg" alt="mg-home" />
+                    <h4 class="text-center">Home</h4>
+                  </div>
+                  <div class="img-item">
+                    <img src="assets/img/mg-home-2.jpg" alt="mg-home-1" />
+                    <h4 class="text-center">Home - 1</h4>
+                  </div>
+                  <div class="img-item">
+                    <img src="assets/img/mg-home-3.jpg" alt="mg-home-2" />
+                    <h4 class="text-center">Home - 2</h4>
+                  </div>
+                  <div class="img-item">
+                    <img src="assets/img/mg-home-4.jpg" alt="mg-home-3" />
+                    <h4 class="text-center">Home - 3</h4>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="navbar-item">
+              <a href="#" id="dropdown-second">PAGES</a>
+              <i class="bi bi-caret-down"></i>
+              <!-- 
+              <div class="dropdown-second">
+                <ul class="dropdown-items">
+                  <h5>Home</h5>
+                  <li>İtem</li>
+                  <li>İtem1</li>
+                  <li>İtem2</li>
+                  <li>İtem3</li>
+                </ul>
+
+                <ul>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                </ul>
+
+                <ul>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                  <li>İtem</li>
+                </ul>
+              </div> -->
+            </li>
+            <li class="navbar-item">
+              <a href="#" id="dropdown">SERVICE PATS</a>
+              <i class="bi bi-caret-down"></i>
+            </li>
+            <li class="navbar-item">
+              <a href="#" id="dropdown">BRAKE</a>
+              <i class="bi bi-caret-down"></i>
+            </li>
+            <li class="navbar-item">
+              <a href="#" id="dropdown">CAR BATTEİRES</a>
+              <i class="bi bi-caret-down"></i>
+            </li>
+            <li class="navbar-item">
+              <a href="#" id="dropdown">TOOLS & GARAGE</a>
+              <i class="bi bi-caret-down"></i>
+            </li>
+          </ul>
+
+          <div class="contact-area bg-orange flex flex-center">
+            <div class="icon">
+              <i class="bi bi-headset"></i>
+            </div>
+
+            <div class="contact-headphone">
+              <span>Call us 24/7</span>
+              <p>+08 9229 8228</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <div class="container">
+          <div class="hero-content grid">
+            <div class="left-hero-content flex">
+              <h2 class="mt-10">SEARCH BY VEHİCLE</h2>
+              <select name="hero-option" id="hero-option">
+                <option value="item1">Select Make</option>
+                <option value="item2">İtem-2</option>
+              </select>
+
+              <select name="hero-option" id="hero-option">
+                <option value="item1">Select Model</option>
+                <option value="item2">İtem-2</option>
+              </select>
+
+              <select name="hero-option" id="hero-option">
+                <option value="item1">Select Year</option>
+                <option value="item2">İtem-2</option>
+              </select>
+
+              <select name="hero-option" id="hero-option">
+                <option value="item1">Select Engine</option>
+                <option value="item2">İtem-2</option>
+              </select>
+
+              <div class="btn-wrapper">
+                <a href="#" class="btn btn-hero-left">GO</a>
+              </div>
+            </div>
+
+            <div class="right-hero-content">
+              <h2>BIG SALE</h2>
+              <h4 class="mt-10">40% off Sale Is Black</h4>
+              <p class="mt-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse?
+              </p>
+
+              <div class="right-hero-btn-wrapper">
+                <a href="#" class="btn mt-10">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="categories-wrapper bg-orange">
+        <div class="container">
+          <div class="categories-slider grid bg-orange p-1">
+            <div class="categories-content mt-10">
+              <h3>Categories</h3>
+              <p>MARCH FAVORİTES</p>
+
+              <div class="categories-slider-arrow flex flex-center mt-10">
+                <i class="bi bi-arrow-left flex flex-center"></i>
+                <i class="bi bi-arrow-right flex flex-center"></i>
+              </div>
+            </div>
+
+            <div class="categories-card flex flex-between">
+              <div class="categories-item">
+                <img src="assets/img/categories00.jpeg" alt="" />
+                <h4>Exteriors</h4>
+              </div>
+
+              <div class="categories-item">
+                <img src="assets/img/categories01.jpeg" alt="" />
+                <h4>Whell & Tires</h4>
+              </div>
+
+              <div class="categories-item">
+                <img src="assets/img/categories02.jpeg" alt="" />
+                <h4>İnteriors</h4>
+              </div>
+
+              <div class="categories-item">
+                <img src="assets/img/categories03.jpeg" alt="" />
+                <h4>Entertainments</h4>
+              </div>
+
+              <div class="categories-item">
+                <img src="assets/img/categories04.jpeg" alt="" />
+                <h4>Fluid & Chemicals</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="favori-items">
+      <div class="fav-items-content text-center mt-30 flex flex-center">
+        <h3 class="color-orange">BestSellers</h3>
+        <h3>Popular İtems</h3>
+      </div>
+      <div class="container">
+        <div class="fav-card-items grid mt-30">
+          <div class="fav-card-item">
+            <div class="fav-card-img">
+              <img src="assets/img/item00.jpeg" alt="" />
+            </div>
+
+            <div class="fav-card-content mt-10">
+              <h4>Volvoline Oil Stockists</h4>
+            </div>
+
+            <ul class="fav-card-stars flex mt-10 color-orange">
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+            </ul>
+
+            <div class="fav-card-icon flex">
+              <i class="bi bi-search flex flex-center"></i>
+              <i class="bi bi-cart flex flex-center"></i>
+              <i class="bi bi-escape flex flex-center"></i>
+            </div>
+
+            <div class="fav-card-price mt-10">
+              <span>$106.58</span>
+              <span>$202.87</span>
+            </div>
+
+            <div class="fav-card-sales">
+              <span>-47%</span>
+            </div>
+
+            <div class="btn-card-item">
+              <a href="#">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="fav-card-item">
+            <div class="fav-card-img">
+              <img src="assets/img/item01.jpeg" alt="" />
+            </div>
+
+            <div class="fav-card-content mt-10">
+              <h4>Racing Custom Wheels</h4>
+            </div>
+
+            <ul class="fav-card-stars flex mt-10 color-orange">
+              <li><i class="bi bi-star"></i></li>
+              <li><i class="bi bi-star"></i></li>
+              <li><i class="bi bi-star"></i></li>
+              <li><i class="bi bi-star"></i></li>
+              <li><i class="bi bi-star"></i></li>
+            </ul>
+
+            <div class="fav-card-icon flex">
+              <i class="bi bi-search flex flex-center"></i>
+              <i class="bi bi-cart flex flex-center"></i>
+              <i class="bi bi-escape flex flex-center"></i>
+            </div>
+
+            <div class="fav-card-price mt-10">
+              <span>$179.49</span>
+              <span>$209.99</span>
+            </div>
+
+            <div class="fav-card-sales">
+              <span>-15%</span>
+            </div>
+
+            <div class="btn-card-item">
+              <a href="#">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="fav-card-item">
+            <div class="fav-card-img">
+              <img src="assets/img/item03.jpeg" alt="" />
+            </div>
+
+            <div class="fav-card-content mt-10">
+              <h4>Racing Custom Wheels VF421</h4>
+            </div>
+
+            <ul class="fav-card-stars flex mt-10 color-orange">
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-half"></i></li>
+            </ul>
+
+            <div class="fav-card-icon flex">
+              <i class="bi bi-search flex flex-center"></i>
+              <i class="bi bi-cart flex flex-center"></i>
+              <i class="bi bi-escape flex flex-center"></i>
+            </div>
+
+            <div class="fav-card-price mt-10">
+              <span>$38.24</span>
+              <span>$58.</span>
+            </div>
+
+            <div class="fav-card-sales">
+              <span>-35%</span>
+            </div>
+
+            <div class="btn-card-item">
+              <a href="#">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="fav-card-item">
+            <div class="fav-card-img">
+              <img src="assets/img/item04.jpeg" alt="" />
+            </div>
+
+            <div class="fav-card-content mt-10">
+              <h4>Kit Brembo DT BMW</h4>
+            </div>
+
+            <ul class="fav-card-stars flex mt-10 color-orange">
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+            </ul>
+
+            <div class="fav-card-icon flex">
+              <i class="bi bi-search flex flex-center"></i>
+              <i class="bi bi-cart flex flex-center"></i>
+              <i class="bi bi-escape flex flex-center"></i>
+            </div>
+
+            <div class="fav-card-price mt-10">
+              <span>$69.58</span>
+              <span>$98.87</span>
+            </div>
+
+            <div class="fav-card-sales">
+              <span>-29%</span>
+            </div>
+
+            <div class="btn-card-item">
+              <a href="#">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="fav-card-item">
+            <div class="fav-card-img">
+              <img src="assets/img/item05.jpeg" alt="" />
+            </div>
+
+            <div class="fav-card-content mt-10">
+              <h4>Kit Brembo GT BMW</h4>
+            </div>
+
+            <ul class="fav-card-stars flex mt-10 color-orange">
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-half"></i></li>
+              <li><i class="bi bi-star"></i></li>
+            </ul>
+
+            <div class="fav-card-icon flex">
+              <i class="bi bi-search flex flex-center"></i>
+              <i class="bi bi-cart flex flex-center"></i>
+              <i class="bi bi-escape flex flex-center"></i>
+            </div>
+
+            <div class="fav-card-price mt-10">
+              <span>$69.78</span>
+              <span>$89.87</span>
+            </div>
+
+            <div class="fav-card-sales">
+              <span>-22%</span>
+            </div>
+
+            <div class="btn-card-item">
+              <a href="#">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="fav-card-item">
+            <div class="fav-card-img">
+              <img src="assets/img/item06.jpeg" alt="" />
+            </div>
+
+            <div class="fav-card-content mt-10">
+              <h4>Kit Brembo DT BMW</h4>
+            </div>
+
+            <ul class="fav-card-stars flex mt-10 color-orange">
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star"></i></li>
+            </ul>
+
+            <div class="fav-card-icon flex">
+              <i class="bi bi-search flex flex-center"></i>
+              <i class="bi bi-cart flex flex-center"></i>
+              <i class="bi bi-escape flex flex-center"></i>
+            </div>
+
+            <div class="fav-card-price mt-10">
+              <span>$26.58</span>
+              <span>$38.24</span>
+            </div>
+
+            <div class="fav-card-sales">
+              <span>-31%</span>
+            </div>
+
+            <div class="btn-card-item">
+              <a href="#">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="fav-card-item">
+            <div class="fav-card-img">
+              <img src="assets/img/item07.jpeg" alt="" />
+            </div>
+
+            <div class="fav-card-content mt-10">
+              <h4>Zipp Battery New 12V</h4>
+            </div>
+
+            <ul class="fav-card-stars flex mt-10 color-orange">
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+            </ul>
+
+            <div class="fav-card-icon flex">
+              <i class="bi bi-search flex flex-center"></i>
+              <i class="bi bi-cart flex flex-center"></i>
+              <i class="bi bi-escape flex flex-center"></i>
+            </div>
+
+            <div class="fav-card-price mt-10">
+              <span>$26.58</span>
+              <span>$45.87</span>
+            </div>
+
+            <div class="fav-card-sales">
+              <span>-42%</span>
+            </div>
+
+            <div class="btn-card-item">
+              <a href="#">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="fav-card-item">
+            <div class="fav-card-img">
+              <img src="assets/img/item08.jpeg" alt="" />
+            </div>
+
+            <div class="fav-card-content mt-10">
+              <h4>Racing Custom Wheels</h4>
+            </div>
+
+            <ul class="fav-card-stars flex mt-10 color-orange">
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star"></i></li>
+            </ul>
+
+            <div class="fav-card-icon flex">
+              <i class="bi bi-search flex flex-center"></i>
+              <i class="bi bi-cart flex flex-center"></i>
+              <i class="bi bi-escape flex flex-center"></i>
+            </div>
+
+            <div class="fav-card-price mt-10">
+              <span>$35.58</span>
+              <span>$38.87</span>
+            </div>
+
+            <div class="fav-card-sales">
+              <span>7%</span>
+            </div>
+
+            <div class="hot">
+              <span>Hot</span>
+            </div>
+            <div class="btn-card-item">
+              <a href="#">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-area mt-30">
+      <div class="bannerSection">
+        <div class="grid">
+          <div class="banner1">
+            <h2>Car & Truck<br />Exhaust Pipes</h2>
+            <p>
+              Exhaust Pipe - Now<span class="color-orange"> 15% </span>Savings
+            </p>
+            <div class="bannerButton">
+              <a
+                class="button"
+                href="https://demo.theme-sky.com/druco/product-category/exhaust-pipes/"
+                target="_blank"
+                ><b>SHOP NOW</b></a
+              >
+            </div>
+          </div>
+          <div class="banner2">
+            <h2>Brakes and Rotors<br />for Sale</h2>
+            <p>
+              Take an Extra<span class="color-orange"> $5 </span>Off Every
+              Monday
+            </p>
+            <div class="bannerButton">
+              <a
+                class="button"
+                href="https://demo.theme-sky.com/druco/product-category/brake/"
+                target="_blank"
+                ><b>SHOP NOW</b></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="productSection container">
+        <div class="grid">
+          <div class="itemHeading">
+            <h2>New Products</h2>
+          </div>
+          <div class="itemHeading">
+            <h2>Specials</h2>
+          </div>
+          <div class="itemHeading">
+            <h2>Sale</h2>
+          </div>
+          <div class="item">
+            <img
+              class="image"
+              src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/04/01-480x480.jpg"
+              alt=""
+            />
+            <div class="itemInfo">
+              <h5>Altra Industrial<br />Motion</h5>
+              <div class="icon">★★★★☆</div>
+              <h5 class="blue">$185.99</h5>
+              <div class="itemButton">
+                <button type="button" id="button"><b>ADD TO CART</b></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              class="image"
+              src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/04/05-480x480.jpg"
+              alt=""
+            />
+            <div class="itemInfo">
+              <h5>Racing Custom<br />Wheels</h5>
+              <div class="icon">★★★★☆</div>
+              <div class="price">
+                <span class="blue">$35.38</span>
+                <span class="line">$38.24</span>
+              </div>
+              <div class="itemButton">
+                <button type="button" id="button"><b>ADD TO CART</b></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              class="image"
+              src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/04/02-480x480.jpg"
+              alt=""
+            />
+            <div class="itemInfo">
+              <h5>Kit Brembo GT BMW</h5>
+              <div class="icon">★★★★★</div>
+              <div class="price">
+                <span class="blue">$69.75</span>
+                <span class="line">$89.74</span>
+              </div>
+              <div class="itemButton">
+                <button type="button" id="button"><b>ADD TO CART</b></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              class="image"
+              src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/04/02-480x480.jpg"
+              alt=""
+            />
+            <div class="itemInfo">
+              <h5>Kit Brembo GT BMW</h5>
+              <div class="icon">★★★★★</div>
+              <div class="price">
+                <span class="blue">$69.75</span>
+                <span class="line">$89.74</span>
+              </div>
+              <div class="itemButton">
+                <button type="button" id="button"><b>ADD TO CART</b></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              class="image"
+              src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/04/27-480x480.jpg"
+              alt=""
+            />
+            <div class="itemInfo">
+              <h5>Racing Custom Wheels<br />VF123</h5>
+              <div class="icon">★★★★☆</div>
+              <h5 class="blue">$38.24</h5>
+              <div class="itemButton">
+                <button type="button" id="button"><b>ADD TO CART</b></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              class="image"
+              src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/04/04-480x480.jpg"
+              alt=""
+            />
+            <div class="itemInfo">
+              <h5>Nuna car seats S134</h5>
+              <div class="icon">★★★★☆</div>
+              <div class="price">
+                <span class="blue">$38.24</span>
+                <span class="line">$49.99</span>
+              </div>
+              <div class="itemButton">
+                <button type="button" id="button"><b>ADD TO CART</b></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              class="image"
+              src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/04/03-480x480.jpg"
+              alt=""
+            />
+            <div class="itemInfo">
+              <h5>Driver Side Headlight</h5>
+              <div class="icon">★★★★☆</div>
+              <h5 class="blue">$53.75</h5>
+              <div class="itemButton">
+                <button type="button" id="button"><b>ADD TO CART</b></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              class="image"
+              src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/04/07-480x480.jpg"
+              alt=""
+            />
+            <div class="itemInfo">
+              <h5>Dual Stack<br />PowerTech</h5>
+              <div class="icon">★★★★☆</div>
+              <h5 class="blue">$38.24</h5>
+              <div class="itemButton">
+                <button type="button" id="button"><b>BUY PRODUCT</b></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              class="image"
+              src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/04/05-480x480.jpg"
+              alt=""
+            />
+            <div class="itemInfo">
+              <h5>Racing Custom<br />Wheels</h5>
+              <div class="icon">★★★★☆</div>
+              <div class="price">
+                <span class="blue">$35.38</span>
+                <span class="line">$38.24</span>
+              </div>
+              <div class="itemButton">
+                <button type="button" id="button"><b>ADD TO CART</b></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popularSection container">
+        <div class="heading">
+          <h2>Shop by Popular Parts</h2>
+        </div>
+        <div class="grid">
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/brake-disc-and-pad-kit/"
+              >Brake Disc and Pad Kit (9)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/bumper/"
+              >Bumper (4)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/bumper-cover/"
+              >Bumper Cover (4)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/control-arm/"
+              >Control Arm (5)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/control-arm-kit/"
+              >Control Arm Kit (5)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/cooling-fan-assembly/"
+              >Cooling Fan Assembly (5)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/door-lock-actuator/"
+              >Door Lock Actuator (3)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/driveshaft/"
+              >Driveshaft (5)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/exterior-door-handle/"
+              >Exterior Door Handle (2)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/fender/"
+              >Fender (5)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/fuel-pump/"
+              >Fuel Pump (5)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/grille-assembly/"
+              >Grille Assembly (6)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/headlight/"
+              >Headlight (7)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/hood/"
+              >Hood (3)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/mirror/"
+              >Mirror (3)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/oxygen-sensor/"
+              >Oxygen Sensor (3)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/radiator/"
+              >Radiator (4)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/step-bumper/"
+              >Step Bumper (2)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/tail-light/"
+              >Tail Light (4)</a
+            >
+          </div>
+          <div class="part">
+            <a
+              href="https://demo.theme-sky.com/druco/product-category/popular-parts/wheel-hub/"
+              >Wheel Hub (9)</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="genuine">
       <div class="container">
         <div class="section-parts">
@@ -60,7 +946,7 @@
             </div>
           </div>
           <div class="blog-image-card">
-            <div class="card-body" style="box-shadow: none;">
+            <div class="card-body" style="box-shadow: none">
               <div class="card-body-content-1">
                 <div class="card-body-info">
                   JAN 22, 2021 BY <span>ADMIN</span> IN
@@ -95,9 +981,9 @@
               </div>
               <div class="card-body-content">
                 <div class="card-body-info">
-                    JAN 22, 2021 BY <span>ADMIN</span> IN
-                    <span> AUTO PARTS, EXHAUST, HEADLIGHT</span>
-                  </div>
+                  JAN 22, 2021 BY <span>ADMIN</span> IN
+                  <span> AUTO PARTS, EXHAUST, HEADLIGHT</span>
+                </div>
                 <h3 class="card-body-title" href="#">Wiper Blade Size Guide</h3>
                 <p class="card-body-text">
                   The small round table in the dinette may be great for casual
@@ -157,6 +1043,84 @@
           </div>
         </div>
       </div>
+    </section>
+
+      <section class="featured">
+      <h1>Featured Brands</h1>
+      <div class="logo">
+        <div class="toyota"><img src="assets/img/toyota.jpg" alt="toyota" /></div>
+        <div class="hyundai">
+          <img src="assets/img/hyundai.jpg" alt="hyundai" />
+        </div>
+        <div class="auto"><img src="assets/img/auto.jpg" alt="auto" /></div>
+        <div class="jaguar"><img src="assets/img/jaguar.jpg" alt="jaguar" /></div>
+        <div class="japan"><img src="assets/img/Japan.jpg" alt="japan" /></div>
+        <div class="kia"><img src="assets/img/kia.jpg" alt="kia" /></div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="new">
+        <div class="newsletter"><h1>NEWSLETTER</h1></div>
+        <div class="subscribe">
+          <p>Subscribe to our Newsletter get 10% discount code</p>
+        </div> 
+      </div>
+        <div class="mail">
+          <input type="text" placeholder="Your e-mail address" />
+          <button>SUBSCRIBE</button>
+        </div>
+      </div>
+    </section>
+    <section class="end">
+      <div class="say">
+        <h1>SAY HELLO</h1>
+        <p>
+          Address: 1234 Heaven Stress, Beverly <br />
+          Hill OldYork- United State of Lorem
+        </p>
+        <p>Phone: 1234 5678 5576 – 4657 4657 4656</p>
+        <p>Email: Support1234@Orlife</p>
+        <div class="socialicon">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="gg-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa fa-flickr"></i>
+        </div>
+      </div>
+      <div class="acccount">
+        <h1>MY ACCOUNT</h1> <br>
+        <p>About</p>
+        <p>Advertising</p>
+        <p>Business Development</p>
+        <p>Careers</p>
+        <p>Permissions</p>
+        <p>Contact</p>
+      </div>
+      <div class="product">
+        <h1>PRODUCT</h1> <br>
+        <p>About</p>
+        <p>Advertising</p>
+        <p>Business Development</p>
+        <p>Careers</p>
+        <p>Permissions</p>
+        <p>Contact</p>
+      </div>
+      <div class="reader"> 
+        <h1>Reader</h1> <br>
+        <p>Advertising</p>
+        <p>Business Development</p>
+        <p>Careers</p>
+        <p>Permissions</p>
+        <p>Contact Us</p>
+      </div>
+    </section>
+    <section class="finish">
+      <div class="element-section-all grid"> 
+      © Druco. All Rights Reserved.
+    </div>
+    <div class="element-section-img grid">
+      <img src="assets/img/paypal.png" alt="paypal">
+    </div>
     </section>
   </body>
 </html>

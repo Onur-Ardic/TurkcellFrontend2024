@@ -10,6 +10,7 @@
 
 # Design Tools
 - https://coolors.co/59e3bc/
+- https://animate.style/
 
 # Examples
 - https://github.com/1BarisErkus/HTML-CSS-Examples

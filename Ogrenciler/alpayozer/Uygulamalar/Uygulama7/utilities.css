@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-28 {
+  font-size: 28px;
+}
+.pl-26 {
+  padding-left: 26px;
+}
+.bg-blue {
+  background-color: #006d77;
+}
+.color-blue {
+  color: #006d77;
+}
+.color-gray {
+  color: #667085;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.txt-align-center {
+  text-align: center;
+  max-width: 100%;
+  padding: 15px;
+}

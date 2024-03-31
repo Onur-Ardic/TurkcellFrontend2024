@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Notos Sans", sans-serif;
+  list-style-type: none;
+}
+.font-noto {
+  font-family: "Noto Sans", sans-serif;
+}
+.font-chivo {
+  font-family: "Chivo", sans-serif !important;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+.text-white {
+  color: #fff;
+}
+.description-utils {
+  color: #475467;
+}
+.title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #101828;
+}
+.font-bold {
+  font-weight: 700;
+}
+.btn {
+  border-radius: 50px;
+  border: none;
+}
+.bg-green {
+  background-color: #bee1e6 !important;
+}
+.bg-dark-green {
+  background-color: #006d77;
+}
+.font-color-black {
+  color: #101828;
+}
+.grid {
+  display: grid;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+}
+.text-center {
+  text-align: center;
+}
+.align-center {
+  align-items: center;
+}
+.grid {
+  display: grid;
+}
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.mt-70 {
+  margin-top: 70px;
+}
+.mx-75 {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+.px-150 {
+  padding-left: 150px;
+  padding-right: 150px;
+}
