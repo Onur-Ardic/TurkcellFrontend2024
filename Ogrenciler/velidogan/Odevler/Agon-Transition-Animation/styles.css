@@ -1,3 +1,4 @@
+/* header */
 #header {
     padding: 10px 0;
 }
@@ -11,7 +12,44 @@
     font-size: 2rem;
     margin: 1.8rem;
 }
+/* advanced */
+#advanced{
+    background:#bee1e6;
+}
+#advanced-left .supTitle{
+    font-size: 6rem;
+    margin: 0 0 30px 0;
+}
+#advanced-left .row{
+    margin-top: 25px;
+}
+#advanced-left span{
+    font-size: 20px;
+    margin-left: 150px;
+}
+#advanced-left span i{
+    color: rgba(0 ,109, 119,1);
+    margin-right: 10px;
+}
+#advanced-right{
+    background: url("images/banner.png") no-repeat center center/contain;
+    height: 500px;
+    animation: advanced-y 2s forwards infinite alternate;
+}
+#advanced-right #payment{
+    margin-left: 470px;
+    width: 100px;
+    display: block;
+    animation: advanced-y 3s forwards 2s infinite alternate;
+}
+#advanced-right #balance{
+    margin-top: 150px;
+    width: 150px;
+    animation: advanced-xy 3s forwards 2s infinite alternate;
+}
 
+
+/* trusted */
 .trusted-companies-list img{
     width: 233px;
     height: 81px;
@@ -116,7 +154,22 @@
 #our-happy-customers #customers .row img{
     width: 50px;
 }
-
+@keyframes advanced-xy{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(30px,30px);
+    }
+}
+@keyframes advanced-y{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(0,30px);
+    }
+}
 @media (max-width:992px){
     .container {
         width: 960px;
@@ -127,6 +180,18 @@
     }
     .col-3,.col-4{
         flex: 50%;
+    }
+    #advanced{
+        height: 1000px;
+    }
+    #advanced-left{
+        padding: 25px;
+    }
+    #advanced #advanced-right #payment{
+        margin-left: 615px;
+    }
+    #advanced #advanced-right #balance{
+        margin: 150px 0 0 200px;
     }
     .freshideas, .discover-table{
         display: flex;
@@ -175,6 +240,16 @@
     }
     .col-2,.col-3,.col-4{
         flex: 100%;
+    }
+    #advanced{
+        padding: 50px 0;
+        height: 1250px;
+    }
+    #advanced #advanced-right #payment{
+        margin-left: 400px;
+    }
+    #advanced #advanced-right #balance{
+        margin: 150px 0 0 10px;
     }
     .freshideas-left img{
        max-width: 100%;
