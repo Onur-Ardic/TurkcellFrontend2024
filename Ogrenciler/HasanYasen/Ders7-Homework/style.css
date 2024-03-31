@@ -1,0 +1,32 @@
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+#navbar .container {
+    justify-content: space-between;
+    height: 15vh;
+}
+
+#navbar .container .selects {
+    gap: 2.5rem;
+}
+
+#navbar .container .btn {
+    gap: 1rem;
+    width: 180px;
+    height: 8vh;
+    background-color: #F2F4F7;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+#navbar .container .hamburger {
+    position: absolute;
+    top: 5.5vh;
+    left: 1420px;
+}
