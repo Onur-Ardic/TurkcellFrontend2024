@@ -28,5 +28,38 @@
 #navbar .container .hamburger {
     position: absolute;
     top: 5.5vh;
-    left: 1420px;
+    right: 0;
+}
+
+#home {
+    height: 85vh;
+    background-color: #bee1e6;
+}
+
+#companies {
+    height: 55vh;
+}
+
+#companies .container {
+    border-bottom: 1px solid #d0d5dd;
+}
+
+#companies .top {
+    text-align: center;
+    margin: 10vh 0 5vh 0;
+}
+
+#companies .bottom {
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+#companies .bottom .company:hover{
+    cursor: pointer;
+    box-shadow: 0 10px 10px -5px rgb(236, 235, 235);
+    transition: 0.3s ease;
+    transform: scale(1.05);
+    
 }
