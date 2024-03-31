@@ -101,6 +101,7 @@
 .section-7-content{
     width: 48%;
     height: 1000px; 
+    position: relative;
 } 
 .img-box-7{
     background-image:url('img/sec-7.png');
@@ -108,6 +109,8 @@
     background-repeat: no-repeat;
     border-radius: 20px;
     position: relative;
+    padding: 20px;
+    display: flex;  
 }
 .header-span{
     background-color: #bee1e6;
@@ -133,8 +136,10 @@
    width: 60%;
    max-height: 80%;
    position: absolute;
-   bottom:60px; 
-
+   bottom: -20px;
+   right: -20px; 
+    padding: 10px; 
+  
 }
 .sec-8{
     background-color: #f2f4f7;
@@ -156,16 +161,10 @@
     width: 90%;
     margin: auto;  
 }
-
 .sec-8-card:hover {
     transform: translateY(-5px); 
     transition: transform 0.3s ease; 
 }
-
-
-
-
-
 .sec-8-card p{
     line-height: 2;
     padding-bottom: 30px ;
@@ -183,13 +182,6 @@
 .user span{
     font-weight: bold   ;
 }
-
-
-
-
-
-
-
 @media screen and (max-width: 990px) {
     .stikers {
         grid-template-columns: 1fr;
@@ -200,6 +192,19 @@
     .section-7{
         flex-direction: column;        
     }
+    .img-row {
+        flex-direction: column;
+    }
+    .box-with-img{
+        margin-bottom: 200px;
+    }
+    .last-leaf{
+        margin-bottom: 150px;
+    }
+    .section-7-content {
+        width: 100%; /* Tam genişlik alması için */
+      }  
+
 }
 
 
