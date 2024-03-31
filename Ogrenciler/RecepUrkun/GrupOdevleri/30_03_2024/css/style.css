@@ -5,8 +5,7 @@ img {
 }
 
 .mt-80 {
-    /* margin-top: 80px !important; */
-    margin-top: 120px !important;
+    margin-top: 80px !important;
 }
 
 .mb-60 {
@@ -16,6 +15,11 @@ img {
 .text-heading-3 {
     font-size: 35px;
     line-height: 38px;
+}
+
+.text-display-3 {
+    font-size: 64px;
+    line-height: 72px;
 }
 
 .text-center {
@@ -39,24 +43,48 @@ li {
 
 /* grow business start */
 
+.banner-hero {
+    padding: 60px 0 20px;
+}
+
 .block-1 {
-    position: absolute;
+    /* position: absolute;
     bottom: 20px;
     z-index: 3;
     width: 220px;
+    height: 260px; */
+    position: absolute;
+    bottom: 20px;
+    left: -55px;
+    z-index: 3;
+    width: 220px;
     height: 260px;
-    margin-left: -420px;
-    margin-bottom: -50px;
 }
 
 .block-2 {
-    z-index: 3;
+    /* z-index: 3;
     position: absolute;
-    top: 25%;
     height: 169px;
     width: 155px;
-    /* right:80px; */
-    margin-right: -465px;
+    right: 50px;
+    bottom: 10px; */
+    z-index: 3;
+    position: absolute;
+    top: 15%;
+    right: -45px;
+    height: 169px;
+    width: 155px;
+}
+
+.box {
+    max-width: 100%;
+}
+
+.banner-imgs {
+    padding: 20px 0 0;
+    position: relative;
+    width: 100%;
+    float: right;
 }
 
 /* leading-companies */
@@ -66,6 +94,9 @@ li {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 50px;
+    width: 100%;
+    border-bottom: 1px solid #d0d5dd;
 }
 
 .list-partners li {
@@ -77,9 +108,6 @@ li {
     display: inline-block;
     width: 100%;
     padding: 15px;
-    line-height: 40px;
-    max-width: 170px;
-    max-height: 40px;
 }
 
 .item-logo:hover {
@@ -87,6 +115,8 @@ li {
     transform: translateY(-5px);
     transition: all .5s ease;
 }
+
+/* header css */
 
 .header {
     padding: 10px 0;
@@ -127,8 +157,9 @@ li {
     align-items: center;
     cursor: pointer;
     font-size: 20px;
-    right: 80px;
     position: absolute;
+    right: 60px;
+    z-index: 1002;
 }
 
 .header-right {
@@ -145,7 +176,17 @@ li {
     align-items: center;
 }
 
-.btn.btn-default {
+.btn {
+    font-family: Chivo, sans-serif;
+    padding: 22px 32px;
+    font-size: 18px;
+    line-height: 22px;
+    transition: .2s;
+    letter-spacing: .45px;
+    border-radius: 50px;
+}
+
+.btn-default {
     color: #101828;
     background-color: #f2f4f7;
     border-radius: 50px;
@@ -155,9 +196,31 @@ li {
     padding: 22px 32px;
 }
 
-.fa-solid {
-    position: absolute;
-    margin-left: 35px;
+.btn-black {
+    color: #fff;
+    background-color: #101828;
+    border-radius: 50px;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: Noto Sans, sans-serif;
+    font-weight: 700;
+}
+
+.btn.btn-link {
+    font-family: Chivo, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: #101828;
+    text-decoration: none;
+}
+
+.fa-arrow-right {
+    padding-left: 20px;
+}
+
+.fa-play {
+    color: #006d77;
 }
 
 .btn.btn-default:hover {
@@ -167,4 +230,100 @@ li {
     color: #fff !important;
     transform: translateY(-2px);
     transition: .2s;
+}
+
+/* responsive  */
+@media screen and (max-width: 992px) {
+    .list-partners li {
+        width: 28%;
+    }
+
+    .hamburger-menu {
+        position: absolute;
+        right: 0px;
+        margin-left: 15px;
+    }
+
+    .text-display-3 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list-partners li {
+        width: 24%;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-hero .container {
+        max-width: 720px;
+    }
+
+    .banner-hero .row {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .list-partners li {
+        width: 32%;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .header-right {
+        display: none;
+    }
+}
+
+.d-none {
+    display: none !important;
+}
+
+@media (min-width: 1200px) {
+    .d-xl-block {
+        display: block !important;
+    }
+
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main-header {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 25% !important;
+    }
+
+    .d-lg-block {
+        display: block !important;
+    }
+
+    .col-lg-7 {
+        flex: 0 0 auto;
+        width: 58.33%;
+    }
+}
+
+@media (min-width: 576px) {
+    .col-sm-4 {
+        flex: 0 0 auto;
+        width: 33.3333333333%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
 }
