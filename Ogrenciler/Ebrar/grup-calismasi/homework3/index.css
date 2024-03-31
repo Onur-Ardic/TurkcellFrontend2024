@@ -1,0 +1,174 @@
+.cars-element-title {
+  grid-template-columns: repeat(3, 450px);
+  height: 200px;
+}
+.cars-container-title {
+  font-size: 25px;
+  place-items: center;
+}
+.cars-element {
+  height: 600px;
+  grid-template-columns: repeat(3, 450px);
+  grid-template-rows: repeat(3, 230px);
+  place-content: center;
+}
+
+.item {
+  grid-template-columns: 1fr 1fr;
+}
+.item img {
+  height: 180px;
+}
+
+.item-cost {
+  color: #233f92;
+  font-weight: 600;
+  font-size: 18px;
+}
+.item span {
+  color: #848484;
+  text-decoration: line-through;
+  font-size: 15px;
+  padding-left: 5px;
+}
+.item-info img {
+  height: 70px;
+}
+
+.item-info button {
+  background-color: #ffb91f;
+  border: none;
+  border-radius: 30px;
+  padding: 8px;
+  width: 140px;
+  height: 30px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.item:not(:nth-child(-n + 3)) {
+  border: none; /* İlk 3 öğe hariç üst kenarda çizgi */
+}
+
+.item:not(:nth-last-child(-n + 3)) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+  /* Son 3 öğe hariç alt kenarda çizgi */
+}
+.item:not(:nth-child(3n + 1)) {
+  border-left: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.popular-parts-title {
+  place-content: center;
+  text-align: center;
+  font-size: 25px;
+  padding: 150px 0px 50px 0px;
+  font-weight: bold;
+}
+.popular-parts-section {
+  grid-template-columns: repeat(5, 230px);
+  grid-template-rows: repeat(4, 50px);
+  place-content: center;
+  gap: 15px;
+}
+.popular-parts {
+  border: 1px solid rgba(0, 0, 0, 0.164);
+  border-radius: 5px;
+  place-content: center;
+}
+.genuine-parts {
+  background-image: url("https://demothemesky-be87.kxcdn.com/druco/wp-content/uploads/2022/08/banner-3.jpg");
+  height: 300px;
+  color: white;
+}
+
+.genuine-parts-texts {
+  padding: 30px;
+  line-height: 90px;
+}
+.our-blog-title {
+  place-content: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 100px 0px 50px 0px;
+}
+.our-blog {
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  place-content: center;
+}
+.our-blog button {
+  font-weight: 600;
+}
+.our-blog p {
+  font-size: 13px;
+}
+.our-blog span {
+  color: #848484;
+  padding: 5px;
+}
+
+.blog-left {
+  grid-column: 1;
+  border: 1px solid rgba(0, 0, 0, 0.164);
+  border-radius: 15px;
+}
+.blog-left img {
+  max-width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.blog-left-texts {
+  padding: 30px;
+}
+.blog-right {
+  padding-left: 70px;
+  grid-column: 2;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.blog-right-questions {
+  padding-top: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.blog-right-questions:not(:nth-child(-n + 2)) {
+  border-bottom: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .cars-element-title {
+    grid-template-columns: repeat(3, 300px);
+    height: 50px;
+    margin-bottom: 50px;
+  }
+  .cars-element {
+    height: 800px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 280px);
+    place-content: center;
+  }
+
+  .item {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 10px;
+    place-items: center;
+  }
+  .item img {
+    height: 100px;
+  }
+  .item-info {
+    margin: 0;
+  }
+  .item-info img {
+    height: 30px;
+  }
+  .popular-parts-section {
+    grid-template-columns: repeat(4, 230px);
+    grid-template-rows: repeat(5, 50px);
+    place-content: center;
+    gap: 15px;
+  }
+}

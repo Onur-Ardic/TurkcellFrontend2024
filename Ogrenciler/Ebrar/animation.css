@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  height: 100vh;
+  background-color: darkslateblue;
+  align-items: center;
+  justify-content: center;
+}
+html {
+  font-size: 16px;
+}
+
+.box {
+  width: 6rem;
+  height: 6rem;
+  background-color: cadetblue;
+  /* transition-property: background-color, width, height;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out; */
+  /* transition: background-color 1s, width 0.5s ease-in-out; */
+  /* transition: all 0.5s ease-in-out; */
+  animation-name: animasyon-deneme;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-direction: alternate-reverse;
+}
+
+.box:hover {
+  background-color: forestgreen;
+  width: 6rem;
+  /* transform: scale(2); iki katına çıkar
+  transform: rotate(45deg); verilen dereceye göre döner 
+  transform: translateX(6rem); mousetan kaçar */
+  /* transform: translate(12rem, 12rem) rotate(180deg) scale(0.5); */
+}
+
+@keyframes animasyon-deneme {
+  0% {
+    transform: translateX(0px);
+    background-color: aquamarine;
+  }
+  50% {
+    transform: translateX(6rem);
+    background-color: blue;
+  }
+  100% {
+    transform: translateX(0px);
+    background-color: blueviolet;
+  }
+}
