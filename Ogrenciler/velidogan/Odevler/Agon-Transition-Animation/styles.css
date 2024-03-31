@@ -1,3 +1,16 @@
+#header {
+    padding: 10px 0;
+}
+#header .main-header{
+    justify-content: space-between;
+}
+#header .main-header ul{
+    column-gap: 15px;
+}
+#header .main-header a{
+    font-size: 2rem;
+    margin: 1.8rem;
+}
 
 .trusted-companies-list img{
     width: 233px;
@@ -163,17 +176,4 @@
         width: 416px;
         margin-bottom: -10px;
     }
-}
-#header {
-    padding: 10px 0;
-}
-#header .main-header{
-    justify-content: space-between;
-}
-#header .main-header ul{
-    column-gap: 15px;
-}
-#header .main-header a{
-    font-size: 2rem;
-    margin: 1.8rem;
-}
+ }
