@@ -166,6 +166,10 @@ main .hero .container .hero-right .hero-balance img {
   text-align: left;
   width: 100%;
   padding: 53px 48px;
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.our-happy-customers-item:hover {
+  transform: translateY(-3px);
 }
 .our-happy-customers-item .flex img {
   border-radius: 4px;
