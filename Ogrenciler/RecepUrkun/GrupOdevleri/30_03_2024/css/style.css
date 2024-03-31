@@ -1,26 +1,5 @@
 /* GLOBAL CSS START */
 
-* {
-    margin: 0;
-    padding: 0;
-    /* scrollbar-width: thin; */
-}
-
-.container {
-    width: 100%;
-    max-width: 1240px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* body {
-    background-color: #bee1e6
-} */
-
 img {
     border-radius: 10px;
 }
@@ -107,4 +86,85 @@ li {
     box-shadow: 14px 14px 36px rgba(49, 48, 48, 0.2);
     transform: translateY(-5px);
     transition: all .5s ease;
+}
+
+.header {
+    padding: 10px 0;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-main-menu {
+    width: 100%
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.header-nav li {
+    font-family: Chivo, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #101828;
+    display: block;
+    padding: 30px 22px;
+}
+
+.header-logo {
+    margin-right: 50px;
+}
+
+.hamburger-menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    right: 80px;
+    position: absolute;
+}
+
+.header-right {
+    position: relative;
+    max-width: 225px;
+    width: 100%;
+    right: 15px;
+}
+
+.header-left {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn.btn-default {
+    color: #101828;
+    background-color: #f2f4f7;
+    border-radius: 50px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 22px 32px;
+}
+
+.fa-solid {
+    position: absolute;
+    margin-left: 35px;
+}
+
+.btn.btn-default:hover {
+    background-color: #101828;
+    background-image: url(/_next/static/media/arrow-small-right-w.2fff1760.svg);
+    background-repeat: no-repeat;
+    color: #fff !important;
+    transform: translateY(-2px);
+    transition: .2s;
 }

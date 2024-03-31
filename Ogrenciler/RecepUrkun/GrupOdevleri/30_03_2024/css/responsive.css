@@ -17,3 +17,21 @@
         padding: 15px;
     }
 }
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .header-right {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .d-block {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main-header {
+        justify-content: space-between;
+    }
+}
