@@ -1,26 +1,24 @@
 .powerful-features-cards{
- flex-wrap: wrap;
  gap: 2rem;
  margin-top: 4rem;
  min-height: 80vh;
- margin-top: 70px;
- flex-direction: column;
  display: flex;
  justify-content: center;
  align-items: center;
- text-align: center ;
 }
 .title{
 text-align: center;
+font-size: 56px;
 }
 .down-title{
     margin-top: 50px;
     text-align: center;
+    font-size: 24px;
 }
 .cross-platform{
     height: 400px;
     width: 600px;
-    background-color: white;
+    background-color:#FFF3EA;
     position: relative;
     border-radius: 20px;
     padding: 30px;
@@ -30,15 +28,17 @@ text-align: center;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
   }
-  .cross-platform h2{
+  .cross-platform > h2{
     font-size: 35px;
     text-align: center;
   }
 .cross-platform > p {
     font-size: 14px;
-    color: #667085;
+    color: #475467;
+    font-family: Noto Sans, sans-serif;
+    font-weight: 400;
   }
-.cross-platform div{
+.cross-platform > div{
     position: relative;
     border-radius: 30px;  
 }
@@ -47,5 +47,14 @@ text-align: center;
     top: 50px;
     width: 90%;
     border-radius: 30px;
+    right: 25px;
   }
+.bg-blue{
+  background-color: #BEE1E6;
+}
+.card-down-title{
+  font-size: 28px;
+  text-align: center;
+}
+
     
