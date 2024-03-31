@@ -7,6 +7,19 @@
     justify-content: center;
 }
 
+.visibility-hidden {
+    visibility: hidden;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+}
+
 #navbar .container {
     justify-content: space-between;
     height: 15vh;
@@ -32,8 +45,129 @@
 }
 
 #home {
-    height: 85vh;
+    height: 120vh;
     background-color: #bee1e6;
+}
+
+#home .container {
+    padding-top: 190px;
+}
+
+#home .container .left .btn {
+    color: white;
+    background-color: #006d77;
+    width: 210px;
+    height: 40px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+#home .container .left h1 {
+    margin-bottom: 30px;
+}
+
+#home .container .left h4 {
+    margin-bottom: 10px;
+}
+
+#home .container .left p {
+    margin-bottom: 30px;
+}
+
+#home .container .left .btn2-link-container {
+    gap: 2rem;
+    margin-bottom: 40px;
+}
+
+#home .container .left .btn2 {
+    background-color: #101828;
+    width: 150px;
+    height: 60px;
+    gap: 1rem;
+    border-radius: 4px;
+}
+
+#home .container .left .btn2 a {
+    color: white;
+}
+
+#home .container .left .numbers {
+    width: 500px;
+    justify-content: space-between;
+}
+
+#home .container .right {
+    position: relative;
+}
+
+#home .container .right img {
+    border-radius: 10px;
+}
+
+#home .container .right .middle-image {
+    animation: middle-image-animation 8s infinite linear;
+}
+
+@keyframes middle-image-animation {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#home .container .right .top-image {
+    position: absolute;
+    top: 45px;
+    right: -80px;
+}
+
+#home .container .right .top-image {
+    animation: top-image-animation 5s infinite linear;
+}
+
+@keyframes top-image-animation {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#home .container .right .bottom-image {
+    position: absolute;
+    bottom: 10px;
+    left: -80px;
+}
+
+#home .container .right .bottom-image {
+    animation: bottom-image-animation 5s infinite linear;
+}
+
+@keyframes bottom-image-animation {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 #companies {
@@ -56,10 +190,9 @@
     margin-bottom: 4rem;
 }
 
-#companies .bottom .company:hover{
+#companies .bottom .company:hover {
     cursor: pointer;
     box-shadow: 0 10px 10px -5px rgb(236, 235, 235);
     transition: 0.3s ease;
     transform: scale(1.05);
-    
 }
