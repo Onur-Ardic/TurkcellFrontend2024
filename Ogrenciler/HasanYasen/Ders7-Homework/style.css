@@ -1,3 +1,7 @@
+.flex {
+    display: flex;
+}
+
 .flex-align-center {
     display: flex;
     align-items: center;
@@ -25,8 +29,16 @@
     height: 15vh;
 }
 
+#navbar .container .logo:hover {
+    cursor: pointer;
+}
+
 #navbar .container .selects {
     gap: 2.5rem;
+}
+
+#navbar .container .selects a:hover {
+    color: #006D77;
 }
 
 #navbar .container .btn {
@@ -38,10 +50,16 @@
     font-weight: 700;
 }
 
+#navbar .container .btn:hover {
+    background-color: #BEE1E6;
+    cursor: pointer;
+}
+
 #navbar .container .hamburger {
     position: absolute;
     top: 5.5vh;
     right: 0;
+    cursor: pointer;
 }
 
 #home {
@@ -87,6 +105,11 @@
     border-radius: 4px;
 }
 
+#home .container .left .btn2:hover {
+    cursor: pointer;
+    background-color: #006D77;
+}
+
 #home .container .left .btn2 a {
     color: white;
 }
@@ -128,10 +151,6 @@
     right: -80px;
 }
 
-#home .container .right .top-image {
-    animation: top-image-animation 5s infinite linear;
-}
-
 @keyframes top-image-animation {
     0% {
         transform: translateX(0px);
@@ -146,28 +165,15 @@
     }
 }
 
+#home .container .right .top-image,
+.bottom-image {
+    animation: top-image-animation 5s infinite linear;
+}
+
 #home .container .right .bottom-image {
     position: absolute;
     bottom: 10px;
     left: -80px;
-}
-
-#home .container .right .bottom-image {
-    animation: bottom-image-animation 5s infinite linear;
-}
-
-@keyframes bottom-image-animation {
-    0% {
-        transform: translateX(0px);
-    }
-
-    50% {
-        transform: translateX(20px);
-    }
-
-    100% {
-        transform: translateX(0px);
-    }
 }
 
 #companies {
@@ -195,4 +201,57 @@
     box-shadow: 0 10px 10px -5px rgb(236, 235, 235);
     transition: 0.3s ease;
     transform: scale(1.05);
+}
+
+#what-you-get {
+    height: 100vh;
+    padding-top: 100px;
+}
+
+#what-you-get .container {
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+#what-you-get .left {
+    position: relative;
+}
+
+#what-you-get .left .img-top {
+    width: 550px;
+    height: 650px;
+    border-radius: 16px;
+}
+
+#what-you-get .left .img-bottom {
+    border-radius: 16px;
+    position: absolute;
+    bottom: 100px;
+    right: -60px;
+}
+
+#what-you-get .right .btn {
+    color: #006D77;
+    background-color: #BEE1E6;
+    border-radius: 50px;
+    width: 230px;
+    height: 40px;
+}
+
+#what-you-get .right h2 {
+    margin: 20px 0;
+}
+
+#what-you-get .right .p-top {
+    margin-bottom: 50px;
+}
+
+#what-you-get .right .three-div {
+    gap: 1rem;
+    margin-bottom: 50px;
+}
+
+#what-you-get .right .three-div h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
