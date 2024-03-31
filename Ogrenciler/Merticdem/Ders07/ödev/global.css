@@ -18,20 +18,28 @@ body {
   padding: 20px;
   display: block;
   gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  
+}
+p{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+.h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   display: block;
 }
 
@@ -40,6 +48,15 @@ section {
 }
 .mt-50 {
   margin-top: 50px;
+}
+.text-display-4{
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: 0;
+  font-family: Chivo, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-align: left;
 }
 .text-display-3 {
   font-size: 56px;
@@ -55,8 +72,9 @@ section {
 .color-black {
   color: #101828;
 }
-.bg-green {
+.bg-green-900 {
   background-color: #006d77;
+  color: #fff;
 }
 .bg-lightgreen {
   background-color: #bee1e6;
@@ -64,13 +82,19 @@ section {
 .bg-white {
   background-color: white;
 }
+.bg-primary-color{
+  background-color: #f2f4f7;
+}
+.color-gray-500 {
+  color: #667085;
+}
 .flex {
   display: flex;
 }
 .fd-row {
   flex-direction: row;
 }
-.justify-content-center {
+.jc-center {
   justify-content: center;
 }
 .justify-content-flex-start {
@@ -93,6 +117,7 @@ section {
 }
 .grid {
   display: grid;
+
 }
 .gap-30 {
   gap: 30px;
