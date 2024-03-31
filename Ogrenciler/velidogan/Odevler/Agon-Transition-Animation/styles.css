@@ -131,6 +131,22 @@
         width: 150px;
         margin: 30px 0 0 0;
     } 
+    #our-happy-customers{
+        margin: 100px 0;
+    }
+    #section-a-right img{
+        margin: 540px 0 0 303px;
+    }
+    #discover .row,#built > .row{
+        flex-wrap: wrap;
+    }
+    #section-a{
+        height: 1450px;
+    }
+    #section-a #section-a-left > .row .col-2{
+        flex: 50%;
+        padding: 20px 5px;
+    }
 }
 
 @media (max-width:576px){
