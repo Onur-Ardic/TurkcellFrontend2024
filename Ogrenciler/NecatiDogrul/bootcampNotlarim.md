@@ -1,25 +1,29 @@
 Block büyün sayfayı kaplar
 Inline sadece kapsadığı alan kadar
+
 ctrl + k + c commente alır
 ctrl + k + u geri alır
+
 google lighthouse seo toolu
 
 id classı ezer
-!important ezer ama kullanma önerilmiyor
+!important her şeyi ezer ama kullanılması önerilmiyor
+
 mdn baya iyi site gözat
+
 border-box kullan
-div block element 
+
+div block elementtir
+span ise inline.
+
 css flex sitesi çok iyi
-https://flexboxfroggy.com/
+
+
 order özelliği - değer alabilir. - değer + değerlerden önce gelir.
+
 https://www.frontendmentor.io/
 css wars
 
-----
-ödev 2 benim yerim
-start investment
-what user says
-----
 
 seo için sayfaların en başında h1 olmalı 1 tane gerisi
 h2 olabilir
@@ -27,4 +31,7 @@ h2 olabilir
 px yerine rem kullanabilirsin
 
 null javascriptte primitive bir deger
+
 margin x auto tam ortalar
+
+px yerine vw vh kullanabilirsin
