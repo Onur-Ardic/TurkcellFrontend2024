@@ -7,6 +7,9 @@
     width: 110px;
     margin-left: 10px;
   }
+  header button {
+    visibility: hidden;
+  }
   .hero {
     width: 100%;
     height: 650px;
@@ -51,18 +54,20 @@
     width: 430px;
     border-radius: 20px;
     z-index: 1;
-    position: relative;
+    position: absolute;
   }
   .front-img {
     width: 250px;
-    position: absolute;
+    position: relative;
     z-index: 2;
     border-radius: 20px;
-    right: 30px;
-    margin-top: 340px;
+    left: 180px;
+    top: 330px;
+    box-shadow: 1px 6px 32px 1px rgba(0, 0, 0, 0.75);
   }
   .what-we-do-btn {
-    margin-top: 40px;
+    margin-top: 340px;
+    margin-bottom: 20px;
     padding: 14px 30px;
     border: none;
     border-radius: 20px;
@@ -76,8 +81,84 @@
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    background-color: yellow;
+  header button {
+    border: none;
+    padding: 15px 25px;
+    border-radius: 20px;
+  }
+  header {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    align-items: center;
+  }
+  header button {
+    visibility: visible;
+  }
+  .small-arrow {
+    width: 15px;
+  }
+  .hero {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+  }
+  .advanced-title {
+    font-size: 45px !important;
+    max-width: 700px;
+  }
+  .alt-title {
+    font-size: 24px !important;
+  }
+  .how-it-works button {
+    padding: 24px 35px;
+    margin-right: 30px;
+  }
+  .how-it-works p {
+    margin-left: 10px;
+  }
+  .hero-stats {
+    width: 600px !important;
+  }
+  .pattern-6 {
+    z-index: 0;
+  }
+  .companies p {
+    font-size: 32px !important;
+    font-weight: 700;
+  }
+  .company-img img {
+    width: 160px;
+  }
+  .back-img {
+    width: 680px;
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+  }
+  .front-img {
+    width: 250px;
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    left: 430px !important;
+    top: 630px !important;
+    box-shadow: 1px 6px 32px 1px rgba(0, 0, 0, 0.75);
+  }
+  .what-we-do-btn {
+    margin-top: 630px;
+    margin-bottom: 20px;
+  }
+  .fresh-title {
+    font-size: 46px !important;
+    font-weight: 700 !important;
+  }
+  .fresh-alt-title {
+    font-size: 24px !important;
+  }
+  .bigger-subcontent {
+    font-size: 28px !important;
   }
 }
 @media screen and (min-width: 1068px) {

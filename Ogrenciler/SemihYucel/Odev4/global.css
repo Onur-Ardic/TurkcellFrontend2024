@@ -1,54 +1,76 @@
-*{ 
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;    
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chivo", sans-serif;
+    color: #101828;
 }
-.container{
+
+.container {
     width: 80%;
     margin: auto;
 }
-h1{
+
+a {
+    text-decoration: none;
+}
+
+h1 {
     font-size: 64px;
 }
-h2{
+
+h2 {
     font-size: 56px;
 }
-h3{
+
+h3 {
     font-size: 35px;
 }
-h4{
+
+h4 {
     font-size: 28px;
 }
-h5{
+
+h5 {
     font-size: 22px;
 }
-h6{
+
+h6 {
     font-size: 18px;
 }
-.h7{
+
+.h7 {
     font-size: 14px;
 }
 
+p {
+    font-family: "Noto Sans", sans-serif;
+    color: #475467;
+}
 
-
-
-p{ font-family: 'Times New Roman', Times, serif;}
-
-.p-24   {
+.p-24 {
     font-size: 24px;
 }
-.p-20{
+
+.p-20 {
     font-size: 20px;
 }
-.p-18{
+
+.p-18 {
     font-size: 18px;
 }
-.p-16{
+
+.p-16 {
     font-size: 16px;
 }
-.p-14{
-    font-size:14px;
+
+.p-14 {
+    font-size: 14px;
 }
-.p-13{
-    font-size:13px;
+
+.p-13 {
+    font-size: 13px;
 }

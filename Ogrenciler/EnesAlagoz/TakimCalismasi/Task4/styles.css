@@ -1,169 +1,202 @@
-.section-box-discover{
+.section-box-discover {
     width: 1903px;
     height: 897px;
 }
-.container-title{
+
+.container-title {
     width: 1320px;
     height: 252px;
 }
-.title-discover{
+
+.title-discover {
     width: 856px;
     height: 212px;
 }
-.margin-bottom-10{
+
+.margin-bottom-10 {
     margin: 0 0 10px;
 }
-.margin-bottom-15{
+
+.margin-bottom-15 {
     margin-bottom: 15px;
 }
-.margin-top-20{
+
+.margin-top-20 {
     margin: 20px 0px 0px;
 }
-.margin-top-40{
+
+.margin-top-40 {
     margin: 40px 0px 0px;
 }
-.margin-top-30{
+
+.margin-top-30 {
     margin: 30px 0px 0px;
 }
-.margin-right-10{
+
+.margin-right-10 {
     margin-right: 10px;
 }
-.margin-left-10{
+
+.margin-left-10 {
     margin-left: 10px;
 }
-.text-body{
+
+.text-body {
     width: 856px;
     height: 64px;
     font-size: 24px;
     line-height: 32px;
 }
-.container-cross-platform-box{
+
+.container-cross-platform-box {
     width: 636px;
     height: 455px;
     background-color: #fff3ea;
     padding: 55px 50px 0px;
     border-radius: 20px;
 }
-.left-img-box{
+
+.left-img-box {
     width: 536px;
     height: 442px;
-    background:  #ebecf4;
+    background: #ebecf4;
     padding: 23px 19px;
     border-radius: 20px;
 }
-.left-img{
+
+.left-img {
     width: 498px;
     height: 389px;
 }
-.text-heading-4-box{
+
+.text-heading-4-box {
     width: 536px;
     height: 32px;
 }
-.container-extremel-flexible-platform-box{
+
+.container-extremel-flexible-platform-box {
     width: 636px;
     height: 455px;
-   background: #bee1e6;
-   padding: 55px 50px 0px;
+    background: #bee1e6;
+    padding: 55px 50px 0px;
     border-radius: 20px;
 }
-.text-heading-4-box{
+
+.text-heading-4-box {
     width: 536px;
     height: 32px;
 }
-.text-body-right{
+
+.text-body-right {
     width: 536px;
     height: 38px;
 }
-.right-img-box{
+
+.right-img-box {
     width: 536px;
     height: 442px;
-    background:  #cbd1e5;
+    background: #cbd1e5;
     padding: 23px 19px;
     border-radius: 20px;
 }
+
 .grid-container {
     display: grid;
-    grid-template-rows: 1fr 1fr ;
-    gap: 20px; 
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
 }
+
 .container-cross-platform-box,
-.container-extremel-flexible-platform-box { 
+.container-extremel-flexible-platform-box {
     float: left;
 }
- /* SECTION */
-.section-box-built{
+
+/* SECTION */
+.section-box-built {
     width: 1903px;
     height: 521px;
     margin: 100px 0px 0px;
 }
-.container-title-built{
+
+.container-title-built {
     width: 1320px;
     height: 188px;
 }
-.title-built{
+
+.title-built {
     width: 856px;
     height: 64px;
 }
-.box-1{
+
+.box-1 {
     width: 440px;
     height: 263px;
     padding: 0px 12px;
 }
-.box-1-container{
+
+.box-1-container {
     width: 416px;
     height: 173px;
 }
-.box-1-container-img{
+
+.box-1-container-img {
     width: 64px;
     height: 173px;
     padding-top: 50px;
     margin-left: 0;
 }
-.box-1-container-text{
+
+.box-1-container-text {
     width: 352px;
     height: 173px;
-    padding:  50px 0px 0px;
+    padding: 50px 0px 0px;
 }
-.text-body-text{
+
+.text-body-text {
     width: 336px;
     height: 84px;
     color: #475467;
-    font: 16px "Noto Sans" , sans-serif;
+    font: 16px "Noto Sans", sans-serif;
     margin: 15px 0px 0px;
     line-height: 22px;
 }
 
 /* SECTION */
 
-.section-box-from{
+.section-box-from {
     width: 1903px;
     height: 862px;
 }
-.container-title-from{
+
+.container-title-from {
     width: 660px;
     height: 782px;
     margin: 0px 0px 30px;
     padding: 0px 12px;
 }
-.container-img-from{
+
+.container-img-from {
     width: 660px;
     height: 782px;
     padding: 0px 12px 0px 40px;
 }
-.img-from{
+
+.img-from {
     width: 608px;
     height: 702px;
-    
 }
+
 .img-from img:nth-child(2) {
     position: absolute;
     bottom: 0px;
     right: -70px;
 }
+
 .container-img-from .img-from img {
     border-radius: 20px;
 }
-.tag-1{
+
+.tag-1 {
     width: 209px;
     height: 42px;
     color: #006d77;
@@ -172,35 +205,41 @@
     padding: 14px 28px;
     font-size: 14px;
     line-height: 14px;
-    font-family: Chivo,sans-serif;
-    display: inline-block;  
+    font-family: Chivo, sans-serif;
+    display: inline-block;
 }
-.title-box{
+
+.title-box {
     width: 636px;
     height: 192px;
     padding: 30px 0px 0px;
 }
-.text-body-lead{
+
+.text-body-lead {
     width: 636px;
     height: 128px;
     font: 24px "Noto Sans", sans-serif;
     margin: 30px 0px 0px;
-    line-height: 32px; 
+    line-height: 32px;
 }
-.row-box{
+
+.row-box {
     width: 660px;
     height: 278px;
 }
-.row-box-1{
+
+.row-box-1 {
     width: 330px;
     height: 89px;
     margin: 50px 0px 0px;
     padding: 0px 12px;
 }
-.text-body-excerpt{
+
+.text-body-excerpt {
     width: 306px;
     height: 52px;
 }
+
 .row-box-1 p {
     font-size: 18px;
     line-height: 25px;
@@ -209,61 +248,73 @@
 
 /* SECTION */
 
-.section-box-our-happy{
+.section-box-our-happy {
     width: 1903px;
     height: 1228px;
 }
-.container-our-happy{
+
+.container-our-happy {
     width: 1320px;
     height: 1108px;
     margin: 120px 291px 0px;
     padding: 0px 12px;
 }
-.container-our-happy-box{
+
+.container-our-happy-box {
     width: 1296px;
-    height: 1108px;background: #f2f4f7;
+    height: 1108px;
+    background: #f2f4f7;
     padding: 80px;
     border-radius: 50px;
 }
-.container-title-our-happy{
+
+.container-title-our-happy {
     width: 773px;
     height: 146px;
     padding: 0px 12px;
 }
-.title-our-happy{
+
+.title-our-happy {
     width: 749px;
     height: 64px;
 }
-.text-body-our-happy{
+
+.text-body-our-happy {
     width: 749px;
     height: 32px;
     margin: 20px 0px 0px;
-    font: 24px "Noto Sans",sans-serif;
+    font: 24px "Noto Sans", sans-serif;
 }
-.container-card-box{
+
+.container-card-box {
     width: 568px;
     height: 366px;
     padding: 0px 12px;
 }
-.card-box{
+
+.card-box {
     width: 544px;
-    height: 346px;background: #ffffff;
-    margin:  0px 0px 020px;
-    padding:  53px 48px;
+    height: 346px;
+    background: #ffffff;
+    margin: 0px 0px 020px;
+    padding: 53px 48px;
     border-radius: 20px;
 }
-.text-body-card{
+
+.text-body-card {
     color: #475467;
     font: 16px "Noto Sans", sans-serif;
     margin: 18px 0px 0px;
     line-height: 30px;
 }
-.card-box-img{
+
+.card-box-img {
     width: 448px;
     height: 80px;
-    margin:  25px 0px 0px; 
+    margin: 25px 0px 0px;
 }
-.card-box-img-user{
+
+.card-box-img-user {
     width: 370px;
     height: 24px;
     color: #101828;
@@ -272,11 +323,8 @@
     margin-top: -30px;
     font-weight: bold;
 }
-.card-box-user{
+
+.card-box-user {
     color: #101828;
     font-size: 14px "Noto Sans", sans-serif;
 }
-
-
-
-
