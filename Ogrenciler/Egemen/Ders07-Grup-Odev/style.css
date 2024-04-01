@@ -21,7 +21,7 @@ ul li {
 }
 
 .search-by-vehicle {
-    background: url("./img/section1-bg.jpg") center center no-repeat;
+    background: url("./section1-bg.jpg") center center no-repeat;
     background-size: cover;
     width: 100%;
     position: relative;
@@ -229,7 +229,7 @@ ul li {
 
 .featured-brands-logos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(204px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
 }
 
 /* Featured Brands */
@@ -305,30 +305,24 @@ ul li {
     grid-template-columns: 34% 20% 20% 20%;
     gap: 2%;
 }
-
 .sayhello-title {
     margin-bottom: 16px;
     color: white;
 }
-
 .sayhello-list-item {
     padding: 10px 0;
 }
-
 .sayhello-list-item a {
     color: rgba(170, 170, 170, 1);
 }
-
 .sayhello-icons {
     margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(4, 12.5%);
 }
-
 .sayhello-icons i {
     cursor: pointer;
 }
-
 /* seyhello */
 /* footer */
 .footer {
@@ -337,23 +331,19 @@ ul li {
     background: black;
     color: white;
 }
-
 .footer .container {
     max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
-
 .footer-druco span {
     color: #ffb91f;
 }
-
 .footer-payment {
     display: flex;
     justify-content: flex-end;
 }
-
 /* footer */
 @media screen and (max-width: 991px) {
     .search-by-vehicle .container {
@@ -434,7 +424,6 @@ ul li {
         display: block;
     }
 }
-
 @media screen and (max-width: 500px) {
     .header-middle {
         grid-template-columns: 1fr;
@@ -453,5 +442,4 @@ ul li {
         padding-right: 100px;
     }
 }
-
 /* egemen kaplan */
