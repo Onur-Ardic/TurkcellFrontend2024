@@ -244,3 +244,11 @@
         margin-top: 180px !important;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .sec-8-content{
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));}
+    
+}
+
+

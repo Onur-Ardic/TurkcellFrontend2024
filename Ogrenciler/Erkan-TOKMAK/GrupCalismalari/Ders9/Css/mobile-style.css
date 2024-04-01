@@ -8,7 +8,16 @@
 }
 
 @media screen and (max-width:425px ){
-    #menu-item{
+    body {
+        font-size: smaller;
+    }
+        .menu-item{
         display: none;
+    }
+    #slider-image-section{
+        display: none;
+    }
+    .count-item{
+        margin-right: 30px;
     }
 }
