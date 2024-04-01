@@ -1,5 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+.header-button {
+  color: #101828;
+  background-color: #f2f4f7;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  padding: 22px 32px;
+}
+.header-icon {
+  font-size: 14px;
+  margin-left: 4px;
+}
+.header-button:hover {
+  color: white;
+  background-color: #101828;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
 #slider {
   background-color: #bee1e6;
+  padding: 50px 0;
 }
 .slider {
   display: grid;
@@ -75,13 +108,13 @@
   position: absolute;
   z-index: 3;
   right: 700px;
-  top: 400px;
+  top: 500px;
 }
 .payment-div {
   position: absolute;
   z-index: 3;
   right: 300px;
-  top: 80px;
+  top: 250px;
 }
 .payment-img {
   width: 155px;
