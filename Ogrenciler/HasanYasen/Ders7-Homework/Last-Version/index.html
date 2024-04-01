@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ödev 4</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="global.css" />
+</head>
+
+<body>
+  <div id="navbar">
+    <div class="container flex-align-center">
+      <div class="logo">
+        <img src="https://agon-nextjs-13.vercel.app/assets/imgs/template/logo.svg" alt="logo" width="120px"
+          height="80px" />
+      </div>
+      <div class="selects flex-align-center">
+        <div>
+          <a class="p-18" href="#">Home</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 40 40">
+            <path fill="black" d="M4.659 11.833h30.682L20 32.167z" />
+          </svg>
+        </div>
+        <div>
+          <a class="p-18" href="#">About</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 40 40">
+            <path fill="black" d="M4.659 11.833h30.682L20 32.167z" />
+          </svg>
+        </div>
+        <div>
+          <a class="p-18" href="#">Company</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 40 40">
+            <path fill="black" d="M4.659 11.833h30.682L20 32.167z" />
+          </svg>
+        </div>
+        <div>
+          <a class="p-18" href="#">Pages</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 40 40">
+            <path fill="black" d="M4.659 11.833h30.682L20 32.167z" />
+          </svg>
+        </div>
+        <div>
+          <a class="p-18" href="#">Blog</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 40 40">
+            <path fill="black" d="M4.659 11.833h30.682L20 32.167z" />
+          </svg>
+        </div>
+        <div>
+          <a class="p-18" href="#">Shop</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 40 40">
+            <path fill="black" d="M4.659 11.833h30.682L20 32.167z" />
+          </svg>
+        </div>
+      </div>
+      <div class="btn flex-align-center justify-center">
+        <a href="#">Get Started</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+          <g fill="none">
+            <path
+              d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+            <path fill="black"
+              d="m15.06 5.283l5.657 5.657a1.5 1.5 0 0 1 0 2.12l-5.656 5.658a1.5 1.5 0 0 1-2.122-2.122l3.096-3.096H4.5a1.5 1.5 0 0 1 0-3h11.535L12.94 7.404a1.5 1.5 0 0 1 2.122-2.121Z" />
+          </g>
+        </svg>
+      </div>
+      <div class="hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="4vh" viewBox="0 0 24 24">
+          <path fill="black" fill-rule="evenodd"
+            d="M20.75 7a.75.75 0 0 1-.75.75H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 .75.75m0 5a.75.75 0 0 1-.75.75H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 .75.75m0 5a.75.75 0 0 1-.75.75H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 .75.75"
+            clip-rule="evenodd" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div id="home">
+    <div class="container flex-align-center">
+      <div class="left">
+        <div class="btn h7 flex-align-center justify-center">Digital Marketing Agency</div>
+        <h1>Advanced analytics to grow your business</h1>
+        <p class="p-24">Integrated workflow designed for product teams. We create world-class development
+          and branding
+        </p>
+        <div class="btn2-link-container flex-align-center">
+          <div class="btn2 flex-align-center justify-center">
+            <a href="#">Get Start</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <g fill="none">
+                <path
+                  d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                <path fill="white"
+                  d="m15.06 5.283l5.657 5.657a1.5 1.5 0 0 1 0 2.12l-5.656 5.658a1.5 1.5 0 0 1-2.122-2.122l3.096-3.096H4.5a1.5 1.5 0 0 1 0-3h11.535L12.94 7.404a1.5 1.5 0 0 1 2.122-2.121Z" />
+              </g>
+            </svg>
+          </div>
+          <div class="link flex-align-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="100px" viewBox="0 0 24 24">
+              <path fill="#006d77"
+                d="M10.46 18a2.23 2.23 0 0 1-.91-.2a1.76 1.76 0 0 1-1.05-1.59V7.79A1.76 1.76 0 0 1 9.55 6.2a2.1 2.1 0 0 1 2.21.26l5.1 4.21a1.7 1.7 0 0 1 0 2.66l-5.1 4.21a2.06 2.06 0 0 1-1.3.46" />
+            </svg>
+            <a class="p-18" href="#">How it works</a>
+          </div>
+        </div>
+        <div class="numbers flex-align-center">
+          <div>
+            <h4>+38k</h4>
+            <p class="p-14">Happy Clients</p>
+          </div>
+          <div>
+            <h4>+45k</h4>
+            <p class="p-14">Project Done</p>
+          </div>
+          <div>
+            <h4>100%</h4>
+            <p class="p-14">Client Satisfaction</p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="middle-image">
+          <img src="https://agon-nextjs-13.vercel.app/assets/imgs/page/homepage2/banner.png" alt="home image-middle"
+            width="500px" height="550px" />
+        </div>
+        <div class="top-image">
+          <img src="https://agon-nextjs-13.vercel.app/assets/imgs/page/homepage2/payment.png" alt="home image-top"
+            width="160px" height="170px" />
+        </div>
+        <div class="bottom-image">
+          <img src="https://agon-nextjs-13.vercel.app/assets/imgs/page/homepage2/balance.png" alt="home image-bottom"
+            width="220px" height="260px" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="companies">
+    <div class="container">
+      <div class="top">
+        <h3>Trusted by the world’s leading companies</h3>
+      </div>
+      <div class="bottom flex-align-center justify-center">
+        <div class="company">
+          <img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-1.svg" alt="company-1"
+            width="200px" height="100px" />
+        </div>
+        <div class="company">
+          <img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-2.svg" alt="company-2"
+            width="200px" height="100px" />
+        </div>
+        <div class="company">
+          <img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-3.svg" alt="company-3"
+            width="200px" height="100px" />
+        </div>
+        <div class="company">
+          <img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-4.svg" alt="company-4"
+            width="200px" height="100px" />
+        </div>
+        <div class="company">
+          <img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-5.svg" alt="company-5"
+            width="200px" height="100px" />
+        </div>
+        <div class="company">
+          <img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-6.svg" alt="company-6"
+            width="200px" height="100px" />
+        </div>
+        <div class="company">
+          <img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-7.svg" alt="company-7"
+            width="200px" height="100px" />
+        </div>
+        <div class="company">
+          <img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-8.svg" alt="company-8"
+            width="200px" height="100px" />
+        </div>
+        <div class="company">
+          <img src="https://agon-nextjs-13.vercel.app/assets/imgs/slider/logo/sample-logo-9.svg" alt="company-9"
+            width="200px" height="100px" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="what-you-get" style="margin-bottom: 200px;">
+    <div class="container flex">
+      <div class="left">
+        <img class="img-top" src="https://agon-nextjs-13.vercel.app/assets/imgs/page/homepage2/img-2.png"
+          alt="what-you-get-image" width="600px" height="700px" />
+
+        <img class="img-bottom" src="https://agon-nextjs-13.vercel.app/assets/imgs/page/homepage2/chart.png"
+          alt="what-you-get-image" width="260px" height="200px" />
+      </div>
+      <div class="right">
+        <div class="btn p-14 flex-align-center justify-center">What We Do, What You Get</div>
+        <h2>Fresh Ideas.<br />Thoughtful Design.</h2>
+        <p class="p-top p-24">Feugiat primis ligula risus auctor egestas and augue viverra mauri tortor in
+          iaculis
+          magna a feugiat mauris ipsum and placerat viverra tortor gravida purus.
+        </p>
+        <div class="three-div flex justify-center">
+          <div>
+            <img src="https://agon-nextjs-13.vercel.app/assets/imgs/page/homepage2/icon-work.svg" alt="work-svg" />
+          </div>
+          <div>
+            <h4>Work smarter with powerful features</h4>
+            <p class="p-18">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero
+              tempus, blandit
+            </p>
+          </div>
+        </div>
+        <div class="three-div flex justify-center">
+          <div>
+            <img src="https://agon-nextjs-13.vercel.app/assets/imgs/page/homepage2/icon-design.svg" alt="design-svg" />
+          </div>
+          <div>
+            <h4>Designed for teams of all sorts and sizes</h4>
+            <p class="p-18">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero
+              tempus, blandit
+            </p>
+          </div>
+        </div>
+        <div class="three-div flex justify-center">
+          <div>
+            <img src="https://agon-nextjs-13.vercel.app/assets/imgs/page/homepage2/icon-advance.svg"
+              alt="advance-svg" />
+          </div>
+          <div>
+            <h4>Advanced analytics to grow your business</h4>
+            <p class="p-18">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero
+              tempus, blandit
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="container" style="margin-top: 350px;">
+    <div class="row-r">
+      <h2 style="font-weight: 700; font-size: 48px;">Discover powerful features to
+        boost your productivity</h2>
+      <p class="p-24">
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis
+        lectus nulla.
+      </p>
+    </div>
+    <div class="img-row">
+      <div class="box-with-img krem">
+        <h4>Cross-Platform</h4>
+        <p class="p-14">Your site is not complete with only landings. Get essential inner pages using our ready demos.
+        </p>
+        <div class="img-box img-box-color1">
+          <img src="img/temp-1.png" alt="ornek-tasarim-resmi">
+        </div>
+      </div>
+      <div class="box-with-img blue-box">
+        <h4>Extremely Flexible</h4>
+        <p class="p-14">Your site is not complete with only landings. Get essential inner pages using our ready demos.
+        </p>
+        <div class="img-box img-box-color2">
+          <img src="img/temp-2.png" alt="ornek-tasarim-resmi">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container padding-top-225px">
+    <div class="row-r">
+      <h2>Built exclusively for you </h2>
+      <p class="p-24">
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis
+        lectus nulla.
+      </p>
+    </div>
+    <br><br>
+    <div class="stikers">
+      <div class="card-stiker">
+        <div class="img-container-R"><img src="img/icon-acquis.svg" alt=""></div>
+        <div class="exp">
+          <h4>1. Acquisition</h4>
+          <p class="p-16">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            laborum — semper quis lectus nulla.</p>
+        </div>
+      </div>
+      <div class="card-stiker">
+        <div class="img-container-R"><img src="img/icon-acquis.svg" alt=""></div>
+        <div class="exp">
+          <h4>2. Activation</h4>
+          <p class="p-16">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            laborum — semper quis lectus nulla.</p>
+        </div>
+      </div>
+      <div class="card-stiker">
+        <div class="img-container-R"><img src="img/icon-acquis.svg" alt=""></div>
+        <div class="exp">
+          <h4>3. Retention</h4>
+          <p class="p-16">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            laborum — semper quis lectus nulla.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container padding-top-70px section-7">
+    <div class="section-7-content">
+      <span class="p-14 header-span margin-bottom-30px">Built Exclusively For You </span>
+      <h2 class="margin-bottom-30px">From the big picture to every tiny detail, we got you covered.</h2>
+      <p class="p-24 margin-bottom-80px">Necessary to deliver white glove, fully managed campaigns that surpass industry
+        benchmarks.Take your career to next level. Apply to our team and see what we can do together. You’re good enough
+      </p>
+      <div class="sec-7-grid">
+        <div class="leaf-content">
+          <h6><span><img src="img/leaf.svg" alt=""></span> Automated reports
+          </h6>
+          <p class="p-18">The latest design trends meet hand-crafted templates.</p>
+        </div>
+        <div class="leaf-content">
+          <h6><span><img src="img/leaf.svg" alt=""></span> Realtime analytics
+          </h6>
+          <p class="p-18">The latest design trends meet hand-crafted templates.</p>
+        </div>
+        <div class="leaf-content">
+          <h6><span><img src="img/leaf.svg" alt=""></span> Funnel optimization
+          </h6>
+          <p class="p-18">The latest design trends meet hand-crafted templates.</p>
+        </div>
+        <div class="leaf-content last-leaf">
+          <h6><span><img src="img/leaf.svg" alt=""></span> User journey
+          </h6>
+          <p class="p-18">The latest design trends meet hand-crafted templates.</p>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div id="section-a-right" class="sec-7-content">
+      <img src="img/sec-7-ex.png" alt="">
+    </div>
+  </section>
+  <section class="container sec-8">
+    <div class="row-r">
+      <h2 class="margin-bottom-30px">Our Happy Customers</h2>
+      <p class="p-20 margin-bottom-80px">Know about our clients, we are a woldwide corporate brand</p>
+    </div>
+    <div class="sec-8-content">
+      <div class="sec-8-card">
+        <h5>Satisfied client testimonial </h5> <br>
+        <p class="p-16">
+          Even factoring differences in body weight between children and adults into account, it would still not reach
+          an intoxicating level in children
+        </p>
+        <div class="sec-8-card-usr">
+          <span><img src="img/user-1.png" alt="usr1 profile picture"> </span>
+          <div class="user">
+            <span class="p-16">
+              Jane Cooper</span>
+            <p class="p-14">Biffco Enterprises Ltd.</p>
+          </div>
+        </div>
+      </div>
+      <div class="sec-8-card">
+        <h5>98% of residents recommend us</h5> <br>
+        <p class="p-16">
+          So yes, the alcohol (ethanol) in hand sanitizers can be absorbed through the skin, but no, it would not cause
+          intoxication.
+        </p>
+        <div class="sec-8-card-usr">
+          <span><img src="img/user-2.png" alt="usr1 profile picture"> </span>
+          <div class="user">
+            <span class="p-16">Wade Warren</span>
+            <p class="p-14">Krusty Krab</p>
+          </div>
+        </div>
+      </div>
+      <div class="sec-8-card">
+        <h5>Our success stories</h5> <br>
+        <p class="p-16">
+          “It has been an absolute pleasure dealing with Scan during the lockdown. Our church began to livestream our
+          services, and Scan had a great selection of hardware....”
+        </p>
+        <div class="sec-8-card-usr">
+          <span><img src="img/user-3.png" alt="usr1 profile picture"> </span>
+          <div class="user">
+            <span class="p-16">Leslie Alexander</span>
+            <p class="p-14">Biffco Enterprises Ltd.</p>
+          </div>
+        </div>
+      </div>
+      <div class="sec-8-card">
+        <h5>This is simply unbelievable</h5> <br>
+        <p class="p-16">
+          “I was also lucky enough to read @Coding_Career early and I was thoroughly blown away! It’s the book I wish I
+          had when I started my dev career.”
+        </p>
+        <div class="sec-8-card-usr">
+          <span><img src="img/user-4.png" alt="usr1 profile picture"> </span>
+          <div class="user">
+            <span class="p-16">Jenny Wilson</span>
+            <p class="p-14">Soylent Corp</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="section flex flex-column align-center" id="plans">
+    <h2 class="text-center" style="font-weight: 600;">
+      Choose The Best Plan <br />
+      That’s For You
+    </h2>
+    <div class="switch-div gap-1 flex align-center">
+      <span class="p-16">Billed Monthly</span>
+      <div class="switch card-rad cursor-pointer" style="background-color: #101828;">
+        <div class="slider transition"></div>
+      </div>
+      <span class="p-16">Bill Annualy</span>
+    </div>
+    <div class="plan-cards gap-1 flex flex-wrap justify-center">
+      <div class="plan-card transition card-rad flex flex-column justify-between cursor-pointer">
+        <div class="card-row gap-1 flex flex-column">
+          <div>
+            <span class="h3" style="font-weight: 700;">$ 50</span><span class="p-16"
+              style="font-weight: 400; color: #98a2b3;">/Month</span>
+          </div>
+          <h4 class="h5">Standart</h4>
+          <p class="p-13" style="color: #98a2b3;">
+            All the basics for businesses that are just getting started.
+          </p>
+        </div>
+        <ul class="card-row gap-1 flex flex-column p-14">
+          <li class="card-li gap-2 flex">
+            <span class="tick"></span><span class="li-text">Unlimited updates</span>
+          </li>
+          <li class="card-li gap-2 flex">
+            <span class="tick"></span><span class="li-text">Custom permissions</span>
+          </li>
+          <li class="card-li gap-2 flex">
+            <span class="tick"></span><span class="li-text">Custom designs and features</span>
+          </li>
+        </ul>
+        <div class="card-row gap-1 flex flex-column">
+          <button class="plan-card-button color-white p-18 cursor-pointer transition"
+            style="background-color: #101828;">
+            Get Started ->
+          </button>
+        </div>
+      </div>
+      <div class="plan-card transition card-rad flex flex-column justify-between cursor-pointer"
+        style="background-color: #006d77;">
+        <div class="card-row gap-1 flex flex-column">
+          <div>
+            <span class="h3 color-white" style="font-weight: 700;">$ 50</span><span class="p-16 color-white"
+              style="color: #98a2b3; font-weight: 400;">/Month</span>
+          </div>
+          <h4 class="h5 color-white">Standart</h4>
+          <p class="p-13 color-white" style="color: #98a2b3;">
+            All the basics for businesses that are just getting started.
+          </p>
+        </div>
+        <ul class="card-row gap-1 flex flex-column p-14">
+          <li class="card-li gap-2 flex">
+            <span class="tick tick2"></span><span class="li-text color-white">Unlimited updates</span>
+          </li>
+          <li class="card-li gap-2 flex">
+            <span class="tick tick2"></span><span class="li-text color-white">Custom permissions</span>
+          </li>
+          <li class="card-li gap-2 flex">
+            <span class="tick tick2"></span><span class="li-text color-white">Custom designs and features</span>
+          </li>
+        </ul>
+        <div class="card-row gap-1 flex flex-column">
+          <button class="plan-card-button2 plan-card-button color-white p-18 cursor-pointer transition">
+            Get Started ->
+          </button>
+        </div>
+      </div>
+      <div class="plan-card transition card-rad flex flex-column justify-between cursor-pointer">
+        <div class="card-row gap-1 flex flex-column">
+          <div>
+            <span class="h3" style="font-weight: 700;">$ 50</span><span class="p-16"
+              style="font-weight: 400; color: #98a2b3;">/Month</span>
+          </div>
+          <h4 class="h5">Standart</h4>
+          <p class="p-13" style="color: #98a2b3;">
+            All the basics for businesses that are just getting started.
+          </p>
+        </div>
+        <ul class="card-row gap-1 flex flex-column p-14">
+          <li class="card-li gap-2 flex">
+            <span class="tick"></span><span class="li-text">Unlimited updates</span>
+          </li>
+          <li class="card-li gap-2 flex">
+            <span class="tick"></span><span class="li-text">Custom permissions</span>
+          </li>
+          <li class="card-li gap-2 flex">
+            <span class="tick"></span><span class="li-text">Custom designs and features</span>
+          </li>
+        </ul>
+        <div class="card-row gap-1 flex flex-column">
+          <button class="plan-card-button color-white p-18 cursor-pointer transition"
+            style="background-color: #101828;">
+            Get Started ->
+          </button>
+        </div>
+      </div>
+      <div class="plan-card transition card-rad flex flex-column justify-between cursor-pointer">
+        <div class="card-row gap-1 flex flex-column">
+          <div>
+            <span class="h3" style="font-weight: 700;">$ 50</span><span class="p-16"
+              style="font-weight: 400; color: #98a2b3;">/Month</span>
+          </div>
+          <h4 class="h5">Standart</h4>
+          <p class="p-13" style="color: #98a2b3;">
+            All the basics for businesses that are just getting started.
+          </p>
+        </div>
+        <ul class="card-row gap-1 flex flex-column h7">
+          <li class="card-li gap-2 flex">
+            <span class="tick"></span><span class="li-text">Unlimited updates</span>
+          </li>
+          <li class="card-li gap-2 flex">
+            <span class="tick"></span><span class="li-text">Custom permissions</span>
+          </li>
+          <li class="card-li gap-2 flex">
+            <span class="tick"></span><span class="li-text">Custom designs and features</span>
+          </li>
+        </ul>
+        <div class="card-row gap-1 flex flex-column">
+          <button class="plan-card-button color-white p-18 cursor-pointer transition"
+            style="background-color: #101828;">
+            Get Started ->
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section flex flex-column align-center" id="newsletter">
+    <div class="newsletter card-rad flex justify-between" id="#newsletter" style="background-color: #bee1e6;">
+      <div class="newsletter-left gap-1 flex flex-column">
+        <span class="newsletter-span h7" style="font-weight:400 ;">NEWSLETTER</span>
+        <h4 class="fs-42" style="font-weight: 600;">
+          Subscribe our <br />
+          newsletter
+        </h4>
+        <p>By clicking the button, you are agreeing with our</p>
+        <a href="#" class="color-green h7">Term and Conditions</a>
+        <form action="" class="newsletter-form">
+          <input type="text" placeholder="Enter your mail ..." />
+          <button class="newsletter-button h6" style="background-color: #006d77;">
+            <img src="./images/arrow-small-right-w.2fff1760.svg" alt="" />
+          </button>
+        </form>
+      </div>
+      <div class="block-chart">
+        <img src="./images/chart.png" class="card-rad" width="100%" alt="" />
+      </div>
+      <div class="newsletter-right flex justify-center">
+        <img src="./images/banner.png" class="card-rad" width="100%" alt="" />
+      </div>
+    </div>
+  </section>
+  <section class="section flex justify-center">
+    <footer class="section flex flex-column footer">
+      <div class="footer-row flex justify-between flex-wrap" style="width: 100%;">
+        <div class="footer-logo">
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <div class="footer-ready">
+          <span class="h6" style="font-weight: 700; padding-right: 20px;">Ready to get started?</span>
+          <button class="plan-card-button footer-button color-white cursor-pointer" style="background-color: #101828;">
+            Create an Account
+          </button>
+        </div>
+      </div>
+      <div class="footer-row footer-row2 flex flex-wrap justify-between" style="width: 100%;">
+        <div class="footer-col gap-1 flex flex-column">
+          <h4 class="h5">Contact</h4>
+          <div class="p-16 p">
+            4517 Washington Ave. Manchester, Kentucky 39495
+          </div>
+          <div class="p">
+            (239) 555-0108 <br />
+            contact@agon.com
+          </div>
+        </div>
+        <div class="footer-col gap-1 flex flex-column">
+          <h5>About Us</h5>
+          <a href="#" class="p-16 p">Mission and Vision</a>
+          <a href="#" class="p-16 p">Our Team</a>
+          <a href="#" class="p-16 p">Careers</a>
+          <a href="#" class="p-16 p">Press and Media</a>
+          <a href="#" class="p-16 p">Advertising</a>
+          <a href="#" class="p-16 p">Testimonials</a>
+        </div>
+        <div class="footer-col gap-1 flex flex-column">
+          <h5>Discover</h5>
+          <a href="#" class="p-16 p">Our Blog</a>
+          <a href="#" class="p-16 p">Plans and Pricing</a>
+          <a href="#" class="p-16 p">Knowledge Base</a>
+          <a href="#" class="p-16 p">Cookie Policy</a>
+          <a href="#" class="p-16 p">Office Center</a>
+          <a href="#" class="p-16 p">News and Events</a>
+        </div>
+        <div class="footer-col gap-1 flex flex-column">
+          <h5>Support</h5>
+          <a href="#" class="p-16 p">FAQs</a>
+          <a href="#" class="p-16 p">Editor Help</a>
+          <a href="#" class="p-16 p">Community</a>
+          <a href="#" class="p-16 p">Live Chatting</a>
+          <a href="#" class="p-16 p">Contact Us</a>
+          <a href="#" class="p-16 p">Support Center</a>
+        </div>
+        <div class="footer-col gap-1 flex flex-column">
+          <h5>Useful Links</h5>
+          <a href="#" class="p-16 p">Request an offer</a>
+          <a href="#" class="p-16 p">How it works</a>
+          <a href="#" class="p-16 p">Pricing</a>
+          <a href="#" class="p-16 p">Reviews</a>
+          <a href="#" class="p-16 p">Stories</a>
+        </div>
+      </div>
+      <div class="footer-row flex justify-between align-center flex-wrap">
+        <div class="footer-bottom gap-2 flex flex-wrap">
+          <span class="p p-16" style="font-weight: 700; color: #98a2b3;">© Agon Official 2022</span>
+          <a href="" class="p-16 p" style="font-weight: 400; color: #98a2b3;">Privacy Policiy</a><a href=""
+            class="p-16 p" style="font-weight: 400; color: #98a2b3;">Cookies</a><a href="" class="p-16 p"
+            style="font-weight: 400; color: #98a2b3;">Terms of service</a>
+        </div>
+        <div class="socials gap-1 flex flex-wrap">
+          <a href="#"><img src="./images/facebook.14729890.svg" alt="" /></a>
+          <a href=""><img src="./images/twitter.6e7d7d18.svg" alt="" /></a>
+          <a href=""><img src="./images/instagram.70e26b99.svg" alt="" /></a>
+          <a href=""><img src="./images/linkedin.7321e995.svg" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <div class="arrow-up">
+    <a href="#home"> <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+        <path fill="white" d="M7.03 9.97h4v8.92l2.01.03V9.97h3.99l-5-5Z" />
+      </svg>
+    </a>
+  </div>
+
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

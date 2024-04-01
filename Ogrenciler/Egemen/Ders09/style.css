@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    height: 100vh;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    /* transition-property: background-color,width,height;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out; */
+    /* transition: background-color 1s, width .5s ease-in-out; */
+    /* transition: all 1s ease-in-out; */
+    /* animation-name: animasyon-deneme;
+    animation-duration: 2 s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse; */
+    animation: animasyon-deneme 2s infinite ease-in-out;
+}
+.box:hover{
+    background-color: red;
+    /* width: 200px; */
+    border-radius: 100%;
+    /* transform: scale(2); */
+    /* transform: rotate(180deg); */
+    /* height: 300px; */
+    /* transform: translatex(100px); */
+    /* transform: translatey(100px); */
+    /* transform: translate(100px, 100px) rotate(180deg) scale(.5); */
+
+}
+@keyframes animasyon-deneme{
+    0%{
+        transform: translateX(0px);
+        background-color: orange;
+    }
+    50%{
+        transform: translateX(100px);
+        background-color: red;
+    }
+    100%{
+        transform: translateX(0px);
+        background-color: orange;
+    }
+}

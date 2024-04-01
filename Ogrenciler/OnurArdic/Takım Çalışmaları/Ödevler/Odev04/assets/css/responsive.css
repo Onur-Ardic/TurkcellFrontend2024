@@ -1,86 +1,182 @@
 /* Navbar */
 
-@media (max-width: 900px) {
-  .checkbtn {
-    display: block;
-  }
-
-  .navbar-wrapper .navbar-links {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #2c3e50;
-    top: 100px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-    z-index: 99;
-    flex-direction: column;
-  }
-
-  .navbar-wrapper .navbar-links .navbar-link {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-
-  .navbar-wrapper .navbar-links .navbar-link a {
-    font-size: 1.2rem;
-    color: #fff;
-  }
-
-  .navbar-wrapper .navbar-links .navbar-link a:hover,
-  .navbar-wrapper .navbar-links .navbar-link a.active {
-    background: none;
-    color: #ec6707;
-  }
-
-  #check:checked ~ ul {
-    left: 0;
-  }
-
-  /* Hero */
-
-  main .hero {
-    height: max-content;
-  }
-
-  main .hero .container .hero-left .hero-btn-how,
-  main .hero .container .hero-left .hero-btn-how span {
-    font-size: 15px;
-  }
-
-  main .hero .container .hero-right {
-    padding: 0;
-  }
-
-  main .hero .container .hero-right .hero-payment img {
-    width: 70px;
-    right: -20px;
-  }
-
-  main .hero .container .hero-right .hero-balance img {
-    width: 70px;
-    left: -20px;
-  }
-
-  main .hero .hero-wrapper {
-    grid-template-columns: 1fr;
-    height: max-content;
-  }
-  /* Compaines */
-  .companies .compaines-wrapper .companies-img {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .companies .compaines-wrapper .companies-img img {
-    width: 140px;
-  }
+.checkbtn {
+  display: block;
 }
 
+.navbar-wrapper .navbar-links {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #2c3e50;
+  top: 100px;
+  left: -100%;
+  text-align: center;
+  transition: all 0.5s;
+  z-index: 99;
+  flex-direction: column;
+}
+
+.navbar-wrapper .navbar-links .navbar-link {
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+
+.navbar-wrapper .navbar-links .navbar-link a {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.navbar-wrapper .navbar-links .navbar-link a:hover,
+.navbar-wrapper .navbar-links .navbar-link a.active {
+  background: none;
+  color: #ec6707;
+}
+
+#check:checked ~ ul {
+  left: 0;
+}
+
+/* Hero */
+
+main .hero {
+  height: max-content;
+}
+
+main .hero .container .hero-left .hero-btn-how,
+main .hero .container .hero-left .hero-btn-how span {
+  font-size: 15px;
+}
+
+main .hero .container .hero-right {
+  padding: 0;
+}
+
+main .hero .container .hero-right .hero-payment img {
+  width: 70px;
+  right: -20px;
+}
+
+main .hero .container .hero-right .hero-balance img {
+  width: 70px;
+  left: -20px;
+}
+
+main .hero .hero-wrapper {
+  grid-template-columns: 1fr;
+  height: max-content;
+}
+/* Compaines */
+.companies .compaines-wrapper .companies-img {
+  justify-content: center;
+  align-items: center;
+}
+
+.companies .compaines-wrapper .companies-img img {
+  width: 140px;
+}
+
+/* For-you */
+.for-you .for-you-wrapper {
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.for-you .for-you-wrapper .left-for-you .left-for-you-top h2 {
+  font-size: 40px;
+}
+
+.for-you .for-you-wrapper .right-for-you {
+  margin-top: 40px;
+  padding: 1rem;
+}
+
+.right-for-you .first-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.right-for-you .second-img {
+  left: 50px;
+  bottom: 20px;
+}
+
+.right-for-you .second-img img {
+  width: 150px;
+}
+
+/* Happy customers */
 @media (max-width: 768px) {
   .our-happy-customers-item-container {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.our-happy-customers-item-container {
+  width: 97%;
+}
+
+/*!------------- Plans------------- */
+.plans {
+  margin-top: 50px;
+}
+
+.plans .plans-card-wrapper {
+  flex-wrap: wrap;
+}
+
+.plans .plans-card-wrapper .plans-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.plans .plans-content h2 {
+  font-size: 30px;
+}
+
+/* !----------Subscribe-------------- */
+.subscribe {
+  height: max-content;
+  width: 95%;
+}
+.subscribe-wrapper {
+  flex-direction: column;
+}
+
+.subscribe-wrapper .subs-left h4 {
+  font-size: 20px;
+}
+
+.subscribe-wrapper .subs-right .subs-first-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.subscribe .subscribe-wrapper .subs-right .second-img {
+  bottom: 0%;
+  left: -0px;
+}
+
+/* Footer */
+
+footer .footer-top {
+  flex-wrap: wrap;
+  padding: 1rem;
+  width: 100%;
+}
+
+footer .footer-top .right-btn .create {
+  padding: 0.5rem;
+}
+footer .footer-bottom {
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding: 1rem;
+}
+
+footer .social {
+  flex-wrap: wrap;
 }
