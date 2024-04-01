@@ -1,0 +1,162 @@
+/* newsletter */
+.newsletter{
+    margin-bottom: 100px;
+}
+.newsletter .container{
+    margin-top: 100px;
+}
+.newsletter-genel{
+    background-color: #fff3ea;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 18px;
+    padding: 60px;
+}
+.newsletter-content{
+    display: flex;
+    position: relative;
+}
+.newsletter-content-left{
+    padding: 0 12px;
+    flex: 5;
+}
+.newsletter-content-left p{
+    color: #667085
+}
+.newsletter-content-left h4{
+    font-size: 2.75rem;
+    margin: 10px 0;
+}
+.newsletter-content-left form{
+    padding: 12px;
+    margin-top: 30px;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    border-radius: 55px;
+}
+.newsletter-content-left input{
+    width: 90%;
+    padding: 15px;
+    min-height: 50px;
+    border: none;
+}
+.newsletter-content-left button{
+    background-image: url("https://agon-nextjs-13.vercel.app/_next/static/media/btn-send.793d82ba.svg");
+    background-position: -30px -21px;
+    background-repeat: no-repeat;
+    height: 57px;
+    width: 72px;
+    border: none;
+    background-color: white;
+}
+.newsletter-content-right{
+    flex: 7;
+}
+.newsletter-content-right img{
+    max-width: 332px;
+    position: absolute;
+    bottom: -110px;
+    right: 0;
+    border-radius: 20px;
+}
+/* newsletter */
+/* footer */
+.footer{
+    margin-top: 50px;
+}
+.footer-top{
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e4e7ec;
+    display: flex;
+    font-weight: 700;
+}
+.footer-top-logo{
+    flex: 1;
+}
+.footer-top-create-account{
+    flex: 2;
+    text-align: right;
+}
+.footer-started-span{
+    margin-right: 30px;
+}
+.create-account-btn{
+    padding: 18px 20px;
+    background-color: #101828;
+    color: white;
+    border-radius: 4px;
+}
+.footer-center{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 10px;
+}
+.footer-center-element{
+    padding: 0 12px;
+}
+.footer-center p, .footer-center a, .footer-bottom span, .footer-bottom a{
+    color: #667085;
+}
+.footer-center-content{
+    margin-top: 20px;
+}
+.footer-center-title{
+    font-size: 1.25rem;
+}
+.footer-list-item{
+    margin-bottom: 8px;
+}
+.footer-list-item a:hover{
+    color: #006d77;
+    transition-duration: .2s;
+    padding-left: 3px;
+}
+.footer-bottom{
+    margin-top: 20px;
+    padding: 30px 0;
+    border-top: 1px solid #e4e7ec;
+    display: flex;
+}
+.footer-bottom-item{
+    width: 50%;
+}
+.footer-bottom-policy{
+    display: flex;
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+    gap: 30px;
+}
+.footer-bottom-policy a{
+    /* margin-left: 10px; */
+}
+.footer-bottom-social{
+    text-align: end;
+    font-size: 1.75rem;
+    color: #006d77;
+}
+@media screen and (max-width: 500px) {
+    .footer-top{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-top-create-account{
+        text-align: center;
+    }
+    .footer-bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* footer */
+/* main.css */
+a{
+    text-decoration: none;
+}
+@media screen and (min-width: 1400px) {
+    .container{
+        width: 1320px;
+    }
+}
+/* main.css */
