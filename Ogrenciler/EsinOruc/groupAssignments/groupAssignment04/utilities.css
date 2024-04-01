@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: "Notos Sans", sans-serif;
   list-style-type: none;
-  text-decoration: none;
 }
 .font-noto {
   font-family: "Noto Sans", sans-serif;
@@ -30,6 +29,7 @@
 }
 .btn {
   border-radius: 50px;
+  border: none;
 }
 .bg-green {
   background-color: #bee1e6;
@@ -42,6 +42,9 @@
 }
 .grid {
   display: grid;
+}
+.text-white {
+  color: #fff;
 }
 
 .flex {
@@ -116,6 +119,9 @@
 .fw-700 {
   font-weight: 700;
 }
+.font-bold {
+  font-weight: 700;
+}
 .fw-400 {
   font-weight: 400;
 }
@@ -152,4 +158,7 @@
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+.cursor-pointer {
+  cursor: pointer;
 }

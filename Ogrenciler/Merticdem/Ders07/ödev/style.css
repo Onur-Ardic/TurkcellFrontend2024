@@ -9,20 +9,19 @@
   text-align: center;
   justify-content: center;
 }
-.main-header{
+.main-header {
   gap: 120px;
   justify-content: center;
   text-align: center;
 }
-.header-right{
+.header-right {
   justify-content: center;
   text-align: center;
-
 }
 .header-Logo {
   justify-content: flex-end;
 }
-.button-head{
+.button-head {
   font-size: 24px;
   border-radius: 20%;
   text-decoration: none;
@@ -30,29 +29,35 @@
   background-position: 30%;
 }
 
-.dmAgency{
+.dmAgency {
+  width: auto;
+  height: auto;
   height: 600px;
-  gap:30px;
+  gap: 30px;
   display: grid; /* Grid container olarak ayarlanıyor */
-  grid-template-areas: 
+  grid-template-areas:
     "dm-item1 dm-item2"
     "dm-item3 dm-item2"
     "dm-item4 dm-item2"
     "dm-item5 dm-item2"; /* Grid template'i belirleniyor */
-    justify-content: center;
-    text-align: center;
-    text-align: left;
-} 
+  justify-content: center;
+  text-align: center;
+  text-align: left;
+}
 .dm-item1 {
+  width: fit-content;
+  height: fit-content;
   grid-area: dm-item1;
   border-radius: 50px;
   padding: 14px 28px;
   font-size: 14px;
-  line-height:14px;
-  font-family:"Chivo", sans-serif;
-  display: inline-block;
-  box-sizing: border-box;
-  vertical-align: baseline;
+  line-height: 14px;
+  font-family: "Chivo", sans-serif;
+  line-height: 14px;
+  padding: 14px 28px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .dm-item2 {
   grid-area: dm-item2;
@@ -63,14 +68,32 @@
 }
 .dm-item4 {
   grid-area: dm-item4;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
 }
 .dm-item5 {
   grid-area: dm-item5;
 }
+.getStart{
+  width: fit-content;
+  height: fit-content;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  padding: 22px 32px;
+}
+.getStart2{
+  display: flex;
+  flex-direction:row ;
+}
 .space {
   visibility: hidden;
 }
-
 
 .footer .topFooter {
   width: 100%;

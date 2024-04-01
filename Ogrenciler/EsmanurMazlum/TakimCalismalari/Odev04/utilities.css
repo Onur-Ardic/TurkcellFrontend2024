@@ -118,6 +118,9 @@ p {
 .flex-row {
   flex-direction: row;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .align-center {
   align-items: center;
 }
@@ -144,4 +147,20 @@ p {
 }
 .gap-30 {
   gap: 30px;
+}
+
+.mt-15{
+  margin-top: 15px;
+}
+
+.mt-30{
+  margin-top: 30px;
+}
+
+.mt-50{
+  margin-top: 50px;
+}
+
+.mt-120{
+  margin-top: 120px;
 }
