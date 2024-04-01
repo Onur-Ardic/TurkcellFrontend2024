@@ -38,7 +38,17 @@ p {
   unicode-bidi: isolate;
 }
 
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -74,8 +84,17 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   color: #fff;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 .bg-lightgreen {background-color: #bee1e6;}
 .bg-white {background-color: white;}
+=======
+.bg-lightgreen {
+  background-color: #bee1e6;
+}
+.bg-white {
+  background-color: white;
+}
+>>>>>>> c7a7de0409bf5ce358ed90771ab5486e715be0ae
 .bg-primary-color {
   background-color: #f2f4f7;
 }
