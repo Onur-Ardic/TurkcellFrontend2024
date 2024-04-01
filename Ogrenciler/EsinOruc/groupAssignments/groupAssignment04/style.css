@@ -1,0 +1,140 @@
+.card {
+  border: 1px solid #d0d5dd;
+  border-radius: 16px;
+  animation: fadeIn;
+}
+.card:hover {
+  transform: translateY(-3px);
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  background-color: #006d77;
+  color: #ffffff;
+}
+.card-green {
+  background-color: #006d77;
+  color: #ffffff;
+}
+.card-green .btn-card-styled {
+  background-color: #006d77;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.card-green ul li {
+  color: #ffffff;
+}
+.card-green ul li i {
+  color: #da840c;
+}
+.card:hover ul li {
+  color: #ffffff;
+}
+.card:hover ul li i {
+  color: #da840c;
+}
+.card:hover .btn-card-styled {
+  background-color: #006d77;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.btn-card-styled {
+  border: 1px solid transparent;
+  background-color: #101828;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 12px 22px;
+}
+.btn-card-styled:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+.list-gray li i {
+  color: #006d77;
+}
+.toggle-btn {
+  padding: 12px 24px 12px 24px;
+  border: 1px solid #101828;
+  background-color: #101828;
+}
+.toggle-btn-white {
+  padding: 10px;
+  border: 1px solid #101828;
+  left: 605px;
+  top: 4px;
+}
+
+.newsletter .container {
+  border-radius: 20px;
+  padding: 52px 74px;
+  grid-template-columns: 400px 700px;
+}
+
+.newsletter-content h2 {
+  font-size: 42px;
+  line-height: 44px;
+}
+.newsletter-form input {
+  padding: 30px 30px 30px 30px;
+  width: 350px;
+  border: none;
+}
+.newsletter-form button {
+  right: 60px;
+  top: 15px;
+  color: #ffffff;
+  border: none;
+}
+.stats-card img {
+  border-radius: 20px;
+  z-index: 1;
+  top: 50px;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.image-container img {
+  border-radius: 20px;
+  right: 20px;
+}
+
+.footer .footer-sections {
+  border-top: 1px solid #cdcecf;
+  border-bottom: 1px solid #cdcecf;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px 0px;
+}
+@media (max-width: 1024px) {
+  .footer-sections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-sections {
+    grid-template-columns: 1fr;
+  }
+}
+.footer-bottom {
+  text-decoration: none;
+}
+
+.footer-btn {
+  align-items: flex-start;
+  border: 1px solid transparent;
+  background-color: #101828;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 12px 22px;
+}
+.footer-btn:hover {
+  border: 1px solid #101828;
+  background-color: #ffffff;
+  color: #101828;
+}
