@@ -42,6 +42,7 @@ h1,h2,h3,h4,h5,h6,p{
   line-height: normal;
 }
 
+
 /* Flex */
 .row {
   display: flex;
@@ -66,6 +67,7 @@ h1,h2,h3,h4,h5,h6,p{
 .col-4{
     flex: 20%;
 }
+
 /* grid */
 .grid{
     display: grid;
@@ -128,7 +130,6 @@ h1,h2,h3,h4,h5,h6,p{
   margin: 15px 0;
 }
 .paragraph {
-  color: rgb(0, 0, 0);
   font-size: 20px;
   margin-bottom: 24px;
 }
