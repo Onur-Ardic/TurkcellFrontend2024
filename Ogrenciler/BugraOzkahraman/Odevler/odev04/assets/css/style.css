@@ -154,7 +154,6 @@ main .hero .container .hero-right .hero-balance img {
 }
 .section-text {
   grid-template-rows: auto;
-  margin-left: 750px;
 }
 .fresh {
   display: flex;
@@ -162,13 +161,10 @@ main .hero .container .hero-right .hero-balance img {
 }
 .fres-img img {
   height: 660px;
-  margin-left: 175px;
   border-radius: 20px;
 }
 .chart-img img {
   height: 200px;
-  margin-left: 550px;
-  margin-top: 550px;
   border-radius: 20px;
 }
 .we-do {
