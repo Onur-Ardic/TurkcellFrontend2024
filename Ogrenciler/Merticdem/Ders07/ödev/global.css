@@ -97,6 +97,9 @@ section {
 .color-gray-500 {
   color: #667085;
 }
+.bg-black{
+  background-color: #101828;
+}
 .flex {
   display: flex;
 }
