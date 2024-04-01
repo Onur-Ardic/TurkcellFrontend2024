@@ -7,17 +7,50 @@
     --fourth:#FFF3EA;
 }
 
-@media screen and (max-width:425px ){
+@media screen and (max-width:430px ){
     body {
-        font-size: smaller;
+        font-size: 14px;
+    }
+    .container{
+        width: 100%;
+        padding: 10px;
+        margin: 0px;
     }
         .menu-item{
         display: none;
+    }
+    .header-btn{
+        display: none;
+    }
+    .slider{
+        display: flex;
+        flex-direction: column;
     }
     #slider-image-section{
         display: none;
     }
     .count-item{
         margin-right: 30px;
+    }
+    .blok3{
+        position: absolute;
+        /* bottom: -1700px;
+        right: -40px; */
+        margin-top: 370px;
+        margin-left: 140px;
+        width: 200px;
+        height: 150px;
+    }
+    #aboutus {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .companies-img{
+        width: 350px;
+        height: 450px;
+    }
+    .witdh50 {
+        width: 100%;
     }
 }
