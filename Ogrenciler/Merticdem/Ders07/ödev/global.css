@@ -38,17 +38,7 @@ p {
   unicode-bidi: isolate;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   display: block;
 }
 
@@ -78,21 +68,19 @@ section {
   font-size: 18px;
   color: #101828;
 }
-.color-black {
-  color: #101828;
-}
+.color-black {color: #101828;}
 .bg-green-900 {
   background-color: #006d77;
   color: #fff;
+  box-sizing: border-box;
 }
-.bg-lightgreen {
-  background-color: #bee1e6;
-}
-.bg-white {
-  background-color: white;
-}
+.bg-lightgreen {background-color: #bee1e6;}
+.bg-white {background-color: white;}
 .bg-primary-color {
   background-color: #f2f4f7;
+}
+.bg-black{
+  background-color: #101828;
 }
 .color-gray-500 {
   color: #667085;
@@ -106,12 +94,8 @@ section {
 .fd-row {
   flex-direction: row;
 }
-.jc-center {
-  justify-content: center;
-}
-.jc-fstart {
-  justify-content: flex-start;
-}
+.jc-center {justify-content: center;}
+.jc-fstart {justify-content: flex-start;}
 .jc-fend {
   justify-content: flex-end;
 }

@@ -29,11 +29,10 @@
   background-position: 30%;
 }
 
-.dmAgency {
+.dmAgency{
   width: auto;
   height: auto;
-  height: 600px;
-  gap: 30px;
+  gap:30px;
   display: grid; /* Grid container olarak ayarlanıyor */
   grid-template-areas:
     "dm-item1 dm-item2"
@@ -49,12 +48,10 @@
   height: fit-content;
   grid-area: dm-item1;
   border-radius: 50px;
-  padding: 14px 28px;
   font-size: 14px;
   line-height: 14px;
-  font-family: "Chivo", sans-serif;
-  line-height: 14px;
   padding: 14px 28px;
+  font-family:"Chivo", sans-serif;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -94,7 +91,20 @@
 .space {
   visibility: hidden;
 }
-
+.getStart{
+  width: fit-content;
+  height: fit-content;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  padding: 22px 32px;
+}
+.getStart2{
+  display: flex;
+  flex-direction:row ;
+}
 .footer .topFooter {
   width: 100%;
   padding: 0 0 40px;
