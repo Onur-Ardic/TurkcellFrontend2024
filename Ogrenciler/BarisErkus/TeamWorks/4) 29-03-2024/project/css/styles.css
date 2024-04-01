@@ -1,6 +1,5 @@
 .header-container {
     padding: 1.5rem 20rem;
-    justify-content: space-between;
 }
 
 .header-left {
@@ -20,7 +19,6 @@ nav ul li a {
 }
 
 .header-right-container {
-    /* 3 */
     padding: 1.5rem 2rem;
     border-radius: 5rem;
     background-color: #F2F4F7;
@@ -443,7 +441,6 @@ nav ul li a {
 }
 
 .img-from img:nth-child(2) {
-    position: absolute;
     bottom: 0px;
     right: -70px;
 }
@@ -577,7 +574,6 @@ nav ul li a {
     font: 17px "Noto Sans", sans-serif;
     margin-left: 20px;
     margin-top: -30px;
-    font-weight: bold;
 }
 
 .card-box-user {
@@ -613,8 +609,6 @@ nav ul li a {
 }
 
 .card-row {
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
     padding: 1rem 0;
 }
@@ -688,7 +682,6 @@ nav ul li a {
     width: 4rem;
     height: 1.875rem;
     background-color: black;
-    position: relative;
 }
 
 .slider {
@@ -696,7 +689,6 @@ nav ul li a {
     height: 1.25rem;
     background-color: white;
     border-radius: 50%;
-    position: absolute;
     top: 5px;
     left: 5px;
 }
@@ -709,7 +701,6 @@ nav ul li a {
     width: 67.25rem;
     min-height: 24.875rem;
     padding: 3.25rem 4.6rem;
-    position: relative;
 }
 
 .newsletter-left {
@@ -722,7 +713,6 @@ nav ul li a {
 }
 
 .newsletter-form {
-    position: relative;
     margin-top: 1rem;
 }
 
@@ -739,7 +729,6 @@ nav ul li a {
     padding: 1rem;
     border-radius: 50%;
     border: none;
-    position: absolute;
     top: 0.75rem;
     right: 1rem;
 }
@@ -750,7 +739,6 @@ nav ul li a {
 }
 
 .block-chart {
-    position: absolute;
     bottom: 3.125rem;
     left: 28.125rem;
     max-width: 16rem;
@@ -859,12 +847,10 @@ nav ul li a {
 
     .footer-logo {
         width: 100%;
-        text-align: center;
         margin-bottom: 0.75rem;
     }
 
     .footer-ready {
-        text-align: center;
         padding: 0 1rem;
     }
 
