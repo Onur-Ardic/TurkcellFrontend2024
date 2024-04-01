@@ -320,7 +320,7 @@ input:checked + .slider:before {
 
 @keyframes handler {
   0% {
-    transform: translateX(0);
+    transform: translateX(-5%);
   }
   50% {
     transform: translateX(-20%);
@@ -329,7 +329,7 @@ input:checked + .slider:before {
     transform: translateX(-20%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(-5%);
   }
 }
 

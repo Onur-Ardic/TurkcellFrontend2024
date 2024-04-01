@@ -8,8 +8,8 @@
   --color-beige: #fff3ea;
 }
 *::selection {
-  background-color: var(--color-green);
-  color: #fff;
+  background-color: var(--ice-blue);
+  color: #000;
 }
 * {
   margin: 0;
