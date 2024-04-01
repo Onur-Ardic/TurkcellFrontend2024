@@ -1,0 +1,566 @@
+/* Hasan css start */
+
+/* Hasan css end */
+
+/* Ramazan css start */
+.padding-top-225px{
+  padding-top : 225px;
+}
+.padding-top-70px{
+  padding-top : 70px;
+}
+.margin-bottom-30px{
+  margin-bottom: 30px;
+}
+.margin-bottom-80px{
+  margin-bottom: 80px;
+}
+.row-r{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 20%;
+}
+.row-r .p-24{
+  margin-top: 15px;
+  margin-bottom: 55px;
+}
+.box-with-img{
+  width: 636px;
+  height: 455px;
+  border-radius: 15px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 50px;
+  display: flex;   
+  text-align: center;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+.blue-box{
+  background-color: #bee1ea;    
+}
+.krem{
+  background-color: #fff3ea;
+}
+.img-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box-with-img:hover {
+  transform: translateY(-5px); 
+  transition: transform 0.3s ease; 
+}
+.img-box{
+  width: 80%;
+  height: 442px;
+  position: absolute;
+  bottom:-140px;
+  border-radius: 20px
+}
+.img-box-color1{
+  background-color: #ebecf4;
+}
+.img-box-color2{
+  background-color: #cbd1e5;
+}
+.img-box img{
+  width: 80%;
+  height: 80%;
+  margin: 50px;
+}
+.stikers{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 50px;
+}
+.card-stiker{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ccc;
+}
+.exp{
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-bottom: 30px;
+}
+.exp h4{
+  margin-bottom: 15px;
+}
+.img-container-R{
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+.section-7{
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+} 
+.section-7-content{
+  width: 48%;
+  height: 1000px; 
+  position: relative;
+} 
+.img-box-7{
+  background-image:url('img/sec-7.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  position: relative;
+  padding: 20px;
+  display: flex;  
+}
+.header-span{
+  background-color: #bee1e6;
+  width: 210px;
+  height: 42px;
+  display: inline-block;
+  padding: 15px 10px; 
+  border-radius: 25px; 
+  text-align: center;
+}
+.sec-7-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 2px dotted #006d77; width: 85%; 
+  padding-top: 15px; 
+}
+.leaf-content{
+  width: 100%;
+  margin: 15px;
+  padding-bottom: 15px;
+}
+.img-box-7 .img-box{
+ width: 60%;
+ max-height: 80%;
+ position: absolute;
+ bottom: -20px;
+ right: -20px; 
+ padding: 10px; 
+
+}
+/* deneme-V */
+#section-a-right{
+  background: url("img/sec-7.png") no-repeat center center/contain;
+  height: 620px;
+}
+#section-a-right img{
+  width: 200px;
+  margin: 480px 0 0 400px;
+}
+#section-a .column-gap{
+  gap: 5px;
+}
+#section-a .row{
+  justify-content: flex-start;
+}
+#section-a i{
+  color: rgba(0 ,109, 119,1);
+}
+#section-a .paragraph{
+  padding-bottom: 40px;
+  border-bottom: 3px dotted rgba(0 ,109, 119,1);
+}
+/* deneme */
+
+.sec-8{
+  background-color: #f2f4f7;
+  border-radius: 50px;
+  padding: 70px;
+}
+.sec-8-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 20px;
+}
+.sec-8-card{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  border-radius: 20px;
+  padding: 40px; 
+  transition: transform 0.3s ease;
+  width: 90%;
+  margin: auto;  
+}
+.sec-8-card:hover {
+  transform: translateY(-5px); 
+  transition: transform 0.3s ease; 
+}
+.sec-8-card p{
+  line-height: 2;
+  padding-bottom: 30px ;
+}
+.sec-8-card-usr{
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+.sec-8-card-usr img{
+  height: 80px;
+  width: 80px;
+  border-radius: 5px;
+}
+.user span{
+  font-weight: bold   ;
+}
+@media screen and (max-width: 990px) {
+  .stikers {
+      grid-template-columns: 1fr;
+  }   
+  .sec-7-grid{
+      grid-template-columns: 1fr;
+      width: 100%; 
+  }
+  .section-7{
+      flex-direction: column;        
+  }
+  .img-row {
+      flex-direction: column;
+  }
+  .box-with-img{
+      margin-bottom: 200px;
+  }
+  .last-leaf{
+      margin-bottom: 350px !important;
+  }
+  .section-7-content {
+      width: 100%; /* Tam genişlik alması için */
+      display: block;
+      margin-bottom: 50px !important;
+  }  
+
+}
+@media screen and (max-width: 1148px) {
+  .section-7-content{
+      margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1301px) {
+  .sec-8{
+      margin-top: 180px !important;
+  }
+}
+/* Ramazan css end */
+
+/* Semih css start */
+a {
+  text-decoration: none;
+}
+.bg-lightgreen {
+  background-color: #bee1e6;
+}
+.bg-krem {
+  background-color: #fff3ea;
+}
+.bg-purple {
+  background-color: #cbd1e5;
+}
+.bg-gray {
+  background-color: #ebecf4;
+}
+.bg-cards {
+  background-color: #f2f4f7;
+}
+.bg-green {
+  background-color: #006d77;
+}
+.bg-pink {
+  background-color: #e29578;
+}
+.bg-black {
+  background-color: #101828;
+}
+.color-green {
+  color: #006d77;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.card-rad {
+  border-radius: 16px;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.text-center {
+  text-align: center;
+}
+.color-lightgray {
+  color: #98a2b3;
+}
+.color-white {
+  color: #ffffff;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.transition {
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+input:focus {
+  outline: none;
+}
+.width-100 {
+  width: 100%;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.section {
+    padding: 5rem 0;
+  }
+  .plan-card {
+    border: 1px solid #d0d5dd;
+    padding: 1.5rem 2rem;
+    max-width: 19.125rem;
+    height: 32.563rem;
+  }
+  .plan-card-button2 {
+    background-color: #006d77;
+    border: 1px solid white;
+  }
+  .card-row {
+    padding: 1rem 0;
+  }
+  .card-row:nth-child(2) {
+    border-top: 1px solid #d0d5dd;
+  }
+  .plan-card-button {
+    padding: 0.75rem 1.375rem;
+    border-radius: 0.375rem;
+  }
+  .plan-card:hover {
+    background-color: #006d77;
+    transform: translateY(-5px);
+  }
+  .plan-card:hover * {
+    color: white;
+  }
+  .plan-card-button:hover {
+    transform: translateY(-2px);
+  }
+  .plan-card:hover .plan-card-button {
+    background-color: #006d77;
+    border: 1px solid white;
+  }
+  .tick::before {
+    content: "";
+    background: url(./images/check-circle.8df4e653.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+  }
+  .tick2::before {
+    background: url(./images/check-circle-pink.4bdb8306.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .plan-card:hover .tick::before {
+    background: url(./images/check-circle-pink.4bdb8306.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .li-text {
+    margin-top: 0.25rem;
+  }
+  .switch-div {
+    padding: 1.25rem 0 5rem 0;
+  }
+  .switch {
+    width: 4rem;
+    height: 1.875rem;
+    position: relative;
+  }
+  .slider {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  .switch:hover .slider {
+    transform: translateX(2.25rem);
+  }
+  .newsletter {
+    width: 67.25rem;
+    min-height: 24.875rem;
+    padding: 3.25rem 4.6rem;
+    position: relative;
+  }
+  .newsletter-span {
+    color: #667085;
+    letter-spacing: 2px;
+  }
+  .newsletter-form {
+    position: relative;
+    margin-top: 1rem;
+  }
+  .newsletter-form input {
+    width: 100%;
+    padding: 2rem 2rem;
+    border-radius: 5rem;
+    border: none;
+  }
+  .newsletter-button {
+    height: 3.4rem;
+    width: 3.4rem;
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+  }
+  .newsletter-right {
+    max-width: 20.75rem;
+    margin-bottom: -9.375rem;
+  }
+  .block-chart {
+    position: absolute;
+    bottom: 3.125rem;
+    left: 28.125rem;
+    max-width: 16rem;
+    height: 12.125rem;
+    z-index: 2;
+    animation: hero-thumb-animation 2s linear infinite alternate;
+  }
+  .footer-button:hover {
+    background-color: white;
+    color: black;
+  }
+  .footer {
+    max-width: 125rem;
+  }
+  .footer-row2 {
+    margin: 2rem 0;
+    padding-top: 2rem;
+    border-top: 1px solid #d0d5dd;
+    border-bottom: 1px solid #d0d5dd;
+  }
+  .footer-col {
+    width: 20%;
+    min-width: 12.5rem;
+    padding-bottom: 2rem;
+  }
+  .footer-col a:hover {
+    color: #006d77;
+    transform: translateX(2px);
+  }
+  .socials a:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+  }
+  @keyframes hero-thumb-animation {
+    0% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .newsletter {
+      width: 90%;
+    }
+    .newsletter-left {
+      width: 18.75rem;
+    }
+    .block-chart {
+      left: 23.75rem;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    #plans h3 {
+      font-size: 35px;
+    }
+    #newsletter h4 {
+      font-size: 28px;
+    }
+    .newsletter {
+      flex-direction: column;
+      padding: 2rem;
+      gap: 2rem;
+    }
+    .newsletter-left {
+      width: 100%;
+    }
+    .newsletter-right {
+      margin-bottom: 0px;
+      width: 100%;
+      max-width: 62.5rem;
+    }
+    .block-chart {
+      left: 1.25rem;
+      bottom: 1.25rem;
+      width: 14rem;
+      height: 10.5rem;
+    }
+    .footer-col {
+      width: 100%;
+      padding-left: 1rem;
+      text-align: start;
+    }
+    .footer-logo {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }
+    .footer-ready {
+      text-align: center;
+      padding: 0 1rem;
+    }
+    .footer-ready button {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+  /* Semih css end */
