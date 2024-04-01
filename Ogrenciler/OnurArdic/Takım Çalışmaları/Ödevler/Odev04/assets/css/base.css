@@ -69,7 +69,12 @@ font-family: "Chivo", sans-serif;
 .mb-10 {
   margin-bottom: 10px;
 }
-
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-32 {
+  margin-top: 32px;
+}
 .mt-30 {
   margin-top: 30px;
 }
@@ -118,16 +123,25 @@ font-family: "Chivo", sans-serif;
   background-color: #bee1e6;
 }
 
+.bg-light-gray {
+  background-color: #f2f4f7;
+}
 .bg-white {
   background-color: #fff;
 }
-
 .color-black {
   color: black;
 }
 
 .color-white {
   color: white;
+}
+
+.color-gray {
+  color: #101828;
+}
+.color-light-gray {
+  color: #475467;
 }
 
 .text-center {

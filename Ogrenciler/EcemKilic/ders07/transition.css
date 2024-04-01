@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    height: 100vh;
+    background-color: azure;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    /* transition-property: background-color, width, height;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out; */
+    /* transition: background-color 1s, width .5s ease-in-out; */
+    transition: all .5s ease-in-out;
+}
+.box:hover {
+    background-color: deeppink;
+    width: 200px;
+    transform: translate(1100px);
+    transform:rotateX('angle')
+}

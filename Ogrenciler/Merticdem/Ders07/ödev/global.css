@@ -13,16 +13,33 @@ body {
   background: #fff;
   background-size: contain;
 }
-.container{
-  background-color:#fff;
+.container {
+  background-color: #fff;
   padding: 20px;
-  display:block;
-  gap :10px;
-  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
-
+  display: block;
+  gap: 10px;
+  
+}
+p{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+.h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   display: block;
 }
 
@@ -32,37 +49,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .mt-50 {
   margin-top: 50px;
 }
+.text-display-4{
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: 0;
+  font-family: Chivo, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-align: left;
+}
 .text-display-3 {
   font-size: 56px;
   font-family: "Chivo", sans-serif;
 }
-.text-display-2{
+.text-display-2 {
   font-family: "Chivo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   color: #101828;
 }
-.bg-green {
+.color-black {
+  color: #101828;
+}
+.bg-green-900 {
   background-color: #006d77;
+  color: #fff;
 }
 .bg-lightgreen {
   background-color: #bee1e6;
 }
-.bg-white{
-  background-color:white;
+.bg-white {
+  background-color: white;
 }
-.bg-button {
-  background-color: #101828;
+.bg-primary-color{
+  background-color: #f2f4f7;
+}
+.color-gray-500 {
+  color: #667085;
 }
 .flex {
   display: flex;
 }
-.fd-row{
+.fd-row {
   flex-direction: row;
 }
-.justify-content-center {
+.jc-center {
   justify-content: center;
+}
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
+.justify-content-flex-end {
+  justify-content: flex-end;
+}
+.justify-content-space-between {
+  justify-content: space-between;
 }
 .align-items-center {
   align-items: center;
@@ -70,10 +112,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .align-items-flex-start {
   align-items: flex-start;
 }
+.align-items-baseline {
+  align-items: baseline;
+}
 .grid {
   display: grid;
+
 }
-.gap-30{
+.gap-30 {
   gap: 30px;
-  list-style-type:none;
+  list-style-type: none;
+}
+.blackButton {
+  border-radius: 4px;
+  background-color: #101828;
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  padding: 18px 20px;
+  border: 2px solid transparent;
+  text-decoration: none;
 }

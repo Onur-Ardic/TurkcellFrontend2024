@@ -78,3 +78,9 @@
     width: 140px;
   }
 }
+
+@media (max-width: 768px) {
+  .our-happy-customers-item-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

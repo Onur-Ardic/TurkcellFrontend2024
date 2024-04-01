@@ -1,16 +1,125 @@
 .header .main-header .header-left .header-nav {
-    display: flex;
-    width: 100%;
-    text-align: center;
+  display: flex;
+  width: 100%;
+  text-align: center;
 }
-.header-left{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+.header-left {
+  gap: 150px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
-.header-Logo{
-    justify-content: flex-end;
+.main-header{
+  gap: 120px;
+  justify-content: center;
+  text-align: center;
+}
+.header-right{
+  justify-content: center;
+  text-align: center;
 
 }
-.header-nav{
+.header-Logo {
+  justify-content: flex-end;
+}
+.button-head{
+  font-size: 24px;
+  border-radius: 20%;
+  text-decoration: none;
+  background-color: #f8f9fa;
+  background-position: 30%;
+}
+
+.dmAgency{
+  height: 600px;
+  gap:30px;
+  display: grid; /* Grid container olarak ayarlanıyor */
+  grid-template-areas: 
+    "dm-item1 dm-item2"
+    "dm-item3 dm-item2"
+    "dm-item4 dm-item2"
+    "dm-item5 dm-item2"; /* Grid template'i belirleniyor */
+    justify-content: center;
+    text-align: center;
+    text-align: left;
+} 
+.dm-item1 {
+  grid-area: dm-item1;
+  border-radius: 50px;
+  padding: 14px 28px;
+  font-size: 14px;
+  line-height:14px;
+  font-family:"Chivo", sans-serif;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+.dm-item2 {
+  grid-area: dm-item2;
+  height: 100px;
+}
+.dm-item3 {
+  grid-area: dm-item3;
+}
+.dm-item4 {
+  grid-area: dm-item4;
+}
+.dm-item5 {
+  grid-area: dm-item5;
+}
+.space {
+  visibility: hidden;
+}
+
+
+.footer .topFooter {
+  width: 100%;
+  padding: 0 0 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e4e7ec;
+}
+.footer .topFooter .rightTopFooter .getStarted {
+  margin-right: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0;
+}
+.blackButton:hover {
+  background-color: white;
+  color: #101828;
+  border: 2px solid #101828;
+}
+.footer .middleFooter {
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  padding: 0 0 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e4e7ec;
+}
+.footer .middleFooter .item .heading {
+  font-size: 22px;
+  line-height: 24px;
+  font-family: Chivo, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding-bottom: 15px;
+}
+.footer .middleFooter .item .info {
+  margin: 3px 0px;
+  color: #475467;
+  font-family: Noto Sans, sans-serif;
+  line-height: 28px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.footer .middleFooter .item .list {
+  list-style-type: none;
+}
+.footer .middleFooter .item .list .link {
+  color: #667085;
+  font-family: Noto Sans, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  text-decoration: none;
 }

@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #202020;
+    font-weight: 500;
+  }
+  h1 {
+    font-size: 60px;
+    font-weight: 1000;
+    color: white;
+  }
+  ul,
+  ol {
+    list-style: none;
+  }
+  a {
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  button {
+    cursor: pointer;
+  }
+  .section {
+    padding: 5rem 0px;
+  }
+  .align-center {
+    align-items: center;
+  }
+  /*justify */
+.justify-center {
+    justify-content: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-around {
+    justify-content: space-around;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
+  .justify-around{
+      justify-content:space-around;
+  }
+   /*grid */
+  .grid {
+    display: grid;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .white {
+    color: white;
+  }
+  .main-text-color {
+    color: #ffb91f;
+  }
+  .main-background-color {
+    background-color: #ffb91f;
+  }
+  .hover-text-main:hover {
+    color: #ffb91f;
+  }
+  .pointer {
+    cursor: pointer;
+  }
+  .blog-main-right {
+    gap: 2rem;
+  }
+  hr {
+    border: 1px solid rgb(231, 231, 231);
+  }
+  .gap {
+    gap: 2rem;
+  }
+  .radius {
+    border-radius: 2.5rem;
+  }
+  /* flex */
+  .flex {
+    display: flex;
+  }
+.flex-column {
+    flex-direction: column;
+  }
+  .flex-row {
+    flex-direction: row;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+   /* font-sizes */
+
+.fs-13 {
+  font-size: 13px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-17 {
+  font-size: 17px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-28 {
+  font-size: 28px;
+}
+.fs-35 {
+  font-size: 35px;
+}
+.fs-42 {
+  font-size: 42px;
+}
+.fs-56 {
+  font-size: 56px;
+}
+.fs-64 {
+  font-size: 64px;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+/* colors */
+.color-lightgray {
+    color: #98a2b3;
+  }
+  .color-white {
+    color: #ffffff;
+  }
+  .color-black {
+      color: #000000;
+    }
+/* bg-colors */
+.bg-lightgreen {
+  background-color: #bee1e6;
+}
+.bg-krem {
+  background-color: #fff3ea;
+}
+.bg-purple {
+  background-color: #cbd1e5;
+}
+.bg-gray {
+  background-color: #ebecf4;
+}
+.bg-cards {
+  background-color: #f2f4f7;
+}
+.bg-green {
+  background-color: #006d77;
+}
+.bg-pink {
+  background-color: #e29578;
+}
+.bg-black {
+  background-color: #101828;
+}
+.bg-white{
+    background-color: #ffffff
+}
+.color-green {
+  color: #006d77;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.card-rad {
+  border-radius: 16px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.transition {
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+/*ul,ol*/
+ul,
+ol {
+  list-style-type: none;
+}
+.font-noto {
+  font-family: "Noto Sans", sans-serif;
+}
+input:focus {
+  outline: none;
+}
+
+

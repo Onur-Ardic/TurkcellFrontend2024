@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    height: 100vh;
+    background-color: rgb(170, 171, 172);
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255,77,0);
+    transition: all .5s ease-in-out;
+    animation: animasyon-deneme 2s infinite ease-in-out;
+}
+.box:hover{
+    background-color: rgb(44,255,108);
+    width: 100px;
+    /*transform: rotate(180deg) scale(0.5);*/
+
+}
+
+@keyframes animasyon-deneme{
+    0%{
+        transform: translateX(0px);
+        background-color: aquamarine;
+    }
+    50%{
+        transform: translateX(100px);
+        background-color: purple;
+    }
+}

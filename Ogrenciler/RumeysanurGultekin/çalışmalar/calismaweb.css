@@ -1,0 +1,35 @@
+.whoweare{
+    padding: 100px 0;
+    background-color: whitesmoke;
+    
+}
+
+.container20{
+    margin: 0 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.imgwhoweare img{
+    width: 376px;
+    height: 439px;
+}
+
+.whowearetext{
+    margin-left: 50px;
+}
+.title1{
+    color: red;
+}
+.title2{
+    color: black;
+}
+.p1{
+    color:grey
+}
+.button2{
+    
+}

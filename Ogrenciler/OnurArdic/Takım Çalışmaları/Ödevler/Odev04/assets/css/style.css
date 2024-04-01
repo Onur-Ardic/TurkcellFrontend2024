@@ -146,3 +146,46 @@ main .hero .container .hero-right .hero-balance img {
 
   transform: translateY(-5px);
 }
+
+.our-happy-customers-container {
+  border-radius: 58px;
+  padding: 6.8%;
+  margin: 7%;
+}
+.our-happy-customers-item-container {
+  max-width: 1320px;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 24px;
+}
+
+.our-happy-customers-item {
+  border-radius: 16px;
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+  padding: 53px 48px;
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.our-happy-customers-item:hover {
+  transform: translateY(-3px);
+}
+.our-happy-customers-item .flex img {
+  border-radius: 4px;
+  width: 85px;
+}
+.our-happy-customers-item p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.name-and-pic p,
+h3 {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.our-happy-customers-h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+}
