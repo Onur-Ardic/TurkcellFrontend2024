@@ -1,0 +1,220 @@
+:root{
+    --title-text: #101828;
+    --p-text:#475467;
+    --primary:#101828;
+    --secondary:#006D77;
+    --third:#BEE1E6;
+    --fourth:#FFF3EA;
+}
+.fa-arrow-right{
+    margin-left: 10px;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header-btn{
+    background-color: #F2F4F7;
+    margin: 0px;
+    border-radius: 50px;
+    font-size: 18px;
+    border: none;
+    font-weight: 800;
+    padding: 22px 56px 22px 32px;
+}
+.header-btn:hover{
+    background-color: var(--title-text);
+    color: #F2F4F7;
+}
+.hamburger-menu{
+    width: 24px;
+    height: 20px;
+    font-size: 26px;
+}
+.menu-item:hover{
+    font-weight: 600;
+    color: var(--secondary);
+}
+/* SLİDER */
+#slider{
+    background-color: var(--third);
+    height: 800px;
+}
+#slider p {
+    color: #667085;
+}
+.slider{
+    padding: 60px 0px 0px 20px;
+}
+.dma-btn{
+    background-color: var(--secondary);
+color: var(--fourth);
+    border: none;
+    border-radius: 50px;
+    width: 275px;
+    padding: 14px 28px;
+}
+.get-started-btn{
+    background-color: var(--title-text);
+    color: var(--fourth);
+    margin: 0px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    font-weight: 700;
+    padding: 22px 56px 22px 32px;
+}
+.count-item{
+    margin-right: 120px;
+}
+.slider-img{
+    width: 526px;
+    height: 644px;
+    margin-left: 20%;
+}
+.blok1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 500px;
+    margin-left: 150px;
+}
+.blok2{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 50px;
+    margin-left: 650px;
+}
+.animation-x{
+    animation: yatay-hareket 2s linear infinite alternate;
+}
+.animation-y{
+    animation: dikey-hareket 2s linear infinite alternate;
+}
+.animation-y2{
+    animation: dikey-hareket2 2s linear infinite alternate;
+}
+@keyframes dikey-hareket{
+    0%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes dikey-hareket2{
+    0%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes yatay-hareket {
+    0%{
+        transform: translateX(70px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    
+}
+.companies-wwd{
+    background-color: var(--third);
+    padding: 14px 28px;
+    border-radius: 50px;
+    width: 240px;
+}
+.companies-item-group{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+}
+.companies-item{
+    width: 200px;
+    height: 50px;
+}
+.companies-img{
+    padding: 0px 12px 0px 30px;
+    border-radius: 20px;
+    width: 618px;
+    height: 616px;
+}
+.companies-list{
+    display: flex;
+    justify-content: space-around;
+}
+.blok3{
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 450px;
+    width: 250px;
+    height: 200px;
+}
+.blok3 img{
+    border-radius: 30px;
+}
+/* Discover */
+.discover-img img{
+    height: 398px;
+    width: 498px;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: -150px;
+}
+.discover-left{
+    background-color: #fff3ea ;
+    margin-left: 35px; 
+    border-radius: 16px;
+}
+.discover-right{
+    background-color: #bee1e6 ;
+   margin-left: 35px;
+    border-radius: 16px;
+}
+.card-discover h2,p{
+    margin-top: 20px;
+}
+.card-discover:hover{
+    margin-top: -20px;
+    transition: all .7s ease 0s;
+}
+/* built */
+#built > .row > div{
+    margin: 20px 0;
+}
+/* section-a */
+#section-a-right{
+    background: url("images/img-built.png") no-repeat center center/contain;
+    height: 620px;
+}
+#section-a-right img{
+    width: 200px;
+    margin: 480px 0 0 400px;
+}
+#section-a #section-a-left > .row .col-2{
+    padding: 20px 5px;
+}
+#section-a .column-gap{
+    gap: 5px;
+}
+#section-a .row{
+    justify-content: flex-start;
+}
+#section-a i{
+    color: rgba(0 ,109, 119,1);
+}
+#section-a .paragraph{
+    padding-bottom: 40px;
+    border-bottom: 3px dotted rgba(0 ,109, 119,1);
+}
