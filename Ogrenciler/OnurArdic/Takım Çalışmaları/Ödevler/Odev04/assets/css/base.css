@@ -179,3 +179,7 @@ font-family: "Chivo", sans-serif;
 .size-xs {
   font-size: 12px;
 }
+
+.bold {
+  font-weight: bold;
+}
