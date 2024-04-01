@@ -152,8 +152,7 @@
 }
 .img-from{
     width: 608px;
-    height: 702px;
-    
+    height: 702px;  
 }
 .img-from img:nth-child(2) {
     position: absolute;
