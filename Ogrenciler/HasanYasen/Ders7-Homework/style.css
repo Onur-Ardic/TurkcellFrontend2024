@@ -63,12 +63,13 @@
 }
 
 #home {
-    height: 120vh;
+    height: 150vh;
     background-color: #bee1e6;
 }
 
 #home .container {
-    padding-top: 190px;
+    padding-top: 170px;
+    gap: 10rem;
 }
 
 #home .container .left .btn {
@@ -211,6 +212,7 @@
 #what-you-get .container {
     justify-content: space-between;
     gap: 6rem;
+    padding-top: 50px;
 }
 
 #what-you-get .left {
@@ -218,8 +220,8 @@
 }
 
 #what-you-get .left .img-top {
-    width: 550px;
-    height: 650px;
+    width: 30rem;
+    height: 30rem;
     border-radius: 16px;
 }
 
@@ -254,4 +256,103 @@
 #what-you-get .right .three-div h4 {
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 1500px) {
+    #what-you-get .left .img-bottom {
+        display: none;
+    }
+}
+
+@media (max-width: 1450px) {
+    #home .container .right img {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    #navbar .container .logo {
+        margin-right: 150px;
+    }
+
+    #navbar .container .btn {
+        visibility: hidden;
+    }
+
+    #navbar .container .selects {
+        margin-top: 17px;
+    }
+
+    #navbar .container .selects svg {
+        visibility: hidden;
+    }
+
+    #what-you-get .container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+@media (max-width: 992px) {
+    #navbar .container .selects {
+        visibility: hidden;
+    }
+
+    #home h1 {
+        font-size: 44px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    #home h4,
+    a {
+        font-size: 16px;
+    }
+
+    #companies .container .company img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #what-you-get .left .img-top {
+        margin-top: 50px;
+        width: 24rem;
+        height: 27rem;
+    }
+
+    #what-you-get h2 {
+        font-size: 40px;
+    }
+
+    #what-you-get p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    #companies .container .company img {
+        width: 85px;
+        height: 85px;
+    }
+
+    #home h1 {
+        font-size: 42px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    #home h4,
+    a {
+        font-size: 16px;
+    }
+
+    #home .numbers {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
