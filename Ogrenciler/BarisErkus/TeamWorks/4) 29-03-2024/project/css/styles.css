@@ -265,6 +265,18 @@ nav ul li a {
     .ideas-image {
         width: 25rem;
     }
+
+    .newsletter {
+        width: 90%;
+    }
+
+    .newsletter-left {
+        width: 18.75rem;
+    }
+
+    .block-chart {
+        left: 23.75rem;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -281,6 +293,57 @@ nav ul li a {
         width: 14rem;
         bottom: -5rem;
         right: -10rem;
+    }
+
+    #plans h3 {
+        font-size: 35px;
+    }
+
+    #newsletter h4 {
+        font-size: 28px;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .newsletter-left {
+        width: 100%;
+    }
+
+    .newsletter-right {
+        margin-bottom: 0px;
+        width: 100%;
+        max-width: 62.5rem;
+    }
+
+    .block-chart {
+        left: 1.25rem;
+        bottom: 1.25rem;
+        width: 14rem;
+        height: 10.5rem;
+    }
+
+    .footer-col {
+        width: 100%;
+        padding-left: 1rem;
+        text-align: start;
+    }
+
+    .footer-logo {
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+
+    .footer-ready {
+        padding: 0 1rem;
+    }
+
+    .footer-ready button {
+        margin-left: 0;
+        margin-top: 1rem;
     }
 }
 
@@ -790,72 +853,5 @@ nav ul li a {
 
     100% {
         transform: translateY(0);
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .newsletter {
-        width: 90%;
-    }
-
-    .newsletter-left {
-        width: 18.75rem;
-    }
-
-    .block-chart {
-        left: 23.75rem;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    #plans h3 {
-        font-size: 35px;
-    }
-
-    #newsletter h4 {
-        font-size: 28px;
-    }
-
-    .newsletter {
-        flex-direction: column;
-        padding: 2rem;
-        gap: 2rem;
-    }
-
-    .newsletter-left {
-        width: 100%;
-    }
-
-    .newsletter-right {
-        margin-bottom: 0px;
-        width: 100%;
-        max-width: 62.5rem;
-    }
-
-    .block-chart {
-        left: 1.25rem;
-        bottom: 1.25rem;
-        width: 14rem;
-        height: 10.5rem;
-    }
-
-    .footer-col {
-        width: 100%;
-        padding-left: 1rem;
-        text-align: start;
-    }
-
-    .footer-logo {
-        width: 100%;
-        margin-bottom: 0.75rem;
-    }
-
-    .footer-ready {
-        padding: 0 1rem;
-    }
-
-    .footer-ready button {
-        margin-left: 0;
-        margin-top: 1rem;
     }
 }
