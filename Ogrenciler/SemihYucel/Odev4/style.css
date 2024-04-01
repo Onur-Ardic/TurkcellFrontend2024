@@ -1,5 +1,319 @@
 /* Hasan css start */
+.flex {
+  display: flex;
+}
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.visibility-hidden {
+  visibility: hidden;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1;
+}
+#navbar .container {
+  justify-content: space-between;
+  height: 15vh;
+}
+#navbar .container .logo:hover {
+  cursor: pointer;
+}
+#navbar .container .selects {
+  gap: 2.5rem;
+}
+#navbar .container .selects a:hover {
+  color: #006D77;
+}
+#navbar .container .btn {
+  gap: 1rem;
+  width: 180px;
+  height: 8vh;
+  background-color: #F2F4F7;
+  border-radius: 50px;
+  font-weight: 700;
+}
+#navbar .container .btn:hover {
+  background-color: #BEE1E6;
+  cursor: pointer;
+}
+#navbar .container .hamburger {
+  position: absolute;
+  top: 5.5vh;
+  right: 0;
+  cursor: pointer;
+}
+#home {
+  height: 150vh;
+  background-color: #bee1e6;
+}
+#home .container {
+  padding-top: 170px;
+  gap: 10rem;
+}
+#home .container .left .btn {
+  color: white;
+  background-color: #006d77;
+  width: 210px;
+  height: 40px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+#home .container .left h1 {
+  margin-bottom: 30px;
+}
+#home .container .left h4 {
+  margin-bottom: 10px;
+}
+#home .container .left p {
+  margin-bottom: 30px;
+}
+#home .container .left .btn2-link-container {
+  gap: 2rem;
+  margin-bottom: 40px;
+}
+#home .container .left .btn2 {
+  background-color: #101828;
+  width: 150px;
+  height: 60px;
+  gap: 1rem;
+  border-radius: 4px;
+}
+#home .container .left .btn2:hover {
+  cursor: pointer;
+  background-color: #006D77;
+}
+#home .container .left .btn2 a {
+  color: white;
+}
+#home .container .left .numbers {
+  width: 500px;
+  justify-content: space-between;
+}
+#home .container .right {
+  position: relative;
+}
+#home .container .right img {
+  border-radius: 10px;
+}
+#home .container .right .middle-image {
+  animation: middle-image-animation 8s infinite linear;
+}
 
+@keyframes middle-image-animation {
+  0% {
+      transform: translateY(0px);
+  }
+
+  50% {
+      transform: translateY(-30px);
+  }
+
+  100% {
+      transform: translateY(0px);
+  }
+}
+#home .container .right .top-image {
+  position: absolute;
+  top: 45px;
+  right: -80px;
+}
+
+@keyframes top-image-animation {
+  0% {
+      transform: translateX(0px);
+  }
+
+  50% {
+      transform: translateX(20px);
+  }
+
+  100% {
+      transform: translateX(0px);
+  }
+}
+#home .container .right .top-image,
+.bottom-image {
+  animation: top-image-animation 5s infinite linear;
+}
+#home .container .right .bottom-image {
+  position: absolute;
+  bottom: 10px;
+  left: -80px;
+}
+#companies {
+  height: 55vh;
+}
+#companies .container {
+  border-bottom: 1px solid #d0d5dd;
+}
+#companies .top {
+  text-align: center;
+  margin: 10vh 0 5vh 0;
+}
+#companies .bottom {
+  flex-wrap: wrap;
+  column-gap: 3rem;
+  row-gap: 1rem;
+  margin-bottom: 4rem;
+}
+#companies .bottom .company:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 10px -5px rgb(236, 235, 235);
+  transition: 0.3s ease;
+  transform: scale(1.05);
+}
+#what-you-get {
+  height: 100vh;
+  padding-top: 100px;
+}
+#what-you-get .container {
+  justify-content: space-between;
+  gap: 6rem;
+  padding-top: 50px;
+}
+#what-you-get .left {
+  position: relative;
+}
+#what-you-get .left .img-top {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 16px;
+}
+#what-you-get .left .img-bottom {
+  border-radius: 16px;
+  position: absolute;
+  bottom: 180px;
+  right: -60px;
+}
+#what-you-get .right .btn {
+  color: #006D77;
+  background-color: #BEE1E6;
+  border-radius: 50px;
+  width: 230px;
+  height: 40px;
+}
+#what-you-get .right h2 {
+  margin: 20px 0;
+}
+#what-you-get .right .p-top {
+  margin-bottom: 50px;
+}
+#what-you-get .right .three-div {
+  gap: 1rem;
+  margin-bottom: 50px;
+}
+#what-you-get .right .three-div h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1500px) {
+  #what-you-get .left .img-bottom {
+      display: none;
+  }
+}
+
+@media (max-width: 1450px) {
+  #home .container .right img {
+      display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  #navbar .container .logo {
+      margin-right: 150px;
+  }
+
+  #navbar .container .btn {
+      visibility: hidden;
+  }
+
+  #navbar .container .selects {
+      margin-top: 17px;
+  }
+
+  #navbar .container .selects svg {
+      visibility: hidden;
+  }
+
+  #what-you-get .container {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  #navbar .container .selects {
+      visibility: hidden;
+  }
+
+  #home h1 {
+      font-size: 44px;
+  }
+
+  #home p {
+      font-size: 16px;
+  }
+
+  #home h4,
+  a {
+      font-size: 16px;
+  }
+
+  #companies .container .company img {
+      width: 100px;
+      height: 100px;
+  }
+
+  #what-you-get .left .img-top {
+      margin-top: 50px;
+      width: 24rem;
+      height: 27rem;
+  }
+
+  #what-you-get h2 {
+      font-size: 40px;
+  }
+
+  #what-you-get p {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  #companies .container .company img {
+      width: 85px;
+      height: 85px;
+  }
+
+  #home h1 {
+      font-size: 42px;
+  }
+
+  #home p {
+      font-size: 16px;
+  }
+
+  #home h4,
+  a {
+      font-size: 16px;
+  }
+
+  #home .numbers {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}
 /* Hasan css end */
 /* Ramazan css start */
 .padding-top-225px{

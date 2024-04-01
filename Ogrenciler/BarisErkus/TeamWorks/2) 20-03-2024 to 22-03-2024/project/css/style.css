@@ -136,8 +136,24 @@ nav {
     line-height: 1.625rem;
 }
 /* Investment */
-.investment {
-}
+.investment {}
 .investment-container {
     margin: 8rem 0;
+}
+.circle-box-list {
+    display: flex;
+    gap: 2rem;
+}
+.circle-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+.circle-box-circle {
+    border-radius: 50%;
+    padding: 2rem;
+    background: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
 }
