@@ -65,6 +65,36 @@
   align-items: center;
 }
 /* ---- */
+.fresh-ideas {
+  grid-template-rows: 1fr 1fr;
+  margin-top: 5rem;
+  display: grid;
+}
+
+.fresh-ideas-h3 {
+  margin-top: 30px;
+  font-size: 56px;
+  color: #101828;
+}
+
+.fresh-ideas-p {
+  font-size: 24px;
+  color: #475467;
+  margin-top: 30px;
+}
+
+.fresh-ideas-img {
+  max-width: 50%;
+  border-radius: 16px;
+}
+
+.fresh-edit {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+/* ---- */
+
 .brands-title {
   font-size: 35px;
   color: #101828;
