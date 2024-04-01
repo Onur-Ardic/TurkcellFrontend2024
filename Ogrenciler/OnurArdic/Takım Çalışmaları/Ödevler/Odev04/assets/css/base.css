@@ -183,3 +183,19 @@ font-family: "Chivo", sans-serif;
 .bold {
   font-weight: bold;
 }
+
+.radius-50 {
+  border-radius: 50%;
+}
+
+.radius-10 {
+  border-radius: 10px;
+}
+
+.line-l {
+  line-height: 40px;
+}
+
+.img-fluid {
+  width: 100%;
+}
