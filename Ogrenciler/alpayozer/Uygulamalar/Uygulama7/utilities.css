@@ -102,3 +102,18 @@
   max-width: 100%;
   padding: 15px;
 }
+
+.list-edit-title {
+  color: #101828;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.list-edit-subtitle {
+  margin-top: 15px;
+  color: #475467;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
