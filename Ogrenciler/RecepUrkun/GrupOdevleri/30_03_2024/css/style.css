@@ -26,7 +26,6 @@
     float: right;
 }
 /* leading-companies */
-
 .list-partners {
     display: flex;
     flex-direction: row;
@@ -50,17 +49,13 @@
     transform: translateY(-5px);
     transition: all .5s ease;
 }
-/* header css */
-
 .header {padding: 10px 0;}
 .main-header {
     display: flex;
     align-items: center;
     flex-direction: row;
 }
-.nav-main-menu {
-    width: 100%
-}
+.nav-main-menu {width: 100%}
 .header-nav {
     display: flex;
     flex-direction: row;
@@ -380,7 +375,6 @@
         gap: 30px;
     }
 }
-
 @media screen and (max-width: 768px) {
     .list-partners li {
         width: 24%;
@@ -495,16 +489,6 @@
         flex: 0 0 auto;
         width: 50%;
     }
-    /* .box-square{
-        flex: 0 0 auto;
-        width: 50%;
-    } */
-
-    /* .built-boxes .flex-xcenter{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    } */
 }
 @media (min-width: 576px) {
     .col-sm-4 {
