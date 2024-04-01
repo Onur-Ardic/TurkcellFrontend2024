@@ -6,6 +6,9 @@
     --third:#BEE1E6;
     --fourth:#FFF3EA;
 }
-@media screen and (max-width:425px ){
 
+@media screen and (max-width:425px ){
+    #menu-item{
+        display: none;
+    }
 }
