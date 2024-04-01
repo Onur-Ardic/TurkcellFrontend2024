@@ -38,17 +38,7 @@ p {
   unicode-bidi: isolate;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   display: block;
 }
 
@@ -78,19 +68,13 @@ section {
   font-size: 18px;
   color: #101828;
 }
-.color-black {
-  color: #101828;
-}
+.color-black {color: #101828;}
 .bg-green-900 {
   background-color: #006d77;
   color: #fff;
 }
-.bg-lightgreen {
-  background-color: #bee1e6;
-}
-.bg-white {
-  background-color: white;
-}
+.bg-lightgreen {background-color: #bee1e6;}
+.bg-white {background-color: white;}
 .bg-primary-color {
   background-color: #f2f4f7;
 }

@@ -135,9 +135,8 @@ nav {
     font-size: 1rem;
     line-height: 1.625rem;
 }
-/* Investment */
-.investment {}
-.investment-container {
+/* Choose */
+.choose-container {
     margin: 8rem 0;
 }
 .circle-box-list {
@@ -156,4 +155,21 @@ nav {
     border-radius: 50%;
     padding: 2rem;
     background: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+}
+/* Fast Profit */
+.fast-profit {
+    padding: 5rem 20rem;
+}
+
+.fast-profit-container {
+    border: 1px solid #E5E5E5;
+    padding: 5rem;
+}
+
+.fast-profit-left img {
+    width: 25rem;
+}
+
+.fast-profit-right h4{
+    font-size: 2rem;
 }
