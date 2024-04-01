@@ -10,11 +10,6 @@
   font-weight: 400;
 }
 
-.navbar-wrapper .sidebar-icon i {
-  color: #000;
-  font-size: 24px;
-}
-
 .checkbtn {
   font-size: 2em;
   color: #000;
@@ -48,15 +43,10 @@ main .hero .hero-wrapper {
 
 main .hero .container .hero-left .hero-btn {
   background-color: var(--color-black);
-  border-radius: 8px;
 }
 
 main .hero .container .hero-left .hero-btn-how {
   margin-left: 30px;
-}
-
-main .hero .container .hero-left .hero-ref {
-  font-weight: bold;
 }
 
 main .hero .container .hero-left .hero-ref span:last-child {
@@ -70,10 +60,6 @@ main .hero .container .hero-left .hero-btn-how span {
 main .hero .container .hero-right {
   padding-left: 70px;
   margin-top: 110px;
-}
-
-main .hero .container .hero-right img {
-  width: 100%;
 }
 
 main .hero .container .hero-right .main-hero img {
@@ -102,7 +88,6 @@ main .hero .container .hero-right .hero-payment img {
   right: -80px;
   width: 150px;
   animation: hero-thumb 2s infinite ease-in-out;
-  border-radius: 15px;
 }
 
 main .hero .container .hero-right .hero-balance img {
@@ -110,7 +95,6 @@ main .hero .container .hero-right .hero-balance img {
   left: -80px;
   width: 150px;
   animation: hero-balance 2s infinite ease-in-out;
-  border-radius: 15px;
   width: 200px;
 }
 
@@ -143,7 +127,6 @@ main .hero .container .hero-right .hero-balance img {
 
 .companies .compaines-wrapper .companies-img img:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-
   transform: translateY(-5px);
 }
 
@@ -152,6 +135,7 @@ main .hero .container .hero-right .hero-balance img {
   padding: 6.8%;
   margin: 7%;
 }
+
 .our-happy-customers-item-container {
   max-width: 1320px;
   margin-top: 70px;
@@ -203,11 +187,6 @@ h3 {
   margin-top: 150px;
 }
 
-.right-for-you .first-img img {
-  width: 100%;
-  border-radius: 8px;
-}
-
 .right-for-you .second-img {
   right: -50px;
   bottom: 20px;
@@ -215,7 +194,6 @@ h3 {
 
 .right-for-you .second-img img {
   width: 260px;
-  border-radius: 8px;
 }
 
 .for-you .for-you-wrapper .for-you-img img {
@@ -237,7 +215,6 @@ h3 {
 }
 
 .slider {
-  position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
@@ -307,22 +284,12 @@ input:checked + .slider:before {
 /* !------------Subscribe--------------- */
 .subscribe {
   background-color: var(--ice-blue);
-  border-radius: 15px;
   height: 400px;
   width: 1000px;
 }
 
-.subscribe .subs-left {
-  line-height: 40px;
-}
-
-.subscribe .subs-left {
-  line-height: 40px;
-}
-
 .subscribe .subs-left .input input {
   border: 1px solid #ccc;
-  border-radius: 15px;
   width: 300px;
   height: 50px;
   padding-left: 8px;
@@ -334,13 +301,11 @@ input:checked + .slider:before {
   top: 5px;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
   background-color: var(--color-green);
   font-size: 20px;
   color: #fff;
 }
 .subscribe .subs-right .subs-first-img img {
-  width: 100%;
   height: 400px;
 }
 
@@ -352,7 +317,6 @@ input:checked + .slider:before {
 
 .subscribe .subs-right .second-img img {
   width: 250px;
-  border-radius: 10px;
 }
 
 @keyframes handler {
@@ -384,10 +348,6 @@ main footer .footer-top .right-btn .create {
   color: #fff;
 }
 
-main footer .footer-bottom .contanct {
-  line-height: 40px;
-}
-
 main footer .footer-bottom .links h4 {
   font-size: 20px;
 }
@@ -396,7 +356,6 @@ main footer .footer-bottom .links ul li a {
   color: var(--p-shadow);
   line-height: 40px;
   transition: 0.5s ease-in;
-  position: relative;
 }
 
 main footer .footer-bottom .links ul li a:hover {
@@ -412,6 +371,5 @@ main footer .social .footer-right i {
   width: 40px;
   height: 40px;
   color: #fff;
-  border-radius: 50%;
   opacity: 0.7;
 }
