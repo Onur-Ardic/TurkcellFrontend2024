@@ -171,7 +171,6 @@
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  width: 500px;
 }
 
 .footer-h4 {
@@ -184,4 +183,40 @@
   color: #667085;
   font-size: 16px;
   margin-bottom: 30px;
+}
+
+/* --- */
+/* #copyright {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+} */
+
+.copyright-p {
+  color: #98a2b3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  transition: all 0.3s ease 0s;
+}
+
+.copyright-href {
+  margin-left: 50px;
+  font-size: 16px;
+  color: #98a2b3;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.footer-social-media-icon-group {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #006d77;
+  font-size: 14px;
+}
+#copyright .container {
+  display: flex;
 }
