@@ -149,15 +149,7 @@
 .img-50 {
   width: 50%;
 }
-.font-color-light-gray {
-  color: #98a2b3;
-}
-.footer-section p:hover {
-  color: #006d77;
-  transition-duration: 0.2s;
-  padding-left: 3px;
-}
-.footer-bottom-right .footer-socials img:hover {
-  opacity: 0.8;
-  transition-duration: 0.2s;
+
+.flex-wrap {
+  flex-wrap: wrap;
 }

@@ -2,6 +2,7 @@
   border: 1px solid #d0d5dd;
   border-radius: 16px;
   animation: fadeIn;
+  width: 290px;
 }
 .card:hover {
   transform: translateY(-3px);
@@ -110,17 +111,7 @@
   gap: 20px;
   padding: 20px 0px;
 }
-@media (max-width: 1024px) {
-  .footer-sections {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (max-width: 768px) {
-  .footer-sections {
-    grid-template-columns: 1fr;
-  }
-}
 .footer-bottom {
   text-decoration: none;
 }
@@ -137,4 +128,42 @@
   border: 1px solid #101828;
   background-color: #ffffff;
   color: #101828;
+}
+.font-color-light-gray {
+  color: #98a2b3;
+}
+.footer-section p:hover {
+  color: #006d77;
+  transition-duration: 0.2s;
+  padding-left: 3px;
+}
+.footer-bottom-right .footer-socials img:hover {
+  opacity: 0.8;
+  transition-duration: 0.2s;
+}
+@media (max-width: 1024px) {
+  .newsletter .container {
+    grid-template-columns: 1fr; /* Her şeyi tek bir sütuna indir */
+    padding: 30px; /* Daha az padding */
+  }
+  .newsletter-form button {
+    position: static; /* Mutlak pozisyonu kaldır */
+    margin-left: 10px; /* Input ile buton arasında boşluk bırak */
+  }
+}
+@media (max-width: 768px) {
+  .newsletter .container {
+    padding: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer .footer-sections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .footer-sections {
+    grid-template-columns: 1fr;
+  }
 }
