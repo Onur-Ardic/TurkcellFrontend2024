@@ -38,7 +38,17 @@ p {
   unicode-bidi: isolate;
 }
 
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -68,21 +78,24 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   font-size: 18px;
   color: #101828;
 }
-.color-black {color: #101828;}
+.color-black {
+  color: #101828;
+}
 .bg-green-900 {
   background-color: #006d77;
   color: #fff;
 }
-.bg-lightgreen {background-color: #bee1e6;}
-.bg-white {background-color: white;}
+.bg-lightgreen {
+  background-color: #bee1e6;
+}
+.bg-white {
+  background-color: white;
+}
 .bg-primary-color {
   background-color: #f2f4f7;
 }
 .color-gray-500 {
   color: #667085;
-}
-.bg-black{
-  background-color: #101828;
 }
 .flex {
   display: flex;
@@ -93,22 +106,22 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 .jc-center {
   justify-content: center;
 }
-.jc-fstart {
+.justify-content-flex-start {
   justify-content: flex-start;
 }
-.jc-fend {
+.justify-content-flex-end {
   justify-content: flex-end;
 }
-.jc-sbetween {
+.justify-content-space-between {
   justify-content: space-between;
 }
-.ai-center {
+.align-items-center {
   align-items: center;
 }
-.ai-fstart {
+.align-items-flex-start {
   align-items: flex-start;
 }
-.ai-baseline {
+.align-items-baseline {
   align-items: baseline;
 }
 .grid {
