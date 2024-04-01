@@ -18,9 +18,8 @@ body {
   padding: 20px;
   display: block;
   gap: 10px;
-  
 }
-p{
+p {
   margin-top: 0;
   margin-bottom: 1rem;
   font-family: "Noto Sans", sans-serif;
@@ -39,7 +38,17 @@ p{
   unicode-bidi: isolate;
 }
 
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -49,7 +58,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 .mt-50 {
   margin-top: 50px;
 }
-.text-display-4{
+.text-display-4 {
   font-size: 64px;
   line-height: 72px;
   letter-spacing: 0;
@@ -82,7 +91,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 .bg-white {
   background-color: white;
 }
-.bg-primary-color{
+.bg-primary-color {
   background-color: #f2f4f7;
 }
 .color-gray-500 {
@@ -117,7 +126,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 }
 .grid {
   display: grid;
-
 }
 .gap-30 {
   gap: 30px;
