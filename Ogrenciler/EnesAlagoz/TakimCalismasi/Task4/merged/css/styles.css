@@ -325,6 +325,8 @@ nav ul li a {
     line-height: 2rem;
 }
 .container-cross-platform-box {
+    width: 636px;
+    height: 455px;
     background-color: #fff3ea;
     padding: 3.438rem 3.125rem 0;
     border-radius: 1.25rem;
@@ -335,11 +337,14 @@ nav ul li a {
     border-radius: 1.25rem;
 }
 .container-extremel-flexible-platform-box {
+    width: 636px;
+    height: 455px;
     background: #bee1e6;
     padding: 3.438rem 3.125rem 0;
     border-radius: 1.25rem;
 }
 .right-img-box {
+   
     background: #cbd1e5;
     padding: 1.438rem 1.188rem;
     border-radius: 1.25rem;

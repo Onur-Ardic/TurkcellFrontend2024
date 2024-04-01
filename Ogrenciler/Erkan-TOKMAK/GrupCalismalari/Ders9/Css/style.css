@@ -41,10 +41,12 @@
     font-weight: 600;
     color: var(--secondary);
 }
+/* Hamburger Menu */
+
 /* SLİDER */
 #slider{
     background-color: var(--third);
-    height: 800px;
+    padding-bottom: 70px;
 }
 #slider p {
     color: #667085;
@@ -54,7 +56,7 @@
 }
 .dma-btn{
     background-color: var(--secondary);
-color: var(--fourth);
+    color: var(--fourth);
     border: none;
     border-radius: 50px;
     width: 275px;
@@ -70,8 +72,28 @@ color: var(--fourth);
     font-weight: 700;
     padding: 22px 56px 22px 32px;
 }
+.get-started-btn:hover {
+    background-color: var(--fourth);
+    color: var(--title-text);
+    margin: 0px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    font-weight: 700;
+    padding: 22px 56px 22px 32px;
+}
+.h-i-w-btn{
+    border: none;
+    background-color: var(--third);
+    margin-left: 30px;
+}
+.count-item-group{
+    display: flex;
+    flex-wrap: wrap;
+}
 .count-item{
     margin-right: 120px;
+    padding-bottom: 20px;
 }
 .slider-img{
     width: 526px;
@@ -136,9 +158,10 @@ color: var(--fourth);
 }
 .companies-item-group{
     display: grid;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    flex-wrap: wrap;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-gap: 1rem;
 }
 .companies-item{
     width: 200px;
@@ -150,14 +173,13 @@ color: var(--fourth);
     width: 618px;
     height: 616px;
 }
-.companies-list{
-    display: flex;
-    justify-content: space-around;
+.img-list-wwd{
+    margin-right: 20px;
 }
 .blok3{
     position: absolute;
-    margin-top: 550px;
-    margin-left: 450px;
+    margin-top: 500px;
+    margin-left: 420px;
     width: 250px;
     height: 200px;
 }

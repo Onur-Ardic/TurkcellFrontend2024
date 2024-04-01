@@ -1,5 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+.header-button {
+  color: #101828;
+  background-color: #f2f4f7;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  padding: 22px 32px;
+}
+.header-icon {
+  font-size: 14px;
+  margin-left: 4px;
+}
+.header-button:hover {
+  color: white;
+  background-color: #101828;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
 #slider {
   background-color: #bee1e6;
+  padding: 50px 0;
 }
 .slider {
   display: grid;
@@ -8,8 +41,21 @@
   padding: 50px 0px;
 }
 .slider-image {
-  width: 300px;
-  height: 400px;
+  width: 526px;
+  height: 645px;
+  animation: slider-image 6s infinite ease-in-out;
+}
+
+@keyframes slider-image {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .slider-button {
@@ -22,6 +68,7 @@
   font-size: 64px;
   line-height: 72px;
   font-weight: 700;
+  margin-top: 30px;
 }
 .slider-black-button {
   background-color: #101828;
@@ -37,27 +84,54 @@
 }
 .slider-clients {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  gap: 6rem;
 }
 .balance-img {
   width: 220px;
   height: 260px;
+  border-radius: 10px;
+  animation: balance-image 6s infinite ease-in-out;
+}
+@keyframes balance-image {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 .balance-div {
   position: absolute;
   z-index: 3;
+  right: 700px;
+  top: 500px;
 }
 .payment-div {
   position: absolute;
   z-index: 3;
-  right: 400px;
-  top: 80px;
+  right: 300px;
+  top: 250px;
 }
 .payment-img {
   width: 155px;
   height: 170px;
+  border-radius: 10px;
+  animation: payment-image 8s infinite ease-in-out;
+}
+@keyframes payment-image {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 .slider-animation {
   display: flex;

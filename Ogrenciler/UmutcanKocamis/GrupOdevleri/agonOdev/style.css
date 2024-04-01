@@ -7,11 +7,11 @@
     width: 110px;
     margin-left: 10px;
   }
-  header ul {
-    visibility: hidden;
+  header ul li {
+    display: none;
   }
   header button {
-    visibility: hidden;
+    display: none;
   }
   .hero {
     width: 100%;
@@ -93,19 +93,16 @@
     border: none;
     padding: 15px 25px;
     border-radius: 20px;
+    display: initial;
   }
   header {
     height: 70px;
     display: flex;
-    justify-content: center;
-    gap: 400px;
+    justify-content: space-between;
     align-items: center;
   }
-  /*  header ul {
-    visibility: hidden;
-  } */
-  header button {
-    visibility: visible;
+  header ul li {
+    display: none;
   }
   .small-arrow {
     width: 15px;
@@ -181,15 +178,16 @@
   header {
     height: 120px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 200px;
   }
-  header ul {
-    gap: 70px;
+  header ul li {
     list-style: none;
     font-size: 18px;
-    visibility: visible;
+    display: block;
+  }
+  header ul {
+    gap: 40px;
   }
   header button {
     padding: 22px 32px !important;
@@ -280,11 +278,29 @@
   }
   .company-img img {
     width: 215px;
+    padding: 20px;
   }
   .company-img img:hover {
     box-shadow: 0px 6px 32px 1px rgba(0, 0, 0, 0.25);
     transition: all 0.3s ease-in 0s;
     cursor: pointer;
     transform: translateY(-5px);
+  }
+  .container-left {
+    width: 50%;
+  }
+  .container-right {
+    width: 50%;
+  }
+  .fresh-ideas {
+    display: flex;
+    gap: 170px;
+  }
+  .fresh-img {
+    width: 100%;
+  }
+  .what-we-do-btn {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
