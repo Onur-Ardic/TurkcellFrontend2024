@@ -128,7 +128,7 @@ nav ul li a {
 }
 
 .home-right .border {
-    border: 2px solid #006D77;
+    border: 0.125rem solid #006D77;
     left: -1.5rem;
     top: 1.5rem;
     padding: 20rem 17rem;
@@ -145,7 +145,7 @@ nav ul li a {
 
 .list-partners {
     gap: 3rem;
-    border-bottom: 1px solid #d0d5dd;
+    border-bottom: 0.063rem solid #d0d5dd;
     padding-bottom: 5.5rem;
 }
 
@@ -178,7 +178,7 @@ nav ul li a {
     width: 18rem;
     bottom: 2rem;
     right: -2rem;
-    box-shadow: 0 47px 65px rgba(21, 28, 38, .1);
+    box-shadow: 0 2.938rem 4.063 rgba(21, 28, 38, .1);
 }
 
 .list-icons {
@@ -194,7 +194,7 @@ nav ul li a {
     margin-top: 1rem;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 93.75rem) {
     .header-container {
         flex-direction: column;
         gap: 2rem;
@@ -210,36 +210,36 @@ nav ul li a {
     }
 
     .text-heading-2 {
-        font-size: 26px;
+        font-size: 1.625rem;
     }
 
     .text-heading-3 {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .text-heading-4 {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .text-heading-5 {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     .text-heading-6 {
-        font-size: 8px;
+        font-size: 0.5rem;
     }
 
     .text-body-lead-large {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .text-display-3 {
-        font-size: 44px;
+        font-size: 2.75rem;
     }
 
     .text-display-4,
     .text-heading-1 {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 
     .home-right .main-image {
@@ -296,11 +296,11 @@ nav ul li a {
     }
 
     #plans h3 {
-        font-size: 35px;
+        font-size: 2.188rem;
     }
 
     #newsletter h4 {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 
     .newsletter {
@@ -314,7 +314,7 @@ nav ul li a {
     }
 
     .newsletter-right {
-        margin-bottom: 0px;
+        margin-bottom: 0;
         width: 100%;
         max-width: 62.5rem;
     }
@@ -349,78 +349,78 @@ nav ul li a {
 
 /* Enes */
 .section-box-discover {
-    width: 1903px;
-    height: 897px;
+    width: 118.938rem;
+    height: 56.063rem;
 }
 
 .container-title {
-    width: 1320px;
-    height: 252px;
+    width: 82.5rem;
+    height: 15.75rem;
 }
 
 .title-discover {
-    width: 856px;
-    height: 212px;
+    width: 53.5rem;
+    height: 13.25rem;
 }
 
 .text-body {
-    width: 856px;
-    height: 64px;
-    font-size: 24px;
-    line-height: 32px;
+    width: 53.5rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 .container-cross-platform-box {
-    width: 636px;
-    height: 455px;
+    width: 39.75rem;
+    height: 28.438rem;
     background-color: #fff3ea;
-    padding: 55px 50px 0px;
-    border-radius: 20px;
+    padding: 3.438rem 3.125rem 0;
+    border-radius: 1.25rem;
 }
 
 .left-img-box {
-    width: 536px;
-    height: 442px;
+    width: 33.5rem;
+    height: 27.625rem;
     background: #ebecf4;
-    padding: 23px 19px;
-    border-radius: 20px;
+    padding: 1.438rem 1.188rem;
+    border-radius: 1.25rem;
 }
 
 .left-img {
-    width: 498px;
-    height: 389px;
+    width: 31.125rem;
+    height: 24.313rem;
 }
 
 .text-heading-4-box {
-    width: 536px;
-    height: 32px;
+    width: 33.5rem;
+    height: 2rem;
 }
 
 .container-extremel-flexible-platform-box {
-    width: 636px;
-    height: 455px;
+    width: 39.75rem;
+    height: 28.438rem;
     background: #bee1e6;
-    padding: 55px 50px 0px;
-    border-radius: 20px;
+    padding: 3.438rem 3.125rem 0;
+    border-radius: 1.25rem;
 }
 
 .text-body-right {
-    width: 536px;
-    height: 38px;
+    width: 33.5rem;
+    height: 2.375rem;
 }
 
 .right-img-box {
-    width: 536px;
-    height: 442px;
+    width: 33.5rem;
+    height: 27.625rem;
     background: #cbd1e5;
-    padding: 23px 19px;
-    border-radius: 20px;
+    padding: 1.438rem 1.188rem;
+    border-radius: 1.25rem;
 }
 
 .grid-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    gap: 1.25rem    ;
 }
 
 .container-cross-platform-box,
@@ -430,164 +430,164 @@ nav ul li a {
 
 /* SECTION */
 .section-box-built {
-    width: 1903px;
-    height: 521px;
-    margin: 100px 0px 0px;
+    width: 118.938rem;
+    height: 32.563rem;
+    margin: 6.25rem 0 0;
 }
 
 .container-title-built {
-    width: 1320px;
-    height: 188px;
+    width: 82.5rem;
+    height: 11.75rem;
 }
 
 .title-built {
-    width: 856px;
-    height: 64px;
+    width: 53.5rem;
+    height: 4rem;
 }
 
 .box-1 {
-    width: 440px;
-    height: 263px;
-    padding: 0px 12px;
+    width: 27.5rem;
+    height: 16.438rem;
+    padding: 0 0.75rem;
 }
 
 .box-1-container {
-    width: 416px;
-    height: 173px;
+    width: 26rem;
+    height: 10.813rem;
 }
 
 .box-1-container-img {
-    width: 64px;
-    height: 173px;
-    padding-top: 50px;
+    width: 4rem;
+    height: 10.813rem;
+    padding-top: 3.125rem;
     margin-left: 0;
 }
 
 .box-1-container-text {
-    width: 352px;
-    height: 173px;
-    padding: 50px 0px 0px;
+    width: 322rem;
+    height: 10.813rem;
+    padding: 3.125rem 0 0;
 }
 
 .text-body-text {
-    width: 336px;
-    height: 84px;
+    width: 21rem;
+    height: 5.25rem;
     color: #475467;
-    font: 16px "Noto Sans", sans-serif;
-    margin: 15px 0px 0px;
-    line-height: 22px;
+    font: 1rem  "Noto Sans", sans-serif;
+    margin: 0.938rem 0 0;
+    line-height: 1.375rem;
 }
 
 /* SECTION */
 
 .section-box-from {
-    width: 1903px;
-    height: 862px;
+    width: 118.938rem;
+    height: 53.875rem;
 }
 
 .container-title-from {
-    width: 660px;
-    height: 782px;
-    margin: 0px 0px 30px;
-    padding: 0px 12px;
+    width: 41.25rem;
+    height: 48.875rem;
+    margin: 0 0 1.875rem;
+    padding: 0 0.75rem;
 }
 
 .container-img-from {
-    width: 660px;
-    height: 782px;
-    padding: 0px 12px 0px 40px;
+    width: 41.25rem;
+    height: 48.875rem;
+    padding: 0 0.75rem 0 2.5rem;
 }
 
 .img-from {
-    width: 608px;
-    height: 702px;
+    width: 38rem;
+    height: 43.875rem;
 }
 
 .img-from img:nth-child(2) {
-    bottom: 0px;
-    right: -70px;
+    bottom: 0;
+    right: -4.375rem;
 }
 
 .container-img-from .img-from img {
-    border-radius: 20px;
+    border-radius: 4.375rem;
 }
 
 .tag-1 {
-    width: 220px;
-    height: 42px;
+    width: 13.75rem;
+    height: 2.625rem;
     color: #006d77;
     background: #bee1e6;
-    border-radius: 50px;
-    padding: 14px 28px;
-    font-size: 14px;
-    line-height: 14px;
+    border-radius: 3.125rem;
+    padding: 0.875rem 1.75rem;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
     font-family: Chivo, sans-serif;
     display: inline-block;
 }
 
 .title-box {
-    width: 636px;
-    height: 192px;
-    padding: 30px 0px 0px;
+    width: 39.75rem;
+    height: 12rem;
+    padding: 1.875rem 0 0;
 }
 
 .text-body-lead {
-    width: 636px;
-    height: 128px;
-    font: 24px "Noto Sans", sans-serif;
-    margin: 30px 0px 0px;
-    line-height: 32px;
+    width: 39.75rem;
+    height: 8rem;
+    font: 1.5rem "Noto Sans", sans-serif;
+    margin: 1.875 0 0;
+    line-height: 2rem;
 }
 
 .row-box {
-    width: 660px;
-    height: 278px;
+    width: 41.25rem;
+    height: 17.375rem;
 }
 
 .row-box-1 {
-    width: 330px;
-    height: 89px;
-    margin: 50px 0px 0px;
-    padding: 0px 12px;
+    width: 20.625rem;
+    height: 5.563rem;
+    margin: 3.125rem 0 0;
+    padding: 0 0.75rem;
 }
 
 .text-body-excerpt {
-    width: 306px;
-    height: 52px;
+    width: 19.125rem;
+    height: 3.25rem;
 }
 
 .row-box-1 p {
-    font-size: 18px;
-    line-height: 25px;
-    margin: 15px 0px 0px;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    margin: 0.938rem 0 0;
 }
 
 /* SECTION */
 
 .section-box-our-happy {
-    width: 1903px;
-    height: 1228px;
+    width: 118.938rem;
+    height: 76.75rem;
 }
 
 .container-our-happy {
-    width: 1320px;
-    height: 1108px;
-    margin: 120px 291px 0px;
-    padding: 0px 12px;
+    width: 82.5rem;
+    height: 69.25rem;
+    margin: 7.5rem 18.188rem 0;
+    padding: 0 0.75rem;
 }
 
 .container-our-happy-box {
-    width: 1296px;
-    height: 1108px;
+    width: 81rem;
+    height: 69.25rem;
     background: #f2f4f7;
-    padding: 80px;
-    border-radius: 50px;
+    padding: 5rem;
+    border-radius: 3.125rem;
 }
 
 .container-title-our-happy {
-    width: 773px;
-    height: 146px;
-    padding: 0px 12px;
+    width: 48.313rem;
+    height: 9.125rem;
+    padding: 0 0.75rem;
 }
 
 .title-our-happy {
@@ -596,52 +596,52 @@ nav ul li a {
 }
 
 .text-body-our-happy {
-    width: 749px;
-    height: 32px;
-    margin: 20px 0px 0px;
-    font: 24px "Noto Sans", sans-serif;
+    width: 46.813rem;
+    height: 2rem;
+    margin: 1.25rem 0 0;
+    font: 1.5rem "Noto Sans", sans-serif;
 }
 
 .container-card-box {
-    width: 568px;
-    height: 366px;
-    padding: 0px 12px;
+    width: 35.5rem;
+    height: 22.875rem;
+    padding: 0 0.75rem;
 }
 
 .card-box {
-    width: 544px;
-    height: 346px;
+    width: 34rem;
+    height: 21.625rem;
     background: #ffffff;
-    margin: 0px 0px 020px;
-    padding: 53px 48px;
-    border-radius: 20px;
+    margin: 0 0 1.25rem;
+    padding: 3.313rem 3rem;
+    border-radius: 1.25rem;
 }
 
 .text-body-card {
     color: #475467;
-    font: 16px "Noto Sans", sans-serif;
-    margin: 18px 0px 0px;
-    line-height: 30px;
+    font: 1rem "Noto Sans", sans-serif;
+    margin: 1.125rem 0 0;
+    line-height: 1.875rem;
 }
 
 .card-box-img {
-    width: 448px;
-    height: 80px;
-    margin: 25px 0px 0px;
+    width: 28rem;
+    height: 5rem;
+    margin: 1.75rem 0 0;
 }
 
 .card-box-img-user {
-    width: 370px;
-    height: 24px;
+    width: 23.125rem;
+    height: 1.5rem;
     color: #101828;
-    font: 17px "Noto Sans", sans-serif;
-    margin-left: 20px;
-    margin-top: -30px;
+    font: 1.063rem   "Noto Sans", sans-serif;
+    margin-left: 1.25rem;
+    margin-top: -1.875rem;
 }
 
 .card-box-user {
     color: #101828;
-    font-size: 14px "Noto Sans", sans-serif;
+    font-size: 0.875rem "Noto Sans", sans-serif;
 }
 
 /* Yaren */
@@ -677,7 +677,7 @@ nav ul li a {
 }
 
 .card-row:nth-child(2) {
-    border-top: 1px solid #d0d5dd;
+    border-top: 0.063rem solid #d0d5dd;
 }
 
 .plan-card-button {
@@ -700,7 +700,7 @@ nav ul li a {
 
 .plan-card:hover .plan-card-button {
     background-color: #006d77;
-    border: 1px solid white;
+    border: 0.063rem solid white;
 }
 
 .tick::before {
@@ -752,8 +752,8 @@ nav ul li a {
     height: 1.25rem;
     background-color: white;
     border-radius: 50%;
-    top: 5px;
-    left: 5px;
+    top: 0.313rem;
+    left: 0.313rem;
 }
 
 .switch:hover .slider {
@@ -772,7 +772,7 @@ nav ul li a {
 
 .newsletter-span {
     color: #667085;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
 }
 
 .newsletter-form {
@@ -822,8 +822,8 @@ nav ul li a {
 .footer-row2 {
     margin: 2rem 0;
     padding-top: 2rem;
-    border-top: 1px solid #d0d5dd;
-    border-bottom: 1px solid #d0d5dd;
+    border-top: 0.063rem solid #d0d5dd;
+    border-bottom: 0.063rem solid #d0d5dd;
 }
 
 .footer-col {
