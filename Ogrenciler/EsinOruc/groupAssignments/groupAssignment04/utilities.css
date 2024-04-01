@@ -8,10 +8,10 @@
   list-style-type: none;
 }
 .font-noto {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif !important;
 }
 .font-chivo {
-  font-family: "Chivo", sans-serif;
+  font-family: "Chivo", sans-serif !important;
 }
 .container {
   max-width: 1200px;
@@ -32,10 +32,10 @@
   border: none;
 }
 .bg-green {
-  background-color: #bee1e6;
+  background-color: #bee1e6 !important;
 }
 .bg-dark-green {
-  background-color: #006d77;
+  background-color: #006d77 !important;
 }
 .font-color-black {
   color: #101828;
@@ -91,6 +91,9 @@
 }
 .mt-80 {
   margin-top: 80px;
+}
+.mt-10rem {
+  margin-top: 10rem;
 }
 .mx-75 {
   padding-left: 75px;
@@ -152,6 +155,9 @@
 .gap-1 {
   gap: 1rem;
 }
+.gap-2 {
+  gap: 2rem;
+}
 .img-50 {
   width: 50%;
 }
@@ -161,4 +167,7 @@
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.btn-bg-black {
+  background: #101828 !important;
 }
