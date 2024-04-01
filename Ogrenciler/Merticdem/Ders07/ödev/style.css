@@ -30,6 +30,8 @@
 }
 
 .dmAgency {
+  width: auto;
+  height: auto;
   height: 600px;
   gap: 30px;
   display: grid; /* Grid container olarak ayarlanıyor */
@@ -43,15 +45,19 @@
   text-align: left;
 }
 .dm-item1 {
+  width: fit-content;
+  height: fit-content;
   grid-area: dm-item1;
   border-radius: 50px;
   padding: 14px 28px;
   font-size: 14px;
   line-height: 14px;
   font-family: "Chivo", sans-serif;
-  display: inline-block;
-  box-sizing: border-box;
-  vertical-align: baseline;
+  line-height: 14px;
+  padding: 14px 28px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .dm-item2 {
   grid-area: dm-item2;
@@ -62,9 +68,28 @@
 }
 .dm-item4 {
   grid-area: dm-item4;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
 }
 .dm-item5 {
   grid-area: dm-item5;
+}
+.getStart{
+  width: fit-content;
+  height: fit-content;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  padding: 22px 32px;
+}
+.getStart2{
+  display: flex;
+  flex-direction:row ;
 }
 .space {
   visibility: hidden;
