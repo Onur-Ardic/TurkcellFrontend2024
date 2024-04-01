@@ -29,6 +29,7 @@ body {
 
 img {
     object-fit: cover;
+    border-radius: 10px;
 }
 
 p {
@@ -103,6 +104,11 @@ h2 {
 
 .fs-28 {
     font-size: 28px;
+}
+
+.fs-24 {
+    font-size: 24px;
+    line-height: 32px;
 }
 
 .fs-20 {
@@ -197,6 +203,10 @@ h2 {
     padding-bottom: 70px;
 }
 
+.pl-80 {
+    padding-left: 80px;
+}
+
 .px-28 {
     padding-left: 28px;
     padding-right: 28px;
@@ -254,12 +264,20 @@ h2 {
     margin-top: 70px;
 }
 
+.mt-80 {
+    margin-top: 80px !important;
+}
+
 .mt-50 {
     margin-top: 50px;
 }
 
 .mb-40 {
     margin-bottom: 40px;
+}
+
+.mb-60 {
+    margin-bottom: 60px !important;
 }
 
 .mb-20 {
@@ -288,6 +306,41 @@ h2 {
     padding: 0 12px;
 }
 
+.text-heading-3 {
+    font-size: 35px;
+    line-height: 38px;
+}
+
+.text-heading-1 {
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.text-display-3 {
+    font-size: 64px;
+    line-height: 72px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
 .pr-40 {
     padding-right: 40px;
+}
+
+.pr-20{
+    padding-right: 20px;
+}
+
+.text-body-excerpt {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
 }
