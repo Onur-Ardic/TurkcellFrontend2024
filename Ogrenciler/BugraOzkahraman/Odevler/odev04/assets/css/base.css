@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* 
+
+font-family: "Chivo", sans-serif;
+ */
+
+:root {
+  --title-text: #101828;
+  --p-shadow: #475467;
+  --color-black: #101828;
+  --color-green: #006d77;
+  --ice-blue: #bee1e6;
+  --color-beige: #fff3ea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Chivo", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.btn {
+  padding: 0.7rem 2rem;
+  border-radius: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.g-1 {
+  gap: 1rem;
+}
+
+.g-2 {
+  gap: 2rem;
+}
+
+.g-3 {
+  gap: 3rem;
+}
+
+.bg-blue {
+  background-color: #bee1e6;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-white {
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  padding: 18px 20px;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.size-xl {
+  font-size: 64px;
+}
+
+.size-l {
+  font-size: 40px;
+}
+
+.size-m {
+  font-size: 24px;
+}
+
+.size-s {
+  font-size: 16px;
+}
+
+.size-xs {
+  font-size: 12px;
+}
