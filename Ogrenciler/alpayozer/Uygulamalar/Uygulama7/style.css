@@ -8,8 +8,21 @@
   padding: 50px 0px;
 }
 .slider-image {
-  width: 300px;
-  height: 400px;
+  width: 526px;
+  height: 645px;
+  animation: slider-image 6s infinite ease-in-out;
+}
+
+@keyframes slider-image {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .slider-button {
@@ -22,6 +35,7 @@
   font-size: 64px;
   line-height: 72px;
   font-weight: 700;
+  margin-top: 30px;
 }
 .slider-black-button {
   background-color: #101828;
@@ -37,27 +51,54 @@
 }
 .slider-clients {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  gap: 6rem;
 }
 .balance-img {
   width: 220px;
   height: 260px;
+  border-radius: 10px;
+  animation: balance-image 6s infinite ease-in-out;
+}
+@keyframes balance-image {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 .balance-div {
   position: absolute;
   z-index: 3;
+  right: 700px;
+  top: 400px;
 }
 .payment-div {
   position: absolute;
   z-index: 3;
-  right: 400px;
+  right: 300px;
   top: 80px;
 }
 .payment-img {
   width: 155px;
   height: 170px;
+  border-radius: 10px;
+  animation: payment-image 8s infinite ease-in-out;
+}
+@keyframes payment-image {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 .slider-animation {
   display: flex;
