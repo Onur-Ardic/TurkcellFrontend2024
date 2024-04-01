@@ -1,7 +1,6 @@
 /* Hasan css start */
 
 /* Hasan css end */
-
 /* Ramazan css start */
 .padding-top-225px{
   padding-top : 225px;
@@ -145,7 +144,6 @@
  bottom: -20px;
  right: -20px; 
  padding: 10px; 
-
 }
 /* deneme-V */
 #section-a-right{
@@ -170,7 +168,6 @@
   border-bottom: 3px dotted rgba(0 ,109, 119,1);
 }
 /* deneme */
-
 .sec-8{
   background-color: #f2f4f7;
   border-radius: 50px;
@@ -250,34 +247,9 @@
   }
 }
 /* Ramazan css end */
-
 /* Semih css start */
 a {
   text-decoration: none;
-}
-.bg-lightgreen {
-  background-color: #bee1e6;
-}
-.bg-krem {
-  background-color: #fff3ea;
-}
-.bg-purple {
-  background-color: #cbd1e5;
-}
-.bg-gray {
-  background-color: #ebecf4;
-}
-.bg-cards {
-  background-color: #f2f4f7;
-}
-.bg-green {
-  background-color: #006d77;
-}
-.bg-pink {
-  background-color: #e29578;
-}
-.bg-black {
-  background-color: #101828;
 }
 .color-green {
   color: #006d77;
@@ -323,9 +295,6 @@ a {
 .text-center {
   text-align: center;
 }
-.color-lightgray {
-  color: #98a2b3;
-}
 .color-white {
   color: #ffffff;
 }
@@ -334,13 +303,6 @@ a {
 }
 .transition {
   transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
-}
-
-input:focus {
-  outline: none;
-}
-.width-100 {
-  width: 100%;
 }
 .gap-1 {
   gap: 1rem;
@@ -408,32 +370,32 @@ input:focus {
     background-size: cover;
   }
   .li-text {
-    margin-top: 0.25rem;
+    margin-top: 4px;
   }
   .switch-div {
-    padding: 1.25rem 0 5rem 0;
+    padding: 20px 0 80px 0;
   }
   .switch {
-    width: 4rem;
-    height: 1.875rem;
+    width: 64px;
+    height: 30px;
     position: relative;
   }
   .slider {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 20px;
+    height: 20px;
     background-color: white;
     border-radius: 50%;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 8px;
+    left: 8px;
   }
   .switch:hover .slider {
-    transform: translateX(2.25rem);
+    transform: translateX(36px);
   }
   .newsletter {
-    width: 67.25rem;
-    min-height: 24.875rem;
-    padding: 3.25rem 4.6rem;
+    width: 1080px;
+    min-height: 398px;
+    padding: 52px 73.6px;
     position: relative;
   }
   .newsletter-span {
@@ -442,37 +404,37 @@ input:focus {
   }
   .newsletter-form {
     position: relative;
-    margin-top: 1rem;
+    margin-top: 16px;
   }
   .newsletter-form input {
     width: 100%;
-    padding: 2rem 2rem;
-    border-radius: 5rem;
+    padding: 32px 32px;
+    border-radius: 80px;
     border: none;
   }
   .newsletter-button {
-    height: 3.4rem;
+    height: 3.4rem; 
     width: 3.4rem;
-    padding: 1rem;
+    padding: 16px;
     border-radius: 50%;
     border: none;
     position: absolute;
-    top: 0.75rem;
-    right: 1rem;
+    top: 12px;
+    right: 16px;
   }
   .newsletter-right {
-    max-width: 20.75rem;
-    margin-bottom: -9.375rem;
+    max-width: 332px;
+    margin-bottom: -150px;
   }
   .block-chart {
     position: absolute;
-    bottom: 3.125rem;
-    left: 28.125rem;
-    max-width: 16rem;
-    height: 12.125rem;
+    bottom: 50px;
+    left: 450px;
+    max-width: 256px;
+    height: 194px;
     z-index: 2;
     animation: hero-thumb-animation 2s linear infinite alternate;
-  }
+  }  
   .footer-button:hover {
     background-color: white;
     color: black;
@@ -553,10 +515,6 @@ input:focus {
       width: 100%;
       text-align: center;
       margin-bottom: 0.75rem;
-    }
-    .footer-ready {
-      text-align: center;
-      padding: 0 1rem;
     }
     .footer-ready button {
       margin-left: 0;
