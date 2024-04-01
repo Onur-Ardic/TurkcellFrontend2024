@@ -169,6 +169,12 @@
   .fresh-img-responsive {
     width: 100%;
   }
+  .newsletter > .container {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .newsletter-form {
+    width: 100px;
+  }
 }
 .fresh-img-2 {
   bottom: -20px;
@@ -231,32 +237,6 @@
 }
 
 /* HAPPY CUSTOMERS */
-
-@media screen and (max-width: 1080px) {
-  .navbar-list {
-    display: none !important;
-  }
-  .powerful-features-cards {
-    flex-direction: column;
-    gap: 10rem;
-    margin-bottom: 200px;
-  }
-  .powerful-features-cards > div > div > img {
-    width: 400px;
-  }
-  .hero-section-images {
-    display: none;
-  }
-  .list-partners > li > a > img {
-    max-width: 150px;
-  }
-  .fresh-ideas-imgs {
-    display: none;
-  }
-  .big-picture-imgs {
-    display: none;
-  }
-}
 
 .card {
   border: 1px solid #d0d5dd;
@@ -357,7 +337,7 @@
     transform: translateY(-20px);
   }
 }
-.image-container img {
+.image-container > img {
   border-radius: 20px;
   right: 20px;
 }
@@ -399,41 +379,29 @@
   opacity: 0.8;
   transition-duration: 0.2s;
 }
-@media (max-width: 1024px) {
-  .newsletter .container {
-    padding: 30px;
+@media (max-width: 576px) {
+  .cross-platform {
+    width: 400px;
+    height: 300px;
   }
-  .image-container {
-    width: 100px;
+  .cross-platform > div > img {
+    top: 70px;
+    width: 70% !important;
   }
-  .img-50 {
-    width: 30% !important;
+  .px-150 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
-  .image-container > img {
-    right: 320px;
-    width: 30% !important;
-  }
-  .newsletter-form button {
-    margin-left: 10px;
-  }
-}
-@media (max-width: 768px) {
   .newsletter .container {
     padding: 20px;
   }
-}
-@media (max-width: 1024px) {
-  .footer .footer-sections {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
   .footer .footer-sections {
     grid-template-columns: 1fr;
   }
+  .big-picture-right-side img {
+    height: 400px;
+  }
 }
-/* Yeni ekledik */
 .built-for-you-section {
   flex-direction: column;
   align-items: center;
@@ -449,12 +417,10 @@
 .built-for-you-title p {
   margin-top: 30px;
   font-size: 24px;
-  width: 856px;
 }
 
 .built-for-you-cards {
-  grid-template-columns: repeat(3, 400px);
-  grid-template-rows: 200px;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 100px;
 }
@@ -465,9 +431,6 @@
   border-bottom: 2px solid #e4e7ec;
 }
 
-.built-info-right-section {
-  width: 336px;
-}
 .built-info h3 {
   font-size: 28px;
 }
@@ -572,28 +535,75 @@
 }
 
 @media screen and (max-width: 992px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+  .fresh-ideas {
+    grid-template-columns: 1fr;
+  }
+  .navbar-list {
+    display: none !important;
+  }
+  .powerful-features-cards {
+    flex-direction: column;
+    gap: 10rem;
+    margin-bottom: 200px;
+  }
+  .powerful-features-cards > div > div > img {
+    width: 400px;
+  }
+  .hero-section-images {
+    display: none;
+  }
+  .list-partners > li > a > img {
+    max-width: 150px;
+  }
+  .fresh-ideas-imgs {
+    display: none;
+  }
+  .big-picture-imgs {
+    display: none;
+  }
+  .footer .footer-sections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newsletter .container {
+    padding: 30px;
+  }
+  .image-container {
+    width: 100px;
+  }
+  .img-50 {
+    width: 30% !important;
+  }
+  .image-container > img {
+    right: 320px;
+    width: 30% !important;
+  }
+  .newsletter-form button {
+    margin-left: 10px;
+  }
   .card {
     margin: 30px 30px;
   }
   .cards {
     justify-content: center !important;
   }
-  .built-for-you-title p,
-  .built-for-you-title h2 {
-    width: 720px;
-  }
+
   .built-for-you-title h2 {
     font-size: 46px;
   }
   .built-info-right-section {
-    width: 620px;
     padding-bottom: 50px;
   }
   .built-for-you-cards {
-    grid-template-columns: 720px;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ) !important;
     align-items: center;
     gap: 30px;
+    font-size: 20px;
   }
   .big-picture-section {
     grid-template-columns: 1fr;
