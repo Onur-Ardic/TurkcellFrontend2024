@@ -97,6 +97,7 @@
     display: flex;
     justify-content: space-between;
     justify-content: center;
+    flex-wrap: wrap;
 } 
 .section-7-content{
     width: 48%;
@@ -138,9 +139,33 @@
    position: absolute;
    bottom: -20px;
    right: -20px; 
-    padding: 10px; 
+   padding: 10px; 
   
 }
+/* deneme-V */
+#section-a-right{
+    background: url("img/sec-7.png") no-repeat center center/contain;
+    height: 620px;
+}
+#section-a-right img{
+    width: 200px;
+    margin: 480px 0 0 400px;
+}
+#section-a .column-gap{
+    gap: 5px;
+}
+#section-a .row{
+    justify-content: flex-start;
+}
+#section-a i{
+    color: rgba(0 ,109, 119,1);
+}
+#section-a .paragraph{
+    padding-bottom: 40px;
+    border-bottom: 3px dotted rgba(0 ,109, 119,1);
+}
+/* deneme */
+
 .sec-8{
     background-color: #f2f4f7;
     border-radius: 50px;
@@ -187,7 +212,8 @@
         grid-template-columns: 1fr;
     }   
     .sec-7-grid{
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
+        width: 100%; 
     }
     .section-7{
         flex-direction: column;        
@@ -199,12 +225,22 @@
         margin-bottom: 200px;
     }
     .last-leaf{
-        margin-bottom: 150px;
+        margin-bottom: 350px !important;
     }
     .section-7-content {
         width: 100%; /* Tam genişlik alması için */
-      }  
+        display: block;
+        margin-bottom: 50px !important;
+    }  
 
 }
-
-
+@media screen and (max-width: 1148px) {
+    .section-7-content{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 1301px) {
+    .sec-8{
+        margin-top: 180px !important;
+    }
+}
