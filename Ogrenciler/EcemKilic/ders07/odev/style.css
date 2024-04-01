@@ -1,3 +1,75 @@
+.main-header {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    gap: 100px;
+    padding: 20px;
+}
+.header-logo .logo {
+    padding: 20px;
+    align-items: center;
+}
+.header-logo .logo img {
+    max-width: 100px;
+}
+.header-nav .main-menu {
+    padding: 20px;
+}
+.header-nav .main-menu .menu-list {
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+.header-nav .main-menu .menu-list .menu-list-item {
+    margin-right: 50px;
+}
+.dropdown-list {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+.dropdown-list li{
+    margin-bottom: 5px;
+}
+.menu-list-item:hover {
+    .dropdown-list {
+        display: block;
+    }
+}
+.header-button .hdr-btn {
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #f2f4f7;
+    border-radius: 50px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 22px 32px;
+    white-space: nowrap;
+}
+.header-button .hdr-btn:hover {
+    color: white;
+    background-color: #101828;
+}
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .header-button {
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header-nav {
+        display: none;
+    }
+}
+
 .digital-marketing {
     width: 100%;
     background-image: url("https://agon-nextjs-13.vercel.app/_next/static/media/pattern-6.8b501f61.svg");
@@ -15,6 +87,9 @@
         grid-template-columns: 2fr;
     }
     .digital-marketing-images {
+        display: none;
+    }
+    .header-button {
         display: none;
     }
 }

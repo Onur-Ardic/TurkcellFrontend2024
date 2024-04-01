@@ -7,9 +7,6 @@
       Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
-  body{
-      
-  }
   .container{
     width: 1140px;
     max-width: 100%;
@@ -44,3 +41,12 @@
     text-decoration: none;
     color: black;
   }
+  .hr {
+    border-bottom: 1px solid whitesmoke;
+  }
+  @media screen and (max-width: 768px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
