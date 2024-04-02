@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Chivo", sans-serif;
   color: #101828;
+  transition: all .25s cubic-bezier(.02,.01,.47,1);
 }
 p {
   font-family: "Noto Sans", sans-serif;
@@ -86,6 +87,11 @@ p {
 .bg-black {
   background-color: #101828;
 }
+
+.bg-white {
+  background-color: #fff;
+}
+
 .color-green {
   color: #006d77;
 }
@@ -98,7 +104,7 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 80%;
 }
 .text-center {
   text-align: center;
@@ -152,6 +158,9 @@ p {
 .mt-15{
   margin-top: 15px;
 }
+.mt-20{
+  margin-top: 20px;
+}
 
 .mt-30{
   margin-top: 30px;
@@ -161,6 +170,12 @@ p {
   margin-top: 50px;
 }
 
+.mt-70{
+  margin-top: 70px;
+}
+
 .mt-120{
   margin-top: 120px;
 }
+
+

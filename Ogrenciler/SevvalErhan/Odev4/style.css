@@ -5,6 +5,417 @@
   margin-right: auto;
   margin-left: auto;
 }
+/* ecem kılıç */
+.main-header {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  gap: 100px;
+  padding: 20px;
+}
+.header-logo .logo {
+  padding: 20px;
+  align-items: center;
+}
+.header-logo .logo img {
+  max-width: 100px;
+}
+.header-nav .main-menu {
+  padding: 20px;
+}
+.header-nav .main-menu .menu-list {
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+.header-nav .main-menu .menu-list .menu-list-item {
+  margin-right: 50px;
+}
+.dropdown-list {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.dropdown-list li{
+  margin-bottom: 5px;
+}
+.menu-list-item:hover {
+  .dropdown-list {
+      display: block;
+  }
+}
+.header-button .hdr-btn {
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: #f2f4f7;
+  border-radius: 50px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 22px 32px;
+  white-space: nowrap;
+}
+.header-button .hdr-btn:hover {
+  background-color: #101828;
+}
+.header-button .hdr-btn a:hover {
+  color: white;
+  background-color: #101828;
+}
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+  .header-button {
+      display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header-nav {
+      display: none;
+  }
+}
+
+.digital-marketing {
+  width: 100%;
+  background-image: url("https://agon-nextjs-13.vercel.app/_next/static/media/pattern-6.8b501f61.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.digital-marketing-inside {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  padding: 50px 0;
+}
+@media screen and (max-width: 990px) {
+  .digital-marketing-inside {
+      grid-template-columns: 1fr;
+  }
+  .digital-marketing-images, .banner-imgs {
+      display: none;
+  }
+  .header-button {
+      display: none;
+  }
+}
+.digital-marketing-content .tag {
+  font-size: 14px;
+  line-height: 14px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  padding: 14px 28px;
+  display: inline-block;
+}
+.digital-marketing-content-h1 {
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: 0;
+  margin-top: 30px;
+}
+.digital-marketing-content-p {
+  font-size: 24px;
+  line-height: 32px;
+  color: #667085;
+}
+.digital-marketing-content .buttons .how-it-works {
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.digital-marketing-content .buttons .get-start {
+  box-sizing: border-box;
+  border-radius: 4px;
+  border-color: none;
+  color: #fff;
+  background-color: #101828;
+  font-size: 18px;
+  line-height: 22px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 20px;
+}
+.digital-marketing-content .buttons .get-start:hover {
+  background-color: #fff;
+  color: black;
+  border-color: none;
+}
+.digital-marketing-content .row {
+  display: flex;
+}
+.digital-marketing-content .row .data {
+  margin: 30px 30px 30px 0;
+}
+.data-p {
+  color: #667085;
+  font-size: 14px;
+  line-height: 19px;
+}
+.digital-marketing-images {
+  display: block;
+  max-width: 100%;
+}
+.digital-marketing-images .banner-imgs {
+  padding: 20px 0 0;
+  position: relative;
+  width: 100%;
+  float: right;
+}
+.digital-marketing-images .banner-imgs .block-1 img{
+  box-sizing: border-box;
+  border-radius: 10px;
+  max-width: 220px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  animation: moveRightLeft 2s linear infinite alternate;
+}
+.digital-marketing-images .banner-imgs .block-2 img{
+  box-sizing: border-box;
+  border-radius: 10px;
+  max-width: 155px;
+  position: absolute;
+  top: 0;
+  right: -75px;
+  z-index: 2;
+  animation: moveUpDown 2s linear infinite alternate;
+}
+.digital-marketing-images .img-responsive{
+  box-sizing: border-box;
+  left: 75px;
+  border-radius: 10px;
+  max-width: 525px;
+  animation: moveUpDown 2s linear infinite alternate;
+}
+@keyframes moveUpDown {
+  0% {
+      transform: translateY(-20px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+@keyframes moveRightLeft {
+  0% {
+      transform: translateX(-20px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+/* ecem kılıç */
+
+/* Şevval start */
+.padding-top-225px {
+  padding-top: 225px;
+}
+
+.padding-top-70px {
+  padding-top: 70px;
+}
+
+.margin-bottom-30px {
+  margin-bottom: 30px;
+}
+
+.margin-bottom-80px {
+  margin-bottom: 80px;
+}
+
+.row-r {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.row-r .p-24 {
+  margin-top: 15px;
+  margin-bottom: 55px;
+}
+
+.box-with-img {
+  width: 636px;
+  height: 455px;
+  border-radius: 15px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 50px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.blue-box {
+  background-color: #bee1ea;
+}
+
+.krem {
+  background-color: #fff3ea;
+}
+
+.img-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.box-with-img:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.img-box {
+  width: 80%;
+  height: 442px;
+  position: absolute;
+  bottom: -140px;
+  border-radius: 20px
+}
+
+.img-box-color1 {
+  background-color: #ebecf4;
+}
+
+.img-box-color2 {
+  background-color: #cbd1e5;
+}
+
+.img-box img {
+  width: 80%;
+  height: 80%;
+  margin: 50px;
+}
+
+.stikers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.card-stiker {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ccc;
+}
+
+.exp {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-bottom: 30px;
+}
+
+.exp h4 {
+  margin-bottom: 15px;
+}
+
+.img-container-R {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.section-7 {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section-7-content {
+  width: 48%;
+  height: 1000px;
+  position: relative;
+}
+
+.img-box-7 {
+  background-image: url('img/sec-7.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  position: relative;
+  padding: 20px;
+  display: flex;
+}
+
+.header-span {
+  background-color: #bee1e6;
+  width: 210px;
+  height: 42px;
+  display: inline-block;
+  padding: 15px 10px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.sec-7-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 2px dotted #006d77;
+  width: 85%;
+  padding-top: 15px;
+}
+
+.leaf-content {
+  width: 100%;
+  margin: 15px;
+  padding-bottom: 15px;
+}
+
+.img-box-7 .img-box {
+  width: 60%;
+  max-height: 80%;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  padding: 10px;
+}
+
+/* deneme-V */
+#section-a-right {
+  background: url("assets/img/sec-7.png") no-repeat center center/contain;
+  height: 620px;
+  margin-top: 50px;
+}
+
+#section-a-right img {
+  width: 200px;
+  margin: 480px 0 0 400px;
+}
+
+#section-a .column-gap {
+  gap: 5px;
+}
+
+#section-a .row {
+  justify-content: flex-start;
+}
+
+#section-a i {
+  color: rgba(0, 109, 119, 1);
+}
+
+#section-a .paragraph {
+  padding-bottom: 40px;
+  border-bottom: 3px dotted rgba(0, 109, 119, 1);
+}
 
 .discover-wrapper .text-center .text-heading {
   font-size: 56px;
@@ -36,6 +447,11 @@
   border-radius: 16px;
   padding: 55px 50px 0;
   text-align: center;
+}
+@media screen and (max-width: 990px) {
+  .boxs{
+    flex-direction: column;
+  }
 }
 .box-cross {
   transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -90,3 +506,157 @@
 img {
   max-width: 100%;
 }
+/* Şevval end */
+
+/* newsletter */
+.newsletter{
+  margin-bottom: 100px;
+}
+.newsletter .container{
+  margin-top: 100px;
+}
+.newsletter-genel{
+  background-color: #fff3ea;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 18px;
+  padding: 60px;
+}
+.newsletter-content{
+  display: flex;
+  position: relative;
+}
+.newsletter-content-left{
+  padding: 0 12px;
+  flex: 5;
+}
+.newsletter-content-left p{
+  color: #667085
+}
+.newsletter-content-left h4{
+  font-size: 2.75rem;
+  margin: 10px 0;
+}
+.newsletter-content-left form{
+  padding: 12px;
+  margin-top: 30px;
+  background-color: white;
+  display: flex;
+  text-align: center;
+  border-radius: 55px;
+}
+.newsletter-content-left input{
+  width: 90%;
+  padding: 15px;
+  min-height: 50px;
+  border: none;
+}
+.newsletter-content-left button{
+  background-image: url("https://agon-nextjs-13.vercel.app/_next/static/media/btn-send.793d82ba.svg");
+  background-position: -30px -21px;
+  background-repeat: no-repeat;
+  height: 57px;
+  width: 72px;
+  border: none;
+  background-color: white;
+}
+.newsletter-content-right{
+  flex: 7;
+}
+.newsletter-content-right img{
+  max-width: 332px;
+  position: absolute;
+  bottom: -110px;
+  right: 0;
+  border-radius: 20px;
+}
+/* newsletter */
+/* footer */
+.footer{
+  margin-top: 50px;
+}
+.footer-top{
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e4e7ec;
+  display: flex;
+  font-weight: 700;
+}
+.footer-top-logo{
+  flex: 1;
+}
+.footer-top-create-account{
+  flex: 2;
+  text-align: right;
+}
+.footer-started-span{
+  margin-right: 30px;
+}
+.create-account-btn{
+  padding: 18px 20px;
+  background-color: #101828;
+  color: white;
+  border-radius: 4px;
+}
+.footer-center{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 10px;
+}
+.footer-center-element{
+  padding: 0 12px;
+}
+.footer-center p, .footer-center a, .footer-bottom span, .footer-bottom a{
+  color: #667085;
+}
+.footer-center-content{
+  margin-top: 20px;
+}
+.footer-center-title{
+  font-size: 1.25rem;
+}
+.footer-list-item{
+  margin-bottom: 8px;
+}
+.footer-list-item a:hover{
+  color: #006d77;
+  transition-duration: .2s;
+  padding-left: 3px;
+}
+.footer-bottom{
+  margin-top: 20px;
+  padding: 30px 0;
+  border-top: 1px solid #e4e7ec;
+  display: flex;
+}
+.footer-bottom-item{
+  width: 50%;
+}
+.footer-bottom-policy{
+  display: flex;
+  /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+  gap: 30px;
+}
+.footer-bottom-policy a{
+  /* margin-left: 10px; */
+}
+.footer-bottom-social{
+  text-align: end;
+  font-size: 1.75rem;
+  color: #006d77;
+}
+@media screen and (max-width: 500px) {
+  .footer-top{
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+  .footer-top-create-account{
+      text-align: center;
+  }
+  .footer-bottom{
+      flex-direction: column;
+      align-items: center;
+  }
+}
+/* footer */

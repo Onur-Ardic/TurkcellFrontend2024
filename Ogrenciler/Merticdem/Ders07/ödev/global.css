@@ -38,7 +38,17 @@ p {
   unicode-bidi: isolate;
 }
 
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -68,20 +78,26 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   font-size: 18px;
   color: #101828;
 }
-.color-black {color: #101828;}
+.color-black {
+  color: #101828;
+}
 .bg-green-900 {
   background-color: #006d77;
   color: #fff;
 }
-.bg-lightgreen {background-color: #bee1e6;}
-.bg-white {background-color: white;}
+.bg-lightgreen {
+  background-color: #bee1e6;
+}
+.bg-white {
+  background-color: white;
+}
 .bg-primary-color {
   background-color: #f2f4f7;
 }
 .color-gray-500 {
   color: #667085;
 }
-.bg-black{
+.bg-black {
   background-color: #101828;
 }
 .flex {
@@ -114,9 +130,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 .grid {
   display: grid;
 }
+.gap-10 {
+  gap: 10px;
+}
 .gap-30 {
   gap: 30px;
   list-style-type: none;
+}
+.gap-50 {
+  gap: 50px;
 }
 .blackButton {
   border-radius: 4px;

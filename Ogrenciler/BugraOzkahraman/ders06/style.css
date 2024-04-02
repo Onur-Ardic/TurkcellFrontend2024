@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  height: 100vh;
+  background-color: rgb(70, 70, 70);
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: brown;
+  /* transition:  background-color 0.1s, width 0.4s, ease-in-out; */
+  transition: all 0.4s ease-in-out;
+  animation: amimasyon-deneme 2s infinite ease-in-out;
+}
+.box:hover {
+  background-color: blue;
+  width: 200px;
+  transform: translateX(150px, 150px) rotate(180deg) scale(0.5);
+}
+@keyframes animasyon-deneme {
+  0% {
+    transform: translateX(0px);
+    background-color: aqua;
+  }
+}

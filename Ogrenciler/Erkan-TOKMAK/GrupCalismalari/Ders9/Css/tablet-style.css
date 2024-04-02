@@ -10,7 +10,32 @@
     .menu-item{
         display: none;
     }
+    .container{
+        width: 100%;
+        padding: 10px;
+        margin: 0px;
+    }
     #slider-image-section{
         display: none;
+    }
+    .blok3{
+        position: absolute;
+        /* bottom: -1700px;
+        right: -40px; */
+        margin-top: 540px;
+        margin-left: 440px;
+        width: 200px;
+        height: 150px;
+    }
+    #aboutus {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .witdh50 {
+        width: 100%;
+    }
+    .companies-wwd {
+        margin-top: 90px;
     }
 }
