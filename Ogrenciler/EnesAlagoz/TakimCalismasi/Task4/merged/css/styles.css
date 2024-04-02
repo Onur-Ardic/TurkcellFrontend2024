@@ -158,167 +158,14 @@ nav ul li a {
 .item-icon p {
     margin-top: 1rem;
 }
-@media screen and (max-width: 1500px) {
-    .header-container {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .header-left {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .main-menu {
-        flex-direction: column;
-    }
-
-    .text-heading-2 {
-        font-size: 1.625rem;
-    }
-
-    .text-heading-3 {
-        font-size: 1.375rem;
-    }
-
-    .text-heading-4 {
-        font-size: 1.125rem;
-    }
-
-    .text-heading-5 {
-        font-size: 0.75rem;
-    }
-
-    .text-heading-6 {
-        font-size: 0.5rem;
-    }
-
-    .text-body-lead-large {
-        font-size: 0.875rem;
-    }
-
-    .text-display-3 {
-        font-size: 2.75rem;
-    }
-
-    .text-display-4,
-    .text-heading-1 {
-        font-size: 2.25rem;
-    }
-
-    .home-right .main-image {
-        width: 25rem;
-    }
-
-    .home-right .balance-image {
-        width: 8rem;
-    }
-
-    .home-right .payment-image {
-        width: 6rem;
-    }
-
-    .home-right .border {
-        padding: 14.5rem 12rem;
-    }
-
-    .list-partners img {
-        width: 8rem;
-    }
-
-    .ideas-image {
-        width: 25rem;
-    }
-
-    .newsletter {
-        width: 90%;
-    }
-
-    .newsletter-left {
-        width: 18.75rem;
-    }
-
-    .block-chart {
-        left: 23.75rem;
-    }
-}
-@media screen and (max-width: 1000px) {
-    .home-container {
-        flex-direction: column;
-        gap: 5rem;
-    }
-
-    .ideas-container {
-        flex-direction: column;
-    }
-
-    .chart-image {
-        width: 14rem;
-        bottom: -5rem;
-        right: -10rem;
-    }
-
-    #plans h3 {
-        font-size: 2.188rem;
-    }
-
-    #newsletter h4 {
-        font-size: 1.75rem;
-    }
-
-    .newsletter {
-        flex-direction: column;
-        padding: 2rem;
-        gap: 2rem;
-    }
-
-    .newsletter-left {
-        width: 100%;
-    }
-
-    .newsletter-right {
-        margin-bottom: 0;
-        width: 100%;
-        max-width: 62.5rem;
-    }
-
-    .block-chart {
-        left: 1.25rem;
-        bottom: 1.25rem;
-        width: 14rem;
-        height: 10.5rem;
-    }
-
-    .footer-col {
-        width: 100%;
-        padding-left: 1rem;
-        text-align: start;
-    }
-
-    .footer-logo {
-        width: 100%;
-        margin-bottom: 0.75rem;
-    }
-
-    .footer-ready {
-        padding: 0 1rem;
-    }
-
-    .footer-ready button {
-        margin-left: 0;
-        margin-top: 1rem;
-    }
-}
 /* Enes */
 .section-box-discover {
     padding-top: 3rem;
     padding-bottom: 10rem;
 }
 .container-title {
-    padding-bottom: 5rem;
-}
-.title-discover {
     padding: 0 30rem;
+    padding-bottom: 5rem;
 }
 .text-body {
     font-size: 1.5rem;
@@ -330,6 +177,10 @@ nav ul li a {
     background-color: #fff3ea;
     padding: 3.438rem 3.125rem 0;
     border-radius: 1.25rem;
+}
+.cross-platform-img {
+    width: 498px;
+    height: 389px
 }
 .left-img-box {
     background: #ebecf4;
@@ -343,8 +194,11 @@ nav ul li a {
     padding: 3.438rem 3.125rem 0;
     border-radius: 1.25rem;
 }
+.extremly-img{
+    width: 498px;
+    height: 389px
+}
 .right-img-box {
-   
     background: #cbd1e5;
     padding: 1.438rem 1.188rem;
     border-radius: 1.25rem;
@@ -408,8 +262,8 @@ nav ul li a {
     margin: 0.938rem 0 0;
 }
 .container-our-happy {
-    margin: 7.5rem 18.188rem 0;
-    padding: 0 0.75rem;
+    margin-top: 5rem;
+    padding: 0 20rem;
 }
 .container-our-happy-box {
     background: #f2f4f7;
@@ -417,9 +271,7 @@ nav ul li a {
     border-radius: 3.125rem;
 }
 .container-title-our-happy {
-    width: 48.313rem;
-    height: 9.125rem;
-    padding: 0 0.75rem;
+    padding-bottom: 5rem;
 }
 .text-body-our-happy {
     margin: 1.25rem 0 0;
@@ -447,6 +299,14 @@ nav ul li a {
     font: 1.063rem "Noto Sans", sans-serif;
     margin-left: 1.25rem;
     margin-top: -1.875rem;
+}
+.built-1-img {
+    width: 608px;
+    height: 702px;
+}
+.built-2-img {
+    width: 313px;
+    height: 330px;
 }
 /* Yaren */
 .section {
@@ -535,7 +395,6 @@ nav ul li a {
     top: 0.313rem;
     left: 0.313rem;
 }
-
 .switch:hover .slider {
     transform: translateX(2.25rem);
 }
@@ -551,7 +410,6 @@ nav ul li a {
     color: #667085;
     letter-spacing: 0.125rem;
 }
-
 .newsletter-form {
     margin-top: 1rem;
 }
@@ -611,12 +469,268 @@ nav ul li a {
 .socials {
     gap: 0.5rem;
 }
+.banner-img {
+    width: 100%;
+}
+.section-box-built {
+    margin-top: 10rem;
+}
 @keyframes hero-thumb-animation {
     0% {
         transform: translateY(-20px);
     }
-
     100% {
         transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .header-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .header-left {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .ideas-container {
+        flex-direction: column;
+    }
+    .main-menu {
+        flex-direction: column;
+    }
+    .text-heading-2 {
+        font-size: 1.625rem;
+    }
+    .text-heading-3 {
+        font-size: 1.5rem;
+    }
+    .text-heading-4 {
+        font-size: 1.375rem;
+    }
+    .text-heading-5 {
+        font-size: 1.25rem;
+    }
+    .text-heading-6 {
+        font-size: 1rem;
+    }
+    .text-body-lead-large {
+        font-size: 0.875rem;
+    }
+    .text-display-3 {
+        font-size: 2.75rem;
+    }
+    .text-display-4,
+    .text-heading-1 {
+        font-size: 2.25rem;
+    }
+    .home-right .main-image {
+        width: 25rem;
+    }
+    .home-right .balance-image {
+        width: 8rem;
+    }
+    .home-right .payment-image {
+        width: 6rem;
+    }
+    .home-right .border {
+        padding: 14.5rem 12rem;
+    }
+    .list-partners img {
+        width: 8rem;
+    }
+    .ideas-image {
+        width: 25rem;
+    }
+    .newsletter {
+        width: 90%;
+    }
+    .newsletter-left {
+        width: 18.75rem;
+    }
+    .block-chart {
+        left: 23.75rem;
+    }
+    .built-1-img {
+        width: 400px;
+        height: 400px;
+    }
+    .built-2-img {
+        width: 200px;
+        height: 200px;
+        top: 20rem;
+    }
+    .home-container {
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .container-cross-platform-box {
+        width: 400px;
+        height: 300px;
+        padding: 3.438rem 3.125rem 0;
+    }
+    .container-extremel-flexible-platform-box {
+        width: 400px;
+        height: 300px;
+        padding: 3.438rem 3.125rem 0;
+    }
+    .cross-platform-img {
+        width: 300px;
+        height: 200px;
+    }
+    .extremly-img{
+        width: 300px;
+        height: 200px;
+    }
+    .cross-extremly-box {
+        flex-direction: column;
+        gap: 10rem;
+    }
+    .box-1-list {
+        flex-direction: column;
+    }
+    .built-box {
+        flex-direction: column;
+    }
+    .card-box-list {
+        flex-direction: column;
+    }
+    .container-our-happy {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .chart-image {
+        width: 14rem;
+        bottom: -5rem;
+        right: -10rem;
+    }
+    #plans h3 {
+        font-size: 2.188rem;
+    }
+    #newsletter h4 {
+        font-size: 1.75rem;
+    }
+    .newsletter {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    .newsletter-left {
+        width: 100%;
+    }
+    .newsletter-right {
+        margin-bottom: 0;
+        width: 100%;
+        max-width: 62.5rem;
+    }
+    .block-chart {
+        left: 1.25rem;
+        bottom: 1.25rem;
+        width: 14rem;
+        height: 10.5rem;
+    }
+    .footer-col {
+        width: 100%;
+        padding-left: 1rem;
+        text-align: start;
+    }
+    .footer-logo {
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+    .footer-ready {
+        padding: 0 1rem;
+    }
+    .footer-ready button {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .banner-img {
+        width: 50%;
+    }
+    .container-title {
+        padding: 0;
+        padding-bottom: 5rem;
+    }
+    .container-our-happy {
+        padding: 0;
+    }
+    .container-card-box {
+        padding: 1rem 0;
+    }
+    .card-box {
+        margin: 0;
+        padding: 3.313rem 1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .home-right {
+        margin-top: 4rem;
+    }
+    .home-right .main-image {
+        width: 15rem;
+    }
+    .home-right .balance-image {
+        width: 6rem;
+    }
+    .home-right .payment-image {
+        width: 4rem;
+        right: -2rem;
+        top: 2rem;
+    }
+    .home-right .border {
+        padding: 8.5rem 7.5rem;
+    }
+    .partners-container {
+        padding: 5rem 0;
+    }
+    .list-partners img {
+        width: 10rem;
+    }
+    .ideas-container {
+        padding: 5rem 5rem;
+    }
+    .ideas-image {
+        width: 16rem;
+    }
+    .chart-image {
+        width: 10rem;
+        bottom: -2rem;
+        right: 2rem;
+        box-shadow: 0 2.938rem 4.063 rgba(21, 28, 38, .1);
+    }
+    .container-title-from {
+        margin: 0;
+        padding: 0;
+    }
+    .container-title {
+        padding: 0;
+        padding-bottom: 5rem;
+    }
+    .title-box {
+        width: 15rem;
+        padding: 0;
+    }
+    .built-1-img {
+        width: 150px;
+    }
+    .built-2-img {
+        width: 100px;
+    }
+    .container-img-from {
+        padding: 0;
+    }
+    .built-box {
+        gap: 30rem;
+    }
+    .header-container {
+        padding: 1.5rem 0;
+    }
+    .home-container {
+        padding: 3rem 1rem;
+    }
+    .container-card-box {
+        width: 80%;
     }
 }
