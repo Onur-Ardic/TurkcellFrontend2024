@@ -146,6 +146,7 @@ ul li {
 .container-footer {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .footer-card li {
@@ -188,6 +189,10 @@ ul li {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
+  }
+
+  .pricing-card{
+    margin-right: 50px;
   }
   .colored {
     width: 100%;
@@ -235,4 +240,43 @@ ul li {
   .container-newsletter p {
     margin-right: 55px;
   }
+}
+@media screen and (max-width: 320px) {
+  .container-pricing {
+    padding: 0 0vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+.footer-top{
+  margin: 0 6vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.col1{
+}
+.col2{
+  justify-self: end;
+}
+
+.button-create {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.ready{
+  font-family: 'Chivo',sans-serif;
+  font-size:18px;
+  font-weight: 700;
+  margin-right: 10px;
 }
