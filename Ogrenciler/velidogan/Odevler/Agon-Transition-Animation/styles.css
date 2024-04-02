@@ -229,13 +229,22 @@
 /* footer */
 #footer .footer-top{
     justify-content: space-between;
+    border-bottom: 1px solid rgba(0 ,0, 0, 0.2);
+    margin: 30px 0;
+    padding: 30px 0;
 }
 #footer .footer-main{
     grid-template-columns: repeat(5, 1fr);
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(0 ,0, 0, 0.2);
 }
 #footer .footer-bottom{
     justify-content: space-between;
     padding: 20px;
+    
+}
+#footer i{
+    color: rgb(0, 109, 119);
 }
 
 @keyframes advanced-xy{
@@ -316,7 +325,7 @@
     }
     #footer .footer-main{
         grid-template-columns: repeat(3, 1fr);
-    }
+    } 
 }
 
 @media (max-width:576px){
