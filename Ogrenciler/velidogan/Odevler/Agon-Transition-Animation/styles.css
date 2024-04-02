@@ -333,6 +333,14 @@
         width: 540px;
         margin: 0 auto;
     }
+    #header .main-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 10px;
+    }
+    #header .main-header ul {
+       column-gap: 0;
+    }
     .trusted-companies-list li{
         display: flex;
         flex-wrap: wrap;
