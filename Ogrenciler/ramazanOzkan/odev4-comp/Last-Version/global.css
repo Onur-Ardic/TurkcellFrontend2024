@@ -12,7 +12,7 @@
 
 .container {
     width: 80%;
-    margin: auto;
+    margin-inline: auto;
 }
 
 a {
