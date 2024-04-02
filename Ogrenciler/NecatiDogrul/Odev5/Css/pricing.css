@@ -97,6 +97,7 @@ ul li {
   height: 398px;
   border-radius: 15px;
   padding: 52px 74px;
+  display: flex;
 }
 
 .container-newsletter {
@@ -129,6 +130,19 @@ ul li {
   height: 60px;
   border-radius: 50%;
   margin-right: 15px;
+}
+
+.chart {
+  width: 255px;
+  height: 190px;
+  border-radius: 15px;
+  animation: hareket 2s infinite linear;
+  margin-left: 10px;
+}
+.newsletter-img{
+  border-radius: 15px;
+  width: 300px;
+  height: 400px;
 }
 
 @keyframes hareket {
@@ -258,12 +272,9 @@ ul li {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.col1{
-}
 .col2{
   justify-self: end;
 }
-
 .button-create {
   width: 200px;
   height: 50px;
@@ -273,14 +284,12 @@ ul li {
   border-radius: 5px;
   font-family: 'Noto Sans', sans-serif;
 }
-
 .ready{
   font-family: 'Chivo',sans-serif;
   font-size:18px;
   font-weight: 700;
   margin-right: 10px;
 }
-
 #footer-bot{
   margin-bottom: 20px;
 }
@@ -290,3 +299,10 @@ ul li {
   font-size: 16px;
   margin-left: 10px;
 }
+
+.chart{
+  width: 250px;
+  height: 180px;
+  border-radius: 15px;
+}
+
