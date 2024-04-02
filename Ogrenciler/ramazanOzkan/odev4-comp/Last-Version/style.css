@@ -595,21 +595,23 @@
   align-items: center;
   gap: 10px;
 }
-
 .sec-8-card-usr img {
   height: 80px;
   width: 80px;
   border-radius: 5px;
 }
-
 .img-row {
   gap: 2rem;
 }
-
 .user span {
   font-weight: bold;
 }
+@media screen and (max-width: 990px) {
+  .sec-8-content {
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  }
 
+}
 @media screen and (max-width: 990px) {
   .stikers {
     grid-template-columns: 1fr;
