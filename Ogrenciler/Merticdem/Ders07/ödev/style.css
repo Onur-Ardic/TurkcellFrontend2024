@@ -29,10 +29,10 @@
   background-position: 30%;
 }
 
-.dmAgency{
+.dmAgency {
   width: auto;
   height: auto;
-  gap:30px;
+  gap: 30px;
   display: grid; /* Grid container olarak ayarlanıyor */
   grid-template-areas:
     "dm-item1 dm-item2"
@@ -51,7 +51,7 @@
   font-size: 14px;
   line-height: 14px;
   padding: 14px 28px;
-  font-family:"Chivo", sans-serif;
+  font-family: "Chivo", sans-serif;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -74,7 +74,7 @@
 .dm-item5 {
   grid-area: dm-item5;
 }
-.getStart{
+.getStart {
   width: fit-content;
   height: fit-content;
   color: #fff;
@@ -84,14 +84,14 @@
   font-weight: 700;
   padding: 22px 32px;
 }
-.getStart2{
+.getStart2 {
   display: flex;
-  flex-direction:row ;
+  flex-direction: row;
 }
 .space {
   visibility: hidden;
 }
-.getStart{
+.getStart {
   width: fit-content;
   height: fit-content;
   color: #fff;
@@ -101,9 +101,9 @@
   font-weight: 700;
   padding: 22px 32px;
 }
-.getStart2{
+.getStart2 {
   display: flex;
-  flex-direction:row ;
+  flex-direction: row;
 }
 .footer .topFooter {
   width: 100%;
@@ -154,5 +154,25 @@
   font-family: Noto Sans, sans-serif;
   font-size: 16px;
   line-height: 28px;
+  text-decoration: none;
+}
+.footer .middleFooter .item .list .link:hover {
+  color: #006d77;
+  margin-left: 5px;
+  transition-duration: 0.2s;
+}
+.footer .bottomFooter {
+  padding: 30px 0;
+  color: #667085;
+  font-size: 14px;
+}
+.footer .bottomFooter .list {
+  list-style-type: none;
+}
+.footer .bottomFooter .leftBottomFooter .list .link {
+  color: #98a2b3;
+  font-family: Noto Sans, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
   text-decoration: none;
 }
