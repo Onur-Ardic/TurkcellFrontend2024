@@ -150,10 +150,11 @@ main .hero .container .hero-right .hero-balance img {
 .section-box {
   padding-top: 150px;
   grid-template-areas: "fresh section-text";
-  grid-template-columns: repeat(1, 140%);
+  grid-template-columns: repeat(1);
 }
 .section-text {
   grid-template-rows: auto;
+  padding-left: 50px;
 }
 .fresh {
   display: flex;
@@ -165,7 +166,10 @@ main .hero .container .hero-right .hero-balance img {
 }
 .chart-img img {
   height: 200px;
-  border-radius: 20px;
+  top: 550px;
+  right: -40px;
+  width: 270px;
+  border-radius: 15px;
 }
 .we-do {
   height: 40px;
@@ -179,7 +183,12 @@ main .hero .container .hero-right .hero-balance img {
   justify-content: center;
 }
 .section-element {
-  grid-template-areas: "img section-element text";
+  padding-top: 20px;
+  grid-template-areas:
+    "advance section-element-text"
+    "design section-element-text"
+    "work section-element-text";
+  gap: 20px;
 }
 .section-element img {
   height: 50px;
@@ -194,16 +203,23 @@ main .hero .container .hero-right .hero-balance img {
   text-align: center;
   justify-content: center;
   height: 1200px;
+  gap: 50px;
+}
+.features {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.features h1 {
+  font-size: 56px;
+}
+.features p {
+  padding-top: 30px;
+}
+.discover-general {
   grid-template-columns: repeat(1, 50%);
   grid-template-areas: "discover-left discover-right";
   gap: 50px;
-}
-
-.discover h1 {
-  padding-top: 350px;
-  font-size: 56px;
-}
-.discover p {
 }
 .discover-left {
   height: 455px;
@@ -232,6 +248,12 @@ main .hero .container .hero-right .hero-balance img {
 .built {
   height: 800px;
 }
+.built p {
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+  line-height: 25px;
+}
 .exclusively h2 {
   display: flex;
   justify-content: center;
@@ -245,9 +267,11 @@ main .hero .container .hero-right .hero-balance img {
 .for-you {
   padding-left: 250px;
   gap: 40px;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, auto);
+  margin-left: -180px;
 }
 .Acquisition {
+  width: 400px;
   padding-top: 85px;
   gap: 10px;
   grid-template-areas: "acquis acquis-text";
