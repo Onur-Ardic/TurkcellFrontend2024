@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.f-s-14{
+    font-size: 14px;
+}
+.f-s-18{
+    font-size: 18px;
+}
+.f-s-24{
+    font-size: 24px;
+}
+.f-s-28{
+    font-size: 28px;
+}
+.f-s-35{
+    font-size: 35px;
+}
+.f-s-56{
+    font-size: 56px;
+}
+.f-s-64{
+    font-size: 64px;
+}
+h1,h2,h3,h4,h5,a{
+    color: #101828;
+    font-family: "Chivo", sans-serif;
+}
+p {
+    color: #475467;
+    font-family: "Noto Sans", sans-serif;
+}
+a {
+    padding: 30px 22px;
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.mt-70{
+    margin-top: 70px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-12{
+    margin-bottom: 12px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.p-80{
+    padding: 80px;
+}
+.container{
+    margin: 0px 56.5px;
+    padding: 0px 12px;
+}
+.hover-up{
+    transition: all .25s cubic-bezier(.02,.01,.47,1);
+
+    
+}
+.witdh50{
+    width: 50%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+}
+
+/* -------Sonradan eklediklerim------------ */
+.f-s-16{
+    font-size: 16px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}

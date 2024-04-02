@@ -548,6 +548,19 @@
   box-shadow: 0 47px 65px rgba(21, 28, 38, 0.1);
   position: absolute;
   z-index: 2;
+  animation: chart-image 8s infinite ease-in-out;
+}
+
+@keyframes chart-image {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .image-newsletter {
@@ -557,6 +570,7 @@
   box-shadow: 0 47px 65px rgba(21, 28, 38, 0.1);
   position: absolute;
   z-index: 1;
+  right: 350px;
 }
 
 /* --- */

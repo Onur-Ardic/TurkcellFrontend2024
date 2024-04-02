@@ -17,6 +17,7 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  width: 80%;
 }
 .bg-dark-blue{
   background-color: #006d77;
@@ -202,4 +203,17 @@
 
 .size-xs {
   font-size: 12px;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-family: "Noto Sans", sans-serif;
+  color: #475467;
+}
+.p-18 {
+  font-size: 18px;
+}
+.p-14 {
+  font-size: 14px;
 }

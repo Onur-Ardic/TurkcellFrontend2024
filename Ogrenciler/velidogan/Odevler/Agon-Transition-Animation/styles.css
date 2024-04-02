@@ -154,7 +154,45 @@
 #our-happy-customers #customers .row img{
     width: 50px;
 }
-
+/* choose plan */
+#choose-plan .billed-amount {
+    margin-bottom: 2rem;
+}
+#choose-plan span h1{
+    display: inline-block;
+    margin: 0 0 3rem 0;
+}
+#choose-plan .card-part-info{
+    border-bottom: 1px solid;
+}
+#choose-plan ul li{
+    padding-bottom: 10px;
+}
+#choose-plan i{
+    color: rgb(0, 109, 119);
+}
+#choose-plan ul{
+    margin: 2rem 0;
+}
+#choose-plan p{
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+#choose-plan .card{
+    margin: 10px;
+    border: 1px solid rgba(0 ,0, 0, 0.2);
+    box-shadow: none;
+}
+#choose-plan .card:hover{
+    background-color: rgb(0, 109, 119);
+    color: #fff;
+}
+#choose-plan .card:hover i{
+    color: rgb(227, 149, 120);
+}
+#choose-plan .card:hover button{
+    border: 1px solid #fff;
+}
 /* subscribe */
 #subscribe{
     background-color: rgba(190,225, 230,1);
@@ -188,6 +226,27 @@
     animation: advanced-y 1s forwards infinite alternate;
     width: 200px;
 }
+/* footer */
+#footer .footer-top{
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0 ,0, 0, 0.2);
+    margin: 30px 0;
+    padding: 30px 0;
+}
+#footer .footer-main{
+    grid-template-columns: repeat(5, 1fr);
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(0 ,0, 0, 0.2);
+}
+#footer .footer-bottom{
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+#footer i{
+    color: rgb(0, 109, 119);
+}
+
 @keyframes advanced-xy{
     0%{
         transform: translate(0,0);
@@ -213,7 +272,7 @@
         flex: 100%;
     }
     .col-3,.col-4{
-        flex: 50%;
+        flex: 45%;
     }
     #advanced{
         height: 1000px;
@@ -264,12 +323,23 @@
         flex: 50%;
         padding: 20px 5px;
     }
+    #footer .footer-main{
+        grid-template-columns: repeat(3, 1fr);
+    } 
 }
 
 @media (max-width:576px){
     .container {
         width: 540px;
         margin: 0 auto;
+    }
+    #header .main-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 10px;
+    }
+    #header .main-header ul {
+       column-gap: 0;
     }
     .trusted-companies-list li{
         display: flex;
@@ -314,5 +384,8 @@
     }
     #subscribe{
         height: 480px;
+    }
+    #footer .footer-main{
+        grid-template-columns: repeat(2, 1fr);
     }
  }
