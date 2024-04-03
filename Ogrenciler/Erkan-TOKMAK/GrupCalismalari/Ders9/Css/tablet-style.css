@@ -38,4 +38,16 @@
     .companies-wwd {
         margin-top: 90px;
     }
+
+    #Features-right img{
+        width: 300px;
+        height: 300px;
+    }
+    .box4{
+        display: none;
+    }
+    #Discover img{
+        width: 300px;
+        height: 300px;
+    }
 }
