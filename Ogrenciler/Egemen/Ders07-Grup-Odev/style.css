@@ -21,7 +21,7 @@ ul li {
 }
 
 .search-by-vehicle {
-    background: url("./section1-bg.jpg") center center no-repeat;
+    background: url("./img/section1-bg.jpg") center center no-repeat;
     background-size: cover;
     width: 100%;
     position: relative;
@@ -180,7 +180,7 @@ ul li {
 
 /* professional team support */
 .professional-team-support {
-    background: url("./professional-team-support.jpg") center center no-repeat;
+    background: url("./img/professional-team-support.jpg") center center no-repeat;
     /* background-size: cover; */
     width: 100%;
     padding: 50px 0;
