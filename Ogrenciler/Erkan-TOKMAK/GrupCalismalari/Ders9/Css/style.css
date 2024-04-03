@@ -159,8 +159,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   flex-wrap: wrap;
-  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
   grid-gap: 1rem;
+  text-align: center;
 }
 .companies-item {
   width: 200px;
@@ -185,13 +187,11 @@
 .blok3 img {
   border-radius: 30px;
 }
-
 /* Necati Dogrul */
 .containerMP {
   margin: 0px 56.5px;
   padding: 0px 12px;
 }
-
 .container-pricing {
   padding: 0 2vw;
   display: flex;
@@ -199,7 +199,6 @@
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .pricing-card {
   border: 1px solid black;
   width: 350px;
@@ -207,26 +206,22 @@
   flex-direction: column;
   border-radius: 15px;
 }
-
 .pricing-top,
 .pricing-button {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-
 .pricing-header,
 .pricing-content {
   padding: 0 2vw;
 }
-
 .pricing-header h5::after {
   content: "/Month";
   font-size: medium;
   color: rgb(171, 171, 171);
   font-weight: 300;
 }
-
 .button-pricing {
   width: 250px;
   height: 50px;
@@ -236,46 +231,38 @@
   border-radius: 5px;
   margin-bottom: 10px;
 }
-
 ul li {
   font-family: "Chivo", sans-serif;
   list-style-type: none;
   font-size: 14px;
   margin-bottom: 15px;
 }
-
 .pricing-content ul {
   display: flex;
   flex-direction: column;
 }
-
 .pricing-card:hover {
   background-color: #006d77;
 }
-
 .pricing-card:hover .button-pricing {
   background-color: #006d77;
   border: 1px solid white;
   color: white;
 }
-
 .pricing-card:hover p,
 .pricing-card:hover li,
 .pricing-card:hover h5,
 .pricing-card:hover h4 {
   color: white;
 }
-
 .active {
   background-color: #006d77;
   border: 0 solid white;
   color: white;
 }
-
 .pricing-card:nth-child(2) button {
   border: 1px solid white;
 }
-
 .active p,
 .active li,
 .active h5,
@@ -284,7 +271,6 @@ ul li {
   color: white;
   background-color: #006d77;
 }
-
 .colored {
   background-color: #bee1e6;
   width: 1076px;
@@ -294,13 +280,11 @@ ul li {
   padding: 52px 74px;
   display: flex;
 }
-
 .container-newsletter {
   margin: 10vh 20vw; /*boşluk*/
   display: flex;
   flex-direction: row;
 }
-
 .container-newsletter input {
   width: 200px;
   height: 58px;
@@ -308,7 +292,6 @@ ul li {
   font-family: "Chivo", sans-serif;
   margin-left: 12px;
 }
-
 .input-section {
   width: 270px;
   height: 78px;
@@ -326,7 +309,6 @@ ul li {
   border-radius: 50%;
   margin-right: 15px;
 }
-
 .chart {
   width: 255px;
   height: 190px;
@@ -339,7 +321,6 @@ ul li {
   width: 300px;
   height: 400px;
 }
-
 @keyframes hareket {
   0% {
     transform: translateY(20px);
@@ -351,21 +332,17 @@ ul li {
     transform: translateY(20px);
   }
 }
-
 .container-footer {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
 .footer-card li {
   font-size: 16px;
 }
-
 .footer-card li:hover {
   transform: translateX(10px);
 }
-
 .solsag {
   width: 65px;
   height: 30px;
@@ -375,13 +352,11 @@ ul li {
   border-radius: 20px;
   background-color: black;
 }
-
 .flexCol {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
 .newsletterPar {
   color: rgb(102, 112, 133);
   font-family: "Noto Sans", sans-serif;
@@ -391,7 +366,6 @@ ul li {
   letter-spacing: 2px;
   word-spacing: 0px;
 }
-
 .footer-top {
   margin: 0 6vw;
   display: flex;
@@ -420,13 +394,11 @@ ul li {
 #footer-bot {
   margin-bottom: 20px;
 }
-
 #footer-bot span {
   font-family: "Noto Sans", sans-serif;
   font-size: 16px;
   margin-left: 10px;
 }
-
 .chart {
   width: 250px;
   height: 180px;
@@ -438,3 +410,177 @@ ul li {
   border: none;
 }
 /* Necati Dogrul */
+/* Muhammed SAKA */
+/* Discover */
+.discover-img img{
+  height: 398px;
+  width: 498px;
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: -150px;
+}
+.discover-left{
+  background-color: #fff3ea ;
+  margin-left: 35px; 
+  border-radius: 16px;
+}
+.discover-right{
+  background-color: #bee1e6 ;
+ margin-left: 35px;
+  border-radius: 16px;
+}
+.card-discover h2,p{
+  margin-top: 20px;
+}
+.card-discover:hover{
+  margin-top: -20px;
+  transition: all .7s ease 0s;
+}
+/* built */
+#built > .row > div{
+  margin: 20px 0;
+}
+/* Features */
+.box4 {
+position: absolute;
+height: 150px;
+width: 100px;
+z-index: 1;
+}
+.Features-right-img{
+  width: 100%;
+  height: 500px;
+}
+#Features #Features-left > .row .col-2{
+  padding: 20px 5px;
+}
+#Features .column-gap{
+  gap: 5px;
+}
+#Features .row{
+  justify-content: flex-start;
+}
+#Features i{
+  color: rgba(0 ,109, 119,1);
+}
+#Features .paragraph{
+  padding-bottom: 40px;
+  border-bottom: 3px dotted rgba(0 ,109, 119,1);
+}
+/* our-happy-customers */
+#our-happy-customers{
+  background-color: #f2f4f7;
+}
+#our-happy-customers #customers .row {
+  justify-content: flex-start;
+}
+#our-happy-customers #customers .row img{
+  width: 50px;
+}
+.col-5{
+  flex: 45%;
+}
+.column-gap {
+  column-gap: 20px;
+}
+.align-items-start {
+  align-items: flex-start;
+}
+/* grid */
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px ,300px));
+}
+/* cards */
+.card {
+  box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  border-radius: 5px;
+}
+.card-body {
+  padding: 40px 20px;
+}
+.card:hover {
+  box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.1);
+}
+/* buttons */
+.btn {
+  padding: 8px 25px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 1.7rem;
+  border: none;
+  color: #fff;
+  background: rgba(0, 109, 119, 1);
+  font-family: inherit;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn-outline-gray {
+  background: gray;
+  color: black;
+}
+.btn:hover {
+  background: rgba(0, 0, 0, 1);
+  color: #fff;
+}
+.supTitle {
+  font-size: 4rem;
+  margin: 50px 0 50px 0;
+}
+.title {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+.subTitle {
+  font-size: 1.8rem;
+  margin: 15px 0;
+}
+.paragraph {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+.box-shadow {
+  box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.5);
+}
+.content {
+  width: 65%;
+  margin: 0 auto;
+  padding: 50px;
+}
+.p-100 {
+  padding: 100px 0;
+}
+.p-50 {
+  padding: 50px;
+}
+.text-center {
+  text-align: center;
+}
+.text-end {
+  text-align: end;
+}
+.icon {
+  background: rgba(0, 0, 0, .1);
+  font-size: 20px;
+  padding: 16px;
+  border-radius: 50%;
+}
+.title-font {
+  font-size: 36px;
+  font-weight: 700;
+}
+.badge {
+  background-color: rgba(0, 109, 119, 1);
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 1rem;
+  margin: 20px 0;
+}
