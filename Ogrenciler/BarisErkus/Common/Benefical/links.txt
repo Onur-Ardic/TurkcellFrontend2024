@@ -11,6 +11,7 @@
 # Design Tools
 - https://coolors.co/59e3bc/
 - https://animate.style/
+- https://www.uidesigndaily.com/
 
 # Examples
 - https://github.com/1BarisErkus/HTML-CSS-Examples

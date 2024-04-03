@@ -6,4 +6,6 @@
 22-03-2024: Assignment: https://geniusdevs.com/themeforest/biniog/biniog-dark1/index.html
 25-03-2024: Assignment: https://demo.theme-sky.com/druco/
 27-03-2024: Assignment: https://demo.theme-sky.com/druco/
-29-03-2024: 
+29-03-2024: Assignment: https://agon-nextjs-13.vercel.app/index-2
+01-04-2024: Assignment: https://agon-nextjs-13.vercel.app/index-2
+03-04-2024: Learn SCSS - SASS
