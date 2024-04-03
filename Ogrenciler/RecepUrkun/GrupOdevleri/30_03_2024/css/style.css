@@ -684,3 +684,123 @@
     width: 33.3333333333%;
   }
 }
+@keyframes advanced-x {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 30px);
+  }
+}
+@keyframes advanced-y {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(30px, 30px);
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 930px;
+  }
+  .col-3,
+  .col-4 {
+    flex: 45%;
+  }
+  #header {
+    justify-content: space-between;
+    padding: 30px;
+  }
+  #header img {
+    width: auto;
+  }
+  #advanced {
+    height: 1000px;
+  }
+  #advanced-left {
+    padding: 25px;
+  }
+  #advanced-right #payment {
+    margin-left: 615px;
+  }
+  #advanced-right #balance {
+    margin: 150px 0 0px 200px;
+  }
+  #fresh,
+  #section-a {
+    flex-wrap: wrap;
+  }
+  #fresh-left img,
+  #section-a-right img {
+    margin: 500px 0 0 550px;
+  }
+  #our-happy-customers {
+    margin: 100px 0;
+  }
+  #footer .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 540px;
+  }
+  .col-2,
+  .col-3,
+  .col-4 {
+    flex: 100%;
+  }
+  #header {
+    justify-content: center;
+    row-gap: 20px;
+    padding: 30px;
+  }
+  #header img {
+    width: auto;
+  }
+  #advanced,
+  #section-a {
+    padding: 50px 0;
+    height: 1250px;
+  }
+  #advanced-right #payment {
+    margin-left: 400px;
+  }
+  #advanced-right #balance {
+    margin: 150px 0 0px 10px;
+  }
+  #fresh-left img,
+  #section-a-right img {
+    margin: 540px 0 0 303px;
+  }
+  #discover .row,
+  #built > .row {
+    flex-wrap: wrap;
+  }
+  #section-a {
+    height: 1450px;
+  }
+  #section-a #section-a-left > .row .col-2 {
+    flex: 50%;
+    padding: 20px 5px;
+  }
+  #subscribe {
+    height: 480px;
+  }
+  #footer .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #footer > *:last-child {
+    flex-wrap: wrap;
+    text-align: center;
+    row-gap: 15px;
+  }
+  #footer > *:last-child .column-gap {
+    column-gap: 15px;
+  }
+  #footer > *:last-child > *:last-child {
+    width: 100%;
+  }
+}
