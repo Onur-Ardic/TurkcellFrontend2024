@@ -9,3 +9,77 @@
 @media screen and (max-width:1440px ){
 
 }
+
+/* ---Necati------ */
+
+@media screen and (max-width: 1000px) {
+    .container-pricing {
+      padding: 0 0vw;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .pricing-card {
+      margin-right: 50px;
+    }
+    .colored {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 10px 10px;
+    }
+  
+    .container-newsletter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 2vh 4vw;
+    }
+  
+    .input-section {
+      width: 235px;
+      height: 78px;
+      border-radius: 55px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+    .input-section .green-circle {
+      margin: 0;
+    }
+  
+    .container-newsletter input {
+      width: 150px;
+      height: 58px;
+      border: none;
+      font-family: "Chivo", sans-serif;
+      margin: 0 10px;
+    }
+  
+    .container-newsletter h4 {
+      font-size: x-large;
+    }
+    .container-newsletter p {
+      margin-right: 55px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .container-pricing {
+      padding: 0 0vw;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+
+  /* ---Necati------ */

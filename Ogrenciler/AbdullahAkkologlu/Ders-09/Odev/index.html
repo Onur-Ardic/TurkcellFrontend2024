@@ -3,28 +3,447 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Agon</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utilities.css" />
   </head>
   <body>
+    <header class="flex align-center container justify-between align-center">
+      <img src="./images/logo.svg" alt="Agon Logo" class="logo" />
+      <ul class="flex justify-between align-center gap30">
+        <li class="fs-18">Home</li>
+        <li class="fs-18">About</li>
+        <li class="fs-18">Company</li>
+        <li class="fs-18">Pages</li>
+        <li class="fs-18"Blog</li>
+        <li class="fs-18">Shop</li>
+      </ul>
+      <button class="fw-600 fs-18">
+        Get Started
+        <img
+          src="./images/fi-sr-arrow-small-right.61bfc7e7.svg"
+          alt="Small Right"
+          class="small-arrow"
+        />
+      </button>
+    </header>
+    <!-- Hero -->
+    <section class="hero bg-lightgreen flex align-start justify-center">
+      <div class="hero-left flex flex-column gap30 justify-center">
+        <span class="bg-green color-white digital-btn fw-400">
+          Digital Marketing Agency
+        </span>
+        <h1 class="color-black fw-700 advanced-title">
+          Advanced analytics to grow your business
+        </h1>
+        <p class="alt-title fs-24">
+          Integrated workflow designed for product teams. We create world-class
+          development and branding
+        </p>
+        <div class="how-it-works flex align-center gap30" >
+          <button class="fs-18 bg-black color-white fw-600">
+            Get Start
+            <img
+              src="./images/arrow-small-right-w.2fff1760.svg"
+              alt=""
+            />
+          </button>
+          <div class="flex gap10"><img src="./images/icon-triangle.ac473974.svg" alt="Green Triangle" />
+          <p class="fs-18 color-black fw-400">How it works</p></div>
+          
+        </div>
+        <div class="hero-stats flex align-center flex-wrap gap30">
+          <div class="happy-clients">
+            <p class="fs-28 color-black fw-700">+38k</p>
+            <p class="fs-14">Happy Clients</p>
+          </div>
+          <div class="project-done">
+            <p class="fs-28 color-black fw-700">+45k</p>
+            <p class="fs-14">Project Done</p>
+          </div>
+          <div class="client-satisfaction">
+            <p class="fs-28 color-black fw-700">100%</p>
+            <p class="fs-14">Client Satisfaction</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <img src="./images/banner.png" alt="Banner" class="banner" style="width: 100%;"/>
+        <img src="./images/balance.png" alt="Balance" class="balance" />
+        <img src="./images/payment.png" alt="Payment" class="payment" />
+      </div>
+    </section>
+    <!-- Companies -->
+    <section class="companies">
+      <div class="container">
+        <p class="fs-28 text-center color-black fw-700">
+          Trusted by the world’s leading companies
+        </p>
+        <div
+          class="company-img flex flex-wrap justify-center align-center gap30 cursor-pointer"
+        >
+          <img src="./images/sample-logo-1.svg" alt="Agon img" />
+          <img src="./images/sample-logo-2.svg" alt="Monst" />
+          <img src="./images/sample-logo-3.svg" alt="Figwire" />
+          <img src="./images/sample-logo-4.svg" alt="Evara" />
+          <img src="./images/sample-logo-5.svg" alt="Frox" />
+          <img src="./images/sample-logo-6.svg" alt="Alithemes" />
+          <img src="./images/sample-logo-7.svg" alt="Nestmart" />
+          <img src="./images/sample-logo-8.svg" alt="TheFlow" />
+          <img src="./images/sample-logo-9.svg" alt="Stacker" />
+        </div>
+      </div>
+    </section>
+    <!-- Fresh Ideas -->
+    <section class="fresh-ideas container flex">
+      <div class="container-left flex justify-center">
+        <div class="fresh-img">
+          <img src="./images/img-2.png" alt="" class="back-img" />
+          <img src="./images/chart.png" alt="" class="front-img" />
+        </div>
+      </div>
+      <div class="container-right">
+        <button class="what-we-do-btn fs-14 color-green bg-lightgreen fw-400">
+          What We Do, What You Get
+        </button>
+        <div class="fresh-content flex flex-column gap30">
+          <p class="fresh-title fs-42 color-black fw-700">
+            Fresh Ideas. Thoughtful Design.
+          </p>
+          <p class="fresh-alt-title fs-20">
+            Feugiat primis ligula risus auctor egestas and augue viverra mauri
+            tortor in iaculis magna a feugiat mauris ipsum and placerat viverra
+            tortor gravida purus.
+          </p>
+          <div class="alt-content flex flex-column gap30">
+            <div class="work-smarter flex align-start">
+              <img src="./images/icon-work.svg" alt="Work icon" />
+              <div class="flex flex-column gap10">
+                <p class="fs-24 color-black fw-700 bigger-subcontent">
+                  Work smarter with powerful features
+                </p>
+                <p class="fs-18">
+                  Aliquam a augue suscipit, luctus neque purus ipsum neque at
+                  dolor primis libero tempus, blandit
+                </p>
+              </div>
+            </div>
+            <div class="work-smarter flex align-start">
+              <img src="./images/icon-design.svg" alt="Design icon" />
+              <div class="flex flex-column gap10">
+                <p class="fs-20 color-black fw-700 bigger-subcontent">
+                  Designed for teams of all sorts and sizes
+                </p>
+                <p class="fs-18">
+                  Aliquam a augue suscipit, luctus neque purus ipsum neque at
+                  dolor primis libero tempus, blandit
+                </p>
+              </div>
+            </div>
+            <div class="work-smarter flex align-start">
+              <img src="./images/icon-advance.svg" alt="Advanced icon" />
+              <div class="flex flex-column gap10">
+                <p class="fs-20 color-black fw-700 bigger-subcontent">
+                  Advanced analytics to grow your business
+                </p>
+                <p class="fs-18">
+                  Aliquam a augue suscipit, luctus neque purus ipsum neque at
+                  dolor primis libero tempus, blandit
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Esma-->
+    <section>
+      <div class="container">
+        <div class="col-wrapper flex justify-around">
+          <div class="text-center">
+            <h2 class="fs-56 fw-700">
+              Discover powerful features to boost your productivity
+            </h2>
+            <p class="fs-24 mt-15">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit laborum — semper quis lectus nulla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row-wrapper flex justify-center">
+          <div class="card card-rad text-center">
+            <h4 class="fs-28">Cross-Platform</h4>
+            <p class="fs-14">
+              Your site is not complete with only landings. Get essential inner
+              pages using our ready demos.
+            </p>
+            <div class="card-img bg-purple card-rad ">
+              <img src="images/temp-1.png" alt="Agon" class="width-100"/>
+            </div>
+          </div>
+          <div class="card bg-lightgreen card-rad text-center">
+            <h4 class="fs-28">Extremely Flexible</h4>
+            <p class="fs-14">
+              Your site is not complete with only landings. Get essential inner
+              pages using our ready demos.
+            </p>
+            <div class="card-img bg-purple card-rad width-100">
+              <img src="images/temp-2.png" alt="Agon" class="width-100"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-120">
+      <div class="container">
+        <div class="col-wrapper flex justify-around">
+          <div class="text-center">
+            <h2 class="fs-56 fw-700">Built exclusively for you</h2>
+            <p class="fs-24">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit laborum — semper quis lectus nulla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row-wrapper flex justify-center">
+          <div class="item">
+            <div class="item-list">
+              <div class="item-icon">
+                <span class="icon-left">
+                  <img
+                    src="images/icon-acquis.svg"
+                    style="width: 64px; height: 64px"
+                  />
+                </span>
+                <h4 class="fs-28 fw-700">1. Acquisition</h4>
+                <p class="fs-16 mt-15">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit laborum — semper quis lectus nulla
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-list">
+              <div class="item-icon">
+                <span class="icon-left">
+                  <img
+                    src="images/icon-active.svg"
+                    style="width: 64px; height: 64px"
+                  />
+                </span>
+                <h4 class="fs-28 fw-700">2. Activation</h4>
+                <p class="fs-16 mt-15">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit laborum — semper quis lectus nulla
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-list">
+              <div class="item-icon">
+                <span class="icon-left">
+                  <img
+                    src="images/icon-retent.svg"
+                    style="width: 64px; height: 64px"
+                  />
+                </span>
+                <h4 class="fs-28 fw-700">3. Retention</h4>
+                <p class="fs-16 mt-15">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit laborum — semper quis lectus nulla
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex justify-center">
+      <div class="container">
+        <div class="flex flex-wrap gap20">
+          <div class="left-side flex-column">
+            <span class="btn bg-lightgreen color-green"
+              >Built Exclusively For You</span
+            >
+            <h3 class="fs-56 fw-700 mt-30">
+              From the big picture to every tiny detail, we got you covered.
+            </h3>
+            <p class="fs-24 mt-30 fw-400">
+              Necessary to deliver white glove, fully managed campaigns that
+              surpass industry benchmarks.Take your career to next level. Apply
+              to our team and see what we can do together. You’re good enough.
+            </p>
+            <div class="line color-green"></div>
+            <div class="flex gap20">
+              <div class="col-2 mt-50">
+                <h4 class="icon-leaf fs-18">Automated reports</h4>
+                <p class="fs-18 mt-15">
+                  The latest design trends meet hand-crafted templates.
+                </p>
+              </div>
+              <div class="col-2 mt-50">
+                <h4 class="icon-leaf fs-18">Realtime analytics</h4>
+                <p class="fs-18 mt-15">
+                  The latest design trends meet hand-crafted templates.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap20">
+              <div class="col-2 mt-50">
+                <h4 class="icon-leaf fs-18">Funnel optimization</h4>
+                <p class="fs-18 mt-15">
+                  The latest design trends meet hand-crafted templates.
+                </p>
+              </div>
+              <div class="col-2 mt-50">
+                <h4 class="icon-leaf fs-18">User journey</h4>
+                <p class="fs-18 mt-15">
+                  The latest design trends meet hand-crafted templates.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="right-side flex-column">
+            <div class="inner-img">
+              <img
+                src="images/img-built.png"
+                alt="Agon"
+                class="card-rad"
+                style="width: 100%"
+              />
+              <img
+                src="images/img-built-2.png"
+                alt="Agon"
+                class="card-rad img-bottom"
+                style="width: 50%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-120">
+      <div class="container">
+        <div class="big-card bg-cards">
+          <div class="card-header col-wrapper text-center">
+            <h2 class="fs-56 mt-30">Our Happy Customers</h2>
+            <p class="fs-24 mt-20">
+              Know about our clients, we are a woldwide corporate brand
+            </p>
+          </div>
+          <div class="cards mt-70">
+            <div class="row-card flex gap20">
+              <div class="user-card bg-white card-rad">
+                <h5 class="fs-22">Satisfied client testimonial</h5>
+                <p class="fs-16 mt-20">
+                  Even factoring differences in body weight between children and
+                  adults into account, it would still not reach an intoxicating
+                  level in children.
+                </p>
+                <div class="box-img">
+                  <div class="user-img">
+                    <img
+                      src="images/user-1.png"
+                      alt="Agon User"
+                      style="width: 80px; height: 80px"
+                    />
+                  </div>
+                  <h4 class="fs-16">Jane Cooper</h4>
+                  <p class="fs-14">Biffco Enterprises Ltd.</p>
+                </div>
+              </div>
+              <div class="user-card bg-white card-rad">
+                <h5 class="fs-22">98% of residents recommend us</h5>
+                <p class="fs-16 mt-20">
+                  So yes, the alcohol (ethanol) in hand sanitizers can be
+                  absorbed through the skin, but no, it would not cause
+                  intoxication.
+                </p>
+                <div class="box-img">
+                  <div class="user-img">
+                    <img
+                      src="images/user-2.png"
+                      alt="Agon User"
+                      style="width: 80px; height: 80px"
+                    />
+                  </div>
+                  <h4 class="fs-16">Wade Warren</h4>
+                  <p class="fs-14">Krusty Krab</p>
+                </div>
+              </div>
+            </div>
+            <div class="row-card flex gap20">
+              <div class="user-card bg-white card-rad">
+                <h5 class="fs-22">Our success stories</h5>
+                <p class="fs-16 mt-20">
+                  “It has been an absolute pleasure dealing with Scan during the
+                  lockdown. Our church began to livestream our services, and
+                  Scan had a great selection of hardware....”
+                </p>
+                <div class="box-img">
+                  <div class="user-img">
+                    <img
+                      src="images/user-3.png"
+                      alt="Agon User"
+                      style="width: 80px; height: 80px"
+                    />
+                  </div>
+                  <h4 class="fs-16">Leslie Alexander</h4>
+                  <p class="fs-14">Biffco Enterprises Ltd.</p>
+                </div>
+              </div>
+              <div class="user-card bg-white card-rad">
+                <h5 class="fs-22">This is simply unbelievable</h5>
+                <p class="fs-16 mt-20">
+                  “I was also lucky enough to read @Coding_Career early and I
+                  was thoroughly blown away! It’s the book I wish I had when I
+                  started my dev career.”
+                </p>
+                <div class="box-img">
+                  <div class="user-img">
+                    <img
+                      src="images/user-4.png"
+                      alt="Agon User"
+                      style="width: 80px; height: 80px"
+                    />
+                  </div>
+                  <h4 class="fs-16">Jenny Wilson</h4>
+                  <p class="fs-14">Soylent Corp</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Abdullah-->
     <section class="section flex flex-column align-center" id="plans">
       <h3 class="fs-56 text-center fw-600">
         Choose The Best Plan <br />
         That’s For You
       </h3>
-      <div class="switch-div gap-1 flex align-center">
+      <div class="switch-div gap20 flex align-center">
         <span class="fs-16 font-noto">Billed Monthly</span>
         <div class="switch bg-black card-rad cursor-pointer">
           <div class="slider transition"></div>
         </div>
         <span class="fs-16">Bill Annualy</span>
       </div>
-      <div class="plan-cards gap-1 flex flex-wrap justify-center">
+      <div class="plan-cards gap20 flex flex-wrap justify-center">
         <div
           class="plan-card transition card-rad flex flex-column justify-between cursor-pointer"
         >
-          <div class="card-row gap-1 flex flex-column">
+          <div class="card-row gap20 flex flex-column">
             <div>
               <span class="fs-35 fw-700">$ 50</span
               ><span class="fs-17 color-lightgray fw-400">/Month</span>
@@ -34,21 +453,21 @@
               All the basics for businesses that are just getting started.
             </p>
           </div>
-          <ul class="card-row gap-1 flex flex-column fs-14">
-            <li class="card-li gap-2 flex">
+          <ul class="card-row gap20 flex flex-column fs-14">
+            <li class="card-li gap30 flex">
               <span class="tick"></span
               ><span class="li-text">Unlimited updates</span>
             </li>
-            <li class="card-li gap-2 flex">
+            <li class="card-li gap30 flex">
               <span class="tick"></span
               ><span class="li-text">Custom permissions</span>
             </li>
-            <li class="card-li gap-2 flex">
+            <li class="card-li gap30 flex">
               <span class="tick"></span
               ><span class="li-text">Custom designs and features</span>
             </li>
           </ul>
-          <div class="card-row gap-1 flex flex-column">
+          <div class="card-row gap20 flex flex-column">
             <button
               class="plan-card-button bg-black color-white fs-18 cursor-pointer transition"
             >
@@ -59,7 +478,7 @@
         <div
           class="plan-card transition card-rad flex flex-column justify-between cursor-pointer bg-green"
         >
-          <div class="card-row gap-1 flex flex-column">
+          <div class="card-row gap20 flex flex-column">
             <div>
               <span class="fs-35 fw-700 color-white">$ 50</span
               ><span class="fs-17 color-lightgray fw-400 color-white"
@@ -71,23 +490,23 @@
               All the basics for businesses that are just getting started.
             </p>
           </div>
-          <ul class="card-row gap-1 flex flex-column fs-14">
-            <li class="card-li gap-2 flex">
+          <ul class="card-row gap20 flex flex-column fs-14">
+            <li class="card-li gap30 flex">
               <span class="tick tick2"></span
               ><span class="li-text color-white">Unlimited updates</span>
             </li>
-            <li class="card-li gap-2 flex">
+            <li class="card-li gap30 flex">
               <span class="tick tick2"></span
               ><span class="li-text color-white">Custom permissions</span>
             </li>
-            <li class="card-li gap-2 flex">
+            <li class="card-li gap30 flex">
               <span class="tick tick2"></span
               ><span class="li-text color-white"
                 >Custom designs and features</span
               >
             </li>
           </ul>
-          <div class="card-row gap-1 flex flex-column">
+          <div class="card-row gap20 flex flex-column">
             <button
               class="plan-card-button2 plan-card-button color-white fs-18 cursor-pointer transition"
             >
@@ -98,7 +517,7 @@
         <div
           class="plan-card transition card-rad flex flex-column justify-between cursor-pointer"
         >
-          <div class="card-row gap-1 flex flex-column">
+          <div class="card-row gap20 flex flex-column">
             <div>
               <span class="fs-35 fw-700">$ 50</span
               ><span class="fs-17 color-lightgray fw-400">/Month</span>
@@ -108,21 +527,21 @@
               All the basics for businesses that are just getting started.
             </p>
           </div>
-          <ul class="card-row gap-1 flex flex-column fs-14">
-            <li class="card-li gap-2 flex">
+          <ul class="card-row gap20 flex flex-column fs-14">
+            <li class="card-li gap30 flex">
               <span class="tick"></span
               ><span class="li-text">Unlimited updates</span>
             </li>
-            <li class="card-li gap-2 flex">
+            <li class="card-li gap30 flex">
               <span class="tick"></span
               ><span class="li-text">Custom permissions</span>
             </li>
-            <li class="card-li gap-2 flex">
+            <li class="card-li gap30 flex">
               <span class="tick"></span
               ><span class="li-text">Custom designs and features</span>
             </li>
           </ul>
-          <div class="card-row gap-1 flex flex-column">
+          <div class="card-row gap20 flex flex-column">
             <button
               class="plan-card-button bg-black color-white fs-18 cursor-pointer transition"
             >
@@ -133,7 +552,7 @@
         <div
           class="plan-card transition card-rad flex flex-column justify-between cursor-pointer"
         >
-          <div class="card-row gap-1 flex flex-column">
+          <div class="card-row gap20 flex flex-column">
             <div>
               <span class="fs-35 fw-700">$ 50</span
               ><span class="fs-17 color-lightgray fw-400">/Month</span>
@@ -143,21 +562,21 @@
               All the basics for businesses that are just getting started.
             </p>
           </div>
-          <ul class="card-row gap-1 flex flex-column fs-14">
-            <li class="card-li gap-2 flex">
+          <ul class="card-row gap20 flex flex-column fs-14">
+            <li class="card-li gap30 flex">
               <span class="tick"></span
               ><span class="li-text">Unlimited updates</span>
             </li>
-            <li class="card-li gap-2 flex">
+            <li class="card-li gap30 flex">
               <span class="tick"></span
               ><span class="li-text">Custom permissions</span>
             </li>
-            <li class="card-li gap-2 flex">
+            <li class="card-li gap30 flex">
               <span class="tick"></span
               ><span class="li-text">Custom designs and features</span>
             </li>
           </ul>
-          <div class="card-row gap-1 flex flex-column">
+          <div class="card-row gap20 flex flex-column">
             <button
               class="plan-card-button bg-black color-white fs-18 cursor-pointer transition"
             >
@@ -172,7 +591,7 @@
         class="newsletter bg-lightgreen card-rad flex justify-between"
         id="#newsletter"
       >
-        <div class="newsletter-left gap-1 flex flex-column">
+        <div class="newsletter-left gap20 flex flex-column">
           <span class="newsletter-span fs-14 font-noto fw-400">NEWSLETTER</span>
           <h4 class="fs-42 fw-600">
             Subscribe our <br />
@@ -213,7 +632,7 @@
         <div
           class="footer-row footer-row2 flex flex-wrap justify-between width-100"
         >
-          <div class="footer-col gap-1 flex flex-column">
+          <div class="footer-col gap20 flex flex-column">
             <h4 class="fs-22">Contact</h4>
             <div class="fs-16 font-noto">
               4517 Washington Ave. Manchester, Kentucky 39495
@@ -223,7 +642,7 @@
               contact@agon.com
             </div>
           </div>
-          <div class="footer-col gap-1 flex flex-column">
+          <div class="footer-col gap20 flex flex-column">
             <h4 class="fs-22">About Us</h4>
             <a href="#" class="fs-16 font-noto">Mission and Vision</a>
             <a href="#" class="fs-16 font-noto">Our Team</a>
@@ -232,7 +651,7 @@
             <a href="#" class="fs-16 font-noto">Advertising</a>
             <a href="#" class="fs-16 font-noto">Testimonials</a>
           </div>
-          <div class="footer-col gap-1 flex flex-column">
+          <div class="footer-col gap20 flex flex-column">
             <h4 class="fs-22">Discover</h4>
             <a href="#" class="fs-16 font-noto">Our Blog</a>
             <a href="#" class="fs-16 font-noto">Plans and Pricing</a>
@@ -241,7 +660,7 @@
             <a href="#" class="fs-16 font-noto">Office Center</a>
             <a href="#" class="fs-16 font-noto">News and Events</a>
           </div>
-          <div class="footer-col gap-1 flex flex-column">
+          <div class="footer-col gap20 flex flex-column">
             <h4 class="fs-22">About Us</h4>
             <a href="#" class="fs-16 font-noto">Mission and Vision</a>
             <a href="#" class="fs-16 font-noto">Our Team</a>
@@ -250,7 +669,7 @@
             <a href="#" class="fs-16 font-noto">Advertising</a>
             <a href="#" class="fs-16 font-noto">Testimonials</a>
           </div>
-          <div class="footer-col gap-1 flex flex-column">
+          <div class="footer-col gap20 flex flex-column">
             <h4 class="fs-22">Useful Links</h4>
             <a href="#" class="fs-16 font-noto">Request an offer</a>
             <a href="#" class="fs-16 font-noto">How it works</a>
@@ -260,7 +679,7 @@
           </div>
         </div>
         <div class="footer-row flex justify-between align-center flex-wrap">
-          <div class="footer-bottom gap-2 flex flex-wrap">
+          <div class="footer-bottom gap30 flex flex-wrap">
             <span class="color-lightgray font-noto fs-16 fw-700"
               >© Agon Official 2022</span
             >
@@ -272,7 +691,7 @@
               >Terms of service</a
             >
           </div>
-          <div class="socials gap-1 flex flex-wrap">
+          <div class="socials gap20 flex flex-wrap">
             <a href="#"><img src="./images/facebook.14729890.svg" alt="" /></a>
             <a href=""><img src="./images/twitter.6e7d7d18.svg" alt="" /></a>
             <a href=""><img src="./images/instagram.70e26b99.svg" alt="" /></a>
