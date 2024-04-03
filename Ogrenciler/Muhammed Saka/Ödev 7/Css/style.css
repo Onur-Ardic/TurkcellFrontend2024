@@ -199,14 +199,11 @@ position: absolute;
 height: 150px;
 width: 100px;
 z-index: 1;
-bottom: 0;
-right: 20;
 }
 
 .Features-right-img{
     width: 100%;
     height: 500px;
-    position: relative;
 }
 #Features #Features-left > .row .col-2{
     padding: 20px 5px;

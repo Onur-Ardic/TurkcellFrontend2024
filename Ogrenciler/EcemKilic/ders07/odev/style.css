@@ -10,6 +10,7 @@
 }
 .header-logo .logo img {
     max-width: 100px;
+    object-fit: cover;
 }
 .header-nav .main-menu {
     padding: 20px;
@@ -82,6 +83,9 @@
     gap: 10px;
     padding: 50px 0;
 }
+.digital-marketing-images {
+    margin-right: 20px;
+}
 @media screen and (max-width: 990px) {
     .digital-marketing-inside {
         grid-template-columns: 2fr;
@@ -93,7 +97,7 @@
         display: none;
     }
 }
-.digital-marketing-content .tag {
+.tag {
     font-size: 14px;
     line-height: 14px;
     box-sizing: border-box;
@@ -203,9 +207,78 @@
         transform: translateX(0);
     }
 }
-
-/* :root {
-    --animate-duration: 1s;
-    --animate-delay: 1s;
-    --animate-repeat: 1;
-} */
+.companies h2 {
+    text-align: center;
+    padding: 50px;
+}
+.partners {
+    display: flex;
+    justify-content: center;
+}
+.list-partners {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    list-style: none;
+    vertical-align: baseline;
+}
+.list-partners li {
+    border: 1px solid #fff;
+    padding: 10px;
+}
+.list-partners li:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.list-partners .item-logo img{
+    max-width: 200px;
+}
+.fresh-ideas-1 {
+    display: flex;
+    margin-top: 50px;
+    gap: 50px;
+}
+.fresh-ideas-images {
+    position: relative;
+}
+.fresh-ideas-images img {
+    max-width: 610px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.fresh-ideas-images .block-chart img {
+    max-width: 270px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    margin-top: -75px;
+    margin-left: 500px;
+}
+.fresh-ideas-content .tag {
+    margin-bottom: 50px;
+}
+.inner-item {
+    display: flex;
+    margin: 20px 0;
+    gap: 20px;
+}
+.fresh-ideas-content .inner-item img {
+    max-width: 64px;
+}
+@media screen and (max-width: 990px) {
+    .fresh-ideas-1 {
+        flex-direction: column;
+    }
+    .fresh-ideas-images .block-chart img {
+        margin-top: -200px;
+        margin-left: 340px;
+    }
+    .list-partners {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 770px) {
+    .list-partners {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
