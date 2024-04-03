@@ -83,8 +83,8 @@ header button {
   position: absolute;
   width: 250px;
   border-radius: 20px;
-  right: -100px;
-  bottom: -10px;
+  right: -120px;
+  bottom: -20px;
   box-shadow: 1px 6px 32px 1px rgba(0, 0, 0, 0.75);
 }
 .how-it-works button {
@@ -92,6 +92,7 @@ header button {
 }
 .back-img {
   width: 100%;
+  min-width: 750px;
   border-radius: 20px;
 }
 header button {
@@ -438,7 +439,6 @@ header button {
     font-size: 42px;
   }
 }
-
 @media screen and (max-width: 990px) {
   .row-wrapper {
     flex-direction: column;
@@ -457,11 +457,9 @@ header button {
   .right-side {
     width: 100%;
   }
-
   .row-card {
     flex-direction: column;
   }
-
   .user-card {
     width: 100%;
   }
@@ -487,6 +485,7 @@ header button {
     width: 100%;
     border-radius: 20px;
     z-index: 1;
+    min-width: 0px;
   }
   .front-img {
     width: 200px;
@@ -496,11 +495,9 @@ header button {
   .big-card {
     padding: 5px;
   }
-
   .company-img img {
     width: 100px;
   }
-
   .fresh-content {
     gap: 30px;
   }
@@ -553,5 +550,13 @@ header button {
   .img-bottom {
     bottom: -50px;
     right: -30px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-row {
+    flex-direction: column;
+    gap: 20px;
   }
 }
