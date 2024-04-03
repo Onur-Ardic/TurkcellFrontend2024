@@ -194,13 +194,16 @@ color: var(--fourth);
     margin: 20px 0;
 }
 /* Features */
-#Features-right{
-    background: url("https://agon-nextjs-13.vercel.app/assets/imgs/page/homepage2/img-built.png") no-repeat center center/contain;
-    height: 620px;
+.box4 {
+position: absolute;
+height: 150px;
+width: 100px;
+z-index: 1;
 }
-#Features-right img{
-    width: 200px;
-    margin: 480px 0 0 400px;
+
+.Features-right-img{
+    width: 100%;
+    height: 500px;
 }
 #Features #Features-left > .row .col-2{
     padding: 20px 5px;

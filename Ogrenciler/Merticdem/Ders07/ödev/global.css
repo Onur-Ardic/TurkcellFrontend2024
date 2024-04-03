@@ -13,12 +13,18 @@ body {
   background: #fff;
   background-size: contain;
 }
+.imgbrand{
+    width: 170px;
+    height: 40px;
+
+}
 .container {
   background-color: #fff;
   padding: 20px;
   display: block;
   gap: 10px;
 }
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -37,18 +43,7 @@ p {
   font-weight: bold;
   unicode-bidi: isolate;
 }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   display: block;
 }
 
@@ -62,7 +57,7 @@ section {
   font-size: 64px;
   line-height: 72px;
   letter-spacing: 0;
-  font-family: Chivo, sans-serif;
+  font-family: "Chivo", sans-serif;
   font-weight: 700;
   text-align: center;
   text-align: left;
@@ -78,12 +73,33 @@ section {
   font-size: 18px;
   color: #101828;
 }
+.text-display-5{
+    font-size: 28px;
+    line-height: 32px;
+    font-family: "Chivo", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+.td-6-14px{
+  font-size: 14px;
+  line-height: 19px;
+  font-family:"Noto Sans", sans-serif;
+  font-weight: 400;
+}
+.td-3538px{
+  font-size: 35px;
+  line-height: 38px;
+  text-align: center !important;
+}
 .color-black {
   color: #101828;
 }
 .bg-green-900 {
   background-color: #006d77;
-  color: #fff;
+  box-sizing: border-box;
+}
+.color{
+  color: #101828;
 }
 .bg-lightgreen {
   background-color: #bee1e6;
@@ -93,6 +109,9 @@ section {
 }
 .bg-primary-color {
   background-color: #f2f4f7;
+}
+.bg-black{
+  background-color: #101828;
 }
 .color-gray-500 {
   color: #667085;

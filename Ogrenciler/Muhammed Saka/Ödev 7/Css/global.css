@@ -154,6 +154,10 @@ img {
   flex-wrap: wrap;
 }
 
+.col-5{
+  flex: 45%;
+}
+
 .column-gap {
   column-gap: 20px;
 }
@@ -162,21 +166,11 @@ img {
   align-items: flex-start;
 }
 
-.col-2 {
-  flex: 45%;
-}
-
-.col-3 {
-  flex: 30%;
-}
-
-.col-4 {
-  flex: 20%;
-}
-
 /* grid */
 .grid {
-  display: grid;
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px ,300px));
+
 }
 
 /* cards */

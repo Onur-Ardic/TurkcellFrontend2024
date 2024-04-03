@@ -576,6 +576,10 @@
     text-align: center;
     justify-content: center;
   }
+  .banner-hero .row-line {
+    text-align: center;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 576px) {
   .list-partners li {

@@ -22,7 +22,7 @@
   justify-content: flex-end;
 }
 .button-head {
-  font-size: 24px;
+  font-size: 14px;
   border-radius: 20%;
   text-decoration: none;
   background-color: #f8f9fa;
@@ -44,9 +44,9 @@
   text-align: left;
 }
 .dm-item1 {
+  grid-area: dm-item1;
   width: fit-content;
   height: fit-content;
-  grid-area: dm-item1;
   border-radius: 50px;
   font-size: 14px;
   line-height: 14px;
@@ -55,6 +55,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 .dm-item2 {
   grid-area: dm-item2;
@@ -73,7 +74,26 @@
 }
 .dm-item5 {
   grid-area: dm-item5;
+  gap: 20px;
+  object-fit: contain;
 }
+
+.brand{
+flex-direction: column;
+}
+.fIdeas{
+
+}
+.fdIdeas1{
+  width:auto;
+  height: auto;
+  object-fit: contain;
+}
+.fI-leftside img{
+  max-width: 560px;
+  max-height: 640px;
+}
+
 .getStart {
   width: fit-content;
   height: fit-content;
@@ -104,91 +124,6 @@
 .getStart2 {
   display: flex;
   flex-direction: row;
-}
-.sectionTheBest .topTheBest {
-  margin-bottom: 10px;
-  font-weight: 700;
-  line-height: 64px;
-  font-size: 56px;
-  text-align: center;
-}
-.sectionTheBest .bottomTheBest .billBlock {
-  margin-top: 10px;
-  text-align: center;
-}
-.sectionTheBest .bottomTheBest .billBlock .text {
-  font-weight: 400;
-  font-family: Noto Sans, sans-serif;
-  font-size: 16px;
-  line-height: 28px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.sectionTheBest .bottomTheBest .billCard {
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 70px;
-}
-.sectionTheBest .bottomTheBest .billCard .card {
-  border: 1px solid #d0d5dd;
-  padding: 40px 32px;
-  background: #fff;
-  border-radius: 16px;
-  margin-bottom: 30px;
-}
-.sectionTheBest .bottomTheBest .billCard .card:hover {
-  background-color: #006d77;
-  color: white;
-}
-.sectionTheBest .bottomTheBest .billCard .card .priceInfo {
-  font-size: 30px;
-  line-height: 38px;
-  font-weight: 700;
-  letter-spacing: 0;
-  padding-bottom: 20px;
-}
-.sectionTheBest .bottomTheBest .billCard .card .cardInfo {
-  border-bottom: 1px solid #d0d5dd;
-  padding: 0 0 40px;
-  margin-bottom: 21px;
-}
-.sectionTheBest .bottomTheBest .billCard .card .cardInfo h4 {
-  margin-bottom: 15px;
-  font-size: 22px;
-  line-height: 24px;
-  font-weight: 700;
-  letter-spacing: 0;
-}
-.sectionTheBest .bottomTheBest .billCard .card .cardInfo p {
-  color: #98a2b3;
-  font-family: Noto Sans, sans-serif;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 16px;
-}
-.sectionTheBest .bottomTheBest .billCard .card .cardInfo .list {
-  padding-bottom: 30px;
-}
-.sectionTheBest .bottomTheBest .billCard .card .gsButton {
-  margin: 37.5px 0px;
-}
-.sectionTheBest .bottomTheBest .billCard .card .gsButton .button {
-  border: 1px solid transparent;
-  padding: 12px 22px;
-  border-radius: 6px;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-  background-color: #101828;
-  font-size: 18px;
-  line-height: 22px;
-  font-family: Noto Sans, sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.45px;
-  text-decoration: none;
-  cursor: pointer;
-}
-.sectionTheBest .bottomTheBest .billCard .card .gsButton .button:hover {
-  background-color: #006d77;
 }
 .newsletter .box {
   border-radius: 18px;
