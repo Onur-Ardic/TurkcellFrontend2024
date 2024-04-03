@@ -77,6 +77,74 @@ main .hero .hero-wrapper {
   width: 140px;
 }
 
+/* fresh */
+
+.fresh {
+  flex-wrap: wrap;
+}
+
+.fresh img {
+  width: 100%;
+}
+
+.chart-img img {
+  width: 150px;
+  height: 200px;
+  top: 450px;
+}
+
+.section-text {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.features {
+  width: 100%;
+}
+
+.features h1 {
+  font-size: 20px;
+}
+
+.features p {
+  font-size: 10px;
+}
+/* discover */
+.discover-general {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.discover-general .discover-left,
+.discover-general .discover-right {
+  width: 90%;
+}
+.discover-general .discover-left img,
+.discover-general .discover-right img {
+  width: 100%;
+}
+
+/* built */
+.built .for-you {
+  grid-template-columns: 1fr;
+  padding-left: 200px;
+  align-content: center;
+  justify-content: center;
+}
+
+.exclusively h2 {
+  font-size: 2rem;
+}
+
+.exclusively p {
+  font-size: 15px;
+}
 /* For-you */
 .for-you .for-you-wrapper {
   flex-direction: column;
