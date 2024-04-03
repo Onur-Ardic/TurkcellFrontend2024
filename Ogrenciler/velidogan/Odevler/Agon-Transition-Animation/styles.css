@@ -182,9 +182,11 @@
     margin: 10px;
     border: 1px solid rgba(0 ,0, 0, 0.2);
     box-shadow: none;
+    transition: all 1s;
 }
 #choose-plan .card:hover{
     background-color: rgb(0, 109, 119);
+    border: 1px solid rgba(0 ,0, 0, 0.2);
     color: #fff;
 }
 #choose-plan .card:hover i{
