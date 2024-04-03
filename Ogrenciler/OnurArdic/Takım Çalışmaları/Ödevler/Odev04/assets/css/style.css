@@ -129,6 +129,134 @@ main .hero .container .hero-right .hero-balance img {
   transform: translateY(-5px);
 }
 
+/* section-box */
+.section-box {
+  padding-top: 150px;
+  grid-template-areas: "fresh section-text";
+  grid-template-columns: repeat(1);
+}
+.section-text {
+  grid-template-rows: auto;
+  padding-left: 50px;
+}
+.fresh {
+  display: flex;
+  justify-content: center;
+}
+.fres-img img {
+  height: 660px;
+  border-radius: 20px;
+}
+.chart-img img {
+  height: 200px;
+  top: 550px;
+  right: -40px;
+  width: 270px;
+  border-radius: 15px;
+}
+.we-do {
+  height: 40px;
+  width: 230px;
+  border-radius: 20px;
+  background-color: #bee1e6;
+  padding-top: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-element {
+  padding-top: 20px;
+  grid-template-areas:
+    "advance section-element-text"
+    "design section-element-text"
+    "work section-element-text";
+  gap: 20px;
+}
+.section-element img {
+  height: 50px;
+}
+.element-general {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.discover {
+  text-align: center;
+  justify-content: center;
+  gap: 50px;
+}
+.features {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.features h1 {
+  font-size: 56px;
+}
+.features p {
+  padding-top: 30px;
+}
+.discover-general {
+  grid-template-columns: repeat(1, 50%);
+  grid-template-areas: "discover-left discover-right";
+  gap: 50px;
+}
+.discover-left {
+  height: 455px;
+  width: 630px;
+  background-color: #fff3ea;
+  border-radius: 20px;
+  padding-top: 45px;
+}
+.discover-left img {
+  height: 390px;
+  width: 500px;
+  padding-top: 30px;
+}
+.discover-right {
+  height: 455px;
+  width: 630px;
+  background-color: #bee1e6;
+  border-radius: 20px;
+  padding-top: 45px;
+}
+.discover-right img {
+  height: 390px;
+  width: 500px;
+  padding-top: 30px;
+}
+
+.built p {
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+  line-height: 25px;
+}
+.exclusively h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  font-size: 56px;
+}
+.exclusively p {
+  display: flex;
+  justify-content: center;
+}
+.for-you {
+  padding-left: 250px;
+  gap: 40px;
+  grid-template-columns: repeat(3, auto);
+  margin-left: -180px;
+}
+.Acquisition {
+  width: 400px;
+  padding-top: 85px;
+  gap: 10px;
+  grid-template-areas: "acquis acquis-text";
+}
+
 .our-happy-customers-container {
   border-radius: 58px;
   padding: 6.8%;
@@ -293,6 +421,11 @@ input:checked + .slider:before {
   height: 50px;
   padding-left: 8px;
   outline: none;
+}
+
+.subscribe .subs-left .input input::placeholder {
+  color: #ccc;
+  opacity: 0.8;
 }
 
 .subscribe .subs-left .input i {
