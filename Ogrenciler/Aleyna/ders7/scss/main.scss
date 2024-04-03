@@ -1,0 +1,39 @@
+$bgColor: red;
+$x150: 150px;
+$x100: 100px;
+
+@mixin boxMixin($color, $width, $height) {
+  background-color: $color;
+  width: $width;
+  height: $height;
+}
+
+.container {
+  display: flex;
+  &:hover {
+    background-color: aquamarine;
+  }
+
+  .box1 {
+    // background-color: $bgColor;
+    // width: $x150 * 2;
+    // height: $x100;
+    @include boxMixin($bgColor, $x150, $x100);
+  }
+  .box2 {
+    // background-color: $bgColor;
+    // width: $x150;
+    // height: $x100;
+    @include boxMixin(orange, $x150, $x100 * 2);
+  }
+  .box3 {
+    @extend.box1;
+    width: $x100 * 3;
+  }
+  .box4 {
+    @include boxMixin(green, $x150, $x100 * 4);
+    &.deneme {
+      background-color: palevioletred;
+    }
+  }
+}
