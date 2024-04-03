@@ -65,29 +65,12 @@ nav ul li a {
     width: 35rem;
     animation: main-animation 2s linear infinite alternate;
 }
-@keyframes main-animation {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(-1rem);
-    }
-}
-.home-right .balance-image {
-    width: 15rem;
-    animation: sub-animation-balance 3s linear infinite alternate;
-    bottom: 0;
-    left: -4rem;
-}
-@keyframes sub-animation-balance {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-1rem);
-    }
+.home-right .border {
+    border: 0.125rem solid #006D77;
+    left: -1.5rem;
+    top: 1.5rem;
+    padding: 20rem 17rem;
+    animation: main-animation 2s linear infinite alternate;
 }
 .home-right .payment-image {
     width: 10rem;
@@ -95,21 +78,11 @@ nav ul li a {
     right: -5rem;
     top: 5rem;
 }
-@keyframes sub-animation-payment {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(-1rem);
-    }
-}
-.home-right .border {
-    border: 0.125rem solid #006D77;
-    left: -1.5rem;
-    top: 1.5rem;
-    padding: 20rem 17rem;
-    animation: main-animation 2s linear infinite alternate;
+.home-right .balance-image {
+    width: 15rem;
+    animation: sub-animation-balance 3s linear infinite alternate;
+    bottom: 0;
+    left: -4rem;
 }
 .partners-container {
     padding: 5rem 22rem;
@@ -475,6 +448,34 @@ nav ul li a {
 .section-box-built {
     margin-top: 10rem;
 }
+/* Keyframes */
+@keyframes main-animation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-1rem);
+    }
+}
+@keyframes sub-animation-balance {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-1rem);
+    }
+}
+@keyframes sub-animation-payment {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-1rem);
+    }
+}
 @keyframes hero-thumb-animation {
     0% {
         transform: translateY(-20px);
@@ -483,7 +484,7 @@ nav ul li a {
         transform: translateY(0);
     }
 }
-
+/* Media Queries */
 @media screen and (max-width: 1500px) {
     .header-container {
         flex-direction: column;
