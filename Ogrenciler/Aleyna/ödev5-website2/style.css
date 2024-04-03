@@ -250,6 +250,7 @@ h6 {
 #header {
   background: var(--bg-gradiant);
   height: 60px;
+  position: fixed;
 }
 
 /* Header End */
@@ -1151,7 +1152,6 @@ h6 {
 /* Copyright Start */
 #copyright {
   background: var(--bg-gradiant);
-  margin-top: 87px;
   padding: 24px 0px 25px;
   line-height: 26px;
 }
