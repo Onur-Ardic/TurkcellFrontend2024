@@ -235,3 +235,23 @@ nav {
     padding: 3rem;
     border-radius: 6rem;
 }
+/* Start Investment */
+.responsive-table {
+    margin-top: 2rem;
+}
+.table {
+    background: #001232;
+    padding: 1rem;
+}
+th {
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+tr {
+    gap: 12rem;
+    padding: 1rem;
+}
+td {
+    gap: 1rem;
+}
