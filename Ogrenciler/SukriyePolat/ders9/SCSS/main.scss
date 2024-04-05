@@ -1,0 +1,28 @@
+$bgColor: red;
+$x150: 150px;
+$x100: 100px;
+
+
+@mixin boxMixin($color ,$width, $height){
+    background-color: $color;
+    width: $width;
+    height: $height;
+}
+.container {
+    display: flex;
+    &:hover{
+        background-color: rgb(159, 159, 159);
+    }
+    .box1{
+        background-color: $bgColor;
+        width: $x150;
+        height: $x100;
+    }
+    .box2{
+        background-color: $bgColor;
+        width: $x150;
+        height: $x100;
+    }
+}
+    
+    
