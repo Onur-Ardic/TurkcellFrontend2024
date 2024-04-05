@@ -220,3 +220,18 @@ nav {
     font-size: 1rem;
     font-weight: 600;
 }
+/* How Does It Works */
+.how-does-it-works-container {
+    padding: 5rem 30rem;
+}
+.how-does-it-works-card-container {
+    gap: 1.25rem;
+}
+.how-does-it-works-card {
+    padding: 2rem;
+    gap: 1.25rem;
+}
+.how-does-it-works-card-pic {
+    padding: 3rem;
+    border-radius: 6rem;
+}
