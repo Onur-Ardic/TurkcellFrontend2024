@@ -1,0 +1,14 @@
+{
+  "name": "ders8-scss",
+  "version": "1.0.0",
+  "description": "I am learning about scss & sass!",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w scss:css"
+  },
+  "author": "Hasan YASEN",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.72.0"
+  }
+}
