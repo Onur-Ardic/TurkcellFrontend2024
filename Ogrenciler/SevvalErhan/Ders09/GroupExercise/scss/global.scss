@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Outfit:wght@100..900&display=swap");
 * {
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  font-family: "Nanum Gothic", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -19,17 +21,4 @@
   color: $color;
   font-size: $size;
   font-weight: $weight;
-}
-
-.container {
-  max-width: 568px;
-  & .header-nav {
-    @include flex(flex, center, center);
-    & .nav-menu-middle > ul {
-      &:nth-child(2) {
-        @include flex(flex, center, center);
-      }
-      @include flex(flex, center, center);
-    }
-  }
 }
