@@ -1,0 +1,27 @@
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
