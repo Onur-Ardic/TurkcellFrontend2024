@@ -3,17 +3,15 @@ const key = '6a29fc840e87f0919bfd9c85e96c1165'
 
 const setQuery= (e) =>{
   if(e.keyCode == '13')
-     getResult(searchBar.value)           
+  getResult(searchBar.value)           
 }
 
 const getResult = (cityName) => {
  let query= `${url}weather?q=${cityName}&appid=${key}&units=metric&lang=tr`;
 
-fetch(query)
-.then(weather => {
+fetch(query).then(weather => {
 return weather.json()
-})
-.then(displayResult)
+}).then(displayResult)
 }
 
 const displayResult = (result) => {
