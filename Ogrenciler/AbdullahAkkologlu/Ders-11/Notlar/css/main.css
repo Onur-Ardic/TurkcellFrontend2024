@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  gap: 10px;
+}
+.container:hover {
+  background-color: rgb(209, 209, 209);
+}
+.container .box1, .container .box3 {
+  background-color: red;
+  width: 150px;
+  height: 100px;
+}
+.container .box2 {
+  background-color: orange;
+  width: 150px;
+  height: 100px;
+}
+.container .box3 {
+  width: 300px;
+}
+.container .box4 {
+  background-color: green;
+  width: 150px;
+  height: 400px;
+}
+.container .box4.deneme {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=main.css.map */

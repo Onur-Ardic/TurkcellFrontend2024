@@ -1,0 +1,8 @@
+.container {
+  background-color: red;
+}
+.container:hover {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=deneme.css.map */
