@@ -255,3 +255,17 @@ tr {
 td {
     gap: 1rem;
 }
+/* Create Better Experience */
+.create-better-experiences-container {
+    padding: 5rem 30rem;
+    justify-content: space-between;
+}
+.create-better-experiences-button {
+    padding: 0 2.5rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 0px 10px #4e3b7b;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #8527E1;
+}
