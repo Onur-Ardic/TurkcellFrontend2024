@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+  }
   .navbar .check-btn {
     display: block;
   }
@@ -6,20 +9,22 @@
     flex-direction: column;
     position: fixed;
     top: 80px;
-    left: -300px;
-    height: 100vh;
+    height: 0;
+    visibility: hidden;
+    left: 0;
     padding: 0;
-    width: 60%;
+    width: 100%;
     background-color: #fcfcfc;
     transition: 0.4s ease;
   }
   .navbar .navbar-items a {
     font-size: 20px;
     margin: 1rem;
-    line-height: 60px;
+    line-height: 30px;
   }
   .navbar #checkbox:checked ~ .navbar-items {
-    left: -5px;
+    height: 80%;
+    visibility: visible;
   }
   .hero {
     height: 100%;
@@ -45,6 +50,12 @@
   }
   .hero .hero-wrapper .hero-img .second-img img {
     width: 300px;
+  }
+  .what-we-do .we-do-card-wrapper {
+    flex-wrap: wrap;
+  }
+  .what-we-do .we-do-card-wrapper .we-do-card {
+    width: 90%;
   }
 }
 
