@@ -9,3 +9,4 @@
 29-03-2024: CSS Animations and Making a application (https://agon-nextjs-13.vercel.app/index-2)
 01-04-2024: Making a application (https://agon-nextjs-13.vercel.app/index-2)
 03-04-2024: SCSS - SASS
+05-04-2024: 
