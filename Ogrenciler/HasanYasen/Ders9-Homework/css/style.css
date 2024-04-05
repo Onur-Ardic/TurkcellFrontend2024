@@ -1,0 +1,40 @@
+header {
+  margin-top: 20px;
+}
+header * {
+  color: white;
+}
+header .header-logo a {
+  font-size: 20px;
+}
+header .header-nav .nav-list-item {
+  padding: 20px 10px;
+}
+header .header-nav .nav-list-item.contact {
+  margin-right: 48px;
+}
+header .header-nav .nav-list-item .border-left {
+  border-left: 1px solid #dee2e6;
+  padding-left: 1.5rem;
+}
+header .header-nav .nav-list-item .register-link {
+  margin-left: 30px;
+}
+
+.hero-section::before {
+  content: "";
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/hero-bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-section * {
+  position: relative;
+}
+
+/*# sourceMappingURL=style.css.map */
