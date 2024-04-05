@@ -11,7 +11,7 @@ $x100: 100px;
 .container {
   display: flex;
   &:hover {
-    background-color: rgb(159, 159, 159);
+    background-color: rgb(170, 151, 151);
   }
   .box1 {
     @include boxMixin($bgColor, $x150, $x100);
@@ -21,7 +21,7 @@ $x100: 100px;
   }
   .box3 {
     @extend .box1;
-    width: $x100 * 3;
+    width: $x150 * 3;
   }
   .box4 {
     @include boxMixin(green, $x150, $x100 * 4);
@@ -30,3 +30,6 @@ $x100: 100px;
     }
   }
 }
+
+// .box4.deneme => hem box4'e hem de deneme classina sahip olani sec
+// &.deneme => ustteki yapinin kisaltilmis hali

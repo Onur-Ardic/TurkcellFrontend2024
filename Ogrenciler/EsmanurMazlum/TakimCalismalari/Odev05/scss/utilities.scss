@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Nanum Gothic", sans-serif;
+    text-decoration: none;
+}
+
+$bgBlue: #2f89fc;
+$colorBlue: #2f89fc;
+$btnbgBlue:#046DF4;
+$bgGray: #F8F9FA;
+$colorGray: #F8F9FA;
+$bgDarkGray: #4d4d4d;
+$colorDarkGray: #4d4d4d;
+
+$size11:11px;
+$size13:13px;
+$size16:16px;
+
+@mixin textLink($size, $color){
+    font-size: $size;
+    color: $color;
+}
+
+@mixin grayButton{
+    font-size: 11px;
+    display: inline-block;
+    padding: 5px 20px;
+    background: #e9ecef;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: bold;
+}
