@@ -12,7 +12,9 @@
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
+body {
+  line-height: 1.7;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -43,4 +45,11 @@
 @mixin span($bg-color, $text-color) {
   background-color: $bg-color;
   color: $text-color;
+}
+
+@mixin inputHero {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  outline: none;
 }
