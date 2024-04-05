@@ -1,0 +1,26 @@
+$bgColor: red;
+$x150: 150px;
+$x100: 100px;
+
+@mixin boxMixin($Color, $width, $height){
+    background-color: $Color;
+    width: $width;
+    height: $height;
+}
+@mixin boxFont($color, $font-size){
+    color: $color;
+    font-size: $font-size;
+}
+
+.box1{
+    @include boxMixin(orange,$x150 ,$x100*2 );
+}
+.box2{
+    background-color: $bgColor;
+    width: $x150 ;
+    height: $x100;
+}
+.box4{
+    @include boxMixin(blue ,100px ,100px );
+    @include boxFont(red, 15px);
+}

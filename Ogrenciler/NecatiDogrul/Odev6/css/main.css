@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background: url("../images/hero_2.jpg");
+}
+.hero .nav {
+  padding-top: 20px;
+}
+.hero .nav .nav-right {
+  column-gap: 60px;
+}
+.hero .nav .nav-right :nth-of-type(5) {
+  margin-right: 30px;
+}
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

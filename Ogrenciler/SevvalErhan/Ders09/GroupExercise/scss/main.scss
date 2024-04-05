@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex($display, $justify, $align, $column: row, $gap: 2rem) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $column;
+  flex-wrap: wrap;
+  gap: $gap;
+}
+
+@mixin textFont($color, $size, $weight) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+.container {
+  max-width: 568px;
+  & .header-nav {
+    @include flex(flex, center, center);
+    & .nav-menu-middle > ul {
+      &:nth-child(2) {
+        @include flex(flex, center, center);
+      }
+      @include flex(flex, center, center);
+    }
+  }
+}
