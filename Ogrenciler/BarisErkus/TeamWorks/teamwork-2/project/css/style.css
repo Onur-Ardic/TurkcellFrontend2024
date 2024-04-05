@@ -277,3 +277,24 @@ td {
 .our-biggest-advantage-container-content-left {
     gap: 1.25rem;
 }
+/* Our Top 5 Inventors */
+.our-top-5-inventors-container {
+    padding: 5rem 27rem;
+}
+.our-top-5-inventors-card-container {
+    gap: 1.25rem;
+
+}
+.our-top-5-inventors-card {
+    padding: 0 5rem;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+.our-top-5-inventors-card-img {
+    top: -4rem;
+    border-radius: 1rem;
+}
+.links {
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
