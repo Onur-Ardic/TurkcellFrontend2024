@@ -158,18 +158,65 @@ nav {
 }
 /* Fast Profit */
 .fast-profit {
-    padding: 5rem 20rem;
+    padding: 3rem 24rem;
 }
-
 .fast-profit-container {
-    border: 1px solid #E5E5E5;
-    padding: 5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0px 0px 10px #4e3b7b;
+    padding: 3rem;
 }
-
 .fast-profit-left img {
     width: 25rem;
 }
-
 .fast-profit-right h4{
     font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.fast-profit-right p{
+    font-size: 1.115rem;
+    line-height: 1.75rem;
+    margin-bottom: 2.5rem;
+}
+/* Investment Plans */
+.investment {
+    padding: 6rem 24rem;
+}
+.investment-button-container {
+    display: flex;
+    gap: 1.25rem;
+    margin-top: -5rem;
+}
+.investment-button {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 0px 10px #4e3b7b;
+}
+.investment-button-weekly {
+    background: transparent;
+}
+.investment-card-container {
+    gap: 1.25rem;
+    margin-top: 3rem;
+}
+.investment-card {
+    padding: 2rem;
+    background: #032055;
+}
+.price-rate {
+    padding: 1rem 7rem;
+    font-size: 1.5rem;
+    margin: 1.25rem 0;
+}
+.min-max-container {
+    gap: 0.75rem;
+}
+.investment-button {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 0px 10px #4e3b7b;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
