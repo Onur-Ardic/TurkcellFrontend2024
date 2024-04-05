@@ -14,6 +14,7 @@ $x30: 30px;
 :root {
   --white-color: #f8f9fc;
   --blue-color: #0076a3;
+  --text-color: #183b56;
 }
 
 .container {
@@ -182,6 +183,86 @@ $x30: 30px;
       opacity: 0.2;
       left: 100%;
       height: 74%;
+    }
+  }
+}
+
+// ! -----------------What We Do---------------------
+.what-we-do {
+  background-color: var(--white-color);
+  font-family: "Poppins", sans-serif;
+
+  .we-do-wrapper {
+    padding-top: 300px;
+    .we-do-content {
+      h5 {
+        @include textColor(var(--blue-color), 22px);
+        text-align: center;
+      }
+
+      h2 {
+        @extend h5;
+        font-size: 40px;
+        color: var(--text-color);
+      }
+
+      p {
+        text-align: center;
+        opacity: 0.4;
+      }
+    }
+  }
+
+  .we-do-card-wrapper {
+    @include flexible(flex, space-around, center, 1rem);
+    margin-top: $x30;
+
+    .we-do-card {
+      width: 400px;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 10px;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        -webkit-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+      }
+
+      &.active {
+        -webkit-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+      }
+
+      .we-do-card-top {
+        position: relative;
+
+        i {
+          @include flexible(flex, center, center, 0);
+          font-size: 24px;
+          color: var(--blue-color);
+          position: absolute;
+          top: 58%;
+          left: 51%;
+          transform: translate(-60%, -50%);
+        }
+      }
+
+      .we-do-card-top-content {
+        h4 {
+          @include textColor(#000, 20px);
+          text-align: center;
+        }
+        p {
+          font-size: 14px;
+          font-family: "Poppins", sans-serif;
+          margin-bottom: 20px;
+          color: var(--text-color);
+          opacity: 0.5;
+        }
+      }
     }
   }
 }

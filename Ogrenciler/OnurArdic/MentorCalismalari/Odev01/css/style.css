@@ -10,6 +10,7 @@
 :root {
   --white-color: #f8f9fc;
   --blue-color: #0076a3;
+  --text-color: #183b56;
 }
 
 .container {
@@ -150,6 +151,78 @@
   opacity: 0.2;
   left: 100%;
   height: 74%;
+}
+
+.what-we-do {
+  background-color: var(--white-color);
+  font-family: "Poppins", sans-serif;
+}
+.what-we-do .we-do-wrapper {
+  padding-top: 300px;
+}
+.what-we-do .we-do-wrapper .we-do-content h5, .what-we-do .we-do-wrapper .we-do-content h2 {
+  color: var(--blue-color);
+  font-size: 22px;
+  text-align: center;
+}
+.what-we-do .we-do-wrapper .we-do-content h2 {
+  font-size: 40px;
+  color: var(--text-color);
+}
+.what-we-do .we-do-wrapper .we-do-content p {
+  text-align: center;
+  opacity: 0.4;
+}
+.what-we-do .we-do-card-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 30px;
+}
+.what-we-do .we-do-card-wrapper .we-do-card {
+  width: 400px;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+.what-we-do .we-do-card-wrapper .we-do-card:hover {
+  -webkit-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+}
+.what-we-do .we-do-card-wrapper .we-do-card.active {
+  -webkit-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+}
+.what-we-do .we-do-card-wrapper .we-do-card .we-do-card-top {
+  position: relative;
+}
+.what-we-do .we-do-card-wrapper .we-do-card .we-do-card-top i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  font-size: 24px;
+  color: var(--blue-color);
+  position: absolute;
+  top: 58%;
+  left: 51%;
+  transform: translate(-60%, -50%);
+}
+.what-we-do .we-do-card-wrapper .we-do-card .we-do-card-top-content h4 {
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+}
+.what-we-do .we-do-card-wrapper .we-do-card .we-do-card-top-content p {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */

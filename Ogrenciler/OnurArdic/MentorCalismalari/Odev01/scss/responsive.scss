@@ -1,6 +1,7 @@
 $x100: 80px;
 @media (max-width: 768px) {
   .navbar {
+    width: 100%;
     .check-btn {
       display: block;
     }
@@ -8,24 +9,26 @@ $x100: 80px;
     .navbar-items {
       flex-direction: column;
       position: fixed;
-      top: $x100;
-      left: -300px;
-      height: 100vh;
+      top: 80px;
+      height: 0;
+      visibility: hidden;
+      left: 0;
       padding: 0;
-      width: 60%;
+      width: 100%;
       background-color: #fcfcfc;
       transition: 0.4s ease;
 
       a {
         font-size: 20px;
         margin: 1rem;
-        line-height: 60px;
+        line-height: 30px;
       }
     }
 
     #checkbox {
       &:checked ~ .navbar-items {
-        left: -5px;
+        height: 80%;
+        visibility: visible;
       }
     }
   }
@@ -63,6 +66,16 @@ $x100: 80px;
         .second-img img {
           width: 300px;
         }
+      }
+    }
+  }
+  //! -----------------What We Do---------------------
+  .what-we-do {
+    .we-do-card-wrapper {
+      flex-wrap: wrap;
+
+      .we-do-card {
+        width: 90%;
       }
     }
   }
