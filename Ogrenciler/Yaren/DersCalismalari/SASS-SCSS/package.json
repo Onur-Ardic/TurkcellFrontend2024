@@ -1,15 +1,16 @@
 {
   "name": "sass-scss",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "sass -w scss:css"
+    "sass": "sass -w scss:css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.72.0"
-  }
+    "sass": "^1.74.1"
+  },
+  "devDependencies": {},
+  "description": ""
 }

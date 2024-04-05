@@ -1,7 +1,8 @@
 .container {
-    display: flex;
-  }
-  .container:hover {
-    background-color: red;
-  }
-  
+  display: flex;
+}
+.container:hover {
+  background-color: red;
+}
+
+/*# sourceMappingURL=deneme.css.map */
