@@ -1,0 +1,22 @@
+@mixin flexible($display, $justify, $align) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin textFont($textAlign, $fontSize) {
+  text-align: $textAlign;
+  font-size: $fontSize;
+}
+
+@mixin textColor($fontColor, $fontSize) {
+  color: $fontColor;
+  font-size: $fontSize;
+}
+
+@mixin btn($paddingBtn, $colorBtn, $widthBtn, $heightBtn) {
+  padding: $paddingBtn;
+  color: $colorBtn;
+  width: $widthBtn;
+  height: $heightBtn;
+}
