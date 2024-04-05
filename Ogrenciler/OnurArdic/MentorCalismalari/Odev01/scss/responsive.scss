@@ -79,4 +79,32 @@ $x100: 80px;
       }
     }
   }
+  //! -----------------Features------------------------
+
+  .features .features-items {
+    margin-top: $x100;
+    flex-direction: column;
+
+    .features-item-left {
+      text-align: center;
+      margin-top: $x100;
+
+      .features-item {
+        .features-icon {
+          left: 43%;
+        }
+      }
+    }
+
+    .features-item-right {
+      text-align: center;
+      margin-top: $x100;
+
+      .features-item {
+        .features-icon {
+          left: 43%;
+        }
+      }
+    }
+  }
 }

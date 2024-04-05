@@ -57,6 +57,24 @@
   .what-we-do .we-do-card-wrapper .we-do-card {
     width: 90%;
   }
+  .features .features-items {
+    margin-top: 80px;
+    flex-direction: column;
+  }
+  .features .features-items .features-item-left {
+    text-align: center;
+    margin-top: 80px;
+  }
+  .features .features-items .features-item-left .features-item .features-icon {
+    left: 43%;
+  }
+  .features .features-items .features-item-right {
+    text-align: center;
+    margin-top: 80px;
+  }
+  .features .features-items .features-item-right .features-item .features-icon {
+    left: 43%;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */

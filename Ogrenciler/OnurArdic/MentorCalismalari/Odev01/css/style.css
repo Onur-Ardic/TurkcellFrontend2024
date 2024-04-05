@@ -19,6 +19,16 @@
   margin: 0 auto;
 }
 
+.features .features-items .features-item-right .features-item .features-icon, .features .features-items .features-item-left .features-item .features-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: -40px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -156,6 +166,7 @@
 .what-we-do {
   background-color: var(--white-color);
   font-family: "Poppins", sans-serif;
+  padding-bottom: 100px;
 }
 .what-we-do .we-do-wrapper {
   padding-top: 300px;
@@ -223,6 +234,97 @@
   margin-bottom: 20px;
   color: var(--text-color);
   opacity: 0.5;
+}
+
+.features {
+  margin-top: 100px;
+  font-family: "poppins", sans-serif;
+}
+.features .features-wrapper .features-content h5, .features .features-wrapper .features-content h2 {
+  color: var(--blue-color);
+  font-size: 22px;
+  text-align: center;
+}
+.features .features-wrapper .features-content h2 {
+  font-size: 40px;
+  color: var(--text-color);
+}
+.features .features-wrapper .features-content p {
+  text-align: center;
+  opacity: 0.4;
+}
+.features .features-wrapper .features-content .features-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+.features .features-wrapper .features-content .features-btn button:first-child {
+  padding: 0.5rem;
+  background-color: var(--blue-color);
+  width: 10rem;
+  height: 3rem;
+  color: #fff;
+  border-radius: 7px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #fff;
+}
+.features .features-wrapper .features-content .features-btn button:last-child {
+  padding: 0.5rem;
+  background-color: var(--white-color);
+  width: 10rem;
+  height: 3rem;
+  color: #fff;
+  border-radius: 7px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+}
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin-top: 30px;
+}
+.features .features-items .features-item-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  flex-direction: column;
+  text-align: end;
+  position: relative;
+}
+.features .features-items .features-item-left .features-item {
+  position: relative;
+}
+.features .features-items .features-item-left .features-item .features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.features .features-items .features-item-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  flex-direction: column;
+}
+.features .features-items .features-item-right .features-item {
+  position: relative;
+}
+.features .features-items .features-item-right .features-item .features-icon {
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.features .features-items .features-item-mid .mid-img img {
+  width: 320px;
 }
 
 /*# sourceMappingURL=style.css.map */

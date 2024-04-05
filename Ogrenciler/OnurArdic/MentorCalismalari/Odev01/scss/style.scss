@@ -48,6 +48,16 @@ $x30: 30px;
   color: $colorBtn;
 }
 
+%icons {
+  width: 40px;
+  height: 40px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: -40px;
+}
+
 .navbar {
   @include flexible(flex, space-between, center, 1rem);
   padding: 1rem;
@@ -191,6 +201,7 @@ $x30: 30px;
 .what-we-do {
   background-color: var(--white-color);
   font-family: "Poppins", sans-serif;
+  padding-bottom: $x100;
 
   .we-do-wrapper {
     padding-top: 300px;
@@ -263,6 +274,93 @@ $x30: 30px;
           opacity: 0.5;
         }
       }
+    }
+  }
+}
+
+//! -------------------Features-----------------
+.features {
+  margin-top: $x100;
+  font-family: "poppins", sans-serif;
+
+  .features-wrapper {
+    .features-content {
+      h5 {
+        @include textColor(var(--blue-color), 22px);
+        text-align: center;
+      }
+
+      h2 {
+        @extend h5;
+        font-size: 40px;
+        color: var(--text-color);
+      }
+
+      p {
+        text-align: center;
+        opacity: 0.4;
+      }
+
+      .features-btn {
+        text-align: center;
+        margin-top: $x30;
+        button {
+          &:first-child {
+            @include btn(0.5rem, var(--blue-color), #fff, 10rem, 3rem);
+            border-radius: 7px;
+            display: inline-block;
+            text-align: center;
+            border: 1px solid #fff;
+          }
+
+          &:last-child {
+            @include btn(0.5rem, var(--white-color), #fff, 10rem, 3rem);
+            border-radius: 7px;
+            display: inline-block;
+            text-align: center;
+            border: 1px solid #000;
+            background-color: transparent;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+  .features-items {
+    @include flexible(flex, center, center, 0);
+    margin-top: $x30;
+
+    .features-item-left {
+      @include flexible(flex, center, center, 7rem);
+      flex-direction: column;
+      text-align: end;
+      position: relative;
+
+      .features-item {
+        position: relative;
+        .features-icon {
+          @extend %icons;
+          @include flexible(flex, center, center, 0);
+        }
+      }
+    }
+
+    .features-item-right {
+      @include flexible(flex, center, center, 7rem);
+      flex-direction: column;
+
+      .features-item {
+        position: relative;
+        .features-icon {
+          @extend %icons;
+          left: 0;
+          @include flexible(flex, center, center, 0);
+        }
+      }
+    }
+
+    .features-item-mid .mid-img img {
+      width: 320px;
     }
   }
 }
