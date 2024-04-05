@@ -1,0 +1,78 @@
+@import "./base.scss", "./variables.scss";
+.header {
+  background: url("https://preview.colorlib.com/theme/directoryads/images/hero_2.jpg.webp");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.3;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  .navbar {
+    @include flexible(flex, space-between, center, 1rem);
+    padding: 20px 10px;
+    position: relative;
+    z-index: 2;
+
+    .logo {
+      a {
+        color: #fff;
+        font-weight: 900;
+        font-size: $fontSizeMedium;
+      }
+    }
+
+    .navbar-items {
+      @include flexible(flex, space-between, center, 2rem);
+      font-size: $fontSizeSmall;
+      a {
+        color: #fff;
+        font-weight: 100;
+      }
+    }
+  }
+
+  .navbar-btn {
+    font-size: $fontSizeSmall;
+    a:first-child {
+      color: #fff;
+      margin: 1rem;
+      border-left: 1px solid #fff;
+      padding-left: $fontSizeLarge;
+    }
+    a:last-child {
+      @include btn(0.6rem, $primary, $colorWhite, $x80, $x60);
+      border-radius: 7px;
+    }
+    margin-right: $x100;
+    font-weight: 100;
+  }
+}
+
+//!--------------------Hero-----------------------
+.hero-content {
+  position: absolute;
+  top: 360px;
+  left: 30%;
+  z-index: 2;
+
+  .hero-title {
+    @include textFont(start, $fontSizeExtraExtraLarge, $colorWhite);
+    font-weight: 500;
+  }
+
+  p {
+    text-align: center;
+    color: #fff;
+    font-size: $fontSizeMedium;
+  }
+}
