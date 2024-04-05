@@ -269,3 +269,11 @@ td {
     font-weight: 600;
     color: #8527E1;
 }
+/* Our Biggest Advantage */
+.our-biggest-advantage-container {
+    padding: 5rem 27rem;
+    justify-content: space-between;
+}
+.our-biggest-advantage-container-content-left {
+    gap: 1.25rem;
+}
