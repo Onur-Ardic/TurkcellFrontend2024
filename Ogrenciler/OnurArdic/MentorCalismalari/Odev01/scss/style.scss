@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+$p-1: 1rem;
+$x100: 100px;
+$x30: 30px;
+
+:root {
+  --white-color: #f8f9fc;
+  --blue-color: #0076a3;
+  --text-color: #183b56;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@mixin flexible($display, $justify, $align, $columnGap) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $columnGap;
+}
+
+@mixin textFont($textAlign, $fontSize) {
+  text-align: $textAlign;
+  font-size: $fontSize;
+}
+
+@mixin textColor($fontColor, $fontSize) {
+  color: $fontColor;
+  font-size: $fontSize;
+}
+
+@mixin btn($paddingBtn, $bgColorBtn, $colorBtn, $widthBtn, $heightBtn) {
+  padding: $paddingBtn;
+  background-color: $bgColorBtn;
+  width: $widthBtn;
+  height: $heightBtn;
+  color: $colorBtn;
+}
+
+%icons {
+  width: 40px;
+  height: 40px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: -40px;
+}
+
+.navbar {
+  @include flexible(flex, space-between, center, 1rem);
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  background-color: var(--white-color);
+  font-family: "Roboto", sans-serif;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+
+  .check-btn {
+    display: none;
+  }
+  #checkbox {
+    display: none;
+  }
+
+  label {
+    font-size: 30px;
+  }
+  .logo img {
+    width: 150px;
+  }
+
+  .navbar-items {
+    @include flexible(flex, space-between, center, 3rem);
+
+    .navbar-item a {
+      @include textColor(#000, 16px);
+      font-weight: 500;
+
+      .navbar-item.active {
+        @include textColor(var(--blue-color), 16px);
+      }
+
+      &:hover {
+        color: var(--blue-color);
+        transition: 0.2s ease;
+      }
+    }
+  }
+  .nav-login a {
+    @include btn(0.5rem, var(--blue-color), #fff, 5rem, 2rem);
+    border-radius: 7px;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+// !------------- Hero -----------------------
+
+.hero {
+  background-color: var(--blue-color);
+  height: 80vh;
+  margin-top: 80px;
+  font-family: "Poppins", sans-serif;
+
+  .hero-wrapper {
+    text-align: center;
+    position: relative;
+    .hero-content {
+      .crown {
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+      }
+
+      .hero-title {
+        h2 {
+          font-size: 50px;
+          font-family: "Poppins", sans-serif;
+          margin-bottom: 20px;
+          color: var(--white-color);
+        }
+
+        p {
+          font-size: 14px;
+          font-family: "Poppins", sans-serif;
+          margin-bottom: 20px;
+          color: var(--white-color);
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .hero-img {
+      @include flexible(flex, center, center, 1rem);
+      margin-top: 50px;
+
+      img {
+        width: 300px;
+      }
+
+      .second-img img {
+        width: 350px;
+      }
+    }
+
+    .social-media-icon {
+      @include flexible(flex, center, center, 1rem);
+      flex-direction: column;
+      position: absolute;
+      top: 40%;
+      left: -80px;
+      font-size: 20px;
+      opacity: 0.4;
+    }
+
+    .bg-line {
+      position: absolute;
+      width: 2px;
+      height: 33%;
+      background-color: #ccc;
+      opacity: 0.1;
+      left: 10%;
+      top: 0;
+
+      .bg-rounded {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: -9px;
+        top: 50%;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+      }
+    }
+
+    .bg-line-second {
+      @extend .bg-line;
+      opacity: 0.2;
+      left: 100%;
+      height: 74%;
+    }
+  }
+}
+
+// ! -----------------What We Do---------------------
+.what-we-do {
+  background-color: var(--white-color);
+  font-family: "Poppins", sans-serif;
+  padding-bottom: $x100;
+
+  .we-do-wrapper {
+    padding-top: 300px;
+    .we-do-content {
+      h5 {
+        @include textColor(var(--blue-color), 22px);
+        text-align: center;
+      }
+
+      h2 {
+        @extend h5;
+        font-size: 40px;
+        color: var(--text-color);
+      }
+
+      p {
+        text-align: center;
+        opacity: 0.4;
+      }
+    }
+  }
+
+  .we-do-card-wrapper {
+    @include flexible(flex, space-around, center, 1rem);
+    margin-top: $x30;
+
+    .we-do-card {
+      width: 400px;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 10px;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        -webkit-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+      }
+
+      &.active {
+        -webkit-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+      }
+
+      .we-do-card-top {
+        position: relative;
+
+        i {
+          @include flexible(flex, center, center, 0);
+          font-size: 24px;
+          color: var(--blue-color);
+          position: absolute;
+          top: 58%;
+          left: 51%;
+          transform: translate(-60%, -50%);
+        }
+      }
+
+      .we-do-card-top-content {
+        h4 {
+          @include textColor(#000, 20px);
+          text-align: center;
+        }
+        p {
+          font-size: 14px;
+          font-family: "Poppins", sans-serif;
+          margin-bottom: 20px;
+          color: var(--text-color);
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+//! -------------------Features-----------------
+.features {
+  margin-top: $x100;
+  font-family: "poppins", sans-serif;
+
+  .features-wrapper {
+    .features-content {
+      h5 {
+        @include textColor(var(--blue-color), 22px);
+        text-align: center;
+      }
+
+      h2 {
+        @extend h5;
+        font-size: 40px;
+        color: var(--text-color);
+      }
+
+      p {
+        text-align: center;
+        opacity: 0.4;
+      }
+
+      .features-btn {
+        text-align: center;
+        margin-top: $x30;
+        button {
+          &:first-child {
+            @include btn(0.5rem, var(--blue-color), #fff, 10rem, 3rem);
+            border-radius: 7px;
+            display: inline-block;
+            text-align: center;
+            border: 1px solid #fff;
+          }
+
+          &:last-child {
+            @include btn(0.5rem, var(--white-color), #fff, 10rem, 3rem);
+            border-radius: 7px;
+            display: inline-block;
+            text-align: center;
+            border: 1px solid #000;
+            background-color: transparent;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+  .features-items {
+    @include flexible(flex, center, center, 0);
+    margin-top: $x30;
+
+    .features-item-left {
+      @include flexible(flex, center, center, 7rem);
+      flex-direction: column;
+      text-align: end;
+      position: relative;
+
+      .features-item {
+        position: relative;
+        .features-icon {
+          @extend %icons;
+          @include flexible(flex, center, center, 0);
+        }
+      }
+    }
+
+    .features-item-right {
+      @include flexible(flex, center, center, 7rem);
+      flex-direction: column;
+
+      .features-item {
+        position: relative;
+        .features-icon {
+          @extend %icons;
+          left: 0;
+          @include flexible(flex, center, center, 0);
+        }
+      }
+    }
+
+    .features-item-mid .mid-img img {
+      width: 320px;
+    }
+  }
+}

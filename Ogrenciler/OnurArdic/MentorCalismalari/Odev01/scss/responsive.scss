@@ -1,0 +1,110 @@
+$x100: 80px;
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    .check-btn {
+      display: block;
+    }
+
+    .navbar-items {
+      flex-direction: column;
+      position: fixed;
+      top: 80px;
+      height: 0;
+      visibility: hidden;
+      left: 0;
+      padding: 0;
+      width: 100%;
+      background-color: #fcfcfc;
+      transition: 0.4s ease;
+
+      a {
+        font-size: 20px;
+        margin: 1rem;
+        line-height: 30px;
+      }
+    }
+
+    #checkbox {
+      &:checked ~ .navbar-items {
+        height: 80%;
+        visibility: visible;
+      }
+    }
+  }
+
+  //! -----------------Hero-------------------
+  .hero {
+    height: 100%;
+    .hero-wrapper {
+      .hero-content {
+        .hero-title {
+          h2 {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 19px;
+            font-weight: bold;
+          }
+
+          p {
+            font-size: 12px;
+            line-height: 24px;
+            margin-bottom: 19px;
+            opacity: 0.5;
+          }
+        }
+      }
+
+      .hero-img {
+        flex-direction: column;
+        margin-top: 50px;
+
+        img {
+          width: 300px;
+        }
+
+        .second-img img {
+          width: 300px;
+        }
+      }
+    }
+  }
+  //! -----------------What We Do---------------------
+  .what-we-do {
+    .we-do-card-wrapper {
+      flex-wrap: wrap;
+
+      .we-do-card {
+        width: 90%;
+      }
+    }
+  }
+  //! -----------------Features------------------------
+
+  .features .features-items {
+    margin-top: $x100;
+    flex-direction: column;
+
+    .features-item-left {
+      text-align: center;
+      margin-top: $x100;
+
+      .features-item {
+        .features-icon {
+          left: 43%;
+        }
+      }
+    }
+
+    .features-item-right {
+      text-align: center;
+      margin-top: $x100;
+
+      .features-item {
+        .features-icon {
+          left: 43%;
+        }
+      }
+    }
+  }
+}

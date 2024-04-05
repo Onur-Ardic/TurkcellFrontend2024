@@ -1,0 +1,33 @@
+.container .box-5 {
+  background-color: crimson;
+}
+
+.container {
+  display: flex;
+}
+.container:hover {
+  background-color: crimson;
+}
+.container .box-1, .container .box-3 {
+  background-color: navy;
+  width: 100px;
+  height: 150px;
+}
+.container .box-2 {
+  background-color: goldenrod;
+  width: 100px;
+  height: 300px;
+}
+.container .box-3 {
+  width: 300px;
+}
+.container .box-4 {
+  background-color: green;
+  width: 100px;
+  height: 600px;
+}
+.container .box-4.deneme {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=main-scss.css.map */
