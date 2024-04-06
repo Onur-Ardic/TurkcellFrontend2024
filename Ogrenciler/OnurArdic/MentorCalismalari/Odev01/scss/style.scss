@@ -517,6 +517,7 @@ $x30: 30px;
 .plans {
   font-family: "poppins", sans-serif;
   margin-top: $x30;
+  margin-bottom: $x100;
   .plans-wrapper {
     .plans-content {
       text-align: center;
@@ -659,6 +660,80 @@ $x30: 30px;
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+// ----------------app--------------------------
+.app {
+  background-color: #e8f1f5;
+  font-family: "Poppins", sans-serif;
+  padding-top: $x100;
+
+  .app-content {
+    h5 {
+      @include textColor(var(--blue-color), 20px);
+      text-align: center;
+    }
+
+    h2 {
+      @extend h5;
+      font-size: 40px;
+      color: var(--text-color);
+    }
+
+    p {
+      text-align: center;
+      opacity: 0.4;
+    }
+  }
+
+  .app-item-wrapper {
+    margin-top: $x30;
+    .app-item-img {
+      @include flexible(flex, center, center, 1rem);
+
+      img {
+        width: 202px;
+        animation: slider 8s ease-in-out infinite;
+
+        &:nth-child(2) {
+          width: 250px;
+          animation: none;
+          position: relative;
+          z-index: 1;
+        }
+      }
+
+      @keyframes slider {
+        0% {
+          transform: translateX(0);
+          opacity: 0.1;
+        }
+
+        30% {
+          transform: translateX(120%);
+          opacity: 1;
+        }
+
+        31% {
+          transform: translateX(120%);
+        }
+
+        50% {
+          opacity: 0.2;
+        }
+
+        80% {
+          transform: translateX(-120%);
+          opacity: 1;
+        }
+
+        100% {
+          transform: translateX(0);
+          opacity: 0.1;
         }
       }
     }

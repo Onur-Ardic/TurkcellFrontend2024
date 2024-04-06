@@ -452,6 +452,7 @@
 .plans {
   font-family: "poppins", sans-serif;
   margin-top: 30px;
+  margin-bottom: 100px;
 }
 .plans .plans-wrapper .plans-content {
   text-align: center;
@@ -564,6 +565,68 @@
 }
 .plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-bottom .thirth-card-list:nth-child(n+5) i {
   color: red;
+}
+
+.app {
+  background-color: #e8f1f5;
+  font-family: "Poppins", sans-serif;
+  padding-top: 100px;
+}
+.app .app-content h5, .app .app-content h2, .app .app-content .what-we-do .we-do-wrapper .we-do-content h2, .what-we-do .we-do-wrapper .we-do-content .app .app-content h2, .app .app-content .features .features-wrapper .features-content h2, .features .features-wrapper .features-content .app .app-content h2, .app .app-content .plans .plans-wrapper .plans-content h2, .plans .plans-wrapper .plans-content .app .app-content h2 {
+  color: var(--blue-color);
+  font-size: 20px;
+  text-align: center;
+}
+.app .app-content h2 {
+  font-size: 40px;
+  color: var(--text-color);
+}
+.app .app-content p {
+  text-align: center;
+  opacity: 0.4;
+}
+.app .app-item-wrapper {
+  margin-top: 30px;
+}
+.app .app-item-wrapper .app-item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.app .app-item-wrapper .app-item-img img {
+  width: 202px;
+  animation: slider 8s ease-in-out infinite;
+}
+.app .app-item-wrapper .app-item-img img:nth-child(2) {
+  width: 250px;
+  animation: none;
+  position: relative;
+  z-index: 1;
+}
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+    opacity: 0.1;
+  }
+  30% {
+    transform: translateX(120%);
+    opacity: 1;
+  }
+  31% {
+    transform: translateX(120%);
+  }
+  50% {
+    opacity: 0.2;
+  }
+  80% {
+    transform: translateX(-120%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
