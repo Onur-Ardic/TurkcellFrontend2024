@@ -16,7 +16,6 @@ $fontSize32: 32px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: $bgColorWhite;
 }
 
 @mixin flex($direction, $justifyContent, $alignItems) {
@@ -26,22 +25,26 @@ $fontSize32: 32px;
   align-items: $alignItems;
 }
 
-@mixin border($border, $borderRadius) {
-  border: none;
+@mixin border($border, $borderRadius, $borderColor, $borderBg, $borderWidth) {
+  border-style: $border;
   border-radius: $borderRadius;
+  border-color: $borderColor;
+  background-color: $borderBg;
+  border-width: $borderWidth;
 }
 
-@mixin margin(
-  $marginLeft,
-  $marginRight,
-  $marginTop,
-  $marginBottom,
-  $marginAuto: auto
-) {
+@mixin margin($marginLeft, $marginRight, $marginTop, $marginBottom) {
   margin-left: $marginLeft;
   margin-right: $marginRight;
   margin-top: $marginTop;
   margin-bottom: $marginBottom;
+}
+
+@mixin padding($paddingLeft, $paddingRight, $paddingTop, $paddingBottom) {
+  padding-left: $paddingLeft;
+  padding-right: $paddingRight;
+  padding-top: $paddingTop;
+  padding-bottom: $paddingBottom;
 }
 .nav-section {
   background: url(https://preview.colorlib.com/theme/directoryads/images/hero_2.jpg.webp);
@@ -68,57 +71,189 @@ $fontSize32: 32px;
   @include flex(row, center, center);
   background: rgba(255, 255, 255, 0.8);
   height: 86px;
+  @include border(none, 5px, none, none, none);
 }
 
 .nav-section-form-elements {
   @include flex(row, center, center);
-  @include border(none, 10px);
+  @include border(none, 10px, none, none, none);
+  @include padding(25px, 25px, 10px, 10px);
   gap: 30px;
-  padding: 15px;
-}
-/*
-.nav-section-form-elements .looking-for {
-  padding: 10px 22px;
-  @include margin(30px, 30px, 0, 0);
-}
-.trend-search {
-  @include flex(row, center, center);
 }
 
-.nav-section-form-elements select,
-.nav-section-form-elements .location {
-  padding: 10px 20px;
-  @include margin(30px, 30px, 0, 0);
-}
-
-*/
 .nav-section-form-elements button {
   background-color: $bgColorBlue;
-  @include border(none, 4px);
-  padding: 10px 40px;
+  @include border(none, 4px, none, none, none);
+  @include padding(40px, 40px, 10px, 10px);
+}
+.nav-section-form-elements .location,
+.nav-section-form-elements select {
+  @include padding(10px, 20px, 10px, 10px);
+  width: 100%;
+  color: $bgColorLightGray;
 }
 
-h1 {
+.nav-section-form-elements .looking-for {
+  @include padding(10px, 30px, 10px, 10px);
+}
+
+option {
+  color: black;
+}
+.trend-search {
+  @include flex(row, left, center);
+  gap: 5px;
+  @include margin(0px, 0, 15px, 0);
+}
+.trend-search a {
+  @include border(solid, 1px, #ffff, rgba(255, 255, 255, 0.2), 1px);
+  @include padding(2px, 2px, 2px, 2px);
+  font-size: $fontSize16;
+}
+.features-ads-section {
+  @include padding(300px, 300px, 100px, 100px);
+  @include flex(column, center, left);
+  gap: 20px;
+  background-color: #f8f9fa;
+}
+
+.features-ads-card-section {
+  @include flex(row, center, center);
+  gap: 30px;
+}
+.features-ads-card {
+  @include flex(column, left, center);
+  @include border(none, none, none, #fff, none);
+  width: 250px;
+  height: 300px;
+}
+.content a img {
+  height: 25px;
+}
+
+.content span img {
+  height: 15px;
+}
+.features-img img,
+.trending-today-img img {
+  width: 100%;
+  height: 100%;
+}
+.content {
+  @include flex(column, center, left);
+  gap: 20px;
+}
+.content-name {
+  @include flex(row, space-between, center);
+}
+.content-name p {
+  @include border(none, 50px, none, #e9ecef, none);
+}
+
+.content-info {
+  @include flex(column, space-between, left);
+  gap: 5px;
+}
+.star-review {
+  @include flex(row, space-between, center);
+}
+.popular-categories {
+  @include flex(column, center, center);
+  @include padding(0, 0, 100px, 100px);
+  gap: 50px;
+}
+.popular-categories-title {
+  @include flex(column, center, center);
+  gap: 15px;
+}
+.popular-categories-icons {
+  @include flex(row, center, center);
+  gap: 80px;
+}
+.icons {
+  @include flex(column, center, center);
+  gap: 10px;
+  font-size: 15px;
+  color: #666666;
+}
+.icons span {
+  @include border(none, 50px, none, #e9ecef, none);
+  @include padding(15px, 15px, 5px, 5px);
+  font-size: 14px;
+}
+.trending-today {
+  background-color: #f8f9fa;
+  @include padding(300px, 300px, 100px, 100px);
+  @include flex(column, center, left);
+  gap: 20px;
+}
+
+.trending-today-cards-section {
+  display: grid;
+  grid-template-columns: repeat(2, 540px);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  gap: 40px;
+}
+.trending-today-cards {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+
+  @include border(none, 10px, none, #fff, none);
+}
+.trending-today-img img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.trending-today-img h1 {
   font-size: 48px;
   font-weight: 400;
 }
+.trending-today .content {
+  @include padding(20px, 10px, 10px, 10px);
+}
 
-ul,
-ol {
+.testimonials {
+  @include padding(300px, 300px, 100px, 100px);
+  @include flex(column, center, center);
+  gap: 30px;
+}
+.testimonials-info {
+  @include flex(column, center, center);
+  height: 330px;
+  gap: 20px;
+}
+.testimonials-info img {
+  height: 100px;
+  border-radius: 50%;
+}
+.testimonials-info p {
+  line-height: 1.7;
+  color: $bgColorGray;
+  font-size: 24px;
+}
+
+ul {
   list-style: none;
 }
 
 a {
   text-decoration: none;
 }
+h2 {
+  color: #2f89fc;
+  font-size: $fontSize32;
+}
 
-/* Position */
-.relative {
-  position: relative;
+.line {
+  width: 35%;
+  border-color: #2f89fc;
+  margin-left: 70px;
+  border-width: 2px;
 }
-.absolute {
-  position: absolute;
-}
+
 /* Text */
 .text-center {
   text-align: center;
@@ -128,10 +263,6 @@ a {
   flex-wrap: wrap;
 }
 
-.bold {
-  font-weight: bold;
-}
-/* Cursor */
 .pointer {
   cursor: pointer;
 }
