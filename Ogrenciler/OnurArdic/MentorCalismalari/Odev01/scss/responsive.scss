@@ -160,3 +160,18 @@ $x100: 80px;
     }
   }
 }
+
+// !-----------------------APP--------------------------
+.app {
+  .app-item-wrapper {
+    .app-item-img {
+      flex-direction: column;
+      img {
+        animation: none;
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+}

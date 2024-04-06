@@ -116,5 +116,14 @@
     width: 90%;
   }
 }
+.app .app-item-wrapper .app-item-img {
+  flex-direction: column;
+}
+.app .app-item-wrapper .app-item-img img {
+  animation: none;
+}
+.app .app-item-wrapper .app-item-img img:nth-child(2) {
+  display: none;
+}
 
 /*# sourceMappingURL=responsive.css.map */
