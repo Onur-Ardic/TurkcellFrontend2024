@@ -260,8 +260,11 @@ header img {
     flex-direction: column;
   }
 
-  .right .img-circle,
-  .right .body-circle {
+  .right .img-circle {
+    visibility: hidden;
+  }
+
+  .body-circle {
     visibility: hidden;
   }
 
