@@ -10,29 +10,24 @@
 body {
   height: 113vh;
   background: linear-gradient(to right, #e5fff9 40%, #b8e4da 40%);
+  overflow-x: hidden;
 }
 
 $fs-120: 120px;
 $fs-90: 90px;
 $fs-60: 60px;
-$fs-48: 48px;
-$fs-42: 42px;
 $fs-32: 32px;
 $fs-22: 22px;
 $fs-18: 18px;
 $fs-16: 16px;
 $fs-12: 12px;
 
-$fw-800: 800;
 $fw-700: 700;
 $fw-600: 600;
 $fw-400: 400;
 
 $line-h-120: 120px;
 $line-h-110: 110px;
-$line-h-94-5: 94.5px;
-$line-h-70: 70px;
-$line-h-54-6: 54.6px;
 $line-h-35: 35px;
 $line-h-30: 30px;
 $line-h-19: 19px;
@@ -42,6 +37,7 @@ $color-2: #084b4f;
 $color-3: #fff;
 
 $letter-spacing-4: 4px;
+$letter-spacing-5: 5px;
 $letter-spacing-30: 30px;
 
 @mixin myMixin($font-size, $font-weight, $line-height, $color, $letter-spacing) {
@@ -137,6 +133,7 @@ header img {
 
 .left .last-div input:focus {
   border-color: $color-1;
+  box-shadow: none;
 }
 
 .left .last-div button {
@@ -150,5 +147,191 @@ header img {
   &:hover {
     cursor: pointer;
     background-color: $color-2;
+  }
+}
+
+.right {
+  position: relative;
+}
+
+.right .img-circle {
+  width: 345.6px;
+  height: 345.6px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 3px solid #fafafa;
+  border-radius: 50%;
+  animation: img-circle-animation 8s linear infinite;
+}
+
+@keyframes img-circle-animation {
+  0% {
+    top: -20px;
+    left: -20px;
+  }
+
+  50% {
+    top: -20px;
+    left: 20px;
+    border-color: $color-1;
+  }
+
+  100% {
+    top: -20px;
+    left: -20px;
+  }
+}
+
+.body-circle {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  right: -210px;
+  border: 1px solid $color-3;
+  border-radius: 50%;
+  animation: body-circle-animation 3s linear infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes body-circle-animation {
+  from {
+    top: 0;
+  }
+
+  to {
+    top: 70px;
+    border-color: $color-1;
+  }
+}
+
+.right img {
+  border-radius: 50%;
+  width: 345.6px;
+  height: 345.6px;
+  margin-bottom: 32px;
+
+  &:hover {
+    filter: grayscale(20%);
+  }
+}
+
+.right h4 {
+  @include myMixin($fs-32, $fw-600, $line-h-30, $color-2, 0);
+}
+
+.right .web-developer {
+  @include myMixin($fs-16, $fw-400, $line-h-30, $color-2, $letter-spacing-5);
+  margin-bottom: 20px;
+}
+
+.right .summary {
+  width: 345.6px;
+  height: 165px;
+  margin-bottom: 24px;
+  @extend .web-developer;
+  letter-spacing: 0;
+}
+
+.right .socials {
+  width: 345.6px;
+  height: 58px;
+  margin-bottom: 20px;
+}
+
+.right .socials a {
+  text-decoration: none;
+  @include myMixin($fs-12, $fw-700, $line-h-30, $color-2, $letter-spacing-5);
+}
+
+@media (max-width: 1250px) {
+  body {
+    background: linear-gradient(to top, #e5fff9 5%, #b8e4da 50%);
+    background-repeat: no-repeat;
+  }
+
+  .left h1 {
+    font-size: $fs-90;
+    line-height: $line-h-110;
+  }
+
+  section>div {
+    flex-direction: column;
+  }
+
+  .right .img-circle,
+  .right .body-circle {
+    visibility: hidden;
+  }
+
+  .left .last-div {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .left .last-div img {
+    width: 16px;
+    height: 32px;
+  }
+
+  .left .last-div input {
+    font-size: $fs-16;
+    width: 360px;
+  }
+
+  .left .last-div input::placeholder {
+    font-size: $fs-16;
+  }
+
+  .left .last-div button {
+    font-size: $fs-12;
+  }
+}
+
+@media (max-width: 768px) {
+  .left {
+    text-align: center;
+  }
+
+  .left h1 {
+    font-size: $fs-60;
+    letter-spacing: $letter-spacing-4;
+  }
+
+  .left .coming-soon {
+    font-size: $fs-22;
+    line-height: $line-h-19;
+    letter-spacing: $letter-spacing-4;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    width: 90%;
+  }
+
+  .left .last-div {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .left .last-div img {
+    visibility: hidden;
+  }
+
+  .left .last-div input {
+    width: none;
+    margin-bottom: 30px;
   }
 }
