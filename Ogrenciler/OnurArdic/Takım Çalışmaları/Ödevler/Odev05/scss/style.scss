@@ -1,4 +1,5 @@
 @import "./base.scss", "./variables.scss";
+
 .header {
   background: url("https://preview.colorlib.com/theme/directoryads/images/hero_2.jpg.webp");
   height: 100vh;
@@ -23,6 +24,13 @@
     position: relative;
     z-index: 2;
 
+    #checkbox {
+      display: none;
+    }
+
+    .check-btn {
+      display: none;
+    }
     .logo {
       a {
         color: #fff;
@@ -60,13 +68,13 @@
 
 //!--------------------Hero-----------------------
 .hero-content {
-  position: absolute;
-  top: 360px;
-  left: 30%;
+  position: relative;
+  @include flexible(flex, center, center, 0);
+  flex-direction: column;
+  margin-top: 340px;
   z-index: 2;
-
   .hero-title {
-    @include textFont(start, $fontSizeExtraExtraLarge, $colorWhite);
+    @include textFont(center, $fontSizeExtraExtraLarge, $colorWhite);
     font-weight: 500;
   }
 
@@ -74,5 +82,73 @@
     text-align: center;
     color: #fff;
     font-size: $fontSizeMedium;
+  }
+
+  .hero-content-input {
+    margin-top: $x60;
+    @include flexible(flex, space-evenly, center, 1rem);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    height: 5.37rem;
+    border-radius: 10px;
+    padding: $x20;
+    width: 100%;
+  }
+
+  .input-hero {
+    position: relative;
+    input {
+      @include inputHero;
+      width: 300px;
+    }
+
+    &:first-child {
+      input:first-child {
+        width: 400px;
+      }
+    }
+    i {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+    }
+
+    select {
+      @include inputHero;
+    }
+  }
+
+  .hero-input {
+    button {
+      @include btn(10px 30px, $primary, $colorWhite, 153px, 46px);
+      border-radius: 7px;
+      border: none;
+    }
+  }
+}
+
+.trending-search {
+  margin: $defaultSize;
+  @include flexible(flex, start !important, start, 10px);
+  position: relative;
+  z-index: 2;
+  h2 {
+    @include textFont(start, $defaultSize, $colorWhite);
+    font-weight: 500;
+  }
+
+  a {
+    padding: 4px 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #fff;
+    border-radius: 7px;
+    font-size: $fontExtraSmall;
+    color: #fff;
+    transition: 0.4s ease;
+
+    &:hover {
+      background-color: #fff;
+      color: blue;
+    }
   }
 }

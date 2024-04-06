@@ -51,11 +51,12 @@ $x30: 30px;
 %icons {
   width: 40px;
   height: 40px;
-  background-color: #fafafa;
+  background-color: #e8f1f5;
   border-radius: 50%;
   position: absolute;
   right: 0;
   top: -40px;
+  color: var(--blue-color);
 }
 
 .navbar {
@@ -361,6 +362,380 @@ $x30: 30px;
 
     .features-item-mid .mid-img img {
       width: 320px;
+    }
+  }
+}
+
+// ! -----------------Plans---------------------
+.testimonial {
+  margin-top: $x100;
+  font-family: "poppins", sans-serif;
+  background-color: var(--white-color);
+  padding-bottom: $x100;
+
+  .radio-btn {
+    text-align: center;
+
+    check-1 {
+      &:checked ~ #item-1 {
+        display: none;
+      }
+    }
+  }
+  .testimonial-wrapper {
+    @include flexible(flex, space-between, center, 1rem);
+
+    .testimonial-left {
+      width: 700px;
+      .testimonial-span {
+        @include textColor(var(--blue-color), 1rem);
+        font-weight: 600;
+      }
+
+      .testimonial-title {
+        h4 {
+          @include textColor(var(--text-color), 2rem);
+          font-weight: 600;
+        }
+
+        p {
+          opacity: 0.5;
+          margin-top: $x30;
+        }
+
+        button {
+          @include btn(
+            10px 20px,
+            var(--blue-color),
+            var(--white-color),
+            50%,
+            40px
+          );
+          background: rgb(70, 165, 189);
+          background: linear-gradient(
+            90deg,
+            rgba(70, 165, 189, 1) 21%,
+            rgba(17, 106, 141, 1) 70%
+          );
+          margin-top: $x30;
+          border: none;
+          border-radius: 4px;
+        }
+      }
+    }
+
+    #btn-1:checked ~ .testimonial-right .testimonial-wrapper-card:nth-child(1) {
+      display: none;
+      opacity: 1;
+    }
+
+    #btn-2:checked ~ .testimonial-right .testimonial-wrapper-card:nth-child(2) {
+      display: none;
+      opacity: 1;
+    }
+
+    @keyframes swap-out {
+      0% {
+        transform: translatex(0);
+        opacity: 1;
+      }
+
+      50% {
+        transform: translatex(50%);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translatex(100%);
+      }
+    }
+
+    .testimonial-right {
+      .testimonial-wrapper-card {
+        @include flexible(flex, space-between, center, 1rem);
+      }
+      margin-top: $x30;
+      background-color: #fff;
+      border-radius: 0px 10px 10px 0px;
+
+      .img img {
+        width: 300px;
+        height: 350px;
+        border-radius: 10px 0 0 10px;
+      }
+
+      .right-content {
+        .user-info {
+          line-height: 30px;
+          @include flexible(flex, center, center, 0.5rem);
+          margin-top: $x30;
+
+          .user-img img {
+            border-radius: 50%;
+          }
+
+          .user-info-name {
+            .user-name {
+              h4 {
+                font-size: 0.8rem;
+                font-weight: 400;
+                color: var(--text-color);
+              }
+
+              span {
+                color: #ccc;
+              }
+            }
+          }
+
+          .history {
+            color: #ccc;
+            font-size: 10px;
+          }
+        }
+
+        .right-comment {
+          line-height: 2rem;
+          h4 {
+            font-weight: 600;
+            font-size: 1.4rem;
+            color: var(--text-color);
+          }
+
+          p {
+            font-size: 0.9rem;
+            opacity: 0.5;
+            margin-top: $x30;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ! -----------------Plans---------------------
+.plans {
+  font-family: "poppins", sans-serif;
+  margin-top: $x30;
+  margin-bottom: $x100;
+  .plans-wrapper {
+    .plans-content {
+      text-align: center;
+
+      h5 {
+        @include textColor(var(--blue-color), 20px);
+        text-align: center;
+      }
+
+      h2 {
+        @extend h5;
+        font-size: 40px;
+        color: var(--text-color);
+      }
+
+      p {
+        text-align: center;
+        opacity: 0.4;
+      }
+    }
+
+    .plans-card-wrapper {
+      margin-top: $x100;
+      @include flexible(flex, space-around, center, 2rem);
+
+      .plans-card {
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+        transition: all 0.3s ease-in-out;
+        line-height: 1.5rem;
+
+        #twice-card {
+          background-color: #d3e3ed;
+
+          .price {
+            color: var(--text-color);
+          }
+
+          p {
+            opacity: 1;
+            color: #000;
+          }
+        }
+
+        #th-card {
+          @extend #twice-card;
+        }
+
+        .plans-card-top {
+          background-color: #183b56;
+          border-radius: 10px 10px 0 0;
+          border-bottom: 6px solid #ccc;
+
+          .second-card-title {
+            background-color: var(--blue-color);
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+            padding: 10px;
+          }
+
+          .plans-card-top-content {
+            padding: 1.4rem;
+            line-height: 30px;
+
+            .card-plan-name {
+              background-color: #0076a3;
+              width: max-content;
+              text-align: center;
+              border-radius: 7px;
+              color: #fff;
+              margin-bottom: 10px;
+              font-size: 12px;
+              padding: 3px;
+            }
+
+            .price {
+              color: #fff;
+              font-size: 2rem;
+              font-weight: bold;
+
+              .money {
+                font-size: 1.5rem;
+                font-weight: 600;
+              }
+              span {
+                font-size: 0.8rem;
+                font-weight: 400;
+              }
+            }
+
+            p {
+              color: #fff;
+              opacity: 0.5;
+            }
+          }
+        }
+
+        .plans-card-bottom {
+          padding: 1.4rem;
+          line-height: 30px;
+          border-radius: 0 0 10px 10px;
+
+          li {
+            @include flexible(flex, flex-start, center, 0.4rem);
+            line-height: 50px;
+          }
+
+          .first-card-list {
+            i {
+              color: var(--blue-color);
+            }
+            &:nth-child(n + 4) {
+              i {
+                color: red;
+              }
+            }
+          }
+
+          .second-card-list {
+            i {
+              color: var(--blue-color);
+            }
+
+            &:nth-child(n + 5) {
+              i {
+                color: red;
+              }
+            }
+          }
+
+          .thirth-card-list {
+            i {
+              color: var(--blue-color);
+            }
+
+            &:nth-child(n + 5) {
+              i {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ----------------app--------------------------
+.app {
+  background-color: #e8f1f5;
+  font-family: "Poppins", sans-serif;
+  padding-top: $x100;
+
+  .app-content {
+    h5 {
+      @include textColor(var(--blue-color), 20px);
+      text-align: center;
+    }
+
+    h2 {
+      @extend h5;
+      font-size: 40px;
+      color: var(--text-color);
+    }
+
+    p {
+      text-align: center;
+      opacity: 0.4;
+    }
+  }
+
+  .app-item-wrapper {
+    margin-top: $x30;
+    .app-item-img {
+      @include flexible(flex, center, center, 1rem);
+
+      img {
+        width: 202px;
+        animation: slider 8s ease-in-out infinite;
+
+        &:nth-child(2) {
+          width: 250px;
+          animation: none;
+          position: relative;
+          z-index: 1;
+        }
+      }
+
+      @keyframes slider {
+        0% {
+          transform: translateX(0);
+          opacity: 0.1;
+        }
+
+        30% {
+          transform: translateX(120%);
+          opacity: 1;
+        }
+
+        31% {
+          transform: translateX(120%);
+        }
+
+        50% {
+          opacity: 0.2;
+        }
+
+        80% {
+          transform: translateX(-120%);
+          opacity: 1;
+        }
+
+        100% {
+          transform: translateX(0);
+          opacity: 0.1;
+        }
+      }
     }
   }
 }

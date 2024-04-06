@@ -1,0 +1,32 @@
+.container {
+  border: 10px solid black;
+  display: flex;
+  height: 600px;
+}
+.container:hover {
+  border: 10px solid orange;
+}
+.container .box1, .container .box3 {
+  background-color: red;
+  width: 150px;
+  height: 100px;
+}
+.container .box2 {
+  background-color: navy;
+  width: 150px;
+  height: 300px;
+}
+.container .box3 {
+  width: 300px;
+}
+.container .box4 {
+  background-color: green;
+  width: 150px;
+  height: 500px;
+}
+.container .box4.deneme {
+  background-color: sienna;
+  border-top-right-radius: 10%;
+}
+
+/*# sourceMappingURL=scss-style.css.map */

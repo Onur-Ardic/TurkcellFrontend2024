@@ -63,7 +63,6 @@
   }
   .features .features-items .features-item-left {
     text-align: center;
-    margin-top: 80px;
   }
   .features .features-items .features-item-left .features-item .features-icon {
     left: 43%;
@@ -75,6 +74,56 @@
   .features .features-items .features-item-right .features-item .features-icon {
     left: 43%;
   }
+  .testimonial {
+    height: max-content;
+  }
+  .testimonial .testimonial-wrapper {
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+  .testimonial .testimonial-wrapper .testimonial-left {
+    width: 90%;
+  }
+  .testimonial .testimonial-right {
+    margin-top: 80px;
+  }
+  .testimonial .testimonial-right .testimonial-wrapper-card {
+    background-color: #fcfcfc;
+    flex-direction: column;
+    width: 90%;
+    margin: 70px auto;
+    -webkit-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+  }
+  .testimonial .testimonial-right .testimonial-wrapper-card .img {
+    width: 100%;
+  }
+  .testimonial .testimonial-right .testimonial-wrapper-card .img img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .testimonial .testimonial-right .right-content {
+    text-align: center;
+    padding: 1rem;
+  }
+  .plans .plans-card-wrapper {
+    flex-wrap: wrap;
+  }
+  .plans .plans-card {
+    width: 90%;
+  }
+}
+.app .app-item-wrapper .app-item-img {
+  flex-direction: column;
+}
+.app .app-item-wrapper .app-item-img img {
+  animation: none;
+}
+.app .app-item-wrapper .app-item-img img:nth-child(2) {
+  display: none;
 }
 
 /*# sourceMappingURL=responsive.css.map */
