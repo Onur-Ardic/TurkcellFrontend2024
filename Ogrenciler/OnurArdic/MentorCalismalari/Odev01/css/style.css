@@ -629,4 +629,59 @@
   }
 }
 
+.our-team {
+  font-family: "poppins", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.our-team h5, .our-team h2, .our-team .what-we-do .we-do-wrapper .we-do-content h2, .what-we-do .we-do-wrapper .we-do-content .our-team h2, .our-team .features .features-wrapper .features-content h2, .features .features-wrapper .features-content .our-team h2, .our-team .plans .plans-wrapper .plans-content h2, .plans .plans-wrapper .plans-content .our-team h2, .our-team .app .app-content h2, .app .app-content .our-team h2 {
+  color: var(--blue-color);
+  font-size: 20px;
+  text-align: center;
+}
+.our-team h2 {
+  font-size: 40px;
+  color: var(--text-color);
+}
+.our-team p {
+  text-align: center;
+  opacity: 0.4;
+}
+.our-team .our-team-card {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+.our-team .our-team-card .team-card {
+  position: relative;
+}
+.our-team .our-team-card .team-card .person-img img {
+  width: 200px;
+  border-radius: 4px;
+}
+.our-team .our-team-card .team-card .person-name {
+  position: absolute;
+  left: -120px;
+  top: 95px;
+}
+.our-team .our-team-card .team-card .person-name h4 {
+  transform: rotate(0.75turn);
+}
+.our-team .our-team-card .team-card .person-name span {
+  opacity: 0.5;
+  font-weight: 100;
+}
+.our-team .our-team-card .team-card .person-social-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.our-team .our-team-card .team-card .person-social-info a {
+  color: #000;
+  opacity: 0.5;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -115,15 +115,18 @@
   .plans .plans-card {
     width: 90%;
   }
-}
-.app .app-item-wrapper .app-item-img {
-  flex-direction: column;
-}
-.app .app-item-wrapper .app-item-img img {
-  animation: none;
-}
-.app .app-item-wrapper .app-item-img img:nth-child(2) {
-  display: none;
+  .app .app-item-wrapper .app-item-img {
+    flex-direction: column;
+  }
+  .app .app-item-wrapper .app-item-img img {
+    animation: none;
+  }
+  .app .app-item-wrapper .app-item-img img:nth-child(2) {
+    display: none;
+  }
+  .our-team .our-team-card {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */

@@ -159,19 +159,26 @@ $x100: 80px;
       width: 90%;
     }
   }
-}
+  // !-----------------------APP--------------------------
 
-// !-----------------------APP--------------------------
-.app {
-  .app-item-wrapper {
-    .app-item-img {
-      flex-direction: column;
-      img {
-        animation: none;
-        &:nth-child(2) {
-          display: none;
+  .app {
+    .app-item-wrapper {
+      .app-item-img {
+        flex-direction: column;
+        img {
+          animation: none;
+          &:nth-child(2) {
+            display: none;
+          }
         }
       }
     }
   }
+  .our-team {
+    .our-team-card {
+      flex-direction: column;
+    }
+  }
 }
+
+// !---------------------------Our Team-----------------------

@@ -739,3 +739,62 @@ $x30: 30px;
     }
   }
 }
+
+// ! ------------------------Our Team------------------------
+.our-team {
+  font-family: "poppins", sans-serif;
+  margin-top: $x30;
+  margin-bottom: $x100;
+
+  h5 {
+    @include textColor(var(--blue-color), 20px);
+    text-align: center;
+  }
+
+  h2 {
+    @extend h5;
+    font-size: 40px;
+    color: var(--text-color);
+  }
+
+  p {
+    text-align: center;
+    opacity: 0.4;
+  }
+
+  .our-team-card {
+    margin-top: $x30;
+    @include flexible(flex, space-between, center, 1.5rem);
+
+    .team-card {
+      position: relative;
+      .person-img img {
+        width: 200px;
+        border-radius: 4px;
+      }
+
+      .person-name {
+        position: absolute;
+        left: -120px;
+        top: 95px;
+        h4 {
+          transform: rotate(0.75turn);
+        }
+
+        span {
+          opacity: 0.5;
+          font-weight: 100;
+        }
+      }
+
+      .person-social-info {
+        @include flexible(flex, flex-start, center, 1rem);
+
+        a {
+          color: #000;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
