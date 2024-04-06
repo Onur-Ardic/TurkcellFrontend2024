@@ -148,4 +148,15 @@ $x100: 80px;
       }
     }
   }
+
+  //! -----------------------Plans--------------------
+  .plans {
+    .plans-card-wrapper {
+      flex-wrap: wrap;
+    }
+
+    .plans-card {
+      width: 90%;
+    }
+  }
 }

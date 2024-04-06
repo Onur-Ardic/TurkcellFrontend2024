@@ -512,3 +512,155 @@ $x30: 30px;
     }
   }
 }
+
+// ! -----------------Plans---------------------
+.plans {
+  font-family: "poppins", sans-serif;
+  margin-top: $x30;
+  .plans-wrapper {
+    .plans-content {
+      text-align: center;
+
+      h5 {
+        @include textColor(var(--blue-color), 20px);
+        text-align: center;
+      }
+
+      h2 {
+        @extend h5;
+        font-size: 40px;
+        color: var(--text-color);
+      }
+
+      p {
+        text-align: center;
+        opacity: 0.4;
+      }
+    }
+
+    .plans-card-wrapper {
+      margin-top: $x100;
+      @include flexible(flex, space-around, center, 2rem);
+
+      .plans-card {
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+        transition: all 0.3s ease-in-out;
+        line-height: 1.5rem;
+
+        #twice-card {
+          background-color: #d3e3ed;
+
+          .price {
+            color: var(--text-color);
+          }
+
+          p {
+            opacity: 1;
+            color: #000;
+          }
+        }
+
+        #th-card {
+          @extend #twice-card;
+        }
+
+        .plans-card-top {
+          background-color: #183b56;
+          border-radius: 10px 10px 0 0;
+          border-bottom: 6px solid #ccc;
+
+          .second-card-title {
+            background-color: var(--blue-color);
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+            padding: 10px;
+          }
+
+          .plans-card-top-content {
+            padding: 1.4rem;
+            line-height: 30px;
+
+            .card-plan-name {
+              background-color: #0076a3;
+              width: max-content;
+              text-align: center;
+              border-radius: 7px;
+              color: #fff;
+              margin-bottom: 10px;
+              font-size: 12px;
+              padding: 3px;
+            }
+
+            .price {
+              color: #fff;
+              font-size: 2rem;
+              font-weight: bold;
+
+              .money {
+                font-size: 1.5rem;
+                font-weight: 600;
+              }
+              span {
+                font-size: 0.8rem;
+                font-weight: 400;
+              }
+            }
+
+            p {
+              color: #fff;
+              opacity: 0.5;
+            }
+          }
+        }
+
+        .plans-card-bottom {
+          padding: 1.4rem;
+          line-height: 30px;
+          border-radius: 0 0 10px 10px;
+
+          li {
+            @include flexible(flex, flex-start, center, 0.4rem);
+            line-height: 50px;
+          }
+
+          .first-card-list {
+            i {
+              color: var(--blue-color);
+            }
+            &:nth-child(n + 4) {
+              i {
+                color: red;
+              }
+            }
+          }
+
+          .second-card-list {
+            i {
+              color: var(--blue-color);
+            }
+
+            &:nth-child(n + 5) {
+              i {
+                color: red;
+              }
+            }
+          }
+
+          .thirth-card-list {
+            i {
+              color: var(--blue-color);
+            }
+
+            &:nth-child(n + 5) {
+              i {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

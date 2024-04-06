@@ -449,4 +449,121 @@
   margin-top: 30px;
 }
 
+.plans {
+  font-family: "poppins", sans-serif;
+  margin-top: 30px;
+}
+.plans .plans-wrapper .plans-content {
+  text-align: center;
+}
+.plans .plans-wrapper .plans-content h5, .plans .plans-wrapper .plans-content h2 {
+  color: var(--blue-color);
+  font-size: 20px;
+  text-align: center;
+}
+.plans .plans-wrapper .plans-content h2 {
+  font-size: 40px;
+  color: var(--text-color);
+}
+.plans .plans-wrapper .plans-content p {
+  text-align: center;
+  opacity: 0.4;
+}
+.plans .plans-wrapper .plans-card-wrapper {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-in-out;
+  line-height: 1.5rem;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card #twice-card, .plans .plans-wrapper .plans-card-wrapper .plans-card #th-card {
+  background-color: #d3e3ed;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card #twice-card .price, .plans .plans-wrapper .plans-card-wrapper .plans-card #th-card .price {
+  color: var(--text-color);
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card #twice-card p, .plans .plans-wrapper .plans-card-wrapper .plans-card #th-card p {
+  opacity: 1;
+  color: #000;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-top {
+  background-color: #183b56;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 6px solid #ccc;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-top .second-card-title {
+  background-color: var(--blue-color);
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  padding: 10px;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-top .plans-card-top-content {
+  padding: 1.4rem;
+  line-height: 30px;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-top .plans-card-top-content .card-plan-name {
+  background-color: #0076a3;
+  width: max-content;
+  text-align: center;
+  border-radius: 7px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 12px;
+  padding: 3px;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-top .plans-card-top-content .price {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-top .plans-card-top-content .price .money {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-top .plans-card-top-content .price span {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-top .plans-card-top-content p {
+  color: #fff;
+  opacity: 0.5;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-bottom {
+  padding: 1.4rem;
+  line-height: 30px;
+  border-radius: 0 0 10px 10px;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-bottom li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.4rem;
+  line-height: 50px;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-bottom .first-card-list i {
+  color: var(--blue-color);
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-bottom .first-card-list:nth-child(n+4) i {
+  color: red;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-bottom .second-card-list i {
+  color: var(--blue-color);
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-bottom .second-card-list:nth-child(n+5) i {
+  color: red;
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-bottom .thirth-card-list i {
+  color: var(--blue-color);
+}
+.plans .plans-wrapper .plans-card-wrapper .plans-card .plans-card-bottom .thirth-card-list:nth-child(n+5) i {
+  color: red;
+}
+
 /*# sourceMappingURL=style.css.map */
