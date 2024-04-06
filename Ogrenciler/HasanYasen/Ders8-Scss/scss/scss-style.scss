@@ -1,0 +1,35 @@
+$bgColor: red;
+$x150: 150px;
+$y100: 100px;
+
+@mixin boxMixin($color, $w, $h) {
+  background-color: $color;
+  width: $w;
+  height: $h;
+}
+
+.container {
+  border: 10px solid black;
+  display: flex;
+  height: 600px;
+  &:hover {
+    border: 10px solid orange;
+  }
+  .box1 {
+    @include boxMixin($bgColor, $x150, $y100);
+  }
+  .box2 {
+    @include boxMixin(navy, $x150, $y100 * 3);
+  }
+  .box3 {
+    @extend .box1;
+    width: $x150 * 2;
+  }
+  .box4 {
+    @include boxMixin(green, $x150, $y100 * 5);
+    &.deneme {
+      background-color: sienna;
+      border-top-right-radius: 10%;
+    }
+  }
+}

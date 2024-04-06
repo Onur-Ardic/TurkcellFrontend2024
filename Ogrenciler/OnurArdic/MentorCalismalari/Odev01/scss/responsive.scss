@@ -106,4 +106,72 @@ $x100: 80px;
       }
     }
   }
+
+  //! -----------------Testimonials------------------------
+  .testimonial {
+    height: max-content;
+    .testimonial-wrapper {
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: center;
+
+      .testimonial-left {
+        width: 90%;
+      }
+    }
+
+    .testimonial-right {
+      margin-top: $x100;
+      .testimonial-wrapper-card {
+        background-color: #fcfcfc;
+        flex-direction: column;
+        width: 90%;
+        margin: 70px auto;
+        -webkit-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -1px 10px 27px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 10px;
+
+        .img {
+          width: 100%;
+
+          img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+          }
+        }
+      }
+
+      .right-content {
+        text-align: center;
+        padding: 1rem;
+      }
+    }
+  }
+
+  //! -----------------------Plans--------------------
+  .plans {
+    .plans-card-wrapper {
+      flex-wrap: wrap;
+    }
+
+    .plans-card {
+      width: 90%;
+    }
+  }
+}
+
+// !-----------------------APP--------------------------
+.app {
+  .app-item-wrapper {
+    .app-item-img {
+      flex-direction: column;
+      img {
+        animation: none;
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
 }
