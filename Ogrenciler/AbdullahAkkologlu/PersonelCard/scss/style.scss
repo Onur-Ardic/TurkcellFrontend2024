@@ -2,16 +2,34 @@ $main-color: #0c7f86;
 $main-body-color: #084b4f;
 $main-font: "Poppins", sans-serif;
 $font-size: 16px;
+$letter-spacing: 5px;
+$line-height: 30px;
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: $main-font;
   color: $main-color;
-  line-height: 30px;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
 }
 a {
   text-decoration: none;
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.height-100 {
+  height: 100%;
 }
 @mixin circle($width, $height, $border) {
   border-radius: 50%;
@@ -24,19 +42,15 @@ a {
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
     gap: 100px;
     height: 100%;
     .container-left {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       height: 100%;
       gap: 50px;
       flex: 2;
       h1 {
         font-size: $font-size * 7.5;
-        line-height: 120px;
+        line-height: $line-height * 4;
       }
       .wave {
         background-image: url("../images/wavy-shape.png");
@@ -50,24 +64,22 @@ a {
         color: $main-color;
         font-size: $font-size * 2;
         font-weight: 700;
-        line-height: 35px;
-        letter-spacing: 30px;
+        line-height: $line-height;
+        letter-spacing: $letter-spacing * 2;
       }
       form {
-        display: flex;
-        align-items: center;
         justify-content: space-between;
         gap: 20px;
         input {
           flex-grow: 1;
-          padding: 25px 24px;
+          padding: 20px 24px;
           border-radius: 10px;
           border: none;
           box-shadow: 0px 0px 30px 7px #0c7f8640;
           font-size: $font-size * 1.125;
           &:focus {
             outline: none;
-            border: 1px solid #084b4f;
+            border: 1px solid $main-body-color;
           }
         }
         button {
@@ -75,8 +87,7 @@ a {
           border-radius: 10px;
           font-size: $font-size;
           font-weight: 600;
-          line-height: 19px;
-          letter-spacing: 4px;
+          line-height: $line-height * 0.7;
           background-color: $main-color;
           color: #fff;
           border: none;
@@ -88,18 +99,15 @@ a {
       }
     }
     .container-right {
-      display: flex;
-      flex-direction: column;
       flex: 1;
       height: 100%;
-      justify-content: center;
       gap: 30px;
       * {
         color: $main-body-color;
       }
       .profile-photo {
         position: relative;
-        width: 350px;
+        max-width: 350px;
         .circle {
           @include circle(350px, 350px, 2px);
           border: 2px solid;
@@ -112,13 +120,15 @@ a {
       h4 {
         font-size: $font-size * 2;
         font-weight: 600;
-        line-height: 30px;
+        line-height: $line-height;
       }
       span {
         font-size: $font-size;
         font-weight: 400;
-        line-height: 30px;
-        letter-spacing: 5px;
+        line-height: $line-height;
+      }
+      p {
+        letter-spacing: $letter-spacing * 0.2;
       }
       .links {
         display: flex;
@@ -127,21 +137,22 @@ a {
         a {
           font-size: $font-size * 0.75;
           font-weight: 800;
-          line-height: 30px;
-          letter-spacing: 5px;
+          line-height: $line-height;
           &:hover {
             color: $main-color;
           }
         }
       }
-      .big-circle {
-        @include circle(700px, 700px, 1px);
-        position: absolute;
-        z-index: -1;
-        animation: animasyon-deneme2 10s infinite ease-in-out;
-      }
     }
   }
+}
+.big-circle {
+  @include circle(700px, 700px, 1px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  animation: animasyon-deneme2 10s infinite ease-in-out;
 }
 .bg-shape1 {
   position: absolute;
@@ -161,7 +172,6 @@ a {
   background-color: #b8e4da;
   z-index: -2;
 }
-
 @keyframes wave-animation {
   0% {
     background-position-x: 0%;
@@ -196,5 +206,73 @@ a {
   100% {
     transform: translateY(-100px);
     border-color: white;
+  }
+}
+@media screen and (max-width: 1300px) {
+  body {
+    background-color: #e5fff9;
+    padding: 20px 0px;
+  }
+  .page {
+    .container {
+      flex-direction: column;
+      margin: 0 50px;
+      .container-left {
+        h1 {
+          font-size: $font-size * 5;
+        }
+        p {
+          font-size: $font-size * 1.5;
+        }
+      }
+      .container-right {
+        .profile-photo {
+          align-self: center;
+        }
+      }
+    }
+  }
+  .bg-shape1,
+  .bg-shape2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .page {
+    text-align: center;
+    .container {
+      .container-left {
+        gap: 20px;
+        h1 {
+          font-size: $font-size * 3;
+          line-height: $line-height * 2;
+        }
+        p {
+          font-size: $font-size * 1;
+        }
+        form {
+          flex-direction: column;
+          img {
+            display: none;
+          }
+          input {
+            width: 100%;
+          }
+          button {
+            width: 100%;
+          }
+        }
+      }
+      .container-right {
+        .links {
+          flex-direction: column;
+        }
+        .profile-photo {
+          .circle {
+            @include circle(300px, 300px, 2px);
+          }
+        }
+      }
+    }
   }
 }
