@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 113vh;
+  background: linear-gradient(to right, #e5fff9 40%, #b8e4da 40%);
+}
+
+.container {
+  width: 76%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.jc-sbetween {
+  justify-content: space-between;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+header {
+  padding-top: 60px;
+}
+
+header img {
+  width: 98px;
+  height: 56px;
+}
+
+.left h1 {
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 120px;
+  color: #0c7f86;
+  letter-spacing: -4px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.left .wavy-shape {
+  background-image: url("https://demo.cocobasic.com/seppo-html/demo-5/images/wavy-shape.png");
+  height: 20px;
+  margin: 25px 0;
+  background-size: 644px 20px;
+  background-repeat: repeat-x;
+  animation: wavy-shape-animation 15s linear infinite;
+}
+
+@keyframes wavy-shape-animation {
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position-x: 645px;
+  }
+}
+
+.left .coming-soon {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #0c7f86;
+  letter-spacing: 30px;
+  padding-top: 15px;
+}
+
+.left .last-div {
+  margin-top: 60px;
+}
+
+.left .last-div img {
+  width: 34px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.left .last-div input {
+  font-size: 18px;
+  padding: 20px 24px;
+  margin: 0 16px;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 7px rgba(12, 127, 134, 0.2509803922);
+  width: 450px;
+  transition: 0.5s ease;
+}
+
+.left .last-div input::placeholder {
+  font-size: 18px;
+  color: #0c7f86;
+}
+
+.left .last-div input:focus {
+  border-color: #0c7f86;
+}
+
+.left .last-div button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  color: #fff;
+  letter-spacing: 4px;
+  padding: 25px 24px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0c7f86;
+  transition: 0.5s ease;
+}
+
+.left .last-div button:hover {
+  cursor: pointer;
+  background-color: #084b4f;
+}
+
+/*# sourceMappingURL=style.css.map */
