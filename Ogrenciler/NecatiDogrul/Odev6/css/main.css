@@ -288,6 +288,54 @@ a.logo {
   color: #4d4d4d;
 }
 
+.newsletter {
+  background-color: #2f89fc;
+}
+.newsletter .container {
+  width: 70%;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.newsletter .container .newsletter-left {
+  color: white;
+}
+.newsletter .container .newsletter-left h2 {
+  font-size: 18px;
+  font-weight: 200;
+}
+.newsletter .container .newsletter-left p {
+  font-size: 16px;
+  font-weight: 100;
+  color: rgb(201, 201, 201);
+  line-height: 28px;
+}
+.newsletter .container .newsletter-right {
+  display: flex;
+}
+.newsletter .container .newsletter-right input {
+  width: 400px;
+  background-color: #2f89fc;
+  border-bottom: 1px solid white;
+}
+.newsletter .btn {
+  width: 103px;
+  height: 43px;
+  background-color: #F0F0F0;
+  border-radius: 0;
+  color: grey;
+}
+.newsletter .btn:hover {
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+::placeholder {
+  color: white;
+  font-style: italic;
+  font-size: 14px;
+}
+
 @media screen and (max-width: 1200px) {
   .hero .hero-form .form form {
     display: flex;
