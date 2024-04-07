@@ -29,6 +29,9 @@
   .hero {
     height: 100%;
   }
+  .hero .hero-wrapper .bg-line-second {
+    display: none;
+  }
   .hero .hero-wrapper .hero-content .hero-title h2 {
     font-size: 30px;
     line-height: 40px;
@@ -126,6 +129,29 @@
   }
   .our-team .our-team-card {
     flex-direction: column;
+  }
+  .section-cta {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .section-cta .section-cta-wrapper {
+    flex-direction: column;
+  }
+  .section-cta .section-cta-wrapper .section-cta-left {
+    padding: 1rem;
+  }
+  .section-cta .section-cta-wrapper .section-cta-right img {
+    width: 100%;
+  }
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .contact-bottom {
+    flex-direction: column;
+  }
+  .footer .footer-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 }
 
