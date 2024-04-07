@@ -166,7 +166,7 @@ a {
   cursor: pointer;
   flex: 1;
   height: 700px;
-  background-color: red;
+  background-color: whitesmoke;
 }
 .projects .box p {
   writing-mode: vertical-rl;
