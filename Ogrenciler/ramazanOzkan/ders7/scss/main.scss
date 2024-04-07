@@ -7,7 +7,6 @@ $x100: 100px;
   width: $width;
   height: $height;
 }
-
 .container {
   display: flex;
   &:hover {
@@ -28,5 +27,5 @@ $x100: 100px;
     &.deneme {
       background-color: blue;
     }
-  }
+  } 
 }
