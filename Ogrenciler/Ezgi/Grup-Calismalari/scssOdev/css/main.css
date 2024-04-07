@@ -52,7 +52,6 @@ ul li {
   background-size: cover;
   opacity: 1;
   transform: translate(0);
-  z-index: 2000;
 }
 .heroSection .bg-overlay {
   position: absolute;
@@ -62,6 +61,10 @@ ul li {
   right: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.3);
+}
+.heroSection .navbar {
+  position: relative;
+  z-index: 2000;
 }
 .heroSection .navbar h1 {
   font-size: 20px;
@@ -102,6 +105,8 @@ ul li {
   margin-bottom: 30px;
   margin-left: 0;
   padding-bottom: 6rem;
+  position: relative;
+  z-index: 2000;
 }
 .heroSection .hero-info h1 {
   font-size: 3rem;
@@ -178,9 +183,17 @@ ul li {
   margin-right: 1rem;
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
+@media screen and (max-width: 992px) {
+  .hero {
+    padding: 0 4rem;
+  }
+  .hero-form .hero-form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero-form .hero-form-inputs div {
+    width: 100%;
   }
 }
 
