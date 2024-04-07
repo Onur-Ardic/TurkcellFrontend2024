@@ -25,7 +25,7 @@
   background-color: white;
 }
 .cards .featured-card img, .trending-today .container .featured-card img, .featured .container .f-cards .featured-card img {
-  width: 40%;
+  width: 30%;
 }
 .cards .featured-card .content, .trending-today .container .featured-card .content, .featured .container .f-cards .featured-card .content {
   padding: 10px;
@@ -162,6 +162,7 @@ a.logo {
 }
 
 .categories .container {
+  width: 70%;
   padding: 80px 0px;
   text-align: center;
   gap: 20px;
@@ -201,6 +202,9 @@ a.logo {
   background-color: #f8f9fa;
   padding: 80px 0px;
 }
+.trending-today .container {
+  width: 70%;
+}
 .trending-today .container h2 {
   color: #2f89fc;
 }
@@ -232,6 +236,9 @@ a.logo {
   text-align: center;
   padding: 80px 0px;
   background-color: #f8f9fa;
+}
+.blog .container {
+  width: 70%;
 }
 .blog h2 {
   color: #2f89fc;

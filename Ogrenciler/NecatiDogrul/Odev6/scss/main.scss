@@ -31,7 +31,7 @@ $x42: 42px;
     width: 540px;
     border-radius: 10px;
     img {
-      width: 40%;
+      width: 30%;
     }
     background-color: white;
     .content {
@@ -169,6 +169,7 @@ a {
 }
 .categories {
   .container {
+    width: 70%;
     padding: 80px 0px;
     text-align: center;
     gap: 20px;
@@ -210,10 +211,12 @@ a {
   background-color: $secondColor;
   padding: 80px 0px;
   .container {
+    width: 70%;
     h2 {
       color: $mainColor;
     }
     @extend .cards;
+    
   }
 }
 .testimonials {
@@ -244,6 +247,9 @@ a {
   text-align: center;
   padding: 80px 0px;
   background-color: $secondColor;
+  .container{
+    width: 70%;
+  }
   h2 {
     color: $mainColor;
     margin-bottom: 15px;
