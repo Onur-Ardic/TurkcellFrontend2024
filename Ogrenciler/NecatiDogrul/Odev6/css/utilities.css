@@ -21,8 +21,17 @@ h2 {
 }
 
 .container {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
+}
+
+input {
+  height: 43px;
+  border: none;
+  padding-left: 10px;
+}
+input:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=utilities.css.map */

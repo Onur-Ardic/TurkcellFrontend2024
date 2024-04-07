@@ -152,3 +152,69 @@
     }
   }
 }
+
+//! --------------------------------Our Blog-------------------------
+.blog {
+  margin-top: $x100;
+  .our-blog-wrapper {
+    .our-blog-content {
+      .section-title {
+        @include textFont(center, $fontSizeLarge, $primary);
+      }
+
+      .section-text {
+        text-align: center;
+        opacity: 0.5;
+      }
+    }
+
+    .blog-card-wrapper {
+      @include flexible(flex, space-between, center, 1rem);
+      margin-top: $x30;
+
+      .blog-card {
+        .blog-card-img {
+          width: 350px;
+
+          img {
+            width: 100%;
+            border-radius: 10px;
+          }
+        }
+        .blog-card-content {
+          margin-top: $x30;
+          ul {
+            @include flexible(flex, flex-start, center, 2rem);
+            opacity: 0.5;
+          }
+
+          li {
+            list-style-type: disc;
+            font-size: $fontSizeSmall;
+
+            &:first-child {
+              list-style-type: none;
+            }
+          }
+        }
+
+        .blog-card-text {
+          margin-top: $x30;
+          p {
+            font-size: medium;
+          }
+        }
+      }
+    }
+  }
+
+  .blog-button {
+    text-align: center;
+    margin-top: $x30;
+    button {
+      @include btn(10px 30px, $primary, $colorWhite, 153px, 46px);
+      border-radius: 7px;
+      border: none;
+    }
+  }
+}

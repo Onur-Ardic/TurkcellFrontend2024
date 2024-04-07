@@ -1,7 +1,6 @@
 {
   "name": "odev6",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass -w scss:css"
@@ -11,5 +10,7 @@
   "dependencies": {
     "sas": "^3.0.4",
     "sass": "^1.74.1"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }

@@ -37,6 +37,9 @@ $x100: 80px;
   .hero {
     height: 100%;
     .hero-wrapper {
+      .bg-line-second {
+        display: none;
+      }
       .hero-content {
         .hero-title {
           h2 {
@@ -159,19 +162,60 @@ $x100: 80px;
       width: 90%;
     }
   }
-}
+  // !-----------------------APP--------------------------
 
-// !-----------------------APP--------------------------
-.app {
-  .app-item-wrapper {
-    .app-item-img {
-      flex-direction: column;
-      img {
-        animation: none;
-        &:nth-child(2) {
-          display: none;
+  .app {
+    .app-item-wrapper {
+      .app-item-img {
+        flex-direction: column;
+        img {
+          animation: none;
+          &:nth-child(2) {
+            display: none;
+          }
         }
       }
+    }
+  }
+  // !---------------------------Our Team-----------------------
+  .our-team {
+    .our-team-card {
+      flex-direction: column;
+    }
+  }
+
+  // !---------------------------Cta--------------------------
+  .section-cta {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .section-cta-wrapper {
+      flex-direction: column;
+
+      .section-cta-left {
+        padding: 1rem;
+      }
+      .section-cta-right {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  //--------------Contact------------------------
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-bottom {
+    flex-direction: column;
+  }
+
+  //!------------------------Footer------------------------
+  .footer {
+    .footer-wrapper {
+      grid-template-columns: 1fr;
+      text-align: center;
     }
   }
 }

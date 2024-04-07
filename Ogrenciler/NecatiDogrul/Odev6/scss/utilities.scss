@@ -1,12 +1,10 @@
 
 h1{
-    font-size: 3rem;
+    font-size: 3rem;    
 }
-
 h2{
     font-size: 2rem;
 }
-
 .col{
     display: flex;
     flex-direction: column;
@@ -15,13 +13,21 @@ h2{
     display: flex;
     flex-direction: row;
 }
-
 .justify-between{
     justify-content: space-between;
 }
-
 .container{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
-}
+}     
+input{
+    height: 43px;
+    border: none;
+    padding-left: 10px;  
+    &:focus{
+        outline: none;
+    }        
+
+}  
+
 

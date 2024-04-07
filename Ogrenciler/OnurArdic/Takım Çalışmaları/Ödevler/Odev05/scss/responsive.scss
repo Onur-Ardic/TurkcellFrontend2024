@@ -93,4 +93,12 @@
     padding-bottom: 10rem;
     flex-direction: column;
   }
+
+  .blog {
+    padding: 1rem;
+    .blog-card-wrapper {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+  }
 }
