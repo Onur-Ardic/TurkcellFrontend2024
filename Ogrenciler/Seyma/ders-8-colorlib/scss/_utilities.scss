@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: $font-size;
+}
+
+body{
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 1.6rem;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: $width;
+    margin: 0 auto;
+}
+// flex
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+   &-1{
+    flex:100%
+   }
+   &-2{
+    flex: 50%;
+   }
+   &-3{
+    flex: 30%;
+   }
+   &-4{
+    flex: 20%;
+   }
+   &-6{
+    flex: 1;
+   }
+}
+
+.column-gap{
+    column-gap: 20px;
+}
+// cards
+.card{
+    border-radius: 10px;
+    &-body{
+        padding: 20px;
+    }
+}
+
+// buttons
+.btn{
+    padding: 8px 24px;
+    font-size: 16px;
+    color: $color-white;
+    &:hover{
+        opacity: .7;
+    }
+    &-primary{
+        background-color: $color-blue;
+    }
+    &-light{
+        background-color: $color-white;
+        padding: 6px 15px;
+        color: $color-black;
+        &:hover{
+            background-color: $color-black;
+            color: $color-white;
+            opacity: 1;
+        }
+    }
+}
+@mixin title($font-size){
+    font-size: $font-size;
+    color: $color-blue;
+}
+
+.title{
+    @include title(32px);
+    &-sup{
+    @include title(4.8rem);
+    }
+    &-sub{
+    @include title(20px);
+    }
+}
+
+.badge{
+    padding: 5px 20px;
+    font-size: 11px;
+    background-color: #E9ECEF;
+    border-radius: 30px;
+}
+.paragraph{
+    color: #4D4D4D;
+}
+.p{
+    &-x{
+        padding: 0 50px;
+    }
+    &-y{
+        padding: 50px 0;
+    }
+    &-xy{
+        padding: 50px;
+    }
+}
+.text-center{
+    text-align: center;
+}
+.content{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+

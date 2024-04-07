@@ -1,0 +1,38 @@
+$bg-navy : navy;
+$x-150 : 150px;
+$x-100 : 100px;
+
+@mixin boxMixin($color,$width,$height){
+    background-color: $color;
+    width: $width;
+    height: $height;
+    
+}
+%veli{
+    background-color: crimson;
+}
+.container {
+    display: flex;
+    &:hover{
+        background-color: crimson;
+    }
+    .box-1{
+        @include boxMixin($bg-navy,$x-100 ,$x-150 );
+    }
+    .box-2{
+        @include boxMixin(goldenrod,$x-100 ,$x-150 * 2);
+    }
+    .box-3{
+        @extend .box-1;
+        width: $x-100 * 3;
+    }
+    .box-4{
+        @include boxMixin(green,$x-100 ,$x-150 * 4);
+        &.deneme{
+            background-color: blue;
+        }
+    }
+    .box-5{
+        @extend %veli;
+    }
+}

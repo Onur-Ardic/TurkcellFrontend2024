@@ -1,0 +1,314 @@
+$main-color: #0c7f86;
+$main-body-color: #084b4f;
+$main-font: "Poppins", sans-serif;
+$font-size: 16px;
+$letter-spacing: 5px;
+$line-height: 30px;
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $main-font;
+  color: $main-color;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+a {
+  text-decoration: none;
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.height-100 {
+  height: 100%;
+}
+@mixin circle($width, $height, $border) {
+  border-radius: 50%;
+  border: $border solid;
+  width: $width;
+  height: $height;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.page {
+  .container {
+    gap: 100px;
+    .container-left {
+      min-height: 100vh;
+      gap: 50px;
+      flex: 2;
+      h1 {
+        font-size: $font-size * 7.5;
+        line-height: $line-height * 4;
+      }
+      .wave {
+        background-image: url("../images/wavy-shape.png");
+        height: 20px;
+        width: 100%;
+        background-size: 645px 20px;
+        background-repeat: repeat-x;
+        animation: wave-animation 15s linear infinite;
+      }
+      p {
+        color: $main-color;
+        font-size: $font-size * 2;
+        font-weight: 700;
+        line-height: $line-height;
+        letter-spacing: $letter-spacing * 2;
+      }
+      form {
+        justify-content: space-between;
+        gap: 20px;
+        input {
+          flex-grow: 1;
+          padding: 20px 24px;
+          border-radius: 10px;
+          border: none;
+          box-shadow: 0px 0px 30px 7px #0c7f8640;
+          font-size: $font-size * 1.125;
+          &:focus {
+            outline: none;
+            border: 1px solid $main-body-color;
+          }
+        }
+        button {
+          padding: 25px 24px;
+          border-radius: 10px;
+          font-size: $font-size;
+          font-weight: 600;
+          line-height: $line-height * 0.7;
+          background-color: $main-color;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          &:hover {
+            background-color: $main-body-color;
+          }
+        }
+      }
+    }
+    .container-right {
+      flex: 1;
+      min-height: 100vh;
+      gap: 30px;
+      * {
+        color: $main-body-color;
+      }
+      .profile-photo {
+        position: relative;
+        max-width: 350px;
+        .circle {
+          @include circle(350px, 350px, 2px);
+          border: 2px solid;
+          z-index: 10;
+          position: absolute;
+          top: -15px;
+          animation: animation-x 10s infinite ease-in-out;
+        }
+      }
+      h4 {
+        font-size: $font-size * 2;
+        font-weight: 600;
+        line-height: $line-height;
+      }
+      span {
+        font-size: $font-size;
+        font-weight: 400;
+        line-height: $line-height;
+      }
+      p {
+        letter-spacing: $letter-spacing * 0.2;
+      }
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a {
+          font-size: $font-size * 0.75;
+          font-weight: 800;
+          line-height: $line-height;
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
+      .project-button {
+        background-color: $main-body-color;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+      }
+    }
+  }
+}
+.projects {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  .box {
+    cursor: pointer;
+    flex: 1;
+    height: 700px;
+    background-color: whitesmoke;
+    p {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+    &:hover {
+      flex: 6;
+      transition: all 1s ease-in-out;
+    }
+    &:hover p {
+      writing-mode: horizontal-tb;
+      text-orientation: sideways;
+    }
+  }
+}
+.big-circle {
+  @include circle(700px, 700px, 1px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  animation: animation-y 10s infinite ease-in-out;
+}
+.bg-shape1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200%;
+  width: 40%;
+  background-color: #e5fff9;
+  z-index: -2;
+}
+.bg-shape2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 200%;
+  width: 60%;
+  background-color: #b8e4da;
+  z-index: -2;
+}
+@keyframes wave-animation {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 645px;
+  }
+}
+@keyframes animation-x {
+  0% {
+    transform: translateX(-15px);
+    border-color: white;
+  }
+  50% {
+    transform: translateX(15px);
+    border-color: $main-body-color;
+  }
+  100% {
+    transform: translateX(-15px);
+    border-color: white;
+  }
+}
+@keyframes animation-y {
+  0% {
+    transform: translateY(-30px);
+    border-color: white;
+  }
+  50% {
+    transform: translateY(200px);
+    border-color: $main-color;
+  }
+  100% {
+    transform: translateY(-30px);
+    border-color: white;
+  }
+}
+@media screen and (max-width: 1300px) {
+  body {
+    background-color: #e5fff9;
+    padding: 20px 0px;
+  }
+  .page {
+    .container {
+      flex-direction: column;
+      margin: 0 50px;
+      .container-left {
+        h1 {
+          font-size: $font-size * 5;
+        }
+        p {
+          font-size: $font-size * 1.5;
+        }
+      }
+      .container-right {
+        .profile-photo {
+          align-self: center;
+        }
+      }
+    }
+  }
+  .bg-shape1,
+  .bg-shape2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .page {
+    text-align: center;
+    .container {
+      .container-left {
+        gap: 20px;
+        h1 {
+          font-size: $font-size * 3;
+          line-height: $line-height * 2;
+        }
+        p {
+          font-size: $font-size * 1;
+        }
+        form {
+          flex-direction: column;
+          img {
+            display: none;
+          }
+          input {
+            width: 100%;
+          }
+          button {
+            width: 100%;
+          }
+        }
+      }
+      .container-right {
+        .links {
+          flex-direction: column;
+        }
+        .profile-photo {
+          .circle {
+            @include circle(300px, 300px, 2px);
+          }
+        }
+      }
+    }
+  }
+}

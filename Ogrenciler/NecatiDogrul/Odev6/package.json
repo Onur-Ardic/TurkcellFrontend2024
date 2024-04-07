@@ -1,0 +1,16 @@
+{
+  "name": "odev6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w scss:css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sas": "^3.0.4",
+    "sass": "^1.74.1"
+  },
+  "keywords": [],
+  "description": ""
+}

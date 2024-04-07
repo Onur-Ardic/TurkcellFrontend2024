@@ -1,0 +1,49 @@
+
+h1{
+    font-size: 3rem;    
+}
+h2{
+    font-size: 2rem;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+} 
+.justify-center{
+    justify-content: center;
+}  
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.container{
+    width: 60%;
+    margin: 0 auto;
+}     
+input{
+    height: 43px;
+    border: none;
+    padding-left: 10px;  
+    &:focus{
+        outline: none;
+    }        
+
+}  
+@media screen and (max-width:575px) {
+    .container{
+        width: 90%;
+    }
+    
+}
+
+
+
