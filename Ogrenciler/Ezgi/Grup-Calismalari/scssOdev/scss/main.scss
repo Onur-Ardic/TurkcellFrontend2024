@@ -1,5 +1,4 @@
 @import "./global.scss";
-
 .heroSection {
     text-align: center;
     position: relative;
@@ -7,8 +6,6 @@
     background-size: cover;
     opacity: 1;
     transform: translate(0);
-    z-index: 2000;
-
     .bg-overlay {
         position: absolute;
         content: "";
@@ -18,7 +15,10 @@
         top: 0;
         background: rgba(0, 0, 0, 0.3);
     }
-
+    .navbar{
+        position: relative;
+        z-index: 2000;
+    }
     .navbar h1 {
         @include fontMixin(20px, white);
     }
@@ -34,34 +34,30 @@
 
     .sign-up-buttons {
         @include hizalamaMixin(flex, row, space-evenly, center);
-
         .border-left {
             padding-left: 1.5rem;
             border-left: 2px solid #dee2e6;
         }
-
         .register {
             border-radius: 0.25rem;
             @include paddingMixin(12px, 20px, 12px, 20px);
         }
     }
-
     .hero {
         @include marginMixin(50px, 0, 30px, 0);
         padding-bottom: 6rem;
+        position: relative;
+        z-index: 2000
     }
-
     .hero-info h1 {
         @include fontMixin(3rem, white);
     }
-
     .hero-info p {
         @include fontMixin(1.2rem, white);
         @include marginMixin(1rem, 0, 1rem, 0);
         line-height: 1.5;
 
     }
-
     .hero-form {
         opacity: 1;
         transform: translate(0);
@@ -117,8 +113,19 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
+@media screen and (max-width: 992px){
+    .hero{
+        padding: 0 4rem;
     }
+    .hero-form {
+        .hero-form-inputs{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            div{
+                width: 100%;
+            }
+        }
+    }
+    
 }

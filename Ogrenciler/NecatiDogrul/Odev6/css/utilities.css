@@ -20,6 +20,18 @@ h2 {
   justify-content: space-between;
 }
 
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .container {
   width: 60%;
   margin: 0 auto;
@@ -32,6 +44,12 @@ input {
 }
 input:focus {
   outline: none;
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=utilities.css.map */
