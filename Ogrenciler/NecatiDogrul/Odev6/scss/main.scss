@@ -2,6 +2,17 @@ $mainColor: #2F89FC;
 $secondColor: #F8F9FA;
 $greyColor: #E9ECEF;
 $footerColor:#333333;
+$x96: 96px;
+$x42: 42px;
+
+@mixin btn($color:$mainColor, $width, $height) {
+    background-color: $color;
+    width: $width;
+    height: $height;
+    border: none;
+    color: #E9ECEF;
+    border-radius: 5px;
+  }
 
 *{
     padding: 0;
@@ -9,13 +20,17 @@ $footerColor:#333333;
     box-sizing: border-box;
     font-family: "Nanum Gothic", sans-serif;
 }
-
+.btn{
+    @include btn($mainColor, $x96, $x42);
+}
 .hero {
     height: 100vh;
     background: url('../images/hero_2.jpg');
     .nav{
-        padding-top: 20px;
+        align-items: center;
+        padding-top: 30px;
         .nav-right{
+            align-items: center;
             column-gap:60px;
             :nth-of-type(5){
                 margin-right: 30px;
@@ -26,13 +41,47 @@ $footerColor:#333333;
         background-color: rgba(0, 0, 0, 0.3);
         height: 100%;
         width: 100%;
-
     }
-
+    .hero-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.2;
+        color: white;
+        height: 100%;
+        gap: 20px;
+    }
+    .form{
+        padding: 20px;
+        width: 100%;
+        background-color:rgba(255, 255, 255, 0.7);
+        border-radius: 8px;
+        select{
+            height: 43px;
+            width: 25%;
+        }   
+        form{
+            display: flex;
+            justify-content: space-between;
+        }  
+        input{
+            width: 25%;
+            border-radius: 3px;
+        }
+        .btn{
+            width: 15%;
+        }
+    }
 }
-
 a {
     text-decoration: none;
     color: white;
+    &.logo{
+        font-weight: 900;
+        font-size: 20px;
+    }
 }
+
+
 
