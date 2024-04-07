@@ -63,7 +63,7 @@ $x42: 42px;
         }   
         form{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between; 
         }  
         input{
             width: 25%;
@@ -73,6 +73,24 @@ $x42: 42px;
             width: 15%;
         }
     }
+    .trend-search{
+        width: 100%;
+        align-items: center;
+        .trend-card{
+            border: #F8F9FA solid 1px;
+            border-radius: 5px;
+            margin-left: 5px;
+            padding: 3px;
+            background-color: rgba(255, 255, 255, 0.3);
+            transition: 150ms;
+            &:hover{
+                background-color: whitesmoke;
+                color: $mainColor;
+            }
+        }
+    }
+    
+
 }
 a {
     text-decoration: none;
@@ -82,6 +100,105 @@ a {
         font-size: 20px;
     }
 }
+.featured{
+    background-color: $secondColor;
+    h2{
+        font-size: 20px;
+        margin-bottom: 25px;
+        font-weight: 200;
+    }
+    padding: 80px 0px;
+    .cards{
+            gap: 15px;   
+    .featured-card{
+        box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+        width: 220px;
+        img{
+            width: 100%;
+        }
+        background-color: white;
+        .content{
+            padding: 10px;
+            gap: 15px;
+            .category{
+               border-radius: 15px;
+               padding: 3px 10px;
+               background-color: $greyColor  ; 
+            }
+            .heart{
+                background-color: $greyColor;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                padding: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    background-color: red;
+                    img{
+                        filter: brightness(0) invert(1);}
+                }                
+            }
+            a{
+                color: $mainColor;
+            }
+            address{
+                font-size: 13px;
+            }
+
+
+        }
+        
+
+
+
+    }
+}
+
+}
+
+.categories{
+    .container{
+        padding: 80px  0px;
+        text-align: center;
+        h2{
+            color: $mainColor;
+        }
+        p{
+            color:  rgb(143, 142, 142);
+        }
+
+
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .hero .hero-form .form form{
+        display: flex;
+        flex-direction: column;
+        input{
+            width: 100%;
+            border-radius: 3px;
+        }
+        .btn{
+            width: 100%;
+        }
+        select{
+            width: 100%;
+        }
+        row-gap:  18px;
+    }
+    .hero .nav .nav-right{
+        display: none;
+
+    }
+    
+}
+
+
+
 
 
 

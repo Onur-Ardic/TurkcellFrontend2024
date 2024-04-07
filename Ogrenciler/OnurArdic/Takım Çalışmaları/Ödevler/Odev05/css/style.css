@@ -246,4 +246,94 @@ body {
   border: none;
 }
 
+.footer {
+  background-color: #31363f;
+  margin-top: 100px;
+}
+.footer .footer-top {
+  background-color: #3089fc;
+}
+.footer .footer-top .footer-top-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding: 1.5rem 0px;
+}
+.footer .footer-top .footer-top-wrapper .footer-top-left h5, .footer .footer-top .footer-top-wrapper .footer-top-left p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.footer .footer-top .footer-top-wrapper .footer-top-left p {
+  font-size: 1rem;
+}
+.footer .footer-top .footer-top-wrapper .footer-top-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.footer .footer-top .footer-top-wrapper .footer-top-right input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  padding: 10px 2px;
+  background-color: #3089fc;
+  outline: none;
+}
+.footer .footer-top .footer-top-wrapper .footer-top-right input::placeholder {
+  color: #fff;
+}
+.footer .footer-top .footer-top-wrapper .footer-top-right button {
+  padding: 10px 15px;
+  border: none;
+}
+.footer .footer-wrapper {
+  margin-top: 100px;
+  padding: 30px;
+}
+.footer .footer-wrapper h5, .footer .footer-wrapper .footer-top .footer-top-wrapper .footer-top-left p, .footer .footer-top .footer-top-wrapper .footer-top-left .footer-wrapper p {
+  text-align: start;
+  font-size: 1rem;
+  color: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.footer .footer-wrapper a {
+  color: #737373;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.footer .footer-wrapper .footer-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.footer .footer-wrapper .footer-content p {
+  color: #fff;
+  opacity: 0.5;
+}
+.footer .footer-wrapper .footer-social .footer-social-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 20px;
+}
+.footer .footer-input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+}
+.footer .footer-input input {
+  padding: 5px 10px;
+  outline: none;
+}
+.footer .footer-input button {
+  padding: 7px 10px;
+  background-color: #3089fc;
+  border: none;
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */

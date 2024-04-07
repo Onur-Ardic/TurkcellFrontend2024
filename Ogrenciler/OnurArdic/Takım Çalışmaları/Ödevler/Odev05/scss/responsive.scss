@@ -101,4 +101,19 @@
       margin: 0 auto;
     }
   }
+
+  .footer {
+    .footer-top {
+      padding: 1rem;
+      .footer-top-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-wrapper {
+      .footer-bottom {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
 }
