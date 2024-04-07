@@ -1,87 +1,367 @@
-$mainColor: #2F89FC;
-$secondColor: #F8F9FA;
-$greyColor: #E9ECEF;
-$footerColor:#333333;
+$mainColor: #2f89fc;
+$secondColor: #f8f9fa;
+$greyColor: #e9ecef;
+$footerColor: #333333;
 $x96: 96px;
 $x42: 42px;
 
-@mixin btn($color:$mainColor, $width, $height) {
-    background-color: $color;
-    width: $width;
-    height: $height;
-    border: none;
-    color: #E9ECEF;
-    border-radius: 5px;
-  }
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Nanum Gothic", sans-serif;
+@mixin btn($color: $mainColor, $width, $height) {
+  background-color: $color;
+  width: $width;
+  height: $height;
+  border: none;
+  color: #e9ecef;
+  border-radius: 5px;
 }
-.btn{
-    @include btn($mainColor, $x96, $x42);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.btn {
+  @include btn($mainColor, $x96, $x42);
+}
+.cards {
+  margin-top: 20px;
+  gap: 15px;
+  .featured-card {
+    box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+    width: 540px;
+    border-radius: 10px;
+    img {
+      width: 30%;
+    }
+    background-color: white;
+    .content {
+      padding: 10px;
+      gap: 15px;
+      .heart {
+        background-color: $greyColor;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          background-color: red;
+          img {
+            filter: brightness(0) invert(1);
+          }
+        }
+      }
+      a {
+        color: $mainColor;
+      }
+      address {
+        font-size: 13px;
+      }
+    }
+  }
 }
 .hero {
-    height: 100vh;
-    background: url('../images/hero_2.jpg');
-    .nav{
-        align-items: center;
-        padding-top: 30px;
-        .nav-right{
-            align-items: center;
-            column-gap:60px;
-            :nth-of-type(5){
-                margin-right: 30px;
-            }
-        }
+  height: 100vh;
+  background: url("../images/hero_2.jpg");
+  .nav {
+    align-items: center;
+    padding-top: 30px;
+    .nav-right {
+      align-items: center;
+      column-gap: 60px;
+      :nth-of-type(5) {
+        margin-right: 30px;
+      }
     }
-    .overlay{
-        background-color: rgba(0, 0, 0, 0.3);
-        height: 100%;
-        width: 100%;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+  }
+  .hero-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+    color: white;
+    height: 100%;
+    gap: 20px;
+  }
+  .form {
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    select {
+      height: 43px;
+      width: 25%;
     }
-    .hero-form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        line-height: 1.2;
-        color: white;
-        height: 100%;
-        gap: 20px;
+    form {
+      display: flex;
+      justify-content: space-between;
     }
-    .form{
-        padding: 20px;
-        width: 100%;
-        background-color:rgba(255, 255, 255, 0.7);
-        border-radius: 8px;
-        select{
-            height: 43px;
-            width: 25%;
-        }   
-        form{
-            display: flex;
-            justify-content: space-between;
-        }  
-        input{
-            width: 25%;
-            border-radius: 3px;
-        }
-        .btn{
-            width: 15%;
-        }
+    input {
+      width: 25%;
+      border-radius: 3px;
     }
+    .btn {
+      width: 15%;
+    }
+  }
+  .trend-search {
+    width: 100%;
+    align-items: center;
+    .trend-card {
+      border: #f8f9fa solid 1px;
+      border-radius: 5px;
+      margin-left: 5px;
+      padding: 3px;
+      background-color: rgba(255, 255, 255, 0.3);
+      transition: 150ms;
+      &:hover {
+        background-color: whitesmoke;
+        color: $mainColor;
+      }
+    }
+  }
 }
 a {
-    text-decoration: none;
-    color: white;
-    &.logo{
-        font-weight: 900;
-        font-size: 20px;
+  text-decoration: none;
+  color: white;
+  &.logo {
+    font-weight: 900;
+    font-size: 20px;
+  }
+}
+.category {
+  border-radius: 15px;
+  padding: 3px 10px;
+  background-color: $greyColor;
+}
+.featured {
+  background-color: $secondColor;
+  h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 200;
+  }
+  padding: 80px 0px;
+  .container .f-cards {
+    @extend .cards;
+    .featured-card {
+      width: 220px;
     }
+    .feature-img {
+      width: 100% !important;
+    }
+  }
+}
+.cizgi {
+  height: 3px;
+  width: 100px;
+  background-color: $mainColor;
+  align-self: center;
+  display: block;
+}
+.categories {
+  .container {
+    width: 70%;
+    padding: 80px 0px;
+    text-align: center;
+    gap: 20px;
+    h2 {
+      color: $mainColor;
+    }
+    p {
+      color: rgb(143, 142, 142);
+    }
+    .category-cards {
+      .category-card {
+        border-radius: 10px;
+        padding-top: 30px;
+        gap: 10px;
+        width: 180px;
+        height: 180px;
+        p {
+          margin: 10px 0px;
+        }
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: $mainColor;
+          transform: scale(1.2);
+          * {
+            color: white;
+          }
+          img {
+            filter: brightness(0) invert(1);
+          }
+          .category {
+            background-color: #0c67dd;
+          }
+        }
+      }
+    }
+  }
+}
+.trending-today {
+  background-color: $secondColor;
+  padding: 80px 0px;
+  .container {
+    width: 70%;
+    h2 {
+      color: $mainColor;
+    }
+    @extend .cards;
+    
+  }
+}
+.testimonials {
+  .container {
+    padding: 80px 0px;
+    text-align: center;
+    gap: 50px;
+    h2 {
+      color: $mainColor;
+      margin-bottom: 15px;
+    }
+    .person {
+      border-radius: 50%;
+      width: 100px;
+      img {
+        margin-bottom: 10px;
+      }
+    }
+    q {
+      font-size: 24px;
+      width: 70%;
+      color: #4d4d4d;
+      line-height: 40px;
+    }
+  }
+}
+.blog {
+  text-align: center;
+  padding: 80px 0px;
+  background-color: $secondColor;
+  .container{
+    width: 70%;
+  }
+  h2 {
+    color: $mainColor;
+    margin-bottom: 15px;
+  }
+  button {
+    align-self: center;
+    margin-top: 50px;
+    @include btn($mainColor, 156px, $x42);
+  }
+  .blog-cards {
+    margin-top: 30px;
+    * {
+      color: black;
+      text-align: start;
+    }
+    gap: 30px;
+    .blog-card {
+      width: 350px;
+      img {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .content {
+        gap: 20px;
+        a {
+          font-size: 20px;
+        }
+        .meta {
+          color: #b3b3b3;
+          font-size: 14px;
+          a {
+            color: $mainColor;
+            font-size: 14px;
+          }
+        }
+        p {
+          line-height: 27px;
+          color: #4d4d4d;
+        }
+      }
+    }
+  }
 }
 
+.newsletter{
+  background-color: $mainColor;
+  .container{
+    width: 70%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    .newsletter-left{
+      color: white;
+      h2{
+        font-size: 18px;
+        font-weight: 200;
+      }
+      p{
+        font-size: 16px;
+        font-weight: 100;
+        color: rgb(201, 201, 201);
+        line-height: 28px;
+      }
+    }
+    .newsletter-right{
+      display: flex;
+      input{
+        width: 400px;
+        background-color: $mainColor;
+        border-bottom: 1px solid white;
+        
+      }
+    }
+  }
+  .btn{
+    width: 103px;
+    height: 43px;
+    background-color: #F0F0F0;
+    border-radius: 0;
+    color: grey;
+    &:hover{
+      background-color: black;
+      transition: all 0.3s ease-in-out;
+    }
 
 
+  }
+}
+
+::placeholder{
+  color: white;
+  font-style: italic;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero .hero-form .form form {
+    display: flex;
+    flex-direction: column;
+    input {
+      width: 100%;
+      border-radius: 3px;
+    }
+    .btn {
+      width: 100%;
+    }
+    select {
+      width: 100%;
+    }
+    row-gap: 18px;
+  }
+  .hero .nav .nav-right {
+    display: none;
+  }
+}
