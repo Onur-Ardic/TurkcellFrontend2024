@@ -195,13 +195,14 @@
 .container-pricing {
   padding: 0 2vw;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
 }
 .pricing-card {
   border: 1px solid black;
-  width: 350px;
+  width: 370px;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -426,7 +427,7 @@ ul li {
 }
 .discover-right{
   background-color: #bee1e6 ;
- margin-left: 35px;
+  margin-left: 35px;
   border-radius: 16px;
 }
 .card-discover h2,p{
@@ -443,14 +444,24 @@ ul li {
 /* Features */
 .box4 {
 position: absolute;
-height: 150px;
-width: 100px;
+border-radius: 10px;
+height: 450px;
+width: 350px;
 z-index: 1;
+margin-bottom: -100px;
+bottom: 0;
+right: 0;
+}
+#Features-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .Features-right-img{
-  width: 100%;
-  height: 500px;
-}
+  width: 700px;
+  height: 800px;
+;}
 #Features #Features-left > .row .col-2{
   padding: 20px 5px;
 }
@@ -485,6 +496,11 @@ z-index: 1;
 }
 .align-items-start {
   align-items: flex-start;
+}
+.align-items-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* grid */
 .grid {

@@ -1,0 +1,68 @@
+.signup-page{
+    padding-top: 60px;
+}
+
+.signup-page h2{
+    font-size: 5rem;
+    text-align: center;
+    padding: 30px;
+}
+
+.signup-form{
+    width: 100%;
+}
+
+.signup-page .signup-form input:not([type="checkbox"]),
+.signup-page .signup-form label,
+.signup-page .signup-form select{
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+}
+
+.signup-page .signup-form input:not([type="checkbox"]),
+.signup-page .signup-form select{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid navy;
+    font-size: 18px;
+}
+.signup-page .signup-form input:not([type="checkbox"]):focus,
+.signup-page .signup-form select:focus{
+    outline: none;
+    background-color: rgba(0, 0, 128,.2);
+    color: black;
+}
+
+.signup-page .signup-form input[type="checkbox"],
+.signup-page .signup-form input[type="checkbox"] + label{
+    display: inline-block;
+    margin-top: 15px;
+    width: auto;
+}
+.signup-page .signup-form input[type="checkbox"]{
+    appearance: none;
+    padding: 8px;
+    border-radius: 50%;
+    border: 2px solid navy;
+}
+.signup-page .signup-form input[type="checkbox"]:hover{
+    background-color: navy;
+    opacity: 1;
+}
+.signup-page .signup-form input[type="checkbox"]:checked{
+    border: 2px solid crimson;
+    background-color: crimson;
+}
+.signup-page .signup-form button{
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}
+
+@media (min-width:576px){
+    .signup-form{
+        width: 500px;
+        margin: 0 auto;
+    }
+}

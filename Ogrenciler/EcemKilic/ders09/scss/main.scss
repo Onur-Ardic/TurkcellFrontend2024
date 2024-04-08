@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+* {
+  font-family: "Nanum Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$blueColor: #0974fb;
+$grayColor: #e9ecef;
+$blackColor: #333333;
+$whiteColor: #fff;
+$darkgrayColor: rgba(0, 0, 0, 0.5);
+$brad5: 5px;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    url("../images/hero_2.jpg");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 650px;
+  color: $whiteColor;
+  padding-top: 1.5rem;
+  .logo {
+    font-weight: 900;
+    font-size: 20px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    .title {
+      font-size: 32px;
+    }
+    .title-content {
+      font-size: 19px;
+      line-height: 30px;
+    }
+    .label-area {
+      background: rgba(255, 255, 255, 0.8);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      border-radius: $brad5;
+      margin-bottom: 20px;
+      & input,
+      select {
+        min-width: 305px;
+        height: 55px;
+        border: none;
+        border-radius: $brad5;
+        font-size: 1rem;
+        padding: 6px 12px;
+        margin-bottom: 20px;
+      }
+      & button {
+        background-color: $blueColor;
+        color: $whiteColor;
+        height: 45px;
+        min-width: 305px;
+        border: none;
+        border-radius: $brad5;
+        font-size: 1rem;
+        padding: 6px 12px;
+      }
+    }
+  }
+  & button {
+    padding: 5px 10px;
+    border-radius: $brad5;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: $whiteColor;
+    border: 1px solid $whiteColor;
+    font-size: 0.8rem;
+  }
+}
+#featured-ads {
+  margin-top: 50px;
+  min-height: 650px;
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .arrows {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 50px;
+    .arrow {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+    }
+    .right {
+      transform: rotate(-45deg);
+    }
+    .left {
+      transform: rotate(135deg);
+    }
+  }
+  .card {
+    box-shadow: -3px 3px 24px -5px rgba(0, 0, 0, 0.57);
+    border-radius: $brad5;
+    img {
+      width: 100%;
+    }
+    .card-content {
+      padding: 20px;
+      & button {
+        background-color: $grayColor;
+        border-radius: 50px;
+        padding: 8px 20px;
+        font-size: 11px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        border: none;
+      }
+      .own-new {
+        color: $blueColor;
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+      .adres {
+        font-size: 13px;
+      }
+      .star-rating {
+        margin-top: 20px;
+        .rating {
+          label {
+            color: orange;
+            font-size: 20px;
+          }
+          span {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+#popular-categories {
+  min-height: 650px;
+  text-align: center;
+    h2{
+        font-size: 32px;
+        color: $blueColor;
+        margin-bottom: 15px;
+    }
+    p {
+      font-size: 16px;
+      color: $darkgrayColor;
+    }
+    .items {
+      margin-top: 20px;
+      .item{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .icon {
+          width: 45px;
+        }
+        .number {
+          background-color: $grayColor;
+          border-radius: 50px;
+          padding: 8px 20px;
+          font-size: 11px;
+          font-weight: 600;
+          margin-bottom: 20px;
+          border: none;
+          margin-top: 10px;
+        }
+      }
+    }
+}
+#trending-today {
+  h2 {
+    font-size: 32px;
+    color: $blueColor;
+    margin-bottom: 50px;
+  }
+  .card {
+    box-shadow: -3px 3px 24px -5px rgba(0, 0, 0, 0.57);
+    border-radius: $brad5;
+    img {
+      width: 100%;
+    }
+    .card-content {
+      padding: 20px;
+      & button {
+        background-color: $grayColor;
+        border-radius: 50px;
+        padding: 8px 20px;
+        font-size: 11px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        border: none;
+      }
+      .own-new {
+        color: $blueColor;
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+      .adres {
+        font-size: 13px;
+      }
+      .star-rating {
+        margin-top: 20px;
+        .rating {
+          label {
+            color: orange;
+            font-size: 20px;
+          }
+          span {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+#testimonials {
+  .resim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      border-radius: 50%;
+      width: 100px;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+$main-color: #0c7f86;
+$main-body-color: #084b4f;
+$main-font: 'Poppins', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $main-font;
+    list-style-type: none;
+    text-decoration: none;
+    background: wheat;
+}
+
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+header{
+    padding-top: 30px;
+
+    .header-logo img{ 
+        display: block;
+        width: 98px;
+        height: 56px;
+    }
+}
+
+.main{
+    @include flex(row, space-between, center);
+    .main-image{
+        @include flex(column, space-between, center);
+        .img-box{
+            position: relative;
+            margin-bottom: 32px;
+            img{
+                position: relative;
+                border-radius: 50%;
+                max-width: 100%;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+.main-text{
+    form {
+        width: 100%;
+        input{
+            font-family: var(--main-font);
+            font-size: 18px;
+            padding: 20px 24px;
+            outline: none;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            background-color: #fff;
+            width: 100%;
+        }
+        button{
+            font-family: var(--main-font);
+    padding: 25px 24px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #0c7f86;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 4px;
+    border: none;
+    width: 100%;
+        }
+        
+    }
+    h1{
+        font-size: 60px;
+        line-height: 70px;
+        font-weight: 700;
+        padding-bottom: 20px;
+        padding-top: 30px;
+        text-align: left;
+        vertical-align: top;
+        color: $main-color;
+    }
+    @keyframes wavy-motion {
+        0% {
+            background-position: 0%;
+        }
+        100% {
+            background-position: 645px;
+        }
+    }
+    .wave-image{
+        background-image: url("https://demo.cocobasic.com/seppo-html/demo-5/images/wavy-shape.png");
+    width: 100%;
+    height: 20px;
+    background-size: 645px 20px;
+    background-repeat: repeat-x;
+    animation: wavy-motion 15s linear infinite;
+    margin: 25px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
+    .main{
+        flex-direction: column;
+    }
+    form{
+        img{
+            display: none;
+        }
+    }
+}

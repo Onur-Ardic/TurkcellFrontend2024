@@ -162,24 +162,105 @@ a {
   display: flex;
   justify-content: center;
   gap: 20px;
-
+  display: flex;
+  align-items: center;
   .box {
+    overflow: hidden;
+    transition: all 1s ease-in-out;
     cursor: pointer;
     flex: 1;
     height: 700px;
-    background-color: whitesmoke;
-    p {
-      writing-mode: vertical-rl;
-      text-orientation: upright;
+    background-color: $main-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:nth-child(5) {
+      .content {
+        p {
+          font-size: $font-size * 1.5;
+        }
+      }
+    }
+    .content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      p {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        color: white;
+        font-size: $font-size * 2;
+        display: flex;
+        flex-shrink: 1;
+        font-family: "Cinzel", serif;
+        font-weight: 800;
+      }
+      .content-buttons {
+        display: none;
+        a {
+          position: relative;
+          background-color: $main-body-color;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          padding: 10px 20px;
+          &:hover {
+            transform: scale(1.1);
+          }
+          .ring {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            .ring-container {
+              position: relative;
+              .circle {
+                width: 7px;
+                height: 7px;
+                background-color: red;
+                border-radius: 50%;
+              }
+              .ringing {
+                position: absolute;
+                top: 0;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                animation: pulsate 1s infinite;
+                border: 1px solid red;
+              }
+            }
+          }
+        }
+      }
     }
     &:hover {
       flex: 6;
-      transition: all 1s ease-in-out;
+      p {
+        writing-mode: horizontal-tb;
+        text-orientation: sideways;
+      }
+      .content-buttons {
+        display: flex;
+        gap: 20px;
+      }
     }
-    &:hover p {
-      writing-mode: horizontal-tb;
-      text-orientation: sideways;
-    }
+  }
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2, 2);
+    opacity: 0;
   }
 }
 .big-circle {
@@ -250,6 +331,7 @@ a {
     padding: 20px 0px;
   }
   .page {
+    padding-bottom: 100px;
     .container {
       flex-direction: column;
       margin: 0 50px;
@@ -268,12 +350,30 @@ a {
       }
     }
   }
+  .projects {
+    padding: 0px 50px;
+    flex-direction: column;
+    .box {
+      width: 100%;
+      flex-direction: row;
+      img {
+        height: 100%;
+        width: max-content;
+      }
+      .content {
+        p {
+          writing-mode: horizontal-tb;
+          text-orientation: sideways;
+        }
+      }
+    }
+  }
   .bg-shape1,
   .bg-shape2 {
     display: none;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1025px) {
   .page {
     text-align: center;
     .container {
@@ -307,6 +407,33 @@ a {
           .circle {
             @include circle(300px, 300px, 2px);
           }
+        }
+      }
+    }
+  }
+  .projects {
+    .box {
+      flex-direction: column;
+      height: 500px;
+      img {
+        display: none;
+      }
+      &:nth-child(5) {
+        .content {
+          p {
+            font-size: $font-size * 0.5;
+          }
+        }
+      }
+      .content {
+        p {
+          font-size: $font-size;
+        }
+      }
+      &:hover {
+        img {
+          display: block;
+          height: 60%;
         }
       }
     }

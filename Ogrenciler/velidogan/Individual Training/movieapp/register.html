@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="body">
+    <header id="main-header">
+        <div class="container">
+            <a href="#" class="main-header__logo">MovieApp</a>
+            <nav id="main-header__nav">
+                <ul class="main-nav__items">
+                    <li class="main-nav__item"><a href="#">Filmler</a></li>
+                    <li class="main-nav__item"><a href="#">Diziler</a></li>
+                    <li class="main-nav__item"><a href="#" class="btn btn-primary">Login</a></li>
+                </ul>
+            </nav>
+        </div>        
+    </header>
+    <main class="signup-page">
+        <div class="container">
+            <h2>Create Your Account</h2>
+            <form class="signup-form">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname">
+                <label for="email">E-mail</label>
+                <input type="email" id="email">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <label for="gender">Gender</label>
+                <select id="gender">
+                    <option value="1">Female</option>
+                    <option value="1">Male</option>
+                </select>
+                <input type="checkbox" id="agree-terms">
+                <label for="agree-terms">Agree to <a href="">Terms & Conditions</a></label>
+                <button type="submit" class="btn btn-secondary">Sing Up</button>
+            </form>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="row container">
+            <nav id="footer-links" class="col-2">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>         
+            </nav>
+            <div id="social-links" class="col-2">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>        
+    </footer>
+    <a href="#body" id="backtotop">
+        <i class="fa-solid fa-circle-arrow-up fa-3x"></i>
+    </a>
+</body>
+</html>

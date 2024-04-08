@@ -1,0 +1,335 @@
+/* main-header */
+#main-header{
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    height: 100vh;
+}
+#main-header-nav img{
+    width: auto;
+    border-radius: 0;
+}
+#main-header-links{
+    margin-left: auto;
+    column-gap: 20px;
+}
+#main-header-links a{
+    padding: 20px 15px;
+    font-weight: bold;
+}
+#main-header-content{
+    padding-top: 7%;
+}
+#main-header-content-left h1{
+    margin-bottom: 20px;
+    font-size: 5.5rem;
+    line-height: 1.2;
+}
+#main-header-content-left .row{
+    margin: 45px 0 0 0;
+}
+#main-header-content-left #trial-input{
+    background-color: rgb(3, 32, 85);
+    border-radius: 50px;
+    width: 70%;
+    padding: 2px;
+}
+#main-header-content-left #trial-input input{
+    background-color: rgb(3, 32, 85);
+    color: #fff;
+    border: none;
+    padding: 13px 79px 13px 20px;
+    border-radius: 50px;
+}
+#main-header-content-left #trial-input input::placeholder{
+    color: #fff;
+}
+#main-header-content-left #trial-input input:focus{
+    outline: none;
+}
+#main-header-content-left .icon{
+    background: rgb(3, 32, 85);
+    padding: 10px 15px;
+    width: 50px;
+    height: 50px;
+    line-height: 0;
+    border-radius: 50%;
+    margin-left: 45px;
+}
+#main-header-content-left .icon i{
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+}
+#main-header-content-right img{
+    width: 85%;
+}
+
+/* total-cards */
+#total-cards{
+    margin-top: -170px;
+}
+
+/* about-us */
+#about-us{
+    margin-top: -230px;
+    padding: 300px 0;
+}
+#about-us #about-us-content-right #about-us-list .row{
+    margin-bottom: 40px;
+}
+#about-us #about-us-content-right > p{
+    margin-bottom: 30px;
+}
+#about-us #about-us-content-right .icon{
+    line-height: 80px;
+    width: 125px;
+    height: 80px;
+    margin-right: 30px;
+    padding: 5px;
+}
+#about-us #about-us-content-right .icon i{
+    font-size: 30px;
+}
+#about-us #about-us-content-right #about-us-list .inner-content .title{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* why-choose-us */
+#why-choose-us {
+    background-color: #032055;
+}
+#why-choose-us #why-choose-us-menu{
+    column-gap: 35px;
+    justify-content: center;
+}
+#why-choose-us-menu-content{
+    margin: 50px 0 0;
+    padding: 35px;    
+    border-radius: 10px;
+}
+
+/* investment-plan */
+#investment-plan-info {
+    margin-top: 40px;
+}
+#investment-plan-info .row{
+    flex-direction: column;
+    row-gap: 20px;
+}
+#investment-plan-info .title{
+    margin: 0;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    width: 100%;
+    padding: 10px;
+}
+
+/* how-does-it-works */
+#how-does-it-works{
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+#how-does-it-works-info .title{
+    padding-top: 25px;
+}
+
+/* start-investment */
+#start-investment{
+    background: #032055;
+}
+
+/* section-a */
+#section-a{
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+#section-a .container{
+    padding: 85px 0 70px;
+}
+
+/* lastest-transaction */
+#lastest-transaction{
+    background-color: #032055;
+}
+
+/* our-biggest-advantage */
+#our-biggest-advantage{
+    background-color: #032055;
+    padding-bottom: 80px;
+}
+#our-biggest-advantage .title{
+    font-size: 2.4rem;
+}
+#our-biggest-advantage img{
+    width: 90%;
+}
+
+/* our-top-ten-inventors */
+#our-top-ten-inventors img{
+    width: 75%;
+}
+#our-top-ten-inventors .card{
+    border-radius: 5px;
+}
+#our-top-ten-inventors .card-body{
+    margin-top: -185px;
+    padding: 190px 20px 25px;
+}
+#our-top-ten-inventors .inventor-icons{
+    margin-top: 20px;
+}
+
+/* what-says-users */
+#what-users-says{
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+#what-users-says i{
+    color: orange;
+}
+#what-users-says img{
+    width: 70px;
+}
+#what-users-says #users .row{
+    justify-content: flex-start;
+    margin-top: 15px;    
+}
+#what-users-says #users .card{
+    border-radius: 5px;
+}
+#what-users-says #users .card-body{
+    padding: 20px;
+}
+#what-users-says #users .card-body > .paragraph{
+    margin: 20px 0;
+}
+#what-users-says #users .subTitle{
+    margin-bottom: 0;
+}
+
+/* calculator */
+#calculator h4{
+    padding: 8px 20px;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+.calculator-inner{
+    background: #032055;
+    padding: 20px;
+    margin-top: -15px; 
+}
+.calculator-right .calculator-inner{
+    height: 321px;
+}
+#calculator input,#calculator select{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, .1);
+    margin: 15px 0;
+    color: #fff;
+}
+.calculator-inner input::placeholder{
+    color: #fff;
+}
+
+/* questions */
+#questions{
+    background-color: #032055;
+}
+.questions-left button{
+    margin-top: 60px;
+}
+.questions-right h4{
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    padding: 18px 20px;
+}
+.questions-right h4 i{
+    margin-right: 10px;
+}
+.questions-right .card-body{
+    padding: 20px;
+}
+
+/* lastest-blog */
+#lastest-blog .card{
+    background: transparent;
+    box-shadow: none;
+}
+#lastest-blog .card-body{
+    padding: 15px 0;
+}
+
+/* footer */
+#footer {
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+#footer.p-50{
+    padding: 50px 0 0;
+}
+#footer #footer-subscribe{
+    margin-right: 50px;
+}
+#footer #footer-subscribe div{
+    background: rgba(255, 255, 255, .25);
+    border-radius: 50px;
+    padding: 3px;
+}
+#footer img{
+    width: 130px;
+    border-radius: 0;
+    margin-bottom: 25px;
+}
+#footer input{
+    background: rgba(255, 255, 255, 0);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+    
+}
+#footer input::placeholder{
+    color: #fff;
+}
+#footer ul li{
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px dotted rgba(255, 255, 255, .5);
+    width: 80%;
+    opacity: .7;
+}
+#footer ul li:hover{
+    opacity: 1;
+}
+#footer > *:last-child {
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    margin-top: 40px;
+}
+#footer .container:last-child .row{
+    justify-content: space-between;
+    padding: 10px;    
+}
+#footer .container:last-child .paragraph{
+    margin: 0;
+}
+@media (max-width:576px){
+    .content{
+        width: 100%;
+    }
+    #main-header{
+        height: auto;
+        padding: 20px 0;
+    }
+    #main-header-nav{
+        padding: 25px;
+    }
+    #main-header-content-left #trial-input input {
+        width: 63%;
+    }
+    #about-us #about-us-content-right .icon {
+        width: 80px;
+    }
+    #total-cards {
+        margin-top: 0;
+    }
+    #footer input {
+        width: auto;
+    }
+}
