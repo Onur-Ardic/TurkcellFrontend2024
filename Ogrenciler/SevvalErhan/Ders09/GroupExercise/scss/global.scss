@@ -8,6 +8,12 @@
   padding: 0;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 @mixin flex($display, $justify, $align, $column: row, $gap: 2rem) {
   display: $display;
   justify-content: $justify;

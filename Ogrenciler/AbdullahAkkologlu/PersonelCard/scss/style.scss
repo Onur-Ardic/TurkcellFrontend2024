@@ -165,6 +165,7 @@ a {
   display: flex;
   align-items: center;
   .box {
+    overflow: hidden;
     transition: all 1s ease-in-out;
     cursor: pointer;
     flex: 1;
@@ -173,6 +174,13 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    &:nth-child(5) {
+      .content {
+        p {
+          font-size: $font-size * 1.5;
+        }
+      }
+    }
     .content {
       flex-grow: 1;
       display: flex;
@@ -193,6 +201,7 @@ a {
       .content-buttons {
         display: none;
         a {
+          position: relative;
           background-color: $main-body-color;
           color: white;
           border: none;
@@ -201,6 +210,29 @@ a {
           padding: 10px 20px;
           &:hover {
             transform: scale(1.1);
+          }
+          .ring {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            .ring-container {
+              position: relative;
+              .circle {
+                width: 7px;
+                height: 7px;
+                background-color: red;
+                border-radius: 50%;
+              }
+              .ringing {
+                position: absolute;
+                top: 0;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                animation: pulsate 1s infinite;
+                border: 1px solid red;
+              }
+            }
           }
         }
       }
@@ -216,6 +248,19 @@ a {
         gap: 20px;
       }
     }
+  }
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2, 2);
+    opacity: 0;
   }
 }
 .big-circle {
@@ -286,6 +331,7 @@ a {
     padding: 20px 0px;
   }
   .page {
+    padding-bottom: 100px;
     .container {
       flex-direction: column;
       margin: 0 50px;
@@ -304,12 +350,30 @@ a {
       }
     }
   }
+  .projects {
+    padding: 0px 50px;
+    flex-direction: column;
+    .box {
+      width: 100%;
+      flex-direction: row;
+      img {
+        height: 100%;
+        width: max-content;
+      }
+      .content {
+        p {
+          writing-mode: horizontal-tb;
+          text-orientation: sideways;
+        }
+      }
+    }
+  }
   .bg-shape1,
   .bg-shape2 {
     display: none;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1025px) {
   .page {
     text-align: center;
     .container {
@@ -343,6 +407,33 @@ a {
           .circle {
             @include circle(300px, 300px, 2px);
           }
+        }
+      }
+    }
+  }
+  .projects {
+    .box {
+      flex-direction: column;
+      height: 500px;
+      img {
+        display: none;
+      }
+      &:nth-child(5) {
+        .content {
+          p {
+            font-size: $font-size * 0.5;
+          }
+        }
+      }
+      .content {
+        p {
+          font-size: $font-size;
+        }
+      }
+      &:hover {
+        img {
+          display: block;
+          height: 60%;
         }
       }
     }
