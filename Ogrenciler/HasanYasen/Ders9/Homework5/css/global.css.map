@@ -1,1 +1,10 @@
-{"version":3,"sourceRoot":"","sources":["../scss/global.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;EACA;;;AAEF;EACE;;;AAEF;EACE;EACA;;;AAEF;EACE;;;AAEF;EACE;;;AAEF;EACE;;;AAEF;EACE;;;AAEF;EACE;;;AAOF;EAJE;EACA;EACA","file":"global.css"}
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "../scss/global.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACE;EACA;EACA;EACA;EACA;;;AAEF;EACE;EACA;;;AAEF;EACE;EACA;EACA;;;AAEF;EACE;;;AAEF;EACE;;;AAEF;EACE;;;AAEF;EACE;;;AAEF;EACE;;;AAEF;EACE;;;AAWF;EARE;EACA;EACA;EACA;EACA;EACA;EACA",
+  "file": "global.css"
+}

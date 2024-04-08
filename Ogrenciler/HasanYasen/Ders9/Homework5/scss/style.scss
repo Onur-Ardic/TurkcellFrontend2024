@@ -1,32 +1,41 @@
+@import "./global.scss";
+
 header {
   margin-top: 20px;
+
   * {
     color: white;
   }
+
   .header-logo {
     a {
       font-size: 20px;
     }
   }
+
   .header-nav {
     .nav-list-item {
       padding: 20px 10px;
+
       &.contact {
         margin-right: 48px;
       }
+
       .border-left {
         border-left: 1px solid #dee2e6;
         padding-left: 1.5rem;
       }
+
       .register-link {
         margin-left: 30px;
       }
     }
   }
 }
+
 .hero-section::before {
   content: "";
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url("../images/hero-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,8 +45,96 @@ header {
   bottom: 0;
   left: 0;
 }
+
 .hero-section {
   * {
     position: relative;
+  }
+}
+
+.welcome-section {
+  margin-top: 160px;
+  color: white;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  .welcome-form {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 16px;
+
+    .form-item {
+      padding: 0 15px;
+      width: 28%;
+
+      input,
+      select {
+        padding: 6px 12px;
+        outline: none;
+        border: none;
+        height: 43px;
+        width: 100%;
+        border-radius: 0.25rem;
+        font-size: 1.1rem;
+        color: #495057;
+        &::placeholder {
+          font-size: 1.1rem;
+          color: #495057;
+        }
+      }
+
+      select {
+        & {
+          font-size: 1.1rem;
+          color: #495057;
+        }
+      }
+
+      &.btn {
+        width: 16%;
+      }
+
+      button {
+        @include blueButtonMixin(10px, 30px);
+        height: 43px;
+        width: 100%;
+        font-size: 1.1rem;
+        &:hover {
+          background-color: #0974fb;
+        }
+      }
+    }
+  }
+  .trending-search {
+    gap: 0.25rem;
+    h2 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-right: 10px;
+    }
+    a {
+      font-size: 0.8rem;
+      border: 1px solid white;
+      padding: 2px 10px;
+      color: white;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      &:hover {
+        color: #2f89fc;
+        background-color: white;
+      }
+    }
   }
 }
