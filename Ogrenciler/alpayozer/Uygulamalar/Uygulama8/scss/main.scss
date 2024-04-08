@@ -9,6 +9,43 @@
 @function weight($weight-name){
     @return map-get($font-weights,$weight-name)
 }
+
+@mixin special-text($fontSize,$color,$weight){
+    font-size: $fontSize;
+    color: $color;
+    font-weight:weight($weight);
+}
+
+%sub-title{
+    font-size: $fs-16;
+    color: $gray-content;
+    font-weight: weight(regular);
+};
+
+%card-title{
+    font-size: $fs-16;
+    color: $primary-color;
+    font-weight: weight(medium);
+    text-decoration: none;
+};
+
+%card-subtitle{
+    font-size: $fs-13;
+    color: $gray-content;
+    font-weight: weight(regular);
+    margin-bottom: 1rem;
+};
+
+%category-span{
+    font-size: $fs-11;
+    padding: 5px 20px;
+    background: #e9ecef; //variables'a ekle
+    border-radius: 30px;
+    margin-bottom: 20px;
+    color: $black;
+    font-weight: weight(bold);
+}
+
 .container {
     width: 90%;
     margin-right: auto;
@@ -23,36 +60,25 @@
             padding: 20px 0px;
         }
         .logo{
-            font-size:$fs-20;
-            color: $white;
-            font-weight: weight(bold);
+            @include special-text($fs-20,$white ,900 );
             text-decoration: none; 
     }
 
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(https://preview.colorlib.com/theme/directoryads/images/hero_2.jpg.webp) no-repeat center center/cover;
-        // background-image: url(https://preview.colorlib.com/theme/directoryads/images/hero_2.jpg.webp);
-        // background-size: cover;
-        // background-position: center;
         position: relative;
-        // background-repeat: no-repeat;
         width: 100%;
         height: 500px;
 
         .welcome-top{
             text-align: center;
             h1{
-                font-size: $fs-32;
-                color: $white;
-                font-weight: weight(regular);
+                @include special-text($fs-32,$white ,regular );
                 margin-bottom: 0.5rem;
             }
             p{
-                font-size: $fs-19;
-                color: $white;
-                font-weight: weight(regular);
+                @include special-text($fs-19,$white ,regular );
                 margin-bottom: 1rem;
-
             }
         }
         .welcome-form{
@@ -85,7 +111,6 @@
                 }
                 .wrap-icon{
                     position: relative;
-
                     i{
                         position: absolute;
                         right: 10px;
@@ -99,13 +124,24 @@
         }
         .welcome-footer{
             h2{
-                font-size: $fs-16;
-                color: $white;
-                font-weight: weight(medium);
+                @include special-text($fs-16,$white ,medium );
             }
             a{
                 
             }
+            span{
+            }
         }
+    }
+}
+.welcome-footer{
+    h2{
+        @include special-text($fs-16,$white ,medium );
+    }
+    a{
+        
+    }
+    span{
+        @extend %category-span;
     }
 }
