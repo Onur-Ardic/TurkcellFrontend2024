@@ -1,0 +1,32 @@
+@keyframes wavy-motion {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 40.313rem;
+    }
+}
+@keyframes animate-img-circle {
+    0% {
+        top: -1.25rem;
+        left: -1.25rem;
+    }
+    50% {
+        top: -1.25rem;
+        left: 1.25rem;
+        border-color: $main-text-color;
+    }
+    100% {
+        top: -1.25rem;
+        left: -1.25rem;
+    }
+}
+@keyframes animate-img-circle-2 {
+    0% {
+        top: -4.375rem;
+    }
+    100% {
+        top: 0.625rem;
+        border-color: $main-text-color;
+    }
+}
