@@ -30,6 +30,13 @@ body {
 .justify-center {
     justify-content: center;
 }
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-reverse-wrap {
+    flex-wrap: wrap-reverse;
+}
+
 // Grid
 .grid {
     display: grid;
@@ -39,7 +46,6 @@ body {
     padding: 6.875rem 1rem;
     gap: 10rem;
     justify-content: center;
-    flex-wrap: wrap-reverse;
 }
 .header-container {
     padding-bottom: 1.875rem;
@@ -81,14 +87,17 @@ body {
     }
 }
 
+.main-background {
+    background: $main-background-color;
+}
+
 @media (max-width: 580px) {
     .container {
+        padding: 3rem 1rem;
         gap: 3rem;
-        .right {
-            img {
-                width: 20rem;
-                height: auto;
-            }
+        img {
+            width: 20rem;
+            height: auto;
         }
         .bottom {
             ul {
