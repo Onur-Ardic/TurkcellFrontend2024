@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+.btn {
+  width: 133px;
+  height: 56px;
+}
+
+.hero .container .navbar {
+  margin-top: 40px;
+}
+.hero .container .navbar .navbar-right {
+  column-gap: 30px;
+}
+.hero .container .navbar .navbar-right button {
+  margin-right: 70px;
+}
+
+/*# sourceMappingURL=main.css.map */

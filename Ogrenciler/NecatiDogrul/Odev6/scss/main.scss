@@ -216,7 +216,6 @@ a {
       color: $mainColor;
     }
     @extend .cards;
-    
   }
 }
 .testimonials {
@@ -247,7 +246,7 @@ a {
   text-align: center;
   padding: 80px 0px;
   background-color: $secondColor;
-  .container{
+  .container {
     width: 70%;
   }
   h2 {
@@ -294,52 +293,49 @@ a {
   }
 }
 
-.newsletter{
+.newsletter {
   background-color: $mainColor;
-  .container{
+  .container {
     width: 70%;
     padding: 40px 20px;
     display: flex;
     justify-content: space-between;
-    .newsletter-left{
+    .newsletter-left {
       color: white;
-      h2{
+      h2 {
         font-size: 18px;
         font-weight: 200;
       }
-      p{
+      p {
         font-size: 16px;
         font-weight: 100;
         color: rgb(201, 201, 201);
         line-height: 28px;
       }
     }
-    .newsletter-right{
+    .newsletter-right {
       display: flex;
-      input{
+      input {
         width: 400px;
         background-color: $mainColor;
         border-bottom: 1px solid white;
-        
       }
     }
   }
-  .btn{
+  .btn {
     width: 103px;
     height: 43px;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     border-radius: 0;
     color: grey;
-    &:hover{
+    &:hover {
       background-color: black;
       transition: all 0.3s ease-in-out;
     }
-
-
   }
 }
 
-::placeholder{
+::placeholder {
   color: white;
   font-style: italic;
   font-size: 14px;
