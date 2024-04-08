@@ -67,26 +67,79 @@ $letter-spacing-30: 30px;
 
 header {
   padding-top: 60px;
+
+  img {
+    width: 98px;
+    height: 56px;
+  }
 }
 
-header img {
-  width: 98px;
-  height: 56px;
-}
+.left {
+  h1 {
+    @include myMixin($fs-120, $fw-700, $line-h-120, $color-1, -$letter-spacing-4);
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
 
-.left h1 {
-  @include myMixin($fs-120, $fw-700, $line-h-120, $color-1, -$letter-spacing-4);
-  padding-top: 100px;
-  padding-bottom: 20px;
-}
+  .wavy-shape {
+    background-image: url("https://demo.cocobasic.com/seppo-html/demo-5/images/wavy-shape.png");
+    height: 20px;
+    margin: 25px 0;
+    background-size: 644px 20px;
+    background-repeat: repeat-x;
+    animation: wavy-shape-animation 15s linear infinite;
+  }
 
-.left .wavy-shape {
-  background-image: url("https://demo.cocobasic.com/seppo-html/demo-5/images/wavy-shape.png");
-  height: 20px;
-  margin: 25px 0;
-  background-size: 644px 20px;
-  background-repeat: repeat-x;
-  animation: wavy-shape-animation 15s linear infinite;
+  .coming-soon {
+    @include myMixin($fs-32, $fw-700, $line-h-35, $color-1, $letter-spacing-30);
+    padding-top: 15px;
+  }
+
+  .last-div {
+    margin-top: 60px;
+
+    img {
+      width: 34px;
+      height: 50px;
+      margin-top: 5px;
+    }
+
+    input {
+      font-size: $fs-18;
+      padding: 20px 24px;
+      margin: 0 16px;
+      outline: none;
+      border: 1px solid $color-3;
+      border-radius: 10px;
+      box-shadow: 0px 0px 30px 7px #0c7f8640;
+      width: 450px;
+      transition: 0.5s ease;
+
+      &::placeholder {
+        font-size: $fs-18;
+        color: $color-1;
+      }
+
+      &:focus {
+        border-color: $color-1;
+        box-shadow: none;
+      }
+    }
+
+    button {
+      @include myMixin($fs-16, $fw-600, $line-h-19, $color-3, $letter-spacing-4);
+      padding: 25px 24px;
+      border: none;
+      border-radius: 10px;
+      background-color: $color-1;
+      transition: 0.5s ease;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $color-2;
+      }
+    }
+  }
 }
 
 @keyframes wavy-shape-animation {
@@ -99,70 +152,58 @@ header img {
   }
 }
 
-.left .coming-soon {
-  @include myMixin($fs-32, $fw-700, $line-h-35, $color-1, $letter-spacing-30);
-  padding-top: 15px;
-}
-
-.left .last-div {
-  margin-top: 60px;
-}
-
-.left .last-div img {
-  width: 34px;
-  height: 50px;
-  margin-top: 5px;
-}
-
-.left .last-div input {
-  font-size: $fs-18;
-  padding: 20px 24px;
-  margin: 0 16px;
-  outline: none;
-  border: 1px solid $color-3;
-  border-radius: 10px;
-  box-shadow: 0px 0px 30px 7px #0c7f8640;
-  width: 450px;
-  transition: 0.5s ease;
-}
-
-.left .last-div input::placeholder {
-  font-size: $fs-18;
-  color: $color-1;
-}
-
-.left .last-div input:focus {
-  border-color: $color-1;
-  box-shadow: none;
-}
-
-.left .last-div button {
-  @include myMixin($fs-16, $fw-600, $line-h-19, $color-3, $letter-spacing-4);
-  padding: 25px 24px;
-  border: none;
-  border-radius: 10px;
-  background-color: $color-1;
-  transition: 0.5s ease;
-
-  &:hover {
-    cursor: pointer;
-    background-color: $color-2;
-  }
-}
-
 .right {
   position: relative;
-}
 
-.right .img-circle {
-  width: 345.6px;
-  height: 345.6px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 3px solid #fafafa;
-  border-radius: 50%;
-  animation: img-circle-animation 8s linear infinite;
+  .img-circle {
+    width: 345.6px;
+    height: 345.6px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 3px solid #fafafa;
+    border-radius: 50%;
+    animation: img-circle-animation 8s linear infinite;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 345.6px;
+    height: 345.6px;
+    margin-bottom: 32px;
+
+    &:hover {
+      filter: grayscale(20%);
+    }
+  }
+
+  h4 {
+    @include myMixin($fs-32, $fw-600, $line-h-30, $color-2, 0);
+  }
+
+  .web-developer {
+    @include myMixin($fs-16, $fw-400, $line-h-30, $color-2, $letter-spacing-5);
+    margin-bottom: 20px;
+  }
+
+  .summary {
+    width: 345.6px;
+    height: 165px;
+    margin-bottom: 24px;
+    @extend .web-developer;
+    letter-spacing: 0;
+  }
+
+  .socials {
+    width: 345.6px;
+    height: 58px;
+    margin-bottom: 20px;
+
+    a {
+      text-decoration: none;
+      @include myMixin($fs-12, $fw-700, $line-h-30, $color-2, $letter-spacing-5);
+    }
+  }
 }
 
 @keyframes img-circle-animation {
@@ -206,71 +247,38 @@ header img {
   }
 }
 
-.right img {
-  border-radius: 50%;
-  width: 345.6px;
-  height: 345.6px;
-  margin-bottom: 32px;
-
-  &:hover {
-    filter: grayscale(20%);
-  }
-}
-
-.right h4 {
-  @include myMixin($fs-32, $fw-600, $line-h-30, $color-2, 0);
-}
-
-.right .web-developer {
-  @include myMixin($fs-16, $fw-400, $line-h-30, $color-2, $letter-spacing-5);
-  margin-bottom: 20px;
-}
-
-.right .summary {
-  width: 345.6px;
-  height: 165px;
-  margin-bottom: 24px;
-  @extend .web-developer;
-  letter-spacing: 0;
-}
-
-.right .socials {
-  width: 345.6px;
-  height: 58px;
-  margin-bottom: 20px;
-}
-
-.right .socials a {
-  text-decoration: none;
-  @include myMixin($fs-12, $fw-700, $line-h-30, $color-2, $letter-spacing-5);
-}
-
 @media (max-width: 1250px) {
   body {
     background: linear-gradient(to top, #e5fff9 5%, #b8e4da 50%);
     background-repeat: no-repeat;
   }
 
-  .left h1 {
-    font-size: $fs-90;
-    line-height: $line-h-110;
+  .left {
+    h1 {
+      font-size: $fs-90;
+      line-height: $line-h-110;
+    }
   }
 
   section>div {
     flex-direction: column;
   }
 
-  .right .img-circle {
-    visibility: hidden;
+  .right {
+    .img-circle {
+      visibility: hidden;
+    }
   }
 
   .body-circle {
     visibility: hidden;
   }
 
-  .left .last-div {
-    justify-content: flex-start;
-    margin-bottom: 30px;
+  .left {
+    .last-div {
+      justify-content: flex-start;
+      margin-bottom: 30px;
+    }
   }
 
   .right {
@@ -282,22 +290,26 @@ header img {
 }
 
 @media (max-width: 992px) {
-  .left .last-div img {
-    width: 16px;
-    height: 32px;
-  }
+  .left {
+    .last-div {
+      img {
+        width: 16px;
+        height: 32px;
+      }
 
-  .left .last-div input {
-    font-size: $fs-16;
-    width: 360px;
-  }
+      input {
+        font-size: $fs-16;
+        width: 360px;
 
-  .left .last-div input::placeholder {
-    font-size: $fs-16;
-  }
+        &::placeholder {
+          font-size: $fs-16;
+        }
+      }
 
-  .left .last-div button {
-    font-size: $fs-12;
+      button {
+        font-size: $fs-12;
+      }
+    }
   }
 }
 
@@ -306,15 +318,17 @@ header img {
     text-align: center;
   }
 
-  .left h1 {
-    font-size: $fs-60;
-    letter-spacing: $letter-spacing-4;
-  }
+  .left {
+    h1 {
+      font-size: $fs-60;
+      letter-spacing: $letter-spacing-4;
+    }
 
-  .left .coming-soon {
-    font-size: $fs-22;
-    line-height: $line-h-19;
-    letter-spacing: $letter-spacing-4;
+    .coming-soon {
+      font-size: $fs-22;
+      line-height: $line-h-19;
+      letter-spacing: $letter-spacing-4;
+    }
   }
 }
 
@@ -323,18 +337,20 @@ header img {
     width: 90%;
   }
 
-  .left .last-div {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-  }
+  .left {
+    .last-div {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
 
-  .left .last-div img {
-    visibility: hidden;
-  }
+      img {
+        visibility: hidden;
+      }
 
-  .left .last-div input {
-    width: none;
-    margin-bottom: 30px;
+      input {
+        width: none;
+        margin-bottom: 30px;
+      }
+    }
   }
 }

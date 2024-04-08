@@ -1,0 +1,144 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: "Outfit", sans-serif;
+    line-height: 1.6;
+    font-size: 1.6rem;
+    color: #000;
+}
+a{
+    color: #000;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+a:hover{
+    color: rgba(255,185,31,1) !important;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+.container{
+    width: 1260px;
+    margin: 0 auto;
+}
+
+/* Flex */
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column-gap{
+    column-gap: 20px;
+}
+
+/* cards */
+.card{
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+.card-body{
+    padding: 40px 20px;
+}
+.card:hover{
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* buttons */
+.btn{
+    padding: 8px 25px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 1.7rem;
+    border: none;
+    color: #fff;
+    background: rgba(255,185,31,1);
+    font-family: inherit;
+}
+
+.btn-outline-gray{
+    background: gray;
+    color: black;
+}
+
+.btn:hover{
+    background: black;
+    color: #fff;
+}
+
+.active{
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    background-color: rgba(255,255,255, .1);
+}
+.supTitle{
+    font-size: 4rem;
+    margin: 0 0 30px 0;
+}
+.title{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.title span{
+    color: rgba(255,185,31,1);
+}
+.subTitle{
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
+.paragraph{
+    color: rgb(219, 226, 251);
+    margin-bottom: 15px;
+}
+.box-shadow{
+    box-shadow: 0 0 15px rgba(255, 255, 255, .2);
+}
+.content{
+    width: 65%;
+    margin: 0 auto;
+    padding: 50px;
+}
+.p-100{
+    padding: 100px 0;
+}
+.text-center{
+    text-align: center;
+}
+.star i{
+    color: rgba(255,185,31,1);
+    margin: 10px 0;
+}
+.price{
+    color:rgb(35, 63, 146);
+    font-weight: bold;
+    font-size: 20px;
+}
+.border-right{
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 26px;
+}
+.border-y{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+@media (max-width:576px){
+    .container{
+        width: 500px;
+    }
+}
