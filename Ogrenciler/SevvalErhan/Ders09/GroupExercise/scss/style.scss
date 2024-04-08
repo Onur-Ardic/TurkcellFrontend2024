@@ -6,37 +6,72 @@
   width: 100%;
   background-size: cover;
   position: relative;
-
-  .header-nav {
-    padding: 20px 15px;
-    @include flex(flex, space-around, center);
-    .nav-menu-middle > ul {
-      @include flex(flex, center, center);
-    }
-    .nav-menu-right > ul {
-      @include flex(flex, flex-start, center);
-    }
-  }
   .container {
     z-index: 2;
     position: relative;
-    .container-body .container-wrap {
+    .header-nav {
+      padding: 20px 15px;
+      @include flex(flex, space-between, center);
+      & li {
+        padding: 20px 10px;
+      }
+      .nav-menu-middle ul {
+        @include flex(flex, center, center);
+      }
+      .nav-menu-right > ul {
+        @include flex(flex, flex-start, center);
+        & li:first-child {
+          padding: 0 0 0 20px;
+          border-left: 1px solid #dee2e6;
+        }
+        & li:last-child {
+          @extend %btn;
+        }
+      }
+    }
+    .container-wrap {
+      @include flex(flex, center, center, column, 2rem);
+      height: 76vh;
       text-align: center;
     }
-
     .form-search {
       background: rgba(255, 255, 255, 0.8);
       border-radius: 4px;
       padding: 20px;
-      @include flex(flex, center, center, $gap: 0.5rem);
+      width: 100%;
+      @include flex(flex, space-around, center, $gap: 1rem);
+      flex-wrap: nowrap;
       & input,
       select,
       button {
-        padding: 0.375rem 0.75rem;
+        @extend %btn;
+        height: 43px;
+        width: 100%;
+        border: 1px solid transparent;
+      }
+      & select,
+      input:first-child {
+        @extend %placeholder;
+        width: 30%;
       }
 
-      .form-search-inputs {
-        @include flex(flex, center, center, $gap: 0.5rem);
+      .location-input {
+        position: relative;
+        input {
+          @extend %placeholder;
+          width: 100%;
+        }
+        i {
+          position: absolute;
+          right: 10px;
+          top: 15px;
+        }
+      }
+      .search-submit {
+        @extend %btn;
+        & button {
+          padding: 10px 30px;
+        }
       }
     }
   }
