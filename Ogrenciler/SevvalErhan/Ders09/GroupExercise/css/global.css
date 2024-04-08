@@ -8,4 +8,10 @@
   padding: 0;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 /*# sourceMappingURL=global.css.map */

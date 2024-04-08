@@ -1,7 +1,6 @@
 {
   "name": "groupexercise",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass -w scss:css"
@@ -12,5 +11,6 @@
   "dependencies": {
     "sass": "^1.74.1",
     "scss": "^0.2.4"
-  }
+  },
+  "description": ""
 }
