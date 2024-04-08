@@ -165,6 +165,7 @@ a {
   align-items: center;
 }
 .projects .box {
+  overflow: hidden;
   transition: all 1s ease-in-out;
   cursor: pointer;
   flex: 1;
@@ -173,6 +174,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.projects .box:nth-child(5) .content p {
+  font-size: 24px;
 }
 .projects .box .content {
   flex-grow: 1;
@@ -196,6 +200,7 @@ a {
   display: none;
 }
 .projects .box .content .content-buttons a {
+  position: relative;
   background-color: #084b4f;
   color: white;
   border: none;
@@ -205,6 +210,29 @@ a {
 }
 .projects .box .content .content-buttons a:hover {
   transform: scale(1.1);
+}
+.projects .box .content .content-buttons a .ring {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.projects .box .content .content-buttons a .ring .ring-container {
+  position: relative;
+}
+.projects .box .content .content-buttons a .ring .ring-container .circle {
+  width: 7px;
+  height: 7px;
+  background-color: red;
+  border-radius: 50%;
+}
+.projects .box .content .content-buttons a .ring .ring-container .ringing {
+  position: absolute;
+  top: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  animation: pulsate 1s infinite;
+  border: 1px solid red;
 }
 .projects .box:hover {
   flex: 6;
@@ -218,6 +246,19 @@ a {
   gap: 20px;
 }
 
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2, 2);
+    opacity: 0;
+  }
+}
 .big-circle {
   border-radius: 50%;
   border: 1px solid;
@@ -291,6 +332,9 @@ a {
     background-color: #e5fff9;
     padding: 20px 0px;
   }
+  .page {
+    padding-bottom: 100px;
+  }
   .page .container {
     flex-direction: column;
     margin: 0 50px;
@@ -304,12 +348,28 @@ a {
   .page .container .container-right .profile-photo {
     align-self: center;
   }
+  .projects {
+    padding: 0px 50px;
+    flex-direction: column;
+  }
+  .projects .box {
+    width: 100%;
+    flex-direction: row;
+  }
+  .projects .box img {
+    height: 100%;
+    width: max-content;
+  }
+  .projects .box .content p {
+    writing-mode: horizontal-tb;
+    text-orientation: sideways;
+  }
   .bg-shape1,
   .bg-shape2 {
     display: none;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1025px) {
   .page {
     text-align: center;
   }
@@ -343,6 +403,23 @@ a {
     border: 2px solid;
     width: 300px;
     height: 300px;
+  }
+  .projects .box {
+    flex-direction: column;
+    height: 500px;
+  }
+  .projects .box img {
+    display: none;
+  }
+  .projects .box:nth-child(5) .content p {
+    font-size: 8px;
+  }
+  .projects .box .content p {
+    font-size: 16px;
+  }
+  .projects .box:hover img {
+    display: block;
+    height: 60%;
   }
 }
 
