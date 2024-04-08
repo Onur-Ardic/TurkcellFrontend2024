@@ -161,24 +161,61 @@ a {
   display: flex;
   justify-content: center;
   gap: 20px;
+  display: flex;
+  align-items: center;
 }
 .projects .box {
+  transition: all 1s ease-in-out;
   cursor: pointer;
   flex: 1;
   height: 700px;
-  background-color: whitesmoke;
+  background-color: #0c7f86;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.projects .box p {
+.projects .box .content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.projects .box .content p {
   writing-mode: vertical-rl;
   text-orientation: upright;
+  color: white;
+  font-size: 32px;
+  display: flex;
+  flex-shrink: 1;
+  font-family: "Cinzel", serif;
+  font-weight: 800;
+}
+.projects .box .content .content-buttons {
+  display: none;
+}
+.projects .box .content .content-buttons a {
+  background-color: #084b4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.projects .box .content .content-buttons a:hover {
+  transform: scale(1.1);
 }
 .projects .box:hover {
   flex: 6;
-  transition: all 1s ease-in-out;
 }
 .projects .box:hover p {
   writing-mode: horizontal-tb;
   text-orientation: sideways;
+}
+.projects .box:hover .content-buttons {
+  display: flex;
+  gap: 20px;
 }
 
 .big-circle {
