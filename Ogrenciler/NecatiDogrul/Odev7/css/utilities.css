@@ -43,6 +43,7 @@ h2 {
 .container {
   width: 80%;
   margin: 0 auto;
+  max-width: 1300px;
 }
 
 input {

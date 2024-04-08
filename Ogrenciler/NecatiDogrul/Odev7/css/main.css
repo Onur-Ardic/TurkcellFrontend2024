@@ -7,7 +7,7 @@
 
 .btn {
   padding: 15px 20px;
-  background: linear-gradient(to right, #FD4472, #FFB64B);
+  background: linear-gradient(to right, #fd4472, #ffb64b);
   border: none;
   border-radius: 5px;
   color: white;
@@ -16,11 +16,11 @@
   transition: all 300ms ease-in-out;
 }
 .btn:hover {
-  background: linear-gradient(to right, #FD4572, #FFA788);
+  background: linear-gradient(to right, #fd4572, #ffa788);
 }
 
 .hero {
-  background-color: #F8EFFF;
+  background-color: #f8efff;
   background-image: url("../images/shape-2.png");
   background-repeat: no-repeat;
   background-position-x: right;
@@ -118,50 +118,50 @@
   }
 }
 
-.omnichannel, .all-in-one {
+.omnichannel, .extend-power, .retail-store, .all-in-one {
   padding: 80px 0px;
 }
-.omnichannel .container .left-container, .all-in-one .container .left-container {
+.omnichannel .container .left-container, .extend-power .container .left-container, .retail-store .container .left-container, .all-in-one .container .left-container {
   gap: 30px;
   width: 50%;
 }
-.omnichannel .container .left-container h2, .all-in-one .container .left-container h2 {
+.omnichannel .container .left-container h2, .extend-power .container .left-container h2, .retail-store .container .left-container h2, .all-in-one .container .left-container h2 {
   font-size: 36px;
 }
-.omnichannel .container .left-container p, .all-in-one .container .left-container p {
+.omnichannel .container .left-container p, .extend-power .container .left-container p, .retail-store .container .left-container p, .all-in-one .container .left-container p {
   color: #696969;
 }
-.omnichannel .container .left-container ul, .all-in-one .container .left-container ul {
+.omnichannel .container .left-container ul, .extend-power .container .left-container ul, .retail-store .container .left-container ul, .all-in-one .container .left-container ul {
   display: flex;
   flex-wrap: wrap;
 }
-.omnichannel .container .left-container ul li, .all-in-one .container .left-container ul li {
+.omnichannel .container .left-container ul li, .extend-power .container .left-container ul li, .retail-store .container .left-container ul li, .all-in-one .container .left-container ul li {
   color: #696969;
   list-style-type: none;
   width: 50%;
   line-height: 2;
 }
-.omnichannel .container .left-container .btn, .all-in-one .container .left-container .btn {
+.omnichannel .container .left-container .btn, .extend-power .container .left-container .btn, .retail-store .container .left-container .btn, .all-in-one .container .left-container .btn {
   width: 180px;
 }
-.omnichannel .container .left-container hr, .all-in-one .container .left-container hr {
+.omnichannel .container .left-container hr, .extend-power .container .left-container hr, .retail-store .container .left-container hr, .all-in-one .container .left-container hr {
   border: 1px solid #ecf0f3;
 }
-.omnichannel .container .left-container .check-icon, .all-in-one .container .left-container .check-icon {
+.omnichannel .container .left-container .check-icon, .extend-power .container .left-container .check-icon, .retail-store .container .left-container .check-icon, .all-in-one .container .left-container .check-icon {
   width: 24px;
   height: 24px;
 }
-.omnichannel .container .right-container img, .all-in-one .container .right-container img {
+.omnichannel .container .right-container img, .extend-power .container .right-container img, .retail-store .container .right-container img, .all-in-one .container .right-container img {
   width: 88%;
 }
 
 .all-in-one {
-  background-color: #FFFCFA;
+  background-color: #fffcfa;
 }
 
 .perfect-pos {
   padding: 80px 0px;
-  background-color: #FFFCFA;
+  background-color: #fffcfa;
   text-align: center;
 }
 .perfect-pos .container {
@@ -169,6 +169,28 @@
 }
 .perfect-pos .container p {
   width: 40%;
+}
+.perfect-pos .container .perfect-cards {
+  gap: 30px;
+}
+.perfect-pos .container .perfect-cards .perfect-card {
+  width: 20%;
+  min-width: 275px;
+  gap: 20px;
+  padding: 50px 60px;
+  text-align: center;
+  box-shadow: 0 4px 4px rgba(58, 58, 58, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+.perfect-pos .container .perfect-cards .perfect-card:hover {
+  transform: translateY(-5px);
+}
+.perfect-pos .container .perfect-cards .perfect-card img {
+  width: 50%;
+  align-self: center;
+}
+.perfect-pos .container .perfect-cards .perfect-card h6 {
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -188,7 +210,9 @@
     width: 100%;
     height: auto;
   }
-  .hero .container .content .right-content .usr-card, .hero .container .content .right-content .video-card, .hero .container .content .right-content .woman {
+  .hero .container .content .right-content .usr-card,
+  .hero .container .content .right-content .video-card,
+  .hero .container .content .right-content .woman {
     display: none;
   }
 }
@@ -199,20 +223,23 @@
   .hero .container .content .right-content .laptop-man {
     width: 100%;
   }
-  .omnichannel .container, .all-in-one .container {
+  .omnichannel .container, .all-in-one .container, .retail-store .container, .extend-power .container {
     flex-direction: column-reverse;
     gap: 30px;
   }
-  .omnichannel .container .left-container, .all-in-one .container .left-container {
+  .omnichannel .container .left-container, .all-in-one .container .left-container, .retail-store .container .left-container, .extend-power .container .left-container {
     width: 100%;
   }
-  .omnichannel .container .left-container ul li, .all-in-one .container .left-container ul li {
+  .omnichannel .container .left-container ul li, .all-in-one .container .left-container ul li, .retail-store .container .left-container ul li, .extend-power .container .left-container ul li {
     width: 100%;
   }
-  .omnichannel .container .right-container, .all-in-one .container .right-container {
+  .omnichannel .container .right-container, .all-in-one .container .right-container, .retail-store .container .right-container, .extend-power .container .right-container {
     width: 100%;
   }
   .all-in-one .container {
+    flex-direction: column;
+  }
+  .retail-store .container {
     flex-direction: column;
   }
 }
