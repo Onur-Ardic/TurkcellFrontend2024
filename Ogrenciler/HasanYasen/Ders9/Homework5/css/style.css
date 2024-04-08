@@ -21,6 +21,10 @@ body {
   display: flex;
 }
 
+.f-direction-column {
+  flex-direction: column;
+}
+
 .jc-center {
   justify-content: center;
 }
@@ -33,11 +37,20 @@ body {
   align-items: center;
 }
 
+.ai-start {
+  align-items: flex-start;
+}
+
 .text-center {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 500;
 }
 
@@ -62,22 +75,28 @@ h1, h2, h3, h4, h5, h6 {
 header {
   margin-top: 20px;
 }
+
 header * {
   color: white;
 }
+
 header .header-logo a {
   font-size: 20px;
 }
+
 header .header-nav .nav-list-item {
   padding: 20px 10px;
 }
+
 header .header-nav .nav-list-item.contact {
   margin-right: 48px;
 }
+
 header .header-nav .nav-list-item .border-left {
   border-left: 1px solid #dee2e6;
   padding-left: 1.5rem;
 }
+
 header .header-nav .nav-list-item .register-link {
   margin-left: 30px;
 }
@@ -97,35 +116,41 @@ header .header-nav .nav-list-item .register-link {
 .hero-section {
   min-height: 100vh;
 }
+
 .hero-section * {
   position: relative;
 }
 
 .welcome-section {
-  margin-top: 160px;
+  margin-top: 150px;
   color: white;
 }
+
 .welcome-section h1 {
   font-size: 3rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
   line-height: 1.2;
 }
+
 .welcome-section p {
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 2rem;
 }
+
 .welcome-section .welcome-form {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 4px;
   padding: 20px;
   margin-bottom: 16px;
 }
+
 .welcome-section .welcome-form .form-item {
   padding: 0 15px;
   width: 28%;
 }
+
 .welcome-section .welcome-form .form-item input,
 .welcome-section .welcome-form .form-item select {
   padding: 6px 12px;
@@ -137,18 +162,22 @@ header .header-nav .nav-list-item .register-link {
   font-size: 1.1rem;
   color: #495057;
 }
+
 .welcome-section .welcome-form .form-item input::placeholder,
 .welcome-section .welcome-form .form-item select::placeholder {
   font-size: 1.1rem;
   color: #495057;
 }
+
 .welcome-section .welcome-form .form-item select {
   font-size: 1.1rem;
   color: #495057;
 }
+
 .welcome-section .welcome-form .form-item.btn {
   width: 16%;
 }
+
 .welcome-section .welcome-form .form-item button {
   cursor: pointer;
   color: white;
@@ -161,17 +190,21 @@ header .header-nav .nav-list-item .register-link {
   width: 100%;
   font-size: 1.1rem;
 }
+
 .welcome-section .welcome-form .form-item button:hover {
   background-color: #0974fb;
 }
+
 .welcome-section .trending-search {
   gap: 0.25rem;
 }
+
 .welcome-section .trending-search h2 {
   font-size: 1rem;
   font-weight: 500;
   margin-right: 10px;
 }
+
 .welcome-section .trending-search a {
   font-size: 0.8rem;
   border: 1px solid white;
@@ -180,6 +213,7 @@ header .header-nav .nav-list-item .register-link {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
 }
+
 .welcome-section .trending-search a:hover {
   color: #2f89fc;
   background-color: white;
@@ -188,29 +222,36 @@ header .header-nav .nav-list-item .register-link {
 .ads {
   padding: 80px 0;
 }
+
 .ads .ads-title {
   font-size: 20px;
   margin-bottom: 24px;
   padding-right: 15px;
 }
+
 .ads .ads-items {
   padding: 0 15px;
 }
+
 .ads .ads-items .ads-item {
   background-color: white;
   border-radius: 7px;
   box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
 }
+
 .ads .ads-items .ads-item img {
   height: 150px;
   border-top-right-radius: 7px;
 }
+
 .ads .ads-items .ads-item .ads-item-body {
   padding: 20px;
 }
+
 .ads .ads-items .ads-item .ads-item-body .ads-item-body-row1 {
   margin-bottom: 20px;
 }
+
 .ads .ads-items .ads-item .ads-item-body .ads-item-body-row1 span {
   font-size: 11px;
   padding: 5px 20px;
@@ -218,56 +259,137 @@ header .header-nav .nav-list-item .register-link {
   font-weight: bold;
   border-radius: 30px;
 }
+
 .ads .ads-items .ads-item .ads-item-body .ads-item-body-row1 a {
   width: 30px;
   height: 30px;
   background: rgba(0, 0, 0, 0.03);
   border-radius: 50%;
 }
+
 .ads .ads-items .ads-item .ads-item-body .ads-item-body-row1 a i {
   color: #2f89fc;
 }
+
 .ads .ads-items .ads-item .ads-item-body .ads-item-body-row1 a:hover {
   background: #f23a2e;
 }
+
 .ads .ads-items .ads-item .ads-item-body .ads-item-body-row1 a:hover i {
   color: white;
 }
+
 .ads .ads-items .ads-item .ads-item-body .ads-item-body-row2 {
   font-size: 1rem;
   color: #2f89fc;
   margin-bottom: 8px;
 }
+
 .ads .ads-items .ads-item .ads-item-body .ads-item-body-row3 {
   font-size: 13px;
   color: #4d4d4d;
   margin-bottom: 16px;
 }
+
 .ads .ads-items .ads-item .ads-item-body .ads-item-body-row4 .emoji {
   font-size: 1.3rem;
   font-weight: bold;
   letter-spacing: 2px;
 }
+
 .ads .ads-items .ads-item .ads-item-body .ads-item-body-row4 .emoji.emoji-fill {
   color: orange;
 }
+
 .ads .ads-items .ads-item .ads-item-body .ads-item-body-row4 .emoji.emoji-empty {
   color: gray;
 }
+
 .ads .ads-items .ads-item .ads-item-body .ads-item-body-row4 .row4-text {
   color: gray;
   font-size: 0.8rem;
 }
+
 .ads .ads-arrows {
   margin-top: 50px;
   font-size: 1.5rem;
 }
+
 .ads .ads-arrows i {
   padding: 20px;
 }
+
 .ads .ads-arrows i:hover {
   cursor: pointer;
   color: #2f89fc;
+}
+
+.testimonials-section .h2-container {
+  border-bottom: 3px solid #2f89fc;
+  width: max-content;
+  margin: 70px 0 35px 0;
+}
+
+.testimonials-section .h2-container h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2f89fc;
+}
+
+.testimonials-section .person-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+.testimonials-section .person-container .person-name {
+  margin-bottom: 20px;
+}
+
+.testimonials-section .person-container .lorem-container .arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.testimonials-section .person-container .lorem-container .arrow svg {
+  width: 3rem;
+  height: 2rem;
+}
+
+.testimonials-section .person-container .lorem-container .arrow:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+.testimonials-section .person-container .lorem-container .lorem {
+  font-size: 24px;
+  color: #4d4d4d;
+  width: 800px;
+  margin: 0 70px;
+  font-style: italic;
+}
+
+.testimonials-section .round-container {
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.testimonials-section .round-container .round {
+  width: 10px;
+  height: 10px;
+  background-color: #dee2e6;
+  border-radius: 50%;
+}
+
+.testimonials-section .round-container .round.second {
+  background-color: #2f89fc;
+}
+
+.testimonials-section .round-container .round:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

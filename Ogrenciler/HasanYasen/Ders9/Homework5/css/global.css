@@ -5,50 +5,45 @@
   list-style: none;
   text-decoration: none;
 }
-
 body {
   font-family: "Nanum Gothic", sans-serif;
   line-height: 1.7;
 }
-
 .container {
   width: 1140px;
   max-width: 100%;
   margin: 0 auto;
 }
-
 .flex {
   display: flex;
 }
-
+.f-direction-column {
+  flex-direction: column;
+}
 .jc-center {
   justify-content: center;
 }
-
 .jc-sbetween {
   justify-content: space-between;
 }
-
 .ai-center {
   align-items: center;
 }
-
+.ai-start {
+  align-items: flex-start;
+}
 .text-center {
   text-align: center;
 }
-
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3,h4,h5,h6 {
   font-weight: 500;
 }
-
 .fs-15 {
   font-size: 15px;
 }
-
 .bg-light {
   background-color: #f8f9fa;
 }
-
 .blue-btn {
   cursor: pointer;
   color: white;
@@ -58,5 +53,4 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
   padding: 12px 20px;
 }
-
 /*# sourceMappingURL=global.css.map */
