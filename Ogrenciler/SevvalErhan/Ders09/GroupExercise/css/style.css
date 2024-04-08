@@ -6,12 +6,146 @@
   font-family: "Nanum Gothic", sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-19_2 {
+  font-size: 19.2px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-normal {
+  font-weight: normal;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fw-italic {
+  font-weight: italic;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.color-black {
+  color: #000000;
+}
+
+.color-blue {
+  color: #0000ff;
+}
+
+.color-yellow {
+  color: #ffff00;
+}
+
+.color-gray {
+  color: #808080;
+}
+
+.color-dark-gray {
+  color: #a9a9a9;
+}
+
+.color-light-gray {
+  color: #d3d3d3;
+}
+
+.bg-color-white {
+  background-color: #ffffff;
+}
+
+.bg-color-blue {
+  background-color: #2f89fc;
+}
+
+.bg-color-dark-gray {
+  background-color: #333333;
+}
+
+.bg-color-gray {
+  background-color: #e9ecef;
+}
+
+.bg-color-light-gray {
+  background-color: #f8f9fa;
+}
+
+.header .container .form-search .search-submit, .header .container .form-search input,
+.header .container .form-search select,
+.header .container .form-search button, .header .container .header-nav .nav-menu-right > ul li:last-child {
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.header .container .form-search .location-input input, .header .container .form-search select,
+.header .container .form-search input:first-child {
+  font-size: 1rem;
+  color: #495057;
 }
 
 .header {
@@ -21,16 +155,23 @@
   background-size: cover;
   position: relative;
 }
-.header .header-nav {
+.header .container {
+  z-index: 2;
+  position: relative;
+}
+.header .container .header-nav {
   padding: 20px 15px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
 }
-.header .header-nav .nav-menu-middle > ul {
+.header .container .header-nav li {
+  padding: 20px 10px;
+}
+.header .container .header-nav .nav-menu-middle ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +179,7 @@
   flex-wrap: wrap;
   gap: 2rem;
 }
-.header .header-nav .nav-menu-right > ul {
+.header .container .header-nav .nav-menu-right > ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -46,36 +187,57 @@
   flex-wrap: wrap;
   gap: 2rem;
 }
-.header .container {
-  z-index: 2;
-  position: relative;
+.header .container .header-nav .nav-menu-right > ul li:first-child {
+  padding: 0 0 0 20px;
+  border-left: 1px solid #dee2e6;
 }
-.header .container .container-body .container-wrap {
+.header .container .container-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+  height: 76vh;
   text-align: center;
 }
 .header .container .form-search {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 4px;
   padding: 20px;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
+  flex-wrap: nowrap;
 }
 .header .container .form-search input,
 .header .container .form-search select,
 .header .container .form-search button {
-  padding: 0.375rem 0.75rem;
+  height: 43px;
+  width: 100%;
+  border: 1px solid transparent;
 }
-.header .container .form-search .form-search-inputs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+.header .container .form-search select,
+.header .container .form-search input:first-child {
+  width: 30%;
+}
+.header .container .form-search .location-input {
+  position: relative;
+}
+.header .container .form-search .location-input input {
+  width: 100%;
+}
+.header .container .form-search .location-input i {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.header .container .form-search .search-submit button {
+  padding: 10px 30px;
 }
 
 .opacity {
