@@ -5,7 +5,6 @@
   color: black;
 }
 $grey: #696969;
-
 .btn {
   padding: 15px 20px;
   background: linear-gradient(to right, #fd4472, #ffb64b);
@@ -125,6 +124,7 @@ $grey: #696969;
 .omnichannel {
   padding: 80px 0px;
   .container {
+    gap: 100px;
     .left-container {
       gap: 30px;
       width: 50%;
@@ -157,7 +157,7 @@ $grey: #696969;
     }
     .right-container {
       img {
-        width: 88%;
+        width: 100%;
       }
     }
   }
@@ -191,7 +191,7 @@ $grey: #696969;
           transform: translateY(-5px);
         }
         img {
-          width: 50%;
+          height: 80px;
           align-self: center;
         }
         h6 {
@@ -206,6 +206,90 @@ $grey: #696969;
 }
 .extend-power {
   @extend .omnichannel;
+  background-color: #fffcfa;
+}
+.perfect-pos-software {
+  background-color: white;
+  @extend .perfect-pos;
+  .container {
+    .perfect-cards {
+      .perfect-card {
+        width: 30%;
+        p {
+          width: 100%;
+        }
+        .rounded-img {
+          position: relative;
+          border-radius: 50%;
+          background: linear-gradient(#be6df2, #f675a1);
+          width: 80px;
+          height: 80px;
+          padding: 20px;
+          img {
+            width: 60px;
+            height: 45px;
+          }
+          .pulse {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            animation: pulse-animation 2s infinite;
+            z-index: -1;
+          }
+          @keyframes pulse-animation {
+            0% {
+              transform: scale(0.9);
+              background-color: rgba(190, 109, 242, 0.7);
+            }
+            70% {
+              transform: scale(1.5);
+              background-color: rgba(190, 109, 242, 0);
+            }
+            100% {
+              transform: scale(0.9);
+              background-color: rgba(190, 109, 242, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.smratpos-power {
+  @extend .perfect-pos-software;
+  background-color: #fffef6;
+  .container {
+    .perfect-cards {
+      .perfect-card {
+        min-width: 320px;
+        padding: 10px 40px;
+        background-color: white;
+        gap: 50px;
+        .card-row {
+          width: 100%;
+          text-align: start;
+          h5 {
+            font-size: 20px;
+          }
+          img {
+            border-radius: 50%;
+          }
+          p {
+            color: #696969;
+          }
+          hr {
+            border: 1px solid #f1f1f1;
+          }
+        }
+        &:hover {
+          transform: translateY(0px);
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 1200px) {
   .hero {
@@ -273,6 +357,15 @@ $grey: #696969;
   .retail-store {
     .container {
       flex-direction: column;
+    }
+  }
+  .smratpos-power {
+    .container {
+      .perfect-cards {
+        .perfect-card {
+          width: 100%;
+        }
+      }
     }
   }
 }
