@@ -152,7 +152,64 @@
     }
   }
 }
+//! --------------------------------Categories-----------------------
+.categories{
+  @include flexible(flex, space-around, center, 1rem);
+  flex-direction: column;
+  &-title{
+    h2 {
+      @include textFont(center, $fontSizeExtraLarge, $primary );
+      margin:0 0 8px;
+      padding-top: 80px;
+    }
+    p {
+      @include textFont(center, $defaultSize, $colorStarGray);
+      margin: 0 0 16px;
+      &::after{
+        position: absolute;
+        height: 3px;
+        width: 80px;
+        background-color: $primary;
 
+      }
+    }
+  }
+  &-content{
+    @include flexible(flex, space-around, center, 1rem);
+    gap: 0px;
+    padding-bottom: 80px;
+    &-item {
+      @include flexible(flex, space-evenly, center, 0.1rem);
+      flex-direction: column;
+      width: 200px;
+      height: 200px;
+      padding: 30px 10px;
+      i {
+        color: $primary;
+        font-size: $fontSizeExtraExtraLarge;
+      }
+      &:hover{
+        background-color: $primary;
+        border-radius: 10px;
+        color: white;
+        transition: .3s all ease-in-out;
+        width: 220px;
+        height: 220px;
+      }
+      &:hover i {
+        color: white;
+        font-size: 4rem;
+        transition: .3s all ease-in-out;
+      }
+      span {
+        color: #000;
+        background-color: $colorGrey;
+        padding: 2px 20px;
+        border-radius: 50px;
+      }
+    }
+  }
+}
 //! --------------------------------Our Blog-------------------------
 .blog {
   margin-top: $x100;
