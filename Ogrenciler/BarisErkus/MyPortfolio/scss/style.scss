@@ -1,0 +1,174 @@
+@import "./common/global", "./common/variables", "./common/extends", "./common/animations", "./common/mixins";
+
+header {
+    padding-top: 3.75rem;
+    .container {
+        width: 100%;
+        max-width: 75rem;
+        padding: 0 1.5rem;
+        margin: 0 auto;
+        a {
+            img {
+                width: 6.125rem;
+                height: 3.5rem;
+            }
+        }
+    }
+}
+.coming {
+    width: 100%;
+    max-width: 75rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    .coming-holder {
+        display: flex;
+        justify-content: space-between;
+        .coming-text {
+            width: calc(60%);
+            h1 {
+                padding: 6.25rem 0 1.25rem 0;
+            }
+            .wave-image {
+                background-image: url(../assets/wavy-shape.png);
+                width: 100%;
+                height: 1.25rem;
+                background-size: 40.313rem 1.25rem;
+                background-repeat: repeat-x;
+                animation: wavy-motion 15s linear infinite;
+                margin: 1.563rem 0;
+            }
+            .subtitle {
+                color: $main-text-color;
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 2.188rem;
+                letter-spacing: 1.875rem;
+                text-transform: uppercase;
+                padding-top: 0.938rem;
+            }
+            .coming-form {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 3.75rem;
+                .arrow {
+                    width: 2.125rem;
+                    height: 3.125rem;
+                }
+                input {
+                    font-family: $main-font;
+                    font-size: 1.125rem;
+                    padding: 1.25rem 1.5rem;
+                    flex-grow: 1;
+                    margin: 0 1rem;
+                    border: none;
+                    outline: none;
+                    border: 0.063rem solid #fff;
+                    border-radius: 0.625rem;
+                    background-color: #fff;
+                    box-shadow: 0 0 1.875rem 0.438rem #0c7f8640;
+                    transition: 0.5s ease;
+                    &::placeholder {
+                        color: $main-text-color;
+                    }
+                }
+                button {
+                    padding: 1.563rem 1.5rem;
+                    border-radius: 0.625rem;
+                    color: #fff;
+                    background-color: $main-text-color;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    line-height: 1.188rem;
+                    letter-spacing: 0.25rem;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    border: none;
+                    transition: 0.5s ease;
+                    &:hover {
+                        background-color: $main-body-color;
+                    }
+                }
+            }
+        }
+        .coming-image {
+            width: calc(30%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .img-box {
+                position: relative;
+                margin-bottom: 2rem;
+                img {
+                    position: relative;
+                    max-width: 100%;
+                    border-radius: 50%;
+                    z-index: 1;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -2.813rem;
+                    left: -1.875rem;
+                    width: 21.875rem;
+                    height: 21.875rem;
+                    border-radius: 50%;
+                    border: 0.188rem solid #fafafa;
+                    z-index: 2;
+                    pointer-events: none;
+                    user-select: none;
+                    animation: animate-img-circle 8s linear infinite;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -41.25rem;
+                    top: 0;
+                    width: 50rem;
+                    height: 50rem;
+                    border: 0.063rem solid #fff;
+                    border-radius: 50%;
+                    pointer-events: none;
+                    user-select: none;
+                    z-index: 0;
+                    animation: animate-img-circle-2 3s linear infinite alternate;
+                }
+            }
+            div {
+                h4 {
+                    color: $main-body-color;
+                }
+                .subtitle {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 1.875rem;
+                    letter-spacing: 0.313rem;
+                    margin-bottom: 1.5rem;
+                }
+                .body {
+                    line-height: 1.875rem;
+                    margin-bottom: 1.5rem;
+                }
+                .coming-links {
+                    padding-bottom: 1.25rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    a {
+                        color: $main-body-color;
+                        padding: 0.5rem 0;
+                        text-decoration: none;
+                        transition: color 0.5s ease;
+                        font-size: 0.75rem;
+                        font-weight: 700;
+                        line-height: 1.875rem;
+                        letter-spacing: 0.313rem;
+                        &:hover {
+                            color: $main-text-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

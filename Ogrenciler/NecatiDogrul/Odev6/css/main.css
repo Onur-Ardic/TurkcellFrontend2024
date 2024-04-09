@@ -314,14 +314,14 @@ a.logo {
   display: flex;
 }
 .newsletter .container .newsletter-right input {
-  width: 400px;
+  max-width: 400px;
   background-color: #2f89fc;
   border-bottom: 1px solid white;
 }
 .newsletter .btn {
   width: 103px;
   height: 43px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   border-radius: 0;
   color: grey;
 }
@@ -334,6 +334,51 @@ a.logo {
   color: white;
   font-style: italic;
   font-size: 14px;
+}
+
+.footer {
+  background-color: #333333;
+}
+.footer .container {
+  width: 70%;
+  padding: 40px 20px;
+  justify-content: space-between;
+}
+.footer .container .col {
+  gap: 20px;
+}
+.footer .container h2 {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer .container p {
+  color: #737373;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 200;
+}
+.footer .container a {
+  color: #737373;
+}
+.footer .container input {
+  background-color: #333333;
+  border: 1px solid grey;
+}
+.footer .container button {
+  background-color: #2f89fc;
+  border: none;
+  color: white;
+  width: 73px;
+}
+.footer .border-top {
+  color: #737373;
+  text-align: center;
+  border-top: 1px solid white;
+}
+.footer .border-top p {
+  margin-top: 80px;
+  margin-bottom: 200px;
 }
 
 @media screen and (max-width: 1200px) {

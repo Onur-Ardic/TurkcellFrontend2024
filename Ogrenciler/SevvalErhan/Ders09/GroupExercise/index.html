@@ -5,34 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DIRECTORYADS</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="header-nav">
           <div class="nav-menu-logo">
-            <h1>DIRECTORYADS</h1>
+            <h1 class="fs-20 fw-900 color-white">DIRECTORYADS</h1>
           </div>
           <div class="nav-menu-middle">
-            <ul>
+            <ul class="fs-15 color-white">
               <li>Home</li>
               <li>Ads</li>
-              <li>
-                About
-                <ul>
-                  <li>The Company</li>
-                  <li>The Leadership</li>
-                  <li>Philosophy</li>
-                  <li>Careers</li>
-                </ul>
-              </li>
+              <li>About</li>
               <li>Blog</li>
               <li>Contact</li>
             </ul>
           </div>
-          <div class="nav-menu-right"></div>
+          <div class="nav-menu-right">
+            <ul class="fs-15 color-white">
+              <li>Login</li>
+              <li class="bg-color-blue">Register</li>
+            </ul>
+          </div>
         </nav>
+        <div class="container-wrap">
+          <div class="title">
+            <h1 class="fs-48 color-white">Welcome To DirectoryAds</h1>
+            <p class="color-white fs-19_2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="form-search">
+            <input placeholder="What are you looking for?" type="text" />
+
+            <div class="location-input">
+              <input type="text" value="Location" />
+              <i class="fa-solid fa-location-dot color-gray"></i>
+            </div>
+
+            <select name="" id="" placeholder="All Categories">
+              <option value="">All Categories</option>
+              <option value="">Real Estate</option>
+            </select>
+
+            <div class="search-submit">
+              <button class="form-button bg-color-blue color-white fs-16">
+                Search
+              </button>
+            </div>
+          </div>
+          <div class="trend-search color-white">
+            <h2 class="fs-16">Trending Search:</h2>
+            <a class="color-white fs-12_8" href="#">iPhone</a>
+            <a class="color-white fs-12_8" href="#">Cars</a>
+            <a class="color-white fs-12_8" href="#">Flowers</a>
+            <a class="color-white fs-12_8" href="#">House</a>
+          </div>
+        </div>
       </div>
+      <div class="opacity"></div>
     </header>
+
+    <section class="featured-ads bg-color-gray">
+      <div class="container">
+        <div class="featured-title">
+          <h2>Featured Ads</h2>
+        </div>
+        <div class="featured-cards">
+          <div class="featured-card bg-color-white">
+            <div class="img-card">
+              <img src="images/img_2.jpg.webp" alt="Image 1" />
+            </div>
+            <div class="content">
+              <span class="category">Real Estates</span>
+              <i class="fa-solid fa-heart"></i>
+              <h3>Own New House</h3>
+              <span>Don St, Brooklyn, New York</span>
+              <div class="stars">
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(3 Reviews)</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card bg-color-white">
+            <div class="img-card">
+              <img src="images/img_3.jpg.webp" alt="Image 1" />
+            </div>
+            <div class="content">
+              <span class="category">Real Estates</span>
+              <i class="fa-solid fa-heart"></i>
+              <h3>Own New House</h3>
+              <span>Don St, Brooklyn, New York</span>
+              <div class="stars">
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(3 Reviews)</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card bg-color-white">
+            <div class="img-card">
+              <img src="images/img_4.jpg.webp" alt="Image 1" />
+            </div>
+            <div class="content">
+              <span class="category">Real Estates</span>
+              <i class="fa-solid fa-heart"></i>
+              <h3>Own New House</h3>
+              <span>Don St, Brooklyn, New York</span>
+              <div class="stars">
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(3 Reviews)</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card bg-color-white">
+            <div class="img-card">
+              <img src="images/img_5.jpg" alt="Image 1" />
+            </div>
+            <div class="content">
+              <span class="category">Real Estates</span>
+              <i class="fa-solid fa-heart"></i>
+              <h3>Own New House</h3>
+              <span>Don St, Brooklyn, New York</span>
+              <div class="stars">
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star color-yellow"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(3 Reviews)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="left-right-icons">
+          <i class="fa-solid fa-chevron-left fs-20 color-antrasit"></i>
+          <i class="fa-solid fa-chevron-right fs-20 color-antrasit"></i>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

@@ -6,9 +6,19 @@
   font-family: "Nanum Gothic", sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.5;
+}
+*::selection {
+  background: black;
+  color: white;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-@mixin flex($display, $justify, $align, $column: row, $gap: 2rem) {
+@mixin flex($display, $justify: none, $align: none, $column: row, $gap: 2rem) {
   display: $display;
   justify-content: $justify;
   align-items: $align;
@@ -17,8 +27,61 @@
   gap: $gap;
 }
 
-@mixin textFont($color, $size, $weight) {
-  color: $color;
-  font-size: $size;
-  font-weight: $weight;
+$sizes: 11, 12.8, 13, 14, 15, 16, 19.2, 20, 24, 30, 32, 48;
+@each $size in $sizes {
+  $class-size: $size;
+  @if $size == 19.2 {
+    $class-size: 19_2;
+  }
+  @elseif $size ==12.8 {
+    $class-size: 12_8;
+  }
+  .fs-#{$class-size} {
+    font-size: $size * 1px;
+  }
+}
+
+$fontWeights: 100, normal, 400, 500, 700, 900, bold, italic;
+@each $weight in $fontWeights {
+  .fw-#{$weight} {
+    font-weight: $weight;
+  }
+}
+$colors: (
+  white: #ffffff,
+  black: #000000,
+  blue: #0000ff,
+  yellow: #f89d13,
+  gray: #808080,
+  dark-gray: #a9a9a9,
+  light-gray: #d3d3d3,
+  antrasit: #495057,
+);
+
+@each $colorName, $colorValue in $colors {
+  .color-#{$colorName} {
+    color: $colorValue;
+  }
+}
+
+$bgColors: (
+  white: #ffffff,
+  blue: #2f89fc,
+  dark-gray: #333333,
+  gray: #e9ecef,
+  light-gray: #f8f9fa,
+);
+@each $bgColorName, $bgColorValue in $bgColors {
+  .bg-color-#{$bgColorName} {
+    background-color: $bgColorValue;
+  }
+}
+
+%btn {
+  padding: 0.415rem 0.75rem;
+  border-radius: 0.25rem;
+}
+%placeholder {
+  font-size: 1rem;
+  color: #495057;
 }

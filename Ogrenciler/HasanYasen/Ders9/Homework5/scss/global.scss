@@ -7,13 +7,18 @@
 }
 body {
   font-family: "Nanum Gothic", sans-serif;
+  line-height: 1.7;
 }
 .container {
-  width: 70%;
+  width: 1140px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .flex {
   display: flex;
+}
+.f-direction-column {
+  flex-direction: column;
 }
 .jc-center {
   justify-content: center;
@@ -24,12 +29,28 @@ body {
 .ai-center {
   align-items: center;
 }
+.ai-start {
+  align-items: flex-start;
+}
+.text-center {
+  text-align: center;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 500;
+}
 .fs-15 {
   font-size: 15px;
 }
+.bg-light {
+  background-color: #f8f9fa;
+}
 @mixin blueButtonMixin($padding-y, $padding-x) {
+  cursor: pointer;
+  color: white;
   background-color: #2f89fc;
   border-radius: 0.25rem;
+  border: none;
+  outline: none;
   padding: $padding-y $padding-x;
 }
 .blue-btn {

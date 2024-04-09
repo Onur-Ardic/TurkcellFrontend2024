@@ -1,0 +1,380 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+}
+$grey: #696969;
+.btn {
+  padding: 15px 20px;
+  background: linear-gradient(to right, #fd4472, #ffb64b);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 300ms ease-in-out;
+  &:hover {
+    background: linear-gradient(to right, #fd4572, #ffa788);
+  }
+}
+
+.hero {
+  background-color: #f8efff;
+  background-image: url("../images/shape-2.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  .container {
+    .navbar {
+      position: sticky;
+      top: 0;
+      padding-top: 40px;
+      .navbar-right {
+        column-gap: 50px;
+      }
+    }
+    .left-content {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: 90vh;
+      gap: 50px;
+      h2 {
+        font-size: 60px;
+      }
+      p {
+        font-size: 16px;
+        color: #696969;
+        line-height: 1.5;
+        width: 80%;
+      }
+      .btn {
+        width: 171px;
+      }
+    }
+    .right-content {
+      width: 50%;
+      height: 90vh;
+      position: relative;
+      .laptop-man {
+        width: 115%;
+      }
+      .woman {
+        top: 275px;
+        right: 290px;
+        position: absolute;
+        height: 40%;
+        animation: woman-animation 12s ease-in-out infinite;
+      }
+      @keyframes woman-animation {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-50px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .usr-card {
+        position: absolute;
+        top: 287px;
+        right: 40px;
+        height: 6%;
+        animation: usr-card-animation 10s ease-in-out infinite;
+      }
+      @keyframes usr-card-animation {
+        0% {
+          transform: translateX(0px);
+        }
+        25% {
+          transform: translateX(-75px);
+        }
+        50% {
+          transform: translateY(-50px);
+        }
+        75% {
+          transform: translateX(-75px);
+        }
+      }
+      .video-card {
+        position: absolute;
+        height: 20%;
+        top: 180px;
+        right: -120px;
+        animation: video-card-animation 10s ease-in-out infinite;
+      }
+      @keyframes video-card-animation {
+        0% {
+          transform: translateX(0px) translateY(0px);
+        }
+        50% {
+          transform: translateX(50px) translateY(-50px);
+        }
+        100% {
+          transform: translateX(0px) translateY(0px);
+        }
+      }
+    }
+  }
+}
+
+.omnichannel {
+  padding: 80px 0px;
+  .container {
+    gap: 100px;
+    .left-container {
+      gap: 30px;
+      width: 50%;
+      h2 {
+        font-size: 36px;
+      }
+      p {
+        color: $grey;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          color: $grey;
+          list-style-type: none;
+          width: 50%;
+          line-height: 2;
+        }
+      }
+      .btn {
+        width: 180px;
+      }
+      hr {
+        border: 1px solid #ecf0f3;
+      }
+      .check-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .right-container {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.all-in-one {
+  @extend .omnichannel;
+  background-color: #fffcfa;
+}
+
+.perfect-pos {
+  padding: 80px 0px;
+  background-color: #fffcfa;
+  text-align: center;
+  .container {
+    gap: 30px;
+    p {
+      width: 40%;
+    }
+    .perfect-cards {
+      gap: 30px;
+      .perfect-card {
+        width: 20%;
+        min-width: 275px;
+        gap: 20px;
+        padding: 50px 60px;
+        text-align: center;
+        box-shadow: 0 4px 4px rgba(58, 58, 58, 0.1);
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          transform: translateY(-5px);
+        }
+        img {
+          height: 80px;
+          align-self: center;
+        }
+        h6 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+.retail-store {
+  @extend .omnichannel;
+}
+.extend-power {
+  @extend .omnichannel;
+  background-color: #fffcfa;
+}
+.perfect-pos-software {
+  background-color: white;
+  @extend .perfect-pos;
+  .container {
+    .perfect-cards {
+      .perfect-card {
+        width: 30%;
+        p {
+          width: 100%;
+        }
+        .rounded-img {
+          position: relative;
+          border-radius: 50%;
+          background: linear-gradient(#be6df2, #f675a1);
+          width: 80px;
+          height: 80px;
+          padding: 20px;
+          img {
+            width: 60px;
+            height: 45px;
+          }
+          .pulse {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            animation: pulse-animation 2s infinite;
+            z-index: -1;
+          }
+          @keyframes pulse-animation {
+            0% {
+              transform: scale(0.9);
+              background-color: rgba(190, 109, 242, 0.7);
+            }
+            70% {
+              transform: scale(1.5);
+              background-color: rgba(190, 109, 242, 0);
+            }
+            100% {
+              transform: scale(0.9);
+              background-color: rgba(190, 109, 242, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.smratpos-power {
+  @extend .perfect-pos-software;
+  background-color: #fffef6;
+  .container {
+    .perfect-cards {
+      .perfect-card {
+        min-width: 320px;
+        padding: 10px 40px;
+        background-color: white;
+        gap: 50px;
+        .card-row {
+          width: 100%;
+          text-align: start;
+          h5 {
+            font-size: 20px;
+          }
+          img {
+            border-radius: 50%;
+          }
+          p {
+            color: #696969;
+          }
+          hr {
+            border: 1px solid #f1f1f1;
+          }
+        }
+        &:hover {
+          transform: translateY(0px);
+        }
+      }
+    }
+  }
+}
+
+.sponsors{
+  .container{
+    width: 70%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hero {
+    background-image: none;
+    .container .content {
+      flex-direction: column;
+      gap: 50px;
+      .left-content {
+        width: 100%;
+        height: auto;
+        margin-top: 200px;
+      }
+      .right-content {
+        width: 100%;
+
+        .usr-card,
+        .video-card,
+        .woman {
+          display: none;
+        }
+        height: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .hero {
+    .container {
+      .navbar {
+        .navbar-right {
+          display: none;
+        }
+      }
+      .content {
+        .right-content {
+          .laptop-man {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .omnichannel {
+    .container {
+      flex-direction: column-reverse;
+      gap: 30px;
+      .left-container {
+        width: 100%;
+        ul {
+          li {
+            width: 100%;
+          }
+        }
+      }
+      .right-container {
+        width: 100%;
+      }
+    }
+  }
+  .all-in-one {
+    .container {
+      flex-direction: column;
+    }
+  }
+  .retail-store {
+    .container {
+      flex-direction: column;
+    }
+  }
+  .smratpos-power {
+    .container {
+      .perfect-cards {
+        .perfect-card {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

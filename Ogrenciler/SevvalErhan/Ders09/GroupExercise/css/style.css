@@ -1,31 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Outfit:wght@100..900&display=swap");
-* {
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
-  font-family: "Nanum Gothic", sans-serif;
-  margin: 0;
-  padding: 0;
-}
+/* Error: expected "}".
+ *    ,
+ * 30 | }
+ *    |  ^
+ *    '
+ *   scss/responsive.scss 30:2  @import
+ *   scss/style.scss 1:32       root stylesheet */
 
-.container {
-  max-width: 568px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "}".\a    \2577 \a 30 \2502  }\a    \2502   ^\a    \2575 \a   scss/responsive.scss 30:2  @import\a   scss/style.scss 1:32       root stylesheet';
 }
-.container .header-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.container .header-nav .nav-menu-middle > ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-/*# sourceMappingURL=style.css.map */

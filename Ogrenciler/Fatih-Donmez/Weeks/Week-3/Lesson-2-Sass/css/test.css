@@ -1,0 +1,21 @@
+/* Error: Missing argument $width.
+ *     ,
+ * 3   | @mixin test($color, $width) {
+ *     |        ==================== declaration
+ * ... |
+ * 9   |   @include test($bgColor);
+ *     |   ^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *     '
+ *   scss\test.scss 9:3  test()
+ *   scss\test.scss 9:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing argument $width.\a     \2577 \a 3   \2502  @mixin test($color, $width) {\d\a     \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a... \2502 \a 9   \2502    @include test($bgColor);\d\a     \2502    ^^^^^^^^^^^^^^^^^^^^^^^ invocation\a     \2575 \a   scss\\test.scss 9:3  test()\a   scss\\test.scss 9:3  root stylesheet";
+}

@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <!-- External CSS -->
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -51,6 +52,195 @@
                     </nav>
                 </div>
             </header>
+            <div class="welcome-section">
+                <div class="text-center">
+                    <h1>Welcome To DirectoryAds</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="welcome-form flex jc-sbetween ai-center">
+                    <div class="form-item">
+                        <input type="text" placeholder="What are you looking for?">
+                    </div>
+                    <div class="form-item">
+                        <input type="text" placeholder="Location">
+                    </div>
+                    <div class="form-item">
+                        <select name="location" id="location">
+                            <option>All Categories</option>
+                            <option>Real Estate</option>
+                            <option>Books & Magazines</option>
+                            <option>Furniture</option>
+                            <option>Electronics</option>
+                            <option>Cars & Vehicles</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                    <div class="form-item btn">
+                        <button>
+                            Search
+                        </button>
+                    </div>
+                </div>
+                <div class="trending-search flex ai-center">
+                    <h2>Trending Search: </h2>
+                    <a href="#">iPhone</a>
+                    <a href="#">Cars</a>
+                    <a href="#">Flowers</a>
+                    <a href="#">House</a>
+                </div>
+            </div>
+    </section>
+    <section class="ads bg-light">
+        <div class="container">
+            <h2 class="ads-title">
+                Featured Ads
+            </h2>
+            <div class="ads-items flex jc-sbetween">
+                <div class="ads-item">
+                    <img src="./images/ads-1.webp" alt="ads-1">
+                    <div class="ads-item-body">
+                        <div class="ads-item-body-row1 flex jc-sbetween">
+                            <span>Furniture</span>
+                            <a class="flex ai-center jc-center" href=""><i class="bi bi-heart-fill flex"></i></a>
+                        </div>
+                        <h3 class="ads-item-body-row2">Wooden Chair & Table</h3>
+                        <address class="ads-item-body-row3">Don St, Brooklyn, New York</address>
+                        <p class="ads-item-body-row4"><span class="emoji emoji-fill">★★★★</span><span
+                                class="emoji emoji-empty">★</span><span class="row4-text">(3 Reviews)</span></p>
+                    </div>
+                </div>
+                <div class="ads-item">
+                    <img src="./images/ads-2.webp" alt="ads-2">
+                    <div class="ads-item-body">
+                        <div class="ads-item-body-row1 flex jc-sbetween">
+                            <span>Electronics</span>
+                            <a class="flex ai-center jc-center" href=""><i class="bi bi-heart-fill flex"></i></a>
+                        </div>
+                        <h3 class="ads-item-body-row2">iPhone X gray</h3>
+                        <address class="ads-item-body-row3">Don St, Brooklyn, New York</address>
+                        <p class="ads-item-body-row4"><span class="emoji emoji-fill">★★★★</span><span
+                                class="emoji emoji-empty">★</span><span class="row4-text">(3 Reviews)</span></p>
+                    </div>
+                </div>
+                <div class="ads-item">
+                    <img src="./images/ads-3.webp" alt="ads-3">
+                    <div class="ads-item-body">
+                        <div class="ads-item-body-row1 flex jc-sbetween">
+                            <span>Cars & Vehicles</span>
+                            <a class="flex ai-center jc-center" href=""><i class="bi bi-heart-fill flex"></i></a>
+                        </div>
+                        <h3 class="ads-item-body-row2">New Black Car</h3>
+                        <address class="ads-item-body-row3">Don St, Brooklyn, New York</address>
+                        <p class="ads-item-body-row4"><span class="emoji emoji-fill">★★★★</span><span
+                                class="emoji emoji-empty">★</span><span class="row4-text">(3 Reviews)</span></p>
+                    </div>
+                </div>
+                <div class="ads-item">
+                    <img src="./images/ads-4.webp" alt="ads-4">
+                    <div class="ads-item-body">
+                        <div class="ads-item-body-row1 flex jc-sbetween">
+                            <span>Real Estate</span>
+                            <a class="flex ai-center jc-center" href=""><i class="bi bi-heart-fill flex"></i></a>
+                        </div>
+                        <h3 class="ads-item-body-row2">Own New House</h3>
+                        <address class="ads-item-body-row3">Don St, Brooklyn, New York</address>
+                        <p class="ads-item-body-row4"><span class="emoji emoji-fill">★★★★</span><span
+                                class="emoji emoji-empty">★</span><span class="row4-text">(3 Reviews)</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="ads-arrows flex jc-center">
+                <i class="bi bi-arrow-left"></i>
+                <i class="bi bi-arrow-right"></i>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-section">
+        <div class="container flex f-direction-column jc-center ai-center">
+            <div class="h2-container">
+                <h2>Testimonials</h2>
+            </div>
+            <div class="person-container flex f-direction-column ai-center">
+                <img src="./images/testimonials-person.webp" alt="testimonials-person">
+                <p class="person-name">Christine Aguilar</p>
+                <div class="lorem-container flex jc-sbetween ai-start text-center">
+                    <div class="arrow flex jc-center ai-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m14 7l-5 5m0 0l5 5" />
+                        </svg>
+                    </div>
+                    <p class="lorem">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
+                        reprehenderit aperiam
+                        quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt
+                        consequatur.
+                        Amet dolores excepturi earum unde iusto.”
+                    </p>
+                    <div class="arrow flex jc-center ai-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m10 17l5-5m0 0l-5-5" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="round-container flex jc-sbetween ai-center">
+                    <div class="round"></div>
+                    <div class="round second"></div>
+                    <div class="round"></div>
+                    <div class="round"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="our-blog-section bg-light">
+        <div class="container flex f-direction-column jc-center ai-center">
+            <div class="h2-and-p-container flex f-direction-column jc-center ai-center">
+                <h2>Our Blog</h2>
+                <p>See Our Daily News & Updates</p>
+            </div>
+            <div class="flex-container flex jc-center ai-center">
+                <div class="flex-item flex f-direction-column">
+                    <img src="./images/our-blog-1.webp" alt="our-blog-1">
+                    <a href="#">Many People Selling Online</a>
+                    <div class="spans">
+                        <span>by Mark Spiker •</span>
+                        <span class="second">Jan 18, 2019 •</span>
+                        <span class="last">News</span>
+                    </div>
+                    <p class="lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores
+                        sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.
+                    </p>
+                </div>
+                <div class="flex-item flex f-direction-column">
+                    <img src="./images/our-blog-2.webp" alt="our-blog-2">
+                    <a href="#">Many People Selling Online</a>
+                    <div class="spans">
+                        <span>by Mark Spiker •</span>
+                        <span class="second">Jan 18, 2019 •</span>
+                        <span class="last">News</span>
+                    </div>
+                    <p class="lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores
+                        sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.
+                    </p>
+                </div>
+                <div class="flex-item flex f-direction-column">
+                    <img src="./images/our-blog-3.webp" alt="our-blog-3">
+                    <a href="#">Many People Selling Online</a>
+                    <div class="spans">
+                        <span>by Mark Spiker •</span>
+                        <span class="second">Jan 18, 2019 •</span>
+                        <span class="last">News</span>
+                    </div>
+                    <p class="lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores
+                        sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.
+                    </p>
+                </div>
+            </div>
+            <button class="blue-btn">View All Posts</button>
         </div>
     </section>
 </body>

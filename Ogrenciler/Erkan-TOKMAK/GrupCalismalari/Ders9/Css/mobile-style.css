@@ -53,4 +53,13 @@
     .witdh50 {
         width: 100%;
     }
+    #Built .row {
+        flex-direction: column;
+    }
+    #Discover .row {
+        flex-direction: column;
+    }
+    .discover-left {
+        margin-bottom: 170px;
+    }
 }
