@@ -116,4 +116,13 @@
       }
     }
   }
+  .featured{
+    &-content{
+      flex-wrap: wrap;
+    }
+  }
+  .categories-content{
+    flex-wrap: wrap;
+  }
+
 }

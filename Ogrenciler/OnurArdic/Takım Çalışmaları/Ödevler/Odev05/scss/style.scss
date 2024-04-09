@@ -152,6 +152,106 @@
     }
   }
 }
+//! --------------------------------Featured Ads --------------------
+.featured{
+  padding: 80px 0px;
+  @include flexible(flex, space-around, center, 1rem);
+  flex-direction: column;
+  background-color: $colorWhite;
+  &-title{
+    font-size: $defaultSize;
+    font-weight: 200;
+    margin:0 0 24px;
+    @include flexible (flex, start,start,1rem);
+  }
+  &-content{
+    @include flexible(flex, space-evenly, center, 1rem);
+    &-item{
+      height: 450px;
+      width: 300px;
+      gap: 10px;
+      .item-img{
+        img{
+          width: 300px;
+          height: 250px;
+          margin-bottom: -10px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+      }
+      .item-content{
+        width: 300px;
+        padding: 20px;
+        background-color: #fff;
+        .content-title {
+          margin: 0 0 20px;
+          @include flexible(flex, space-between, center, 1rem);
+          span{
+            background-color: $colorGrey;
+            padding: 5px 20px;
+            border-radius: 50px;
+            font-size: $fontSizeSmall;
+          }
+          a {
+            background-color: $colorGrey;
+            border-radius: 50px;
+            width: 35px;
+            height: 35px;
+            position: relative;
+            &:hover{
+              background-color: #f23a2e;
+              color: white;
+            
+            }
+            &:hover i{
+              color: #fff;
+            }
+            i {
+              position: absolute;
+              color: $primary;
+              padding: 5px 10px;
+            }
+          }
+        }
+        .content-area{
+          a {
+            color: $primary;
+          }
+          p {
+            font-size: $fontSizeSmall;
+            color: $colorGraySecondary;
+            margin: 0 0 16px;
+          }
+          i {
+            color: $colorStar;
+            &:nth-child(5){
+              color: $colorStarGray;
+            }
+          }
+          &-reviews{
+            @include flexible(flex, start, start, 1rem);
+            color: $colorGraySecondary;
+            .stars{
+              display: inline-block;
+              &::after {
+                content: "(3 Reviews)"
+              }
+              // @include flexible(flex, start, center, 1rem)
+            } 
+          }
+        }
+      }
+    }
+  }
+  &-footer{
+    i {
+      font-size: $fontSizeMedium;
+    }
+    i:hover{
+      color: $primary;
+    }
+  }
+}
 //! --------------------------------Categories-----------------------
 .categories{
   @include flexible(flex, space-around, center, 1rem);
@@ -165,12 +265,15 @@
     p {
       @include textFont(center, $defaultSize, $colorStarGray);
       margin: 0 0 16px;
+      position: relative;
       &::after{
         position: absolute;
+        content: "";
+        top: 40px;
+        left: 35%;
         height: 3px;
         width: 80px;
         background-color: $primary;
-
       }
     }
   }

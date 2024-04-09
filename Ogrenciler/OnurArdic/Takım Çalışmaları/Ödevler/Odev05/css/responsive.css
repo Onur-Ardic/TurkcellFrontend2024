@@ -90,6 +90,12 @@
   .footer .footer-wrapper .footer-bottom {
     grid-template-columns: 1fr;
   }
+  .featured-content {
+    flex-wrap: wrap;
+  }
+  .categories-content {
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */
