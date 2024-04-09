@@ -4,7 +4,7 @@
 
 .main-header {
     background: url("../image/hero_2.jpg.webp") no-repeat top center/cover;
-    height: 110vh;
+    height: 100vh;
     *{
         z-index: 3;
     }
@@ -18,11 +18,11 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba($color: #000000, $alpha: 0.1)
+        background: rgba($color: #000000, $alpha: 0.3)
     }
     &-nav {
         flex-direction: column;
-        row-gap: .5rem;
+        row-gap: 2rem;
         padding: 2rem;
         position: absolute;
         top: 0;
@@ -52,7 +52,7 @@
         flex-direction: column;
         color: $color-white;
         h2{
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin: 15rem 0 0 0;
         }
         p{
@@ -85,20 +85,17 @@
                 display: block;
                 width: 100%;
             }
-            .trending-search{
-                width: 100%;
-                margin: 10px;
-                &.row{
-                    flex-direction: column;
-                    align-items: flex-start;
-                    row-gap: 10px;
-                }
-                h4{
-                    font-weight: 400;
-                    
-                }
+        }
+        .trending-search{
+            width: 100%;
+            margin: 10px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            row-gap: 10px;
+            h4{
+                font-weight: 400;
+                
             }
-        
         }
     }
 }
@@ -113,6 +110,31 @@
             ul{
                 margin: 0 3rem 0 auto;
             
+            }
+        }
+        &-content{
+
+            &-search{
+                display: flex;
+                column-gap: 20px;
+                align-items: center;
+
+                button{
+                    display: inline-block;
+                    width: auto;
+
+                }
+                input, select{
+                    margin: 0;
+                }
+                &>*:not(button) {
+                    flex: 1;
+
+
+                }
+            }
+            .trending-search{
+                justify-content: flex-start;
             }
         }
         

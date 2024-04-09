@@ -146,7 +146,7 @@ a {
 
 .main-header {
   background: url("../image/hero_2.jpg.webp") no-repeat top center/cover;
-  height: 110vh;
+  height: 100vh;
 }
 .main-header * {
   z-index: 3;
@@ -161,11 +161,11 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.3);
 }
 .main-header-nav {
   flex-direction: column;
-  row-gap: 0.5rem;
+  row-gap: 2rem;
   padding: 2rem;
   position: absolute;
   top: 0;
@@ -193,7 +193,7 @@ a {
   color: white;
 }
 .main-header-content h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin: 15rem 0 0 0;
 }
 .main-header-content p {
@@ -227,16 +227,14 @@ a {
   display: block;
   width: 100%;
 }
-.main-header-content-search .trending-search {
+.main-header-content .trending-search {
   width: 100%;
   margin: 10px;
-}
-.main-header-content-search .trending-search.row {
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: flex-start;
   row-gap: 10px;
 }
-.main-header-content-search .trending-search h4 {
+.main-header-content .trending-search h4 {
   font-weight: 400;
 }
 
@@ -250,6 +248,24 @@ a {
   }
   .main-header-nav ul {
     margin: 0 3rem 0 auto;
+  }
+  .main-header-content-search {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+  }
+  .main-header-content-search button {
+    display: inline-block;
+    width: auto;
+  }
+  .main-header-content-search input, .main-header-content-search select {
+    margin: 0;
+  }
+  .main-header-content-search > *:not(button) {
+    flex: 1;
+  }
+  .main-header-content .trending-search {
+    justify-content: flex-start;
   }
 }
 
