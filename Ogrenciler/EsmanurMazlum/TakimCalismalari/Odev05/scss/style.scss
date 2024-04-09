@@ -1,0 +1,41 @@
+@import "utilities";
+
+.nav-container {
+    @include flexible(space-between, center, 1rem);
+    padding-top: 30px;
+}
+
+.login {
+    border-left: 1px solid white;
+    padding-left: 30px;
+}
+
+.registerButton {
+    @include button(4px, white, $colorBlue, 15px);
+    padding: 12px 20px;
+    border: none;
+}
+
+.nav-list-wrapper{
+    @include flexible(center, center, 30px);
+}
+
+.header{
+    height: 100vh;
+    background: url(../images/hero_2.jpg);
+    background-size: cover;
+    color: white;
+    position: relative;
+    &::before {
+        content: ''; 
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3); 
+        z-index: 1;
+    }
+
+}
+
