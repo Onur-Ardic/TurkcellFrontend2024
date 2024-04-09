@@ -291,6 +291,15 @@ $grey: #696969;
     }
   }
 }
+
+.sponsors{
+  .container{
+    width: 70%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .hero {
     background-image: none;
