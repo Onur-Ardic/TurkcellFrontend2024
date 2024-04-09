@@ -2,9 +2,6 @@
   .hero-section {
     height: 100vh;
 
-    .hero {
-    }
-
     .navbar {
       .logo {
         display: none;
@@ -26,6 +23,17 @@
         100% {
           transform: translateY(-50px);
         }
+      }
+    }
+  }
+
+  .my-project {
+    .project-card-wrapper {
+      grid-template-columns: 100%;
+
+      .my-project-card {
+        width: 90%;
+        margin: 0 auto;
       }
     }
   }
