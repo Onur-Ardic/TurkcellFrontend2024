@@ -98,4 +98,51 @@ body {
   margin-right: 50px;
 }
 
-/*# sourceMappingURL=utilities.css.map */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 30px;
+}
+
+.login {
+  border-left: 1px solid white;
+  padding-left: 30px;
+}
+
+.registerButton {
+  border-radius: 4px;
+  color: white;
+  background-color: #2f89fc;
+  font-size: 15px;
+  padding: 12px 20px;
+  border: none;
+}
+
+.nav-list-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.header {
+  height: 100vh;
+  background: url(../images/hero_2.jpg);
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
