@@ -8,17 +8,8 @@
   .hero-section .hero-wrapper {
     flex-direction: column;
   }
-  @keyframes border-solid {
-    0% {
-      transform: translateY(-50px);
-    }
-    50% {
-      transform: translateY(0px);
-      border-color: #222831;
-    }
-    100% {
-      transform: translateY(-50px);
-    }
+  .hero-section .hero-wrapper .hero-right .img img {
+    width: 100%;
   }
   .my-project .project-card-wrapper {
     grid-template-columns: 100%;
