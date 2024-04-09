@@ -1,94 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Outfit:wght@100..900&display=swap");
-* {
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
-  font-family: "Nanum Gothic", sans-serif;
-  margin: 0;
-  padding: 0;
-}
+/* Error: expected "}".
+ *    ,
+ * 30 | }
+ *    |  ^
+ *    '
+ *   scss/responsive.scss 30:2  @import
+ *   scss/style.scss 1:32       root stylesheet */
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "}".\a    \2577 \a 30 \2502  }\a    \2502   ^\a    \2575 \a   scss/responsive.scss 30:2  @import\a   scss/style.scss 1:32       root stylesheet';
 }
-
-.header {
-  background: url("../images/background.webp");
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  position: relative;
-}
-.header .header-nav {
-  padding: 20px 15px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.header .header-nav .nav-menu-middle > ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.header .header-nav .nav-menu-right > ul {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.header .container {
-  z-index: 2;
-  position: relative;
-}
-.header .container .container-body .container-wrap {
-  text-align: center;
-}
-.header .container .form-search {
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 4px;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-.header .container .form-search input,
-.header .container .form-search select,
-.header .container .form-search button {
-  padding: 0.375rem 0.75rem;
-}
-.header .container .form-search .form-search-inputs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.opacity {
-  position: absolute;
-  opacity: 0.3;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100vh;
-  width: 100%;
-  z-index: 1;
-  background-color: black;
-}
-
-/*# sourceMappingURL=style.css.map */
