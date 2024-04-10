@@ -311,7 +311,9 @@ header .container a img, header .container a .cards-container .card .last-img, .
 }
 .cards-container .card {
   padding: 2rem 1rem 1rem 1rem;
-  background-color: #b33c24;
+  background-color: transparent;
+  border: 3px solid #b33c24;
+  border-radius: 0.5rem;
 }
 .cards-container .card img, .cards-container .card .last-img, .cards-container .card .first-img {
   width: 200px;

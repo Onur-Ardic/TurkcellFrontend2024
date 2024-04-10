@@ -156,7 +156,9 @@ header {
     gap: 2rem;
     .card {
         padding: 2rem 1rem 1rem 1rem;
-        background-color: $main-hover-color;
+        background-color: transparent;
+        border: 3px solid $main-hover-color;
+        border-radius: 0.5rem;
         img {
             width: 200px;
             top: 20px;
