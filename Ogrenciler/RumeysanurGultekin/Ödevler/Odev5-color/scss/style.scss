@@ -248,6 +248,7 @@
         .footer-top{
             @include hizalamaMixin(flex, row, flex-start, start);
             margin-bottom: 50px;
+            gap: 20px;
             .footer-about{
                 padding-right: 15px;
                 flex: 40%;
@@ -319,7 +320,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            flex: 20%;
+            /* flex: 20%; */
             .ourblog-part{
                 margin-bottom: 30px;
             }
@@ -327,16 +328,19 @@
    }
    .newsletterSection{
         .newsletter{
-            @include hizalamaMixin(flex, column, center, start);
+            @include hizalamaMixin(flex, column, center, start); 
             row-gap: 30px;
         }
     }
     .footer{
         .footer-body{
             .footer-top{
-                @include hizalamaMixin(flex, column, flex-start, start);
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                /*@include hizalamaMixin(flex, column, flex-start, start); */
                 .footer-about{
-                    flex: 40%;
+                    flex: 40%; 
                     margin-bottom: 30px;
                 }
                 .footer-col3{

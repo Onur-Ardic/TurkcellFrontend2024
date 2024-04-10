@@ -18,11 +18,8 @@ body {
 }
 
 .container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 90%;
+  margin: auto;
 }
 
 a {
@@ -341,6 +338,7 @@ ul li {
   justify-content: flex-start;
   align-items: start;
   margin-bottom: 50px;
+  gap: 20px;
 }
 .footer .footer-body .footer-top .footer-about {
   padding-right: 15px;
@@ -405,7 +403,7 @@ ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex: 20%;
+    /* flex: 20%; */
   }
   .ourblog .ourblog-body .ourblog-part {
     margin-bottom: 30px;
@@ -419,9 +417,9 @@ ul li {
   }
   .footer .footer-body .footer-top {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: start;
+    flex-wrap: wrap;
+    gap: 30px;
+    /*@include hizalamaMixin(flex, column, flex-start, start); */
   }
   .footer .footer-body .footer-top .footer-about {
     flex: 40%;
