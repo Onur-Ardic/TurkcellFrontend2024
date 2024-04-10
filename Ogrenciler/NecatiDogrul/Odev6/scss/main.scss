@@ -316,7 +316,7 @@ a {
     .newsletter-right {
       display: flex;
       input {
-        width: 400px;
+        max-width: 400px;
         background-color: $mainColor;
         border-bottom: 1px solid white;
       }
@@ -340,6 +340,52 @@ a {
   font-style: italic;
   font-size: 14px;
 }
+
+.footer {
+  background-color: $footerColor;
+  .container {
+    width: 70%;
+    padding: 40px 20px;
+    justify-content: space-between;
+    .col {
+      gap: 20px;
+    }
+    h2 {
+      color: white;
+      font-size: 16px;
+      font-weight: 300;
+    }
+    p {
+      color: #737373;
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 200;
+    }
+    a {
+      color: #737373;
+    }
+    input {
+      background-color: $footerColor;
+      border: 1px solid grey;
+    }
+    button {
+      background-color: $mainColor;
+      border: none;
+      color: white;
+      width: 73px;
+    }
+  }
+  .border-top{
+    color: #737373;
+    text-align: center;
+    border-top: 1px solid white;
+    p{
+      margin-top: 80px;
+      margin-bottom: 200px;
+    }
+  }
+}
+
 
 @media screen and (max-width: 1200px) {
   .hero .hero-form .form form {

@@ -1,0 +1,10 @@
+$bgColor: red;
+$x150: 150px;
+@mixin test($color, $width) {
+  background-color: $color;
+  width: $width;
+}
+
+.container {
+  @include test($bgColor);
+}

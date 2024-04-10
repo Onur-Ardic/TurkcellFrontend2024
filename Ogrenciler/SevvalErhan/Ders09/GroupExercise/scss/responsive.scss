@@ -1,2 +1,30 @@
-
-
+@media screen and (max-width: 768px) {
+  .header {
+    .nav-menu-middle,
+    .nav-menu-right {
+      display: none;
+    }
+    .container-wrap {
+      .form-search {
+        @include flex(
+          flex,
+          space-between,
+          center,
+          column !important,
+          $gap: 0.5rem
+        );
+        input,
+        select,
+        button {
+          width: 100% !important;
+        }
+        .location-input {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+  .featured-card:first-child,
+  .featured-card:nth-child(2) {
+    display: none; 
+}
