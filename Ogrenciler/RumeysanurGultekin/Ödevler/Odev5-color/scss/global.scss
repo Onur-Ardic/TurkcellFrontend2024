@@ -1,33 +1,73 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Nanum Gothic", sans-serif;
 }
 
+.primary-bg-color{
+    background-color: #2f89fc;
+}
+.primary-text-color{
+    color: #2f89fc;
+}
+//margin mixin i
+@mixin marginMixin($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+//padding mixi i
+@mixin paddingMixin($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+@mixin fontMixin($size, $color) {
+    font-size: $size;
+    color: $color;
+}
+
 //hizalama mixin i
-@mixin hizalamaMixin($display, $direction, $justify, $align){
+@mixin hizalamaMixin($display, $direction, $justify, $align) {
     display: $display;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
 }
-.container{
+
+.container {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
-a{text-decoration: none;}
-ul li{
+
+a {
+    text-decoration: none;
+}
+
+ul li {
     list-style-type: none;
     cursor: pointer;
 }
 
-.colorw{
+.colorw {
     color: white;
 }
-.gap-10{gap: 10px;}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}

@@ -1,7 +1,0 @@
-@import "./global.scss";
-.heroSection{
-    background-image: url("https://preview.colorlib.com/theme/directoryads/images/hero_2.jpg.webp");
-    .navbar-flex{
-        @include hizalamaMixin(flex, row, space-between, center);
-    }
-}

@@ -8,6 +8,14 @@ body {
   font-family: "Nanum Gothic", sans-serif;
 }
 
+.primary-bg-color {
+  background-color: #2f89fc;
+}
+
+.primary-text-color {
+  color: #2f89fc;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -29,8 +37,12 @@ ul li {
   color: white;
 }
 
-.gap-10 {
-  gap: 10px;
+.gap-30 {
+  gap: 30px;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=global.css.map */
