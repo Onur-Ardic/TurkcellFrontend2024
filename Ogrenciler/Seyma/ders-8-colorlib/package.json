@@ -1,7 +1,6 @@
 {
   "name": "ders-8-colorlib",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "scss": "sass --watch scss:css"
@@ -11,5 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.74.1"
-  }
+  },
+  "description": ""
 }

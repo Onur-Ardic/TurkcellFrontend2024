@@ -1,0 +1,125 @@
+@import "./variables";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    color: $main-text-color;
+    font-family: $main-font;
+    font-size: $main-font-size;
+    min-height: 100vh;
+    width: 100%;
+    // overflow: hidden;
+}
+// Flex
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+.align-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-reverse-wrap {
+    flex-wrap: wrap-reverse;
+}
+// Grid
+.grid {
+    display: grid;
+}
+// Other Globals
+.container {
+    padding: 6.875rem 1rem;
+    gap: 10rem;
+    justify-content: center;
+}
+.header-container {
+    padding-bottom: 1.875rem;
+    border-bottom: 1px solid #9c9c9c41;
+    margin-bottom: 2.5rem;
+    .header {
+        color: black;
+        font-size: 2.25rem;
+        margin-bottom: 1.25rem;
+    }
+    .paragraph {
+        max-width: 30rem;
+    }
+}
+.bottom {
+    ul {
+        gap: 3rem;
+        margin-bottom: 2.5rem;
+        div {
+            li {
+                gap: 0.625rem;
+                margin-bottom: 1.5rem;
+                i {
+                    color: $main-icon-color;
+                }
+            }
+        }
+    }
+}
+.button-container {
+    button {
+        padding: 1rem 2.875rem;
+        background: $main-button-color;
+        border: none;
+        border-radius: 0.25rem;
+        color: white;
+        font-size: $main-font-size;
+        font-weight: $main-font-weight;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        &:hover {
+            content: "";
+            transform: scaleX(0);
+            transform-origin: 60% 60%;
+            background: linear-gradient(to left, #ffab8b, #ff957d, #ff7d75, #ff6371, #fd4372);
+            transition: transform 0.3s ease-in-out;
+            -webkit-transition: transform 0.3s ease-in-out;
+        }
+    }
+}
+.main-background {
+    background: $main-background-color;
+}
+// Text
+.text-center {
+    text-align: center;
+}
+// Media
+@media (max-width: 800px) {
+    .container {
+        padding: 3rem 1rem;
+        gap: 3rem;
+        img {
+            width: 20rem;
+            height: auto;
+        }
+        .bottom {
+            ul {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+        .header {
+            font-size: 1.25rem;
+        }
+    }
+}

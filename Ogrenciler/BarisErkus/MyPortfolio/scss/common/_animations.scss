@@ -30,3 +30,28 @@
         border-color: $main-text-color;
     }
 }
+@keyframes coming-link {
+    0% {
+        transform: translateY(0);
+        color: #de4c4c;
+    }
+    50% {
+        transform: translateY(-10px);
+        color: #6ede4c;
+    }
+    100% {
+        transform: translateY(0);
+        color: #4c53de;
+    }
+}
+@keyframes buttonHover {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
