@@ -12,13 +12,6 @@ $x42: 42px;
   color: #e9ecef;
   border-radius: 5px;
 }
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 15px;
-}
 .btn {
   @include btn($mainColor, $x96, $x42);
 }
@@ -68,8 +61,12 @@ $x42: 42px;
     padding-top: 30px;
     .nav-right {
       column-gap: 60px;
-      :nth-of-type(5) {
-        margin-right: 30px;
+      :nth-child(5) {
+        padding-right: 30px;
+      }
+      :nth-child(6) {
+        padding-left: 30px;
+        border-left: 1px solid white;
       }
     }
   }
@@ -106,6 +103,7 @@ $x42: 42px;
     }
   }
   .trend-search {
+    padding-bottom: 50px;
     .trend-card {
       border: #f8f9fa solid 1px;
       border-radius: 5px;
@@ -149,8 +147,6 @@ a {
     .featured-card {
       width: 22%;
       min-width: 250px;
-      .content .row .category {
-      }
     }
     .feature-img {
       width: 100% !important;
@@ -226,7 +222,6 @@ a {
     gap: 50px;
     h2 {
       color: $mainColor;
-      margin-bottom: 15px;
     }
     .person {
       border-radius: 50%;
@@ -240,6 +235,7 @@ a {
       width: 70%;
       color: #4d4d4d;
       line-height: 40px;
+      font-style: italic;
     }
   }
 }
@@ -398,5 +394,15 @@ a {
   }
   .footer .container .col {
     width: 100%;
+    margin-bottom: 20px;
+  }
+  .categories .container .category-cards .category-card {
+    width: 100%;
+  }
+  .newsletter .container {
+    .newsletter-left,
+    .newsletter-right {
+      width: 100%;
+    }
   }
 }

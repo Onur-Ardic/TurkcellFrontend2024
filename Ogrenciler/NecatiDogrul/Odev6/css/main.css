@@ -1,11 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 15px;
-}
-
 .btn {
   background-color: #2f89fc;
   width: 96px;
@@ -65,8 +57,12 @@
 .hero .nav .nav-right {
   column-gap: 60px;
 }
-.hero .nav .nav-right :nth-of-type(5) {
-  margin-right: 30px;
+.hero .nav .nav-right :nth-child(5) {
+  padding-right: 30px;
+}
+.hero .nav .nav-right :nth-child(6) {
+  padding-left: 30px;
+  border-left: 1px solid white;
 }
 .hero .overlay {
   background-color: rgba(0, 0, 0, 0.3);
@@ -99,6 +95,9 @@
 }
 .hero .form .btn {
   width: 15%;
+}
+.hero .trend-search {
+  padding-bottom: 50px;
 }
 .hero .trend-search .trend-card {
   border: #f8f9fa solid 1px;
@@ -213,7 +212,6 @@ a.logo {
 }
 .testimonials .container h2 {
   color: #2f89fc;
-  margin-bottom: 15px;
 }
 .testimonials .container .person {
   border-radius: 50%;
@@ -227,6 +225,7 @@ a.logo {
   width: 70%;
   color: #4d4d4d;
   line-height: 40px;
+  font-style: italic;
 }
 
 .blog {
@@ -391,6 +390,14 @@ a.logo {
     width: 100%;
   }
   .footer .container .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .categories .container .category-cards .category-card {
+    width: 100%;
+  }
+  .newsletter .container .newsletter-left,
+  .newsletter .container .newsletter-right {
     width: 100%;
   }
 }
