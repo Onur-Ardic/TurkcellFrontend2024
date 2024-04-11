@@ -36,6 +36,14 @@
         
         .nav-list-wrapper{
             @include flexible(center, center, 30px);
+            .list-wrapper{
+                @include flexible(space-between, center, 20px);
+                margin-right: 50px;
+            }
+            ul{
+                @include flexible(space-between, center, 30px);
+
+            }
         }
     }
 

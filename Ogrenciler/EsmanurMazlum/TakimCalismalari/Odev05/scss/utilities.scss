@@ -41,59 +41,7 @@ body {
 .text-center {
   text-align: center;
 }
-.flex {
-  display: flex;
-}
-.grid {
-  display: grid;
-}
-.flex-column {
-  flex-direction: column;
-}
-.flex-row {
-  flex-direction: row;
-}
-.flex-wrap {
-  flex-wrap: wrap;
-}
-.align-center {
-  align-items: center;
-}
-.align-start {
-  align-items: flex-start;
-}
-.justify-center {
-  justify-content: center;
-}
-.justify-between {
-  justify-content: space-between;
-}
-.justify-around {
-  justify-content: space-around;
-}
-.justify-evenly {
-  justify-content: space-evenly;
-}
-.justify-end {
-  justify-content: flex-end;
-}
-.gap10 {
-  gap: 10px;
-}
-.gap20 {
-  gap: 20px;
-}
-.gap30 {
-  gap: 30px;
-}
 
-.mt-30{
-    margin-top: 30px;
-}
-
-.mr-50{
-    margin-right: 50px;
-}
 
 @mixin font($size, $color,$weight) {
   font-size: $size;
@@ -119,7 +67,6 @@ body {
     gap: $gap;
 }
 
-//? Butonlari buna cevirecegiz
 @mixin button($padding,$borderRad,$color,$bgColor,$fontSize){
     padding: $padding;
     border-radius: $borderRad;
