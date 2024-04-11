@@ -61,6 +61,9 @@ a {
 .card {
   border-radius: 10px;
 }
+.card img {
+  width: 100%;
+}
 .card-body {
   padding: 20px;
 }
@@ -235,6 +238,18 @@ a {
   row-gap: 10px;
 }
 .main-header-content .trending-search h4 {
+  font-weight: 400;
+}
+
+.featured {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.featured .card:not(:first-child) {
+  display: none;
+}
+.featured h2 {
+  margin: 2rem 0;
   font-weight: 400;
 }
 
