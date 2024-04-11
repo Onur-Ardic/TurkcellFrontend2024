@@ -250,7 +250,7 @@ ul li {
   /* margin: 40px 160px; */
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 15px;
 }
@@ -406,7 +406,7 @@ ul li {
   }
   .ourblog .ourblog-body .ourblog-part {
     margin-bottom: 30px;
-    flex: 40%;
+    width: 45%;
   }
   .newsletterSection .newsletter {
     padding: 60px 70px;
@@ -452,6 +452,16 @@ ul li {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+  }
+  .ourblog .ourblog-body {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ourblog .ourblog-body .ourblog-part {
+    margin-bottom: 30px;
+    width: 100%;
   }
   .footer .footer-body {
     padding: 60px 70px;
