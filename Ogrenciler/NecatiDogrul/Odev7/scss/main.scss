@@ -26,8 +26,6 @@ $grey: #696969;
   background-position-x: right;
   .container {
     .navbar {
-      position: sticky;
-      top: 0;
       padding-top: 40px;
       .navbar-right {
         column-gap: 50px;
@@ -292,14 +290,73 @@ $grey: #696969;
   }
 }
 
-.sponsors{
-  .container{
+.sponsors {
+  .container {
     width: 70%;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
 }
+
+.app {
+  padding: 70px 0;
+  background-image: url(../images/app-footer-bg.jpg);
+  .container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .col {
+      gap: 20px;
+      p,
+      h2 {
+        color: white;
+      }
+      .download {
+        width: 230px;
+        height: 70px;
+        background-color: white;
+        gap: 15px;
+
+        p {
+          color: #696969;
+        }
+        span {
+          color: #c961fa;
+          font-weight: 700;
+        }
+      }
+    }
+    .bot {
+      justify-content: space-between;
+      padding-right: 140px;
+      padding-bottom: 50px;
+      h6 {
+        color: white;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      li {
+        list-style: none;
+        color: white;
+      }
+      .footer-content {
+        margin-top: 100px;
+        ul {
+        }
+      }
+    }
+    .bot-para {
+      justify-content: center;
+      p {
+        margin-top: 10px;
+        color: white;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .hero {
     background-image: none;

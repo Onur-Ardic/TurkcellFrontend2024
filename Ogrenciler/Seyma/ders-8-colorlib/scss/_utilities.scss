@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 
 *{
     margin: 0;
@@ -25,7 +25,7 @@ a {
     text-decoration: none;
 }
 .container {
-    width: $width;
+    max-width: $width;
     margin: 0 auto;
 }
 // flex
@@ -65,9 +65,12 @@ a {
 
 // buttons
 .btn{
-    padding: 8px 24px;
+    padding: 12px 24px;
     font-size: 16px;
     color: $color-white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     &:hover{
         opacity: .7;
     }
@@ -76,11 +79,22 @@ a {
     }
     &-light{
         background-color: $color-white;
-        padding: 6px 15px;
         color: $color-black;
         &:hover{
             background-color: $color-black;
             color: $color-white;
+            opacity: 1;
+        }
+    }
+    &-outline{
+        background-color: $color-lowBlack;
+        color: $color-white;
+        padding: 5px 10px;
+        margin: 0 2px;
+        border: 2px solid white;
+        &:hover{
+            background-color: $color-white;
+            color: $color-blue;
             opacity: 1;
         }
     }
@@ -127,6 +141,4 @@ a {
     width: 60%;
     margin: 0 auto;
 }
-
-
 

@@ -3,9 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 body {
-    color: $main-body-color;
+    color: $main-text-color;
     font-family: $main-font;
     font-size: $main-font-size;
     min-height: 100vh;
@@ -13,21 +14,21 @@ body {
     overflow: hidden;
 }
 h1 {
-    font-size: 7.5rem;
-    font-weight: 700;
-    line-height: 7.5rem;
-    letter-spacing: -0.25rem;
+    font-size: $main-font-size * 7.5;
+    font-weight: $main-font-weight * 7;
+    line-height: $main-font-size * 7.5;
+    letter-spacing: -$main-font-size * 0.25;
     text-align: left;
     vertical-align: top;
     color: $main-text-color;
 }
 h4 {
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 1.875rem;
+    color: #fff;
+    font-size: $main-font-size * 2.5;
+    font-weight: $main-font-weight * 6;
+    line-height: $main-font-size * 3;
 }
 .bg-shape-1 {
-    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -36,11 +37,46 @@ h4 {
     z-index: -1;
 }
 .bg-shape-2 {
-    position: absolute;
     top: 0;
     right: 0;
     height: 100%;
     width: 60%;
     background-color: $background-color-right;
     z-index: -1;
+}
+.width-100 {
+    width: 100%;
+}
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.space-between {
+    justify-content: space-between;
+}
+.space-around {
+    justify-content: space-around;
+}
+.align-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.text-color {
+    color: $main-text-color;
+}
+.text-center {
+    text-align: center;
 }

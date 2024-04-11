@@ -1,0 +1,9 @@
+@mixin default {
+    max-width: 75rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+@mixin hue-rotate($deg) {
+    filter: hue-rotate($deg);
+}
