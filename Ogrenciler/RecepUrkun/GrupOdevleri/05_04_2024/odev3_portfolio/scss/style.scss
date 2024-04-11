@@ -1,0 +1,136 @@
+@import "global.scss";
+
+.headerLogo {
+  display: block;
+  width: 100px;
+  height: 60px;
+}
+
+.leftArea {
+  overflow: hidden;
+}
+
+.leftArea h1 {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.waveImage {
+  height: 20px;
+  width: 100%;
+  background-size: 645px 20px;
+  background-repeat: repeat-x;
+  margin: 25px 0px;
+}
+
+.leftArea .subtitle {
+  color: $primaryColor;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 30px;
+  padding-top: 15px;
+}
+
+.aboutForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.arrow {
+  width: 34px;
+  height: 50px;
+}
+
+.aboutForm input {
+  font-family: $mainFont;
+  font-size: 18px;
+  padding: 20px 24px;
+  flex-grow: 1;
+  margin: 0px 16px;
+  outline: none;
+  border: 1px solid $white;
+  border-radius: 10px;
+  background-color: $white;
+  box-shadow: rgba(12, 127, 134, 0.25) 0px 0px 30px 7px;
+  transition: all 0.5s ease 0s;
+}
+
+.btn-filled {
+  font-family: $mainFont;
+  padding: 25px 24px;
+  border-radius: 10px;
+  color: $white;
+  background-color: $primaryColor;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+.img-box {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.img-box img {
+  position: relative;
+  max-width: 100%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.bg1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 40%;
+  background-color: rgb(229, 255, 249);
+  z-index: -1;
+}
+
+.bg2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 60%;
+  background-color: rgb(184, 228, 218);
+  z-index: -1;
+}
+
+.aboutMe h4 {
+  color: $secondaryColor;
+  letter-spacing: 2px;
+}
+
+.aboutMe .subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  padding-top: 0px;
+}
+
+.aboutMe .body {
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+
+.socialMedia {
+  padding-bottom: 20px;
+  justify-content: space-around;
+}
+
+.socialMedia a {
+  color: $secondaryColor;
+  padding: 8px 8px 0px 0px;
+  transition: color 0.5s ease 0s;
+}

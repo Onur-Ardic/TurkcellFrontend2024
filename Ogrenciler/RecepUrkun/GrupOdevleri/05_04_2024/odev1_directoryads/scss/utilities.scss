@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+$colorBlue: #2f89fc;
+$btnbgBlue: #046df4;
+$colorGray: #f8f9fa;
+$colorDarkGray: #4d4d4d;
+$colorWhite: #fff;
+
+$size11: 11px;
+$size13: 13px;
+$size16: 16px;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.container {
+  width: 60%;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+.align-start {
+  align-items: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.gap10 {
+  gap: 10px;
+}
+.gap20 {
+  gap: 20px;
+}
+.gap30 {
+  gap: 30px;
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+.mr-50{
+    margin-right: 50px;
+}
+
+@mixin textLink($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+@mixin grayButton {
+  font-size: 11px;
+  display: inline-block;
+  padding: 5px 20px;
+  background: #e9ecef;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+@mixin flexible($justify: flex-start, $align: center, $gap: 0) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+//? Butonlari buna cevirecegiz
+@mixin button($borderRad,$color,$bgColor,$fontSize){
+    border-radius: $borderRad;
+    color: $color;
+    background-color: $bgColor;
+    font-size: $fontSize;
+}
