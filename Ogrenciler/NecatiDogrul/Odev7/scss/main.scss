@@ -26,8 +26,6 @@ $grey: #696969;
   background-position-x: right;
   .container {
     .navbar {
-      position: sticky;
-      top: 0;
       padding-top: 40px;
       .navbar-right {
         column-gap: 50px;
@@ -299,7 +297,7 @@ $grey: #696969;
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 50px;
-    margin-top:50px;
+    margin-top: 50px;
   }
 }
 
@@ -320,7 +318,6 @@ $grey: #696969;
         height: 70px;
         background-color: white;
         gap: 15px;
-        
 
         p {
           color: #696969;
@@ -331,31 +328,30 @@ $grey: #696969;
         }
       }
     }
-    .bot{
+    .bot {
       justify-content: space-between;
       padding-right: 140px;
       padding-bottom: 50px;
-      h6{
+      h6 {
         color: white;
         font-size: 18px;
         margin-bottom: 20px;
       }
-      li{
+      li {
         list-style: none;
         color: white;
       }
-      .footer-content{
+      .footer-content {
         margin-top: 100px;
-        ul{
-
+        ul {
         }
       }
     }
-    .bot-para{
+    .bot-para {
       justify-content: center;
-      p{
+      p {
         margin-top: 10px;
-        color:white;
+        color: white;
       }
     }
   }

@@ -37,6 +37,10 @@ h2 {
   margin: 0 auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 input {
   height: 43px;
   border: none;
@@ -50,6 +54,13 @@ input:focus {
   .container {
     width: 90%;
   }
+}
+.width-100 {
+  width: 100%;
+}
+
+.padding-x {
+  padding: 80px 0px;
 }
 
 /*# sourceMappingURL=utilities.css.map */

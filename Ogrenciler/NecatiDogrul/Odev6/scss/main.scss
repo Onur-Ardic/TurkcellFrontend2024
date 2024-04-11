@@ -4,7 +4,6 @@ $greyColor: #e9ecef;
 $footerColor: #333333;
 $x96: 96px;
 $x42: 42px;
-
 @mixin btn($color: $mainColor, $width, $height) {
   background-color: $color;
   width: $width;
@@ -13,12 +12,12 @@ $x42: 42px;
   color: #e9ecef;
   border-radius: 5px;
 }
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
 }
 .btn {
   @include btn($mainColor, $x96, $x42);
@@ -42,10 +41,13 @@ $x42: 42px;
         border-radius: 50%;
         width: 30px;
         height: 30px;
-        padding: 1px;
         display: flex;
         justify-content: center;
         align-items: center;
+        img {
+          width: 20px;
+          height: 20px;
+        }
         &:hover {
           background-color: red;
           img {
@@ -56,9 +58,6 @@ $x42: 42px;
       a {
         color: $mainColor;
       }
-      address {
-        font-size: 13px;
-      }
     }
   }
 }
@@ -66,10 +65,8 @@ $x42: 42px;
   height: 100vh;
   background: url("../images/hero_2.jpg");
   .nav {
-    align-items: center;
     padding-top: 30px;
     .nav-right {
-      align-items: center;
       column-gap: 60px;
       :nth-of-type(5) {
         margin-right: 30px;
@@ -79,13 +76,8 @@ $x42: 42px;
   .overlay {
     background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
-    width: 100%;
   }
   .hero-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     line-height: 1.2;
     color: white;
     height: 100%;
@@ -93,28 +85,27 @@ $x42: 42px;
   }
   .form {
     padding: 20px;
-    width: 100%;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 8px;
     select {
       height: 43px;
       width: 25%;
-    }
-    form {
-      display: flex;
-      justify-content: space-between;
+      border: none;
+      outline: none;
+      border-radius: 3px;
     }
     input {
       width: 25%;
       border-radius: 3px;
+      &::placeholder {
+        color: #696969;
+      }
     }
     .btn {
       width: 15%;
     }
   }
   .trend-search {
-    width: 100%;
-    align-items: center;
     .trend-card {
       border: #f8f9fa solid 1px;
       border-radius: 5px;
@@ -141,6 +132,10 @@ a {
   border-radius: 15px;
   padding: 3px 10px;
   background-color: $greyColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
 }
 .featured {
   background-color: $secondColor;
@@ -149,11 +144,13 @@ a {
     margin-bottom: 25px;
     font-weight: 200;
   }
-  padding: 80px 0px;
   .container .f-cards {
     @extend .cards;
     .featured-card {
-      width: 220px;
+      width: 22%;
+      min-width: 250px;
+      .content .row .category {
+      }
     }
     .feature-img {
       width: 100% !important;
@@ -170,8 +167,6 @@ a {
 .categories {
   .container {
     width: 70%;
-    padding: 80px 0px;
-    text-align: center;
     gap: 20px;
     h2 {
       color: $mainColor;
@@ -190,6 +185,10 @@ a {
           margin: 10px 0px;
         }
         transition: all 0.3s ease-in-out;
+        .category {
+          margin: 0px auto;
+          max-width: 80px;
+        }
         &:hover {
           background-color: $mainColor;
           transform: scale(1.2);
@@ -209,19 +208,21 @@ a {
 }
 .trending-today {
   background-color: $secondColor;
-  padding: 80px 0px;
   .container {
-    width: 70%;
     h2 {
       color: $mainColor;
     }
     @extend .cards;
+    .featured-card {
+      width: 48%;
+      img {
+        width: 40%;
+      }
+    }
   }
 }
 .testimonials {
   .container {
-    padding: 80px 0px;
-    text-align: center;
     gap: 50px;
     h2 {
       color: $mainColor;
@@ -243,12 +244,7 @@ a {
   }
 }
 .blog {
-  text-align: center;
-  padding: 80px 0px;
   background-color: $secondColor;
-  .container {
-    width: 70%;
-  }
   h2 {
     color: $mainColor;
     margin-bottom: 15px;
@@ -278,10 +274,8 @@ a {
         }
         .meta {
           color: #b3b3b3;
-          font-size: 14px;
           a {
             color: $mainColor;
-            font-size: 14px;
           }
         }
         p {
@@ -292,11 +286,9 @@ a {
     }
   }
 }
-
 .newsletter {
   background-color: $mainColor;
   .container {
-    width: 70%;
     padding: 40px 20px;
     display: flex;
     justify-content: space-between;
@@ -307,18 +299,21 @@ a {
         font-weight: 200;
       }
       p {
-        font-size: 16px;
         font-weight: 100;
         color: rgb(201, 201, 201);
         line-height: 28px;
       }
     }
     .newsletter-right {
-      display: flex;
+      width: 50%;
       input {
-        max-width: 400px;
+        width: 90%;
         background-color: $mainColor;
         border-bottom: 1px solid white;
+        &::placeholder {
+          color: white;
+          font-style: italic;
+        }
       }
     }
   }
@@ -327,37 +322,28 @@ a {
     height: 43px;
     background-color: #f0f0f0;
     border-radius: 0;
-    color: grey;
+    color: black;
     &:hover {
       background-color: black;
+      color: white;
       transition: all 0.3s ease-in-out;
     }
   }
 }
-
-::placeholder {
-  color: white;
-  font-style: italic;
-  font-size: 14px;
-}
-
 .footer {
   background-color: $footerColor;
   .container {
-    width: 70%;
     padding: 40px 20px;
-    justify-content: space-between;
     .col {
       gap: 20px;
     }
     h2 {
       color: white;
-      font-size: 16px;
       font-weight: 300;
+      font-size: 16px;
     }
     p {
       color: #737373;
-      font-size: 16px;
       line-height: 28px;
       font-weight: 200;
     }
@@ -375,18 +361,14 @@ a {
       width: 73px;
     }
   }
-  .border-top{
+  .border-top {
     color: #737373;
-    text-align: center;
     border-top: 1px solid white;
-    p{
-      margin-top: 80px;
-      margin-bottom: 200px;
+    p {
+      margin: 80px 0px 200px 0px;
     }
   }
 }
-
-
 @media screen and (max-width: 1200px) {
   .hero .hero-form .form form {
     display: flex;
@@ -405,5 +387,16 @@ a {
   }
   .hero .nav .nav-right {
     display: none;
+  }
+  .trending-today .container .cards .featured-card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cards .featured-card {
+    width: 100%;
+  }
+  .footer .container .col {
+    width: 100%;
   }
 }
