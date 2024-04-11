@@ -1,0 +1,23 @@
+#main-footer{
+    background-color: $dark-color;
+    color: $light-color;
+    height: 5rem;
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+        .social .fab {
+            border: 2px solid $light-color;
+            margin-right: 1rem;
+            border-radius: 50%;
+            padding: .6rem;
+            text-align: center;
+            transition: all .5s;
+
+            &:hover{
+                background-color: $primary-color;
+            }
+        }
+    }
+}
