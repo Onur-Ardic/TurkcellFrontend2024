@@ -57,6 +57,7 @@ $colors: (
   "light-gray": #d3d3d3,
   "light-g":#4D4D4D,
   "antrasit": #495057,
+ "g2": #666666,
 );
 
 @each $colorName, $colorValue in $colors {
