@@ -20,6 +20,10 @@
   <header class="header">
     <div class="container">
       <nav class="navbar">
+        <input type="checkbox" id="checkbox" name="checkbox" />
+        <label for="checkbox" class="check-btn">
+          <i class="fa-solid fa-list"></i>
+        </label>
         <div class="logo">
           <img src="assets/img/pos.png" alt="logo" />
         </div>
@@ -53,12 +57,21 @@
                 </ul>
               </li>
 
-              <li class="dropdown-item"><a href="#">Team Member</a></li>
               <li class="dropdown-item"><a href="#">Pricing Plan</a></li>
+              <li class="dropdown-item" id="inline-dropdown">
+                <a href="#">Team Member </a>
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <ul class="inline-dropdown-list">
+                  <li><a href="#">Team Style 1</a></li>
+                  <li><a href="#">Team Style 2</a></li>
+                  <li><a href="#">Team Style 3</a></li>
+                </ul>
+              </li>
               <li class="dropdown-item"><a href="#">Contact Us</a></li>
             </ul>
           </li>
-          <li class="navbar-item">
+          <li class="navbar-item" id="third-dropdown">
             <a href="#">Portfolio</a>
             <i class="fa-solid fa-chevron-down"></i>
             <ul class="dropdown">
@@ -69,7 +82,7 @@
               <li class="dropdown-item"><a href="#">Smart Marketin</a></li>
             </ul>
           </li>
-          <li class="navbar-item">
+          <li class="navbar-item" id="fourth-dropdown">
             <a href="#">Blog</a>
             <i class="fa-solid fa-chevron-down"></i>
             <ul class="dropdown">
@@ -82,7 +95,6 @@
           </li>
           <li class="navbar-item">
             <a href="#">Shop</a>
-            <i class="fa-solid fa-chevron-down"></i>
           </li>
 
           <div class="navbar-btn">

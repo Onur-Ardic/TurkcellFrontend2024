@@ -15,6 +15,12 @@
   }
   .navbar {
     @include flexible(flex, space-between, center, 1rem);
+    .check-btn {
+      display: none;
+    }
+    #checkbox {
+      display: none;
+    }
     padding: 1rem 0;
     .logo {
       img {
@@ -35,7 +41,7 @@
         .dropdown {
           position: absolute;
           background: #fff;
-          width: 10rem;
+          width: 12rem;
           right: -50px;
           border: 1px solid $textWhite;
           font-weight: 300;
@@ -129,6 +135,14 @@
             opacity: 1;
           }
         }
+      }
+
+      #third-dropdown {
+        @extend #first-dropdown;
+      }
+
+      #fourth-dropdown {
+        @extend #first-dropdown;
       }
     }
   }

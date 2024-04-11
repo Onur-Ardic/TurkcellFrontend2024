@@ -34,6 +34,12 @@
   gap: 1rem;
   padding: 1rem 0;
 }
+.header .navbar .check-btn {
+  display: none;
+}
+.header .navbar #checkbox {
+  display: none;
+}
 .header .navbar .logo img {
   width: 250px;
 }
@@ -53,7 +59,7 @@
 .header .navbar .navbar-items .navbar-item .dropdown {
   position: absolute;
   background: #fff;
-  width: 10rem;
+  width: 12rem;
   right: -50px;
   border: 1px solid #fff;
   font-weight: 300;
@@ -86,15 +92,15 @@
   border-radius: 4px;
   font-weight: 600;
 }
-.header .navbar .navbar-items #first-dropdown:hover .dropdown, .header .navbar .navbar-items #second-dropdown:hover .dropdown {
+.header .navbar .navbar-items #first-dropdown:hover .dropdown, .header .navbar .navbar-items #fourth-dropdown:hover .dropdown, .header .navbar .navbar-items #third-dropdown:hover .dropdown, .header .navbar .navbar-items #second-dropdown:hover .dropdown {
   padding: 0.5rem;
   visibility: visible;
   opacity: 1;
 }
-.header .navbar .navbar-items #first-dropdown:hover .dropdown .dropdown-item, .header .navbar .navbar-items #second-dropdown:hover .dropdown .dropdown-item {
+.header .navbar .navbar-items #first-dropdown:hover .dropdown .dropdown-item, .header .navbar .navbar-items #fourth-dropdown:hover .dropdown .dropdown-item, .header .navbar .navbar-items #third-dropdown:hover .dropdown .dropdown-item, .header .navbar .navbar-items #second-dropdown:hover .dropdown .dropdown-item {
   height: max-content;
 }
-.header .navbar .navbar-items #first-dropdown:hover .dropdown a, .header .navbar .navbar-items #second-dropdown:hover .dropdown a {
+.header .navbar .navbar-items #first-dropdown:hover .dropdown a, .header .navbar .navbar-items #fourth-dropdown:hover .dropdown a, .header .navbar .navbar-items #third-dropdown:hover .dropdown a, .header .navbar .navbar-items #second-dropdown:hover .dropdown a {
   display: block;
 }
 .header .navbar .navbar-items #second-dropdown #inline-dropdown {
