@@ -98,10 +98,16 @@
         }
     }
 }
-.featured-ads{
-    border: 1px solid rgb(0, 0, 0);
+.featured{
     padding: 2rem;
     background-color: $color-lowBlack;
+    .card:not(:first-child){
+        display: none;
+    }
+    h2{
+        margin: 2rem 0;
+        font-weight: 400;
+    }
 }
 
 @media (min-width: 450px) {

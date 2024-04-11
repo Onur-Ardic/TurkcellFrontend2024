@@ -59,6 +59,9 @@ a {
 
 .card{
     border-radius: 10px;
+    img{
+        width: 100%;
+    }
     &-body{
         padding: 20px;
     }

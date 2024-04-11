@@ -61,6 +61,9 @@ a {
 .card {
   border-radius: 10px;
 }
+.card img {
+  width: 100%;
+}
 .card-body {
   padding: 20px;
 }
@@ -238,10 +241,16 @@ a {
   font-weight: 400;
 }
 
-.featured-ads {
-  border: 1px solid rgb(0, 0, 0);
+.featured {
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.1);
+}
+.featured .card:not(:first-child) {
+  display: none;
+}
+.featured h2 {
+  margin: 2rem 0;
+  font-weight: 400;
 }
 
 @media (min-width: 450px) {
