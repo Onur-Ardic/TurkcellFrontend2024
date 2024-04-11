@@ -83,6 +83,17 @@ body {
         color: white;
         font-size: $main-font-size;
         font-weight: $main-font-weight;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        &:hover {
+            content: "";
+            transform: scaleX(0);
+            transform-origin: 60% 60%;
+            background: linear-gradient(to left, #ffab8b, #ff957d, #ff7d75, #ff6371, #fd4372);
+            transition: transform 0.3s ease-in-out;
+            -webkit-transition: transform 0.3s ease-in-out;
+        }
     }
 }
 .main-background {
@@ -93,7 +104,7 @@ body {
     text-align: center;
 }
 // Media
-@media (max-width: 580px) {
+@media (max-width: 800px) {
     .container {
         padding: 3rem 1rem;
         gap: 3rem;
