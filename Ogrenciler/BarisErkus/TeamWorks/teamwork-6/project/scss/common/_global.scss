@@ -36,7 +36,6 @@ body {
 .flex-reverse-wrap {
     flex-wrap: wrap-reverse;
 }
-
 // Grid
 .grid {
     display: grid;
@@ -86,11 +85,14 @@ body {
         font-weight: $main-font-weight;
     }
 }
-
 .main-background {
     background: $main-background-color;
 }
-
+// Text
+.text-center {
+    text-align: center;
+}
+// Media
 @media (max-width: 580px) {
     .container {
         padding: 3rem 1rem;

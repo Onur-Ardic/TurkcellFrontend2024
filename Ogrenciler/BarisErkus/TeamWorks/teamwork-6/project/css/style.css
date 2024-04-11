@@ -92,6 +92,10 @@ body {
   background: #fffcfa;
 }
 
+.text-center {
+  text-align: center;
+}
+
 @media (max-width: 580px) {
   .container {
     padding: 3rem 1rem;
@@ -107,6 +111,40 @@ body {
   }
   .container .header {
     font-size: 1.25rem;
+  }
+}
+.perfect-pos .perfect-pos-container {
+  padding: 5rem 0.75rem;
+  margin: 0 18.219rem;
+  gap: 0;
+}
+.perfect-pos .perfect-pos-container .header-container {
+  border: none;
+}
+.perfect-pos .perfect-pos-container .header-container p {
+  max-width: 70%;
+}
+.perfect-pos .perfect-pos-container .bottom .card {
+  box-shadow: 0 4px 4px rgba(58, 58, 58, 0.1);
+  padding: 3rem 2.813rem;
+  margin: 0.938rem;
+  border-radius: 0.25rem;
+}
+.perfect-pos .perfect-pos-container .bottom .card img {
+  margin-bottom: 1.875rem;
+}
+.perfect-pos .perfect-pos-container .bottom .card h6 {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: #000;
+  width: 200px;
+}
+
+@media (max-width: 580px) {
+  .perfect-pos .perfect-pos-container {
+    margin: 0;
   }
 }
 
