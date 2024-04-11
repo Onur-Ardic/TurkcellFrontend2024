@@ -94,11 +94,16 @@
             row-gap: 10px;
             h4{
                 font-weight: 400;
-                
             }
         }
     }
 }
+.featured-ads{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 2rem;
+    background-color: $color-lowBlack;
+}
+
 @media (min-width: 450px) {
     .main-header{
         .container{
@@ -109,28 +114,22 @@
             justify-content: space-between;
             ul{
                 margin: 0 3rem 0 auto;
-            
             }
         }
         &-content{
-
             &-search{
                 display: flex;
                 column-gap: 20px;
                 align-items: center;
-
                 button{
                     display: inline-block;
                     width: auto;
-
                 }
                 input, select{
                     margin: 0;
                 }
                 &>*:not(button) {
                     flex: 1;
-
-
                 }
             }
             .trending-search{

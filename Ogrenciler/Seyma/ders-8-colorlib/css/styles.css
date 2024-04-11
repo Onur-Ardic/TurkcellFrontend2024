@@ -238,6 +238,12 @@ a {
   font-weight: 400;
 }
 
+.featured-ads {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 @media (min-width: 450px) {
   .main-header .container {
     position: relative;
