@@ -247,7 +247,7 @@ ul li {
   color: rgba(0, 0, 0, 0.5);
 }
 .ourblogSection .ourblog .ourblog-body {
-  /* margin: 40px 160px; */
+  margin: 40px 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

@@ -170,7 +170,7 @@
             }
         }
         .ourblog-body{
-            /* margin: 40px 160px; */
+            margin: 40px 0;
             @include hizalamaMixin(flex, row, flex-start, center);
             gap: 15px;
             .ourblog-part{
