@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Nanum Gothic", sans-serif;
   text-decoration: none;
+  border: none;
 }
 
 body {
@@ -98,35 +99,6 @@ body {
   margin-right: 50px;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  padding-top: 30px;
-}
-
-.login {
-  border-left: 1px solid white;
-  padding-left: 30px;
-}
-
-.registerButton {
-  border-radius: 4px;
-  color: white;
-  background-color: #2f89fc;
-  font-size: 15px;
-  padding: 12px 20px;
-  border: none;
-}
-
-.nav-list-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
 .header {
   height: 100vh;
   background: url(../images/hero_2.jpg);
@@ -143,6 +115,51 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
+}
+.header .container {
+  height: 100vh;
+}
+.header .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 30px;
+}
+.header .nav-container .login {
+  border-left: 1px solid white;
+  padding-left: 30px;
+}
+.header .nav-container .registerButton {
+  padding: 12px 20px;
+  border-radius: 4px;
+  color: white;
+  background-color: #2f89fc;
+  font-size: 15px;
+}
+.header .nav-container .nav-list-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.header .main-title {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.header .main-title .title h1 {
+  font-size: 48px;
+  color: white;
+  font-weight: 400;
+}
+.header .main-title .title p {
+  font-size: 19.2px;
+  color: white;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
