@@ -1,9 +1,15 @@
-/* Error: expected "}".
+/* Error: Undefined mixin.
  *    ,
- * 30 | }
- *    |  ^
+ * 9  | /         @include flex(
+ * 10 | |           flex,
+ * 11 | |           space-between,
+ * 12 | |           center,
+ * 13 | |           column !important,
+ * 14 | |           $gap: 0.5rem
+ * 15 | |         );
+ *    | '---------^
  *    '
- *   scss/responsive.scss 30:2  root stylesheet */
+ *   scss/responsive.scss 9:9  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +19,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a    \2577 \a 30 \2502  }\a    \2502   ^\a    \2575 \a   scss/responsive.scss 30:2  root stylesheet';
+  content: "Error: Undefined mixin.\a    \2577 \a 9  \2502  \250c          @include flex(\a 10 \2502  \2502            flex,\a 11 \2502  \2502            space-between,\a 12 \2502  \2502            center,\a 13 \2502  \2502            column !important,\a 14 \2502  \2502            $gap: 0.5rem\a 15 \2502  \2502          );\a    \2502  \2514 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 ^\a    \2575 \a   scss/responsive.scss 9:9  root stylesheet";
 }
