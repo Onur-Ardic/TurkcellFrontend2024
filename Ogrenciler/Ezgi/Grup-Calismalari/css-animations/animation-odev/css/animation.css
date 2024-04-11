@@ -1,0 +1,69 @@
+/* animasyonlar */
+
+.animation-payment {
+    animation: img-animation-payment 2s linear infinite alternate;
+}
+
+.animation-stats {
+    animation: img-animation-stats 4s linear infinite alternate;
+}
+
+.animation-main {
+    animation: img-animation-main 4s linear infinite alternate;
+}
+
+.box-square:hover{
+    transform: translateY(-3px);
+    transition: all .25s ease-in-out
+}
+.card_item:hover{
+    transform: translateY(-3px);
+    transition: all .25s ease-in-out
+}
+
+@keyframes img-animation-payment {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes img-animation-main {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes img-animation-stats {
+    0% {
+        transform: translateY(-20px) translateX(50px);
+    }
+
+    100% {
+        transform: translateY(-20px) translateX(0);
+    }
+}
+
+@keyframes advanced-x {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, 30px);
+    }
+  }
+  @keyframes advanced-y {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(30px, 30px);
+    }
+  }
