@@ -247,7 +247,7 @@ ul li {
   color: rgba(0, 0, 0, 0.5);
 }
 .ourblogSection .ourblog .ourblog-body {
-  margin: 40px 160px;
+  /* margin: 40px 160px; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -258,8 +258,7 @@ ul li {
   text-align: left;
 }
 .ourblogSection .ourblog .ourblog-body .ourblog-part img {
-  width: 350px;
-  height: 219px;
+  width: 100%;
   border-radius: 5px;
 }
 .ourblogSection .ourblog .ourblog-body .ourblog-part .ourblog-meta {
@@ -326,7 +325,7 @@ ul li {
   background-color: #333333;
 }
 .footer .footer-body {
-  padding: 60px 180px;
+  padding: 60px 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -364,7 +363,7 @@ ul li {
   margin-right: 10px;
 }
 .footer .footer-body .footer-top .footer-input {
-  flex: 30%;
+  flex: 20%;
 }
 .footer .footer-body .footer-top .footer-input .input-footer {
   background-color: #333333;
@@ -400,34 +399,67 @@ ul li {
     width: 100%;
   }
   .ourblog .ourblog-body {
+    margin: 40px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* flex: 20%; */
   }
   .ourblog .ourblog-body .ourblog-part {
     margin-bottom: 30px;
+    flex: 40%;
   }
   .newsletterSection .newsletter {
+    padding: 60px 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+  }
+  .newsletterSection .newsletter .newsletter-input .email-form {
+    padding-right: 50px;
+  }
+  .footer .footer-body {
+    padding: 60px 70px;
+  }
+  .footer .footer-body .footer-top {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /*@include hizalamaMixin(flex, column, flex-start, start); */
+  }
+  .footer .footer-body .footer-top .footer-about {
+    flex: 2;
+    margin-bottom: 30px;
+  }
+  .footer .footer-body .footer-top .footer-col3 {
+    flex: 1;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+  }
+  .footer .footer-body .footer-top .footer-input {
+    flex: 1;
+  }
+  .footer .footer-body .footer-top .footer-input .input-footer {
+    background-color: #333333;
+    padding: 7px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .newsletterSection .newsletter {
+    padding: 60px 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    row-gap: 30px;
+  }
+  .footer .footer-body {
+    padding: 60px 70px;
   }
   .footer .footer-body .footer-top {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    /*@include hizalamaMixin(flex, column, flex-start, start); */
-  }
-  .footer .footer-body .footer-top .footer-about {
-    flex: 40%;
-    margin-bottom: 30px;
-  }
-  .footer .footer-body .footer-top .footer-col3 {
-    margin-bottom: 30px;
-    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
