@@ -17,6 +17,7 @@ $size16: 16px;
   box-sizing: border-box;
   font-family: "Nanum Gothic", sans-serif;
   text-decoration: none;
+  border: none;
 }
 
 body {
@@ -94,9 +95,10 @@ body {
     margin-right: 50px;
 }
 
-@mixin textLink($size, $color) {
+@mixin font($size, $color,$weight) {
   font-size: $size;
   color: $color;
+  font-weight: $weight;
 }
 
 @mixin grayButton {
@@ -110,7 +112,7 @@ body {
   font-weight: bold;
 }
 
-@mixin flexible($justify: flex-start, $align: center, $gap: 0) {
+@mixin flexible($justify, $align, $gap) {
     display: flex;
     justify-content: $justify;
     align-items: $align;
@@ -118,7 +120,8 @@ body {
 }
 
 //? Butonlari buna cevirecegiz
-@mixin button($borderRad,$color,$bgColor,$fontSize){
+@mixin button($padding,$borderRad,$color,$bgColor,$fontSize){
+    padding: $padding;
     border-radius: $borderRad;
     color: $color;
     background-color: $bgColor;
