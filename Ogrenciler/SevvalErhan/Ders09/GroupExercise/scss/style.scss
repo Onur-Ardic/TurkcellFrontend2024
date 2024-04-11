@@ -109,7 +109,6 @@
 
 .featured-ads {
   padding: 2.5rem;
-  height: 500px;
   .featured-cards {
     @include flex(flex, space-evenly, center, $gap: 0rem);
     .featured-card {
@@ -122,6 +121,20 @@
       }
       .content {
         padding: 20px;
+        line-height: 3;
+        .category{
+            @extend %btn-2;
+          
+        }
+        .fa-heart{
+            float: right;
+            border-radius: 50px;
+            padding: 6px;
+        }
+        .fa-heart:hover{
+            color: #fff;
+            background-color: #f23a2e;
+        }
       }
     }
   }
@@ -132,4 +145,7 @@
       padding: 20px;
     }
   }
+}
+.popular-categories{
+    padding: 2.5rem;
 }
