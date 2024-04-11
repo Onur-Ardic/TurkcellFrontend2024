@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Nanum+Gothic:wght@400;700;800&display=swap");
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -112,6 +112,10 @@
   color: #0000ff;
 }
 
+.color-light-blue {
+  color: #2f89fc;
+}
+
 .color-yellow {
   color: #f89d13;
 }
@@ -126,6 +130,10 @@
 
 .color-light-gray {
   color: #d3d3d3;
+}
+
+.color-light-g {
+  color: #4D4D4D;
 }
 
 .color-antrasit {
@@ -157,6 +165,11 @@
 .header .container .container-wrap .form-search button, .header .container .header-nav .nav-menu-right > ul li:last-child {
   padding: 0.415rem 0.75rem;
   border-radius: 0.25rem;
+}
+
+.featured-ads .featured-cards .featured-card .content .category {
+  border-radius: 30px;
+  padding: 9px 20px;
 }
 
 .header .container .container-wrap .form-search .location-input input, .header .container .container-wrap .form-search select,
@@ -319,7 +332,6 @@
 
 .featured-ads {
   padding: 2.5rem;
-  height: 500px;
 }
 .featured-ads .featured-cards {
   display: flex;
@@ -338,6 +350,16 @@
 }
 .featured-ads .featured-cards .featured-card .content {
   padding: 20px;
+  line-height: 3;
+}
+.featured-ads .featured-cards .featured-card .content .fa-heart {
+  float: right;
+  border-radius: 50px;
+  padding: 6px;
+}
+.featured-ads .featured-cards .featured-card .content .fa-heart:hover {
+  color: #fff;
+  background-color: #f23a2e;
 }
 .featured-ads .left-right-icons {
   text-align: center;
@@ -345,6 +367,10 @@
 }
 .featured-ads .left-right-icons i {
   padding: 20px;
+}
+
+.popular-categories {
+  padding: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
