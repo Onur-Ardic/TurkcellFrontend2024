@@ -78,7 +78,8 @@
         text-align: center;
 
         .title{
-            h2{            @include font(32px,$colorBlue, 700);
+            h2{            
+                @include font(32px,$colorBlue, 700);
             }
             ::after{
                 content: '';
@@ -112,7 +113,9 @@
    .owl-dots{
     @include flexible(center, center, 1px);
     text-align: center;
-
+    :hover{
+        cursor: pointer;
+    }
     .owl-dot{
         .active{
             background-color: $colorBlue;
@@ -127,4 +130,71 @@
         }
     }
    } 
+}
+.our-blog{
+    @include flexible(center, center, 10px);
+    flex-direction: column;
+    
+    .our-blog-header{
+        text-align: center;
+        &:after{
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: $colorBlue;
+            margin: 15px auto 50px auto;
+        }
+            .our-blog-header-title{
+                @include font(32px, $colorBlue, 700);
+            }
+            .our-blog-header-desc{
+                @include font(16px, rgba(0, 0, 0, 0.5), 400);
+
+            
+        }
+        
+    }
+    .our-blog-cards{
+        max-width: 1140px;
+        margin: 0 auto;
+        @include flexible(center, center, 10px);
+        flex-wrap: wrap;
+    
+    .our-blog-card{
+        flex: 0 0 32%;
+            img{
+                max-width: 350px;
+                height: auto;
+            }
+            h2{
+                @include font(20px, rgb(0,0,0), 500);
+                margin-top: 10px;
+            }
+            .info{
+                @include font(14px, gray, 400);
+                span{
+                    margin: 0 10px;
+                }
+                a{
+                    color: $colorBlue;
+                }
+            }
+            p{
+                @include font(18px, rgb(77, 77, 77), 400);
+                margin-top: 10px;
+            }  
+    }
+}
+.our-blog-button{
+    @include flexible(center, center, 10px);
+    margin-top: 20px;
+    a{
+        @include button(12px 20px,4px, white, $colorBlue, 15px);
+        &:hover{
+            background-color: $btnbgBlue;
+            color: white;
+        }
+    }
+}
 }
