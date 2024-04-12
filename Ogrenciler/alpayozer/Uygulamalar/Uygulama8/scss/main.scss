@@ -278,4 +278,51 @@
         box-sizing: border-box;
         font-family: "sans-serif";
     }
+
+    .popular-categories{
+        text-align: center;
+        .categories-title{
+            h2{
+                @include special-text($fs-32, $primary-color , semi-bold );
+                margin-bottom: 0.5rem;
+            }
+            p{
+                @include special-text($fs-16, rgba(0, 0, 0, 0.5) , regular );
+                margin-bottom: 1rem;
+            }
+
+        }
+        .categories-cards{
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            gap: 1rem;
+            .categories-card{
+                padding: 30px 10px;
+                background: $white;
+                a{
+                    text-decoration: none;
+                    .categories-card-icon{
+                        font-size: $fs-45;
+                        color: $primary-color;
+                        margin-bottom: 10px;
+                    }
+                    .categories-card-caption{
+                        @include special-text($fs-15,#666666 ,regular);
+                        margin-bottom: 0.5rem;
+                    }
+                    .categories-card-number{
+                        padding: 2px 20px;
+                        border-radius: 30px;
+                        display: inline-block;
+                        background: #e9ecef;
+                        @include special-text($fs-14, $black ,regular );
+                        line-height: 1.7;
+                    }
+                }
+            }
+
+        }
+    }
+
+
 }
