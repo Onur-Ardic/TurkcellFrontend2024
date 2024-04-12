@@ -1,0 +1,39 @@
+.container{
+    display: grid;
+    height: 600px;
+    background-color: rgb(208, 204, 204);
+    gap: 5px;
+    grid-template-areas: 
+    "header header header"
+    "sidebar section section"
+    "sidebar . ." /*box-2 ve box-3 ü yerleştiriyor otomatik.*/
+    "box-1 box-1 box-1"
+    "footer footer footer"
+    ;
+}
+.header{
+    grid-area: header;
+    background-color: blue;
+    padding: 20px;
+}
+.section{
+    grid-area: section;
+    background-color: rgb(122, 46, 129);
+    padding: 20px;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(40, 180, 94);
+    padding: 20px;
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(236, 86, 22);
+    padding: 20px;
+}
+.box-1{
+    grid-area: box-1;
+    background-color: rgb(205, 237, 131);
+    padding: 20px;
+}
+

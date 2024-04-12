@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    font-family: "Abel", sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+@mixin fontMixin($size, $color) {
+    font-size: $size;
+    color: $color;
+}
+//hizalama mixin i
+@mixin hizalamaMixin($display, $direction, $justify) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    
+}
+a {text-decoration: none;cursor: pointer;}
+ul li {
+    list-style-type: none;
+    cursor: pointer;
+}
+.bg-shape-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    background-color: #ebe9ff;
+    z-index: -1;
+}
+.bg-shape-2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 60%;
+    background-color: #1a073d;
+    z-index: -1;
+}
+header{
+    padding-top: 4rem;
+    nav{
+        a {
+            img{
+                width: 6rem;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.main{
+    .main-content{
+        @include hizalamaMixin(flex, row, space-between)
+    }
+}

@@ -148,4 +148,23 @@
 }
 .popular-categories{
     padding: 2.5rem;
+    .popular-title{
+      text-align: center;
+    }
+    .popular-cards{
+      text-align: center;
+      @include flex(flex, space-evenly, center, $gap: 0rem);
+      .popular-card{
+        @include flex(flex, space-evenly, center, $column:column, $gap: 0rem);
+     
+        .popular-card-number{
+          margin-top: 1rem;
+          span{
+            @extend %btn-2;
+            padding: 5px 20px;
+          }
+      }
+        
+      }
+    }
 }

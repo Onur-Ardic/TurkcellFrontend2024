@@ -17,11 +17,8 @@ body {
 }
 
 .container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 90%;
+  margin: auto;
 }
 
 a {
@@ -31,6 +28,14 @@ a {
 ul li {
   list-style-type: none;
   cursor: pointer;
+}
+
+.text-warning {
+  color: #f89d13;
+}
+
+.text-secondary {
+  color: #6c757d;
 }
 
 .colorw {

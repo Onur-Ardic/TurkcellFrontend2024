@@ -140,6 +140,10 @@
   color: #495057;
 }
 
+.color-g2 {
+  color: #666666;
+}
+
 .bg-color-white {
   background-color: #ffffff;
 }
@@ -167,7 +171,7 @@
   border-radius: 0.25rem;
 }
 
-.featured-ads .featured-cards .featured-card .content .category {
+.popular-categories .popular-cards .popular-card .popular-card-number span, .featured-ads .featured-cards .featured-card .content .category {
   border-radius: 30px;
   padding: 9px 20px;
 }
@@ -371,6 +375,32 @@
 
 .popular-categories {
   padding: 2.5rem;
+}
+.popular-categories .popular-title {
+  text-align: center;
+}
+.popular-categories .popular-cards {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0rem;
+}
+.popular-categories .popular-cards .popular-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0rem;
+}
+.popular-categories .popular-cards .popular-card .popular-card-number {
+  margin-top: 1rem;
+}
+.popular-categories .popular-cards .popular-card .popular-card-number span {
+  padding: 5px 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
