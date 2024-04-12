@@ -1,0 +1,82 @@
+
+* {
+  font-family:Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $bgColorWhite;
+}
+
+$bgColorBlue: #2f89fc;
+$bgColorGray: #4d4d4d;
+$bgColorDarkGray: #333333;
+$bgColorLightGray: #737373;
+$bgColorWhite: #ffff;
+
+$fontSize16: 16px;
+$fontSize13: 13px;
+$fontSize20: 20px;
+$fontSize32: 32px;
+
+@mixin flex($direction, $justifyContent, $alignItems) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin border($border, $borderRadius) {
+  border: none;
+  border-radius: $borderRadius;
+}
+
+@mixin margin(
+$marginLeft,
+$marginRight,
+$marginTop,
+$marginBottom,
+$marginAuto: auto
+){
+margin-left: $marginLeft;
+margin-right: $marginRight;
+margin-top: $marginTop;
+margin-bottom: $marginBottom;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Position */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.bold {
+  font-weight: bold;
+}
+/* Cursor */
+.pointer {
+  cursor: pointer;
+}
