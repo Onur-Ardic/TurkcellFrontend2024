@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.container {
+  width: 60%;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header {
+  height: 100vh;
+  background: url(../images/hero_2.jpg);
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.header .container {
+  height: 100vh;
+}
+.header .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 30px;
+}
+.header .nav-container .login {
+  border-left: 1px solid white;
+  padding-left: 30px;
+}
+.header .nav-container .registerButton {
+  padding: 12px 20px;
+  border-radius: 4px;
+  color: white;
+  background-color: #2f89fc;
+  font-size: 15px;
+}
+.header .nav-container .nav-list-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.header .nav-container .nav-list-wrapper .list-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-right: 50px;
+}
+.header .nav-container .nav-list-wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.header .main-title {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.header .main-title .title h1 {
+  font-size: 48px;
+  color: white;
+  font-weight: 400;
+}
+.header .main-title .title p {
+  font-size: 19.2px;
+  color: white;
+  font-weight: 400;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+  flex-direction: column;
+}
+.testimonials .testimonials-container {
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  text-align: center;
+}
+.testimonials .testimonials-container .title h2 {
+  font-size: 32px;
+  color: #2f89fc;
+  font-weight: 700;
+}
+.testimonials .testimonials-container .title ::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #2f89fc;
+  margin: 0 auto;
+}
+.testimonials .testimonials-container .image {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  flex-direction: column;
+}
+.testimonials .testimonials-container .image p {
+  margin-top: 20px;
+}
+.testimonials .testimonials-container .image img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+.testimonials .testimonials-container .testimonials-container-lorem {
+  margin: 0 0 1rem;
+  max-height: 165px;
+  font-size: 24px;
+  color: rgb(77, 77, 77);
+  font-weight: 400;
+  line-height: 40.8px;
+  font-style: italic;
+}
+.testimonials .owl-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  text-align: center;
+}
+.testimonials .owl-dots .owl-dot .active {
+  background-color: #2f89fc;
+}
+.testimonials .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  background-color: #dee2e6;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
