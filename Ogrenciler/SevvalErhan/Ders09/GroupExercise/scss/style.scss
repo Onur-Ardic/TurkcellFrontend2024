@@ -203,3 +203,39 @@
       }
     }
 }
+.trending-today{
+  padding: 2.5rem;
+    .cards{
+        display: grid;
+        justify-items: start;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 2rem;
+        .card{
+           @include flex(flex, center, center, $gap:2rem, $wrap:nowrap);
+           box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+           .img-card img{
+            width: 100%;
+          }
+          .content {
+            padding: 20px;
+            line-height: 3;
+            width: 100%;
+            height: 100%;
+            .category{
+                @extend %btn-2;
+              
+            }
+            .fa-heart{
+                float: right;
+                border-radius: 50px;
+                padding: 6px;
+            }
+            .fa-heart:hover{
+                color: #fff;
+                background-color: #f23a2e;
+            }
+          }
+        }
+    }
+}

@@ -13,6 +13,7 @@ body {
 a {
   text-decoration: none;
   display: inline-block;
+  color: #000;
 }
 
 ul {
@@ -111,6 +112,113 @@ img {
   font-size: 1.4rem;
   margin-bottom: 2rem;
   word-spacing: 2px;
+}
+
+.main-nav {
+  position: absolute;
+  padding: 1rem;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+}
+.main-nav .container {
+  display: flex;
+}
+.main-nav .container img {
+  width: auto;
+}
+.main-nav .container ul {
+  display: flex;
+  margin: 0 2rem 0 auto;
+}
+.main-nav .container ul a {
+  padding: 1rem;
+}
+.main-header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-header .page-bg {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.main-header .page-bg img {
+  height: 100%;
+}
+.main-header-content {
+  height: 100%;
+}
+.main-header-content .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+.main-header-content .container img {
+  width: auto;
+}
+.main-header-content .container > * {
+  z-index: 2;
+  flex: 1;
+}
+.main-header-content-left h1 {
+  font-size: 4rem;
+}
+.main-header-content-left p {
+  margin: 2rem 0;
+}
+.main-header-content-right {
+  position: relative;
+}
+.main-header-content-right > img:first-child {
+  width: 150%;
+}
+.main-header-content-right .woman {
+  position: absolute;
+  left: 220px;
+  top: 85px;
+  animation: move-y 5s infinite alternate;
+}
+.main-header-content-right .business-card {
+  position: absolute;
+  right: -180px;
+  top: 100px;
+  animation: move-45deg 10s infinite alternate;
+}
+.main-header-content-right > img:last-child {
+  position: absolute;
+  right: -320px;
+  top: 0;
+  animation: move-y 5s infinite alternate;
+}
+
+@keyframes move-y {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes move-45deg {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateX(-110px);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  75% {
+    transform: translateX(-110px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
