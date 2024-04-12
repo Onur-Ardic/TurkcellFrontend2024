@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
@@ -79,14 +78,10 @@ h4 {
 }
 
 .headerLogo {
-  display: block;
   width: 100px;
   height: 60px;
+  display: block;
   animation: animation-headerLogo 3s infinite;
-}
-
-.leftArea {
-  overflow: hidden;
 }
 
 .leftArea h1 {
@@ -95,8 +90,8 @@ h4 {
 }
 
 .waveImage {
-  height: 20px;
   width: 100%;
+  height: 20px;
   background-size: 645px 20px;
   background-repeat: repeat-x;
   margin: 25px 0px;
@@ -127,18 +122,18 @@ h4 {
   transition: all 1.5s ease;
   background-size: cover;
   background-image: url("https://demo.cocobasic.com/seppo-html/demo-5/images/arrow.png");
-  animation: deneme ease-in-out 2s infinite;
+  animation: animation-arrow ease-in-out 2s infinite;
 }
 
 .aboutForm input {
+  padding: 20px 24px;
+  border-radius: 10px;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  padding: 20px 24px;
   flex-grow: 1;
   margin: 0px 16px;
   outline: none;
   border: 1px solid rgb(255, 255, 255);
-  border-radius: 10px;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(12, 127, 134, 0.25) 0px 0px 30px 7px;
   transition: all 0.5s ease 0s;
@@ -149,15 +144,15 @@ h4 {
 }
 
 .btn-filled {
-  font-family: "Poppins", sans-serif;
   padding: 25px 24px;
   border-radius: 10px;
   color: rgb(255, 255, 255);
-  background-color: #0c7f86;
   font-size: 16px;
   font-weight: 600;
   line-height: 19px;
   letter-spacing: 4px;
+  font-family: "Poppins", sans-serif;
+  background-color: #0c7f86;
   text-transform: uppercase;
   border: none;
   transition: all 0.5s ease 0s;
@@ -173,59 +168,61 @@ h4 {
 }
 .img-box::before {
   content: "";
-  position: absolute;
-  top: -45px;
-  left: -30px;
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  border: 3px solid rgb(255, 255, 255);
-  z-index: 2;
+  position: absolute;
   pointer-events: none;
   user-select: none;
+  border: 3px solid rgb(255, 255, 255);
+  top: -45px;
+  left: -30px;
+  z-index: 2;
   animation: animation-circle 8s linear infinite;
 }
 .img-box::after {
   content: "";
-  position: absolute;
-  right: -350px;
-  top: 0;
-  width: 800px;
-  height: 800px;
-  border: 1px solid rgb(255, 255, 255);
+  width: 700px;
+  height: 700px;
   border-radius: 50%;
-  z-index: 0;
+  position: absolute;
   pointer-events: none;
   user-select: none;
+  border: 1px solid rgb(255, 255, 255);
+  top: 0;
+  right: -350px;
+  z-index: 0;
   animation: animation-circle-2 3s linear infinite alternate;
 }
 .img-box img {
-  max-width: 100%;
-  max-height: 100%;
   border-radius: 50%;
+  max-width: 100%;
   z-index: 1;
 }
 
 .bg1 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  width: 43%;
   height: 100%;
-  width: 40%;
-  background-color: rgb(229, 255, 249);
+  position: absolute;
+  top: 0;
   z-index: -1;
+  left: 0;
+  background-color: rgb(229, 255, 249);
 }
 
 .bg2 {
-  position: absolute;
-  top: 0px;
-  right: 0px;
+  width: 57%;
   height: 100%;
-  width: 60%;
-  background-color: rgb(184, 228, 218);
+  position: absolute;
+  top: 0;
   z-index: -1;
+  right: 0;
+  background-color: rgb(184, 228, 218);
 }
 
+.aboutMe {
+  padding: 10px;
+}
 .aboutMe h4 {
   color: #084b4f;
   letter-spacing: 2px;
@@ -239,7 +236,6 @@ h4 {
   margin-bottom: 24px;
   padding-top: 0px;
 }
-
 .aboutMe .body {
   line-height: 30px;
   margin-bottom: 24px;
@@ -261,26 +257,25 @@ h4 {
 
 .card {
   margin: 20px 15px;
-  text-align: center;
+}
+.card h3 {
+  margin-top: 15px;
 }
 .card img {
-  opacity: 0.9;
   width: 100%;
-  object-fit: cover;
   height: 300px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  opacity: 0.85;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .card img:hover {
   transition: all 1s ease;
   opacity: 1;
 }
-.card h3 {
-  text-align: center;
-}
 
 .myProject {
-  padding: 150px 0 50px 0;
+  padding: 150px 0 50px;
 }
 
 @keyframes animation-headerLogo {
@@ -326,23 +321,24 @@ h4 {
     border-color: #0c7f86;
   }
 }
-@keyframes deneme {
-  0% {
-    transform: scale(1.1); /* Boyutu büyütme */
-    filter: brightness(1.2); /* Parlaklık artışı */
+@keyframes animation-arrow {
+  0%, 100% {
+    transform: scale(1.1);
+    filter: brightness(0.8);
   }
   50% {
     transform: scale(1.2);
-    filter: brightness(1.3);
-  }
-  100% {
-    transform: scale(1.1);
     filter: brightness(1.2);
   }
 }
 @media screen and (max-width: 768px) {
   .col-9 {
     width: 100%;
+  }
+  .col-9 h1 {
+    font-size: 90px;
+    line-height: 110px;
+    padding-top: 30px;
   }
   .col-3 {
     margin-top: 30px;
@@ -355,17 +351,8 @@ h4 {
   .col-3 img {
     max-width: 70%;
   }
-  .container {
-    max-width: 640px;
-    padding: 0 25px;
-  }
-  .col-3 .img-box::before,
   .col-3 .img-box::after {
     display: none;
-  }
-  h1 {
-    font-size: 90px;
-    line-height: 110px;
   }
 }
 

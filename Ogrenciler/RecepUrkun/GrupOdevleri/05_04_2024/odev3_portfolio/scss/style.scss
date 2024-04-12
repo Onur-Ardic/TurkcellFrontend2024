@@ -1,14 +1,55 @@
 @import "global.scss";
 
-.headerLogo {
-  display: block;
-  width: 100px;
-  height: 60px;
-  animation: animation-headerLogo 3s infinite;
+@mixin borRadius($value){
+  border-radius: $value;
 }
 
-.leftArea {
-  overflow: hidden;
+@mixin padding($topBottom, $rightLeft) {
+  padding: $topBottom $rightLeft;
+}
+
+@mixin widthHeight($width,$height){
+  width: $width;
+  height: $height;
+}
+
+@mixin backgroundElement($width,$height,$left,$right,$bgColor){
+  @include widthHeight($width,$height );
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: $left;
+  right: $right;
+  background-color: $bgColor;
+}
+
+@mixin textStyle($color,$size,$ftWeight,$lineHeight,$letterSpacing,){
+  color: $color;
+  font-size: $size;
+  font-weight: $ftWeight;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+@mixin imgboxCircle($width,$height,$borderRadius,$border,$top,$left,$right,$z_index,$animation){
+  content:"";
+  @include widthHeight($width,$height );
+  @include borRadius($borderRadius);
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  border: $border;
+  top:$top;
+  left:$left;
+  right: $right;
+  z-index: $z_index;
+  animation: $animation;
+}
+
+.headerLogo {
+  @include widthHeight(100px,60px );
+  display: block;
+  animation: animation-headerLogo 3s infinite;
 }
 
 .leftArea h1 {
@@ -17,8 +58,7 @@
 }
 
 .waveImage {
-  height: 20px;
-  width: 100%;
+  @include widthHeight(100%,20px );
   background-size: 645px 20px;
   background-repeat: repeat-x;
   margin: 25px 0px;
@@ -27,11 +67,7 @@
 }
 
 .leftArea .subtitle {
-  color: $primaryColor;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 35px;
-  letter-spacing: 30px;
+  @include textStyle($primaryColor,32px ,700 ,35px ,30px );
   padding-top: 15px;
 }
 
@@ -44,23 +80,22 @@
 }
 
 .arrow {
-  width: 34px;
-  height: 50px;
+  @include widthHeight(34px,50px );
   transition: all 1.5s ease;
   background-size: cover;
   background-image: url("https://demo.cocobasic.com/seppo-html/demo-5/images/arrow.png");
-  animation: deneme ease-in-out 2s infinite;
+  animation: animation-arrow ease-in-out 2s infinite;
 }
 
 .aboutForm input {
+  @include padding(20px,24px);
+  @include borRadius(10px);
   font-family: $mainFont;
   font-size: 18px;
-  padding: 20px 24px;
   flex-grow: 1;
   margin: 0px 16px;
   outline: none;
   border: 1px solid $white;
-  border-radius: 10px;
   background-color: $white;
   box-shadow: rgba(12, 127, 134, 0.25) 0px 0px 30px 7px;
   transition: all 0.5s ease 0s;
@@ -71,15 +106,11 @@
 }
 
 .btn-filled {
+  @include padding(25px,24px );
+  @include borRadius(10px);
+  @include textStyle($white,16px ,600 ,19px ,4px );
   font-family: $mainFont;
-  padding: 25px 24px;
-  border-radius: 10px;
-  color: $white;
   background-color: $primaryColor;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 19px;
-  letter-spacing: 4px;
   text-transform: uppercase;
   border: none;
   transition: all 0.5s ease 0s;
@@ -92,79 +123,44 @@
 .img-box {
   position: relative;
   margin-bottom: 32px;
-  &::before {
-    content: "";
-    position: absolute;
-    top: -45px;
-    left: -30px;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    border: 3px solid $white;
-    z-index: 2;
-    pointer-events: none;
-    user-select: none;
-    animation: animation-circle 8s linear infinite;
+  &::before{
+    @include imgboxCircle(350px,350px ,50% ,3px solid $white ,-45px , -30px,null ,2 ,animation-circle 8s linear infinite )
   }
-  &::after {
-    content: "";
-    position: absolute;
-    right: -350px;
-    top: 0;
-    width: 800px;
-    height: 800px;
-    border: 1px solid $white;
-    border-radius: 50%;
-    z-index: 0;
-    pointer-events: none;
-    user-select: none;
-    animation: animation-circle-2 3s linear infinite alternate;
+  &::after{
+    @include imgboxCircle(700px,700px ,50% ,1px solid $white ,0 , null,-350px ,0 ,animation-circle-2 3s linear infinite alternate )
   }
   img {
+    @include borRadius(50%);
     max-width: 100%;
-    max-height: 100%;
-    border-radius: 50%;
     z-index: 1;
   }
 }
 
-.bg1 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 40%;
-  background-color: rgb(229, 255, 249);
-  z-index: -1;
+.bg1{
+  @include backgroundElement(43%,100% ,0 ,null ,rgb(229, 255, 249) )
 }
 
-.bg2 {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  height: 100%;
-  width: 60%;
-  background-color: rgb(184, 228, 218);
-  z-index: -1;
+.bg2{
+  @include backgroundElement(57%, 100%, null,0 ,rgb(184, 228, 218) )
 }
 
-.aboutMe h4 {
-  color: $secondaryColor;
-  letter-spacing: 2px;
+.aboutMe {
+  padding: 10px;
+  h4{
+    color: $secondaryColor;
+    letter-spacing: 2px;
+  }
 }
 
-.aboutMe .subtitle {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 1px;
-  margin-bottom: 24px;
-  padding-top: 0px;
-}
-
-.aboutMe .body {
-  line-height: 30px;
-  margin-bottom: 24px;
+.aboutMe{
+  .subtitle{
+    @include textStyle(null,16px ,400 ,30px ,1px );
+    margin-bottom: 24px;
+    padding-top: 0px;
+  }
+  .body {
+    line-height: 30px;
+    margin-bottom: 24px;}
 }
 
 .socialMedia {
@@ -183,30 +179,24 @@
 
 .card {
   margin: 20px 15px;
-  text-align: center;
-
+  h3{
+    margin-top: 15px;
+  }
   img {
-    opacity: 0.9;
-    width: 100%;
+    @include widthHeight(100%,300px );
+    @include borRadius(10px);
+    opacity: 0.85;
     object-fit: cover;
-    height: 300px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     &:hover {
       transition: all 1s ease;
       opacity: 1;
     }
   }
-
-  h3 {
-    text-align: center;
-  }
 }
 
 .myProject {
-  padding: 150px 0 50px 0;
+  padding: 150px 0 50px;
 }
 
 @keyframes animation-headerLogo {
@@ -258,17 +248,13 @@
   }
 }
 
-@keyframes deneme {
-  0% {
-    transform: scale(1.1); /* Boyutu büyütme */
-    filter: brightness(1.2); /* Parlaklık artışı */
+@keyframes animation-arrow {
+  0%, 100% {
+    transform: scale(1.1);
+    filter: brightness(0.8);
   }
   50% {
     transform: scale(1.2);
-    filter: brightness(1.3);
-  }
-  100% {
-    transform: scale(1.1);
     filter: brightness(1.2);
   }
 }
@@ -276,6 +262,11 @@
 @media screen and (max-width: 768px) {
   .col-9 {
     width: 100%;
+    h1 {
+      font-size: 90px;
+      line-height: 110px;
+      padding-top: 30px;
+    }
   }
   .col-3 {
     margin-top: 30px;
@@ -288,16 +279,8 @@
       max-width: 70%;
     }
   }
-  .container {
-    max-width: 640px;
-    padding: 0 25px;
-  }
-  .col-3 .img-box::before,
+  // .col-3 .img-box::before,
   .col-3 .img-box::after {
-    display: none; // pseudo-elementleri gizle
-  }
-  h1 {
-    font-size: 90px;
-    line-height: 110px;
+    display: none;
   }
 }
