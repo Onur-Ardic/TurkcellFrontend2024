@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+//
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@mixin flexible($display, $justify, $align, $gap) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin textFont($textAlign, $fontSize, $fontColor) {
+  text-align: $textAlign;
+  font-size: $fontSize;
+  color: $fontColor;
+}
+
+@mixin btn($paddingBtn, $bgColorBtn, $colorBtn, $widthBtn, $heightBtn) {
+  padding: $paddingBtn;
+  background-color: $bgColorBtn;
+  color: $colorBtn;
+  width: $widthBtn;
+  height: $heightBtn;
+}
+
+@mixin span($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+@mixin inputHero {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  outline: none;
+}
