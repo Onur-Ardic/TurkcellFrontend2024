@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Nanum+Gothic:wght@400;700;800&display=swap");
 * {
   box-sizing: border-box;
@@ -183,32 +182,6 @@
   color: #495057;
 }
 
-@media screen and (max-width: 768px) {
-  .header .nav-menu-middle,
-  .header .nav-menu-right {
-    display: none;
-  }
-  .header .container-wrap .form-search {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column !important;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  .header .container-wrap .form-search input,
-  .header .container-wrap .form-search select,
-  .header .container-wrap .form-search button {
-    width: 100% !important;
-  }
-  .header .container-wrap .form-search .location-input {
-    width: 100% !important;
-  }
-  .featured-card:first-child,
-  .featured-card:nth-child(2) {
-    display: none;
-  }
-}
 .header {
   background: url("../images/background.webp");
   height: 100vh;
@@ -376,6 +349,7 @@
 
 .popular-categories {
   padding: 2.5rem;
+  margin: 50px 0 100px 0;
 }
 .popular-categories .popular-title {
   line-height: 3;
@@ -388,9 +362,8 @@
 }
 .popular-categories .popular-title .line {
   position: absolute;
-  content: "";
   bottom: 0;
-  left: 50%; /* Orta noktayı dinamik olarak ayarlar */
+  left: 50%;
   transform: translateX(-50%);
   width: 100px;
   height: 3px;
@@ -406,7 +379,8 @@
   gap: 0rem;
 }
 .popular-categories .popular-cards .popular-card {
-  width: 150px;
+  padding: 20px 20px 20px 20px;
+  width: 180px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -421,29 +395,50 @@
   padding: 5px 20px;
 }
 .popular-categories .popular-cards .popular-card:hover {
-  padding: 0px 20px 10px 10px;
   color: #fff;
   background-color: #2f89fc;
   border-radius: 5px;
   box-shadow: 0 5px 30px -5px rgba(47, 137, 252, 0.5);
-  transform: scale(1.09);
+  transform: scale(1.1);
   z-index: 10;
+  transition: 0.1s all ease;
 }
 .popular-categories .popular-cards .popular-card:hover span {
   color: #fff;
 }
 .popular-categories .popular-cards .popular-card:hover .popular-card-number span {
-  background-color: #083d83;
+  background-color: #0362db;
+}
+.popular-categories .popular-cards .popular-card:hover .icon svg path {
+  fill: #fff;
 }
 
 .trending-today {
-  padding: 2.5rem;
+  background-color: #F8F9FA;
+  padding: 4rem;
+}
+.trending-today .title {
+  line-height: 3;
+  margin-bottom: 60px;
+  position: relative;
+}
+.trending-today .title span {
+  opacity: 0.8;
+}
+.trending-today .title .line {
+  position: absolute;
+  bottom: 0;
+  left: 4.5%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #2f89fc;
 }
 .trending-today .cards {
   display: grid;
   justify-items: start;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 2rem;
 }
 .trending-today .cards .card {
@@ -452,17 +447,30 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 2rem;
+  gap: 0;
   box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+}
+.trending-today .cards .card .img-card {
+  flex: 2;
+  height: 100%;
 }
 .trending-today .cards .card .img-card img {
-  width: 100%;
-}
-.trending-today .cards .card .content {
-  padding: 20px;
-  line-height: 3;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+.trending-today .cards .card .content {
+  flex: 2;
+  padding: 20px 40px;
+  line-height: 2;
+  width: 100%;
+  height: 100%;
+}
+.trending-today .cards .card .content .tag-icon {
+  margin-bottom: 20px;
 }
 .trending-today .cards .card .content .fa-heart {
   float: right;
@@ -472,6 +480,9 @@
 .trending-today .cards .card .content .fa-heart:hover {
   color: #fff;
   background-color: #f23a2e;
+}
+.trending-today .cards .card .stars {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

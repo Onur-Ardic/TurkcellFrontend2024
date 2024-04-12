@@ -1,23 +1,23 @@
-/* Error: Undefined mixin.
- *    ,
- * 9  | /         @include flex(
- * 10 | |           flex,
- * 11 | |           space-between,
- * 12 | |           center,
- * 13 | |           column !important,
- * 14 | |           $gap: 0.5rem
- * 15 | |         );
- *    | '---------^
- *    '
- *   scss/responsive.scss 9:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 9  \2502  \250c          @include flex(\a 10 \2502  \2502            flex,\a 11 \2502  \2502            space-between,\a 12 \2502  \2502            center,\a 13 \2502  \2502            column !important,\a 14 \2502  \2502            $gap: 0.5rem\a 15 \2502  \2502          );\a    \2502  \2514 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 \2500 ^\a    \2575 \a   scss/responsive.scss 9:9  root stylesheet";
+@media screen and (max-width: 768px) {
+  .header .nav-menu-middle,
+  .header .nav-menu-right {
+    display: none;
+  }
+  .header .container-wrap .form-search input,
+  .header .container-wrap .form-search select,
+  .header .container-wrap .form-search button {
+    width: 100% !important;
+  }
+  .header .container-wrap .form-search .location-input {
+    width: 100% !important;
+  }
+  .featured-card:first-child,
+  .featured-card:nth-child(2) {
+    display: none;
+  }
+  .trending-today .cards {
+    grid-template-columns: 1fr;
+  }
 }
+
+/*# sourceMappingURL=responsive.css.map */
