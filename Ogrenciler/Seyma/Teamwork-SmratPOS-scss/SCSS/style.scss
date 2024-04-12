@@ -111,3 +111,33 @@
         transform: translateY(0px);
     }
 }
+.pos-section{
+    padding: 95px 2rem;
+    &.background{
+        background-color: #fffcfa;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        & > *{
+            flex: 1;
+        }
+        .section-left{
+            .content{
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        width: 50%; 
+                        padding: 1rem 0;
+                        i{
+                            color: #fd4372;
+                            margin-right: .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

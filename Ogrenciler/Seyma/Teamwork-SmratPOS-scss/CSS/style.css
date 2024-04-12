@@ -220,5 +220,31 @@ img {
     transform: translateY(0px);
   }
 }
+.pos-section {
+  padding: 95px 2rem;
+}
+.pos-section.background {
+  background-color: #fffcfa;
+}
+.pos-section .container {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+.pos-section .container > * {
+  flex: 1;
+}
+.pos-section .container .section-left .content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pos-section .container .section-left .content ul li {
+  width: 50%;
+  padding: 1rem 0;
+}
+.pos-section .container .section-left .content ul li i {
+  color: #fd4372;
+  margin-right: 0.5rem;
+}
 
 /*# sourceMappingURL=style.css.map */
