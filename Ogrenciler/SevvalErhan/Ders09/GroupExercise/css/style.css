@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Nanum+Gothic:wght@400;700;800&display=swap");
 * {
   box-sizing: border-box;
@@ -377,7 +378,23 @@
   padding: 2.5rem;
 }
 .popular-categories .popular-title {
+  line-height: 3;
+  margin-bottom: 60px;
+  position: relative;
   text-align: center;
+}
+.popular-categories .popular-title span {
+  opacity: 0.8;
+}
+.popular-categories .popular-title .line {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%; /* Orta noktayı dinamik olarak ayarlar */
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #2f89fc;
 }
 .popular-categories .popular-cards {
   text-align: center;
@@ -389,6 +406,7 @@
   gap: 0rem;
 }
 .popular-categories .popular-cards .popular-card {
+  width: 150px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -401,6 +419,21 @@
 }
 .popular-categories .popular-cards .popular-card .popular-card-number span {
   padding: 5px 20px;
+}
+.popular-categories .popular-cards .popular-card:hover {
+  padding: 0px 20px 10px 10px;
+  color: #fff;
+  background-color: #2f89fc;
+  border-radius: 5px;
+  box-shadow: 0 5px 30px -5px rgba(47, 137, 252, 0.5);
+  transform: scale(1.09);
+  z-index: 10;
+}
+.popular-categories .popular-cards .popular-card:hover span {
+  color: #fff;
+}
+.popular-categories .popular-cards .popular-card:hover .popular-card-number span {
+  background-color: #083d83;
 }
 
 /*# sourceMappingURL=style.css.map */
