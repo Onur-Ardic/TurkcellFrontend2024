@@ -149,12 +149,31 @@
 .popular-categories{
     padding: 2.5rem;
     .popular-title{
+      line-height: 3;
+      margin-bottom: 60px;
+      position: relative;
       text-align: center;
+      span{
+        opacity: 0.8;
+      }
+      .line{
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 50%; /* Orta noktayı dinamik olarak ayarlar */
+        transform: translateX(-50%);
+        width: 100px;
+        height: 3px;
+        background: #2f89fc;
+      }
     }
     .popular-cards{
       text-align: center;
       @include flex(flex, space-evenly, center, $gap: 0rem);
+  
       .popular-card{
+      
+        width: 150px;
         @include flex(flex, space-evenly, center, $column:column, $gap: 0rem);
      
         .popular-card-number{
@@ -164,6 +183,22 @@
             padding: 5px 20px;
           }
       }
+        
+      }
+      .popular-card:hover{
+        padding: 0px 20px 10px 10px;
+        color: #fff;
+        background-color: #2f89fc;
+        border-radius:5px;
+        box-shadow: 0 5px 30px -5px rgba(47, 137, 252, 0.5);
+        transform: scale(1.09);
+        z-index: 10;
+        span {
+          color: #fff;
+        }
+        .popular-card-number span{
+          background-color: #083d83;
+        }
         
       }
     }
