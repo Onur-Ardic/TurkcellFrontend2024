@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -255,7 +256,16 @@ $graident: linear-gradient(
   background-color: #121212;
   text-align: center;
   color: #fff;
-  font-size: 1rem;
-  font-family: "Orbitron";
+  font-size: 1.2rem;
+  font-family: "Poppins", cursive;
   padding: 10px 10px;
+
+  h6 {
+    opacity: 0.5;
+  }
+
+  h5 {
+    font-size: 0.6rem;
+    font-family: "Orbitron";
+  }
 }
