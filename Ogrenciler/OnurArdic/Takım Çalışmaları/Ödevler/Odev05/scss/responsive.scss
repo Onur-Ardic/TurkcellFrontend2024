@@ -4,7 +4,7 @@
     background-position: center;
 
     .overlay {
-      height: 120vh;
+      height: 95vh;
     }
 
     .navbar {
@@ -129,6 +129,14 @@
       grid-template-columns: 1fr;
       grid-template-rows: repeat(6,1fr);
     }
+    &-content-item{
+      .item-img{
+        width: 200px;
+      }
+      .item-content{
+        padding: 10px;
+      }
+    }
   }
   .testimonials{
     .left-arrow, .right-arrow{
@@ -139,5 +147,9 @@
         width: 100%;
       }
     }
+  }
+  .container{
+    width: 95%;
+    margin: 0 auto;
   }
 }
