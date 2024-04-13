@@ -1,0 +1,17 @@
+{
+  "name": "odev06",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w scss:css"
+  },
+  "keywords": [
+    "Homework"
+  ],
+  "author": "Onur",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.74.1"
+  }
+}

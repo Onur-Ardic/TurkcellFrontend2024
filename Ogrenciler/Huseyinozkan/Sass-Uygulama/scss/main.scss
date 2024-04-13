@@ -1,0 +1,84 @@
+$font-fmly: Poppins, sans-serif;
+$color-header: #0c7f86;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 24px;
+  width: 100%;
+  max-width: 1200px;
+
+  .comig-text {
+    width: calc(60%);
+
+    .logo {
+      margin-top: 60px;
+      width: 98px;
+      height: 56px;
+    }
+    .wave {
+      width: 700px;
+      padding-top: 30px;
+      
+      
+    }
+    .arrow {
+      width: 34px;
+      height: 50px;
+    }
+    .work {
+      font-family: $font-fmly;
+      font-size: 80px;
+      padding: 100px 0px 20px;
+      line-height: 110px;
+      font-family: $font-fmly;
+      color: $color-header;
+      font-weight: 700;
+    }
+
+    .coming-form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .coming {
+      font-family: $font-fmly;
+      color: $color-header;
+      font-size: 20px;
+      letter-spacing: 25px;
+      padding-top: 30px;
+    }
+
+    .inpt-mail {
+      padding: 20px 24px;
+      font-size: 18px;
+      margin: 0 16px;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0px 0px 30px 7px #0c7f8640;
+      width: 350px;
+    }
+    .green-btn {
+      padding: 20px 24px;
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      background-color: $color-header;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+      letter-spacing: 4px;
+      transition: 0.5s ease;
+    }
+    .green-btn:hover {
+      background-color: #084b4f;
+    }
+  }
+}

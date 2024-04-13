@@ -1,103 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-  </head>
 
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
     <section class="heroSection colorw">
-      <div class="bg-overlay"></div>
-      <div class="container">
-        <div class="navbar navbar-flex">
-          <h1>DIRECTORSYADS</h1>
-          <ul class="navbar-list gap-30">
-            <li><a>Home</a></li>
-            <li><a>Ads</a></li>
-            <li><a>About</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Contact</a></li>
-          </ul>
-          <div class="sign-up-buttons gap-30">
-            <a>
-              <span class="border-left"></span>
-              Log In</a
-            >
-            <div class="register primary-bg-color"><a>Register</a></div>
-          </div>
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="navbar navbar-flex">
+                <label for="checkbox" class="check-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input type="checkbox" id="checkbox" name="checkbox" />
+                <h1>DIRECTORSYADS</h1>
+                <ul class="navbar-list gap-30">
+                    <li><a>Home</a></li>
+                    <li><a>Ads</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+                <div class="sign-up-buttons gap-30">
+                    <a>
+                        <span class="border-left"></span>
+                        Log In</a>
+                    <div class="register primary-bg-color"><a>Register</a></div>
+                </div>
+            </div>
+            <div class="hero">
+                <div class="hero-info">
+                    <h1>Welcome to DirectoryAds</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="hero-form">
+                    <form>
+                        <div class="hero-form-inputs">
+                            <div><input class="hero-input" placeholder="What are you looking for?" type="text"></div>
+                            <div><input class="hero-input" placeholder="Location" type="text"></div>
+                            <div><input class="hero-input" placeholder="All Categories" type="text"></div>
+                            <div class="hero-search primary-bg-color">
+                                <a>Search</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="hero-bottom">
+                    <h2>Trending Search:</h2>
+                    <a>iPhone</a>
+                    <a>Cars</a>
+                    <a>Flowers</a>
+                    <a>House</a>
+                </div>
+            </div>
         </div>
-        <div class="hero">
-          <div class="hero-info">
-            <h1>Welcome to DirectoryAds</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div class="hero-form">
-            <form>
-              <div class="hero-form-inputs">
-                <div>
-                  <input
-                    class="hero-input"
-                    placeholder="What are you looking for?"
-                    type="text"
-                  />
-                </div>
-                <div>
-                  <input
-                    class="hero-input"
-                    placeholder="Location"
-                    type="text"
-                  />
-                </div>
-                <div>
-                  <input
-                    class="hero-input"
-                    placeholder="All Categories"
-                    type="text"
-                  />
-                </div>
-                <div class="hero-search primary-bg-color">
-                  <a>Search</a>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="hero-bottom">
-            <h2>Trending Search:</h2>
-            <a>iPhone</a>
-            <a>Cars</a>
-            <a>Flowers</a>
-            <a>House</a>
-          </div>
-        </div>
-      </div>
     </section>
-    <!-- <section class="heroSection-mobile">
-        <div class="navbar">
-            <h1>DIRECTORSYADS</h1>
-            <div class="nav-menu"><i class="fa-solid fa-bars"></i></div>
-        </div>
-    </section> -->
     <section class="featuredSection">
-      <div class="container">
-        <div class=""></div>
-      </div>
+        <div class="container"></div>
     </section>
     <section class="popularCategoriesSection"></section>
-    <section class="trendingTodaySection"></section>
+    <section class="trendingTodaySection">
+        <div class="container">
+            <div class="row">
+                <h2>Trending Today</h2>
+            </div>
+            <div class="trendingCards">
+                <div class="trend-card-row">
+                    <div class="trend-card">
+                        <a href=""><img src="https://preview.colorlib.com/theme/directoryads/images/img_2.jpg.webp"
+                                alt=""></a>
+                        <div class="card-content">
+                            <span class="trend-category">Real Estate</span>
+                            <a href="">
+                                <i class="fa-solid fa-heart primary-text-color"></i>
+                            </a>
+                            <h3><a class="primary-text-color" href="">Own New House</a></h3>
+                            <address>Don St, Brooklyn, New York</address>
+                            <p>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-secondary"><i class="fa-solid fa-star"></i></span>
+                                <span class="review">(3 reviews)</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="trend-card">
+                        <a href=""><img src="https://preview.colorlib.com/theme/directoryads/images/img_1.jpg.webp"
+                                alt=""></a>
+                        <div class="card-content">
+                            <span class="trend-category">Car & Vehicles</span>
+                            <a href="">
+                                <i class="fa-solid fa-heart primary-text-color"></i>
+                            </a>
+                            <h3><a class="primary-text-color" href="">New Black Car</a></h3>
+                            <address>Don St, Brooklyn, New York</address>
+                            <p>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-secondary"><i class="fa-solid fa-star"></i></span>
+                                <span class="review">(3 reviews)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trend-card-row">
+                    <div class="trend-card">
+                        <a href=""><img src="https://preview.colorlib.com/theme/directoryads/images/img_3.jpg.webp"
+                                alt=""></a>
+                        <div class="card-content">
+                            <span class="trend-category">Furniture</span>
+                            <a href="">
+                                <i class="fa-solid fa-heart primary-text-color"></i>
+                            </a>
+                            <h3><a class="primary-text-color" href="">Wooden Chair & Table</a></h3>
+                            <address>Don St, Brooklyn, New York</address>
+                            <p>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-secondary"><i class="fa-solid fa-star"></i></span>
+                                <span class="review">(3 reviews)</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="trend-card">
+                        <a href=""><img src="https://preview.colorlib.com/theme/directoryads/images/img_2.jpg.webp"
+                                alt=""></a>
+                        <div class="card-content">
+                            <span class="trend-category">Real Estate</span>
+                            <a href="">
+                                <i class="fa-solid fa-heart primary-text-color"></i>
+                            </a>
+                            <h3><a class="primary-text-color" href="">Own New House</a></h3>
+                            <address>Don St, Brooklyn, New York</address>
+                            <p>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-secondary"><i class="fa-solid fa-star"></i></span>
+                                <span class="review">(3 reviews)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trend-card-row">
+                    <div class="trend-card">
+                        <a href=""><img src="https://preview.colorlib.com/theme/directoryads/images/img_4.jpg.webp"
+                                alt=""></a>
+                        <div class="card-content">
+                            <span class="trend-category">Electronics</span>
+                            <a href="">
+                                <i class="fa-solid fa-heart primary-text-color"></i>
+                            </a>
+                            <h3><a class="primary-text-color" href="">iPhone X gray</a></h3>
+                            <address>Don St, Brooklyn, New York</address>
+                            <p>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-secondary"><i class="fa-solid fa-star"></i></span>
+                                <span class="review">(3 reviews)</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="trend-card">
+                        <a href=""><img src="https://preview.colorlib.com/theme/directoryads/images/img_3.jpg.webp"
+                                alt=""></a>
+                        <div class="card-content">
+                            <span class="trend-category">Furniture</span>
+                            <a href="">
+                                <i class="fa-solid fa-heart primary-text-color"></i>
+                            </a>
+                            <h3><a class="primary-text-color" href="">Wooden Chair & Table</a></h3>
+                            <address>Don St, Brooklyn, New York</address>
+                            <p>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-secondary"><i class="fa-solid fa-star"></i></span>
+                                <span class="review">(3 reviews)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="testiminationsSections"></section>
     <section class="ourblogSection"></section>
     <section class="footer"></section>
-  </body>
+
+</body>
+
 </html>

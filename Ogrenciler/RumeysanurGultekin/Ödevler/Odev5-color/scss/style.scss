@@ -170,14 +170,13 @@
             }
         }
         .ourblog-body{
-            margin: 40px 160px;
-            @include hizalamaMixin(flex, row, center, center);
+            margin: 40px 0;
+            @include hizalamaMixin(flex, row, flex-start, center);
             gap: 15px;
             .ourblog-part{
                 text-align: left;
                 img{
-                    width: 350px;
-                    height: 219px;
+                    width: 100%;
                     border-radius: 5px;
                 }
                 
@@ -243,7 +242,7 @@
 .footer{
     background-color: #333333;
     .footer-body{
-        padding: 60px 180px;
+        padding: 60px 120px;
         @include hizalamaMixin(flex, column, center, center);
         .footer-top{
             @include hizalamaMixin(flex, row, flex-start, start);
@@ -273,7 +272,7 @@
                 }
             }
             .footer-input{
-                flex: 30%;
+                flex: 20%;
                 .input-footer{
                     background-color: #333333;
                     padding: 7px 8px;
@@ -317,38 +316,90 @@
     }
    .ourblog{
         .ourblog-body{
+            margin: 40px 0;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            /* flex: 20%; */
             .ourblog-part{
                 margin-bottom: 30px;
+                width: 45%;
             }
         }
    }
    .newsletterSection{
         .newsletter{
-            @include hizalamaMixin(flex, column, center, start); 
-            row-gap: 30px;
+            padding: 60px 70px;
+            @include hizalamaMixin(flex, row, center, start); 
+            gap: 30px;
+            .newsletter-input{
+                .email-form{
+                    
+                    padding-right: 50px;
+                }
+                .buton-news{
+                    
+                }
+            }    
         }
     }
     .footer{
         .footer-body{
+            padding: 60px 70px;
             .footer-top{
                 display: flex;
-                flex-wrap: wrap;
-                gap: 30px;
+                flex-direction: row;
+                gap: 20px;
                 /*@include hizalamaMixin(flex, column, flex-start, start); */
                 .footer-about{
-                    flex: 40%; 
+                    flex: 2; 
                     margin-bottom: 30px;
                 }
                 .footer-col3{
+                    flex:1;
                     margin-bottom: 30px;
                     justify-content: flex-start;
+                }
+                .footer-input{
+                    flex: 1;
+                    .input-footer{
+                        background-color: #333333;
+                        padding: 7px 0;}
+
                 }
             }
             
         }
     }
 }    
+
+@media screen and (max-width: 768px){
+    .newsletterSection{
+        .newsletter{
+            padding: 60px 70px;
+            @include hizalamaMixin(flex, column, center, start);
+        }   
+    }       
+    .ourblog{
+        .ourblog-body{
+            margin: 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .ourblog-part{
+                margin-bottom: 30px;
+                width: 100%;
+            }
+        }
+   }  
+    .footer{
+        .footer-body{
+            padding: 60px 70px;
+            .footer-top{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+        }
+    }
+}

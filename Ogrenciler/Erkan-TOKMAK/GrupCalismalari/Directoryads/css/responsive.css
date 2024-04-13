@@ -1,0 +1,101 @@
+@media (max-width: 768px) {
+  .header {
+    height: min-content;
+    background-position: center;
+  }
+  .header .overlay {
+    height: 120vh;
+  }
+  .header .navbar {
+    z-index: 99;
+  }
+  .header .navbar .check-btn {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+  }
+  .header .navbar .navbar-items {
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    visibility: hidden;
+    left: -330px;
+    padding: 0;
+    width: 80%;
+    background-color: #fcfcfc;
+    transition: 0.4s ease;
+  }
+  .header .navbar .navbar-items a {
+    color: #000;
+  }
+  .header .navbar #checkbox:checked ~ .navbar-items {
+    left: 0%;
+    visibility: visible;
+  }
+  .header .navbar .navbar-btn {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .navbar .navbar-btn a {
+    display: none;
+  }
+  .hero-content {
+    margin-top: 10px;
+  }
+  .hero-content .hero-content-input {
+    flex-direction: column;
+    height: max-content;
+    width: 90%;
+  }
+  .hero-content .hero-content-input .input-hero {
+    width: 100%;
+  }
+  .hero-content .hero-content-input .input-hero input {
+    padding: 10px 12px;
+    width: 100%;
+  }
+  .hero-content .hero-content-input .input-hero:first-child input:first-child {
+    width: 100%;
+  }
+  .hero-content .hero-content-input .input-hero i {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+  .hero-content .hero-content-input .input-hero select {
+    width: 100%;
+  }
+  .hero-content .hero-content-input .input-hero .hero-input button {
+    width: 100% !important;
+    display: block;
+  }
+  .trending-search {
+    padding-bottom: 10rem;
+    flex-direction: column;
+  }
+  .blog {
+    padding: 1rem;
+  }
+  .blog .blog-card-wrapper {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .footer .footer-top {
+    padding: 1rem;
+  }
+  .footer .footer-top .footer-top-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer .footer-wrapper .footer-bottom {
+    grid-template-columns: 1fr;
+  }
+  .featured-content {
+    flex-wrap: wrap;
+  }
+  .categories-content {
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

@@ -1,17 +1,23 @@
-/* Error: expected "}".
- *    ,
- * 30 | }
- *    |  ^
- *    '
- *   scss/responsive.scss 30:2  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a    \2577 \a 30 \2502  }\a    \2502   ^\a    \2575 \a   scss/responsive.scss 30:2  root stylesheet';
+@media screen and (max-width: 768px) {
+  .header .nav-menu-middle,
+  .header .nav-menu-right {
+    display: none;
+  }
+  .header .container-wrap .form-search input,
+  .header .container-wrap .form-search select,
+  .header .container-wrap .form-search button {
+    width: 100% !important;
+  }
+  .header .container-wrap .form-search .location-input {
+    width: 100% !important;
+  }
+  .featured-card:first-child,
+  .featured-card:nth-child(2) {
+    display: none;
+  }
+  .trending-today .cards {
+    grid-template-columns: 1fr;
+  }
 }
+
+/*# sourceMappingURL=responsive.css.map */
