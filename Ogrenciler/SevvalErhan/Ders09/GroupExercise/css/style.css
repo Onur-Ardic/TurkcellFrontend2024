@@ -171,7 +171,7 @@
   border-radius: 0.25rem;
 }
 
-.popular-categories .popular-cards .popular-card .popular-card-number span, .featured-ads .featured-cards .featured-card .content .category {
+.trending-today .cards .card .content .category, .popular-categories .popular-cards .popular-card .popular-card-number span, .featured-ads .featured-cards .featured-card .content .category {
   border-radius: 30px;
   padding: 9px 20px;
 }
@@ -182,32 +182,6 @@
   color: #495057;
 }
 
-@media screen and (max-width: 768px) {
-  .header .nav-menu-middle,
-  .header .nav-menu-right {
-    display: none;
-  }
-  .header .container-wrap .form-search {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column !important;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  .header .container-wrap .form-search input,
-  .header .container-wrap .form-search select,
-  .header .container-wrap .form-search button {
-    width: 100% !important;
-  }
-  .header .container-wrap .form-search .location-input {
-    width: 100% !important;
-  }
-  .featured-card:first-child,
-  .featured-card:nth-child(2) {
-    display: none;
-  }
-}
 .header {
   background: url("../images/background.webp");
   height: 100vh;
@@ -375,9 +349,25 @@
 
 .popular-categories {
   padding: 2.5rem;
+  margin: 50px 0 100px 0;
 }
 .popular-categories .popular-title {
+  line-height: 3;
+  margin-bottom: 60px;
+  position: relative;
   text-align: center;
+}
+.popular-categories .popular-title span {
+  opacity: 0.8;
+}
+.popular-categories .popular-title .line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #2f89fc;
 }
 .popular-categories .popular-cards {
   text-align: center;
@@ -389,6 +379,8 @@
   gap: 0rem;
 }
 .popular-categories .popular-cards .popular-card {
+  padding: 20px 20px 20px 20px;
+  width: 180px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -401,6 +393,96 @@
 }
 .popular-categories .popular-cards .popular-card .popular-card-number span {
   padding: 5px 20px;
+}
+.popular-categories .popular-cards .popular-card:hover {
+  color: #fff;
+  background-color: #2f89fc;
+  border-radius: 5px;
+  box-shadow: 0 5px 30px -5px rgba(47, 137, 252, 0.5);
+  transform: scale(1.1);
+  z-index: 10;
+  transition: 0.1s all ease;
+}
+.popular-categories .popular-cards .popular-card:hover span {
+  color: #fff;
+}
+.popular-categories .popular-cards .popular-card:hover .popular-card-number span {
+  background-color: #0362db;
+}
+.popular-categories .popular-cards .popular-card:hover .icon svg path {
+  fill: #fff;
+}
+
+.trending-today {
+  background-color: #F8F9FA;
+  padding: 4rem;
+}
+.trending-today .title {
+  line-height: 3;
+  margin-bottom: 60px;
+  position: relative;
+}
+.trending-today .title span {
+  opacity: 0.8;
+}
+.trending-today .title .line {
+  position: absolute;
+  bottom: 0;
+  left: 4.5%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #2f89fc;
+}
+.trending-today .cards {
+  display: grid;
+  justify-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.trending-today .cards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+  box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+}
+.trending-today .cards .card .img-card {
+  flex: 2;
+  height: 100%;
+}
+.trending-today .cards .card .img-card img {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.trending-today .cards .card .content {
+  flex: 2;
+  padding: 20px 40px;
+  line-height: 2;
+  width: 100%;
+  height: 100%;
+}
+.trending-today .cards .card .content .tag-icon {
+  margin-bottom: 20px;
+}
+.trending-today .cards .card .content .fa-heart {
+  float: right;
+  border-radius: 50px;
+  padding: 6px;
+}
+.trending-today .cards .card .content .fa-heart:hover {
+  color: #fff;
+  background-color: #f23a2e;
+}
+.trending-today .cards .card .stars {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

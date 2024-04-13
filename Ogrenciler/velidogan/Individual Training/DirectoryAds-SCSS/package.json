@@ -1,0 +1,12 @@
+{
+  "name": "directoryads-scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch scss:css"
+  },
+  "keywords": [],
+  "author": "Veli DOĞAN",
+  "license": "ISC"
+}

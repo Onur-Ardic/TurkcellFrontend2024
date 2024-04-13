@@ -9,18 +9,19 @@
     color: $primary-color;
     font-weight: weight(bold);
 }
+.bg-shape{
+     background-color: #e5fff9;
+}
 .container {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-    color: $main-body-color;
 }
 .body{
     position: relative;
     padding: 0;
     margin: 0;
     font-size: 16px;
-    min-height: 100vh;
     width: 100%;
     overflow: hidden;
 
@@ -36,6 +37,45 @@
     .headtittle{
         @include sub-title()
     }
+    .wave {
+      width: 200px;
+      height: 200px;
+      background-color: #3498db;
+      position: relative;
+      overflow: hidden;
+}
+
+    .wave-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px; /* Dalga yüksekliği ayarlayabilirsiniz */
+        overflow: hidden;
+    }
+    
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 200%; /* Dalga genişliği ayarlayabilirsiniz */
+        height: 100%;
+        background: radial-gradient(circle, #ffd373 0%, #ff9b00 100%);
+        animation: wave-animation 3s infinite linear;
+    }
+    
+    @keyframes wave-animation {
+        0% {
+        transform: translateX(0) translateY(10px);
+        }
+        50% {
+        transform: translateX(-50%) translateY(-10px);
+        }
+        100% {
+        transform: translateX(-100%) translateY(10px);
+        }
+    }
+    
     .substittle{
 
         color: $primary-color;
@@ -87,4 +127,26 @@
         border-radius: 50%;
         z-index: 1;
     }
+    .coming-image .body{
+        line-height: 30px;
+        margin-bottom: 24px;
+
+    }
+    .imgh4{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 30px;
+        color: $main-body-color;
+    }
+    .coming-links{
+        color: $main-body-color;
+        padding: 8px 8px 0px 0px;
+        text-decoration: none;
+        transition: color 0.5s ease;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 5px;
+    }
+    
 }

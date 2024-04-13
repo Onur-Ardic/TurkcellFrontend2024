@@ -12,5 +12,8 @@
     "sass": "^1.74.1",
     "scss": "^0.2.4"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "prettier": "3.2.5"
+  }
 }

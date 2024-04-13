@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+$colorBlue: #2f89fc;
+$btnbgBlue: #046df4;
+$colorGray: #f8f9fa;
+$colorDarkGray: #4d4d4d;
+$colorWhite: #fff;
+
+$size11: 11px;
+$size13: 13px;
+$size16: 16px;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.container {
+  width: 60%;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+@mixin font($size, $color,$weight) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
+
+@mixin grayButton {
+  font-size: 11px;
+  display: inline-block;
+  padding: 5px 20px;
+  background: #e9ecef;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+@mixin flexible($justify, $align, $gap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin button($padding,$borderRad,$color,$bgColor,$fontSize){
+    padding: $padding;
+    border-radius: $borderRad;
+    color: $color;
+    background-color: $bgColor;
+    font-size: $fontSize;
+}

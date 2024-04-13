@@ -31,4 +31,15 @@ body {
   text-align: center;
 }
 
+.gray-button {
+  font-size: 11px;
+  display: inline-block;
+  padding: 5px 20px;
+  background: #e9ecef;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=utilities.css.map */
