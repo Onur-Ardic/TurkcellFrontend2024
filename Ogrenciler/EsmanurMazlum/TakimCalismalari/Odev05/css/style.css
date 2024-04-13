@@ -266,5 +266,16 @@ body {
 .feature-ads .cards .card .content .bookmark .heart .fa-heart:hover {
   color: white;
 }
+.feature-ads .cards .card .content h3 {
+  font-size: 16px;
+  color: #2f89fc;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.feature-ads .cards .card .content span {
+  font-size: 13px;
+  color: #4d4d4d;
+  font-weight: 400;
+}
 
 /*# sourceMappingURL=style.css.map */
