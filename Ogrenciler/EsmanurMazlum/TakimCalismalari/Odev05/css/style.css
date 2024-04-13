@@ -318,10 +318,32 @@ body {
   display: flex;
   flex-direction: row;
 }
+.categories .categories-wrapper .categories-column .card-icon {
+  padding: 2rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+  width: 100%;
+}
+.categories .categories-wrapper .categories-column .card-icon h3 {
+  margin: 1rem 0;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
 .categories .categories-wrapper .categories-column .card-icon i {
+  font-size: 3.5rem;
+  padding: 1rem;
   color: #2f89fc;
-  width: 45px;
-  height: 45px;
+}
+.categories .categories-wrapper .categories-column .card-icon:hover {
+  background-color: #2f89fc;
+  transform: scale(1.09);
+}
+.categories .categories-wrapper .categories-column .card-icon:hover h3, .categories .categories-wrapper .categories-column .card-icon:hover i {
+  color: #fff;
+}
+.categories .categories-wrapper .categories-column .card-icon:hover .badge {
+  background-color: #2f89fc;
+  color: #fff;
 }
 
 .trending-today {
@@ -338,77 +360,48 @@ body {
 .trending-today .column {
   display: flex;
   flex-direction: row;
+  gap: 20px;
 }
-.trending-today .card {
+.trending-today .column .trending-card {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-.trending-today .card-body {
-  width: 100%;
-}
-.trending-today .trending-card {
   border-radius: 10px;
   background-color: #fff;
   display: flex;
+  width: 100%;
 }
-.trending-today .trending-card img {
+.trending-today .column .trending-card img {
   width: 250px;
   height: 195px;
   overflow: hidden;
 }
-.trending-today .trending-card-body {
+.trending-today .column .trending-card-body {
   padding: 20px;
+  width: 100%;
 }
-.trending-today .trending-card-body .meta {
+.trending-today .column .trending-card-body .meta {
   display: flex;
   justify-content: space-between;
   padding: 0.8rem 0;
 }
-.trending-today .trending-card-body .meta i {
+.trending-today .column .trending-card-body .meta i {
   padding: 10px;
   border-radius: 50%;
   color: #2f89fc;
   background-color: #f8f9fa;
 }
-.trending-today .trending-card-body h2 {
+.trending-today .column .trending-card-body h2 {
   font-size: 16px;
   color: #2f89fc;
   font-weight: 500;
 }
-.trending-today .trending-card-body span {
+.trending-today .column .trending-card-body span {
   font-size: 13px;
   color: #4d4d4d;
   font-weight: 400;
   margin-bottom: 16px;
 }
-.trending-today .trending-card-body i {
+.trending-today .column .trending-card-body i {
   color: orange;
-}
-.trending-today .trending-card-icon {
-  padding: 2rem;
-  border-radius: 5px;
-  transition: all 0.5s;
-  width: 100%;
-}
-.trending-today .trending-card-icon h3 {
-  margin: 1rem 0;
-  font-weight: 400;
-  font-size: 1.6rem;
-}
-.trending-today .trending-card-icon i {
-  font-size: 3.5rem;
-  padding: 1rem;
-  color: #2f89fc;
-}
-.trending-today .trending-card-icon:hover {
-  background-color: #2f89fc;
-  transform: scale(1.09);
-}
-.trending-today .trending-card-icon:hover h3, .trending-today .trending-card-icon:hover i {
-  color: #fff;
-}
-.trending-today .trending-card-icon:hover .badge {
-  background-color: #2f89fc;
-  color: #fff;
 }
 
 .badge {
