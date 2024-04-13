@@ -1,426 +1,316 @@
-@import "./global.scss";
-.heroSection {
+@import "utilities";
+
+.header {
+  height: 100vh;
+  background: url(../images/hero_2.jpg);
+  background-size: cover;
+  color: white;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+  .container {
+    height: 100vh;
+  }
+
+  .nav-container {
+    @include flexible(space-between, center, 1rem);
+    padding-top: 30px;
+
+    .login {
+      border-left: 1px solid white;
+      padding-left: 30px;
+    }
+
+    .registerButton {
+      @include button(12px 20px, 4px, white, $colorBlue, 15px);
+    }
+
+    .nav-list-wrapper {
+      @include flexible(center, center, 30px);
+      .list-wrapper {
+        @include flexible(space-between, center, 20px);
+        margin-right: 50px;
+      }
+      ul {
+        @include flexible(space-between, center, 30px);
+      }
+    }
+  }
+
+  .main-title {
     text-align: center;
-    position: relative;
-    background-image: url("https://preview.colorlib.com/theme/directoryads/images/hero_2.jpg.webp");
-    background-size: cover;
-    opacity: 1;
-    transform: translate(0);
-    .bg-overlay {
-        position: absolute;
-        content: "";
-        left: 0;
-        bottom: 0;
-        right: 0;
-        top: 0;
-        background: rgba(0, 0, 0, 0.3);
-    }
-    .navbar{
-        position: relative;
-        z-index: 2000;
-    }
-    .navbar h1 {
-        @include fontMixin(20px, white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    .title {
+      h1 {
+        @include font(48px, white, 400);
+      }
+      p {
+        @include font(19.2px, white, 400);
+      }
     }
 
-    .navbar-flex {
-        @include hizalamaMixin(flex, row, space-between, center);
-    }
+    .searchbar {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 4px;
+      margin-top: 30px;
+      form {
+        display: flex;
+      }
 
-    .navbar-list {
-        @extend .navbar-flex;
-        @include marginMixin(50px, 0, 50px, 0)
-    }
-
-    .sign-up-buttons {
-        @include hizalamaMixin(flex, row, space-evenly, center);
-        .border-left {
-            padding-left: 1.5rem;
-            border-left: 2px solid #dee2e6;
-        }
-        .register {
-            border-radius: 0.25rem;
-            @include paddingMixin(12px, 20px, 12px, 20px);
-        }
-    }
-    .hero {
-        @include marginMixin(50px, 0, 30px, 0);
-        padding-bottom: 6rem;
-        position: relative;
-        z-index: 2000
-    }
-    .hero-info h1 {
-        @include fontMixin(3rem, white);
-    }
-    .hero-info p {
-        @include fontMixin(1.2rem, white);
-        @include marginMixin(1rem, 0, 1rem, 0);
-        line-height: 1.5;
-
-    }
-    .hero-form {
-        opacity: 1;
-        transform: translate(0);
-        transition-property: opacity, transform;
-        background: rgba(255, 255, 255, 0.8);
-        border-radius: 4px;
-        padding: 20px;
-        @include marginMixin(3rem, 0, 1rem, 0)
-    }
-
-    .hero-form-inputs {
-        @include hizalamaMixin(flex, row, space-between, center);
-    }
-
-    .hero-input {
-        @include paddingMixin(0.375rem, 3rem, 0.375rem, 0.75rem);
-        border: none;
-        box-shadow: none;
-        height: 43px;
-        border-radius: 0.25rem;
+      .form-wrapper {
+        @include flexible(space-between, center, 20px);
         width: 100%;
-        font-size: 1rem;
-        line-height: 1.5;
-        color: #495057;
-        background-color: #fff;
-        background-clip: padding-box;
 
-    }
-
-    .hero-search {
-        border-radius: 0.25rem;
-        @include paddingMixin(12px, 20px, 12px, 20px);
-    }
-
-    .hero-bottom {
-        @include hizalamaMixin(flex, row, flex-start, center);
-        padding-bottom: 3rem;
-
-        h2 {
-            @include fontMixin(1rem, white);
-            margin-right: 10px;
+        .location{
+            position: relative;
+            span{
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 22px;
+            }
+        }
+        div{
+            width: 100%;
         }
 
-        a {
-            padding: 5px 10px;
-            background: rgba(255, 255, 255, 0.2);
+        input,select {
+          border: none;
+          height: 43px;
+          width: 100%;
+          padding: 0.375rem 0.75rem;
+          margin-right: 10px;
+          border-radius: 4px;
+          &::placeholder {
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+        }
+
+        button {
+          @include button(10px 30px, 4px, white, $colorBlue, 15px);
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+
+    .trends{
+        @include flexible(flex-start, center,5px);
+        margin-top: 15px;
+        h2{
+            @include font(16px, white, 300);
+        }
+        a{
+            display: inline-block;
             border: 1px solid #fff;
-            border-radius: 4px;
-            font-size: .8rem;
-            margin-right: 1rem;
+            @include button(2px 10px,4px, white,rgba(255, 255, 255, 0.2), .8rem);
+            transition: .3s all ease;
+            &:hover{
+                background: #fff;
+                color: $colorBlue;
+            }
         }
+    }
+  }
+}
 
+.feature-ads{
+    background-color: $colorGray;
+    padding: 80px 0;
+    h2{
+        @include font(20px, black, 500);
+        margin: 0 0 24px;
+    }
+    .cards{
+        @include flexible(space-between, center, 30px);
+        .card{
+          border-radius: 7px;
+          overflow: hidden;
+            .img{
+                display: block;
+                height: 150px;
+                width: 250px;
+            }
+            .img.img1{
+                background: url(../images/img_2.jpg);
+                background-size: cover;
+            }
+            .img.img2{
+              background: url(../images/img_3.jpg);
+              background-size: cover;
+            }
+            .img.img3{
+              background: url(../images/img_4.jpg);
+              background-size: cover;
+            }
+            .img.img4{
+              background: url(../images/img_1.jpg);
+              background-size: cover;
+            }
+            .content{
+              background-color: white;
+              padding: 20px;
+              position: relative;
+              .bookmark{
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: inline-block;
+                background: rgba(0, 0, 0, 0.03);
+                transition: .3s all ease;
+                &:hover{
+                  background-color: #f23a2e;
+                }
+                .heart{
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%);
+                  .fa-heart{
+                    color: $colorBlue;
+                  }
+                  .fa-heart:hover{
+                    color: white;
+                  }
+                }
+              }
+              h3{
+                @include font(16px, $colorBlue, 500);
+                margin-bottom: 8px;
+              }
+              span{
+                @include font(13px, $colorDarkGray,400);
+              }
+            }
+        }
     }
 }
-/* RÜMEYSA */
-.text-grey{
-    color:#999999;
-}
-.text-white{
-    color:white;
-}    
-
-
 .categories{
-    padding: 2rem;
-    text-align: center;
+  padding: 2rem;
+  text-align: center;
+  .categories-wrapper {
+    display: flex;
+  }
 }
 .trending-today{
-    padding: 2rem;
-    background-color: $color-lowBlack;
-    .grid{
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        margin: 2rem 0;
-        .card{
-            box-shadow: 0 0 15px 15px $color-lowBlack;
-            &-body{
-                width: 100%;
-            }
-        }
+    display: flex;
+    flex-direction: column;
+    .column{
+      display: flex;
+      flex-direction: row;
     }
+  padding: 2rem;
+  background-color: $colorGray;
+      .card{
+          box-shadow:0 4px 10px rgba(0, 0, 0, 0.2);
+          &-body{
+              width: 100%;
+          }
+      }
+  }
+
+// cards
+
+.card{
+  border-radius: 10px;
+  background-color: $colorWhite;
+  img{
+      width: 100%;
+  }
+  &-body{
+      padding: 20px;
+      .meta{
+          display: flex;
+          justify-content: space-between;
+          padding: .8rem 0;
+          i{
+              padding: 10px;
+              border-radius: 50%;
+              color: $colorBlue;
+              background-color: $colorGray;
+          }
+      }
+      h2{
+          font-size: 2rem;
+          font-weight: 400;
+          color: $colorBlue;
+      }
+      address{
+          margin: 1rem 0;
+  
+      }
+      i{
+          color: orange;
+      }
+  }
+  &-icon{
+      padding: 2rem;
+      border-radius: 5px;
+      transition: all .5s;
+      width: 100%;
+      h3{
+          margin: 1rem 0;
+          font-weight: 400;
+          font-size: 1.6rem;
+      }
+      i{
+          font-size: 3.5rem;
+          padding: 1rem;
+          color: $colorBlue;
+      }
+      &:hover{
+          background-color: $colorBlue;
+          transform: scale(1.09);
+          h3,i{
+              color: $colorWhite;
+          }
+          .badge{
+              background-color: $colorBlue;
+              color: $colorWhite;
+          }
+      }
+
+  }
+
 }
-
-
-.testiminationsSections{
-    background-color: #fff;
-    .testi-tab{
-        .testi-header h1{
-            @include fontMixin( 2rem, #2f89fc );
-            text-align: center;
-        }
-        .testi-body{
-            @include hizalamaMixin(flex, row, center, center); 
-            text-align: center;
-        }
-        .testi-body-text{
-            margin: 50px 70px;
-            @include hizalamaMixin(flex, column, center, center);
-            padding: 0 70px;
-            width: 700px;
-        }
-        .testi-body-text img{ 
-            height: 100px;
-            width: 100px;
-            border-radius: 50%;
-        }
-        .testi-body-text h6{
-            font-size: 15px;
-            margin-top: 7px;
-        }
-        .testi-body-text p{
-            font-size: 18px;
-            margin-top: 15px;
-            line-height: 35px;
-        }
-    }
+.badge{
+  padding: 10px 20px;
+  font-size: 11px;
+  background-color: #E9ECEF;
+  border-radius: 30px;
+  display: inline-block;
 }
-.ourblogSection{ 
-    background: #f8f7f7;
-    .ourblog{
-        max-width: 100%;
-        padding: 50px 0;
-        text-align: center;
-        .ourblog-header{
-            h1{
-                @include fontMixin(2rem,#2f89fc);
-            }
-            p{
-                margin-top: 10px;
-                @include fontMixin(1rem,rgba(0, 0, 0, 0.5))
-            }
-        }
-        .ourblog-body{
-            margin: 40px 0;
-            @include hizalamaMixin(flex, row, flex-start, center);
-            gap: 15px;
-            .ourblog-part{
-                text-align: left;
-                img{
-                    width: 100%;
-                    border-radius: 5px;
-                }
-                
-                .ourblog-meta{
-                    @include fontMixin( 14px, #b3b3b3);
-                    margin-top: 10px;
-                }
-                p{
-                    @include fontMixin(1rem, #4d4d4d);
-                    margin-top: 20px;
-                    line-height: 1.7em;
-                }
-            }
-        }
-        .button-ourblog{
-            border-radius: 5px;
-            padding: 10px 20px;
-            border-color: transparent;
-            margin-bottom: 50px;
-        }
-    }
-}
-.newsletterSection{
-    background-color: #2f89fc;
-    .newsletter{
-        padding: 60px 100px;
-        @include hizalamaMixin(flex, row, space-evenly, center);
-        .newsletter-header{
-            h1{
-                @include fontMixin(18px, white);
-            }
-            p{
-                @include fontMixin( 16px, white);
-                margin-top: 12px;
-            }    
-        }
-        .newsletter-input{
-            .email-form{
-                padding-left: 0;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                padding-right: 100px;
-                background-color: #2f89fc;
-                border: none;
-                border-bottom: 1px solid #fff;
-               
-            }
-            ::placeholder{
-                @include fontMixin(18px, white);
-                font-style: italic;
-            }
-        
-            .buton-news{
-                background-color: rgb(246, 243, 243);
-                @include fontMixin(1rem, black);
-                padding: 10px 15px;
-                border-color: transparent;
-                position: relative;
-            }
-        }
-    }
-}
-.footer{
-    background-color: #333333;
-    .footer-body{
-        padding: 60px 120px;
-        @include hizalamaMixin(flex, column, center, center);
-        .footer-top{
-            @include hizalamaMixin(flex, row, flex-start, start);
-            margin-bottom: 50px;
-            gap: 20px;
-            .footer-about{
-                padding-right: 15px;
-                flex: 40%;
-                h2{
-                    margin-bottom: 10px;
-                }
-                p{
-                    font-size: 16px;
-                    line-height: 30px;
-                }
-            }
-            .footer-col3{
-                flex:20%;
-                h2{
-                    margin-bottom: 10px;
-                }
-                li{
-                    line-height: 30px;
-                }
-                .social-media{
-                    margin-right:10px;
-                }
-            }
-            .footer-input{
-                flex: 20%;
-                .input-footer{
-                    background-color: #333333;
-                    padding: 7px 8px;
-                    border: 1px solid #ced4da;
-                    ::placeholder{
-                        @include fontMixin(1rem, #999999);
-                    }
-                }
-                .footer-btn{
-                    padding: 7px 9px;
-                    border-color: transparent;
-                }
-            }
-        }
-        .footer-bottom{
-            border-top: 1px solid #999999;
-            margin-top: 20px;
-            p{
-                padding-top: 20px;
-            }
-        }
-    }
-}
-
-    
-
-
-@media screen and (max-width: 992px){
-    .hero{
-        padding: 0 4rem;
-    }
-    .hero-form {
-        .hero-form-inputs{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            div{
-                width: 100%;
-            }
-        }
-    }
-   .ourblog{
-        .ourblog-body{
-            margin: 40px 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            .ourblog-part{
-                margin-bottom: 30px;
-                width: 45%;
-            }
-        }
-   }
-   .newsletterSection{
-        .newsletter{
-            padding: 60px 70px;
-            @include hizalamaMixin(flex, row, center, start); 
-            gap: 30px;
-            .newsletter-input{
-                .email-form{
-                    
-                    padding-right: 50px;
-                }
-                .buton-news{
-                    
-                }
-            }    
-        }
-    }
-    .footer{
-        .footer-body{
-            padding: 60px 70px;
-            .footer-top{
-                display: flex;
-                flex-direction: row;
-                gap: 20px;
-                /*@include hizalamaMixin(flex, column, flex-start, start); */
-                .footer-about{
-                    flex: 2; 
-                    margin-bottom: 30px;
-                }
-                .footer-col3{
-                    flex:1;
-                    margin-bottom: 30px;
-                    justify-content: flex-start;
-                }
-                .footer-input{
-                    flex: 1;
-                    .input-footer{
-                        background-color: #333333;
-                        padding: 7px 0;}
-
-                }
-            }
-            
-        }
-    }
-}    
-
-@media screen and (max-width: 768px){
-    .newsletterSection{
-        .newsletter{
-            padding: 60px 70px;
-            @include hizalamaMixin(flex, column, center, start);
-        }   
-    }       
-    .ourblog{
-        .ourblog-body{
-            margin: 40px 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            .ourblog-part{
-                margin-bottom: 30px;
-                width: 100%;
-            }
-        }
-   }  
-    .footer{
-        .footer-body{
-            padding: 60px 70px;
-            .footer-top{
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
-            
-        }
-    }
+.content{
+  width: 90%;
+  margin: 0 auto;
+  h2{
+      font-size: 3rem;
+      color: $colorBlue;
+  }
+  .border-bottom{
+  margin-top: 1rem;
+   height: 3px;
+   width: 9rem;
+   background-color: $btnbgBlue;
+   display: inline-block;
+  }
 }

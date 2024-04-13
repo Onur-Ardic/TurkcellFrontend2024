@@ -129,6 +129,109 @@ a {
     font-size: 1.25rem;
   }
 }
+@keyframes women-animation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes img-1-animation {
+  0% {
+    transform: translateY(-20px) translateX(0px);
+  }
+  50% {
+    transform: translateY(0px) translateX(-20px);
+  }
+  100% {
+    transform: translateY(-20px) translateX(0px);
+  }
+}
+@keyframes img-2-animation {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateX(-60px);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  75% {
+    transform: translateX(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.main-container {
+  background: #f9f2ff;
+  background-image: url("http://demos.codexcoder.com/labartisan/html/smartsass/assets/images/banner/pos/shape-2.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.main-container .navbar {
+  background: transparent;
+}
+.main-container .navbar .navbar-container {
+  justify-content: space-around;
+  padding: 2rem 10rem;
+}
+.main-container .navbar .navbar-container .right {
+  gap: 2rem;
+}
+.main-container .navbar .navbar-container .right ul {
+  gap: 2rem;
+}
+.main-container .navbar .navbar-container .right ul li a {
+  color: #000;
+}
+.main-container .navbar .navbar-container .right .button-container button {
+  padding: 1.25rem 1.5rem;
+}
+.main-container .home .home-container {
+  padding: 7rem 0;
+}
+.main-container .home .home-container .left {
+  padding: 6rem 22rem;
+}
+.main-container .home .home-container .left h2 {
+  color: #000;
+  font-size: 3.75rem;
+}
+.main-container .home .home-container .left p {
+  margin: 1rem 0 2rem 0;
+}
+.main-container .home .home-container .right {
+  padding: 15rem;
+  position: relative;
+}
+.main-container .home .home-container .right .main-img {
+  position: absolute;
+  left: -30rem;
+}
+.main-container .home .home-container .right .img-1 {
+  animation: img-1-animation 5s linear infinite;
+  position: absolute;
+  right: 5rem;
+  top: 1rem;
+}
+.main-container .home .home-container .right .img-2 {
+  animation: img-2-animation 15s linear infinite;
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+}
+.main-container .home .home-container .right .img-3 {
+  animation: women-animation 5s linear infinite;
+  position: absolute;
+  left: -15rem;
+}
+
 .perfect-pos .perfect-pos-container {
   padding: 5rem 0.75rem;
   margin: 0 18.219rem;
@@ -284,6 +387,29 @@ a {
 }
 
 @media (max-width: 1500px) {
+  .main-container {
+    background: none;
+  }
+  .main-container .home .home-container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .main-container .home .home-container .right {
+    padding: 1rem 1rem;
+  }
+  .main-container .home .home-container .right .main-img {
+    position: static;
+    width: 50rem;
+  }
+  .main-container .home .home-container .right .img-1 {
+    display: none;
+  }
+  .main-container .home .home-container .right .img-2 {
+    display: none;
+  }
+  .main-container .home .home-container .right .img-3 {
+    display: none;
+  }
   .smart-pos .smart-pos-container {
     margin: 0 3rem;
   }
@@ -295,6 +421,20 @@ a {
   }
 }
 @media (max-width: 1050px) {
+  .main-container .navbar .navbar-container {
+    padding: 1rem 1rem;
+    gap: 2rem;
+  }
+  .main-container .home .home-container .left {
+    padding: 1rem 1rem;
+  }
+  .main-container .home .home-container .left h2 {
+    font-size: 2rem;
+  }
+  .main-container .home .home-container .right .main-img {
+    position: static;
+    width: 90%;
+  }
   .smart-pos .smart-pos-container .bottom {
     flex-direction: column;
     align-items: center;
