@@ -6,7 +6,6 @@
     }
     .container-wrap {
       .form-search {
-       
         input,
         select,
         button {
@@ -20,13 +19,12 @@
   }
   .featured-card:first-child,
   .featured-card:nth-child(2) {
-    display: none; 
-}
-
-.trending-today{
-    .cards{
-      grid-template-columns: 1fr ;
-    }
+    display: none;
   }
 
+  .trending-today {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
 }

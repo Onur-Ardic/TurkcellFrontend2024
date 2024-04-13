@@ -47,3 +47,33 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .col-6 {
+      width: 100%;
+    }
+    .col-9 {
+      width: 100%;
+    }
+    .col-3 {
+      width: 100%;
+    }
+    .newsletter .container {
+      flex-direction: column;
+    }
+    .site-footer .col-12 {
+      flex-direction: column;
+    }
+    .site-footer .col-9 {
+      flex-direction: column;
+    }
+    .site-footer {
+      padding: 4rem 0;
+    }
+    .site-footer h2 {
+      margin-top: 1.5rem;
+    }
+    .form-control {
+      width: 100%;
+    }
+  }
+

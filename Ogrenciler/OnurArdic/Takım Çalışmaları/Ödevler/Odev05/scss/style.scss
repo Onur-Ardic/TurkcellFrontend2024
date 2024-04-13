@@ -427,7 +427,80 @@
     }
   }
 //! --------------------------------Testimonials---------------------
-
+.testimonials{
+  &-title{
+    margin: 0 0 24px;
+    @extend .categories-title;
+      p::after {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 48%;
+        height: 3px;
+        width: 80px;
+        background-color: $primary;
+    }
+  }
+  &-content{
+    @include flexible(flex,space-around,center,1rem);
+    margin-top: 60px;
+    flex-direction: column;
+    &-image{
+      img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 16px;
+      }
+      p {
+        text-align: center;
+      }
+    }
+    &-area{
+      @include flexible(flex,space-between,center,1rem);
+      .left-arrow, .right-arrow{
+        width: 50px;
+        height: 50px;
+        background: rgba(0, 0, 0, 0.2);
+        text-align: center;
+        align-content: center;
+        border-radius: 50%;
+        color: #fff;
+        &:hover{
+          background-color: #000;
+          cursor: pointer;
+          transition: all .5s ease;
+        }
+        &:hover i {
+          color: $primary;
+        }
+        i {
+          font-weight: 900;
+        }
+      }
+      p{
+        @include textFont(center,$fontSizeLarge,$colorGraySecondary);
+        width: 70%;
+        font-style: italic;
+        line-height: 1.7;
+      }
+    }
+  }
+  &-paginate-buttons{
+    @include flexible(flex,center,center,1rem);
+    margin-top: 60px;
+    .paginate-button{
+        background-color: $colorGrey;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .active{
+      background-color: $primary;
+    }
+  }
+}
 //! --------------------------------Our Blog-------------------------
 .blog {
   margin-top: $x100;
