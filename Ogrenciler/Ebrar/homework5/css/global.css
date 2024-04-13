@@ -210,7 +210,7 @@ option {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items: left;
+  align-items: center;
   gap: 5px;
   margin-left: 0px;
   margin-right: 0;
@@ -257,12 +257,6 @@ option {
   align-items: center;
   gap: 30px;
   margin-top: 15px;
-}
-
-.features-ads-card-responsive2,
-.features-ads-card-responsive {
-  display: flex;
-  gap: 30px;
 }
 
 .features-ads-card {
@@ -771,142 +765,6 @@ option {
   margin-left: 50px;
   margin-top: 10px;
   border-width: 2px;
-}
-
-@media screen and (max-width: 768px) {
-  .nav-section {
-    background-position: center;
-    background-size: cover;
-  }
-  .navList-item {
-    display: none;
-  }
-  .nav-section-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-  }
-  .nav-section-form-elements {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-  }
-  .nav-section-form-elements .location,
-  .nav-section-form-elements select,
-  .nav-section-form-elements .looking-for,
-  .nav-section-form-elements button {
-    width: 430px;
-  }
-  .nav-section-form-elements button {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .trend-search {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left !important;
-  }
-  .features-ads-card-responsive {
-    display: none;
-  }
-  .features-ads-card-responsive2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .popular-categories-icons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 150px;
-  }
-  .trending-today-cards-section {
-    display: grid;
-    grid-template-columns: repeat(1, 540px);
-    grid-template-rows: repeat(6, 180px);
-    justify-content: center;
-  }
-  .testimonials {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    width: 100%;
-    gap: 10px;
-  }
-  .testimonials-info {
-    height: 20%;
-  }
-  .testimonials-info p {
-    width: 100%;
-  }
-  .testimonials-info br {
-    display: none;
-  }
-  .our-blog {
-    display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    width: 100%;
-  }
-  .our-blog-card-img img {
-    width: 330px;
-  }
-  .our-blog-cards-section {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: left;
-  }
-  .our-blog-card {
-    width: 335px;
-    height: 430px;
-  }
-  .newsletter {
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .newsletter input {
-    width: 198px;
-  }
-  .footer {
-    width: 100%;
-  }
-  .footer-about {
-    width: 250px;
-  }
-  .footer-navigations,
-  .footer-follow-us {
-    width: 150px;
-  }
-  .footer-search input {
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 65px;
-  }
-  .footer-search button {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    position: relative;
-    margin-right: 0px;
-  }
 }
 
 /*# sourceMappingURL=global.css.map */

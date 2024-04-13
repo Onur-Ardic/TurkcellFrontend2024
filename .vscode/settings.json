@@ -1,3 +1,7 @@
 {
-  "liveServer.settings.port": 5501
+    "livePreview.defaultPreviewPath": "/Ogrenciler/BarisErkus/18-03-2024/assignment-app/index.html",
+    "editor.fontSize": 16,
+    "editor.accessibilityPageSize": 15,
+    "files.autoSave": "off",
+    "editor.tabSize": 4
 }

@@ -1,8 +1,6 @@
-@import "../scss/responsive.scss";
+@import '../scss/responsive.scss';
 
 @import url("@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@200;400;700;800&display=swap')");
-
-
 
 $bgColorBlue: #2f89fc;
 $bgColorGray: #4d4d4d;
@@ -179,7 +177,7 @@ option {
   font-size: 16px;
 }
 .trend-search {
-  @include flex(row, left, left);
+  @include flex(row, left, center);
   gap: 5px;
   @include margin(0px, 0, 15px, 0);
   font-weight: 500;
@@ -204,11 +202,6 @@ option {
   gap: 30px;
   margin-top: 15px;
 }
-.features-ads-card-responsive2,
-.features-ads-card-responsive {
-  display: flex;
-  gap: 30px;
-}
 .features-ads-card {
   @include flex(column, center, left);
   @include border(none, 5px, none, #fff, none);
@@ -216,7 +209,6 @@ option {
   height: 320px;
   box-shadow: -1px 3px 14px 1px rgba(196, 196, 196, 1);
 }
-
 .features-img img,
 .features-ads-card {
   border-top-left-radius: 10px;
@@ -543,4 +535,3 @@ option {
   margin-top: 10px;
   border-width: 2px;
 }
-
