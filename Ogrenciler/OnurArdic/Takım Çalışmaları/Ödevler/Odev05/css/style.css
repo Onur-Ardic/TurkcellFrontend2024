@@ -298,21 +298,21 @@
   gap: 1rem;
   flex-direction: column;
 }
-.categories-title h2 {
+.categories-title h2, .testimonials-title h2 {
   text-align: center;
   font-size: 2rem;
   color: #3089fc;
   margin: 0 0 8px;
   padding-top: 80px;
 }
-.categories-title p {
+.categories-title p, .testimonials-title p {
   text-align: center;
   font-size: 1rem;
   color: #6c757d;
   margin: 0 0 16px;
   position: relative;
 }
-.categories-title p::after {
+.categories-title p::after, .testimonials-title p::after {
   position: absolute;
   content: "";
   top: 40px;
@@ -477,6 +477,87 @@
 }
 .trending-content-item .item-content .content-area-reviews .stars::after {
   content: "(3 Reviews)";
+}
+
+.testimonials-title {
+  margin: 0 0 24px;
+}
+.testimonials-title p::after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 48%;
+  height: 3px;
+  width: 80px;
+  background-color: #3089fc;
+}
+.testimonials-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 60px;
+  flex-direction: column;
+}
+.testimonials-content-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.testimonials-content-image p {
+  text-align: center;
+}
+.testimonials-content-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonials-content-area .left-arrow, .testimonials-content-area .right-arrow {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  align-content: center;
+  border-radius: 50%;
+  color: #fff;
+}
+.testimonials-content-area .left-arrow:hover, .testimonials-content-area .right-arrow:hover {
+  background-color: #000;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.testimonials-content-area .left-arrow:hover i, .testimonials-content-area .right-arrow:hover i {
+  color: #3089fc;
+}
+.testimonials-content-area .left-arrow i, .testimonials-content-area .right-arrow i {
+  font-weight: 900;
+}
+.testimonials-content-area p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #4D4D4D;
+  width: 70%;
+  font-style: italic;
+  line-height: 1.7;
+}
+.testimonials-paginate-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 60px;
+}
+.testimonials-paginate-buttons .paginate-button {
+  background-color: #e9ecef;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.testimonials-paginate-buttons .active {
+  background-color: #3089fc;
 }
 
 .blog {
