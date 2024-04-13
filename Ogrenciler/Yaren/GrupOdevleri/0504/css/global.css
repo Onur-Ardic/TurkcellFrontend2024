@@ -1,0 +1,60 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+
+h2 {
+  font-size:2 rem;
+}
+
+h4{
+  font-size:24px;
+  line-height:32px;
+}
+
+.padding-tb{
+  padding-top:80 px;
+  padding-bottom:55px;
+}
+.flex {
+  display:flex;}
+
+.flex-column{
+  flex-direction: column;
+  display:flex;
+}
+.flex-row {
+  flex-direction: row;
+  display:flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.wrap {
+
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+/*# sourceMappingURL=global.css.map */

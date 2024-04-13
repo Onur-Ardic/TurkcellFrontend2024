@@ -210,14 +210,72 @@ body {
   align-items: center;
   gap: 30px;
 }
+.feature-ads .cards .card {
+  border-radius: 7px;
+  overflow: hidden;
+}
 .feature-ads .cards .card .img {
   display: block;
   height: 150px;
-  width: 300px;
+  width: 250px;
 }
 .feature-ads .cards .card .img.img1 {
   background: url(../images/img_2.jpg);
   background-size: cover;
+}
+.feature-ads .cards .card .img.img2 {
+  background: url(../images/img_3.jpg);
+  background-size: cover;
+}
+.feature-ads .cards .card .img.img3 {
+  background: url(../images/img_4.jpg);
+  background-size: cover;
+}
+.feature-ads .cards .card .img.img4 {
+  background: url(../images/img_1.jpg);
+  background-size: cover;
+}
+.feature-ads .cards .card .content {
+  background-color: white;
+  padding: 20px;
+  position: relative;
+}
+.feature-ads .cards .card .content .bookmark {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.03);
+  transition: 0.3s all ease;
+}
+.feature-ads .cards .card .content .bookmark:hover {
+  background-color: #f23a2e;
+}
+.feature-ads .cards .card .content .bookmark .heart {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.feature-ads .cards .card .content .bookmark .heart .fa-heart {
+  color: #2f89fc;
+}
+.feature-ads .cards .card .content .bookmark .heart .fa-heart:hover {
+  color: white;
+}
+.feature-ads .cards .card .content h3 {
+  font-size: 16px;
+  color: #2f89fc;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.feature-ads .cards .card .content span {
+  font-size: 13px;
+  color: #4d4d4d;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
