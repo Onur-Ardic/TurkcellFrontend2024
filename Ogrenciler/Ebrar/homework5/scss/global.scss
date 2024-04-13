@@ -545,7 +545,6 @@ option {
     background-position: center;
     background-size: cover;
   }
-
   .navList-item {
     display: none;
   }
@@ -568,7 +567,7 @@ option {
   .nav-section-form-elements select,
   .nav-section-form-elements .looking-for,
   .nav-section-form-elements button {
-    width: 430px;
+    width: 100%;
   }
   .nav-section-form-elements button {
     @include padding(50px, 50px, 10px, 10px);
