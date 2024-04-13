@@ -1,4 +1,41 @@
 @import "./common/global", "./common/variables", "./common/extends", "./common/animations", "./common/mixins";
+.navbar {
+    .navbar-container {
+        justify-content: space-around;
+        padding: 2rem 10rem;
+        .right {
+            gap: 2rem;
+            ul {
+                gap: 2rem;
+                li {
+                    a {
+                        color: #000;
+                    }
+                }
+            }
+            .button-container {
+                button {
+                    padding: 1.25rem 1.5rem;
+                }
+            }
+        }
+    }
+}
+// .home {
+//     .home-container {
+//         .left {
+//             h2 {
+//                 color: #000;
+//                 font-size: 3.75rem;
+//             }
+//             p {
+//                 margin: 1rem 0 2rem 0;
+//             }
+//         }
+//         .right {
+//         }
+//     }
+// }
 .perfect-pos {
     .perfect-pos-container {
         padding: 5rem 0.75rem;
@@ -181,6 +218,12 @@
     }
 }
 @media (max-width: 1050px) {
+    .navbar {
+        .navbar-container {
+            padding: 1rem 1rem;
+            gap: 2rem;
+        }
+    }
     .smart-pos {
         .smart-pos-container {
             .bottom {
