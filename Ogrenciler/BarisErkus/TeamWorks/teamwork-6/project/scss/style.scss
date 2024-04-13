@@ -103,7 +103,7 @@
     }
 }
 .footer {
-    background-image: url("http://demos.codexcoder.com/labartisan/html/smartsass/assets/css/bg-image/app-footer-bg.jpg");
+    background-image: linear-gradient(to top, #5f51b5, #7857c9, #935cdc, #b060ed, #ce62fd);
     color: white;
     .footer-top {
         justify-content: space-around;
@@ -140,24 +140,29 @@
     }
     .footer-content {
         padding: 6.25rem 0;
+        border-bottom: 1px solid #acacac8e;
         .footer-content-container {
             padding: 0 18.219rem;
             .item-list {
+                gap: 10rem;
                 .item {
                     .title {
                         h6 {
                             font-size: 1.125rem;
-                            margin-bottom: 1.25rem;
+                            margin-bottom: 2rem;
                         }
                     }
                     .content {
                         ul {
-                            gap: 1rem;
+                            gap: 1.5rem;
                         }
                     }
                 }
             }
         }
+    }
+    .footer-bottom {
+        padding: 3rem 0;
     }
 }
 @media (max-width: 1500px) {
@@ -186,6 +191,35 @@
                     width: 100%;
                 }
             }
+        }
+    }
+    .footer {
+        .footer-top {
+            margin: 0 1rem;
+        }
+        .footer-content {
+            .footer-content-container {
+                padding: 0 1rem;
+                .item-list {
+                    gap: 10rem;
+                    .item {
+                        .title {
+                            h6 {
+                                font-size: 1.125rem;
+                                margin-bottom: 2rem;
+                            }
+                        }
+                        .content {
+                            ul {
+                                gap: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-bottom {
+            padding: 3rem 0;
         }
     }
 }

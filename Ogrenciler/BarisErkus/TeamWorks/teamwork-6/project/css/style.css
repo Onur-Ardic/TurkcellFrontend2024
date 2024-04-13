@@ -230,7 +230,7 @@ a {
 }
 
 .footer {
-  background-image: url("http://demos.codexcoder.com/labartisan/html/smartsass/assets/css/bg-image/app-footer-bg.jpg");
+  background-image: linear-gradient(to top, #5f51b5, #7857c9, #935cdc, #b060ed, #ce62fd);
   color: white;
 }
 .footer .footer-top {
@@ -264,16 +264,23 @@ a {
 }
 .footer .footer-content {
   padding: 6.25rem 0;
+  border-bottom: 1px solid rgba(172, 172, 172, 0.5568627451);
 }
 .footer .footer-content .footer-content-container {
   padding: 0 18.219rem;
 }
+.footer .footer-content .footer-content-container .item-list {
+  gap: 10rem;
+}
 .footer .footer-content .footer-content-container .item-list .item .title h6 {
   font-size: 1.125rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
 }
 .footer .footer-content .footer-content-container .item-list .item .content ul {
-  gap: 1rem;
+  gap: 1.5rem;
+}
+.footer .footer-bottom {
+  padding: 3rem 0;
 }
 
 @media (max-width: 1500px) {
@@ -295,6 +302,25 @@ a {
   }
   .smart-pos .smart-pos-container .bottom .card-3 {
     width: 100%;
+  }
+  .footer .footer-top {
+    margin: 0 1rem;
+  }
+  .footer .footer-content .footer-content-container {
+    padding: 0 1rem;
+  }
+  .footer .footer-content .footer-content-container .item-list {
+    gap: 10rem;
+  }
+  .footer .footer-content .footer-content-container .item-list .item .title h6 {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  .footer .footer-content .footer-content-container .item-list .item .content ul {
+    gap: 1.5rem;
+  }
+  .footer .footer-bottom {
+    padding: 3rem 0;
   }
 }
 
