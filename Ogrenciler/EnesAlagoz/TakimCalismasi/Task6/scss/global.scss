@@ -1,12 +1,3 @@
-
-* {
-    font-family: Nanum-Gothic, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: $bgColorWhite;
-}
-
 $bgColorBlue: #2f89fc;
 $bgColorGray: #4d4d4d;
 $bgColorDarkGray: #333333;
@@ -18,45 +9,57 @@ $fontSize13: 13px;
 $fontSize20: 20px;
 $fontSize32: 32px;
 
+* {
+  font-family: Nanum-Gothic, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @mixin flex($direction, $justifyContent, $alignItems) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justifyContent;
-    align-items: $alignItems;
-  }
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
 
-@mixin border($border, $borderRadius) {
-    border: none;
-    border-radius: $borderRadius;
-  }
+@mixin border($border, $borderRadius, $borderColor, $borderBg, $borderWidth) {
+  border-style: $border;
+  border-radius: $borderRadius;
+  border-color: $borderColor;
+  background-color: $borderBg;
+  border-width: $borderWidth;
+}
 
-@mixin margin(
-  $marginLeft,
-  $marginRight,
-  $marginTop,
-  $marginBottom,
-  $marginAuto: auto
-){
+@mixin margin($marginLeft, $marginRight, $marginTop, $marginBottom) {
   margin-left: $marginLeft;
   margin-right: $marginRight;
   margin-top: $marginTop;
   margin-bottom: $marginBottom;
 }
 
+@mixin padding($paddingLeft, $paddingRight, $paddingTop, $paddingBottom) {
+  padding-left: $paddingLeft;
+  padding-right: $paddingRight;
+  padding-top: $paddingTop;
+  padding-bottom: $paddingBottom;
+}
 h1 {
-    font-size: 48px;
-    font-weight: 400;
-  }
-  
-  ul,
-  ol {
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
+  font-size: 48px;
+  font-weight: 400;
+}
+h2 {
+  color: #2f89fc;
+  font-size: $fontSize32;
+  font-weight: 200;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
   /* Position */
   .relative {
     position: relative;
@@ -79,4 +82,118 @@ h1 {
   /* Cursor */
   .pointer {
     cursor: pointer;
+  }
+  .navbar{
+    @include flex(row, space-evenly, center);
+    @include margin(0, 0, 50px, 50px);
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 1; 
+  }
+  .list-navbar{
+    @include flex(row,center  ,center );
+    gap: 50px;
+  }
+  .btn{
+    padding: 15px 20px;
+    background: linear-gradient(to right, #fd4472, #ffb64b);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 300ms ease-in-out;
+    &:hover {
+      background: linear-gradient(to right, #fd4572, #ffa788);
+    }
+  }
+  .img-section {
+    @include flex(row,space-between ,center );
+    position: relative; 
+    width: 100%;
+  }
+  .img-section img {
+    max-width: 100%;
+  }
+  .content {
+    @include flex(row, space-between, center);
+    gap: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 5 px;
+    bottom: 0;
+    z-index: 5;
+  }
+  .left-content, .right-content {
+    flex: 1;
+  } 
+  
+  .right-content {
+    width: 50%;
+    height: 60vh;
+    position: relative;
+    .laptop {
+      width: 110%;
+    }
+    .woman {
+      top: 90px;
+      right: 400px;
+      position: absolute;
+      height: 70%;
+      animation: woman-animation 9s ease-in-out infinite;
+    }
+    @keyframes woman-animation {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-50px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+    .card {
+      position: absolute;
+      top: 105px;
+      right: 80px;
+      height: 10%;
+      animation: usr-card-animation 10s ease-in-out infinite;
+    }
+    @keyframes usr-card-animation {
+      0% {
+        transform: translateX(0px);
+      }
+      25% {
+        transform: translateX(-75px);
+      }
+      50% {
+        transform: translateY(-50px);
+      }
+      75% {
+        transform: translateX(-75px);
+      }
+    }
+    .video-card {
+      position: absolute;
+        height: 30%;
+        top: 10px;
+        right: -90px;
+        animation: video-card-animation 10s ease-in-out infinite;
+    }
+    @keyframes video-card-animation {
+      0% {
+        transform: translateX(0px) translateY(0px);
+      }
+      50% {
+        transform: translateX(50px) translateY(-50px);
+      }
+      100% {
+        transform: translateX(0px) translateY(0px);
+      }
+    } 
   }
