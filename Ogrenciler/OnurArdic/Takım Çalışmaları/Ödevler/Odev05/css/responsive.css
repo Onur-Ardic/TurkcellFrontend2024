@@ -4,7 +4,7 @@
     background-position: center;
   }
   .header .overlay {
-    height: 120vh;
+    height: 95vh;
   }
   .header .navbar {
     z-index: 99;
@@ -95,6 +95,26 @@
   }
   .categories-content {
     flex-wrap: wrap;
+  }
+  .trending-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .trending-content-item .item-img {
+    width: 200px;
+  }
+  .trending-content-item .item-content {
+    padding: 10px;
+  }
+  .testimonials .left-arrow, .testimonials .right-arrow {
+    display: none;
+  }
+  .testimonials-content-area p {
+    width: 100%;
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
   }
 }
 

@@ -1,4 +1,20 @@
 @media (max-width: 992px) {
+  .header {
+    height: max-content;
+  }
+  .header .hero {
+    grid-template-columns: 100%;
+  }
+  .header .hero .shape-1 {
+    display: none;
+  }
+  .header .hero .hero-right {
+    margin-top: 4rem;
+  }
+  .header .hero .hero-right .img-first,
+  .header .hero .hero-right .img-second {
+    display: none;
+  }
   .header .navbar .check-btn {
     display: block;
     order: 2;
@@ -29,6 +45,12 @@
   .header .navbar #checkbox:checked ~ .navbar-items {
     height: 80%;
     visibility: visible;
+  }
+  .omnichannel-wrapper {
+    grid-template-columns: 100%;
+  }
+  .omnichannel-wrapper .omnichannel-left .omnichannel-list li {
+    font-size: 10px;
   }
 }
 

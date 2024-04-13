@@ -55,3 +55,14 @@
         transform: translateY(0);
     }
 }
+@keyframes animation-review {
+    0% {
+        box-shadow: 0 0 10px 0 rgba(255, 191, 71, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(255, 191, 71, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 10px 0 rgba(255, 191, 71, 0.8);
+    }
+}

@@ -1,0 +1,127 @@
+.newsletter {
+  padding: 3rem 0rem;
+  background-color: #2f89fc;
+  .nl-block {
+    margin-right: -15px;
+    margin-left: -15px;
+    .nl-block-left {
+      flex: 1;
+      padding: 0px 15px;
+      h2 {
+        color: #fff;
+        font-size: 18px;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    .nl-block-right {
+      flex: 1;
+      padding: 0px 15px;
+      .input {
+        flex: 4;
+        input {
+          width: 100%;
+          background-color: #2f89fc;
+          border-radius: 0;
+          border: none;
+          outline: none;
+          border-bottom: 1px solid white;
+          height: 43px;
+          &::placeholder {
+            color: #fff;
+            font-style: italic;
+          }
+        }
+      }
+      .button {
+        flex: 1;
+        button {
+          cursor: pointer;
+          background-color: #fff;
+          padding: 0px 15px;
+          border-radius: 0;
+          border: 1px solid transparent;
+          height: 43px;
+          &:hover {
+            background-color: black;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+.footer {
+  padding: 8em 0;
+  background: #333333;
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    .grid-item {
+      padding: 0px 15px;
+      h2 {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 1.5rem;
+      }
+      p {
+        color: #737373;
+      }
+      .link {
+        color: #737373;
+        &:hover {
+          color: #fff;
+        }
+      }
+      .input {
+        flex: 3;
+        input {
+          width: 100%;
+          background-color: #333333;
+          border-radius: 0;
+          border: 1px solid #6c757d;
+          outline: none;
+          height: 43px;
+          &::placeholder {
+            color: #6c757d;
+          }
+        }
+      }
+      .button {
+        flex: 1;
+        button {
+          cursor: pointer;
+          background-color: #2f89fc;
+          color: #fff;
+          padding: 0px 15px;
+          border-radius: 0;
+          border: 1px solid #2f89fc;
+          height: 43px;
+          &:hover {
+            background-color: #0974fb;
+            border-color: #046df4;
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    padding: 0px 15px;
+    text-align: center;
+    padding-top: 3rem;
+    p {
+      color: #737373;
+      .link {
+        color: #737373;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

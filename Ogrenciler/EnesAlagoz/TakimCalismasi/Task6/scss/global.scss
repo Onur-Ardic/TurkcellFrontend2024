@@ -48,12 +48,7 @@ h1 {
   font-size: 48px;
   font-weight: 400;
 }
-h2 {
-  color: #2f89fc;
-  font-size: $fontSize32;
-  font-weight: 200;
-}
-ul {
+ul li{
   list-style: none;
 }
 
@@ -83,6 +78,9 @@ a {
   .pointer {
     cursor: pointer;
   }
+  .container{
+    background-color: #f2f4f5;
+  }
   .navbar{
     @include flex(row, space-evenly, center);
     @include margin(0, 0, 50px, 50px);
@@ -95,6 +93,10 @@ a {
   .list-navbar{
     @include flex(row,center  ,center );
     gap: 50px;
+  }
+  .list-navbar a{
+    color: black;
+    font-size: 18px;
   }
   .btn{
     padding: 15px 20px;
@@ -119,19 +121,38 @@ a {
   }
   .content {
     @include flex(row, space-between, center);
+    @include margin(300px,  0, 0 , 0 );
     gap: 50px;
     position: absolute;
     top: 0;
-    left: 0;
-    right: 5 px;
+    left: 50 px;
+    right: 50 px;
     bottom: 0;
     z-index: 5;
   }
-  .left-content, .right-content {
-    flex: 1;
-  } 
-  
+  .left-content {
+    @include flex(column, center, none);
+    width: 50%;
+    height: 90vh;
+    gap: 30px;
+    margin: 0 auto 60px;
+
+    h2 {
+      font-size: 60px;
+      color: #333333;
+    }
+    p {
+      font-size: 16px;
+      color: #696969;
+      line-height: 1.5;
+      width: 80%;
+    }
+    .btn {
+      width: 171px;
+    }
+  }
   .right-content {
+    @include margin(0,200px ,200px ,0 );
     width: 50%;
     height: 60vh;
     position: relative;
@@ -139,28 +160,28 @@ a {
       width: 110%;
     }
     .woman {
-      top: 90px;
-      right: 400px;
+      top: 80px;
+      right: 320px;
       position: absolute;
-      height: 70%;
+      height: 60%;
       animation: woman-animation 9s ease-in-out infinite;
     }
     @keyframes woman-animation {
       0% {
-        transform: translateY(0px);
+        transform: translateY(-10px);
       }
       50% {
         transform: translateY(-50px);
       }
       100% {
-        transform: translateY(0px);
+        transform: translateY(-10%);
       }
     }
 
     .card {
       position: absolute;
-      top: 105px;
-      right: 80px;
+      top: 70px;
+      right: 70px;
       height: 10%;
       animation: usr-card-animation 10s ease-in-out infinite;
     }
@@ -169,20 +190,20 @@ a {
         transform: translateX(0px);
       }
       25% {
-        transform: translateX(-75px);
+        transform: translateX(-40px);
       }
       50% {
         transform: translateY(-50px);
       }
       75% {
-        transform: translateX(-75px);
+        transform: translateX(-60px);
       }
     }
     .video-card {
       position: absolute;
         height: 30%;
-        top: 10px;
-        right: -90px;
+        top: -30px;
+        right: -100px;
         animation: video-card-animation 10s ease-in-out infinite;
     }
     @keyframes video-card-animation {
@@ -197,3 +218,87 @@ a {
       }
     } 
   }
+
+.omnichannel-section {
+  @include flex(row, space-evenly, center);
+  width: 100%;
+  height: 100vh; 
+}
+.omnichannel-section-left{
+  width: 660px;
+}
+.omnichannel-section-texts {
+  border-bottom: 1px solid #ecf0f3;
+}
+.omnichannel-section-texts h2{
+  font-size: 36px;
+}
+.omnichannel-section-texts p{
+  font-size: 16px;
+  color: #696969;
+  line-height: 25px;
+  height: 70px;
+  width: 440px;
+  padding: 30px 0 100px 0;
+  font-weight: 500;
+}
+.omnichannel-section button{
+  margin-top: 50px;
+  padding: 16px 46px;
+  background: linear-gradient(to right, #ff5195, #ffb84b);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+li img {
+  padding-right: 10px;
+  width: 25px;
+  height: 20px;
+}
+
+ul li {
+  width: 318px;
+  color: #696969;
+  padding: 10px;
+  font-weight: 500;
+}
+.all-in-one-retail-section{
+  @include flex(row, space-evenly, center);
+  width: 100%;
+  height: 100vh;
+  background: #fffcfa;
+}
+.all-in-one-retail-section-left{
+  
+  width: 660px;
+}
+.all-in-one-retail-section-texts{
+  border-bottom: 1px solid #ecf0f3;
+}
+.all-in-one-retail-section-texts h2{
+  font-size: 36px;
+}
+.all-in-one-retail-section-texts p{
+  font-size: 16px;
+  color: #696969;
+  line-height: 25px;
+  height: 70px;
+  width: 440px;
+  padding: 30px 0 100px 0;
+}
+.all-in-one-retail-section button{
+  margin-top: 50px;
+  padding: 16px 46px;
+  background: linear-gradient(to right, #ff5195, #e7a94c);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}

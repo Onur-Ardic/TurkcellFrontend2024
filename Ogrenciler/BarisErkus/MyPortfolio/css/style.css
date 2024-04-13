@@ -154,6 +154,17 @@ h4 {
     transform: translateY(0);
   }
 }
+@keyframes animation-review {
+  0% {
+    box-shadow: 0 0 10px 0 rgba(255, 191, 71, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(255, 191, 71, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px 0 rgba(255, 191, 71, 0.8);
+  }
+}
 header {
   padding-top: 3.75rem;
 }
@@ -331,10 +342,35 @@ header .container a img, header .container a .cards-container .card .last-img, .
 .cards-container .card .last-img:hover {
   transform: scale(5) translate(-20%, -50%);
 }
-.cards-container .card h5 {
-  font-size: 1rem;
+.cards-container .card .buttons {
+  gap: 1rem;
   margin-top: 3.5rem;
-  color: #fff;
+}
+.cards-container .card .buttons a {
+  position: relative;
+  background-color: #b35845;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+.cards-container .card .buttons a:hover {
+  background-color: #b33c24;
+  animation: buttonHover 1s infinite;
+}
+.cards-container .card .buttons a h5 {
+  font-size: 1rem;
+  color: white;
+}
+.cards-container .card .buttons a .circle {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  border-radius: 50%;
+  top: -0.25rem;
+  right: -0.25rem;
+  animation: animation-review 0.5s infinite ease-in-out;
+  background-color: rgb(255, 191, 71);
+  z-index: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
