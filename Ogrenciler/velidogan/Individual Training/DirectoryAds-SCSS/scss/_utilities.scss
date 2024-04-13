@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: $font-size;
+}
+
+body{
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 1.6rem;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: $color-black;
+}
+.container {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+// flex
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+   &-1{
+    flex:100%
+   }
+   &-2{
+    flex: 50%;
+   }
+   &-3{
+    flex: 30%;
+   }
+   &-4{
+    flex: 20%;
+   }
+   &-6{
+    flex: 1;
+   }
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.column-gap{
+    column-gap: 20px;
+}
+// grid
+.grid{
+    display: grid;
+}
+// cards
+.card{
+    border-radius: 10px;
+    background-color: $color-white;
+    img{
+        width: 100%;
+    }
+    &-body{
+        padding: 20px;
+        .meta{
+            display: flex;
+            justify-content: space-between;
+            padding: .8rem 0;
+            i{
+                padding: 10px;
+                border-radius: 50%;
+                color: $color-blue;
+                background-color: $color-lowBlack;
+            }
+        }
+        h2{
+            font-size: 2rem;
+            font-weight: 400;
+            color: $color-blue;
+        }
+        address{
+            margin: 1rem 0;
+        }
+        i{
+            color: $color-orange;
+        }
+    }
+    &-icon{
+        padding: 2rem 3rem;
+        width: 100%;
+        border-radius: 5px;
+        transition: all .5s;
+        h3{
+            margin: 1rem 0;
+            font-weight: 400;
+            font-size: 1.6rem;
+        }
+        i{
+            font-size: 3.5rem;
+            padding: 1rem;
+            color: $color-blue;
+        }
+        &:hover{
+            background-color: $color-blue;
+            transform: scale(1.09);
+            h3{
+                color: $color-white;
+            }
+            i{
+                color: $color-white;
+            }
+            .badge{
+                background-color: $color-darkBlue;
+                color: $color-white;
+            }
+        }
+    }
+}
+
+// buttons
+.btn{
+    padding: 12px 24px;
+    font-size: 16px;
+    color: $color-white;
+    border: none;
+    border-radius: 5px;
+    transition: all .5s;
+    &:hover{
+        opacity: .7;
+    }
+    &-primary{
+        background-color: $color-blue;
+    }
+    &-light{
+        background-color: $color-white;
+        color: $color-black;
+        &:hover{
+            background-color: $color-black;
+            color: $color-white;
+            opacity: 1;
+        } 
+    }
+    &-outline{
+        background-color: $color-lowLight;
+        color: $color-white;
+        padding: 5px 10px;
+        margin: 0 2px;
+        border: 2px solid $color-light;
+        &:hover{
+            background-color: $color-white;
+            color: $color-blue;
+            opacity: 1;
+        } 
+    }
+}
+@mixin title($font-size){
+    font-size: $font-size;
+    color: $color-blue;
+}
+
+.title{
+    @include title(32px);
+    &-sup{
+    @include title(4.8rem);
+    }
+    &-sub{
+    @include title(20px);
+    }
+}
+
+.badge{
+    padding: 10px 20px;
+    font-size: 11px;
+    background-color: #E9ECEF;
+    border-radius: 30px;
+    display: inline-block;
+}
+.paragraph{
+    color: #4D4D4D;
+}
+.p{
+    &-x{
+        padding: 0 50px;
+    }
+    &-y{
+        padding: 50px 0;
+    }
+    &-xy{
+        padding: 50px;
+    }
+}
+.text-center{
+    text-align: center;
+}
+.content{
+    width: 90%;
+    margin: 2rem auto;
+    h2{
+        font-size: 3rem;
+        color: $color-blue;
+    }
+    .border-bottom{
+        margin-top: 1rem;
+        height: 3px;
+        width: 9rem;
+        background-color: $color-blue;
+        display: inline-block;
+    }
+}

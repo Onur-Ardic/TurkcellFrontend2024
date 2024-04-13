@@ -1,0 +1,484 @@
+@import "./base.scss", "./variables.scss";
+
+.header {
+  background: url("https://preview.colorlib.com/theme/directoryads/images/hero_2.jpg.webp");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.3;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  .navbar {
+    @include flexible(flex, space-between, center, 1rem);
+    padding: 20px 10px;
+    position: relative;
+    z-index: 2;
+
+    #checkbox {
+      display: none;
+    }
+
+    .check-btn {
+      display: none;
+    }
+    .logo {
+      a {
+        color: #fff;
+        font-weight: 900;
+        font-size: $fontSizeMedium;
+      }
+    }
+
+    .navbar-items {
+      @include flexible(flex, space-between, center, 2rem);
+      font-size: $fontSizeSmall;
+      a {
+        color: #fff;
+        font-weight: 100;
+      }
+    }
+  }
+
+  .navbar-btn {
+    font-size: $fontSizeSmall;
+    a:first-child {
+      color: #fff;
+      margin: 1rem;
+      border-left: 1px solid #fff;
+      padding-left: $fontSizeLarge;
+    }
+    a:last-child {
+      @include btn(0.6rem, $primary, $colorWhite, $x80, $x60);
+      border-radius: 7px;
+    }
+    margin-right: $x100;
+    font-weight: 100;
+  }
+}
+
+//!--------------------Hero-----------------------
+.hero-content {
+  position: relative;
+  @include flexible(flex, center, center, 0);
+  flex-direction: column;
+  margin-top: 340px;
+  z-index: 2;
+  .hero-title {
+    @include textFont(center, $fontSizeExtraExtraLarge, $colorWhite);
+    font-weight: 500;
+  }
+
+  p {
+    text-align: center;
+    color: #fff;
+    font-size: $fontSizeMedium;
+  }
+
+  .hero-content-input {
+    margin-top: $x60;
+    @include flexible(flex, space-evenly, center, 1rem);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    height: 5.37rem;
+    border-radius: 10px;
+    padding: $x20;
+    width: 100%;
+  }
+
+  .input-hero {
+    position: relative;
+    input {
+      @include inputHero;
+      width: 300px;
+    }
+
+    &:first-child {
+      input:first-child {
+        width: 400px;
+      }
+    }
+    i {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+    }
+
+    select {
+      @include inputHero;
+    }
+  }
+
+  .hero-input {
+    button {
+      @include btn(10px 30px, $primary, $colorWhite, 153px, 46px);
+      border-radius: 7px;
+      border: none;
+    }
+  }
+}
+
+.trending-search {
+  margin: $defaultSize;
+  @include flexible(flex, start !important, start, 10px);
+  position: relative;
+  z-index: 2;
+  h2 {
+    @include textFont(start, $defaultSize, $colorWhite);
+    font-weight: 500;
+  }
+
+  a {
+    padding: 4px 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #fff;
+    border-radius: 7px;
+    font-size: $fontExtraSmall;
+    color: #fff;
+    transition: 0.4s ease;
+
+    &:hover {
+      background-color: #fff;
+      color: blue;
+    }
+  }
+}
+//! --------------------------------Featured Ads --------------------
+.featured{
+  padding: 80px 0px;
+  @include flexible(flex, space-around, center, 1rem);
+  flex-direction: column;
+  background-color: $colorWhite;
+  &-title{
+    font-size: $defaultSize;
+    font-weight: 200;
+    margin:0 0 24px;
+    @include flexible (flex, start,start,1rem);
+  }
+  &-content{
+    @include flexible(flex, space-evenly, center, 1rem);
+    gap: 50px;
+    &-item{
+      width: 250px;
+      box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+      .item-img{
+        img{
+          width: 250px;
+          height: 150px;
+          margin-bottom: -10px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+      }
+      .item-content{
+        width: 250px;
+        padding: 20px;
+        background-color: #fff;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        .content-title {
+          margin: 0 0 20px;
+          @include flexible(flex, space-between, center, 1rem);
+          span{
+            background-color: $colorGrey;
+            padding: 5px 20px;
+            border-radius: 50px;
+            font-size: $fontSizeSmall;
+          }
+          a {
+            background-color: $colorGrey;
+            border-radius: 50px;
+            width: 35px;
+            height: 35px;
+            position: relative;
+            i {
+              margin-top: 4px;
+            }
+            &:hover{
+              background-color: #f23a2e;
+              color: white;
+            
+            }
+            &:hover i{
+              color: #fff;
+            }
+            i {
+              position: absolute;
+              color: $primary;
+              padding: 5px 10px;
+            }
+          }
+        }
+        .content-area{
+          a {
+            color: $primary;
+          }
+          p {
+            font-size: $fontSizeSmall;
+            color: $colorGraySecondary;
+            margin: 0 0 16px;
+          }
+          i {
+            color: $colorStar;
+            &:nth-child(5){
+              color: $colorStarGray;
+            }
+          }
+          &-reviews{
+            @include flexible(flex, start, start, 1rem);
+            color: $colorGraySecondary;
+            .stars{
+              display: inline-block;
+              &::after {
+                content: "(3 Reviews)"
+              }
+              // @include flexible(flex, start, center, 1rem)
+            } 
+          }
+        }
+      }
+    }
+  }
+  &-footer{
+    i {
+      font-size: $fontSizeMedium;
+    }
+    i:hover{
+      color: $primary;
+    }
+  }
+}
+//! --------------------------------Categories-----------------------
+.categories{
+  @include flexible(flex, space-around, center, 1rem);
+  flex-direction: column;
+  &-title{
+    h2 {
+      @include textFont(center, $fontSizeExtraLarge, $primary );
+      margin:0 0 8px;
+      padding-top: 80px;
+    }
+    p {
+      @include textFont(center, $defaultSize, $colorStarGray);
+      margin: 0 0 16px;
+      position: relative;
+      &::after{
+        position: absolute;
+        content: "";
+        top: 40px;
+        left: 35%;
+        height: 3px;
+        width: 80px;
+        background-color: $primary;
+      }
+    }
+  }
+  &-content{
+    @include flexible(flex, space-around, center, 1rem);
+    gap: 0px;
+    padding-bottom: 80px;
+    &-item {
+      @include flexible(flex, space-evenly, center, 0.1rem);
+      flex-direction: column;
+      width: 200px;
+      height: 200px;
+      padding: 30px 10px;
+      i {
+        color: $primary;
+        font-size: $fontSizeExtraExtraLarge;
+      }
+      &:hover{
+        background-color: $primary;
+        border-radius: 10px;
+        color: white;
+        transition: .3s all ease-in-out;
+        width: 220px;
+        height: 220px;
+      }
+      &:hover i {
+        color: white;
+        font-size: 4rem;
+        transition: .3s all ease-in-out;
+      }
+      span {
+        color: #000;
+        background-color: $colorGrey;
+        padding: 2px 20px;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+//! --------------------------------Our Blog-------------------------
+.blog {
+  margin-top: $x100;
+  .our-blog-wrapper {
+    .our-blog-content {
+      .section-title {
+        @include textFont(center, $fontSizeLarge, $primary);
+      }
+
+      .section-text {
+        text-align: center;
+        opacity: 0.5;
+      }
+    }
+
+    .blog-card-wrapper {
+      @include flexible(flex, space-between, center, 1rem);
+      margin-top: $x30;
+
+      .blog-card {
+        .blog-card-img {
+          width: 350px;
+
+          img {
+            width: 100%;
+            border-radius: 10px;
+          }
+        }
+        .blog-card-content {
+          margin-top: $x30;
+          ul {
+            @include flexible(flex, flex-start, center, 2rem);
+            opacity: 0.5;
+          }
+
+          li {
+            list-style-type: disc;
+            font-size: $fontSizeSmall;
+
+            &:first-child {
+              list-style-type: none;
+            }
+          }
+        }
+
+        .blog-card-text {
+          margin-top: $x30;
+          p {
+            font-size: medium;
+          }
+        }
+      }
+    }
+  }
+
+  .blog-button {
+    text-align: center;
+    margin-top: $x30;
+    button {
+      @include btn(10px 30px, $primary, $colorWhite, 153px, 46px);
+      border-radius: 7px;
+      border: none;
+    }
+  }
+}
+
+//! --------------------------------Footer-------------------------
+.footer {
+  background-color: #31363f;
+  margin-top: $x100;
+
+  .footer-top {
+    background-color: $primary;
+    .footer-top-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      padding: $fontSizeLarge 0px;
+
+      .footer-top-left {
+        h5 {
+          color: #fff;
+          font-size: $fontSizeMedium;
+        }
+
+        p {
+          @extend h5;
+          font-size: $defaultSize;
+        }
+      }
+
+      .footer-top-right {
+        @include flexible(flex, center, center, 0);
+        input {
+          border: none;
+          border-bottom: 1px solid #fff;
+          width: 100%;
+          padding: 10px 2px;
+          background-color: $primary;
+          outline: none;
+
+          &::placeholder {
+            color: #fff;
+          }
+        }
+        button {
+          padding: 10px 15px;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .footer-wrapper {
+    margin-top: $x100;
+    padding: $x20;
+
+    h5 {
+      @include textFont(start, $defaultSize, bold);
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: $footerSecondary;
+      font-size: $defaultSize;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    .footer-bottom {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .footer-content {
+      p {
+        color: #fff;
+        opacity: 0.5;
+      }
+    }
+
+    .footer-social {
+      .footer-social-item {
+        @include flexible(flex, flex-start, center, 1rem);
+        font-size: 20px;
+      }
+    }
+  }
+
+  .footer-input {
+    @include flexible(flex, flex-start, center, 0);
+    input {
+      padding: 5px 10px;
+      outline: none;
+    }
+
+    button {
+      padding: 7px 10px;
+      background-color: $primary;
+      border: none;
+      color: #fff;
+    }
+  }
+}

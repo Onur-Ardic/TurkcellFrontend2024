@@ -200,6 +200,9 @@
             width: 35px;
             height: 35px;
             position: relative;
+            i {
+              margin-top: 4px;
+            }
             &:hover{
               background-color: #f23a2e;
               color: white;
@@ -312,6 +315,189 @@
         padding: 2px 20px;
         border-radius: 50px;
       }
+    }
+  }
+}
+//! --------------------------------Trending Today-------------------
+.trending{
+  background-color: $colorWhite;
+  padding: 80px 0px;
+  &-title{
+    margin:0 0 24px;
+    h2 {
+      @include textFont(start, $fontSizeExtraLarge, $primary);
+      position: relative;
+      &::after{
+        position: absolute;
+        content: "";
+        top: 40px;
+        left: 0px;
+        height: 3px;
+        width: 80px;
+        background-color: $primary;
+      }
+    }
+  }
+  &-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    &-item {
+      @include flexible(flex, center, center, 1rem);
+      box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+      .item-img{
+        width: 250px;
+        height: 170px;
+        img{
+          width: 250px;
+          height: 170px;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+      }
+      .item-content{
+        padding: 20px;
+        height: 170px;
+        width: 100%;
+        margin-left: -15px;
+        background-color: #fff;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        .content-title {
+          margin: 0 0 20px;
+          @include flexible(flex, space-between, center, 1rem);
+          span{
+            background-color: $colorGrey;
+            padding: 5px 20px;
+            border-radius: 50px;
+            font-size: $fontSizeSmall;
+          }
+          a {
+            background-color: $colorGrey;
+            border-radius: 50px;
+            width: 35px;
+            height: 35px;
+            position: relative;
+            i {
+              margin-top: 4px;
+            }
+            &:hover{
+              background-color: #f23a2e;
+              color: white;
+            
+            }
+            &:hover i{
+              color: #fff;
+            }
+            i {
+              position: absolute;
+              color: $primary;
+              padding: 5px 10px;
+            }
+          }
+        }
+        .content-area{
+          a {
+            color: $primary;
+          }
+          p {
+            font-size: $fontSizeSmall;
+            color: $colorGraySecondary;
+            margin: 0 0 16px;
+          }
+          i {
+            color: $colorStar;
+            &:nth-child(5){
+              color: $colorStarGray;
+            }
+          }
+          &-reviews{
+            @include flexible(flex, start, start, 1rem);
+            color: $colorGraySecondary;
+            .stars{
+              display: inline-block;
+              &::after {
+                content: "(3 Reviews)"
+              }
+            } 
+          }
+        }
+      }
+      }
+    }
+  }
+//! --------------------------------Testimonials---------------------
+.testimonials{
+  &-title{
+    margin: 0 0 24px;
+    @extend .categories-title;
+      p::after {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 48%;
+        height: 3px;
+        width: 80px;
+        background-color: $primary;
+    }
+  }
+  &-content{
+    @include flexible(flex,space-around,center,1rem);
+    margin-top: 60px;
+    flex-direction: column;
+    &-image{
+      img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 16px;
+      }
+      p {
+        text-align: center;
+      }
+    }
+    &-area{
+      @include flexible(flex,space-between,center,1rem);
+      .left-arrow, .right-arrow{
+        width: 50px;
+        height: 50px;
+        background: rgba(0, 0, 0, 0.2);
+        text-align: center;
+        align-content: center;
+        border-radius: 50%;
+        color: #fff;
+        &:hover{
+          background-color: #000;
+          cursor: pointer;
+          transition: all .5s ease;
+        }
+        &:hover i {
+          color: $primary;
+        }
+        i {
+          font-weight: 900;
+        }
+      }
+      p{
+        @include textFont(center,$fontSizeLarge,$colorGraySecondary);
+        width: 70%;
+        font-style: italic;
+        line-height: 1.7;
+      }
+    }
+  }
+  &-paginate-buttons{
+    @include flexible(flex,center,center,1rem);
+    margin-top: 60px;
+    .paginate-button{
+        background-color: $colorGrey;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .active{
+      background-color: $primary;
     }
   }
 }

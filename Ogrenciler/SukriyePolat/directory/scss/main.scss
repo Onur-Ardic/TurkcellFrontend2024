@@ -1,0 +1,110 @@
+@import "./variable.scss";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Nanum Gothic", sans-serif;
+}
+.container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    display: grid;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: $black;
+}
+.text-center{
+    text-align: center;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 1.6;
+}
+.content{
+    width: 90%;
+    margin: 2rem auto;
+    .border-bottom{
+        margin-top: 1rem;
+        height: 3px;
+        width: 9rem;
+        background-color: $primary-color;
+        display: inline-block;
+    }
+}
+ .bg-primary{
+    background-color:$primary-color;
+}
+.body{
+        padding: 20px;
+       
+            i{
+                padding: 10px;
+                border-radius: 50%;
+                background-color: $primary-color;
+            }
+        }
+.newsletter h2 {
+    color:$white;
+    font-size: 18px;
+}
+  
+.newsletter p {
+    color: rgba(255, 255, 255, 0.7); 
+}
+.newsletter p:last-child {
+      margin-bottom: 0; 
+    }
+.newsletter .btn {
+        padding-left: 15px;
+        padding-right: 15px; 
+    }
+.newsletter .btn:hover {
+          color:$white;
+          background:$black; 
+        }
+
+        .btn{
+            padding: 12px 24px;
+            font-size: 16px;
+            color: $white;
+            border: none;
+            border-radius: 5px;
+            transition: all .5s;
+            &:hover{
+                opacity: .7;
+            }
+            &-primary{
+                background-color: $primary-color;
+            }
+        }
+        .site-footer{
+            .grid{
+                grid-template-columns: repeat(4,1fr);
+                gap: 20px;
+                & > *:last-child{
+                    grid-column: 1 / span 4;
+                    padding: 5rem;
+                }
+                & > *{
+                    border-bottom: none;
+                }
+            }
+            .bg-gray-content{
+                background-color: #333333;
+              }
+        }
+    
+          
