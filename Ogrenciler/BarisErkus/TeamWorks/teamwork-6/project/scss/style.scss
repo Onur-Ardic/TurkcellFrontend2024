@@ -1,21 +1,68 @@
 @import "./common/global", "./common/variables", "./common/extends", "./common/animations", "./common/mixins";
-.navbar {
-    .navbar-container {
-        justify-content: space-around;
-        padding: 2rem 10rem;
-        .right {
-            gap: 2rem;
-            ul {
+.main-container {
+    background: #f9f2ff;
+    background-image: url("http://demos.codexcoder.com/labartisan/html/smartsass/assets/images/banner/pos/shape-2.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    .navbar {
+        background: transparent;
+        .navbar-container {
+            justify-content: space-around;
+            padding: 2rem 10rem;
+            .right {
                 gap: 2rem;
-                li {
-                    a {
-                        color: #000;
+                ul {
+                    gap: 2rem;
+                    li {
+                        a {
+                            color: #000;
+                        }
+                    }
+                }
+                .button-container {
+                    button {
+                        padding: 1.25rem 1.5rem;
                     }
                 }
             }
-            .button-container {
-                button {
-                    padding: 1.25rem 1.5rem;
+        }
+    }
+    .home {
+        .home-container {
+            padding: 7rem 0;
+            .left {
+                padding: 6rem 22rem;
+                h2 {
+                    color: #000;
+                    font-size: 3.75rem;
+                }
+                p {
+                    margin: 1rem 0 2rem 0;
+                }
+            }
+            .right {
+                padding: 15rem;
+                position: relative;
+                .main-img {
+                    position: absolute;
+                    left: -30rem;
+                }
+                .img-1 {
+                    animation: img-1-animation 5s linear infinite;
+                    position: absolute;
+                    right: 5rem;
+                    top: 1rem;
+                }
+                .img-2 {
+                    animation: img-2-animation 15s linear infinite;
+                    position: absolute;
+                    top: 5rem;
+                    left: 1rem;
+                }
+                .img-3 {
+                    animation: women-animation 5s linear infinite;
+                    position: absolute;
+                    left: -15rem;
                 }
             }
         }
@@ -188,6 +235,32 @@
     }
 }
 @media (max-width: 1500px) {
+    .main-container {
+        background: none;
+        .home {
+            .home-container {
+                flex-direction: column;
+                gap: 5rem;
+                .right {
+                    padding: 1rem 1rem;
+                    .main-img {
+                        position: static;
+                        width: 50rem;
+                    }
+                    .img-1 {
+                        display: none;
+                    }
+                    .img-2 {
+                        display: none;
+                    }
+                    .img-3 {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
     .smart-pos {
         .smart-pos-container {
             margin: 0 3rem;
@@ -203,10 +276,28 @@
     }
 }
 @media (max-width: 1050px) {
-    .navbar {
-        .navbar-container {
-            padding: 1rem 1rem;
-            gap: 2rem;
+    .main-container {
+        .navbar {
+            .navbar-container {
+                padding: 1rem 1rem;
+                gap: 2rem;
+            }
+        }
+        .home {
+            .home-container {
+                .left {
+                    padding: 1rem 1rem;
+                    h2 {
+                        font-size: 2rem;
+                    }
+                }
+                .right {
+                    .main-img {
+                        position: static;
+                        width: 90%;
+                    }
+                }
+            }
         }
     }
     .smart-pos {
