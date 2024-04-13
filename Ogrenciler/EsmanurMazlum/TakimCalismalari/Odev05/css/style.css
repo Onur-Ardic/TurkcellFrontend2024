@@ -297,6 +297,144 @@ body {
   color: #2f89fc;
 }
 
+.categories {
+  padding: 2rem;
+  text-align: center;
+}
+.categories .content h2 {
+  font-size: 32px;
+  color: #2f89fc;
+  font-weight: 700;
+}
+.categories .content p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+.categories .categories-wrapper {
+  display: flex;
+}
+.categories .categories-wrapper .categories-column {
+  display: flex;
+  flex-direction: row;
+}
+.categories .categories-wrapper .categories-column .card-icon i {
+  color: #2f89fc;
+  width: 45px;
+  height: 45px;
+}
+
+.trending-today {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+.trending-today .content h2 {
+  font-size: 32px;
+  color: #2f89fc;
+  font-weight: 700;
+}
+.trending-today .column {
+  display: flex;
+  flex-direction: row;
+}
+.trending-today .card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.trending-today .card-body {
+  width: 100%;
+}
+.trending-today .trending-card {
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+}
+.trending-today .trending-card img {
+  width: 250px;
+  height: 195px;
+  overflow: hidden;
+}
+.trending-today .trending-card-body {
+  padding: 20px;
+}
+.trending-today .trending-card-body .meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+.trending-today .trending-card-body .meta i {
+  padding: 10px;
+  border-radius: 50%;
+  color: #2f89fc;
+  background-color: #f8f9fa;
+}
+.trending-today .trending-card-body h2 {
+  font-size: 16px;
+  color: #2f89fc;
+  font-weight: 500;
+}
+.trending-today .trending-card-body span {
+  font-size: 13px;
+  color: #4d4d4d;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.trending-today .trending-card-body i {
+  color: orange;
+}
+.trending-today .trending-card-icon {
+  padding: 2rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+  width: 100%;
+}
+.trending-today .trending-card-icon h3 {
+  margin: 1rem 0;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.trending-today .trending-card-icon i {
+  font-size: 3.5rem;
+  padding: 1rem;
+  color: #2f89fc;
+}
+.trending-today .trending-card-icon:hover {
+  background-color: #2f89fc;
+  transform: scale(1.09);
+}
+.trending-today .trending-card-icon:hover h3, .trending-today .trending-card-icon:hover i {
+  color: #fff;
+}
+.trending-today .trending-card-icon:hover .badge {
+  background-color: #2f89fc;
+  color: #fff;
+}
+
+.badge {
+  padding: 10px 20px;
+  font-size: 11px;
+  background-color: #E9ECEF;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+.content h2 {
+  font-size: 3rem;
+  color: #2f89fc;
+}
+.content .border-bottom {
+  margin-top: 1rem;
+  height: 3px;
+  width: 9rem;
+  background-color: #046df4;
+  display: inline-block;
+}
+
 .testimonials {
   display: flex;
   justify-content: center;
