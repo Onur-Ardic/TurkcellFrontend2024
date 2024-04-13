@@ -10,12 +10,6 @@ h1 {
   font-weight: 400;
 }
 
-h2 {
-  color: #2f89fc;
-  font-size: 32px;
-  font-weight: 200;
-}
-
 ul {
   list-style: none;
 }
@@ -49,6 +43,10 @@ a {
 /* Cursor */
 .pointer {
   cursor: pointer;
+}
+
+.container {
+  background-color: #f2f4f5;
 }
 
 .navbar {
@@ -107,20 +105,48 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-left: 300px;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   gap: 50px;
   position: absolute;
   top: 0;
-  left: 0;
-  right: 5 px;
+  left: 50 px;
+  right: 50 px;
   bottom: 0;
   z-index: 5;
 }
 
-.left-content, .right-content {
-  flex: 1;
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: none;
+  width: 50%;
+  height: 90vh;
+  gap: 30px;
+  margin: 0 auto 60px;
+}
+.left-content h2 {
+  font-size: 60px;
+  color: #333333;
+}
+.left-content p {
+  font-size: 16px;
+  color: #696969;
+  line-height: 1.5;
+  width: 80%;
+}
+.left-content .btn {
+  width: 171px;
 }
 
 .right-content {
+  margin-left: 0;
+  margin-right: 200px;
+  margin-top: 200px;
+  margin-bottom: 0;
   width: 50%;
   height: 60vh;
   position: relative;
@@ -129,27 +155,27 @@ a {
   width: 110%;
 }
 .right-content .woman {
-  top: 90px;
-  right: 400px;
+  top: 80px;
+  right: 320px;
   position: absolute;
-  height: 70%;
+  height: 60%;
   animation: woman-animation 9s ease-in-out infinite;
 }
 @keyframes woman-animation {
   0% {
-    transform: translateY(0px);
+    transform: translateY(-10px);
   }
   50% {
     transform: translateY(-50px);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(-10%);
   }
 }
 .right-content .card {
   position: absolute;
-  top: 105px;
-  right: 80px;
+  top: 70px;
+  right: 70px;
   height: 10%;
   animation: usr-card-animation 10s ease-in-out infinite;
 }
@@ -158,20 +184,20 @@ a {
     transform: translateX(0px);
   }
   25% {
-    transform: translateX(-75px);
+    transform: translateX(-40px);
   }
   50% {
     transform: translateY(-50px);
   }
   75% {
-    transform: translateX(-75px);
+    transform: translateX(-60px);
   }
 }
 .right-content .video-card {
   position: absolute;
   height: 30%;
-  top: 10px;
-  right: -90px;
+  top: -30px;
+  right: -100px;
   animation: video-card-animation 10s ease-in-out infinite;
 }
 @keyframes video-card-animation {
@@ -184,6 +210,107 @@ a {
   100% {
     transform: translateX(0px) translateY(0px);
   }
+}
+
+.omnichannel-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.omnichannel-section-left {
+  width: 660px;
+}
+
+.omnichannel-section-texts {
+  border-bottom: 1px solid #ecf0f3;
+}
+
+.omnichannel-section-texts h2 {
+  font-size: 36px;
+}
+
+.omnichannel-section-texts p {
+  font-size: 16px;
+  color: #696969;
+  line-height: 25px;
+  height: 70px;
+  width: 440px;
+  padding: 30px 0 100px 0;
+}
+
+.omnichannel-section button {
+  margin-top: 50px;
+  padding: 16px 46px;
+  background: linear-gradient(to right, #ff5195, #ffb84b);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+li img {
+  padding-right: 10px;
+  width: 25px;
+  height: 20px;
+}
+
+ul li {
+  width: 318px;
+  color: #696969;
+  padding: 10px;
+}
+
+.all-in-one-retail-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #fffcfa;
+}
+
+.all-in-one-retail-section-left {
+  width: 660px;
+}
+
+.all-in-one-retail-section-texts {
+  border-bottom: 1px solid #ecf0f3;
+}
+
+.all-in-one-retail-section-texts h2 {
+  font-size: 36px;
+}
+
+.all-in-one-retail-section-texts p {
+  font-size: 16px;
+  color: #696969;
+  line-height: 25px;
+  height: 70px;
+  width: 440px;
+  padding: 30px 0 100px 0;
+}
+
+.all-in-one-retail-section button {
+  margin-top: 50px;
+  padding: 16px 46px;
+  background: linear-gradient(to right, #ff5195, #ffb84b);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=global.css.map */
