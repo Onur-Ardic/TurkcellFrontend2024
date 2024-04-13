@@ -210,13 +210,13 @@
 }
 .trending-today{
   padding: 2rem;
-  background-color: $color-lowBlack;
+  background-color: $colorGray;
   .grid{
       grid-template-columns: 1fr;
       gap: 3rem;
       margin: 2rem 0;
       .card{
-          box-shadow: 0 0 15px 15px $color-lowBlack;
+          box-shadow:0 4px 10px rgba(0, 0, 0, 0.2);
           &-body{
               width: 100%;
           }
