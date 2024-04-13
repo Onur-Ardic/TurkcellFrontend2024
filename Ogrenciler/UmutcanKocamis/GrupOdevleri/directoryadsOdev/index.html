@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media_queries.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -14,10 +15,21 @@
     <title>DirectoryAds</title>
   </head>
   <body>
-    <!-- Hero -->
     <section id="hero">
       <div class="container">
-        <h1 class="logo">DIRECTORYADS</h1>
+        <nav>
+          <h1 class="logo">DIRECTORYADS</h1>
+          <ul>
+            <li>Home</li>
+            <li>Ads</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact</li>
+            <li>|</li>
+            <li>Log In</li>
+          </ul>
+          <button>Register</button>
+        </nav>
         <div class="content">
           <p class="title">Welcome To DirectoryAds</p>
           <p class="title-content">
@@ -46,24 +58,79 @@
         <button>House</button>
       </div>
     </section>
-    <!-- Featured Ads -->
     <section id="featured-ads">
       <div class="container">
         <h2>Featured Ads</h2>
-        <div class="card">
-          <img src="./images/img_2.jpg" alt="Image 2" />
-          <div class="card-content">
-            <button>Real Estate</button>
-            <p class="own-new">Own New House</p>
-            <p class="adres">Don St, Brooklyn, New York</p>
-            <div class="star-rating">
-              <div class="rating">
-                <label for="star5">&#9733;</label>
-                <label for="star4">&#9733;</label>
-                <label for="star3">&#9733;</label>
-                <label for="star2">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <span>(3 Reviews)</span>
+        <div class="cards">
+          <div class="card">
+            <img src="./images/img_3.jpg" alt="Image 3" />
+            <div class="card-content">
+              <button>Real Estate</button>
+              <p class="own-new">Own New House</p>
+              <p class="adres">Don St, Brooklyn, New York</p>
+              <div class="star-rating">
+                <div class="rating">
+                  <label for="star5">&#9733;</label>
+                  <label for="star4">&#9733;</label>
+                  <label for="star3">&#9733;</label>
+                  <label for="star2">&#9733;</label>
+                  <label for="star1">&#9733;</label>
+                  <span>(3 Reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/img_4.jpg" alt="Image 4" />
+            <div class="card-content">
+              <button>Real Estate</button>
+              <p class="own-new">Own New House</p>
+              <p class="adres">Don St, Brooklyn, New York</p>
+              <div class="star-rating">
+                <div class="rating">
+                  <label for="star5">&#9733;</label>
+                  <label for="star4">&#9733;</label>
+                  <label for="star3">&#9733;</label>
+                  <label for="star2">&#9733;</label>
+                  <label for="star1">&#9733;</label>
+                  <span>(3 Reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/img_1.jpg" alt="Image 1" />
+            <div class="card-content">
+              <button>Real Estate</button>
+              <p class="own-new">Own New House</p>
+              <p class="adres">Don St, Brooklyn, New York</p>
+              <div class="star-rating">
+                <div class="rating">
+                  <label for="star5">&#9733;</label>
+                  <label for="star4">&#9733;</label>
+                  <label for="star3">&#9733;</label>
+                  <label for="star2">&#9733;</label>
+                  <label for="star1">&#9733;</label>
+                  <span>(3 Reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/img_2.jpg" alt="Image 2" />
+            <div class="card-content">
+              <button>Real Estate</button>
+              <p class="own-new">Own New House</p>
+              <p class="adres">Don St, Brooklyn, New York</p>
+              <div class="star-rating">
+                <div class="rating">
+                  <label for="star5">&#9733;</label>
+                  <label for="star4">&#9733;</label>
+                  <label for="star3">&#9733;</label>
+                  <label for="star2">&#9733;</label>
+                  <label for="star1">&#9733;</label>
+                  <span>(3 Reviews)</span>
+                </div>
               </div>
             </div>
           </div>
@@ -80,46 +147,34 @@
         <p>Lorem ipsum dolor sit amet</p>
         <div class="items">
           <div class="item">
-            <span class="icon"
-              ><img src="images/icons8-car-50.png" alt="car"
-            /></span>
+            <i class="fa-solid fa-car-rear fa-2xl"></i>
             <span class="title">Cars & Vecihles</span>
             <span class="number">1,921</span>
           </div>
           <div class="item">
-            <span class="icon"
-              ><img src="images/icons8-car-50.png" alt="car"
-            /></span>
-            <span class="title">Cars & Vecihles</span>
-            <span class="number">1,921</span>
+            <i class="fa-solid fa-couch fa-2xl"></i>
+            <span class="title">Furniture</span>
+            <span class="number">2,339</span>
           </div>
           <div class="item">
-            <span class="icon"
-              ><img src="images/icons8-car-50.png" alt="car"
-            /></span>
-            <span class="title">Cars & Vecihles</span>
-            <span class="number">1,921</span>
+            <i class="fa-solid fa-house fa-2xl"></i>
+            <span class="title">Real Estate</span>
+            <span class="number">4,398</span>
           </div>
           <div class="item">
-            <span class="icon"
-              ><img src="images/icons8-car-50.png" alt="car"
-            /></span>
-            <span class="title">Cars & Vecihles</span>
-            <span class="number">1,921</span>
+            <i class="fa-solid fa-book-open fa-2xl"></i>
+            <span class="title">Books & Magazines</span>
+            <span class="number">3,298</span>
           </div>
           <div class="item">
-            <span class="icon"
-              ><img src="images/icons8-car-50.png" alt="car"
-            /></span>
-            <span class="title">Cars & Vecihles</span>
-            <span class="number">1,921</span>
+            <i class="fa-solid fa-tv fa-2xl"></i>
+            <span class="title">Electronics</span>
+            <span class="number">2,932</span>
           </div>
           <div class="item">
-            <span class="icon"
-              ><img src="images/icons8-car-50.png" alt="car"
-            /></span>
-            <span class="title">Cars & Vecihles</span>
-            <span class="number">1,921</span>
+            <i class="fa-solid fa-pizza-slice fa-2xl"></i>
+            <span class="title">Other</span>
+            <span class="number">183</span>
           </div>
         </div>
       </div>
@@ -127,20 +182,112 @@
     <section id="trending-today">
       <div class="container">
         <h2>Trending Today</h2>
-        <div class="card">
-          <img src="./images/img_2.jpg" alt="Image 2" />
-          <div class="card-content">
-            <button>Real Estate</button>
-            <p class="own-new">Own New House</p>
-            <p class="adres">Don St, Brooklyn, New York</p>
-            <div class="star-rating">
-              <div class="rating">
-                <label for="star5">&#9733;</label>
-                <label for="star4">&#9733;</label>
-                <label for="star3">&#9733;</label>
-                <label for="star2">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <span>(3 Reviews)</span>
+        <div class="cards">
+          <div class="card">
+            <img src="./images/img_2.jpg" alt="Image2" />
+            <div class="card-content">
+              <button>Real Estate</button>
+              <p class="own-new">Own New House</p>
+              <p class="adres">Don St, Brooklyn, New York</p>
+              <div class="star-rating">
+                <div class="rating">
+                  <label for="star5">&#9733;</label>
+                  <label for="star4">&#9733;</label>
+                  <label for="star3">&#9733;</label>
+                  <label for="star2">&#9733;</label>
+                  <label for="star1">&#9733;</label>
+                  <span>(3 Reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/img_3.jpg" alt="Image3" />
+            <div class="card-content">
+              <button>Furniture</button>
+              <p class="own-new">Wooden Chair & Table</p>
+              <p class="adres">Don St, Brooklyn, New York</p>
+              <div class="star-rating">
+                <div class="rating">
+                  <label for="star5">&#9733;</label>
+                  <label for="star4">&#9733;</label>
+                  <label for="star3">&#9733;</label>
+                  <label for="star2">&#9733;</label>
+                  <label for="star1">&#9733;</label>
+                  <span>(3 Reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/img_4.jpg" alt="Image4" />
+            <div class="card-content">
+              <button>Electronics</button>
+              <p class="own-new">iPhone X gray</p>
+              <p class="adres">Don St, Brooklyn, New York</p>
+              <div class="star-rating">
+                <div class="rating">
+                  <label for="star5">&#9733;</label>
+                  <label for="star4">&#9733;</label>
+                  <label for="star3">&#9733;</label>
+                  <label for="star2">&#9733;</label>
+                  <label for="star1">&#9733;</label>
+                  <span>(3 Reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/img_1.jpg" alt="Image1" />
+            <div class="card-content">
+              <button>Cars & Vehicles</button>
+              <p class="own-new">New Black Car</p>
+              <p class="adres">Don St, Brooklyn, New York</p>
+              <div class="star-rating">
+                <div class="rating">
+                  <label for="star5">&#9733;</label>
+                  <label for="star4">&#9733;</label>
+                  <label for="star3">&#9733;</label>
+                  <label for="star2">&#9733;</label>
+                  <label for="star1">&#9733;</label>
+                  <span>(3 Reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/img_2.jpg" alt="Image2" />
+            <div class="card-content">
+              <button>Real Estate</button>
+              <p class="own-new">Own New House</p>
+              <p class="adres">Don St, Brooklyn, New York</p>
+              <div class="star-rating">
+                <div class="rating">
+                  <label for="star5">&#9733;</label>
+                  <label for="star4">&#9733;</label>
+                  <label for="star3">&#9733;</label>
+                  <label for="star2">&#9733;</label>
+                  <label for="star1">&#9733;</label>
+                  <span>(3 Reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/img_3.jpg" alt="Image3" />
+            <div class="card-content">
+              <button>Furniture</button>
+              <p class="own-new">Wooden Chair & Table</p>
+              <p class="adres">Don St, Brooklyn, New York</p>
+              <div class="star-rating">
+                <div class="rating">
+                  <label for="star5">&#9733;</label>
+                  <label for="star4">&#9733;</label>
+                  <label for="star3">&#9733;</label>
+                  <label for="star2">&#9733;</label>
+                  <label for="star1">&#9733;</label>
+                  <span>(3 Reviews)</span>
+                </div>
               </div>
             </div>
           </div>
@@ -150,13 +297,53 @@
     <section id="testimonials">
       <div class="container">
         <h2>Testimonials</h2>
-        <div class="resim">
-          <img src="images/person_2.jpg" alt="person_2" />
-          <p>Christine Aguilar</p>
+        <div class="testimonials">
+          <div class="testimonial" id="testimonial1">
+            <div class="resim">
+              <img src="images/person_3.jpg" alt="person3" />
+              <p>John Smith</p>
+            </div>
+            <p>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut qui
+              distinctio illum sint eum quidem modi quis beatae numquam, magnam
+              sapiente maiores hic dignissimos exercitationem pariatur ipsam.
+              Assumenda dolor amet perspiciatis ipsum cum nemo error."
+            </p>
+          </div>
+          <!-- <div class="testimonial" id="testimonial2">
+                <div class="resim">
+                  <img src="images/person_2.jpg" alt="person2">
+                  <p>Christine Aguilar</p>
+                </div>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut qui distinctio illum sint eum quidem modi quis beatae numquam, magnam sapiente maiores hic dignissimos exercitationem pariatur ipsam. Assumenda dolor amet perspiciatis ipsum cum nemo error."</p>
+              </div>
+              <div class="testimonial" id="testimonial3">
+                <div class="resim">
+                  <img src="images/person_4.jpg" alt="person4">
+                  <p>Robert Spears</p>
+                </div>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut qui distinctio illum sint eum quidem modi quis beatae numquam, magnam sapiente maiores hic dignissimos exercitationem pariatur ipsam. Assumenda dolor amet perspiciatis ipsum cum nemo error."</p>
+              </div>
+              <div class="testimonial" id="testimonial4">
+                <div class="resim">
+                  <img src="images/person_5.jpg" alt="person5">
+                  <p>Bruce Rogers</p>
+                </div>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut qui distinctio illum sint eum quidem modi quis beatae numquam, magnam sapiente maiores hic dignissimos exercitationem pariatur ipsam. Assumenda dolor amet perspiciatis ipsum cum nemo error."</p>
+              </div> -->
+        </div>
+        <div class="dots">
+          <label class="slide1" for="slide1"></label>
+          <input type="radio" name="slider" id="slide1" checked />
+          <label for="slide2"></label>
+          <input type="radio" name="slider" id="slide2" />
+          <label for="slide3"></label>
+          <input type="radio" name="slider" id="slide3" />
+          <label for="slide4"></label>
+          <input type="radio" name="slider" id="slide4" />
         </div>
       </div>
     </section>
-    <!-- Our Blog -->
     <section id="our-blog">
       <div class="container">
         <h2>Our Blog</h2>
@@ -205,7 +392,6 @@
         <div class="btn"><button>View All Posts</button></div>
       </div>
     </section>
-    <!-- Newsletter -->
     <section id="newsletter">
       <div class="container">
         <h2>Newsletter</h2>
@@ -216,7 +402,6 @@
         </form>
       </div>
     </section>
-    <!-- About -->
     <section id="about">
       <div class="container">
         <h2>About</h2>
