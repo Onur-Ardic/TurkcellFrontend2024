@@ -317,9 +317,12 @@ body {
 .categories .categories-wrapper .categories-column {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .categories .categories-wrapper .categories-column .card-icon {
-  padding: 2rem;
+  padding: 30px 10px;
   border-radius: 5px;
   transition: all 0.5s;
   width: 100%;
@@ -327,10 +330,10 @@ body {
 .categories .categories-wrapper .categories-column .card-icon h3 {
   margin: 1rem 0;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 15px;
 }
 .categories .categories-wrapper .categories-column .card-icon i {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   padding: 1rem;
   color: #2f89fc;
 }
@@ -360,7 +363,8 @@ body {
 .trending-today .column {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 .trending-today .column .trending-card {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
