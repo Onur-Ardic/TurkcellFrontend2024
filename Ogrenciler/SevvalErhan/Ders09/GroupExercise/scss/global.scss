@@ -17,12 +17,18 @@
   width: 100%;
 }
 
-@mixin flex($display, $justify: none, $align: none, $column: row, $gap: 2rem) {
+@mixin flex($display, $justify: none, $align: none, $column: row, $gap: 2rem, $wrap:wrap) {
   display: $display;
   justify-content: $justify;
   align-items: $align;
   flex-direction: $column;
-  flex-wrap: wrap;
+  flex-wrap: $wrap;
+  gap: $gap;
+}
+@mixin grid($display, $justify: none, $align: none, $gap: 2rem) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
   gap: $gap;
 }
 

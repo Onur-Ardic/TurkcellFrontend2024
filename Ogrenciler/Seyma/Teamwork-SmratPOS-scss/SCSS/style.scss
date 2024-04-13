@@ -1,0 +1,140 @@
+@import "variables";
+@import "utilities";
+
+.main{
+    &-nav{
+        position: absolute;
+        padding: 1rem;
+        top: 0;
+        z-index: 3;
+        width: 100%;
+        .container{
+            display: flex;
+            img{
+                width: auto;
+            }
+            ul{
+                display: flex;
+                margin: 0 2rem 0 auto;
+                a{
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+    &-header{
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        .page-bg{
+            position: absolute;
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+        &-content{
+            height: 100%;
+            .container{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding: 2rem;
+                img{
+                    width: auto;
+                }
+                &>* {
+                    z-index: 2;
+                    flex: 1;
+                }
+            }
+            &-left {
+                h1{
+                    font-size: 4rem;
+                }
+                p{
+                    margin: 2rem 0;
+                }
+            }
+            &-right{
+                position: relative;
+                &>img:first-child {
+                    width: 150%;
+                }
+                .woman{
+                    position: absolute;
+                    left: 220px;
+                    top: 85px;
+                    animation: move-y 5s infinite alternate;
+                }
+                .business-card {
+                    position: absolute;
+                    right: -180px;
+                    top: 100px;
+                    animation: move-45deg 10s infinite alternate;
+                }
+                &>img:last-child {
+                    position: absolute;
+                    right: -320px;
+                    top: 0;
+                    animation: move-y 5s infinite alternate;
+                }
+            }
+        }
+    }
+}
+
+@keyframes move-y{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes move-45deg{
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateX(-110px);
+    }
+    50% {
+        transform: translateY(-60px);
+    }
+    75% {
+        transform: translateX(-110px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.pos-section{
+    padding: 95px 2rem;
+    &.background{
+        background-color: #fffcfa;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        & > *{
+            flex: 1;
+        }
+        .section-left{
+            .content{
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        width: 50%; 
+                        padding: 1rem 0;
+                        i{
+                            color: #fd4372;
+                            margin-right: .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

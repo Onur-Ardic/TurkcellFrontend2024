@@ -6,13 +6,7 @@
     }
     .container-wrap {
       .form-search {
-        @include flex(
-          flex,
-          space-between,
-          center,
-          column !important,
-          $gap: 0.5rem
-        );
+       
         input,
         select,
         button {
@@ -28,4 +22,11 @@
   .featured-card:nth-child(2) {
     display: none; 
 }
+
+.trending-today{
+    .cards{
+      grid-template-columns: 1fr ;
+    }
+  }
+
 }
