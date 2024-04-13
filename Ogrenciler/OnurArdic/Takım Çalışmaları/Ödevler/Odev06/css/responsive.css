@@ -46,6 +46,12 @@
     height: 80%;
     visibility: visible;
   }
+  .omnichannel-wrapper {
+    grid-template-columns: 100%;
+  }
+  .omnichannel-wrapper .omnichannel-left .omnichannel-list li {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */
