@@ -1,4 +1,17 @@
 @media (max-width: 992px) {
+  .header .hero {
+    grid-template-columns: 100%;
+  }
+  .header .hero .shape-1 img {
+    height: 100%;
+  }
+  .header .hero .hero-right {
+    margin-top: 4rem;
+  }
+  .header .hero .hero-right .img-first,
+  .header .hero .hero-right .img-second {
+    display: none;
+  }
   .header .navbar .check-btn {
     display: block;
     order: 2;
