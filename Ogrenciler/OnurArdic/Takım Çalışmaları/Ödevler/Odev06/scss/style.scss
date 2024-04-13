@@ -34,12 +34,11 @@
         @include btn(1.2rem 2rem, $graident, $textWhite);
         border: none;
         border-radius: 4px;
-        
 
-        &:hover{
-          background: $hoverGraident ;
+        &:hover {
+          background: $hoverGraident;
           color: $textWhite;
-          transition: .2s ease-in;
+          transition: 0.2s ease-in;
         }
       }
     }
