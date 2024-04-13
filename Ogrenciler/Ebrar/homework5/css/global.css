@@ -799,7 +799,7 @@ option {
   .nav-section-form-elements select,
   .nav-section-form-elements .looking-for,
   .nav-section-form-elements button {
-    width: 430px;
+    width: 100%;
   }
   .nav-section-form-elements button {
     padding-left: 50px;
