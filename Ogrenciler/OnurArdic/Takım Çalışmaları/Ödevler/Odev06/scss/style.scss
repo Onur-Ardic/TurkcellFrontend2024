@@ -1,4 +1,4 @@
-@import "./base.scss", "./variables.scss";
+@import './base.scss', './variables.scss';
 .header {
   position: relative;
   background-color: $heroColor;
@@ -216,6 +216,61 @@
 
       #fourth-dropdown {
         @extend #first-dropdown;
+      }
+    }
+  }
+}
+
+// Onmnichannel
+.omnichannel {
+  margin-top: $x100;
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 3rem;
+
+    .omnichannel-left {
+      .omnichannel-content {
+        border-bottom: 1px solid #ccc;
+        h3 {
+          font-size: $fontSizeExtraExtraLarge;
+        }
+
+        p {
+          margin-top: $x30;
+          margin-bottom: $x30;
+        }
+      }
+
+      .omnichannel-list {
+        margin-bottom: $x60;
+        @include flexible(flex, flex-start, center, 5rem);
+
+        li {
+          @include flexible(flex, flex-start, center, 0.5rem);
+          line-height: $x60;
+
+          i {
+            color: $iconColor;
+          }
+
+          p {
+            opacity: 0.5;
+          }
+        }
+      }
+
+      a {
+        @include btn(1.2rem 1rem, $graident, $textWhite);
+        border-radius: 4px;
+        font-weight: 600;
+      }
+    }
+
+    .omnichannel-right {
+      img {
+        width: 100%;
+        object-fit: cover;
       }
     }
   }

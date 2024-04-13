@@ -3,10 +3,9 @@
     height: max-content;
     .hero {
       grid-template-columns: 100%;
-    
 
       .shape-1 {
-       display: none;
+        display: none;
       }
 
       .hero-right {
@@ -52,6 +51,22 @@
         &:checked ~ .navbar-items {
           height: 80%;
           visibility: visible;
+        }
+      }
+    }
+  }
+
+  // !-----Omnichannel------
+
+  .omnichannel {
+    &-wrapper {
+      grid-template-columns: 100%;
+
+      .omnichannel-left {
+        .omnichannel-list {
+          li {
+            font-size: 10px;
+          }
         }
       }
     }

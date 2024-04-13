@@ -191,5 +191,54 @@
 .header .navbar .navbar-items #second-dropdown #inline-dropdown:hover .inline-dropdown-list {
   opacity: 1;
 }
+.omnichannel {
+  margin-top: 100px;
+}
+.omnichannel-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 3rem;
+}
+.omnichannel-wrapper .omnichannel-left .omnichannel-content {
+  border-bottom: 1px solid #ccc;
+}
+.omnichannel-wrapper .omnichannel-left .omnichannel-content h3 {
+  font-size: 3rem;
+}
+.omnichannel-wrapper .omnichannel-left .omnichannel-content p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.omnichannel-wrapper .omnichannel-left .omnichannel-list {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5rem;
+}
+.omnichannel-wrapper .omnichannel-left .omnichannel-list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 60px;
+}
+.omnichannel-wrapper .omnichannel-left .omnichannel-list li i {
+  color: #fd4372;
+}
+.omnichannel-wrapper .omnichannel-left .omnichannel-list li p {
+  opacity: 0.5;
+}
+.omnichannel-wrapper .omnichannel-left a {
+  padding: 1.2rem 1rem;
+  background: linear-gradient(to right, #ff5195, #ffb84b);
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.omnichannel-wrapper .omnichannel-right img {
+  width: 100%;
+  object-fit: cover;
+}
 
 /*# sourceMappingURL=style.css.map */
