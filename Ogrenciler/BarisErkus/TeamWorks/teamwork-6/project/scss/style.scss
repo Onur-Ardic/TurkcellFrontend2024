@@ -16,6 +16,11 @@
                 padding: 3rem 2.813rem;
                 margin: 0.938rem;
                 border-radius: 0.25rem;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                &:hover {
+                    transform: translateY(-10px) scale(1.05);
+                }
                 img {
                     margin-bottom: 1.875rem;
                 }
@@ -78,8 +83,78 @@
                         border-radius: 50%;
                     }
                 }
+                .card-footer {
+                    margin-top: 1.5rem;
+                    img {
+                        width: 5rem;
+                    }
+                }
                 p {
                     line-height: 1.5rem;
+                }
+            }
+        }
+    }
+}
+.partners {
+    .partners-container {
+        margin-bottom: 8rem;
+        gap: 8rem;
+    }
+}
+.footer {
+    background-image: url("http://demos.codexcoder.com/labartisan/html/smartsass/assets/css/bg-image/app-footer-bg.jpg");
+    color: white;
+    .footer-top {
+        justify-content: space-around;
+        padding: 0 0.75rem;
+        margin: 0 18.219rem;
+        padding-top: 6.875rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid #acacac8e;
+        gap: 3rem;
+        .left {
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+        .right {
+            gap: 1rem;
+            a {
+                padding: 0.625rem 2rem;
+                background-color: white;
+                gap: 1rem;
+                div {
+                    p {
+                        color: #696969;
+                        margin-bottom: 0.5rem;
+                    }
+                    span {
+                        color: #c961fa;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    .footer-content {
+        padding: 6.25rem 0;
+        .footer-content-container {
+            padding: 0 18.219rem;
+            .item-list {
+                .item {
+                    .title {
+                        h6 {
+                            font-size: 1.125rem;
+                            margin-bottom: 1.25rem;
+                        }
+                    }
+                    .content {
+                        ul {
+                            gap: 1rem;
+                        }
+                    }
                 }
             }
         }
