@@ -312,6 +312,10 @@ a {
   }
 }
 @media (max-width: 1050px) {
+  .navbar .navbar-container {
+    padding: 1rem 1rem;
+    gap: 2rem;
+  }
   .smart-pos .smart-pos-container .bottom {
     flex-direction: column;
     align-items: center;
