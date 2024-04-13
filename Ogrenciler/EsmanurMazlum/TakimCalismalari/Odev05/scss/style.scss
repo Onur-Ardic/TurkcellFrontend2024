@@ -140,14 +140,59 @@
     .cards{
         @include flexible(space-between, center, 30px);
         .card{
+          border-radius: 7px;
+          overflow: hidden;
             .img{
                 display: block;
                 height: 150px;
-                width: 300px;
+                width: 250px;
             }
             .img.img1{
                 background: url(../images/img_2.jpg);
                 background-size: cover;
+            }
+            .img.img2{
+              background: url(../images/img_3.jpg);
+              background-size: cover;
+            }
+            .img.img3{
+              background: url(../images/img_4.jpg);
+              background-size: cover;
+            }
+            .img.img4{
+              background: url(../images/img_1.jpg);
+              background-size: cover;
+            }
+            .content{
+              background-color: white;
+              padding: 20px;
+              position: relative;
+              .bookmark{
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: inline-block;
+                background: rgba(0, 0, 0, 0.03);
+                transition: .3s all ease;
+                &:hover{
+                  background-color: #f23a2e;
+                }
+                .heart{
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%);
+                  .fa-heart{
+                    color: $colorBlue;
+                  }
+                  .fa-heart:hover{
+                    color: white;
+                  }
+                }
+              }
             }
         }
     }
