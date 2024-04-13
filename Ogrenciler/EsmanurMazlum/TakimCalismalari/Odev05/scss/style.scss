@@ -142,7 +142,6 @@
         .card{
           box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
           border-radius: 7px;
-
             .img{
                 display: block;
                 height: 150px;
@@ -225,7 +224,141 @@
     }
 }
 
+.categories{
+  padding: 2rem;
+  text-align: center;
+  .content{
+    h2{
+      @include font(32px, $colorBlue, 700);
+    }
+    p{
+      @include font(16px, rgba(0, 0, 0, 0.5), 400);
+    }
+  }
+  .categories-wrapper {
+    display: flex;
+    .categories-column{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      .card-icon{
+        padding: 30px 10px;
+        border-radius: 5px;
+        transition: all .5s;
+        width: 100%;
+        h3{
+            margin: 1rem 0;
+            font-weight: 400;
+            font-size: 15px;
+        }
+        i{
+            font-size: 2.5rem;
+            padding: 1rem;
+            color: $colorBlue;
+        }
+        &:hover{
+            background-color: $colorBlue;
+            transform: scale(1.09);
+            h3,i{
+                color: $colorWhite;
+            }
+            .badge{
+                background-color: $colorBlue;
+                color: $colorWhite;
+            }
+        }
+  
+    }
+    }
+  }
+}
+.trending-today{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: $colorGray;
+    .content{
+      h2{
+        @include font(32px, $colorBlue, 700);
+      }
+    }
+    .column{
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      margin-bottom: 30px;
 
+      .trending-card{
+        box-shadow:0 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        background-color: $colorWhite;
+        display: flex;
+        width: 100%;
+        img{
+            width: 250px;
+            height: 195px;
+            overflow: hidden;
+        }
+        &-body{
+            padding: 20px;
+            width: 100%;
+            .meta{
+                display: flex;
+                justify-content: space-between;
+                padding: .8rem 0;
+                i{
+                    padding: 10px;
+                    border-radius: 50%;
+                    color: $colorBlue;
+                    background-color: $colorGray;
+                }
+            }
+            h2{
+              @include font(16px, $colorBlue, 500);
+            }
+            span{
+              @include font(13px, $colorDarkGray, 400);
+              margin-bottom: 16px;
+            }
+            i{
+                color: orange;
+            }
+        }
+        
+      
+      }
+    }
+      
+}
+
+
+// cards
+
+
+.badge{
+  padding: 10px 20px;
+  font-size: 11px;
+  background-color: #E9ECEF;
+  border-radius: 30px;
+  display: inline-block;
+}
+.content{
+  width: 90%;
+  margin: 0 auto;
+  h2{
+      font-size: 3rem;
+      color: $colorBlue;
+  }
+  .border-bottom{
+  margin-top: 1rem;
+   height: 3px;
+   width: 9rem;
+   background-color: $btnbgBlue;
+   display: inline-block;
+  }
+}
 
 
 
@@ -382,7 +515,7 @@
 .col-3 {
   width: 25%;
   padding: 0 15px;
-  
+
 }
 .col-12 {
   width: 100%;

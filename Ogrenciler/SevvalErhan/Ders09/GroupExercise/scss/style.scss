@@ -49,8 +49,8 @@
         border-radius: 4px;
         padding: 14px;
         width: 100%;
-        @include flex(flex, space-between, center, $gap: 0.5rem);
-        flex-wrap: nowrap;
+        @include flex(flex, space-between, center, $gap: 0.5rem,$wrap:wrap);
+       
 
         & input,
         select,

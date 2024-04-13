@@ -262,7 +262,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0.5rem;
-  flex-wrap: nowrap;
 }
 .header .container .container-wrap .form-search input,
 .header .container .container-wrap .form-search select,
