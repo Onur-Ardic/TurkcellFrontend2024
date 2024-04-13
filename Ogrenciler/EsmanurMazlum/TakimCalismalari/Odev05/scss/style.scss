@@ -224,3 +224,243 @@
       }
     }
 }
+
+
+
+
+
+.testimonials {
+  @include flexible(center, center, 10px);
+  height: 100vh;
+  flex-direction: column;
+  .testimonials-container {
+    margin: 0 auto;
+    max-width: 800px;
+    @include flexible(center, center, 10px);
+    flex-direction: column;
+    text-align: center;
+
+    .title {
+      h2 {
+        @include font(32px, $colorBlue, 700);
+      }
+      ::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 3px;
+        background-color: $colorBlue;
+        margin: 0 auto;
+      }
+    }
+    .image {
+      margin-top: 50px;
+      @include flexible(center, center, 0px);
+      flex-direction: column;
+      p {
+        margin-top: 20px;
+      }
+      img {
+        max-width: 100px;
+        border-radius: 50%;
+      }
+    }
+    .testimonials-container-lorem {
+      margin: 0 0 1rem;
+      max-height: 165px;
+      @include font(24px, rgb(77, 77, 77), 400);
+      line-height: 40.8px;
+      font-style: italic;
+    }
+  }
+  .owl-dots {
+    @include flexible(center, center, 1px);
+    text-align: center;
+    :hover {
+      cursor: pointer;
+    }
+    .owl-dot {
+      .active {
+        background-color: $colorBlue;
+      }
+      span {
+        width: 10px;
+        height: 10px;
+        background-color: #dee2e6;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+}
+.our-blog {
+  @include flexible(center, center, 10px);
+  flex-direction: column;
+
+  .our-blog-header {
+    text-align: center;
+    &:after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 3px;
+      background-color: $colorBlue;
+      margin: 15px auto 50px auto;
+    }
+    .our-blog-header-title {
+      @include font(32px, $colorBlue, 700);
+    }
+    .our-blog-header-desc {
+      @include font(
+        16px,
+        rgba(0, 0, 0, 0.5),
+        400
+      );
+    }
+  }
+  .our-blog-cards {
+    max-width: 1140px;
+    margin: 0 auto;
+    @include flexible(center, center, 10px);
+    flex-wrap: wrap;
+
+    .our-blog-card {
+      flex: 0 0 32%;
+      img {
+        max-width: 350px;
+        height: auto;
+      }
+      h2 {
+        @include font(20px, rgb(0, 0, 0), 500);
+        margin-top: 10px;
+      }
+      .info {
+        @include font(14px, gray, 400);
+        span {
+          margin: 0 10px;
+        }
+        a {
+          color: $colorBlue;
+        }
+      }
+      p {
+        @include font(18px, rgb(77, 77, 77), 400);
+        margin-top: 10px;
+      }
+    }
+  }
+  .our-blog-button {
+    @include flexible(center, center, 10px);
+    margin-top: 20px;
+    a {
+      @include button(
+        12px 20px,
+        4px,
+        white,
+        $colorBlue,
+        15px
+      );
+      &:hover {
+        background-color: $btnbgBlue;
+        color: white;
+      }
+    }
+    margin-bottom: 50px;
+  }
+}
+
+
+.col-6 {
+  width: 50%;
+  padding: 0 15px;
+}
+.col-9 {
+  width: 75%;
+  padding: 0 15px;
+}
+.col-3 {
+  width: 25%;
+  padding: 0 15px;
+}
+.col-12 {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.border-top {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 3rem;
+  margin-top: 3rem;
+}
+
+.newsletter {
+  background-color: $colorBlue;
+  padding: 3rem;
+  .container {
+    @include flexible(center, center, null);
+  }
+  h2 {
+    @include font(18px, $colorWhite, 500);
+  }
+  p {
+    color: $colorWhite;
+  }
+  .emailForm {
+    @include flexible(center, center, null);
+  }
+  .form-control {
+    height: 48px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: none;
+    padding-left: 0;
+    &::placeholder {
+      color: $colorWhite;
+      font-style: italic;
+      font-size: 1rem;
+    }
+  }
+  .subscribeBtn {
+    @include button(15px, 0, null, $colorWhite, 1rem);
+  }
+}
+
+.site-footer {
+  background-color: #333333;
+  padding: 8rem 0;
+  .col-9 {
+    @include flexible(center, null, null);
+  }
+  a,
+  li,
+  p {
+    color: #999999;
+  }
+  a {
+    padding-right: 1.3rem;
+    padding-left: 0rem;
+  }
+  h2 {
+    @include font(16px, $colorWhite, 500);
+  }
+  .searchBtn {
+    @include button(12px 20px, null, white, $colorBlue, 15px);
+    position: absolute;
+  }
+  .form-control {
+    height: 41px;
+    border: 1px solid #6c757d;
+    background: none;
+    padding: 0.375rem 0.75rem;
+    &::placeholder {
+      color: #6c757d;
+      font-size: 1rem;
+    }
+  }
+  .col-12 {
+    @include flexible(center, null, null);
+    flex-direction: row;
+  }
+}
