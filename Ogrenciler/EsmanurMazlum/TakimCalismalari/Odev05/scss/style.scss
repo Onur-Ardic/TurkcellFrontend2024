@@ -193,6 +193,13 @@
                   }
                 }
               }
+              h3{
+                @include font(16px, $colorBlue, 500);
+                margin-bottom: 8px;
+              }
+              span{
+                @include font(13px, $colorDarkGray,400);
+              }
             }
         }
     }
