@@ -5,11 +5,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 10px;
-}
-
-
 body {
   font-family: "Nanum Gothic", sans-serif;
 }
@@ -186,7 +181,7 @@ ul li {
   margin-right: 1rem;
 }
 
-
+/* RÜMEYSA */
 .text-grey {
   color: #999999;
 }
@@ -194,7 +189,6 @@ ul li {
 .text-white {
   color: white;
 }
-
 
 /*Muhammed */
 
@@ -338,8 +332,6 @@ h1, h2, h3, h4, h5, h6, p {
     width: 40%;
   }
 }
-
-
 .testiminationsSections {
   background-color: #fff;
 }
