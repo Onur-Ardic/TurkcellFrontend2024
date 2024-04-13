@@ -10,7 +10,7 @@ h1 {
   font-weight: 400;
 }
 
-ul {
+ul li {
   list-style: none;
 }
 
@@ -71,6 +71,11 @@ a {
   justify-content: center;
   align-items: center;
   gap: 50px;
+}
+
+.list-navbar a {
+  color: black;
+  font-size: 18px;
 }
 
 .btn {
@@ -240,6 +245,7 @@ a {
   height: 70px;
   width: 440px;
   padding: 30px 0 100px 0;
+  font-weight: 500;
 }
 
 .omnichannel-section button {
@@ -250,7 +256,6 @@ a {
   border-radius: 5px;
   color: #fff;
   font-size: 16px;
-  font-weight: 400;
 }
 
 ul {
@@ -269,6 +274,7 @@ ul li {
   width: 318px;
   color: #696969;
   padding: 10px;
+  font-weight: 500;
 }
 
 .all-in-one-retail-section {
@@ -305,7 +311,7 @@ ul li {
 .all-in-one-retail-section button {
   margin-top: 50px;
   padding: 16px 46px;
-  background: linear-gradient(to right, #ff5195, #ffb84b);
+  background: linear-gradient(to right, #ff5195, #e7a94c);
   border: none;
   border-radius: 5px;
   color: #fff;
