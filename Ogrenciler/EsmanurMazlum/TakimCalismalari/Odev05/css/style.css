@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  width: 60%;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
@@ -211,13 +211,14 @@ body {
   gap: 30px;
 }
 .feature-ads .cards .card {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 7px;
-  overflow: hidden;
 }
 .feature-ads .cards .card .img {
   display: block;
   height: 150px;
   width: 250px;
+  overflow: hidden;
 }
 .feature-ads .cards .card .img.img1 {
   background: url(../images/img_2.jpg);
@@ -254,6 +255,9 @@ body {
 .feature-ads .cards .card .content .bookmark:hover {
   background-color: #f23a2e;
 }
+.feature-ads .cards .card .content .bookmark:hover .heart .fa-heart {
+  color: white;
+}
 .feature-ads .cards .card .content .bookmark .heart {
   position: absolute;
   left: 50%;
@@ -263,19 +267,34 @@ body {
 .feature-ads .cards .card .content .bookmark .heart .fa-heart {
   color: #2f89fc;
 }
-.feature-ads .cards .card .content .bookmark .heart .fa-heart:hover {
-  color: white;
-}
 .feature-ads .cards .card .content h3 {
   font-size: 16px;
   color: #2f89fc;
   font-weight: 500;
-  margin-bottom: 8px;
 }
 .feature-ads .cards .card .content span {
   font-size: 13px;
   color: #4d4d4d;
   font-weight: 400;
+}
+.feature-ads .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+.feature-ads .buttons .left {
+  color: #4d4d4d;
+}
+.feature-ads .buttons .left:hover {
+  color: #2f89fc;
+}
+.feature-ads .buttons .right {
+  color: #4d4d4d;
+}
+.feature-ads .buttons .right:hover {
+  color: #2f89fc;
 }
 
 /*# sourceMappingURL=style.css.map */

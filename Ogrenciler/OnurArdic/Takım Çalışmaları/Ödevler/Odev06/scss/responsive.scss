@@ -1,5 +1,22 @@
 @media (max-width: 992px) {
   .header {
+    height: max-content;
+    .hero {
+      grid-template-columns: 100%;
+    
+
+      .shape-1 {
+       display: none;
+      }
+
+      .hero-right {
+        margin-top: 4rem;
+        .img-first,
+        .img-second {
+          display: none;
+        }
+      }
+    }
     .navbar {
       .check-btn {
         display: block;
