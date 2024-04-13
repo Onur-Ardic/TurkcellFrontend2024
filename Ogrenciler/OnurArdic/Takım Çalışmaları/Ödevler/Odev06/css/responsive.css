@@ -1,9 +1,12 @@
 @media (max-width: 992px) {
+  .header {
+    height: max-content;
+  }
   .header .hero {
     grid-template-columns: 100%;
   }
-  .header .hero .shape-1 img {
-    height: 100%;
+  .header .hero .shape-1 {
+    display: none;
   }
   .header .hero .hero-right {
     margin-top: 4rem;

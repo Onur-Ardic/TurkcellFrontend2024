@@ -125,6 +125,7 @@
   transition: all 0.5s ease-in-out;
   opacity: 0;
   background: linear-gradient(to right, #ff5195, #ffb84b);
+  z-index: 2;
 }
 .header .navbar .navbar-items .navbar-item .dropdown .dropdown-item {
   background: linear-gradient(to right, #ff5195, #ffb84b);
