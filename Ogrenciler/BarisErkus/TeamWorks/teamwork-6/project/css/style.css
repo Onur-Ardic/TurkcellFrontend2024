@@ -129,23 +129,6 @@ a {
     font-size: 1.25rem;
   }
 }
-.navbar .navbar-container {
-  justify-content: space-around;
-  padding: 2rem 10rem;
-}
-.navbar .navbar-container .right {
-  gap: 2rem;
-}
-.navbar .navbar-container .right ul {
-  gap: 2rem;
-}
-.navbar .navbar-container .right ul li a {
-  color: #000;
-}
-.navbar .navbar-container .right .button-container button {
-  padding: 1.25rem 1.5rem;
-}
-
 .perfect-pos .perfect-pos-container {
   padding: 5rem 0.75rem;
   margin: 0 18.219rem;
@@ -312,10 +295,6 @@ a {
   }
 }
 @media (max-width: 1050px) {
-  .navbar .navbar-container {
-    padding: 1rem 1rem;
-    gap: 2rem;
-  }
   .smart-pos .smart-pos-container .bottom {
     flex-direction: column;
     align-items: center;

@@ -1,3 +1,5 @@
+@import '../scss/responsive.scss';
+
 @import url("@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@200;400;700;800&display=swap')");
 
 $bgColorBlue: #2f89fc;
@@ -175,7 +177,7 @@ option {
   font-size: 16px;
 }
 .trend-search {
-  @include flex(row, left, left);
+  @include flex(row, left, center);
   gap: 5px;
   @include margin(0px, 0, 15px, 0);
   font-weight: 500;
@@ -200,11 +202,6 @@ option {
   gap: 30px;
   margin-top: 15px;
 }
-.features-ads-card-responsive2,
-.features-ads-card-responsive {
-  display: flex;
-  gap: 30px;
-}
 .features-ads-card {
   @include flex(column, center, left);
   @include border(none, 5px, none, #fff, none);
@@ -212,7 +209,6 @@ option {
   height: 320px;
   box-shadow: -1px 3px 14px 1px rgba(196, 196, 196, 1);
 }
-
 .features-img img,
 .features-ads-card {
   border-top-left-radius: 10px;
@@ -538,125 +534,4 @@ option {
   margin-left: 50px;
   margin-top: 10px;
   border-width: 2px;
-}
-
-@media screen and (max-width: 768px) {
-  .nav-section {
-    background-position: center;
-    background-size: cover;
-  }
-  .navList-item {
-    display: none;
-  }
-
-  .nav-section-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-  }
-  .nav-section-form-elements {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-  }
-  .nav-section-form-elements .location,
-  .nav-section-form-elements select,
-  .nav-section-form-elements .looking-for,
-  .nav-section-form-elements button {
-    width: 100%;
-  }
-  .nav-section-form-elements button {
-    @include padding(50px, 50px, 10px, 10px);
-  }
-
-  .trend-search {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left !important;
-  }
-
-  .features-ads-card-responsive {
-    display: none;
-  }
-  .features-ads-card-responsive2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .popular-categories-icons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 150px;
-  }
-
-  .trending-today-cards-section {
-    display: grid;
-    grid-template-columns: repeat(1, 540px);
-    grid-template-rows: repeat(6, 180px);
-    justify-content: center;
-  }
-  .testimonials {
-    @include padding(50px, 50px, 100px, 100px);
-    width: 100%;
-    gap: 10px;
-  }
-  .testimonials-info {
-    height: 20%;
-  }
-  .testimonials-info p {
-    width: 100%;
-  }
-  .testimonials-info br {
-    display: none;
-  }
-  .our-blog {
-    display: flex;
-    @include padding(10px, 10px, 100px, 100px);
-    width: 100%;
-  }
-  .our-blog-card-img img {
-    width: 330px;
-  }
-  .our-blog-cards-section {
-    flex-wrap: wrap;
-    @include flex(row, start, left);
-  }
-  .our-blog-card {
-    width: 335px;
-    height: 430px;
-  }
-
-  .newsletter {
-    width: 100%;
-    @include padding(50px, 50px, 50px, 50px);
-  }
-  .newsletter input {
-    width: calc(300px - 102px);
-  }
-  .footer {
-    width: 100%;
-  }
-  .footer-about {
-    width: 250px;
-  }
-  .footer-navigations,
-  .footer-follow-us {
-    width: 150px;
-  }
-  .footer-search input {
-    @include padding(2px, 2px, 5px, 5px);
-    width: 65px;
-  }
-  .footer-search button {
-    @include padding(10px, 10px, 5px, 5px);
-    position: relative;
-    margin-right: 0px;
-  }
 }
