@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 10rem;
 
     .shape-1 {
       position: absolute;
@@ -23,7 +23,7 @@
 
     .hero-left {
       h2 {
-        font-size: 2.8rem;
+        font-size: 4rem;
       }
       p {
         margin-top: 2rem;
@@ -228,6 +228,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 3rem;
+    margin: $x100 0;
 
     .omnichannel-left {
       .omnichannel-content {
@@ -248,7 +249,7 @@
 
         li {
           @include flexible(flex, flex-start, center, 0.5rem);
-          line-height: $x60;
+          line-height: $x30;
 
           i {
             color: $iconColor;
@@ -274,4 +275,10 @@
       }
     }
   }
+}
+// ! -----All İn One-----------
+.all-in-one {
+  background-color: #fefcfa;
+  margin-top: $x100;
+  padding: 1rem;
 }
