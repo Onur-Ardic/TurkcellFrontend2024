@@ -96,6 +96,16 @@
   .categories-content {
     flex-wrap: wrap;
   }
+  .trending-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .testimonials .left-arrow, .testimonials .right-arrow {
+    display: none;
+  }
+  .testimonials-content-area p {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */
