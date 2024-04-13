@@ -6,6 +6,11 @@ a {
   text-decoration: none;
 }
 
+button,
+a {
+  cursor: pointer;
+}
+
 h1 {
   font-size: 3rem;
 }
