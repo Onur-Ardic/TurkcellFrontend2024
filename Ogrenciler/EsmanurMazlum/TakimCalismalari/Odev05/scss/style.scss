@@ -20,7 +20,7 @@
   .container {
     height: 100vh;
   }
-
+  
   .nav-container {
     @include flexible(space-between, center, 1rem);
     padding-top: 30px;
@@ -140,12 +140,14 @@
     .cards{
         @include flexible(space-between, center, 30px);
         .card{
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
           border-radius: 7px;
-          overflow: hidden;
+
             .img{
                 display: block;
                 height: 150px;
                 width: 250px;
+                overflow: hidden;
             }
             .img.img1{
                 background: url(../images/img_2.jpg);
@@ -179,6 +181,12 @@
                 transition: .3s all ease;
                 &:hover{
                   background-color: #f23a2e;
+                
+                  .heart{
+                    .fa-heart{
+                      color: white;
+                    }
+                  }
                 }
                 .heart{
                   position: absolute;
@@ -188,19 +196,31 @@
                   .fa-heart{
                     color: $colorBlue;
                   }
-                  .fa-heart:hover{
-                    color: white;
-                  }
                 }
               }
               h3{
                 @include font(16px, $colorBlue, 500);
-                margin-bottom: 8px;
               }
               span{
                 @include font(13px, $colorDarkGray,400);
               }
             }
         }
+    }
+    .buttons{
+      @include flexible(center,center,50px);
+      margin-top: 50px;
+      .left{
+        color: $colorDarkGray;
+        &:hover{
+          color: $colorBlue;
+        }
+      }
+      .right{
+        color: $colorDarkGray;
+        &:hover{
+          color: $colorBlue;
+        }
+      }
     }
 }
