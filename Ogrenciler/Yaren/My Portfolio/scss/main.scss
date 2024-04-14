@@ -1,0 +1,686 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+.header
+{
+    padding: 60px 0 0 0;
+ .header-logo{
+    .img{
+        width: 148px;
+       height:126px;
+    }
+ }
+    
+}
+}
+
+.coming-text{
+    h1{
+    text-align:left;
+    vertical-align: top;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 120px;
+    line-height: 120px;
+    animation: lines 2s ease-in;
+    }
+    .wave-image{
+            background-image: url(../images/wavy-shape5.png);
+        
+            width: 100%;
+            height: 20px;
+            background-size: 645px 20px;
+            background-repeat: repeat-x;
+            animation: wavy-motion 15s linear infinite;
+            margin: 25px 0;
+    }
+}
+
+.coming-image{
+    align-items:center;
+    flex-direction:column;
+    width: calc(30%);
+}
+
+.coming-text{
+    .subtitle{
+        font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    font-size: 32px;
+    }
+    span{
+        transition:0.5s;
+    }
+    
+}
+.coming-form{
+    margin-top: 60px;
+     img.arrow{
+        width: 34px;
+        height: 50px;
+    }
+    .input
+    {
+        outline: none;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        background-color: #fff;
+        font-size: 18px;
+        padding: 20px 24px;
+        margin: 0 16px;
+        flex: 1;
+        
+        box-shadow: 0px 0px 30px 7px  #ec937f;
+    }
+     &::placeholder{
+        color:#f87456;
+    }
+      .btn-filled{
+        padding: 25px 24px;
+        border-radius: 10px;
+       font-weight: 600;
+       line-height: 19px;
+       letter-spacing: 4px;
+       cursor: pointer;
+       border: none;
+      }
+    }
+    .form  {
+       img:hover{
+        transition:all 1s ease-in-out;
+        transform:rotate(65deg) scale(1.7) translateX(10px);
+       }
+       img.arrow{
+        width: 64px;
+        height: 80px;
+        transition: transform 0.3s ease;  
+       }
+       button:hover{
+        animation: buttonsubscribe 1.5s infinite;
+        background-color: #f87456;
+      
+       }     
+
+   }
+    .coming-image{
+        .img-box{
+           position: relative;
+           margin-bottom: 32px;
+        }
+        .img{
+            position: relative;
+            max-width: 100%;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        h4{
+            font-size: 32px;
+          font-weight: 600;
+          line-height: 30px;
+         animation: heading4 2s ease-in ;
+        }
+        .subtitle {
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 60 px;
+            margin-bottom: 24px;
+          
+            animation: heading4 2s ease-in ;
+          
+        }
+    .body {
+            line-height: 30px;
+            margin-bottom: 24px;
+            color: #f87456;
+            animation: heading4 2s ease-in ;
+        }
+
+    .content{
+            max-width: 1200px;
+        }
+     .coming-links {
+            padding-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            a{
+                text-decoration: none;
+            }    
+        }
+        
+    .caption{
+            font-size: 12px;
+            line-height: 30px;
+            letter-spacing: 5px;
+        }
+    }
+    
+     .my-services {
+            h1{
+                margin-bottom: 40px;
+                font-size: 60px;
+             
+             }
+             .service-container{
+                width:80%;
+                margin:0px auto;
+                
+             }
+            
+             .service{
+                
+                margin:20px;
+                padding:30px 20px;
+                cursor:pointer;
+                border:4px solid #ffeec3;
+                transition: 0.4s ease;
+            
+             }
+             .service:hover{
+                background-color:#f87456;
+             }
+             .service i{
+                font-size: 48px;
+                
+             }
+            
+             .service p{
+            
+                font-size:16px;
+                color:#e9bdc2;
+             }
+             .service h2{
+                margin-top:20 px;
+                margin-bottom:10 px;
+                font-size:25 px;
+             }
+            }
+    .bg-shape-1{
+        width: 40%;
+    background-color:  #f8e6e8;
+    }
+
+    .bg-shape-2 {
+   
+        width: 60%;
+        background-color:#f9dadd;
+    
+    }
+
+    .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    position: relative;
+}
+
+
+header {
+    padding: 60px 0 0 0;
+}
+
+.header-logo img{
+    
+    width: 148px;
+    height:126px;
+  
+}
+nav {
+   max-width: 1200px;
+   
+}
+
+ h1{
+    text-align:left;
+    vertical-align: top;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 120px;
+    line-height: 120px;
+    animation: lines 2s ease-in;
+
+}
+
+.coming-text .wave-image {
+    background-image: url(../images/wavy-shape5.png);
+
+    width: 100%;
+    height: 20px;
+    background-size: 645px 20px;
+    background-repeat: repeat-x;
+    animation: wavy-motion 15s linear infinite;
+    margin: 25px 0;
+}
+
+.coming-image{
+    align-items:center;
+    flex-direction:column;
+    width: calc(30%);
+}
+
+
+.coming-text .subtitle{
+    
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    font-size: 32px;
+}
+.coming-text .subtitle span{
+  transition:0.5s;
+  
+}
+.coming-text.subtitle:hover span:nth-child(1){
+    margin-right:25px;
+    
+  }
+  .coming-text.subtitle:hover span:nth-child(2){
+    margin-left:25px;
+    
+  }
+  
+.coming-form{
+    margin-top: 60px;
+    
+}
+
+.coming-form img.arrow {
+    width: 34px;
+    height: 50px;
+}
+
+.coming-form input {
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 18px;
+    padding: 20px 24px;
+    margin: 0 16px;
+    flex: 1;
+    
+    box-shadow: 0px 0px 30px 7px  #ec937f;
+
+}
+.coming-form input::placeholder{
+   color:#f87456;
+}
+.btn-filled{
+padding: 25px 24px;
+border-radius: 10px;
+font-weight: 600;
+line-height: 19px;
+letter-spacing: 4px;
+cursor: pointer;
+border: none;
+}
+
+form img:hover{
+    transition:all 1s ease-in-out;
+    transform:rotate(65deg) scale(1.7) translateX(10px);
+    
+}
+
+form button:hover{
+    animation: buttonsubscribe 1.5s infinite;
+    background-color: #f87456;
+  
+}
+
+.coming-form img.arrow {
+    width: 64px;
+    height: 80px;
+    transition: transform 0.3s ease;  
+  
+    
+}
+.coming-image .img-box {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.coming-image img {
+    position: relative;
+    max-width: 100%;
+    border-radius: 50%;
+    z-index: 1;
+}
+h4 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 30px;
+    animation: heading4 2s ease-in ;
+}
+
+
+.coming-image .subtitle {
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 60 px;
+    margin-bottom: 24px;
+  
+    animation: heading4 2s ease-in ;
+  
+}
+.coming-image .body {
+    line-height: 30px;
+    margin-bottom: 24px;
+    color: #f87456;
+    animation: heading4 2s ease-in ;
+}
+
+.content {
+    max-width: 1200px;
+}
+
+
+.coming-links {
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.coming-links a {
+    text-decoration: none;
+}
+
+.caption {
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 5px;
+    
+}
+.my-services h1{
+    margin-bottom: 40px;
+    font-size: 60px;
+ 
+ }
+ .service-container{
+    width:80%;
+    margin:0px auto;
+    
+ }
+
+ .service{
+    
+    margin:20px;
+    padding:30px 20px;
+    cursor:pointer;
+    border:4px solid #ffeec3;
+    transition: 0.4s ease;
+
+ }
+ .service:hover{
+    background-color:#f87456;
+ }
+ .service i{
+    font-size: 48px;
+    
+ }
+
+ .service p{
+
+    font-size:16px;
+    color:#e9bdc2;
+ }
+ .service h2{
+    margin-top:20 px;
+    margin-bottom:10 px;
+    font-size:25 px;
+ }
+
+.bg-shape-1 {
+ 
+    width: 40%;
+    background-color:  #f8e6e8;
+
+}
+
+.bg-shape-2 {
+   
+    width: 60%;
+    background-color:#f9dadd;
+
+}
+
+
+
+
+
+@keyframes lines{
+    0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-50px);
+      }
+      100% {
+        transform: translateX(0);
+      } 
+  }
+  @keyframes heading4{
+    0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(50px);
+      }
+      100% {
+        transform: translateX(0);
+      } 
+  }
+
+
+@keyframes wavy-motion {
+    0% {
+      background-position-x: 0%;
+    }
+    100% {
+      background-position-x: 40.313rem;
+    }
+  }
+
+  @keyframes buttonsubscribe {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    } 
+}
+
+
+@media (max-width: 900px){
+    .container {
+        padding: 0 25px;}
+
+.coming-holder {
+    flex-direction: column;
+}
+.coming-image{
+    width: 100%;
+}
+.coming-links {
+    justify-content: space-around !important;
+}
+.section_container {
+    padding: 0 25px;
+}
+header {
+    padding: 60px 25px 0 25px;
+}
+h1{
+    padding-top:30px;
+    font-size: 90px;
+    line-height: 110px;
+}
+.coming-text.subtitle{
+    font-size: 28px;
+    letter-spacing: 25px;
+}
+.coming-text {
+    padding-bottom: 40px;
+}
+
+.coming-holder>div{
+    width: 100%;
+   }
+}
+@media (max-width: 600px){
+    
+    .header {
+        padding-top: 30px;
+    }
+    
+    
+    .container {
+        padding-bottom: 30px;
+    
+    }
+    h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    form {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin:16px;
+    }
+
+    .coming-form input {
+        box-shadow: none;
+    }
+    .coming-form > * {
+        width: 100%;
+        margin: 16px;
+    }
+    .coming-text.subtitle{
+        font-size: 22px;
+       letter-spacing: 10px;
+    }
+    .service-container{
+        flex-wrap:wrap;
+        flex-direction: column;
+        margin:16px;
+
+    }
+    .my-services h1{
+        font-size: 45px;
+
+        margin-bottom: 10px;
+    }
+    .bg-shape-1{
+        width: 100%;
+    }
+    .bg-shape-2 {
+        display: none;
+    }
+
+
+}
+
+@keyframes lines{
+    0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-50px);
+      }
+      100% {
+        transform: translateX(0);
+      } 
+  }
+  @keyframes heading4{
+    0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(50px);
+      }
+      100% {
+        transform: translateX(0);
+      } 
+  }
+
+
+@keyframes wavy-motion {
+    0% {
+      background-position-x: 0%;
+    }
+    100% {
+      background-position-x: 40.313rem;
+    }
+  }
+
+  @keyframes buttonsubscribe {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    } 
+}
+
+
+@media (max-width: 900px){
+    .container {
+        padding: 0 25px;}
+
+.coming-holder {
+    flex-direction: column;
+}
+.coming-image{
+    width: 100%;
+}
+.coming-links {
+    justify-content: space-around !important;
+}
+.section_container {
+    padding: 0 25px;
+}
+header {
+    padding: 60px 25px 0 25px;
+}
+h1{
+    padding-top:30px;
+    font-size: 90px;
+    line-height: 110px;
+}
+.coming-text.subtitle{
+    font-size: 28px;
+    letter-spacing: 25px;
+}
+.coming-text {
+    padding-bottom: 40px;
+}
+
+.coming-holder>div{
+    width: 100%;
+   }
+}
+
