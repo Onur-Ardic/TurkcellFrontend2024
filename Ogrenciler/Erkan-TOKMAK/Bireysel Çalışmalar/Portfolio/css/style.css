@@ -9,7 +9,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -234,6 +234,95 @@ header nav a img {
   top: 0;
   z-index: -999;
   margin-left: 40%;
+}
+
+.project {
+  padding: 80px 0px;
+}
+.project h2 {
+  color: #126E82;
+  font-size: 2rem;
+  margin: 0 0 46px;
+}
+.project h2::after {
+  content: "";
+  width: 45px;
+  height: 5px;
+  background-color: #132C33;
+}
+.project-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.project-content .project-item {
+  width: 24%;
+  height: 300px;
+  gap: 10px;
+}
+.project-content .project-item img {
+  border: 1px solid #132C33;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.project-content .project-item:hover {
+  margin-top: -30px;
+}
+
+.project1frame, .project2frame, .project3frame, .project4frame {
+  position: absolute;
+  width: 80%;
+  padding: 50px;
+  height: 800px;
+  z-index: 9999;
+  opacity: 0;
+  background-color: rgba(19, 44, 51, 0.7);
+  border-radius: 50px;
+  top: 150px;
+  left: 200px;
+  box-shadow: 6px -1px 96px 15px rgba(0, 0, 0, 0.54);
+}
+.project1frame iframe, .project2frame iframe, .project3frame iframe, .project4frame iframe {
+  width: 100%;
+  position: relative;
+  height: 700px;
+  border-radius: 10px;
+}
+.project1frame svg, .project2frame svg, .project3frame svg, .project4frame svg {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #D8E3E7;
+}
+
+.checkbox1 {
+  visibility: hidden;
+}
+.checkbox1:checked ~ .project1frame {
+  opacity: 1;
+}
+
+.checkbox2 {
+  visibility: hidden;
+}
+.checkbox2:checked ~ .project2frame {
+  opacity: 1;
+}
+
+.checkbox3 {
+  visibility: hidden;
+}
+.checkbox3:checked ~ .project3frame {
+  opacity: 1;
+}
+
+.checkbox4 {
+  visibility: hidden;
+}
+.checkbox4:checked ~ .project4frame {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

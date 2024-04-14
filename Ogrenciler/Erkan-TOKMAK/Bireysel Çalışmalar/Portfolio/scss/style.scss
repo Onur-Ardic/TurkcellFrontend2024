@@ -164,3 +164,85 @@ header {
     z-index: -999;
     margin-left: 40%;
 }
+//! ----------Projects
+.project{
+    padding: 80px 0px;
+    h2 {
+        color: $color3;
+        font-size: $fontBig;
+        margin: 0 0 46px;
+        &::after{
+            content: "";
+            width: 45px;
+            height: 5px;
+            background-color: $color4;
+        }
+    }
+    &-content{
+        @include flex(flex, center,center,1rem);
+        .project-item{
+        width: 24%;
+        height: 300px;
+        gap: 10px;
+        img{
+            border: 1px solid $color4;
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+        }
+        &:hover{
+            margin-top: -30px;
+        }
+    }
+}
+    
+}
+.project1frame, .project2frame, .project3frame, .project4frame{
+    position: absolute;
+    width: 80%;
+    padding: 50px;
+    height: 800px;
+    z-index: 9999;
+    opacity: 0;
+    background-color: rgba($color4, $alpha: .7);
+    border-radius: 50px;
+    top: 150px;
+    left: 200px;
+    box-shadow: 6px -1px 96px 15px rgba(0,0,0,0.54);
+    iframe {
+        width: 100%;
+        position: relative;
+        height: 700px;
+        border-radius: 10px;
+    }
+    svg {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: $color1;
+    }
+}
+.checkbox1 {
+    visibility: hidden;
+    &:checked ~ .project1frame {
+      opacity: 1;
+    }
+  }
+  .checkbox2 {
+    visibility: hidden;
+    &:checked ~ .project2frame {
+      opacity: 1;
+    }
+  }
+  .checkbox3 {
+    visibility: hidden;
+    &:checked ~ .project3frame {
+      opacity: 1;
+    }
+  }
+  .checkbox4 {
+    visibility: hidden;
+    &:checked ~ .project4frame {
+      opacity: 1;
+    }
+  }
