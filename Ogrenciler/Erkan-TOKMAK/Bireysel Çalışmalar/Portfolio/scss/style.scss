@@ -1,0 +1,166 @@
+@import './variables.scss' , './main.scss', './animations.scss';
+header {
+    padding: 60px 0px 0px;
+    nav {
+        a {
+            img {
+                width: 96px;
+                height: 56px;
+            }
+        }
+    }
+}
+.content{
+    .content-left{
+        h1 {
+            @include text(start, $fontLarge, $color3)
+        }
+        .wave{
+            background-image: url('../images/wavy-shape.png');
+            width: 100%;
+            height: 20px;
+            background-size: 645px 20px;
+            background-repeat: repeat-x;
+            animation: wave-animation 15s linear infinite;
+            margin: 25px 0px;
+        }
+        .subtitle{
+            @include text(start,$fontBig, $color3);
+            font-weight: 700;
+            letter-spacing: 30px;
+            text-transform: uppercase;
+            padding-top: 15px;
+        }
+        form{
+            @include flex(flex,center,space-between,1rem);
+            margin: 60px 0px 0px;
+            img{
+                width: 34px;
+                height: 50px;
+            }
+            input {
+                padding: 20px 24px;
+                flex-grow: 1;
+                margin: 0px 16px;
+                outline: none;
+                border: none;
+                border-radius: 10px;
+                background-color: #fff;
+                box-shadow: 0px 0px 30px 7px #0c7f8640;
+                transition: 0.5s ease;
+            }
+            .sub-btn {
+                padding: 25px 24px;
+                border: none;
+                border-radius: 10px;
+                background-color: $color3;
+                color: #fff;
+                font-weight: 600;
+                line-height: 19px;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: .5s ease;    
+                &:hover{
+                    background-color: $color4;
+
+                }
+            }
+        }
+    }
+    .content-right {
+        @include flex(flex,center,center,1rem);
+        flex-direction: column;
+        width: calc(30%);
+        .avatar-box{
+            img{
+                width: 350px;
+                height: 350px;
+                border-radius: 100%;
+                position: relative;
+                z-index: 1;
+               }
+            width: 350px;
+            height: 350px;
+            margin: 0px 0px 32px;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top: -45px;
+                left: -30px;
+                width: 350px;
+                height: 350px;
+                border-radius: 50%;
+                border: 3px solid $color1;
+                z-index: 999;
+                pointer-events: none;
+                user-select: none;
+                animation: image-before-circle 8s linear infinite;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                right: -420px;
+                top: 0;
+                width: 800px;
+                height: 800px;
+                border: 1px solid $color1;
+                border-radius: 50%;
+                pointer-events: none;
+                user-select: none;
+                z-index: 0;
+                animation: image-after-circle 3s linear infinite alternate;
+            }
+        }
+        .right-content{
+            h4{
+                @include text(start,$fontBig,$color4);
+            }
+            .text {
+                @include text(start, $fontDefault, $color4);
+                margin: 0 0 24px;
+            }
+            .description{
+                color: $color4;
+                padding: 0px 0px 24px;
+                span{
+                    color: $color4;
+                    font-weight: 700;
+                }
+            }
+        }
+        .social-links{
+            @include flex(flex,center,space-around,1rem);
+            a {
+                @include text(center,$fontMedium,$color4);
+                text-decoration: none;
+                transition: color 0.5s ease;
+                font-weight: 700;
+                letter-spacing: 5px;
+                &:hover{
+                    color: $color3;
+                }
+            }
+        }
+    }
+}
+.bg-left{
+    width: 40%;
+    background-color: $color1;
+    min-height: 100vh;
+    max-height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -999;
+}
+.bg-right{
+    width: 60%;
+    background-color: $color2;
+    min-height: 100vh;
+    max-height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -999;
+    margin-left: 40%;
+}

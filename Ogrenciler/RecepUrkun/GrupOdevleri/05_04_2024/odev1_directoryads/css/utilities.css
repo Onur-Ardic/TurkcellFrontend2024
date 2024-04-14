@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Nanum Gothic", sans-serif;
   text-decoration: none;
+  border: none;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 .container {
-  width: 60%;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
@@ -30,72 +31,15 @@ body {
   text-align: center;
 }
 
-.flex {
-  display: flex;
-}
-
-.grid {
-  display: grid;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.align-start {
-  align-items: flex-start;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
-.justify-end {
-  justify-content: flex-end;
-}
-
-.gap10 {
-  gap: 10px;
-}
-
-.gap20 {
-  gap: 20px;
-}
-
-.gap30 {
-  gap: 30px;
-}
-
-.mt-30 {
-  margin-top: 30px;
-}
-
-.mr-50 {
-  margin-right: 50px;
+.gray-button {
+  font-size: 11px;
+  display: inline-block;
+  padding: 5px 20px;
+  background: #e9ecef;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=utilities.css.map */

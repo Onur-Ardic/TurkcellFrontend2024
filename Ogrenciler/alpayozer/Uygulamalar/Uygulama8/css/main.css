@@ -154,6 +154,139 @@
     font-weight: 400;
     margin-bottom: 1rem;
   }
+  .testiHead {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #2F89FC;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    text-align: center;
+  }
+  .testiImg Img {
+    position: relative;
+    max-width: 30%;
+    border-radius: 50%;
+    z-index: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .testiText {
+    color: #4d4d4d;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .ourBlog-p {
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    text-align: center !important;
+  }
+  .h-entry {
+    margin-bottom: 30px;
+    max-width: 100%;
+    height: auto;
+  }
+  .h-entry meta {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-bottom: 1rem !important;
+    display: block;
+    unicode-bidi: isolate;
+  }
+  .h-entry-p {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    color: #4d4d4d;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "sans-serif";
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+  }
+  .main-Button {
+    cursor: pointer;
+    color: #fff !important;
+    padding-left: 1.5rem !important;
+    padding-bottom: 0.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 0.5rem !important;
+    border-radius: 0.25rem !important;
+    background-color: #2F89FC;
+    border-color: #2F89FC;
+    text-align: center;
+    font-weight: 400;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    box-sizing: border-box;
+    font-family: "sans-serif";
+  }
+  .popular-categories {
+    text-align: center;
+  }
+  .popular-categories .categories-title h2 {
+    font-size: 2rem;
+    color: #2F89FC;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .popular-categories .categories-title p {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .popular-categories .categories-cards {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
+  }
+  .popular-categories .categories-cards .categories-card {
+    padding: 30px 10px;
+    background: #fff;
+  }
+  .popular-categories .categories-cards .categories-card a {
+    text-decoration: none;
+  }
+  .popular-categories .categories-cards .categories-card a .categories-card-icon {
+    font-size: 2.813rem;
+    color: #2F89FC;
+    margin-bottom: 10px;
+  }
+  .popular-categories .categories-cards .categories-card a .categories-card-caption {
+    font-size: 0.938rem;
+    color: #666666;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+  .popular-categories .categories-cards .categories-card a .categories-card-number {
+    padding: 2px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    background: #e9ecef;
+    font-size: 0.875rem;
+    color: #000;
+    font-weight: 400;
+    line-height: 1.7;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

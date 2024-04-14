@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  color: #696969;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 12px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.main-btn {
+  cursor: pointer;
+  padding: 16px 25px;
+  border-radius: 4px;
+  color: #fff;
+  background: linear-gradient(to right, #ff5195, #ffb84b);
+}
+
+.header-section {
+  margin-top: 20px;
+  z-index: 999;
+  position: relative;
+}
+.header-section .header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-section .menu-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+}
+.header-section .main-area {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 25px 20px;
+  color: black;
+}
+
+.banner-section {
+  background-color: rgb(42, 131, 131);
+  padding: 265px 0 190px;
+}
+.banner-section .pos-banner {
+  max-width: 100%;
+}
+.banner-section .pos-banner .resim-2 {
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+.banner-section .pos-banner .resim-1 {
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+/*# sourceMappingURL=style.css.map */

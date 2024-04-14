@@ -18,7 +18,6 @@ $grey: #696969;
     background: linear-gradient(to right, #fd4572, #ffa788);
   }
 }
-
 .hero {
   background-color: #f8efff;
   background-image: url("../images/shape-2.png");
@@ -118,7 +117,6 @@ $grey: #696969;
     }
   }
 }
-
 .omnichannel {
   padding: 80px 0px;
   .container {
@@ -160,12 +158,10 @@ $grey: #696969;
     }
   }
 }
-
 .all-in-one {
   @extend .omnichannel;
   background-color: #fffcfa;
 }
-
 .perfect-pos {
   padding: 80px 0px;
   background-color: #fffcfa;
@@ -212,14 +208,18 @@ $grey: #696969;
   .container {
     .perfect-cards {
       .perfect-card {
+        position: relative;
+        transition: all 0.2s ease-in-out;
         width: 30%;
+        h6 {
+          font-size: 24px;
+        }
         p {
           width: 100%;
         }
         .rounded-img {
           position: relative;
           border-radius: 50%;
-          background: linear-gradient(#be6df2, #f675a1);
           width: 80px;
           height: 80px;
           padding: 20px;
@@ -252,6 +252,26 @@ $grey: #696969;
             }
           }
         }
+        .line {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 5px;
+          background: linear-gradient(to right, #fd4472, #ffb64b);
+        }
+        &:hover {
+          .line {
+            animation: line 0.5s forwards;
+          }
+        }
+        @keyframes line {
+          0% {
+            width: 0;
+          }
+          100% {
+            width: 100%;
+          }
+        }
       }
     }
   }
@@ -272,8 +292,32 @@ $grey: #696969;
           h5 {
             font-size: 20px;
           }
-          img {
-            border-radius: 50%;
+          .person-div {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            margin-right: 10px;
+            .person-img {
+              border-radius: 50%;
+              width: 60px;
+              height: 60px;
+            }
+            .round-img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 70px;
+              height: 70px;
+
+              animation: round-animation 5s linear infinite;
+            }
+            @keyframes round-animation {
+              100% {
+                rotate: 360deg;
+              }
+            }
           }
           p {
             color: #696969;
@@ -289,7 +333,6 @@ $grey: #696969;
     }
   }
 }
-
 .sponsors {
   .container {
     width: 70%;
@@ -300,7 +343,6 @@ $grey: #696969;
     margin-top: 50px;
   }
 }
-
 .app {
   padding: 70px 0;
   background-image: url(../images/app-footer-bg.jpg);
@@ -356,7 +398,6 @@ $grey: #696969;
     }
   }
 }
-
 @media screen and (max-width: 1200px) {
   .hero {
     background-image: none;
@@ -393,6 +434,12 @@ $grey: #696969;
         .right-content {
           .laptop-man {
             width: 100%;
+          }
+        }
+        .left-content {
+          margin-top: 20px;
+          h2 {
+            font-size: 40px;
           }
         }
       }
@@ -433,5 +480,8 @@ $grey: #696969;
         }
       }
     }
+  }
+  .perfect-pos .container p {
+    width: 100%;
   }
 }
