@@ -115,7 +115,7 @@ header .container img {
   height: 20px;
   background-size: 645px 20px;
   background-repeat: repeat-x;
-  animation: wavy-motion 15s linear infinite;
+  animation: wave 15s linear infinite;
   margin: 25px 0;
 }
 .content .container .coming-holder .coming-text p {
@@ -167,6 +167,9 @@ header .container img {
   cursor: pointer;
   border: none;
   transition: 0.5s ease;
+}
+.content .container .coming-holder .coming-text form button:hover {
+  background-color: #084b4f;
 }
 .content .container .coming-holder .coming-img {
   max-width: 345px;
@@ -248,7 +251,7 @@ header .container img {
   margin-bottom: 24px;
 }
 
-@keyframes wavy-motion {
+@keyframes wave {
   0% {
     background-position-x: 0%;
   }
@@ -288,6 +291,14 @@ header .container img {
   }
   .content .container .coming-holder .coming-text .coming-form input {
     box-shadow: none;
+  }
+  .content .container .coming-holder .coming-text .links {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .content .container .coming-holder .coming-text .links a:hover {
+    color: white;
   }
 }
 

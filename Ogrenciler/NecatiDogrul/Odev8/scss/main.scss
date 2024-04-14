@@ -112,7 +112,7 @@ header {
                     height: 20px;
                     background-size: 645px 20px;
                     background-repeat: repeat-x;
-                    animation: wavy-motion 15s linear infinite;
+                    animation: wave 15s linear infinite;
                     margin: 25px 0;
                 }
                 p {
@@ -163,6 +163,9 @@ header {
                         cursor: pointer;
                         border: none;
                         transition: 0.5s ease;
+                        &:hover {
+                            background-color: $secondColor;
+                        }
                     }
                 }
             }
@@ -254,7 +257,7 @@ header {
     }
 }
 
-@keyframes wavy-motion {
+@keyframes wave {
     0% {
         background-position-x: 0%;
     }
@@ -296,12 +299,18 @@ header {
                             box-shadow: none;
                         }
                     }
-                    .links{
-                        
+                    .links {
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        a {
+                            &:hover {
+                                color: white;
+                            }
+                        }
                     }
                 }
             }
         }
     }
 }
-
