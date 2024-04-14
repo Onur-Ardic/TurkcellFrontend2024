@@ -10,3 +10,55 @@
   text-decoration: none;
   font-family: "AvenirLTPro-Light";
 }
+
+.container {
+  max-width: 1600px;
+  margin: auto;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@mixin flex(
+  $display,
+  $justify: none,
+  $align: none,
+  $column: row,
+  $gap: 2rem,
+  $wrap: wrap
+) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $column;
+  flex-wrap: $wrap;
+  gap: $gap;
+}
+
+@mixin button-style(
+  $padding-y: 0.415rem,
+  $padding-x: 0.75rem,
+  $border-radius: 0.25rem,
+  $background-color: none,
+  $color: none,
+  $border: none
+) {
+  padding: $padding-y $padding-x;
+  border-radius: $border-radius;
+  background-color: $background-color;
+  color: $color;
+  border: $border;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+%line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #2f89fc;
+}
