@@ -80,10 +80,22 @@
 }
 .header .hero .hero-right .img-second img {
   position: absolute;
-  top: 20%;
+  top: 30%;
   right: 55%;
   z-index: 1;
   width: 100px;
+  animation: animate 3s infinite ease-in-out;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .header .navbar {
   display: flex;
@@ -247,6 +259,46 @@
   background-color: #fefcfa;
   margin-top: 100px;
   padding: 1rem;
+}
+
+.portfolio {
+  margin-top: 8rem;
+  background-color: #fffef8;
+}
+.portfolio-content {
+  padding-top: 5rem;
+}
+.portfolio-content h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #000;
+}
+.portfolio-content p {
+  text-align: center;
+  opacity: 0.5;
+}
+.portfolio-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.portfolio-wrapper .portfolio-card {
+  margin-top: 60px;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  width: 340px;
+  text-align: center;
+  padding: 4rem;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.portfolio-wrapper .portfolio-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 /*# sourceMappingURL=style.css.map */
