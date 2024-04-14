@@ -64,7 +64,6 @@ a {
         animation: wave-animation 15s linear infinite;
       }
       p {
-        color: $main-color;
         font-size: $font-size * 2;
         font-weight: 700;
         line-height: $line-height;
@@ -325,66 +324,26 @@ a {
     border-color: white;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   body {
     background-color: #e5fff9;
     padding: 20px 0px;
   }
   .page {
     padding-bottom: 100px;
-    .container {
-      flex-direction: column;
-      margin: 0 50px;
-      .container-left {
-        h1 {
-          font-size: $font-size * 5;
-        }
-        p {
-          font-size: $font-size * 1.5;
-        }
-      }
-      .container-right {
-        .profile-photo {
-          align-self: center;
-        }
-      }
-    }
-  }
-  .projects {
-    padding: 0px 50px;
-    flex-direction: column;
-    .box {
-      width: 100%;
-      flex-direction: row;
-      img {
-        height: 100%;
-        width: max-content;
-      }
-      .content {
-        p {
-          writing-mode: horizontal-tb;
-          text-orientation: sideways;
-        }
-      }
-    }
-  }
-  .bg-shape1,
-  .bg-shape2 {
-    display: none;
-  }
-}
-@media screen and (max-width: 1025px) {
-  .page {
     text-align: center;
     .container {
+      flex-direction: column-reverse;
+      margin: 0 50px;
       .container-left {
         gap: 20px;
+        min-height: auto;
         h1 {
-          font-size: $font-size * 3;
+          font-size: $font-size * 4;
           line-height: $line-height * 2;
         }
         p {
-          font-size: $font-size * 1;
+          font-size: $font-size * 1.25;
         }
         form {
           flex-direction: column;
@@ -404,6 +363,7 @@ a {
           flex-direction: column;
         }
         .profile-photo {
+          align-self: center;
           .circle {
             @include circle(300px, 300px, 2px);
           }
@@ -412,7 +372,10 @@ a {
     }
   }
   .projects {
+    padding: 0px 50px;
+    flex-direction: column;
     .box {
+      width: 100%;
       flex-direction: column;
       height: 500px;
       img {
@@ -427,6 +390,8 @@ a {
       }
       .content {
         p {
+          writing-mode: horizontal-tb;
+          text-orientation: sideways;
           font-size: $font-size;
         }
       }
@@ -434,8 +399,13 @@ a {
         img {
           display: block;
           height: 60%;
+          width: auto;
         }
       }
     }
+  }
+  .bg-shape1,
+  .bg-shape2 {
+    display: none;
   }
 }

@@ -1,0 +1,41 @@
+.header-section {
+  top: 20px;
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  .logo {
+    img {
+      width: 140px;
+    }
+  }
+  .header-nav {
+    .header-nav-menu {
+      .menu-item {
+        padding: 25px 20px;
+      }
+    }
+  }
+}
+.banner-section {
+  position: relative;
+  padding: 265px 0 190px;
+  background: #f9f2ff;
+  .banner-shape {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    .shape-1{
+        position: absolute;
+        content: "";
+        left: -22%;
+    }
+    .shape-2{
+        position: absolute;
+        content: "";
+        right: -22%;
+    }
+  }
+}

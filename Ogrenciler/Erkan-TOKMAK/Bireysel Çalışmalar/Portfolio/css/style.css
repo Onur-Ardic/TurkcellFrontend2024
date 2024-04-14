@@ -9,7 +9,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -25,6 +25,12 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @keyframes wave-animation {
@@ -60,13 +66,16 @@ body {
   }
 }
 header {
-  padding: 60px 0px 0px;
+  padding: 80px 0px 0px;
 }
 header nav a img {
   width: 96px;
   height: 56px;
 }
 
+.content {
+  padding-top: 12.5rem;
+}
 .content .content-left h1 {
   text-align: start;
   font-size: 7.5rem;
@@ -220,6 +229,7 @@ header nav a img {
   background-color: #D8E3E7;
   min-height: 100vh;
   max-height: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
   z-index: -999;
@@ -230,10 +240,130 @@ header nav a img {
   background-color: #51C4D3;
   min-height: 100vh;
   max-height: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
   z-index: -999;
   margin-left: 40%;
+}
+
+.project {
+  height: 100vh;
+  padding: 80px 0px 80px;
+  margin-top: 500px;
+  background-color: #fff;
+}
+.project h2 {
+  color: #126E82;
+  font-size: 2rem;
+  margin: 0 0 46px;
+}
+.project h2::after {
+  content: "";
+  width: 45px;
+  height: 5px;
+  background-color: #132C33;
+}
+.project-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.project-content .project-item {
+  width: 48%;
+  height: 300px;
+  gap: 50px;
+}
+.project-content .project-item img {
+  box-shadow: 0px 5px 33px -1px rgb(19, 44, 51);
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.project-content .project-item:hover {
+  margin-top: -30px;
+}
+
+.project1frame, .project2frame, .project3frame, .project4frame, .project5frame, .project6frame {
+  position: absolute;
+  width: 80%;
+  padding: 50px;
+  height: 800px;
+  z-index: -9999;
+  visibility: hidden;
+  background-color: #fff;
+  border-radius: 50px;
+  top: 1800px;
+  left: 200px;
+  box-shadow: 6px -1px 96px 15px rgba(0, 0, 0, 0.54);
+}
+.project1frame iframe, .project2frame iframe, .project3frame iframe, .project4frame iframe, .project5frame iframe, .project6frame iframe {
+  width: 100%;
+  position: relative;
+  height: 700px;
+  border-radius: 10px;
+}
+.project1frame svg, .project2frame svg, .project3frame svg, .project4frame svg, .project5frame svg, .project6frame svg {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #D8E3E7;
+}
+
+.checkbox1 {
+  visibility: hidden;
+}
+.checkbox1:checked ~ .project1frame {
+  visibility: visible;
+  z-index: 99999;
+  clear: both;
+}
+
+.checkbox2 {
+  visibility: hidden;
+}
+.checkbox2:checked ~ .project2frame {
+  visibility: visible;
+  z-index: 99999;
+  clear: both;
+}
+
+.checkbox3 {
+  visibility: hidden;
+}
+.checkbox3:checked ~ .project3frame {
+  visibility: visible;
+  z-index: 99999;
+  clear: both;
+}
+
+.checkbox4 {
+  visibility: hidden;
+}
+.checkbox4:checked ~ .project4frame {
+  visibility: visible;
+  z-index: 99999;
+  clear: both;
+}
+
+.checkbox5 {
+  visibility: hidden;
+}
+.checkbox5:checked ~ .project5frame {
+  visibility: visible;
+  z-index: 99999;
+  clear: both;
+}
+
+.checkbox6 {
+  visibility: hidden;
+}
+.checkbox6:checked ~ .project6frame {
+  visibility: visible;
+  z-index: 99999;
+  clear: both;
 }
 
 /*# sourceMappingURL=style.css.map */

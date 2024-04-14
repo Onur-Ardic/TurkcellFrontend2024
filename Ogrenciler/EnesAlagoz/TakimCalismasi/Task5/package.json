@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "sass": "^1.75.0"
+  },
+  "name": "task5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "main": "sass -w scss:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

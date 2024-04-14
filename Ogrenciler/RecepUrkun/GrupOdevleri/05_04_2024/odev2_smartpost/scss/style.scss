@@ -1,0 +1,36 @@
+@import "utilities";
+
+.header-section {
+  margin-top: 20px;
+  z-index: 999;
+  position: relative;
+  .header-menu {
+    @include flexible(space-between, center, null, null);
+  }
+  .menu-wrapper {
+    @include flexible(flex-end, center, row, 50px);
+  }
+  .main-area {
+    @include flexible(null, null, row, 50px);
+    padding: 25px 20px;
+    color: black;
+  }
+}
+
+.banner-section {
+  background-color: rgb(42, 131, 131);
+  padding: 265px 0 190px;
+  .pos-banner {
+    max-width: 100%;
+    .resim-2 {
+      right: 0;
+      top: 0;
+      position: absolute;
+    }
+    .resim-1 {
+      left: 0;
+      top: 0;
+      position: absolute;
+    }
+  }
+}

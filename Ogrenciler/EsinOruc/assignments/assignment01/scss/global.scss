@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins ", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+@mixin flex(
+  $display,
+  $justify: none,
+  $align: none,
+  $column: row,
+  $gap: 2rem,
+  $wrap: wrap
+) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $column;
+  flex-wrap: $wrap;
+  gap: $gap;
+}
+
+$sizes: 11, 13, 14, 15, 16, 20, 24, 30, 32, 48, 60, 120;
+@each $size in $sizes {
+  .fs-#{$size} {
+    font-size: $size * 1px;
+  }
+}
+
+$fontWeights: 100, 400, 500, 600, 700, 900;
+@each $weight in $fontWeights {
+  .fw-#{$weight} {
+    font-weight: $weight;
+  }
+}
+
+$fontStyles: normal, bold, italic;
+@each $style in $fontStyles {
+  .font-style-#{$style} {
+    font-style: $style;
+  }
+}
+
+$colors: (
+  "white": #ffffff,
+  "black": #000000,
+  "dark-cyan": #69846d,
+  "ash-gray": #afc8ad,
+  "champange-pink": #ffeae1,
+  "apricot": #ffd5c2,
+  "tangerine": #f28f3b,
+  "jasper": #c8553d,
+  "gray": #808080,
+  "light-gray": #a9a9a9,
+  "dark-gray": #4d4d4d,
+);
+
+@each $colorName, $colorValue in $colors {
+  .color-#{$colorName} {
+    color: $colorValue;
+  }
+}
+
+$bgColors: (
+  "white": #ffffff,
+  "black": #000000,
+  "dark-cyan": #69846d,
+  "ash-gray": #afc8ad,
+  "champange-pink": #ffeae1,
+  "apricot": #ffd5c2,
+  "tangerine": #f28f3b,
+  "jasper": #c8553d,
+);
+@each $bgColorName, $bgColorValue in $bgColors {
+  .bg-color-#{$bgColorName} {
+    background-color: $bgColorValue;
+  }
+}
+
+@function get-color-map($map, $color-name) {
+  @if map-has-key($map, $color-name) {
+    @return map-get($map, $color-name);
+  } @else {
+    @warn "The color `#{$color-name}` is not defined in the map.";
+    @return null;
+  }
+}
+
+@mixin button-style(
+  $padding-y: 0.415rem,
+  $padding-x: 0.75rem,
+  $border-radius: 0.25rem,
+  $background-color: none,
+  $color: none,
+  $border: none
+) {
+  padding: $padding-y $padding-x;
+  border-radius: $border-radius;
+  background-color: $background-color;
+  color: $color;
+  border: $border;
+  transition: background-color 0.3s, color 0.3s;
+}
