@@ -1,6 +1,6 @@
 @import './variables.scss' , './main.scss', './animations.scss';
 header {
-    padding: 60px 0px 0px;
+    padding: 80px 0px 0px;
     nav {
         a {
             img {
@@ -11,6 +11,7 @@ header {
     }
 }
 .content{
+    padding-top: 12.5rem;
     .content-left{
         h1 {
             @include text(start, $fontLarge, $color3)
@@ -150,6 +151,7 @@ header {
     background-color: $color1;
     min-height: 100vh;
     max-height: 100%;
+    height: 100vh;
     position: fixed;
     top: 0;
     z-index: -999;
@@ -159,6 +161,7 @@ header {
     background-color: $color2;
     min-height: 100vh;
     max-height: 100%;
+    height: 100vh;
     position: fixed;
     top: 0;
     z-index: -999;
@@ -166,7 +169,10 @@ header {
 }
 //! ----------Projects
 .project{
-    padding: 80px 0px;
+    height: 100vh;
+    padding: 80px 0px 80px;
+    margin-top: 500px;
+    background-color: #fff;
     h2 {
         color: $color3;
         font-size: $fontBig;
@@ -181,11 +187,12 @@ header {
     &-content{
         @include flex(flex, center,center,1rem);
         .project-item{
-        width: 24%;
+        width: 48%;
         height: 300px;
-        gap: 10px;
+        gap: 50px;
         img{
-            border: 1px solid $color4;
+            box-shadow: 0px 5px 33px -1px rgba(19,44,51,1);
+            border: none;
             border-radius: 10px;
             width: 100%;
             height: 100%;
@@ -197,16 +204,18 @@ header {
 }
     
 }
-.project1frame, .project2frame, .project3frame, .project4frame{
+.project1frame, .project2frame, .project3frame, .project4frame, .project5frame, .project6frame{
     position: absolute;
     width: 80%;
     padding: 50px;
     height: 800px;
-    z-index: 9999;
-    opacity: 0;
-    background-color: rgba($color4, $alpha: .7);
+    z-index: -9999;
+    // opacity: 0;
+    visibility: hidden;
+    // background-color: rgba($color4, $alpha: .7);
+    background-color: #fff;
     border-radius: 50px;
-    top: 150px;
+    top: 1800px;
     left: 200px;
     box-shadow: 6px -1px 96px 15px rgba(0,0,0,0.54);
     iframe {
@@ -222,27 +231,53 @@ header {
         color: $color1;
     }
 }
+
 .checkbox1 {
     visibility: hidden;
     &:checked ~ .project1frame {
-      opacity: 1;
+    //   opacity: 1;
+    visibility: visible;
+      z-index: 99999;
+      clear: both;
     }
   }
   .checkbox2 {
     visibility: hidden;
     &:checked ~ .project2frame {
-      opacity: 1;
+        visibility: visible;
+      z-index: 99999;
+      clear: both;
     }
   }
   .checkbox3 {
     visibility: hidden;
     &:checked ~ .project3frame {
-      opacity: 1;
+        visibility: visible;
+      z-index: 99999;
+      clear: both;
     }
   }
   .checkbox4 {
     visibility: hidden;
     &:checked ~ .project4frame {
-      opacity: 1;
+        visibility: visible;
+      z-index: 99999;
+      clear: both;
+    }
+  }
+  .checkbox5 {
+    visibility: hidden;
+    &:checked ~ .project5frame {
+        visibility: visible;
+      z-index: 99999;
+      clear: both;
+    }
+  }
+  .checkbox6 {
+    visibility: hidden;
+    &:checked ~ .project6frame {
+        visibility: visible;
+      z-index: 99999;
+      clear: both;
     }
   }

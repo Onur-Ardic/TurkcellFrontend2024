@@ -27,4 +27,10 @@ body {
   justify-content: space-between;
 }
 
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*# sourceMappingURL=main.css.map */
