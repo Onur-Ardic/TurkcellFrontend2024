@@ -17,7 +17,7 @@
   letter-spacing: 0.1em;
 }
 .header .header-nav .nav-menu-right {
-  color: #ffe5d4;
+  color: #7099c2;
   font-size: 14px;
   line-height: 30px;
   padding: 0 10px;
@@ -28,26 +28,51 @@
   grid-template-columns: 50% 50%;
   place-items: center;
 }
+.header .header-wrapper .social-media {
+  text-align: center;
+}
 .header .header-wrapper .social-media i {
-  color: #faedcd;
+  color: #7099c2;
+  font-size: 20px;
+  margin: 20px 10px;
+  font-weight: 2rem;
+  top: 20px;
 }
 .header .header-wrapper .container-wrap-left {
   height: 100vh;
   width: 100%;
   background: url("../images/background-photo.webp");
   background-size: cover;
+  padding-top: 6rem;
+}
+.header .header-wrapper .container-wrap-left .wave-img {
+  background: url("../images/wavy-shape4.png");
+  width: 100%;
+  height: 20px;
+  background-size: 645px 20px;
+  background-repeat: repeat-x;
+  animation: wave-img 15s linear infinite;
+  margin: 120px 0;
+}
+@keyframes wave-img {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 600px;
+  }
 }
 .header .header-wrapper .container-wrap-left .container-img {
   width: max-content;
+}
+.header .header-wrapper .container-wrap-left .container-img img {
+  margin-left: 50%;
   border-radius: 20px;
-  position: relative;
-  top: 20%;
-  left: 25%;
 }
 .header .header-wrapper .container-wrap-right {
   text-align: center;
   height: 100vh;
-  background-color: #efc7c2;
+  background-color: #fad9d9;
 }
 .header .header-wrapper .container-wrap-right .content-wrapper {
   position: relative;
@@ -75,13 +100,17 @@
 }
 .header .header-wrapper .container-wrap-right .content-wrapper .container-button a {
   color: black;
-  background-color: #ffe5d4;
-  border-radius: 10px;
+  background: #fedcd9;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
   width: 80%;
   padding: 0.8rem;
 }
 .header .header-wrapper .container-wrap-right .content-wrapper .bottom-content {
-  margin-top: 2rem;
+  margin-top: 4rem;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=style.css.map */
