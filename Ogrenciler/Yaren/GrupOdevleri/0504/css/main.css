@@ -56,6 +56,18 @@
   border-style: solid;
   border-color: rgb(255, 255, 255);
 }
+.photo {
+  width: 60px;
+  height: 60px;
+}
+.testi-thumb {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .smart-pos .container .testimonial .cards .card-header {
   justify-content: space-around;
   border-bottom: 1px solid #f0f0f0;
@@ -66,6 +78,29 @@
 .smart-pos .container .testimonial .cards .card-header .photo {
   border-radius: 50%;
 }
+.smart-pos .container .testimonial .cards .card-header .animation-elm{
+  animation:testi_round 6s linear infinite;
+  background: url(../../0504/images/round-3.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
+
+@keyframes testi_round {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+     transform: rotate(180deg);
+  }
+  100% {
+     transform: rotate(360deg);
+  }
+}
+
+
+
+
 .smart-pos .container .testimonial .cards p {
   padding-top:30px;
  
@@ -93,6 +128,7 @@
 .smart-pos .container.testimonial .cards h5{
   font-size:20px;
 }
+
 .sponsors .container {
     width: 70%;
     justify-content: space-between;
@@ -116,6 +152,7 @@
 }
 .footer .container .upper {
   gap: 20px;
+  
 }
 .footer .container .upper p{
     color: white;
@@ -131,6 +168,10 @@
   height: 70px;
   background-color: white;
   gap: 15px;
+  
+  padding: 10px 20px;
+  border-radius: 2px;
+
 }
 .footer .container .upper .stores p {
   color: #696969;
@@ -182,16 +223,24 @@
   }
   
 
-
-
-  .sponsors .logo-visible{
-    display: none;
+  .smart-pos .container .testimonial .cards{
+    width:50%;
   }
+
+.sponsors.container img{
+  align-items: center;
+  }
+
+
   .footer .container .footer-first {
     justify-content: space-between;
     padding-right: 140px;
     
     flex-direction: column;
+  }
+
+  .sm-hidden {
+    display: none;
   }
 }
 

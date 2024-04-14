@@ -135,6 +135,64 @@ form button:hover{
     margin-bottom: 32px;
 }
 
+.coming-image .img-box::before {
+    content: '';
+    position: absolute;
+    top: -45px;
+    left: -30px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid #fafafa;
+    z-index: 2;
+    pointer-events: none;
+    user-select: none;
+    animation: animate-img-circle 8s linear infinite;
+  }
+
+  .coming-image .img-box::after {
+    content: '';
+    position: absolute;
+    right: -420px;
+    top: 0;
+    width: 800px;
+    height: 800px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+    animation: animate-img-circle-2 3s linear infinite alternate;
+}
+  
+  @keyframes animate-img-circle {
+      0% {
+          top: -20px;
+          left: -20px;
+      }
+  
+      50% {
+          top: -20px;
+          left: 20px;
+          border-color: var(--main-color);
+      }
+  
+      100% {
+          top: -20px;
+          left: -20px;
+      }
+  }
+
+  @keyframes animate-img-circle-2 {
+    from {
+        top: -70px;
+    }
+    to {
+        top: 10px;
+        border-color: var(--main-color);
+    }
+}
+
 .coming-image img {
     position: relative;
     max-width: 100%;
