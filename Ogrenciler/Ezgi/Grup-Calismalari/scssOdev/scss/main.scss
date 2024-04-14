@@ -98,7 +98,7 @@
     }
     .hero-bottom {
         @include hizalamaMixin(flex, row, flex-start, center);
-        padding-bottom: 3rem;
+        padding-bottom: 7rem;
         h2 {
             @include fontMixin(1rem, white);
             margin-right: 10px;
@@ -113,8 +113,158 @@
         }
     }
 }
+/* buğra */
+.featuredSection {
+    @include hizalamaMixin(flex, row, center, center);
+    background-color: #f8f9fa;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  
+    h2 {
+      font-family: "Nanum Gothic", sans-serif;
+      font-weight: 100;
+      font-size: 20px;
+      margin-left: 100px;
+      margin-bottom: 20px;
+    }
+    .featured-cards {
+      @include hizalamaMixin(flex, row, center, center);
+      gap: 30px;
+      .featured-card-item {
+        border-radius: 4rem !important;
+        @include hizalamaMixin(flex, column, flex-start, center);
+        img {
+          width: 250px;
+          height: 150px;
+          cursor: pointer;
+        }
+        .card-title {
+          .heart {
+            display: flex;
+            button {
+              border-radius: 30px;
+              font-size: 11px;
+              border: none;
+              padding: 10px 25px;
+              background-color: #e9ecef;
+              font-weight: 500;
+            }
+            .heart-icon {
+              width: 2rem;
+              height: 2rem;
+              @include hizalamaMixin(flex, none, center, center);
+              border-radius: 50%;
+              background-color: #dee2e6;
+              margin-left: 70px;
+              &:hover {
+                background-color: red;
+                i {
+                  color: white !important;
+                }
+              }
+              i {
+                font-size: 15px;
+              }
+            }
+          }
+          gap: 15px;
+          width: 100%;
+          @include hizalamaMixin(flex, column, flex-start, flex-start);
+          @include paddingMixin(20px, 20px, 30px, 20px);
+          background-color: white;
+          h5 {
+            font-size: 13px;
+            color: #4d4d4d;
+            font-weight: 200;
+          }
+          .rewiev {
+            font-size: 13px;
+            font-weight: 200;
+          }
+        }
+      }
+    }
+  }
+  
+  .arrow-icons-general {
+    @include hizalamaMixin(flex, none, center, center);
+    padding-top: 25px;
+    font-size: 20px;
+    gap: 45px;
+    .arrow-icons-left {
+      &:hover {
+        cursor: pointer;
+        color: #0861d6;
+      }
+    }
+    .arrow-icons-right {
+      &:hover {
+        cursor: pointer;
+        color: #0861d6;
+      }
+    }
+  }
+  .popularCategoriesSection {
+    height: 500px;
+    .populer-categories-title {
+      @include hizalamaMixin(flex, column, center, center);
+      gap: 15px;
+      padding-top: 100px;
+      h1 {
+        font-weight: 700;
+        font-size: 2rem;
+      }
+      p {
+        color: #4d4d4d;
+      }
+      .title-border {
+        border: solid;
+        width: 80px;
+        height: 1px;
+        border-radius: 20px;
+      }
+    }
+    .multiple-items {
+      @include hizalamaMixin(flex, row, center, center);
+      padding-top: 40px;
+      font-size: 40px;
+      .multiple-row {
+        @include hizalamaMixin(flex, row, center, center);
+      }
+      .populer-categories-items {
+        @include hizalamaMixin(flex, column, center, center);
+        height: 185px;
+        width: 180px;
+        gap: 10px;
+        &:hover {
+          transition: all 0.2s ease-in-out;
+          background-color: #2f89fc;
+          width: 195px;
+          height: 190px;
+          border-radius: 15px;
+          button {
+            background-color: #0861d6;
+          }
+          i {
+            color: #fff !important;
+          }
+        }
+        h5 {
+          font-size: 14px;
+          color: #666666;
+        }
+        button {
+          padding: 2px 20px;
+          font-size: 14px;
+          border-radius: 20px;
+          border: none;
+        }
+      }
+    }
+  }
 .trendingTodaySection {
     background-color: #f8f9fa;
+    padding-bottom: 5rem;
     .row h2 {
         @include paddingMixin(5rem, 0, 3rem, 0);
         @include fontMixin(2rem, #2f89fc)
@@ -169,6 +319,204 @@
         }
     }
 }
+/* RÜMEYSA */
+.text-grey{
+    color:#999999;
+}
+.text-white{
+    color:white;
+}    
+
+
+.testiminationsSections{
+    background-color: #fff;
+    .testi-tab{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        .testi-header h1{
+            @include fontMixin( 2rem, #2f89fc );
+            text-align: center;
+        }
+        .testi-body{
+            @include hizalamaMixin(flex, row, center, center); 
+            text-align: center;
+        }
+        .testi-body-text{
+            margin: 50px 70px;
+            @include hizalamaMixin(flex, column, center, center);
+            padding: 0 70px;
+            width: 700px;
+        }
+        .testi-body-text img{ 
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+        .testi-body-text h6{
+            font-size: 15px;
+            margin-top: 7px;
+        }
+        .testi-body-text p{
+            font-size: 18px;
+            margin-top: 15px;
+            line-height: 35px;
+        }
+    }
+}
+.ourblogSection{ 
+    background: #f8f7f7;
+    .ourblog{
+        max-width: 100%;
+        padding: 50px 0;
+        text-align: center;
+        .ourblog-header{
+            h1{
+                @include fontMixin(2rem,#2f89fc);
+            }
+            p{
+                margin-top: 10px;
+                @include fontMixin(1rem,rgba(0, 0, 0, 0.5))
+            }
+        }
+        .ourblog-body{
+            margin: 40px 0;
+            @include hizalamaMixin(flex, row, flex-start, center);
+            gap: 15px;
+            .ourblog-part{
+                text-align: left;
+                img{
+                    width: 100%;
+                    border-radius: 5px;
+                }
+                
+                .ourblog-meta{
+                    @include fontMixin( 14px, #b3b3b3);
+                    margin-top: 10px;
+                }
+                p{
+                    @include fontMixin(1rem, #4d4d4d);
+                    margin-top: 20px;
+                    line-height: 1.7em;
+                }
+            }
+        }
+        .button-ourblog{
+            border-radius: 5px;
+            padding: 10px 20px;
+            border-color: transparent;
+            margin-bottom: 50px;
+        }
+    }
+}
+.newsletterSection{
+    background-color: #2f89fc;
+    .newsletter{
+        padding: 60px 100px;
+        @include hizalamaMixin(flex, row, space-evenly, center);
+        .newsletter-header{
+            h1{
+                @include fontMixin(18px, white);
+            }
+            p{
+                @include fontMixin( 16px, white);
+                margin-top: 12px;
+            }    
+        }
+        .newsletter-input{
+            .email-form{
+                padding-left: 0;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 100px;
+                background-color: #2f89fc;
+                border: none;
+                border-bottom: 1px solid #fff;
+               
+            }
+            ::placeholder{
+                @include fontMixin(18px, white);
+                font-style: italic;
+            }
+        
+            .buton-news{
+                background-color: rgb(246, 243, 243);
+                @include fontMixin(1rem, black);
+                padding: 10px 15px;
+                border-color: transparent;
+                position: relative;
+            }
+        }
+    }
+}
+.footer{
+    background-color: #333333;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .footer-body{
+        padding: 60px 120px;
+        @include hizalamaMixin(flex, column, center, center);
+        .footer-top{
+            @include hizalamaMixin(flex, row, flex-start, start);
+            margin-bottom: 50px;
+            gap: 20px;
+            .footer-about{
+                padding-right: 15px;
+                flex: 40%;
+                h2{
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+            }
+            .footer-col3{
+                flex:20%;
+                h2{
+                    margin-bottom: 10px;
+                }
+                li{
+                    line-height: 30px;
+                }
+                .social-media{
+                    margin-right:10px;
+                }
+            }
+            .footer-input{
+                flex: 20%;
+                display: flex;
+                .input-footer{
+                    background-color: #333333;
+                    padding: 7px 8px;
+                    border: 1px solid #ced4da;
+                    ::placeholder{
+                        @include fontMixin(1rem, #999999);
+                    }
+                }
+                .footer-btn{
+                    padding: 7px 9px;
+                    border-color: transparent;
+                }
+            }
+        }
+        .footer-bottom{
+            border-top: 1px solid #999999;
+            margin-top: 20px;
+            p{
+                padding-top: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1140px) {
+    .featuredSection {
+      padding-top: 5rem;
+      .featured-cards {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
 @media screen and (max-width: 992px) {
     .hero-form {
         .hero-form-inputs {
@@ -212,11 +560,87 @@
             }
         }
     }
+    .featuredSection {
+        h2{
+            margin-left: 100px;
+        }
+            padding-top: 5rem;
+            .featured-cards {
+              display: flex;
+              flex-wrap: wrap;
+            }
+          }
+    .popularCategoriesSection {
+        padding-bottom: 15rem;
+        .multiple-items {
+          display: flex;
+          flex-direction: column;
+          
+        }
+      }
+    .trendingTodaySection{
+        margin-top: 10rem;
+    }
     .trendingCards .trend-card-row {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         gap: 0 !important;
+    }
+    .ourblog{
+        .ourblog-body{
+            margin: 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center !important;
+            gap: 30px !important;
+            .ourblog-part{
+                margin-bottom: 30px;
+                width: 45%;
+            }
+        }
+   }
+   .newsletterSection{
+        .newsletter{
+            padding: 60px 70px;
+            @include hizalamaMixin(flex, row, center, start); 
+            gap: 30px;
+            .newsletter-input{
+                display: flex;
+                .email-form{
+                    padding-right: 50px;
+                }
+                
+            }    
+        }
+    }
+    .footer{
+        .footer-body{
+            padding: 60px 70px;
+            .footer-top{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                /*@include hizalamaMixin(flex, column, flex-start, start); */
+                .footer-about{
+                    flex: 2; 
+                    margin-bottom: 30px;
+                }
+                .footer-col3{
+                    flex:1;
+                    margin-bottom: 30px;
+                    justify-content: flex-start;
+                }
+                .footer-input{
+                    flex: 1;
+                    .input-footer{
+                        background-color: #333333;
+                        padding: 7px 0;}
+
+                }
+            }
+            
+        }
     }
 }
 @media screen and (max-width: 768px) {
@@ -233,6 +657,35 @@
                     border-radius: 7px 7px 0 0;
                 }
             }
+        }
+    }
+    .newsletterSection{
+        .newsletter{
+            padding: 60px 70px;
+            @include hizalamaMixin(flex, column, center, start);
+        }   
+    }       
+    .ourblog{
+        .ourblog-body{
+            margin: 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .ourblog-part{
+                margin-bottom: 30px;
+                width: 100%;
+            }
+        }
+   }  
+    .footer{
+        .footer-body{
+            padding: 60px 70px;
+            .footer-top{
+                display: flex;
+                flex-direction: column;
+                gap: 30px !important;
+            }
+            
         }
     }
 
