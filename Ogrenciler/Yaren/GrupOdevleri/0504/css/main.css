@@ -13,18 +13,13 @@
   padding: 20px;
 }
 
-
- 
-.about-section .section-wrapper .lab-item .lab-inner .lab-thumb{
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  line-height: 80px;
-  border-radius: 30px 2px;
-  margin-bottom: 20px;
-  border-radius: 100%;
-  
+.about-section .section-wrapper .lab-item .lab-inner img {
+  display: block;
+  margin: auto;
+  padding: 20px;
 }
+
+
 
 .about-section.section-wrapper .lab-item .lab-inner .lab-content {
   text-align: center;
@@ -52,16 +47,21 @@
 .smart-pos .container .testimonial {
   margin:0 -15px;
 }
-.smart-pos .container .testimonial .cards {
+
+.smart-pos .container .testimonial .cards{
   padding: 30px;
   background: #fff;
   width: 30%;
+  border:3px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
 }
 .smart-pos .container .testimonial .cards .card-header {
   justify-content: space-around;
   border-bottom: 1px solid #f0f0f0;
   padding-bottom: 20px;
   margin-bottom: 20px;
+  
 }
 .smart-pos .container .testimonial .cards .card-header .photo {
   border-radius: 50%;
@@ -75,7 +75,24 @@
   font-size:20px;
 }
 
+.smart-pos .container .testimonial .cards .card-header {
+  justify-content: space-around;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  
+}
+.smart-pos .container .testimonial .cards .card-header .photo {
+  border-radius: 50%;
+}
+.smart-pos .container .testimonial .cards p {
+  padding-top:30px;
+}
 
+
+.smart-pos .container.testimonial .cards h5{
+  font-size:20px;
+}
 .sponsors .container {
     width: 70%;
     justify-content: space-between;
@@ -88,10 +105,14 @@
 .footer {
   padding: 70px 0;
   background-image: url(../images/app-footer-bg.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .footer .container {
   justify-content: space-between;
   flex-wrap: wrap;
+  
 }
 .footer .container .upper {
   gap: 20px;
@@ -146,5 +167,31 @@
   color: white;
 }
 
+@media screen and (max-width: 768px) {
 
+  .about-section .section-wrapper .lab-item{
+    flex-direction:column;
+  }
+  .about-section .section-wrapper .lab-inner .lab-thumb img{
+    justify-content:center;
+    align-items: center;
+  }
+  .about-section .section-wrapper .lab-inner .lab-thumb {
+    justify-content:center;
+    align-items: center;
+  }
+  
+
+
+
+  .sponsors .logo-visible{
+    display: none;
+  }
+  .footer .container .footer-first {
+    justify-content: space-between;
+    padding-right: 140px;
+    
+    flex-direction: column;
+  }
+}
 
