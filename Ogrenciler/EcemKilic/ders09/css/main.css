@@ -146,9 +146,9 @@
 }
 
 #popular-categories {
-  min-height: 650px;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 #popular-categories h2 {
   font-size: 32px;
@@ -211,6 +211,9 @@
   margin-bottom: 50px;
 }
 #trending-today .cards .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: -3px 3px 24px -5px rgba(0, 0, 0, 0.57);
   border-radius: 5px;
   margin-bottom: 30px;
@@ -250,6 +253,9 @@
   font-size: 13px;
 }
 
+#testimonials {
+  position: relative;
+}
 #testimonials h2 {
   font-size: 32px;
   color: #2f89fc;
@@ -270,6 +276,7 @@
   font-size: 16px;
 }
 #testimonials .testimonials .testimonial p {
+  width: 100%;
   margin-block-start: 1em;
   margin-block-end: 1em;
   color: #737373;

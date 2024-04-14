@@ -153,9 +153,9 @@ $brad5: 5px;
   }
 }
 #popular-categories {
-  min-height: 650px;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 100px;
     h2{
         font-size: 32px;
         color: $blueColor;
@@ -219,6 +219,9 @@ $brad5: 5px;
   }
   .cards {
     .card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       box-shadow: -3px 3px 24px -5px rgba(0, 0, 0, 0.57);
       border-radius: $brad5;
       margin-bottom: 30px;
@@ -262,6 +265,7 @@ $brad5: 5px;
   }
 }
 #testimonials {
+  position: relative;
   h2 {
     font-size: 32px;
     color: $lightBlueColor;
@@ -284,6 +288,7 @@ $brad5: 5px;
         }
       }
       p {
+        width: 100%;
         margin-block-start: 1em;
         margin-block-end: 1em;
         color: #737373;

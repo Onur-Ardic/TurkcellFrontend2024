@@ -629,6 +629,18 @@ ul li {
   padding-bottom: 4rem;
   border-bottom: 1px dotted white;
 }
+.footer .grid .item-container {
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.footer .grid .item-container .item .bottom-container {
+  padding: 20px;
+  width: 250px;
+  height: 180px;
+}
 .footer a {
   color: white;
 }
