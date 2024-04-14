@@ -482,6 +482,20 @@
       padding-bottom: 4rem;
       border-bottom: 1px dotted white;
     }
+    .item-container {
+      flex-wrap: wrap;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      .item {
+        .bottom-container {
+          padding: 20px;
+          width: 250px;
+          height: 180px;
+        }
+      }
+    }
   }
   a {
     color: white;
