@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  width: 60%;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
@@ -31,8 +31,15 @@ body {
   text-align: center;
 }
 
-.mb-4 {
-  margin-bottom: 1.5rem;
+.gray-button {
+  font-size: 11px;
+  display: inline-block;
+  padding: 5px 20px;
+  background: #e9ecef;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=utilities.css.map */

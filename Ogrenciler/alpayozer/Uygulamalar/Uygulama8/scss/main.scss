@@ -1,328 +1,318 @@
 @import "./variables.scss";
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-@function weight($weight-name){
-    @return map-get($font-weights,$weight-name)
-};
-
-@mixin special-text($fontSize,$color,$weight){
-    font-size: $fontSize;
-    color: $color;
-    font-weight:weight($weight);
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
 }
 
-@mixin sub-title{
-    font-size: $fs-16;
-    color: $gray-content;
-    font-weight: weight(regular);
-};
+@mixin special-text($fontSize, $color, $weight) {
+  font-size: $fontSize;
+  color: $color;
+  font-weight: weight($weight);
+}
 
-@mixin card-title{
-    font-size: $fs-16;
-    color: $primary-color;
-    font-weight: weight(medium);
-    text-decoration: none;
-};
+@mixin sub-title {
+  font-size: $fs-16;
+  color: $gray-content;
+  font-weight: weight(regular);
+}
 
-@mixin card-subtitle{
-    font-size: $fs-13;
-    color: $gray-content;
-    font-weight: weight(regular);
-    margin-bottom: 1rem;
-};
+@mixin card-title {
+  font-size: $fs-16;
+  color: $primary-color;
+  font-weight: weight(medium);
+  text-decoration: none;
+}
 
- @mixin category-span{
-    font-size: $fs-11;
-    padding: 5px 20px;
-    background: #e9ecef; //variables'a ekle
-    border-radius: 30px;
-    color: $black;
-    font-weight: weight(bold);
+@mixin card-subtitle {
+  font-size: $fs-13;
+  color: $gray-content;
+  font-weight: weight(regular);
+  margin-bottom: 1rem;
+}
+
+@mixin category-span {
+  font-size: $fs-11;
+  padding: 5px 20px;
+  background: #e9ecef; //variables'a ekle
+  border-radius: 30px;
+  color: $black;
+  font-weight: weight(bold);
 }
 
 .container {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (max-width: 768px) {
-    
-
-    .background-image{
-        header{
-            padding: 20px 0px;
-        }
-        .logo{
-            @include special-text($fs-20,$white ,900 );
-            text-decoration: none; 
+  .background-image {
+    header {
+      padding: 20px 0px;
+    }
+    .logo {
+      @include special-text($fs-20, $white, 900);
+      text-decoration: none;
     }
 
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(https://preview.colorlib.com/theme/directoryads/images/hero_2.jpg.webp) no-repeat center center/cover;
-        position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(https://preview.colorlib.com/theme/directoryads/images/hero_2.jpg.webp)
+        no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+
+    .welcome-top {
+      text-align: center;
+      h1 {
+        @include special-text($fs-32, $white, regular);
+        margin-bottom: 0.5rem;
+      }
+      p {
+        @include special-text($fs-19, $white, regular);
+        margin-bottom: 1rem;
+      }
+    }
+    .welcome-form {
+      border-radius: 4px;
+      padding: 20px;
+      margin-bottom: 1rem;
+      background: rgba(255, 255, 255, 0.8);
+
+      input,
+      select {
+        border-radius: 0.25rem;
+        height: 55px;
         width: 100%;
-    
-        .welcome-top{
-            text-align: center;
-            h1{
-                @include special-text($fs-32,$white ,regular );
-                margin-bottom: 0.5rem;
-            }
-            p{
-                @include special-text($fs-19,$white ,regular );
-                margin-bottom: 1rem;
-            }
+        border: none;
+        padding: 0.375rem 0.75rem;
+        background-color: $white;
+        &::placeholder {
+          color: $gray-content;
         }
-        .welcome-form{
-            border-radius: 4px;
-            padding: 20px;
-            margin-bottom: 1rem;
-            background: rgba(255, 255, 255, 0.8);
-
-            input , select{
-                border-radius: 0.25rem;
-                height: 55px;
-                width: 100%;
-                border: none;
-                padding: 0.375rem 0.75rem;
-                background-color: $white;
-                &::placeholder{
-                    color:$gray-content;
-                }
-            }
-            .input-area{
-                margin-bottom: 1.5rem;
-                button{
-                    padding: 10px 30px;
-                    border-radius: 0.25rem;
-                    background-color: $primary-color;
-                    border: none;
-                    color: $white;
-                    font-weight: weight(regular);
-                    text-align: center;
-                    width: 100%;
-                }
-                .wrap-icon{
-                    position: relative;
-                    i{
-                        position: absolute;
-                        right: 10px;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        font-size: $fs-16;
-                        color: $gray-content;
-                    }
-                }
-            }
+      }
+      .input-area {
+        margin-bottom: 1.5rem;
+        button {
+          padding: 10px 30px;
+          border-radius: 0.25rem;
+          background-color: $primary-color;
+          border: none;
+          color: $white;
+          font-weight: weight(regular);
+          text-align: center;
+          width: 100%;
         }
-        .welcome-footer{
-            padding-bottom: 20px;
-            h2{
-                @include special-text($fs-16,$white ,medium );
-                margin-bottom: 0.5rem;
-            }
-            a{
-                @include special-text($fs-13,$white ,regular );
-               border-radius: 4px;
-               padding: 2px 10px;
-               background: rgba(255, 255, 255, 0.2);
-               border: 1px solid #fff;
-            }
-           
+        .wrap-icon {
+          position: relative;
+          i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: $fs-16;
+            color: $gray-content;
+          }
         }
+      }
     }
-
-    .featured-ads{
-        padding: 2.5em 0;
-        background-color: #f8f9fa ;
-        .featured-title{
-            h2{
-                margin-bottom: 1.5rem;
-                @include special-text($fs-20,$black ,medium )
-            }
-        }
-        .featured-cards{
-            box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
-
-           
-            .featured-cards-image{
-                display: block;
-                background-image: url("https://preview.colorlib.com/theme/directoryads/images/img_2.jpg.webp");
-                height: 150px;
-                background-size:cover;
-                background-position: center;
-                background-repeat: no-repeat; 
-            }
-            .featured-cards-content{
-                .featured-review{
-                    color: #6c757d;
-                    .featured-star{
-                        color: #f89d13;
-                    }
-                }
-                padding: 20px;
-
-                span{
-                   
-                    @include category-span();
-                    margin-bottom: 20px;
-                }
-                h3{
-                    margin-top: 20px;
-                    margin-bottom: 0.5rem;
-                    @include card-title();
-                }
-                address{
-                    margin-bottom: 1rem;
-                    @include card-subtitle();
-                }
-                
-
-            }
-            
-
-        }
-       
+    .welcome-footer {
+      padding-bottom: 20px;
+      h2 {
+        @include special-text($fs-16, $white, medium);
+        margin-bottom: 0.5rem;
+      }
+      a {
+        @include special-text($fs-13, $white, regular);
+        border-radius: 4px;
+        padding: 2px 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid #fff;
+      }
     }
-    .testiHead{
-        font-weight: bold;
-        font-size: 2rem;
-        color: $primary-color;
-        margin-block-start: 0.83em;
-        margin-block-end: 0.83em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        unicode-bidi: isolate;
-        text-align: center;
+  }
+
+  .featured-ads {
+    padding: 2.5em 0;
+    background-color: #f8f9fa;
+    .featured-title {
+      h2 {
+        margin-bottom: 1.5rem;
+        @include special-text($fs-20, $black, medium);
+      }
     }
-    .testiImg Img{
-        position: relative;
-        max-width: 30%;
-        border-radius: 50%;
-        z-index: 1;
+    .featured-cards {
+      box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+
+      .featured-cards-image {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-        
+        background-image: url("https://preview.colorlib.com/theme/directoryads/images/img_2.jpg.webp");
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .featured-cards-content {
+        .featured-review {
+          color: #6c757d;
+          .featured-star {
+            color: #f89d13;
+          }
+        }
+        padding: 20px;
+
+        span {
+          @include category-span();
+          margin-bottom: 20px;
+        }
+        h3 {
+          margin-top: 20px;
+          margin-bottom: 0.5rem;
+          @include card-title();
+        }
+        address {
+          margin-bottom: 1rem;
+          @include card-subtitle();
+        }
+      }
     }
-    .testiText{
-     color: #4d4d4d;
-     font-weight: 400;
-     font-size: 1.5rem;
-     font-style: italic;
-     text-align: center;
-     margin-top: 20px;
-    }
-          
-    .ourBlog-p{
-        color: rgba(0, 0, 0, 0.5);
-        margin-top: 0;
+  }
+  .testiHead {
+    font-weight: bold;
+    font-size: 2rem;
+    color: $primary-color;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    text-align: center;
+  }
+  .testiImg Img {
+    position: relative;
+    max-width: 30%;
+    border-radius: 50%;
+    z-index: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .testiText {
+    color: #4d4d4d;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .ourBlog-p {
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    text-align: center !important;
+  }
+  .h-entry {
+    margin-bottom: 30px;
+    max-width: 100%;
+    height: auto;
+  }
+  .h-entry meta {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-bottom: 1rem !important;
+    display: block;
+    unicode-bidi: isolate;
+  }
+  .h-entry-p {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    color: #4d4d4d;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "sans-serif";
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+  }
+  .main-Button {
+    cursor: pointer;
+    color: #fff !important;
+    padding-left: 1.5rem !important;
+    padding-bottom: 0.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 0.5rem !important;
+    border-radius: 0.25rem !important;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    text-align: center;
+    font-weight: 400;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+      -webkit-box-shadow 0.15s ease-in-out;
+    box-sizing: border-box;
+    font-family: "sans-serif";
+  }
+
+  .popular-categories {
+    text-align: center;
+    .categories-title {
+      h2 {
+        @include special-text($fs-32, $primary-color, semi-bold);
+        margin-bottom: 0.5rem;
+      }
+      p {
+        @include special-text($fs-16, rgba(0, 0, 0, 0.5), regular);
         margin-bottom: 1rem;
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        unicode-bidi: isolate;
-        text-align: center !important;
-    } 
-    .h-entry{
-        margin-bottom: 30px;
-        max-width: 100%;
-        height: auto;
+      }
     }
-    .h-entry meta{
-        color: #b3b3b3;
-        font-size: 14px;
-        margin-bottom: 1rem !important;
-        display: block;
-        unicode-bidi: isolate;
-    }
-    .h-entry-p{
-        margin-top: 10px;
-        margin-bottom: 1rem;
-        color: #4d4d4d;
-        font-weight: 400;
-        font-size: 1rem;
-        font-family: "sans-serif";
-        line-height: 1.15;
-        -webkit-text-size-adjust: 100%
-        
-    }
-    .main-Button{
-        cursor: pointer;
-        color: #fff !important;
-        padding-left: 1.5rem !important;
-        padding-bottom: 0.5rem !important;
-        padding-right: 1.5rem !important;
-        padding-top: 0.5rem !important;
-        border-radius: 0.25rem !important;
-        background-color: $primary-color;
-        border-color: $primary-color;
-        text-align: center;
-        font-weight: 400;
-        white-space: nowrap;
-        vertical-align: middle;
-        user-select: none;
-        border: 1px solid transparent;
-        font-size: 1rem;
-        line-height: 1.5;
-        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-        box-sizing: border-box;
-        font-family: "sans-serif";
-    }
-
-    .popular-categories{
-        text-align: center;
-        .categories-title{
-            h2{
-                @include special-text($fs-32, $primary-color , semi-bold );
-                margin-bottom: 0.5rem;
-            }
-            p{
-                @include special-text($fs-16, rgba(0, 0, 0, 0.5) , regular );
-                margin-bottom: 1rem;
-            }
-
+    .categories-cards {
+      display: grid;
+      grid-template-rows: repeat(6, 1fr);
+      gap: 1rem;
+      .categories-card {
+        padding: 30px 10px;
+        background: $white;
+        a {
+          text-decoration: none;
+          .categories-card-icon {
+            font-size: $fs-45;
+            color: $primary-color;
+            margin-bottom: 10px;
+          }
+          .categories-card-caption {
+            @include special-text($fs-15, #666666, regular);
+            margin-bottom: 0.5rem;
+          }
+          .categories-card-number {
+            padding: 2px 20px;
+            border-radius: 30px;
+            display: inline-block;
+            background: #e9ecef;
+            @include special-text($fs-14, $black, regular);
+            line-height: 1.7;
+          }
         }
-        .categories-cards{
-            display: grid;
-            grid-template-rows: repeat(6, 1fr);
-            gap: 1rem;
-            .categories-card{
-                padding: 30px 10px;
-                background: $white;
-                a{
-                    text-decoration: none;
-                    .categories-card-icon{
-                        font-size: $fs-45;
-                        color: $primary-color;
-                        margin-bottom: 10px;
-                    }
-                    .categories-card-caption{
-                        @include special-text($fs-15,#666666 ,regular);
-                        margin-bottom: 0.5rem;
-                    }
-                    .categories-card-number{
-                        padding: 2px 20px;
-                        border-radius: 30px;
-                        display: inline-block;
-                        background: #e9ecef;
-                        @include special-text($fs-14, $black ,regular );
-                        line-height: 1.7;
-                    }
-                }
-            }
-
-        }
+      }
     }
-
-
+  }
 }

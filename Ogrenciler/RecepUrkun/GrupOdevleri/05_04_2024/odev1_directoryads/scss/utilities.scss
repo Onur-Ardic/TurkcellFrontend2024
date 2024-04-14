@@ -27,33 +27,29 @@ body {
 }
 
 .container {
-  width: 60%;
-  // max-width: 114px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
 }
 
-.pointer {
-  cursor: pointer;
+.pointer{
+    cursor: pointer;
 }
 
 .text-center {
   text-align: center;
 }
 
-.mb-4 {
-  margin-bottom: 1.5rem;
-}
 
-@mixin font($size, $color, $weight) {
+@mixin font($size, $color,$weight) {
   font-size: $size;
   color: $color;
   font-weight: $weight;
 }
 
-@mixin grayButton {
+.gray-button {
   font-size: 11px;
   display: inline-block;
   padding: 5px 20px;
@@ -65,16 +61,16 @@ body {
 }
 
 @mixin flexible($justify, $align, $gap) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-  gap: $gap;
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
 }
 
-@mixin button($padding, $borderRad, $color, $bgColor, $fontSize) {
-  padding: $padding;
-  border-radius: $borderRad;
-  color: $color;
-  background-color: $bgColor;
-  font-size: $fontSize;
+@mixin button($padding,$borderRad,$color,$bgColor,$fontSize){
+    padding: $padding;
+    border-radius: $borderRad;
+    color: $color;
+    background-color: $bgColor;
+    font-size: $fontSize;
 }

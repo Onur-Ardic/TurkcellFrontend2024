@@ -1,23 +1,6 @@
 @import "global.css";
 
-// $background: linear-gradient(
-//   to bottom right,
-//   orange,
-//   pink 30%,
-//   yellow 50%,
-//   lightblue 70%,
-//   pink
-// );
-$background: linear-gradient(
-  to bottom right,
-
-  #ff9392 40%,
-  #c9daea 50%,
-  #a3cdeb 0%,
-  #7ccefb 20%,
-
-  pink 10%
-);
+$background: #c9def4;
 
 .header {
   height: 100vh;
@@ -36,7 +19,7 @@ $background: linear-gradient(
       letter-spacing: 0.1em;
     }
     .nav-menu-right {
-      color: #8c230b;
+      color: #ffe5d4;
       font-size: 14px;
       line-height: 30px;
       padding: 0 10px;
@@ -48,24 +31,30 @@ $background: linear-gradient(
     grid-template-columns: 50% 50%;
     place-items: center;
 
+    .social-media {
+      i {
+        color: #faedcd;
+      }
+    }
     .container-wrap-left {
       height: 100vh;
       width: 100%;
-      background: $background;
+      background: url("../images/background-photo.webp");
+      background-size: cover;
+
       .container-img {
         width: max-content;
-        background: $background;
         border-radius: 20px;
         position: relative;
         top: 20%;
         left: 25%;
       }
     }
+    // #eecfd9;
     .container-wrap-right {
       text-align: center;
       height: 100vh;
-      background-color: #fad9d9;
-
+      background-color: #efc7c2;
       .content-wrapper {
         position: relative;
         top: 15%;
@@ -93,7 +82,7 @@ $background: linear-gradient(
 
           a {
             color: black;
-            background-color: red;
+            background-color: #ffe5d4;
             border-radius: 10px;
             width: 80%;
             padding: 0.8rem;
