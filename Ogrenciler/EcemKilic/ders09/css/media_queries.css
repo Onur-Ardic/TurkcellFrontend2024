@@ -1,0 +1,205 @@
+@media screen and (min-width: 500px) {
+  #hero .label-area {
+    min-width: 100%;
+  }
+  #hero .label-area input,
+  #hero .label-area select {
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 6px 12px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  #hero .label-area button {
+    background-color: #0974fb;
+    color: #fff;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 6px 12px;
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #hero .label-area {
+    width: 650px;
+  }
+  #featured-ads .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  #featured-ads .cards .card {
+    width: 100%;
+  }
+  #popular-categories .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  #popular-categories .items .item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #hero .content .title {
+    font-size: 48px;
+    margin-top: 80px;
+  }
+  #hero .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+  #hero .container p {
+    display: inline-block;
+  }
+  #hero .container nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 55px;
+  }
+  #hero .container nav .logo {
+    font-weight: 900;
+    font-size: 20px;
+  }
+  #hero .container nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap: 25px;
+    font-size: 15px;
+  }
+  #hero .container nav button {
+    background-color: #2f89fc;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    padding: 12px 18px;
+    display: inline-block;
+  }
+  #hero .container .label-area {
+    display: flex;
+    flex-direction: row;
+    min-width: 1100px;
+    height: 100px;
+    gap: 20px;
+  }
+  #hero .container .label-area input,
+  #hero .container .label-area select {
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 6px 12px;
+    margin-bottom: 20px;
+  }
+  #hero .container .label-area button {
+    background-color: #0974fb;
+    color: #fff;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    min-width: 150px;
+    font-size: 1rem;
+    padding: 6px 12px;
+    width: 150px;
+    margin-top: 0px;
+  }
+  #featured-ads h2 {
+    margin-left: 75px;
+  }
+  #featured-ads .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  #featured-ads .cards .card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+}
+@media screen and (min-width: 576px) {
+  #popular-categories .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  #popular-categories .items .item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #popular-categories .items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+  }
+  #popular-categories .items .item {
+    width: 100%;
+  }
+  #trending-today h2 {
+    font-size: 32px;
+    color: #0974fb;
+    margin-bottom: 50px;
+  }
+  #trending-today .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+  }
+  #trending-today .cards .card {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -3px 3px 24px -5px rgba(0, 0, 0, 0.57);
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  #trending-today .cards .card img {
+    width: 230px;
+  }
+  #trending-today .cards .card .card-content {
+    padding: 20px;
+  }
+  #trending-today .cards .card .card-content button {
+    background-color: #e9ecef;
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border: none;
+  }
+  #trending-today .cards .card .card-content .own-new {
+    color: #0974fb;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  #trending-today .cards .card .card-content .adres {
+    font-size: 13px;
+  }
+  #trending-today .cards .card .card-content .star-rating {
+    margin-top: 20px;
+  }
+  #trending-today .cards .card .card-content .star-rating .rating label {
+    color: orange;
+    font-size: 20px;
+  }
+  #trending-today .cards .card .card-content .star-rating .rating span {
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=media_queries.css.map */
