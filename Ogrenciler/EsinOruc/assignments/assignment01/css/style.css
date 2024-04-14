@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins ", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+.fs-60 {
+  font-size: 60px;
+}
+
+.fs-120 {
+  font-size: 120px;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.font-style-normal {
+  font-style: normal;
+}
+
+.font-style-bold {
+  font-style: bold;
+}
+
+.font-style-italic {
+  font-style: italic;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.color-black {
+  color: #000000;
+}
+
+.color-dark-cyan {
+  color: #69846d;
+}
+
+.color-ash-gray {
+  color: #afc8ad;
+}
+
+.color-champange-pink {
+  color: #ffeae1;
+}
+
+.color-apricot {
+  color: #ffd5c2;
+}
+
+.color-tangerine {
+  color: #f28f3b;
+}
+
+.color-jasper {
+  color: #c8553d;
+}
+
+.color-gray {
+  color: #808080;
+}
+
+.color-light-gray {
+  color: #a9a9a9;
+}
+
+.color-dark-gray {
+  color: #4d4d4d;
+}
+
+.bg-color-white {
+  background-color: #ffffff;
+}
+
+.bg-color-black {
+  background-color: #000000;
+}
+
+.bg-color-dark-cyan {
+  background-color: #69846d;
+}
+
+.bg-color-ash-gray {
+  background-color: #afc8ad;
+}
+
+.bg-color-champange-pink {
+  background-color: #ffeae1;
+}
+
+.bg-color-apricot {
+  background-color: #ffd5c2;
+}
+
+.bg-color-tangerine {
+  background-color: #f28f3b;
+}
+
+.bg-color-jasper {
+  background-color: #c8553d;
+}
+
+.header {
+  padding-top: 2.5rem;
+  height: 100vh;
+  background: linear-gradient(to right, #afc8ad 0%, #afc8ad 40%, #ffffff 40%, #ffffff 100%);
+}
+.header .navbar {
+  padding-left: 5px;
+  border-left: 2px solid #69846d;
+}
+.header .content-wrapper {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+.header .content-wrapper .content-left {
+  width: 100%;
+  flex: 1.5;
+}
+.header .content-wrapper .content-left p {
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+.header .content-wrapper .content-left .wave-image {
+  background: url("../assets/img/Seppo - Demo 5(2).png");
+  width: 100%;
+  height: 20px;
+  background-size: 645px 20px;
+  background-repeat: repeat-x;
+  animation: wavy-motion 15s linear infinite;
+  margin: 25px 0;
+}
+.header .content-wrapper .content-left .form {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0rem;
+  padding: 20px 0 20px 0;
+}
+.header .content-wrapper .content-left .form input {
+  padding: 20px 24px;
+  width: 100%;
+  flex-grow: 1;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 7px rgba(12, 127, 134, 0.2509803922);
+  margin: 0 16px;
+  transition: 0.5s ease;
+}
+.header .content-wrapper .content-left .form input::placeholder {
+  color: #afc8ad;
+}
+.header .content-wrapper .content-left .form button {
+  padding: 20px 24px;
+  border-radius: 10px;
+  background-color: none;
+  color: none;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  letter-spacing: 4px;
+}
+.header .content-wrapper .content-right {
+  flex: 1;
+  width: 100%;
+}
+
+@keyframes wave-animation {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 645px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

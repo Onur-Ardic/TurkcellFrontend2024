@@ -1,21 +1,154 @@
+@import "./scss/global.scss";
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     color: black;
   }
- /* 
-.perfect-pos-software.container{
-    @include flex(column,center,center)
-    background-color: white;
 
-    }*/
-    
         
-    
+  .about-section{
+    background-color: #fffef6;
+    .section-wrapper{
+      .lab-item {
+        .lab-inner {
+      margin: 15px 0;
+      position: relative;
+      box-shadow: 0 0 8px rgba(136, 136, 136, 0.08);
+      padding: 20px;
+      .lab-thumb{
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        line-height: 80px;
+        border-radius: 30px 2px;
+        margin-bottom: 20px;
+
+      }
+      .lab-content{
+        margin-bottom: 5px;
+ 
+      h4{
+        margin-bottom: 5px;
+      
+      }
+      p{
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+    }
+      }
+    }
+  } 
+}
+  
   
   
   
   
  
+  .smart-pos{
+    background-color: #fffef6;
+      .smartpos-container {
+          border: none;
+      }
+      .testimonial  {
+        margin:0 -15px;
+          .cards {
+            padding: 30px;
+            background: #fff;
+            width: 30%;
+              .card-header {
+                  justify-content: space-around;
+                  border-bottom: 1px solid #f0f0f0;
+                  padding-bottom: 20px;
+                  margin-bottom: 20px;
+                  .photo {
+                      border-radius: 50%;
+                  }
+              }
+              p {
+                padding-top:30px;
+              }
+              h5{
+                font-size:20px;
+              }
+          }
+      }
+  }
+
+  .sponsors{
+    .container{
+      width: 70%;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    }
+  }
+
+
+  .footer{
+    padding: 70px 0;
+  background-image: url(../images/app-footer-bg.jpg);
+   .container{
+    justify-content: space-between;
+  flex-wrap: wrap;
+     .upper{
+      gap: 20px;
+      p{
+        color: white;
+      }
+      h2{
+        color: white;
+        font-size:24px;
+            
+    }
+    .stores{
+      width: 230px;
+      height: 70px;
+      background-color: white;
+      gap: 15px;
+    }
+    p{
+      color: #696969;
+      }
+      span{
+        color: #c961fa;
+        font-weight: 700;
+      }
+    }
+      .footer-first{
+        justify-content: space-between;
+        padding-right: 140px;
+        padding-bottom: 50px;
+        h6{
+          color: white;
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+        li {
+          list-style: none;
+          color: white;
+          align-items: center;
+         justify-content: space-between;
+         padding: 8px 0;
+        }       
+      }
+      .footer-second{
+        margin-top: 100px;
+        .bottom{
+          justify-content: center;
+          p{
+            margin-top: 10px;
+            color: white;
+          }
+        }
+        
+      }
+    }
+    }
+    
+
   
+
