@@ -1,6 +1,25 @@
 $mainColor: #0c7f86;
 $secondColor: #084b4f;
 
+@mixin button-mixin {
+    font-family: "Poppins";
+    padding: 25px 24px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: $mainColor;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s ease;
+    &:hover {
+        background-color: $secondColor;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -150,22 +169,7 @@ header {
                         }
                     }
                     button {
-                        font-family: "Poppins";
-                        padding: 25px 24px;
-                        border-radius: 10px;
-                        color: #fff;
-                        background-color: $mainColor;
-                        font-size: 16px;
-                        font-weight: 600;
-                        line-height: 19px;
-                        letter-spacing: 4px;
-                        text-transform: uppercase;
-                        cursor: pointer;
-                        border: none;
-                        transition: 0.5s ease;
-                        &:hover {
-                            background-color: $secondColor;
-                        }
+                        @include button-mixin();
                     }
                 }
             }
@@ -177,7 +181,6 @@ header {
                     margin: 0 0 32px;
                     img {
                         max-width: 100%;
-
                         border-radius: 50%;
                         z-index: 1;
                     }
@@ -251,6 +254,9 @@ header {
                         line-height: 30px;
                         margin-bottom: 24px;
                     }
+                    button {
+                        @include button-mixin();
+                    }
                 }
             }
         }
@@ -266,7 +272,88 @@ header {
     }
 }
 
+.projects {
+    .container {
+        padding: 180px 0;
+        h2 {
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 30px;
+            letter-spacing: 5px;
+            margin-bottom: 60px;
+        }
+        .cards {
+            gap: 10px;
+            row-gap: 60px;
+            transition: all 1s ease-in-out;
+            justify-content: space-between;
+            &:hover > .card:not(:hover) {
+                transform: scale(0.75, 0.75);
+                transition: all 0.5s ease-in-out;
+            }
+
+            .card {
+                display: flex;
+                align-items: end;
+                width: 30%;
+                height: 200px;
+                border-radius: 10px;
+                transition: all 0.5s ease-in-out;
+                background-size: cover;
+                background-repeat: no-repeat;
+                object-fit: contain;
+                box-shadow:
+                    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                &:hover {
+                    transform: scale(1.5, 1.5);
+                    transition: all 1s ease-in-out;
+                    box-shadow:
+                        rgba(0, 0, 0, 0.16) 0px 1px 4px,
+                        rgb(51, 51, 51) 0px 0px 0px 3px;
+                }
+                img {
+                    border-radius: 10px;
+                }
+                .card-links {
+                    justify-content: space-evenly;
+                    background-color: black;
+                    opacity: 0.7;
+                    width: 100%;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    &:hover {
+                        opacity: 0.95;
+                        transition: 1s ease-in-out;
+                    }
+                    &:not(:hover) {
+                        transition: 1s ease-in-out;
+                    }
+                    a {
+                        font-size: 23px;
+                        color: white;
+                        padding: 5px;
+                        &:hover {
+                            color: rgb(156, 0, 0);
+                            transition: 0.4s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 600px) {
+    body {
+        background: #e5fff9;
+    }
+    header {
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+    }
     .content {
         .container {
             padding-bottom: 30px;
@@ -274,7 +361,10 @@ header {
                 display: flex;
                 flex-direction: column;
                 .coming-text {
+                    width: 100%;
                     h1 {
+                        padding-top: 40px;
+                        text-align: center;
                         font-size: 60px;
                         line-height: 70px;
                     }
@@ -284,8 +374,11 @@ header {
                     .subtitle {
                         font-size: 22px;
                         letter-spacing: 10px;
+                        text-align: center;
+                        margin-bottom: 0px;
                     }
                     .coming-form {
+                        margin-top: 12px;
                         flex-direction: column;
                         justify-content: center;
                         margin-bottom: 20px;
@@ -296,7 +389,10 @@ header {
                             margin: 16px;
                         }
                         input {
+                            padding: 10px 10px;
                             box-shadow: none;
+                            border: 1px solid $secondColor;
+                            font-size: 13px;
                         }
                     }
                     .links {
@@ -308,6 +404,30 @@ header {
                                 color: white;
                             }
                         }
+                    }
+                }
+                .coming-img {
+                    .img-box {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .projects {
+        .container {
+            .cards {
+                justify-content: center;
+                gap: 25px;
+                row-gap: 55px;
+                .card {
+                    width: 33%;
+                    background-position: center;
+                    .card-links {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                     }
                 }
             }
