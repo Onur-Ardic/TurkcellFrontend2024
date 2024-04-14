@@ -3,6 +3,7 @@
 $btnGradient: linear-gradient(to right, #ff5195, #ffb84b);
 $colorGray: #696969;
 $colorBg: #f9f2ff;
+$colorPink: #c961fa;
 
 * {
   margin: 0;
@@ -53,4 +54,11 @@ body {
 .main-btn {
   cursor: pointer;
   @include button(16px 25px, 4px, #fff, $btnGradient);
+}
+
+.col-6 {
+  width: 50%;
+}
+.col-3 {
+  width: 25%;
 }

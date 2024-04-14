@@ -38,4 +38,12 @@ body {
   background: linear-gradient(to right, #ff5195, #ffb84b);
 }
 
+.col-6 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
 /*# sourceMappingURL=utilities.css.map */
