@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Nanum+Gothic:wght@400;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Nanum Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+*::selection {
+  background: black;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-12_8 {
+  font-size: 12.8px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-19_2 {
+  font-size: 19.2px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.font-style-normal {
+  font-style: normal;
+}
+
+.font-style-bold {
+  font-style: bold;
+}
+
+.font-style-italic {
+  font-style: italic;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.color-black {
+  color: #000000;
+}
+
+.color-blue {
+  color: #0000ff;
+}
+
+.color-light-blue {
+  color: #2f89fc;
+}
+
+.color-yellow {
+  color: #f89d13;
+}
+
+.color-gray {
+  color: #808080;
+}
+
+.color-dark-gray {
+  color: #a9a9a9;
+}
+
+.color-light-gray {
+  color: #d3d3d3;
+}
+
+.color-light-g {
+  color: #4d4d4d;
+}
+
+.color-antrasit {
+  color: #495057;
+}
+
+.color-g2 {
+  color: #666666;
+}
+
+.color-g3 {
+  color: #737373;
+}
+
+.color-g4 {
+  color: rgba(153, 153, 153, 0.6);
+}
+
+.bg-color-white {
+  background-color: #ffffff;
+}
+
+.bg-color-blue {
+  background-color: #2f89fc;
+}
+
+.bg-color-dark-gray {
+  background-color: #333333;
+}
+
+.bg-color-gray {
+  background-color: #e9ecef;
+}
+
+.bg-color-light-gray {
+  background-color: #f8f9fa;
+}
+
+/*# sourceMappingURL=global.css.map */
