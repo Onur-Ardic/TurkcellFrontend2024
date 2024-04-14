@@ -261,9 +261,7 @@
   }
 }
 .font-family {
-  font-family: "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .star-rating {
@@ -397,8 +395,7 @@ ul li {
   font-size: 20px;
   color: white;
 }
-.heroSection .navbar-flex,
-.heroSection .navbar-list {
+.heroSection .navbar-flex, .heroSection .navbar-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -530,6 +527,110 @@ ul li {
   .hero-form .hero-form-inputs div {
     width: 100%;
   }
+  .newsletter .container {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .newsletter .container form {
+    width: 50%;
+    text-align: end;
+    align-self: center;
+  }
+  .newsletter .container form input {
+    margin-right: -10px;
+  }
+  .footer .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .footer .grid > *:last-child {
+    grid-column: 1/span 4;
+    padding: 5rem;
+  }
+  .footer .grid > * {
+    border-bottom: none;
+  }
+}
+.newsletter {
+  background-color: #2f89fc;
+  color: white;
+  padding: 3rem;
+}
+.newsletter .container {
+  flex-direction: column;
+  row-gap: 20px;
+}
+.newsletter .container form {
+  align-self: flex-start;
+}
+.newsletter .container form input {
+  border: none;
+  margin-right: -10px;
+  padding: 11px 11px 11px 0;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  width: 60%;
+}
+.newsletter .container form input::placeholder {
+  color: white;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 400;
+}
+.newsletter .container form input:focus {
+  outline: none;
+}
+.newsletter .container form button {
+  border-radius: 0;
+}
+
+.footer {
+  background-color: black;
+  padding: 3rem;
+  color: white;
+}
+.footer .grid {
+  grid-template-columns: 1fr;
+  row-gap: 5rem;
+}
+.footer .grid h2 {
+  margin-bottom: 2rem;
+}
+.footer .grid li {
+  margin: 1rem 0;
+}
+.footer .grid li:hover a {
+  color: red;
+}
+.footer .grid div a:hover {
+  color: red;
+}
+.footer .grid .row {
+  align-items: flex-start;
+}
+.footer .grid .row input {
+  padding: 12.5px 24px;
+  border: 1px solid white;
+  background-color: transparent;
+}
+.footer .grid .row input:focus {
+  outline: none;
+  color: white;
+}
+.footer .grid .row button {
+  border-radius: 0;
+  margin-left: -2px;
+}
+.footer .grid > *:last-child {
+  grid-column: 1;
+  padding: 5rem;
+}
+.footer .grid > * {
+  padding-bottom: 4rem;
+  border-bottom: 1px dotted white;
+}
+.footer a {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
