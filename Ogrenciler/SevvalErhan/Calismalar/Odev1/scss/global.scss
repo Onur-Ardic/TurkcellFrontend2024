@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: "Lilita One", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+@mixin flex(
+  $display,
+  $justify: none,
+  $align: none,
+  $column: row,
+  $gap: 2rem,
+  $wrap: wrap
+) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $column;
+  flex-wrap: $wrap;
+  gap: $gap;
+}
+$sizes: 11,120, 13, 14, 15, 16, 20, 24, 30, 32, 48;
+@each $size in $sizes {
+  $class-size: $size;
+  .fs-#{$class-size} {
+    font-size: $size * 1px;
+  }
+}
+
+$fontWeights: 100, 400, 500, 700, 900;
+@each $weight in $fontWeights {
+  .fw-#{$weight} {
+    font-weight: $weight;
+  }
+}
+$fontStyles: normal, bold, italic;
+@each $style in $fontStyles {
+  .font-style-#{$style} {
+    font-style: $style;
+  }
+}
+$colors: (
+  "pink": #e6a4b4,
+  "dark-pink": #e67893,
+  "light-pink": #f1dfd7,
+  "peach": #f3d7ca,
+  "light": #fff8e3,
+  "white": #ffffff,
+  "black": #000000,
+  "gray": #808080,
+  "light-gray": #a9a9a9,
+  "dark-gray": #4d4d4d,
+  "gray-text":#9a8f8f,
+);
+@each $colorName, $colorValue in $colors {
+    .color-#{$colorName} {
+      color: $colorValue;
+    }
+  }
+$bgColors: (
+    "pink": #e6a4b4,
+    "light-pink": #f1dfd7,
+    "peach": #f3d7ca,
+    "light": #fff8e3,
+    "white": #ffffff,
+    "black": #000000,
+    "gray": #808080,
+    "light-gray": #a9a9a9,
+    "dark-gray": #4d4d4d,
+);
+@each $bgColorName, $bgColorValue in $bgColors {
+    .bg-color-#{$bgColorName} {
+      background-color: $bgColorValue;
+    }
+  }
+@mixin button-style(
+  $padding-y: 0.415rem,
+  $padding-x: 0.75rem,
+  $border-radius: 0.25rem,
+  $background-color: none,
+  $color: none,
+  $border: none
+) {
+  padding: $padding-y $padding-x;
+  border-radius: $border-radius;
+  background-color: $background-color;
+  color: $color;
+  border: $border;
+  transition: background-color 0.3s, color 0.3s;
+}
