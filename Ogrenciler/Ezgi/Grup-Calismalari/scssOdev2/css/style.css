@@ -95,8 +95,7 @@ ul li {
   text-align: center;
 }
 .retail-pos-section .retail-pos-content .retail-pos-image .image-box img, .retail-stores-section .retail-pos-content .retail-pos-image .image-box img {
-  width: 546px;
-  height: 426px;
+  max-width: 100%;
   object-fit: cover;
   margin: 0 auto;
 }
@@ -139,6 +138,61 @@ ul li {
 }
 .service-section .section-wrapper .wrapper-item .wrapper-item-inner .inner-subtitle h6 {
   font-size: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+  .service-section .section-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+@media screen and (max-width: 992px) {
+  .retail-pos-section .retail-pos-content, .retail-stores-section .retail-pos-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .retail-pos-section .retail-pos-content .retail-pos-info, .retail-stores-section .retail-pos-content .retail-pos-info {
+    width: 80% !important;
+  }
+  .retail-pos-section .retail-pos-content .retail-pos-image, .retail-stores-section .retail-pos-content .retail-pos-image {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .service-section .section-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 300px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .service-section .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .retail-pos-section .retail-pos-content .retail-pos-image, .retail-stores-section .retail-pos-content .retail-pos-image {
+    margin: 0 auto;
+    object-fit: cover;
+    margin-top: 3rem;
+  }
+  .retail-pos-section .retail-pos-content .retail-pos-info, .retail-stores-section .retail-pos-content .retail-pos-info {
+    width: 100% !important;
+  }
+  .retail-pos-section .retail-pos-content .retail-pos-info .info-wrapper .wrapper-list, .retail-stores-section .retail-pos-content .retail-pos-info .info-wrapper .wrapper-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .service-section .section-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 300px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
