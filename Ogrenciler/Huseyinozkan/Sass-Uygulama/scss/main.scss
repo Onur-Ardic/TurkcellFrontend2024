@@ -1,4 +1,4 @@
-@import 'bg-shape';
+@import "bg-shape";
 $font-fmly: Poppins, sans-serif;
 $color-header: #084b4f;
 
@@ -25,7 +25,6 @@ $color-header: #084b4f;
     justify-content: space-between;
 
     .coming-image {
-      
       width: calc(30%);
       display: flex;
       flex-direction: column;
@@ -57,7 +56,6 @@ $color-header: #084b4f;
         color: $color-header;
         font-size: 16px;
         font-family: $font-fmly;
-        
       }
       .spect {
         line-height: 30px;
@@ -149,4 +147,3 @@ $color-header: #084b4f;
     }
   }
 }
-
