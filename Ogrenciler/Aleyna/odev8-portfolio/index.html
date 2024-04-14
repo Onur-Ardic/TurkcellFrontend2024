@@ -19,57 +19,165 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="header-nav">
+      <nav class="header-nav">
+        <div class="container">
           <div class="nav-menu-logo">
             <span>ALEYNA ERTOK | FRONTEND DEVELOPER</span>
           </div>
 
           <div class="nav-menu-right">
-            <p>HOMEPAGE</p>
+            <a href="#">HOMEPAGE</a>
           </div>
-        </nav>
-        <div class="header-wrapper">
-          <div class="container-wrap-left">
-            <div class="container-img">
-              <img src="images/foto.webp" alt="Image" />
+        </div>
+      </nav>
+      <div class="header-wrapper">
+        <div class="container-wrap-left">
+          <div class="container-img">
+            <img src="images/foto.webp" alt="Image" />
+          </div>
+
+          <div class="social-media">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="wave-img"></div>
+        </div>
+        <div class="container-wrap-right">
+          <div class="content-wrapper">
+            <div class="top-content">
+              <h1>Hi , I'm Aleyna !</h1>
+              <p>
+                I am a person who loves teamwork and is open to learning. The
+                projects I have developed in the frontend area are waiting for
+                you!
+              </p>
             </div>
 
-            <div class="wave-img"></div>
-            <div class="social-media">
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-linkedin-in"></i>
-              <i class="fab fa-github"></i>
+            <div class="container-button">
+              <a href="#projects">PROJECTS</a>
+              <a href="#">RESUME</a>
+              <a href="#subscribe">LET'S WORK TOGETHER</a>
             </div>
-          </div>
-          <div class="container-wrap-right">
-            <div class="content-wrapper">
-              <div class="top-content">
-                <h1>Hi , I'm Aleyna !</h1>
-                <p>
-                  I am a person who loves teamwork and is open to learning. The
-                  projects I have developed in the frontend area are waiting for
-                  you!
-                </p>
-              </div>
 
-              <div class="container-button">
-                <a href="#">PROJECTS</a>
-                <a href="#">RESUME</a>
-                <a href="#">LET'S WORK TOGETHER</a>
-              </div>
-
-              <div class="bottom-content">
-                <p>
-                  Any fool can write code that a computer can understand. Good
-                  programmers write code that humans can understand.
-                </p>
-              </div>
+            <div class="bottom-content">
+              <p>
+                Any fool can write code that a computer can understand. Good
+                programmers write code that humans can understand.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </header>
+
+    <section class="middle">
+      <div id="projects" class="projects">
+        <div class="title">
+          <h2>Projects</h2>
+          <p class="line"></p>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="img-card">
+              <img src="images/site1.png" alt="UpStart" />
+            </div>
+            <div class="content">
+              <div class="tag-icon">
+                <span class="lang">HTML & CSS</span>
+              </div>
+              <h3 class="website">UPSTART</h3>
+              <span class="team">Aleyna Ertok,Alpay Özer,Erkan Tokmak</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-card">
+              <img src="images/site2.png" alt="Biniog" />
+            </div>
+            <div class="content">
+              <div class="tag-icon">
+                <span class="lang">HTML & CSS</span>
+              </div>
+              <h3 class="website">BINIOG</h3>
+              <span class="team">Aleyna Ertok,Alpay Özer,Erkan Tokmak</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-card">
+              <img src="images/site3.png" alt="Druco" />
+            </div>
+            <div class="content">
+              <div class="tag-icon">
+                <span class="lang">HTML & CSS</span>
+              </div>
+              <h3 class="website">DRUCO</h3>
+              <span class="team">Aleyna Ertok,Kadir Tezcan,Necati Doğrul</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-card">
+              <img src="images/site4.png" alt="Agon" />
+            </div>
+            <div class="content">
+              <div class="tag-icon">
+                <span class="lang">HTML & CSS</span>
+              </div>
+              <h3 class="website">AGON</h3>
+              <span class="team">Aleyna Ertok,Alpay Özer,Mertcan Çelik</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-card">
+              <img src="images/site5.png" alt="DirectoryAds" />
+            </div>
+            <div class="content">
+              <div class="tag-icon">
+                <span class="lang">HTML & CSS & SCSS </span>
+              </div>
+              <h3 class="website">DIRECTORYADS</h3>
+              <span class="team">Aleyna Ertok,Esin Oruç,Şevval Erhan</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-card">
+              <img src="images/site6.jpeg" alt="SmartPos" />
+            </div>
+            <div class="content">
+              <div class="tag-icon">
+                <span class="lang">HTML & CSS & SCSS</span>
+              </div>
+              <h3 class="website">SMARTPOS</h3>
+              <span class="team">Aleyna Ertok,Esin Oruç,Şevval Erhan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div id="subscribe" class="subscribe">
+        <div class="form">
+          <!-- <img
+          src="./images/arrow1.png"
+          alt="arrow img"
+          class="right-arrow"
+        /> --><i class="fa-solid fa-angles-right"></i>
+          <input
+            type="email"
+            name="email"
+            id="subscribe"
+            placeholder="Enter your email adress to subscribe..."
+          />
+          <button class="subs-btn">SUBSCRIBE</button>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

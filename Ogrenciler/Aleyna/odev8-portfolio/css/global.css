@@ -9,4 +9,14 @@
   font-family: "AvenirLTPro-Light";
 }
 
+.container {
+  max-width: 1600px;
+  margin: auto;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 /*# sourceMappingURL=global.css.map */
