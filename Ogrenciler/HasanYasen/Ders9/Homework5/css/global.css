@@ -14,6 +14,7 @@ body {
 .container {
   width: 1140px;
   max-width: 100%;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -55,6 +56,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-light {
   background-color: #f8f9fa;
+}
+
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #2f89fc;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.border {
+  width: 80px;
+  height: 3px;
+  background: #2f89fc;
 }
 
 .blue-btn {
