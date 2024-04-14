@@ -62,7 +62,6 @@ a {
   animation: wave-animation 15s linear infinite;
 }
 .page .container .container-left p {
-  color: #0c7f86;
   font-size: 32px;
   font-weight: 700;
   line-height: 30px;
@@ -327,61 +326,29 @@ a {
     border-color: white;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   body {
     background-color: #e5fff9;
     padding: 20px 0px;
   }
   .page {
     padding-bottom: 100px;
+    text-align: center;
   }
   .page .container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 0 50px;
-  }
-  .page .container .container-left h1 {
-    font-size: 80px;
-  }
-  .page .container .container-left p {
-    font-size: 24px;
-  }
-  .page .container .container-right .profile-photo {
-    align-self: center;
-  }
-  .projects {
-    padding: 0px 50px;
-    flex-direction: column;
-  }
-  .projects .box {
-    width: 100%;
-    flex-direction: row;
-  }
-  .projects .box img {
-    height: 100%;
-    width: max-content;
-  }
-  .projects .box .content p {
-    writing-mode: horizontal-tb;
-    text-orientation: sideways;
-  }
-  .bg-shape1,
-  .bg-shape2 {
-    display: none;
-  }
-}
-@media screen and (max-width: 1025px) {
-  .page {
-    text-align: center;
   }
   .page .container .container-left {
     gap: 20px;
+    min-height: auto;
   }
   .page .container .container-left h1 {
-    font-size: 48px;
+    font-size: 64px;
     line-height: 60px;
   }
   .page .container .container-left p {
-    font-size: 16px;
+    font-size: 20px;
   }
   .page .container .container-left form {
     flex-direction: column;
@@ -398,13 +365,21 @@ a {
   .page .container .container-right .links {
     flex-direction: column;
   }
+  .page .container .container-right .profile-photo {
+    align-self: center;
+  }
   .page .container .container-right .profile-photo .circle {
     border-radius: 50%;
     border: 2px solid;
     width: 300px;
     height: 300px;
   }
+  .projects {
+    padding: 0px 50px;
+    flex-direction: column;
+  }
   .projects .box {
+    width: 100%;
     flex-direction: column;
     height: 500px;
   }
@@ -415,11 +390,18 @@ a {
     font-size: 8px;
   }
   .projects .box .content p {
+    writing-mode: horizontal-tb;
+    text-orientation: sideways;
     font-size: 16px;
   }
   .projects .box:hover img {
     display: block;
     height: 60%;
+    width: auto;
+  }
+  .bg-shape1,
+  .bg-shape2 {
+    display: none;
   }
 }
 
