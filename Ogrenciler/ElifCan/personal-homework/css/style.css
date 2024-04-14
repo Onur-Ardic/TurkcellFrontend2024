@@ -59,7 +59,7 @@ header nav img {
   margin: 25px 0;
 }
 .section .left .coming-soon {
-  color: #0C7F86;
+  color: #0c7f86;
   font-weight: 800;
   line-height: 35px;
   letter-spacing: 30px;
@@ -116,6 +116,7 @@ header nav img {
   margin-bottom: 32px;
   border-radius: 50%;
   width: 100%;
+  margin-top: 10px;
 }
 .section .right .image::after {
   content: "";
@@ -219,9 +220,16 @@ header nav img {
     font-size: 28px;
     letter-spacing: 25px;
   }
+  .section .right {
+    width: 30%;
+  }
 }
 @media (max-width: 600px) {
-  img {
+  .left h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .arrow {
     display: none;
   }
   .button-subscribe {
@@ -231,12 +239,21 @@ header nav img {
   .email {
     margin: 0 25px !important;
   }
+  .section .right {
+    width: 100%;
+  }
 }
 @media (max-width: 800px) {
   .section {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+  }
+  .section .left .coming-soon {
+    padding-top: 30px;
+  }
+  .section .right {
+    width: 80%;
   }
 }
 
