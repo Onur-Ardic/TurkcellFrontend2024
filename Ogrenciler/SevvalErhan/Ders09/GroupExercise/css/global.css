@@ -72,10 +72,6 @@
   font-weight: 100;
 }
 
-.fw-normal {
-  font-weight: normal;
-}
-
 .fw-400 {
   font-weight: 400;
 }
@@ -92,12 +88,16 @@
   font-weight: 900;
 }
 
-.fw-bold {
-  font-weight: bold;
+.font-style-normal {
+  font-style: normal;
 }
 
-.fw-italic {
-  font-weight: italic;
+.font-style-bold {
+  font-style: bold;
+}
+
+.font-style-italic {
+  font-style: italic;
 }
 
 .color-white {
@@ -133,7 +133,7 @@
 }
 
 .color-light-g {
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 
 .color-antrasit {
@@ -142,6 +142,14 @@
 
 .color-g2 {
   color: #666666;
+}
+
+.color-g3 {
+  color: #737373;
+}
+
+.color-g4 {
+  color: rgba(153, 153, 153, 0.6);
 }
 
 .bg-color-white {

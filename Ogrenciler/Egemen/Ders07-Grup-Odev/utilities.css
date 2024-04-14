@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+body {
+        
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between; */
+}
+.container .icon-text{
+    justify-content: baseline;
+}
+
+a{
+    text-decoration: none ;
+    color: white ;
+}
+.sari{
+    color: #FFB91F ;
+}
+.link-black{
+    color:black
+}
+.link:hover {
+    color: #FFB91F;
+    transition: color 0.2s ease;
+}

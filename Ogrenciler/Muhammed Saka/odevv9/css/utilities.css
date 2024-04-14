@@ -42,4 +42,12 @@ body {
   font-weight: bold;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.column-gap {
+  column-gap: 20px;
+}
+
 /*# sourceMappingURL=utilities.css.map */

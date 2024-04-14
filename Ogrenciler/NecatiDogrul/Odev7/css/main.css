@@ -202,7 +202,12 @@
   background-color: white;
 }
 .perfect-pos-software .container .perfect-cards .perfect-card, .smratpos-power .container .perfect-cards .perfect-card {
+  position: relative;
+  transition: all 0.2s ease-in-out;
   width: 30%;
+}
+.perfect-pos-software .container .perfect-cards .perfect-card h6, .smratpos-power .container .perfect-cards .perfect-card h6 {
+  font-size: 24px;
 }
 .perfect-pos-software .container .perfect-cards .perfect-card p, .smratpos-power .container .perfect-cards .perfect-card p {
   width: 100%;
@@ -210,7 +215,6 @@
 .perfect-pos-software .container .perfect-cards .perfect-card .rounded-img, .smratpos-power .container .perfect-cards .perfect-card .rounded-img {
   position: relative;
   border-radius: 50%;
-  background: linear-gradient(#be6df2, #f675a1);
   width: 80px;
   height: 80px;
   padding: 20px;
@@ -243,6 +247,24 @@
     background-color: rgba(190, 109, 242, 0);
   }
 }
+.perfect-pos-software .container .perfect-cards .perfect-card .line, .smratpos-power .container .perfect-cards .perfect-card .line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  background: linear-gradient(to right, #fd4472, #ffb64b);
+}
+.perfect-pos-software .container .perfect-cards .perfect-card:hover .line, .smratpos-power .container .perfect-cards .perfect-card:hover .line {
+  animation: line 0.5s forwards;
+}
+@keyframes line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
 
 .smratpos-power {
   background-color: #fffef6;
@@ -260,8 +282,31 @@
 .smratpos-power .container .perfect-cards .perfect-card .card-row h5 {
   font-size: 20px;
 }
-.smratpos-power .container .perfect-cards .perfect-card .card-row img {
+.smratpos-power .container .perfect-cards .perfect-card .card-row .person-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin-right: 10px;
+}
+.smratpos-power .container .perfect-cards .perfect-card .card-row .person-div .person-img {
   border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.smratpos-power .container .perfect-cards .perfect-card .card-row .person-div .round-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  animation: round-animation 5s linear infinite;
+}
+@keyframes round-animation {
+  100% {
+    rotate: 360deg;
+  }
 }
 .smratpos-power .container .perfect-cards .perfect-card .card-row p {
   color: #696969;
@@ -365,6 +410,12 @@
   .hero .container .content .right-content .laptop-man {
     width: 100%;
   }
+  .hero .container .content .left-content {
+    margin-top: 20px;
+  }
+  .hero .container .content .left-content h2 {
+    font-size: 40px;
+  }
   .omnichannel .container, .all-in-one .container, .retail-store .container, .extend-power .container {
     flex-direction: column-reverse;
     gap: 30px;
@@ -385,6 +436,9 @@
     flex-direction: column;
   }
   .smratpos-power .container .perfect-cards .perfect-card {
+    width: 100%;
+  }
+  .perfect-pos .container p, .perfect-pos-software .container p, .smratpos-power .container p {
     width: 100%;
   }
 }
