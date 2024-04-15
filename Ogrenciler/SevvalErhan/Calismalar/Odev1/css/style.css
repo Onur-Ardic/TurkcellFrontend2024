@@ -8,6 +8,10 @@
   font-family: "Lilita One", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -56,6 +60,14 @@
 
 .fs-48 {
   font-size: 48px;
+}
+
+.fs-60 {
+  font-size: 60px;
+}
+
+.fs-120 {
+  font-size: 120px;
 }
 
 .fw-100 {
@@ -142,6 +154,10 @@
   background-color: #f1dfd7;
 }
 
+.bg-color-pink-light {
+  background-color: rgba(231, 185, 196, 0.3490196078);
+}
+
 .bg-color-peach {
   background-color: #f3d7ca;
 }
@@ -168,6 +184,17 @@
 
 .bg-color-dark-gray {
   background-color: #4d4d4d;
+}
+
+.project-blog .blog-title .line {
+  position: absolute;
+  bottom: 0;
+  margin-top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #e67893;
 }
 
 header {
@@ -317,12 +344,69 @@ header {
 .profile-content .image-text .profile-text .links {
   margin-top: 1rem;
 }
-.profile-content .image-text .profile-text .links i {
+.profile-content .image-text .profile-text .links a {
+  color: #fff;
+  gap: 1.5rem;
+}
+.profile-content .image-text .profile-text .links a i {
   border-radius: 22px;
   padding: 0.5rem;
 }
-.profile-content .image-text .profile-text .links i:hover {
+.profile-content .image-text .profile-text .links a i:hover {
   background-color: #e9bac6;
+  transform: scale(1.2);
+}
+
+.project-blog {
+  padding-top: 5rem;
+}
+.project-blog .blog-title {
+  position: relative;
+  text-align: center;
+  line-height: 3;
+}
+.project-blog .blog-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2.5rem 0;
+}
+.project-blog .blog-cards .project-card {
+  width: calc(44.44% - 20px);
+}
+.project-blog .blog-cards .project-card .img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+.project-blog .blog-cards .project-card .img-card:hover {
+  transform: scale(1.2);
+}
+.project-blog .blog-cards .content {
+  line-height: 40px;
+  margin-top: 0.5rem;
+}
+.project-blog .blog-cards .content span {
+  cursor: pointer;
+}
+.project-blog .blog-cards .content span i {
+  margin-right: 0.5rem;
+}
+.project-blog .btn-wrapper {
+  margin-top: 2rem;
+  text-align: center;
+}
+.project-blog .btn-wrapper a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: none;
+  color: none;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */

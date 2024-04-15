@@ -594,6 +594,29 @@ header {
   }
 }
 // Responsive medias
+@media screen and (max-width: 1150px) {
+  .testimonials-section {
+    .lorem-container {
+      display: none;
+    }
+  }
+  .our-blog-section {
+  .flex-container {
+    width: 80%;
+    flex-wrap: wrap;
+    div {
+      img {
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+      }
+      .lorem {
+        font-size: 14px;
+      }
+    }
+  }
+}
+}
 @media screen and (max-width: 992px) {
   .header-nav{
     display: none;

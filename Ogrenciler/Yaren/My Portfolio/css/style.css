@@ -109,6 +109,7 @@ line-height: 19px;
 letter-spacing: 4px;
 cursor: pointer;
 border: none;
+
 }
 
 form img:hover{
@@ -120,6 +121,7 @@ form img:hover{
 form button:hover{
     animation: buttonsubscribe 1.5s infinite;
     background-color: #f87456;
+    color:#ffeec3;
   
 }
 
@@ -133,6 +135,8 @@ form button:hover{
 .coming-image .img-box {
     position: relative;
     margin-bottom: 32px;
+    filter: drop-shadow(3px 3px 20px #ec937f);
+
 }
 
 .coming-image .img-box::before {
@@ -157,7 +161,7 @@ form button:hover{
     top: 0;
     width: 800px;
     height: 800px;
-    border: 1px solid #fff;
+    border: 1px solid #f87456;;
     border-radius: 50%;
     pointer-events: none;
     user-select: none;
@@ -174,7 +178,7 @@ form button:hover{
       50% {
           top: -20px;
           left: 20px;
-          border-color: var(--main-color);
+          border-color: #f87456;
       }
   
       100% {
@@ -189,7 +193,8 @@ form button:hover{
     }
     to {
         top: 10px;
-        border-color: var(--main-color);
+        border-color: #f87456;
+        
     }
 }
 
@@ -303,7 +308,6 @@ h4 {
     height: 100%;
 
 }
-
 
 
 
@@ -426,21 +430,21 @@ h1{
         flex-wrap:wrap;
         flex-direction: column;
         margin:16px;
-
+        height:40%;
     }
     .my-services h1{
         font-size: 45px;
-
+       
         margin-bottom: 10px;
     }
+   
     .bg-shape-1{
         width: 100%;
     }
     .bg-shape-2 {
         display: none;
     }
-
-
+ 
 }
 @media (max-width: 300px){
    

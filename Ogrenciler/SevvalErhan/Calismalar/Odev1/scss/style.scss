@@ -140,14 +140,73 @@ header {
     .profile-text {
       .links {
         margin-top: 1rem;
-        i {
-          border-radius: 22px;
-          padding: 0.5rem;
-          &:hover {
-            background-color: #e9bac6;
+        a {
+          color: #fff;
+          gap: 1.5rem;
+          i{
+            border-radius: 22px;
+            padding: 0.5rem;
+            &:hover {
+              background-color: #e9bac6;
+              transform: scale(1.2);
+            }
           }
         }
       }
+    }
+  }
+}
+
+.project-blog {
+  padding-top: 5rem;
+  .blog-title {
+    position: relative;
+    text-align: center;
+    line-height: 3;
+    .line {
+      @extend %line;
+    }
+  }
+  .blog-cards {
+    @include flex(
+      flex,
+      space-evenly,
+      center,
+      $column: row,
+      $gap: 2rem,
+      $wrap: wrap
+    );
+    padding: 2.5rem 0;
+    .project-card{
+    width: calc(44.44% - 20px);
+      .img-card {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 0.25rem;
+        }
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+    .content {
+      line-height: 40px;
+      margin-top: 0.5rem;
+      span{
+        cursor: pointer;
+        i{
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  .btn-wrapper {
+    margin-top: 2rem;
+    text-align: center;
+    a {
+      @include button-style(0.5rem, 1.5rem);
     }
   }
 }

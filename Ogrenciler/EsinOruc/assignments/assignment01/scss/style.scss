@@ -7,8 +7,8 @@
     to right,
     get-color-map($colors, "ash-gray") 0%,
     get-color-map($colors, "ash-gray") 40%,
-    get-color-map($colors, "white") 40%,
-    get-color-map($colors, "white") 100%
+    get-color-map($colors, "light-pink") 40%,
+    get-color-map($colors, "light-pink") 100%
   );
   .navbar {
     padding-left: 5px;
@@ -16,11 +16,12 @@
   }
   .content-wrapper {
     padding-top: 5rem;
-    @include flex(flex, center, center, $wrap: nowrap);
+    @include flex(flex, space-between, center, $wrap: nowrap, $gap: 5rem);
     .content-left {
       width: 100%;
       flex: 1.5;
       p {
+        line-height: 3;
         letter-spacing: 30px;
         text-transform: uppercase;
       }
@@ -30,8 +31,16 @@
         height: 20px;
         background-size: 645px 20px;
         background-repeat: repeat-x;
-        animation: wavy-motion 15s linear infinite;
+        animation: wave-animation 15s linear infinite;
         margin: 25px 0;
+        @keyframes wave-animation {
+          0% {
+            background-position-x: 0%;
+          }
+          100% {
+            background-position-x: 645px;
+          }
+        }
       }
       .form {
         margin-top: 60px;
@@ -56,6 +65,10 @@
           &::placeholder {
             color: get-color-map($colors, "ash-gray");
           }
+          &:focus {
+            border: get-color-map($colors, "jasper");
+            box-shadow: 0px 0px 30px 7px #0c7f8640;
+          }
         }
         button {
           @include button-style(20px, 24px, 10px);
@@ -64,17 +77,159 @@
       }
     }
     .content-right {
+      position: relative;
       flex: 1;
       width: 100%;
+    }
+    .profile-photo {
+      position: relative;
+      img {
+        width: 80%;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: -45px;
+        left: -30px;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        border: 2px solid get-color-map($colors, "ash-gray");
+        z-index: 2;
+        pointer-events: none;
+        user-select: none;
+        animation: animate-img-circle 8s linear infinite;
+        @keyframes animate-img-circle {
+          0% {
+            top: -20px;
+            left: -20px;
+          }
+          50% {
+            top: -20px;
+            left: 20px;
+            border-color: get-color-map($colors, "champange-pink");
+          }
+          100% {
+            top: -20px;
+            left: -20px;
+          }
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        right: -420px;
+        top: 0;
+        width: 800px;
+        height: 800px;
+        border: 1px solid get-color-map($colors, "ash-gray");
+        border-radius: 50%;
+        pointer-events: none;
+        user-select: none;
+        z-index: 0;
+        animation: animate-img-circle-2 3s linear infinite alternate;
+        @keyframes animate-img-circle-2 {
+          0% {
+            top: -70px;
+          }
+          100% {
+            top: 10px;
+            border-color: get-color-map($colors, "champange-pink");
+          }
+        }
+      }
+    }
+    .content-info {
+      padding: 20px;
+      .job {
+        line-height: 30px;
+        margin-bottom: 24px;
+      }
+      .job-info {
+        line-height: 30px;
+        margin-bottom: 24px;
+      }
+      .links {
+        @include flex(flex, flex-start, center, $column: row, $gap: 3rem);
+
+        margin-bottom: 24px;
+        i {
+          @include button-style(8px, 8px, 50%);
+        }
+        i:hover {
+          background-color: get-color-map($bgColors, "tangerine");
+          color: get-color-map($colors, "white");
+          transform: scale(1.2);
+        }
+      }
     }
   }
 }
 
-@keyframes wave-animation {
-  0% {
-    background-position-x: 0%;
+.my-projects {
+  padding-top: 5rem;
+  .content-wrapper {
+    text-align: center;
+    line-height: 2;
+    .project-cards {
+      margin-top: 5rem;
+      @include flex(flex, space-evenly, center, $gap: 2rem);
+      .card {
+        margin-bottom: 2rem;
+        text-align: left;
+        .img-card {
+          border-radius: 10px;
+
+          img {
+            padding: 20px;
+            width: 500px;
+            height: 400px;
+            border-radius: 10px;
+          }
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+        .content-card {
+          margin-top: 2rem;
+          padding-left: 10px;
+
+          h2 {
+            width: 500px;
+            word-wrap: break-word;
+            margin: 20px 0 20px 0;
+          }
+          .icons {
+            @include flex(flex, flex-start, center, $gap: 1rem);
+          }
+        }
+      }
+    }
   }
-  100% {
-    background-position-x: 645px;
+}
+.footer {
+  margin-top: 3rem;
+  .content-wrapper {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @include flex(flex, space-between, center, $wrap: nowrap, $gap: 2rem);
+    p {
+      letter-spacing: 30px;
+      text-transform: uppercase;
+    }
+    .links {
+      @include flex(flex, flex-start, center, $gap: 3rem);
+      i {
+        @include button-style(10px, 14px, 45px);
+      }
+      i:hover {
+        background-color: get-color-map($bgColors, "tangerine");
+        color: get-color-map($colors, "white");
+        transform: scale(1.2);
+      }
+    }
   }
 }

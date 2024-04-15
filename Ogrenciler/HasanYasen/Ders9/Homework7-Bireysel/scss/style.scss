@@ -1,45 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 body {
   height: 113vh;
   background: linear-gradient(to right, #e5fff9 40%, #b8e4da 40%);
   overflow-x: hidden;
 }
-
 $fs-120: 120px;
 $fs-90: 90px;
 $fs-60: 60px;
+$fs-48 : 48px;
 $fs-32: 32px;
 $fs-22: 22px;
 $fs-18: 18px;
 $fs-16: 16px;
 $fs-12: 12px;
-
 $fw-700: 700;
 $fw-600: 600;
 $fw-400: 400;
-
 $line-h-120: 120px;
 $line-h-110: 110px;
 $line-h-35: 35px;
 $line-h-30: 30px;
 $line-h-19: 19px;
-
 $color-1: #0c7f86;
 $color-2: #084b4f;
 $color-3: #fff;
-
 $letter-spacing-4: 4px;
 $letter-spacing-5: 5px;
 $letter-spacing-30: 30px;
-
 @mixin myMixin($font-size, $font-weight, $line-height, $color, $letter-spacing) {
   font-size: $font-size;
   font-weight: $font-weight;
@@ -47,40 +40,35 @@ $letter-spacing-30: 30px;
   color: $color;
   letter-spacing: $letter-spacing;
 }
-
 .container {
   width: 76%;
   margin: auto;
 }
-
 .flex {
   display: flex;
 }
-
+.jc-center {
+  justify-content: center;
+}
 .jc-sbetween {
   justify-content: space-between;
 }
-
 .ai-center {
   align-items: center;
 }
-
 header {
   padding-top: 60px;
-
   img {
     width: 98px;
     height: 56px;
   }
 }
-
 .left {
   h1 {
     @include myMixin($fs-120, $fw-700, $line-h-120, $color-1, -$letter-spacing-4);
     padding-top: 100px;
     padding-bottom: 20px;
   }
-
   .wavy-shape {
     background-image: url("https://demo.cocobasic.com/seppo-html/demo-5/images/wavy-shape.png");
     height: 20px;
@@ -89,21 +77,17 @@ header {
     background-repeat: repeat-x;
     animation: wavy-shape-animation 15s linear infinite;
   }
-
   .coming-soon {
     @include myMixin($fs-32, $fw-700, $line-h-35, $color-1, $letter-spacing-30);
     padding-top: 15px;
   }
-
   .last-div {
     margin-top: 60px;
-
     img {
       width: 34px;
       height: 50px;
       margin-top: 5px;
     }
-
     input {
       font-size: $fs-18;
       padding: 20px 24px;
@@ -114,18 +98,15 @@ header {
       box-shadow: 0px 0px 30px 7px #0c7f8640;
       width: 450px;
       transition: 0.5s ease;
-
       &::placeholder {
         font-size: $fs-18;
         color: $color-1;
       }
-
       &:focus {
         border-color: $color-1;
         box-shadow: none;
       }
     }
-
     button {
       @include myMixin($fs-16, $fw-600, $line-h-19, $color-3, $letter-spacing-4);
       padding: 25px 24px;
@@ -133,7 +114,6 @@ header {
       border-radius: 10px;
       background-color: $color-1;
       transition: 0.5s ease;
-
       &:hover {
         cursor: pointer;
         background-color: $color-2;
@@ -141,20 +121,16 @@ header {
     }
   }
 }
-
 @keyframes wavy-shape-animation {
   0% {
     background-position-x: 0%;
   }
-
   100% {
     background-position-x: 645px;
   }
 }
-
 .right {
   position: relative;
-
   .img-circle {
     width: 345.6px;
     height: 345.6px;
@@ -165,27 +141,22 @@ header {
     border-radius: 50%;
     animation: img-circle-animation 8s linear infinite;
   }
-
   img {
     border-radius: 50%;
     width: 345.6px;
     height: 345.6px;
     margin-bottom: 32px;
-
     &:hover {
       filter: grayscale(20%);
     }
   }
-
   h4 {
     @include myMixin($fs-32, $fw-600, $line-h-30, $color-2, 0);
   }
-
   .web-developer {
     @include myMixin($fs-16, $fw-400, $line-h-30, $color-2, $letter-spacing-5);
     margin-bottom: 20px;
   }
-
   .summary {
     width: 345.6px;
     height: 165px;
@@ -193,37 +164,31 @@ header {
     @extend .web-developer;
     letter-spacing: 0;
   }
-
   .socials {
     width: 345.6px;
     height: 58px;
     margin-bottom: 20px;
-
     a {
       text-decoration: none;
       @include myMixin($fs-12, $fw-700, $line-h-30, $color-2, $letter-spacing-5);
     }
   }
 }
-
 @keyframes img-circle-animation {
   0% {
     top: -20px;
     left: -20px;
   }
-
   50% {
     top: -20px;
     left: 20px;
     border-color: $color-1;
   }
-
   100% {
     top: -20px;
     left: -20px;
   }
 }
-
 .body-circle {
   width: 800px;
   height: 800px;
@@ -235,52 +200,69 @@ header {
   animation: body-circle-animation 3s linear infinite alternate;
   pointer-events: none;
 }
-
 @keyframes body-circle-animation {
   from {
     top: 0;
   }
-
   to {
     top: 70px;
     border-color: $color-1;
   }
 }
-
+main {
+  h2 {
+    @include myMixin($fs-48, $fw-700, $line-h-120, $color-1, 0);
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .container {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .flex-item {
+    img {
+      max-width: 30rem;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+        filter: grayscale(50%);
+        transition: 0.3s linear;
+        box-shadow: 1px 3px 3px #0c7f86;
+      }
+    }
+  }
+}
 @media (max-width: 1250px) {
   body {
     background: linear-gradient(to top, #e5fff9 5%, #b8e4da 50%);
     background-repeat: no-repeat;
   }
-
   .left {
     h1 {
       font-size: $fs-90;
       line-height: $line-h-110;
     }
   }
-
   section>div {
     flex-direction: column;
   }
-
   .right {
     .img-circle {
       visibility: hidden;
     }
   }
-
   .body-circle {
     visibility: hidden;
   }
-
   .left {
     .last-div {
       justify-content: flex-start;
       margin-bottom: 30px;
     }
   }
-
   .right {
     display: flex;
     flex-direction: column;
@@ -288,7 +270,6 @@ header {
     align-items: center;
   }
 }
-
 @media (max-width: 992px) {
   .left {
     .last-div {
@@ -296,57 +277,63 @@ header {
         width: 16px;
         height: 32px;
       }
-
       input {
         font-size: $fs-16;
         width: 360px;
-
         &::placeholder {
           font-size: $fs-16;
         }
       }
-
       button {
         font-size: $fs-12;
       }
     }
   }
 }
-
 @media (max-width: 768px) {
   .left {
     text-align: center;
   }
-
   .left {
     h1 {
       font-size: $fs-60;
       letter-spacing: $letter-spacing-4;
     }
-
     .coming-soon {
       font-size: $fs-22;
       line-height: $line-h-19;
       letter-spacing: $letter-spacing-4;
     }
   }
+  .right {
+    img {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+  main {
+    h2 {
+      font-size: 32px;
+    }
+    .flex-item {
+      img {
+        max-width: 22rem;
+      }
+    }
+  }
 }
-
 @media (max-width: 680px) {
   .container {
     width: 90%;
   }
-
   .left {
     .last-div {
       flex-direction: column;
       align-items: center;
       margin-top: 10px;
-
       img {
         visibility: hidden;
       }
-
       input {
         width: none;
         margin-bottom: 30px;

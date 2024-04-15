@@ -95,7 +95,7 @@
     .coming-image {
       @include hizalamaMixin(flex, column, start, start);
       img {
-        @include sizeMixin(345px, 345px, none);
+        width: 100%;
         border-radius: 50%;
       }
       h1 {
@@ -134,7 +134,6 @@
     width: 345px;
     height: 345px;
     margin-left: 975px;
-    margin-top: 20px;
     transition: all 0.9s ease-in-out;
     animation: animasyon-bir 8s infinite ease-in-out;
   }
@@ -154,7 +153,7 @@
   }
   .homework {
     @include hizalamaMixin(flex, row, center, end);
-    padding-top: 670px;
+    padding-top: 45rem;
     gap: 50px;
     img {
       @include sizeMixin(150px, 250px, none);

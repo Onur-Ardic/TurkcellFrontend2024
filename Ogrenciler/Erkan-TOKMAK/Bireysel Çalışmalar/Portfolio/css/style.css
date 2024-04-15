@@ -33,6 +33,10 @@ body {
   align-items: center;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 @keyframes wave-animation {
   0% {
     background-position-x: 0%;
@@ -248,9 +252,10 @@ header nav a img {
 }
 
 .project {
-  height: 100vh;
+  height: 100%;
   padding: 80px 0px 80px;
   margin-top: 500px;
+  box-shadow: 0px 7px 53px 9px rgba(81, 196, 211, 0.54);
   background-color: #fff;
 }
 .project h2 {
@@ -272,15 +277,28 @@ header nav a img {
 }
 .project-content .project-item {
   width: 48%;
-  height: 300px;
+  height: 400px;
   gap: 50px;
+  box-shadow: 0px 5px 30px -1px rgba(81, 196, 211, 0.54);
+  border-radius: 10px;
+}
+.project-content .project-item .project-content-description {
+  text-align: center;
+}
+.project-content .project-item .project-content-description h5 {
+  font-size: 2rem;
+  color: #126E82;
+}
+.project-content .project-item .project-content-description p {
+  color: #132C33;
 }
 .project-content .project-item img {
-  box-shadow: 0px 5px 33px -1px rgb(19, 44, 51);
   border: none;
+  margin-top: -25px;
   border-radius: 10px;
+  border-bottom: 1px solid #126E82;
   width: 100%;
-  height: 100%;
+  height: 300;
 }
 .project-content .project-item:hover {
   margin-top: -30px;

@@ -7,6 +7,9 @@
   line-height: 1.5;
   font-family: "Lilita One", sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -27,7 +30,7 @@
   flex-wrap: $wrap;
   gap: $gap;
 }
-$sizes: 11,120, 13, 14, 15, 16, 20, 24, 30, 32, 48;
+$sizes: 11,120, 13, 14, 15, 16, 20, 24, 30, 32, 48, 60, 120;;
 @each $size in $sizes {
   $class-size: $size;
   .fs-#{$class-size} {
@@ -68,6 +71,7 @@ $colors: (
 $bgColors: (
     "pink": #e6a4b4,
     "light-pink": #f1dfd7,
+    "pink-light":#e7b9c459,
     "peach": #f3d7ca,
     "light": #fff8e3,
     "white": #ffffff,
@@ -96,3 +100,13 @@ $bgColors: (
   border: $border;
   transition: background-color 0.3s, color 0.3s;
 }
+%line {
+    position: absolute;
+    bottom: 0;
+    margin-top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: #e67893;
+  }

@@ -1,0 +1,192 @@
+@media screen and (max-width: 10240px) {
+  .header-content {
+    .content-wrapper {
+      padding-top: 2rem;
+      .content-left {
+        h1 {
+          line-height: 1.5;
+          font-size: 100px;
+        }
+        .wave-image {
+          height: 20px;
+          width: 85%;
+        }
+        p {
+          line-height: 3;
+          font-size: 20px;
+        }
+        .form {
+          margin-top: 3rem;
+          justify-content: flex-start;
+          gap: 0rem;
+          i {
+            font-size: 50px;
+          }
+          input {
+            flex-grow: 0;
+            width: 350px;
+            font-size: 17px;
+          }
+
+          button {
+            font-size: 15px;
+          }
+        }
+      }
+      .content-right {
+        .profile-photo {
+          img {
+            width: 70%;
+          }
+          &::before {
+            width: 350px;
+            height: 350px;
+          }
+          &::after {
+            width: 800px;
+            height: 800px;
+          }
+        }
+      }
+    }
+  }
+  .my-projects {
+    padding-top: 2.5rem;
+    .content-wrapper {
+      .project-cards {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        gap: 3rem;
+        .card {
+          text-align: center;
+          .img-card {
+            img {
+              padding: 10px;
+              width: 450px;
+              height: 350px;
+            }
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+          .content-card {
+            text-align: left;
+            h2 {
+              font-size: 20px;
+              margin-bottom: 5px;
+            }
+            .icons {
+              i {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .header {
+    background: linear-gradient(
+      to right,
+      #afc8ad 0%,
+      #afc8ad 50%,
+      #afc8ad 50%,
+      #ffeae1 100%
+    );
+    .header-content {
+      .content-wrapper {
+        gap: 0rem;
+        margin: 10px;
+        flex-direction: column;
+        .content-left {
+          h1 {
+            font-size: 30px;
+          }
+          p {
+            letter-spacing: 10px;
+
+            font-size: 15px;
+          }
+          .form {
+            display: none;
+          }
+        }
+        .content-right {
+          .profile-photo {
+            img {
+              width: 50%;
+            }
+            &::before {
+              width: 150px;
+              height: 150px;
+            }
+            &::after {
+              left: 0;
+              width: 300px;
+              height: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .my-projects {
+    padding-top: 2rem;
+    .content-wrapper {
+      .project-cards {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+        .card {
+          text-align: center;
+          .img-card {
+            img {
+              width: 250px;
+              height: 200px;
+            }
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+          .content-card {
+            text-align: left;
+            h2 {
+              width: 300px;
+              font-size: 15px;
+              margin-bottom: 5px;
+            }
+            a {
+              font-size: 17px;
+            }
+            .icons {
+              i {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    padding-top: 2rem;
+    .content-wrapper {
+      justify-content: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      flex-wrap: wrap;
+      .links {
+        flex-wrap: wrap;
+        i {
+          font-size: 15px;
+        }
+        i:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
