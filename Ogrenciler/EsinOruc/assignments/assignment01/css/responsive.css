@@ -71,37 +71,36 @@
     font-size: 25px;
   }
 }
-@media screen and (max-width: 567px) {
-  .header-content .content-wrapper {
-    flex-wrap: wrap;
+@media screen and (max-width: 320px) {
+  .header {
+    background: linear-gradient(to right, #afc8ad 0%, #afc8ad 50%, #afc8ad 50%, #ffeae1 100%);
   }
-  .header-content .content-wrapper .content-left h1 {
-    font-size: 20px;
+  .header .header-content .content-wrapper {
+    gap: 0rem;
+    margin: 10px;
+    flex-direction: column;
   }
-  .header-content .content-wrapper .content-left p {
+  .header .header-content .content-wrapper .content-left h1 {
+    font-size: 30px;
+  }
+  .header .header-content .content-wrapper .content-left p {
+    letter-spacing: 10px;
     font-size: 15px;
   }
-  .header-content .content-wrapper .content-left .form {
-    flex-wrap: wrap;
-    margin-top: 2rem;
+  .header .header-content .content-wrapper .content-left .form {
+    display: none;
   }
-  .header-content .content-wrapper .content-left .form input {
-    width: 250px;
-    font-size: 15px;
-  }
-  .header-content .content-wrapper .content-left .form button {
-    font-size: 13px;
-  }
-  .header-content .content-wrapper .content-right .profile-photo img {
+  .header .header-content .content-wrapper .content-right .profile-photo img {
     width: 50%;
   }
-  .header-content .content-wrapper .content-right .profile-photo::before {
-    width: 350px;
-    height: 350px;
+  .header .header-content .content-wrapper .content-right .profile-photo::before {
+    width: 150px;
+    height: 150px;
   }
-  .header-content .content-wrapper .content-right .profile-photo::after {
-    width: 800px;
-    height: 800px;
+  .header .header-content .content-wrapper .content-right .profile-photo::after {
+    left: 0;
+    width: 300px;
+    height: 300px;
   }
   .my-projects {
     padding-top: 2rem;
@@ -115,8 +114,8 @@
     text-align: center;
   }
   .my-projects .content-wrapper .project-cards .card .img-card img {
-    width: 150px;
-    height: 100px;
+    width: 250px;
+    height: 200px;
   }
   .my-projects .content-wrapper .project-cards .card .img-card:hover {
     transform: scale(1.1);
@@ -125,9 +124,12 @@
     text-align: left;
   }
   .my-projects .content-wrapper .project-cards .card .content-card h2 {
-    width: 100px;
+    width: 300px;
     font-size: 15px;
     margin-bottom: 5px;
+  }
+  .my-projects .content-wrapper .project-cards .card .content-card a {
+    font-size: 17px;
   }
   .my-projects .content-wrapper .project-cards .card .content-card .icons i {
     font-size: 20px;
@@ -136,6 +138,7 @@
     padding-top: 2rem;
   }
   .footer .content-wrapper {
+    justify-content: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
     flex-wrap: wrap;

@@ -37,8 +37,7 @@ body {
   font-style: italic;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  gap: 20px;
+  gap: 40px;
 }
 .about-me .wave-image {
   background: url(../assets/wave-img.png);
@@ -64,26 +63,23 @@ body {
 }
 .about-me .about-me-texts input {
   background-color: #cfc2b4;
-  padding-right: 54px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 8px;
+  padding: 20px 84px 20px 15px;
   border: none;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 5px rgb(69, 60, 58);
 }
 .about-me .about-me-texts input::placeholder {
-  font-size: 18px;
+  font-size: 20px;
   text-align: left;
   color: #453c3a;
 }
 .about-me .about-me-texts button {
   background-color: #cfc2b4;
-  padding: 7px 30px;
+  padding: 16px 30px;
   border: none;
   border-radius: 5px;
   text-align: left;
-  font-size: 18px;
+  font-size: 20px;
   color: #453c3a;
   box-shadow: 0px 0px 10px 5px rgb(69, 60, 58);
 }
@@ -109,7 +105,7 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  right: -29rem;
+  right: -25rem;
   width: 700px;
   height: 700px;
   border: 1px solid #fff;

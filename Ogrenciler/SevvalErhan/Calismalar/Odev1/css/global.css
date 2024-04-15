@@ -8,6 +8,10 @@
   font-family: "Lilita One", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -56,6 +60,14 @@
 
 .fs-48 {
   font-size: 48px;
+}
+
+.fs-60 {
+  font-size: 60px;
+}
+
+.fs-120 {
+  font-size: 120px;
 }
 
 .fw-100 {
@@ -140,6 +152,10 @@
 
 .bg-color-light-pink {
   background-color: #f1dfd7;
+}
+
+.bg-color-pink-light {
+  background-color: rgba(231, 185, 196, 0.3490196078);
 }
 
 .bg-color-peach {
