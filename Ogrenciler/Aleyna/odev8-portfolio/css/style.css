@@ -242,37 +242,45 @@ body {
   flex: 2;
   height: 100%;
 }
-.middle .projects .cards .card .img-card img {
+.middle .projects .cards .card .img-card:hover {
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.4);
+}
+.middle .projects .cards .card .img-card:hover img {
+  border-radius: 7px;
+}
+.middle .projects .cards .card img {
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.middle .projects .cards .card .content {
+.middle .projects .cards .content {
   flex: 2;
   padding: 20px 40px;
   line-height: 2;
   width: 100%;
   height: 100%;
 }
-.middle .projects .cards .card .content .team {
+.middle .projects .cards .content .team {
   font-style: italic;
   font-size: 15px;
   font-weight: 400px;
   color: #2f2b23;
 }
-.middle .projects .cards .card .content .tag-icon {
+.middle .projects .cards .content .tag-icon {
   margin-bottom: 20px;
   color: #eca77f;
 }
-.middle .projects .cards .card .content .website {
+.middle .projects .cards .content .website {
   color: #7fa3c7;
   font-weight: 500px;
   font-size: 20px;
   text-align: center;
 }
-.middle .projects .cards .card .content .lang {
+.middle .projects .cards .content .lang {
   padding: 9px 20px;
   border-radius: 30px;
   background-color: none;

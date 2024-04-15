@@ -52,8 +52,6 @@ h4 {
 body {
   background: linear-gradient(90deg, rgb(229, 255, 249) 40%, rgb(184, 228, 218) 40%);
   position: relative;
-  padding: 0;
-  margin: 0;
   font-size: 16px;
   min-height: 100vh;
   width: 100%;
@@ -126,10 +124,6 @@ header .container img {
   letter-spacing: 30px;
   text-transform: uppercase;
   padding-top: 15px;
-}
-.content .container .coming-holder .coming-text .coming-form {
-  display: flex;
-  flex-wrap: wrap;
 }
 .content .container .coming-holder .coming-text form {
   margin-top: 60px;
@@ -281,7 +275,8 @@ header .container img {
   padding: 180px 0;
 }
 .projects .container h2 {
-  font-size: 26px;
+  padding-left: 20px;
+  font-size: 32px;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 5px;

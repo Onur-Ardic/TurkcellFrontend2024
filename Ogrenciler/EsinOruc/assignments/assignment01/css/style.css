@@ -234,6 +234,7 @@ body {
   flex: 1.5;
 }
 .header .content-wrapper .content-left p {
+  line-height: 3;
   letter-spacing: 30px;
   text-transform: uppercase;
 }
@@ -407,6 +408,7 @@ body {
   gap: 2rem;
 }
 .my-projects .content-wrapper .project-cards .card {
+  margin-bottom: 2rem;
   text-align: left;
 }
 .my-projects .content-wrapper .project-cards .card .img-card {

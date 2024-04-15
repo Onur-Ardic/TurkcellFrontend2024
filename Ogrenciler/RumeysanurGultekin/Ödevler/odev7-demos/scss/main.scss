@@ -1,0 +1,348 @@
+$bgcolor: #0c7f86;
+$bg2color: #084b4f;
+
+@mixin font-ozellik($color,$fontsize){
+    color: $color;
+    font-size: $fontsize 
+}
+@mixin flex-row {
+    display: flex;
+    flex-direction: row; 
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+body{
+    height: 100vh;
+     background: linear-gradient(
+        to right,
+        #F7FFE5 0%,
+        #F7FFE5 40%,
+        #E1ECC8 40%,
+        #E1ECC8 100%
+    )
+} 
+.mb-24{
+    margin-bottom: 24px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.header{
+    padding-top: 60px;
+}
+.header-logo img{
+    width: 98px;
+    height: 56px;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.working-tab{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    .working-left{
+        width: 60%;
+        .wave{
+            background-image: url("https://demo.cocobasic.com/seppo-html/demo-5/images/wavy-shape.png");
+            padding: 10px 0 10px 0; 
+            background-repeat: repeat-x;
+            background-size: 755px 20px;
+            animation: wave 8s linear infinite;
+            width: 100%;
+        } 
+        @keyframes wave{
+            0%{
+                background-position-x: 0% ;
+            }
+            100%{
+                background-position-x: 645px ;
+            }  
+        }
+        .title-working{
+            @include font-ozellik($bgcolor, 120px);
+            padding-top: 100px;
+            padding-bottom: 20px;
+        }
+        .paragraf-working{
+            @include font-ozellik($bgcolor, 32px);
+            font-weight: bolder;
+            line-height: 35px;
+            letter-spacing: 30px;
+            margin-top: 40px;
+        }
+        .email-form{
+            @include flex-row();
+            align-items: center;
+            column-gap: 8px;
+            margin-top: 60px;
+            .email-form-img{
+                width: 34px;
+                height: 50px;
+            }
+            .input-email{
+                background-color: white;
+                border-radius: 10px;
+                text-align: start;
+                padding: 17px 0 17px 5px;
+                margin: 0 20px;
+                border-color: transparent;
+                width: 800px;
+                &::placeholder{
+                    @include font-ozellik($bgcolor, 18px);
+                }
+            } 
+            .form-button{
+                padding:15px 24px;
+                border-radius: 10px;
+                @include font-ozellik(white, 16px);
+                background-color: $bgcolor;
+                border-color: transparent;
+                letter-spacing: 3px;
+            }
+            .form-button:hover{
+                background-color: $bg2color;
+            }
+        }        
+    }
+    .working-right{
+        width: 30%;
+        position: relative;
+       .circle{
+            border-radius: 50%;
+            right: 5px;
+            box-sizing: border-box;
+            background-color: transparent;
+            width: 400px;
+            height: 400px;
+            border: $bgcolor solid;
+            position: absolute;
+            z-index: -1;
+            animation: circle 8s linear infinite;
+           
+        } 
+        .big-circle{
+            border-radius: 50%;
+            box-sizing: border-box;
+            width: 1000px;
+            height: 1000px;
+            border: white solid;
+            position: absolute;
+            z-index: -4;
+            animation: big-circle 10s linear infinite;
+        }
+        @keyframes circle {
+            0%{
+                transform: translateX(10px);
+
+            }
+            50%{
+                transform: translateX(20px);
+                border-color: #F7FFE5;
+            }
+            100%{
+                transform: translateX(10px);
+            }
+            
+        }
+        @keyframes big-circle {
+            0%{
+                transform: translateY(-70px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        .photo-animation img{
+            height: 303px;
+            width: 303px;
+            margin-bottom: 40px;
+            border-radius: 50%;
+            
+        }
+        .information h4{
+            @include font-ozellik($bg2color, 32px);
+            margin-bottom: 11px;
+            
+        }
+        .information{
+            
+            .subtitle{
+                @include font-ozellik($bg2color, 16px);
+                letter-spacing: 5px;
+            }
+            .paragraf{
+                @include font-ozellik($bg2color, 16px);
+                line-height: 33px
+            }
+            .information-socialmedia{
+                margin-top: 35px;
+                @include flex-row();
+                justify-content: space-between;
+                .socialmedia{
+                    letter-spacing: 5px;
+                    @include font-ozellik($bgcolor, 13px);
+                    text-decoration: none;
+                    font-weight: bolder;
+                    &:hover {
+                        color: $bg2color;  
+                    }
+                }
+                
+            }
+        }
+    } 
+}  
+.projects{
+    background-color: #F7FFE5;
+    .projects-header{
+        @include font-ozellik($bgcolor, 70px);
+        text-align: center;
+        /* border-top: $bg2color solid 1px; */
+        padding-top: 80px
+        }
+    }
+    .projects-body{
+        display: flex;
+        flex-direction:column;
+        margin-top: 80px;
+        justify-content: center;
+        align-items: center;
+            .projects4{
+                gap: 100px;
+                @include flex-row();
+                .image-proje{
+                    img{
+                        height: 320px;
+                        width: 460px;
+                        &:hover{
+                            height: 480px;
+                            width: 690px;
+                        }
+                    }
+                }
+                .text-proje{
+                    h1{
+                        @include font-ozellik(#084b4f,65px);
+                        
+                    }
+                    .ekip{
+                        h4{
+                            margin-bottom: 15px;
+                            @include font-ozellik(#084b4f,25px);
+
+                        }
+                        ul li {
+                            list-style-type: none;
+                            @include font-ozellik(#084b4f,15px);
+                        }
+                    }
+                }
+            }
+
+    }
+
+
+@media (max-width: 992px){
+    .working{
+        .working-tab{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            gap:100px;
+            margin-left: 10%;
+            margin-right: 0;
+            .working-left{
+                width: 90%;
+                .email-form{
+                    display: flex;
+                    flex-direction:column ;
+                    gap:30px;
+                    .email-form-img{
+                        display: none;
+                    }
+                    .input-email{
+                        width: 500px;
+                        margin-right: 0;
+                    }
+                    .form-button{
+                        text-align: center;
+                        justify-content:left ;
+                    }
+                }
+                
+            }
+            .working-right{
+                width: 90%;
+                .circle{
+                    display: none;
+                }
+                .big-circle{
+                    display: none;
+                }
+                .photo-animation{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .projects{
+        .projects-body{
+            .projects4{
+                .image-proje{
+                    img{
+                        height: 320px;
+                        width: 460px;
+                        &:hover{
+                            height: 400px;
+                            width: 550px;
+    
+                        }
+                    }
+                }
+            } 
+        } 
+    }            
+    
+}
+@media (max-width: 550px){
+    .projects{
+        .projects-header{
+            h2{
+                font-size: 50px;
+            }
+        }
+        .projects-body{
+            .projects4{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                .text-proje{
+                    text-align: center;
+                    h1{
+                        font-size: 35px;
+                    }
+                }
+                .image-proje{
+                    img{
+                        height: 160px;
+                        width: 230px;
+                    }
+                }
+            } 
+        } 
+    }   
+}
