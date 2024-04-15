@@ -2,6 +2,6 @@
     "livePreview.defaultPreviewPath": "/Ogrenciler/BarisErkus/18-03-2024/assignment-app/index.html",
     "editor.fontSize": 16,
     "editor.accessibilityPageSize": 15,
-    "files.autoSave": "off",
+    "files.autoSave": "afterDelay",
     "editor.tabSize": 4
 }
