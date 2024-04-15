@@ -6,7 +6,11 @@
   font-family: "Poppins ", sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.5;
+  line-height: 1.2;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .container {
@@ -41,6 +45,10 @@
 
 .fs-24 {
   font-size: 24px;
+}
+
+.fs-28 {
+  font-size: 28px;
 }
 
 .fs-30 {
@@ -108,11 +116,15 @@
 }
 
 .color-dark-cyan {
-  color: #69846d;
+  color: #5d8363;
 }
 
 .color-ash-gray {
   color: #afc8ad;
+}
+
+.color-light-pink {
+  color: rgba(255, 234, 225, 0.4901960784);
 }
 
 .color-champange-pink {
@@ -143,6 +155,18 @@
   color: #4d4d4d;
 }
 
+.color-light-jasper {
+  color: #d27360;
+}
+
+.color-blue {
+  color: blue;
+}
+
+.color-pink {
+  color: pink;
+}
+
 .bg-color-white {
   background-color: #ffffff;
 }
@@ -152,7 +176,11 @@
 }
 
 .bg-color-dark-cyan {
-  background-color: #69846d;
+  background-color: #5d8363;
+}
+
+.bg-color-light-pink {
+  background-color: rgba(255, 234, 225, 0.4901960784);
 }
 
 .bg-color-ash-gray {
@@ -171,8 +199,16 @@
   background-color: #f28f3b;
 }
 
+.bg-color-light-tangerine {
+  background-color: #d26a0f;
+}
+
 .bg-color-jasper {
   background-color: #c8553d;
+}
+
+.bg-color-light-jasper {
+  background-color: #d27360;
 }
 
 /*# sourceMappingURL=global.css.map */

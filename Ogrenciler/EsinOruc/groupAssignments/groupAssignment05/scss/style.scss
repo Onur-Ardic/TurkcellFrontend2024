@@ -6,11 +6,9 @@
   width: 100%;
   background-size: cover;
   position: relative;
-
   .container {
     z-index: 2;
     position: relative;
-
     .header-nav {
       padding: 20px 15px;
       @include flex(flex, space-between, center);
@@ -36,7 +34,6 @@
         }
       }
     }
-
     .container-wrap {
       position: relative;
       @include flex(flex, $column: column, $gap: 2rem);
@@ -49,8 +46,7 @@
         border-radius: 4px;
         padding: 14px;
         width: 100%;
-        @include flex(flex, space-between, center, $gap: 0.5rem,$wrap:wrap);
-       
+        @include flex(flex, space-between, center, $gap: 0.5rem, $wrap: wrap);
 
         & input,
         select,
@@ -88,7 +84,6 @@
         }
       }
     }
-
     .trend-search {
       @include flex(flex, flex-start, center, $gap: 0.5rem);
       text-align: start;
@@ -107,7 +102,6 @@
       }
     }
   }
-
   .opacity {
     position: absolute;
     opacity: 0.4;
@@ -121,13 +115,10 @@
     background-color: black;
   }
 }
-
 .featured-ads {
   padding: 2.5rem;
-
   .featured-cards {
     @include flex(flex, space-evenly, center, $gap: 0rem);
-
     .featured-card {
       border-radius: 7px;
 
@@ -335,19 +326,15 @@
         object-fit: cover;
       }
     }
-
     .angle {
       i {
         position: absolute;
-
         @include button-style(20px, 20px, 50%);
-
         &:nth-child(1) {
           background: #00000033;
           right: 90%;
           top: 50%;
         }
-
         &:nth-child(2) {
           background: #00000033;
           left: 90%;
@@ -361,7 +348,6 @@
     }
   }
 }
-
 .our-blog {
   .blog-title {
     position: relative;
@@ -372,7 +358,6 @@
       @extend %line;
     }
   }
-
   .blog-cards {
     @include flex(
       flex,
@@ -383,7 +368,6 @@
       $wrap: nowrap
     );
     padding: 2.5rem 0;
-
     .img-card {
       img {
         width: 100%;
@@ -396,7 +380,6 @@
       line-height: 40px;
     }
   }
-
   .btn-wrapper {
     margin-top: 2rem;
     text-align: center;
@@ -405,10 +388,8 @@
     }
   }
 }
-
 .footer {
   margin-top: 2.5rem;
-
   .newsletter {
     .container {
       @include flex(
@@ -516,7 +497,6 @@
       }
     }
   }
-
   .bottom-footer {
     text-align: center;
     p {

@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.primary-bg-color {
+  background-color: #2f89fc;
+}
+
+.primary-text-color {
+  color: #2f89fc;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.colorw {
+  color: white;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.p {
+  font-size: 16px;
+  color: #696969;
+}
+
+/*# sourceMappingURL=global.css.map */

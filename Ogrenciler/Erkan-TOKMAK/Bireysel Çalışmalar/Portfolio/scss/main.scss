@@ -28,6 +28,9 @@ body{
   flex-direction: column;
   align-items: center;
 }
+.mb-30{
+  margin-bottom: 30px;
+}
 @mixin flex($display, $justify, $align, $gap) {
     display: $display;
     justify-content: $justify;
