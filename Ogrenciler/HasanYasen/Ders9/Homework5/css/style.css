@@ -680,6 +680,7 @@ header .header-menu-toggle {
   }
   .our-blog-section .flex-container div img {
     width: auto;
+    max-width: 100%;
     object-fit: contain;
   }
   .our-blog-section .flex-container div .lorem {

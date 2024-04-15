@@ -11,11 +11,6 @@ body {
 a {
   color: black;
 }
-img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-}
 .container {
   width: 1140px;
   max-width: 100%;
@@ -46,10 +41,18 @@ img {
 .btn {
   color: white;
   background: linear-gradient(to right, #ff5195, #ffb84b);
+  border: none;
   border-radius: 4px;
+  font-weight: 700;
+  font-size: 1rem;
 }
 .btn1 {
   padding: 16px 25px;
 }
 .btn-view {
+  margin-bottom: 6px;
+  padding: 16px 46px;
+}
+.section-pos-bg{
+  background: #fffcfa;
 }
