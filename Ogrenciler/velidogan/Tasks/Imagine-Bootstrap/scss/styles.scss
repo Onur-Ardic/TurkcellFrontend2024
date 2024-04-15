@@ -1,23 +1,27 @@
-body{
-    font-family: "Nunito", sans-serif;
+body {
+  font-family: "Nunito", sans-serif;
 }
-.main{
-    &-header{
-        &-content{
-            transform: translateY(50%);
-        }
-        img{
-            transform: translate(25%,10%);
-        }
-    }
+a {
+  text-decoration: none;
 }
-@media (max-width:992px){
-    .main{
-        &-header{
-            img{
-                transform: translate(0,0);
-                position: relative!important;
-            }
-        }
+.main {
+  &-header {
+    height: 100vh;
+    &-content {
+      transform: translateY(50%);
     }
+    img {
+      transform: translate(25%, 10%);
+    }
+  }
+}
+@media (max-width: 992px) {
+  .main {
+    &-header {
+      img {
+        transform: translate(0, 0);
+        position: relative !important;
+      }
+    }
+  }
 }
