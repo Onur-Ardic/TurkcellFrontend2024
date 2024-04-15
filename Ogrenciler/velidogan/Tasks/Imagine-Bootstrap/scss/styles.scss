@@ -1,0 +1,23 @@
+body{
+    font-family: "Nunito", sans-serif;
+}
+.main{
+    &-header{
+        &-content{
+            transform: translateY(50%);
+        }
+        img{
+            transform: translate(25%,10%);
+        }
+    }
+}
+@media (max-width:992px){
+    .main{
+        &-header{
+            img{
+                transform: translate(0,0);
+                position: relative!important;
+            }
+        }
+    }
+}
