@@ -71,4 +71,54 @@
       }
     }
   }
+  //!-----Stores-----
+  .stores{
+    &-wrapper{
+      grid-template-columns: 100%;
+    }
+  }
+  //!-----Extend-----
+  .extend{ 
+    &-wrapper{
+      grid-template-columns: 100%;
+    }
+    &-right{
+      img{
+        width: 500px;
+        height: 500px;
+      }
+  }
+  }
+  //!-----Features-----
+  .features-content{
+    flex-direction: column;
+  }
+  //!-----Testimonials-----
+  .testimonials-content{
+    flex-direction: column;
+  }
+  //!-----Sponsors-----
+  .sponsors-group{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  //!----Footer-----
+  .footer{
+    &-top{
+      flex-direction: column;
+      &-links{
+        flex-direction: column;
+      }
+    }
+    &-body{
+      grid-template-columns: 1fr;
+    }
+  }
+  //!-----ScrollToTop-----
+  .efekt1{
+    right: 5rem;
+  }
+  .efekt2{
+    right: 5rem;
+  }
 }
