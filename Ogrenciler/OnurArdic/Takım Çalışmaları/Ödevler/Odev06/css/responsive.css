@@ -52,6 +52,41 @@
   .omnichannel-wrapper .omnichannel-left .omnichannel-list li {
     font-size: 10px;
   }
+  .stores-wrapper {
+    grid-template-columns: 100%;
+  }
+  .extend-wrapper {
+    grid-template-columns: 100%;
+  }
+  .extend-right img {
+    width: 500px;
+    height: 500px;
+  }
+  .features-content {
+    flex-direction: column;
+  }
+  .testimonials-content {
+    flex-direction: column;
+  }
+  .sponsors-group {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-top {
+    flex-direction: column;
+  }
+  .footer-top-links {
+    flex-direction: column;
+  }
+  .footer-body {
+    grid-template-columns: 1fr;
+  }
+  .efekt1 {
+    right: 5rem;
+  }
+  .efekt2 {
+    right: 5rem;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */
