@@ -182,7 +182,7 @@
         text-align: left;
         .img-card {
           border-radius: 10px;
-
+          transition: all 0.2s ease-in-out;
           img {
             padding: 20px;
             width: 500px;

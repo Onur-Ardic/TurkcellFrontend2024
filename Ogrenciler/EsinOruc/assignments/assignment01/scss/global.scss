@@ -100,7 +100,7 @@ $bgColors: (
   @if map-has-key($map, $color-name) {
     @return map-get($map, $color-name);
   } @else {
-    @warn "The color `#{$color-name}` is not defined in the map.";
+    @warn "#{$color-name}";
     @return null;
   }
 }
