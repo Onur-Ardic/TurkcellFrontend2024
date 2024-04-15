@@ -15,7 +15,7 @@
     border-left: 2px solid get-color-map($colors, "dark-cyan");
   }
   .content-wrapper {
-    padding-top: 0rem;
+    padding-top: 5rem;
     @include flex(flex, space-between, center, $wrap: nowrap, $gap: 5rem);
     .content-left {
       width: 100%;

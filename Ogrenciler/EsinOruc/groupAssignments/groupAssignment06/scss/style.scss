@@ -4,9 +4,8 @@
   height: 115vh;
   background-image: url("../assets/img/shape-2.png"),
     url("../assets/img/shape-1.png");
-  background-position: left center, right center;
-  background-position: right top, left bottom; /* Görüntülerin konumunu ayarlayın */
-  background-repeat: no-repeat, no-repeat; /* Tekrar etme özelliklerini ayarlayın */
+  background-position: right top, left bottom;
+  background-repeat: no-repeat, no-repeat;
   background-color: #f9f2ff;
   .navbar {
     padding-top: 2rem;
@@ -99,6 +98,79 @@
           left: -30px;
           bottom: -350px;
         }
+      }
+    }
+  }
+}
+
+.omnichannel {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  .container {
+    @include flex(flex, space-between, center, $wrap: nowrap, $gap: 3rem);
+
+    .left-wrapper {
+      @include flex(
+        flex,
+        space-between,
+        flex-start,
+        $column: column,
+        $gap: 3rem
+      );
+
+      .content {
+        max-width: 100%;
+        border-bottom: 1px solid #ecf0f3;
+        h2 {
+          margin-bottom: 1rem;
+        }
+        p {
+          margin-bottom: 1rem;
+          width: 70%;
+        }
+      }
+      .list-wrapper {
+        .list {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          column-gap: 2rem;
+          row-gap: 1rem;
+        }
+      }
+      .button {
+        a {
+          @include button-style(16px, 46px);
+        }
+      }
+    }
+    .right-wrapper {
+      margin-top: 4rem;
+    }
+  }
+}
+.stores {
+  padding: 2rem 0 2rem 0;
+  .content {
+    text-align: center;
+    p {
+      margin: auto;
+      width: 600px;
+      word-wrap: break-word;
+    }
+  }
+  .cards {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    .card {
+      text-align: center;
+      box-shadow: 0 4px 4px rgba(58, 58, 58, 0.1);
+      border-radius: 4px;
+      padding: 48px 45px;
+      &:hover {
+        box-shadow: 0 0px 10px rgba(58, 58, 58, 0.1);
+        transform: translateY(-5px);
       }
     }
   }
