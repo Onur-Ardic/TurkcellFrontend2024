@@ -20,7 +20,7 @@
 }
 .navbar{
     z-index: 500;
-    padding: 40px 400px;
+    padding: 40px 300px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -36,8 +36,8 @@
     }
 }
 .navbar-menu{
-    margin-left: 200px;
-    margin-right: -200px;
+    margin-left: 100px;
+    margin-right: -100px;
     .navbar-item{
         li{
             display: inline-block;
@@ -113,7 +113,6 @@
             justify-content: center;
             align-items: center;
             .banner-text{
-                padding-right: 300px;
                 margin-left: 260px;
                 h2{
                     @include fontMixin(60px,black);
@@ -314,13 +313,32 @@
     }
 }
 @media (max-width: 575px){
+    .grow-part{
+        .banner-area{
+            .banner-img{
+                img{
+                    width: 90%;
+                }
+            }
+            
+        }
+    }
     .omnichannel{
         .omnic-body{
-            .omnic-list{
-                display:flex;
-                flex-direction:column;
-                justify-content: center;
+            .omnic-img{
+                img{
+                    width: 90%;
+                }
+            }
+            .omnic-text{
+                .omnic-list{
+                    display:flex;
+                    flex-direction:column;
+                    justify-content: center;
+                }
+                
             }
         }
     }
+    
 }
