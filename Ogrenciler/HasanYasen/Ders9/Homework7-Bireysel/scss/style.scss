@@ -16,6 +16,7 @@ body {
 $fs-120: 120px;
 $fs-90: 90px;
 $fs-60: 60px;
+$fs-48 : 48px;
 $fs-32: 32px;
 $fs-22: 22px;
 $fs-18: 18px;
@@ -55,6 +56,10 @@ $letter-spacing-30: 30px;
 
 .flex {
   display: flex;
+}
+
+.jc-center {
+  justify-content: center;
 }
 
 .jc-sbetween {
@@ -247,6 +252,36 @@ header {
   }
 }
 
+main {
+  h2 {
+    @include myMixin($fs-48, $fw-700, $line-h-120, $color-1, 0);
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .flex-item {
+    img {
+      max-width: 30rem;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+        filter: grayscale(50%);
+        transition: 0.3s linear;
+        box-shadow: 1px 3px 3px #0c7f86;
+      }
+    }
+  }
+}
+
 @media (max-width: 1250px) {
   body {
     background: linear-gradient(to top, #e5fff9 5%, #b8e4da 50%);
@@ -328,6 +363,25 @@ header {
       font-size: $fs-22;
       line-height: $line-h-19;
       letter-spacing: $letter-spacing-4;
+    }
+  }
+
+  .right {
+    img {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+
+  main {
+    h2 {
+      font-size: 32px;
+    }
+
+    .flex-item {
+      img {
+        max-width: 22rem;
+      }
     }
   }
 }
