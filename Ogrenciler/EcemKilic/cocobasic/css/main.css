@@ -8,6 +8,7 @@
 body {
   background-color: #BC6FF1;
   color: #52057B;
+  overflow-x: hidden;
 }
 
 .container {
@@ -34,7 +35,6 @@ header a img {
   position: relative;
   height: 20px;
   width: 100%;
-  overflow: hidden;
 }
 .subscribe .circle-animation {
   position: absolute;
@@ -210,7 +210,6 @@ header a img {
 }
 .about .img-box::after {
   content: "";
-  overflow-y: hidden;
   position: absolute;
   right: -420px;
   top: 0;
@@ -222,7 +221,6 @@ header a img {
   user-select: none;
   z-index: 0;
   animation: animate-img-circle-2 3s linear infinite alternate;
-  clip-path: circle(70% at left);
 }
 @keyframes animate-img-circle-2 {
   from {
