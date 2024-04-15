@@ -146,6 +146,7 @@ a {
   color: #D4564C;
 }
 .content-right-item h6 {
+  margin: 10px 0;
   font-size: 1rem;
   color: #134151;
 }
@@ -156,8 +157,11 @@ a {
   text-align: justify;
   font-size: 0.7rem;
 }
-.content-right .content ul {
-  display: flex;
+.content-right .social-media-icons {
+  color: #D4564C;
+}
+.content-right .social-media-icons i {
+  margin: 15px 15px 20px 0;
 }
 
 .image {

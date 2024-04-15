@@ -325,4 +325,86 @@ body {
   transform: translateY(-5px);
 }
 
+.retail-stores {
+  text-align: center;
+}
+.retail-stores .retail-content h2 {
+  margin-bottom: 20px;
+}
+.retail-stores .retail-content p {
+  margin-bottom: 50px;
+  color: #696969;
+}
+.retail-stores .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  text-align: center;
+}
+.retail-stores .cards .card .card-item {
+  padding: 70px 40px;
+  position: relative;
+  overflow: hidden;
+}
+.retail-stores .cards .card .card-item div:first-child {
+  background: linear-gradient(to top, #f9769d, #bb6df7);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  line-height: 105px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.retail-stores .cards .card .card-item div:first-child img {
+  background: transparent;
+  width: auto;
+}
+.retail-stores .cards .card .card-item h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.retail-stores .cards .card .card-item p {
+  color: #696969;
+}
+
+.powers-retail {
+  text-align: center;
+}
+.powers-retail .powers-content h2 {
+  margin-bottom: 20px;
+}
+.powers-retail .powers-content p {
+  margin-bottom: 50px;
+  color: #696969;
+}
+.powers-retail .slogan-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  text-align: center;
+  padding: 50px;
+}
+.powers-retail .slogan-cards .card .card-item {
+  padding: 10px;
+}
+.powers-retail .slogan-cards .card .card-item .card-images img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+.powers-retail .slogan-cards .card .card-item .card-slogan h5 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.powers-retail .slogan-cards .card .card-item .card-slogan p {
+  color: #696969;
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=style.css.map */
