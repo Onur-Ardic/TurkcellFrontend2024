@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css")
+$colorRed : #D4564C
+$colorDark: #134151
+$colorGreen: #375851
+$colorLight: #ECEBE8
+$colorBlue: #ccd6d9
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+body
+    font-size: 1,2rem
+    font-family: Arial, Helvetica, sans-serif
+p
+    color: $colorDark
+
+h1,h2,h3,h4,h5,h6,p
+    line-height: 1.6
+    letter-spacing: 0.03rem
+
+ul
+    list-style-type: none
+
+a
+    text-decoration: none
+.row
+    display: flex
+.btn
+    padding: 25px 15px
+    border-radius: 10px
+    color: $colorLight
+    background-color: $colorRed
+    font-size: 16px
+    font-weight: 600
+    line-height: 19px
+    letter-spacing: 4px
+    text-transform: uppercase
+    cursor: pointer
+    border: none
+    transition: 0.5s ease
+.container
+    width: 1200px
+    margin: 0 auto
+.page
+    position: relative
+    padding: 0
+    margin: 0
+    font-size: 16px
+    min-height: 100vh
+    width: 100%
+.left-background
+    position: absolute
+    top: 0
+    left: 0
+    height: 100vh
+    width: 40%
+    background-color: $colorLight
+    z-index: -1
+.right-background
+    position: absolute
+    top: 0
+    right: 0
+    height: 100vh
+    width: 60%
+    background-color: $colorBlue
+    z-index: -1
+
+.logo
+    padding: 3rem
+    font-size: 2rem
+    border-block: inline
+    a
+        color: $colorRed
+
+.content-left
+    align-content: center
+    width: 50%
+    h1
+        padding: 2rem 0 1rem 3rem
+        font-size: 5rem
+        color: $colorDark
+    h6
+        padding: 2rem 0 1rem 3rem
+        font-size: 2rem
+        color: $colorDark
+    input
+        font-size: 18px
+        padding: 20px 24px
+        flex-grow: 1
+        margin: 0 0 0 3rem
+        border: none
+        outline: none
+        border: 1px solid $colorLight
+        border-radius: 10px
+        background-color: $colorLight
+        box-shadow: 0px 0px 30px 7px $colorGreen
+        transition: 0.5s ease
+
+.content-right
+    align-content: center
+    width: 50%
+.image
+    position: relative
+    max-width: 50%
+    z-index: 1
+    img
+        width: 100%
+        border-radius: 50%  50% 0 0 
+        &::before
+            content: ''
+            position: absolute
+            top: -45px
+            left: -30px
+            width: 350px
+            height: 350px
+            border-radius: 50%
+            border: 3px solid #fafafa
+            z-index: 2
+            pointer-events: none
+            user-select: none
+            animation: animate-img-circle 8s linear infinite
+        &::after
+            content: ''
+            position: absolute
+            right: -420px
+            top: 0
+            width: 800px
+            height: 800px
+            border: 1px solid #fff
+            border-radius: 50%
+            pointer-events: none
+            user-select: none
+            z-index: 0
+            animation: animate-img-circle-2 3s linear infinite alternate
+
+@keyframes animate-img-circle 
+    0% 
+        top: -20px
+        left: -20px
+    
+    50% 
+        top: -20px
+        left: 20px
+        border-color: var(--main-color)
+    100% 
+        top: -20px
+        left: -20px
+    
+@keyframes animate-img-circle-2 
+    from 
+        top: -70px
+    
+    to 
+        top: 10px
+        border-color: var(--main-color)
+    
