@@ -32,6 +32,38 @@ $brad5: 5px;
       }
     }
   }
+  #our-blog {
+    .blog-cards {
+      display: block;
+
+      .card {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  #newsletter,
+  #about {
+    display: block;
+    .form-control,
+    .btn-white,
+    .search,
+    .btn-blue {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    ul,
+    .social-links {
+      display: block;
+      text-align: center;
+      li,
+      i {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  }
 }
 @media screen and (min-width: 768px) {
     #hero {
@@ -147,6 +179,39 @@ $brad5: 5px;
       }
     }
   }
+  #our-blog {
+    padding: 0 100px;
+    .blog-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 0 150px;
+      .card {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  #newsletter {
+    padding: 0 120px;
+    .container {
+      display: flex;
+      justify-content: space-around;
+
+      .form-control {
+        width: 500px;
+      }
+    }
+  }
+  #about { 
+    padding: 8em 0;
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }
 @media screen and (min-width: 576px) {
     #popular-categories {
@@ -185,6 +250,7 @@ $brad5: 5px;
             .card {
                 width: 75%;
                 display: flex;
+                flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
                 box-shadow: -3px 3px 24px -5px rgba(0, 0, 0, 0.57);

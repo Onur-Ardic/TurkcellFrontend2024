@@ -1,0 +1,342 @@
+$styleColor: #dcecca;
+$styleColor2: #91ac73;
+
+$fontSize16: 16px;
+$fontSize15: 15px;
+$fontSize18: 18px;
+$fontSize20: 20px;
+$fontSize32: 32px;
+$fontSize120: 120px;
+$fontSize150: 150px;
+
+@mixin flex($direction, $justifyContent, $alignItems) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+  }
+
+@mixin border($border, $borderRadius, $borderColor, $borderBg, $borderWidth) {
+    border-style: $border;
+    border-radius: $borderRadius;
+    border-color: $borderColor;
+    background-color: $borderBg;
+    border-width: $borderWidth;
+  }
+
+@mixin margin($marginLeft, $marginRight, $marginTop, $marginBottom) {
+    margin-left: $marginLeft;
+    margin-right: $marginRight;
+    margin-top: $marginTop;
+    margin-bottom: $marginBottom;
+  }
+
+@mixin padding($paddingLeft, $paddingRight, $paddingTop, $paddingBottom) {
+    padding-left: $paddingLeft;
+    padding-right: $paddingRight;
+    padding-top: $paddingTop;
+    padding-bottom: $paddingBottom;
+  }
+
+@mixin button-btn {
+    font-family: "Poppins";
+    @include padding(20,20, 30 ,30 );
+    border-radius: 10px;
+    color: $styleColor2;
+    background-color: $styleColor;
+    font-size: $fontSize16;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s ease;
+    &:hover {
+        background-color: $styleColor2;
+        color: $styleColor;
+    }
+}
+
+* {
+    @include margin(0, 0,0 ,0 );
+    @include padding(0,0 ,0 ,0 );
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+h1 {
+    font-size: $fontSize150;
+    font-weight: 600;
+    line-height: 100px;
+    letter-spacing: 4px;
+    text-align: left;
+    vertical-align: top;
+    color: $styleColor;
+}
+
+h4 {
+    font-size: $fontSize32;
+    font-weight: 600;
+    line-height: 30px;
+    color: $styleColor;
+}
+
+.link {
+    font-weight: bolder;
+    font-size: $fontSize15;
+    line-height: 10px;
+    letter-spacing: 2px;
+    color: $styleColor2;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(217, 241, 241) 40%, rgb(184, 219, 228) 40%);
+    position: relative;
+    @include padding(0,0 ,0 ,0 );
+    @include margin(0, 0,0 ,0 );
+    font-size: $fontSize16;
+    min-height: 100vh;
+    width: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 1100px;
+    @include padding(0,0 ,30px ,30px );
+    @include margin(400px, 60px,auto ,auto );
+    
+}
+
+header {
+    @include padding(0,0 ,70px , 0);  
+    .container {
+        .logo img {
+            width: 98px;
+            height: 56px;
+            transition: transform .8s ease;
+          }
+          
+          .logo img:hover {
+            transform: scale(1.1);
+            transform: rotate(360deg);
+          }
+    }
+}
+
+.coming-section {
+    .section-container {
+    width: 100%;
+    max-width: 1100px;
+    @include padding(20px,20px ,0 ,0 );
+    @include margin(auto, auto,0 ,0 );
+        .coming-wrapper {
+        @include flex (row, space-between, center );
+            .text-content {
+                @include flex(column,none ,none );
+                width: 60%;
+                .randomize-text {
+                    display: inline-block;
+                  }
+                
+                  .randomize-text:hover {
+                    animation: randomize 1s ease infinite;
+                  }
+                h1 {
+                    font-size: $fontSize120;
+                    @include padding(10px,0 ,80px ,10px );color: $styleColor2;
+                }
+                .wave-animation {
+                    background-image: url("../images/wave.png");
+                    width: 100%;
+                    height: 20px;
+                    background-size: 600px 20px;
+                    background-repeat: repeat-x;
+                    animation: wave 12s linear infinite;
+                    @include margin(0,0 ,25px ,25px );
+                    
+                }
+                p {
+                    color: $styleColor2;
+                    font-size: $fontSize32;
+                    font-weight: 700;
+                    line-height: 35px;
+                    letter-spacing: 30px;  
+                    @include padding(0,0,15px,0);                  
+                    padding-top: 15px;
+                }
+                .subscribe-form {
+                    @include flex(row,none ,none );
+                    display: flex;
+                    flex-wrap: wrap;
+                    @include margin(0,0 ,60px ,0 );
+                    .arrow {
+                        @include margin(0,0 ,10px ,10px );
+                        width: 34px;
+                        height: 50px;
+                        transition: transform 0.4s ease;
+                      }
+                      .arrow:hover {
+                        transform: scale(1.4) translateX(-8px);
+                      }
+                   
+                      
+                  
+                    input {
+                        outline: invert;
+                        font-size: 20px;
+                        margin: 0 10px;
+                        border: 1px solid #b2b43e;
+                        border-radius: 10px;
+                        background-color: #dcecca;
+                        box-shadow: 0px 0px 20px 5px #91ac73;
+                        transition: 0.5s ease;
+                        padding: 20px 20px;
+                        flex-grow: 1;
+                        &::placeholder {
+                            color: #91ac73;
+                        }
+                       
+                    }
+                    input:hover{
+                        transform: scale(.8) translateX(-5px);
+                    }
+                    button {
+                        @include button-btn();
+                    }
+                    button:hover{
+                        transform: scale(.8) translateX(5px);
+                    }
+                }
+
+            }
+            .profile-section {
+                max-width: 345px;
+                max-height: 670px;
+                .profile-image-container {
+                    position: relative;
+                    margin: 0 0 32px;
+                    img {
+                        max-width: 100%;
+                        border-radius: 50%;
+                        z-index: 1;
+                    }
+                    img:hover{
+                        transform: scale(0.9);
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: -45px;
+                        left: -30px;
+                        width: 350px;
+                        height: 350px;
+                        border-radius: 50%;
+                        border: 4px solid #fafafa;
+                        z-index: 2;
+                        pointer-events: none;
+                        user-select: none;
+                        animation: animation-img 8s linear infinite;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: -350px;
+                        top: 0;
+                        width: 700px;
+                        height: 700px;
+                        border: 1px solid #fff;
+                        border-radius: 50%;
+                        pointer-events: none;
+                        user-select: none;
+                        z-index: 0;
+                        animation: animation-img2 3s linear infinite alternate;
+                    }
+  
+                }
+                .profile-info {
+                   
+                    h4 {
+                        color: $styleColor2;
+                    }
+                    .subtitle {
+                        font-size: $fontSize16;
+                        font-weight: 300;
+                        line-height: 30px;
+                        letter-spacing: 5px;
+                        margin-bottom: 24px;
+                    }
+                    .body {
+                        line-height: 30px;
+                        margin-bottom: 24px;
+                        font-size:18px;
+                    }
+                    button {
+                        @include button-btn();
+                    }
+                    .link a{
+                        color: $styleColor2;
+                        transition: transform 0.3s ease;
+                    }
+                    .links a:hover {
+                        font-size: $fontSize20;
+                      }
+                }
+                .links{
+                 @include flex (row, space-between ,center )      
+                }
+            }
+        }
+    }
+}
+
+@keyframes wave {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 640px;
+    }
+}
+
+@keyframes animation-img {
+    0% {
+        top: -15px;
+        left: -15px;
+    }
+    50% {
+        top: -15px;
+        left: 15px;
+        border-color: $styleColor;
+    }
+    100% {
+        top: -15px;
+        left: -15px;
+    }
+}
+
+@keyframes animation-img2 {
+    from {
+        top: 10px;
+    }
+    to {
+        top: -50px;
+        border-color: $styleColor;
+    }
+}
+@keyframes randomize {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    75% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }

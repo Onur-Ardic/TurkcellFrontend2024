@@ -39,7 +39,8 @@ header {
 }
 .coming-holder {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 110px;
   .coming-text {
     width: calc(60%);
     overflow: hidden;
@@ -48,6 +49,7 @@ header {
       padding-bottom: 20px;
       font-size: 120px;
       color: #0c7f86;
+      line-height: 120px;
     }
     .wave-image {
       background: url(../images/wavy-shape.png);
@@ -57,6 +59,14 @@ header {
       background-repeat: repeat-x;
       animation: wavy-motion 15s linear infinite;
       margin: 25px 0;
+    }
+    @keyframes wavy-motion {
+      0% {
+        background-position: -500%;
+      }
+      100% {
+        background-position: 500%;
+      }
     }
     .subtitle {
       font-size: 32px;
@@ -68,6 +78,8 @@ header {
       color: #0c7f86;
     }
     .coming-form {
+      display: flex;
+      margin-top: 40px;
       .arrow {
         width: 34px;
         height: 50px;
@@ -101,10 +113,43 @@ header {
       }
     }
   }
-  .coming-image {
+
+  .img-content {
+    color: #084b4f;
+    max-width: 350px;
+    h4 {
+      font-size: 32px;
+    }
+    .subtitle {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 5px;
+      margin-bottom: 24px;
+    }
+    .body {
+      margin-bottom: 24px;
+    }
+    .coming-links {
+      line-height: 30px;
+      letter-spacing: 5px;
+      a {
+        padding: 8px 8px 0px 0px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 700;
+        color: #084b4f;
+      }
+    }
+  }
+}
+.coming-image {
+  .img-box {
     img {
       position: relative;
-      max-width: 100%;
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
       border-radius: 50%;
       z-index: 1;
     }

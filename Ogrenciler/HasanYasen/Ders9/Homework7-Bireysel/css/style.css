@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +21,10 @@ body {
   display: flex;
 }
 
+.jc-center {
+  justify-content: center;
+}
+
 .jc-sbetween {
   justify-content: space-between;
 }
@@ -33,7 +36,6 @@ body {
 header {
   padding-top: 60px;
 }
-
 header img {
   width: 98px;
   height: 56px;
@@ -48,7 +50,6 @@ header img {
   padding-top: 100px;
   padding-bottom: 20px;
 }
-
 .left .wavy-shape {
   background-image: url("https://demo.cocobasic.com/seppo-html/demo-5/images/wavy-shape.png");
   height: 20px;
@@ -57,7 +58,6 @@ header img {
   background-repeat: repeat-x;
   animation: wavy-shape-animation 15s linear infinite;
 }
-
 .left .coming-soon {
   font-size: 32px;
   font-weight: 700;
@@ -66,17 +66,14 @@ header img {
   letter-spacing: 30px;
   padding-top: 15px;
 }
-
 .left .last-div {
   margin-top: 60px;
 }
-
 .left .last-div img {
   width: 34px;
   height: 50px;
   margin-top: 5px;
 }
-
 .left .last-div input {
   font-size: 18px;
   padding: 20px 24px;
@@ -88,17 +85,14 @@ header img {
   width: 450px;
   transition: 0.5s ease;
 }
-
 .left .last-div input::placeholder {
   font-size: 18px;
   color: #0c7f86;
 }
-
 .left .last-div input:focus {
   border-color: #0c7f86;
   box-shadow: none;
 }
-
 .left .last-div button {
   font-size: 16px;
   font-weight: 600;
@@ -111,7 +105,6 @@ header img {
   background-color: #0c7f86;
   transition: 0.5s ease;
 }
-
 .left .last-div button:hover {
   cursor: pointer;
   background-color: #084b4f;
@@ -121,16 +114,13 @@ header img {
   0% {
     background-position-x: 0%;
   }
-
   100% {
     background-position-x: 645px;
   }
 }
-
 .right {
   position: relative;
 }
-
 .right .img-circle {
   width: 345.6px;
   height: 345.6px;
@@ -141,18 +131,15 @@ header img {
   border-radius: 50%;
   animation: img-circle-animation 8s linear infinite;
 }
-
 .right img {
   border-radius: 50%;
   width: 345.6px;
   height: 345.6px;
   margin-bottom: 32px;
 }
-
 .right img:hover {
   filter: grayscale(20%);
 }
-
 .right h4 {
   font-size: 32px;
   font-weight: 600;
@@ -160,9 +147,7 @@ header img {
   color: #084b4f;
   letter-spacing: 0;
 }
-
-.right .web-developer,
-.right .summary {
+.right .web-developer, .right .summary {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
@@ -170,20 +155,17 @@ header img {
   letter-spacing: 5px;
   margin-bottom: 20px;
 }
-
 .right .summary {
   width: 345.6px;
   height: 165px;
   margin-bottom: 24px;
   letter-spacing: 0;
 }
-
 .right .socials {
   width: 345.6px;
   height: 58px;
   margin-bottom: 20px;
 }
-
 .right .socials a {
   text-decoration: none;
   font-size: 12px;
@@ -198,19 +180,16 @@ header img {
     top: -20px;
     left: -20px;
   }
-
   50% {
     top: -20px;
     left: 20px;
     border-color: #0c7f86;
   }
-
   100% {
     top: -20px;
     left: -20px;
   }
 }
-
 .body-circle {
   width: 800px;
   height: 800px;
@@ -227,11 +206,36 @@ header img {
   from {
     top: 0;
   }
-
   to {
     top: 70px;
     border-color: #0c7f86;
   }
+}
+main h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120px;
+  color: #0c7f86;
+  letter-spacing: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+main .container {
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+main .flex-item img {
+  max-width: 30rem;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+main .flex-item img:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  filter: grayscale(50%);
+  transition: 0.3s linear;
+  box-shadow: 1px 3px 3px #0c7f86;
 }
 
 @media (max-width: 1250px) {
@@ -239,29 +243,23 @@ header img {
     background: linear-gradient(to top, #e5fff9 5%, #b8e4da 50%);
     background-repeat: no-repeat;
   }
-
   .left h1 {
     font-size: 90px;
     line-height: 110px;
   }
-
-  section>div {
+  section > div {
     flex-direction: column;
   }
-
   .right .img-circle {
     visibility: hidden;
   }
-
   .body-circle {
     visibility: hidden;
   }
-
   .left .last-div {
     justify-content: flex-start;
     margin-bottom: 30px;
   }
-
   .right {
     display: flex;
     flex-direction: column;
@@ -269,59 +267,58 @@ header img {
     align-items: center;
   }
 }
-
 @media (max-width: 992px) {
   .left .last-div img {
     width: 16px;
     height: 32px;
   }
-
   .left .last-div input {
     font-size: 16px;
     width: 360px;
   }
-
   .left .last-div input::placeholder {
     font-size: 16px;
   }
-
   .left .last-div button {
     font-size: 12px;
   }
 }
-
 @media (max-width: 768px) {
   .left {
     text-align: center;
   }
-
   .left h1 {
     font-size: 60px;
     letter-spacing: 4px;
   }
-
   .left .coming-soon {
     font-size: 22px;
     line-height: 19px;
     letter-spacing: 4px;
   }
+  .right img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  main h2 {
+    font-size: 32px;
+  }
+  main .flex-item img {
+    max-width: 22rem;
+  }
 }
-
 @media (max-width: 680px) {
   .container {
     width: 90%;
   }
-
   .left .last-div {
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
   }
-
   .left .last-div img {
     visibility: hidden;
   }
-
   .left .last-div input {
     width: none;
     margin-bottom: 30px;

@@ -1,10 +1,13 @@
 $darkColor: #52057B;
 $lightClolor: #BC6FF1;
+$brownColor: #FFF2E1;
 * {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
     background-color: $lightClolor;
     color: $darkColor;
 }
@@ -94,6 +97,21 @@ header {
           background-color: pink;
           animation-delay: 2s;
         }
+        .circle:nth-child(10) {
+            display: none;
+        }
+        .circle:nth-child(11) {
+            display: none;
+        }
+        .circle:nth-child(12) {
+            display: none;
+        }
+        .circle:nth-child(13) {
+            display: none;
+        }
+        .circle:nth-child(14) {
+            display: none;
+        }
     }
     @keyframes circle-grow {
         0% {
@@ -170,8 +188,8 @@ header {
         position: absolute;
         top: -45px;
         left: -30px;
-        width: 350px;
-        height: 350px;
+        width: 345px;
+        height: 345px;
         border-radius: 50%;
         border: 3px solid #fafafa;
         z-index: 2;
@@ -210,6 +228,7 @@ header {
         user-select: none;
         z-index: 0;
         animation: animate-img-circle-2 3s linear infinite alternate;
+        clip-path: circle(70% at left);
     }
     @keyframes animate-img-circle-2 {
         from {
@@ -249,5 +268,78 @@ header {
     }
     .coming-links a:hover {
         color: #fff;
+    }
+}
+@media screen and (min-width: 600px) {
+    body {
+        background: linear-gradient(to right, $lightClolor 40.0001%, $brownColor 59.9999%);
+        background-repeat: no-repeat;
+        height: 100%;
+        header {
+            .logo {
+                background: linear-gradient(to right, $lightClolor 40.0001%, $brownColor 59.9999%);
+                a {
+                    background-color: $lightClolor;
+                }
+            }
+        }
+        .subscribe {
+            .circle-animation {
+                .circle:nth-child(10) {
+                    background-color: pink;
+                    animation-delay: 2.2s;
+                    display: block;
+                }
+                .circle:nth-child(11) {
+                    background-color: pink;
+                    animation-delay: 2.4s;
+                    display: block;
+                }
+                .circle:nth-child(12) {
+                    background-color: pink;
+                    animation-delay: 2.6s;
+                    display: block;
+                }
+                .circle:nth-child(13) {
+                    background-color: pink;
+                    animation-delay: 2.8s;
+                    display: block;
+                }
+                .circle:nth-child(14) {
+                    background-color: pink;
+                    animation-delay: 3s;
+                    display: block;
+                }
+            }
+            .sub-form {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content:center;
+                input {
+                    width: 50%;
+                }
+                .sub-btn {
+                    width: 30%;
+                }
+            }
+        }
+        .about {
+            .img-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .img-box::before {
+                left: 0;
+            }
+            .about-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
     }
 }

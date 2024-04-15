@@ -4,7 +4,7 @@
   margin-top: 20px;
   z-index: 999;
   position: relative;
-  .container{
+  .container {
     .header-menu {
       @include flexible(space-between, center, null, null);
     }
@@ -37,41 +37,41 @@
   }
 }
 
-.omnichannel{
+.omnichannel {
   padding: 110px 0 95px;
-  .row{
-    .pos-img{
+  .row {
+    .pos-img {
       width: 50%;
       flex: 0 0 auto;
       padding: 0 12px;
     }
     @include flexible(space-between, center, row-reverse, 10px);
-    .pos-content-area{
+    .pos-content-area {
       max-width: 50%;
       padding: 0 12px;
-      .pos-content{
+      .pos-content {
         margin-bottom: 40px;
         padding-bottom: 30px;
         text-align: left;
         border-bottom: 1px solid #ecf0f3;
-        h2{
+        h2 {
           margin: -10px 0 20px;
         }
-        p{
+        p {
           margin-bottom: 15px;
           max-width: 450px;
         }
       }
 
-      .section-wrapper{
-        ul{
+      .section-wrapper {
+        ul {
           margin-bottom: 40px;
           display: flex;
           flex-wrap: wrap;
-          li{
+          li {
             width: 50%;
             padding: 10px 0;
-            i{
+            i {
               color: $colorPink;
             }
           }
@@ -81,43 +81,43 @@
   }
 }
 
-.lab-section{
+.lab-section {
   padding: 110px 0 95px;
   background-color: #fffef9;
-  .container{
-    .card-header{
+  .container {
+    .card-header {
       margin: 0 auto 60px;
     }
-    .card-wrapper{
+    .card-wrapper {
       margin: 0 -15px;
       display: flex;
       flex-wrap: wrap;
-      .lab-item{
+      .lab-item {
         width: 25%;
-        .lab-inner{
+        .lab-inner {
           padding: 48px 45px;
           box-shadow: 0 4px 4px rgba(58, 58, 58, 0.1);
           border-radius: 4px;
           margin: 15px;
           transition: all 0.3s ease;
-          &:hover{
+          &:hover {
             box-shadow: 0 0px 10px rgba(58, 58, 58, 0.1);
             transform: translateY(-5px);
           }
-          .lab-img{
+          .lab-img {
             background: transparent;
             width: 100%;
             height: 100%;
             margin-bottom: 30px;
             text-align: center;
             line-height: 100%;
-            img{
+            img {
               height: auto;
               max-width: 100%;
             }
           }
-          .lab-content{
-            h6{
+          .lab-content {
+            h6 {
               text-align: center;
               @include font(16px, black, 700);
             }
@@ -128,29 +128,29 @@
   }
 }
 
-.retail-section{
+.retail-section {
   padding: 110px 0 95px;
-  .retail-header{
+  .retail-header {
     margin: 0 0 60px;
-    p{
+    p {
       margin: 0 258px 50px;
     }
   }
 
-  .retail-wrapper{
+  .retail-wrapper {
     margin: -15px -15px 0;
     @include flexible(center, center, row, 0px);
-    .item{
+    .item {
       width: calc(100% / 3);
       gap: 20px;
-      .item-inner{
+      .item-inner {
         padding: 70px 40px;
         position: relative;
         box-shadow: 0 0 8px rgba(136, 136, 136, 0.08);
-        &:hover:hover{
+        &:hover:hover {
           box-shadow: 0 10px 10px rgba(136, 136, 136, 0.1);
         }
-        .item-img{
+        .item-img {
           border-radius: 100%;
           margin: auto;
           margin-bottom: 30px;
@@ -161,27 +161,27 @@
           line-height: 80px;
           background: linear-gradient(to top, #f9769d, #bb6df7);
           transition: all 0.3s ease;
-          &::before{
+          &::before {
             width: 92px;
             height: 92px;
             opacity: 0.2;
             @extend .hoverEffect;
           }
-          &::after{
+          &::after {
             width: 105px;
             height: 105px;
             opacity: 0.09;
             @extend .hoverEffect;
           }
-          img{
+          img {
             position: relative;
             z-index: 1;
             top: 13px;
             left: 17px;
           }
         }
-        .item-content{
-          h4{
+        .item-content {
+          h4 {
             margin-bottom: 20px;
           }
         }
