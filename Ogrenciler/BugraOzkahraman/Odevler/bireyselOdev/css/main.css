@@ -104,9 +104,7 @@
   align-items: start;
 }
 .hero .main-content .coming-image img {
-  height: 345px;
-  width: 345px;
-  background-color: none;
+  width: 100%;
   border-radius: 50%;
 }
 .hero .main-content .coming-image h1 {
@@ -148,7 +146,6 @@
   width: 345px;
   height: 345px;
   margin-left: 975px;
-  margin-top: 20px;
   transition: all 0.9s ease-in-out;
   animation: animasyon-bir 8s infinite ease-in-out;
 }
@@ -171,7 +168,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: end;
-  padding-top: 670px;
+  padding-top: 45rem;
   gap: 50px;
 }
 .hero .homework img {
