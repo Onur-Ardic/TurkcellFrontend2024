@@ -103,9 +103,9 @@ header .container img {
   z-index: 2;
   pointer-events: none;
   user-select: none;
-  animation: animate-img-circle 8s linear infinite;
+  animation: circle 8s linear infinite;
 }
-@keyframes animate-img-circle {
+@keyframes circle {
   0% {
     top: -20px;
     left: -20px;
@@ -132,9 +132,9 @@ header .container img {
   pointer-events: none;
   user-select: none;
   z-index: 0;
-  animation: animate-img-circle-2 3s linear infinite alternate;
+  animation: circle-big 3s linear infinite alternate;
 }
-@keyframes animate-img-circle-2 {
+@keyframes circle-big {
   from {
     top: -70px;
   }
