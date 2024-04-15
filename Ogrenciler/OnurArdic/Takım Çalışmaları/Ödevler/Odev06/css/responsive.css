@@ -80,6 +80,8 @@
   }
   .footer-body {
     grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
   }
   .efekt1 {
     right: 5rem;
