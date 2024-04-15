@@ -1,0 +1,26 @@
+@media screen and (max-width: 900px) {
+    .container{
+        width: 100%;
+        padding: 0 25px;
+
+        .portfolio-content{
+            width: 100% !important;
+            display: block;
+            flex-direction: column;
+            .portfolio-text{
+                padding-bottom: 40px;
+                width: 100%;
+            }
+            .portfolio-img{
+                width: 100%;
+                text-align: center;
+                .img{
+                    min-width: 345px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+}

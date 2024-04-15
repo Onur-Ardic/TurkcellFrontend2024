@@ -212,6 +212,7 @@
 }
 #trending-today .cards .card {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   box-shadow: -3px 3px 24px -5px rgba(0, 0, 0, 0.57);

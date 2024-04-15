@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+  }
+body{
+    position: relative;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+  .container {
+    max-width: 1200px;
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+
+  
+@mixin font($size, $color,$weight) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+  }
+
+@mixin button($padding, $borderRad, $color, $bgColor) {
+    padding: $padding;
+    border-radius: $borderRad;
+    color: $color;
+    background: $bgColor;
+  }
+  
+  @mixin flexible($justify, $align, $direction, $gap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
+  }

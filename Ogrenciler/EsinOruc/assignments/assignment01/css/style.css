@@ -413,6 +413,7 @@ body {
 }
 .my-projects .content-wrapper .project-cards .card .img-card {
   border-radius: 10px;
+  transition: all 0.2s ease-in-out;
 }
 .my-projects .content-wrapper .project-cards .card .img-card img {
   padding: 20px;
