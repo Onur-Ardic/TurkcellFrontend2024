@@ -32,6 +32,9 @@ body {
 .header {
   height: 100vh;
 }
+.header .header-nav {
+  width: 100%;
+}
 .header .header-nav .container {
   display: flex;
   justify-content: space-between;
