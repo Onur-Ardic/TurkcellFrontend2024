@@ -1,4 +1,4 @@
-@media screen and (max-width: 10240px) {
+@media screen and (max-width: 1440px) {
   .header-content .content-wrapper {
     padding-top: 2rem;
   }
@@ -71,9 +71,111 @@
     font-size: 25px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1024px) {
+  .header .header-content .content-wrapper {
+    gap: 2rem;
+    margin: 1rem;
+  }
+  .header .header-content .content-wrapper .content-left h1 {
+    font-size: 50px;
+  }
+  .header .header-content .content-wrapper .content-left p {
+    letter-spacing: 10px;
+    font-size: 15px;
+  }
+  .header .header-content .content-wrapper .content-right .profile-photo img {
+    width: 50%;
+  }
+  .header .header-content .content-wrapper .content-right .profile-photo::before {
+    width: 150px;
+    height: 150px;
+  }
+  .header .header-content .content-wrapper .content-right .profile-photo::after {
+    left: -100px;
+    width: 500px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .header-content .content-wrapper {
+    padding-top: 2rem;
+  }
+  .header .header-content .content-wrapper .content-left h1 {
+    line-height: 1.5;
+    font-size: 50px;
+  }
+  .header .header-content .content-wrapper .content-left .wave-image {
+    height: 20px;
+    width: 80%;
+  }
+  .header .header-content .content-wrapper .content-left p {
+    line-height: 3;
+    font-size: 15px;
+  }
+  .header .header-content .content-wrapper .content-left .form {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+    justify-content: flex-start;
+  }
+  .header .header-content .content-wrapper .content-left .form i {
+    font-size: 30px;
+  }
+  .header .header-content .content-wrapper .content-left .form input {
+    flex-grow: 0;
+    width: 350px;
+    font-size: 17px;
+  }
+  .header .header-content .content-wrapper .content-left .form button {
+    font-size: 15px;
+  }
+  .header .header-content .content-wrapper .content-right .profile-photo img {
+    width: 70%;
+  }
+  .header .header-content .content-wrapper .content-right .profile-photo::before {
+    width: 150px;
+    height: 150px;
+  }
+  .header .header-content .content-wrapper .content-right .profile-photo::after {
+    left: -100px;
+    width: 500px;
+    height: 500px;
+  }
+  .my-projects {
+    padding-top: 2.5rem;
+  }
+  .my-projects .content-wrapper .project-cards {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    gap: 3rem;
+  }
+  .my-projects .content-wrapper .project-cards .card {
+    text-align: center;
+  }
+  .my-projects .content-wrapper .project-cards .card .img-card img {
+    padding: 10px;
+    width: 450px;
+    height: 350px;
+  }
+  .my-projects .content-wrapper .project-cards .card .img-card:hover {
+    transform: scale(1.1);
+  }
+  .my-projects .content-wrapper .project-cards .card .content-card {
+    text-align: left;
+  }
+  .my-projects .content-wrapper .project-cards .card .content-card h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .my-projects .content-wrapper .project-cards .card .content-card .icons i {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 425px) {
   .header {
-    background: linear-gradient(to right, #afc8ad 0%, #afc8ad 50%, #afc8ad 50%, #ffeae1 100%);
+    height: 100vh;
+    padding-bottom: 5rem;
+    background: linear-gradient(to right, #afc8ad 0%, #afc8ad 50%, #afc8ad 50%, #faf2ef 100%);
   }
   .header .header-content .content-wrapper {
     gap: 0rem;
