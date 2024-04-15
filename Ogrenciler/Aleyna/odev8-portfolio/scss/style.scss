@@ -6,6 +6,7 @@ $background: #c9def4;
   height: 100vh;
 
   .header-nav {
+    width: 100%;
     .container {
       @include flex(flex, space-between, center);
       position: fixed;
