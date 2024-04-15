@@ -40,5 +40,34 @@ header .hero .hero-left p {
     order: -1;
   }
 }
+.features {
+  margin-top: 20%;
+}
+.features-wrapper .features-card {
+  margin-top: 10%;
+}
+.features-wrapper .features-card .card {
+  background-color: #f1f1f1;
+  border: none;
+  width: 350px;
+  margin-top: 5%;
+}
+.features-wrapper .features-card .card-icon {
+  font-size: 40px;
+  top: -18%;
+  color: #fff;
+}
+.features-wrapper .features-card .card-body a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .features {
+    margin-top: 20% !important;
+  }
+  .features-wrapper .features-card .card {
+    margin-top: 15%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

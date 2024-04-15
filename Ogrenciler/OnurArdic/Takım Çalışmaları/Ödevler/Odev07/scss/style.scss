@@ -1,16 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-* {
-  box-sizing: border-box;
-  list-style-type: none;
-  text-decoration: none;
-  font-family: 'Nunito', sans-serif;
-}
-
-$colorWhite: #fff;
-$colorBlue: #4285f4;
-$colorBlack: #000000;
-$colorGray: #95a5a6;
-
+@import 'base.scss';
 header {
   .navbar {
     background-color: #fff;
@@ -51,8 +39,48 @@ header {
 
     .hero-wrapper {
       flex-direction: column;
-      .hero-right{
+      .hero-right {
         order: -1;
+      }
+    }
+  }
+}
+
+.features {
+  margin-top: 20%;
+  &-wrapper {
+    .features-card {
+      margin-top: 10%;
+
+      .card {
+        background-color: $cardColor;
+        border: none;
+        width: 350px;
+        margin-top: 5%;
+
+        &-icon {
+          font-size: 40px;
+          top: -18%;
+          color: $colorWhite;
+        }
+
+        &-body {
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .features {
+    margin-top: 20% !important;
+    &-wrapper {
+      .features-card {
+        .card {
+          margin-top: 15%;
+        }
       }
     }
   }
