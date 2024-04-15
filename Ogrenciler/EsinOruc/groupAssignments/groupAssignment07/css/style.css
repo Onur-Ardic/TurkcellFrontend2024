@@ -1,3 +1,33 @@
-@import url("../scss/global.scss");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  font-family: "Nunito", sans-serif !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.profitable .row .content-left {
+  padding-top: 7rem;
+}
+.profitable .row .content-left h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.profitable .row .content-left p {
+  color: #6c757d;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.profitable .row .content-left button {
+  background-color: #4285f4;
+  border-color: #4285f4;
+  border-width: 2px;
+}
 
 /*# sourceMappingURL=style.css.map */
