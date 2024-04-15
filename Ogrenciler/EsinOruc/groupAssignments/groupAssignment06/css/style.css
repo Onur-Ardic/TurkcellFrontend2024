@@ -308,5 +308,21 @@ body {
   width: 600px;
   word-wrap: break-word;
 }
+.stores .cards {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.stores .cards .card {
+  text-align: center;
+  box-shadow: 0 4px 4px rgba(58, 58, 58, 0.1);
+  border-radius: 4px;
+  padding: 48px 45px;
+}
+.stores .cards .card:hover {
+  box-shadow: 0 0px 10px rgba(58, 58, 58, 0.1);
+  transform: translateY(-5px);
+}
 
 /*# sourceMappingURL=style.css.map */
