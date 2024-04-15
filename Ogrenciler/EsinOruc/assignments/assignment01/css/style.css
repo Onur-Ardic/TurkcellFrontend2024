@@ -6,7 +6,7 @@
   font-family: "Poppins ", sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 body {
@@ -221,7 +221,7 @@ body {
   border-left: 2px solid #5d8363;
 }
 .header .content-wrapper {
-  padding-top: 5rem;
+  padding-top: 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -234,6 +234,7 @@ body {
   flex: 1.5;
 }
 .header .content-wrapper .content-left p {
+  line-height: 3;
   letter-spacing: 30px;
   text-transform: uppercase;
 }
@@ -407,6 +408,7 @@ body {
   gap: 2rem;
 }
 .my-projects .content-wrapper .project-cards .card {
+  margin-bottom: 2rem;
   text-align: left;
 }
 .my-projects .content-wrapper .project-cards .card .img-card {

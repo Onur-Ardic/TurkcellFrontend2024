@@ -15,12 +15,13 @@
     border-left: 2px solid get-color-map($colors, "dark-cyan");
   }
   .content-wrapper {
-    padding-top: 5rem;
+    padding-top: 0rem;
     @include flex(flex, space-between, center, $wrap: nowrap, $gap: 5rem);
     .content-left {
       width: 100%;
       flex: 1.5;
       p {
+        line-height: 3;
         letter-spacing: 30px;
         text-transform: uppercase;
       }
@@ -177,6 +178,7 @@
       margin-top: 5rem;
       @include flex(flex, space-evenly, center, $gap: 2rem);
       .card {
+        margin-bottom: 2rem;
         text-align: left;
         .img-card {
           border-radius: 10px;

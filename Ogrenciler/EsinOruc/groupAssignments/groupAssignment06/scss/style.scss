@@ -1,0 +1,105 @@
+@import "../scss/global.scss";
+.header {
+  width: 100%;
+  height: 115vh;
+  background-image: url("../assets/img/shape-2.png"),
+    url("../assets/img/shape-1.png");
+  background-position: left center, right center;
+  background-position: right top, left bottom; /* Görüntülerin konumunu ayarlayın */
+  background-repeat: no-repeat, no-repeat; /* Tekrar etme özelliklerini ayarlayın */
+  background-color: #f9f2ff;
+  .navbar {
+    padding-top: 2rem;
+    @include flex(flex, space-between, center);
+    .logo {
+      flex: 2;
+    }
+    .menu {
+      ul {
+        @include flex(flex, flex-end, center);
+      }
+    }
+    .button {
+      a {
+        @include button-style(1rem, 1.5rem);
+      }
+    }
+  }
+  .header-content {
+    margin-top: 5rem;
+    @include flex(flex, flex-start, center, $gap: 0rem);
+    .left-content {
+      h2 {
+        width: 700px;
+        word-wrap: break-word;
+      }
+      p {
+        width: 550px;
+        word-wrap: break-word;
+      }
+      a {
+        @include button-style(1rem, 1.5rem);
+      }
+      .button {
+        margin-top: 2rem;
+        a {
+          @include button-style(1rem, 1.5rem);
+        }
+      }
+    }
+    .right-content {
+      position: relative;
+      img {
+        position: absolute;
+      }
+      .middle-logo {
+        img {
+          animation: lab_sideeffect 15s linear infinite;
+          left: 400px;
+          bottom: 0px;
+          @keyframes lab_sideeffect {
+            0% {
+              transform: translateY(0px);
+            }
+            25% {
+              transform: translateX(-60px);
+            }
+            50% {
+              transform: translateY(-60px);
+            }
+            75% {
+              transform: translateX(-60px);
+            }
+            100% {
+              transform: translateY(0px);
+            }
+          }
+        }
+      }
+      .right-logo {
+        img {
+          animation: lab_run_top_y 5s linear infinite;
+          left: 210px;
+          top: 10px;
+          @keyframes lab_run_top_y {
+            0% {
+              transform: translateY(0px);
+            }
+            50% {
+              transform: translateY(-30px);
+            }
+            100% {
+              transform: translateY(0px);
+            }
+          }
+        }
+      }
+      .left-logo {
+        img {
+          left: -30px;
+          bottom: -350px;
+        }
+      }
+    }
+  }
+}
