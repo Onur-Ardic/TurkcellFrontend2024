@@ -6,7 +6,7 @@
   font-family: "Poppins ", sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 body {
@@ -221,7 +221,7 @@ body {
   border-left: 2px solid #5d8363;
 }
 .header .content-wrapper {
-  padding-top: 0rem;
+  padding-top: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

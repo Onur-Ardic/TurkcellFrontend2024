@@ -79,6 +79,10 @@ body {
   color: #696969;
 }
 
+.color-pink {
+  color: #ff5195;
+}
+
 .bg-color-white {
   background-color: #ffffff;
 }
@@ -89,6 +93,10 @@ body {
 
 .bg-color-gray {
   background-color: #696969;
+}
+
+.bg-color-light-gray {
+  background-color: #fffcfa;
 }
 
 /*# sourceMappingURL=global.css.map */

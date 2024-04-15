@@ -65,6 +65,7 @@ $colors: (
   "white": #ffffff,
   "black": #000000,
   "gray": #696969,
+  "pink": #ff5195,
 );
 
 @each $colorName, $colorValue in $colors {
@@ -77,6 +78,7 @@ $bgColors: (
   "white": #ffffff,
   "blue": #2f89fc,
   "gray": #696969,
+  "light-gray": #fffcfa,
 );
 @each $bgColorName, $bgColorValue in $bgColors {
   .bg-color-#{$bgColorName} {
