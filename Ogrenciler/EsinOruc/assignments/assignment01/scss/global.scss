@@ -8,6 +8,9 @@
   padding: 0;
   line-height: 1.5;
 }
+body {
+  overflow-x: hidden;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -29,7 +32,7 @@
   gap: $gap;
 }
 
-$sizes: 11, 13, 14, 15, 16, 20, 24, 30, 32, 48, 60, 120;
+$sizes: 11, 13, 14, 15, 16, 20, 24, 28, 30, 32, 48, 60, 120;
 @each $size in $sizes {
   .fs-#{$size} {
     font-size: $size * 1px;
@@ -53,8 +56,9 @@ $fontStyles: normal, bold, italic;
 $colors: (
   "white": #ffffff,
   "black": #000000,
-  "dark-cyan": #69846d,
+  "dark-cyan": #5d8363,
   "ash-gray": #afc8ad,
+  "light-pink": #ffeae17d,
   "champange-pink": #ffeae1,
   "apricot": #ffd5c2,
   "tangerine": #f28f3b,
@@ -62,6 +66,9 @@ $colors: (
   "gray": #808080,
   "light-gray": #a9a9a9,
   "dark-gray": #4d4d4d,
+  "light-jasper": #d27360,
+  "blue": blue,
+  "pink": pink,
 );
 
 @each $colorName, $colorValue in $colors {
@@ -73,12 +80,15 @@ $colors: (
 $bgColors: (
   "white": #ffffff,
   "black": #000000,
-  "dark-cyan": #69846d,
+  "dark-cyan": #5d8363,
+  "light-pink": #ffeae17d,
   "ash-gray": #afc8ad,
   "champange-pink": #ffeae1,
   "apricot": #ffd5c2,
   "tangerine": #f28f3b,
+  "light-tangerine": #d26a0f,
   "jasper": #c8553d,
+  "light-jasper": #d27360,
 );
 @each $bgColorName, $bgColorValue in $bgColors {
   .bg-color-#{$bgColorName} {
