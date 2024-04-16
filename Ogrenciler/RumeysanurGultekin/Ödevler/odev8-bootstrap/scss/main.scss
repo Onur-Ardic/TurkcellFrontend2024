@@ -104,6 +104,38 @@ $fs-16: 1rem;
                     color: $color-gray;
                 }
             }
+            .header-right{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+@media(min-width: 9940px) {
+    .header{
+        .header-body{
+            display: flex;
+            flex-direction: column-reverse;
+            .header-right{
+                img{
+                    width: 50%;
+                }
+            }
+        }
+    }
+    .ourteam{
+        .our-team-body{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    .testiminationsSections{
+        .container{
+            max-width: 100%;
+            .testi-tab{
+                margin: 0 0;
+            }
         }
     }
 }

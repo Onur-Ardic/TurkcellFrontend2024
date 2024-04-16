@@ -83,5 +83,28 @@
   font-weight: 300;
   color: #808080;
 }
+.header .container .header-body .header-right img {
+  max-width: 100%;
+}
+
+@media (min-width: 9940px) {
+  .header .header-body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .header .header-body .header-right img {
+    width: 50%;
+  }
+  .ourteam .our-team-body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .testiminationsSections .container {
+    max-width: 100%;
+  }
+  .testiminationsSections .container .testi-tab {
+    margin: 0 0;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
