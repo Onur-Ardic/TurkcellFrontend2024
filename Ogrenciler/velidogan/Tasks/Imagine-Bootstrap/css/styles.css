@@ -2,6 +2,25 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+.features-section .card {
+  transition: all 0.3s ease-in-out;
+}
+.features-section .card:hover {
+  transform: translateY(-10px);
+}
+.features-section .card-body:hover {
+  background-color: #0d6efd !important;
+}
+.features-section .card-body:hover * {
+  color: white !important;
+}
+.features-section .card-body:hover .feature-icon {
+  background-color: white !important;
+}
+.features-section .card-body:hover .feature-icon i {
+  color: #0d6efd !important;
+}
+
 .about-us li {
   background: none;
   border: none;
