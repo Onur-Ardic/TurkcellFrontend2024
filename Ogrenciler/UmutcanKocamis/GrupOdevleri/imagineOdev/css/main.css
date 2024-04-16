@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+header .dot {
+  color: #007bff;
+}
+
+.hero-btn {
+  border-radius: 30px !important;
+}
+
+.hero-title {
+  font-size: 3.5rem !important;
+}
+
+.features-section-title {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 700 !important;
+  font-size: 2.5rem !important;
+  color: #000 !important;
+}
+
+.features-section-lead {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 300 !important;
+  font-size: 1.25rem !important;
+  color: rgb(128, 128, 128) !important;
+}
+
+.features-section {
+  height: 100vh;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.features-card-body {
+  padding: 30px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  position: relative;
+  top: 0;
+  margin-bottom: 4em;
+  text-align: center;
+  padding-top: 50px;
+}
+.features-card-body h3 {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+  color: #000 !important;
+}
+.features-card-body p {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 300 !important;
+  font-size: 1rem !important;
+  color: rgb(128, 128, 128) !important;
+}
+.features-card-body div p a {
+  text-decoration: none;
+}
+.features-card-body:hover {
+  top: -10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.features-card-body .features-card-icon .icon-wrap {
+  width: 80px;
+  height: 80px;
+  top: -40px;
+  left: 40%;
+  position: absolute;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #4285f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features-card-body .features-card-icon .icon-wrap .bi-arrow-repeat::before {
+  transform: rotate(90deg);
+}
+
+/*# sourceMappingURL=main.css.map */

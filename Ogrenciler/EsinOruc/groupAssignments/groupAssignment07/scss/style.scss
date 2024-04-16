@@ -1,0 +1,32 @@
+@import "../scss/global.scss";
+
+.profitable {
+  .row {
+    .content-right {
+      padding-top: 7rem;
+      h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+      }
+      p {
+        color: $colorLightGray;
+        font-weight: 300;
+        font-size: 1rem;
+      }
+      button {
+        background-color: $colorBlue;
+        border-color: $colorBlue;
+        border-width: 2px;
+      }
+    }
+  }
+}
+.features {
+  margin-top: 5rem;
+
+  p {
+    color: $colorLightGray;
+    max-width: 50%;
+    margin: auto;
+  }
+}

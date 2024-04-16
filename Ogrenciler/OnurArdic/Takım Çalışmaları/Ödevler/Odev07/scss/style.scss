@@ -1,0 +1,87 @@
+@import 'base.scss';
+header {
+  .navbar {
+    background-color: #fff;
+    .logo {
+      .dot {
+        color: $colorBlue;
+        float: right;
+      }
+    }
+    .navbar-right {
+      ul {
+        li {
+          padding: 1rem 1.4rem;
+          a {
+            color: rgb(0, 0, 0);
+          }
+          .active {
+            color: $colorBlue;
+          }
+        }
+      }
+    }
+  }
+
+  .hero {
+    margin-top: 10%;
+
+    .hero-left {
+      p {
+        color: $colorGray;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 15% !important;
+
+    .hero-wrapper {
+      flex-direction: column;
+      .hero-right {
+        order: -1;
+      }
+    }
+  }
+}
+
+.features {
+  margin-top: 20%;
+  &-wrapper {
+    .features-card {
+      margin-top: 10%;
+
+      .card {
+        background-color: $cardColor;
+        border: none;
+        width: 350px;
+        margin-top: 5%;
+
+        &-icon {
+          font-size: 40px;
+          top: -18%;
+          color: $colorWhite;
+        }
+
+        &-body {
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .features {
+    margin-top: 20% !important;
+    &-wrapper {
+      .features-card {
+        .card {
+          margin-top: 15%;
+        }
+      }
+    }
+  }
+}

@@ -10,6 +10,7 @@ $brownColor: #FFF2E1;
 body {
     background-color: $lightClolor;
     color: $darkColor;
+    overflow-x: hidden;
 }
 .container {
     margin-left: auto;
@@ -39,7 +40,6 @@ header {
         position: relative;
         height: 20px;
         width: 100%;
-        overflow: hidden;
     }
     .circle-animation {
         position: absolute;
@@ -216,7 +216,6 @@ header {
     }
     .img-box::after {
         content: '';
-        overflow-y: hidden;
         position: absolute;
         right: -420px;
         top: 0;
@@ -228,7 +227,7 @@ header {
         user-select: none;
         z-index: 0;
         animation: animate-img-circle-2 3s linear infinite alternate;
-        clip-path: circle(70% at left);
+        // clip-path: circle(70% at left);
     }
     @keyframes animate-img-circle-2 {
         from {
