@@ -2,7 +2,7 @@
 
 .profitable {
   .row {
-    .content-left {
+    .content-right {
       padding-top: 7rem;
       h1 {
         font-size: 3.5rem;
@@ -19,9 +19,14 @@
         border-width: 2px;
       }
     }
-    .content-right {
-      img {
-      }
-    }
+  }
+}
+.features {
+  margin-top: 5rem;
+
+  p {
+    color: $colorLightGray;
+    max-width: 50%;
+    margin: auto;
   }
 }
