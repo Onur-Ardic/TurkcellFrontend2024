@@ -2,20 +2,6 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
-.main-header {
-  height: 100vh;
-}
-.main-header-content {
-  transform: translateY(50%);
-}
-.main-header img {
-  transform: translate(25%, 10%);
-}
-
 .about-us li {
   background: none;
   border: none;
@@ -28,10 +14,36 @@ a {
   display: block !important;
 }
 
-@media (max-width: 992px) {
+.testimonials .testimonial {
+  max-width: 800px;
+}
+.testimonials .testimonial img {
+  width: 100px;
+}
+
+.contact-us {
+  background: url("../img/hero_1.jpg");
+}
+.contact-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+  background: linear-gradient(to right, #4286f4 0%, #42e2f4 100%);
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}
+@media (min-width: 992px) {
   .main-header img {
-    transform: translate(0, 0);
-    position: relative !important;
+    max-width: none;
+    margin: 40px 0 0 -50px;
   }
 }
 
