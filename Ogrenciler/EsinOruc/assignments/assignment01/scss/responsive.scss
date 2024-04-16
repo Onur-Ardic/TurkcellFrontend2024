@@ -1,4 +1,4 @@
-@media screen and (max-width: 10240px) {
+@media screen and (max-width: 1440px) {
   .header-content {
     .content-wrapper {
       padding-top: 2rem;
@@ -86,14 +86,150 @@
     }
   }
 }
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 1024px) {
   .header {
+    .header-content {
+      .content-wrapper {
+        gap: 2rem;
+        margin: 1rem;
+
+        .content-left {
+          h1 {
+            font-size: 50px;
+          }
+          p {
+            letter-spacing: 10px;
+
+            font-size: 15px;
+          }
+        }
+        .content-right {
+          .profile-photo {
+            img {
+              width: 50%;
+            }
+            &::before {
+              width: 150px;
+              height: 150px;
+            }
+            &::after {
+              left: -100px;
+              width: 500px;
+              height: 500px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    .header-content {
+      .content-wrapper {
+        padding-top: 2rem;
+        .content-left {
+          h1 {
+            line-height: 1.5;
+            font-size: 50px;
+          }
+          .wave-image {
+            height: 20px;
+            width: 80%;
+          }
+          p {
+            line-height: 3;
+            font-size: 15px;
+          }
+          .form {
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 3rem;
+            justify-content: flex-start;
+
+            i {
+              font-size: 30px;
+            }
+            input {
+              flex-grow: 0;
+              width: 350px;
+              font-size: 17px;
+            }
+
+            button {
+              font-size: 15px;
+            }
+          }
+        }
+        .content-right {
+          .profile-photo {
+            img {
+              width: 70%;
+            }
+            &::before {
+              width: 150px;
+              height: 150px;
+            }
+            &::after {
+              left: -100px;
+              width: 500px;
+              height: 500px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .my-projects {
+    padding-top: 2.5rem;
+    .content-wrapper {
+      .project-cards {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        gap: 3rem;
+        .card {
+          text-align: center;
+          .img-card {
+            img {
+              padding: 10px;
+              width: 450px;
+              height: 350px;
+            }
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+          .content-card {
+            text-align: left;
+            h2 {
+              font-size: 20px;
+              margin-bottom: 5px;
+            }
+            .icons {
+              i {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    height: 100vh;
+    padding-bottom: 5rem;
     background: linear-gradient(
       to right,
       #afc8ad 0%,
       #afc8ad 50%,
       #afc8ad 50%,
-      #ffeae1 100%
+      #faf2ef 100%
     );
     .header-content {
       .content-wrapper {

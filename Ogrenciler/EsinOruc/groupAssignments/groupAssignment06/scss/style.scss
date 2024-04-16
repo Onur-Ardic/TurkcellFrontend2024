@@ -102,7 +102,6 @@
     }
   }
 }
-
 .omnichannel {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -171,6 +170,90 @@
       &:hover {
         box-shadow: 0 0px 10px rgba(58, 58, 58, 0.1);
         transform: translateY(-5px);
+      }
+    }
+  }
+}
+.retail-stores {
+  text-align: center;
+  .retail-content {
+    h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 50px;
+      color: #696969;
+    }
+  }
+
+  .cards {
+    @include flex(flex, center, center, $wrap: nowrap);
+    text-align: center;
+
+    .card {
+      .card-item {
+        padding: 70px 40px;
+        position: relative;
+        overflow: hidden;
+        div:first-child {
+          background: linear-gradient(to top, #f9769d, #bb6df7);
+          border-radius: 50%;
+          width: 80px;
+          height: 80px;
+          line-height: 105px;
+          display: inline-block;
+          margin-bottom: 1rem;
+          img {
+            background: transparent;
+            width: auto;
+          }
+        }
+        h4 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+        p {
+          color: #696969;
+        }
+      }
+    }
+  }
+}
+.powers-retail {
+  text-align: center;
+  .powers-content {
+    h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 50px;
+      color: #696969;
+    }
+  }
+  .slogan-cards {
+    @include flex(flex, center, center, $wrap: nowrap);
+    text-align: center;
+    padding: 50px;
+    .card {
+      .card-item {
+        padding: 10px;
+        .card-images {
+          img {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+          }
+        }
+        .card-slogan {
+          h5 {
+            font-size: 20px;
+            line-height: 24px;
+          }
+          p {
+            color: #696969;
+            font-size: 16px;
+          }
+        }
       }
     }
   }
