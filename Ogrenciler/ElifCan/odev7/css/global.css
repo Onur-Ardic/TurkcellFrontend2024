@@ -1,12 +1,22 @@
-.flex {
-  display: flex;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
+  line-height: 1.7;
+}
+
+.color-gray {
+  color: gray;
+}
+
+.flex {
+  display: flex;
+}
+
+.text-align-left {
+  text-align: left;
 }
 
 .container {
@@ -25,7 +35,7 @@
 }
 
 .p2 {
-  text-align: center !important;
+  text-align: left;
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1.25rem;
@@ -48,8 +58,24 @@
   margin-top: 60px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .pdg-30 {
   padding: 30px;
+}
+
+.fsize-40 {
+  font-size: 40px;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=global.css.map */
