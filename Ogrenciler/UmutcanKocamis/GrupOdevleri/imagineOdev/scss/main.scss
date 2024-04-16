@@ -14,3 +14,63 @@ header {
 .hero-title {
   font-size: 3.5rem !important;
 }
+.features-section-title {
+  @include title(2.5rem, 700, #000);
+}
+.features-section-lead {
+  @include title(1.25rem, 300, rgb(128, 128, 128));
+}
+.features-section {
+  height: 100vh;
+}
+.card-link {
+  text-decoration: none;
+}
+.features-card-body {
+  padding: 30px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  position: relative;
+  top: 0;
+  margin-bottom: 4em;
+  text-align: center;
+  padding-top: 50px;
+  h3 {
+    @include title(1.5rem, 500, #000);
+  }
+  p {
+    @include title(1rem, 300, rgb(128, 128, 128));
+  }
+  div {
+    p {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  &:hover {
+    top: -10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .features-card-icon {
+    .icon-wrap {
+      width: 80px;
+      height: 80px;
+      top: -40px;
+      left: 40%;
+      position: absolute;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: #4285f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .bi-arrow-repeat::before {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

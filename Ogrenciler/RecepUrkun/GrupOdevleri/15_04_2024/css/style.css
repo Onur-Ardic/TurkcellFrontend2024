@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.7;
+  color: gray;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.site-section {
+  padding: 5em 0;
+}
+
+.section-title {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.btn {
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+header .navbar {
+  background-color: #fff;
+}
+header .navbar .logo .dot {
+  color: #4285f4;
+  float: right;
+}
+header .navbar .navbar-right ul li {
+  padding: 1rem 1.4rem;
+}
+header .navbar .navbar-right ul li a {
+  color: rgb(0, 0, 0);
+}
+header .navbar .navbar-right ul li .active {
+  color: #4285f4;
+}
+header .hero {
+  margin-top: 10%;
+}
+header .hero .hero-left p {
+  color: #95a5a6;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 15% !important;
+  }
+  .hero .hero-wrapper {
+    flex-direction: column;
+  }
+  .hero .hero-wrapper .hero-right {
+    order: -1;
+  }
+}
+.features-wrapper .features-card {
+  margin-top: 10%;
+}
+.features-wrapper .features-card .card {
+  background-color: #f1f1f1;
+  border: none;
+  width: 350px;
+  margin-top: 5%;
+}
+.features-wrapper .features-card .card-icon {
+  font-size: 40px;
+  top: -18%;
+  color: #fff;
+}
+.features-wrapper .features-card .card-body a {
+  text-decoration: none;
+}
+
+.feature-communicate h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.feature-communicate .author-box {
+  box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-left: 10px solid #4285f4;
+}
+.feature-communicate .author-box img {
+  max-width: 50px;
+}
+.feature-communicate .author-box blockquote {
+  font-style: italic;
+}
+
+.about-us .ul-check li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.about-us .ul-check li ::before {
+  color: #8bc34a;
+  left: 0;
+  font-size: 20px;
+  top: 0.2rem;
+  position: absolute;
+}
+
+.our-team .person {
+  position: relative;
+}
+.our-team .person h2 {
+  font-size: 18px;
+}
+.our-team .person figure {
+  position: relative;
+  margin-bottom: 0;
+}
+.our-team .bio-img {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.our-team .sub-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  font-weight: 700;
+  color: #4285f4;
+}
+
+@media (max-width: 768px) {
+  .features-wrapper .features-card .card {
+    margin-top: 15%;
+  }
+  .site-section {
+    padding: 2.5em 0;
+  }
+}
+@media (min-width: 992px) {
+  .pl-lg-5 {
+    padding-left: 3rem !important;
+  }
+  .pr-lg-5 {
+    padding-right: 3rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
