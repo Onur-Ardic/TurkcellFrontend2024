@@ -21,6 +21,13 @@ a {
   border: none;
 }
 
+.our-team-img:hover img {
+  transform: scale(1.2);
+}
+.our-team-img:hover div {
+  display: block !important;
+}
+
 @media (max-width: 992px) {
   .main-header img {
     transform: translate(0, 0);

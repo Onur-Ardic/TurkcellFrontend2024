@@ -21,6 +21,18 @@ a {
     border: none;
   }
 }
+.our-team{
+  &-img{
+    &:hover{
+      img{
+        transform: scale(1.2);
+      }
+      div{
+        display: block !important;
+      }
+    }
+  }
+}
 @media (max-width: 992px) {
   .main {
     &-header {
