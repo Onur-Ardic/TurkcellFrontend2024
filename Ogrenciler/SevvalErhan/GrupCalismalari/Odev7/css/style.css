@@ -10,4 +10,29 @@ body {
   overflow-x: hidden;
 }
 
+.navbar div .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: black;
+}
+.navbar div .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #5a8ff4;
+}
+
+.content {
+  margin-bottom: 4em;
+}
+.content .text {
+  padding: 30px;
+}
+.content .text:hover {
+  background: rgb(13, 110, 253);
+}
+.content .icon-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.content .icon-wrap i {
+  font-size: 25px;
+}
+
 /*# sourceMappingURL=style.css.map */
