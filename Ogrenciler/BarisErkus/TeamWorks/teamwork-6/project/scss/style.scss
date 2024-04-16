@@ -1,6 +1,20 @@
-@import "./common/global", "./common/mixins", "./common/variables";
+@import "./common/global", "./common/mixins", "./common/variables", "./common/animations";
 
-.container {
-    padding: 24px 15px;
-    margin: 0 381.5px;
+.navbar {
+    .container {
+        div {
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            color: black;
+                            &:hover {
+                                color: #5a8ff4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

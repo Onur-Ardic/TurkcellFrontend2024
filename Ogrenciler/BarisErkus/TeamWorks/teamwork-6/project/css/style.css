@@ -2,9 +2,11 @@
   color: #5a8ff4;
 }
 
-.container {
-  padding: 24px 15px;
-  margin: 0 381.5px;
+.navbar .container div .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: black;
+}
+.navbar .container div .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #5a8ff4;
 }
 
 /*# sourceMappingURL=style.css.map */
