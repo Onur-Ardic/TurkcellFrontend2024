@@ -18,11 +18,7 @@ header {
   @include title(2.5rem, 700, #000);
 }
 .features-section-lead {
-  @include title(
-    1.25rem,
-    300,
-    rgb(128, 128, 128)
-  );
+  @include title(1.25rem, 300, rgb(128, 128, 128));
 }
 .features-section {
   height: 100vh;
@@ -69,6 +65,12 @@ header {
       border-radius: 50%;
       display: inline-block;
       background-color: #4285f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .bi-arrow-repeat::before {
+        transform: rotate(90deg);
+      }
     }
   }
 }

@@ -78,6 +78,12 @@ header .dot {
   border-radius: 50%;
   display: inline-block;
   background-color: #4285f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features-card-body .features-card-icon .icon-wrap .bi-arrow-repeat::before {
+  transform: rotate(90deg);
 }
 
 /*# sourceMappingURL=main.css.map */
