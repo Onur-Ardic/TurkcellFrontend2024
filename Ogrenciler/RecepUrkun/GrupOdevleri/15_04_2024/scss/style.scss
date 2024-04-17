@@ -24,8 +24,6 @@ header {
   }
 
   .hero {
-    margin-top: 10%;
-
     .hero-left {
       p {
         color: $colorGray;
@@ -33,42 +31,62 @@ header {
     }
   }
 }
-@media (max-width: 768px) {
-  .hero {
-    margin-top: 15% !important;
 
-    .hero-wrapper {
-      flex-direction: column;
-      .hero-right {
-        order: -1;
+.features-card {
+  .unit-4 {
+    padding: 30px;
+    background: $cardColor;
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    margin-bottom: 4em;
+    text-align: center;
+    padding-top: 50px;
+    transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease,
+      top 0.3s ease;
+
+    .unit-4-icon {
+      position: absolute;
+      left: 50%;
+      top: -50px;
+      transform: translateX(-50%);
+      .icon-wrap {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: $colorBlue;
+        box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+        span {
+          font-size: 2rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          color: $colorWhite !important;
+          transform: translate(-50%, -50%);
+        }
       }
     }
-  }
-}
-
-.features {
-  // margin-top: 20%;
-  &-wrapper {
-    .features-card {
-      margin-top: 10%;
-
-      .card {
-        background-color: $cardColor;
-        border: none;
-        width: 350px;
-        margin-top: 5%;
-
-        &-icon {
-          font-size: 40px;
-          top: -18%;
-          color: $colorWhite;
-        }
-
-        &-body {
-          a {
-            text-decoration: none;
-          }
-        }
+    & h3 {
+      font-size: 18px;
+      color: #000;
+    }
+    &:hover {
+      background: $colorBlue;
+      box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+      top: -7px;
+      color: $colorWhite;
+      h3,
+      a {
+        color: $colorWhite;
+      }
+      .icon-wrap {
+        background: $colorWhite;
+      }
+      .fa-solid,
+      .fa-regular {
+        color: #4285f4;
       }
     }
   }
@@ -137,27 +155,54 @@ header {
   }
 }
 
-@media (max-width: 768px) {
-  .features {
-    // margin-top: 20% !important;
-    &-wrapper {
-      .features-card {
-        .card {
-          margin-top: 15%;
-        }
-      }
+.testimonials {
+  .testimonials-item {
+    max-width: 800px;
+    img {
+      width: 100px;
     }
   }
-  .site-section {
-    padding: 2.5em 0;
+  .carousel-indicators {
+    [data-bs-target] {
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+    }
+    .active {
+      background-color: #4285f4;
+    }
   }
 }
-@media (min-width: 992px) {
-  .pl-lg-5 {
-    padding-left: 3rem !important;
+.blog-post {
+  .meta {
+    font-size: 0.9rem;
   }
-  .pr-lg-5 {
-    padding-right: 3rem !important;
+}
+.contact-us {
+  background-image: url("https://preview.colorlib.com/theme/imagine/images/hero_1.jpg.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  &::before {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+    background: linear-gradient(to right, #4286f4 0%, #42e2f4 100%);
+  }
+  .container * {
+    z-index: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-section {
+    padding: 2.5em 0;
   }
 }
 @media (min-width: 1200px) {

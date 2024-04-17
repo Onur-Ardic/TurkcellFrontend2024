@@ -10,6 +10,10 @@ h2 {
   color: #000 !important;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 header .dot {
   color: #007bff;
 }
@@ -65,8 +69,27 @@ header .dot {
   text-decoration: none;
 }
 .features-card-body:hover {
+  background-color: #4285f4;
   top: -10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.features-card-body:hover p {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 300 !important;
+  font-size: 1rem !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.features-card-body:hover h3 {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+  color: #fff !important;
+}
+.features-card-body:hover .icon-wrap {
+  background-color: #fff !important;
+}
+.features-card-body:hover .icon-wrap span {
+  color: #4285f4 !important;
 }
 .features-card-body .features-card-icon .icon-wrap {
   width: 80px;
@@ -80,6 +103,7 @@ header .dot {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff !important;
 }
 .features-card-body .features-card-icon .icon-wrap .bi-arrow-repeat::before {
   transform: rotate(90deg);
@@ -135,8 +159,98 @@ header .dot {
   color: #000 !important;
 }
 
-.about-us {
-  background-color: #f6f6f6;
+.our-team-section .people-cards .social {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  bottom: -80px;
+  transition: all 0.5s ease-in-out;
+}
+.our-team-section .people-cards .social a {
+  color: #fff;
+}
+.our-team-section .people-cards h2 {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 500 !important;
+  font-size: 1.1rem !important;
+  color: #000 !important;
+}
+.our-team-section .people-cards .people-card .bio-img {
+  position: relative;
+  overflow: hidden;
+}
+.our-team-section .people-cards .people-card:hover .social {
+  bottom: 0px;
+  display: block;
+  z-index: 1;
+  animation-name: slideIn;
+  animation-duration: 0.3s;
+}
+@keyframes slideIn {
+  0% {
+    bottom: -80px;
+  }
+  50% {
+    bottom: -20px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+.our-team-section .people-cards .people-card:hover .bio-img img {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.our-team-section .job-title {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  color: #4285f4 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.our-team-section .person p {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  color: rgb(128, 128, 128) !important;
+  margin-bottom: 1rem;
+}
+
+.testimonial .testimonial-image {
+  max-width: 100px;
+}
+.testimonial .testimonial-quote {
+  max-width: 800px;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 300 !important;
+  font-size: 1.5rem !important;
+  color: rgb(128, 128, 128) !important;
+  line-height: 40px;
+}
+.testimonial .owl-dots {
+  text-align: center;
+}
+.testimonial .owl-dots :hover {
+  cursor: pointer;
+}
+.testimonial .owl-dots .owl-dot .active {
+  background-color: #4285f4;
+}
+.testimonial .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  background-color: #dee2e6;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.blog-section .content-writer {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 400 !important;
+  font-size: 0.9rem !important;
+  color: #b3b3b3 !important;
 }
 
 /*# sourceMappingURL=main.css.map */

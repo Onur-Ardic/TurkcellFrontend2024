@@ -82,4 +82,21 @@ body {
   color: #0d6efd !important;
 }
 
+.testimonials img {
+  width: 100px;
+}
+.testimonials .carousel-inner {
+  max-width: 800px;
+}
+
+.our-team .bio-img:hover .social-icons {
+  display: block !important;
+}
+
+.card-text {
+  font-size: 12px;
+  letter-spacing: 1.1px;
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=style.css.map */

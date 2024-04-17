@@ -1,0 +1,17 @@
+.container {
+  width: 80%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.custom-list li:before {
+  content: "\2713";
+  color: #28a745;
+  margin-right: 5px;
+}
+.testimonials {
+  img {
+    width: 100px;
+  }
+}

@@ -8,13 +8,11 @@
       }
     }
   }
+
   .features {
     h1 {
       font-size: 2rem;
     }
-  }
-
-  .features {
     // margin-top: 20% !important;
     &-wrapper {
       .features-card {
@@ -24,6 +22,14 @@
       }
     }
   }
+  .about-us {
+    .content-wrapper {
+      .right-content {
+        padding-left: 0;
+      }
+    }
+  }
+
   .site-section {
     padding: 2.5em 0;
   }
