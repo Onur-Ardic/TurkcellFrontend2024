@@ -1,0 +1,113 @@
+.imagine-feature-container .imagine-features {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.imagine-feature-container .imagine-features .paragraph {
+  max-width: 55%;
+}
+.imagine-feature-container .imagine-feature-cards {
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+  top: 0;
+  margin-bottom: 4em;
+  text-align: center;
+  padding-top: 50px;
+  display: block !important;
+}
+
+.imagine-feature-cards .imagine-feature-card-container {
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.imagine-feature-cards .imagine-feature-card-container .item-container {
+  margin: auto;
+  margin-bottom: 1.5rem !important;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 30rem;
+}
+.imagine-feature-cards .imagine-feature-card-container .item-container .item {
+  padding: 30px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  position: relative;
+  top: 0;
+  margin-bottom: 4em;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.communicate-and-gather-container {
+  margin-top: 48px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.communicate-and-gather-container .left img {
+  margin-right: -17rem;
+  width: 100%;
+  height: auto;
+}
+.communicate-and-gather-container .right {
+  padding-left: 3rem !important;
+  margin-top: 3rem !important;
+  max-width: 30rem;
+}
+.communicate-and-gather-container .right .bottom {
+  box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-left: 10px solid #4285f4;
+}
+.communicate-and-gather-container .right .bottom .header {
+  justify-content: center;
+}
+.communicate-and-gather-container .right .bottom .header img {
+  margin-right: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.communicate-and-gather-container .right .bottom .header h4 {
+  font-size: 1rem;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+.communicate-and-gather-container .right .bottom .header p {
+  font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+  .imagine-feature-card-container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .imagine-feature-card-container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .imagine-feature-card-container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .imagine-feature-card-container {
+    max-width: 1140px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

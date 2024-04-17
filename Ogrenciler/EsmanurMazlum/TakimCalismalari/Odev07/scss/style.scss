@@ -1,0 +1,74 @@
+@import "./global.scss";
+
+.hero-section{
+    .container{
+        .hero-info{
+            .get-started{
+                padding: 10px 30px;
+            }
+        }
+    }
+}
+.imagine-features-section{
+    margin: 8rem 0;
+    .feature-info{
+        margin-bottom: 8rem;
+    }
+    .feature-cards{
+        gap: 30px;
+        .card{
+            border: none;
+            background-color: #f1f1f1;
+            padding: 40px 15px 15px;
+            margin: 0 0 64px;
+            .card-icon{
+                .icon-wrap{
+                    width: 80px;
+                    height: 80px;
+                    position: relative;
+                    border-radius: 50%;
+                    display: inline-block;
+                    background-color: $primary-bg-color;
+                    box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+                    i{
+                        font-size: 1.5rem;
+                        position: absolute;
+                        top: 50%;
+                        color: #fff !important;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+            .card-body{
+                .card-text{
+                    color: $primary-text-color;
+                }
+            }
+            &:hover{
+                background-color: $primary-bg-color;
+                color: #fff;
+                .icon-wrap{
+                    background-color: #fff;
+                    i{
+                        color: $primary-bg-color;
+                    }
+                }
+            }
+        }
+    }
+}
+.feature-big{
+    .container{
+        .feature-big-part{
+            .feature-big-info{
+                .author-box{
+                    img{
+                        width: 70px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

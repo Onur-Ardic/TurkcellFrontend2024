@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+h2 {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 700 !important;
+  font-size: 2.5rem !important;
+  color: #000 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+header .dot {
+  color: #007bff;
+}
+
+.hero-btn {
+  border-radius: 30px !important;
+}
+
+.hero-title {
+  font-size: 3.5rem !important;
+}
+
+/* .features-section-title {
+  @include title(2.5rem, 700, #000);
+} */
+.features-section-lead {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 300 !important;
+  font-size: 1.25rem !important;
+  color: rgb(128, 128, 128) !important;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.features-card-body {
+  padding: 30px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  position: relative;
+  top: 0;
+  margin-bottom: 4em;
+  text-align: center;
+  padding-top: 50px;
+}
+.features-card-body h3 {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+  color: #000 !important;
+}
+.features-card-body p {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 300 !important;
+  font-size: 1rem !important;
+  color: rgb(128, 128, 128) !important;
+}
+.features-card-body div p a {
+  text-decoration: none;
+}
+.features-card-body:hover {
+  background-color: #4285f4;
+  top: -10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.features-card-body:hover p {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 300 !important;
+  font-size: 1rem !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.features-card-body:hover h3 {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+  color: #fff !important;
+}
+.features-card-body:hover .icon-wrap {
+  background-color: #fff !important;
+}
+.features-card-body:hover .icon-wrap span {
+  color: #4285f4 !important;
+}
+.features-card-body .features-card-icon .icon-wrap {
+  width: 80px;
+  height: 80px;
+  top: -40px;
+  left: 40%;
+  position: absolute;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #4285f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff !important;
+}
+.features-card-body .features-card-icon .icon-wrap .bi-arrow-repeat::before {
+  transform: rotate(90deg);
+}
+
+.contactUs-section-img {
+  background-image: url(https://preview.colorlib.com/theme/imagine/images/hero_1.jpg.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: -1;
+}
+.contactUs-section-img::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to right, #4286f4 0%, #42e2f4 100%);
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.communicate {
+  /* .title {
+    @include title(2.5rem, 700, #000);
+  } */
+}
+.communicate .lead {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 300 !important;
+  font-size: 1rem !important;
+  color: rgb(128, 128, 128) !important;
+}
+.communicate .card {
+  padding: 15px;
+}
+.communicate .card img {
+  width: 50px;
+  border-radius: 50%;
+}
+.communicate .card h5 {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  color: #000 !important;
+}
+.communicate .card h6 {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  color: #000 !important;
+}
+
+.our-team-section .people-cards .social {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  bottom: -80px;
+  transition: all 0.5s ease-in-out;
+}
+.our-team-section .people-cards .social a {
+  color: #fff;
+}
+.our-team-section .people-cards h2 {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 500 !important;
+  font-size: 1.1rem !important;
+  color: #000 !important;
+}
+.our-team-section .people-cards .people-card .bio-img {
+  position: relative;
+  overflow: hidden;
+}
+.our-team-section .people-cards .people-card:hover .social {
+  bottom: 0px;
+  display: block;
+  z-index: 1;
+  animation-name: slideIn;
+  animation-duration: 0.3s;
+}
+@keyframes slideIn {
+  0% {
+    bottom: -80px;
+  }
+  50% {
+    bottom: -20px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+.our-team-section .people-cards .people-card:hover .bio-img img {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.our-team-section .job-title {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  color: #4285f4 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.our-team-section .person p {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  color: rgb(128, 128, 128) !important;
+  margin-bottom: 1rem;
+}
+
+.testimonial .testimonial-image {
+  max-width: 100px;
+}
+.testimonial .testimonial-quote {
+  max-width: 800px;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 300 !important;
+  font-size: 1.5rem !important;
+  color: rgb(128, 128, 128) !important;
+  line-height: 40px;
+}
+.testimonial .owl-dots {
+  text-align: center;
+}
+.testimonial .owl-dots :hover {
+  cursor: pointer;
+}
+.testimonial .owl-dots .owl-dot .active {
+  background-color: #4285f4;
+}
+.testimonial .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  background-color: #dee2e6;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.blog-section .content-writer {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 400 !important;
+  font-size: 0.9rem !important;
+  color: #b3b3b3 !important;
+}
+
+/*# sourceMappingURL=main.css.map */

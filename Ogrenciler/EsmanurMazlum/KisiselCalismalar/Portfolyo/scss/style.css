@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 60px;
+}
+header img {
+  display: block;
+  width: 98px;
+  height: 56px;
+}
+
+.portfolio .portfolio-content {
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio .portfolio-content .portfolio-text {
+  width: 60%;
+}
+.portfolio .portfolio-content .portfolio-text h1 {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-size: 120px;
+  color: #6b705c;
+  font-weight: 700;
+  line-height: 120px;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: -4px;
+  font-family: "Poppins", sans-serif;
+}
+.portfolio .portfolio-content .portfolio-text .wave-img {
+  background-image: url(../images/wavy-shape-green.png);
+  width: 100%;
+  height: 20px;
+  background-size: 645px 20px;
+  background-repeat: repeat-x;
+  animation: wavy-motion 15s linear infinite;
+  margin: 25px 0;
+}
+@keyframes wavy-motion {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 645px;
+  }
+}
+.portfolio .portfolio-content .portfolio-text .subtitle {
+  font-size: 32px;
+  color: #6b705c;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 30px;
+  padding-top: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.portfolio .portfolio-content .portfolio-text form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0px;
+  margin-top: 60px;
+}
+.portfolio .portfolio-content .portfolio-text form img {
+  width: 34px;
+  height: 50px;
+}
+.portfolio .portfolio-content .portfolio-text form input {
+  font-size: 18px;
+  padding: 20px 24px;
+  flex-grow: 1;
+  margin: 0 16px;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px 7px rgba(12, 127, 134, 0.2509803922);
+  transition: 0.5s ease;
+}
+.portfolio .portfolio-content .portfolio-text form .btn-subscribe {
+  padding: 25px 24px;
+  border-radius: 10px;
+  background-color: #6b705c;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 4px;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s ease;
+}
+.portfolio .portfolio-content .portfolio-img {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0px;
+}
+.portfolio .portfolio-content .portfolio-img .img-box {
+  position: relative;
+  margin-bottom: 32px;
+  width: 345px;
+  height: 345px;
+}
+@keyframes animate-img-circle {
+  0% {
+    top: -20px;
+    left: -20px;
+  }
+  50% {
+    top: -20px;
+    left: 20px;
+    border-color: #583101;
+  }
+  100% {
+    top: -20px;
+    left: -20px;
+  }
+}
+@keyframes animate-img-circle-2 {
+  0% {
+    top: -70px;
+  }
+  100% {
+    top: 10px;
+    border-color: #583101;
+  }
+}
+.portfolio .portfolio-content .portfolio-img .img-box::before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  left: -30px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 3px solid #FEFAE0;
+  z-index: 2;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  animation: animate-img-circle 8s linear infinite;
+}
+.portfolio .portfolio-content .portfolio-img .img-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -420px;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  border: 3px solid #FEFAE0;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  animation: animate-img-circle-2 8s linear infinite alternate;
+}
+.portfolio .portfolio-content .portfolio-img .img-box img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 50%;
+}
+.portfolio .portfolio-content .portfolio-img .definition h4 {
+  font-size: 32px;
+  color: #3f4238;
+  font-weight: 600;
+  line-height: 30px;
+}
+.portfolio .portfolio-content .portfolio-img .definition .definition-sub {
+  font-size: 16px;
+  color: #3f4238;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 5px;
+  margin-bottom: 24px;
+}
+.portfolio .portfolio-content .portfolio-img .definition .sub {
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+.portfolio .portfolio-content .portfolio-img .links {
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.portfolio .portfolio-content .portfolio-img .links a {
+  padding: 8px 8px 0px 0px;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  letter-spacing: 5px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #3f4238;
+  font-weight: 700;
+}
+.portfolio .portfolio-content .portfolio-img .links a:hover {
+  color: #6b705c;
+}
+
+.project {
+  padding: 100px 0 90px;
+}
+.project .project-title h2 {
+  font-size: 50px;
+  color: #6b705c;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.project .cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project .cards .card {
+  width: 33.3333333333%;
+  padding: 25px 10px;
+  box-shadow: 0 0 8px rgba(136, 136, 136, 0.08);
+  background-color: #f7f5e8;
+  border-radius: 10px;
+}
+.project .cards .card:hover {
+  box-shadow: 0 15px 10px rgba(136, 136, 136, 0.1);
+}
+.project .cards .card img {
+  max-width: 350px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.project .cards .card a {
+  background-color: #3f4238;
+  padding: 10px 5px;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.bg-shape-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  background-color: #FEFAE0;
+  z-index: -1;
+}
+
+.bg-shape-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 60%;
+  background-color: #CCD5AE;
+  z-index: -1;
+}/*# sourceMappingURL=style.css.map */

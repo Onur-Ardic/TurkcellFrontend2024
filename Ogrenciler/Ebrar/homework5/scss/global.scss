@@ -529,7 +529,9 @@ option {
   .nav-section {
     background-position: center;
     background-size: cover;
-
+    .nav-title {
+      padding-top: 50px;
+    }
     .navList-item {
       display: none;
     }

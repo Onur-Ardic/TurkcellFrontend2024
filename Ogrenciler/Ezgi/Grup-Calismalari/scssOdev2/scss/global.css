@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.primary-text-color {
+  color: #696969;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}/*# sourceMappingURL=global.css.map */

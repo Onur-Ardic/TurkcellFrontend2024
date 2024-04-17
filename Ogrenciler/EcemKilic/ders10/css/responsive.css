@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+  .profitable .row .content-right h1 {
+    font-size: 2rem;
+  }
+  .features h1 {
+    font-size: 2rem;
+  }
+  .contact-us .contact-wrapper .contact-card {
+    margin: 0 !important;
+    padding: 0;
+  }
+} 
+
+/*# sourceMappingURL=responsive.css.map */

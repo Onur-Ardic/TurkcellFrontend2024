@@ -1,0 +1,6 @@
+.container {
+  display: flex;
+}
+.container:hover {
+  background: red;
+}/*# sourceMappingURL=deneme.css.map */

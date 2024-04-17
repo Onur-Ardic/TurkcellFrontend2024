@@ -3,8 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   background-color: #BC6FF1;
   color: #52057B;
+  overflow-x: hidden;
 }
 
 .container {
@@ -27,12 +31,13 @@ header a img {
   max-width: 600px;
   letter-spacing: -2px;
 }
+
 .subscribe .animation-divider {
   position: relative;
   height: 20px;
   width: 100%;
-  overflow: hidden;
 }
+
 .subscribe .circle-animation {
   position: absolute;
   top: 0;
@@ -42,6 +47,7 @@ header a img {
   display: flex;
   align-items: center;
 }
+
 .subscribe .circle-animation .circle {
   width: 20px;
   height: 20px;
@@ -50,46 +56,77 @@ header a img {
   margin: 0 10px;
   animation: circle-grow 2s ease-in-out infinite;
 }
+
 .subscribe .circle-animation .circle:nth-child(0) {
   background-color: pink;
   animation-delay: 0.2s;
 }
+
 .subscribe .circle-animation .circle:nth-child(1) {
   background-color: pink;
   animation-delay: 0.4s;
 }
+
 .subscribe .circle-animation .circle:nth-child(2) {
   background-color: pink;
   animation-delay: 0.6s;
 }
+
 .subscribe .circle-animation .circle:nth-child(3) {
   background-color: pink;
   animation-delay: 0.8s;
 }
+
 .subscribe .circle-animation .circle:nth-child(4) {
   background-color: pink;
   animation-delay: 1s;
 }
+
 .subscribe .circle-animation .circle:nth-child(5) {
   background-color: pink;
   animation-delay: 1.2s;
 }
+
 .subscribe .circle-animation .circle:nth-child(6) {
   background-color: pink;
   animation-delay: 1.4s;
 }
+
 .subscribe .circle-animation .circle:nth-child(7) {
   background-color: pink;
   animation-delay: 1.6s;
 }
+
 .subscribe .circle-animation .circle:nth-child(8) {
   background-color: pink;
   animation-delay: 1.8s;
 }
+
 .subscribe .circle-animation .circle:nth-child(9) {
   background-color: pink;
   animation-delay: 2s;
 }
+
+.subscribe .circle-animation .circle:nth-child(10) {
+  display: none;
+}
+
+.subscribe .circle-animation .circle:nth-child(11) {
+  display: none;
+}
+
+.subscribe .circle-animation .circle:nth-child(12) {
+  display: none;
+}
+
+.subscribe .circle-animation .circle:nth-child(13) {
+  display: none;
+}
+
+.subscribe .circle-animation .circle:nth-child(14) {
+  display: none;
+}
+
 @keyframes circle-grow {
   0% {
     opacity: 0;
@@ -116,6 +153,7 @@ header a img {
   font-weight: 700;
   line-height: 35px;
 }
+
 .subscribe .sub-form {
   display: flex;
   flex-direction: column;
@@ -123,6 +161,7 @@ header a img {
   justify-content: space-between;
   margin-top: 60px;
 }
+
 .subscribe .sub-form input {
   font-size: 18px;
   padding: 20px 24px;
@@ -135,6 +174,7 @@ header a img {
   transition: 0.5s ease;
   width: 100%;
 }
+
 .subscribe .sub-form .sub-btn {
   padding: 25px 24px;
   border-radius: 10px;
@@ -157,24 +197,29 @@ header a img {
   align-items: center;
   margin-top: 50px;
 }
+
 .about .img-box {
   position: relative;
   margin-bottom: 32px;
 }
+
 .about .img-box::before {
   content: "";
   position: absolute;
   top: -45px;
   left: -30px;
-  width: 350px;
-  height: 350px;
+  width: 345px;
+  height: 345px;
   border-radius: 50%;
   border: 3px solid #fafafa;
   z-index: 2;
   pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   animation: animate-img-circle 8s linear infinite;
 }
+
 @keyframes animate-img-circle {
   0% {
     top: -20px;
@@ -192,7 +237,6 @@ header a img {
 }
 .about .img-box::after {
   content: "";
-  overflow-y: hidden;
   position: absolute;
   right: -420px;
   top: 0;
@@ -201,10 +245,13 @@ header a img {
   border: 1px solid #fff;
   border-radius: 50%;
   pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   z-index: 0;
   animation: animate-img-circle-2 3s linear infinite alternate;
 }
+
 @keyframes animate-img-circle-2 {
   from {
     top: -70px;
@@ -221,6 +268,7 @@ header a img {
   border-radius: 50%;
   z-index: 1;
 }
+
 .about .subtitle {
   font-size: 16px;
   font-weight: 400;
@@ -228,12 +276,14 @@ header a img {
   letter-spacing: 5px;
   margin-bottom: 24px;
 }
+
 .about .coming-links {
   padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .about .coming-links a {
   margin-top: 50px;
   color: #52057B;
@@ -241,8 +291,75 @@ header a img {
   text-decoration: none;
   transition: color 0.5s ease;
 }
+
 .about .coming-links a:hover {
   color: #fff;
 }
+
+@media screen and (min-width: 600px) {
+  body {
+    background: linear-gradient(to right, #BC6FF1 40.0001%, #FFF2E1 59.9999%);
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  body header .logo {
+    background: linear-gradient(to right, #BC6FF1 40.0001%, #FFF2E1 59.9999%);
+  }
+  body header .logo a {
+    background-color: #BC6FF1;
+  }
+  body .subscribe .circle-animation .circle:nth-child(10) {
+    background-color: pink;
+    animation-delay: 2.2s;
+    display: block;
+  }
+  body .subscribe .circle-animation .circle:nth-child(11) {
+    background-color: pink;
+    animation-delay: 2.4s;
+    display: block;
+  }
+  body .subscribe .circle-animation .circle:nth-child(12) {
+    background-color: pink;
+    animation-delay: 2.6s;
+    display: block;
+  }
+  body .subscribe .circle-animation .circle:nth-child(13) {
+    background-color: pink;
+    animation-delay: 2.8s;
+    display: block;
+  }
+  body .subscribe .circle-animation .circle:nth-child(14) {
+    background-color: pink;
+    animation-delay: 3s;
+    display: block;
+  }
+  body .subscribe .sub-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  body .subscribe .sub-form input {
+    width: 50%;
+  }
+  body .subscribe .sub-form .sub-btn {
+    width: 30%;
+  }
+  body .about .img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .about .img-box::before {
+    left: 0;
+  }
+  body .about .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+} 
 
 /*# sourceMappingURL=main.css.map */

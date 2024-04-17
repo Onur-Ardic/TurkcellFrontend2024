@@ -97,7 +97,7 @@
         width: 350px;
         height: 350px;
         border-radius: 50%;
-        border: 2px solid get-color-map($colors, "dark-cyan");
+        border: 2px solid get-color-map($colors, "ash-gray");
         z-index: 2;
         pointer-events: none;
         user-select: none;
@@ -110,7 +110,7 @@
           50% {
             top: -20px;
             left: 20px;
-            border-color: get-color-map($colors, "tangerine");
+            border-color: get-color-map($colors, "champange-pink");
           }
           100% {
             top: -20px;
@@ -125,7 +125,7 @@
         top: 0;
         width: 800px;
         height: 800px;
-        border: 1px solid get-color-map($colors, "tangerine");
+        border: 1px solid get-color-map($colors, "ash-gray");
         border-radius: 50%;
         pointer-events: none;
         user-select: none;
@@ -137,7 +137,7 @@
           }
           100% {
             top: 10px;
-            border-color: get-color-map($colors, "dark-cyan");
+            border-color: get-color-map($colors, "champange-pink");
           }
         }
       }
@@ -182,7 +182,7 @@
         text-align: left;
         .img-card {
           border-radius: 10px;
-
+          transition: all 0.2s ease-in-out;
           img {
             padding: 20px;
             width: 500px;
@@ -190,7 +190,7 @@
             border-radius: 10px;
           }
           &:hover {
-            transform: scale(1.1);
+            transform: scale(1.2);
           }
         }
         .content-card {

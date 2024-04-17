@@ -1,0 +1,212 @@
+@import "base.scss";
+header {
+  .navbar {
+    background-color: #fff;
+    .logo {
+      .dot {
+        color: $colorBlue;
+        float: right;
+      }
+    }
+    .navbar-right {
+      ul {
+        li {
+          padding: 1rem 1.4rem;
+          a {
+            color: rgb(0, 0, 0);
+          }
+          .active {
+            color: $colorBlue;
+          }
+        }
+      }
+    }
+  }
+
+  .hero {
+    .hero-left {
+      p {
+        color: $colorGray;
+      }
+    }
+  }
+}
+
+.features-card {
+  .unit-4 {
+    padding: 30px;
+    background: $cardColor;
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    margin-bottom: 4em;
+    text-align: center;
+    padding-top: 50px;
+    transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease,
+      top 0.3s ease;
+
+    .unit-4-icon {
+      position: absolute;
+      left: 50%;
+      top: -50px;
+      transform: translateX(-50%);
+      .icon-wrap {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: $colorBlue;
+        box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+        span {
+          font-size: 2rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          color: $colorWhite !important;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    & h3 {
+      font-size: 18px;
+      color: #000;
+    }
+    &:hover {
+      background: $colorBlue;
+      box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+      top: -7px;
+      color: $colorWhite;
+      h3,
+      a {
+        color: $colorWhite;
+      }
+      .icon-wrap {
+        background: $colorWhite;
+      }
+      .fa-solid,
+      .fa-regular {
+        color: #4285f4;
+      }
+    }
+  }
+}
+
+.feature-communicate {
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .author-box {
+    box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-left: 10px solid #4285f4;
+    img {
+      max-width: 50px;
+    }
+    blockquote {
+      font-style: italic;
+    }
+  }
+}
+
+.about-us {
+  .ul-check li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    ::before {
+      color: #8bc34a;
+      left: 0;
+      font-size: 20px;
+      top: 0.2rem;
+      position: absolute;
+    }
+  }
+}
+
+.our-team {
+  .person {
+    position: relative;
+    h2 {
+      font-size: 18px;
+    }
+    figure {
+      position: relative;
+      margin-bottom: 0;
+    }
+  }
+  .bio-img {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .sub-title {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    font-weight: 700;
+    color: #4285f4;
+  }
+}
+
+.testimonials {
+  .testimonials-item {
+    max-width: 800px;
+    img {
+      width: 100px;
+    }
+  }
+  .carousel-indicators {
+    [data-bs-target] {
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+    }
+    .active {
+      background-color: #4285f4;
+    }
+  }
+}
+.blog-post {
+  .meta {
+    font-size: 0.9rem;
+  }
+}
+.contact-us {
+  background-image: url("https://preview.colorlib.com/theme/imagine/images/hero_1.jpg.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  &::before {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+    background: linear-gradient(to right, #4286f4 0%, #42e2f4 100%);
+  }
+  .container * {
+    z-index: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-section {
+    padding: 2.5em 0;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

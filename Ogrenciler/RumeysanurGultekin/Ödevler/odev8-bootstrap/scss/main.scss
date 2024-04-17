@@ -1,0 +1,170 @@
+$primary-color: #4285f4;
+$color-gray: #808080;
+$fs-22: 1.375rem;
+$fs-12: 0.75rem;
+$fs-16: 1rem;
+
+//   Rümeysa
+.our-team{
+    .our-team-body{
+        gap: 40px;
+        .col-lg-4 {
+            margin-right: -15px;
+            margin-left: -15px;
+            .col-img{
+                img{
+                    width: 100%;
+                    height: auto;
+                    // &:hover{
+                    //     transform: scale(1.2);
+                    // }
+                }
+                .social-media{
+                    display: none;
+                    background: #4285f4;
+                    height: 50px;
+                    i{
+                        color: white;
+                        font-size: 25px;
+                    }
+                } 
+                &:hover{
+                    .social-media{
+                        display: block; 
+                        background-color: #4285f4;
+                        justify-content: space-evenly;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap:20px;
+                        position: absolute;
+                        margin-top: -50px;
+                    }
+                }
+
+            }
+            h2{
+                font-size: $fs-22;
+                margin-top: 20px;
+            }
+            span{
+                font-size: $fs-12;
+                color: $primary-color;
+            }
+            p{
+                font-size: $fs-16;
+                letter-spacing: .1em;
+            }
+
+            
+        }
+    }
+}
+.testiminationsSections{
+    .container{
+        text-align: center;
+        width: 50%;
+        .testi-tab{
+            margin: 80px 0;
+            .testi-body{
+                img{
+                    max-width: 100px;
+                    border-radius: 50%;
+                }
+                p{
+                    font-size: 30px;
+                    color: $color-gray;
+                    margin-top: 20px;
+                }
+                span{
+                    font-size: 16px;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}
+.header{
+    .container{
+        .header-body{
+            margin: 50px 0;
+            .header-left{
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 15px;
+                padding-right: 15px;
+                h1{
+                    font-size: 4rem;
+                    color: #000;
+                    font-weight: 900;
+                }
+                p{
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    color: $color-gray;
+                }
+            }
+            .header-right{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 9940px) {
+    .header{
+        .header-body{
+            display: flex;
+            flex-direction: column-reverse;
+            .header-right{
+                img{
+                    width: 50%;
+                }
+            }
+        }
+    }
+    .ourteam{
+        .our-team-body{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    .testiminationsSections{
+        .container{
+            max-width: 100%;
+            .testi-tab{
+               margin: 0 0;
+            }
+        }
+    }
+}
+// yeni eklediklerim
+a{
+    text-decoration: none;
+  }
+  .make-your-business{
+    h2 a {
+      color: #000;
+      font-size: 30px;
+  }
+  }
+.site-section{
+    .site-section-image {
+        background-image: url("https://preview.colorlib.com/theme/imagine/images/hero_1.jpg.webp");
+        
+      }
+  }
+  .btn {
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 30px;
+  }
+  .bg-image-2 {
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+  
+  }

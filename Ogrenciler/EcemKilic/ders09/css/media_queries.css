@@ -23,6 +23,46 @@
     width: 100%;
     margin-top: 0px;
   }
+  #our-blog .blog-cards {
+    display: block;
+  }
+  #our-blog .blog-cards .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #newsletter,
+  #about {
+    display: block;
+  }
+  #newsletter .form-control,
+  #newsletter .btn-white,
+  #newsletter .search,
+  #newsletter .btn-blue,
+  #about .form-control,
+  #about .btn-white,
+  #about .search,
+  #about .btn-blue {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #newsletter ul,
+  #newsletter .social-links,
+  #about ul,
+  #about .social-links {
+    display: block;
+    text-align: center;
+  }
+  #newsletter ul li,
+  #newsletter ul i,
+  #newsletter .social-links li,
+  #newsletter .social-links i,
+  #about ul li,
+  #about ul i,
+  #about .social-links li,
+  #about .social-links i {
+    display: block;
+    margin: 10px 0;
+  }
 }
 @media screen and (min-width: 768px) {
   #hero .label-area {
@@ -126,6 +166,36 @@
     flex-direction: column;
     width: 20%;
   }
+  #our-blog {
+    padding: 0 100px;
+  }
+  #our-blog .blog-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 150px;
+  }
+  #our-blog .blog-cards .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  #newsletter {
+    padding: 0 120px;
+  }
+  #newsletter .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  #newsletter .container .form-control {
+    width: 500px;
+  }
+  #about {
+    padding: 8em 0;
+  }
+  #about .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 @media screen and (min-width: 576px) {
   #popular-categories .items {
@@ -160,6 +230,7 @@
   #trending-today .cards .card {
     width: 75%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-shadow: -3px 3px 24px -5px rgba(0, 0, 0, 0.57);
@@ -200,6 +271,6 @@
   #trending-today .cards .card .card-content .star-rating .rating span {
     font-size: 13px;
   }
-}
+} 
 
 /*# sourceMappingURL=media_queries.css.map */

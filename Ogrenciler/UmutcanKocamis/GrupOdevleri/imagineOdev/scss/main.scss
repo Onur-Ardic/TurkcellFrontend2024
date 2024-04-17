@@ -1,0 +1,228 @@
+@import "./variables.scss";
+* {
+  font-family: "Nunito", sans-serif;
+}
+h2 {
+  @include title(2.5rem, 700, #000);
+}
+a {
+  text-decoration: none !important;
+}
+
+header {
+  .dot {
+    color: #007bff;
+  }
+}
+.hero-btn {
+  border-radius: 30px !important;
+}
+.hero-title {
+  font-size: 3.5rem !important;
+}
+/* .features-section-title {
+  @include title(2.5rem, 700, #000);
+} */
+.features-section-lead {
+  @include title(1.25rem, 300, rgb(128, 128, 128));
+}
+
+.card-link {
+  text-decoration: none;
+}
+.features-card-body {
+  padding: 30px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  position: relative;
+  top: 0;
+  margin-bottom: 4em;
+  text-align: center;
+  padding-top: 50px;
+  h3 {
+    @include title(1.5rem, 500, #000);
+  }
+  p {
+    @include title(1rem, 300, rgb(128, 128, 128));
+  }
+  div {
+    p {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  &:hover {
+    background-color: #4285f4;
+    top: -10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  &:hover p {
+    @include title(1rem, 300, rgba(255, 255, 255, 0.7));
+  }
+  &:hover h3 {
+    @include title(1.5rem, 500, #fff);
+  }
+  &:hover {
+    .icon-wrap {
+      background-color: #fff !important;
+      span {
+        color: #4285f4 !important;
+      }
+    }
+  }
+  .features-card-icon {
+    .icon-wrap {
+      width: 80px;
+      height: 80px;
+      top: -40px;
+      left: 40%;
+      position: absolute;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: #4285f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff !important;
+      .bi-arrow-repeat::before {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+.contactUs-section {
+  &-img {
+    background-image: url(https://preview.colorlib.com/theme/imagine/images/hero_1.jpg.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
+    &::before {
+      content: "";
+      position: absolute;
+      background: linear-gradient(to right, #4286f4 0%, #42e2f4 100%);
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.7;
+      z-index: -1;
+    }
+  }
+}
+.communicate {
+  /* .title {
+    @include title(2.5rem, 700, #000);
+  } */
+  .lead {
+    @include title(1rem, 300, rgb(128, 128, 128));
+  }
+  .card {
+    padding: 15px;
+    img {
+      width: 50px;
+      border-radius: 50%;
+    }
+    h5 {
+      @include title(1rem, 500, #000);
+    }
+    h6 {
+      @include title(1rem, 500, #000);
+    }
+  }
+}
+.our-team-section {
+  .people-cards {
+    .social {
+      display: none;
+      position: absolute;
+      overflow: hidden;
+      bottom: -80px;
+      transition: all 0.5s ease-in-out;
+
+      a {
+        color: #fff;
+      }
+    }
+    h2 {
+      @include title(1.1rem, 500, #000);
+    }
+    .people-card {
+      .bio-img {
+        position: relative;
+        overflow: hidden;
+      }
+      &:hover .social {
+        bottom: 0px;
+        display: block;
+        z-index: 1;
+        animation-name: slideIn;
+        animation-duration: 0.3s;
+        @keyframes slideIn {
+          0% {
+            bottom: -80px;
+          }
+          50% {
+            bottom: -20px;
+          }
+          100% {
+            bottom: 0px;
+          }
+        }
+      }
+      &:hover .bio-img img {
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+  .job-title {
+    @include title(0.8rem, 700, #4285f4);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .person {
+    p {
+      @include title(1rem, 400, rgb(128, 128, 128));
+      margin-bottom: 1rem;
+    }
+  }
+}
+.testimonial {
+  .testimonial-image {
+    max-width: 100px;
+  }
+  .testimonial-quote {
+    max-width: 800px;
+    @include title(1.5rem, 300, rgb(128, 128, 128));
+    line-height: 40px;
+  }
+  .owl-dots {
+    text-align: center;
+    :hover {
+      cursor: pointer;
+    }
+    .owl-dot {
+      .active {
+        background-color: #4285f4;
+      }
+      span {
+        width: 10px;
+        height: 10px;
+        background-color: #dee2e6;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+}
+.blog-section {
+  .content-writer {
+    @include title(0.9rem, 400, #b3b3b3);
+  }
+}

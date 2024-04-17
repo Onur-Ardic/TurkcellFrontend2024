@@ -127,7 +127,7 @@
     @include imgboxCircle(350px,350px ,50% ,3px solid $white ,-45px , -30px,null ,2 ,animation-circle 8s linear infinite )
   }
   &::after{
-    @include imgboxCircle(700px,700px ,50% ,1px solid $white ,0 , null,-350px ,0 ,animation-circle-2 3s linear infinite alternate )
+    @include imgboxCircle(700px,700px ,50% ,1px solid $white ,0 , null,-350px ,0 ,animation-circle-2 3s linear infinite alternate );
   }
   img {
     @include borRadius(50%);

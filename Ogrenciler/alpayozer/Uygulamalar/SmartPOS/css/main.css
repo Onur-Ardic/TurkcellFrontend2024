@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.testimonial {
+  background: #fffef6;
+  padding: 80px 0 55px 0;
+}
+.testimonial .testimonial-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.testimonial .testimonial-header h2 {
+  margin-bottom: 15px;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.testimonial .testimonial-header p {
+  margin-bottom: 15px;
+  color: #696969;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.testimonial .testimonial-slider {
+  padding: 15px;
+}
+.testimonial .testimonial-slider .testimonial-slider-card {
+  margin-bottom: 20px;
+  background: #ffffff;
+}
+.testimonial .testimonial-slider .testimonial-slider-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff5f3;
+  padding: 30px;
+}
+.testimonial .testimonial-slider .testimonial-slider-card-header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.testimonial .testimonial-slider .testimonial-slider-card-header h5 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.testimonial .testimonial-slider .testimonial-slider-card-header p {
+  color: #696969;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.testimonial .testimonial-slider .testimonial-slider-card-content {
+  padding: 30px 10px;
+}
+.testimonial .testimonial-slider .testimonial-slider-card-content p {
+  color: #696969;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.testimonial .testimonial-slider .testimonial-slider-card-content .rating {
+  color: #e9ba17;
+}
+
+.sponsors {
+  padding: 70px 0 55px 0;
+}
+.sponsors .sponsor-item-group {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 2rem;
+}
+.sponsors .sponsor-item-group .sponsor-item {
+  width: 351px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsors .sponsor-item-group .sponsor-item img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=main.css.map */

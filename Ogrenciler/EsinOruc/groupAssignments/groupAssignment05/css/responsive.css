@@ -76,5 +76,16 @@
     flex-direction: column;
   }
 }
+@media screen and (max-width: 425px) {
+  .header .container-wrap .trend-search {
+    display: none;
+  }
+  .footer .newsletter .container {
+    flex-direction: column;
+  }
+  .footer .main-footer .container {
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=responsive.css.map */

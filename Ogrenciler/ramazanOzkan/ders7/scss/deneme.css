@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+}
+.container:hover {
+  background-color: red;
+}
+
+.box1 {
+  width: 20%;
+  height: 35vh;
+  background-color: blue;
+}/*# sourceMappingURL=deneme.css.map */

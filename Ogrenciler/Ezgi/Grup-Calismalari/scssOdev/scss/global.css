@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.primary-bg-color {
+  background-color: #2f89fc;
+}
+
+.primary-text-color {
+  color: #2f89fc;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.text-warning {
+  color: #f89d13;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+.colorw {
+  color: white;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}/*# sourceMappingURL=global.css.map */

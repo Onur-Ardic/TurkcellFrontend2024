@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+*,
+a {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  font-family: "Nunito";
+  text-decoration: none !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar .container {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.navbar .container div .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: black;
+}
+.navbar .container div .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #5a8ff4;
+}
+
+.content {
+  margin-bottom: 4em;
+}
+.content .text {
+  padding: 30px;
+}
+.content .text:hover {
+  background: rgb(13, 110, 253);
+  cursor: pointer;
+}
+.content .icon-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.content .icon-wrap i {
+  font-size: 25px;
+}
+
+.btn-color {
+  background-color: #4285f4;
+  transition: all 0.3s ease-in-out;
+}
+.btn-color:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(37, 109, 226, 0.4);
+}
+
+.author-box {
+  box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  border-left: 10px solid #4285f4;
+}
+.author-box img {
+  max-width: 50px;
+}
+.author-box p {
+  max-width: 350px;
+}
+
+.about-us .row {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.my-card .text {
+  border-radius: 4px;
+}
+.my-card:hover {
+  color: white !important;
+  transition: 0.3s all ease;
+  transform: translateY(-10px);
+}
+.my-card:hover .text {
+  background-color: #0d6efd !important;
+}
+.my-card:hover .text p {
+  color: #c7d5fa !important;
+}
+.my-card:hover .icon-wrap {
+  box-shadow: 0 5px 15px rgba(37, 109, 226, 0.4);
+  background-color: white !important;
+}
+.my-card:hover .icon-wrap .icon {
+  color: #0d6efd !important;
+}
+
+.our-team .bio-img:hover .social-icons {
+  display: block !important;
+}
+
+.card-text {
+  font-size: 12px;
+  letter-spacing: 1.1px;
+  font-weight: 700;
+}
+
+.testimonials {
+  background: #f3f3f3;
+}
+.testimonials img {
+  width: 100px;
+}
+.testimonials .carousel-inner {
+  max-width: 800px;
+}
+
+.contact {
+  width: auto;
+  height: 120vh;
+  position: relative;
+}
+.contact.bg-image {
+  background-size: cover;
+  background-position: center;
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(66, 134, 244, 0.7), rgba(42, 212, 198, 0.5));
+}
+
+/*# sourceMappingURL=style.css.map */
