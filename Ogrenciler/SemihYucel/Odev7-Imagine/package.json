@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "scss": "sass -w scss:css",
-    "sass": "sass -w scss:css"
+    "scss": "sass -w scss:css"
   },
   "author": "",
   "license": "ISC",
