@@ -27,19 +27,3 @@ main{
     }
   }
 }
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px !important;
-  }
-}
-@media (min-width: 992px) {
-  .main {
-    &-header {
-      img {
-        max-width: none;
-        margin: 40px 0 0 -50px;
-      }
-    }
-  }
-}
