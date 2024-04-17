@@ -11848,8 +11848,43 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-a {
-  text-decoration: none;
+.banner {
+  padding: 100px 0;
+}
+
+.features-card:hover {
+  border: none !important;
+  box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+  transition: all 0.3s linear;
+}
+
+@media only screen and (max-width: 992px) {
+  .pricing-item:hover h2, .pricing-item:hover .h2 {
+    color: #6247ea;
+  }
+  .pricing-item-border {
+    border: none !important;
+  }
+}
+.pricing-item {
+  display: relative;
+}
+.pricing-item .pricing-button {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  visibility: hidden;
+}
+.pricing-item:hover {
+  border-top: 2px solid #6247ea;
+}
+.pricing-item:hover h2, .pricing-item:hover .h2 {
+  color: #6247ea;
+}
+.pricing-item:hover .pricing-button {
+  visibility: visible;
+  transition: all 0.5s ease;
 }
 
 /*# sourceMappingURL=main.css.map */
