@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  font-family: "Nunito", sans-serif !important;
+}
+
+.section-title {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.our-team-section .person {
+  position: relative;
+}
+.our-team-section .person h2 {
+  font-size: 18px;
+}
+.our-team-section .person figure {
+  position: relative;
+  margin-bottom: 0;
+}
+.our-team-section .bio-img {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.our-team-section .sub-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  font-weight: 700;
+  color: #4285f4;
+}
+
+@media (max-width: 768px) {
+  .features-wrapper .features-card .card {
+    margin-top: 15%;
+  }
+  .site-section {
+    padding: 2.5em 0;
+  }
+}
+@media (min-width: 992px) {
+  .pl-lg-5 {
+    padding-left: 3rem !important;
+  }
+  .pr-lg-5 {
+    padding-right: 3rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.blog-post .meta {
+  font-size: 0.9rem;
+}
+
+/*# sourceMappingURL=global.css.map */
