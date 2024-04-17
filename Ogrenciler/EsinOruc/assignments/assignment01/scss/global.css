@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins ", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+.fs-60 {
+  font-size: 60px;
+}
+
+.fs-120 {
+  font-size: 120px;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.font-style-normal {
+  font-style: normal;
+}
+
+.font-style-bold {
+  font-style: bold;
+}
+
+.font-style-italic {
+  font-style: italic;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.color-black {
+  color: #000000;
+}
+
+.color-dark-cyan {
+  color: #5d8363;
+}
+
+.color-ash-gray {
+  color: #afc8ad;
+}
+
+.color-light-pink {
+  color: rgba(255, 234, 225, 0.4901960784);
+}
+
+.color-champange-pink {
+  color: #ffeae1;
+}
+
+.color-apricot {
+  color: #ffd5c2;
+}
+
+.color-tangerine {
+  color: #f28f3b;
+}
+
+.color-jasper {
+  color: #c8553d;
+}
+
+.color-gray {
+  color: #808080;
+}
+
+.color-light-gray {
+  color: #a9a9a9;
+}
+
+.color-dark-gray {
+  color: #4d4d4d;
+}
+
+.color-light-jasper {
+  color: #d27360;
+}
+
+.color-blue {
+  color: blue;
+}
+
+.color-pink {
+  color: pink;
+}
+
+.bg-color-white {
+  background-color: #ffffff;
+}
+
+.bg-color-black {
+  background-color: #000000;
+}
+
+.bg-color-dark-cyan {
+  background-color: #5d8363;
+}
+
+.bg-color-light-pink {
+  background-color: rgba(255, 234, 225, 0.4901960784);
+}
+
+.bg-color-ash-gray {
+  background-color: #afc8ad;
+}
+
+.bg-color-champange-pink {
+  background-color: #ffeae1;
+}
+
+.bg-color-apricot {
+  background-color: #ffd5c2;
+}
+
+.bg-color-tangerine {
+  background-color: #f28f3b;
+}
+
+.bg-color-light-tangerine {
+  background-color: #d26a0f;
+}
+
+.bg-color-jasper {
+  background-color: #c8553d;
+}
+
+.bg-color-light-jasper {
+  background-color: #d27360;
+}/*# sourceMappingURL=global.css.map */

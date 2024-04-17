@@ -4,6 +4,7 @@ $fs-22: 1.375rem;
 $fs-12: 0.75rem;
 $fs-16: 1rem;
 
+//   Rümeysa
 .our-team{
     .our-team-body{
         gap: 40px;
@@ -113,6 +114,11 @@ $fs-16: 1rem;
     }
 }
 // yeni eklediklerim
+.site-section-image {
+   
+    background-image: url("https://preview.colorlib.com/theme/imagine/images/hero_1.jpg.webp");
+       
+     }
 a{
     text-decoration: none;
   }
@@ -121,6 +127,18 @@ a{
       color: #000;
       font-size: 30px;
   }
+  }
+  
+  .btn {
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 30px;
+  }
+  .bg-image-2 {
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+  
   }
 @media(min-width: 9940px) {
     .header{
@@ -144,7 +162,7 @@ a{
         .container{
             max-width: 100%;
             .testi-tab{
-                margin: 0 0;
+               margin: 0 0;
             }
         }
     }

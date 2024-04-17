@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.primary-text-color {
+  color: #696969;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.retail-pos-section, .retail-stores-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.retail-pos-section .retail-pos-content, .retail-stores-section .retail-pos-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+.retail-pos-section .retail-pos-content .retail-pos-info, .retail-stores-section .retail-pos-content .retail-pos-info {
+  width: 50%;
+}
+.retail-pos-section .retail-pos-content .retail-pos-info .info-header, .retail-stores-section .retail-pos-content .retail-pos-info .info-header {
+  margin-bottom: 3rem;
+  max-width: 100%;
+  margin-left: 0;
+  text-align: left;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #ecf0f3;
+}
+.retail-pos-section .retail-pos-content .retail-pos-info .info-header h2, .retail-stores-section .retail-pos-content .retail-pos-info .info-header h2 {
+  margin-bottom: 1rem;
+}
+.retail-pos-section .retail-pos-content .retail-pos-info .info-header p, .retail-stores-section .retail-pos-content .retail-pos-info .info-header p {
+  line-height: 1.5;
+}
+.retail-pos-section .retail-pos-content .retail-pos-info .info-wrapper .wrapper-list, .retail-stores-section .retail-pos-content .retail-pos-info .info-wrapper .wrapper-list {
+  display: flex;
+  margin: 0 0 3rem;
+}
+.retail-pos-section .retail-pos-content .retail-pos-info .info-wrapper .wrapper-list li, .retail-stores-section .retail-pos-content .retail-pos-info .info-wrapper .wrapper-list li {
+  padding: 10px 0;
+  margin-right: 2rem;
+}
+.retail-pos-section .retail-pos-content .retail-pos-info .info-wrapper .wrapper-list li i, .retail-stores-section .retail-pos-content .retail-pos-info .info-wrapper .wrapper-list li i {
+  color: #fd4372;
+  margin-right: 10px;
+}
+.retail-pos-section .retail-pos-content .retail-pos-info .info-wrapper a, .retail-stores-section .retail-pos-content .retail-pos-info .info-wrapper a {
+  padding: 16px 46px;
+  margin-bottom: 6px;
+  background: linear-gradient(to right, #ff5195, #ffb84b);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.retail-pos-section .retail-pos-content .retail-pos-info .info-wrapper a span, .retail-stores-section .retail-pos-content .retail-pos-info .info-wrapper a span {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+}
+.retail-pos-section .retail-pos-content .retail-pos-image .image-box, .retail-stores-section .retail-pos-content .retail-pos-image .image-box {
+  text-align: center;
+}
+.retail-pos-section .retail-pos-content .retail-pos-image .image-box img, .retail-stores-section .retail-pos-content .retail-pos-image .image-box img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+}
+
+.service-section {
+  background: #fffef9;
+  padding: 6rem 0 8rem 0;
+}
+.service-section .section-header {
+  text-align: center;
+}
+.service-section .section-header p {
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+.service-section .section-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 5rem;
+}
+.service-section .section-wrapper .wrapper-item {
+  line-height: 1.5;
+}
+.service-section .section-wrapper .wrapper-item:hover {
+  transform: translateY(-6px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 4px 4px 4px rgba(58, 58, 58, 0.1);
+}
+.service-section .section-wrapper .wrapper-item .wrapper-item-inner {
+  padding: 50px 30px;
+  box-shadow: 0 4px 4px rgba(58, 58, 58, 0.1);
+  border-radius: 4px;
+}
+.service-section .section-wrapper .wrapper-item .wrapper-item-inner .inner-subtitle {
+  margin-top: 1rem;
+}
+.service-section .section-wrapper .wrapper-item .wrapper-item-inner .inner-subtitle h6 {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+  .service-section .section-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+@media screen and (max-width: 992px) {
+  .retail-pos-section .retail-pos-content, .retail-stores-section .retail-pos-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .retail-pos-section .retail-pos-content .retail-pos-info, .retail-stores-section .retail-pos-content .retail-pos-info {
+    width: 80% !important;
+  }
+  .retail-pos-section .retail-pos-content .retail-pos-image, .retail-stores-section .retail-pos-content .retail-pos-image {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .service-section .section-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 300px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .service-section .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .retail-pos-section .retail-pos-content .retail-pos-image, .retail-stores-section .retail-pos-content .retail-pos-image {
+    margin: 0 auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 3rem;
+  }
+  .retail-pos-section .retail-pos-content .retail-pos-info, .retail-stores-section .retail-pos-content .retail-pos-info {
+    width: 100% !important;
+  }
+  .retail-pos-section .retail-pos-content .retail-pos-info .info-wrapper .wrapper-list, .retail-stores-section .retail-pos-content .retail-pos-info .info-wrapper .wrapper-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .service-section .section-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 300px);
+  }
+}/*# sourceMappingURL=style.css.map */

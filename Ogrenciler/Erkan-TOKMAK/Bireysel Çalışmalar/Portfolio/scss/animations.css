@@ -1,0 +1,32 @@
+@keyframes wave-animation {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 645px;
+  }
+}
+@keyframes image-before-circle {
+  0% {
+    top: -20px;
+    left: -20px;
+  }
+  50% {
+    top: -20px;
+    left: 20px;
+    border-color: #51C4D3;
+  }
+  100% {
+    top: -20px;
+    left: -20px;
+  }
+}
+@keyframes image-after-circle {
+  0% {
+    top: -70px;
+  }
+  100% {
+    top: 10px;
+    border-color: #126E82;
+  }
+}/*# sourceMappingURL=animations.css.map */

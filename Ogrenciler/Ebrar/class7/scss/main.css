@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+}
+.container:hover {
+  /*&: hover is a reference to the class container */
+  background-color: aquamarine;
+}
+.container .box1, .container .box3 {
+  background-color: pink;
+  width: 150px;
+  height: 100px;
+}
+.container .box2 {
+  background-color: orange;
+  width: 150px;
+  height: 200px;
+}
+.container .box3 {
+  width: 300px;
+}
+.container .box4 {
+  background-color: green;
+  width: 150px;
+  height: 400px;
+}
+.container .box4.deneme {
+  background-color: blue;
+}/*# sourceMappingURL=main.css.map */
