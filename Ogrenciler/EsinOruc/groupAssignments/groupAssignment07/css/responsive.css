@@ -5,9 +5,28 @@
   .features h1 {
     font-size: 2rem;
   }
+  .features-wrapper .features-card .card {
+    margin-top: 15%;
+  }
+  .site-section {
+    padding: 2.5em 0;
+  }
   .contact-us .contact-wrapper .contact-card {
     margin: 0 !important;
     padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  .pl-lg-5 {
+    padding-left: 3rem !important;
+  }
+  .pr-lg-5 {
+    padding-right: 3rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
 }
 
