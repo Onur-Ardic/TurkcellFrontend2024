@@ -135,23 +135,40 @@ body .container {
   margin-top: 3rem;
 }
 
-.our-team-section .person {
+#our-team-section .person {
   position: relative;
 }
-.our-team-section .person h2 {
+#our-team-section .person h2 {
   font-size: 18px;
 }
-.our-team-section .person figure {
+#our-team-section .person .social {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  padding: 15px 0 15px 0;
+  background-color: #4285f4;
+  display: none;
+}
+#our-team-section .person figure {
   position: relative;
   margin-bottom: 0;
 }
-.our-team-section .bio-img {
+#our-team-section .person figure:hover img {
+  transform: scale(1.1);
+  transition: 0.3s all ease-in-out;
+}
+#our-team-section .person figure:hover .social {
+  display: block;
+}
+#our-team-section .bio-img {
   position: relative;
   text-align: center;
   overflow: hidden;
   margin-bottom: 30px;
 }
-.our-team-section .sub-title {
+#our-team-section .sub-title {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 12px;
