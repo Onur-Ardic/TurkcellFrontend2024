@@ -1,14 +1,15 @@
 {
-  "name": "scssodev2",
+  "name": "hosthub-bootstrap-scss",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass -w scss:css"
+    "scss": "sass -w scss:css"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.75.0"
+    "bootstrap": "^5.3.3"
   }
 }
