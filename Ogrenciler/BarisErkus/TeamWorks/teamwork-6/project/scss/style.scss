@@ -1,16 +1,13 @@
 @import "./common/global", "./common/mixins", "./common/variables", "./common/animations";
-
 .navbar {
-    .container {
-        div {
-            .navbar-collapse {
-                .navbar-nav {
-                    .nav-item {
-                        .nav-link {
-                            color: black;
-                            &:hover {
-                                color: #5a8ff4;
-                            }
+    div {
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: black;
+                        &:hover {
+                            color: #5a8ff4;
                         }
                     }
                 }
@@ -18,9 +15,39 @@
         }
     }
 }
-
-.row {
-    .container {
-        margin: 0 381.5px;
+.content {
+    margin-bottom: 4em;
+    .text {
+        padding: 30px;
+        &:hover {
+            background: rgb(13, 110, 253);
+        }
+    }
+    .icon-wrap {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        i {
+            font-size: 25px;
+        }
+    }
+}
+.btn-color {
+    background-color: #4285f4;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(37, 109, 226, 0.4);
+    }
+}
+.author-box {
+    box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+    border-left: 10px solid #4285f4;
+    img {
+        max-width: 50px;
+    }
+    p {
+        max-width: 350px;
     }
 }
