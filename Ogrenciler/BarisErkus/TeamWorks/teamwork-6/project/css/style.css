@@ -10,6 +10,11 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
 .custom-fs-1 {
   font-size: 3.5rem !important;
 }
@@ -18,10 +23,14 @@ body {
   color: #5a8ff4;
 }
 
-.navbar div .navbar-collapse .navbar-nav .nav-item .nav-link {
+.navbar .container {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.navbar .container div .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: black;
 }
-.navbar div .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+.navbar .container div .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: #5a8ff4;
 }
 
