@@ -1,14 +1,14 @@
 {
-  "name": "main",
+  "name": "ders09-bootstrap",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass -watch scss:css"
+    "sass": "sass -w scss:css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pkg": "^5.8.1"
+    "bootstrap": "^5.3.3"
   }
 }
