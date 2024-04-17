@@ -88,3 +88,28 @@ body {
     }
   }
 }
+
+.testimonials {
+  img {
+    width: 100px;
+  }
+  .carousel-inner {
+    max-width: 800px;
+  }
+}
+
+.our-team {
+  .bio-img {
+    &:hover {
+      .social-icons {
+        display: block !important;
+      }
+    }
+
+  }
+}
+.card-text {
+  font-size: 12px;
+  letter-spacing: 1.1px;
+  font-weight: 700;
+}

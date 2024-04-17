@@ -61,6 +61,9 @@ body {
   justify-content: start;
   gap: 20px;
 }
+.about-me form img {
+  width: 80px;
+}
 .about-me .about-me-texts input {
   background-color: #cfc2b4;
   padding: 20px 84px 20px 15px;
@@ -217,6 +220,12 @@ body {
   width: 35rem;
   height: 30rem;
   border: 1px solid color-mix(in srgb-linear, #453c3a 100%, #cfc2b4 40%);
+}
+.projects .projects-item .project-exp {
+  padding: 15px;
+  font-size: 16px;
+  text-align: center;
+  color: #cfc2b4;
 }
 .projects .projects-item .project-img img {
   width: 100%;

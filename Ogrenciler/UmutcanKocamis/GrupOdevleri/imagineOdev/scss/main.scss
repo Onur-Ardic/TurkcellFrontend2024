@@ -2,6 +2,9 @@
 * {
   font-family: "Nunito", sans-serif;
 }
+h2 {
+  @include title(2.5rem, 700, #000);
+}
 
 header {
   .dot {
@@ -14,15 +17,13 @@ header {
 .hero-title {
   font-size: 3.5rem !important;
 }
-.features-section-title {
+/* .features-section-title {
   @include title(2.5rem, 700, #000);
-}
+} */
 .features-section-lead {
   @include title(1.25rem, 300, rgb(128, 128, 128));
 }
-.features-section {
-  height: 100vh;
-}
+
 .card-link {
   text-decoration: none;
 }
@@ -74,24 +75,47 @@ header {
     }
   }
 }
-.contactUs-section{
-  &-img{
+.contactUs-section {
+  &-img {
     background-image: url(https://preview.colorlib.com/theme/imagine/images/hero_1.jpg.webp);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
     z-index: -1;
-    &::before{
-      content:"";
+    &::before {
+      content: "";
       position: absolute;
       background: linear-gradient(to right, #4286f4 0%, #42e2f4 100%);
       bottom: 0;
       top: 0;
       left: 0;
       right: 0;
-      opacity: .7;
+      opacity: 0.7;
       z-index: -1;
     }
   }
-  
+}
+.communicate {
+  /* .title {
+    @include title(2.5rem, 700, #000);
+  } */
+  .lead {
+    @include title(1rem, 300, rgb(128, 128, 128));
+  }
+  .card {
+    padding: 15px;
+    img {
+      width: 50px;
+      border-radius: 50%;
+    }
+    h5 {
+      @include title(1rem, 500, #000);
+    }
+    h6 {
+      @include title(1rem, 500, #000);
+    }
+  }
+}
+.about-us {
+  background-color: #f6f6f6;
 }
