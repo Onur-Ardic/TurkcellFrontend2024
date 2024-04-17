@@ -1,1 +1,31 @@
 @import "global.scss";
+
+.about-us {
+  li {
+    border: none;
+  }
+}
+
+.testimonials {
+  img {
+    width: 100px;
+  }
+  .carousel-inner {
+    max-width: 800px;
+  }
+  .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+}
+
+.our-team {
+  .img-hover {
+    &:hover {
+      .social-media {
+        display: block !important;
+      }
+    }
+  }
+}
