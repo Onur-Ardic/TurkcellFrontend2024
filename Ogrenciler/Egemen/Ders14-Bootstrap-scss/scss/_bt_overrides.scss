@@ -3,13 +3,19 @@ $primary: #6247ea;
 $dark: #222222;
 $secondary: #777777;
 
-$h6-font-size:12px;
-$h5-font-size:14px;
-$h4-font-size:16px;
-$h3-font-size:18px;
-$h2-font-size:20px;
-$h1-font-size:36px;
+$h6-font-size: 12px;
+$h5-font-size: 14px;
+$h4-font-size: 16px;
+$h3-font-size: 18px;
+$h2-font-size: 20px;
+$h1-font-size: 36px;
 
 $line-height-lg: 40px;
 
-
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1170px,
+);
