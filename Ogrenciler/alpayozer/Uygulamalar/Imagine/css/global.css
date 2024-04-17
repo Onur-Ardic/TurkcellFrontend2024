@@ -12,6 +12,10 @@ body {
   background-color: #fff;
 }
 
+section {
+  padding: 5em 0;
+}
+
 a {
   color: #4285f4;
   text-decoration: none !important;

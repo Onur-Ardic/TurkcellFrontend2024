@@ -16,4 +16,14 @@ body .container {
   margin-left: auto;
 }
 
+.section-title {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
 /*# sourceMappingURL=global.css.map */
