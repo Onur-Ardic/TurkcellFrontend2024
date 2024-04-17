@@ -56,6 +56,9 @@ header nav a img {
   object-fit: cover;
 }
 
+.main {
+  overflow-x: hidden;
+}
 .main .main-content {
   display: flex;
   flex-direction: row;
@@ -151,7 +154,7 @@ header nav a img {
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  border: 2px solid #fafafa;
+  border: 3px solid #fafafa;
   z-index: 2;
   pointer-events: none;
   user-select: none;
@@ -301,6 +304,70 @@ header nav a img {
 .projects-section .row .col-2 .project-item:hover {
   transition: 0.3s ease-in;
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 992px) {
+  .main .main-content {
+    flex-direction: column;
+    gap: 8rem;
+  }
+  .main .main-content .main-text {
+    width: 100%;
+  }
+  .main .main-content .main-text h1 {
+    color: #674075 !important;
+    font-size: 10rem;
+  }
+  .main .main-content .main-text p {
+    color: #674075 !important;
+    font-size: 3rem !important;
+  }
+  .main .main-content .main-image {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  .main .main-content .main-image .image-box {
+    margin-bottom: 4rem;
+  }
+  .main .main-content .main-image .image-info {
+    padding-top: 3rem !important;
+    width: 100% !important;
+  }
+  .main .main-content .main-image .image-info h4 {
+    color: #825b91 !important;
+    font-size: 4rem;
+  }
+  .main .main-content .main-image .image-info .job {
+    padding-top: 1.3rem;
+    color: #674075 !important;
+    font-size: 2rem;
+  }
+  .main .main-content .main-image .image-info .body {
+    color: #674075 !important;
+    font-size: 1.5rem;
+  }
+  .main .main-content .main-image .image-info .main-links {
+    display: block;
+  }
+  .main .main-content .main-image .image-info .main-links a {
+    color: #674075 !important;
+  }
+  .projects-section .projects {
+    text-align: center;
+    color: #674075;
+    font-size: 3.5rem;
+  }
+  .projects-section .row {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .projects-section .row .col-1 {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  .projects-section .row .col-2 {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

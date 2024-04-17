@@ -76,6 +76,8 @@ header {
 }
 
 .main {
+    overflow-x: hidden;
+
     .main-content {
         @include hizalamaMixin(flex, row, space-between);
 
@@ -159,7 +161,8 @@ header {
                     border: none;
                     transition: 0.5s ease;
                     box-shadow: 0px 0px 15px 2px #ebe9ff;
-                    &:hover{
+
+                    &:hover {
                         transform: scale(1.1);
                         transition: all .1s ease-in-out;
                         background-color: #260a5a;
@@ -172,6 +175,7 @@ header {
             .image-box {
                 position: relative;
                 margin-bottom: 32px;
+
                 &::before {
                     content: '';
                     position: absolute;
@@ -180,7 +184,7 @@ header {
                     width: 350px;
                     height: 350px;
                     border-radius: 50%;
-                    border: 2px solid #fafafa;
+                    border: 3px solid #fafafa;
                     z-index: 2;
                     pointer-events: none;
                     user-select: none;
@@ -313,6 +317,7 @@ header {
             justify-content: space-evenly;
             margin-bottom: 5rem;
             gap: 25px;
+
             .project-item {
                 cursor: pointer;
                 background-color: #c6adf4;
@@ -320,6 +325,7 @@ header {
                 height: auto;
                 border-radius: 5px;
                 box-shadow: 4px 4px 10px 2px #916ed3;
+
                 .item-inner {
                     .inner-image img {
                         max-width: 100%;
@@ -328,24 +334,114 @@ header {
                         border-radius: 5px 5px 0 0;
                         padding-bottom: 0.75rem;
                     }
-                    .inner-info{
+
+                    .inner-info {
                         color: black;
                         text-align: center;
-                        h3{
+
+                        h3 {
                             padding-bottom: 0.75rem;
                         }
-                        p{
+
+                        p {
                             padding-bottom: 0.75rem;
                             font-size: 18px;
                         }
                     }
                 }
-                &:hover{
+
+                &:hover {
                     transition: .3s ease-in;
                     transform: scale(1.1);
                 }
             }
         }
 
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main {
+        .main-content {
+            flex-direction: column;
+            gap: 8rem;
+
+            .main-text {
+                width: 100%;
+
+                h1 {
+                    color: #674075 !important;
+                    font-size: 10rem;
+                }
+
+                p {
+                    color: #674075 !important;
+                    font-size: 3rem !important;
+                }
+            }
+
+            .main-image {
+                text-align: center;
+                margin-top: 4rem;
+
+                .image-box {
+                    margin-bottom: 4rem;
+                }
+
+                .image-info {
+                    padding-top: 3rem !important;
+                    width: 100% !important;
+
+                    h4 {
+                        color: #825b91 !important;
+                        font-size: 4rem;
+                    }
+
+                    .job {
+                        padding-top: 1.3rem;
+                        color: #674075 !important;
+                        font-size: 2rem;
+                    }
+
+                    .body {
+                        color: #674075 !important;
+                        font-size: 1.5rem;
+                    }
+
+                    .main-links {
+                        display: block;
+
+                        a {
+
+                            color: #674075 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .projects-section {
+        .projects {
+            text-align: center;
+            color: #674075;
+            font-size: 3.5rem;
+        }
+
+        .row {
+            width: 60%;
+            margin: 0 auto;
+
+            .col-1 {
+                flex-direction: column;
+                margin-bottom: 1.5rem;
+            }
+
+            .col-2 {
+                flex-direction: column;
+
+            }
+
+        }
     }
 }

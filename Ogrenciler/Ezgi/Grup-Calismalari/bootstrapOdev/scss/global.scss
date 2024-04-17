@@ -1,0 +1,44 @@
+$primary-bg-color: #4285f4;
+$primary-text-color: gray;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif !important;
+    background-color: #fff;
+}
+section{
+    padding: 5em 0;
+}
+a{
+    color: #4285f4;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+}
+.primary-bg-color{
+    background-color: $primary-bg-color !important;
+}
+.primary-text-color{
+    color: $primary-text-color;
+}
+.colorb{
+    color: black !important;
+}
+.gap-20{
+    gap: 20px;
+}
+
+@mixin font($size, $color, $weight){
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}

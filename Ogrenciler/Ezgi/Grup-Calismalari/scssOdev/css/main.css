@@ -71,7 +71,7 @@ ul li {
 }
 .heroSection .navbar {
   position: relative;
-  z-index: 2000;
+  z-index: 10;
 }
 .heroSection .navbar input {
   display: none;
