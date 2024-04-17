@@ -1,5 +1,16 @@
 @import "global.scss";
 
+.communicate {
+  .container {
+    .row {
+      .col-lg-5 {
+        padding-left: 5rem;
+        align-items: center;
+      }
+    }
+  }
+}
+
 .about-us {
   li {
     border: none;
