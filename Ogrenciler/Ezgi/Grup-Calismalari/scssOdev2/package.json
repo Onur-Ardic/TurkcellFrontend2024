@@ -1,0 +1,14 @@
+{
+  "name": "odev6-codexc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w scss:css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.75.0"
+  },
+  "description": ""
+}
