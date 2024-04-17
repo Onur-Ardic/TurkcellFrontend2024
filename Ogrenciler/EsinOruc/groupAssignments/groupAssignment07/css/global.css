@@ -22,4 +22,8 @@ body .container {
   font-weight: 700;
 }
 
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
 /*# sourceMappingURL=global.css.map */
