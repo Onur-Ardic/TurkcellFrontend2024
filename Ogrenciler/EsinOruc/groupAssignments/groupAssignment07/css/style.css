@@ -22,6 +22,7 @@ body .container {
   border-width: 2px;
 }
 .contact-us button:hover, .about-us .content-wrapper .right-content button:hover, .profitable .row .content-right button:hover {
+  background-color: #4285f4;
   transform: translateY(-2px);
   box-shadow: 0 5px 30px -5px rgba(66, 133, 244, 0.7) !important;
 }
@@ -75,7 +76,7 @@ body .container {
   color: #ffffff;
 }
 .features .card:hover i {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: #ffffff;
   color: #4285f4;
 }
