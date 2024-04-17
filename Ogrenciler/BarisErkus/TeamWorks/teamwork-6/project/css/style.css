@@ -78,10 +78,6 @@ body {
   padding-top: 50px;
   padding-bottom: 100px;
 }
-.about-us img {
-  max-width: 550px;
-}
-
 .my-card:hover {
   color: white !important;
   transition: 0.3s all ease;
