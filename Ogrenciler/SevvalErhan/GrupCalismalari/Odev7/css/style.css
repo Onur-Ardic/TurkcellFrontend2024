@@ -13,6 +13,7 @@ body {
 .navbar div .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: black;
 }
+
 .navbar div .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: #5a8ff4;
 }
@@ -20,17 +21,21 @@ body {
 .content {
   margin-bottom: 4em;
 }
+
 .content .text {
   padding: 30px;
 }
+
 .content .text:hover {
   background: rgb(13, 110, 253);
 }
+
 .content .icon-wrap {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
+
 .content .icon-wrap i {
   font-size: 25px;
 }
@@ -39,6 +44,7 @@ body {
   background-color: #4285f4;
   transition: all 0.3s ease-in-out;
 }
+
 .btn-color:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(37, 109, 226, 0.4);
@@ -49,9 +55,11 @@ body {
   border: 1px solid #eee;
   border-left: 10px solid #4285f4;
 }
+
 .author-box img {
   max-width: 50px;
 }
+
 .author-box p {
   max-width: 350px;
 }
@@ -63,21 +71,26 @@ body {
 .my-card .text {
   border-radius: 4px;
 }
+
 .my-card:hover {
   color: white !important;
   transition: 0.3s all ease;
   transform: translateY(-10px);
 }
+
 .my-card:hover .text {
   background-color: #0d6efd !important;
 }
+
 .my-card:hover .text p {
   color: #c7d5fa !important;
 }
+
 .my-card:hover .icon-wrap {
   box-shadow: 0 5px 15px rgba(37, 109, 226, 0.4);
   background-color: white !important;
 }
+
 .my-card:hover .icon-wrap .icon {
   color: #0d6efd !important;
 }
@@ -85,6 +98,7 @@ body {
 .testimonials img {
   width: 100px;
 }
+
 .testimonials .carousel-inner {
   max-width: 800px;
 }
@@ -97,6 +111,6 @@ body {
   font-size: 12px;
   letter-spacing: 1.1px;
   font-weight: 700;
-}
+} 
 
 /*# sourceMappingURL=style.css.map */

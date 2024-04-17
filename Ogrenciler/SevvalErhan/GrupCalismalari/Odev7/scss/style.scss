@@ -4,6 +4,7 @@
   list-style: none;
   margin: 0;
   font-family: "Nunito";
+  text-decoration: none !important;
 }
 body {
   overflow-x: hidden;
@@ -105,11 +106,29 @@ body {
         display: block !important;
       }
     }
-
   }
 }
 .card-text {
   font-size: 12px;
   letter-spacing: 1.1px;
   font-weight: 700;
+}
+
+.contact {
+  background: linear-gradient(to right, #4286f4 0%, #42e2f4 100%);
+}
+.bg-image .overlay {
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+
+  .bg-image.overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+  }
 }
