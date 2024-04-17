@@ -8,6 +8,7 @@
 body {
   overflow-x: hidden;
 }
+
 body .container {
   width: 80%;
   padding-right: 15px;
@@ -18,6 +19,6 @@ body .container {
 
 .font-weight-bold {
   font-weight: 700 !important;
-}
+} 
 
 /*# sourceMappingURL=global.css.map */

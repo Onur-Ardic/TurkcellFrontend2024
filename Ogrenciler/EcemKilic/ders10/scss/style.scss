@@ -18,6 +18,7 @@
 }
 .features {
   margin-top: 5rem;
+
   p {
     color: $colorDarkGray;
   }
@@ -31,9 +32,33 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 50px;
+    background-color: $colorLightGray;
+
     .card-title {
       i {
         background-color: $colorBlue;
+        color: $colorWhite;
+      }
+      .button-link {
+        color: $colorBlue;
+      }
+    }
+    &:hover {
+      color: $colorWhite;
+      background-color: $colorBlue !important;
+      box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+      transform: translateY(-7px);
+      transition: all 0.2s ease-in-out;
+      p {
+        color: $colorWhite;
+      }
+      i {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color: $colorWhite;
+        color: $colorBlue;
+      }
+      .button-link {
+        color: $colorWhite;
       }
     }
   }
@@ -92,6 +117,31 @@
         @extend %btn;
       }
     }
+  }
+}
+.our-team-section {
+  .person {
+    position: relative;
+    h2 {
+      font-size: 18px;
+    }
+    figure {
+      position: relative;
+      margin-bottom: 0;
+    }
+  }
+  .bio-img {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .sub-title {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    font-weight: 700;
+    color: #4285f4;
   }
 }
 .testimonials {
