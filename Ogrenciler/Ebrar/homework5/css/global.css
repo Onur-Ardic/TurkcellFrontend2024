@@ -763,6 +763,9 @@ option {
     background-position: center;
     background-size: cover;
   }
+  .nav-section .nav-title {
+    padding-top: 50px;
+  }
   .nav-section .navList-item {
     display: none;
   }

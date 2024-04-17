@@ -35,4 +35,51 @@ body {
   font-size: 25px;
 }
 
+.btn-color {
+  background-color: #4285f4;
+  transition: all 0.3s ease-in-out;
+}
+.btn-color:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(37, 109, 226, 0.4);
+}
+
+.author-box {
+  box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  border-left: 10px solid #4285f4;
+}
+.author-box img {
+  max-width: 50px;
+}
+.author-box p {
+  max-width: 350px;
+}
+
+.about-us img {
+  max-width: 550px;
+}
+
+.my-card .text {
+  border-radius: 4px;
+}
+.my-card:hover {
+  color: white !important;
+  transition: 0.3s all ease;
+  transform: translateY(-10px);
+}
+.my-card:hover .text {
+  background-color: #0d6efd !important;
+}
+.my-card:hover .text p {
+  color: #c7d5fa !important;
+}
+.my-card:hover .icon-wrap {
+  box-shadow: 0 5px 15px rgba(37, 109, 226, 0.4);
+  background-color: white !important;
+}
+.my-card:hover .icon-wrap .icon {
+  color: #0d6efd !important;
+}
+
 /*# sourceMappingURL=style.css.map */

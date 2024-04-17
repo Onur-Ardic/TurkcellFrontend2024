@@ -79,3 +79,19 @@
         }
     }
 }
+.profile-card {
+    &:hover {
+        .blue-area {
+            display: flex !important;
+            width: 100%;
+            i {
+                cursor: pointer;
+            }
+        }
+    }
+}
+.card-text {
+    font-size: 12px;
+    letter-spacing: 1.1px;
+    font-weight: 700;
+}
