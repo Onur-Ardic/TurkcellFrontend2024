@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  font-family: "Nunito";
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar div .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: black;
+}
+.navbar div .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #5a8ff4;
+}
+
+.communicate .container .row .col-lg-5 {
+  padding-left: 5rem;
+  align-items: center;
+}
+
+.about-us li {
+  border: none;
+}
+
+.testimonials img {
+  width: 100px;
+}
+.testimonials .carousel-inner {
+  max-width: 800px;
+}
+.testimonials .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.our-team .img-hover:hover .social-media {
+  display: block !important;
+}
+
+.blog-section .container .row .col img {
+  max-width: 100%;
+}
+.blog-section .container .row .col h2 a {
+  text-decoration: none;
+}
+.blog-section .container .row .col .information {
+  color: #b3b3b3;
+}
+.blog-section .container .row .col .information a {
+  text-decoration: none;
+}
+
+.contact-us {
+  background-image: url(../images/bgimg.jpg);
+}
+.contact-us::before {
+  content: "";
+  background: linear-gradient(to right, #4286f4 0%, #42e2f4 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=style.css.map */
