@@ -1,7 +1,45 @@
-@import "variables";
-@import "util";
+body {
+  font-family: "Nunito", sans-serif;
+}
 
-.deneme{
-    font-size: 56px;
-    font-family: "Nunito";
+main{
+  padding-left: 30px !important;
+}
+.features-section {
+  .card {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: translateY(-10px) !important;
+    }
+    &-body {
+      &:hover {
+        background-color: #0d6efd !important;
+        * {
+          color: white !important;
+        }
+        .feature-icon {
+          background-color: white !important;
+          i {
+            color: #0d6efd !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}
+@media (min-width: 992px) {
+  .main {
+    &-header {
+      img {
+        max-width: none;
+        margin: 40px 0 0 -50px;
+      }
+    }
+  }
 }
