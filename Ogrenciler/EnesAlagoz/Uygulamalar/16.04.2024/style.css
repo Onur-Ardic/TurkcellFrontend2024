@@ -1,0 +1,91 @@
+.loader {
+    -webkit-perspective: 700px;
+    perspective: 700px;
+    background: red;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  .loader>span {
+    font-size: 60px;
+    font-family: "franklin gothic medium",sans-serif;
+    display: inline-block;
+    animation: flip 2.6s infinite linear;
+    transform-origin: 0 70%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    color: black;
+  }
+  
+  @keyframes flip {
+    35% {
+      transform: rotatex(360deg);
+    }
+  
+    100% {
+      transform: rotatex(360deg);
+    }
+  }
+  
+  .loader>span:nth-child(even) {
+    color: white;
+  }
+  
+  .loader>span:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  .loader>span:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .loader>span:nth-child(4) {
+    animation-delay: 0.9s;
+  }
+  
+  .loader>span:nth-child(5) {
+    animation-delay: 1.2s;
+  }
+  
+  .loader>span:nth-child(6) {
+    animation-delay: 1.5s
+  }
+  
+  .loader>span:nth-child(7) {
+    animation-delay: 1.8s
+  }
+
+  
+  /* Button */
+
+
+  .btn {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 18px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow, transform;
+    background: radial-gradient(100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100%);
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+    padding: 0 2em;
+    border-radius: 0.3em;
+    color: #fff;
+    height: 2.6em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    text-align: center;
+    line-height: 2.6em;
+  }
+  
+  .btn:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+    transform: translateY(-0.1em);
+  }
+  
+  .btn:active {
+    box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+    transform: translateY(0em);
+  }
