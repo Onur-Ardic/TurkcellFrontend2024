@@ -12,6 +12,10 @@ body {
   background-color: #fff;
 }
 
+section {
+  padding: 5em 0;
+}
+
 a {
   color: #4285f4;
   text-decoration: none !important;
@@ -89,9 +93,6 @@ ul li {
   color: #4285f4;
 }
 
-.feature-big .container .feature-big-part {
-  padding: 5em 0;
-}
 .feature-big .container .feature-big-part .feature-big-info h2 {
   font-size: 40px;
   font-weight: 700;
@@ -117,12 +118,11 @@ ul li {
 }
 
 .about-us {
-  padding: 5em 0;
   color: gray;
 }
 .about-us .section-title {
-  color: #000;
   font-size: 40px;
+  color: #000;
   font-weight: 700;
 }
 .about-us img {
@@ -141,6 +141,79 @@ ul li {
   font-size: 16px;
   border-radius: 30px;
   padding: 10px 30px;
+}
+
+.our-team-section .container .row .col-7 {
+  padding: 0 30px;
+}
+.our-team-section .container .row .col-7 .section-title {
+  font-size: 40px;
+  color: #000;
+  font-weight: 700;
+}
+.our-team-section .container .row .col-7 p {
+  font-size: 20px;
+  color: gray;
+  font-weight: 300;
+}
+.our-team-section .container .row .card {
+  border: none;
+}
+.our-team-section .container .row .card:hover .card-img img {
+  transform: scale(1);
+  transition: 0.3s all ease-in-out;
+  position: relative;
+}
+.our-team-section .container .row .card:hover .social {
+  z-index: 2;
+  padding: 20px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s all ease;
+  background: #4285f4;
+}
+.our-team-section .container .row .card .card-img .social a {
+  color: #fff;
+  padding: 5px;
+}
+.our-team-section .container .row .card .card-body {
+  padding: 0;
+}
+.our-team-section .container .row .card .card-body .sub-title {
+  font-size: 12px;
+  color: #4285f4;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.our-team-section .container .row .card .card-body .card-text {
+  font-size: 16px;
+  color: gray;
+  font-weight: 400;
+}
+
+.testimonials .section-title {
+  font-size: 40px;
+  color: #000;
+  font-weight: 700;
+}
+.testimonials .carousel {
+  margin: 0 180px;
+}
+.testimonials .carousel .carousel-indicators button {
+  background-color: gray;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.testimonials .carousel .carousel-inner .carousel-item img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.testimonials .carousel .carousel-inner .carousel-item i {
+  color: gray;
 }
 
 /*# sourceMappingURL=style.css.map */

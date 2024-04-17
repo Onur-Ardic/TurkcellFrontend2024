@@ -1,15 +1,15 @@
 {
   "name": "odev7-imagine",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "scss": "sass -w scss:css"
+    "scss": "sass -w scss:css",
+    "sass": "sass -w scss:css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.72.0"
-  }
+    "sass": "^1.75.0"
+  },
+  "description": ""
 }
