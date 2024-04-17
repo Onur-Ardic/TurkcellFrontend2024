@@ -33,4 +33,8 @@ body {
   border-radius: 50%;
 }
 
+.our-team .img-hover:hover .social-media {
+  display: block !important;
+}
+
 /*# sourceMappingURL=style.css.map */
