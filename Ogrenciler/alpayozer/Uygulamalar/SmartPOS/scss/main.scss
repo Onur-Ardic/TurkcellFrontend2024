@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.container{
+
+}
+
+@mixin special-text ($color: #000000, $size: 15px, $weight: 400, $line: 1.5) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line;
+}
+
+.testimonial{
+    background: #fffef6;
+    padding: 80px 0 55px 0;
+    .testimonial-header{
+        text-align: center;
+        margin-bottom: 30px;
+        h2{
+            margin-bottom: 15px;
+            @include special-text($size:24px, $weight:700, $line:1.4);
+        }
+        p{
+            margin-bottom: 15px;
+            @include special-text($color:#696969);
+        }
+    }
+    .testimonial-slider{
+            padding: 15px;
+        .testimonial-slider-card{
+            margin-bottom: 20px;
+            //width: 381;
+            //height: 385;
+            background: #ffffff;
+            &-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom:1px solid #fff5f3 ;
+                padding: 30px;
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+                h5 {
+                    @include special-text($size:20px, $weight:700, $line:1.4);
+                }
+                p {
+                     @include special-text($color:#696969);
+                }
+            }
+            &-content {
+                padding: 30px 10px;
+                p {
+                    @include special-text($color:#696969);
+                    margin-bottom: 15px;
+                }
+                .rating{
+                    color: #e9ba17;
+                }
+            }
+        }    
+    }
+}
+.sponsors{
+    padding: 70px 0 55px 0;
+    
+    .sponsor-item-group{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 2rem;
+        .sponsor-item{
+            width: 351px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-width: 100%;
+                height: auto;
+                vertical-align: middle;
+            }
+        }
+    }
+    
+}
