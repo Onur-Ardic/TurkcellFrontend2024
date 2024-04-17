@@ -10,7 +10,6 @@
   }
 }
 .imagine-features-section {
-  margin: 8rem 0;
   .feature-info {
     margin-bottom: 8rem;
   }
@@ -48,10 +47,22 @@
       &:hover {
         background-color: $primary-bg-color;
         color: #fff;
-        .icon-wrap {
-          background-color: #fff;
-          i {
-            color: $primary-bg-color;
+        transform: translateY(-10px);
+        transition: .3s all ease;
+        .card-icon{
+          .icon-wrap{
+            background-color: #fff ;
+            i{
+              color: $primary-bg-color !important;
+            }
+          }
+        }
+        .card-body {
+          .card-text {
+            color: #fff;
+          }
+          a{
+            color: #fff;
           }
         }
       }
@@ -61,6 +72,7 @@
 .feature-big {
   .container {
     .feature-big-part {
+      margin-bottom: 10rem;
       .feature-big-info {
         h2 {
           font-size: 40px;
@@ -121,7 +133,6 @@
   .container {
     .row {
       .col-7 {
-        padding: 0 30px;
         .section-title {
           @include font(40px, #000, 700);
         }
@@ -134,8 +145,10 @@
         
         &:hover {
             .card-img{
+                overflow: hidden;
                 img{
-                    transform: scale(1);
+                    transform: scale(1.1);
+                    
                     transition: .3s all ease-in-out;
                     position: relative;
                 }
@@ -179,15 +192,18 @@
         @include font(40px, #000, 700);
     }
     .carousel {
-        margin: 0 180px;
+        //padding: 0 180px;
         .carousel-indicators{
             
             button{
-                background-color: $primary-text-color;
+                background-color: #dee2e6;
                 width: 10px;
                 height: 10px;
                 border-radius: 50%;
             }
+            button.active{
+              background-color: $primary-bg-color;
+          }
         }
         .carousel-inner{
             .carousel-item{
@@ -202,4 +218,85 @@
             }
         }
     }
+}
+.blog-posts{
+  .section-title{
+    @include font(40px, #000, 700);
+  }
+  .card{
+    border: none;
+    img{
+      margin-bottom: 30px;
+    }
+    .card-body{
+      padding: 0;
+      .card-title{
+        font-size: 30px;
+      }
+      .meta{
+        color: #b3b3b3;
+        font-size: 14px
+      }
+      .card-text{
+        @include font(16px, $primary-text-color, 400);
+        line-height: 1.7;
+      }
+    }
+  }
+}
+.contact{
+  background-image: url(https://preview.colorlib.com/theme/imagine/images/hero_1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  &::before{
+    z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .7;
+    background:linear-gradient(to right, #4286f4 0%, #42e2f4 100%);
+  }
+  .section-title{
+    position: relative;
+    z-index: 1;
+    @include font(40px, #fff, 700);
+  }
+  form{
+    position: relative;
+    z-index: 1;
+    label{
+      margin-bottom: 0.5rem;
+    }
+    .form-group{
+      margin-bottom: 1rem;
+    }
+    .form-control{
+      height: 43px ;
+    }
+    textarea.form-control{
+      height: auto;
+    }
+    .btn.btn-primary{
+      border-width: 2px;
+      background: $primary-bg-color;
+      border-color: $primary-bg-color;
+      color: #fff;
+      position: relative;
+      transition: .3s all ease;
+      box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+      font-size: 16px;
+      border-radius: 30px;
+      padding: 10px 30px
+    }
+  }
+}
+
+.footer{
+  p{
+    color:$primary-text-color;
+  }
 }

@@ -47,9 +47,6 @@ ul li {
   padding: 10px 30px;
 }
 
-.imagine-features-section {
-  margin: 8rem 0;
-}
 .imagine-features-section .feature-info {
   margin-bottom: 8rem;
 }
@@ -85,14 +82,25 @@ ul li {
 .imagine-features-section .feature-cards .card:hover {
   background-color: #4285f4;
   color: #fff;
+  transform: translateY(-10px);
+  transition: 0.3s all ease;
 }
-.imagine-features-section .feature-cards .card:hover .icon-wrap {
+.imagine-features-section .feature-cards .card:hover .card-icon .icon-wrap {
   background-color: #fff;
 }
-.imagine-features-section .feature-cards .card:hover .icon-wrap i {
-  color: #4285f4;
+.imagine-features-section .feature-cards .card:hover .card-icon .icon-wrap i {
+  color: #4285f4 !important;
+}
+.imagine-features-section .feature-cards .card:hover .card-body .card-text {
+  color: #fff;
+}
+.imagine-features-section .feature-cards .card:hover .card-body a {
+  color: #fff;
 }
 
+.feature-big .container .feature-big-part {
+  margin-bottom: 10rem;
+}
 .feature-big .container .feature-big-part .feature-big-info h2 {
   font-size: 40px;
   font-weight: 700;
@@ -143,9 +151,6 @@ ul li {
   padding: 10px 30px;
 }
 
-.our-team-section .container .row .col-7 {
-  padding: 0 30px;
-}
 .our-team-section .container .row .col-7 .section-title {
   font-size: 40px;
   color: #000;
@@ -159,8 +164,11 @@ ul li {
 .our-team-section .container .row .card {
   border: none;
 }
+.our-team-section .container .row .card:hover .card-img {
+  overflow: hidden;
+}
 .our-team-section .container .row .card:hover .card-img img {
-  transform: scale(1);
+  transform: scale(1.1);
   transition: 0.3s all ease-in-out;
   position: relative;
 }
@@ -198,14 +206,14 @@ ul li {
   color: #000;
   font-weight: 700;
 }
-.testimonials .carousel {
-  margin: 0 180px;
-}
 .testimonials .carousel .carousel-indicators button {
-  background-color: gray;
+  background-color: #dee2e6;
   width: 10px;
   height: 10px;
   border-radius: 50%;
+}
+.testimonials .carousel .carousel-indicators button.active {
+  background-color: #4285f4;
 }
 .testimonials .carousel .carousel-inner .carousel-item img {
   max-width: 100px;
@@ -213,6 +221,91 @@ ul li {
   margin: 0 auto;
 }
 .testimonials .carousel .carousel-inner .carousel-item i {
+  color: gray;
+}
+
+.blog-posts .section-title {
+  font-size: 40px;
+  color: #000;
+  font-weight: 700;
+}
+.blog-posts .card {
+  border: none;
+}
+.blog-posts .card img {
+  margin-bottom: 30px;
+}
+.blog-posts .card .card-body {
+  padding: 0;
+}
+.blog-posts .card .card-body .card-title {
+  font-size: 30px;
+}
+.blog-posts .card .card-body .meta {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+.blog-posts .card .card-body .card-text {
+  font-size: 16px;
+  color: gray;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.contact {
+  background-image: url(https://preview.colorlib.com/theme/imagine/images/hero_1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.contact::before {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+  background: linear-gradient(to right, #4286f4 0%, #42e2f4 100%);
+}
+.contact .section-title {
+  position: relative;
+  z-index: 1;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+.contact form {
+  position: relative;
+  z-index: 1;
+}
+.contact form label {
+  margin-bottom: 0.5rem;
+}
+.contact form .form-group {
+  margin-bottom: 1rem;
+}
+.contact form .form-control {
+  height: 43px;
+}
+.contact form textarea.form-control {
+  height: auto;
+}
+.contact form .btn.btn-primary {
+  border-width: 2px;
+  background: #4285f4;
+  border-color: #4285f4;
+  color: #fff;
+  position: relative;
+  transition: 0.3s all ease;
+  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+.footer p {
   color: gray;
 }
 
