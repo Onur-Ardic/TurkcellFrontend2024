@@ -11873,6 +11873,35 @@ h2, .h2 {
   padding: 225px 0px;
 }
 
+.button-hover {
+  transition: 0.2s all ease-in-out;
+}
+.button-hover:hover {
+  color: #6247ea !important;
+}
+
+.my-card:hover {
+  transition: 0.5s all ease-in-out;
+  box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.my-card-2:hover {
+  transition: 0.1s all ease;
+  border-top: 3px solid #6247ea !important;
+}
+.my-card-2:hover .get-started-button {
+  display: block !important;
+}
+.my-card-2:hover .card .card-body h2, .my-card-2:hover .card .card-body .h2,
+.my-card-2:hover .card .card-body span {
+  color: #6247ea !important;
+}
+
+.top-header div a:hover {
+  transition: 0.5s all ease-in-out;
+  color: #6247ea !important;
+}
+
 @media screen and (max-width: 578px) {
   .top-header {
     display: none;
