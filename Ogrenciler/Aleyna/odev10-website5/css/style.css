@@ -1,3 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  font-family: "Nunito";
+}
 
+body {
+  overflow-x: hidden;
+}
+
+.navbar div .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: black;
+}
+.navbar div .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #5a8ff4;
+}
+
+.about-us li {
+  border: none;
+}
+
+.testimonials img {
+  width: 100px;
+}
+.testimonials .carousel-inner {
+  max-width: 800px;
+}
+.testimonials .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
 
 /*# sourceMappingURL=style.css.map */
