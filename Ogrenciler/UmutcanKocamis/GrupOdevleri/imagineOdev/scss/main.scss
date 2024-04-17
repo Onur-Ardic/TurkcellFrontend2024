@@ -24,11 +24,7 @@ header {
   @include title(2.5rem, 700, #000);
 } */
 .features-section-lead {
-  @include title(
-    1.25rem,
-    300,
-    rgb(128, 128, 128)
-  );
+  @include title(1.25rem, 300, rgb(128, 128, 128));
 }
 
 .card-link {
@@ -65,11 +61,7 @@ header {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
   &:hover p {
-    @include title(
-      1rem,
-      300,
-      rgba(255, 255, 255, 0.7)
-    );
+    @include title(1rem, 300, rgba(255, 255, 255, 0.7));
   }
   &:hover h3 {
     @include title(1.5rem, 500, #fff);
@@ -112,11 +104,7 @@ header {
     &::before {
       content: "";
       position: absolute;
-      background: linear-gradient(
-        to right,
-        #4286f4 0%,
-        #42e2f4 100%
-      );
+      background: linear-gradient(to right, #4286f4 0%, #42e2f4 100%);
       bottom: 0;
       top: 0;
       left: 0;
@@ -147,7 +135,6 @@ header {
     }
   }
 }
-<<<<<<< Updated upstream
 .our-team-section {
   .people-cards {
     .social {
@@ -200,11 +187,7 @@ header {
   }
   .person {
     p {
-      @include title(
-        1rem,
-        400,
-        rgb(128, 128, 128)
-      );
+      @include title(1rem, 400, rgb(128, 128, 128));
       margin-bottom: 1rem;
     }
   }
@@ -215,11 +198,7 @@ header {
   }
   .testimonial-quote {
     max-width: 800px;
-    @include title(
-      1.5rem,
-      300,
-      rgb(128, 128, 128)
-    );
+    @include title(1.5rem, 300, rgb(128, 128, 128));
     line-height: 40px;
   }
   .owl-dots {
@@ -247,5 +226,3 @@ header {
     @include title(0.9rem, 400, #b3b3b3);
   }
 }
-=======
->>>>>>> Stashed changes
