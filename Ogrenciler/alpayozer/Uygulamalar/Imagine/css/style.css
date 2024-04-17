@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif !important;
+  background-color: #fff;
+}
+
+a {
+  color: #4285f4;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.primary-bg-color {
+  background-color: #4285f4 !important;
+}
+
+.primary-text-color {
+  color: gray;
+}
+
+.colorb {
+  color: black !important;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.hero-section .container .hero-info .get-started {
+  padding: 10px 30px;
+}
+
+.imagine-features-section {
+  margin: 8rem 0;
+}
+.imagine-features-section .feature-info {
+  margin-bottom: 8rem;
+}
+.imagine-features-section .feature-cards {
+  gap: 30px;
+}
+.imagine-features-section .feature-cards .card {
+  border: none;
+  background-color: #f1f1f1;
+  padding: 40px 15px 15px;
+  margin: 0 0 64px;
+}
+.imagine-features-section .feature-cards .card .card-icon .icon-wrap {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #4285f4;
+  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+}
+.imagine-features-section .feature-cards .card .card-icon .icon-wrap i {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  color: #fff !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.imagine-features-section .feature-cards .card .card-body .card-text {
+  color: gray;
+}
+.imagine-features-section .feature-cards .card:hover {
+  background-color: #4285f4;
+  color: #fff;
+}
+.imagine-features-section .feature-cards .card:hover .icon-wrap {
+  background-color: #fff;
+}
+.imagine-features-section .feature-cards .card:hover .icon-wrap i {
+  color: #4285f4;
+}
+
+.feature-big .container .feature-big-part {
+  padding: 5em 0;
+}
+.feature-big .container .feature-big-part .feature-big-info h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.feature-big .container .feature-big-part .feature-big-info p {
+  color: gray;
+}
+.feature-big .container .feature-big-part .feature-big-info .author-box {
+  box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-left: 10px solid #4285f4;
+}
+.feature-big .container .feature-big-part .feature-big-info .author-box img {
+  max-width: 50px;
+  height: 50px;
+}
+.feature-big .container .feature-big-part .feature-big-info .author-box blockquote {
+  font-style: italic;
+  color: gray;
+}
+
+.about-us {
+  padding: 5em 0;
+  color: gray;
+}
+.about-us .section-title {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+}
+.about-us img {
+  width: 540px;
+}
+.about-us .ul-check li i {
+  color: #8bc34a;
+  margin-right: 1rem;
+}
+.about-us .learn-btn {
+  border-width: 2px;
+  background: #4285f4;
+  border-color: #4285f4;
+  color: #fff;
+  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

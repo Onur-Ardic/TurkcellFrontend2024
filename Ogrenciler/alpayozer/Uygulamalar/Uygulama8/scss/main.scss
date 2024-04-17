@@ -8,6 +8,7 @@
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 @function weight($weight-name) {
   @return map-get($font-weights, $weight-name);
 }
@@ -313,6 +314,55 @@
           }
         }
       }
+    }
+  }
+
+  .trending-today{
+    &-header{
+      h2 {
+        @include special-text($fs-32, $primary-color, semi-bold);
+        margin-bottom: 0.5rem;
+      }
+    }
+    &-cards{
+        .trending-today-card{
+          box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+          margin-bottom: 30px;
+          border-radius: 7px;
+          position: relative;
+          background: #fff;
+          &-img{
+            img{
+                height: 250px;
+                width: 345px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-top-left-radius: 7px;
+                border-top-right-radius: 7px;
+            }
+          }
+          &-content{
+            padding: 20px;
+            span{
+              @include category-span();
+            }
+            a{
+
+            }
+            h3{
+              @include card-title()
+            }
+            address{
+              @include card-subtitle()
+            }
+            p{
+
+            }
+
+          }
+        }
+      
     }
   }
 }

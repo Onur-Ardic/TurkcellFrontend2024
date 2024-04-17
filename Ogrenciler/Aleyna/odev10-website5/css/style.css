@@ -17,6 +17,11 @@ body {
   color: #5a8ff4;
 }
 
+.communicate .container .row .col-lg-5 {
+  padding-left: 5rem;
+  align-items: center;
+}
+
 .about-us li {
   border: none;
 }
