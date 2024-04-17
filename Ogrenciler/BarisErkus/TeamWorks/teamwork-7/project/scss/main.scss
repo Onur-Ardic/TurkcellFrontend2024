@@ -5,12 +5,29 @@
     text-decoration: none;
     color: black;
     font-family: "Roboto", sans-serif;
+    font-size: 14px;
 }
 
 a {
     text-decoration: none;
 }
 
+h2 {
+    font-size: 32px;
+}
+
 .home {
     padding: 225px 0px;
+}
+
+@media screen and (max-width: 578px) {
+    .top-header {
+        display: none;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .banner-img {
+        display: none;
+    }
 }
