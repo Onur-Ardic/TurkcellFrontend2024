@@ -1,13 +1,17 @@
 @import "./common/global", "./common/mixins", "./common/variables", "./common/animations";
 .navbar {
-    div {
-        .navbar-collapse {
-            .navbar-nav {
-                .nav-item {
-                    .nav-link {
-                        color: black;
-                        &:hover {
-                            color: #5a8ff4;
+    .container {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        div {
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            color: black;
+                            &:hover {
+                                color: #5a8ff4;
+                            }
                         }
                     }
                 }
