@@ -33,3 +33,8 @@ main {
     }
   }
 }
+.custom-list li:before {
+  content: "✓";
+  color: #28a745;
+  margin-right: 5px;
+}
