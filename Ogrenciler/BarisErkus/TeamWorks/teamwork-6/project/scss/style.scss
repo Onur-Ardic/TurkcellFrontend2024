@@ -1,4 +1,4 @@
-@import "./common/global", "./common/mixins", "./common/variables", "./common/animations";
+@import "./common/global", "./common/variables";
 .navbar {
     .container {
         margin-top: 0 !important;
@@ -25,6 +25,7 @@
         padding: 30px;
         &:hover {
             background: rgb(13, 110, 253);
+            cursor: pointer;
         }
     }
     .icon-wrap {
@@ -56,6 +57,10 @@
     }
 }
 .about-us {
+    .row {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
     img {
         max-width: 550px;
     }
@@ -94,4 +99,12 @@
     font-size: 12px;
     letter-spacing: 1.1px;
     font-weight: 700;
+}
+.testimonials {
+    img {
+        width: 100px;
+    }
+    .carousel-inner {
+        max-width: 800px;
+    }
 }
