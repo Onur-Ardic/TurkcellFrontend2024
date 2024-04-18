@@ -1,7 +1,6 @@
 * {
   font-family: "Roboto", sans-serif;
 }
-
 #some-features {
   .card {
     transition: all 300ms linear 0s;
@@ -12,11 +11,15 @@
 }
 #pricing {
   .container {
-    .shadow {
-      .card {
-        border: transparent 2px solid;
-        &:hover {
-          border-top: 2px solid blue;
+    .card {
+      border: transparent 2px solid;
+      &:hover {
+        button {
+          opacity: 100% !important;
+        }
+        border-top: 2px solid $primary;
+        h1 {
+          color: $primary;
         }
       }
     }

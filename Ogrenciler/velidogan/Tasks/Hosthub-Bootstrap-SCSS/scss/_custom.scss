@@ -1,3 +1,83 @@
 $bluish-purple:#6247ea;
-$indian-yellow:#ec9d5f;
 $blue-harcoal:#04091e;
+$dark-blue:#1e2235;
+$white:#fff;
+$lowWhite:rgba(255,255,255,.1);
+body{
+    font-family: "Roboto", sans-serif;
+}
+.price{
+    .col{
+        .card-border-top,.card-border-top+div{
+            visibility: hidden;
+        }               
+        &:hover{
+            .card-border-top,.card-border-top+div{
+                visibility: visible;
+                z-index: 5;
+            }     
+            .sterlin{
+                color: $bluish-purple;
+            }
+        }       
+    }    
+}
+.feature{
+    .card{
+        transition: all 1s;
+        &:hover{
+            box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+        }
+    }
+}
+.solution{
+    button:hover{
+        background-color: $bluish-purple;
+        border-color: $bluish-purple;
+        color: $white;
+    }
+}
+.client{
+    .card{
+        transition: all 1s;
+        &:hover{
+            box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+        }
+    }
+    .col:first-child{
+        max-width: 335px;
+    }
+}
+.services{
+    background: url("../img/map-bg.png.webp");
+
+    .card{
+        transition: all .5s;
+        background-color: $lowWhite;
+        color: $white;
+        &:hover{
+            background-color: $white;
+            color: $blue-harcoal;
+        }
+    }
+}
+.posts{
+    .card{
+        transition: all 1s;
+        &:hover{
+            box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+            h5{
+                color: $bluish-purple;
+            }
+        }
+    }
+}
+.footer{
+    .social-icons i{
+        background: $dark-blue;
+        transition: all .5s;
+        &:hover{
+            background: $bluish-purple;
+        }
+    }
+}

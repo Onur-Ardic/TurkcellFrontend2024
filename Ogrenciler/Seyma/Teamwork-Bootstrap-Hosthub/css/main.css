@@ -11851,11 +11851,17 @@ textarea.form-control-lg {
   box-shadow: var(--bs-box-shadow-lg);
 }
 
-#pricing .container .shadow .card {
+#pricing .container .card {
   border: transparent 2px solid;
 }
-#pricing .container .shadow .card:hover {
-  border-top: 2px solid blue;
+#pricing .container .card:hover {
+  border-top: 2px solid #6246eb;
+}
+#pricing .container .card:hover button {
+  opacity: 100% !important;
+}
+#pricing .container .card:hover h1, #pricing .container .card:hover .h1 {
+  color: #6246eb;
 }
 
 /*# sourceMappingURL=main.css.map */
