@@ -11829,7 +11829,7 @@ a {
 }
 
 .transition {
-  transition: all 100ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .link:hover, .link.active {
@@ -11840,13 +11840,15 @@ a {
   padding: 100px 0;
 }
 
-.feature .card:hover,
-.say-about-us .card:hover {
+.hover-shadow-card:hover {
   box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
-  border-color: #fff !important;
+  background-color: #fff !important;
+}
+.hover-shadow-card:hover.top-services-card * {
+  color: #222222 !important;
 }
 
-.pricing .container .main-title .price-inner .card::before {
+.pricing .card::before {
   content: "";
   width: 1px;
   background: #eeeeee;
@@ -11855,14 +11857,14 @@ a {
   right: 0px;
   bottom: 0px;
 }
-.pricing .container .main-title .price-inner .item:hover {
+.pricing .item:hover {
   border-top: 2px solid #6247ea;
 }
-.pricing .container .main-title .price-inner .item:hover h2, .pricing .container .main-title .price-inner .item:hover .h2 {
+.pricing .item:hover h2, .pricing .item:hover .h2 {
   color: #6247ea !important;
 }
-.pricing .container .main-title .price-inner .item:hover .price_btn {
-  display: block !important;
+.pricing .item:hover .price_btn {
+  opacity: 100% !important;
 }
 
 /*# sourceMappingURL=main.css.map */
