@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "odev6",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.75.0"
+    "sass": "^1.74.1"
   }
 }
