@@ -5,6 +5,7 @@ https://agon-nextjs-13.vercel.app/index-2
 https://preview.colorlib.com/theme/directoryads/
 
 https://preview.colorlib.com/theme/imagine/
+https://preview.colorlib.com/theme/hosthub/
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/box-orient
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
