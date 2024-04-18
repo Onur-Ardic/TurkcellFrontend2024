@@ -1,0 +1,26 @@
+$custom-colors: (
+  "bluish-purple": #6247ea,
+  "indian-yellow": #ec9d5f,
+  "blue-harcoal": #04091e,
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$h12-font-size: $font-size-base * 0.75;
+$h14-font-size: $font-size-base * 0.9;
+$h36-font-size: $font-size-base * 2.25;
+$custom-sizes: (
+  12: $h12-font-size,
+  14: $h14-font-size,
+  36: $h36-font-size,
+);
+$font-sizes: map-merge($font-sizes, $custom-sizes);
+
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  225: $spacer * 10,
+);
