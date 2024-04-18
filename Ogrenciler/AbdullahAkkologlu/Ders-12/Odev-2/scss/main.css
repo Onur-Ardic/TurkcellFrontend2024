@@ -1,0 +1,445 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+.btn {
+  padding: 15px 20px;
+  background: linear-gradient(to right, #fd4472, #ffb64b);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 300ms ease-in-out;
+}
+.btn:hover {
+  background: linear-gradient(to right, #fd4572, #ffa788);
+}
+
+.hero {
+  background-color: #f8efff;
+  background-image: url("../images/shape-2.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+.hero .container .navbar {
+  padding-top: 40px;
+}
+.hero .container .navbar .navbar-right {
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.hero .container .left-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 90vh;
+  gap: 50px;
+}
+.hero .container .left-content h2 {
+  font-size: 60px;
+}
+.hero .container .left-content p {
+  font-size: 16px;
+  color: #696969;
+  line-height: 1.5;
+  width: 80%;
+}
+.hero .container .left-content .btn {
+  width: 171px;
+}
+.hero .container .right-content {
+  width: 50%;
+  height: 90vh;
+  position: relative;
+}
+.hero .container .right-content .laptop-man {
+  width: 115%;
+}
+.hero .container .right-content .woman {
+  top: 275px;
+  right: 290px;
+  position: absolute;
+  height: 40%;
+  animation: woman-animation 12s ease-in-out infinite;
+}
+@keyframes woman-animation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.hero .container .right-content .usr-card {
+  position: absolute;
+  top: 287px;
+  right: 40px;
+  height: 6%;
+  animation: usr-card-animation 10s ease-in-out infinite;
+}
+@keyframes usr-card-animation {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-75px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  75% {
+    transform: translateX(-75px);
+  }
+}
+.hero .container .right-content .video-card {
+  position: absolute;
+  height: 20%;
+  top: 180px;
+  right: -120px;
+  animation: video-card-animation 10s ease-in-out infinite;
+}
+@keyframes video-card-animation {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  50% {
+    transform: translateX(50px) translateY(-50px);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+.omnichannel, .extend-power, .retail-store, .all-in-one {
+  padding: 80px 0px;
+}
+.omnichannel .container, .extend-power .container, .retail-store .container, .all-in-one .container {
+  gap: 100px;
+}
+.omnichannel .container .left-container, .extend-power .container .left-container, .retail-store .container .left-container, .all-in-one .container .left-container {
+  gap: 30px;
+  width: 50%;
+}
+.omnichannel .container .left-container h2, .extend-power .container .left-container h2, .retail-store .container .left-container h2, .all-in-one .container .left-container h2 {
+  font-size: 36px;
+}
+.omnichannel .container .left-container p, .extend-power .container .left-container p, .retail-store .container .left-container p, .all-in-one .container .left-container p {
+  color: #696969;
+}
+.omnichannel .container .left-container ul, .extend-power .container .left-container ul, .retail-store .container .left-container ul, .all-in-one .container .left-container ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.omnichannel .container .left-container ul li, .extend-power .container .left-container ul li, .retail-store .container .left-container ul li, .all-in-one .container .left-container ul li {
+  color: #696969;
+  list-style-type: none;
+  width: 50%;
+  line-height: 2;
+}
+.omnichannel .container .left-container .btn, .extend-power .container .left-container .btn, .retail-store .container .left-container .btn, .all-in-one .container .left-container .btn {
+  width: 180px;
+}
+.omnichannel .container .left-container hr, .extend-power .container .left-container hr, .retail-store .container .left-container hr, .all-in-one .container .left-container hr {
+  border: 1px solid #ecf0f3;
+}
+.omnichannel .container .left-container .check-icon, .extend-power .container .left-container .check-icon, .retail-store .container .left-container .check-icon, .all-in-one .container .left-container .check-icon {
+  width: 24px;
+  height: 24px;
+}
+.omnichannel .container .right-container img, .extend-power .container .right-container img, .retail-store .container .right-container img, .all-in-one .container .right-container img {
+  width: 100%;
+}
+
+.all-in-one {
+  background-color: #fffcfa;
+}
+
+.perfect-pos, .perfect-pos-software, .smratpos-power {
+  padding: 80px 0px;
+  background-color: #fffcfa;
+  text-align: center;
+}
+.perfect-pos .container, .perfect-pos-software .container, .smratpos-power .container {
+  gap: 30px;
+}
+.perfect-pos .container p, .perfect-pos-software .container p, .smratpos-power .container p {
+  width: 40%;
+}
+.perfect-pos .container .perfect-cards, .perfect-pos-software .container .perfect-cards, .smratpos-power .container .perfect-cards {
+  gap: 30px;
+}
+.perfect-pos .container .perfect-cards .perfect-card, .perfect-pos-software .container .perfect-cards .perfect-card, .smratpos-power .container .perfect-cards .perfect-card {
+  width: 20%;
+  min-width: 275px;
+  gap: 20px;
+  padding: 50px 60px;
+  text-align: center;
+  box-shadow: 0 4px 4px rgba(58, 58, 58, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+.perfect-pos .container .perfect-cards .perfect-card:hover, .perfect-pos-software .container .perfect-cards .perfect-card:hover, .smratpos-power .container .perfect-cards .perfect-card:hover {
+  transform: translateY(-5px);
+}
+.perfect-pos .container .perfect-cards .perfect-card img, .perfect-pos-software .container .perfect-cards .perfect-card img, .smratpos-power .container .perfect-cards .perfect-card img {
+  height: 80px;
+  align-self: center;
+}
+.perfect-pos .container .perfect-cards .perfect-card h6, .perfect-pos-software .container .perfect-cards .perfect-card h6, .smratpos-power .container .perfect-cards .perfect-card h6 {
+  font-size: 16px;
+}
+
+.extend-power {
+  background-color: #fffcfa;
+}
+
+.perfect-pos-software, .smratpos-power {
+  background-color: white;
+}
+.perfect-pos-software .container .perfect-cards .perfect-card, .smratpos-power .container .perfect-cards .perfect-card {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  width: 30%;
+}
+.perfect-pos-software .container .perfect-cards .perfect-card h6, .smratpos-power .container .perfect-cards .perfect-card h6 {
+  font-size: 24px;
+}
+.perfect-pos-software .container .perfect-cards .perfect-card p, .smratpos-power .container .perfect-cards .perfect-card p {
+  width: 100%;
+}
+.perfect-pos-software .container .perfect-cards .perfect-card .rounded-img, .smratpos-power .container .perfect-cards .perfect-card .rounded-img {
+  position: relative;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  padding: 20px;
+}
+.perfect-pos-software .container .perfect-cards .perfect-card .rounded-img img, .smratpos-power .container .perfect-cards .perfect-card .rounded-img img {
+  width: 60px;
+  height: 45px;
+}
+.perfect-pos-software .container .perfect-cards .perfect-card .rounded-img .pulse, .smratpos-power .container .perfect-cards .perfect-card .rounded-img .pulse {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: pulse-animation 2s infinite;
+  z-index: -1;
+}
+@keyframes pulse-animation {
+  0% {
+    transform: scale(0.9);
+    background-color: rgba(190, 109, 242, 0.7);
+  }
+  70% {
+    transform: scale(1.5);
+    background-color: rgba(190, 109, 242, 0);
+  }
+  100% {
+    transform: scale(0.9);
+    background-color: rgba(190, 109, 242, 0);
+  }
+}
+.perfect-pos-software .container .perfect-cards .perfect-card .line, .smratpos-power .container .perfect-cards .perfect-card .line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  background: linear-gradient(to right, #fd4472, #ffb64b);
+}
+.perfect-pos-software .container .perfect-cards .perfect-card:hover .line, .smratpos-power .container .perfect-cards .perfect-card:hover .line {
+  animation: line 0.5s forwards;
+}
+@keyframes line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.smratpos-power {
+  background-color: #fffef6;
+}
+.smratpos-power .container .perfect-cards .perfect-card {
+  min-width: 320px;
+  padding: 10px 40px;
+  background-color: white;
+  gap: 50px;
+}
+.smratpos-power .container .perfect-cards .perfect-card .card-row {
+  width: 100%;
+  text-align: start;
+}
+.smratpos-power .container .perfect-cards .perfect-card .card-row h5 {
+  font-size: 20px;
+}
+.smratpos-power .container .perfect-cards .perfect-card .card-row .person-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin-right: 10px;
+}
+.smratpos-power .container .perfect-cards .perfect-card .card-row .person-div .person-img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.smratpos-power .container .perfect-cards .perfect-card .card-row .person-div .round-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  animation: round-animation 5s linear infinite;
+}
+@keyframes round-animation {
+  100% {
+    rotate: 360deg;
+  }
+}
+.smratpos-power .container .perfect-cards .perfect-card .card-row p {
+  color: #696969;
+}
+.smratpos-power .container .perfect-cards .perfect-card .card-row hr {
+  border: 1px solid #f1f1f1;
+}
+.smratpos-power .container .perfect-cards .perfect-card:hover {
+  transform: translateY(0px);
+}
+
+.sponsors .container {
+  width: 70%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.app {
+  padding: 70px 0;
+  background-image: url(../images/app-footer-bg.jpg);
+}
+.app .container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.app .container .col {
+  gap: 20px;
+}
+.app .container .col p,
+.app .container .col h2 {
+  color: white;
+}
+.app .container .col .download {
+  width: 230px;
+  height: 70px;
+  background-color: white;
+  gap: 15px;
+}
+.app .container .col .download p {
+  color: #696969;
+}
+.app .container .col .download span {
+  color: #c961fa;
+  font-weight: 700;
+}
+.app .container .bot {
+  justify-content: space-between;
+  padding-right: 140px;
+  padding-bottom: 50px;
+}
+.app .container .bot h6 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.app .container .bot li {
+  list-style: none;
+  color: white;
+}
+.app .container .bot .footer-content {
+  margin-top: 100px;
+}
+.app .container .bot-para {
+  justify-content: center;
+}
+.app .container .bot-para p {
+  margin-top: 10px;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    background-image: none;
+  }
+  .hero .container .content {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hero .container .content .left-content {
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+  }
+  .hero .container .content .right-content {
+    width: 100%;
+    height: auto;
+  }
+  .hero .container .content .right-content .usr-card,
+  .hero .container .content .right-content .video-card,
+  .hero .container .content .right-content .woman {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hero .container .navbar .navbar-right {
+    display: none;
+  }
+  .hero .container .content .right-content .laptop-man {
+    width: 100%;
+  }
+  .hero .container .content .left-content {
+    margin-top: 20px;
+  }
+  .hero .container .content .left-content h2 {
+    font-size: 40px;
+  }
+  .omnichannel .container, .all-in-one .container, .retail-store .container, .extend-power .container {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .omnichannel .container .left-container, .all-in-one .container .left-container, .retail-store .container .left-container, .extend-power .container .left-container {
+    width: 100%;
+  }
+  .omnichannel .container .left-container ul li, .all-in-one .container .left-container ul li, .retail-store .container .left-container ul li, .extend-power .container .left-container ul li {
+    width: 100%;
+  }
+  .omnichannel .container .right-container, .all-in-one .container .right-container, .retail-store .container .right-container, .extend-power .container .right-container {
+    width: 100%;
+  }
+  .all-in-one .container {
+    flex-direction: column;
+  }
+  .retail-store .container {
+    flex-direction: column;
+  }
+  .smratpos-power .container .perfect-cards .perfect-card {
+    width: 100%;
+  }
+  .perfect-pos .container p, .perfect-pos-software .container p, .smratpos-power .container p {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

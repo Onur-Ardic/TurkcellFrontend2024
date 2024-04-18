@@ -14746,4 +14746,68 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.feature .card {
+  transition: all 1s;
+}
+.feature .card:hover {
+  box-shadow: 0 10px 30px 0 rgba(98, 71, 234, 0.1);
+}
+
+.price .col .card-border-top,
+.price .col .card-border-top + div {
+  visibility: hidden;
+}
+.price .col:hover .card-border-top,
+.price .col:hover .card-border-top + div {
+  visibility: visible;
+  z-index: 5;
+}
+.price .col:hover .sterlin {
+  color: #6247ea;
+}
+
+.solutions button:hover {
+  background-color: #6247ea;
+  color: #fff;
+  border-color: #6247ea;
+}
+
+.client .card {
+  transition: all 1s;
+}
+.client .card:hover {
+  box-shadow: 0 10px 30px 0 rgba(98, 71, 234, 0.1);
+}
+.client .card .col:first-child {
+  max-width: 335px;
+}
+
+.services {
+  background: url("https://preview.colorlib.com/theme/hosthub/img/map-bg.png.webp");
+}
+.services .card {
+  transition: all 0.5s;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.services .card:hover {
+  color: #04091e;
+  background-color: #fff;
+}
+
+.brands .col {
+  opacity: 0.5;
+}
+.brands .col:hover {
+  opacity: 1;
+}
+
+.footer .social-icons i {
+  background: #1e2235;
+  transition: all 0.5s;
+}
+.footer .social-icons i:hover {
+  background: #6247ea;
+}
+
 /*# sourceMappingURL=main.css.map */
