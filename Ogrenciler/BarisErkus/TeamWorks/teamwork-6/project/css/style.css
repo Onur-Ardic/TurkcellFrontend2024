@@ -117,4 +117,23 @@ body {
   max-width: 800px;
 }
 
+.contact {
+  width: auto;
+  height: 120vh;
+  position: relative;
+}
+.contact.bg-image {
+  background-size: cover;
+  background-position: center;
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(66, 134, 244, 0.7), rgba(42, 212, 198, 0.5));
+}
+
 /*# sourceMappingURL=style.css.map */
