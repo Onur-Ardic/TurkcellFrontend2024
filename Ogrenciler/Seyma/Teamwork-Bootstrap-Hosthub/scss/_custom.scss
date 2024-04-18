@@ -11,6 +11,9 @@
 }
 #pricing {
   .container {
+    #paras {
+      padding: 120px;
+    }
     .card {
       border: transparent 2px solid;
       &:hover {
@@ -21,6 +24,45 @@
         h1 {
           color: $primary;
         }
+      }
+    }
+  }
+}
+
+#top-services {
+  background-image: url("https://preview.colorlib.com/theme/hosthub/img/map-bg.png.webp");
+
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    p {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    &:hover {
+      background-color: white;
+
+      p {
+        color: grey;
+      }
+      h5,
+      i {
+        color: black;
+      }
+    }
+  }
+}
+
+#blog {
+  padding: 120px 0;
+}
+
+#clients {
+  .item {
+    margin: 0 auto;
+    img {
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
       }
     }
   }

@@ -11852,6 +11852,9 @@ textarea.form-control-lg {
   box-shadow: var(--bs-box-shadow-lg);
 }
 
+#pricing .container #paras {
+  padding: 120px;
+}
 #pricing .container .card {
   border: transparent 2px solid;
 }
@@ -11863,6 +11866,40 @@ textarea.form-control-lg {
 }
 #pricing .container .card:hover h1, #pricing .container .card:hover .h1 {
   color: #6246eb;
+}
+
+#top-services {
+  background-image: url("https://preview.colorlib.com/theme/hosthub/img/map-bg.png.webp");
+}
+#top-services .card {
+  background: rgba(255, 255, 255, 0.1);
+}
+#top-services .card p {
+  color: rgba(255, 255, 255, 0.4);
+}
+#top-services .card:hover {
+  background-color: white;
+}
+#top-services .card:hover p {
+  color: grey;
+}
+#top-services .card:hover h5, #top-services .card:hover .h5,
+#top-services .card:hover i {
+  color: black;
+}
+
+#blog {
+  padding: 120px 0;
+}
+
+#clients .item {
+  margin: 0 auto;
+}
+#clients .item img {
+  opacity: 0.5;
+}
+#clients .item img:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
