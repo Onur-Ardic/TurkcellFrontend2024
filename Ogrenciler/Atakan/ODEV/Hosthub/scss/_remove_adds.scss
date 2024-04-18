@@ -16,11 +16,11 @@ $custom-sizes: (
 $font-sizes: map-merge($font-sizes, $custom-sizes);
 
 $spacers: (
-  0: 0,
-  1: $spacer * 0.25,
-  2: $spacer * 0.5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-  225: $spacer * 10,
+  20: $spacer * 1.25,
+  30: $spacer * 1.9,
+  40: $spacer * 2.5,
+  60: $spacer * 3.75,
+  120: $spacer * 7.5,
+  225: $spacer * 10
 );
+$spacers: map-merge($spacers, $custom-spacers);
