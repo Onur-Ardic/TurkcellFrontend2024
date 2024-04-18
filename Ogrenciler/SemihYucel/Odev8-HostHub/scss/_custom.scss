@@ -1,0 +1,91 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.home {
+    padding: 225px 0px;
+}
+
+.head-text{
+    &:hover {
+        transition: 0.3s all ease-in-out;
+        color: $primary !important;
+    }
+}
+
+.nav-link{
+    &:hover {
+        transition: 0.3s all ease-in-out;
+        color: $primary !important;
+    }
+}
+
+.button-hover {
+    transition: 0.2s all ease-in-out;
+    &:hover {
+        color: $primary !important;
+    }
+}
+
+.card {
+  
+    &:hover {
+        -webkit-box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+        box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+        border-color: #fff;
+        -webkit-transition: all 300ms linear 0s;
+        -o-transition: all 300ms linear 0s;
+        transition: all 300ms linear 0s;
+    }
+}
+
+.card-2 {
+    border-top: 2px solid #fff !important;
+    &:hover {
+        transition: 0.1s all ease;
+        border-top: 3px solid $primary !important;
+        .get-started-button {
+            display: block !important;
+        }
+        .card {
+            .card-body {
+                h2,
+                span {
+                    color: $primary !important;
+                }
+            }
+        }
+    }
+}
+
+.fs-nav-link {
+    font-size: 12px;
+}
+.p-120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+@media screen and (max-width: 578px) {
+    .top-header {
+        display: none;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .banner-img {
+        display: none;
+    }
+}
