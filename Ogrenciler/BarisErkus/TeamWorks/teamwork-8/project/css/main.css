@@ -11853,24 +11853,20 @@ textarea.form-control-lg {
   padding-bottom: 120px;
 }
 
-* {
-  list-style: none;
-  text-decoration: none;
-  color: black;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
+.p-225 {
+  padding-top: 225px;
+  padding-bottom: 225px;
 }
 
-a {
-  text-decoration: none;
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  list-style: none;
+  text-decoration: none !important;
 }
 
 h2, .h2 {
   font-size: 32px;
-}
-
-.home {
-  padding: 225px 0px;
 }
 
 .button-hover {
@@ -11892,12 +11888,12 @@ h2, .h2 {
 .my-card-2:hover .get-started-button {
   display: block !important;
 }
-.my-card-2:hover .card .card-body h2, .my-card-2:hover .card .card-body .h2,
-.my-card-2:hover .card .card-body span {
+.my-card-2:hover .card-body h2, .my-card-2:hover .card-body .h2,
+.my-card-2:hover .card-body span {
   color: #6247ea !important;
 }
 
-.top-header div a:hover {
+.top-header a:hover {
   transition: 0.5s all ease-in-out;
   color: #6247ea !important;
 }
