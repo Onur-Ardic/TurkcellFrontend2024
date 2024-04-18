@@ -11852,8 +11852,11 @@ textarea.form-control-lg {
   box-shadow: var(--bs-box-shadow-lg);
 }
 
-#pricing .container #paras {
-  padding: 120px;
+#pricing {
+  padding: 120px 0;
+}
+#pricing .container .main-title {
+  margin: 0 0 75px;
 }
 #pricing .container .card {
   border: transparent 2px solid;
@@ -11892,6 +11895,9 @@ textarea.form-control-lg {
   padding: 120px 0;
 }
 
+#clients {
+  padding: 120px 0;
+}
 #clients .item {
   margin: 0 auto;
 }
@@ -11900,6 +11906,12 @@ textarea.form-control-lg {
 }
 #clients .item img:hover {
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  #call-to-action {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
