@@ -14782,4 +14782,32 @@ body {
   max-width: 335px;
 }
 
+.services {
+  background: url("https://preview.colorlib.com/theme/hosthub/img/map-bg.png.webp");
+}
+.services .card {
+  transition: all 0.5s;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.services .card:hover {
+  color: #04091e;
+  background-color: #fff;
+}
+
+.brands .col {
+  opacity: 0.5;
+}
+.brands .col:hover {
+  opacity: 1;
+}
+
+.footer .social-icons i {
+  background: #1e2235;
+  transition: all 0.5s;
+}
+.footer .social-icons i:hover {
+  background: #6247ea;
+}
+
 /*# sourceMappingURL=main.css.map */

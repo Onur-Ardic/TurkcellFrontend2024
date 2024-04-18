@@ -50,3 +50,32 @@ body {
     }
   }
 }
+.services {
+  background: url("https://preview.colorlib.com/theme/hosthub/img/map-bg.png.webp");
+  .card {
+    transition: all 0.5s;
+    background-color: $lowWhite;
+    color: $white;
+    &:hover {
+      color: $blue-harcoal;
+      background-color: $white;
+    }
+  }
+}
+.brands {
+  .col {
+    opacity: 0.5;
+  }
+  .col:hover {
+    opacity: 1;
+  }
+}
+.footer {
+  .social-icons i {
+    background: $dark-blue;
+    transition: all 0.5s;
+    &:hover {
+      background: $bluish-purple;
+    }
+  }
+}
