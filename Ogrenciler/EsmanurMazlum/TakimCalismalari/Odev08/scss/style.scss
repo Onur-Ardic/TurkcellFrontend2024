@@ -14,56 +14,61 @@
 }
 
 .choose-your-best {
-  .card {
-    border: none;
-    .price-item {
-      border-top: 1px solid #eee;
-      transition: 0.3s ease-in-out;
-      &::before{
-        position: absolute;
-        content: "";
-        height: 200px;
-        width: 1px;
-        background-color: #eee;
-        bottom: 0;
-        right: 0;
-      }
-      .price-text {
-        padding: 75px 0 45px 75px;
-        h2>span{
-          color: #777777;
+  .row{
+    box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+    border-radius: 10px;
+    .card {
+      padding: 0;
+      border: none;
+      .price-item {
+        border-top: 1px solid #fff;
+        transition: 0.3s ease-in-out;
+        &::before{
+          position: absolute;
+          content: "";
+          height: 320px;
+          width: 1px;
+          background-color: #eee;
+          bottom: 0;
+          right: 0;
         }
-        ul {
-          padding: 0;
-          li {
-            list-style: none;
+        .price-text {
+          padding: 75px 0 45px 75px;
+          h2>span{
+            color: #777777;
+          }
+          ul {
+            padding: 0;
+            li {
+              list-style: none;
+            }
           }
         }
-      }
-      .price-btn {
-        display: block;
-        background: #6247ea;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        line-height: 50px;
-        color: #fff;
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        opacity: 0.5;
-        visibility: hidden;
-        margin-bottom: -50px;
-        transition: 0.3s ease-in-out;
-      }
-    }
-    &:hover {
-      .price-item{
-        border-color: #6247ea;
         .price-btn {
-          visibility: visible;
-          opacity: 1;
+          display: block;
+          background: #6247ea;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          line-height: 50px;
+          color: #fff;
+          font-family: "Roboto", sans-serif;
+          font-weight: 500;
+          opacity: 0.5;
+          visibility: hidden;
+          margin-bottom: -50px;
+          transition: 0.3s ease-in-out;
         }
-        h2,h2>span{
-          color: #6247ea;
+      }
+      &:hover {
+        .price-item{
+          border-color: #6247ea;
+          .price-btn {
+            visibility: visible;
+            opacity: 1;
+          }
+          h2,h2>span{
+            color: #6247ea;
+          }
         }
       }
     }

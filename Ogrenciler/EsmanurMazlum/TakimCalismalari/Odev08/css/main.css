@@ -16061,35 +16061,40 @@ textarea.form-control-lg {
   box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
 }
 
-.choose-your-best .card {
+.choose-your-best .row {
+  box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+  border-radius: 10px;
+}
+.choose-your-best .row .card {
+  padding: 0;
   border: none;
 }
-.choose-your-best .card .price-item {
-  border-top: 1px solid #eee;
+.choose-your-best .row .card .price-item {
+  border-top: 1px solid #fff;
   transition: 0.3s ease-in-out;
 }
-.choose-your-best .card .price-item::before {
+.choose-your-best .row .card .price-item::before {
   position: absolute;
   content: "";
-  height: 200px;
+  height: 320px;
   width: 1px;
   background-color: #eee;
   bottom: 0;
   right: 0;
 }
-.choose-your-best .card .price-item .price-text {
+.choose-your-best .row .card .price-item .price-text {
   padding: 75px 0 45px 75px;
 }
-.choose-your-best .card .price-item .price-text h2 > span, .choose-your-best .card .price-item .price-text .h2 > span {
+.choose-your-best .row .card .price-item .price-text h2 > span, .choose-your-best .row .card .price-item .price-text .h2 > span {
   color: #777777;
 }
-.choose-your-best .card .price-item .price-text ul {
+.choose-your-best .row .card .price-item .price-text ul {
   padding: 0;
 }
-.choose-your-best .card .price-item .price-text ul li {
+.choose-your-best .row .card .price-item .price-text ul li {
   list-style: none;
 }
-.choose-your-best .card .price-item .price-btn {
+.choose-your-best .row .card .price-item .price-btn {
   display: block;
   background: #6247ea;
   border-bottom-left-radius: 10px;
@@ -16103,14 +16108,14 @@ textarea.form-control-lg {
   margin-bottom: -50px;
   transition: 0.3s ease-in-out;
 }
-.choose-your-best .card:hover .price-item {
+.choose-your-best .row .card:hover .price-item {
   border-color: #6247ea;
 }
-.choose-your-best .card:hover .price-item .price-btn {
+.choose-your-best .row .card:hover .price-item .price-btn {
   visibility: visible;
   opacity: 1;
 }
-.choose-your-best .card:hover .price-item h2, .choose-your-best .card:hover .price-item .h2, .choose-your-best .card:hover .price-item h2 > span, .choose-your-best .card:hover .price-item .h2 > span {
+.choose-your-best .row .card:hover .price-item h2, .choose-your-best .row .card:hover .price-item .h2, .choose-your-best .row .card:hover .price-item h2 > span, .choose-your-best .row .card:hover .price-item .h2 > span {
   color: #6247ea;
 }
 
