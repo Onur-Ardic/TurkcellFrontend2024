@@ -15,6 +15,13 @@ h2 {
         color: $main-color !important;
     }
 }
+.button-hover-2 {
+    transition: 0.2s all ease-in-out;
+    &:hover {
+        background-color: $main-color !important;
+        color: white !important;
+    }
+}
 .my-card {
     &:hover {
         transition: 0.5s all ease-in-out;
@@ -26,7 +33,7 @@ h2 {
         transition: 0.1s all ease;
         border-top: 3px solid $main-color !important;
         .get-started-button {
-            display: block !important;
+            visibility: visible !important;
         }
         .card-body {
             h2,
