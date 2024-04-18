@@ -1,8 +1,10 @@
+$template-blue:#6247ea;
+$template-orange:#ec9d5f;
 .top_menu{
-    background: #ec9d5f;
+    background: $template-orange;
 }
 .pur_btn{
-    background: #6247ea;
+    background: $template-blue;
     font-family: "Roboto", sans-serif;
     line-height: 40px;
     display: block;
@@ -18,4 +20,41 @@ header{
             }
         }
     }
+}
+.banner_inner{
+    background-color: $template-blue;
+    height: 100vh;
+}
+.white{
+    color: white;
+}
+.btn-orange{
+    color: white;
+    display: inline-block;
+    background-color: $template-orange;
+    line-height: 50px;
+    padding: 0 50px;
+    font-weight:500;
+    &:hover{
+        background-color: $template-orange;
+        color: $template-blue;   
+    }
+}
+.text-align-right{
+    display: flex;
+    text-align: right;
+}
+.p_120{
+    padding: 120px 0;
+}
+.card{
+    border: 1;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        border:0;
+        box-shadow: 20px 20px 50px rgb(230, 230, 230);
+    }
+}
+.line-height-20{
+    line-height: 20px;
 }

@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.btn:hover {
+  color: inherit;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -11856,6 +11860,50 @@ textarea.form-control-lg {
 
 header .main_menu .navbar ul li {
   margin-right: 28px;
+}
+
+.banner_inner {
+  background-color: #6247ea;
+  height: 100vh;
+}
+
+.white {
+  color: white;
+}
+
+.btn-orange {
+  color: white;
+  display: inline-block;
+  background-color: #ec9d5f;
+  line-height: 50px;
+  padding: 0 50px;
+  font-weight: 500;
+}
+.btn-orange:hover {
+  background-color: #ec9d5f;
+  color: #6247ea;
+}
+
+.text-align-right {
+  display: flex;
+  text-align: right;
+}
+
+.p_120 {
+  padding: 120px 0;
+}
+
+.card {
+  border: 1;
+  transition: all 0.2s ease-in-out;
+}
+.card:hover {
+  border: 0;
+  box-shadow: 20px 20px 50px rgb(230, 230, 230);
+}
+
+.line-height-20 {
+  line-height: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
