@@ -1,0 +1,759 @@
+@import "resets";
+@import "mixins";
+@import "variables";
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.text-center{
+    text-align: center;
+}
+.fs-22{
+    font-size: 22px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-40{
+    font-size: 40px;
+}
+.mt-2{
+    margin-top: .5rem;
+}
+
+nav{
+    padding: 30px 0px;
+    background-color: #f8f9fc;
+    .nav{
+        @include flexContainer(row,space-between,center,0);
+    }
+    .navbar-menu{
+        display: none;
+    }
+}
+
+.home{
+    background-color: $bg-primary;
+    .home-content{
+        padding-top: 120px;//margin olucak burası
+        i{
+            color: $light;
+            font-size: 30px;
+        }
+        h1{
+            @include special-text($light,36px,500);
+            font-family: "Poppins", sans-serif;
+        }
+        p{
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            @include special-text($color: rgba(255, 255, 255, .5), $size: 16px, $line-height: 25px)
+        }
+    }
+    .phone-mockup{
+        .phone-groups{
+            @include flexContainer(column, center, center,0);
+            .video-phone{
+                position: relative;
+                .watch-video{
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%) !important;
+                    left: 50%;
+                    background-color: $bg-primary;
+                    border-radius: 50%;
+                    padding: 20px;
+                    i{
+                        font-size: 30px;
+                        color: $light;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.service{
+    padding-top: 250px;
+    background-color:#f8f9fc;
+    padding-bottom: 80px;
+    .service-content{
+        margin-bottom: 3rem;
+        h6{
+            @include special-text($color:$text-primary, $weight:700);
+        }
+        h2{
+            @include special-text($color:$text-secondary, $size:40px, $weight:700);
+            margin-bottom: .5rem;
+        }
+        p{
+            @include special-text($color:$text-muted, $line-height:25px);
+            margin-bottom: 1rem;
+        }
+    }
+    .service-cards{
+        .service-box{
+                padding: 20px;
+                border-radius: 20px;
+                &:nth-child(2) {
+                    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+                }
+            .service-icon{
+                background-image: url("https://themesdesign.in/styza/layout/images/service/bomb.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                padding: 2rem;
+                i{
+                    font-size: 30px;
+                    position: relative;
+                    top: 10px;
+                    color: $bg-primary;
+                }
+            }
+            .service-card-content{
+                margin-top: 1.5rem;
+                a{
+                    text-decoration: none;
+                    h5{
+                        @include special-text($color:$text-secondary, $size:20px, $weight:700);
+                        margin-bottom: .5rem;
+                    }
+                }
+                p{
+                    @include special-text($color:$text-muted, $line-height:25px);
+                    margin-bottom: 1rem;
+
+                }
+            }
+        }
+    }
+}
+
+.features{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    .features-content{
+        margin-bottom: 3rem;
+        h6{
+            @include special-text($color:$text-primary,$weight:700);
+        }
+        h2{
+            @include special-text($color:$text-secondary, $size:40px, $weight:700);
+            margin-bottom: .5rem;
+        }
+        p{
+            @include special-text($color:$text-muted, $line-height:25px);
+            margin-bottom: 1rem;
+        }
+    }
+    .features-lists{
+        ul{
+            margin-bottom: 1rem;
+            @include flexContainer(column,center,center,0);
+            list-style-type: none;
+            li{
+                margin-bottom: 1rem;
+                button{
+                    margin: 0 10px;
+                    padding: 10px 30px;
+                    border-radius: 5px;
+                }
+                .bg-button{
+                    border: 1px solid #0076a3;
+                    background: linear-gradient(rgb(46, 141, 165) 0%, rgb(17, 77, 100) 100%);
+                    color: #fff;
+                }
+                .tp-button{
+                    border: 1px solid rgba(24, 59, 86, .5);
+                    color: #183b56;
+                    background: 0 0;
+                }
+            }
+        }
+        .tab-content{
+            margin-top: 3rem;
+            .features-first-items, .features-last-items{
+                .features-item{
+                    .features-icon{
+                        background-color: rgba(0, 118, 163, .1);
+                        color: #0076a3;
+                        height: 3rem;
+                        width: 3rem;
+                        border-radius: 50%;
+                        @include flexContainer(row,center,center,0);
+                        i{
+                            font-size: 23px;
+                        }
+                    }
+                    .features-item-content{
+                        margin-top: 1rem;
+                        h5{
+                            @include special-text($color:$text-secondary, $size:20px, $weight:800);
+                            margin-bottom: .5rem;
+                        }
+                        p{
+                            @include special-text($color:$text-secondary, $line-height:25px);
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.testimonial{
+    background-color: #f8f9fc;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    .testimonial-title{
+        .testimonial-primary{
+            @include special-text($color:$text-primary,$line-height:25px);
+        }
+        h3{
+            @include special-text($color:$text-secondary, $size:27px,$weight:700);
+            margin-bottom: .5rem;
+        }
+        .testimonial-muted{
+            @include special-text($color:$text-muted,$line-height:25px);
+            margin-bottom: 1rem;
+        }
+        button{
+            background: linear-gradient(80deg, #46a5bd 0%, #116a8d 100%);
+            border: none;
+            color: #fff;
+            padding: 12px 30px;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+    }
+    .testimonial-slider{
+        margin: 20px 0;
+        border-radius: 20px;
+        box-shadow: 0 5px 13px rgba(60,72,88,.2);
+        img{
+            border-radius: 20px;
+        }
+        .testimonial-card{
+            padding: 1.5rem;
+            .testimonial-card-title{
+                @include flexContainer($justify:start,$gap:1rem);
+                img{
+                    border-radius: 50%;
+                }
+                .testimonial-user{
+                    @include flexContainer(column,center,start,0);
+                    &-p1{
+                        @include special-text($color:$text-secondary, $size:14px, $weight:700,$line-height:25px);
+                        span{
+                            color: $text-muted;
+                        }
+                    }
+                    &-p2{
+                        @include special-text($color:$text-muted, $size:14px, $line-height:25px);
+                        
+                    }
+                }
+            }
+            .testimonial-card-content{
+                margin-top: 1rem;
+                h5{
+                    @include special-text($color:$text-secondary, $size:20px, $weight:800);
+                    margin-bottom: .5rem;
+                }
+                p{
+                    @include special-text($color:$text-muted,$size:14px, $line-height:25px);
+                    margin-bottom: 1rem;
+                }
+                button{
+                    background: linear-gradient(80deg, #46a5bd 0%, #116a8d 100%);
+                    border: none ;
+                    border-radius: 5px;
+                    padding: 6px 20px;
+                    @include special-text($color:$light,$size:14px, $weight:600);
+                }
+            }
+        }
+    }
+}
+
+.pricing{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    .pricing-title{
+        h6{
+            @include special-text($color:$text-primary,$weight:800);
+        }
+        h2{
+            @include special-text($color:$text-secondary,$size:40px, $weight:700);
+            margin-bottom: .5rem;
+        }
+        p{
+            @include special-text($color:$text-muted, $line-height:25px);
+            margin-bottom: 1rem;
+        }
+    }
+    .pricing-cards{
+        @include gridContainer(center,center,1,3,1rem);
+        .pricing-card{
+            border-radius: 10px;
+            box-shadow:  0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            .topbar{
+                background-color: $bg-primary;
+                padding: .5rem 0;
+                border-radius: 10px 10px 0 0;
+                h6{
+                    @include special-text($color:$light);
+                }
+            }
+            .price-up-box{
+                border-radius: 10px 10px 0 0;
+                &.light{
+                   background-color:rgba(0, 118, 163, .2);
+                   border-radius:0;
+                   .price-tag{
+                        h2{
+                        @include special-text($color:$text-secondary, $size:40px , $weight:700);
+                        }
+                   }
+                   p{
+                    @include special-text($color:$text-muted, $line-height:25px);
+                    margin-bottom: .25rem;
+                }
+                }
+                background-color: $text-secondary;
+                padding: 1.5rem;
+                .badge{
+                    background-color: $bg-primary;
+                    @include special-text($color:$light, $size:14px);
+                    padding: 5px;
+                    border-radius: 8px;
+                }
+                .price-tag{
+                    h2{
+                        @include special-text($color:$light, $size:40px,$weight:700);
+                    }
+                    
+                }
+                p{
+                    @include special-text($color:rgba(255, 255, 255, .5), $line-height:25px);
+                    margin-bottom: .25rem;
+                }
+
+            }
+            .border{
+                border: 3px solid #dee2e6;
+            }
+            .price-down-box{
+                &.light{
+                    a{
+                        text-decoration: none;
+                        color: $light;
+                        padding: 6px 20px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        letter-spacing: .5px;
+                        border: 1px solid #0076a3;
+                        background-color: $bg-primary;
+                        border-radius: .25rem;
+                        i{
+                            margin-right: .5rem;
+                            margin-top: 30px;
+                        }
+                    }
+                }
+                padding: 1.5rem;
+                ul{
+                    list-style-type: none;
+                    margin-bottom: 1rem;
+                    li{
+                        color: $text-secondary;
+                        i{
+                            margin-right: .5rem;
+                            color: $text-primary;
+                        }
+                        i.danger{
+                            color:#da3746;
+                        }
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: $text-primary;
+                    padding: 6px 20px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: .5px;
+                    border: 1px solid #0076a3;
+                    border-radius: .25rem;
+                    i{
+                        margin-right: .5rem;
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.app-screen{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #f8f9fc;
+    &-title{
+        h6{
+            @include special-text($color:$text-primary,$weight:800);
+        }
+        h2{
+            @include special-text($color:$text-secondary,$size:40px, $weight:700);
+            margin-bottom: .5rem;
+        }
+        p{
+            @include special-text($color:$text-muted, $line-height:25px);
+            margin-bottom: 1rem;
+        }
+    }
+    &-image{
+        img{
+            border-radius: 10px;
+        
+        }
+    }
+}
+
+.our-team{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &-title{
+        h6{
+            @include special-text($color:$text-primary,$weight:800);
+        }
+        h2{
+            @include special-text($color:$text-secondary,$size:40px, $weight:700);
+            margin-bottom: .5rem;
+        }
+        p{
+            @include special-text($color:$text-muted, $line-height:25px);
+            margin-bottom: 1rem;
+        }
+    }
+    &-cards{
+        .our-team-card{
+            position: relative;
+            .card-content{
+                .card-image{
+                    img{
+                        border-radius: 10px;
+                    }
+                }
+                .card-icon{
+                    i{
+                        margin-right: .5rem;
+                        margin-left: .5rem;
+                        color: $text-muted;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .card-info{
+                position: absolute;
+                transform: rotate(270deg);
+                top: 40%;
+                left: -30px;
+                h6{
+                    @include special-text($color:$text-secondary, $weight:800);
+                    margin-bottom: .5rem;
+                    span{
+                        @include special-text($color:$text-muted, $size:14px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.build-section{
+    background-image: url(https://themesdesign.in/styza/layout/images/cta-bg.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: #fff;
+        transform: matrix(1, -0.05, 0, 1, 0, 0);
+        z-index: 1;
+    }
+
+    .bg-overlay-gradiant{
+        background: linear-gradient(80deg, rgb(55, 125, 143) 0%, rgb(10, 65, 87) 100%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .9;
+        z-index: 0;
+    }
+    .build-content{
+        position: relative;
+        z-index: 2;
+        padding: 3rem 0;
+        h1{
+            @include special-text($color:$light, $size:34px, $weight:300);
+            margin-bottom: .5rem;
+        }
+        p{
+            @include special-text($size:18px,$color:rgba(255, 255, 255, .5), $line-height:25px);
+            margin-top: 1rem;
+        }
+        .store{
+            @include flexContainer(row,center,center,1rem);
+            margin-top: 1.5rem;
+        }
+    }
+    .build-image{
+        position: relative;
+        z-index: 2;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: #fff;
+        transform: matrix(1, -0.05, 0, 1, 0, 0);
+    }
+}
+
+.contact-us{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    .contact-header{
+        h6{
+            @include special-text($color:$text-primary,$weight:700);
+        }
+        h2{
+            @include special-text($color:$text-secondary,$size:40px, $weight:800);
+            margin-bottom: .5rem;
+        }
+        p{
+            @include special-text($color:$text-muted, $line-height:25px);
+            margin-bottom: 1rem;
+        }
+
+    }
+    .contact-form{
+        &-header{
+            margin-bottom: 1.5rem;
+            h4{
+                @include special-text($color:$text-secondary,$size:21px, $weight:600);
+                margin-bottom: .25rem;
+            }
+            p{
+                @include special-text($color:$text-muted, $line-height:25px);
+            margin-bottom: 1rem;
+            }
+        }
+        &-content{
+            margin-top: 1.5rem;
+            .form-control{
+                margin-bottom: 15px;
+                margin-top: .5rem;
+                box-shadow: none !important;
+                height: 48px;
+                padding-left: 20px;
+                border: 1px solid #efefef;
+                font-size: 15px;
+                border-radius: 5px;
+                display: block;
+                width: 100%;
+                padding: .375rem .75rem;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: var(--bs-body-color);
+                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            }
+            .submit-btn{
+                background: $bg-primary;
+                color: #fff;
+                border: 1px solid $bg-primary;
+                padding: 12px 30px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .5px;
+                transition: all .5s;
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                border-radius:10px ;
+            }
+        }
+    }
+    .contact-map{
+        margin: 3rem;
+        position: relative;
+        .map{
+            width: 300px;
+            position: relative;
+            z-index: 1;
+        }
+        .map-shape::after{
+            content: "";
+            position: absolute;
+            height: 350px;
+            width: 200px;
+            background-color: #0076a3;
+            top: -5%;
+            right: -10%;
+            border-radius: 10px;
+        }
+    }
+    .contact-info{
+        &-item{
+            @include flexContainer($justify:start,$gap:2rem);
+            margin-top: 1.5rem;
+            i{
+                font-size: 50px;
+                color:$text-primary;
+            }
+            &-content{
+                h5{
+                    @include special-text($color:$text-secondary,$size:20px, $weight:700);
+                    margin-bottom: .25rem;
+                }
+                p{
+                    @include special-text($size:14px,$color:$text-muted, $line-height:25px);
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: $text-secondary;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative ;
+    .bg-arrow{
+        background-image: url(https://themesdesign.in/styza/layout/images/home/arrow-bg.png);
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+    .col-1{
+        img{
+            display:none;
+        }
+        p{
+            @include special-text($color:rgba(255, 255, 255, .5), $line-height:25px);
+            margin-bottom: .5rem;
+        }
+        .footer-icon{
+            margin-top: 1.5rem;
+            @include flexContainer(row,start,center,1rem);
+            a{
+                border: 1px dashed rgba(131, 132, 133, .5);
+                text-decoration: none;
+                padding: 1rem;
+                @include flexContainer(row,center,center,1rem);
+                i{
+                    font-size: 23px;
+                    color:$text-primary;
+                }
+            }
+            .avatar-sm{
+                height: 3rem;
+                width: 3rem;
+                line-height: 3rem;
+            }
+        }
+    }
+    .col-2{
+        margin-top: 1.5rem;
+        h5{
+            @include special-text($color:$light,$size:20px, $weight:700);
+            margin-bottom: .5rem;
+        }
+        ul{
+            margin:1rem 0;
+            list-style: none;
+            li{
+                @include special-text($color:rgba(255, 255, 255, .5));
+                margin-top: 5px;
+                padding-bottom: 8px;
+            }
+        }
+    }
+    .col-3{
+        @extend .col-2;
+    }
+    .col-4{
+        h5{
+            @include special-text($color:$light,$size:20px, $weight:700);
+            margin-bottom: .5rem;
+        }
+        .input-group{
+            @include flexContainer(row,start,center,0);
+            margin: 1.5rem 0;
+            .form-control{
+                height: 56px;
+                border: 1px solid rgba(24, 59, 86, .1);
+                padding: 1rem;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                width: 100%;
+            }
+            a{
+                background-color: $bg-primary;
+                color: $light;
+                text-decoration: none;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                height: 56px;
+                padding-right: 1.5rem;
+                padding-left: 1.5rem;
+                @include flexContainer(row,center,center,0); 
+            }
+        }
+        p{
+            @include special-text($color:rgba(255, 255, 255, .5), $line-height:25px);
+        }
+    }
+}
+.bottom-footer{
+    padding: 1.5rem 0;
+    &-content{
+        p{
+            @include special-text($color:$text-muted, $line-height:25px);
+            i{
+                color: #da3746;
+            }
+        }
+    }
+}
+@import "responsive";
