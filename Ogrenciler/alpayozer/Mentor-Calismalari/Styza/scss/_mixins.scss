@@ -1,0 +1,23 @@
+@mixin flexContainer($direction:row, $justify:center, $align:center,$gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+  }
+
+  @mixin gridContainer($justify, $align, $col, $row,$gap) {
+    display: grid;
+    grid-template-columns: repeat($col, 1fr);
+    grid-template-rows: repeat($row, 1fr);
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+  }
+
+  @mixin special-text($color:#ffffff, $size:16px, $weight:normal, $line-height:1.4) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+  }

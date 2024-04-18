@@ -1,6 +1,7 @@
 {
-  "name": "bootstrap-groupwork",
+  "name": "styza",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass -w scss:css"
@@ -9,9 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3",
     "sass": "^1.75.0"
-  },
-  "description": ""
+  }
 }

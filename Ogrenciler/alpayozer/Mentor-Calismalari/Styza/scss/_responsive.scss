@@ -1,0 +1,167 @@
+@media only screen and (min-width: 1023px) {
+    nav{
+        padding: 30px 0px;
+        background-color: #f8f9fc;
+        .nav{
+            @include flexContainer(row,space-between,center,0);
+        }
+        .navbar-menu{
+            @include flexContainer(row,center,center,2rem);
+            ul{
+                @include flexContainer(row,center,center,0);
+                list-style: none;
+                li{
+                    padding: 25px 15px;
+                    @include special-text($color:$text-secondary, $size:13px, $weight:700);
+                }
+            }
+            a{
+                text-decoration: none;
+                background: linear-gradient(80deg, #46a5bd 0%, #116a8d 100%);
+                @include special-text($size:12px, $weight:600);
+                padding: 12px 30px;
+                letter-spacing: .5px;
+                border: 1px solid #0076a3;
+                border-radius: 5px;
+            }
+        }
+    }
+    .home{
+        .home-content{
+            padding-top: 50px;
+        }
+        .phone-mockup{
+            .phone-groups{
+                @include flexContainer(row, center, center,0);
+                margin-bottom: -5%;
+                img{
+                    height: 400px;
+                }
+                .video-phone{
+                    img{
+                        height: 550px;
+                    }
+                }
+            }
+        }
+    }
+    .service{
+        .service-cards{
+            @include gridContainer(center,center,3,1,2rem);
+        }
+    }
+    .features{
+        .features-lists{
+            ul{
+                @include flexContainer(row,center,center,0);
+            }
+            .tab-content{
+                margin-top: 3rem;
+                @include gridContainer(center,center,3,1,2rem);
+                .features-first-items{
+                    .features-item{
+                        @include flexContainer(column,center,end,0);
+                    }
+                    order: 1;
+                    text-align: right;
+                }
+                .features-image{
+                    order: 2;
+                }
+                .features-last-items{
+                    order: 3;
+                }
+            }
+        }
+    }
+    .testimonial{
+        .testimonial-groups{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            justify-content: center;
+            align-items: center;
+        }
+        .testimonial-slider{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+    .pricing{
+        .pricing-cards{
+            @include gridContainer(center,center,3,1,1rem);
+            .pricing-card{
+                .price-up-box{
+                    &.light{
+                       p{
+                        @include special-text($color:$text-muted, $line-height:25px,$size:13px);
+                        margin-bottom: .25rem;
+                    }
+                    }
+                    p{
+                        @include special-text($color:rgba(255, 255, 255, .5), $line-height:25px,$size:13px);
+                    }
+                }
+                .price-down-box{
+                    ul{
+                        li{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .our-team{
+        &-cards{
+            @include gridContainer(center,center,4,1,5rem);
+            .our-team-card{
+                .card-info{
+                    bottom: 0%;
+                    top: 0%;
+                    left: 0;
+                    h6{
+                        @include special-text($color:$text-secondary, $weight:700);
+                    }
+                }
+            }
+        }
+    }
+    .build-section{
+        padding: 0 0;
+        .build-group{
+            @include gridContainer(center,center,2,1,2rem);
+        }
+        .build-content{
+            h1{
+                @include special-text($color:$light, $size:52px, $weight:300);
+            }
+        }
+        .build-image{
+            margin-top: -15%;
+        }
+    }
+    .contact-us{
+        padding-top: 120px;
+        padding-bottom: 120px;
+        .contact-header{
+            margin-bottom: 3rem;
+        }
+        .contact-group{
+            @include gridContainer(center,center,2,1,2rem);
+        }
+        .contact-info{
+            @include gridContainer(center,center,3,1,2rem);
+        }
+    }
+    .footer{
+        .footer-groups{
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
+            justify-content: center;
+            align-items: baseline;
+        }
+    }
+  }
