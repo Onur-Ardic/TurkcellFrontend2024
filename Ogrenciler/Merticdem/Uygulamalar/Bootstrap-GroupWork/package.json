@@ -1,7 +1,6 @@
 {
   "name": "bootstrap-groupwork",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass -w scss:css"
@@ -13,5 +12,6 @@
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "sass": "^1.75.0"
-  }
+  },
+  "description": ""
 }
