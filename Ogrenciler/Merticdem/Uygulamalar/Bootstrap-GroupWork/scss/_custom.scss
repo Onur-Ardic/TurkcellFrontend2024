@@ -3,8 +3,13 @@
 * {
   font-family: "Roboto", sans-serif;
 }
-
-p {
+.container {
+  max-width: 80%;
+}
+.p-color-gray {
+  color: #777777;
+}
+.p-color-light {
   color: #f9f9ff;
   opacity: 0.6;
 }
@@ -13,4 +18,13 @@ p {
 }
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
   display: block;
+}
+.p-225 {
+  padding: 225px 0px;
+}
+.p-120 {
+  padding: 120px 0px;
+}
+.fs-14 {
+  font-size: 14px;
 }
