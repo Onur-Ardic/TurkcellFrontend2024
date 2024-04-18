@@ -1,15 +1,16 @@
 {
   "name": "task8",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "sass -w scss:css"
+    "sass": "sass -w scss:css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.3"
-  }
+    "bootstrap": "^5.3.3",
+    "sass": "^1.75.0"
+  },
+  "description": ""
 }

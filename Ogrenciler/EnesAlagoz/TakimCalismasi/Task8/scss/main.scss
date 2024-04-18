@@ -1,5 +1,67 @@
-@import "bt_overrides";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "custom";
+@import "./bs_overrides", "../node_modules/bootstrap/scss/bootstrap.scss", "./custom";
 
-
+* {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none !important;
+}
+h2 {
+    font-size: 32px;
+}
+.button-hover {
+    transition: 0.2s all ease-in-out;
+    &:hover {
+        color: $main-color !important;
+    }
+}
+.button-hover-2 {
+    transition: 0.2s all ease-in-out;
+    &:hover {
+        background-color: $main-color !important;
+        color: white !important;
+    }
+}
+.my-card {
+    &:hover {
+        transition: 0.5s all ease-in-out;
+        box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    }
+}
+.my-card-2 {
+    &:hover {
+        transition: 0.1s all ease;
+        border-top: 3px solid $main-color !important;
+        .get-started-button {
+            visibility: visible !important;
+        }
+        .card-body {
+            h2,
+            span {
+                color: $main-color !important;
+            }
+        }
+    }
+}
+.top-header {
+    a {
+        &:hover {
+            transition: 0.5s all ease-in-out;
+            color: $main-color !important;
+        }
+    }
+}
+.top-services-section {
+   background-color: $main-color;
+}
+@media screen and (max-width: 578px) {
+    .top-header {
+        display: none;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .banner-img {
+        display: none;
+    }
+}
