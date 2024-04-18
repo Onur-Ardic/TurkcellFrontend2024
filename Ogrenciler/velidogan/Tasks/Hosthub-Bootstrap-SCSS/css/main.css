@@ -14746,4 +14746,40 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.feature .card {
+  transition: all 1s;
+}
+.feature .card:hover {
+  box-shadow: 0 10px 30px 0 rgba(98, 71, 234, 0.1);
+}
+
+.price .col .card-border-top,
+.price .col .card-border-top + div {
+  visibility: hidden;
+}
+.price .col:hover .card-border-top,
+.price .col:hover .card-border-top + div {
+  visibility: visible;
+  z-index: 5;
+}
+.price .col:hover .sterlin {
+  color: #6247ea;
+}
+
+.solutions button:hover {
+  background-color: #6247ea;
+  color: #fff;
+  border-color: #6247ea;
+}
+
+.client .card {
+  transition: all 1s;
+}
+.client .card:hover {
+  box-shadow: 0 10px 30px 0 rgba(98, 71, 234, 0.1);
+}
+.client .card .col:first-child {
+  max-width: 335px;
+}
+
 /*# sourceMappingURL=main.css.map */
