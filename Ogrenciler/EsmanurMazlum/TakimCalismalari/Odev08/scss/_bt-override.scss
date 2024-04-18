@@ -1,0 +1,17 @@
+$warning: #ec9c5f;
+$primary: #6247ea;
+$secondary: #777777;
+$black: #222222;
+
+
+@mixin container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card {
+  width: 260px;
+}
