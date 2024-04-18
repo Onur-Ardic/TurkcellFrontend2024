@@ -6,7 +6,7 @@ a {
 }
 // Transition olmasını istediğimiz elementler için
 .transition {
-  transition: all 250ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 .link {
   &:hover,
@@ -27,6 +27,13 @@ a {
         color: $dark !important;
       }
     }
+  }
+}
+// Hoverda backgroundı mor yapar
+.hover-primary-button {
+  &:hover {
+    background-color: $primary !important;
+    color: #fff !important;
   }
 }
 .pricing {

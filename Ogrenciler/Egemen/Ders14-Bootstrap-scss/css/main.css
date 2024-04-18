@@ -11829,7 +11829,7 @@ a {
 }
 
 .transition {
-  transition: all 250ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 .link:hover, .link.active {
@@ -11846,6 +11846,11 @@ a {
 }
 .hover-shadow-card:hover.top-services-card * {
   color: #222222 !important;
+}
+
+.hover-primary-button:hover {
+  background-color: #6247ea !important;
+  color: #fff !important;
 }
 
 .pricing .card::before {
