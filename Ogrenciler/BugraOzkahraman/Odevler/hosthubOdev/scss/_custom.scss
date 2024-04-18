@@ -1,0 +1,57 @@
+.solution {
+  .container {
+    padding: 120px 120px;
+    .solution-text {
+      p {
+        opacity: 0.7;
+      }
+      .btn {
+        &:hover {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}
+.client {
+  .container {
+    .row {
+      padding: 120px 60px;
+      .left {
+        h1 {
+          font-size: 36px;
+        }
+      }
+      .col {
+        border: 1px solid #eeeeee;
+        &:hover {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+      }
+    }
+  }
+}
+.services {
+  background: #6247ea;
+  background-image: url(../images/services.webp);
+  .container {
+    .services-cards {
+      .col {
+        background: rgba(255, 255, 255, 0.1);
+        p {
+          opacity: 0.6;
+        }
+        &:hover {
+          background-color: #fff;
+          .text-light {
+            color: black !important;
+          }
+          .text-white {
+            color: black !important;
+          }
+        }
+      }
+    }
+  }
+}
