@@ -2,25 +2,52 @@ $custom-colors: (
   "bluish-purple": #6247ea,
   "indian-yellow": #ec9d5f,
   "blue-harcoal": #04091e,
+  "soft-peach": #eee,
+  "milk-white": #fafcff,
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 $h12-font-size: $font-size-base * 0.75;
 $h14-font-size: $font-size-base * 0.9;
+$h20-font-size: $font-size-base * 1.25;
 $h36-font-size: $font-size-base * 2.25;
 $custom-sizes: (
   12: $h12-font-size,
   14: $h14-font-size,
+  20: $h14-font-size,
   36: $h36-font-size,
 );
 $font-sizes: map-merge($font-sizes, $custom-sizes);
 
-$spacers: (
+$custom-spacers: (
   20: $spacer * 1.25,
   30: $spacer * 1.9,
   40: $spacer * 2.5,
   60: $spacer * 3.75,
   120: $spacer * 7.5,
-  225: $spacer * 10
+  225: $spacer * 10,
 );
 $spacers: map-merge($spacers, $custom-spacers);
+
+$custom-position-values: (
+  37: 37%,
+  60: 60%,
+);
+$position-values: map-merge($position-values, $custom-position-values);
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px,
+//   3xl: 1620px
+// );
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1140px,
+//   3xl: 1650px,
+// );
