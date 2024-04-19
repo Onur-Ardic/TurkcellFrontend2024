@@ -1,0 +1,35 @@
+$custom-spacers: (
+    12: $spacer * .75,
+    15: $spacer * .94,
+    20: $spacer * 1.25,
+    25: $spacer * 1.56,
+    30: $spacer * 1.875,
+    40: $spacer * 2.5,
+    50: $spacer * 3.125,
+    60: $spacer * 3.75,
+    75: $spacer * 4.7,
+    120: $spacer * 7.5,
+);
+$spacers: map-merge($spacers, $custom-spacers);
+
+$custom-colors: (
+    "light-orange": #ec9c5f,
+    "light-purple": #6247ea,
+    "gray":#777777,
+    "black-nero": #222222,
+    "off-white": #fafcff,
+    "dark-blue": #04091e
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$h12-font-size: $font-size-base * 0.75;
+$h14-font-size: $font-size-base * 0.90;
+$h20-font-size: $font-size-base * 1.25;
+$h36-font-size: $font-size-base * 2.25;
+$custom-sizes: (
+  12: $h12-font-size,
+  14: $h14-font-size,
+  20: $h14-font-size,
+  36: $h36-font-size,
+);
+$font-sizes: map-merge($font-sizes, $custom-sizes);

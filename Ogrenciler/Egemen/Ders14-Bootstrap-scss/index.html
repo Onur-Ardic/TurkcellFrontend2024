@@ -1,567 +1,665 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Starter Template</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <div class="bg-warning d-none d-sm-block">
-      <div class="container">
-        <div class="top-menu lh-lg d-flex justify-content-between">
-          <div class="float-left">
-            <a href="#" class="me-5 text-white fs-6 link">+880 1234 654 953</a>
-            <a href="#" class="text-white fs-6 link">support@colorlib.com</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Starter Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div class="bg-warning d-none d-sm-block">
+    <div class="container">
+      <div class="top-menu lh-lg d-flex justify-content-between">
+        <div class="float-left">
+          <a href="#" class="me-5 text-white fs-6 link">+880 1234 654 953</a>
+          <a href="#" class="text-white fs-6 link">support@colorlib.com</a>
+        </div>
+        <div class="float-right bg-primary px-4">
+          <a href="#" class="text-white fs-6">Purchase Hosting</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://preview.colorlib.com/theme/hosthub/img/logo.png.webp" alt="logo" class="img-fluid" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse fs-6 text-uppercase fw-semibold text-dark" id="main-nav">
+        <ul class="navbar-nav ms-auto d-flex gap-2">
+          <li class="nav-item">
+            <a class="nav-link link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link text-dark" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link text-dark" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link text-dark" href="#">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link text-dark" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link text-dark" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="bi bi-search"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="home-banner py-6 bg-primary py-7">
+    <div class="container">
+      <div class="row banner-content">
+        <div class="col-lg-5">
+          <h2 class="fs-1 text-uppercase text-white my-3">
+            We’re Web Hosting<br />Professionals
+          </h2>
+          <p class="text-light fw-light fs-5 mb-4">
+            inappropriate behavior is often laughed off as “boys will be
+            boys,” women face higher conduct standards especially in the
+            workplace. That’s why it’s crucial that, as women.
+          </p>
+          <a href="#" class="text-white bg-warning link fs-6 px-5 py-3 rounded transition">Explore Our Features</a>
+        </div>
+        <div class="col-lg-7 d-none d-lg-block">
+          <img src="https://preview.colorlib.com/theme/hosthub/img/banner/banner-map.png.webp" alt="banner-img"
+            class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feature py-6">
+    <div class="container">
+      <div class="main-title row justify-content-center mb-5">
+        <div class="col-sm-7 text-center">
+          <h2 class="fs-1 text-dark mb-3">
+            Some Features that Made us Unique
+          </h2>
+          <p class="fs-5 text-secondary">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <div class="card border-light hover-shadow-card transition">
+            <div class="card-body py-5 px-4">
+              <h5 class="card-title fs-2 text-dark mb-4">
+                Expert Technicians
+              </h5>
+              <p class="card-text fs-5 text-secondary">
+                Usage of the Internet is becoming more common due to rapid
+                advancement of technology and power of the Internet is
+                becoming more common due to rapid advancement.
+              </p>
+            </div>
           </div>
-          <div class="float-right bg-primary px-4">
-            <a href="#" class="text-white fs-6">Purchase Hosting</a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="card border-light">
+            <div class="card-body py-5 px-4 hover-shadow-card transition">
+              <h5 class="card-title fs-2 text-dark mb-4">
+                Expert Technicians
+              </h5>
+              <p class="card-text fs-5 text-secondary">
+                Usage of the Internet is becoming more common due to rapid
+                advancement of technology and power of the Internet is
+                becoming more common due to rapid advancement.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 hover-shadow-card transition">
+          <div class="card border-light">
+            <div class="card-body py-5 px-4">
+              <h5 class="card-title fs-2 text-dark mb-4">
+                Expert Technicians
+              </h5>
+              <p class="card-text fs-5 text-secondary">
+                Usage of the Internet is becoming more common due to rapid
+                advancement of technology and power of the Internet is
+                becoming more common due to rapid advancement.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 hover-shadow-card transition">
+          <div class="card border-light">
+            <div class="card-body py-5 px-4">
+              <h5 class="card-title fs-2 text-dark mb-4">
+                Expert Technicians
+              </h5>
+              <p class="card-text fs-5 text-secondary">
+                Usage of the Internet is becoming more common due to rapid
+                advancement of technology and power of the Internet is
+                becoming more common due to rapid advancement.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img
-            src="https://preview.colorlib.com/theme/hosthub/img/logo.png.webp"
-            alt="logo"
-            class="img-fluid"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse fs-6 text-uppercase fw-semibold text-dark"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav ms-auto d-flex gap-2">
-            <li class="nav-item">
-              <a class="nav-link link active" aria-current="page" href="#"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link text-dark" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link text-dark" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link text-dark" href="#">Pages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link text-dark" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link text-dark" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link"><i class="bi bi-search"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <section class="home-banner section bg-primary">
-      <div class="container">
-        <div class="row banner-content">
-          <div class="col-lg-5">
-            <h2 class="fs-1 text-uppercase text-white my-3">
-              We’re Web Hosting<br />Professionals
-            </h2>
-            <p class="text-light fw-light fs-5 mb-4">
-              inappropriate behavior is often laughed off as “boys will be
-              boys,” women face higher conduct standards especially in the
-              workplace. That’s why it’s crucial that, as women.
-            </p>
-            <a
-              href="#"
-              class="text-white bg-warning link fs-6 px-5 py-3 rounded"
-              >Explore Our Features</a
-            >
-          </div>
-          <div class="col-lg-7 d-none d-lg-block">
-            <img
-              src="https://preview.colorlib.com/theme/hosthub/img/banner/banner-map.png.webp"
-              alt="banner-img"
-              class="img-fluid"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="feature section">
-      <div class="container">
-        <div class="main-title row justify-content-center mb-5">
-          <div class="col-7 text-center">
-            <h2 class="fs-1 text-dark mb-3">
-              Some Features that Made us Unique
-            </h2>
-            <p class="fs-5 text-secondary">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-light">
-              <div class="card-body py-5 px-4">
-                <h5 class="card-title fs-2 text-dark mb-4">
-                  Expert Technicians
-                </h5>
-                <p class="card-text fs-5 text-secondary">
-                  Usage of the Internet is becoming more common due to rapid
-                  advancement of technology and power of the Internet is
-                  becoming more common due to rapid advancement.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-light">
-              <div class="card-body py-5 px-4">
-                <h5 class="card-title fs-2 text-dark mb-4">
-                  Expert Technicians
-                </h5>
-                <p class="card-text fs-5 text-secondary">
-                  Usage of the Internet is becoming more common due to rapid
-                  advancement of technology and power of the Internet is
-                  becoming more common due to rapid advancement.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-light">
-              <div class="card-body py-5 px-4">
-                <h5 class="card-title fs-2 text-dark mb-4">
-                  Expert Technicians
-                </h5>
-                <p class="card-text fs-5 text-secondary">
-                  Usage of the Internet is becoming more common due to rapid
-                  advancement of technology and power of the Internet is
-                  becoming more common due to rapid advancement.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-light">
-              <div class="card-body py-5 px-4">
-                <h5 class="card-title fs-2 text-dark mb-4">
-                  Expert Technicians
-                </h5>
-                <p class="card-text fs-5 text-secondary">
-                  Usage of the Internet is becoming more common due to rapid
-                  advancement of technology and power of the Internet is
-                  becoming more common due to rapid advancement.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="pricing section bg-body-tertiary">
-      <div class="container">
-        <div class="main-title row justify-content-center mb-5">
-          <div class="col-7 text-center">
-            <h2 class="fs-1 text-dark mb-3">
-              Some Features that Made us Unique
-            </h2>
-            <p class="fs-5 text-secondary">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div class="price-inner row">
-            <div class="col-lg-3 p-0 col-md-6 col-12">
-              <div class="item">
-                <div class="card text-start px-4 py-5 border-0">
-                  <div class="card-body">
-                    <h5 class="card-title text-dark fs-2 mb-3">Basic</h5>
-                    <h6 class="card-subtitle mb-4 text-body-secondary fs-5">
-                      Individuals/Freelancers
-                    </h6>
-                    <h2 class="fs-1 text-dark mb-5 transition">
-                      £39<span class="fs-5 text-secondary">/mo</span>
-                    </h2>
-                    <ul class="list-unstyled">
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary">RAM 1 GB</a>
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary">Core CPU 1</a>
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary"
-                          >SSD Storage 20 GB</a
-                        >
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary"
-                          >Transfer 1 TB</a
-                        >
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary"
-                          >Network In 40 Gb</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <a
-                  class="d-none bg-primary price_btn text-center py-3 fs-6 rounded-bottom text-white"
-                  href="#"
-                >
-                  Get Started
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 p-0 col-md-6 col-12">
-              <div class="item">
-                <div class="card text-start px-4 py-5 border-0">
-                  <div class="card-body">
-                    <h5 class="card-title text-dark fs-2 mb-3">Basic</h5>
-                    <h6 class="card-subtitle mb-4 text-body-secondary fs-5">
-                      Individuals/Freelancers
-                    </h6>
-                    <h2 class="fs-1 text-dark mb-5 transition">
-                      £39<span class="fs-5 text-secondary">/mo</span>
-                    </h2>
-                    <ul class="list-unstyled">
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary">RAM 1 GB</a>
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary">Core CPU 1</a>
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary"
-                          >SSD Storage 20 GB</a
-                        >
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary"
-                          >Transfer 1 TB</a
-                        >
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary"
-                          >Network In 40 Gb</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <a
-                  class="d-none bg-primary price_btn text-center py-3 fs-6 rounded-bottom text-white"
-                  href="#"
-                >
-                  Get Started
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 p-0 col-md-6 col-12">
-              <div class="item">
-                <div class="card text-start px-4 py-5 border-0">
-                  <div class="card-body">
-                    <h5 class="card-title text-dark fs-2 mb-3">Basic</h5>
-                    <h6 class="card-subtitle mb-4 text-body-secondary fs-5">
-                      Individuals/Freelancers
-                    </h6>
-                    <h2 class="fs-1 text-dark mb-5 transition">
-                      £39<span class="fs-5 text-secondary">/mo</span>
-                    </h2>
-                    <ul class="list-unstyled">
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary">RAM 1 GB</a>
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary">Core CPU 1</a>
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary"
-                          >SSD Storage 20 GB</a
-                        >
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary"
-                          >Transfer 1 TB</a
-                        >
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary"
-                          >Network In 40 Gb</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <a
-                  class="d-none bg-primary price_btn text-center py-3 fs-6 rounded-bottom text-white"
-                  href="#"
-                >
-                  Get Started
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 p-0 col-md-6 col-12">
-              <div class="item">
-                <div class="card text-start px-4 py-5 border-0">
-                  <div class="card-body">
-                    <h5 class="card-title text-dark fs-2 mb-3">Basic</h5>
-                    <h6 class="card-subtitle mb-4 text-body-secondary fs-5">
-                      Individuals/Freelancers
-                    </h6>
-                    <h2 class="fs-1 text-dark mb-5 transition">
-                      £39<span class="fs-5 text-secondary">/mo</span>
-                    </h2>
-                    <ul class="list-unstyled">
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary">RAM 1 GB</a>
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary">Core CPU 1</a>
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary"
-                          >SSD Storage 20 GB</a
-                        >
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary"
-                          >Transfer 1 TB</a
-                        >
-                      </li>
-                      <li class="mb-3">
-                        <a href="#" class="fs-5 text-secondary"
-                          >Network In 40 Gb</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <a
-                  class="d-none bg-primary price_btn text-center py-3 fs-6 rounded-bottom text-white"
-                  href="#"
-                >
-                  Get Started
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="custom-solution section bg-warning">
-      <div class="main-title row justify-content-center mb-5">
-        <div class="col-8 text-center">
-          <h2 class="fs-1 text-white mb-3">Looking for a Custom Solution?</h2>
-          <p class="fs-5 text-white opacity-50 mb-5">
+  </section>
+  <section class="pricing bg-body-tertiary py-6">
+    <div class="container">
+      <div class="main-title row justify-content-center">
+        <div class="col-sm-7 text-center mb-5">
+          <h2 class="fs-1 text-dark mb-3">
+            Some Features that Made us Unique
+          </h2>
+          <p class="fs-5 text-secondary">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <a href="#" class="text-dark bg-white link fs-6 px-5 py-3 fw-medium"
-            >Request Free Consultation</a
-          >
         </div>
-      </div>
-    </section>
-
-    <section class="say-about-us section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <h3 class="fs-1 py-3">
-              What our Client's <br />
-              Say about us
-            </h3>
-            <p class="fs-5 text-secondary fw-light">
-              Acres of Diamonds… you’ve read the famous story, or at least had
-              it related to you. A farmer hears tales of diamonds and begins
-              dreaming.
-            </p>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="card border-light">
-              <div class="card-body py-5 px-4">
-                <h5 class="card-title fs-2 text-dark mb-3">Nellie Vega</h5>
-                <h6 class="card-subtitle mb-4 fs-5 text-secondary fw-light">
-                  Head of Marketing, Apple Inc.
-                </h6>
-                <p class="card-text fs-5 text-secondary fw-light">
-                  “The following article covers a topic that has recently moved
-                  to center stage at least it seems that way. If you’ve been”
-                </p>
+        <div class="price-inner row">
+          <div class="col-lg-3 p-0 col-md-6 col-12">
+            <div class="item">
+              <div class="card text-start px-4 py-5 border-0">
+                <div class="card-body">
+                  <h5 class="card-title text-dark fs-2 mb-3">Basic</h5>
+                  <h6 class="card-subtitle mb-4 text-body-secondary fs-5">
+                    Individuals/Freelancers
+                  </h6>
+                  <h2 class="fs-1 text-dark mb-5 transition">
+                    £39<span class="fs-5 text-secondary">/mo</span>
+                  </h2>
+                  <ul class="list-unstyled">
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">RAM 1 GB</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">Core CPU 1</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">SSD Storage 20 GB</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">Transfer 1 TB</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">Network In 40 Gb</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+              <a class="opacity-0 d-block bg-primary price_btn text-center py-3 fs-6 rounded-bottom text-white transition"
+                href="#">
+                Get Started
+              </a>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="card border-light">
-              <div class="card-body py-5 px-4">
-                <h5 class="card-title fs-2 text-dark mb-3">Nellie Vega</h5>
-                <h6 class="card-subtitle mb-4 fs-5 text-secondary fw-light">
-                  Estelle Andrews
-                </h6>
-                <p class="card-text fs-5 text-secondary fw-light">
-                  “The following article covers a topic that has recently moved
-                  to center stage at least it seems that way. If you’ve been”
-                </p>
+
+          <div class="col-lg-3 p-0 col-md-6 col-12">
+            <div class="item">
+              <div class="card text-start px-4 py-5 border-0">
+                <div class="card-body">
+                  <h5 class="card-title text-dark fs-2 mb-3">Basic</h5>
+                  <h6 class="card-subtitle mb-4 text-body-secondary fs-5">
+                    Individuals/Freelancers
+                  </h6>
+                  <h2 class="fs-1 text-dark mb-5 transition">
+                    £39<span class="fs-5 text-secondary">/mo</span>
+                  </h2>
+                  <ul class="list-unstyled">
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">RAM 1 GB</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">Core CPU 1</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">SSD Storage 20 GB</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">Transfer 1 TB</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">Network In 40 Gb</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+              <a class="opacity-0 d-block bg-primary price_btn text-center py-3 fs-6 rounded-bottom text-white transition"
+                href="#">
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 p-0 col-md-6 col-12">
+            <div class="item">
+              <div class="card text-start px-4 py-5 border-0">
+                <div class="card-body">
+                  <h5 class="card-title text-dark fs-2 mb-3">Basic</h5>
+                  <h6 class="card-subtitle mb-4 text-body-secondary fs-5">
+                    Individuals/Freelancers
+                  </h6>
+                  <h2 class="fs-1 text-dark mb-5 transition">
+                    £39<span class="fs-5 text-secondary">/mo</span>
+                  </h2>
+                  <ul class="list-unstyled">
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">RAM 1 GB</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">Core CPU 1</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">SSD Storage 20 GB</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">Transfer 1 TB</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">Network In 40 Gb</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a class="opacity-0 d-block bg-primary price_btn text-center py-3 fs-6 rounded-bottom text-white transition"
+                href="#">
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 p-0 col-md-6 col-12">
+            <div class="item">
+              <div class="card text-start px-4 py-5 border-0">
+                <div class="card-body">
+                  <h5 class="card-title text-dark fs-2 mb-3">Basic</h5>
+                  <h6 class="card-subtitle mb-4 text-body-secondary fs-5">
+                    Individuals/Freelancers
+                  </h6>
+                  <h2 class="fs-1 text-dark mb-5 transition">
+                    £39<span class="fs-5 text-secondary">/mo</span>
+                  </h2>
+                  <ul class="list-unstyled">
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">RAM 1 GB</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">Core CPU 1</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">SSD Storage 20 GB</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">Transfer 1 TB</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="fs-5 text-secondary">Network In 40 Gb</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a class="opacity-0 d-block bg-primary price_btn text-center py-3 fs-6 rounded-bottom text-white transition"
+                href="#">
+                Get Started
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section
-      class="top-services section bg-primary"
-      style="
+  <section class="custom-solution bg-warning py-6">
+    <div class="main-title row justify-content-center mb-5 mx-0">
+      <div class="col-sm-5 text-center">
+        <h2 class="fs-1 text-white mb-3">Looking for a Custom Solution?</h2>
+        <p class="fs-5 text-white opacity-50 mb-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation
+        </p>
+        <a href="#" class="text-dark bg-white link fs-6 px-5 py-3 fw-medium hover-primary-button transition">Request
+          Free Consultation</a>
+      </div>
+    </div>
+  </section>
+  <section class="say-about-us py-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h3 class="fs-1 py-3">
+            What our Client's <br />
+            Say about us
+          </h3>
+          <p class="fs-5 text-secondary fw-light">
+            Acres of Diamonds… you’ve read the famous story, or at least had
+            it related to you. A farmer hears tales of diamonds and begins
+            dreaming.
+          </p>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card border-light hover-shadow-card transition">
+            <div class="card-body py-5 px-4">
+              <h5 class="card-title fs-2 text-dark mb-3">Nellie Vega</h5>
+              <h6 class="card-subtitle mb-4 fs-5 text-secondary fw-light">
+                Head of Marketing, Apple Inc.
+              </h6>
+              <p class="card-text fs-5 text-secondary fw-light">
+                “The following article covers a topic that has recently moved
+                to center stage at least it seems that way. If you’ve been”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card border-light">
+            <div class="card-body py-5 px-4 hover-shadow-card transition">
+              <h5 class="card-title fs-2 text-dark mb-3">Nellie Vega</h5>
+              <h6 class="card-subtitle mb-4 fs-5 text-secondary fw-light">
+                Estelle Andrews
+              </h6>
+              <p class="card-text fs-5 text-secondary fw-light">
+                “The following article covers a topic that has recently moved
+                to center stage at least it seems that way. If you’ve been”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="top-services py-6 bg-primary" style="
         background: url(https://preview.colorlib.com/theme/hosthub/img/map-bg.png);
-      "
-    >
-      <div class="container">
-        <div class="main-title row justify-content-center mb-5">
-          <div class="col-6 text-center">
-            <h2 class="fs-1 text-white mb-3">Top Services We Provided</h2>
-            <p class="fs-5 text-white fw-light text-opacity-50">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+      ">
+    <div class="container">
+      <div class="main-title row justify-content-center mb-5">
+        <div class="col-sm-7 text-center">
+          <h2 class="fs-1 text-white mb-3">Top Services We Provided</h2>
+          <p class="fs-5 text-white fw-light text-opacity-50">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <div
+            class="card top-services-card transition border-light border-opacity-25 text-bg-light bg-opacity-10 hover-shadow-card transition">
+            <div class="card-body py-5 px-4 pe-5">
+              <h5 class="card-title fs-2 text-white mb-4">
+                <i class="bi bi-cloud pe-2"></i>
+                Cloud Hosting
+              </h5>
+              <p class="card-text fs-5 text-white fw-light text-opacity-50">
+                Usage of the Internet is becoming more common due to rapid
+                advancement of technology and power.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6">
-            <div
-              class="card border-light border-opacity-25 text-bg-light bg-opacity-10"
-            >
-              <div class="card-body py-5 px-4 pe-5">
-                <h5 class="card-title fs-2 text-white mb-4">
-                  <i class="bi bi-cloud pe-2"></i>
-                  Cloud Hosting
-                </h5>
-                <p class="card-text fs-5 text-white fw-light text-opacity-50">
-                  Usage of the Internet is becoming more common due to rapid
-                  advancement of technology and power.
-                </p>
-              </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div
+            class="card top-services-card transition border-light border-opacity-25 text-bg-light bg-opacity-10 hover-shadow-card transition">
+            <div class="card-body py-5 px-4 pe-5">
+              <h5 class="card-title fs-2 text-white mb-4">
+                <i class="bi bi-globe-americas pe-2"></i>
+                Web Hosting
+              </h5>
+              <p class="card-text fs-5 text-white fw-light text-opacity-50">
+                Usage of the Internet is becoming more common due to rapid
+                advancement of technology and power.
+              </p>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-4 col-md-6">
-            <div
-              class="card border-light border-opacity-25 text-bg-light bg-opacity-10"
-            >
-              <div class="card-body py-5 px-4 pe-5">
-                <h5 class="card-title fs-2 text-white mb-4">
-                  <i class="bi bi-globe-americas pe-2"></i>
-                  Web Hosting
-                </h5>
-                <p class="card-text fs-5 text-white fw-light text-opacity-50">
-                  Usage of the Internet is becoming more common due to rapid
-                  advancement of technology and power.
-                </p>
-              </div>
+        <div class="col-lg-4 col-md-6">
+          <div
+            class="card top-services-card transition border-light border-opacity-25 text-bg-light bg-opacity-10 hover-shadow-card transition">
+            <div class="card-body py-5 px-4 pe-5">
+              <h5 class="card-title fs-2 text-white mb-4">
+                <i class="bi bi-display pe-2"></i>
+                Cloud Computing
+              </h5>
+              <p class="card-text fs-5 text-white fw-light text-opacity-50">
+                Usage of the Internet is becoming more common due to rapid
+                advancement of technology and power.
+              </p>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-4 col-md-6">
-            <div
-              class="card border-light border-opacity-25 text-bg-light bg-opacity-10"
-            >
-              <div class="card-body py-5 px-4 pe-5">
-                <h5 class="card-title fs-2 text-white mb-4">
-                  <i class="bi bi-display pe-2"></i>
-                  Cloud Computing
-                </h5>
-                <p class="card-text fs-5 text-white fw-light text-opacity-50">
-                  Usage of the Internet is becoming more common due to rapid
-                  advancement of technology and power.
-                </p>
-              </div>
+        <div class="col-lg-4 col-md-6">
+          <div
+            class="card top-services-card transition border-light border-opacity-25 text-bg-light bg-opacity-10 hover-shadow-card transition">
+            <div class="card-body py-5 px-4 pe-5">
+              <h5 class="card-title fs-2 text-white mb-4">
+                <i class="bi bi-inbox pe-2"></i>
+                VPS Hosting
+              </h5>
+              <p class="card-text fs-5 text-white fw-light text-opacity-50">
+                Usage of the Internet is becoming more common due to rapid
+                advancement of technology and power.
+              </p>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-4 col-md-6">
-            <div
-              class="card border-light border-opacity-25 text-bg-light bg-opacity-10"
-            >
-              <div class="card-body py-5 px-4 pe-5">
-                <h5 class="card-title fs-2 text-white mb-4">
-                  <i class="bi bi-inbox pe-2"></i>
-                  VPS Hosting
-                </h5>
-                <p class="card-text fs-5 text-white fw-light text-opacity-50">
-                  Usage of the Internet is becoming more common due to rapid
-                  advancement of technology and power.
-                </p>
-              </div>
+        <div class="col-lg-4 col-md-6">
+          <div
+            class="card top-services-card transition border-light border-opacity-25 text-bg-light bg-opacity-10 hover-shadow-card transition">
+            <div class="card-body py-5 px-4 pe-5">
+              <h5 class="card-title fs-2 text-white mb-4">
+                <i class="bi bi-bar-chart pe-2"></i>
+                Server Analytics
+              </h5>
+              <p class="card-text fs-5 text-white fw-light text-opacity-50">
+                Usage of the Internet is becoming more common due to rapid
+                advancement of technology and power.
+              </p>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-4 col-md-6">
-            <div
-              class="card border-light border-opacity-25 text-bg-light bg-opacity-10"
-            >
-              <div class="card-body py-5 px-4 pe-5">
-                <h5 class="card-title fs-2 text-white mb-4">
-                  <i class="bi bi-bar-chart pe-2"></i>
-                  Server Analytics
-                </h5>
-                <p class="card-text fs-5 text-white fw-light text-opacity-50">
-                  Usage of the Internet is becoming more common due to rapid
-                  advancement of technology and power.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div
-              class="card border-light border-opacity-25 text-bg-light bg-opacity-10"
-            >
-              <div class="card-body py-5 px-4 pe-5">
-                <h5 class="card-title fs-2 text-white mb-4">
-                  <i class="bi bi-brush pe-2"></i>
-                  Data Mining
-                </h5>
-                <p class="card-text fs-5 text-white fw-light text-opacity-50">
-                  Usage of the Internet is becoming more common due to rapid
-                  advancement of technology and power.
-                </p>
-              </div>
+        <div class="col-lg-4 col-md-6">
+          <div
+            class="card top-services-card transition border-light border-opacity-25 text-bg-light bg-opacity-10 hover-shadow-card transition">
+            <div class="card-body py-5 px-4 pe-5">
+              <h5 class="card-title fs-2 text-white mb-4">
+                <i class="bi bi-brush pe-2"></i>
+                Data Mining
+              </h5>
+              <p class="card-text fs-5 text-white fw-light text-opacity-50">
+                Usage of the Internet is becoming more common due to rapid
+                advancement of technology and power.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+  <section class="latest-post py-6">
+    <div class="container">
+      <div class="main-title row justify-content-center mb-5">
+        <div class="col-sm-7 text-center">
+          <h2 class="fs-1 text-black mb-3">Latest Posts from Our Blog</h2>
+          <p class="fs-5 text-black fw-light text-opacity-50">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="row l_blog_inner row-gap-3">
+        <div class="col-lg-4">
+          <div class="l_blog_item py-5 px-4 border border-light rounded hover-shadow-card">
+            <h6 class="bg-warning d-inline-block px-4 py-2 text-white rounded fw-light mb-3">10 April, 2018</h6>
+            <a href="#">
+              <h4 class="text-black fs-2 mb-4 link">Benjamin Franklin S Method Of Habit Formation</h4>
+            </a>
+            <p class="fs-5 text-secondary">
+              There are many kinds of narratives and organizing principles.
+              Science is driven by evidence gathered in experiments, and by
+              the falsification of extant theories and their
+            </p>
+            <div class="view_text fs-5">
+              <a href="#" class="text-secondary me-4"><i class="bi bi-eye-fill pe-2"></i>4.5k Views</a>
+              <a href="#" class="text-secondary me-4"><i class="bi bi-chat-dots-fill pe-2"></i></i>07</a>
+              <a href="#" class="text-secondary"><i class="bi bi-arrow-90deg-right pe-2"></i></i>362</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="l_blog_item py-5 px-4 border border-light rounded hover-shadow-card">
+            <h6 class="bg-warning d-inline-block px-4 py-2 text-white rounded fw-light mb-3">10 April, 2018</h6>
+            <a href="#">
+              <h4 class="text-black fs-2 mb-4 link">Benjamin Franklin S Method Of Habit Formation</h4>
+            </a>
+            <p class="fs-5 text-secondary">
+              There are many kinds of narratives and organizing principles.
+              Science is driven by evidence gathered in experiments, and by
+              the falsification of extant theories and their
+            </p>
+            <div class="view_text fs-5">
+              <a href="#" class="text-secondary me-4"><i class="bi bi-eye-fill pe-2"></i>4.5k Views</a>
+              <a href="#" class="text-secondary me-4"><i class="bi bi-chat-dots-fill pe-2"></i></i>07</a>
+              <a href="#" class="text-secondary"><i class="bi bi-arrow-90deg-right pe-2"></i></i>362</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="l_blog_item py-5 px-4 border border-light rounded hover-shadow-card">
+            <h6 class="bg-warning d-inline-block px-4 py-2 text-white rounded fw-light mb-3">10 April, 2018</h6>
+            <a href="#">
+              <h4 class="text-black fs-2 mb-4 link">Benjamin Franklin S Method Of Habit Formation</h4>
+            </a>
+            <p class="fs-5 text-secondary">
+              There are many kinds of narratives and organizing principles.
+              Science is driven by evidence gathered in experiments, and by
+              the falsification of extant theories and their
+            </p>
+            <div class="view_text fs-5">
+              <a href="#" class="text-secondary me-4"><i class="bi bi-eye-fill pe-2"></i>4.5k Views</a>
+              <a href="#" class="text-secondary me-4"><i class="bi bi-chat-dots-fill pe-2"></i></i>07</a>
+              <a href="#" class="text-secondary"><i class="bi bi-arrow-90deg-right pe-2"></i></i>362</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="logos py-6 bg-body-tertiary">
+    <div class="container">
+      <div class="row gap-4 justify-content-center">
+        <div class="col-lg-2 col-sm-4 text-center">
+          <img class="img-fluid mx-auto opacity-50 transition"
+            src="https://preview.colorlib.com/theme/hosthub/img/clients-logo/c-logo-1.png.webp" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 text-center">
+          <img class="img-fluid mx-auto opacity-50 transition"
+            src="https://preview.colorlib.com/theme/hosthub/img/clients-logo/c-logo-2.png.webp" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 text-center">
+          <img class="img-fluid mx-auto opacity-50 transition"
+            src="https://preview.colorlib.com/theme/hosthub/img/clients-logo/c-logo-4.png.webp" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 text-center">
+          <img class="img-fluid mx-auto opacity-50 transition"
+            src="https://preview.colorlib.com/theme/hosthub/img/clients-logo/c-logo-3.png.webp" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 text-center">
+          <img class="img-fluid mx-auto opacity-50 transition"
+            src="https://preview.colorlib.com/theme/hosthub/img/clients-logo/c-logo-5.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer class="footer py-6 bg-primary-subtle text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 mt-4">
+          <div class="single-footer-widget tp_widgets">
+            <h6 class="footer_title fs-2 mb-4">Top Products</h6>
+            <ul class="list list-unstyled fs-5 row row-gap-3 fw-light">
+              <li><a href="#" class="text-white">Managed Website</a></li>
+              <li><a href="#" class="text-white">Manage Reputation</a></li>
+              <li><a href="#" class="text-white">Power Tools</a></li>
+              <li><a href="#" class="text-white">Marketing Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-6 mt-4">
+          <div class="single-footer-widget news_widgets">
+            <h6 class="footer_title fs-2 mb-4">Newsletter</h6>
+            <p class="opacity-50 fs-5">You can trust us. we only send promo offers, not a single spam.</p>
+              <form>
+                <div class="row">
+                  <input class="rounded-pill px-2 py-2 col-lg-8 col-8 "placeholder="Your email address"
+                    required="" type="email">
+                  <button
+                    class="btn col-lg-3 col-4 ms-auto bg-primary rounded-pill text-white fs-6">Subscribe</button>
+                </div>
+              </form>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 mt-4 offset-lg-1">
+          <div class="single-footer-widget instafeed">
+            <h6 class="footer_title fs-2 mb-4">Instagram Feed</h6>
+            <ul class="list instafeed d-flex flex-wrap list-unstyled">
+              <li class="m-1"><img src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-01.jpg.webp"
+                  alt="" class="img-fluid"></li>
+              <li class="m-1"><img src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-02.jpg.webp"
+                  alt="" class="img-fluid"></li>
+              <li class="m-1"><img src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-03.jpg.webp"
+                  alt="" class="img-fluid"></li>
+              <li class="m-1"><img src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-04.jpg.webp"
+                  alt="" class="img-fluid"></li>
+              <li class="m-1"><img src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-05.jpg.webp"
+                  alt="" class="img-fluid"></li>
+              <li class="m-1"><img src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-06.jpg.webp"
+                  alt="" class="img-fluid"></li>
+              <li class="m-1"><img src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-07.jpg.webp"
+                  alt="" class="img-fluid"></li>
+              <li class="m-1"><img src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-08.jpg.webp"
+                  alt="" class="img-fluid"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row footer-bottom d-flex justify-content-between align-items-center pt-6 row-gap-3">
+        <p class="col-lg-8 col-md-8 footer-text m-0 fs-5 opacity-50">
+        Copyright ©2024 All rights reserved | This template is made with <i class="bi bi-heart text-primary"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        </p>
+        <div class="col-lg-4 col-md-4 footer-social text-md-end">
+        <a class="p-1 bg-dark" href="#"><i class="bi bi-google text-white"></i></a>
+        <a class="p-1 bg-dark" href="#"><i class="bi bi-twitter text-white"></i></a>
+        <a class="p-1 bg-dark" href="#"><i class="bi bi-dribbble text-white"></i></a>
+        <a class="p-1 bg-dark" href="#"><i class="bi bi-behance text-white"></i></a>
+        </div>
+        </div>
+    </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -1,0 +1,82 @@
+$bluish-purple: #6247ea;
+$blue-harcoal: #04091e;
+$dark-blue: #1e2235;
+$white: #fff;
+$lowWhite: rgba(255, 255, 255, 0.1);
+body {
+  font-family: "Roboto", sans-serif;
+}
+.feature {
+  .card {
+    transition: all 1s;
+    &:hover {
+      box-shadow: 0 10px 30px 0 rgba(98, 71, 234, 0.1);
+    }
+  }
+}
+.price {
+  .col {
+    .card-border-top,
+    .card-border-top + div {
+      visibility: hidden;
+    }
+    &:hover {
+      .card-border-top,
+      .card-border-top + div {
+        visibility: visible;
+        z-index: 5;
+      }
+      .sterlin {
+        color: $bluish-purple;
+      }
+    }
+  }
+}
+.solutions {
+  button:hover {
+    background-color: $bluish-purple;
+    color: $white;
+    border-color: $bluish-purple;
+  }
+}
+.client {
+  .card {
+    transition: all 1s;
+    &:hover {
+      box-shadow: 0 10px 30px 0 rgba(98, 71, 234, 0.1);
+    }
+    .col:first-child {
+      max-width: 335px;
+    }
+  }
+}
+.services {
+  background: url("https://preview.colorlib.com/theme/hosthub/img/map-bg.png.webp");
+  .card {
+    transition: all 0.5s;
+    background-color: $lowWhite;
+    color: $white;
+    &:hover {
+      color: $blue-harcoal;
+      background-color: $white;
+    }
+  }
+}
+.brands {
+  .col {
+    opacity: 0.5;
+    transition: all 1s;
+  }
+  .col:hover {
+    opacity: 1;
+  }
+}
+.footer {
+  .social-icons i {
+    background: $dark-blue;
+    transition: all 0.5s;
+    &:hover {
+      background: $bluish-purple;
+    }
+  }
+}

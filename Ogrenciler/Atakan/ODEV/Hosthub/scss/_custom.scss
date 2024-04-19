@@ -1,6 +1,98 @@
+$bluish-purple: #6247ea;
+$blue-harcoal: #04091e;
+$dark-blue: #1e2235;
+$white: #fff;
+$lowWhite: rgba(255, 255, 255, 0.1);
 * {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.7;
+}
+a {
+  text-decoration: none;
+}
+.pricing {
+  .col {
+    .card {
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 0;
+      border-left: 0;
+    }
+
+    .button-hidden {
+      visibility: hidden;
+    }
+    .card-title,
+    .mo {
+      color: $blue-harcoal;
+    }
+    .card {
+      border-top: 1px solid transparent;
+    }
+    &:hover {
+      .card {
+        border-top: 1px solid $bluish-purple;
+      }
+      .card-title,
+      .mo {
+        color: $bluish-purple;
+      }
+      .button-hidden {
+        visibility: visible;
+      }
+    }
+  }
+}
+.solution {
+  button {
+    color: black;
+    &:hover {
+      background: $bluish-purple;
+      color: $white;
+    }
+  }
+}
+.clients {
+  .col {
+    &:hover {
+      box-shadow: 1px 1px 10px 0px rgb(198, 198, 198);
+    }
+  }
+}
+.services {
+  background: url(https://preview.colorlib.com/theme/hosthub/img/map-bg.png.webp);
+  .col {
+    &:hover {
+      .card {
+        background-color: $white;
+        .card-body {
+          h4,
+          p {
+            color: black !important;
+          }
+        }
+      }
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      .card-body {
+        color: $white;
+        p {
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+  }
+}
+
+.brands {
+  .col {
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }

@@ -1,7 +1,10 @@
+$font-family-base: "Roboto", sans-serif !default;
+
 $warning: #ec9d5f;
 $primary: #6247ea;
 $dark: #222222;
 $secondary: #777777;
+$primary-bg-subtle: #04091e;
 
 $h6-font-size: 12px;
 $h5-font-size: 14px;
@@ -18,4 +21,16 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px,
   xxl: 1170px,
+);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6.25,
+  7: $spacer * 12,
 );

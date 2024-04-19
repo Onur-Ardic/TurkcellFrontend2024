@@ -1,0 +1,29 @@
+$warning: #ec9c5f;
+$primary: #6247ea;
+$secondary: #777777;
+$black: #222222;
+$bg-dark-blue: #04091e;
+
+
+@mixin container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card {
+  width: 260px;
+}
+
+.back-g::before {
+  content: "";
+  background: url("../assets/map-bg.png.webp") no-repeat scroll center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+}

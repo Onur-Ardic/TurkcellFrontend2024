@@ -1,0 +1,244 @@
+* {
+  list-style: none;
+  text-decoration: none;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.home {
+  padding: 225px 0px;
+}
+
+.head-text {
+  &:hover {
+    transition: 0.3s all ease-in-out;
+    color: $primary !important;
+  }
+}
+
+.nav-link {
+  &:hover {
+    transition: 0.3s all ease-in-out;
+    color: $primary !important;
+  }
+}
+
+.button-hover {
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    color: $primary !important;
+  }
+}
+
+.card {
+  &:hover {
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+    box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+    border-color: #fff;
+    -webkit-transition: all 300ms linear 0s;
+    -o-transition: all 300ms linear 0s;
+    transition: all 300ms linear 0s;
+  }
+}
+
+.card-2 {
+  border-top: 2px solid #fff !important;
+  &:hover {
+    transition: 0.1s all ease;
+    border-top: 3px solid $primary !important;
+    .get-started-button {
+      display: block !important;
+    }
+    .card {
+      .card-body {
+        h2,
+        span {
+          color: $primary !important;
+        }
+      }
+    }
+  }
+}
+
+.fs-nav-link {
+  font-size: 12px;
+}
+.p-120 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+@media screen and (max-width: 578px) {
+  .top-header {
+    display: none;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .banner-img {
+    display: none;
+  }
+}
+
+.solution {
+  padding: 100px 0px;
+  .container-md {
+    .solution-text {
+      p {
+        opacity: 0.7;
+      }
+      .btn {
+        transition: 0.5s ease-in-out;
+        &:hover {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}
+.client {
+  padding: 80px 0;
+  .container {
+    .client-card {
+      .left {
+        width: 390px;
+        height: 270px;
+        h1 {
+          font-size: 36px;
+        }
+      }
+      .col {
+        transition: 0.5s ease-in-out;
+        border: 1px solid #eeeeee;
+        &:hover {
+          box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+        }
+      }
+    }
+  }
+}
+.services {
+  background: #6247ea;
+  background-image: url(../images/services.webp);
+  .container {
+    .services-cards {
+      .col {
+        background: rgba(255, 255, 255, 0.1);
+        p {
+          opacity: 0.6;
+        }
+        transition: 0.5s ease-in-out;
+        &:hover {
+          background-color: #fff;
+          .text-light {
+            color: black !important;
+          }
+        }
+      }
+    }
+  }
+}
+.last-post-section {
+  padding-bottom: 100px;
+  font-family: "Roboto", sans-serif;
+  .container {
+    .last-post-body {
+      margin-top: 80px;
+      .col-lg-4 {
+        &:hover {
+          a {
+            h4 {
+              color: $primary !important;
+            }
+          }
+        }
+        .last-post-body-tab {
+          &:hover {
+            box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+            border-color: transparent;
+          }
+          border: 1px solid #eeeeee;
+          padding: 60px 30px;
+          .last-post-body-text {
+            h6 {
+              background-color: #ec9d5f;
+              border-radius: 3px;
+              display: inline-block;
+              padding: 7px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.client-logo-section {
+  background: #fafcff;
+  .container {
+    .client-logo-tab {
+      padding-top: 120px;
+      padding-bottom: 120px;
+      .client-logo {
+        opacity: 50%;
+        &:hover {
+          opacity: 100%;
+        }
+      }
+    }
+  }
+}
+.footer-section {
+  background: #04091e;
+  font-family: "Roboto", sans-serif;
+  .container {
+    .footer-body {
+      padding-top: 80px;
+      .footer-body-text {
+        .footer_title {
+          font-size: 30px;
+        }
+        .footer-form {
+          padding-top: 25px;
+          .footer-input {
+            input {
+              border: 1px solid #333333;
+              padding-right: 100px;
+              padding-left: 15px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+            }
+            .btn {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              &:hover {
+                background-color: #04091e !important;
+                color: #6247ea !important;
+                border-color: #6247ea !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      padding-bottom: 100px;
+      margin-top: 150px;
+      .footer-bottom-icon {
+        .text-white {
+          &:hover {
+            background-color: #6247ea !important;
+          }
+        }
+      }
+    }
+  }
+}

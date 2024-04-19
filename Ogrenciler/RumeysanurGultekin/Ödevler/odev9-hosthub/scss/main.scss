@@ -1,3 +1,104 @@
-@import "bt_overrides.scss";
+@import "bt_overrides";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "custom.scss";
+@import "custom";
+
+.last-post-section{
+    padding-bottom: 100px;
+    font-family: "Roboto", sans-serif;
+    .container{
+        .last-post-body{
+            margin-top: 80px;
+            .col-lg-4{
+                .last-post-body-tab{
+                    border: 1px solid #eeeeee;
+                    padding: 60px 30px;
+                    .last-post-body-text{
+                        h6{
+                            background-color: #ec9d5f;
+                            border-radius: 3px;
+                            display: inline-block;
+                            padding: 7px 20px;   
+                        }         
+                    }
+                }
+                &:hover{
+                    .last-post-body{
+                        .last-post-body-text{
+                            .text-decoration-none{
+                                .mb-3{
+                                    color: #6247ea;
+                                }
+                            } 
+                        }
+                    }
+                }   
+            }
+        }
+    }
+}
+.client-logo-section{
+    background: #fafcff;
+    .container{
+        .client-logo-tab{
+            padding-top: 120px;
+            padding-bottom: 120px;
+            .client-logo{
+                opacity: 50%;
+                &:hover{
+                    opacity: 100%;
+                }
+            }
+        }
+    }
+}
+.footer-section{
+    background: #04091e;
+    font-family: "Roboto", sans-serif ;
+    .container{
+        .footer-body{
+            padding-top: 80px;
+            .footer-body-text{
+                .footer_title{
+                    font-size: 30px;
+                }
+                .footer-form{
+                    padding-top: 25px;
+                    .footer-input{
+                        input{
+                            border: 1px solid #333333;
+                            padding-right: 220px;
+                            padding-left: 15px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                        }
+                        .btn{
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            &:hover{
+                                background-color:  #04091e ;
+                                color: #6247ea;
+                                border-color:  #6247ea ;
+                            }
+                        }
+                    }
+                    
+                }
+
+            }
+        }
+        .footer-bottom{
+            padding-bottom: 100px;
+            margin-top: 150px;
+                .footer-bottom-icon{
+                    .text-white{
+                        &:hover{
+                            background-color: #6247ea;
+                        }
+                    }
+                }
+        }
+        
+
+    }
+}
+

@@ -1,12 +1,8 @@
-* {
-  font-family: "Roboto", sans-serif;
-}
 a {
   text-decoration: none;
 }
-
 .transition {
-  transition: all 100ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 .link {
   &:hover,
@@ -14,46 +10,51 @@ a {
     color: $primary !important;
   }
 }
-.section {
-  padding: 100px 0;
-}
-.feature,
-.say-about-us {
-  .card {
-    &:hover {
-      box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
-      border-color: #fff !important;
+.hover-shadow-card {
+  &:hover {
+    box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+    background-color: #fff !important;
+    &.top-services-card {
+      * {
+        color: $dark !important;
+      }
     }
   }
 }
-
+.hover-primary-button {
+  &:hover {
+    background-color: $primary !important;
+    color: #fff !important;
+  }
+}
 .pricing {
-  .container {
-    .main-title {
-      .price-inner {
-        .card {
-          &::before {
-            content: "";
-            width: 1px;
-            background: #eeeeee;
-            height: 336px;
-            position: absolute;
-            right: 0px;
-            bottom: 0px;
-          }
-        }
-        .item {
-          &:hover {
-            h2 {
-              color: $primary !important;
-            }
-            border-top: 2px solid $primary;
-            .price_btn {
-              display: block !important;
-            }
-          }
-        }
+  .card {
+    &::before {
+      content: "";
+      width: 1px;
+      background: #eeeeee;
+      height: 336px;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+    }
+  }
+  .item {
+    &:hover {
+      h2 {
+        color: $primary !important;
       }
+      border-top: 2px solid $primary;
+      .price_btn {
+        opacity: 100% !important;
+      }
+    }
+  }
+}
+.logos {
+  img {
+    &:hover {
+      opacity: 1 !important;
     }
   }
 }
