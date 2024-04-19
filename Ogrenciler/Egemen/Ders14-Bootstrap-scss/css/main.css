@@ -12662,4 +12662,8 @@ a {
   opacity: 100% !important;
 }
 
+.logos img:hover {
+  opacity: 1 !important;
+}
+
 /*# sourceMappingURL=main.css.map */
