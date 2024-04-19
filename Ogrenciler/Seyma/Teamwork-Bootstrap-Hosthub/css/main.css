@@ -11852,6 +11852,10 @@ textarea.form-control-lg {
   color: #6246eb;
 }
 
+.navbar .container-fluid #navbarCollapse ul li a:hover, .navbar .container-sm #navbarCollapse ul li a:hover, .navbar .container-md #navbarCollapse ul li a:hover, .navbar .container-lg #navbarCollapse ul li a:hover, .navbar .container-xl #navbarCollapse ul li a:hover, .navbar .container-xxl #navbarCollapse ul li a:hover {
+  color: #6246eb !important;
+}
+
 #some-features .card {
   transition: all 300ms linear 0s;
 }
@@ -11930,7 +11934,7 @@ textarea.form-control-lg {
     display: none;
   }
   .home-banner .container img {
-    display: none;
+    display: none !important;
   }
   .home-banner .container .home-banner-title {
     padding-top: 0;

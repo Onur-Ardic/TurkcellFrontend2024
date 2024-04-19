@@ -13,6 +13,21 @@
     }
   }
 }
+.navbar{
+  .container-fluid{
+    #navbarCollapse{
+      ul{
+        li{
+          a:hover{
+            color: $primary !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 #some-features {
   .card {
     transition: all 300ms linear 0s;
@@ -95,7 +110,7 @@
   .home-banner {
     .container {
       img {
-        display: none;
+        display: none !important;
       }
       .home-banner-title {
         padding-top: 0;
