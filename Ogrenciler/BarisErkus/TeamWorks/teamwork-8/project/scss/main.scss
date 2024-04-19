@@ -3,7 +3,7 @@
 * {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    list-style: none;
+    list-style: none !important;
     text-decoration: none !important;
 }
 h2 {
@@ -20,6 +20,13 @@ h2 {
     &:hover {
         background-color: $main-color !important;
         color: white !important;
+    }
+}
+.button-hover-3 {
+    transition: 0.2s all ease-in-out;
+    &:hover {
+        background-color: black !important;
+        color: $main-color !important;
     }
 }
 .my-card {
