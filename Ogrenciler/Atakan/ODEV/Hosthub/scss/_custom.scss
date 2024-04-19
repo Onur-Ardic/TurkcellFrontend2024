@@ -20,11 +20,7 @@ a{
       border-bottom: 0;
       border-left: 0;
     }
-    .list-unstyled {
-      a {
-        text-decoration: none;
-      }
-    }
+    
     .button-hidden {
       visibility: hidden;
     }
@@ -59,9 +55,11 @@ a{
   }
 }
 .clients {
-  .col:hover {
+  .col{
+  &:hover {
     box-shadow: 1px 1px 10px 0px rgb(198, 198, 198);
   }
+}
 }
 .services {
   background: url(https://preview.colorlib.com/theme/hosthub/img/map-bg.png.webp);
@@ -87,4 +85,14 @@ a{
       }
     }
   }
+}
+
+.brands{
+  .col{
+    opacity:0.5;
+ 
+  &:hover {
+    opacity:1;
+  }
+}
 }

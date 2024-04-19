@@ -14767,9 +14767,6 @@ a {
   border-bottom: 0;
   border-left: 0;
 }
-.pricing .col .list-unstyled a {
-  text-decoration: none;
-}
 .pricing .col .button-hidden {
   visibility: hidden;
 }
@@ -14821,6 +14818,13 @@ a {
 }
 .services .col .card .card-body p {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.brands .col {
+  opacity: 0.5;
+}
+.brands .col:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
