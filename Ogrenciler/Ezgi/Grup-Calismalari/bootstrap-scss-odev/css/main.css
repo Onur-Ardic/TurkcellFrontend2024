@@ -11879,6 +11879,11 @@ ul li {
 .header-area .header-top {
   background-color: #ec9d5f;
 }
+@media screen and (max-width: 768px) {
+  .header-area .header-top {
+    display: none;
+  }
+}
 .header-area .header-top .float-start a {
   font-size: 12px;
   font-weight: 300;
@@ -11899,6 +11904,11 @@ ul li {
 .hero-area {
   background-color: #6247ea;
 }
+@media screen and (max-width: 768px) {
+  .hero-area .hero-img-mobile {
+    display: none;
+  }
+}
 .hero-area .hero-content {
   padding: 12rem 0;
 }
@@ -11914,9 +11924,24 @@ ul li {
   background-color: #ec9d5f;
   border-radius: 5px;
 }
+.hero-area .hero-content .hero-info .fw-medium {
+  transition: all 0.5s;
+}
+.hero-area .hero-content .hero-info .fw-medium:hover {
+  color: #6247ea;
+}
 
-.feature-area .feature-cards .card {
+.feature-area .feature-cards .card-body {
   border: 1px solid #eeeeee;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.feature-area .feature-cards .card-body:hover {
+  box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+  scale: 1.1;
+}
+.feature-area .feature-cards .card-body .card-title {
+  color: black;
 }
 
 .price-area {
@@ -11966,26 +11991,33 @@ ul li {
   border: 1px solid #eeeeee;
   border-radius: 10px;
   padding: 3rem 2rem;
+  transition: all 0.5s;
+}
+.client-says-area .client-says-inner .says-item:hover {
+  box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+  scale: 1.1;
 }
 
 .services-area {
   background-color: #6247ea;
   position: relative;
 }
-.services-area::before {
-  content: "";
-  background: url("https://preview.colorlib.com/theme/hosthub/img/map-bg.png.webp") no-repeat scroll center center;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  height: 100%;
-  width: 100%;
-}
 .services-area .services-inner .services-item {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 40px 60px 40px 40px;
   border: 1px solid #9381eb;
+  transition: all 0.5s;
+}
+.services-area .services-inner .services-item:hover {
+  background: white;
+  cursor: pointer;
+}
+.services-area .services-inner .services-item:hover h5, .services-area .services-inner .services-item:hover .h5 {
+  color: #6247ea;
+}
+.services-area .services-inner .services-item:hover p {
+  color: #6247ea;
 }
 
 .blog-area .blog-item {

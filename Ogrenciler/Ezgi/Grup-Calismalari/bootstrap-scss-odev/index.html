@@ -36,9 +36,9 @@
   <body>
     <header class="header-area">
       <div class="container-fluid">
-        <div class="header-top row py-2 ps-5">
+        <div class="header-top row py-2 ps-lg-5">
           <div
-            class="float-start col-lg-8 d-flex gap-5"
+            class="float-start overflow-hidden col-sm-2 col-lg-8 d-flex gap-lg-5 gap-4"
           >
             <a class="colorw" href="#"
               >+880 1234 654 953</a
@@ -48,10 +48,10 @@
             >
           </div>
           <div
-            class="float-end col-lg-4 text-center"
+            class="float-end mt-sm-2 mt-4 col-sm-10 col-lg-4 text-center"
           >
             <a
-              class="colorw ps-5 pe-5 py-5"
+              class="colorw ps-5 pe-5 py-4"
               href="#"
               >Purchase Hosting</a
             >
@@ -62,7 +62,7 @@
         <nav
           class="navbar navbar-expand-lg bg-body-tertiary"
         >
-          <div class="container">
+          <div class="container-fluid d-flex">
             <a
               class="navbar-brand col-lg-6"
               href="#"
@@ -72,7 +72,7 @@
                 alt=""
             /></a>
             <button
-              class="navbar-toggler"
+              class="navbar-toggler col-lg-0"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavAltMarkup"
@@ -85,7 +85,7 @@
               ></span>
             </button>
             <div
-              class="collapse navbar-collapse col-lg-6"
+              class="collapse navbar-collapse col-lg-5"
               id="navbarNavAltMarkup"
             >
               <div class="navbar-nav gap-3">
@@ -147,7 +147,7 @@
             >
           </div>
           <div class="col-lg-7">
-            <div class="hero-img">
+            <div class="hero-img-mobile">
               <img
                 src="https://preview.colorlib.com/theme/hosthub/img/banner/banner-map.png.webp"
                 alt=""
@@ -171,8 +171,8 @@
           </p>
         </div>
         <div class="feature-cards row">
-          <div class="card col py-5">
-            <div class="card-body">
+          <div class="px-3 col-lg-3 col-sm-6">
+            <div class="card-body py-5 px-3">
               <h5 class="card-title mb-3">
                 Expert Technicians
               </h5>
@@ -186,8 +186,8 @@
               </p>
             </div>
           </div>
-          <div class="card col ms-3 py-5">
-            <div class="card-body">
+          <div class="px-3 col-lg-3 col-sm-6">
+            <div class="card-body py-5 px-3">
               <h5 class="card-title mb-3">
                 Expert Technicians
               </h5>
@@ -201,8 +201,8 @@
               </p>
             </div>
           </div>
-          <div class="card col ms-3 py-5">
-            <div class="card-body">
+          <div class="px-3 col-lg-3 col-sm-6">
+            <div class="card-body py-5 px-3">
               <h5 class="card-title mb-3">
                 Expert Technicians
               </h5>
@@ -216,8 +216,8 @@
               </p>
             </div>
           </div>
-          <div class="card col ms-3 py-5">
-            <div class="card-body">
+          <div class="px-3 col-lg-3 col-sm-6">
+            <div class="card-body py-5 px-3">
               <h5 class="card-title mb-3">
                 Expert Technicians
               </h5>
@@ -249,7 +249,9 @@
         </div>
         <div class="price-inner row py-6">
           <div class="col-lg-3 col-sm-6">
-            <div class="price-item">
+            <div
+              class="price-item border-bottom mb-3"
+            >
               <div class="price-text">
                 <h5 class="text-dark">Basic</h5>
                 <h6 class="fw-light">
@@ -271,9 +273,14 @@
                 </ul>
               </div>
             </div>
+            <a class="getstartedbtn" href=""
+              >Get Started</a
+            >
           </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="price-item">
+          <div class="col-lg-3 mb-3 col-sm-6">
+            <div
+              class="price-item mb-3 border-bottom"
+            >
               <div class="price-text">
                 <h5 class="text-dark">Starter</h5>
                 <h6 class="fw-light">
@@ -295,9 +302,14 @@
                 </ul>
               </div>
             </div>
+            <a class="getstartedbtn" href=""
+              >Get Started</a
+            >
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="price-item">
+            <div
+              class="price-item border-bottom mb-3"
+            >
               <div class="price-text">
                 <h5 class="text-dark">
                   Business
@@ -321,9 +333,15 @@
                 </ul>
               </div>
             </div>
+            <a class="getstartedbtn" href=""
+              >Get Started</a
+            >
           </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="price-item">
+
+          <div class="col-lg-3 mb-3 col-sm-6">
+            <div
+              class="price-item mb-3 border-bottom"
+            >
               <div class="price-text">
                 <h5 class="text-dark">
                   Enterprise
@@ -347,6 +365,9 @@
                 </ul>
               </div>
             </div>
+            <a class="getstartedbtn" href=""
+              >Get Started</a
+            >
           </div>
         </div>
       </div>
@@ -444,7 +465,9 @@
           </p>
         </div>
         <div class="row services-inner colorw">
-          <div class="col-lg-4 col-md-6">
+          <div
+            class="col-lg-4 col-md-6 service-item-1"
+          >
             <div class="services-item mb-4">
               <h5 class="mb-4">
                 <i
@@ -810,52 +833,60 @@
                     class="row gy-2 g-md-2 row-cols-4 text-center"
                   >
                     <div class="col">
-                      <img
-                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-01.jpg.webp"
-                        alt=""
-                      />
+                      <a href="">
+                        <img
+                          src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-01.jpg.webp"
+                          alt=""
+                      /></a>
                     </div>
                     <div class="col">
-                      <img
-                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-02.jpg.webp"
-                        alt=""
-                      />
+                      <a
+                        ><img
+                          src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-02.jpg.webp"
+                          alt=""
+                      /></a>
                     </div>
                     <div class="col">
-                      <img
-                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-03.jpg.webp"
-                        alt=""
-                      />
+                      <a href="">
+                        <img
+                          src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-03.jpg.webp"
+                          alt=""
+                      /></a>
                     </div>
                     <div class="col">
-                      <img
-                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-04.jpg.webp"
-                        alt=""
-                      />
+                      <a href="">
+                        <img
+                          src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-04.jpg.webp"
+                          alt=""
+                      /></a>
                     </div>
                     <div class="col">
-                      <img
-                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-05.jpg.webp"
-                        alt=""
-                      />
+                      <a href="">
+                        <img
+                          src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-05.jpg.webp"
+                          alt=""
+                      /></a>
                     </div>
                     <div class="col">
-                      <img
-                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-06.jpg.webp"
-                        alt=""
-                      />
+                      <a href="">
+                        <img
+                          src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-06.jpg.webp"
+                          alt=""
+                      /></a>
                     </div>
                     <div class="col">
-                      <img
-                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-07.jpg.webp"
-                        alt=""
-                      />
+                      <a href="">
+                        <img
+                          src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-07.jpg.webp"
+                          alt=""
+                      /></a>
                     </div>
                     <div class="col">
-                      <img
-                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-08.jpg.webp"
-                        alt=""
-                      />
+                      <a href="">
+                        <img
+                          src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-08.jpg.webp"
+                          alt=""
+                      /></a>
                     </div>
                   </div>
                 </div>
