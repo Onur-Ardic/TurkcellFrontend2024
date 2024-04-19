@@ -16146,4 +16146,167 @@ textarea.form-control-lg {
   box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
 }
 
+.top-services {
+  padding: 50px;
+  overflow: hidden;
+}
+.top-services .title p {
+  margin: 0 auto 35px;
+  opacity: 0.6;
+  max-width: 770px;
+}
+.top-services .service-container .item-container .service-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 40px 60px 40px 40px;
+  border: 1px solid #9381eb;
+  margin-bottom: 30px;
+  transition: all 300ms linear 0s;
+}
+.top-services .service-container .item-container .service-item h4, .top-services .service-container .item-container .service-item .h4 {
+  color: #fff;
+}
+.top-services .service-container .item-container .service-item h4 i, .top-services .service-container .item-container .service-item .h4 i {
+  margin-right: 5px;
+}
+.top-services .service-container .item-container .service-item p {
+  margin-bottom: 0px;
+  color: #fff;
+  opacity: 0.6;
+}
+.top-services .service-container .item-container:hover .service-item {
+  background-color: #fff;
+  opacity: 1;
+}
+.top-services .service-container .item-container:hover .service-item:hover p, .top-services .service-container .item-container:hover .service-item:hover h4, .top-services .service-container .item-container:hover .service-item:hover .h4 {
+  color: black;
+}
+
+.latest-posts {
+  padding-bottom: 50px;
+}
+.latest-posts .text-center p {
+  max-width: 570px;
+}
+.latest-posts .blog-items .blog-item {
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  padding: 60px 30px;
+}
+.latest-posts .blog-items .blog-item h6, .latest-posts .blog-items .blog-item .h6 {
+  border-radius: 3px;
+  background: #ec9d5f;
+  display: inline-block;
+  color: #fff;
+  line-height: 30px;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 0px 20px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+.latest-posts .blog-items .blog-item a {
+  transition: all 300ms linear 0s;
+  text-decoration: none;
+}
+.latest-posts .blog-items .blog-item a h4, .latest-posts .blog-items .blog-item a .h4 {
+  font-size: 20px;
+}
+.latest-posts .blog-items .blog-item p {
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #777777;
+}
+.latest-posts .blog-items .blog-item .view-text a {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-right: 25px;
+}
+.latest-posts .logos .logo {
+  transition: all 0.7s ease 0.7s;
+}
+.latest-posts .logos .logo img {
+  opacity: 0.5;
+}
+.latest-posts .logos .logo:hover img {
+  opacity: 1;
+}
+
+footer {
+  background-color: #04091e;
+}
+footer .row .single-footer .footer_title {
+  line-height: 24px;
+  font-weight: 500;
+}
+footer .row .single-footer ul li {
+  font-weight: 300;
+}
+footer .row .single-footer .subscribe input {
+  max-width: 340px;
+  width: 100%;
+  border: 1px solid #333333;
+  font-size: 13px;
+  line-height: 40px;
+  padding-right: 40px;
+  height: 40px;
+  color: #999999;
+  border-radius: 20px;
+  background: #fff;
+  padding-left: 20px;
+}
+footer .row .single-footer .subscribe input ::placeholder {
+  opacity: 0.6;
+}
+footer .row .single-footer .subscribe button {
+  border-radius: 20px;
+  background: #6247ea;
+  color: #fff;
+  font-weight: 500;
+  line-height: 38px;
+  font-size: 12px;
+  padding: 0px 38px;
+  display: inline-block;
+  cursor: pointer;
+  top: 0px;
+  right: -26px;
+  border: 1px solid #6247ea;
+  border-radius: 20px;
+  transition: all 300ms linear 0s;
+}
+footer .row .single-footer .subscribe button:hover {
+  background-color: #04091e;
+  color: #6247ea;
+}
+footer .footer-bottom .footer-social a {
+  font-size: 14px;
+  line-height: 30px;
+  color: #fff;
+  margin-left: 6px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background: #1e2235;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  display: inline-block;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+}
+footer .footer-bottom .footer-social a:hover {
+  background-color: #6247ea;
+}
+footer .footer-bottom .footer-social a .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /*# sourceMappingURL=main.css.map */

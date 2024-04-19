@@ -6,11 +6,6 @@
     padding-bottom: 100px;
     font-family: "Roboto", sans-serif;
     .container{
-        // .last-post-header{
-        //     p{
-        //         max-width: 570px;
-        //     }
-        // }
         .last-post-body{
             margin-top: 80px;
             .col-lg-4{
@@ -27,9 +22,13 @@
                     }
                 }
                 &:hover{
-                    a{
-                        h4{
-                            color: #6247ea;
+                    .last-post-body{
+                        .last-post-body-text{
+                            .text-decoration-none{
+                                .mb-3{
+                                    color: #6247ea;
+                                }
+                            } 
                         }
                     }
                 }   
@@ -89,6 +88,14 @@
         }
         .footer-bottom{
             padding-bottom: 100px;
+            margin-top: 150px;
+                .footer-bottom-icon{
+                    .text-white{
+                        &:hover{
+                            background-color: #6247ea;
+                        }
+                    }
+                }
         }
         
 

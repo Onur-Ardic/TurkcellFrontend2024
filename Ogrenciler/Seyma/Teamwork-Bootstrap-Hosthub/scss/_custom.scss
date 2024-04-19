@@ -13,12 +13,12 @@
     }
   }
 }
-.navbar{
-  .container-fluid{
-    #navbarCollapse{
-      ul{
-        li{
-          a:hover{
+.navbar {
+  .container-fluid {
+    #navbarCollapse {
+      ul {
+        li {
+          a:hover {
             color: $primary !important;
           }
         }
@@ -26,9 +26,8 @@
     }
   }
 }
-
-
 #some-features {
+  padding: 7rem 0;
   .card {
     transition: all 300ms linear 0s;
     &:hover {
@@ -66,15 +65,19 @@
     }
   }
 }
+#looking {
+  button:hover {
+    background-color: $primary;
+    color: $light !important;
+  }
+}
 #top-services {
   background-image: url("https://preview.colorlib.com/theme/hosthub/img/map-bg.png.webp");
-
   .card {
     background: rgba(255, 255, 255, 0.1);
     p {
       color: rgba(255, 255, 255, 0.4);
     }
-
     &:hover {
       background-color: white;
 
@@ -117,7 +120,6 @@
       }
     }
   }
-
   #pricing {
     padding: 60px 0;
   }
