@@ -1,6 +1,18 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+#call-to-action {
+  .container {
+    .float-left {
+      a {
+        color: $light;
+      }
+      a:hover {
+        color: $primary;
+      }
+    }
+  }
+}
 #some-features {
   .card {
     transition: all 300ms linear 0s;
@@ -25,7 +37,7 @@
           visibility: visible;
           z-index: 5;
         }
-        .card-money{
+        .card-money {
           color: $primary;
         }
         button {
@@ -39,8 +51,6 @@
     }
   }
 }
-
-
 #top-services {
   background-image: url("https://preview.colorlib.com/theme/hosthub/img/map-bg.png.webp");
 
@@ -63,11 +73,9 @@
     }
   }
 }
-
 #blog {
   padding: 120px 0;
 }
-
 #clients {
   padding: 120px 0;
   .item {
@@ -80,7 +88,6 @@
     }
   }
 }
-
 @media screen and (max-width: 768px) {
   #call-to-action {
     display: none;
