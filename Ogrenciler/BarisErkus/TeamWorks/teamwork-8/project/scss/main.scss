@@ -26,6 +26,9 @@ h2 {
     &:hover {
         transition: 0.5s all ease-in-out;
         box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.1);
+        .topic {
+            color: $main-color !important;
+        }
     }
 }
 .my-card-2 {
@@ -44,6 +47,8 @@ h2 {
     }
 }
 .my-card-3 {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #9381eb;
     &:hover {
         transition: 0.1s all ease;
         opacity: 1;
