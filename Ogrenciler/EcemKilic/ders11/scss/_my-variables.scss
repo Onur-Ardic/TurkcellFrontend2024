@@ -17,7 +17,8 @@ $custom-colors: (
     "light-purple": #6247ea,
     "gray":#777777,
     "black-nero": #222222,
-    "off-white": #fafcff
+    "off-white": #fafcff,
+    "dark-blue": #04091e
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
 

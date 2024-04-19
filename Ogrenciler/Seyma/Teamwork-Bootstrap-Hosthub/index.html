@@ -11,70 +11,100 @@
     />
   </head>
   <body>
-    <div id="call-to-action" class="bg-secondary py-2">
+    <div id="call-to-action" class="bg-secondary">
       <div class="container col-xxl-9">
-        <div class="row justify-content-between">
+        <div class="row justify-content-between align-items-center">
           <div class="float-left justify-content-start col-lg-5">
             <a
-              class="text-decoration-none text-light me-3"
+              class="text-decoration-none fs-6 me-3 fw-light"
               href="tel:+8801234654953"
               >+880 1234 654 953</a
             >
             <a
-              class="text-decoration-none text-light text-uppercase fs-6"
+              class="text-decoration-none text-uppercase fw-light fs-6"
               href="mailto:support@colorlib.com"
               >support@colorlib.com</a
             >
           </div>
           <div class="float-right text-end col-lg-4 my-0">
-            <a
-              class="top-btn bg-primary text-light px-4 py-2 text-decoration-none"
-              href="#"
-              >Purchase Hosting</a
+            <button
+              class="bg-primary border-0 text-light fs-6 px-4 py-2 text-decoration-none"
+              href="tel: +880 1234 654 953"
             >
+              Purchase Hosting
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <header class="bg-light">
-      <div class="container col-xxl-9">
-        <div class="d-flex flex-wrap py-3">
-          <a
-            href="/"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+    <nav class="navbar navbar-expand-xl navbar bg-white py-3 shadow sticky-top">
+      <div class="container-fluid col-xxl-9 d-flex justify-content-between">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://preview.colorlib.com/theme/hosthub/img/logo.png"
+            alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul
+            class="navbar-nav ms-auto gap-4 mb-2 mb-md-0 text-uppercase fs-6 fw-bold"
           >
-            <img
-              src="https://preview.colorlib.com/theme/hosthub/img/logo.png"
-              alt=""
-            />
-          </a>
-
-          <ul class="nav nav-pills">
             <li class="nav-item">
-              <a href="#" class="nav-link active" aria-current="page">Home</a>
+              <a
+                class="nav-link text-primary text-uppercase"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#"
+                ><i class="bi bi-search"></i
+              ></a>
+            </li>
           </ul>
         </div>
       </div>
-    </header>
+    </nav>
     <section class="home-banner bg-primary py-5">
       <div class="container col-xxl-9 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-7 py-5">
             <img
               src="https://preview.colorlib.com/theme/hosthub/img/banner/banner-map.png"
-              class="d-block mx-lg-auto img-fluid"
+              class="mx-lg-auto img-fluid"
               alt="Bootstrap Themes"
               width="700"
               height="500"
               loading="lazy"
             />
           </div>
-          <div class="col-lg-5 py-5">
+          <div class="home-banner-title col-lg-5">
             <h1 class="display-5 fw-bold fs-2 lh-2 mb-4 text-light">
               WE’RE WEB HOSTING PROFESSIONALS
             </h1>
@@ -95,10 +125,10 @@
         </div>
       </div>
     </section>
-    <section id="some-features" class="py-5">
+    <section id="some-features">
       <div class="container col-xxl-9">
         <div
-          class="text-center d-flex flex-column justify-content-center align-items-center"
+          class="text-center d-flex flex-column justify-content-center align-items-center mb-5"
         >
           <h2 class="fs-2">Some Features that Made us Unique</h2>
           <p class="opacity-50 col-lg-7 fs-5">
@@ -106,8 +136,8 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <div class="row p-3">
-          <div class="col-lg-3 px-4">
+        <div class="row px-lg-3 py-3">
+          <div class="col-lg-3 px-4 mb-3">
             <div class="card py-5">
               <div class="card-body">
                 <h5 class="card-title fs-4">Expert Technicians</h5>
@@ -119,7 +149,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 px-4">
+          <div class="col-lg-3 px-4 mb-3">
             <div class="card py-5">
               <div class="card-body">
                 <h5 class="card-title fs-4">Expert Technicians</h5>
@@ -131,7 +161,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 px-4">
+          <div class="col-lg-3 px-4 mb-3">
             <div class="card py-5">
               <div class="card-body">
                 <h5 class="card-title fs-4">Expert Technicians</h5>
@@ -143,7 +173,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 px-4">
+          <div class="col-lg-3 px-4 mb-3">
             <div class="card py-5">
               <div class="card-body">
                 <h5 class="card-title fs-4">Expert Technicians</h5>
@@ -167,10 +197,12 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-start">
-          <div class="col-lg-3 col-sm-6 p-0">
+        <div
+          class="row row-cols-1 row-cols-md-3 mb-3 text-start justify-content-center"
+        >
+          <div class="col-10 col-md-6 col-lg-3 p-0 mb-5">
             <div class="card mb-4 rounded-0">
-              <div class="card-body border-end">
+              <div class="card-body border-end p-5">
                 <h2 class="fs-4 border-end-0">Basic</h2>
                 <p class="lead fs-5 text-black-50">Individuals/Freelancers</p>
                 <div>
@@ -190,13 +222,18 @@
                   </ul>
                 </div>
               </div>
-              <button class="btn btn-primary opacity-0">Get Started</button>
+              <div class="position-absolute top-100 start-0 w-100">
+                <button
+                  class="get-started btn btn-primary fs-12 w-100 rounded-0 rounded-bottom mt-auto p-3"
+                >
+                  Get Started
+                </button>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-sm-6 p-0">
+          <div class="col-10 col-md-6 col-lg-3 p-0 mb-5">
             <div class="card mb-4 rounded-0">
-              <div class="card-body border-end">
+              <div class="card-body border-end p-5">
                 <h2 class="fs-4 border-end-0">Starter</h2>
                 <p class="lead fs-5 text-black-50">Small Companies</p>
                 <div>
@@ -216,13 +253,18 @@
                   </ul>
                 </div>
               </div>
-              <button class="btn btn-primary opacity-0">Get Started</button>
+              <div class="position-absolute top-100 start-0 w-100">
+                <button
+                  class="get-started btn btn-primary fs-12 w-100 rounded-0 rounded-bottom mt-auto p-3"
+                >
+                  Get Started
+                </button>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-sm-6 p-0">
+          <div class="col-10 col-md-6 col-lg-3 p-0 mb-5">
             <div class="card mb-4 rounded-0">
-              <div class="card-body border-end">
+              <div class="card-body border-end p-5">
                 <h2 class="fs-4 border-end-0">Business</h2>
                 <p class="lead fs-5 text-black-50">Medium Companies</p>
                 <div>
@@ -242,13 +284,18 @@
                   </ul>
                 </div>
               </div>
-              <button class="btn btn-primary opacity-0">Get Started</button>
+              <div class="position-absolute top-100 start-0 w-100">
+                <button
+                  class="get-started btn btn-primary fs-12 w-100 rounded-0 rounded-bottom mt-auto p-3"
+                >
+                  Get Started
+                </button>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-sm-6 p-0">
+          <div class="col-10 col-md-6 col-lg-3 p-0 mb-5">
             <div class="card mb-4 rounded-0">
-              <div class="card-body border-end">
+              <div class="card-body border-end p-5">
                 <h2 class="fs-4 border-end-0">Enterprise</h2>
                 <p class="lead fs-5 text-black-50">Large Companies</p>
                 <div>
@@ -268,13 +315,19 @@
                   </ul>
                 </div>
               </div>
-              <button class="btn btn-primary opacity-0">Get Started</button>
+              <div class="position-absolute top-100 start-0 w-100">
+                <button
+                  class="get-started btn btn-primary fs-12 w-100 rounded-0 rounded-bottom mt-auto p-3"
+                >
+                  Get Started
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="bg-secondary">
+    <section id="looking" class="bg-secondary mb-5 py-5">
       <div class="container">
         <div
           class="text-center d-flex flex-column justify-content-center align-items-center text-light py-5"
@@ -284,7 +337,9 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <button class="btn btn-light rounded-0 fs-6 px-5 py-3 text-black">
+          <button
+            class="btn btn-light border-0 rounded-0 fs-6 px-5 py-3 text-black"
+          >
             Request Free Consultation
           </button>
         </div>
@@ -293,15 +348,15 @@
     <section id="what" class="py-5">
       <div class="container col-xxl-9">
         <div class="row">
-          <div class="col-4 pt-4 me-5" style="width: 20rem">
+          <div class="col-sm-9 col-lg-4 pt-4 mb-2">
             <h2>What our Client’s Say about us</h2>
-            <h5 class="card-text opacity-75 fs-5 pt-3 fw-light">
+            <h5 class="card-text opacity-75 fs-5 pt-3 fw-light mb-2">
               Acres of Diamonds… you’ve read the famous story, or at least had
               it related to you. A farmer hears tales of diamonds and begins
               dreaming.
             </h5>
           </div>
-          <div class="col-4">
+          <div class="col-sm-6 col-lg-4 mb-2">
             <div class="card py-5 shadow-h">
               <div class="card-body">
                 <h5 class="card-title fs-4">Nellie Vega</h5>
@@ -315,7 +370,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-sm-6 col-lg-4 mb-2">
             <div class="card py-5 shadow-h">
               <div class="card-body">
                 <h5 class="card-title fs-4">Estelle Andrews</h5>
@@ -344,7 +399,7 @@
           </p>
         </div>
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-2">
             <div class="card p-4 text-white">
               <div class="card-body">
                 <div class="d-flex align-items-center gap-2">
@@ -358,7 +413,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-2">
             <div class="card p-4 text-white">
               <div class="card-body">
                 <div class="d-flex align-items-center gap-2">
@@ -372,7 +427,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-2">
             <div class="card p-4 text-white">
               <div class="card-body">
                 <div class="d-flex align-items-center gap-2">
@@ -386,9 +441,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-2">
             <div class="card p-4 text-white">
               <div class="card-body">
                 <div class="d-flex align-items-center gap-2">
@@ -402,7 +455,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-2">
             <div class="card p-4 text-white">
               <div class="card-body">
                 <div class="d-flex align-items-center gap-2">
@@ -416,7 +469,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-2">
             <div class="card p-4 text-white">
               <div class="card-body">
                 <div class="d-flex align-items-center gap-2">
@@ -433,7 +486,6 @@
         </div>
       </div>
     </section>
-
     <section id="blog">
       <div class="container col-xxl-10">
         <div
@@ -445,7 +497,7 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <div class="row p-3">
+        <div class="row p-3 g-3">
           <div class="col-lg-4 px-4">
             <div class="card py-4">
               <div class="card-body">
@@ -560,8 +612,7 @@
         </div>
       </div>
     </section>
-
-    <section id="clients " class="bg-light">
+    <section id="clients" class="bg-light">
       <div class="container col-xxl-9">
         <div
           class="row row-cols-lg-5 row-cols-md-3 row-cols-1 row-gap-5 row-gap-md-5 gap-lg-0"
@@ -599,5 +650,153 @@
         </div>
       </div>
     </section>
+    <section id="footer" class="bg-danger py-5 text-white">
+      <div class="container col-xxl-9">
+        <footer class="py-5">
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+              <h4 class="mb-4">Top Products</h4>
+              <ul class="nav flex-column gap-2">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link fs-5 fw-light text-white p-0"
+                    >Managed Website</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link fs-5 fw-light text-white p-0"
+                    >Manage Reputation</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link fs-5 fw-light p-0 text-white"
+                    >Power Tools</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link fs-5 fw-light p-0 text-white"
+                    >Marketing Service</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 mb-3">
+              <form>
+                <h4>Newsletter</h4>
+                <p class="text-white-50 fs-5">
+                  You can trust us. we only send promo offers, not a single
+                  spam..
+                </p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label
+                    for="newsletter1"
+                    class="visually-hidden border-0 rounded-pill"
+                    >Email address</label
+                  >
+                  <input
+                    id="newsletter1"
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Email address"
+                  />
+                  <button
+                    class="btn btn-primary rounded-pill fs-6 px-4"
+                    type="button"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="feed">
+                <h4>Instagram Feed</h4>
+                <ul class="list-unstyled instafeed d-flex flex-wrap gap-2">
+                  <li>
+                    <img
+                      src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-01.jpg.webp"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-02.jpg.webp"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-03.jpg.webp"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-04.jpg.webp"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-05.jpg.webp"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-06.jpg.webp"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-07.jpg.webp"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-08.jpg.webp"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4"
+          >
+            <p class="text-white-50 fs-5">
+              Copyright ©2024 All rights reserved | This template is made with
+              by <span class="text-primary">Şeyma-Umutcan-Necati</span>
+            </p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#"
+                  ><i class="bi bi-facebook text-white"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#"
+                  ><i class="bi bi-twitter text-white"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#"
+                  ><i class="bi bi-linkedin text-white"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#"
+                  ><i class="bi bi-behance text-white"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>

@@ -74,6 +74,7 @@ body {
   .social-icons i {
     background: $dark-blue;
     transition: all 0.5s;
+    width: 40px;
     &:hover {
       background: $bluish-purple;
     }

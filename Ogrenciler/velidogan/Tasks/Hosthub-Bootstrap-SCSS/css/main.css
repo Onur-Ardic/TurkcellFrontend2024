@@ -14805,6 +14805,7 @@ body {
 .footer .social-icons i {
   background: #1e2235;
   transition: all 0.5s;
+  width: 40px;
 }
 .footer .social-icons i:hover {
   background: #6247ea;

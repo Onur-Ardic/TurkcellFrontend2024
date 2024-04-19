@@ -11950,6 +11950,13 @@ ul li {
 .solution-area .solution-inner .main-info a {
   background: #f9f9ff;
 }
+.solution-area .solution-inner .consultation-btn {
+  transition: all 0.5s;
+}
+.solution-area .solution-inner .consultation-btn:hover {
+  background: #6247ea;
+  color: #fff !important;
+}
 
 .client-says-area .client-says-inner .says-left {
   max-width: 335px;
@@ -11992,6 +11999,28 @@ ul li {
 .blog-area .blog-item .view-text a {
   font-size: 14px;
   color: #aaaaaa;
+}
+
+.footer {
+  background-color: #04091e;
+}
+.footer button {
+  background: #6247ea;
+  color: #fff;
+  border: 1px solid #6247ea;
+  transition: all 0.5s;
+}
+.footer button:hover {
+  background: #ec9d5f;
+  border: 1px solid #ec9d5f;
+}
+.footer .social-icons i {
+  transition: all 0.5s;
+  width: 40px;
+  background-color: #1e2235;
+}
+.footer .social-icons i:hover {
+  background: #ec9d5f;
 }
 
 /*# sourceMappingURL=main.css.map */
