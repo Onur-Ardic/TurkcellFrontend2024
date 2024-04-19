@@ -4,7 +4,12 @@
   font-family: "Roboto", sans-serif;
 }
 .container {
-  max-width: 80%;
+  max-width: 1170px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .p-color-gray {
   color: #777777;
@@ -27,4 +32,18 @@
 }
 .fs-14 {
   font-size: 14px;
+}
+.item-logo > img {
+  opacity: 0.4;
+  transition: 0.4s;
+}
+.item-logo > img:hover {
+  opacity: 1;
+}
+.bg-brands {
+  background: #fafcff;
+}
+.instafeed > ul > li {
+  margin: 2px !important;
+  list-style-type: none;
 }
