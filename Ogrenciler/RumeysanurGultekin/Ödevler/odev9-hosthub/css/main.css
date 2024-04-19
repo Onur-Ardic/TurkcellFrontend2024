@@ -11861,7 +11861,7 @@ textarea.form-control-lg {
   display: inline-block;
   padding: 7px 20px;
 }
-.last-post-section .container .last-post-body .col-lg-4:hover a h4, .last-post-section .container .last-post-body .col-lg-4:hover a .h4 {
+.last-post-section .container .last-post-body .col-lg-4:hover .last-post-body .last-post-body-text .text-decoration-none .mb-3 {
   color: #6247ea;
 }
 
@@ -11910,6 +11910,10 @@ textarea.form-control-lg {
 }
 .footer-section .container .footer-bottom {
   padding-bottom: 100px;
+  margin-top: 150px;
+}
+.footer-section .container .footer-bottom .footer-bottom-icon .text-white:hover {
+  background-color: #6247ea;
 }
 
 /*# sourceMappingURL=main.css.map */
