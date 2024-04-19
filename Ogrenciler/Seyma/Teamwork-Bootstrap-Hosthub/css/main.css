@@ -11935,6 +11935,9 @@ textarea.form-control-lg {
   .home-banner .container .home-banner-title {
     padding-top: 0;
   }
+  #pricing {
+    padding: 60px 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
