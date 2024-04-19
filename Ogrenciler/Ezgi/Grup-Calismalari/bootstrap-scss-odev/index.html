@@ -1,353 +1,910 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/main.css"
+    />
     <title>Hosthub demo</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header-area">
-        <div class="container-fluid">
-            <div class="header-top row py-2 ps-5">
-                <div class="float-start col-lg-8 d-flex gap-5">
-                    <a class="colorw" href="#">+880 1234 654 953</a>
-                    <a class="colorw" href="#">SUPPORT@COLORLIB.COM</a>
-                </div>
-                <div class="float-end col-lg-4 text-center">
-                    <a class="colorw ps-5 pe-5" href="#">Purchase Hosting</a>
-                </div>
+      <div class="container-fluid">
+        <div class="header-top row py-2 ps-5">
+          <div
+            class="float-start col-lg-8 d-flex gap-5"
+          >
+            <a class="colorw" href="#"
+              >+880 1234 654 953</a
+            >
+            <a class="colorw" href="#"
+              >SUPPORT@COLORLIB.COM</a
+            >
+          </div>
+          <div
+            class="float-end col-lg-4 text-center"
+          >
+            <a
+              class="colorw ps-5 pe-5 py-5"
+              href="#"
+              >Purchase Hosting</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary"
+        >
+          <div class="container">
+            <a
+              class="navbar-brand col-lg-6"
+              href="#"
+              ><img
+                class="img-fluid"
+                src="https://preview.colorlib.com/theme/hosthub/img/logo.png.webp"
+                alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span
+                class="navbar-toggler-icon"
+              ></span>
+            </button>
+            <div
+              class="collapse navbar-collapse col-lg-6"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav gap-3">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  >HOME</a
+                >
+                <a class="nav-link" href="#"
+                  >ABOUT</a
+                >
+                <a class="nav-link" href="#"
+                  >SERVICES</a
+                >
+                <a class="nav-link" href="#"
+                  >PAGES</a
+                >
+                <a class="nav-link" href="#"
+                  >BLOG</a
+                >
+                <a class="nav-link" href="#"
+                  >CONTACT</a
+                >
+                <a class="nav-link" href="#"
+                  ><i
+                    class="fa-solid fa-magnifying-glass"
+                  ></i
+                ></a>
+              </div>
             </div>
-        </div>
-        <div class="header-bottom">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container">
-                    <a class="navbar-brand col-lg-6" href="#"><img class="img-fluid"
-                            src="https://preview.colorlib.com/theme/hosthub/img/logo.png.webp" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse col-lg-6" id="navbarNavAltMarkup">
-                        <div class="navbar-nav gap-3">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                            <a class="nav-link" href="#">ABOUT</a>
-                            <a class="nav-link" href="#">SERVICES</a>
-                            <a class="nav-link" href="#">PAGES</a>
-                            <a class="nav-link" href="#">BLOG</a>
-                            <a class="nav-link" href="#">CONTACT</a>
-                            <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <section class="hero-area">
-        <div class="container">
-            <div class="row hero-content justify-content-between align-items-center">
-                <div class="hero-info col-lg-5 ps-4 pe-3">
-                    <h2 class="colorw mb-3">WE’RE WEB HOSTING <br> PROFESSIONALS</h2>
-                    <p class="mb-5">
-                        Inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
-                        standards especially in the workplace. That’s why it’s crucial that, as women.
-                    </p>
-                    <a class="pe-5 ps-5 py-3 colorw fw-medium" href="#">Explore Our Features</a>
-                </div>
-                <div class="col-lg-7">
-                    <div class="hero-img">
-                        <img src="https://preview.colorlib.com/theme/hosthub/img/banner/banner-map.png.webp" alt="">
-                    </div>
-                </div>
+      <div class="container">
+        <div
+          class="row hero-content justify-content-between align-items-center"
+        >
+          <div
+            class="hero-info col-lg-5 ps-4 pe-3"
+          >
+            <h2 class="colorw mb-3">
+              WE’RE WEB HOSTING <br />
+              PROFESSIONALS
+            </h2>
+            <p class="mb-5">
+              Inappropriate behavior is often
+              laughed off as “boys will be boys,”
+              women face higher conduct standards
+              especially in the workplace. That’s
+              why it’s crucial that, as women.
+            </p>
+            <a
+              class="pe-5 ps-5 py-3 colorw fw-medium"
+              href="#"
+              >Explore Our Features</a
+            >
+          </div>
+          <div class="col-lg-7">
+            <div class="hero-img">
+              <img
+                src="https://preview.colorlib.com/theme/hosthub/img/banner/banner-map.png.webp"
+                alt=""
+              />
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="feature-area py-7">
-        <div class="container">
-            <div class="main-info text-center mb-5">
-                <h2 class="text-dark">Some Features that Made us Unique</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br>
-                    labore
-                    et dolore magna aliqua.</p>
-            </div>
-            <div class="feature-cards row">
-                <div class="card col py-5">
-                    <div class="card-body">
-                        <h5 class="card-title mb-3">Expert Technicians</h5>
-                        <p class="card-text">Usage of the Internet is becoming more common due to rapid advancement of
-                            technology and power of the Internet is becoming more common due to rapid advancement.</p>
-                    </div>
-                </div>
-                <div class="card col py-5">
-                    <div class="card-body">
-                        <h5 class="card-title mb-3">Expert Technicians</h5>
-                        <p class="card-text">Usage of the Internet is becoming more common due to rapid advancement of
-                            technology and power of the Internet is becoming more common due to rapid advancement.</p>
-                    </div>
-                </div>
-                <div class="card col py-5">
-                    <div class="card-body">
-                        <h5 class="card-title mb-3">Expert Technicians</h5>
-                        <p class="card-text">Usage of the Internet is becoming more common due to rapid advancement of
-                            technology and power of the Internet is becoming more common due to rapid advancement.</p>
-                    </div>
-                </div>
-                <div class="card col py-5">
-                    <div class="card-body">
-                        <h5 class="card-title mb-3">Expert Technicians</h5>
-                        <p class="card-text">Usage of the Internet is becoming more common due to rapid advancement of
-                            technology and power of the Internet is becoming more common due to rapid advancement.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="main-info text-center mb-5">
+          <h2 class="text-dark">
+            Some Features that Made us Unique
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut <br />
+            labore et dolore magna aliqua.
+          </p>
         </div>
+        <div class="feature-cards row">
+          <div class="card col py-5">
+            <div class="card-body">
+              <h5 class="card-title mb-3">
+                Expert Technicians
+              </h5>
+              <p class="card-text">
+                Usage of the Internet is becoming
+                more common due to rapid
+                advancement of technology and
+                power of the Internet is becoming
+                more common due to rapid
+                advancement.
+              </p>
+            </div>
+          </div>
+          <div class="card col ms-3 py-5">
+            <div class="card-body">
+              <h5 class="card-title mb-3">
+                Expert Technicians
+              </h5>
+              <p class="card-text">
+                Usage of the Internet is becoming
+                more common due to rapid
+                advancement of technology and
+                power of the Internet is becoming
+                more common due to rapid
+                advancement.
+              </p>
+            </div>
+          </div>
+          <div class="card col ms-3 py-5">
+            <div class="card-body">
+              <h5 class="card-title mb-3">
+                Expert Technicians
+              </h5>
+              <p class="card-text">
+                Usage of the Internet is becoming
+                more common due to rapid
+                advancement of technology and
+                power of the Internet is becoming
+                more common due to rapid
+                advancement.
+              </p>
+            </div>
+          </div>
+          <div class="card col ms-3 py-5">
+            <div class="card-body">
+              <h5 class="card-title mb-3">
+                Expert Technicians
+              </h5>
+              <p class="card-text">
+                Usage of the Internet is becoming
+                more common due to rapid
+                advancement of technology and
+                power of the Internet is becoming
+                more common due to rapid
+                advancement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="price-area py-7">
-        <div class="container">
-            <div class="main-info text-center mb-5">
-                <h2 class="text-dark">Choose Your Best Pricing Plans</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    <br>labore et dolore magna aliqua.</p>
-            </div>
-            <div class="price-inner row py-6">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="price-item">
-                        <div class="price-text">
-                            <h5 class="text-dark">Basic</h5>
-                            <h6 class="fw-light">Individuals/Freelancers</h6>
-                            <h2 class="text-dark">£39 <span>/mo</span></h2>
-                            <ul class="list mt-4">
-                                <li class="mb-3">RAM 1 GB</li>
-                                <li class="mb-3">CORE CPU 1</li>
-                                <li class="mb-3">SSD STORAGE 20 GB</li>
-                                <li class="mb-3">TRANSFER 1 TB</li>
-                                <li>NETWORK In 40 GB</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="price-item">
-                        <div class="price-text">
-                            <h5 class="text-dark">Starter</h5>
-                            <h6 class="fw-light">Small Companies</h6>
-                            <h2 class="text-dark">£59 <span>/mo</span></h2>
-                            <ul class="list mt-4">
-                                <li class="mb-3">RAM 2 GB</li>
-                                <li class="mb-3">CORE CPU 2</li>
-                                <li class="mb-3">SSD STORAGE 50 GB</li>
-                                <li class="mb-3">TRANSFER 1 TB</li>
-                                <li>NETWORK In 40 GB</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="price-item">
-                        <div class="price-text">
-                            <h5 class="text-dark">Business</h5>
-                            <h6 class="fw-light">Medium Companies</h6>
-                            <h2 class="text-dark">£79 <span>/mo</span></h2>
-                            <ul class="list mt-4">
-                                <li class="mb-3">RAM 4 GB</li>
-                                <li class="mb-3">CORE CPU 4</li>
-                                <li class="mb-3">SSD STORAGE 75 GB</li>
-                                <li class="mb-3">TRANSFER 2 TB</li>
-                                <li>NETWORK In 80 GB</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="price-item">
-                        <div class="price-text">
-                            <h5 class="text-dark">Enterprise</h5>
-                            <h6 class="fw-light">Large Companies</h6>
-                            <h2 class="text-dark">£99 <span>/mo</span></h2>
-                            <ul class="list mt-4">
-                                <li class="mb-3">RAM 8 GB</li>
-                                <li class="mb-3">CORE CPU 8</li>
-                                <li class="mb-3">SSD STORAGE 100 GB</li>
-                                <li class="mb-3">TRANSFER 2 TB</li>
-                                <li>NETWORK In 100 GB</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="main-info text-center mb-5">
+          <h2 class="text-dark">
+            Choose Your Best Pricing Plans
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut
+            <br />labore et dolore magna aliqua.
+          </p>
         </div>
+        <div class="price-inner row py-6">
+          <div class="col-lg-3 col-sm-6">
+            <div class="price-item">
+              <div class="price-text">
+                <h5 class="text-dark">Basic</h5>
+                <h6 class="fw-light">
+                  Individuals/Freelancers
+                </h6>
+                <h2 class="text-dark">
+                  £39 <span>/mo</span>
+                </h2>
+                <ul class="list mt-4">
+                  <li class="mb-3">RAM 1 GB</li>
+                  <li class="mb-3">CORE CPU 1</li>
+                  <li class="mb-3">
+                    SSD STORAGE 20 GB
+                  </li>
+                  <li class="mb-3">
+                    TRANSFER 1 TB
+                  </li>
+                  <li>NETWORK In 40 GB</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="price-item">
+              <div class="price-text">
+                <h5 class="text-dark">Starter</h5>
+                <h6 class="fw-light">
+                  Small Companies
+                </h6>
+                <h2 class="text-dark">
+                  £59 <span>/mo</span>
+                </h2>
+                <ul class="list mt-4">
+                  <li class="mb-3">RAM 2 GB</li>
+                  <li class="mb-3">CORE CPU 2</li>
+                  <li class="mb-3">
+                    SSD STORAGE 50 GB
+                  </li>
+                  <li class="mb-3">
+                    TRANSFER 1 TB
+                  </li>
+                  <li>NETWORK In 40 GB</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="price-item">
+              <div class="price-text">
+                <h5 class="text-dark">
+                  Business
+                </h5>
+                <h6 class="fw-light">
+                  Medium Companies
+                </h6>
+                <h2 class="text-dark">
+                  £79 <span>/mo</span>
+                </h2>
+                <ul class="list mt-4">
+                  <li class="mb-3">RAM 4 GB</li>
+                  <li class="mb-3">CORE CPU 4</li>
+                  <li class="mb-3">
+                    SSD STORAGE 75 GB
+                  </li>
+                  <li class="mb-3">
+                    TRANSFER 2 TB
+                  </li>
+                  <li>NETWORK In 80 GB</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="price-item">
+              <div class="price-text">
+                <h5 class="text-dark">
+                  Enterprise
+                </h5>
+                <h6 class="fw-light">
+                  Large Companies
+                </h6>
+                <h2 class="text-dark">
+                  £99 <span>/mo</span>
+                </h2>
+                <ul class="list mt-4">
+                  <li class="mb-3">RAM 8 GB</li>
+                  <li class="mb-3">CORE CPU 8</li>
+                  <li class="mb-3">
+                    SSD STORAGE 100 GB
+                  </li>
+                  <li class="mb-3">
+                    TRANSFER 2 TB
+                  </li>
+                  <li>NETWORK In 100 GB</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="solution-area py-7">
-        <div class="container">
-            <div class="solution-inner">
-                <div class="main-info text-center mb-5">
-                    <h2 class="colorw">Looking for a Custom Solution?</h2>
-                    <p class="colorw opacity-50 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis
-                        nostrud exercitation.</p>
-                    <a class="white-btn ps-5 pe-5 py-3 text-dark fw-medium" href="#">Request Free Consultation</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="solution-inner">
+          <div class="main-info text-center mb-5">
+            <h2 class="colorw">
+              Looking for a Custom Solution?
+            </h2>
+            <p class="colorw opacity-50 mb-5">
+              Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. <br />Ut
+              enim ad minim veniam, quis nostrud
+              exercitation.
+            </p>
+            <a
+              class="white-btn consultation-btn ps-5 pe-5 py-3 text-dark fw-medium"
+              href="#"
+              >Request Free Consultation</a
+            >
+          </div>
         </div>
+      </div>
     </section>
     <section class="client-says-area py-7">
-        <div class="container">
-            <div class="row client-says-inner align-items-baseline">
-                <div class="col-lg-4">
-                    <div class="says-left">
-                        <h2 class="text-dark">What our Client’s <br> Say about us</h2>
-                        <p>Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer
-                            hears tales of diamonds and begins dreaming.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="says-item">
-                        <h4 class="text-dark">Nellie Vega</h4>
-                        <h6 class="fw-light">Head of Marketing, Apple Inc.</h6>
-                        <p>“The following article covers a topic that has recently moved to center stage at least it
-                            seems that way. If you’ve been”</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="says-item">
-                        <h4 class="text-dark">Estelle Andrews</h4>
-                        <h6 class="fw-light">Head of Marketing, Apple Inc.</h6>
-                        <p>“The following article covers a topic that has recently moved to center stage at least it
-                            seems that way. If you’ve been”</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div
+          class="row client-says-inner align-items-baseline"
+        >
+          <div class="col-lg-4">
+            <div class="says-left">
+              <h2 class="text-dark">
+                What our Client’s <br />
+                Say about us
+              </h2>
+              <p>
+                Acres of Diamonds… you’ve read the
+                famous story, or at least had it
+                related to you. A farmer hears
+                tales of diamonds and begins
+                dreaming.
+              </p>
             </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="says-item">
+              <h4 class="text-dark">
+                Nellie Vega
+              </h4>
+              <h6 class="fw-light">
+                Head of Marketing, Apple Inc.
+              </h6>
+              <p>
+                “The following article covers a
+                topic that has recently moved to
+                center stage at least it seems
+                that way. If you’ve been”
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="says-item">
+              <h4 class="text-dark">
+                Estelle Andrews
+              </h4>
+              <h6 class="fw-light">
+                Head of Marketing, Apple Inc.
+              </h6>
+              <p>
+                “The following article covers a
+                topic that has recently moved to
+                center stage at least it seems
+                that way. If you’ve been”
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="services-area py-7">
-        <div class="container">
-            <div class="main-info text-center mb-5 colorw">
-                <h2>Top Services We Provided</h2>
-                <p class="colorw opacity-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut <br>labore et dolore magna aliqua.</p>
-            </div>
-            <div class="row services-inner colorw">
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-item mb-4">
-                        <h5 class="mb-4"><i class="fa-solid fa-cloud pe-3"></i>Cloud Hosting</h5>
-                        <p class="opacity-50">Usage of the Internet is becoming more common due to rapid advancement of
-                            technology and power.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-item mb-4">
-                        <h5 class="mb-4"><i class="fa-solid fa-earth-americas pe-3"></i>Web Hosting</h5>
-                        <p class="opacity-50">Usage of the Internet is becoming more common due to rapid advancement of
-                            technology and power.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-item mb-4">
-                        <h5 class="mb-4"><i class="fa-solid fa-tv pe-3"></i>Cloud Computing</h5>
-                        <p class="opacity-50">Usage of the Internet is becoming more common due to rapid advancement of
-                            technology and power.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-item mb-4">
-                        <h5 class="mb-4"><i class="fa-solid fa-inbox pe-3"></i>Vps Hosting</h5>
-                        <p class="opacity-50">Usage of the Internet is becoming more common due to rapid advancement of
-                            technology and power.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-item mb-4">
-                        <h5 class="mb-4"><i class="fa-solid fa-chart-column pe-3"></i>Server Analytics</h5>
-                        <p class="opacity-50">Usage of the Internet is becoming more common due to rapid advancement of
-                            technology and power.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-item mb-4">
-                        <h5 class="mb-4"><i class="fa-solid fa-fire-extinguisher pe-3"></i>Data Mining</h5>
-                        <p class="opacity-50">Usage of the Internet is becoming more common due to rapid advancement of
-                            technology and power.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div
+          class="main-info text-center mb-5 colorw"
+        >
+          <h2>Top Services We Provided</h2>
+          <p class="colorw opacity-50">
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut
+            <br />labore et dolore magna aliqua.
+          </p>
         </div>
+        <div class="row services-inner colorw">
+          <div class="col-lg-4 col-md-6">
+            <div class="services-item mb-4">
+              <h5 class="mb-4">
+                <i
+                  class="fa-solid fa-cloud pe-3"
+                ></i
+                >Cloud Hosting
+              </h5>
+              <p class="opacity-50">
+                Usage of the Internet is becoming
+                more common due to rapid
+                advancement of technology and
+                power.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="services-item mb-4">
+              <h5 class="mb-4">
+                <i
+                  class="fa-solid fa-earth-americas pe-3"
+                ></i
+                >Web Hosting
+              </h5>
+              <p class="opacity-50">
+                Usage of the Internet is becoming
+                more common due to rapid
+                advancement of technology and
+                power.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="services-item mb-4">
+              <h5 class="mb-4">
+                <i class="fa-solid fa-tv pe-3"></i
+                >Cloud Computing
+              </h5>
+              <p class="opacity-50">
+                Usage of the Internet is becoming
+                more common due to rapid
+                advancement of technology and
+                power.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="services-item mb-4">
+              <h5 class="mb-4">
+                <i
+                  class="fa-solid fa-inbox pe-3"
+                ></i
+                >Vps Hosting
+              </h5>
+              <p class="opacity-50">
+                Usage of the Internet is becoming
+                more common due to rapid
+                advancement of technology and
+                power.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="services-item mb-4">
+              <h5 class="mb-4">
+                <i
+                  class="fa-solid fa-chart-column pe-3"
+                ></i
+                >Server Analytics
+              </h5>
+              <p class="opacity-50">
+                Usage of the Internet is becoming
+                more common due to rapid
+                advancement of technology and
+                power.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="services-item mb-4">
+              <h5 class="mb-4">
+                <i
+                  class="fa-solid fa-fire-extinguisher pe-3"
+                ></i
+                >Data Mining
+              </h5>
+              <p class="opacity-50">
+                Usage of the Internet is becoming
+                more common due to rapid
+                advancement of technology and
+                power.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="blog-area py-7">
-        <div class="container">
-            <div class="main-info text-center mb-5">
-                <h2 class="text-dark">Latest Posts from Our Blog</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br>
-                    labore et dolore magna aliqua.</p>
-            </div>
-            <div class="row blog-inner">
-                <div class="col-lg-4">
-                    <div class="blog-item py-5 pe-4 ps-4">
-                        <h6 class="colorw fw-lighter ps-4 pe-4 py-2 mb-4">10 April, 2018</h6>
-                        <a href="#">
-                            <h4 class="text-dark mb-4">Benjamin Franklin S Method Of Habit Formation</h4>
-                        </a>
-                        <p>There are many kinds of narratives and organizing principles. Science is driven by evidence
-                            gathered in experiments, and by the falsification of extant theories and their</p>
-                        <div class="view-text">
-                            <a class="me-3" href="#"><i class="fa fa-eye me-2" aria-hidden="true"></i>4.5 K Views</a>
-                            <a class="me-3" href="#"><i class="fa fa-commenting me-2" aria-hidden="true"></i>07</a>
-                            <a href="#"><i class="fa fa-share me-2" aria-hidden="true"></i>362</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="blog-item py-5 pe-4 ps-4">
-                        <h6 class="colorw fw-lighter ps-4 pe-4 py-2 mb-4">10 April, 2018</h6>
-                        <a href="#">
-                            <h4 class="text-dark mb-4">Benjamin Franklin S Method Of Habit Formation</h4>
-                        </a>
-                        <p>There are many kinds of narratives and organizing principles. Science is driven by evidence
-                            gathered in experiments, and by the falsification of extant theories and their</p>
-                        <div class="view-text">
-                            <a class="me-3" href="#"><i class="fa fa-eye me-2" aria-hidden="true"></i>4.5 K Views</a>
-                            <a class="me-3" href="#"><i class="fa fa-commenting me-2" aria-hidden="true"></i>07</a>
-                            <a href="#"><i class="fa fa-share me-2" aria-hidden="true"></i>362</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="blog-item py-5 pe-4 ps-4">
-                        <h6 class="colorw fw-lighter ps-4 pe-4 py-2 mb-4">10 April, 2018</h6>
-                        <a href="#">
-                            <h4 class="text-dark mb-4">Benjamin Franklin S Method Of Habit Formation</h4>
-                        </a>
-                        <p>There are many kinds of narratives and organizing principles. Science is driven by evidence
-                            gathered in experiments, and by the falsification of extant theories and their</p>
-                        <div class="view-text">
-                            <a class="me-3" href="#"><i class="fa fa-eye me-2" aria-hidden="true"></i>4.5 K Views</a>
-                            <a class="me-3" href="#"><i class="fa fa-commenting me-2" aria-hidden="true"></i>07</a>
-                            <a href="#"><i class="fa fa-share me-2" aria-hidden="true"></i>362</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="main-info text-center mb-5">
+          <h2 class="text-dark">
+            Latest Posts from Our Blog
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut <br />
+            labore et dolore magna aliqua.
+          </p>
         </div>
-    </section>
-    <section class="logo-area py-7">
-        <div class="container">
-            <div class="slider owl-carousel owl-loaded owl-drag">
-                <div class="outer-stage-outer"></div>
-                div.
+        <div class="row blog-inner">
+          <div class="col-lg-4">
+            <div class="blog-item py-5 pe-4 ps-4">
+              <h6
+                class="colorw fw-lighter ps-4 w-50 pe-4 py-2 mb-4"
+              >
+                10 April, 2018
+              </h6>
+              <a href="#">
+                <h4 class="text-dark mb-4">
+                  Benjamin Franklin S Method Of
+                  Habit Formation
+                </h4>
+              </a>
+              <p>
+                There are many kinds of narratives
+                and organizing principles. Science
+                is driven by evidence gathered in
+                experiments, and by the
+                falsification of extant theories
+                and their
+              </p>
+              <div class="view-text">
+                <a class="me-3" href="#"
+                  ><i
+                    class="fa fa-eye me-2"
+                    aria-hidden="true"
+                  ></i
+                  >4.5 K Views</a
+                >
+                <a class="me-3" href="#"
+                  ><i
+                    class="fa fa-commenting me-2"
+                    aria-hidden="true"
+                  ></i
+                  >07</a
+                >
+                <a href="#"
+                  ><i
+                    class="fa fa-share me-2"
+                    aria-hidden="true"
+                  ></i
+                  >362</a
+                >
+              </div>
             </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="blog-item py-5 pe-4 ps-4">
+              <h6
+                class="colorw fw-lighter w-50 ps-4 pe-4 py-2 mb-4"
+              >
+                10 April, 2018
+              </h6>
+              <a href="#">
+                <h4 class="text-dark mb-4">
+                  Benjamin Franklin S Method Of
+                  Habit Formation
+                </h4>
+              </a>
+              <p>
+                There are many kinds of narratives
+                and organizing principles. Science
+                is driven by evidence gathered in
+                experiments, and by the
+                falsification of extant theories
+                and their
+              </p>
+              <div class="view-text">
+                <a class="me-3" href="#"
+                  ><i
+                    class="fa fa-eye me-2"
+                    aria-hidden="true"
+                  ></i
+                  >4.5 K Views</a
+                >
+                <a class="me-3" href="#"
+                  ><i
+                    class="fa fa-commenting me-2"
+                    aria-hidden="true"
+                  ></i
+                  >07</a
+                >
+                <a href="#"
+                  ><i
+                    class="fa fa-share me-2"
+                    aria-hidden="true"
+                  ></i
+                  >362</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="blog-item py-5 pe-4 ps-4">
+              <h6
+                class="colorw fw-lighter w-50 ps-4 pe-4 py-2 mb-4"
+              >
+                10 April, 2018
+              </h6>
+              <a href="#">
+                <h4 class="text-dark mb-4">
+                  Benjamin Franklin S Method Of
+                  Habit Formation
+                </h4>
+              </a>
+              <p>
+                There are many kinds of narratives
+                and organizing principles. Science
+                is driven by evidence gathered in
+                experiments, and by the
+                falsification of extant theories
+                and their
+              </p>
+              <div class="view-text">
+                <a class="me-3" href="#"
+                  ><i
+                    class="fa fa-eye me-2"
+                    aria-hidden="true"
+                  ></i
+                  >4.5 K Views</a
+                >
+                <a class="me-3" href="#"
+                  ><i
+                    class="fa fa-commenting me-2"
+                    aria-hidden="true"
+                  ></i
+                  >07</a
+                >
+                <a href="#"
+                  ><i
+                    class="fa fa-share me-2"
+                    aria-hidden="true"
+                  ></i
+                  >362</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-</body>
+    <footer
+      class="footer py-120 pb-4 pt-4 text-white"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="row g-3">
+              <div class="col-lg-3 col-md-3">
+                <h6>Top Products</h6>
+                <ul
+                  class="list-group list-group-flush fs-14"
+                >
+                  <li
+                    class="list-group-item border-0 ps-0 bg-transparent"
+                  >
+                    <a
+                      class="text-decoration-none text-white"
+                      href=""
+                    >
+                      Managed Website
+                    </a>
+                  </li>
+                  <li
+                    class="list-group-item border-0 ps-0 bg-transparent"
+                  >
+                    <a
+                      class="text-decoration-none text-white"
+                      href=""
+                    >
+                      Marketing Service
+                    </a>
+                  </li>
+                  <li
+                    class="list-group-item border-0 ps-0 bg-transparent"
+                  >
+                    <a
+                      class="text-decoration-none text-white"
+                      href=""
+                    >
+                      Power Tools
+                    </a>
+                  </li>
+                  <li
+                    class="list-group-item border-0 ps-0 bg-transparent"
+                  >
+                    <a
+                      class="text-decoration-none text-white"
+                      href=""
+                    >
+                      Marketing Service
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-md-9">
+                <h6>Newsletter</h6>
+                <p class="opacity-50 fs-14 my-4">
+                  You can trust us. we only send
+                  promo offers, not a single spam.
+                </p>
+                <div>
+                  <form
+                    class="needs-validation"
+                    novalidate
+                  >
+                    <div class="my-3 d-flex">
+                      <div class="col-7">
+                        <input
+                          type="email"
+                          class="form-control rounded-pill"
+                          placeholder="Enter your e-mail... "
+                          required
+                        />
+                        <div
+                          class="invalid-feedback mt-1"
+                        >
+                          <i
+                            class="fa-solid fa-face-sad-tear fa-2x"
+                          ></i>
+                        </div>
+                        <div
+                          class="valid-feedback mt-1"
+                        >
+                          <i
+                            class="fa-solid fa-face-smile-beam fa-2x"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="col-5">
+                        <button
+                          type="submit"
+                          class="btn ms-4 btn-bg text-white rounded-pill px-md-5 py-2"
+                        >
+                          Subscribe
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
 
+              <div
+                class="col-lg-3 col-md-5 col-6"
+              >
+                <div
+                  class="single-footer-widget instafeed"
+                >
+                  <h6 class="footer_title">
+                    Instagram Feed
+                  </h6>
+                  <div
+                    class="row gy-2 g-md-2 row-cols-4 text-center"
+                  >
+                    <div class="col">
+                      <img
+                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-01.jpg.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-02.jpg.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-03.jpg.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-04.jpg.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-05.jpg.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-06.jpg.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-07.jpg.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        src="https://preview.colorlib.com/theme/hosthub/img/instagram/Image-08.jpg.webp"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="d-flex mt-5 justify-content-md-between justify-content-center align-items-center flex-wrap flex-md-nowrap"
+            >
+              <p class="fs-14 opacity-50">
+                Copyright ©2024 All rights
+                reserved | This template is made
+                with by Colorlib
+              </p>
+              <div
+                class="social-icons d-flex gap-2 text-center"
+              >
+                <a
+                  href=""
+                  class="text-white fs-12"
+                  ><i
+                    class="fa-brands fa-facebook-f p-2"
+                  ></i
+                ></a>
+                <a
+                  href=""
+                  class="text-white fs-12"
+                  ><i
+                    class="fa-brands fa-instagram p-2"
+                  ></i
+                ></a>
+                <a
+                  href=""
+                  class="text-white fs-12"
+                  ><i
+                    class="fa-brands fa-youtube p-2"
+                  ></i
+                ></a>
+                <a
+                  href=""
+                  class="text-white fs-12"
+                  ><i
+                    class="fa-brands fa-twitter p-2"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
