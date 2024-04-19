@@ -34,4 +34,6 @@ null javascriptte primitive bir deger
 
 margin x auto tam ortalar
 
-px yerine vw vh kullanabilirsin
+px yerine rem vw vh kullanabilirsin
+
+direkt width height vermekten kaçın
