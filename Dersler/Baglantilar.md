@@ -15,3 +15,5 @@
 - [Frontend Challenge'lar icin](https://www.frontendmentor.io/challenges)
 
 ## Okumalar
+
+.
