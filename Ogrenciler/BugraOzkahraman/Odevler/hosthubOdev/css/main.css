@@ -11847,7 +11847,6 @@ textarea.form-control-lg {
 * {
   list-style: none;
   text-decoration: none;
-  color: black;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
@@ -11925,6 +11924,9 @@ h2, .h2 {
     display: none;
   }
 }
+.solution {
+  padding: 100px 0px;
+}
 .solution .container-md .solution-text p {
   opacity: 0.7;
 }
@@ -11935,6 +11937,9 @@ h2, .h2 {
   background-color: #6247ea;
 }
 
+.client {
+  padding: 80px 0;
+}
 .client .container .client-card .left {
   width: 390px;
   height: 270px;
@@ -11975,18 +11980,22 @@ h2, .h2 {
 .last-post-section .container .last-post-body {
   margin-top: 80px;
 }
+.last-post-section .container .last-post-body .col-lg-4:hover a h4, .last-post-section .container .last-post-body .col-lg-4:hover a .h4 {
+  color: #6247ea !important;
+}
 .last-post-section .container .last-post-body .col-lg-4 .last-post-body-tab {
   border: 1px solid #eeeeee;
   padding: 60px 30px;
+}
+.last-post-section .container .last-post-body .col-lg-4 .last-post-body-tab:hover {
+  box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+  border-color: transparent;
 }
 .last-post-section .container .last-post-body .col-lg-4 .last-post-body-tab .last-post-body-text h6, .last-post-section .container .last-post-body .col-lg-4 .last-post-body-tab .last-post-body-text .h6 {
   background-color: #ec9d5f;
   border-radius: 3px;
   display: inline-block;
   padding: 7px 20px;
-}
-.last-post-section .container .last-post-body .col-lg-4:hover a h4, .last-post-section .container .last-post-body .col-lg-4:hover a .h4 {
-  color: #6247ea;
 }
 
 .client-logo-section {
@@ -12018,7 +12027,7 @@ h2, .h2 {
 }
 .footer-section .container .footer-body .footer-body-text .footer-form .footer-input input {
   border: 1px solid #333333;
-  padding-right: 220px;
+  padding-right: 100px;
   padding-left: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -12028,12 +12037,16 @@ h2, .h2 {
   padding-bottom: 10px;
 }
 .footer-section .container .footer-body .footer-body-text .footer-form .footer-input .btn:hover {
-  background-color: #04091e;
-  color: #6247ea;
-  border-color: #6247ea;
+  background-color: #04091e !important;
+  color: #6247ea !important;
+  border-color: #6247ea !important;
 }
 .footer-section .container .footer-bottom {
   padding-bottom: 100px;
+  margin-top: 150px;
+}
+.footer-section .container .footer-bottom .footer-bottom-icon .text-white:hover {
+  background-color: #6247ea !important;
 }
 
 /*# sourceMappingURL=main.css.map */

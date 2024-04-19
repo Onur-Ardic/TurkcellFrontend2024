@@ -1,14 +1,93 @@
-.p-120 {
-  padding: 120px 0px;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.container {
+  max-width: 80%;
+}
+.fs-12 {
+  font-size: 12px;
 }
 .fs-14 {
   font-size: 14px;
 }
+
 .p-color-gray {
   color: #777777;
 }
-.fs-12 {
-  font-size: 12px;
+.p-color-light {
+  color: #f9f9ff;
+  opacity: 0.6;
+}
+.btn-fs {
+  font-size: 0.75rem;
+}
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.p-225 {
+  padding: 225px 0px;
+}
+.p-120 {
+  padding: 120px 0px;
+}
+
+.top-menu-space{
+  justify-content: space-between;
+}
+.top-left p:hover{
+  color: $info;
+  transition: all 300ms linear ;
+}
+
+.features {
+  .cards {
+    .card {
+      transition: all 300ms linear 0s;
+      &:hover {
+        box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+        border-color: #fff;
+      }
+    }
+  }
+}
+
+.services-section {
+  background: url(https://preview.colorlib.com/theme/hosthub/img/map-bg.png.webp);
+  .services-card {
+    --bs-border-opacity: 0.3;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 300ms linear 0s;
+    &:hover {
+      background-color: #fff;
+      h5,
+      p {
+        color: #130e0e !important;
+      }
+      i {
+        color: #130e0e !important;
+      }
+    }
+  }
+}
+.our-blog {
+  .card {
+    transition: all 300ms linear 0s;
+
+    &:hover {
+      box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+      color: #6247ea;
+      border: 1px solid #ffffff !important;
+    }
+
+    .card-body {
+      .card-text {
+        color: #6c757d; // Gri renk
+      }
+    }
+  }
 }
 
 .solution button:hover {
@@ -21,4 +100,19 @@
 .card:hover{
     box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
     transition: all 0.2s linear;
+}
+
+.item-logo > img {
+  opacity: 0.4;
+  transition: 0.4s;
+}
+.item-logo > img:hover {
+  opacity: 1;
+}
+.bg-brands {
+  background: #fafcff;
+}
+.instafeed > ul > li {
+  margin: 2px !important;
+  list-style-type: none;
 }

@@ -1,7 +1,10 @@
+$font-family-base: "Roboto", sans-serif !default;
+
 $warning: #ec9d5f;
 $primary: #6247ea;
 $dark: #222222;
 $secondary: #777777;
+$primary-bg-subtle: #04091e;
 
 $h6-font-size: 12px;
 $h5-font-size: 14px;
@@ -20,7 +23,6 @@ $container-max-widths: (
   xxl: 1170px,
 );
 
-// .section classını kaldırıp spacerları manipüle ettik. Spacer 6 sectionlara padding vermek için kullanılacak: py-6
 $spacer: 1rem;
 $spacers: (
   0: 0,
