@@ -11861,8 +11861,18 @@ textarea.form-control-lg {
 #pricing .container .card {
   border: transparent 2px solid;
 }
+#pricing .container .card .get-started {
+  visibility: hidden;
+}
 #pricing .container .card:hover {
   border-top: 2px solid #6246eb;
+}
+#pricing .container .card:hover .get-started {
+  visibility: visible;
+  z-index: 5;
+}
+#pricing .container .card:hover .card-money {
+  color: #6246eb;
 }
 #pricing .container .card:hover button {
   opacity: 100% !important;
@@ -11911,6 +11921,12 @@ textarea.form-control-lg {
 @media screen and (max-width: 768px) {
   #call-to-action {
     display: none;
+  }
+  .home-banner .container img {
+    display: none;
+  }
+  .home-banner .container .home-banner-title {
+    padding-top: 0;
   }
 }
 

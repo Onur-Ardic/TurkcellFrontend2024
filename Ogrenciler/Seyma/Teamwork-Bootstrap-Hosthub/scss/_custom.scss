@@ -17,7 +17,17 @@
     }
     .card {
       border: transparent 2px solid;
+      .get-started {
+        visibility: hidden;
+      }
       &:hover {
+        .get-started {
+          visibility: visible;
+          z-index: 5;
+        }
+        .card-money{
+          color: $primary;
+        }
         button {
           opacity: 100% !important;
         }
@@ -29,6 +39,7 @@
     }
   }
 }
+
 
 #top-services {
   background-image: url("https://preview.colorlib.com/theme/hosthub/img/map-bg.png.webp");
@@ -73,5 +84,15 @@
 @media screen and (max-width: 768px) {
   #call-to-action {
     display: none;
+  }
+  .home-banner {
+    .container {
+      img {
+        display: none;
+      }
+      .home-banner-title {
+        padding-top: 0;
+      }
+    }
   }
 }
