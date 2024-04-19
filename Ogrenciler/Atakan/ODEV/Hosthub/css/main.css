@@ -14757,6 +14757,10 @@ textarea.form-control-lg {
   line-height: 1.7;
 }
 
+a {
+  text-decoration: none;
+}
+
 .pricing .col .card {
   border-top: 0;
   border-right: 0;
