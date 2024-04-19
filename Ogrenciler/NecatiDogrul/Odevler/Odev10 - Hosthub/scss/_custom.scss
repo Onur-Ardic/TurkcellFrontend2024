@@ -1,0 +1,126 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+#call-to-action {
+  .container {
+    .float-left {
+      a {
+        color: $light;
+      }
+      a:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+.navbar {
+  .container-fluid {
+    #navbarCollapse {
+      ul {
+        li {
+          a:hover {
+            color: $primary !important;
+          }
+        }
+      }
+    }
+  }
+}
+#some-features {
+  padding: 7rem 0;
+  .card {
+    transition: all 300ms linear 0s;
+    &:hover {
+      box-shadow: var(--#{$prefix}box-shadow-lg);
+    }
+  }
+}
+#pricing {
+  padding: 120px 0;
+  .container {
+    .main-title {
+      margin: 0 0 75px;
+    }
+    .card {
+      border: transparent 2px solid;
+      .get-started {
+        visibility: hidden;
+      }
+      &:hover {
+        .get-started {
+          visibility: visible;
+          z-index: 5;
+        }
+        .card-money {
+          color: $primary;
+        }
+        button {
+          opacity: 100% !important;
+        }
+        border-top: 2px solid $primary;
+        h1 {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+#looking {
+  button:hover {
+    background-color: $primary;
+    color: $light !important;
+  }
+}
+#top-services {
+  background-image: url("https://preview.colorlib.com/theme/hosthub/img/map-bg.png.webp");
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    p {
+      color: rgba(255, 255, 255, 0.4);
+    }
+    &:hover {
+      background-color: white;
+
+      p {
+        color: grey;
+      }
+      h5,
+      i {
+        color: black;
+      }
+    }
+  }
+}
+#blog {
+  padding: 120px 0;
+}
+#clients {
+  padding: 120px 0;
+  .item {
+    margin: 0 auto;
+    img {
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #call-to-action {
+    display: none;
+  }
+  .home-banner {
+    .container {
+      img {
+        display: none !important;
+      }
+      .home-banner-title {
+        padding-top: 0;
+      }
+    }
+  }
+  #pricing {
+    padding: 60px 0;
+  }
+}
