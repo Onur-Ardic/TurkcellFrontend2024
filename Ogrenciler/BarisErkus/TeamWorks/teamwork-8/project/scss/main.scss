@@ -64,6 +64,13 @@ h2 {
         }
     }
 }
+.co-logo {
+    &:hover {
+        transition: 0.5s all ease-in-out;
+        cursor: pointer;
+        opacity: 1 !important;
+    }
+}
 @media screen and (max-width: 578px) {
     .top-header {
         display: none;
