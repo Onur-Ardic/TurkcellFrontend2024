@@ -35,7 +35,7 @@
     max-width: 770px;
   }
   .request-free-btn{
-    color: $black;
+    color: black;
     display: inline-block;
     background: #f9f9ff;
     outline: none;
@@ -69,25 +69,37 @@
         }
     }
     .service-container {
-        .service-item {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 40px 60px 40px 40px;
-            border: 1px solid #9381eb;
-            margin-bottom: 30px;
-            -webkit-transition: all 300ms linear 0s;
-            -o-transition: all 300ms linear 0s;
-            transition: all 300ms linear 0s;
-            p {
-                margin-bottom: 0px;
-                color: #fff;
-                opacity: .6;
+        .item-container {
+            .service-item {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+                padding: 40px 60px 40px 40px;
+                border: 1px solid #9381eb;
+                margin-bottom: 30px;
+                transition: all 300ms linear 0s;
+                
+                h4 {
+                    color: #fff;
+                }
+                p {
+                    margin-bottom: 0px;
+                    color: #fff;
+                    opacity: .6;
+                }
+            }
+            &:hover {
+                .service-item {
+                    background-color: #fff;
+                    opacity: 1;
+                    color: black;
+                }
             }
         }
     }
 }
 
 .latest-posts {
+    padding-bottom: 50px;
     .text-center {
         p {
             max-width: 570px;
@@ -142,6 +154,93 @@
             &:hover {
                 img {
                     opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .row {
+        .single-footer {
+            .footer_title {
+                line-height: 24px;
+                font-weight: 500;
+            }
+            ul {
+                li {
+                    font-weight: 300;
+                }
+            }
+            .subscribe {
+                input {
+                    max-width: 340px;
+                    width: 100%;
+                    border: 1px solid #333333;
+                    font-size: 13px;
+                    line-height: 40px;
+                    padding-right: 40px;
+                    height: 40px;
+                    color: #999999;
+                    border-radius: 20px;
+                    background: #fff;
+                    padding-left: 20px;
+                    ::placeholder {
+                        opacity: 0.6;
+                    }
+                }
+                button {
+                    border-radius: 20px;
+                    background: #6247ea;
+                    color: #fff;
+                    font-weight: 500;
+                    line-height: 38px;
+                    font-size: 12px;
+                    padding: 0px 38px;
+                    display: inline-block;
+                    cursor: pointer;
+                    top: 0px;
+                    right: -26px;
+                    border: 1px solid #6247ea;
+                    border-radius: 20px;
+                    transition: all 300ms linear 0s;
+                    &:hover {
+                        background-color: $bg-dark-blue;
+                        color: #6247ea;
+                    }
+                }
+            }
+
+        }
+    }
+    .footer-bottom {
+        .footer-social {
+            a {
+                font-size: 14px;
+                line-height: 30px;
+                color: #fff;
+                margin-left: 6px;
+                -webkit-transition: all 0.3s linear;
+                -o-transition: all 0.3s linear;
+                transition: all 0.3s linear;
+                background: #1e2235;
+                height: 30px;
+                width: 30px;
+                text-align: center;
+                display: inline-block;
+                -webkit-transition: all 300ms linear 0s;
+                -o-transition: all 300ms linear 0s;
+                transition: all 300ms linear 0s;
+                &:hover {
+                    background-color: #6247ea;
+                }
+                .fa {
+                    display: inline-block;
+                    font: normal normal normal 14px / 1 FontAwesome;
+                    font-size: inherit;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
                 }
             }
         }

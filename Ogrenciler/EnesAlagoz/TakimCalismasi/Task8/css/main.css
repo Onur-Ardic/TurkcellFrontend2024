@@ -11888,6 +11888,9 @@ h2, .h2 {
   transition: 0.5s all ease-in-out;
   box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
+.my-card:hover .topic {
+  color: #6247ea !important;
+}
 
 .my-card-2:hover {
   transition: 0.1s all ease;
@@ -11901,13 +11904,26 @@ h2, .h2 {
   color: #6247ea !important;
 }
 
+.my-card-3 {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #9381eb;
+}
+.my-card-3:hover {
+  transition: 0.1s all ease;
+  opacity: 1;
+  background-color: white !important;
+  color: black !important;
+}
+
 .top-header a:hover {
   transition: 0.5s all ease-in-out;
   color: #6247ea !important;
 }
 
-.top-services-section {
-  background-color: #6247ea;
+.co-logo:hover {
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+  opacity: 1 !important;
 }
 
 @media screen and (max-width: 578px) {

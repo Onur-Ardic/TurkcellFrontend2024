@@ -57,3 +57,10 @@ a {
     }
   }
 }
+.logos{
+  img{
+    &:hover{
+      opacity: 1 !important;
+    }
+  }
+}
