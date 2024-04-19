@@ -43,6 +43,14 @@ h2 {
         }
     }
 }
+.my-card-3 {
+    &:hover {
+        transition: 0.1s all ease;
+        opacity: 1;
+        background-color: white !important;
+        color: black !important;
+    }
+}
 .top-header {
     a {
         &:hover {
