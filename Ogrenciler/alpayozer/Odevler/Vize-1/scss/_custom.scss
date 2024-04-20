@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto:wght@400;500;700;900&display=swap');
+.landing-section{
+    background-image: url('../assets/images/home.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.img{
+    width: 800px;
+    height: 800px;
+}
+.faq-title{
+    color: white;
+}
+.faq-subtitle{
+    color: #ffffff;
+}
+.about-bg{
+    background-image: url('../assets/images/kanyon.png');
+    background-size: cover;
+    // background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.faq-bg{
+    background-image: url('../assets/images/galaxy-night-panoramic.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.fs-title{
+    font-size: 90px;
+    font-family: 'Jersey 10', sans-serif;
+}
+.fs-subtitle{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.welcome{
+    padding: 100px 0;
+}
+.menu{
+    li{
+        margin: 0 20px;
+    }
+}
