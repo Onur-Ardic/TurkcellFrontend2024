@@ -6,9 +6,442 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vize Ödevi</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1>Hello Word</h1>
+    <header class="header">
+      <div class="hero-top bg-yellow-color w-100 pb-0">
+        <marquee class="fs-12 text-center mb-0 py-3">
+          Orta doğu savaş indirimleri başladı hemen
+          <a href="index.html text-text-white" class="text-decoration-none">tıkla</a>
+          alışverişe başla.
+        </marquee>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-black-nero w-100 pt-0">
+        <div class="container-md">
+          <a class="navbar-brand" href="#">
+            <img src="assets/image/darklogo.png" class="img-fluid w-75" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end fs-20"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-warning" aria-current="page" href="#">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-warning" href="#">Hakkımızda</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-warning"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Ürünler
+                </a>
+                <ul class="dropdown-menu text-warning">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-warning">İletişim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero mt-5">
+        <div class="hero-wrapper w-100 row justify-content-center mx-auto align-items-center">
+          <div class="hero-left col-lg-3 d-none d-md-block">
+            <div class="list-group border-1 border-danger lh-lg h-100">
+              <a
+                href="#"
+                class="list-group-item list-group-item-action active-first"
+                aria-current="true"
+              >
+                Anasayfa
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">Tanklar</a>
+              <a href="#" class="list-group-item list-group-item-action">İnsansız Hava Araçları</a>
+              <a href="#" class="list-group-item list-group-item-action">Zırhlı Taşıyıcılar</a>
+              <a class="list-group-item list-group-item-action" aria-disabled="true">Silahlar</a>
+            </div>
+          </div>
+
+          <div class="hero-mid col-lg-4 d-none d-md-block">
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carousel-left"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-left"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-left"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/image/banner/tank-1.png"
+                    class="d-block w-100 h-100"
+                    alt="banner"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kendi savunmanı geliştir.</h5>
+                    <p>Kendi savunmanı geliştir. Felakete hazırlan.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/image/banner/banner.png" class="d-block w-100" alt="banner" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Son teknoloji donanımlar</h5>
+                    <p>En güncel teknolojiler.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/image/banner/banner-1.png"
+                    class="d-block w-100"
+                    style="height: 260px"
+                    alt="banner"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Herkesin silah deposu olmalı.</h5>
+                    <p>Güdümlü son teknoloji sistemler.</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-right col-lg-4">
+            <div
+              id="carouselExampleFadeAutoplaying"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/image/banner/vehicleBanner.png"
+                    class="d-block w-100"
+                    alt="vehicleSlider"
+                    style="height: 260px"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>En iyi savaş araçları</h5>
+                    <p>Güncel teknojilerle donatılmış zırhlılar.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/image/banner/helicopterBanner.png"
+                    class="d-block w-100"
+                    alt="helicopter-slider"
+                    style="height: 260px"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Taşıyıcı Helikopterler</h5>
+                    <p>En güncel donanımlarla güçlendirilmiş personel taşıma helikopterleri.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/image/banner/bannerHeader.png"
+                    class="d-block w-100"
+                    alt="drone-slider"
+                    style="height: 260px"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kamikaze Dronları</h5>
+                    <p>En hızlı ve atik kamikaze dronları.</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleFadeAutoplaying"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleFadeAutoplaying"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="product-item army-font w-100">
+      <div class="container">
+        <div class="product-item-content text-center mt-120 text-white">
+          <h3>Tanklar & Zırhlı Taşıyıcılar</h3>
+          <p class="army-font-text">En güncel donanımlarla güçlendirilmiş kara makineleri</p>
+        </div>
+        <div
+          class="product-card-wrapper d-flex justify-content-around gap-3 flex-column flex-md-row"
+        >
+          <div class="card w-100 position-relative rounded-top">
+            <div class="card-img">
+              <img
+                src="assets/image/products/1948-Sherman.webp"
+                class="img-fluid rounded-top"
+                alt="sherman-tank"
+                id="image-first"
+              />
+
+              <img
+                src="assets/image/products/sherman-2.jpg"
+                alt="img-2sherman"
+                class="img-fluid rounded-top position-absolute top-0 start-0"
+                id="image-second"
+              />
+            </div>
+
+            <div class="card-content army-font-text mt-3">
+              <h4 class="text-center">1948 Sherman Tank</h4>
+              <div class="price">
+                <p class="text-center">
+                  17.000$
+                  <span class="fs-12 text-danger text-decoration-line-through">21.200$</span>
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="card-btn d-flex flex-column mt-2 me-2 position-absolute top-10 end-0 position-md-relative"
+            >
+              <button class="border-0 bg-light p-2">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+              <a class="border-0 bg-light text-black p-2 mt-2">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+              <button class="border-0 bg-light p-2 mt-2">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card w-100 position-relative border-0">
+            <div class="card-img">
+              <img
+                src="assets/image/products/altay.jpeg"
+                class="img-fluid rounded-top"
+                alt="sherman-tank"
+                id="image-first"
+              />
+
+              <img
+                src="assets/image/products/altay01.jpeg"
+                alt="img-2sherman"
+                class="img-fluid rounded-top position-absolute top-0 start-0"
+                id="image-second"
+              />
+            </div>
+
+            <div class="card-content army-font-text mt-3">
+              <h4 class="text-center">Altay Tank</h4>
+              <div class="price">
+                <p class="text-center">
+                  67.000$
+                  <span class="fs-12 text-danger text-decoration-line-through">70.900$</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card-btn d-flex flex-column mt-2 me-2 position-absolute top-10 end-0">
+              <button class="border-0 bg-light p-2">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+              <a class="border-0 bg-light text-black p-2 mt-2">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+              <button class="border-0 bg-light p-2 mt-2">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card w-100 position-relative border-0">
+            <div class="card-img">
+              <img
+                src="assets/image/products/fnss-akıncı.webp"
+                class="img-fluid rounded-1"
+                alt="sherman-tank"
+                id="image-first"
+              />
+
+              <img
+                src="assets/image/products/fnssAkıncı01.jpeg"
+                alt="img-2sherman"
+                class="img-fluid rounded-1 position-absolute top-0 start-0"
+                id="image-second"
+              />
+            </div>
+
+            <div class="card-content army-font-text mt-3">
+              <h4 class="text-center">FNSS Akıncı ZPT</h4>
+              <div class="price">
+                <p class="text-center">
+                  34.000$
+                  <span class="fs-12 text-danger text-decoration-line-through">35.400$</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card-btn d-flex flex-column mt-2 me-2 position-absolute top-10 end-0">
+              <button class="border-0 bg-light p-2">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+              <a class="border-0 bg-light text-black p-2 mt-2">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+              <button class="border-0 bg-light p-2 mt-2">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card w-100 position-relative border-0">
+            <div class="card-img">
+              <img
+                src="assets/image/products/american.jpeg"
+                class="img-fluid rounded-1"
+                alt="sherman-tank"
+                id="image-first"
+              />
+
+              <img
+                src="assets/image/products/amerikan01.jpeg"
+                alt="img-2sherman"
+                class="img-fluid rounded-1 position-absolute top-0 start-0"
+                id="image-second"
+              />
+            </div>
+
+            <div class="card-content army-font-text mt-3">
+              <h4 class="text-center">Amerikan Hummer M1511</h4>
+              <div class="price">
+                <p class="text-center">
+                  21.000$
+                  <span class="fs-12 text-danger text-decoration-line-through">21.900$</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card-btn d-flex flex-column mt-2 me-2 position-absolute top-10 end-0">
+              <button class="border-0 bg-light p-2">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+              <a class="border-0 bg-light text-black p-2 mt-2">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+              <button class="border-0 bg-light p-2 mt-2">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-area mt-120 army-font-text">
+      <div class="container">
+        <div class="banner-left d-flex justify-content-around gap-3">
+          <div class="banner-left-first">
+            <div class="banner-left position-relative top-80 ms-3 text-white">
+              <h3>Güncel Teknolojiler</h3>
+            </div>
+          </div>
+          <div class="banner-left-second">
+            <div class="banner-left-content text-center position-relative top-50">
+              <a
+                href="#"
+                class="text-decoration-none border-1 text-white btn btn-warning bg-transparent hover"
+                >Şimdi Alışveriş Yap</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="banner-right mt-4 d-flex justify-content-around gap-3">
+          <div class="banner-right-first">
+            <h3 class="text-white position-relative top-80 ms-3">Savunma Sanayisinde Öncü</h3>
+          </div>
+          <div class="banner-right-second">
+            <h5 class="fs-1 text-white position-relative top-50">Kalite ve Güven</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

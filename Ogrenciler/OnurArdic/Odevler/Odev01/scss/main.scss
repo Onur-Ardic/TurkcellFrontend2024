@@ -49,5 +49,5 @@
 @import '../node_modules/bootstrap/scss/utilities/api';
 
 // 8. Add additional custom code here
-@import 'custom.scss';
-@import 'style.scss';
+@import './custom';
+@import './style.scss';
