@@ -11,12 +11,6 @@ body {
   background-color: #001c30;
 }
 
-@mixin bannerMixin($width, $height, $imageSize) {
-  width: $width;
-  height: $height;
-  background-size: $imageSize;
-}
-
 .product-item {
   .product-card-wrapper {
     .card {
@@ -89,14 +83,14 @@ body {
 
     .banner-left-second {
       @extend .banner-left-first;
-      background: url(../assets/image/banner/bannerTanks.png);
+      background: url(../assets/image/banner-section/drone.png);
       background-position: center;
       flex: 2;
     }
   }
   .banner-right {
     .banner-right-first {
-      background: url(../assets/image/banner/helicopterBanner.png);
+      background: url(../assets/image/banner-section/bannerSection01.png);
       width: 100%;
       height: 300px;
       background-size: cover;
@@ -106,8 +100,9 @@ body {
 
     .banner-right-second {
       @extend .banner-right-first;
-      background: url(../assets/image/products/altay01.jpeg);
+      background: url(../assets/image/banner-section/bannerSection03.png);
       flex: 1;
+      background-size: cover;
     }
   }
 }

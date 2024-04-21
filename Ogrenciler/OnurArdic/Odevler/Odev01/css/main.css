@@ -16392,12 +16392,12 @@ body {
   background-position: right;
 }
 .banner-area .banner-left .banner-left-second {
-  background: url(../assets/image/banner/bannerTanks.png);
+  background: url(../assets/image/banner-section/drone.png);
   background-position: center;
   flex: 2;
 }
 .banner-area .banner-right .banner-right-first, .banner-area .banner-right .banner-right-second {
-  background: url(../assets/image/banner/helicopterBanner.png);
+  background: url(../assets/image/banner-section/bannerSection01.png);
   width: 100%;
   height: 300px;
   background-size: cover;
@@ -16405,8 +16405,9 @@ body {
   background-position: right;
 }
 .banner-area .banner-right .banner-right-second {
-  background: url(../assets/image/products/altay01.jpeg);
+  background: url(../assets/image/banner-section/bannerSection03.png);
   flex: 1;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=main.css.map */
