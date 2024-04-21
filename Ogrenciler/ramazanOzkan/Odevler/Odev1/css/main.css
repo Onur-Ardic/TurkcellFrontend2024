@@ -12,12 +12,25 @@
   color: #067bc2 !important;
   border-radius: 15px;
 }
+.nav-link img {
+  filter: invert(34%) sepia(98%) saturate(874%) hue-rotate(171deg) brightness(92%) contrast(97%);
+}
 .nav-link:hover {
   color: white !important;
   background-color: #067bc2 !important;
 }
-.nav-link:hover .bi-person {
-  fill: white !important;
+.nav-link:hover img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(317deg) brightness(104%) contrast(101%);
+}
+
+.card {
+  overflow: hidden;
+}
+.card img {
+  transition: 0.8 all ease;
+}
+.card:hover img {
+  scale: 1.1;
 }
 
 /*!
@@ -11871,6 +11884,10 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none2;
+}
+
 .logo {
   height: 75px;
   width: 120px;
@@ -11880,8 +11897,24 @@ textarea.form-control-lg {
   background-color: #84bcda;
 }
 
+.bg-color-yellow {
+  background-color: #ecc30b;
+}
+
+.color-blue2 {
+  color: #84bcda;
+}
+
+.color-blue {
+  color: #067bc2;
+}
+
+.color-white {
+  color: #fff;
+}
+
 .category-btn {
-  color: white;
+  color: #fff;
   background-color: #067bc2;
   height: 37.6px;
   width: 110.6px;
@@ -11921,17 +11954,75 @@ textarea.form-control-lg {
   z-index: 1;
 }
 
-.img-div {
+.img-div, .categories {
   background-image: url("../img/tanıtım.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
+  color: #fff;
+}
+
+.categories {
+  background-image: url("../img/category-bg.jpg");
 }
 
 .kampanya img {
   width: 70%;
   border-radius: 15px;
+}
+.kampanya ul li {
+  list-style: none;
+}
+.kampanya ul li img {
+  width: 20px;
+  margin-right: 15px;
+}
+
+.main-product img {
+  width: 100%;
+  margin: 50px 0px;
+  border-radius: 20px;
+}
+
+.other-produts .card img {
+  transition: 0.3 ease;
+  overflow: hidden;
+}
+.other-produts .card img:hover {
+  scale: 1.2;
+}
+
+.section-5 .card {
+  border: 0;
+}
+
+.section-6 .qr {
+  width: 64px;
+  height: 64px;
+}
+.section-6 a {
+  color: black;
+  text-decoration: none;
+}
+.section-6 .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.illustration img {
+  filter: invert(34%) sepia(98%) saturate(874%) hue-rotate(171deg) brightness(92%) contrast(97%);
+}
+
+.lnr {
+  font-family: Linearicons-Free;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*# sourceMappingURL=main.css.map */
