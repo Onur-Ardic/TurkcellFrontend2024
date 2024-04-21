@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Nanum+Gothic:wght@400;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Nanum Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+*::selection {
+  background: black;
+  color: white;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@mixin flex(
+  $display,
+  $justify: none,
+  $align: none,
+  $column: row,
+  $gap: 2rem,
+  $wrap: wrap
+) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $column;
+  flex-wrap: $wrap;
+  gap: $gap;
+}
+@mixin grid($display, $justify: none, $align: none, $gap: 2rem) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+$sizes: 11, 12.8, 13, 14, 15, 16, 19.2, 20, 24, 30, 32, 48;
+@each $size in $sizes {
+  $class-size: $size;
+  @if $size == 19.2 {
+    $class-size: 19_2;
+  } @else if $size ==12.8 {
+    $class-size: 12_8;
+  }
+  .fs-#{$class-size} {
+    font-size: $size * 1px;
+  }
+}
+
+$fontWeights: 100, 400, 500, 700, 900;
+@each $weight in $fontWeights {
+  .fw-#{$weight} {
+    font-weight: $weight;
+  }
+}
+
+$fontStyles: normal, bold, italic;
+@each $style in $fontStyles {
+  .font-style-#{$style} {
+    font-style: $style;
+  }
+}
+
+$colors: (
+  "white": #ffffff,
+  "black": #000000,
+  "blue": #0000ff,
+  "light-blue": #2f89fc,
+  "yellow": #f89d13,
+  "gray": #808080,
+  "dark-gray": #a9a9a9,
+  "light-gray": #d3d3d3,
+  "light-g": #4d4d4d,
+  "antrasit": #495057,
+  "g2": #666666,
+  "g3": #737373,
+  "g4": #9999,
+);
+
+@each $colorName, $colorValue in $colors {
+  .color-#{$colorName} {
+    color: $colorValue;
+  }
+}
+
+$bgColors: (
+  "white": #ffffff,
+  "blue": #2f89fc,
+  "dark-gray": #333333,
+  "gray": #e9ecef,
+  "light-gray": #f8f9fa,
+);
+@each $bgColorName, $bgColorValue in $bgColors {
+  .bg-color-#{$bgColorName} {
+    background-color: $bgColorValue;
+  }
+}
+
+@mixin button-style(
+  $padding-y: 0.415rem,
+  $padding-x: 0.75rem,
+  $border-radius: 0.25rem,
+  $background-color: none,
+  $color: none,
+  $border: none
+) {
+  padding: $padding-y $padding-x;
+  border-radius: $border-radius;
+  background-color: $background-color;
+  color: $color;
+  border: $border;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+%placeholder {
+  font-size: 1rem;
+  color: #495057;
+}
+%line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #2f89fc;
+}
