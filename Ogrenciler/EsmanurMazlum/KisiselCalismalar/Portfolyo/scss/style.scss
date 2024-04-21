@@ -3,14 +3,21 @@
 
 header{
     padding-top: 60px;
-    img{
-        display: block;
-        width: 98px;
-        height: 56px;
+    a{
+        img{
+            display: block;
+            height: 100px;
+            width: 100px;
+        }
+        span{
+            letter-spacing: 5px;
+        }
     }
+
 }
 
 .portfolio{
+    padding: 20px 0 90px;
     .portfolio-content{
         display: flex;
         justify-content: space-between;
@@ -189,7 +196,19 @@ header{
     }
 }
 
+.banner{
+    background-color: #D4A373;
+    padding: 100px 0 100px;
+    a{
+        display: inline-block;
+        background-color: #FAEDCD;
+        color: #3f4238;
+        border-radius: 7px;
+    }
+}
+
 .project{
+    background: url(../images/squiggle-background\ 1.svg);
     .project-title{
         h2{
             @include font(50px, #6b705c, 700);
@@ -197,22 +216,16 @@ header{
             margin-bottom: 20px;
         }
     }
-    padding: 100px 0 90px;
+    padding: 120px 0 90px;
     .cards{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
         .card{
-            width: calc(100% /3);
-            padding: 25px 10px;
             box-shadow: 0 0 8px rgba(136, 136, 136, 0.08);
             background-color: #f7f5e8;
-            border-radius: 10px;
+            border-radius: 10px; 
             &:hover{
                 box-shadow: 0 15px 10px rgba(136, 136, 136, 0.1);
             }
             img{
-                max-width: 350px;
                 border-radius: 5px;
                 margin-bottom: 10px;
             }
@@ -232,7 +245,7 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 40%;
     background-color: #FEFAE0;
     z-index: -1;
@@ -242,9 +255,8 @@ header{
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
+    height: 100vh;
     width: 60%;
     background-color: #CCD5AE;
-    
     z-index: -1;
 }
