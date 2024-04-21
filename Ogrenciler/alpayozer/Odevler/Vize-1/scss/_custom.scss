@@ -6,6 +6,31 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.tercih{
+    background-color: rgba(0, 0, 0, 0.966);
+    // background-color: rgb(0, 0, 0);
+}
+.appointment{
+    background-color: rgba(0, 0, 0, 0.966);
+}
+.homes{
+    background-color: rgba(0, 0, 0, 0.966);
+    // background-color: rgb(0, 0, 0);
+}
+.footer{
+    background-color: rgba(0, 0, 0, 0.966);
+}
+.ev-img{
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+        img{
+            opacity: .75 !important;
+        }
+    }
+    
+}
+
 .img{
     width: 800px;
     height: 800px;
@@ -17,9 +42,9 @@
     color: #ffffff;
 }
 .about-bg{
-    background-image: url('../assets/images/kanyon.png');
+    background-image: url('../assets/images/desert.png');
     background-size: cover;
-    // background-position: center;
+    //background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -39,10 +64,66 @@
     font-family: 'Roboto', sans-serif;
 }
 .welcome{
-    padding: 100px 0;
+    padding: 40px 0;
+}
+.color-yellow{
+    color: #EBE19A;
+}
+.bg-yellow{
+    // background-color: #EBE19A;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    height: 30px;
+    color: white;
 }
 .menu{
     li{
         margin: 0 20px;
     }
+}
+.vizyon-card{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.details-bg{
+    background-color: rgba(0, 0, 0, 0.966);
+}
+// 040a0e
+
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.timeline-item {
+    padding: 20px;
+    border-left: 2px solid #ccc;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-content {
+    padding-left: 20px;
+    color: #fff;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ccc;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item:last-child::after {
+    display: none;
 }
