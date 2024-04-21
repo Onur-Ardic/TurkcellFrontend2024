@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$thema-color-blue:#067bc2;
+$thema-color-blue2:#84bcda;
+$thema-color-yellow:#ecc30b;
+$thema-color-white:white;
+
+.logo{
+    height: 75px;
+    width:120px;
+}
+.bg-color-blue2{
+    background-color: $thema-color-blue2;
+}
+.category-btn{
+    color: $thema-color-white;
+    background-color: $thema-color-blue;
+    height: 37.6px;
+    width: 110.6px;
+    &:hover{
+        background-color: $thema-color-yellow;
+        color: $thema-color-blue;
+    }
+}
+.sahte {
+    position: relative; 
+    overflow: hidden; 
+    border: none;
+    background-color: $thema-color-blue;
+    &:hover{
+        color: $thema-color-yellow;
+    }
+}
+.sahte-image {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%; 
+    height: auto; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+// iç içe yazıldığı zaman merkezdeki yazı üzerine gelindiğinde bacground color çalışıyor
+.sahte:hover .sahte-image {
+    opacity: 1; 
+}
+.button-text {
+    position: relative; 
+    z-index: 1; 
+}
+.img-div{
+    background-image: url('../img/tanıtım.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: $thema-color-white;
+}
+
+.kampanya{
+    // background-color: $thema-color-white;
+    img{
+        width: 70%;
+        border-radius: 15px;
+    }
+}
+

@@ -1,0 +1,24 @@
+// bg-light bg-color ezilecek 
+$thema-color-blue:#067bc2;
+$thema-color-blue2:#84bcda;
+$thema-color-yellow:#ecc30b;
+.btn-primary{
+    background-color:$thema-color-blue !important ;
+    border-color: $thema-color-blue !important;
+    &:hover{
+        color: $thema-color-blue !important ;
+        background-color: white !important;
+    }
+}
+
+.nav-link{
+    color: $thema-color-blue !important;
+    border-radius: 15px;   
+    &:hover{
+        color: white !important;
+        background-color: $thema-color-blue !important;
+        .bi-person {
+            fill: white !important; // Hover durumunda fill rengini beyaza ayarlar
+        }
+    }
+}

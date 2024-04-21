@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+   <div class="header">
+    <div class="container">        
+        <nav class="navbar navbar-expand-lg d-flex bg-white sticky-top ">
+            <div class="container-fluid">
+              <a class="navbar-brand col-lg-2 " href="#"><img class="logo" src="./img/logo_trial.png" alt=""></a>       
+              <form class="d-flex col-lg-6 mx-2">
+                  <input class="form-control me-2" type="search" placeholder="Aradığınız ürün, kategori veya markayı yazınız
+                  " aria-label="Search">
+                  <button class="btn btn-primary" type="submit">Ara</button>
+               </form>
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-lg-4 gap-2">
+                <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="./img/svg/person.svg" alt=""> Giriş Yap
+                      </a>                        
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="#"><img src="img/svg/bag-heart.svg" alt=""> Favorilerim</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="#"><img src="./img/svg/basket.svg" alt=""> Sepetim</a>
+                  </li>
+
+              
+            </div>
+        </nav>
+        <!-- usr-modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- nav2 -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-lg-12 d-flex  justify-content-between gap-1">
+              <li class="nav-item col-lg-3 text-center">
+                <a class="nav-link fs-5" aria-current="page" href="#">Ev</a>
+              </li>
+              <li class="nav-item col-lg-3 text-center">
+                <a class="nav-link fs-5 " href="#">Hakkımızda</a>
+              </li> 
+              <li class="nav-item col-lg-3 text-center">
+                <a class="nav-link fs-5 " aria-current="page" href="#">Sıkça Sorulan Sorular</a>
+              </li>
+              <li class="nav-item col-lg-3 text-center">
+                <a class="nav-link fs-5 " aria-current="page" href="#">İletişim</a>
+              </li>             
+            </ul>
+          </div>
+        </div>
+        </nav>    
+    </div>
+    
+   </div>
+   <div class="section1 bg-color-blue2">
+    <div class="container d-flex flex-row">
+        <!-- Kategoriler -->
+        <div class=" d-flex flex-column gap-3 py-5 col-lg-2 align-items-start"> 
+
+            <button class="btn category-btn sahte">
+                <span class="button-text">Kamış</span>
+                <img class="sahte-image" src="./img/kamış.jpg" alt="Sahte">
+            </button>
+
+            <button class="btn category-btn sahte">
+                <span class="button-text">Makina</span>
+                <img class="sahte-image" src="./img/makina.jpg" alt="Sahte">
+            </button>
+            <button class="btn category-btn sahte">
+                <span class="button-text">Balık Bulucu</span>
+                <img class="sahte-image" src="./img/sahte.jpg" alt="Sahte">
+            </button>
+            <button class="btn category-btn sahte">
+                <span class="button-text">Misina</span>
+                <img class="sahte-image" src="./img/misina.jpg" alt="Sahte">
+            </button>
+            <button class="btn category-btn sahte">
+                <span class="button-text">Kelebek</span>
+                <img class="sahte-image" src="./img/kelebek.jpg" alt="Sahte">
+            </button>
+            <button class="btn category-btn sahte">
+                <span class="button-text">Sahte Balık</span>
+                <img class="sahte-image" src="./img/sahte.jpg" alt="Sahte">
+            </button>
+        </div>
+        <!-- Resim -->
+        <div class="img-div col-lg-8 py-2 d-flex justify-content-end ">
+            <p class="fs-1 py-3 px-3">Her Yerde Yanınızda</p>
+        </div>
+        <!-- Jet Kampanya -->
+        <div class="kampanya d-flex flex-column mx-2 py-3 ">
+            <img src="./img/JetUrun.jpg" alt="Olta Makinası">
+            <div class="d-flex flex-column justify-content-end">
+                <ul>
+                    <li>₺1.550</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+   </div>
+</body>
+</html>
