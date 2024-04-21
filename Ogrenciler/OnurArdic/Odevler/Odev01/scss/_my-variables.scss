@@ -1,0 +1,38 @@
+$colorHover: #678983;
+
+$custom-colors: (
+  'yellow-color': #f4ce14,
+  'text-white': #f5f7f8,
+  'gray': #777777,
+  'black-nero': #121212,
+  'off-white': #fafcff,
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$h12-font-size: $font-size-base * 0.75;
+$h14-font-size: $font-size-base * 0.9;
+$h20-font-size: $font-size-base * 1.25;
+$h36-font-size: $font-size-base * 2.25;
+$h48-font-size: $font-size-base * 3.25;
+$custom-sizes: (
+  12: $h12-font-size,
+  14: $h14-font-size,
+  20: $h14-font-size,
+  36: $h36-font-size,
+  48: $h48-font-size,
+);
+$font-sizes: map-merge($font-sizes, $custom-sizes);
+
+$custom-spacers: (
+  12: $spacer * 0.75,
+  15: $spacer * 0.94,
+  20: $spacer * 1.25,
+  25: $spacer * 1.56,
+  30: $spacer * 1.875,
+  40: $spacer * 2.5,
+  50: $spacer * 3.125,
+  60: $spacer * 3.75,
+  75: $spacer * 4.7,
+  120: $spacer * 7.5,
+);
+$spacers: map-merge($spacers, $custom-spacers);
