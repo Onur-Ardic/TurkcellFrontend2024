@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Druco – Elementor WooCommerce WordPress Theme</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="global-style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <div class="header-top">
+          <div class="container flex p-1">
+            <div class="head-top">
+              <p>FREE DELIVERY on all orders</p>
+            </div>
+            <div class="head-middle">
+              <span class="font-color-yellow">FLASH SALE:</span>
+              <span>60% OFF CAR BATTERIES | USE CODE "BATT60"</span>
+            </div>
+            <div class="head-menu">
+              <ul class="flex-around">
+                <li>Help</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-middle">
+          <div class="container grid p-2 items-center">
+            <div class="logo">
+              <a href="#">
+                <img src="assets/logo.png" alt="Druco" />
+              </a>
+            </div>
+            <div class="search input-color">
+              <select class="input-color" name="categories input-color" id="">
+                <option value="">All Categories</option>
+              </select>
+              <input
+                class="input-color"
+                type="text"
+                placeholder="Search for products"
+              />
+              <button class="btn btn-round bg-color-yellow">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="language-currency right">
+              <select name="language" id="">
+                <option value="English">English</option>
+              </select>
+              <select name="currency" id="">
+                <option value="USD">USD</option>
+              </select>
+            </div>
+            <div class="icons">
+              <ul class="flex-around">
+                <li>
+                  <a href="#"> <i class="fa-solid fa-user"></i> </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container flex">
+            <nav>
+              <ul class="grid left p-1">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PAGES</a></li>
+                <li><a href="#">SERVICE PARTS</a></li>
+                <li><a href="#">BRAKE</a></li>
+                <li><a href="#">CAR BATTERIES</a></li>
+                <li><a href="#">TOOLS & GARAGE</a></li>
+              </ul>
+            </nav>
+            <div class="bottom-content flex bg-color-yellow p-1">
+              <img src="assets/phone-icon.png" alt="phone-icon" />
+              <div class="call-us">
+                <p>Call us 24/7</p>
+                <h3>+08 9229 8228</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="vehicle w-100">
+        <div class="container grid">
+          <div class="vehicle-left mt-30 grid p-2 center bg-color-white">
+            <h2>SEARCH BY VEHICLE</h2>
+            <select name="" id="">
+              <option value="">Select Make</option></select
+            ><select name="" id="">
+              <option value="">Select Model</option></select
+            ><select name="" id="">
+              <option value="">Select Year</option></select
+            ><select name="" id="">
+              <option value="">Select Engine</option>
+            </select>
+            <div class="vehicle-right-btn center">
+              <button class="btn bg-color-yellow">GO</button>
+            </div>
+          </div>
+          <div class="vehicle-right font-color-white mt-30">
+            <h2>BIG SALE</h2>
+            <h1>40% off Sale Is Back</h1>
+            <p>
+              Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut
+              <br />
+              labore et dolore magna aliqua.
+            </p>
+            <button class="btn bg-color-white mt-30">SHOP NOW</button>
+          </div>
+        </div>
+        <div class="overlay-vehicle"></div>
+      </section>
+      <section class="categories bg-color-yellow">
+        <div class="container grid center">
+          <div class="product mt-30 left">
+            <h2 class="fz-40">Categories</h2>
+            <p>March Favorites</p>
+            <div class="product-btn mt-15">
+              <button class="btn btn-round bg-color-gray">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button class="btn btn-round bg-color-gray">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <img src="assets/exteriors-310x310.jpg" alt="" />
+            </div>
+            <div class="product-info hover">
+              <p>Wheels & Tires</p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <img src="assets/entertainment-310x310.jpg" alt="" />
+            </div>
+            <div class="product-info hover">
+              <p>Wheels & Tires</p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <img src="assets/interior-310x310.jpg" alt="" />
+            </div>
+            <div class="product-info hover">
+              <p>Wheels & Tires</p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <img src="assets/interior-310x310.jpg" alt="" />
+            </div>
+            <div class="product-info hover">
+              <p>Wheels & Tires</p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <img src="assets/oils-310x310.jpg" alt="" />
+            </div>
+            <div class="product-info hover">
+              <p>Wheels & Tires</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bestsellers-popular-items p-2">
+        <div class="container">
+          <div class="bestsellers-popular-items-info flex-center">
+            <h2 class="font-color-yellow fz-36">Bestsellers</h2>
+            <h2 class="fz-36">Popular Items</h2>
+          </div>
+          <div class="items grid mb-30 pt-2">
+            <div class="item">
+              <div class="item-img">
+                <button class="btn fz-10 bg-color-red font-color-white p-btn">
+                  %15
+                </button>
+                <img src="assets/8.jpg" alt="" />
+              </div>
+              <div class="item-info">
+                <p>Kit Brembo GT BMW</p>
+                <div class="star font-color-yellow mb-15">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="font-color-blue fz-18 mb-15">$69.75</span>
+                <span class="font-line mb-15">202.87</span>
+                <button
+                  class="btn bg-color-black font-color-yellow add-to-cart-btn"
+                >
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-img">
+                <button class="btn fz-10 bg-color-red font-color-white p-btn">
+                  %15
+                </button>
+                <img src="assets/1.jpg" alt="" />
+              </div>
+              <div class="item-info">
+                <p>Valvoline Oil Stockists</p>
+                <div class="star font-color-yellow mb-15">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="font-color-blue fz-18">$106.58</span>
+                <span class="font-line">$202.99</span>
+                <button
+                  class="btn bg-color-black font-color-yellow add-to-cart-btn"
+                >
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-img">
+                <button class="btn fz-10 bg-color-red font-color-white p-btn">
+                  %15
+                </button>
+                <img src="assets/2.jpg" alt="" />
+              </div>
+              <div class="item-info">
+                <p>Racing Custom Wheels VF577</p>
+                <div class="star mb-15">
+                  <i class="fa-solid fa-star font-color-yellow"></i>
+                  <i class="fa-solid fa-star font-color-yellow"></i>
+                  <i class="fa-solid fa-star font-color-yellow"></i>
+                  <i class="fa-solid fa-star font-color-yellow"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="font-color-blue fz-18">$179.49</span>
+                <span class="font-line">$209.99</span>
+                <button
+                  class="btn bg-color-black font-color-yellow add-to-cart-btn"
+                >
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-img">
+                <button class="btn fz-10 bg-color-red font-color-white p-btn">
+                  %15
+                </button>
+                <img src="assets/3.jpg" alt="" />
+              </div>
+              <div class="item-info">
+                <p>Racing Custom Wheels VF421</p>
+                <div class="star mb-15 font-color-yellow">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="font-color-blue fz-18">$38.24</span>
+                <span class="font-line">$58.47 </span>
+                <button
+                  class="btn bg-color-black font-color-yellow add-to-cart-btn"
+                >
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-img">
+                <button class="btn fz-10 bg-color-red font-color-white p-btn">
+                  %15
+                </button>
+                <img src="assets/6.jpg" alt="" />
+              </div>
+              <div class="item-info">
+                <p>Kit Brembo DT BMW</p>
+                <div class="star mb-15">
+                  <i class="fa-solid fa-star font-color-yellow"></i>
+                  <i class="fa-solid fa-star font-color-yellow"></i>
+                  <i class="fa-solid fa-star font-color-yellow"></i>
+                  <i class="fa-solid fa-star font-color-yellow"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="font-color-blue fz-18">$38.24</span>
+                <span class="font-line">$58.47 </span>
+                <button
+                  class="btn bg-color-black font-color-yellow add-to-cart-btn"
+                >
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-img">
+                <button class="btn fz-10 bg-color-red font-color-white p-btn">
+                  %15
+                </button>
+                <img src="assets/7.jpg" alt="" />
+              </div>
+              <div class="item-info">
+                <p>Kit Brembo GT BMW</p>
+                <div class="star mb-15 font-color-yellow">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="font-color-blue fz-18">$69.24</span>
+                <span class="font-line">$94.47 </span>
+                <button
+                  class="btn bg-color-black font-color-yellow add-to-cart-btn"
+                >
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-img">
+                <button class="btn fz-10 bg-color-red font-color-white p-btn">
+                  %15
+                </button>
+                <img src="assets/9.jpg" alt="" />
+              </div>
+              <div class="item-info">
+                <p>Zipp Battery New 12V</p>
+                <div class="star mb-15">
+                  <i class="fa-solid fa-star font-color-yellow"></i>
+                  <i class="fa-solid fa-star font-color-yellow"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+
+                <span class="font-color-blue fz-18"> $26.58</span>
+                <span class="font-line"> $45.87</span>
+                <button
+                  class="btn bg-color-black font-color-yellow add-to-cart-btn"
+                >
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-img">
+                <button class="btn fz-10 bg-color-red font-color-white p-btn">
+                  %15
+                </button>
+                <img src="assets/7.jpg" alt="" />
+              </div>
+              <div class="item-info">
+                <p>Racing Custom Wheels</p>
+                <div class="star mb-15 font-color-yellow">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+
+                <span class="font-color-blue fz-18"> $35.58</span>
+                <span class="font-line"> $38.87</span>
+                <button
+                  class="btn bg-color-black font-color-yellow add-to-cart-btn"
+                >
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="car-track w-100">
+        <div class="tracks flex">
+          <div class="left-track bg-img-left">
+            <div class="content-info">
+              <h1 class="font-color-white fz-40 mt-30 p-2">
+                Car & Truck <br />
+                Exhaust Pipes
+              </h1>
+              <span class="font-color-white pl-2 fz-18">Exhaust Pipe -</span>
+              <span class="font-color-yellow fz-18">%15</span>
+              <span class="font-color-white fz-18">Now</span>
+            </div>
+            <button class="btn bg-color-yellow m-2">SHOP NOW</button>
+          </div>
+          <div class="right-track bg-img-right">
+            <div class="content-info">
+              <h1 class="font-color-white fz-40 mt-30 p-2">
+                Brakes and Rotors <br />
+                for Sale
+              </h1>
+              <span class="font-color-white pl-2 fz-18">Take an Extra </span>
+              <span class="font-color-yellow fz-18">$5</span>
+              <span class="font-color-white fz-18"> Off Every Monday</span>
+            </div>
+            <button class="btn bg-color-yellow m-2">SHOP NOW</button>
+          </div>
+        </div>
+      </section>
+      <section class="products">
+        <div class="container grid center">
+          <div class="product-col grid justify-center">
+            <h2 class="mb-60 fz-36 mt-30">New Products</h2>
+            <div class="product-card grid">
+              <div class="product-image">
+                <img src="./assets/urun1.jpg" class="w-100" alt="" />
+              </div>
+              <div class="product-content grid pb-1 pt-2">
+                <a class="product-name left">Altra Industrial Motion</a>
+                <div class="star font-color-yellow mb-30 left">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="fz-18 font-color-blue left">$185.99</h3>
+                <button class="btn btn-round bg-color-yellow">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+            <div class="product-card grid">
+              <div class="product-image">
+                <img src="./assets/urun2.jpg" class="w-100" alt="" />
+              </div>
+              <div class="product-content grid pb-1 pt-2">
+                <a class="product-name left">Kit Brembo GT BMW</a>
+                <div class="star font-color-yellow mb-30 left">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="fz-18 font-color-blue left">$69.75</h3>
+                <button class="btn btn-round bg-color-yellow">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card grid">
+              <div class="product-image">
+                <img src="./assets/urun3.jpg" class="w-100" alt="" />
+              </div>
+              <div class="product-content grid pb-1 pt-2">
+                <a class="product-name left">Driver Side Headlight</a>
+                <div class="star font-color-yellow mb-30 left">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="fz-18 font-color-blue left">$53.75</h3>
+                <button class="btn btn-round bg-color-yellow">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-col grid">
+            <h2 class="mb-60 fz-36 mt-30">Specials</h2>
+
+            <div class="product-card grid">
+              <div class="product-image">
+                <img src="./assets/urun4.jpg" class="w-100" alt="" />
+              </div>
+              <div class="product-content grid pb-1 pt-2">
+                <a class="product-name left">Dual Stack PowerTech</a>
+                <div class="star font-color-yellow mb-30 left">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="fz-18 font-color-blue left">$38.24</h3>
+                <button class="btn btn-round bg-color-yellow">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card grid">
+              <div class="product-image">
+                <img src="./assets/urun5.jpg" class="w-100" alt="" />
+              </div>
+              <div class="product-content grid pb-1 pt-2">
+                <a class="product-name left">Racing Custom Wheels</a>
+                <div class="star font-color-yellow mb-30 left">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="fz-18 font-color-blue left">$38.24</h3>
+                <button class="btn btn-round bg-color-yellow">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card grid">
+              <div class="product-image">
+                <img src="./assets/urun6.jpg" class="w-100" alt="" />
+              </div>
+              <div class="product-content grid pb-1 pt-2">
+                <a class="product-name left">Racing Custom Wheels VF123</a>
+                <div class="star font-color-yellow mb-30 left">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="fz-18 font-color-blue left">$38.24</h3>
+                <button class="btn btn-round bg-color-yellow">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-col grid">
+            <h2 class="mb-60 fz-36 mt-30">Sale</h2>
+
+            <div class="product-card grid">
+              <div class="product-image">
+                <img src="./assets/urun7.jpg" class="w-100" alt="" />
+              </div>
+              <div class="product-content grid pb-1 pt-2">
+                <a class="product-name left">Kit Brembo GT BMW</a>
+                <div class="star font-color-yellow mb-30 left">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="fz-18 font-color-blue left">$69.75</h3>
+                <button class="btn btn-round bg-color-yellow">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card grid">
+              <div class="product-image">
+                <img src="./assets/urun8.jpg" class="w-100" alt="" />
+              </div>
+              <div class="product-content grid pb-1 pt-2">
+                <a class="product-name left">Nuna car seats S134</a>
+                <div class="star font-color-yellow mb-30 left">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="fz-18 font-color-blue left">$38.24</h3>
+                <button class="btn btn-round bg-color-yellow">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+            <div class="product-card grid">
+              <div class="product-image">
+                <img src="./assets/urun9.jpg" class="w-100" alt="" />
+              </div>
+              <div class="product-content grid pb-1 pt-2">
+                <a class="product-name left">Racing Custom Wheels</a>
+                <div class="star font-color-yellow mb-30 left">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="fz-18 font-color-blue left">$35.38</h3>
+                <button class="btn btn-round bg-color-yellow">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shop-by-popular-parts">
+        <div class="container center">
+          <h2 class="mb-60 mt-60 p-2">Shop by Popular Parts</h2>
+          <div class="parts grid justify-center mt-60 mb-60">
+            <a href="#" class="part">Brake Disc and Pad Kit (9)</a>
+            <a href="#" class="part">Bumper (4)</a>
+            <a href="#" class="part">Bumper Cover (4)</a>
+            <a href="#" class="part">Control Arm (5)</a>
+            <a href="#" class="part">Control Arm Kit (5)</a>
+            <a href="#" class="part">Cooling Fan Assembly (5)</a>
+            <a href="#" class="part">Door Lock Actuator (3)</a>
+            <a href="#" class="part">Driveshaft (5)</a>
+            <a href="#" class="part">Exterior Door Handle (2)</a>
+            <a href="#" class="part">Fender (5)</a>
+            <a href="#" class="part">Fuel Pump (5)</a>
+            <a href="#" class="part">Grille Assembly (6)</a>
+            <a href="#" class="part">Headlight (7)</a>
+            <a href="#" class="part">Hood (3)</a>
+            <a href="#" class="part">Mirror (3)</a>
+            <a href="#" class="part">Oxygen Sensor (3)</a>
+            <a href="#" class="part">Radiator (4)</a>
+            <a href="#" class="part">Step Bumper (2)</a>
+            <a href="#" class="part">Tail Light (4)</a>
+            <a href="#" class="part">Wheel Hub (9)</a>
+          </div>
+        </div>
+      </section>
+      <section class="new-products">
+        <div class="container"></div>
+      </section>
+      <section class="shop-by-popular-parts">
+        <div class="container"></div>
+      </section>
+      <section class="genuine-parts">
+        <div class="banner-image">
+          <div class="banner-info">
+            <h1 class="font-color-yellow">GENUINE PARTS</h1>
+            <p class="font-color-white">
+              YOU CAN NOW BENEFIT WITH
+
+              <span class="font-color-yellow"> 15% </span>
+              SPECIAL DISCOUNT*
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <h2 class="mb-60 mt-60 p-2 center fz-40">From Our Blog</h2>
+          <div class="cards grid p-2">
+            <div class="card-left">
+              <div class="card-image">
+                <img src="assets/blog-1-1.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <p class="pt-1 pl-1">BY ADMIN IN EXHAUST, WHEELS & TIRES</p>
+                <h2 class="p-1">How to Check and Maintain Your Suspension</h2>
+                <p class="p-1">
+                  The small round table in the dinette may be great for casual
+                  meals with your family, but inviting overnight guests
+                </p>
+                <button class="btn bg-color-yellow m-2">Read More</button>
+              </div>
+            </div>
+            <div class="card-right flex-col">
+              <div class="card-right-info m-2">
+                <span class="fz-10"
+                  >JAN 22, 2021 BY ADMIN IN AUTO PARTS, BRAKING, MIRROR
+                </span>
+                <h2>What Is Car Suspension?</h2>
+                <p>
+                  The small round table in the dinette may be great for casual
+                  meals
+                </p>
+                <button class="btn bg-color-yellow">Read More</button>
+              </div>
+              <div class="card-right-info m-2">
+                <span class="fz-10"
+                  >JAN 22, 2021 BY ADMIN IN BRAKING, HEADLIGHT, INTERIORS</span
+                >
+                <h2>What Does A Car Service Include?</h2>
+                <p>
+                  The small round table in the dinette may be great for casual
+                  meals
+                </p>
+                <button class="btn bg-color-yellow">Read More</button>
+              </div>
+              <div class="card-right-info m-2">
+                <span class="fz-10"
+                  >JAN 22, 2021 BY ADMIN IN AUTO PARTS, EXHAUST, HEADLIGHT</span
+                >
+                <h2>Wiper Blade Size Guide</h2>
+                <p>
+                  The small round table in the dinette may be great for casual
+                  meals
+                </p>
+                <button class="btn bg-color-yellow">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="choose-us pt-80">
+        <div class="container mt-60">
+          <h3 class="font-color-white center pt-2">
+            PROFESSIONAL TEAM SUPPORT
+          </h3>
+          <h1 class="font-color-white center fz-70">
+            Why should the customer <br />
+            choose us?
+          </h1>
+          <div class="choose-us-icons flex-around">
+            <div class="choose-us-icon center">
+              <img src="assets/icon-1.png" alt="" />
+              <p class="font-color-yellow fz-24">Best quality</p>
+              <p class="font-color-white">Best quality is a must at organic</p>
+            </div>
+            <div class="choose-us-icon center">
+              <img src="assets/icon-2.png" alt="" />
+              <p class="font-color-yellow fz-24">Shipping</p>
+              <p class="font-color-white">Deliver within 24 hours</p>
+            </div>
+            <div class="choose-us-icon center">
+              <img src="assets/icon-3.png" alt="" />
+              <p class="font-color-yellow fz-24">Support 24/7</p>
+              <p class="font-color-white">Contact us 24 hours a day</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-brands pt-2">
+        <div class="container">
+          <h1 class="fz-40 center">Featured Brands</h1>
+          <div class="brands flex-center">
+            <div class="brand">
+              <img src="assets/logo-1.jpg" alt="" />
+            </div>
+            <div class="brand">
+              <img src="assets/logo-2.jpg" alt="" />
+            </div>
+            <div class="brand">
+              <img src="assets/logo-3.jpg" alt="" />
+            </div>
+            <div class="brand">
+              <img src="assets/logo-4.jpg" alt="" />
+            </div>
+            <div class="brand">
+              <img src="assets/logo-5.jpg" alt="" />
+            </div>
+            <div class="brand">
+              <img src="assets/logo-6.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter bg-color-yellow p-2">
+        <div class="container">
+          <div class="newsletter-tab flex">
+            <div class="newsletter-header">
+              <h1 class="newsletter-header-title fz-36">Newsletter</h1>
+              <p class="newsletter-header-title-p">
+                Subscribe to our Newsletter get 10% discount code
+              </p>
+            </div>
+            <div class="buton-email">
+              <input
+                class="email-input bg-color-yellow"
+                type="email"
+                name="EMAİL"
+                placeholder="Your e-mail address"
+                required
+              />
+              <button
+                class="btn-submit btn bg-color-black-footer font-color-white"
+                type="submit"
+              >
+                SUBSCRIBE
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer " class="bg-color-black-footer">
+        <div class="footer-menu flex-center p-2 mt-60">
+          <div class="footer-menu-item">
+            <h5 class="font-color-white pb-1">SAY HELLO</h5>
+            <p class="font-color-gray pb-1">
+              Address: 1234 Heaven Stress, Beverly <br />
+              Hill OldYork- United State of Lorem
+            </p>
+            <p class="font-color-gray pb-1">
+              Phone: 1234 5678 5576 – 4657 4657 4656
+            </p>
+            <p class="font-color-gray pb-1">Email: Support1234@Orlife</p>
+            <div class="footer-icon-group flex-center p-2">
+              <a href="#" class="icon-f"
+                ><i class="fa-brands fa-facebook-f font-color-gray"></i
+              ></a>
+
+              <a href="" class="icon-t"
+                ><i class="fa-brands fa-twitter font-color-gray"></i
+              ></a>
+              <a href="" class="icon-p"
+                ><i class="fa-brands fa-square-pinterest font-color-gray"></i
+              ></a>
+              <a href="" class="icon-fr"
+                ><i class="fa-brands fa-flickr font-color-gray"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-menu-item">
+            <h5 class="font-color-white pb-1">MY ACCOUNT</h5>
+            <ul class="font-color-gray pb-1">
+              <li>About</li>
+              <li>Advertising</li>
+              <li>Business Development</li>
+              <li>Careers</li>
+              <li>Permissions</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="footer-menu-item">
+            <h5 class="font-color-white pb-1">PRODUCT</h5>
+            <ul class="font-color-gray pb-1">
+              <li>About</li>
+              <li>Advertising</li>
+              <li>Business Development</li>
+              <li>Careers</li>
+              <li>Permissions</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="footer-menu-item">
+            <h5 class="font-color-white pb-1">READER SERVICES</h5>
+            <ul class="font-color-gray pb-1">
+              <li>Advertising</li>
+              <li>Business Development</li>
+              <li>Careers</li>
+              <li>Permissions</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-alt flex-around">
+          <div class="footer-left-area py-10">
+            <p>
+              © <span class="text-primary">Druco</span> . All Rights Reserved.
+            </p>
+          </div>
+          <div class="footer-right-area">
+            <img
+              width="286"
+              height="26"
+              src="https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/03/payment.png"
+              class="attachment-full size-full"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
