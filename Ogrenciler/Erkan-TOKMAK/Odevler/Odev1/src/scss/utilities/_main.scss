@@ -1,0 +1,12 @@
+@import '../abstracts/_index';
+
+.navbar{
+    background: transparent !important;
+}
+.overlay{
+    @include overlay(#000);
+}
+.imgBox{
+    width: 100px;
+    height: 100px;
+}

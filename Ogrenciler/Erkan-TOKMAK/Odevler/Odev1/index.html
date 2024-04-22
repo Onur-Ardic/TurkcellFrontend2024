@@ -1,11 +1,824 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viking Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Contrail+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./src/assets/logo/logo.png" alt="logo" class="img-fluid logo"
+                        width="80" height="80"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav fs-3">
+                        <li class="nav-item">
+                            <a class="nav-link ms-5" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown ms-3">
+                            <a class="nav-link dropdown-toggle text-secondary" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                SHOP
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-secondary" href="./src/pages/aboutUs.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-secondary" href="./src/pages/faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-secondary" href="./src/pages/contactUs.html">CONTACT US</a>
+                        </li>
+                        <li class="nav-item ms-5">
+                            <a class="nav-link text-secondary" href="#">Login | Register</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-secondary" href="#">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container d-flex align-items-center" style="height: 100vh;">
+            <div class="row z-1">
+                <div class="col-12">
+                    <h1 class="fs-1 text-secondary fw-bold">WHO WANTS TO BE KING?</h1>
+                    <button class="btn btn-primary vkngBtnPrm fs-2">GO STORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature bg-dark">
+        <div class="container py-5">
+            <div class="row py-5 text-center">
+                <h2 class="text-secondary">SAVIORS OF VAR</h2>
+                <p class="text-secondary fs-4">get ahead in the battle with our new inventions</p>
+            </div>
+            <div class="row py-5">
+                <div class="col-lg-4 py-5">
+                    <div class="card bg-light rounded-5 featureCard position-relative">
+                        <div class="featureInfo bg-secondary text-center">
+                            <a href="" class="bg-dark text-secondary text-decoration-none d-block fs-2 w-100 py-2">
+                                Details
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <img src="./src/assets/products/Chain Mail.G01.2k.png" alt=""
+                                class="img-fluid productThumb">
+                            <h2 class="text-center text-primary">NAME</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 py-5">
+                    <div class="card bg-light rounded-5 featureCard position-relative">
+                        <div class="featureInfo bg-secondary text-center">
+                            <a href="" class="bg-dark text-secondary text-decoration-none d-block fs-2 w-100 py-2">
+                                Details
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <img src="./src/assets/products/Chain Mail.G01.2k.png" alt=""
+                                class="img-fluid productThumb">
+                            <h2 class="text-center text-primary">NAME</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 py-5">
+                    <div class="card bg-light rounded-5 featureCard position-relative">
+                        <div class="featureInfo bg-secondary text-center">
+                            <a href="" class="bg-dark text-secondary text-decoration-none d-block fs-2 w-100 py-2">
+                                Details
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <img src="./src/assets/products/Chain Mail.G01.2k.png" alt=""
+                                class="img-fluid productThumb">
+                            <h2 class="text-center text-primary">NAME</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why-choose-us bg-light py-5">
+        <div class="container py-5">
+            <div class="row py-5 text-center">
+                <h2 class="text-secondary fs-2">WHY CHOOSE US</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-4 mb-5">
+                    <div class="row">
+                        <div class="col-9 text-secondary">
+                            <h6 class="fs-3 fw-bold mb-2">1. Combat Ready Equipment:</h6>
+                            <p class="fs-4 mb-5 fw-200">We make a difference with our original and high-quality
+                                equipment
+                                required
+                                for Viking
+                                warriors.
+                                Each of our products is decorated with special designs that were used in the Viking wars
+                                and
+                                had
+                                to be made in preparation for war.
+                            </p>
+                        </div>
+                        <div class="col-3 d-flex justify-content-end">
+                            <span class="bg-primary rounded-circle vkngIcon"><img src="./src/assets/icons/015-flag.png"
+                                    alt="" class="vkngIcon p-3"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9 text-secondary">
+                            <h6 class="fs-3 fw-bold mb-2">2. Reliable Shopping Experience:</h6>
+                            <p class="fs-4">
+                                For fighters, reliability is the most important factor in preparation. You can complete
+                                your
+                                shopping hassle-free with secure payment options, fast shipping and superior customer
+                                service.
+                            </p>
+                        </div>
+                        <div class="col-3 d-flex justify-content-end align-items-end">
+                            <span class="bg-primary rounded-circle vkngIcon"><img src="./src/assets/icons/015-flag.png"
+                                    alt="" class="vkngIcon p-3"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-4">
+                    <div class="rounded-circle bg-primary">
+                        <img src="./src/assets/logo/logo.png" alt="" class="img-fluid p-3">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-5">
+                    <div class="row">
+                        <div class="col-3 d-flex justify-content-start">
+                            <span class="bg-primary rounded-circle vkngIcon"><img src="./src/assets/icons/015-flag.png"
+                                    alt="" class="vkngIcon p-3"></span>
+                        </div>
+                        <div class="col-9 text-secondary text-end">
+                            <h6 class="fs-3 fw-bold mb-2">3. Our Passionate and Professional Team:</h6>
+                            <p class="fs-4 mb-5">We aim to provide you with the best service with our passion for Viking
+                                warriors
+                                preparing
+                                for war and our experience in the industry. Our professional and helpful team will be
+                                with
+                                you every step of the way and always ready to answer your questions.</p>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-3 d-flex justify-content-start align-items-end">
+                            <span class="bg-primary rounded-circle vkngIcon"><img src="./src/assets/icons/015-flag.png"
+                                    alt="" class="vkngIcon p-3"></span>
+                        </div>
+                        <div class="col-9 text-secondary text-end">
+                            <h6 class="fs-3 fw-bold">4. Respect for Viking Culture:</h6>
+                            <p class="fs-4">We reflect our respect for Viking culture with our original designs. We
+                                offer not just
+                                shopping, but also love and devotion to Viking culture.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products position-relative">
+        <div class="overlay"></div>
+        <div class="container py-5 position-relative">
+            <div class="row py-5 z-1">
+                <h2 class="text-secondary text-center">PRODUCTS</h2>
+                <div class="rounded bg-primary py-2 mt-3 text-secondary">
+                    <div class="row">
+                        <div class="col-4 col-md-8">categories</div>
+                        <div class="col-4 col-md-2">a-z sort</div>
+                        <div class="col-4 col-md-2">price sort</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 col-lg-4 d-flex productCard mb-3">
+                    <div class="productCardBefore bg-secondary h-100 rounded-5">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <hr class="text-primary hr">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-title="Add to Wishlist">
+                            <img src="./src/assets/icons/019-bullseye.png" alt="" class="vkngIconHvr p-2"></a>
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Cart"><img
+                                src="./src/assets/icons/023-chest.png" alt="" class="vkngIconHvr p-2"></a>
+                    </div>
+                    <div class="card bg-light rounded-5">
+                        <div class="card-header bg-dark text-secondary rounded-5 pt-3 position-relative">
+                            <div class="col-4 col-md-4 col-lg-4">
+                                <h2 class="">57</h2>
+                                <div class="productCardPrice"></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="./src/assets/products/Chain Mail.G01.2k.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-primary text-secondary rounded-5 pt-3 position-relative">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3>NAME</h3>
+                                    <p>categories</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex productCard mb-3">
+                    <div class="productCardBefore bg-secondary h-100 rounded-5">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Wishlist"><img
+                                src="./src/assets/icons/019-bullseye.png" alt="" class="vkngIconHvr p-2"></a>
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Cart"><img
+                                src="./src/assets/icons/023-chest.png" alt="" class="vkngIconHvr p-2"></a>
+                    </div>
+                    <div class="card bg-light rounded-5">
+                        <div class="card-header bg-dark text-secondary rounded-5 pt-3 position-relative">
+                            <div class="col-4 col-md-4 col-lg-4">
+                                <h2 class="">57</h2>
+                                <div class="productCardPrice"></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="./src/assets/products/Chain Mail.G01.2k.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-primary text-secondary rounded-5 pt-3 position-relative">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3>NAME</h3>
+                                    <p>categories</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex productCard mb-3">
+                    <div class="productCardBefore bg-secondary h-100 rounded-5">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Wishlist"><img
+                                src="./src/assets/icons/019-bullseye.png" alt="" class="vkngIconHvr p-2"></a>
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Cart"><img
+                                src="./src/assets/icons/023-chest.png" alt="" class="vkngIconHvr p-2"></a>
+                    </div>
+                    <div class="card bg-light rounded-5">
+                        <div class="card-header bg-dark text-secondary rounded-5 pt-3 position-relative">
+                            <div class="col-4 col-md-4 col-lg-4">
+                                <h2 class="">57</h2>
+                                <div class="productCardPrice"></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="./src/assets/products/Chain Mail.G01.2k.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-primary text-secondary rounded-5 pt-3 position-relative">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3>NAME</h3>
+                                    <p>categories</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex productCard mb-3">
+                    <div class="productCardBefore bg-secondary h-100 rounded-5">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Wishlist"><img
+                                src="./src/assets/icons/019-bullseye.png" alt="" class="vkngIconHvr p-2"></a>
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Cart"><img
+                                src="./src/assets/icons/023-chest.png" alt="" class="vkngIconHvr p-2"></a>
+                    </div>
+                    <div class="card bg-light rounded-5">
+                        <div class="card-header bg-dark text-secondary rounded-5 pt-3 position-relative">
+                            <div class="col-4 col-md-4 col-lg-4">
+                                <h2 class="">57</h2>
+                                <div class="productCardPrice"></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="./src/assets/products/Chain Mail.G01.2k.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-primary text-secondary rounded-5 pt-3 position-relative">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3>NAME</h3>
+                                    <p>categories</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-none d-lg-flex productCard mb-3">
+                    <div class="productCardBefore bg-secondary h-100 rounded-5">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Wishlist"><img
+                                src="./src/assets/icons/019-bullseye.png" alt="" class="vkngIconHvr p-2"></a>
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Cart"><img
+                                src="./src/assets/icons/023-chest.png" alt="" class="vkngIconHvr p-2"></a>
+                    </div>
+                    <div class="card bg-light rounded-5">
+                        <div class="card-header bg-dark text-secondary rounded-5 pt-3 position-relative">
+                            <div class="col-4 col-md-4 col-lg-4">
+                                <h2 class="">57</h2>
+                                <div class="productCardPrice"></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="./src/assets/products/Chain Mail.G01.2k.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-primary text-secondary rounded-5 pt-3 position-relative">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3>NAME</h3>
+                                    <p>categories</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-none d-lg-flex productCard mb-3">
+                    <div class="productCardBefore bg-secondary h-100 rounded-5">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Wishlist"><img
+                                src="./src/assets/icons/019-bullseye.png" alt="" class="vkngIconHvr p-2"></a>
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Cart"><img
+                                src="./src/assets/icons/023-chest.png" alt="" class="vkngIconHvr p-2"></a>
+                    </div>
+                    <div class="card bg-light rounded-5">
+                        <div class="card-header bg-dark text-secondary rounded-5 pt-3 position-relative">
+                            <div class="col-4 col-md-4 col-lg-4">
+                                <h2 class="">57</h2>
+                                <div class="productCardPrice"></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="./src/assets/products/Chain Mail.G01.2k.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-primary text-secondary rounded-5 pt-3 position-relative">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3>NAME</h3>
+                                    <p>categories</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-none d-lg-flex productCard mb-3">
+                    <div class="productCardBefore bg-secondary h-100 rounded-5">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Wishlist"><img
+                                src="./src/assets/icons/019-bullseye.png" alt="" class="vkngIconHvr p-2"></a>
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Cart"><img
+                                src="./src/assets/icons/023-chest.png" alt="" class="vkngIconHvr p-2"></a>
+                    </div>
+                    <div class="card bg-light rounded-5">
+                        <div class="card-header bg-dark text-secondary rounded-5 pt-3 position-relative">
+                            <div class="col-4 col-md-4 col-lg-4">
+                                <h2 class="">57</h2>
+                                <div class="productCardPrice"></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="./src/assets/products/Chain Mail.G01.2k.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-primary text-secondary rounded-5 pt-3 position-relative">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3>NAME</h3>
+                                    <p>categories</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-none d-lg-flex productCard mb-3">
+                    <div class="productCardBefore bg-secondary h-100 rounded-5">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Wishlist"><img
+                                src="./src/assets/icons/019-bullseye.png" alt="" class="vkngIconHvr p-2"></a>
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Cart"><img
+                                src="./src/assets/icons/023-chest.png" alt="" class="vkngIconHvr p-2"></a>
+                    </div>
+                    <div class="card bg-light rounded-5">
+                        <div class="card-header bg-dark text-secondary rounded-5 pt-3 position-relative">
+                            <div class="col-4 col-md-4 col-lg-4">
+                                <h2 class="">57</h2>
+                                <div class="productCardPrice"></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="./src/assets/products/Chain Mail.G01.2k.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-primary text-secondary rounded-5 pt-3 position-relative">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3>NAME</h3>
+                                    <p>categories</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-none d-lg-flex productCard mb-3">
+                    <div class="productCardBefore bg-secondary h-100 rounded-5">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <img src="./src/assets/icons/036-torch.png" alt="" class="vkngIconHvr p-2">
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Wishlist"><img
+                                src="./src/assets/icons/019-bullseye.png" alt="" class="vkngIconHvr p-2"></a>
+                        <hr class="text-primary hr">
+                        <a href="" data-bs-toggle="tooltip" data-bs-title="Add to Cart"><img
+                                src="./src/assets/icons/023-chest.png" alt="" class="vkngIconHvr p-2"></a>
+                    </div>
+                    <div class="card bg-light rounded-5">
+                        <div class="card-header bg-dark text-secondary rounded-5 pt-3 position-relative">
+                            <div class="col-4 col-md-4 col-lg-4">
+                                <h2 class="">57</h2>
+                                <div class="productCardPrice"></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="./src/assets/products/Chain Mail.G01.2k.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-primary text-secondary rounded-5 pt-3 position-relative">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3>NAME</h3>
+                                    <p>categories</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-5 d-flex justify-content-center">
+                <button class="btn btn-primary vkngBtnPrm fs-2">VIEW MORE</button>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExample" class="carousel slide">
+                        <h2 class="text-secondary text-center py-5">TESTIMONIALS</h2>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row justify-content-center py-5">
+                                    <div class="col-8 text-secondary fs-4">
+                                        <p>"Son savaşta kazandığımız zaferin arkasında mağazadan aldığım muhteşem Viking
+                                            eşyalarının büyük bir payı var! O kalkanlar, kasklar ve balta kesinlikle
+                                            fark yarattı. Eğer savaşa gitmeden önce o dükkanı keşfetmeseydim, kim bilir
+                                            savaşın sonucu ne olurdu? Şimdi savaşın yıldızı benim, ve sırada hangi
+                                            eşyayı alacağımı düşünüyorum. Önerileriniz var mı?"</p>
+                                        <div class="imgBox shadow mx-auto rounded-circle mb-2">
+                                            <img src="./src/assets/bannerImages/heroBanner.png" alt=""
+                                                class="imgBox rounded-circle">
+                                        </div>
+                                        <h5 class="fs-3 text-center">Ragnar Lothbrok</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row justify-content-center py-5">
+                                    <div class="col-8 text-secondary fs-4 align-items-center">
+                                        <p>"Kim derdi ki, Vikinglerin savaşta en büyük silahı bir alışveriş mağazası
+                                            olacaktı! Son alışverişimde bulduğum o epik kalkanlar ve savaş baltaları
+                                            sayesinde zafer bizim oldu. Şimdi sıra hangi Viking stilini deneyeceğimde!
+                                            Mağaza sahibi olmasın da Viking olsun."</p>
+                                        <div class="imgBox shadow mx-auto rounded-circle mb-2">
+                                            <img src="./src/assets/bannerImages/heroBanner.png" alt=""
+                                                class="imgBox rounded-circle">
+                                        </div>
+                                        <h5 class="fs-3 text-center">Ragnar Lothbrok</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row justify-content-center py-5">
+                                    <div class="col-8 text-secondary fs-4">
+                                        <p>"Savaşın kaderini değiştiren ne miydi? İnanın veya inanmayın, mağazadan
+                                            aldığım Viking eşyaları! O savaş kalkanları ve keskin baltalar sayesinde
+                                            düşmanın üzerine öyle bir saldırdık ki, zafer bizim oldu. Alışveriş yapmanın
+                                            savaşta da faydalı olabileceğini kim düşünürdü?"</p>
+                                        <div class="imgBox shadow mx-auto rounded-circle mb-2">
+                                            <img src="./src/assets/bannerImages/heroBanner.png" alt=""
+                                                class="imgBox rounded-circle">
+                                        </div>
+                                        <h5 class="fs-3 text-center">Ragnar Lothbrok</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="faq bg-dark py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="fs-2 text-secondary">FAQ</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-9">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Magazanızda hangi Viking savas ekipmanları bulabilirim?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Mağazamızda Viking kalkanları, savaş baltaları, kasklar ve daha birçok Viking savaş
+                                    ekipmanı bulabilirsiniz. Hepsini keşfetmek için sitemizi ziyaret edin!
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed text-primary" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Kalkanlar ve baltalar hangi malzemeden yapılmıstır ?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Kalkanlarımız ve baltalarımız yüksek kaliteli demirden ve ahşaptan üretilmiştir,
+                                        dayanıklılığı ve güvenilirliği ön planda tutarak.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed text-primary" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Baltaların boyutları ne kadar?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Ürün detayları sayfasında her ürünün boyut bilgileri bulunmaktadır. Lütfen
+                                        ilgili ürünün boyut bilgilerini kontrol edin.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-3">
+                    <div class="p-2 rounded">
+                        <img src="./src/assets/products/Chain Mail.G01.2k.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="oracle position-relative">
+        <div class="overlay"></div>
+        <div class="container py-5 position-relative">
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h2 class="fs-2 text-center text-secondary">ASK THE ORACLE FOR FUTURE</h2>
+                </div>
+            </div>
+            <div class="row bg-light rounded-5" style="--bs-bg-opacity: .5;">
+                <div class="col-12">
+                    <form action="">
+                        <div class="row mb-3 mt-3">
+                            <div class="col-6">
+                                <input type="text" placeholder="Name" class="form-control rounded-pill">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" placeholder="Surname" class="form-control rounded-pill">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <input type="text" placeholder="Kuzgun Adı" class="form-control rounded-pill">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" placeholder="Region" class="form-control rounded-pill">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <textarea name="message" id="oracleMessage" cols="30" rows="10" placeholder="Message"
+                                    class="form-control rounded-4"></textarea>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12 d-flex justify-content-end">
+                                <button class="btn vkngBtnPrm py-2 px-4 fs-3">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsteller py-5 bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="h2">Hey Savascı! KUZGUN BULTENIMIZE KAYIT OL!</div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <form class="needs-validation">
+                        <div class="input-group position-relative">
+                            <input required type="email" name="email" id="subscribe"
+                                class="form-control py-2 ps-5 border-0 rounded-start-pill" placeholder="Kuzgun Adın:">
+                            <input type="submit" value="Simdi Gonder!"
+                                class="btn vkngBtnScnd py-2 px-4 fs-4 rounded-end-pill">
+                            <div class="valid-feedback text-secondary">
+                                Kuzgunun salındı!
+                            </div>
+                            <div class="invalid-feedback text-secondary">
+                                Kuzgun bul!
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer py-5 bg-dark text-secondary">
+        <div class="container">
+            <div class="row border-top">
+                <div class="col-6 col-md-3 mt-5 mb-3">
+                    <a href="#" class=" mb-3 text-decoration-none">
+                        <img src="./src/assets/logo/logo.png" alt="" width="100" height="100">
+                    </a>
+                    <p class="text-white-50 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+                        error?</p>
+                </div>
+                <div class="col-6 col-md-3 mt-5 mb-3">
+                    <h5>MENU</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Products</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mt-5 mb-3">
+                    <h5>Categories</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Ship</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Armor</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Weapons</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Shield</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mt-5 mb-3">
+                    <h5>Policies</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Delivery Policy</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="bg-light">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-12">
+                    <p class="text-center text-white-50">All Right Reserved. 2024 - Design By Erkan TOKMAK</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap/js/dist/tooltip.js"></script>
+    <script src="./node_modules/bootstrap/js/dist/"></script>
 </body>
+
 </html>

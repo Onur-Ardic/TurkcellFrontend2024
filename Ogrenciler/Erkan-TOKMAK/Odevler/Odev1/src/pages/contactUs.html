@@ -1,11 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Viking Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Contrail+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="../assets/logo/logo.png" alt="logo" class="img-fluid logo"
+                        width="80" height="80"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav fs-3">
+                        <li class="nav-item">
+                            <a class="nav-link ms-3" aria-current="page" href="../../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown ms-3">
+                            <a class="nav-link dropdown-toggle text-secondary" href="../pages/Shop.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                SHOP
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-secondary" href="../pages/aboutUs.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-secondary" href="../pages/faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-secondary" href="../pages/contactUs.html">CONTACT US</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-secondary" href="#">Login | Register</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-secondary" href="#">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="contactUs bg-dark">
+        <div class="container py-5 mt-5">
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h2 class="fs-2 text-center text-secondary">ASK THE ORACLE FOR FUTURE</h2>
+                </div>
+            </div>
+            <div class="row bg-light rounded-5" style="--bs-bg-opacity: .5;">
+                <div class="col-12 col-md-4 border-end">
+                    <div class="row mt-2">
+                        <div class="col-3 mt-3 d-flex justify-content-start">
+                            <span class="bg-primary rounded-circle vkngIcon"><img src="../assets/icons/035-horn.png" alt="" class="vkngIcon p-3"></span>
+                        </div>
+                        <div class="col-9 mt-3">
+                            <h2 class="text-secondary fs-3">PHONE</h2>
+                            <p class="text-white-50 fs-3">+00 000 000 00 00</p>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-3 mt-3 d-flex justify-content-start">
+                            <span class="bg-primary rounded-circle vkngIcon"><img src="../assets/icons/015-flag.png" alt="" class="vkngIcon p-3"></span>
+                        </div>
+                        <div class="col-9 mt-3">
+                            <h2 class="text-secondary fs-3">KUZGUN</h2>
+                            <p class="text-white-50 fs-3">RAVEN</p>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-3 mt-3 d-flex justify-content-start">
+                            <span class="bg-primary rounded-circle vkngIcon"><img src="../assets/icons/022-anchor.png" alt="" class="vkngIcon p-3"></span>
+                        </div>
+                        <div class="col-9 mt-3">
+                            <h2 class="text-secondary fs-3">LOCATION</h2>
+                            <p class="text-white-50 fs-3">Kattegat / Northland</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <form action="#">
+                        <div class="row mb-3 mt-3">
+                            <div class="col-6">
+                                <input type="text" placeholder="Name" class="form-control rounded-pill">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" placeholder="Surname" class="form-control rounded-pill">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <input type="text" placeholder="Kuzgun Adı" class="form-control rounded-pill">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" placeholder="Region" class="form-control rounded-pill">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <textarea name="message" id="oracleMessage" cols="30" rows="10" placeholder="Message"
+                                    class="form-control rounded-4"></textarea>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12 d-flex justify-content-end">
+                                <button class="btn vkngBtnPrm py-2 px-4 fs-3">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contactUsMap bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="../assets/bannerImages/map.jpg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsteller py-5 bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="h2">Hey Savascı! KUZGUN BULTENIMIZE KAYIT OL!</div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <form class="needs-validation">
+                        <div class="input-group position-relative">
+                            <input required type="email" name="email" id="subscribe"
+                                class="form-control py-2 ps-5 border-0 rounded-start-pill" placeholder="Kuzgun Adın:">
+                            <input type="submit" value="Simdi Gonder!"
+                                class="btn vkngBtnScnd py-2 px-4 fs-4 rounded-end-pill">
+                            <div class="valid-feedback text-secondary">
+                                Kuzgunun salındı!
+                            </div>
+                            <div class="invalid-feedback text-secondary">
+                                Kuzgun bul!
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer py-5 bg-dark text-secondary">
+        <div class="container">
+            <div class="row border-top">
+                <div class="col-6 col-md-3 mt-5 mb-3">
+                    <a href="#" class=" mb-3 text-decoration-none">
+                        <img src="../assets/logo/logo.png" alt="" width="100" height="100">
+                    </a>
+                    <p class="text-white-50 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+                        error?</p>
+                </div>
+                <div class="col-6 col-md-3 mt-5 mb-3">
+                    <h5>MENU</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Products</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mt-5 mb-3">
+                    <h5>Categories</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Ship</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Armor</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Weapons</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Shield</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mt-5 mb-3">
+                    <h5>Policies</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Delivery Policy</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="bg-light">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-12">
+                    <p class="text-center text-white-50">All Right Reserved. 2024 - Design By Erkan TOKMAK</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap/js/dist/tooltip.js"></script>
+    <script src="./node_modules/bootstrap/js/dist/"></script>
 </body>
+
 </html>

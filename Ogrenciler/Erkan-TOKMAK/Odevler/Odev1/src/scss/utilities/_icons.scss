@@ -1,0 +1,17 @@
+.vkngIcon{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    color: $light; 
+}
+.vkngIconHvr{
+    @extend .vkngIcon;
+    width: 60px;
+    height: 60px;
+}
+.vkngIconBg{
+    background-color: $primary;
+}
+.hr{
+    @include hr;
+}
