@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.feel-free{
+    .header-imgs{
+        .cup{
+            right: 210px;
+        }
+        .camera{
+            right: 0;
+            top: 50px;
+        }
+        .flower{
+            bottom: 15px;
+            right: 210px;
+        }
+    }
+}
+
+.can-you-buy{
+    .category-header{
+        color: $dark;
+        opacity: 0.5;
+        &:hover{
+            color: $primary;
+        }
+    }
+}
