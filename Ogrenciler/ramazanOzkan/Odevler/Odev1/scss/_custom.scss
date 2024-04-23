@@ -3,18 +3,41 @@
     margin: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none2;
+}
+
 $thema-color-blue:#067bc2;
 $thema-color-blue2:#84bcda;
 $thema-color-yellow:#ecc30b;
-$thema-color-white:white;
+$thema-color-white:#fff;
+$thema-color-grey:#C0C0C0;
+
 
 .logo{
-    height: 75px;
+    height:120px;
     width:120px;
+}
+
+.bg-grey{
+    background-color: $thema-color-grey;
 }
 .bg-color-blue2{
     background-color: $thema-color-blue2;
 }
+.bg-color-yellow{
+    background-color:$thema-color-yellow;
+}
+.color-blue2{color: $thema-color-blue2;
+}
+.color-blue{
+    color: $thema-color-blue;
+}
+.color-white{
+    color: $thema-color-white;
+}
+
+
 .category-btn{
     color: $thema-color-white;
     background-color: $thema-color-blue;
@@ -59,12 +82,140 @@ $thema-color-white:white;
     background-repeat: no-repeat;
     color: $thema-color-white;
 }
-
 .kampanya{
     // background-color: $thema-color-white;
     img{
-        width: 70%;
+        width: 60%;
         border-radius: 15px;
+    }
+    ul{
+        li{
+            list-style: none;
+            img{
+                width: 20px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+// sec 2 
+.categories{
+    @extend .img-div;
+    background-image: url('../img/bg1.jpeg');
+    border-radius: 40px;
+    padding: 16px;
+    gap: 16px;
+}
+
+.main-product{
+
+    img{
+        width: 100%;
+        margin: 50px 0px;
+        border-radius: 20px;
+        max-height: 766px;
+    }
+}
+.other-products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+    a{
+        display: block;
+        overflow: hidden;
+        border-radius: 20px;
+        img{
+            width: 100%;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            max-height: 375px;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }       
+
+    }
+}
+// sec 2
+.section-5{
+    .card{
+        border: 0;
+    }    
+}
+.section-6{
+ .qr{
+    width: 64px;
+    height: 64px;
+ }
+ a{color: black;
+text-decoration: none;}
+.icon{
+    width: 16px;
+    height: 16px;
+}
+}
+
+.markalar{
+
+    img{
+        width: 150px;
+        height: 150px;
     }
 }
 
+// png formatındaki svg nin renklendirilmesi themacolorblue - color
+.illustration img { 
+    filter: invert(34%) sepia(98%) saturate(874%) hue-rotate(171deg) brightness(92%) contrast(97%);
+}
+
+.lnr {
+    font-family: Linearicons-Free;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.hunting-img{
+    @extend .img-div;
+    background-image: url('../img/hunting.jpg');
+    height: 70vh;
+}
+
+
+
+@media screen and (max-width: 768px) {
+.media-col{
+    flex-direction: column;
+}    
+.media-col-reverse{
+    flex-direction: column-reverse;
+}
+}
+
+.carousel-inner{
+    .carousel-item{
+        position: relative;
+        a{
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+        }
+    }
+}
+
+
+// Hakkinda
+
+
+
+
+.product-detail-big-image {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEDE - Anasayfa</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg d-flex bg-white sticky-top">
+      <div class="container">
+        <a class="navbar-brand col-lg-2" href="index.html"
+          ><img class="logo" src="./img/logo.webp" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent2"
+          aria-controls="navbarSupportedContent2"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="d-flex col-lg-6 mx-2">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Aradığınız ürün, kategori veya markayı yazınız
+                "
+            aria-label="Search"
+          />
+          <button class="btn btn-primary" type="submit">Ara</button>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-lg-4 gap-2 w-100">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <img src="./img/svg/person.svg" alt="" /> Giriş Yap
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><img src="img/svg/bag-heart.svg" alt="" /> Favorilerim</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><img src="./img/svg/basket.svg" alt="" /> Sepetim</a
+              >
+            </li>
+          </ul>
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 col-lg-12 d-sm-flex d-lg-none justify-content-between gap-1"
+          >
+            <li class="nav-item col-lg-3">
+              <a class="nav-link fs-5" aria-current="page" href="#">Ev</a>
+            </li>
+            <li class="nav-item col-lg-3">
+              <a class="nav-link fs-5" href="about.html">Hakkımızda</a>
+            </li>
+            <li class="nav-item col-lg-3">
+              <a class="nav-link fs-5" aria-current="page" href="#"
+                >Sıkça Sorulan Sorular</a
+              >
+            </li>
+            <li class="nav-item col-lg-3s">
+              <a class="nav-link fs-5" aria-current="page" href="#">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- login-modal -->
+    <div class="modal fade" id="exampleModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header" style="padding: 35px 50px">
+            <h4 class="color-blue">Giriş Yap</h4>
+          </div>
+          <div class="modal-body" style="padding: 40px 50px">
+            <form role="form">
+              <div class="form-group">
+                <label for="usrname" class="color-blue"> Mail Adresiniz</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="usrname"
+                  placeholder="Mail Adresiniz"
+                />
+              </div>
+              <div class="form-group">
+                <label for="psw" class="color-blue"> Şifreniz</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="psw"
+                  placeholder="Şifrenizi Girin"
+                />
+              </div>
+              <div class="checkbox">
+                <label class="color-blue"
+                  ><input type="checkbox" value="" checked />Beni Hatırla</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">
+                <span class="glyphicon glyphicon-off"></span> Giriş
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer d-flex justify-content-around">
+            <button
+              type="button"
+              class="btn btn-danger btn-default pull-left"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <span class="glyphicon glyphicon-remove"></span> Kapat
+            </button>
+            <p>
+              Üye Ol
+              <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal"
+                >Üye Ol</a
+              >
+            </p>
+            <p>Şifremi Unuttum <a href="#">Kurtarma Maili</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- register-modal -->
+    <div class="modal fade" id="registerModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header" style="padding: 35px 50px">
+            <h4 class="color-blue">Üye Ol</h4>
+          </div>
+          <div class="modal-body" style="padding: 40px 50px">
+            <form role="form">
+              <div class="form-group">
+                <label for="usrname" class="color-blue"> Mail Adresiniz</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="usrname"
+                  placeholder="Mail Adresiniz"
+                />
+              </div>
+              <div class="form-group">
+                <label for="psw" class="color-blue"> Şifreniz</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="psw"
+                  placeholder="Şifrenizi Girin"
+                />
+              </div>
+              <div class="form-group">
+                <label for="psw" class="color-blue"> Şifreniz Tekrar</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="psw"
+                  placeholder="Şifrenizi Girin"
+                />
+              </div>
+              <br />
+              <button type="submit" class="btn btn-primary">
+                <span class="glyphicon glyphicon-off"></span> Kaydol
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="submit"
+              class="btn btn-danger btn-default pull-left"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+            >
+              Geri
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- nav2 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white mb-5">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 col-lg-12 d-flex justify-content-between gap-1"
+          >
+            <li class="nav-item col-lg-2 text-center">
+              <a class="nav-link fs-5" aria-current="page" href="index.html"
+                >Ev</a
+              >
+            </li>
+            <li class="nav-item col-lg-2 text-center">
+              <a class="nav-link fs-5" href="about.html">Hakkımızda</a>
+            </li>
+            <li class="nav-item col-lg-2 text-center">
+              <a class="nav-link fs-5" href="hunting.html">Balıkçılık</a>
+            </li>
+            <li class="nav-item col-lg-2 text-center">
+              <a class="nav-link fs-5" aria-current="page" href="sss.html"
+                >Sıkça Sorulan Sorular</a
+              >
+            </li>
+            <li class="nav-item col-lg-2 text-center">
+              <a class="nav-link fs-5" aria-current="page" href="contact.html"
+                >İletişim</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- header -->
+    <div
+      class="hunting-img d-flex justify-content-center align-items-end flex-column mt-5"
+    >
+      <div class="container">
+        <h1 class="color-white text-center">
+          BALIKÇILIK! DERS: YER SAPTAMASI VE MALZEME SEÇİMİ!
+        </h1>
+        <p class="fs-5">
+          Şehir gürültüsünden uzaklaşmak, huzurlu ve sakin bir ortamda ailenle
+          ve arkadaşlarınla eğlenceli vakit geçirmenin en güzel yollarından biri
+          de balıkçılık. Balık tutmayı öğrenmenin en iyi yollarından biri
+          deneyimli ve profesyonel bir balıkçıdan yardım almaktır. Ancak herkes
+          bu konuda şanslı olmayabilir. Amatör bir balıkçı olmaya karar
+          verdiysen bilmen gereken üç basit kural var: sağlam ve kaliteli balık
+          tutma ekipmanlarına sahip olmak, balık tutmak için uygun bir yer
+          bulmak, balığı yakalamak.
+        </p>
+      </div>
+    </div>
+    <div class="section2-hunting">
+        <div class="container d-flex gap-5 my-5 media-col">
+            <div class="col-lg-3">
+                <img class="mw-100" src="./img/hunting2.jpg" alt="">
+            </div>
+            <div class="col-lg-9">
+                <h2 class="color-blue">Balık Tutmak İçin Yer Saptaması </h2>
+                <p class=" color-blue">Balıkçılık karmaşık değildir; ancak disiplin, bilgi ve sabır gerektirir. İlk balık avın için ulaşımı kolay ve yardım alabileceğin diğer balıkçıların olduğu bir yer seçebilirsin. Hatta mümkünse balık tutmayı bilen profesyonel bir arkadaşından yardım alabilirsin. Seni ilk günden zorlamayan basit bir şekilde oltanı atabileceğin, balığın bol olduğunu düşündüğün bir deniz, göl ya da nehir kenarına gidebilirsin. Sabahın erken saatleri ve güneşin batmaya yakın olduğu akşam saatleri balık avı için en uygun saatlerdir. Balık tutacağın suyun berrak olması, başarını etkileyen en önemli faktörler arasındadır. Rüzgârlı ve yağışlı bir hava da hem balık tutmanı güçleştirir, hem de keyifli zaman geçirmeni engeller. Sakin ve yağışsız havaları seçebilirsin. <br>
+
+                    Tekne balıkçılığı da ilk balıkçılık deneyimin için iyi bir seçenek olabilir. Genellikle sabahın erken saatlerinde suya açılan balıkçı turlarına katılabilir, diğer balıkçılardan biraz yardım alarak atış yapma, oltayı yemleme gibi işleri nasıl yapacağınla ilgili ipuçları elde edebilirsin. Balık tutma yeri ararken dikkat etmen gereken bir diğer noktada hangi balığı avlayacağındır. Diyelim ki levrek avlayacaksın, bu balığın hangi mevsimde avlanması gerektiği ve hangi sularda bol bulunduğunu araştırman gerekir. Levrek genellikle yosunlu ya da çakıl taşlı tabana sahip suları sever. Nehir ya da derelerin denize bir başka deyişle tatlı suyun denize döküldüğü küçük balıkların bol olduğu yerlerde bulunur. Sana sadece derenin denize döküldüğü bir alana konumlanıp oltanı atmak ve sessizce beklemek kalır.</p>
+            </div>
+        </div>
+        <div class="container d-flex gap-5 my-5 media-col-reverse">
+            <div class="col-lg-9">
+                <h2 class="color-blue">Balık Tutma Ekipmanları </h2>
+                <p class=" color-blue">Diğer tüm spor dallarında olduğu gibi balıkçılık malzemelerinin de kaliteli ve sağlam yapıya sahip olması başarı oranını etkiler. İlk avında daha amatör malzemeler satın alabilirsin ancak kaliteli ve sağlam olmalarına dikkat etmende fayda var. Kullandığın ürünlerin hafif ama güçlü olması önemlidir. Taşıma ve kullanım kolaylığı açısından hafif olması avantajdır. Ancak güçlü olması balığı yakalayıp kenara çıkarmanı sağlayan önemli bir faktördür. Balıkçılık için gereken temel ekipmanlar olta, misina ve olta iğnesi, şamandıra ve kurşun, fırdöndü, klips ve misina makasıdır.  <br>
+
+                    Olta seçimi yaparken balıkçılık konusunda yeni olduğun için kullanımı kolay, sağlam ve kaliteli bir ürün satın almalısın. Ayrıca balık avı yapacağın bölgeye uygun bir olta seçmende oldukça önemli. Misinalı olta makinesi, kamışı ve yemleri ile takım halinde satılan olta setleri, kullanım ve taşıma kolaylığı sağlayan özellikleri ile ilk av için ideal bir seçim olabilir. Balık yemi seçerken de yine hangi balığı avlayacağın önemli. Tutmak istediğin balığın çeşidine göre canlı yem ya da plastik solucan ve sahte yem kullanabilirsin. En önemli ekipman ise ilk yardım çantasıdır. Balıkçılık outdoor bir aktivitedir, yaralanma ve kaza gibi durumlara açıktır. Herhangi bir aksiliğe karşı tedbir amaçlı olarak mutlaka yanında ilk yardım seti taşımalısın.</p>
+            </div>
+            <div class="col-lg-3">
+                <img class="mw-100" src="./img/hunting3.jpg" alt="">
+            </div>
+           
+        </div>
+    </div>
+    
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- sec - 6 footer -->
+    <div class="section-6 bg-grey">
+      <div
+        class="container d-flex py-5 gap-3 justify-content-between media-col"
+      >
+        <!-- bölüm 1  -->
+        <div class="d-flex col-lg-3 flex-column gap-3">
+          <a class="navbar-brand col-lg-2" href="index.html"
+            ><img class="logo" src="./img/logo.webp" alt=""
+          /></a>
+          <a class="fs-4" href="about.html">Hakkımızda</a>
+          <a class="fs-4" href="sss.html">Sıkça Sorulan Sorular</a>
+          <div
+            class="kartlar d-flex flex-row flex-wramp justify-content-between"
+          >
+            <img src="./img/svg/b1.svg" alt="" />
+            <img src="./img/svg/b2.svg" alt="" />
+            <img src="./img/svg/b3.svg" alt="" />
+            <img src="./img/svg/b4.svg" alt="" />
+          </div>
+        </div>
+        <!-- bölüm 2  -->
+        <div class="d-flex col-lg-3 flex-column gap-3">
+          <img class="qr" src="./img/qr-code.png" alt="" />
+          <p class="fs-4">Bizi Takip Edin</p>
+          <div class="sosyal-medya d-flex flex-row gap-3">
+            <a href=""><img src="./img/svg/x.svg" alt="" /></a>
+            <a href=""><img src="./img/svg/facebook.svg" alt="" /></a>
+            <a href=""><img src="./img/svg/instagram.svg" alt="" /></a>
+            <a href=""><img src="./img/svg/tiktok.svg" alt="" /></a>
+            <a href=""><img src="./img/svg/youtube.svg" alt="" /></a>
+          </div>
+        </div>
+        <!-- bölüm 3  -->
+        <div class="d-flex col-lg-3 flex-column gap-3">
+          <p class="fs-4">İletişim</p>
+          <p class="fs-6"><i class="lnr lnr-home me-2"></i>Arhavi, Artvin</p>
+          <p class="fs-6">
+            <i class="lnr lnr-envelope me-2"></i>
+            <a href="mailto:ramazanozkan777@gmail.com"
+              >ramazanozkan777@gmail.com</a
+            >
+          </p>
+          <p class="fs-6">
+            <i class="lnr lnr-phone me-2"></i
+            ><a href="tel:+905454590842"> + 90 545 459 08 42</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- sec - 6  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
