@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>E-Commerce</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section class="top-sale border-bottom border-2 border-green-vogue d-none d-md-block">
+        <div id="forsale" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/turkcell.png" class="d-block mx-auto" alt="..." style="height: 250px;">
+              </div>
+              <div class="carousel-item">
+                <img src="img/yapikredi.png" class="d-block mx-auto" alt="..." style="height: 250px;">
+              </div>
+              <div class="carousel-item">
+                <img src="img/n11.png" class="d-block mx-auto" alt="..." style="height: 250px;">
+              </div>
+            </div>
+          </div>
+    </section>
+    <nav class="navbar navbar-expand-lg border-bottom border-2 border-green-vogue bg-green-vogue main-navbar" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img style="width: 40px;" src="img/e-commerce1.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-content">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" id="nav-content">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="img/e-commerce1.png" alt=""></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto mb-2 me-3 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active rounded" href="index.html">Home</a>
+              </li>              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle rounded" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Holding</a></li>
+                  <li><a class="dropdown-item" href="#">Company</a></li>
+                  <li><a class="dropdown-item" href="#">Start-Up</a></li>
+                  <li><a class="dropdown-item" href="#">Firm</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded" href="about-us.html">About US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded" href="questions.html">Questions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded" href="products.html">Products</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            </div>
+            
+          </div>
+        </div>
+      </nav>
+    <main>
+        <section class="slider mt-5">
+            <div class="container">
+                <div class="row">
+                    <aside class="col-3 d-lg-block d-none">
+                        <nav class="nav nav-pills flex-column flex-nowrap overflow-auto slider__nav">
+                            <a class="nav-link active" aria-current="page" href="#">Holding</a>
+                            <a class="nav-link" href="#">Company</a>
+                            <a class="nav-link" href="#">Start-Up</a>
+                            <a class="nav-link" href="#">Holding</a>
+                            <a class="nav-link" href="#">Firm</a>
+                            <a class="nav-link" href="#">Software</a>
+                            <a class="nav-link" href="#">Automotive</a>
+                            <a class="nav-link" href="#">Energy</a>
+                            <a class="nav-link" href="#">Construction</a>
+                            <a class="nav-link" href="#">Logistics</a>
+                        </nav>
+                    </aside>
+                    <div class="col-lg-9 col-12">
+                        <div id="slider" class="slider__carousel carousel slide h-100" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#slider" data-bs-slide-to="2"></button>
+                              </div>
+                            <div class="carousel-inner text-center h-100">
+                                <div class="carousel-item active h-100">
+                                    <img src="img/yapikredi.png" alt="" class="d-inline-block h-75">
+                                    <div class="carousel-caption text-primary d-none d-md-block">
+                                        <h5>KOÇ HOLDİNG</h5>
+                                        <p>Yapıkredi yanınızda!</p>
+                                      </div>
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="img/turkcell.png" alt="" class="d-inline-block h-75">
+                                    <div class="carousel-caption text-primary d-none d-md-block">
+                                        <h5>TÜRKİYE VARLIK FONU</h5>
+                                        <p>Turkcell'le bağlan hayata.</p>
+                                      </div>
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="img/n11.png" alt="" class="d-inline-block h-75">
+                                    <div class="carousel-caption text-primary d-none d-md-block">
+                                        <h5>GETİR</h5>
+                                        <p>N11.com</p>
+                                      </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                              <i class="fa-solid fa-chevron-left fa-2x text-green-vogue"></i>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                              <i class="fa-solid fa-chevron-right fa-2x text-green-vogue"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popular-products py-5 text-primary">
+          <div class="container">
+            <h2>POPULAR OF MONTHS</h2>
+            <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-1 my-sm-5 my-3 g-4">
+              <div class="col d-flex justify-content-center">
+                <figure class="card figure h-100">
+                  <span class="badge bg-success">Discount</span>
+                  <a href="#" class="img-wrap justify-content-center d-flex align-items-center">
+                    <img src="img/fokus-enerji.svg" class="figure-img img-fluid rounded" alt="">
+                  </a>                 
+                  <figcaption class="card-body figure-caption border-top border-1">
+                    <a href="#favorite" class="btn btn-outline-success icon-wrap float-end" data-bs-toggle="tooltip" data-bs-title="Favorite">
+                      <i class="fa-solid fa-heart fa-sm"></i>
+                    </a>
+                    <h3 class="fs-6 text-truncate">Jotform, çevrimiçi formlar oluşturmaya yönelik San Francisco merkezli bir şirkettir.</h3>
+                    <div class="price-wrap">
+                      <span class="fs-5 fw-medium me-2 text-moonstone-blue">4M $</span>
+                      <del class="text-awesome">7M $</del>
+                    </div>                    
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <figure class="card figure h-100">
+                  <a href="#" class="img-wrap d-flex align-items-center">
+                    <img src="img/solarcati.png" class="figure-img img-fluid rounded" alt="">
+                  </a>                 
+                  <figcaption class="card-body figure-caption border-top border-1">
+                    <a href="#favorite" class="btn btn-outline-primary icon-wrap float-end" data-bs-toggle="tooltip" data-bs-title="Favorite">
+                      <i class="fa-solid fa-heart fa-md"></i>
+                    </a>
+                    <h3 class="fs-6 text-truncate">Jotform, çevrimiçi formlar oluşturmaya yönelik San Francisco merkezli bir şirkettir.</h3>
+                    <div class="price-wrap">
+                      <span class="fs-5 fw-medium me-2 text-moonstone-blue">2.5M $</span>
+                      <del class="text-awesome">4M $</del>
+                    </div>                    
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <figure class="card figure h-100">
+                  <a href="products-details2.html" class="img-wrap d-flex align-items-center">
+                    <img src="img/LG.jpg" class="figure-img img-fluid rounded" alt="">
+                  </a>                 
+                  <figcaption class="card-body figure-caption border-top border-1">
+                    <a href="#favorite" class="btn btn-outline-primary icon-wrap float-end" data-bs-toggle="tooltip" data-bs-title="Favorite">
+                      <i class="fa-solid fa-heart fa-sm"></i>
+                    </a>
+                    <h3 class="fs-6 text-truncate">Jotform, çevrimiçi formlar oluşturmaya yönelik San Francisco merkezli bir şirkettir.</h3>
+                    <div class="price-wrap">
+                      <span class="fs-5 fw-medium me-2 text-moonstone-blue">5M $</span>
+                      <del class="text-awesome">11M $</del>
+                    </div>                    
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <figure class="card figure h-100">
+                  <span class="badge bg-success">Discount</span>
+                  <a href="products-details.html" class="img-wrap d-flex align-items-center">
+                    <img src="img/jotform.png" class="figure-img img-fluid rounded" alt="">
+                  </a>                 
+                  <figcaption class="card-body figure-caption border-top border-1">
+                    <a href="#favorite" class="btn btn-outline-success icon-wrap float-end" data-bs-toggle="tooltip" data-bs-title="Favorite">
+                      <i class="fa-solid fa-heart fa-sm"></i>
+                    </a>
+                    <h3 class="fs-6 text-truncate">Jotform, çevrimiçi formlar oluşturmaya yönelik San Francisco merkezli bir şirkettir.</h3>
+                    <div class="price-wrap">
+                      <span class="fs-5 fw-medium me-2 text-moonstone-blue">1M $</span>
+                      <del class="text-awesome">2.5M $</del>
+                    </div>                    
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-end">                
+                <li class="page-item active"><a class="page-link" href="#">More ...</a></li>
+              </ul>
+            </nav>
+          </div>          
+        </section>
+        <section class="cheapest-products py-3 text-primary">
+          <div class="container">
+            <h2>EN UCUZ</h2>
+            <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-1 my-sm-5 my-3 g-4">
+              <div class="col d-flex justify-content-center">
+                <figure class="card figure h-100">
+                  <span class="badge bg-danger">Opportunity Product</span>
+                  <a href="#" class="img-wrap justify-content-center d-flex align-items-center">
+                    <img src="img/global-bilgi.png" class="figure-img img-fluid rounded" alt="">
+                  </a>                 
+                  <figcaption class="card-body figure-caption border-top border-1">
+                    <a href="#favorite" class="btn btn-outline-danger icon-wrap float-end" data-bs-toggle="tooltip" data-bs-title="Favorite">
+                      <i class="fa-solid fa-heart fa-sm"></i>
+                    </a>
+                    <h3 class="fs-6 text-truncate">Jotform, çevrimiçi formlar oluşturmaya yönelik San Francisco merkezli bir şirkettir.</h3>
+                    <div class="price-wrap">
+                      <span class="fs-5 fw-medium me-2 text-moonstone-blue">1M $</span>
+                      <del class="text-awesome">2.5M $</del>
+                    </div>                    
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <figure class="card figure h-100">
+                  <span class="badge bg-danger">Opportunity Product</span>
+                  <a href="#" class="img-wrap justify-content-center d-flex align-items-center">
+                    <img src="img/otokar.jpg" class="figure-img img-fluid rounded" alt="">
+                  </a>                 
+                  <figcaption class="card-body figure-caption border-top border-1">
+                    <a href="#favorite" class="btn btn-outline-danger icon-wrap float-end" data-bs-toggle="tooltip" data-bs-title="Favorite">
+                      <i class="fa-solid fa-heart fa-sm"></i>
+                    </a>
+                    <h3 class="fs-6 text-truncate">Jotform, çevrimiçi formlar oluşturmaya yönelik San Francisco merkezli bir şirkettir.</h3>
+                    <div class="price-wrap">
+                      <span class="fs-5 fw-medium me-2 text-moonstone-blue">1M $</span>
+                      <del class="text-awesome">2.5M $</del>
+                    </div>                    
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <figure class="card figure h-100">
+                  <span class="badge bg-danger">Opportunity Product</span>
+                  <a href="products-details1.html" class="img-wrap justify-content-center d-flex align-items-center">
+                    <img src="img/redbull.png" class="figure-img img-fluid rounded" alt="">
+                  </a>                 
+                  <figcaption class="card-body figure-caption border-top border-1">
+                    <a href="#favorite" class="btn btn-outline-danger icon-wrap float-end" data-bs-toggle="tooltip" data-bs-title="Favorite">
+                      <i class="fa-solid fa-heart fa-sm"></i>
+                    </a>
+                    <h3 class="fs-6 text-truncate">Jotform, çevrimiçi formlar oluşturmaya yönelik San Francisco merkezli bir şirkettir.</h3>
+                    <div class="price-wrap">
+                      <span class="fs-5 fw-medium me-2 text-moonstone-blue">1M $</span>
+                      <del class="text-awesome">2.5M $</del>
+                    </div>                    
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <figure class="card figure h-100">
+                  <span class="badge bg-danger">Opportunity Product</span>
+                  <a href="#favorite" class="img-wrap justify-content-center d-flex align-items-center" >
+                    <img src="img/Teknasyon.jpg" class="figure-img img-fluid rounded" alt="">
+                  </a>                 
+                  <figcaption class="card-body figure-caption border-top border-1">
+                    <a href="#favorite" class="btn btn-outline-danger icon-wrap float-end" data-bs-toggle="tooltip" data-bs-title="Favorite">
+                      <i class="fa-solid fa-heart fa-sm"></i>
+                    </a>
+                    <h3 class="fs-6 text-truncate">Jotform, çevrimiçi formlar oluşturmaya yönelik San Francisco merkezli bir şirkettir.</h3>
+                    <div class="price-wrap">
+                      <span class="fs-5 fw-medium me-2 text-moonstone-blue">1M $</span>
+                      <del class="text-awesome">2.5M $</del>
+                    </div>                    
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-end">                
+                <li class="page-item active"><a class="page-link" href="#">More ...</a></li>
+              </ul>
+            </nav>
+          </div>          
+        </section>
+    </main>
+    <div class="modal fade" id="favorite" tabindex="-1" data-bs-backdrop="static" aria-labelledby="modalHead" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalHead">Favoriler</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Favorilere Eklendi.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer bg-green-vogue text-light py-4">
+      <div class="container">
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-1 g-4">
+          <div class="col border-sm-top border-2 p-md-3 p-5">
+            <h3>Links</h3>
+            <ul class="nav flex-column mt-4">
+              <li class="nav-item">
+                <a class="nav-link rounded text-center ps-0" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded text-center my-3 ps-0" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded text-center mb-3 ps-0" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded text-center ps-0" href="#">PRODUCTS</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col border-top border-2 p-md-3 p-5">
+            <h3>Subscribe</h3>
+            <div class="mt-4">
+              <input type="text" class="form-control" placeholder="Enter your e-mail...">
+              <button class="btn btn-outline-danger mt-2 w-100">Subscribe</button>
+            </div>
+          </div>
+          <div class="col border-top border-2 p-md-3 p-5">
+            <h3>Social Links</h3>
+            <div class="social-links mt-4">
+              <a href="#" class="btn btn-outline-light m-2">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="btn btn-outline-light m-2">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="btn btn-outline-light m-2">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-outline-light m-2">
+                <i class="fa-brands fa-youtube"></i>
+              </a>              
+            </div>            
+          </div>
+          <div class="col border-top border-2 p-md-3 p-5">
+            <h3>Contact</h3>
+            <div>
+              <p>Address: 1234 Heaven Stress, Beverly Hill OldYork- United State of Lorem</p>
+              <p>Phone: <a href="#" class="btn btn-outline-light"> 1234 5678 5576</a></p>
+              <p>Email: <a href="" class="btn btn-outline-light">velidogan120@gmail.com</a> </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 border-top border-2 border-light pt-4 align-items-center">
+          <div class="col text-center">
+            <p>Copyright ©2024 All rights reserved | This template is made</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html>

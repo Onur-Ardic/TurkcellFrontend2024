@@ -1,0 +1,101 @@
+// top of the page
+.top-sale{
+    img{
+        max-height: 200px;
+        max-width: 350px;
+    }
+}
+// main slider
+.slider {
+    &__nav {
+        max-height: 250px;
+    }
+    &__carousel{
+        max-height: 250px;
+        .carousel-caption{
+            bottom: 0;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .slider {
+        &__nav {
+            max-height: 300px;
+        }
+        &__carousel{
+            max-height: 300px;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .slider {
+        &__nav {
+            max-height: 350px;
+        }
+        &__carousel{
+            max-height: 350px;
+        }
+    }
+}
+
+// products
+main{
+    .figure{
+        max-width: 285px; 
+        transition: all .5s;
+        &:hover{
+            box-shadow: 0 0 15px 15px lighten($moonstone-blue,10%);
+        }
+        .img-wrap{
+            height: 160px;
+        }
+        .badge{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    }
+    .popular-products{
+        .figure{
+            &:hover{
+                box-shadow: 0 0 15px 15px lighten($moonstone-blue,10%);
+            }
+        }
+        .col{
+            &:nth-child(4n-0) .card{
+                animation: shadow-success 1s infinite alternate;
+            }
+        }
+    }
+    .cheapest-products{
+        .figure{
+            &:hover{
+                box-shadow: 0 0 15px 15px lighten($awesome,10%);
+            }
+        }
+        .col{
+            &:nth-child(n) .card{
+                animation: shadow-awesome 1s infinite alternate;
+            }
+        }    
+    }    
+}
+
+@keyframes shadow-success{
+    from{
+        box-shadow: 0 0 15px 15px lighten($moonstone-blue,40%);
+    }
+    to{
+        box-shadow: 0 0 15px 15px lighten($moonstone-blue,5%);
+    }
+}
+@keyframes shadow-awesome{
+    from{
+        box-shadow: 0 0 15px 15px lighten($awesome,40%);
+    }
+    to{
+        box-shadow: 0 0 15px 15px lighten($awesome,5%);
+    }
+}
