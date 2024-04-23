@@ -1,0 +1,17 @@
+$custom-colors: (
+    "grape-purple":#582259,
+    "light-fuchsia-pink":#F18DF2,
+    "black-pearl":#031626,
+    "cerulean":#049DD9,
+    "bright-sky-blue":#05C7F2,
+    "green-vogue":#00224D,
+    "mulberry-wood":#5D0E41,
+    "vivid-burgundy":#A0153E,
+    "awesome":#FF204E,
+    "soft-peach":#eee,
+    "moonstone-blue":#76ABAE,
+    "tuna":#31363F,
+    "dark":#222831
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
