@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>E-Commerce</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg border-bottom border-2 border-green-vogue bg-green-vogue main-navbar" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img style="width: 40px;" src="img/e-commerce1.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-content">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" id="nav-content">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="img/e-commerce1.png" alt=""></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto mb-2 me-3 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active rounded" href="index.html">Home</a>
+          </li>              
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle rounded" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Holding</a></li>
+                  <li><a class="dropdown-item" href="#">Company</a></li>
+                  <li><a class="dropdown-item" href="#">Start-Up</a></li>
+                  <li><a class="dropdown-item" href="#">Firm</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded" href="about-us.html">About US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded" href="questions.html">Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded" href="products.html">Products</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        </div>
+        
+      </div>
+    </div>
+  </nav>
+  <section class="bg-primary p-3 border-top border-1">
+    <div class="container">
+        <nav>
+            <ol class="breadcrumb mb-0 text-light">
+                <li class="breadcrumb-item">
+                    <a href="index.html" class="text-light">Home</a>
+                    <i class="fa-solid fa-angle-right fa-md"></i>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#" class="text-light">Software</a>
+                    <i class="fa-solid fa-angle-right fa-md"></i>
+                </li>
+                <li class="breadcrumb-item active text-light opacity-50">
+                    LG...
+                </li>
+            </ol>
+        </nav>
+    </div>
+</section>
+    <main>
+        <div class="products-details container py-3 mt-3">
+            <article class="row align-items-center shadow-lg  rounded border-1">
+                <div class="col-12 col-md-5 p-3" id="article-img">
+                    <a href="#">
+                        <img src="img/LG.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-12 col-md-7 p-3" id="article-text">
+                    <article>
+                        <h4 class="title tex-dark">
+                            LG
+                        </h4>
+                        <div class="rating-wrap">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                        </div>
+                        <p class="text-success">In Stock</p>
+                        <div class="price-wrap mb-3">
+                            <span class="fs-5 fw-medium me-2 text-moonstone-blue">4M $</span>
+                            <del class="text-awesome">5M $</del>
+                          </div>
+                        <div class="product-desc">
+                            <p>LG Corporation (rebranded as LG Group), formerly known as Lucky-Goldstar, is a South Korean multinational conglomerate founded by Koo In-hwoi and managed by successive generations of his family. It is the fourth-largest chaebol (family-run conglomerate) in South Korea. Its headquarters are in the LG Twin Towers building in Yeouido-dong, Yeongdeungpo District, Seoul.LG makes electronics, chemicals, household appliances, and telecommunications products and operates subsidiaries such as LG Electronics, Zenith, LG Display, LG Uplus, LG Innotek, LG Chem, and LG Energy Solution in over 80 countries.</p>
+                        </div>
+                        <dl class="row bottom-bottom">
+                            <dt class="col-3">Founder:</dt>
+                            <dd class="col-9">Koo In-hwoi</dd>
+                            <dt class="col-3">Products:</dt>
+                            <dd class="col-9">Electronics, Chemicals,Telecommunications, Engineering, Information Technology, Power generation</dd>
+                            <dt class="col-3">URL:</dt>
+                            <dd class="col-9"><a href="https://lgcorp.com" target="_blank">https://lgcorp.com</a></dd>
+                            <dt class="col-3">Available in:</dt>
+                            <dd class="col-9">Worldwide</dd>
+                            <dt class="col-3">Headquarters:</dt>
+                            <dd class="col-9"><address>Headquarters at Yeouido-dong, Yeongdeungpo District in Seoul, South Korea</address></dd>
+                        </dl>
+                        <div class="buttons">
+                            <a href="#basket" class="btn btn-outline-success" data-bs-toggle="modal">
+                                <i class="fa fa-shopping-basket me-1"></i> Add to Basket
+                            </a>
+                            <a href="#favorite" class="btn btn-outline-danger" data-bs-toggle="modal">
+                                <i class="fa fa-heart me-1"></i> Favorite
+                              </a>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </div>
+        <div class="container position-relative mt-3">
+            <h2>OTHER PRODUCTS</h2>
+            <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 my-sm-5 my-3 g-4">
+              <div class="col d-flex justify-content-center">
+                <figure class="card figure h-100">
+                  <span class="badge bg-success">Discount</span>
+                  <a href="#" class="img-wrap justify-content-center d-flex align-items-center">
+                    <img src="img/fokus-enerji.svg" class="figure-img img-fluid rounded" alt="">
+                  </a>                 
+                  <figcaption class="card-body figure-caption border-top border-1">
+                    <a href="#favorite" class="btn btn-outline-success icon-wrap float-end" data-bs-toggle="tooltip" data-bs-title="Favorite">
+                      <i class="fa-solid fa-heart fa-sm"></i>
+                    </a>
+                    <h3 class="fs-6 text-truncate">Jotform, çevrimiçi formlar oluşturmaya yönelik San Francisco merkezli bir şirkettir.</h3>
+                    <div class="price-wrap">
+                      <span class="fs-5 fw-medium me-2 text-moonstone-blue">4M $</span>
+                      <del class="text-awesome">7M $</del>
+                    </div>                    
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <figure class="card figure h-100">
+                  <span class="badge bg-danger">Opportunity Product</span>
+                  <a href="#" class="img-wrap justify-content-center d-flex align-items-center">
+                    <img src="img/global-bilgi.png" class="figure-img img-fluid rounded" alt="">
+                  </a>                 
+                  <figcaption class="card-body figure-caption border-top border-1">
+                    <a href="#favorite" class="btn btn-outline-danger icon-wrap float-end" data-bs-toggle="tooltip" data-bs-title="Favorite">
+                      <i class="fa-solid fa-heart fa-sm"></i>
+                    </a>
+                    <h3 class="fs-6 text-truncate">Jotform, çevrimiçi formlar oluşturmaya yönelik San Francisco merkezli bir şirkettir.</h3>
+                    <div class="price-wrap">
+                      <span class="fs-5 fw-medium me-2 text-moonstone-blue">1M $</span>
+                      <del class="text-awesome">2.5M $</del>
+                    </div>                    
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <figure class="card figure h-100">
+                  <a href="#" class="img-wrap d-flex align-items-center">
+                    <img src="img/solarcati.png" class="figure-img img-fluid rounded" alt="">
+                  </a>                 
+                  <figcaption class="card-body figure-caption border-top border-1">
+                    <a href="#favorite" class="btn btn-outline-primary icon-wrap float-end" data-bs-toggle="tooltip" data-bs-title="Favorite">
+                      <i class="fa-solid fa-heart fa-md"></i>
+                    </a>
+                    <h3 class="fs-6 text-truncate">Jotform, çevrimiçi formlar oluşturmaya yönelik San Francisco merkezli bir şirkettir.</h3>
+                    <div class="price-wrap">
+                      <span class="fs-5 fw-medium me-2 text-moonstone-blue">2.5M $</span>
+                      <del class="text-awesome">4M $</del>
+                    </div>                    
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <figure class="card figure h-100">
+                  <a href="#" class="img-wrap justify-content-center d-flex align-items-center">
+                    <img src="img/otokar.jpg" class="figure-img img-fluid rounded" alt="">
+                  </a>                 
+                  <figcaption class="card-body figure-caption border-top border-1">
+                    <a href="#favorite" class="btn btn-outline-primary icon-wrap float-end" data-bs-toggle="tooltip" data-bs-title="Favorite">
+                      <i class="fa-solid fa-heart fa-sm"></i>
+                    </a>
+                    <h3 class="fs-6 text-truncate">Jotform, çevrimiçi formlar oluşturmaya yönelik San Francisco merkezli bir şirkettir.</h3>
+                    <div class="price-wrap">
+                      <span class="fs-5 fw-medium me-2 text-moonstone-blue">1M $</span>
+                      <del class="text-awesome">2.5M $</del>
+                    </div>                    
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <figure class="card figure h-100">
+                  <span class="badge bg-success">Discount</span>
+                  <a href="products-details.html" class="img-wrap d-flex align-items-center">
+                    <img src="img/jotform.png" class="figure-img img-fluid rounded" alt="">
+                  </a>                 
+                  <figcaption class="card-body figure-caption border-top border-1">
+                    <a href="#favorite" class="btn btn-outline-primary icon-wrap float-end" data-bs-toggle="tooltip" data-bs-title="Favorite">
+                      <i class="fa-solid fa-heart fa-sm"></i>
+                    </a>
+                    <h3 class="fs-6 text-truncate">Jotform, çevrimiçi formlar oluşturmaya yönelik San Francisco merkezli bir şirkettir.</h3>
+                    <div class="price-wrap">
+                      <span class="fs-5 fw-medium me-2 text-moonstone-blue">1M $</span>
+                      <del class="text-awesome">2.5M $</del>
+                    </div>                    
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <figure class="card figure h-100">
+                  <span class="badge bg-danger">Opportunity Product</span>
+                  <a href="products-details1.html" class="img-wrap justify-content-center d-flex align-items-center">
+                    <img src="img/redbull.png" class="figure-img img-fluid rounded" alt="">
+                  </a>                 
+                  <figcaption class="card-body figure-caption border-top border-1">
+                    <a href="#favorite" class="btn btn-outline-danger icon-wrap float-end" data-bs-toggle="tooltip" data-bs-title="Favorite">
+                      <i class="fa-solid fa-heart fa-sm"></i>
+                    </a>
+                    <h3 class="fs-6 text-truncate">Jotform, çevrimiçi formlar oluşturmaya yönelik San Francisco merkezli bir şirkettir.</h3>
+                    <div class="price-wrap">
+                      <span class="fs-5 fw-medium me-2 text-moonstone-blue">1M $</span>
+                      <del class="text-awesome">2.5M $</del>
+                    </div>                    
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <nav class="w-100 bottom-0" aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>        
+    </main>
+    <div class="modal fade" id="favorite" tabindex="-1" data-bs-backdrop="static" aria-labelledby="modalHead" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalHead">Favorite</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Added Favorite.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="basket" tabindex="-1" data-bs-backdrop="static" aria-labelledby="modalHead" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalHead">Basket</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Added to Basket.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer class="footer bg-green-vogue text-light py-4">
+      <div class="container">
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-1 g-4">
+          <div class="col border-sm-top border-2 p-md-3 p-5">
+            <h3>Links</h3>
+            <ul class="nav flex-column mt-4">
+              <li class="nav-item">
+                <a class="nav-link rounded text-center ps-0" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded text-center my-3 ps-0" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded text-center mb-3 ps-0" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded text-center ps-0" href="#">PRODUCTS</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col border-top border-2 p-md-3 p-5">
+            <h3>Subscribe</h3>
+            <div class="mt-4">
+              <input type="text" class="form-control" placeholder="Enter your e-mail...">
+              <button class="btn btn-outline-danger mt-2 w-100">Subscribe</button>
+            </div>
+          </div>
+          <div class="col border-top border-2 p-md-3 p-5">
+            <h3>Social Links</h3>
+            <div class="social-links mt-4">
+              <a href="#" class="btn btn-outline-light m-2">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="btn btn-outline-light m-2">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="btn btn-outline-light m-2">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-outline-light m-2">
+                <i class="fa-brands fa-youtube"></i>
+              </a>              
+            </div>            
+          </div>
+          <div class="col border-top border-2 p-md-3 p-5">
+            <h3>Contact</h3>
+            <div>
+              <p>Address: 1234 Heaven Stress, Beverly Hill OldYork- United State of Lorem</p>
+              <p>Phone: <a href="#" class="btn btn-outline-light"> 1234 5678 5576</a></p>
+              <p>Email: <a href="" class="btn btn-outline-light">velidogan120@gmail.com</a> </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 border-top border-2 border-light pt-4 align-items-center">
+          <div class="col text-center">
+            <p>Copyright ©2024 All rights reserved | This template is made</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html>
