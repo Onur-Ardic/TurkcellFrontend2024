@@ -1,0 +1,41 @@
+$font-family-base: "Roboto", sans-serif !default;
+$dark: #142e4d;
+$primary: #df392b;
+$secondary: #ff6557;
+$warning: #f09e0a;
+$success: #9ac0ab;
+$info: #ebf4ff;
+$primary-bg-subtle: #9bc3ae;
+$success-bg-subtle: #473f32;
+$input-btn-focus-color: none;
+$input-btn-focus-box-shadow: none;
+$navbar-light-icon-color: white;
+$navbar-light-toggler-border-color: white;
+$navbar-light-color: whitesmoke;
+$navbar-light-hover-color: whitesmoke;
+$form-select-focus-border-color: $dark;
+$accordion-button-active-bg: white;
+$accordion-button-active-color: $dark;
+$accordion-button-focus-border-color: none;
+$accordion-button-focus-box-shadow: none;
+$accordion-border-color: $dark;
+$accordion-button-icon: url("../assets/timemachine3_nobg.png");
+$accordion-button-active-icon: url("../assets/timemachine3_nobg.png");
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6.25,
+  7: $spacer * 12,
+);
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base;
+$h6-font-size: $font-size-base * 0.75;
