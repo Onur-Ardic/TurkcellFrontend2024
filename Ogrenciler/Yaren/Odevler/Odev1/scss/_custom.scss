@@ -1,0 +1,77 @@
+@import "global";
+
+$naboo-blue: #7bd3ea;
+
+body {
+  @include backgroundimg(cover, center, 100vh);
+  background-image: url("/Ogrenciler/Yaren/Odevler/Odev1/images/stars_starry_sky_black_184789_1400x1050.jpg");
+}
+.hero-area {
+  .col {
+    img {
+      width: 50px;
+      height: 100px;
+    }
+  }
+}
+
+.links {
+  top: 50%;
+}
+
+.tours {
+  img {
+    @include cardimgsize(100%, 100%, cover);
+  }
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.main {
+  @include backgroundimg(cover, center, 80vh);
+  background-image: url("/Ogrenciler/Yaren/Odevler/Odev1/images/theed.jpg");
+
+  width: 100%;
+  h1,
+  p {
+    text-shadow: 2px 2px 2px $naboo-blue;
+  }
+}
+
+.gallery {
+  .thumbnail:hover {
+    transform: translateY(-4px);
+    .img-container {
+      .overlay {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: white;
+        .caption {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      &:hover {
+        transform: translateY(-30px);
+        .overlay {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+.bg-imagee {
+  background-image: url("https://media.contentapi.ea.com/content/dam/walrus/images/2018/11/mapvista-theed-grid.jpg.adapt.crop191x100.628p.jpg");
+  background-size: cover;
+  background-position: center;
+}
