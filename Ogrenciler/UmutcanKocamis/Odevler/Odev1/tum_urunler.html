@@ -16,7 +16,7 @@
   <body>
     <nav class="navbar navbar-expand-xl navbar bg-white py-3 shadow sticky-top">
       <div class="container-fluid col-xxl-9 d-flex justify-content-between">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="./index.html"
           ><img src="./images/logo.png" alt="Logo" width="80px"
         /></a>
         <button
@@ -32,249 +32,675 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul
-            class="navbar-nav ms-auto gap-4 mb-2 mb-md-0 text-uppercase fs-6 fw-bold"
+            class="navbar-nav ms-auto gap-4 mb-2 mb-md-0 text-uppercase fs-5 fw-bold"
           >
             <li class="nav-item">
               <a
                 class="nav-link text-black text-uppercase"
                 aria-current="page"
-                href="#"
+                href="./index.html"
                 >Anasayfa</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Ürünler</a>
+              <a class="nav-link text-primary" href="./tum_urunler.html"
+                >Ürünler</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black" href="#">Hakkımızda</a>
+              <a class="nav-link text-black" href="./hakkimizda.html"
+                >Hakkımızda</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black" href="#">Sıkça Sorulan Sorular</a>
+              <a class="nav-link text-black" href="./sikca_sorulan_sorular.html"
+                >Sıkça Sorulan Sorular</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#"
+                >Sepet<i class="fa-solid fa-cart-shopping ms-2"></i
+              ></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section>
+    <section id="tum-urunler">
       <div class="container col-xxl-9 d-flex">
-        <div class="col-2">
-          <div class="accordion mt-4 py-5" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
-                  Filtrele
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse show"
-              >
-                <div class="accordion-body">
-                  <h4 class="text-decoration-underline mt-3">Kategori</h4>
-                  <div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckChecked"
-                        checked
-                      />
-                      <label class="form-check-label" for="flexCheckChecked">
-                        Marvel
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="defaultCheck1"
-                      />
-                      <label class="form-check-label" for="defaultCheck1">
-                        DC
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="defaultCheck1"
-                      />
-                      <label class="form-check-label" for="defaultCheck1">
-                        Anime
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="defaultCheck1"
-                      />
-                      <label class="form-check-label" for="defaultCheck1">
-                        Series
-                      </label>
-                    </div>
-                  </div>
-                  <h4 class="text-decoration-underline mt-3">Beden</h4>
-                  <div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="defaultCheck1"
-                      />
-                      <label class="form-check-label" for="defaultCheck1">
-                        Small
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckChecked"
-                        checked
-                      />
-                      <label class="form-check-label" for="flexCheckChecked">
-                        Medium
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="defaultCheck1"
-                      />
-                      <label class="form-check-label" for="defaultCheck1">
-                        Large
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="defaultCheck1"
-                      />
-                      <label class="form-check-label" for="defaultCheck1">
-                        X-Large
-                      </label>
-                    </div>
-                  </div>
-                  <h4 class="text-decoration-underline mt-3">Ücret</h4>
-                  <label for="customRange1" class="form-label"
-                    >Example range</label
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-2">
+            <div
+              class="accordion mt-4 py-5"
+              id="accordionPanelsStayOpenExample"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
                   >
-                  <input type="range" class="form-range" id="customRange1" />
-                  <div class="d-flex gap-1 mb-3">
-                    <input
-                      style="width: 75px"
-                      type="text"
-                      class="form-control"
-                      placeholder="En Az"
-                      aria-label="Username"
-                      aria-describedby="basic-addon1"
-                    />
-                    <input
-                      style="width: 80px"
-                      type="text"
-                      class="form-control"
-                      placeholder="En Çok"
-                      aria-label="Username"
-                      aria-describedby="basic-addon1"
-                    />
-                  </div>
-                  <div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="defaultCheck1"
-                      />
-                      <label class="form-check-label" for="defaultCheck1">
-                        0-50$
-                      </label>
+                    Filtrele
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseOne"
+                  class="accordion-collapse collapse show"
+                >
+                  <div class="accordion-body">
+                    <h4 class="text-decoration-underline mt-3">Kategori</h4>
+                    <div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Marvel
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <label class="form-check-label" for="defaultCheck1">
+                          DC
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <label class="form-check-label" for="defaultCheck1">
+                          Anime
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <label class="form-check-label" for="defaultCheck1">
+                          Series
+                        </label>
+                      </div>
                     </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckChecked"
-                        checked
-                      />
-                      <label class="form-check-label" for="flexCheckChecked">
-                        50-100$
-                      </label>
+                    <h4 class="text-decoration-underline mt-3">Beden</h4>
+                    <div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <label class="form-check-label" for="defaultCheck1">
+                          Small
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Medium
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <label class="form-check-label" for="defaultCheck1">
+                          Large
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <label class="form-check-label" for="defaultCheck1">
+                          X-Large
+                        </label>
+                      </div>
                     </div>
-                    <div class="form-check">
+                    <h4 class="text-decoration-underline mt-3">Ücret</h4>
+                    <label for="customRange1" class="form-label"></label>
+                    <input type="range" class="form-range" id="customRange1" />
+                    <div class="d-flex gap-1 mb-3">
                       <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="defaultCheck1"
+                        type="text"
+                        class="form-control"
+                        placeholder="Min"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
                       />
-                      <label class="form-check-label" for="defaultCheck1">
-                        100-500$
-                      </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Max"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                      />
                     </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="defaultCheck1"
-                      />
-                      <label class="form-check-label" for="defaultCheck1">
-                        500+ $
-                      </label>
+                    <div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <label class="form-check-label" for="defaultCheck1">
+                          0-50$
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          50-100$
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <label class="form-check-label" for="defaultCheck1">
+                          100-500$
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <label class="form-check-label" for="defaultCheck1">
+                          500+ $
+                        </label>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-10 mt-4 py-5">
-          <div class="row">
-            <div class="col-lg-6 py-5 px-4 mb-3">
-              <div class="card py-5">
-                <div class="card-body">
-                  <h5 class="card-title fw-bold text-center fs-1">KOSTÜM</h5>
+          <div class="col-12 col-md-6 col-lg-10 mt-4 py-5 urunler">
+            <div class="row justify-content-center">
+              <div class="col-lg-4 px-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="https://skycosplay.de/cdn/shop/products/253452-1.jpg?v=1638346418"
+                      class="d-block w-100"
+                      alt="Spiderman-Classic"
+                    />
+                  </div>
+                  <div class="text-center mb-3">
+                    <h5>Spiderman Classic</h5>
+                    <div
+                      class="stars d-flex justify-content-center align-items-center"
+                    >
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <p class="mb-0">(73)</p>
+                    </div>
+                    <div class="price d-flex justify-content-center">
+                      <h6 class="text-decoration-line-through">50$</h6>
+                      <h5 class="text-success">44.99$</h5>
+                    </div>
+                    <a href="./urun.html"
+                      ><button
+                        type="button"
+                        class="btn btn-primary fs-5 text-black fw-bold btn-lg rounded-0 more-btn"
+                      >
+                        Ürüne git
+                      </button></a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6 py-5 px-4 mb-3">
-              <div class="card py-5">
-                <div class="card-body">
-                  <h5 class="card-title fw-bold text-center fs-1">KOSTÜM</h5>
+              <div class="col-lg-4 px-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="https://skycosplay.de/cdn/shop/products/959fe14b95e124b4705baa2ff184790a.jpg?v=1641894078"
+                      class="d-block w-100"
+                      alt="Miles Morales"
+                    />
+                  </div>
+                  <div class="text-center mb-3">
+                    <h5>Spiderman Miles Morales</h5>
+                    <div
+                      class="stars d-flex justify-content-center align-items-center"
+                    >
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <p class="mb-0">(232)</p>
+                    </div>
+                    <div class="price d-flex justify-content-center">
+                      <h6 class="text-decoration-line-through">95$</h6>
+                      <h5 class="text-success">49.99$</h5>
+                    </div>
+                    <a href="./urun.html"
+                      ><button
+                        type="button"
+                        class="btn btn-primary fs-5 text-black fw-bold btn-lg rounded-0 more-btn"
+                      >
+                        Ürüne git
+                      </button></a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6 py-5 px-4 mb-3">
-              <div class="card py-5">
-                <div class="card-body">
-                  <h5 class="card-title fw-bold text-center fs-1">KOSTÜM</h5>
+              <div class="col-lg-4 px-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="https://skycosplay.de/cdn/shop/products/2569152-1.jpg?v=1650351758"
+                      class="d-block w-100"
+                      alt="Thor"
+                    />
+                  </div>
+                  <div class="text-center mb-3">
+                    <h5>Avengers Thor</h5>
+                    <div
+                      class="stars d-flex justify-content-center align-items-center"
+                    >
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <p class="mb-0">(26)</p>
+                    </div>
+                    <h5>129.99$</h5>
+                    <a href="./urun.html"
+                      ><button
+                        type="button"
+                        class="btn btn-primary fs-5 text-black fw-bold btn-lg rounded-0 more-btn"
+                      >
+                        Ürüne git
+                      </button></a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6 py-5 px-4 mb-3">
-              <div class="card py-5">
-                <div class="card-body">
-                  <h5 class="card-title fw-bold text-center fs-1">KOSTÜM</h5>
+              <div class="col-lg-4 px-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="https://skycosplay.de/cdn/shop/products/d0d97bc2b340d87e4df50b8042d3a728.jpg?v=1628230252"
+                      class="d-block w-100"
+                      alt="Gwen Stacy"
+                    />
+                  </div>
+                  <div class="text-center mb-3">
+                    <h5>Spiderman Gwen Stacy</h5>
+                    <div
+                      class="stars d-flex justify-content-center align-items-center"
+                    >
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <p class="mb-0">(56)</p>
+                    </div>
+                    <h5>79$</h5>
+                    <a href="./urun.html"
+                      ><button
+                        type="button"
+                        class="btn btn-primary fs-5 text-black fw-bold btn-lg rounded-0 more-btn"
+                      >
+                        Ürüne git
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 px-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="https://skycosplay.de/cdn/shop/products/f49c6910a4ee3ba62bbaae627b43fc8e.jpg?v=1657604592"
+                      class="d-block w-100"
+                      alt="Batman"
+                    />
+                  </div>
+                  <div class="text-center mb-3">
+                    <h5>Batman Bruce Wayne</h5>
+                    <div
+                      class="stars d-flex justify-content-center align-items-center"
+                    >
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <p class="mb-0">(139)</p>
+                    </div>
+                    <h5>99.99$</h5>
+                    <a href="./urun.html"
+                      ><button
+                        type="button"
+                        class="btn btn-primary fs-5 text-black fw-bold btn-lg rounded-0 more-btn"
+                      >
+                        Ürüne git
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 px-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="https://skycosplay.de/cdn/shop/products/12002058-1.jpg?v=1684202152"
+                      class="d-block w-100"
+                      alt="Rengoku"
+                    />
+                  </div>
+                  <div class="text-center mb-3">
+                    <h5>Rengoku Kyojuro</h5>
+                    <div
+                      class="stars d-flex justify-content-center align-items-center"
+                    >
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <p class="mb-0">(14)</p>
+                    </div>
+                    <h5>179.99$</h5>
+                    <a href="./urun.html"
+                      ><button
+                        type="button"
+                        class="btn btn-primary fs-5 text-black fw-bold btn-lg rounded-0 more-btn"
+                      >
+                        Ürüne git
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 px-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="https://skycosplay.de/cdn/shop/products/253452-1.jpg?v=1638346418"
+                      class="d-block w-100"
+                      alt="Spiderman-Classic"
+                    />
+                  </div>
+                  <div class="text-center mb-3">
+                    <h5>Spiderman Classic</h5>
+                    <div
+                      class="stars d-flex justify-content-center align-items-center"
+                    >
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <p class="mb-0">(73)</p>
+                    </div>
+                    <h5>69.99$</h5>
+                    <a href="./urun.html"
+                      ><button
+                        type="button"
+                        class="btn btn-primary fs-5 text-black fw-bold btn-lg rounded-0 more-btn"
+                      >
+                        Ürüne git
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 px-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="https://skycosplay.de/cdn/shop/products/959fe14b95e124b4705baa2ff184790a.jpg?v=1641894078"
+                      class="d-block w-100"
+                      alt="Miles Morales"
+                    />
+                  </div>
+                  <div class="text-center mb-3">
+                    <h5>Spiderman Miles Morales</h5>
+                    <div
+                      class="stars d-flex justify-content-center align-items-center"
+                    >
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <p class="mb-0">(232)</p>
+                    </div>
+                    <div class="price d-flex justify-content-center">
+                      <h6 class="text-decoration-line-through">95$</h6>
+                      <h5 class="text-success">49.99$</h5>
+                    </div>
+
+                    <a href="./urun.html"
+                      ><button
+                        type="button"
+                        class="btn btn-primary fs-5 text-black fw-bold btn-lg rounded-0 more-btn"
+                      >
+                        Ürüne git
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 px-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="https://skycosplay.de/cdn/shop/products/2569152-1.jpg?v=1650351758"
+                      class="d-block w-100"
+                      alt="Thor"
+                    />
+                  </div>
+                  <div class="text-center mb-3">
+                    <h5>Avengers Thor</h5>
+                    <div
+                      class="stars d-flex justify-content-center align-items-center"
+                    >
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke fa-lg"
+                        style="color: #ffd43b"
+                      ></i>
+                      <p class="mb-0">(26)</p>
+                    </div>
+                    <h5>129.99$</h5>
+                    <a href="./urun.html"
+                      ><button
+                        type="button"
+                        class="btn btn-primary fs-5 text-black fw-bold btn-lg rounded-0 more-btn"
+                      >
+                        Ürüne git
+                      </button></a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -283,26 +709,33 @@
       </div>
     </section>
     <section id="footer">
-      <div class="container col-xxl-9">
-        <footer class="py-3 my-4">
+      <div class="container">
+        <footer class="py-3 mt-4">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-white">Home</a>
+              <a href="./index.html" class="nav-link px-2 text-white"
+                >Anasayfa</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-white">Features</a>
+              <a href="./tum_urunler.html" class="nav-link px-2 text-white"
+                >Ürünler</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-white">Pricing</a>
+              <a href="./hakkimizda.html" class="nav-link px-2 text-white"
+                >Hakkımızda</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-white">FAQs</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-white">About</a>
+              <a
+                href="./sikca_sorulan_sorular.html"
+                class="nav-link px-2 text-white"
+                >Sıkça Sorulan Sorular</a
+              >
             </li>
           </ul>
-          <p class="text-center text-white">© 2024 Company, Inc</p>
+          <p class="text-center text-white">🕸️Umutcan Kocamış🦇</p>
         </footer>
       </div>
     </section>

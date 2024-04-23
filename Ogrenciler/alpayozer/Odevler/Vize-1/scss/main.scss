@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1002.cur), auto;
+}
+@import "bt_overrides.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "custom.scss";

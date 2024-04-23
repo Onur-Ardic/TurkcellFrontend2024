@@ -1,0 +1,14 @@
+.btn-primary {
+  background: linear-gradient(to right, #058b95, #e0ab3f);
+}
+.btn-secondary {
+  background: linear-gradient(to right, #3742a8, #07b455);
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+h1,
+h2,
+h3 {
+  color: #6e6b6b !important;
+}

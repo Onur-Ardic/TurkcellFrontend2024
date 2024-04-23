@@ -1,0 +1,129 @@
+@import "mixins";
+@import "variables";
+
+.landing-section-bg{
+    @include background_image('../assets/images/background/homepage-bg.png',cover,center,no-repeat,fixed)
+}
+.about-bg{
+    @include background_image($background_image: '../assets/images/background/about-bg.png', $size: cover, $repeat: no-repeat, $attachment: fixed);
+}
+.faq-bg{
+    @include background_image('../assets/images/background/faq-bg.png',cover,center,no-repeat,fixed);
+}
+.title{
+    @include special_text(90px,'Jersey 10');
+}
+.faq-title{
+    @include special_text(80px,'Jersey 10');
+}
+.logo{
+    @include special_text(40px,'Jersey 10');
+}
+.subtitle{
+    @include special_text(20px,'Roboto');
+}
+.color-yellow{
+    color: $primary;
+    &:hover{
+        color: $primary;
+    }
+}
+.home-features{
+    border: 1px solid $white-50;
+    height: 30px;
+    color: $white;
+}
+.house-img{
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+        img{
+            opacity: .75 !important;
+        }
+    }
+}
+.bg-gradiant{
+    background: $bg-gradiant;
+}
+.menu{
+    li{
+        margin: 0 20px;
+    }
+}
+.about-card{
+    background-color: $white-50;
+}
+.details-bg{
+    background: $bg-gradiant;
+}
+.timeline {
+    max-width: 800px;
+    margin: 50px auto;
+    &-item{
+        padding: 20px;
+        border-left: 2px solid #ccc;
+        position: relative;
+        margin-bottom: 20px;
+        &::after{
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #ccc;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+        &:last-child{
+            margin-bottom: 0;
+            &::after{
+                display: none;
+            }
+        }
+    }
+    &-content{
+        padding-left: 20px;
+        color: #fff;
+    }
+}
+.w-400{
+    width: 400px;
+}
+.w-200{
+    width: 200px;
+}
+.image-container {
+    position: relative;
+    width: 400px;
+    &:hover{
+        img{
+            opacity: 0.5;
+        }
+        .image-text{
+            opacity: 1;
+        }
+    }
+  }
+.sm-image-container {
+    position: relative;
+    width: 200px;
+    &:hover{
+        img{
+            opacity: 0.5;
+        }
+        .image-text{
+            opacity: 1;
+        }
+    }
+  }
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+@import "responsive";
