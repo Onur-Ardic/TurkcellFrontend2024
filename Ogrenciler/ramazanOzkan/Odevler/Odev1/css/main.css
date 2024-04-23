@@ -11889,8 +11889,12 @@ a {
 }
 
 .logo {
-  height: 75px;
+  height: 120px;
   width: 120px;
+}
+
+.bg-grey {
+  background-color: #C0C0C0;
 }
 
 .bg-color-blue2 {
@@ -11954,7 +11958,7 @@ a {
   z-index: 1;
 }
 
-.img-div, .categories {
+.img-div, .hunting-img, .categories {
   background-image: url("../img/tanıtım.jpg");
   background-size: cover;
   background-position: center;
@@ -11962,12 +11966,8 @@ a {
   color: #fff;
 }
 
-.categories {
-  background-image: url("../img/category-bg.jpg");
-}
-
 .kampanya img {
-  width: 70%;
+  width: 60%;
   border-radius: 15px;
 }
 .kampanya ul li {
@@ -11978,18 +11978,38 @@ a {
   margin-right: 15px;
 }
 
+.categories {
+  background-image: url("../img/bg1.jpeg");
+  border-radius: 40px;
+  padding: 16px;
+  gap: 16px;
+}
+
 .main-product img {
   width: 100%;
   margin: 50px 0px;
   border-radius: 20px;
+  max-height: 766px;
 }
 
-.other-produts .card img {
-  transition: 0.3 ease;
-  overflow: hidden;
+.other-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
-.other-produts .card img:hover {
-  scale: 1.2;
+.other-products a {
+  display: block;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.other-products a img {
+  width: 100%;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  max-height: 375px;
+}
+.other-products a img:hover {
+  transform: scale(1.2);
 }
 
 .section-5 .card {
@@ -12009,6 +12029,11 @@ a {
   height: 16px;
 }
 
+.markalar img {
+  width: 150px;
+  height: 150px;
+}
+
 .illustration img {
   filter: invert(34%) sepia(98%) saturate(874%) hue-rotate(171deg) brightness(92%) contrast(97%);
 }
@@ -12023,6 +12048,34 @@ a {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.hunting-img {
+  background-image: url("../img/hunting.jpg");
+  height: 70vh;
+}
+
+@media screen and (max-width: 768px) {
+  .media-col {
+    flex-direction: column;
+  }
+  .media-col-reverse {
+    flex-direction: column-reverse;
+  }
+}
+.carousel-inner .carousel-item {
+  position: relative;
+}
+.carousel-inner .carousel-item a {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.product-detail-big-image {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
