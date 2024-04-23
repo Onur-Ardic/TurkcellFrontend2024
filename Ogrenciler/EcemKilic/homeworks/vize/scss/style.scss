@@ -1,0 +1,71 @@
+@import 'custom.scss';
+@import 'urun.scss';
+@import 'hakkimizda.scss';
+@import 'sorular.scss';
+
+header {
+    @include perde;
+}
+
+.home {
+    @include perde;
+}
+
+.turlar {
+    @extend .daktilo;
+
+    .sliders {
+        .gecmis {
+            .slider {
+                animation: slide-left-right 10s linear infinite;
+                @extend .slide-response;
+                .slide-item {
+                    @include slide-left-right;
+                    &:hover {
+                        transition: .3s all ease-in-out;
+                        transform: translateY(-5px);
+                    }
+                }
+            }
+        }
+        .gelecek {
+            .slider {
+                animation: slide-right-left 10s linear infinite;
+                @extend .slide-response;
+                .slide-item {
+                    @include slide-right-left;
+                    &:hover {
+                        transition: .3s all ease-in-out;
+                        transform: translateY(-5px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 10rem;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        background-color: $green;
+        height: 200px;
+        transform: skewY(-5deg);
+        position: absolute;
+        left: 0;
+        top: -100px;
+        right: 0;
+        z-index: -1;
+    }
+    
+    .icon-up {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        top: -150px;
+        left: 50%;
+        z-index: 2;
+    }
+}
