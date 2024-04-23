@@ -1,0 +1,12 @@
+.filters{
+    .accordion-item{
+        .accordion-body{
+            max-height: 200px;
+        }
+        #search-collapseThree{
+            i{
+                color: $chrome-yellow;
+            }
+        }
+    }
+}

@@ -6,9 +6,19 @@
 
 .bgimage {
     width: 100%;
-    min-height: 650px;
+    min-height: 700px;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.li-item:not(:first-child) {
+    border-left: 1px solid rgb(26, 29, 35, 0.1);
+    padding-left: 16px;
+}
+
+.li-item:not(:last-child) {
+    border-right: 1px solid rgb(26, 29, 35, 0.1);
+    padding-right: 16px;
 }

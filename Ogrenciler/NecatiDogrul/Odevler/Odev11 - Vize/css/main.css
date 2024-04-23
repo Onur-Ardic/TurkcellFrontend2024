@@ -239,11 +239,11 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: calc(1.35rem + 1.2vw);
+  font-size: calc(1.425rem + 2.1vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2.25rem;
+    font-size: 3rem;
   }
 }
 
@@ -8240,7 +8240,7 @@ textarea.form-control-lg {
 }
 
 .fs-2 {
-  font-size: calc(1.35rem + 1.2vw) !important;
+  font-size: calc(1.425rem + 2.1vw) !important;
 }
 
 .fs-3 {
@@ -11802,7 +11802,7 @@ textarea.form-control-lg {
     font-size: 4.5rem !important;
   }
   .fs-2 {
-    font-size: 2.25rem !important;
+    font-size: 3rem !important;
   }
   .fs-3 {
     font-size: 1.75rem !important;
@@ -11849,11 +11849,21 @@ textarea.form-control-lg {
 
 .bgimage {
   width: 100%;
-  min-height: 650px;
+  min-height: 700px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.li-item:not(:first-child) {
+  border-left: 1px solid rgba(26, 29, 35, 0.1);
+  padding-left: 16px;
+}
+
+.li-item:not(:last-child) {
+  border-right: 1px solid rgba(26, 29, 35, 0.1);
+  padding-right: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

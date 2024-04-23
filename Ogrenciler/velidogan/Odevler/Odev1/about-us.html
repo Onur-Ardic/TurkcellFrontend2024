@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>E-Commerce</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg border-bottom border-2 border-green-vogue bg-green-vogue main-navbar" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img style="width: 40px;" src="img/e-commerce1.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-content">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" id="nav-content">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="img/e-commerce1.png" alt=""></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto mb-2 me-3 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link rounded" href="index.html">Home</a>
+          </li>              
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle rounded" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Holding</a></li>
+                  <li><a class="dropdown-item" href="#">Company</a></li>
+                  <li><a class="dropdown-item" href="#">Start-Up</a></li>
+                  <li><a class="dropdown-item" href="#">Firm</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded active" href="about-us.html">About US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded" href="questions.html">Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded" href="products.html">Products</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        </div>
+        
+      </div>
+    </div>
+  </nav>
+    <main>
+        <div class="container">
+            <div id="about-us" class="row p-3 p-lg-5">
+                <div class="col-xl-3 d-none d-xl-block navbar-expand-lg p-3 p-lg-5">
+                  <img src="img/e-commerce2.png" alt="" class="img-fluid">   
+                  <video src="img/ne-varsa-satacaz.mp4" class="img-fluid mt-5 rounded" controls></video>        
+                </div>
+                <div class="col-12 col-xl-9 p-3 p-lg-5">
+                    <article>
+                      <h2>About Us</h2>
+                      <p>The Borsa İstanbul (abbreviated as BIST) is the sole exchange entity of Turkey combining the former Istanbul Stock Exchange (ISE) (Turkish: İstanbul Menkul Kıymetler Borsası, IMKB), the Istanbul Gold Exchange (Turkish: İstanbul Altın Borsası, İAB) and the Derivatives Exchange of Turkey (Turkish: Vadeli İşlem Opsiyon Borsası, VOB) under one umbrella. It was established as an incorporated company with a founding capital of ₺423,234,000[6] (approx. US$240 million) on April 3, 2013, and began to operate on April 5, 2013. Its slogan is worth investing.
+                       
+                        </p>
+                        <p>
+                          Shareholders of Borsa İstanbul are: 49% Government of Turkey, 41% IMKB, 5% VOB, 4% IMKB members, 1% IMKB brokers and 0.3% IAB members. It is planned that all the Government-owned shares will be offered for sale.[9] Among the executives of the nine-member board of directors, which is presided by chairman Himmet Karadağ, are former deputy chairman of ISE Osman Akyüz, former head of VOB Işınsu Kestelli, Merrill Lynch Investment Bank General Manager Hüseyin Kelezoğlu and Chairman of Turkish Association of Capital Market Intermediary Institutions Attila Köksal.
+                        </p>
+                    </article>
+                    
+                                    
+                </div>
+            </div>
+            <div class="row my-4">
+              <div class="col-lg-6 col-12">
+                <form class="row g-1 needs-validation border border-1 border-green-vogue rounded shadow p-3" novalidate>
+                  <h3>Contact Us</h3>
+                  <div class="col-md-6">
+                    <label for="firstname" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                      Enter your Firtsname
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lastname" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                      Enter your Lastname
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="lastname" class="form-label">Last name</label>
+                    <input type="email" class="form-control" id="lastname" placeholder="E-mail" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                      Enter your e-mail
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" rows="5" class="form-control" required></textarea>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                      Please Enter your message
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-outline-primary w-100" type="submit">Submit form</button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-6 col-12 mt-4 mt-lg-0">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1OoRfuPQn-TQBB6iQnKxd8dlHsm4&hl=en_US&ehbc=2E312F" width="100%" height="100%"></iframe>   
+              </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="footer bg-green-vogue text-light py-4">
+      <div class="container">
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-1 g-4">
+          <div class="col border-sm-top border-2 p-md-3 p-5">
+            <h3>Links</h3>
+            <ul class="nav flex-column mt-4">
+              <li class="nav-item">
+                <a class="nav-link rounded text-center ps-0" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded text-center my-3 ps-0" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded text-center mb-3 ps-0" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded text-center ps-0" href="#">PRODUCTS</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col border-top border-2 p-md-3 p-5">
+            <h3>Subscribe</h3>
+            <div class="mt-4">
+              <input type="text" class="form-control" placeholder="Enter your e-mail...">
+              <button class="btn btn-outline-danger mt-2 w-100">Subscribe</button>
+            </div>
+          </div>
+          <div class="col border-top border-2 p-md-3 p-5">
+            <h3>Social Links</h3>
+            <div class="social-links mt-4">
+              <a href="#" class="btn btn-outline-light m-2">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="btn btn-outline-light m-2">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="btn btn-outline-light m-2">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-outline-light m-2">
+                <i class="fa-brands fa-youtube"></i>
+              </a>              
+            </div>            
+          </div>
+          <div class="col border-top border-2 p-md-3 p-5">
+            <h3>Contact</h3>
+            <div>
+              <p>Address: 1234 Heaven Stress, Beverly Hill OldYork- United State of Lorem</p>
+              <p>Phone: <a href="#" class="btn btn-outline-light"> 1234 5678 5576</a></p>
+              <p>Email: <a href="" class="btn btn-outline-light">velidogan120@gmail.com</a> </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 border-top border-2 border-light pt-4 align-items-center">
+          <div class="col text-center">
+            <p>Copyright ©2024 All rights reserved | This template is made</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+    </script>
+</body>
+</html>

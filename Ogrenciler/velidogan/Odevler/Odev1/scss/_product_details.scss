@@ -1,0 +1,18 @@
+.products-details{
+    #article-text{
+        border-left: 1px solid $green-vogue;
+    }
+    span{
+        &.checked{
+            color: $chrome-yellow;
+        }
+    }
+}
+@media (max-width:768px){
+    .products-details{
+        #article-text{
+            border-top: 1px solid $green-vogue;
+            border-left: none;
+        }
+    }
+}
