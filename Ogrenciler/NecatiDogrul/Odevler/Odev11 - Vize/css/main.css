@@ -11883,9 +11883,15 @@ textarea.form-control-lg {
   background-size: cover;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .products .container .class .food-card {
     padding: 10px 0;
+  }
+  .details .container #img-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
