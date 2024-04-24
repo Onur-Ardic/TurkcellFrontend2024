@@ -11868,36 +11868,36 @@ nav li a:hover {
   background-size: cover;
 }
 .home-banner button:hover {
-  background-color: #344bc5;
-  border-color: #344bc5;
   transition: all 0.2s ease-in-out;
+  background-color: #344bc5 !important;
+  border-color: #344bc5 !important;
   color: #f8f9fa !important;
 }
 
 .more-btn:hover {
-  background-color: #344bc5;
-  border-color: #344bc5;
   transition: all 0.2s ease-in-out;
+  background-color: #344bc5 !important;
+  border-color: #344bc5 !important;
   color: #f8f9fa !important;
 }
 
 #urun .right-part .buttons-sizes button:hover {
-  background-color: #f60606;
-  border-color: #f60606 !important;
   transition: all 0.2s ease-in-out;
-  color: #f8f9fa;
+  background-color: #f60606 !important;
+  border-color: #f60606 !important;
+  color: #f8f9fa !important;
 }
 #urun .right-part .adet-btn:hover {
-  background-color: #f60606;
-  border-color: #f60606 !important;
   transition: all 0.4s ease-in-out;
-  color: #f8f9fa;
+  background-color: #f60606 !important;
+  border-color: #f60606 !important;
+  color: #f8f9fa !important;
 }
 #urun .right-part .buying-area button:hover {
+  transition: all 0.4s ease-in-out;
   background-color: #344bc5 !important;
   border-color: #344bc5 !important;
-  transition: all 0.4s ease-in-out;
-  color: #f8f9fa;
+  color: #f8f9fa !important;
 }
 #urun .right-part .buying-area i:hover {
   color: #f60606;

@@ -1,0 +1,79 @@
+@keyframes rightShield {
+    0%{
+        top: -10px;
+        right: -300px;
+        opacity: 1;
+        z-index: 99999;
+    }
+    25%{
+        top: -100px;
+        right: -600px;
+        opacity: 1;
+        z-index: 99999;
+    }
+    50%{
+        top: -100px;
+        right: -700px;
+        opacity: 1;
+        z-index: 99999;
+    }
+    75%{
+        top: -100px;
+        right: -800px;
+        opacity: 1;
+        z-index: 99999;
+    }
+    100%{
+        right: -1900px;
+        opacity: 0;
+        right: 0;
+        z-index: -99999;
+    }
+}
+@keyframes leftShield {
+    0%{
+        top: -10px;
+        left: -500px;
+        opacity: 1;
+        z-index: 99999;
+    }
+    25%{
+        top: -100px;
+        left: -600px;
+        opacity: 1;
+        z-index: 99999;
+    }
+    50%{
+        top: -100px;
+        left: -700px;
+        opacity: 1;
+        z-index: 99999;
+    }
+    75%{
+        top: -100px;
+        left: -800px;
+        opacity: 1;
+        z-index: 99999;
+    }
+    95%{
+        top: -100px;
+        left: -1400px;
+        opacity: 0;
+        z-index: -99999;
+    }
+    100%{
+        top: -100px;
+        rigt: -1400px;
+        opacity: 0 ;
+        z-index: -99999;
+    }
+    
+}
+@keyframes glow {
+    from {
+      box-shadow: 0 0 10px -10px #C69749;
+    }
+    to {
+      box-shadow: 0 0 10px 10px #b38130;
+    }
+  }

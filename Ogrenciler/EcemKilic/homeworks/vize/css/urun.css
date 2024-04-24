@@ -1,0 +1,361 @@
+.bg-orange {
+  background-color: #EE7214;
+}
+
+.bg-light-orange {
+  background-color: #F7B787;
+}
+
+.bg-green {
+  background-color: #527853;
+}
+
+.text-orange-white {
+  color: #F9E8D9;
+}
+
+.text-orange {
+  color: #EE7214;
+}
+
+.text-green {
+  color: #527853;
+}
+
+.text-gray {
+  color: #7f848c;
+}
+
+.text-black {
+  color: black;
+}
+
+.mx-25 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.mx-40 {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.mx-100 {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.my-25 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.py-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.height-50 {
+  height: 50px;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.no-x-overflow {
+  overflow-x: hidden;
+}
+
+.no-y-overflow {
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.daktilo .wrapper {
+  height: 20vh;
+  display: grid;
+  place-items: center;
+}
+.daktilo .typing-demo {
+  width: 22ch;
+  animation: typing 5s steps(22) infinite, blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 2em;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.slide-response .slide-item {
+  height: 100%;
+  min-height: 510px;
+}
+.slide-response .slide-item img {
+  width: 100%;
+  height: 100%;
+  min-height: 510px;
+  object-fit: cover;
+}
+.slide-response .slide-item .card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.slide-response .slide-item .card-img-overlay .btn {
+  transition: ease-in-out 220ms;
+  cursor: pointer;
+}
+.slide-response .slide-item .card-img-overlay .btn:hover {
+  background-color: #527853;
+  box-shadow: 0 0 26px #527853;
+}
+@media screen and (max-width: 768px) {
+  .slide-response .slide-item {
+    height: 510px;
+    width: 250px;
+  }
+  .slide-response .slide-item .card-img-overlay .card-header {
+    display: none;
+  }
+  .slide-response .slide-item .card-img-overlay .card-body p {
+    display: none;
+  }
+  .slide-response .slide-item .card-img-overlay .card-footer {
+    display: none;
+  }
+}
+
+.home {
+  order: 1;
+}
+
+.product #box {
+  height: 625px;
+  width: 0%;
+  left: auto;
+  display: block;
+  max-width: 100%;
+  background: #FFF;
+  animation: openBox 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  order: 2;
+  position: relative;
+}
+.product #box .product-img {
+  display: none;
+}
+.product #box .product-disc {
+  display: none;
+}
+.product #box:hover .product-img {
+  left: auto;
+  opacity: 0;
+  animation: fadeImg 1s ease-in-out forwards;
+  animation-delay: 1s;
+  position: relative;
+  display: block;
+  width: 80%;
+}
+.product #box:hover .product-disc {
+  width: 0px;
+  height: 430px;
+  background: #A9B388;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  animation: showDisc 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+}
+.product #box:hover .product-disc .product-content {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  animation: fadeContent 1s ease-in-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.product #box:hover .product-disc .product-content .product-about {
+  width: 100%;
+}
+.product #box:hover .product-disc .product-content .product-about h1 {
+  font-size: 32px;
+  font-family: "Poppins";
+}
+.product #box:hover .product-disc .product-content .product-about span {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: flex;
+  opacity: 0.5;
+}
+.product #box:hover .product-disc .product-content .product-about p {
+  margin-top: 35px;
+  font-size: 14px;
+  font-family: "Poppins";
+}
+.product #box:hover .product-disc .product-content .product-buttons {
+  width: 500px;
+  height: 100px;
+  bottom: 50px;
+  right: -50px;
+  position: absolute;
+}
+.product #box:hover .product-disc .product-content .product-buttons .btn {
+  width: 240px;
+  height: 70px;
+  transition: ease-in-out 220ms;
+  cursor: pointer;
+}
+.product #box:hover .product-disc .product-content .product-buttons .buy {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  animation: fadeBuy 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 1s;
+}
+.product #box:hover .product-disc .product-content .product-buttons .buy:hover {
+  box-shadow: 0 0 26px #527853;
+}
+@media screen and (max-width: 768px) {
+  .product {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    background-image: none;
+  }
+  .product #box {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    min-height: 700px;
+    height: 100%;
+    background: none;
+  }
+  .product #box .product-img img {
+    display: none;
+  }
+  .product #box #product-disc {
+    min-width: 250px !important;
+    min-height: 600px !important;
+    height: 100%;
+    margin: 10px;
+    position: relative;
+    left: 0;
+    animation: showDiscMobile 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  }
+  .product #box #product-disc .product-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .product #box #product-disc .product-content .product-buttons {
+    width: 250px;
+    bottom: 0;
+    right: 200px;
+  }
+  .product #box #product-disc .product-content .product-buttons #btn {
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+  }
+}
+
+.detail .container {
+  display: flex;
+  justify-content: center;
+}
+.detail .container .row {
+  display: flex;
+  justify-content: center;
+}
+.detail .container .row .img-container img {
+  min-width: 200px;
+}
+
+@keyframes openBox {
+  0% {
+    width: 0px;
+    left: 15%;
+  }
+  100% {
+    width: 900px;
+    left: 15%;
+  }
+}
+@keyframes fadeImg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showDiscMobile {
+  0% {
+    width: 0px;
+    left: 0;
+  }
+  100% {
+    width: 100%;
+    left: -50px;
+  }
+}
+@keyframes showDisc {
+  0% {
+    width: 0px;
+    left: 0px;
+  }
+  100% {
+    width: 500px;
+    left: 300px;
+  }
+}
+@keyframes fadeContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeBuy {
+  0% {
+    opacity: 0;
+    bottom: -25px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=urun.css.map */

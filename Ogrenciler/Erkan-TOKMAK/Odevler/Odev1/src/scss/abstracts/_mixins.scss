@@ -1,0 +1,34 @@
+@mixin button(){
+    padding: 2px 8px;
+    border: none;
+}
+@mixin primaryBtn(){
+    @include button;
+    background-color: $primary;
+}
+@mixin secondaryBtn(){
+    @include button();
+    background-color: $secondary;
+    color: $dark;
+}
+@mixin background(){
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@mixin overlay($color){
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $color;
+    opacity: .4;
+}
+@mixin hr{
+    width: 100%;
+    height: 3px;
+    background-color: $primary;
+    margin: 6px 0px;
+}

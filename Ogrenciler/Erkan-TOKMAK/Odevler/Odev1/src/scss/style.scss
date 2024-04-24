@@ -1,0 +1,85 @@
+@import './abstracts/_index', './utilities/_index','../../node_modules/bootstrap/scss/bootstrap';
+@import './animations/animation';
+
+.vkngBtnPrm{
+    @include primaryBtn;
+    color: $secondary;
+}
+.vkngBtnScnd{
+    @include secondaryBtn;
+    &:hover{
+        background-color: $light;
+        color: $secondary;
+    }
+}
+.hero{
+    background-image: url('../assets/bannerImages/homeHeroBanner.png');
+    @include background;
+    &::before{
+        @include overlay(#000);
+    }
+}
+.featureCard{
+    overflow: hidden;
+    .featureInfo{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+    }
+    &:hover{
+        box-shadow: 6px -1px 50px 15px rgba(0,0,0,0.54);
+        transition: all .3s ease;
+    &:hover .productThumb{
+        transform: scale(1.5);
+        transition: all .3s ease-in-out;
+    }
+    .featureInfo{
+        opacity: .2;
+        z-index: 2;
+    }
+    }
+}
+.products{
+    background-image: url('../assets/bannerImages/productBanner.png');
+    @include background;
+    .productCardBefore{
+        visibility: hidden;
+    }
+    .productCard:hover .productCardBefore{
+        visibility: visible;
+        transition: all .3s ease-in-out;
+    }
+    .productCardPrice{
+        &::after{
+            position: absolute;
+            content: "";
+            background: url('../assets/icons/coin.png');
+            @include background;
+            bottom: 0px;
+            right: 0px;
+            width: 75px;
+            height: 75px;
+            z-index: 1;
+        }
+    }
+}
+.faqImgBox{
+    width: 250px;
+    height: 250px;
+}
+.oracle{
+    background-image: url('../assets/bannerImages/oracle.png');
+    @include background;
+}
+.heroAboutUs{
+    @extend .hero;
+    background-image: url('../assets/bannerImages/heroBanner.png');
+}
+.shop{
+    @extend .hero;
+    background-image: url('../assets/bannerImages/heroBanner.png');
+    opacity: 1;
+}

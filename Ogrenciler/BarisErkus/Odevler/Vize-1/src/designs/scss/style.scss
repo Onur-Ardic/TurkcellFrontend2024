@@ -1,0 +1,76 @@
+// #region Imports
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./common/bootstrap_overrides";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/variables-dark";
+@import "../../../node_modules/bootstrap/scss/maps";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/root";
+@import "../../../node_modules/bootstrap/scss/accordion";
+@import "../../../node_modules/bootstrap/scss/alert";
+@import "../../../node_modules/bootstrap/scss/buttons";
+@import "../../../node_modules/bootstrap/scss/card";
+@import "../../../node_modules/bootstrap/scss/carousel";
+@import "../../../node_modules/bootstrap/scss/close";
+@import "../../../node_modules/bootstrap/scss/forms";
+@import "../../../node_modules/bootstrap/scss/modal";
+@import "../../../node_modules/bootstrap/scss/nav";
+@import "../../../node_modules/bootstrap/scss/navbar";
+@import "../../../node_modules/bootstrap/scss/placeholders";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/tooltip";
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "../../../node_modules/bootstrap/scss/images";
+@import "../../../node_modules/bootstrap/scss/containers";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/type";
+@import "../../../node_modules/bootstrap/scss/helpers";
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../../../node_modules/bootstrap/scss/utilities/api";
+@import "./common/animations";
+@import "./common/variables";
+@import "./common/mixins";
+@import "./common/custom";
+// #endregion
+.home {
+    background: url("../../assets/background-main.jpg");
+    @include default-background;
+    .gradient-text {
+        background-image: linear-gradient(90deg, #f3ec78, #af4261, #f38fe2, #2ebfeb);
+        letter-spacing: 0.5rem;
+        background-size: 400% 400%;
+        color: transparent;
+        background-clip: text;
+        animation: textGradientAnimation 5s linear infinite;
+    }
+}
+.about-us {
+    @for $i from 0 through 10 {
+        .about-us-content-#{$i} {
+            background: url("../../assets/background-#{$i}.jpg");
+            @include default-background;
+        }
+    }
+}
+.products {
+    .card {
+        background: transparent;
+        height: $hero-card-height;
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7); /* Siyah yarı saydam overlay */
+        }
+    }
+    .carousel-item {
+        img {
+            height: $hero-card-height;
+        }
+    }
+    .gifs {
+        img {
+            height: 12rem;
+            width: 20rem;
+            border-radius: 3rem;
+        }
+    }
+}

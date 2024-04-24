@@ -1,0 +1,98 @@
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Diğer içeriklerin üzerinde gözükmesini sağlar */
+}
+// Navbar
+.navbar {
+    .nav-link {
+        color: red;
+        font-weight: bold;
+
+        &:hover {
+            color: green;
+        }
+    }
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+// Hero Section
+#hero {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Baklava%281%29.png');
+    background-size: cover;
+    color: white;
+}
+
+// About Section
+#about {
+    padding: 100px 0;
+}
+
+// Product Section
+#products {
+    background-color: white;
+}
+
+// FAQ Section
+#faq {
+    padding: 100px 0;
+}
+
+// Reviews Section
+#reviews {
+    background-color: white;
+}
+
+// Contact Section
+#contact {
+    padding: 100px 0;
+}
+
+// Footer
+footer {
+    background-color: red;
+    color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.hero-content {
+    padding-top: 100px;
+}
+
+/* Product Cards */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.info-grid-back {
+    background-color: #184327;
+}
+.pb-5 {
+    padding-bottom: 3rem !important;
+}
+
+.pt-5 {
+    padding-top: 3rem !important;
+}

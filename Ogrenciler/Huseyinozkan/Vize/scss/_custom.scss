@@ -4,3 +4,25 @@
 .btn-light:hover i {
   color: $primary;
 }
+.card .img-wrap {
+  height: 260px;
+}
+.card .img-wrap img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+.card .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.custom-margin {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.custom-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
