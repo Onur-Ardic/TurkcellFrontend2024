@@ -1,0 +1,26 @@
+$font-family-base: "Poppins", sans-serif !default;
+
+$dark: #03070c05;
+$info: #509abf;
+$warning: #bfb228;
+
+$grid-columns: 24 !default;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6.25,
+  7: $spacer * 12,
+);
+
+$accordion-bg: $dark;
+$accordion-button-color: white;
+$accordion-icon-color: white;
+$accordion-button-bg: black;
+$accordion-button-active-bg: rgb(200, 215, 227);
+$accordion-button-focus-border-color: none;
