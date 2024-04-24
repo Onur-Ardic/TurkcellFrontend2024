@@ -11844,8 +11844,36 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.hero-area .hero-text a {
-  background-color: rgb(0, 95, 0);
+.hero-text a {
+  background-color: rgb(212, 255, 212);
+}
+.hero-text a:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.products-area .cards .card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all 0.5s;
+  box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+}
+.products-area .cards .card .fa-heart:hover {
+  color: red;
+  transition: 0.3s ease;
+}
+.products-area .cards .card .fa-star {
+  font-size: 12px;
+}
+
+.footer .footer-content .list li:hover {
+  color: orangered;
+  transition: all 0.2s ease;
+}
+
+.product-detail-area .content .add-basket:hover {
+  background-color: green;
+  transition: all 0.3s ease-in-out;
 }
 
 * {
@@ -11867,8 +11895,33 @@ a {
   cursor: pointer;
 }
 
-ul li {
+i {
   cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.bg-1 {
+  background-color: rgb(255, 161, 208);
+}
+
+.bg-2 {
+  background-color: rgb(170, 177, 248);
+}
+
+.bg-3 {
+  background-color: rgb(124, 68, 255);
+}
+
+.bg-4 {
+  background-color: orange;
+}
+
+.star-color {
+  color: #ffc000;
 }
 
 /*# sourceMappingURL=main.css.map */
