@@ -10,11 +10,6 @@ i {
 .transition {
   transition: all 0.3s ease-in-out;
 }
-.hover-primary {
-  &:hover {
-    @include background-hover($primary, whitesmoke, $primary, whitesmoke);
-  }
-}
 .navbar-icon {
   color: white;
   &:hover {
@@ -41,7 +36,7 @@ i {
 }
 #why-choose-us {
   .card {
-    @include background-hover($primary, white);
+    @include background-hover(white, $dark, $primary, white, $primary, white);
   }
 }
 #partners {
@@ -57,13 +52,16 @@ i {
     @extend .img-sm;
     animation-duration: 5s;
   }
+  .nav-item {
+    @include background-hover($dark, white, $primary, white, $primary, white);
+  }
 }
 #plans {
   .popular {
     scale: 1.1;
   }
   .plan {
-    @include background-hover($dark, $white, $primary);
+    @include background-hover(transparent, $dark, $dark, $white, $dark, $white);
   }
 }
 #about-us {
