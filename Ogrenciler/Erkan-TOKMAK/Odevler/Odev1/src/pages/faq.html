@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viking Store</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Contrail+One&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -16,43 +15,45 @@
     <header>
         <nav class="navbar navbar-expand-md fixed-top bg-light">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="../assets/logo/logo.png" alt="logo" class="img-fluid logo"
-                        width="80" height="80"></a>
+                <a class="navbar-brand" href="#"><img src="../assets/logo/logo.png" alt="logo" class="logo"
+                        width="70" height="70"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    data-bs-target="#vikingNavbar" aria-controls="vikingNavbar" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse" id="vikingNavbar">
                     <ul class="navbar-nav fs-3">
                         <li class="nav-item">
-                            <a class="nav-link ms-5" aria-current="page" href="../../index.html">HOME</a>
+                            <a class="nav-link text-secondary" href="../../index.html">Anasayfa</a>
                         </li>
-                        <li class="nav-item dropdown ms-3">
-                            <a class="nav-link dropdown-toggle text-secondary" href="#" role="button"
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle text-secondary" href="./Shop.html" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                SHOP
+                                Ürünler
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Atak Ürünler</a></li>
+                                <li><a class="dropdown-item" href="#">Savunma Ürünleri</a></li>
+                                <li><a class="dropdown-item" href="#">Araçlar</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item ms-3">
-                            <a class="nav-link text-secondary" href="../pages/aboutUs.html">ABOUT US</a>
+                        <li class="nav-item ">
+                            <a class="nav-link text-secondary" href="./aboutUs.html">Hakkımızda</a>
                         </li>
-                        <li class="nav-item ms-3">
-                            <a class="nav-link text-secondary" href="../pages/faq.html">FAQ</a>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="./faq.html">S.S.S</a>
                         </li>
-                        <li class="nav-item ms-3">
-                            <a class="nav-link text-secondary" href="../pages/contactUs.html">CONTACT US</a>
+                        <li class="nav-item ">
+                            <a class="nav-link text-secondary" href="./contactUs.html">İletişim</a>
                         </li>
-                        <li class="nav-item ms-5">
-                            <a class="nav-link text-secondary" href="#">Login | Register</a>
+                    </ul>
+                    <ul class="navbar-nav ms-auto fs-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#" data-bs-toggle="tooltip" data-bs-title="Sepete Git"><span class="vkngIconHvr"><img src="../assets/icons/023-chest.png" alt="Sepet" class="img-fluid bg-primary p-1 rounded-2"></span></a>
                         </li>
-                        <li class="nav-item ms-3">
-                            <a class="nav-link text-secondary" href="#">Profile</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#" data-bs-toggle="tooltip" data-bs-title="Profile Git"><span class="vkngIconHvr"><img src="../assets/icons/045-viking.png" alt="profile" class="img-fluid bg-primary p-1 rounded-2"></span></a>
                         </li>
                     </ul>
                 </div>
@@ -63,21 +64,21 @@
         <div class="container py-5 mt-5">
             <div class="row mb-5">
                 <div class="col-12">
-                    <h2 class="fs-2 text-secondary">FAQ</h2>
+                    <h2 class="fs-2 text-secondary">Sıkça Sorulan Sorular</h2>
                 </div>
             </div>
-            <div class="row mb-5">
-                <div class="col-12 col-md-9">
-                    <div class="accordion" id="accordionExample">
+            <div class="row mb-5 align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="accordion" id="faqSectionOne">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    data-bs-target="#sectionOneOne" aria-expanded="true" aria-controls="sectionOneOne">
                                     Magazanızda hangi Viking savas ekipmanları bulabilirim?
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                data-bs-parent="#accordionExample">
+                            <div id="sectionOneOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#faqSectionOne">
                                 <div class="accordion-body">
                                     Mağazamızda Viking kalkanları, savaş baltaları, kasklar ve daha birçok Viking savaş
                                     ekipmanı bulabilirsiniz. Hepsini keşfetmek için sitemizi ziyaret edin!
@@ -86,13 +87,13 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed text-primary" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
+                                        data-bs-toggle="collapse" data-bs-target="#sectionOneTwo" aria-expanded="false"
+                                        aria-controls="sectionOneTwo">
                                         Kalkanlar ve baltalar hangi malzemeden yapılmıstır ?
                                     </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample">
+                                <div id="sectionOneTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqSectionOne">
                                     <div class="accordion-body">
                                         Kalkanlarımız ve baltalarımız yüksek kaliteli demirden ve ahşaptan üretilmiştir,
                                         dayanıklılığı ve güvenilirliği ön planda tutarak.
@@ -102,13 +103,13 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed text-primary" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
+                                        data-bs-toggle="collapse" data-bs-target="#sectionOneThree" aria-expanded="false"
+                                        aria-controls="sectionOneThree">
                                         Baltaların boyutları ne kadar?
                                     </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample">
+                                <div id="sectionOneThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqSectionOne">
                                     <div class="accordion-body">
                                         Ürün detayları sayfasında her ürünün boyut bilgileri bulunmaktadır. Lütfen
                                         ilgili ürünün boyut bilgilerini kontrol edin.
@@ -118,63 +119,60 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-none d-md-block col-md-3">
+                <div class="d-none d-md-block col-md-6">
                     <div class="p-2 rounded">
-                        <img src="../assets/products/Chain Mail.G01.2k.png" alt="" class="img-fluid">
+                        <img src="../assets/images/vikings-1.png" alt="" class="w-100 h-100 rounded-5 shadow">
                     </div>
                 </div>
             </div>
-            <div class="row mb-5">
-                <div class="d-none d-md-block col-md-3">
+            <div class="row mb-5 align-items-center">
+                <div class="d-none d-md-block col-md-6">
                     <div class="p-2 rounded">
-                        <img src="../assets/products/Chain Mail.G01.2k.png" alt="" class="img-fluid">
+                        <img src="../assets/images/vikings-2.png" alt="" class="w-100 h-100 rounded-5 shadow">
                     </div>
                 </div>
-                <div class="col-12 col-md-9">
-                    <div class="accordion" id="accordionExample">
+                <div class="col-12 col-md-6">
+                    <div class="accordion" id="faqSectionTwo">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Magazanızda hangi Viking savas ekipmanları bulabilirim?
+                                    data-bs-target="#sectionTwoOne" aria-expanded="true" aria-controls="sectionTwoOne">
+                                    Viking kasklarında hangi ölçüler bulunmaktadır?
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                data-bs-parent="#accordionExample">
+                            <div id="sectionTwoOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#faqSectionTwo">
                                 <div class="accordion-body">
-                                    Mağazamızda Viking kalkanları, savaş baltaları, kasklar ve daha birçok Viking savaş
-                                    ekipmanı bulabilirsiniz. Hepsini keşfetmek için sitemizi ziyaret edin!
+                                    Mağazamızda bulunan Viking kasklarının ölçü bilgileri ürün detaylarında mevcuttur. Her kaskın farklı ölçü seçenekleri bulunabilir, lütfen istediğiniz ürünün ölçü bilgilerini kontrol edin.
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed text-primary" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
-                                        Kalkanlar ve baltalar hangi malzemeden yapılmıstır ?
+                                        data-bs-toggle="collapse" data-bs-target="#sectionTwoTwo" aria-expanded="false"
+                                        aria-controls="sectionTwoTwo">
+                                        Siparişlerim ne kadar süre içinde teslim edilir?
                                     </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample">
+                                <div id="sectionTwoTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqSectionTwo">
                                     <div class="accordion-body">
-                                        Kalkanlarımız ve baltalarımız yüksek kaliteli demirden ve ahşaptan üretilmiştir,
-                                        dayanıklılığı ve güvenilirliği ön planda tutarak.
+                                        Siparişleriniz, ödeme onaylandıktan sonra genellikle 3-5 iş günü içinde kargoya verilmektedir. Teslimat süresi, seçtiğiniz kargo şirketine ve teslimat adresine göre değişiklik gösterebilir.
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed text-primary" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        Baltaların boyutları ne kadar?
+                                        data-bs-toggle="collapse" data-bs-target="#sectionTwoThree" aria-expanded="false"
+                                        aria-controls="sectionTwoThree">
+                                        Ürün iade ve değişim politikanız nedir?
                                     </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample">
+                                <div id="sectionTwoThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqSectionTwo">
                                     <div class="accordion-body">
-                                        Ürün detayları sayfasında her ürünün boyut bilgileri bulunmaktadır. Lütfen
-                                        ilgili ürünün boyut bilgilerini kontrol edin.
+                                        Mağazamızda satın aldığınız ürünlerde memnun kalmamanız durumunda 14 gün içinde iade veya değişim yapabilirsiniz. Detaylı bilgi için İade ve Değişim Politikamızı ziyaret edin.
                                     </div>
                                 </div>
                             </div>
@@ -183,61 +181,58 @@
                 </div>
                 
             </div>
-            <div class="row">
-                <div class="col-12 col-md-9">
-                    <div class="accordion" id="accordionExample">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="accordion" id="faqSectionThree">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Magazanızda hangi Viking savas ekipmanları bulabilirim?
+                                    data-bs-target="#sectionThreeOne" aria-expanded="true" aria-controls="sectionThreeOne">
+                                    Mağazanızda hangi ödeme yöntemleri geçerlidir?
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                data-bs-parent="#accordionExample">
+                            <div id="sectionThreeOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#faqSectionThree">
                                 <div class="accordion-body">
-                                    Mağazamızda Viking kalkanları, savaş baltaları, kasklar ve daha birçok Viking savaş
-                                    ekipmanı bulabilirsiniz. Hepsini keşfetmek için sitemizi ziyaret edin!
+                                    Mağazımızda sadece altın geçerlidir. Gelen gezgine ödemeyi yapabilirsiniz.
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed text-primary" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
-                                        Kalkanlar ve baltalar hangi malzemeden yapılmıstır ?
+                                        data-bs-toggle="collapse" data-bs-target="#sectionThreeTwo" aria-expanded="false"
+                                        aria-controls="sectionThreeTwo">
+                                        Ürünleriniz garantili midir?
                                     </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample">
+                                <div id="sectionThreeTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqSectionThree">
                                     <div class="accordion-body">
-                                        Kalkanlarımız ve baltalarımız yüksek kaliteli demirden ve ahşaptan üretilmiştir,
-                                        dayanıklılığı ve güvenilirliği ön planda tutarak.
+                                        Evet, tüm ürünlerimiz üretim ve malzeme hatalarına karşı garantilidir. Garanti şartları ve süresi için ürün detaylarını inceleyebilir veya müşteri hizmetlerimizle iletişime geçebilirsiniz.
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed text-primary" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        Baltaların boyutları ne kadar?
+                                        data-bs-toggle="collapse" data-bs-target="#sectionThreeThree" aria-expanded="false"
+                                        aria-controls="sectionThreeThree">
+                                        Mağazanızda özel indirimler veya kampanyalar var mı?
                                     </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample">
+                                <div id="sectionThreeThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqSectionThree">
                                     <div class="accordion-body">
-                                        Ürün detayları sayfasında her ürünün boyut bilgileri bulunmaktadır. Lütfen
-                                        ilgili ürünün boyut bilgilerini kontrol edin.
+                                        Evet, mağazamızda belirli dönemlerde özel indirimler, kampanyalar ve promosyonlar düzenlemekteyiz. En güncel indirim ve kampanya bilgileri için sitemizi sıkça ziyaret edin veya bültenimize kaydolun.
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="d-none d-md-block col-md-3">
+                <div class="d-none d-md-block col-md-6">
                     <div class="p-2 rounded">
-                        <img src="../assets/products/Chain Mail.G01.2k.png" alt="" class="img-fluid">
+                        <img src="../assets/images/vikings-3.png" alt="" class="w-100 h-100 rounded-5 shadow">
                     </div>
                 </div>
             </div>
@@ -246,25 +241,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <div class="h2">Hey Savascı! KUZGUN BULTENIMIZE KAYIT OL!</div>
+                    <div class="h2">Hey Savaşçı! KUZGUN BÜLTENİMİZE KAYIT OL!</div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <form class="needs-validation">
-                        <div class="input-group position-relative">
-                            <input required type="email" name="email" id="subscribe"
-                                class="form-control py-2 ps-5 border-0 rounded-start-pill" placeholder="Kuzgun Adın:">
-                            <input type="submit" value="Simdi Gonder!"
-                                class="btn vkngBtnScnd py-2 px-4 fs-4 rounded-end-pill">
-                            <div class="valid-feedback text-secondary">
-                                Kuzgunun salındı!
+                    <form class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" id="subscribe" class="form-control py-2 ps-5 border-0 rounded-pill"
+                                    placeholder="Kuzgun Adın:" required>
+                                <div class="valid-feedback bg-light">
+                                    Kuzgun Hazır!
+                                </div>
+                                <div class="invalid-feedback bg-light">
+                                    Kuzgun bul!
+                                </div>
                             </div>
-                            <div class="invalid-feedback text-secondary">
-                                Kuzgun bul!
+                            <div class="col-6">
+                                <button type="submit" value="Simdi Gonder!"
+                                    class="btn vkngBtnScnd py-2 px-4 fs-4 rounded-pill">Kuzgunu Uçur!</button>
                             </div>
                         </div>
-                    </form>
                 </div>
+                </form>
             </div>
+        </div>
         </div>
     </section>
     <footer class="footer py-5 bg-dark text-secondary">
@@ -274,36 +274,46 @@
                     <a href="#" class=" mb-3 text-decoration-none">
                         <img src="../assets/logo/logo.png" alt="" width="100" height="100">
                     </a>
-                    <p class="text-white-50 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-                        error?</p>
+                    <p class="text-white-50 mt-2">Viking Vare; yeni lordların fetihleri başarıyla tamamlaması için
+                        şimdiden hazır. Sende alışverişini yap ve yeni yerler fethet!</p>
                 </div>
                 <div class="col-6 col-md-3 mt-5 mb-3">
-                    <h5>MENU</h5>
+                    <h5>MENÜ</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">About Us</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Products</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Contact Us</a></li>
+                        <li class="nav-item mb-2"><a href="../../index.html"
+                                class="nav-link p-0 text-white-50">Anasayfa</a></li>
+                        <li class="nav-item mb-2"><a href="../pages/aboutUs.html"
+                                class="nav-link p-0 text-white-50">Hakkımızda</a></li>
+                        <li class="nav-item mb-2"><a href="../pages/Shop.html"
+                                class="nav-link p-0 text-white-50">Ürünler</a></li>
+                        <li class="nav-item mb-2"><a href="../pages/faq.html"
+                                class="nav-link p-0 text-white-50">S.S.S</a></li>
+                        <li class="nav-item mb-2"><a href="../pages/contactUs.html"
+                                class="nav-link p-0 text-white-50">İletişim</a></li>
                     </ul>
                 </div>
 
                 <div class="col-6 col-md-3 mt-5 mb-3">
-                    <h5>Categories</h5>
+                    <h5>Özel Ürünler</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Ship</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Armor</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Weapons</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Shield</a></li>
+                        <li class="nav-item mb-2"><a href="../subPages/gemi.html"
+                                class="nav-link p-0 text-white-50">Gemi</a></li>
+                        <li class="nav-item mb-2"><a href="../subPages/gelismis-zirh.html"
+                                class="nav-link p-0 text-white-50">Gelişmiş Zırh</a></li>
+                        <li class="nav-item mb-2"><a href="../subPages/anahtar.html"
+                                class="nav-link p-0 text-white-50">Anahtar</a></li>
+                        <li class="nav-item mb-2"><a href="../subPages/mancinik.html"
+                                class="nav-link p-0 text-white-50">Mancınık</a></li>
                     </ul>
                 </div>
 
                 <div class="col-6 col-md-3 mt-5 mb-3">
-                    <h5>Policies</h5>
+                    <h5>Politikalar</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Delivery Policy</a>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Gönderi Politikası</a>
                         </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Privacy Policy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Gizlilik Politikası</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -318,17 +328,11 @@
             </div>
         </div>
     </section>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-
         (() => {
             'use strict'
-
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
             const forms = document.querySelectorAll('.needs-validation')
-
-            // Loop over them and prevent submission
             Array.from(forms).forEach(form => {
                 form.addEventListener('submit', event => {
                     if (!form.checkValidity()) {
@@ -340,11 +344,10 @@
                 }, false)
             })
         })()
+
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./node_modules/bootstrap/js/dist/tooltip.js"></script>
-    <script src="./node_modules/bootstrap/js/dist/"></script>
 </body>
 
 </html>

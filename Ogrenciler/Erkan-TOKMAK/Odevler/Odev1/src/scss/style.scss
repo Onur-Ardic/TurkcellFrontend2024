@@ -1,8 +1,6 @@
 @import './abstracts/_index', './utilities/_index','../../node_modules/bootstrap/scss/bootstrap';
+@import './animations/animation';
 
-body {
-    font-family: "Contrail One";
-}
 .vkngBtnPrm{
     @include primaryBtn;
     color: $secondary;
@@ -35,7 +33,8 @@ body {
         box-shadow: 6px -1px 50px 15px rgba(0,0,0,0.54);
         transition: all .3s ease;
     &:hover .productThumb{
-        transform: scale(1.2);
+        transform: scale(1.5);
+        transition: all .3s ease-in-out;
     }
     .featureInfo{
         opacity: .2;
@@ -51,7 +50,7 @@ body {
     }
     .productCard:hover .productCardBefore{
         visibility: visible;
-        transition: all .1s ease-in;
+        transition: all .3s ease-in-out;
     }
     .productCardPrice{
         &::after{
@@ -67,19 +66,12 @@ body {
         }
     }
 }
-// .testimonials{
-//     background-image: url('../assets/bannerImages/homeTestimonial.png');
-//     @include background;
-    // &::before{
-    //     @include overlay;
-    // }
-// }
 .faqImgBox{
     width: 250px;
     height: 250px;
 }
 .oracle{
-    background-image: url('../assets/bannerImages/heroBanner.png');
+    background-image: url('../assets/bannerImages/oracle.png');
     @include background;
 }
 .heroAboutUs{
@@ -88,5 +80,6 @@ body {
 }
 .shop{
     @extend .hero;
+    background-image: url('../assets/bannerImages/heroBanner.png');
     opacity: 1;
 }
