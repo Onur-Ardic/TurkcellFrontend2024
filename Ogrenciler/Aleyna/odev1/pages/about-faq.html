@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>STARDUST</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-top bg-black fs-5 text-white py-1">
+        <marquee>
+          <h6>You can get 20% discount for the September horoscope change!</h6>
+        </marquee>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-navbar">
+        <div class="container-fluid">
+          <div class="navbar-logo">
+            <a class="navbar-brand" href="#"
+              ><img src="../assets/logo.png"
+            /></a>
+            <button
+              class="navbar-toggler ms-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="#navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../homepage/homepage.html"
+                  >Homepage</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/about-faq.html"
+                  >About Us/FAQ</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../homepage/homepage.html#slider"
+                  >Horoscopes</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="../homepage/homepage.html#producys-back"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../pages/jewelry.html"
+                      >Jewelry</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/stones.html"
+                      >Natural Stones</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../homepage/homepage.html#change-zodiac"
+                      >Change Zodiac</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="button-wrapper d-none d-lg-block">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal"
+              >
+                Hey Babe!
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="about-us">
+      <div class="container">
+        <div
+          class="mision mt-4 row align-items-center row-cols-1 row-cols-lg-2"
+        >
+          <div class="mision-img col">
+            <img src="../assets/vision.png" class="img-fluid" />
+          </div>
+          <div class="mision-content col text-center">
+            <h3 class="mb-3 font-paragraph">Our Mission</h3>
+            <p class="mb-4 text-bold">
+              At Stardust, our mission is to provide an accessible,
+              understandable and personalized experience for anyone who wants to
+              explore the richness of astrology. We aim to add a positive touch
+              to the lives of our customers with items selected in colors that
+              match the energy of the zodiac signs, jewelry crafted with
+              astrologically compatible stones, and special services for those
+              who desire a zodiac sign change. In the light of celestial
+              guidance, we are here to help everyone discover their own
+              stardust.
+            </p>
+          </div>
+        </div>
+        <div class="border-top border-1 d-block d-lg-none"></div>
+        <div
+          class="vision row align-items-center text-center row-cols-1 row-cols-lg-2 mt-5"
+        >
+          <div class="vision-content col text-center">
+            <h3 class="mb-3 font-paragraph">Our Vision</h3>
+            <p class="mb-4 text-bold">
+              Inspired by the limitless depths of the sky, Stardust offers the
+              guidance of the stars to enable each individual to live in harmony
+              with their cosmic self. Using the infinite wisdom of the universe,
+              we aim to offer the energy of colors and crystals as a guide on
+              your journey of personal growth.
+            </p>
+          </div>
+          <div class="vision-img col">
+            <img src="../assets/mision.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-faq p-3">
+      <div
+        class="hcope font-title d-flex justify-content-between align-items-center mt-5 gap-3"
+      >
+        <div class="line bg-black"></div>
+        <h3 class="text-center">Frequently Asked Questions</h3>
+        <div class="line bg-black"></div>
+      </div>
+      <h3 class="text-center font-paragraph mt-3">
+        We value our customers. You can visit us at any time.
+      </h3>
+      <div class="d-flex justify-content-center mt-3">
+        <form class="search-button me-lg-3 position-relative" role="search">
+          <input
+            type="search"
+            class="form-control"
+            placeholder="Search..."
+            aria-label="Search"
+          />
+          <span class="position-absolute"
+            ><i class="fa-solid fa-magnifying-glass mt-2"></i
+          ></span>
+        </form>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="accordion my-5" id="faq">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#questionOne"
+              aria-expanded="false"
+              aria-controls="questionOne"
+            >
+              <i
+                >How are the zodiac signs classified according to their
+                energy?</i
+              >
+            </button>
+          </h2>
+          <div
+            id="questionOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              <p>
+                The zodiac signs are classified on the basis of
+                <b>four elements</b> (Fire, Earth, Air, Water) and
+                <b>three modalities</b> (Cardinal, Fixed, Mutable). These
+                combinations determine the characteristics of the zodiac signs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#questionTwo"
+              aria-expanded="false"
+              aria-controls="questionTwo"
+            >
+              <i
+                >What are the colors that are good for the energy of the zodiac
+                signs?</i
+              >
+            </button>
+          </h2>
+          <div
+            id="questionTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              <p>
+                Each sign has its own unique energy and the colors that increase
+                this energy may vary. For example, for Aries, the energizing and
+                encouraging color red may be a good choice, while for Gemini,
+                the color yellow, which enhances communication, would be
+                appropriate. On our website, you can find the colors that
+                increase the energy of each sign and the products we recommend
+                in these colors.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#questionThree"
+              aria-expanded="false"
+              aria-controls="questionThree"
+            >
+              <i>I would like to return my order, how can I do this?</i>
+            </button>
+          </h2>
+          <div
+            id="questionThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              <p>
+                You can contact us via the <b>whatsapp button</b> on our page
+                for your order refund and other transactions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#questionFour"
+              aria-expanded="false"
+              aria-controls="questionFour"
+            >
+              <i>I want to change my zodiac sign, how can I do it?</i>
+            </button>
+          </h2>
+          <div
+            id="questionFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordion-faq"
+          >
+            <div class="accordion-body">
+              <p>
+                By reviewing the content about the zodiac signs on our page, you
+                can realize this process by purchasing the sign you feel you
+                belong to and want to be.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#questionFive"
+              aria-expanded="false"
+              aria-controls="questionFive"
+            >
+              <i
+                >How to guarantee the quality of the products sold on your
+                website?</i
+              >
+            </button>
+          </h2>
+          <div
+            id="questionFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordion-faq"
+          >
+            <div class="accordion-body">
+              <p>
+                All products offered for sale on our website have been selected
+                and tested in accordance with quality standards. We go through a
+                rigorous selection process to ensure the quality of our products
+                and prioritize customer satisfaction. Also, if you have any
+                questions or concerns about our products, you can contact our
+                <b>customer service.</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer bg-footer">
+      <footer class="py-3 mt-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="../homepage/homepage.html" class="nav-link px-2 text-white"
+              >Homepage</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#products-back" class="nav-link px-2 text-white"
+              >Products</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="../homepage/homepage.html#slider"
+              class="nav-link px-2 text-white"
+              >Horoscopes</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="../pages/about-faq.html" class="nav-link px-2 text-white"
+              >FAQ</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="../pages/about-faq.html" class="nav-link px-2 text-white"
+              >About Us</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-white">© 2024 Stardust</p>
+      </footer>
+    </section>
+
+    <div
+      class="modal fade"
+      id="modal"
+      tabindex="-1"
+      aria-labelledby="Rightmodal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-navbar">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h2 class="text-center">Hey babe,let's be friends!</h2>
+            <p class="text-center">
+              Join our newsletter list to be the first to know about our deals.
+              Psstt.. and a 10% off your first order!
+            </p>
+
+            <form class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <div class="valid-feedback">Correct entry!</div>
+                  <div class="invalid-feedback">Incorrect entry!</div>
+                </div>
+                <div class="col-6">
+                  <button type="submit" class="btn btn-primary w-100">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      (() => {
+        "use strict";
+        const forms = document.querySelectorAll(".needs-validation");
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+  </body>
+</html>

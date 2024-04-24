@@ -37,7 +37,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #e0d9e0;
-  --bs-secondary: #f2f2f2;
+  --bs-secondary: #e0e0e0;
   --bs-success: #198754;
   --bs-info: #a63aa2;
   --bs-warning: #efd2ee;
@@ -45,7 +45,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 224, 217, 224;
-  --bs-secondary-rgb: 242, 242, 242;
+  --bs-secondary-rgb: 224, 224, 224;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 166, 58, 162;
   --bs-warning-rgb: 239, 210, 238;
@@ -53,7 +53,7 @@
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-primary-text-emphasis: #5a575a;
-  --bs-secondary-text-emphasis: #616161;
+  --bs-secondary-text-emphasis: #5a5a5a;
   --bs-success-text-emphasis: #0a3622;
   --bs-info-text-emphasis: #421741;
   --bs-warning-text-emphasis: #60545f;
@@ -61,7 +61,7 @@
   --bs-light-text-emphasis: #495057;
   --bs-dark-text-emphasis: #495057;
   --bs-primary-bg-subtle: #f9f7f9;
-  --bs-secondary-bg-subtle: #fcfcfc;
+  --bs-secondary-bg-subtle: #f9f9f9;
   --bs-success-bg-subtle: #d1e7dd;
   --bs-info-bg-subtle: #edd8ec;
   --bs-warning-bg-subtle: #fcf6fc;
@@ -69,7 +69,7 @@
   --bs-light-bg-subtle: #fcfcfd;
   --bs-dark-bg-subtle: #ced4da;
   --bs-primary-border-subtle: #f3f0f3;
-  --bs-secondary-border-subtle: #fafafa;
+  --bs-secondary-border-subtle: #f3f3f3;
   --bs-success-border-subtle: #a3cfbb;
   --bs-info-border-subtle: #dbb0da;
   --bs-warning-border-subtle: #f9edf8;
@@ -149,7 +149,7 @@
   --bs-tertiary-bg: #2b3035;
   --bs-tertiary-bg-rgb: 43, 48, 53;
   --bs-primary-text-emphasis: #ece8ec;
-  --bs-secondary-text-emphasis: #f7f7f7;
+  --bs-secondary-text-emphasis: #ececec;
   --bs-success-text-emphasis: #75b798;
   --bs-info-text-emphasis: #ca89c7;
   --bs-warning-text-emphasis: #f5e4f5;
@@ -157,7 +157,7 @@
   --bs-light-text-emphasis: #f8f9fa;
   --bs-dark-text-emphasis: #dee2e6;
   --bs-primary-bg-subtle: #2d2b2d;
-  --bs-secondary-bg-subtle: #303030;
+  --bs-secondary-bg-subtle: #2d2d2d;
   --bs-success-bg-subtle: #051b11;
   --bs-info-bg-subtle: #210c20;
   --bs-warning-bg-subtle: #302a30;
@@ -165,7 +165,7 @@
   --bs-light-bg-subtle: #343a40;
   --bs-dark-bg-subtle: #1a1d20;
   --bs-primary-border-subtle: #868286;
-  --bs-secondary-border-subtle: #919191;
+  --bs-secondary-border-subtle: #868686;
   --bs-success-border-subtle: #0f5132;
   --bs-info-border-subtle: #642361;
   --bs-warning-border-subtle: #8f7e8f;
@@ -1946,13 +1946,13 @@ progress {
 
 .table-secondary {
   --bs-table-color: #000;
-  --bs-table-bg: #fcfcfc;
-  --bs-table-border-color: #cacaca;
-  --bs-table-striped-bg: #efefef;
+  --bs-table-bg: #f9f9f9;
+  --bs-table-border-color: #c7c7c7;
+  --bs-table-striped-bg: #ededed;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #e3e3e3;
+  --bs-table-active-bg: #e0e0e0;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #e9e9e9;
+  --bs-table-hover-bg: #e6e6e6;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -2987,19 +2987,19 @@ textarea.form-control-lg {
 
 .btn-secondary {
   --bs-btn-color: #000;
-  --bs-btn-bg: #f2f2f2;
-  --bs-btn-border-color: #f2f2f2;
+  --bs-btn-bg: #e0e0e0;
+  --bs-btn-border-color: #e0e0e0;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #f4f4f4;
-  --bs-btn-hover-border-color: #f3f3f3;
-  --bs-btn-focus-shadow-rgb: 206, 206, 206;
+  --bs-btn-hover-bg: #e5e5e5;
+  --bs-btn-hover-border-color: #e3e3e3;
+  --bs-btn-focus-shadow-rgb: 190, 190, 190;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: whitesmoke;
-  --bs-btn-active-border-color: #f3f3f3;
+  --bs-btn-active-bg: #e6e6e6;
+  --bs-btn-active-border-color: #e3e3e3;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #f2f2f2;
-  --bs-btn-disabled-border-color: #f2f2f2;
+  --bs-btn-disabled-bg: #e0e0e0;
+  --bs-btn-disabled-border-color: #e0e0e0;
 }
 
 .btn-success {
@@ -3122,19 +3122,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: #f2f2f2;
-  --bs-btn-border-color: #f2f2f2;
+  --bs-btn-color: #e0e0e0;
+  --bs-btn-border-color: #e0e0e0;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #f2f2f2;
-  --bs-btn-hover-border-color: #f2f2f2;
-  --bs-btn-focus-shadow-rgb: 242, 242, 242;
+  --bs-btn-hover-bg: #e0e0e0;
+  --bs-btn-hover-border-color: #e0e0e0;
+  --bs-btn-focus-shadow-rgb: 224, 224, 224;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #f2f2f2;
-  --bs-btn-active-border-color: #f2f2f2;
+  --bs-btn-active-bg: #e0e0e0;
+  --bs-btn-active-border-color: #e0e0e0;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #f2f2f2;
+  --bs-btn-disabled-color: #e0e0e0;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #f2f2f2;
+  --bs-btn-disabled-border-color: #e0e0e0;
   --bs-gradient: none;
 }
 
@@ -6802,8 +6802,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-secondary-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: RGBA(245, 245, 245, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(245, 245, 245, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(230, 230, 230, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(230, 230, 230, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-success {
@@ -11847,16 +11847,36 @@ textarea.form-control-lg {
   font-family: "Sora";
 }
 
-.bgimage {
+.home-img {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
   min-height: 700px;
 }
 
-.li-item:not(:first-child) {
+.products-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://wallpapercave.com/wp/wp6557335.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.faq-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://wallpapersmug.com/download/3840x2400/5de30f/slices-fruits-kiwifruit.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://getwallpapers.com/wallpaper/full/f/f/0/1019210-download-free-fruit-wallpaper-1920x1200.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.f .li-item:not(:first-child) {
   border-left: 1px solid rgba(26, 29, 35, 0.1);
   padding-left: 16px;
 }
@@ -11881,19 +11901,7 @@ textarea.form-control-lg {
   color: green;
 }
 
-.products-img {
-  width: 100%;
-  min-height: 200px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://wallpapercave.com/wp/wp6557335.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 @media screen and (max-width: 768px) {
-  .products .container .class .food-card {
-    padding: 10px 0;
-  }
   .details .container #img-items {
     display: flex;
     flex-direction: column;

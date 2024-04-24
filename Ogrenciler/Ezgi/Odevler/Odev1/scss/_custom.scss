@@ -7,18 +7,28 @@
 .products-area{
     .cards{
         .card{
+            width: 14rem;
+            height: 28rem;
+            .fav-icon{
+                top: 10px;
+                right: 10px;
+                box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);
+                .fa-heart{
+                    width: 33px;
+                    height: 33px;
+                    &:hover{
+                        color: red;
+                        transition: .3s ease;
+                    }
+                }
+            }
             &:hover{
                 cursor: pointer;
                 transform: scale(1.02);
                 transition: all 0.5s;
                 box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
             }
-            .fa-heart{
-                &:hover{
-                    color: red;
-                    transition: .3s ease;
-                }
-            }
+            
             .fa-star{font-size: 12px;}
         }
     }
@@ -29,6 +39,12 @@
             li:hover{
                 color: orangered;
                 transition: all .2s ease;
+            }
+        }
+        .footer-icon{
+            i{
+                width: 33px;
+                height: 33px;
             }
         }
     }
