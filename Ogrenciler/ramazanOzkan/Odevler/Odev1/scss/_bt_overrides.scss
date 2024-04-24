@@ -1,0 +1,40 @@
+// bg-light bg-color ezilecek 
+$thema-color-blue:#067bc2;
+$thema-color-blue2:#84bcda;
+$thema-color-yellow:#ecc30b;
+.btn-primary{
+    background-color:$thema-color-blue !important ;
+    border-color: $thema-color-blue !important;
+    &:hover{
+        color: $thema-color-blue !important ;
+        background-color: white !important;
+    }
+}
+
+.nav-link{
+    color: $thema-color-blue !important;
+    border-radius: 15px; 
+    img {
+        filter: invert(34%) sepia(98%) saturate(874%) hue-rotate(171deg) brightness(92%) contrast(97%);
+    }  
+    &:hover{
+        color: white !important;
+        background-color: $thema-color-blue !important;
+        img {
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(317deg) brightness(104%) contrast(101%);
+        }
+       
+    }
+}
+
+.card{
+    overflow: hidden;
+    img{
+        transition: 0.8 all ease;
+    }
+    &:hover{
+        img{
+            scale: 1.1;
+        }
+    }
+}

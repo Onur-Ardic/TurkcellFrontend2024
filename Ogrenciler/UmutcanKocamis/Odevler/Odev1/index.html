@@ -3,8 +3,212 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar bg-white py-3 shadow sticky-top">
+      <div class="container-fluid col-xxl-9 d-flex justify-content-between">
+        <a class="navbar-brand" href="./index.html"
+          ><img src="./images/logo.png" alt="Logo" width="80px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul
+            class="navbar-nav ms-auto gap-4 mb-2 mb-md-0 text-uppercase fs-5 fw-bold"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link text-primary text-uppercase"
+                aria-current="page"
+                href="./index.html"
+                >Anasayfa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="./tum_urunler.html"
+                >Ürünler</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="./hakkimizda.html"
+                >Hakkımızda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="./sikca_sorulan_sorular.html"
+                >Sıkça Sorulan Sorular</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#"
+                >Sepet<i class="fa-solid fa-cart-shopping ms-2"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="home-banner py-5">
+      <div class="container col-xxl-9 py-lg-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-7 py-5"></div>
+          <div class="home-banner-title col-lg-5">
+            <h1 class="display-5 fw-bold fs-1 lh-2 mb-4 text-black">
+              SÜPER KAHRAMANLAR ARANIYOR!
+            </h1>
+            <p class="text-black fs-5 mb-4">
+              En yeni ve en trendy kostümlerle gerçek bir kahramana dönüş! Şimdi
+              göz atın ve gücünüzü keşfedin! 🦸‍♂️💥🦸‍♀️
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="#urunlerimiz"
+                ><button
+                  type="button"
+                  class="btn btn-primary fs-6 text-black fw-bold btn-lg px-5 py-3 me-md-2 rounded-0"
+                >
+                  İNCELE
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="urunlerimiz">
+      <div class="container col-xxl-9">
+        <div
+          class="text-center d-flex flex-column justify-content-center align-items-center mb-5"
+        >
+          <h2 class="fs-1 fw-bold mt-5">Ürünlerimiz</h2>
+        </div>
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img
+                src="https://skycosplay.de/cdn/shop/products/253452-1.jpg?v=1638346418"
+                class="d-block w-100"
+                alt="Spiderman-Classic"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="https://skycosplay.de/cdn/shop/products/959fe14b95e124b4705baa2ff184790a.jpg?v=1641894078"
+                class="d-block w-100"
+                alt="Miles Morales"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://skycosplay.de/cdn/shop/products/d0d97bc2b340d87e4df50b8042d3a728.jpg?v=1628230252"
+                class="d-block w-100"
+                alt="Gwen Stacy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://skycosplay.de/cdn/shop/products/2569152-1.jpg?v=1650351758"
+                class="d-block w-100"
+                alt="Thor"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://skycosplay.de/cdn/shop/products/f49c6910a4ee3ba62bbaae627b43fc8e.jpg?v=1657604592"
+                class="d-block w-100"
+                alt="Batman"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bg-black"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon bg-black"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="./tum_urunler.html">
+            <button
+              type="button"
+              class="btn btn-primary fs-5 text-black fw-bold btn-lg px-5 py-3 me-md-2 rounded-0 more-btn"
+            >
+              Daha Fazla Gör
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="container">
+        <footer class="py-3 mt-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link px-2 text-white"
+                >Anasayfa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./tum_urunler.html" class="nav-link px-2 text-white"
+                >Ürünler</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./hakkimizda.html" class="nav-link px-2 text-white"
+                >Hakkımızda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./sikca_sorulan_sorular.html"
+                class="nav-link px-2 text-white"
+                >Sıkça Sorulan Sorular</a
+              >
+            </li>
+          </ul>
+          <p class="text-center text-white">🕸️Umutcan Kocamış🦇</p>
+        </footer>
+      </div>
+    </section>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
 </html>

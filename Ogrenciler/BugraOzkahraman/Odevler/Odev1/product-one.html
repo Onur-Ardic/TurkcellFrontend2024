@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav class="navbar bg-primary navbar-expand-lg d-flex">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Müzik Sepeti</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse gap-5" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto gap-5">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Anasayfa</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Ürünlerimiz
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./product-one.html">Gitar</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./product-two.html">Keman</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./product-three.html"
+                    >Kalimba</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./about.html"
+                >Hakkımızda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./question.html">Sık Sorulan Sorular</a>
+            </li>
+          </ul>
+          <button class="btn btn-outline-dark bg-dark" type="submit">
+            <i class="fa-solid fa-basket-shopping" style="color: #ffffff"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section class="product-page p-5">
+      <div class="conteiner-fluid">
+        <div class="product-contact row col-9 mt-5 justify-content-around">
+          <div class="product-image col-lg-4 col-md-8 col-sm-5">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./images/gitar1.jpg"
+                    height="400px"
+                    width="100%"
+                    class="d-block w-100"
+                    alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/gitar.jpg"
+                    height="400px"
+                    width="100%"
+                    class="d-block w-100"
+                    alt="..." />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span
+                  class="carousel-control-prev-icon bg-dark"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span
+                  class="carousel-control-next-icon bg-dark"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="product-text bg-white row col-lg-4 col-md-8 col-sm-5 text-start border position-relative ms-3">
+            <div>
+              <h4>
+                Yamaha CPX600 Medium Elektro Akustik Gitar (Siyah) <br />
+                <hr />
+              </h4>
+              <h4 class="text-decoration-line-through fs-6">23.299,99 TL</h4>
+              <h4 class="fs-5">21.299,99 TL</h4>
+              <h5>TEKNİK ÖZELLİKLER</h5>
+              <ul>
+                <li>Tel Tipi: Çelik</li>
+                <li>Tel Sayısı: 6</li>
+                <li>Gövde Şekli: Medium Jumbo</li>
+                <li>Çalım: Sağ El</li>
+                <li>Renk: Siyah</li>
+              </ul>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i
+                class="fa-solid fa-star-half-stroke"
+                style="color: #ffd43b"></i>
+              (550+)
+            </div>
+            <button
+              class="btn btn-primary position-absolute bottom-0 start-0"
+              type="button">
+              Sepete Ekle
+            </button>
+          </div>
+          <!-- <div class="slide-up col-lg-1">
+            <img src="./images/sol.png" width="75px" height="75px" alt="" />
+          </div> -->
+          <div class="comment col-lg-2">
+            <h4>Yorumlar</h4>
+            <div class="commen-card card" style="width: 36rem">
+              <div class="d-flex col gap-3 p-1">
+                <div>
+                  <h5>Buğra Ö.</h5>
+                </div>
+                <div>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i
+                    class="fa-solid fa-star-half-stroke"
+                    style="color: #ffd43b"></i>
+                </div>
+              </div>
+              <p class="p-1">Ürün sağlam geldi.</p>
+              <hr />
+              <div class="d-flex col gap-3 p-1">
+                <div>
+                  <h5>Buğra Ö.</h5>
+                </div>
+                <div>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i
+                    class="fa-solid fa-star-half-stroke"
+                    style="color: #ffd43b"></i>
+                </div>
+              </div>
+              <p class="p-1">Ürün sağlam geldi.</p>
+              <hr />
+              <div class="d-flex col gap-3 p-1">
+                <div>
+                  <h5>Buğra Ö.</h5>
+                </div>
+                <div>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i
+                    class="fa-solid fa-star-half-stroke"
+                    style="color: #ffd43b"></i>
+                </div>
+              </div>
+              <p class="p-1">Ürün sağlam geldi.</p>
+              <div class="form-floating mb-3"></div>
+            </div>
+            <div class="form-floating">
+              <div class="form-floating">
+                <textarea
+                  style="width: 36rem"
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Yorum Yaz</label>
+              </div>
+              <button
+                class="btn btn-primary"
+                type="button"
+                style="width: 36rem">
+                Yorum Ekle
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-additional mt-5">
+          <h5>Benzer Ürünler:</h5>
+          <a href="./product-two.html">
+            <img
+              src="./images/keman1.jpg"
+              height="100px"
+              width="100px"
+              alt="keman1"
+          /></a>
+          <a href="./product-three.html">
+            <img
+              src="./images/kalimba11.jpeg"
+              height="100px"
+              width="100px"
+              alt="kalimba11" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer pt-5">
+      <div class="container-fluid bg-dark p-5">
+        <div class="footer-text text-white d-flex justify-content-evenly">
+          <div class="footer-institutional">
+            <h5>Kurumsal</h5>
+            <p>
+              <a class="text-decoration-none text-light" href="./about.html"
+                >Hakkımızda</a
+              >
+            </p>
+            <p>
+              <a class="text-decoration-none text-light" href="./question.html"
+                >Sık Sorulan Sorular</a
+              >
+            </p>
+          </div>
+          <div class="footer-product">
+            <h5>Ürünler</h5>
+            <p>
+              <a
+                class="text-decoration-none text-light"
+                href="./product-one.html">
+                Gitar
+              </a>
+            </p>
+            <p>
+              <a
+                class="text-decoration-none text-light"
+                href="./product-two.html">
+                Keman
+              </a>
+            </p>
+            <p>
+              <a
+                class="text-decoration-none text-light"
+                href="./product-three.html">
+                Kalimba</a
+              >
+            </p>
+          </div>
+          <div class="social-icon">
+            <div><h5>Sosyal Medya</h5></div>
+            <div class="d-flex justify-content-start gap-2">
+              <a class="text-light fs-5" href="https://www.facebook.com/">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a class="text-light fs-5" href="https://twitter.com/">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a class="text-light fs-5" href="https://www.instagram.com"
+                ><i class="fa-brands fa-instagram"></i>
+              </a>
+              <a class="text-light fs-5" href="https://www.linkedin.com/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div><h5>Abone Olun</h5></div>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="E-mail girin"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2" />
+              <button class="btn btn-primary" type="button" id="button-addon2">
+                Abone Ol
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

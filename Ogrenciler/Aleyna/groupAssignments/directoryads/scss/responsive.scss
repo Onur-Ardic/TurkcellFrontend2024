@@ -1,0 +1,142 @@
+@media screen and (max-width: 768px) {
+  .header {
+    .nav-menu-middle,
+    .nav-menu-right {
+      display: none;
+    }
+    .container {
+      .container-wrap {
+        top: 10px;
+        .form-search {
+          input,
+          select,
+          button {
+            width: 100% !important;
+          }
+          .location-input {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+  .featured-card:first-child,
+  .featured-card:nth-child(2) {
+    display: none;
+  }
+
+  .trending-today {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  .testimonials {
+    .testimonials-wrapper {
+      padding: 40px 50px 10px 50px;
+
+      .angle {
+        i {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .our-blog {
+    .blog-cards {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 20px 0 20px 0;
+      margin: 30px;
+    }
+  }
+  .footer {
+    .newsletter {
+      padding: 0 20px 0 20px;
+    }
+    .main-footer {
+      padding: 0 20px 0 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    .container {
+      .container-wrap {
+        top: 5px;
+        flex-direction: row;
+        .title {
+          h1 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+        .trend-search {
+          h2 {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .trending-today {
+    .cards {
+      .card {
+        flex-direction: column;
+        .content {
+          padding: 20px 10px;
+        }
+      }
+    }
+  }
+
+  .testimonials {
+    .testimonials-wrapper {
+      p {
+        padding: 0px;
+      }
+      padding: 10px 0 10px 0;
+    }
+  }
+
+  .footer {
+    .newsletter {
+      .container {
+        flex-direction: column;
+      }
+    }
+    .main-footer {
+      .container {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    .container-wrap {
+      .trend-search {
+        display: none;
+      }
+    }
+  }
+  .footer {
+    .newsletter {
+      .container {
+        flex-direction: column;
+      }
+    }
+    .main-footer {
+      .container {
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -9,6 +9,8 @@
 - [Bizim proje](https://github.com/waroi/TurkcellFrontend2024)
 - [Bazı kursların ücretsiz yüklenmişleri](https://courseflix.net/)
 - [Git Learning](https://learngitbranching.js.org/)
+- [MDN](https://developer.mozilla.org)
+- [Can I Use](https://caniuse.com/)
 
 ## Extra Kaynaklar
 

@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+nav {
+  li {
+    a:hover {
+      color: $primary !important;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+.home-banner {
+  height: 85vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.4)),
+    url("https://preview.redd.it/i-think-spider-man-and-batman-would-be-friends-v0-a8yoyi49lnhc1.jpeg?auto=webp&s=5b1b5611f28cb42f9c0bddcb730b38c9841d1f31");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  button:hover {
+    background-color: $secondary;
+    border-color: $secondary;
+    transition: all 0.2s ease-in-out;
+    color: $light !important;
+  }
+}
+.more-btn:hover {
+  background-color: $secondary;
+  border-color: $secondary;
+  transition: all 0.2s ease-in-out;
+  color: $light !important;
+}
+
+#urun {
+  .right-part {
+    .buttons-sizes {
+      button:hover {
+        background-color: $primary;
+        border-color: $primary !important;
+        transition: all 0.2s ease-in-out;
+        color: $light;
+      }
+    }
+    .adet-btn:hover {
+      background-color: $primary;
+      border-color: $primary !important;
+      transition: all 0.4s ease-in-out;
+      color: $light;
+    }
+    .buying-area {
+      button:hover {
+        background-color: $secondary !important;
+        border-color: $secondary !important;
+        transition: all 0.4s ease-in-out;
+        color: $light;
+      }
+      i:hover {
+        color: $primary;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+      }
+    }
+  }
+}
+#footer {
+  background: linear-gradient(
+    90deg,
+    #950f0f 0%,
+    rgba(12, 11, 12, 0.9) 50%,
+    #344bc5 100%
+  );
+  li {
+    a:hover {
+      color: $primary !important;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

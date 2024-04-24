@@ -1,0 +1,15 @@
+.footer{
+    .social-links{
+        a{
+            width: 45px;
+        }
+    }
+    .nav-link{
+        border: 1px solid $light;
+        color: $light;
+        &:hover,&:focus{
+            background: $light;
+            color: $green-vogue;
+        }
+    }
+}

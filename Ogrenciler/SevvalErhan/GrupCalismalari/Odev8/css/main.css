@@ -11852,7 +11852,7 @@ body {
   padding: 100px 0;
 }
 
-.features-card:hover {
+.features-card:hover, .blog-card:hover {
   border: none !important;
   box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
   transition: all 0.3s linear;
@@ -11916,6 +11916,23 @@ body {
 }
 .service-content:hover p {
   color: rgba(0, 0, 0, 0.5843137255) !important;
+}
+
+.blog-card:hover h4, .blog-card:hover .h4 {
+  color: #6247ea;
+}
+
+.logo img:hover {
+  transition: all 0.5s ease-in-out;
+  opacity: 1 !important;
+}
+
+.footer-logo {
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-logo:hover {
+  transition: all 0.3s linear;
+  background: #6247ea;
 }
 
 /*# sourceMappingURL=main.css.map */

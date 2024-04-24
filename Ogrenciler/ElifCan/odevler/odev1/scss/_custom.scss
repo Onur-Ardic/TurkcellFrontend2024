@@ -1,0 +1,111 @@
+$main-text-color: rgb(56, 55, 55);
+$sub-text-color: rgb(83, 81, 81);
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: $main-text-color;
+
+  p {
+    color: $sub-text-color;
+  }
+}
+
+@mixin footer-styles {
+  background-color: #d4d2c4;
+}
+
+@mixin footer-input-styles {
+  background-color: #fafaf5;
+}
+
+@mixin about-us-pic-styles {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin faq-styles {
+  background-color: #ffffff;
+}
+
+@mixin accordion-button-styles {
+  background-color: #e3f5ff;
+}
+
+@mixin footer-input-placeholder-styles {
+  color: rgb(230, 227, 227);
+}
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.first-img {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.text-color-white {
+  color: #0e4664;
+}
+.fs-big {
+  font-size: 5vw !important;
+  font-weight: 400;
+}
+.fs-small {
+  font-size: 2vw;
+}
+.footer-icons {
+  color: $purple-900;
+}
+.galaxyEstates {
+  background-color: #e7e6e1;
+}
+.choose-us {
+  background-color: rgb(238, 238, 236);
+}
+.geography-is-not-destiny {
+  @extend .galaxyEstates;
+}
+.stand-up {
+  @extend .choose-us;
+}
+.btn-primary {
+  background-color: #f8e69c;
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+.footer {
+  background-color: #d4d2c4;
+}
+.footer-inp {
+  background-color: #fafaf5;
+}
+.about-us-pic {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e3f5ff;
+}
+.footer-inp {
+  background-color: #686762;
+  color: white;
+  &::placeholder {
+    color: rgb(230, 227, 227);
+  }
+}
+.footer-on-faq {
+  background-color: #aed9f0;
+  .footer-inp {
+    background-color: #54aedf;
+  }
+}
+.footer-on-about {
+  background-color: #eee0eb;
+  .footer-inp {
+    background-color: #af4598;
+  }
+}

@@ -1,0 +1,41 @@
+.products-details{
+    #article-text{
+        border-left: 1px solid $green-vogue;
+    }
+    span{
+        &.checked{
+            color: $chrome-yellow;
+        }
+    }
+}
+@media (max-width:768px){
+    .products-details{
+        #article-text{
+            border-top: 1px solid $green-vogue;
+            border-left: none;
+        }
+    }
+}
+#comments{
+    .content {
+        img {
+            width: 40px;
+            height: 40px;
+            margin-right: .6rem;
+        }
+        
+    }
+    .rating-wrap {
+        span{
+            font-size: 12px;
+            &.checked {
+                color: $chrome-yellow;
+            }
+        }         
+    }
+    .form-control, .form-select {
+        background-color: $soft-peach;
+    }
+}
+
+

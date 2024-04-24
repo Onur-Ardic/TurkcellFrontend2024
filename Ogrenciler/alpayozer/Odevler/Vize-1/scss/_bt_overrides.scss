@@ -1,0 +1,16 @@
+@import "variables";
+$card-border-width:1px;              
+$card-border-radius:20px;
+$card-bg: transparent;
+$accordion-bg:transparent;
+$accordion-color: $white;
+$accordion-button-color: $white;
+$accordion-button-active-bg:transparent;
+$accordion-button-active-color: $white;
+$card-border-color: #a5a5a5;
+$primary:$primary;
+$accordion-button-icon:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='#ffffff'><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M96 256H128V512H0V352H32V320H64V288H96V256zM512 352V512H384V256H416V288H448V320H480V352H512zM320 64H352V448H320V416H192V448H160V64H192V32H224V0H288V32H320V64zM288 128H224V192H288V128z'/></svg>");
+$accordion-button-active-icon:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='#ffffff'><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M96 256H128V512H0V352H32V320H64V288H96V256zM512 352V512H384V256H416V288H448V320H480V352H512zM320 64H352V448H320V416H192V448H160V64H192V32H224V0H288V32H320V64zM288 128H224V192H288V128z'/></svg>");
+$list-group-bg:transparent;
+$list-group-color:$white;
+$list-group-border-color:rgba(255, 255, 255, 0.25);

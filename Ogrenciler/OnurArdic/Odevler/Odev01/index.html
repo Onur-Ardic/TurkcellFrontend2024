@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Onursan Savunma Sanayi" />
+    <meta name="author" content="Onur Ardıç" />
+    <meta name="keywords" content="savunmasanayi, tank, silah, savaş, helikopter, drone" />
+
+    <title>Vize Ödevi</title>
+    <link rel="icon" type="image/x-icon" href="assets/image/darklogo.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="modal-wrapper">
+      <div
+        class="modal fade"
+        id="signinModal"
+        tabindex="-1"
+        aria-labelledby="signinModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title army-font" id="signinModal">Giriş</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body army-font-text">
+              <form class="d-flex flex-column g-3 needs-validation" novalidate>
+                <div>
+                  <label for="validationCustom01" class="form-label">Kullanıcı Adı</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom01"
+                    placeholder="Onur"
+                    required
+                  />
+                  <div class="valid-feedback">Kullanıcı Adı Bulunamadı</div>
+                </div>
+                <div>
+                  <label for="validationCustom02" class="form-label">Şifre</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="validationCustom02"
+                    placeholder="Ardıç"
+                    required
+                  />
+                  <div class="valid-feedback">Şifre Yanlış</div>
+                </div>
+                <div class="mt-3">
+                  <button class="btn btn-primary" type="submit">Giriş</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-warning text-black"
+                data-bs-toggle="modal"
+                data-bs-target="#signupModal"
+              >
+                Kayıt Ol
+              </button>
+
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="signupModal"
+        tabindex="-1"
+        aria-labelledby="signupModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title army-font" id="signupModal">Kayıt Ol</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body army-font-text">
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Adınız</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom01"
+                    value="Onur"
+                    required
+                  />
+                  <div class="valid-feedback">Harika bir isim</div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Soyadınız</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom02"
+                    value="Ardıç"
+                    required
+                  />
+                  <div class="valid-feedback">Harikasınız!</div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">Kullanıcı Adı</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationCustomUsername"
+                      aria-describedby="inputGroupPrepend"
+                      required
+                    />
+                    <div class="invalid-feedback">Lütfen bir kullanıcı adı giriniz.</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">Mail</label>
+                  <input type="email" class="form-control" id="validationCustom03" required />
+                  <div class="invalid-feedback">Lütfen geçerli bir mail girin.</div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Şifre</label>
+                  <input type="password" class="form-control" id="validationCustom05" required />
+                  <div class="invalid-feedback">Lütfen geçerli bir şifre girin.</div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck"
+                      required
+                    />
+                    <label class="form-check-label" for="invalidCheck">
+                      Kullanıcı Sözleşmesini okudum ve kabul ediyorum
+                    </label>
+                    <div class="invalid-feedback">Lütfen kullanıcı sözleşmesini okuyunuz.</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Kayıt Ol</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              Hesabınız var mı ?
+              <button
+                type="button"
+                class="btn btn-warning text-black"
+                data-bs-toggle="modal"
+                data-bs-target="#signinModal"
+                class="modal fade"
+              >
+                Giriş Yap
+              </button>
+
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <header class="header army-font-text">
+      <div class="hero-top bg-yellow-color w-100 pb-0">
+        <marquee class="fs-12 text-center mb-0 py-3">
+          Hemen tank siparişi verene anında kamikaze dron hediye hemen
+          <a href="index.html text-text-white" class="text-decoration-none">tıkla</a>
+          alışverişe başla.
+        </marquee>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-black-nero w-100 pt-0">
+        <div class="container-md">
+          <a class="navbar-brand" href="#">
+            <img src="assets/image/darklogo.png" class="img-fluid w-75" alt="" />
+          </a>
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end fs-20"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-warning" aria-current="page" href="index.html"
+                  >Anasayfa</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-warning"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Ürünler
+                </a>
+                <ul class="dropdown-menu text-warning">
+                  <li><a class="dropdown-item" href="#product">Tank</a></li>
+                  <li><a class="dropdown-item" href="#product">Zırhlı Personel Taşıyıcı</a></li>
+                  <li><a class="dropdown-item" href="#product">Kamikaze Drone</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-warning" href="About.html">Hakkımızda/ Sıkça S.S</a>
+              </li>
+            </ul>
+
+            <button
+              type="button"
+              class="btn text-white"
+              data-bs-toggle="modal"
+              data-bs-target="#signinModal"
+            >
+              Giriş
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero mt-60">
+        <div class="hero-wrapper w-100 row justify-content-center mx-auto align-items-center">
+          <div class="hero-left col-lg-3 d-none d-md-block">
+            <div class="list-group border-1 border-danger lh-lg h-100">
+              <a
+                href="index.html"
+                class="list-group-item list-group-item-action active-first"
+                aria-current="true"
+              >
+                Anasayfa
+              </a>
+              <a href="#product" class="list-group-item list-group-item-action">Tanklar</a>
+              <a href="#product" class="list-group-item list-group-item-action"
+                >İnsansız Hava Araçları</a
+              >
+              <a href="#product" class="list-group-item list-group-item-action"
+                >Zırhlı Taşıyıcılar</a
+              >
+              <a class="list-group-item list-group-item-action" aria-disabled="true">Silahlar</a>
+            </div>
+          </div>
+
+          <div class="hero-mid col-lg-4 d-none d-md-block">
+            <div id="heromidCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carousel-left"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-left"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-left"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/image/banner/tank-1.png"
+                    class="d-block w-100"
+                    style="height: 260px"
+                    alt="banner"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kendi savunmanı geliştir.</h5>
+                    <p>Kendi savunmanı geliştir. Felakete hazırlan.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/image/banner/banner.png"
+                    class="d-block w-100 img-fluid"
+                    style="height: 260px"
+                    alt="banner"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Son teknoloji donanımlar</h5>
+                    <p>En güncel teknolojiler.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/image/banner/banner-1.png"
+                    class="d-block w-100"
+                    style="height: 260px"
+                    alt="banner"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Herkesin silah deposu olmalı.</h5>
+                    <p>Güdümlü son teknoloji sistemler.</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#heromidCaptions"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#heromidCaptions"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-right col-lg-4">
+            <div
+              id="heroRightFadeAutoplaying"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/image/banner/vehicleBanner.png"
+                    class="d-block w-100"
+                    alt="vehicleSlider"
+                    style="height: 260px"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>En iyi savaş araçları</h5>
+                    <p>Güncel teknojilerle donatılmış zırhlılar.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/image/banner/helicopterBanner.png"
+                    class="d-block w-100"
+                    alt="helicopter-slider"
+                    style="height: 260px"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Taşıyıcı Helikopterler</h5>
+                    <p>En güncel donanımlarla güçlendirilmiş personel taşıma helikopterleri.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/image/banner/bannerHeader.png"
+                    class="d-block w-100"
+                    alt="drone-slider"
+                    style="height: 260px"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kamikaze Dronları</h5>
+                    <p>En hızlı ve atik kamikaze dronları.</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#heroRightFadeAutoplaying"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#heroRightFadeAutoplaying"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="product-item army-font w-100" id="product">
+      <div class="container">
+        <div class="product-item-content text-center mt-120 text-white">
+          <h3>Tanklar & Zırhlı Taşıyıcılar</h3>
+          <p class="army-font-text">En güncel donanımlarla güçlendirilmiş kara makineleri</p>
+        </div>
+        <div
+          class="product-card-wrapper d-flex justify-content-around gap-3 flex-column flex-md-row"
+        >
+          <div class="card w-100 position-relative rounded-top">
+            <div class="card-img">
+              <img
+                src="assets/image/products/1948-Sherman.webp"
+                class="img-fluid rounded-top"
+                alt="sherman-tank"
+                id="image-first"
+              />
+
+              <img
+                src="assets/image/products/sherman-2.jpg"
+                alt="img-2sherman"
+                class="img-fluid rounded-top position-absolute top-0 start-0"
+                id="image-second"
+              />
+            </div>
+
+            <div class="card-content army-font-text mt-3">
+              <h4 class="text-center">1948 Sherman Tank</h4>
+              <div class="price">
+                <p class="text-center">
+                  17.000$
+                  <span class="fs-12 text-danger text-decoration-line-through">21.200$</span>
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="card-btn d-flex flex-column mt-2 me-2 position-absolute top-10 end-0 position-md-relative"
+            >
+              <button class="border-0 bg-light p-2">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+              <a href="detailsSherman.html" class="border-0 bg-light text-black p-2 mt-2">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+              <button class="border-0 bg-light p-2 mt-2">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card w-100 position-relative border-0">
+            <div class="card-img">
+              <img
+                src="assets/image/products/altay.jpeg"
+                class="img-fluid rounded-top"
+                alt="sherman-tank"
+                id="image-first"
+              />
+
+              <img
+                src="assets/image/products/altay01.jpeg"
+                alt="img-2sherman"
+                class="img-fluid rounded-top position-absolute top-0 start-0"
+                id="image-second"
+              />
+            </div>
+
+            <div class="card-content army-font-text mt-3">
+              <h4 class="text-center">Altay Tank</h4>
+              <div class="price">
+                <p class="text-center">
+                  67.000$
+                  <span class="fs-12 text-danger text-decoration-line-through">70.900$</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card-btn d-flex flex-column mt-2 me-2 position-absolute top-10 end-0">
+              <button class="border-0 bg-light p-2">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+              <a href="detailsAltay.html" class="border-0 bg-light text-black p-2 mt-2">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+              <button class="border-0 bg-light p-2 mt-2">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card w-100 position-relative border-0">
+            <div class="card-img">
+              <img
+                src="assets/image/products/fnss-akıncı.webp"
+                class="img-fluid rounded-1"
+                alt="sherman-tank"
+                id="image-first"
+              />
+
+              <img
+                src="assets/image/products/fnssAkıncı01.jpeg"
+                alt="img-2sherman"
+                class="img-fluid rounded-1 position-absolute top-0 start-0"
+                id="image-second"
+              />
+            </div>
+
+            <div class="card-content army-font-text mt-3">
+              <h4 class="text-center">FNSS Akıncı ZPT</h4>
+              <div class="price">
+                <p class="text-center">
+                  34.000$
+                  <span class="fs-12 text-danger text-decoration-line-through">35.400$</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card-btn d-flex flex-column mt-2 me-2 position-absolute top-10 end-0">
+              <button class="border-0 bg-light p-2">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+              <a href="detailsFNSS.html" class="border-0 bg-light text-black p-2 mt-2">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+              <button class="border-0 bg-light p-2 mt-2">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card w-100 position-relative border-0">
+            <div class="card-img">
+              <img
+                src="assets/image/products/american.jpeg"
+                class="img-fluid rounded-1"
+                alt="sherman-tank"
+                id="image-first"
+              />
+
+              <img
+                src="assets/image/products/amerikan01.jpeg"
+                alt="img-2sherman"
+                class="img-fluid rounded-1 position-absolute top-0 start-0"
+                id="image-second"
+              />
+            </div>
+
+            <div class="card-content army-font-text mt-3">
+              <h4 class="text-center">Amerikan Hummer M1511</h4>
+              <div class="price">
+                <p class="text-center">
+                  21.000$
+                  <span class="fs-12 text-danger text-decoration-line-through">21.900$</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card-btn d-flex flex-column mt-2 me-2 position-absolute top-10 end-0">
+              <button class="border-0 bg-light p-2">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+              <a href="detailsAmerican.html" class="border-0 bg-light text-black p-2 mt-2">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+              <button class="border-0 bg-light p-2 mt-2">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-area mt-120 army-font-text">
+      <div class="container">
+        <div class="banner-left d-flex justify-content-around gap-3">
+          <div class="banner-left-first">
+            <div class="banner-left position-relative top-80 ms-3 text-white">
+              <h3>Güncel Teknolojiler</h3>
+            </div>
+          </div>
+          <div class="banner-left-second d-none d-md-block w-100">
+            <div class="banner-left-content text-center position-relative top-50">
+              <a
+                href="#"
+                class="text-decoration-none border-1 text-white btn btn-warning bg-transparent hover"
+                >Şimdi Alışveriş Yap</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="banner-right mt-4 d-flex justify-content-around gap-3">
+          <div class="banner-right-first d-none d-md-block w-100">
+            <h3 class="text-white position-relative top-80">Savunma Sanayisinde Öncü</h3>
+          </div>
+          <div class="banner-right-second">
+            <h5 class="fs-1 text-white position-relative top-0 m-3">Kalite ve Güven</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer py-5 bg-black-nero mt-120">
+      <div class="container">
+        <div class="footer-wrapper text-white row">
+          <div class="col-6 col-md-4 mb-3 text-white">
+            <h3 class="text-white army-font">Onursan Silah Savunma Sanayi Kimdir</h3>
+            <p class="army-font-text text-white">
+              1453 yılında Osmanlı Askerlerine barutlu silah satarak hizmetine başlayan Onursan
+              Silah ve Savunma Sanayi günümüze kadar hizmetini devam ettirmektedir.
+            </p>
+          </div>
+          <div class="col-6 col-md-4 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="index.html" class="nav-link p-0 text-warning">Anasayfa</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="About.html" class="nav-link p-0 text-warning">Hakkımızda</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="index.html" class="nav-link p-0 text-warning">Kategoriler</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="About.html" class="nav-link p-0 text-warning">Sık Sorulan Sorular</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <form>
+              <h5>Gündemden haberdar olmak için</h5>
+              <p>Mail adresinizi gönderin</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control"
+                  placeholder="Email address"
+                />
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

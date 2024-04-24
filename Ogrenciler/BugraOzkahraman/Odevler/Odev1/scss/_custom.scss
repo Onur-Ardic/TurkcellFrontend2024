@@ -1,0 +1,38 @@
+.home-page {
+  h1 {
+    font-family: "Brush Script MT";
+  }
+  padding-bottom: 100px;
+  .container-fluid {
+    .home-cards {
+      .product {
+        &:hover {
+          .card {
+            img {
+              opacity: 1 !important;
+            }
+          }
+        }
+        .card {
+          &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          }
+          .heart {
+            i {
+              cursor: pointer;
+              &:hover {
+                color: red !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.footer {
+  a:hover {
+    color: #f17334 !important;
+  }
+}
