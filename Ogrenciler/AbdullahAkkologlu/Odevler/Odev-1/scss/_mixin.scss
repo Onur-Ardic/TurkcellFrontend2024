@@ -19,17 +19,29 @@
 @mixin background-hover(
   $bg-color,
   $text-color,
-  $button-color: $primary,
-  $button-text-color: $white
+  $button-color,
+  $button-text-color,
+  $bg-hover-color,
+  $text-hover-color,
+  $button-hover-color: $primary,
+  $button-hover-text-color: $white
 ) {
+  background-color: $bg-color;
+  * {
+    color: $text-color;
+  }
+  button {
+    background-color: $button-color;
+    color: $button-text-color;
+  }
   &:hover {
-    background-color: $bg-color;
+    background-color: $bg-hover-color;
     * {
-      color: $text-color !important;
+      color: $text-hover-color;
     }
     button {
-      background-color: $button-color !important;
-      color: $button-text-color !important;
+      background-color: $button-hover-color;
+      color: $button-hover-text-color;
     }
   }
 }
