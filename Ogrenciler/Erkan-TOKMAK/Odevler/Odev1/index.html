@@ -837,32 +837,62 @@
             </div>
             <div class="row bg-light rounded-5" style="--bs-bg-opacity: .5;">
                 <div class="col-12">
-                    <form action="">
+                    <form action="" class="needs-validation" novalidate>
                         <div class="row mb-3 mt-3">
                             <div class="col-6">
-                                <input type="text" placeholder="Adın" class="form-control rounded-pill">
+                                <input type="text" placeholder="Adın" class="form-control rounded-pill" required>
+                                <div class="valid-feedback bg-light">
+                                    Adını Biliyorsun!
+                                </div>
+                                <div class="invalid-feedback bg-light">
+                                    Senin Bir Adın Yok mu?
+                                </div>
                             </div>
                             <div class="col-6">
-                                <input type="text" placeholder="Soyadın" class="form-control rounded-pill">
+                                <input type="text" placeholder="Soyadın" class="form-control rounded-pill" required>
+                                <div class="valid-feedback bg-light">
+                                    Soyadını Biliyorsun!
+                                </div>
+                                <div class="invalid-feedback bg-light">
+                                    Senin Bir Soyadın Yok mu?
+                                </div>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-6">
-                                <input type="text" placeholder="Kuzgun Adı" class="form-control rounded-pill">
+                                <input type="text" placeholder="Kuzgun Adı" class="form-control rounded-pill" required>
+                                <div class="valid-feedback bg-light">
+                                    Kuzgun Bulundu!
+                                 </div>
+                                 <div class="invalid-feedback bg-light">
+                                     Kuzgun Bul!
+                                 </div>
                             </div>
                             <div class="col-6">
-                                <input type="text" placeholder="Bölgen" class="form-control rounded-pill">
+                                <input type="text" placeholder="Bölgen" class="form-control rounded-pill" required>
+                                <div class="valid-feedback bg-light">
+                                    Bir yere ait olduğunu biliyordum!
+                                </div>
+                                <div class="invalid-feedback bg-light">
+                                    Sürgün mü edildin?
+                                </div>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-12">
                                 <textarea name="message" id="oracleMessage" cols="30" rows="10" placeholder="Mesajın"
-                                    class="form-control rounded-4"></textarea>
+                                    class="form-control rounded-4" ></textarea>
+                                    <div class="valid-feedback bg-light">
+                                        Mesajın Alındı!
+                                    </div>
+                                    <div class="invalid-feedback bg-light">
+                                        Ağzını balta açmıyor
+                                    </div>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-12 d-flex justify-content-end">
-                                <button class="btn vkngBtnPrm py-2 px-4 fs-3">Gönder</button>
+                                <button class="btn vkngBtnPrm py-2 px-4 fs-3" type="submit">Gönder</button>
                             </div>
                         </div>
                     </form>

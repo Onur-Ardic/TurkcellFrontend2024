@@ -27,3 +27,8 @@ body {
 .glow{
     animation: glow 1s linear infinite;
 }
+.scale{
+    &:hover{
+        transform: scale(1.5);
+    }
+}
