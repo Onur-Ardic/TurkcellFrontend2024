@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>SculptArt Contact</title>
+  </head>
+  <body>
+    <header
+      class="header-product d-flex justify-content-center align-items-center">
+      <div class="navbar-container p-2">
+        <nav class="navbar navbar-expand-lg bg-transparent">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><img
+                class="rounded-pill"
+                src="https://r.resimlink.com/imEpaHkzMt.png"
+                alt="sculpart"
+                width="80"
+                height="80"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a
+                  class="nav-link product-link"
+                  aria-current="page"
+                  href="index.html"
+                  >Anasayfa</a
+                >
+                <a class="nav-link product-link" href="product.html">Ürünler</a>
+                <a class="nav-link product-link" href="about.html"
+                  >Hakkımızda</a
+                >
+                <a
+                  class="nav-link product-link"
+                  href="contact.html"
+                  aria-disabled="true"
+                  >İLETİŞİM</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section
+      class="contact d-flex flex-column flex-lg-row justify-content-evenly align-items-center">
+      <div class="contact-left-row col-7 col-lg-5 py-3">
+        <img src="https://r.resimlink.com/iyp8Grx-.jpg" alt="" />
+      </div>
+      <div class="contact-right-row col-5">
+        <form class="row g-3 needs-validation py-5" novalidate>
+          <div class="col-12 title pb-3">
+            <h2>Bizimle İletişime Geçin</h2>
+          </div>
+          <div class="col-lg-6">
+            <label for="validationCustom01" class="form-label">Adınız</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom01"
+              required />
+            <div class="invalid-feedback">Lütfen adınızı yazın.</div>
+          </div>
+          <div class="col-lg-6">
+            <label for="validationCustom02" class="form-label">Soyadınız</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              required />
+            <div class="invalid-feedback">Lütfen Soyadınızı Yazın.</div>
+          </div>
+          <div class="col-lg-6">
+            <label for="validationCustomUsername" class="form-label"
+              >Email</label
+            >
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustomUsername"
+                aria-describedby="inputGroupPrepend"
+                required />
+              <div class="invalid-feedback">Lütfen emailinizi yazın.</div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <label for="validationCustom03" class="form-label"
+              >Telefon Numarası</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom03"
+              required />
+            <div class="invalid-feedback">Lütfen telefon numaranızı girin.</div>
+          </div>
+          <div class="mb-3">
+            <label for="validationTextarea" class="form-label">Mesaj</label>
+            <textarea
+              class="form-control"
+              id="validationTextarea"
+              placeholder="Buraya yazınız.."
+              required></textarea>
+            <div class="invalid-feedback">Lütfen mesajını giriniz.</div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required />
+              <label class="form-check-label" for="invalidCheck">
+                Hüküm ve koşulları kabul edin.
+              </label>
+              <div class="invalid-feedback">
+                Göndermeden önce kabul etmeniz gerekmektedir.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Gönder</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
