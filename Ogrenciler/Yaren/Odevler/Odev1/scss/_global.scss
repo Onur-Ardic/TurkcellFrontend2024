@@ -1,5 +1,3 @@
-/*fontunu buraya import et */
-/*mixinelri buraya yaz*/
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poller+One&display=swap");
 
 * {
@@ -19,20 +17,6 @@ body {
   font-size: 14px;
   line-height: 1.5;
 }
-/*
-
-@mixin font($size, $color, $weight) {
-  font-size: $size;
-  color: $color;
-  font-weight: $weight;
-}
-
-@mixin button($padding, $borderRad, $color, $bgColor) {
-  padding: $padding;
-  border-radius: $borderRad;
-  color: $color;
-  background: $bgColor;
-} */
 
 @mixin backgroundimg($bgsize, $bgposition, $bgheight) {
   background-size: $bgsize;
