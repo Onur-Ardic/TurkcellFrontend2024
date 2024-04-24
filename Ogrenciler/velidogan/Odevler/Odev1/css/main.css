@@ -13071,6 +13071,26 @@ main .cheapest-products .col:nth-child(n) .card {
     border-left: none;
   }
 }
+#comments .content {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+#comments .content img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.6rem;
+}
+#comments .rating-wrap span {
+  font-size: 12px;
+}
+#comments .rating-wrap span.checked {
+  color: orange;
+}
+#comments .form-control, #comments .form-select {
+  background-color: #f9f9f9;
+}
+
 #about-us video {
   box-shadow: 0 0 10px 10px #0066e6;
   transition: all 0.5s;

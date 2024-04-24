@@ -16,3 +16,29 @@
         }
     }
 }
+#comments{
+    .content {
+        display: inline-flex;
+        align-items: center;
+        vertical-align: middle;
+        img {
+            width: 40px;
+            height: 40px;
+            margin-right: .6rem;
+        }
+        
+    }
+    .rating-wrap {
+        span{
+            font-size: 12px;
+            &.checked {
+                color: orange;
+            }
+        }         
+    }
+    .form-control, .form-select {
+        background-color: #f9f9f9;
+    }
+}
+
+
