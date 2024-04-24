@@ -12,9 +12,9 @@ File sizes too small(img,css...), so you can download it directly
 
 HTML&CSS, SCSS, Bootstrap
 
-## Components used in the project
+## Components and used in the project
 
-Modal, Carousel, Tooltip, Offcanvas, Accordion-Collapse, Validation, Badge, Navbar, Pagination, Toast
+Modal, Carousel, Tooltip, Offcanvas, Accordion-Collapse, Validation, Badge, Navbar, Pagination
 
 ## Note
 
