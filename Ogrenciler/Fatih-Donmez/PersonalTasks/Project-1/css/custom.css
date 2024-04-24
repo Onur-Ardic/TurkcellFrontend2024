@@ -11886,6 +11886,11 @@ a:hover {
   height: 70vh;
   animation: fadeInBackground 1s ease-out forwards;
 }
+@media screen and (max-width: 1024px) {
+  .carousel-animations {
+    height: 120vh;
+  }
+}
 @keyframes fadeInBackground {
   from {
     opacity: 0;
@@ -11928,7 +11933,7 @@ a:hover {
     transform: translate(-30%, -30%);
   }
   50% {
-    transform: translate(-30%, -130%);
+    transform: translate(-30%, -80%);
   }
 }
 .carousel-animations .images-anim .set-pos-logo {
@@ -12044,6 +12049,12 @@ a:hover {
   color: #0aad0a;
 }
 .prods .nav-item .active {
+  color: #0aad0a;
+}
+
+.faq h3, .faq .h3,
+.faq h6,
+.faq .h6 {
   color: #0aad0a;
 }
 

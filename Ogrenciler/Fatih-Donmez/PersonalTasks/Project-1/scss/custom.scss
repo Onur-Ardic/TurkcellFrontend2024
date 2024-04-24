@@ -57,6 +57,9 @@ a {
 .carousel-animations {
   background: url(../assets/img.jpg) no-repeat;
   height: 70vh;
+  @include mobile {
+    height: 120vh;
+  }
   animation: fadeInBackground 1s ease-out forwards;
   @keyframes fadeInBackground {
     from {
@@ -101,7 +104,7 @@ a {
           transform: translate(-30%, -30%);
         }
         50% {
-          transform: translate(-30%, -130%);
+          transform: translate(-30%, -80%);
         }
       }
     }
@@ -218,5 +221,11 @@ a {
     .active {
       color: $custom-green;
     }
+  }
+}
+.faq {
+  h3,
+  h6 {
+    color: $custom-green;
   }
 }
