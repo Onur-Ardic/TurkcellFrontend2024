@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/png" />
+    <title>STARDUST</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-top bg-black fs-5 text-white py-1">
+        <marquee>
+          <h6>You can get 20% discount for the September horoscope change!</h6>
+        </marquee>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-navbar">
+        <div class="container-fluid">
+          <div class="navbar-logo">
+            <a class="navbar-brand" href="#"
+              ><img src="../assets/logo.png"
+            /></a>
+            <button
+              class="navbar-toggler ms-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="#navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../homepage/homepage.html"
+                  >Homepage</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/about-faq.html"
+                  >About Us/FAQ</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#slider">Horoscopes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../pages/jewelry.html"
+                      >Jewelry</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/stones.html"
+                      >Natural Stones</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../homepage/homepage.html#change-zodiac"
+                      >Change Zodiac</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="button-wrapper d-none d-lg-block">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal"
+              >
+                Hey Babe!
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="product-stone">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="product-stone-img">
+              <img
+                class="img-fluid w-75 h-75"
+                src="../assets/tas5.jpg"
+                alt="product-stone"
+              />
+              <div class="font-paragraph">
+                <h3>Glow Stone</h3>
+                <p class="fs-24">$20</p>
+              </div>
+              <button type="button" class="btn bg-button text-white">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 font-paragraph fs-4 mt-5">
+            <div class="product-stone-content">
+              <div class="">
+                <h3>Finding</h3>
+                <p class="fs-20 text-bold">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                  dolorem delectus adipisci tempore nam. Optio sed accusamus
+                  ducimus suscipit rerum voluptate autem aliquam doloribus
+                  recusandae, voluptatibus ullam, assumenda fugiat accusantium.
+                </p>
+              </div>
+              <div class="mt-5">
+                <h3>Meaning</h3>
+                <p class="fs-20">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minima corporis recusandae voluptatem reprehenderit in
+                  cupiditate explicabo deleniti id beatae repellendus, voluptate
+                  nemo! Animi natus exercitationem, voluptatum odio iusto autem
+                  sed.
+                </p>
+              </div>
+              <div class="mt-5 fs-24">
+                <p><i>Dimensions:</i> 10x20x10cm</p>
+                <p><i>Color:</i> Rose</p>
+                <p><i>Hardness:</i> 7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer bg-footer">
+      <footer class="py-3 mt-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="../homepage/homepage.html" class="nav-link px-2 text-white"
+              >Homepage</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#products-back" class="nav-link px-2 text-white"
+              >Products</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#slider" class="nav-link px-2 text-white">Horoscopes</a>
+          </li>
+          <li class="nav-item">
+            <a href="../pages/about-faq.html" class="nav-link px-2 text-white"
+              >FAQ</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="../pages/about-faq.html" class="nav-link px-2 text-white"
+              >About Us</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-white">© 2024 Stardust</p>
+      </footer>
+    </section>
+    <div
+      class="modal fade"
+      id="modal"
+      tabindex="-1"
+      aria-labelledby="Rightmodal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-navbar">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h2 class="text-center">Hey babe,let's be friends!</h2>
+            <p class="text-center">
+              Join our newsletter list to be the first to know about our deals.
+              Psstt.. and a 10% off your first order!
+            </p>
+
+            <form class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <div class="valid-feedback">Correct entry!</div>
+                  <div class="invalid-feedback">Incorrect entry!</div>
+                </div>
+                <div class="col-6">
+                  <button type="submit" class="btn btn-primary w-100">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      (() => {
+        "use strict";
+        const forms = document.querySelectorAll(".needs-validation");
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+  </body>
+</html>
