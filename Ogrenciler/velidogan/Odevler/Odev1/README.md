@@ -20,6 +20,8 @@ Modal, Carousel, Tooltip, Offcanvas, Accordion-Collapse, Validation, Badge, Navb
 
 Project have 3 Product pages, 1 Main page, 1 About-Us page, 1 Questions page, 1 Products Search page
 
+3 Products have product-details pages.(Jotform, Redbull, LG)
+
 SCSS fragmented files consist of only one main.scss
 
 ## Contact

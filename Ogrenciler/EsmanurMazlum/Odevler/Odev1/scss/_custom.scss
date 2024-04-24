@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@keyframes flower {
+    0% {
+        right: 210px;
+    }
+
+    50% {
+        right: 250px;
+    }
+
+    100% {
+        right: 210px;
+    }
+}
+
+@keyframes camera {
+    0% {
+        right: 0;
+        top: 50px;
+    }
+
+    50% {
+        right: 0;
+        top: 70px;
+    }
+
+    100% {
+        right: 0;
+        top: 50px;
+    }
+}
+
+@keyframes cup {
+    0% {
+        right: 210px;
+    }
+
+    50% {
+        right: 250px;
+    }
+
+    100% {
+        right: 210px;
+    }
+}
+
+.feel-free {
+    .header-imgs {
+        .cup {
+            right: 210px;
+            animation: cup 5s infinite ease-in;
+        }
+
+        .camera {
+            right: 0;
+            top: 50px;
+            animation: camera 5s infinite ease-in-out;
+        }
+
+        .flower {
+            bottom: 15px;
+            right: 210px;
+            animation: flower 5s infinite ease-in-out;
+        }
+    }
+}
+
+.can-you-buy {
+    .category-header {
+        color: $dark;
+        opacity: 0.5;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .category-content {
+        .img {
+            overflow: hidden;
+
+            img {
+                transition: all ease-in 0.3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+}
+
+.why-choose-us {
+    .item-card {
+        border: 1px solid #eee;
+        border-radius: 5px;
+
+        .card-icon {
+            background-color: $secondary;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            left: 45%;
+
+            svg {
+                top: 10px;
+                right: 10px;
+            }
+        }
+    }
+}
+
+.comments-section {
+    background-color: $primary;
+    color: $secondary;
+
+    .carousel-indicators {
+        button {
+            width: 10px;
+            height: 10px;
+            background-color: #dee2e6;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 5px;
+        }
+    }
+
+    .content {
+        padding: 40px 120px 40px;
+
+        .user {
+            img {
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+
+    .comment-img>img {
+        border-radius: 30px;
+    }
+}
+
+footer {
+    background-color: $dark;
+    color: $secondary;
+
+    .logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    a {
+        font-size: 14px;
+        line-height: 30px;
+        color: $dark;
+        transition: all 0.3s linear;
+        background: $secondary;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        display: inline-block;
+
+        &:hover {
+            background-color: $primary;
+            color: $secondary;
+        }
+    }
+}
+
+.see-more {
+    .col-lg-2 {
+        .see-more-item {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            height: 100%;
+
+            &:hover {
+                transition: all ease-in 0.3s;
+                transform: scale(1.2);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+                h4 {
+                    color: $primary;
+                }
+            }
+
+            &:hover .fa-heart {
+                opacity: 1;
+            }
+
+            .icons {
+                a>i {
+                    top: 10px;
+                    left: 10px;
+                    opacity: 0;
+                    position: absolute;
+                    transition: opacity 0.3s ease;
+
+                }
+            }
+
+            img {
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.faq {
+    .input-group {
+        width: 50%;
+    }
+}
+
+
+.about {
+    .col-lg-6 {
+        padding: 50px 40px 50px;
+
+        img {
+            border-radius: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .feel-free {
+        .header-imgs {
+            .flower {
+                bottom: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .can-you-buy {
+        .carousel {
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    .feel-free {
+        .header-imgs {
+            display: none;
+        }
+    }
+
+    .can-you-buy {
+        .category-content {
+            display: none;
+        }
+
+        .carousel {
+            display: block;
+        }
+    }
+}

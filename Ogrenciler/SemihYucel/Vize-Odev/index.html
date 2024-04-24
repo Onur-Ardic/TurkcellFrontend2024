@@ -1,11 +1,498 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gezgin Kavanoz</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+<style>
+   .mobile-show {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item .nav-link:hover {
+    color: #F28123;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-menu {
+        display: none;
+    }
+
+    .mobile-show {
+        display: block;
+    }
+}
+</style>
 <body>
+	<div class="container-fluid top-header-area" id="sticker">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-12 col-sm-12 text-right">
+                    <div class="main-menu-wrap">
+                        <div class="site-logo">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-light">
     
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="about.html">Hakkımızda</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Ürünler
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#product">Dağ Esintisi</a></li>
+                                            <li><a class="dropdown-item" href="#product">Orman Havası</a></li>
+                                            <li><a class="dropdown-item" href="#product">Kavurucu Güneş</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="sss.html">SSS</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#footer" data-scroll>İletişim</a></li>
+                                </ul>
+                                <div class="header-icons">
+                                    <a class="shopping-cart" href="#"><i class="fas fa-shopping-cart"></i></a>
+                                    <a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                        </nav>
+                        <a class="mobile-show search-bar-icon" href="#"><i class="fas fa-bars orange-text"></i></a>
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="hero-area hero-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 offset-lg-2 text-center">
+					<div class="hero-text">
+						<div class="hero-text-tablecell">
+							<p class="subtitle">Fresh & Organik</p>
+							<h1>Mevsimlik Esintiler: <br>
+                                 Bir Kavanoz Dolusu Hava!</h1>
+							<div class="hero-btns">
+								<a href="#" class="boxed-btn">Koleksiyon</a>
+								<a href="#footer" class="bordered-btn">İletişim</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+        <div id="product" class="container-fluid fruite py-5">
+            <div class="container py-5">
+                <div class="tab-class text-center">
+                    <div class="row g-4">
+                        <div class="col-lg-4 text-start">
+                            <h1>Organik Ürünlerimiz</h1>
+                        </div>
+                        <div class="col-lg-8 text-end">
+                            <ul class="nav nav-pills d-inline-flex text-center mb-5">
+                                <li class="nav-item">
+                                    <a class="d-flex m-2 py-2 bordered-btn" data-bs-toggle="pill" href="#tab-1">
+                                        <span class="text-dark" style="width: 130px;">Tüm Ürünler</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="d-flex py-2 m-2 boxed-btn rounded-pill" data-bs-toggle="pill">
+                                        <span class="text-white" style="width: 130px;">Dağ Esintisi</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="d-flex m-2 py-2 boxed-btn rounded-pill" data-bs-toggle="pill">
+                                        <span class="text-white" style="width: 130px;">Orman Havası</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="d-flex m-2 py-2 boxed-btn rounded-pill" data-bs-toggle="pill">
+                                        <span class="text-white" style="width: 130px;">Kavurucu Güneş</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/resim1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dağ Esintisi</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <a href="product-detail1.html"><h4>Everest Tepesi</h4></a>
+                                                    <p>
+                                                        Everest'in havası, keskin soğuğuyla ünlüdür ve sarp zirvesinden esen rüzgarlar, dağın zirvesinde bir dönüş yapmadan önce dondurucu bir etki bırakır.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$49.99</p>
+                                                        <a href="#" class="boxed-btn rounded-pill px-3 text-white"><i class="fa fa-shopping-bag me-2 text-white"></i> Sepete Ekle</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/resim2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Orman Havası</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <a href="product-detail2.html"><h4>Belgrad Ormanları</h4></a>
+                                                    <p>Belgrad Ormanı'nın havası, taze çam kokusu ve huzurlu bir atmosferle doludur, burada dolaşırken kuş sesleri ve hafif esen rüzgar sizi doğanın kucaklayıcı kollarına bırakır.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$49.99</p>
+                                                        <a href="#" class="boxed-btn rounded-pill px-3 text-white"><i class="fa fa-shopping-bag me-2 text-white"></i> Sepete Ekle</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/resim6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Su Kenarı</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <a href="product-detail3.html"><h4>Como Gölü</h4></a>
+                                                    <p>Como Gölü'nün havası, huzur verici bir serinlik sunar; göl kenarında dolaşırken, etrafı saran dağ manzarası ve suyun yansımasıyla adeta bir doğa resmi gibi bir atmosfer oluşturur.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$49.99</p>
+                                                        <a href="#" class="boxed-btn rounded-pill px-3 text-white"><i class="fa fa-shopping-bag me-2 text-white"></i> Sepete Ekle</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/resim4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Göz Kamaştırıcı</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                   <a href=""><h4>Eyfel Kulesi</h4></a>
+                                                    <p>Eyfel Kulesi, Paris'in sembolüdür ve dünyaca ünlü bir simgedir; Fransa'nın başkentindeki silueti, romantik bir atmosfer yaratır ve ziyaretçilere unutulmaz manzaralar sunar.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$49.99</p>
+                                                        <a href="#" class="boxed-btn rounded-pill px-3 text-white"><i class="fa fa-shopping-bag me-2 text-white"></i> Sepete Ekle</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+        </div>
+         <div class="container-fluid featurs py-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fas fa-car-side fa-3x text-white"></i>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5 class="orange-text">Ücretsiz Kargo</h5>
+                                <p class="mb-0">$300 Üzeri Ücretsiz Kargo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fas fa-user-shield fa-3x text-white"></i>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5 class="orange-text">Güvenli Ödeme</h5>
+                                <p class="mb-0">100% Güvenli Alışveriş</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fas fa-exchange-alt fa-3x text-white"></i>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5 class="orange-text">15 Günde İade</h5>
+                                <p class="mb-0">15 Gün İçinde Para İadesi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fa fa-phone-alt fa-3x text-white"></i>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5 class="orange-text">24/7 Destek</h5>
+                                <p class="mb-0">Her zaman Hızlı İletişim</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                    <h1 class="display-4">En Çok Satan Ürünler</h1>
+                    <p>Müşterilerimizin favorisi olan ve en çok tercih edilen ürünlerimiz arasında aşağıdaki ürünlerimiz bulunmaktadır.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/resim7kucuk.jpeg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Amazon Ormanları</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h4 class="mb-3">59.99 $</h4>
+                                    <a href="#" class="boxed-btn rounded-pill px-3 text-white"><i class="fa fa-shopping-bag me-2 text-white"></i> Sepete Ekle</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/resim8kucuk.jpeg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Seven Mile Plajı</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h4 class="mb-3">59.99 $</h4>
+                                    <a href="#" class="boxed-btn rounded-pill px-3 text-white"><i class="fa fa-shopping-bag me-2 text-white"></i> Sepete Ekle</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/resim9kucuk.jpeg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5"> La Concha Beach</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h4 class="mb-3">59.99 $</h4>
+                                    <a href="#" class="boxed-btn rounded-pill px-3 text-white"><i class="fa fa-shopping-bag me-2 text-white"></i> Sepete Ekle</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/resim10kucuk.jpeg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Mısır Piramitleri</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h4 class="mb-3">59.99 $</h4>
+                                    <a href="#" class="boxed-btn rounded-pill px-3 text-white"><i class="fa fa-shopping-bag me-2 text-white"></i> Sepete Ekle</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/resim5kucuk.jpeg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Quebec Ormanı</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h4 class="mb-3">59.99 $</h4>
+                                    <a href="#" class="boxed-btn rounded-pill px-3 text-white"><i class="fa fa-shopping-bag me-2 text-white"></i> Sepete Ekle</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/resim3.png" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Zürih Havası</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star orange-text"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h4 class="mb-3">59.99 $</h4>
+                                    <a href="#" class="boxed-btn rounded-pill px-3 text-white"><i class="fa fa-shopping-bag me-2 text-white"></i> Sepete Ekle</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="bg-light p-5 rounded">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="counter bg-white rounded p-5">
+                        <i class="fa fa-users text-secondary"></i>
+                        <h4 style="color: #F28123 !important;">memnun müşretiler</h4>
+                        <h1>1963</h1>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="counter bg-white rounded p-5">
+                        <i class="fa-brands fa-usps text-secondary"></i>
+                        <h4 style="color: #F28123 !important;">hizmet <br> kalitesi</h4>
+                        <h1>99%</h1>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="counter bg-white rounded p-5">
+                        <i class="fa-regular fa-folder-open text-secondary"></i>
+                        <h4 style="color: #F28123 !important;">kalite onay belgeleri</h4>
+                        <h1>33</h1>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="counter bg-white rounded p-5">
+                        <i class="fa-brands fa-product-hunt text-secondary"></i>
+                        <h4 style="color: #F28123 !important;">mevcut <br> ürünler</h4>
+                        <h1>789</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<div class="footer-area" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box about-widget">
+						<h2 class="widget-title">Hakkımızda</h2>
+						<p>Gezgin Kavanoz, doğadan ilham alan benzersiz ürünleriyle müşterilerine keyifli bir alışveriş deneyimi sunan bir markadır. </p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box get-in-touch">
+						<h2 class="widget-title">Bize Ulaşın</h2>
+						<ul>
+							<li>12 / 2, Ataşehir, Elazığ, Türkiye.</li>
+							<li>support@gezginkavanoz.com</li>
+							<li>+00 111 222 3333</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box pages">
+						<h2 class="widget-title">Sayfalar</h2>
+						<ul>
+							<li><a href="index.html">Ana Sayfa</a></li>
+							<li><a href="about.html">Hakkımızda</a></li>
+							<li><a href="#">Ürünler</a></li>
+							<li><a href="sss.html">SSS</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box subscribe">
+						<h2 class="widget-title">Abone Olun</h2>
+						<p>En son güncellemeleri almak için posta listemize abone olun.</p>
+						<form action="#">
+							<input type="email" placeholder="Email">
+							<button type="submit"><i class="fas fa-paper-plane"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<p>Copyrights &copy; 2024 - <a href="https://semihycl.com/tr">Semih Yücel</a>,  All Rights Reserved.
+						</a>
+					</p>
+				</div>
+				<div class="col-lg-6 text-right col-md-12">
+					<div class="social-icons">
+						<ul>
+							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+						
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
