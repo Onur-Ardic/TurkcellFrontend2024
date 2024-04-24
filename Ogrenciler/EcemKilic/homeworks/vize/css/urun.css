@@ -35,28 +35,28 @@
   margin-right: 20px;
 }
 
-.my-25 {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
 .mx-40 {
   margin-right: 40px;
   margin-left: 40px;
 }
 
-.py-40 {
-  padding-left: 40px;
-  padding-right: 40px;
+.mx-100 {
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .mt-50 {
   margin-top: 50px;
 }
 
-.mx-100 {
-  margin-right: 100px;
-  margin-left: 100px;
+.my-25 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.py-40 {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .height-50 {
@@ -79,14 +79,14 @@ a {
   text-decoration: none;
 }
 
-.text-bold {
-  font-weight: 700;
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.text-bold {
+  font-weight: 700;
 }
 
 .daktilo .wrapper {

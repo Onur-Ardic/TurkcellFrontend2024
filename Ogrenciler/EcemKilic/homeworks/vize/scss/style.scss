@@ -1,10 +1,23 @@
 @import 'custom.scss';
 @import 'urun.scss';
-@import 'hakkimizda.scss';
-@import 'sorular.scss';
 
 header {
     @include perde;
+    #nav-mobile {
+        display: none;
+    }
+    #nav-web {
+        display: block;
+    }
+
+    @media screen and (max-width: 768px) {
+        #nav-web {
+            display: none;
+        }
+        #nav-mobile {
+            display: block;
+        }
+    }
 }
 
 .home {

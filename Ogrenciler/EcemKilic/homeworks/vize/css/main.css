@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.bg-light-orange {
-  background-color: #F7B787;
-}
-
 .bg-orange {
   background-color: #EE7214;
 }
@@ -40,28 +36,28 @@
   margin-right: 20px;
 }
 
-.my-25 {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
 .mx-40 {
   margin-right: 40px;
   margin-left: 40px;
 }
 
-.py-40 {
-  padding-left: 40px;
-  padding-right: 40px;
+.mx-100 {
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .mt-50 {
   margin-top: 50px;
 }
 
-.mx-100 {
-  margin-right: 100px;
-  margin-left: 100px;
+.my-25 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.py-40 {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .height-50 {
@@ -84,14 +80,14 @@ a {
   text-decoration: none;
 }
 
-.text-bold {
-  font-weight: 700;
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.text-bold {
+  font-weight: 700;
 }
 
 .daktilo .wrapper, .turlar .wrapper {
@@ -12038,28 +12034,28 @@ textarea.form-control-lg {
   margin-right: 20px;
 }
 
-.my-25 {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
 .mx-40 {
   margin-right: 40px;
   margin-left: 40px;
 }
 
-.py-40 {
-  padding-left: 40px;
-  padding-right: 40px;
+.mx-100 {
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .mt-50 {
   margin-top: 50px;
 }
 
-.mx-100 {
-  margin-right: 100px;
-  margin-left: 100px;
+.my-25 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.py-40 {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .height-50 {
@@ -12082,14 +12078,14 @@ a {
   text-decoration: none;
 }
 
-.text-bold {
-  font-weight: 700;
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.text-bold {
+  font-weight: 700;
 }
 
 .daktilo .wrapper, .turlar .wrapper {
@@ -12191,28 +12187,28 @@ a {
   margin-right: 20px;
 }
 
-.my-25 {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
 .mx-40 {
   margin-right: 40px;
   margin-left: 40px;
 }
 
-.py-40 {
-  padding-left: 40px;
-  padding-right: 40px;
+.mx-100 {
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .mt-50 {
   margin-top: 50px;
 }
 
-.mx-100 {
-  margin-right: 100px;
-  margin-left: 100px;
+.my-25 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.py-40 {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .height-50 {
@@ -12235,14 +12231,14 @@ a {
   text-decoration: none;
 }
 
-.text-bold {
-  font-weight: 700;
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.text-bold {
+  font-weight: 700;
 }
 
 .daktilo .wrapper, .turlar .wrapper {
@@ -12516,6 +12512,20 @@ a {
 header {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+}
+header #nav-mobile {
+  display: none;
+}
+header #nav-web {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  header #nav-web {
+    display: none;
+  }
+  header #nav-mobile {
+    display: block;
+  }
 }
 
 .home {
