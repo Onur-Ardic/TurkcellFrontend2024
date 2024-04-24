@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  &:hover {
+    color: $danger-subtle;
+  }
+}
+@mixin hero-background($image-url) {
+  background: url($image-url) no-repeat center center;
+  background-size: cover;
+}
+.header {
+  .navbar {
+    .nav-right {
+      .icons {
+        i:hover {
+          color: $danger !important;
+        }
+      }
+    }
+  }
+  .hero-wrapper {
+    .header-stones {
+      animation: stones 3s infinite ease-in-out;
+    }
+  }
+}
+.products {
+  .card {
+    transition: 0.5s ease;
+    &:hover {
+      transform: scale(1.1);
+      .card-body {
+        a {
+          color: $danger;
+        }
+      }
+    }
+  }
+}
+.yoga {
+  .right-flowers {
+    bottom: -20px;
+    right: 0;
+  }
+}
+.faq {
+  .card {
+    transition: 1s ease all;
+    &:hover {
+      transform: scale(1.02);
+      transform: translateY(-10px);
+
+      .card-body {
+        a {
+          color: $danger;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  .logo {
+    .card {
+      left: 35%;
+      bottom: -20%;
+    }
+  }
+}
+.hero-wrap {
+  @include hero-background("../assets/img/Frame 58.png");
+}
+
+.header-faq {
+  .hero-wrap {
+    @include hero-background("../assets/img/Frame 57.png");
+  }
+}
+.header-products {
+  .hero-wrap {
+    @include hero-background("../assets/img/products-header.jpeg");
+  }
+}
+
+@keyframes stones {
+  0% {
+    transform: translateY(-0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(-0px);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .hero-wrapper {
+      .content-left {
+        margin-top: 10px !important;
+      }
+    }
+  }
+  .safe-payments {
+    .card {
+      border: none !important;
+      justify-content: center;
+    }
+  }
+  .sales {
+    .left-flowers {
+      display: none;
+    }
+  }
+  .yoga {
+    .right-flowers {
+      display: none !important;
+    }
+  }
+  .faq {
+    .right-flowers {
+      display: none !important;
+    }
+  }
+  .footer {
+    text-align: center;
+    justify-content: center;
+    .logo {
+      .card {
+        display: none;
+      }
+    }
+    .footer-middle {
+      margin-top: 30px !important;
+    }
+  }
+}
+@media (max-width: 990px) {
+  .safe-payments {
+    .card {
+      border: none !important;
+      justify-content: center;
+    }
+  }
+}

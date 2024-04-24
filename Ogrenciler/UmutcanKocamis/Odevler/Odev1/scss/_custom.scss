@@ -3,6 +3,11 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+@mixin boxHover($bg-color, $border-color, $color) {
+  background-color: $bg-color !important;
+  border-color: $border-color !important;
+  color: $color !important;
+}
 nav {
   li {
     a:hover {
@@ -19,41 +24,30 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   button:hover {
-    background-color: $secondary;
-    border-color: $secondary;
     transition: all 0.2s ease-in-out;
-    color: $light !important;
+    @include boxHover($secondary, $secondary, $light);
   }
 }
 .more-btn:hover {
-  background-color: $secondary;
-  border-color: $secondary;
   transition: all 0.2s ease-in-out;
-  color: $light !important;
+  @include boxHover($secondary, $secondary, $light);
 }
-
 #urun {
   .right-part {
     .buttons-sizes {
       button:hover {
-        background-color: $primary;
-        border-color: $primary !important;
         transition: all 0.2s ease-in-out;
-        color: $light;
+        @include boxHover($primary, $primary, $light);
       }
     }
     .adet-btn:hover {
-      background-color: $primary;
-      border-color: $primary !important;
       transition: all 0.4s ease-in-out;
-      color: $light;
+      @include boxHover($primary, $primary, $light);
     }
     .buying-area {
       button:hover {
-        background-color: $secondary !important;
-        border-color: $secondary !important;
         transition: all 0.4s ease-in-out;
-        color: $light;
+        @include boxHover($secondary, $secondary, $light);
       }
       i:hover {
         color: $primary;

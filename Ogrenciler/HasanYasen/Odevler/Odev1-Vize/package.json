@@ -1,0 +1,16 @@
+{
+  "name": "odev1-vize",
+  "version": "1.0.0",
+  "description": "A website where JBL Brand products are sold",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w scss:css"
+  },
+  "keywords": [],
+  "author": "Hasan YASEN",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.75.0"
+  }
+}

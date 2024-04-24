@@ -12644,17 +12644,6 @@ i {
   transition: all 0.3s ease-in-out;
 }
 
-.hover-primary:hover:hover {
-  background-color: #df392b;
-}
-.hover-primary:hover:hover * {
-  color: whitesmoke !important;
-}
-.hover-primary:hover:hover button {
-  background-color: #df392b !important;
-  color: whitesmoke !important;
-}
-
 .navbar-icon {
   color: white;
 }
@@ -12678,15 +12667,25 @@ i {
   background-image: linear-gradient(45deg, #142e4d, #000);
 }
 
+#why-choose-us .card {
+  background-color: white;
+}
+#why-choose-us .card * {
+  color: #142e4d;
+}
+#why-choose-us .card button {
+  background-color: #df392b;
+  color: white;
+}
 #why-choose-us .card:hover {
   background-color: #df392b;
 }
 #why-choose-us .card:hover * {
-  color: white !important;
+  color: white;
 }
 #why-choose-us .card:hover button {
-  background-color: #df392b !important;
-  color: #fff !important;
+  background-color: #df392b;
+  color: #fff;
 }
 
 #partners .partner-card {
@@ -12699,19 +12698,49 @@ i {
 #hero .hero-left {
   animation-duration: 5s;
 }
+#hero .nav-item {
+  background-color: #142e4d;
+}
+#hero .nav-item * {
+  color: white;
+}
+#hero .nav-item button {
+  background-color: #df392b;
+  color: white;
+}
+#hero .nav-item:hover {
+  background-color: #df392b;
+}
+#hero .nav-item:hover * {
+  color: white;
+}
+#hero .nav-item:hover button {
+  background-color: #df392b;
+  color: #fff;
+}
 
 #plans .popular {
   scale: 1.1;
+}
+#plans .plan {
+  background-color: transparent;
+}
+#plans .plan * {
+  color: #142e4d;
+}
+#plans .plan button {
+  background-color: #142e4d;
+  color: #fff;
 }
 #plans .plan:hover {
   background-color: #142e4d;
 }
 #plans .plan:hover * {
-  color: #fff !important;
+  color: #fff;
 }
 #plans .plan:hover button {
-  background-color: #df392b !important;
-  color: #fff !important;
+  background-color: #df392b;
+  color: #fff;
 }
 
 #about-us .our-team {

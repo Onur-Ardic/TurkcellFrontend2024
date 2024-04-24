@@ -1,0 +1,36 @@
+@import '../abstracts/_index';
+body {
+    font-family: "Oswald";
+}
+* {
+    overflow-x: hidden;
+}
+.navbar{
+    background: transparent !important;
+}
+.overlay{
+    @include overlay(#000);
+}
+.imgBox{
+    width: 100px;
+    height: 100px;
+}
+.loadingShieldLeft{
+    position: absolute;
+    transform: scale(1);
+    animation: leftShield 2s linear;
+    opacity: 0;
+    z-index: -999999;
+}
+.loadingShieldRight{
+    @extend .loadingShieldLeft;
+    animation: rightShield 2s linear;
+}
+.glow{
+    animation: glow 1s linear infinite;
+}
+.scale{
+    &:hover{
+        transform: scale(1.5);
+    }
+}

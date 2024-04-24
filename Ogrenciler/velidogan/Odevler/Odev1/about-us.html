@@ -16,7 +16,7 @@
       </button>
       <div class="offcanvas offcanvas-end" id="nav-content">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="img/e-commerce1.png" alt=""></h5>
+          <h5 class="offcanvas-title" id="offcanvas-header"><img src="img/e-commerce1.png" alt=""></h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -164,10 +164,18 @@
           </div>
           <div class="col border-top border-2 p-md-3 p-5">
             <h3>Subscribe</h3>
-            <div class="mt-4">
-              <input type="text" class="form-control" placeholder="Enter your e-mail...">
-              <button class="btn btn-outline-danger mt-2 w-100">Subscribe</button>
-            </div>
+            <form class="needs-validation" novalidate>
+              <div class="mt-4">
+                <input type="email" class="form-control" placeholder="Enter your e-mail..." required>
+                <div class="valid-feedback">
+                  Looks good...
+                </div>
+                <div class="invalid-feedback">
+                  Enter your mail!
+                </div>
+                <button class="btn btn-outline-danger mt-2 w-100">Subscribe</button>
+              </div>
+            </form>  
           </div>
           <div class="col border-top border-2 p-md-3 p-5">
             <h3>Social Links</h3>

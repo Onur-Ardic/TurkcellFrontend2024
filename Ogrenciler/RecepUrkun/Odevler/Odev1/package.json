@@ -1,0 +1,14 @@
+{
+  "name": "odev1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass -w scss:css"
+  },
+  "author": "recep",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
