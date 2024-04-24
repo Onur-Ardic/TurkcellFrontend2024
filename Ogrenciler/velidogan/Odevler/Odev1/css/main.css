@@ -12971,8 +12971,7 @@ textarea.form-control-lg {
 .main-navbar .nav-link {
   border: 1px solid transparent;
 }
-.main-navbar .nav-link:hover {
-  color: #f8f9fa;
+.main-navbar .nav-link:hover, .main-navbar .nav-link:focus {
   border: 1px solid #f8f9fa;
 }
 
@@ -13071,11 +13070,6 @@ main .cheapest-products .col:nth-child(n) .card {
     border-left: none;
   }
 }
-#comments .content {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-}
 #comments .content img {
   width: 40px;
   height: 40px;
@@ -13085,10 +13079,10 @@ main .cheapest-products .col:nth-child(n) .card {
   font-size: 12px;
 }
 #comments .rating-wrap span.checked {
-  color: orange;
+  color: rgb(253, 164, 3);
 }
 #comments .form-control, #comments .form-select {
-  background-color: #f9f9f9;
+  background-color: rgb(238, 238, 238);
 }
 
 #about-us video {
@@ -13114,13 +13108,6 @@ main .cheapest-products .col:nth-child(n) .card {
 .footer .nav-link:hover, .footer .nav-link:focus {
   background: #f8f9fa;
   color: rgb(0, 34, 77);
-}
-
-.nav-link {
-  border: 1px solid transparent;
-}
-.nav-link:hover, .nav-link:focus {
-  border: 1px solid rgb(0, 34, 77);
 }
 
 /*# sourceMappingURL=main.css.map */

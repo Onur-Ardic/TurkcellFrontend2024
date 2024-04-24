@@ -18,9 +18,6 @@
 }
 #comments{
     .content {
-        display: inline-flex;
-        align-items: center;
-        vertical-align: middle;
         img {
             width: 40px;
             height: 40px;
@@ -32,12 +29,12 @@
         span{
             font-size: 12px;
             &.checked {
-                color: orange;
+                color: $chrome-yellow;
             }
         }         
     }
     .form-control, .form-select {
-        background-color: #f9f9f9;
+        background-color: $soft-peach;
     }
 }
 
