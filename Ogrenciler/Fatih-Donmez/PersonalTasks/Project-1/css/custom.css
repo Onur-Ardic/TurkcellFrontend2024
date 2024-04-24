@@ -12052,10 +12052,10 @@ a:hover {
   color: #0aad0a;
 }
 
-.faq h3, .faq .h3,
-.faq h6,
-.faq .h6 {
-  color: #0aad0a;
+.faq button,
+.faq h3,
+.faq .h3 {
+  color: #198754;
 }
 
 /*# sourceMappingURL=custom.css.map */
