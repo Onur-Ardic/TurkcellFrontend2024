@@ -13465,6 +13465,17 @@ p:hover {
   right: 0;
 }
 
+.faq .card {
+  transition: 1s ease all;
+}
+.faq .card:hover {
+  transform: scale(1.02);
+  transform: translateY(-10px);
+}
+.faq .card:hover .card-body a {
+  color: #bd98b9;
+}
+
 .footer .logo .card {
   left: 35%;
   bottom: -20%;

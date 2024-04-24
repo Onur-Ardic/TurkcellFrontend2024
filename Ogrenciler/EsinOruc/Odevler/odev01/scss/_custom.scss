@@ -52,6 +52,21 @@ p {
     right: 0;
   }
 }
+.faq {
+  .card {
+    transition: 1s ease all;
+    &:hover {
+      transform: scale(1.02);
+      transform: translateY(-10px);
+
+      .card-body {
+        a {
+          color: $danger;
+        }
+      }
+    }
+  }
+}
 
 .footer {
   .logo {
