@@ -38,10 +38,19 @@
     .container {
         .food-card {
             background-color: #f2f2f2;
-            padding: 24px 16px;
-            border-radius: 8px;
-            height: 386px;
+            height: 400px;
             width: 400px;
+            transition: all 0.5s ease;
+            &:hover {
+                h5,
+                .img {
+                    transition: all 0.5s ease;
+                    transform: scale(1.3);
+                }
+                h4 {
+                    color: green;
+                }
+            }
         }
     }
 }
