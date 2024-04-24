@@ -1,0 +1,135 @@
+$bizistan-main: #e6ba25;
+$bizistan-text: #910101;
+$irinya-main: #fcd665;
+$irinya-text: #558219;
+$ukanistan-main: #cfe2f3;
+$ukanistan-text: #6daecc;
+$turistan-main: #f7d8b7;
+$turistan-text: #6daecc;
+
+@mixin countryColors($main, $text) {
+  border: 1px solid $main;
+  border-radius: 5px;
+  color: $text;
+}
+*{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.link {
+  &:hover,
+  &.active {
+    color: $info !important;
+  }
+}
+.transition {
+  transition: all 200ms ease-in-out !important;
+}
+.index{
+  .introduction {
+    height: 100vh;
+  }
+  .why-we{
+    .pasaport{
+      height: 100px;
+      animation: pasaport-animation 12s linear infinite;
+    }
+  }
+  .products {
+    .container {
+      .products-items {
+        .btn{
+          width: 100%;
+          opacity: 80%;
+          &:hover{
+            opacity: 1 !important;
+            scale: 1.02;
+          }
+        }
+        .bizistan{
+          .bizistan-title, .btn-bizistan{
+            @include countryColors($bizistan-main, $bizistan-text);
+          }
+          .btn-bizistan{
+            @extend .btn;
+            &:hover{
+            @include countryColors($bizistan-main, $bizistan-text);
+            background-color: $bizistan-main;
+            }
+          }
+        }
+        .irinya{
+          .irinya-title, .btn-irinya {
+            @include countryColors($irinya-main, $irinya-text);
+          }
+          .btn-irinya{
+            @extend .btn;
+            &:hover{
+            @include countryColors($irinya-main, $irinya-text);
+            background-color: $irinya-main;
+            }
+          }
+        }
+        .ukanistan{
+          .ukanistan-title, .btn-ukanistan {
+            @include countryColors($ukanistan-main, $ukanistan-text);
+          }
+          .btn-ukanistan{
+            @extend .btn;
+            &:hover{
+            @include countryColors($ukanistan-main, $ukanistan-text);
+            background-color: $ukanistan-main;
+            }
+          }
+        }
+        .turistan{
+          .turistan-title, .btn-turistan {
+            @include countryColors($turistan-main, $turistan-text);
+          }
+          .btn-turistan{
+            @extend .btn;
+            &:hover{
+            @include countryColors($turistan-main, $turistan-text);
+            background-color: $turistan-main;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.sss{
+  min-height: 105vh;
+}
+@keyframes pasaport-animation {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(350px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .why-we{
+    .pasaport{
+      height: 80px !important;
+      animation: pasaport-animation 15s linear infinite;
+    }
+  }
+  @keyframes pasaport-animation {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(200px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+}

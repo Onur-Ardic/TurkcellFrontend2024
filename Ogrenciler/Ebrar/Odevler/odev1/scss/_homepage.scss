@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Outfit , sans-serif;
+}
+$height-100:100vh;
+
+@mixin boyut($width , $height){
+    width:$width ;
+    height: $height;
+}
+@mixin background($bgImage, $bgSize, $bgPosition, $bgRepeat){
+    background-image: $bgImage;
+    background-size: $bgSize;
+    background-position: $bgPosition;
+    background-repeat: $bgRepeat;
+}
+@mixin transform($top, $left,$transform){
+   top: $top;
+   left: $left;
+   transform:  $transform;
+}
+%title-animation-hp{
+     animation: apparent 6s forwards;
+     
+    @keyframes apparent {
+        from {
+            color: transparent; 
+        }
+        to {
+            color: white; 
+        }
+    }
+}
+%title-animation-product{
+     animation: slideIn 5s forwards;
+     
+    @keyframes slideIn {
+        from {
+            opacity: 0; 
+        }
+        to {
+            opacity: 1; 
+        }
+    }
+}
+.header{
+    @include transform(10px,50% ,translateX(-50%));
+}
+.homepage-link{
+    color: white;
+    text-transform: uppercase;
+}
+.homepage-link:hover{
+    color: $primary;
+}
+.homepage{
+    height: 100vh ;
+    @include background(url(https://i.hizliresim.com/ij2m93h.jpg),cover ,center ,no-repeat );
+    box-shadow: inset -2px -1px 114px 80px rgba(0,0,0,0.75);
+
+
+    .homepage-title h1{
+        font-size: 56px;
+        color: transparent;
+        @extend %title-animation-hp;
+    }
+
+}
+.products-fav{
+    @include background(url(https://r.resimlink.com/4hLKzbenM.png), cover ,center ,no-repeat )
+}
+.about{
+    height: 100vh;
+
+    .about-text{
+        z-index: 99;
+    }
+    .image-container-first img {
+        @include transform(50%,50% , translate(80%, 50%));
+        @include boyut(300px, 200px )
+        
+    }
+    .image-container-second img{
+        @include transform(50%,50% , translate(-280%, -120%));
+        @include boyut(200px, 300px )
+    }
+}
+.faq{
+    height: $height-100;
+
+    .faq-accordion-bg{
+        @include background(url(https://i.hizliresim.com/t5fkwf2.jpg), cover,center ,no-repeat );
+    
+    }
+}
+.social-media img{
+    height: 25px;
+
+}
