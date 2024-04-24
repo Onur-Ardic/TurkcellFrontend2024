@@ -11852,4 +11852,22 @@ textarea.form-control-lg {
   box-shadow: 0 0 10px 10px rgb(197, 187, 130);
 }
 
+.rotating-img {
+  animation: scaleAnimation 6s linear infinite alternate;
+}
+
+@keyframes scaleAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.5);
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-brand img {
+    width: 80%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
