@@ -1,89 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Pacifico&family=Satisfy&family=Square+Peg&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <title>Vize 1</title>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-danger-subtle">
+    <nav class="navbar navbar-expand-lg bg-danger-subtle">
         <div class="container">
-            <a class="navbar-brand" href="#">mirketsuStore</a>
+            <a class="navbar-brand fs-2" href="#" style="font-family: 'Italianno', cursive;">mirketsuStore</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav gap-4">
+                <ul class="navbar-nav gap-4 ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i></a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</i></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false"> <i class="fa-solid fa-list"></i>
+                        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Categories</i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Skin Care</a></li>
-                            <li><a class="dropdown-item" href="#">Candies</a></li>
-                            <li><a class="dropdown-item" href="#">Lipsticks</a></li>
-                            <li><a class="dropdown-item" href="#">mirketsuMilla</a></li>
+                            <li><a class="dropdown-item" href="#skin">Skin Care</a></li>
+                            <li><a class="dropdown-item" href="#candle">Candles</a></li>
+                            <li><a class="dropdown-item" href="#shampoo">Shampoos & Body</a></li>
+                            <li><a class="dropdown-item" href="#mirketsuMilla">mirketsuMilla</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-regular fa-user"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-regular fa-heart"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-basket-shopping"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a class="nav-link text-dark" href="about.html">About us / F.A.Q</i></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="hero-area position-relative">
-        <div class="hero-content row vh-100">
-            <div class="col-8 bg-shape-1 bg-success opacity-50">
-                <div class="hero-img d-flex py-5">
+    <section class="hero-area">
+        <div class="hero-content row g-0">
+            <div class="col-lg-8 col-md-12 bg-shape-1 bg-success bg-opacity-50 py-4">
+                <div class="hero-img d-flex">
                     <img class="img-fluid w-75 h-100" src="./images/product1.png" alt="">
                     <img class="img-fluid w-25 h-100" src="./images/product2.png" alt="">
                 </div>
             </div>
-            <div class="col-4 bg-shape-2 bg-success-subtle">
-                <div class="hero-text p-5">
-                    <h1 class="fw-bold text-white">Weekend <br> Brand <br> Sale</h1>
-                    <div class="d-flex pt-5 align-items-baseline justify-content-between">
-                        <p class="text-white">ONLY 7 DAYS</p>
-                        <a class="text-white text-center py-2 px-2 rounded-2" href="#">View Products</a>
+            <div class="col-lg-4 col-md-12 bg-shape-2 bg-success-subtle py-5">
+                <div class="hero-text px-4 h-100">
+                    <h1 class="fw-semibold text-white">Weekend <br> Brand <br> Sale</h1>
+                    <div class="d-flex align-items-baseline gap-5 pt-5">
+                        <p class="fw-medium text-white">ONLY 7 DAYS</p>
+                        <a class="text-dark text-center fs-6 py-2 ps-3 pe-3 rounded-2" href="#products">View Products</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="bg-shape-1 bg-success opacity-50 position-absolute top-0 left-0 h-100" style="width: 60%; z-index: -1;" ></div>
-        <div class="bg-shape-2 bg-success-subtle position-absolute top-0 end-0 h-100" style="width: 40%;  z-index: -1"></div> -->
     </section>
+    <section class="sales-area py-5">
+        <div class="container">
+            <div class="sale-cards row row-cols-lg-3 row-cols-1">
+                <div class="col p-2">
+                    <div class="bg-1 rounded-3 h-100">
+                        <img class="img-fluid h-100" src="./images/product3.png" alt="">
+                    </div>
+                </div>
+                <div class="col p-2">
+                    <div class="bg-3 rounded-3 h-100">
+                        <img class="img-fluid h-100" src="./images/product5.png" alt="">
+                    </div>
+                </div>
+                <div class="col p-2">
+                    <div class="bg-2 rounded-3 h-100">
+                        <img class="img-fluid h-100" src="./images/product9.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products-area bg-body-tertiary" id="products">
+        <div class="container">
+            <div class="content d-flex-column m-auto py-5" style="width: 90%;">
+                <div id="skin" class="skin-care bg-body py-4 ps-4 pe-4 rounded-2 mb-4" style="box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);">
+                    <h2 class="pb-4">Skin Care</h2>
+                    <div class="cards row justify-content-center gap-3">
+                        <a href="./products-detail/babySet.html" class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative"
+                            style="width: 14rem; height: 28rem;">
+                            <img src="./images/product10.jpg" class="card-img-top img-fluid h-50 rounded-top-4" alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Baby Care Products Set</h5>
+                                <div class="stars d-flex gap-1 pt-1 star-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$85</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
 
+                            </div>
+                        </a>
+                        <a class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative" style="width: 14rem; height: 28rem;">
+                            <img src="./images/product11.jpg" class="card-img-top img-fluid h-50 rounded-top-4"
+                                alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Hair Care Set</h5>
+                                <div class="stars d-flex gap-1 pt-1 star-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$50</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative" style="width: 14rem; height: 28rem;">
+                            <img src="./images/product12.jpg" class="card-img-top img-fluid h-50 rounded-top-4"
+                                alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Baby Care Body Lotion</h5>
+                                <div class="stars d-flex gap-1 pt-1 star-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$65</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative" style="width: 14rem; height: 28rem;">
+                            <img src="./images/product13.jpg" class="card-img-top img-fluid h-50 rounded-top-4"
+                                alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Hair Care Set</h5>
+                                <div class="stars d-flex gap-1 pt-1 star-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$72</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="candle" class="candles bg-body py-4 ps-4 pe-4 rounded-2 mb-4" style="box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);">
+                    <h2 class="pb-4">Candles</h2>
+                    <div class="cards row justify-content-center gap-3">
+                        <a href="./products-detail/candleSet.html" class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative"
+                            style="width: 14rem; height: 28rem;">
+                            <img src="./images/candle1.jpg" class="card-img-top img-fluid h-50 rounded-top-4" alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Colorful and Scented Candle Set</h5>
+                                <div class="stars d-flex gap-1 pt-1 star-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$10</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
 
+                            </div>
+                        </a>
+                        <a class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative" style="width: 14rem; height: 28rem;">
+                            <img src="./images/product15.jpg" class="card-img-top img-fluid h-50 rounded-top-4"
+                                alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Colorful and Scented Candle</h5>
+                                <div class="stars d-flex gap-1 pt-1">
+                                    <i class="fa-solid fa-star star-color"></i>
+                                    <i class="fa-solid fa-star star-color"></i>
+                                    <i class="fa-solid fa-star star-color"></i>
+                                    <i class="fa-solid fa-star star-color"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$10</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative" style="width: 14rem; height: 28rem;">
+                            <img src="./images/product16.jpg" class="card-img-top img-fluid h-50 rounded-top-4"
+                                alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pink Single Scented Candle</h5>
+                                <div class="stars d-flex gap-1 pt-1 star-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$8</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative" style="width: 14rem; height: 28rem;">
+                            <img src="./images/product17.jpg" class="card-img-top img-fluid h-50 rounded-top-4"
+                                alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pink Multiple Scented Candle Set</h5>
+                                <div class="stars d-flex gap-1 pt-1 star-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$30</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="shampoo" class="shampoos bg-body py-4 ps-4 pe-4 rounded-2 mb-4" style="box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);">
+                    <h2 class="pb-4">Shampoos & Body</h2>
+                    <div class="cards row justify-content-center gap-3">
+                        <a href="./products-detail/bodyWashGel.html" class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative"
+                            style="width: 14rem; height: 28rem;">
+                            <img src="./images/product18.jpg" class="card-img-top img-fluid h-50 rounded-top-4" alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Body Wash Gel</h5>
+                                <div class="stars d-flex gap-1 pt-1 star-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$50</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
 
+                            </div>
+                        </a>
+                        <a href="./products-detail/hairShampoo.html" class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative" style="width: 14rem; height: 28rem;">
+                            <img src="./images/product19.webp" class="card-img-top img-fluid h-50 rounded-top-4"
+                                alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Hair Shampoo</h5>
+                                <div class="stars d-flex gap-1 pt-1 star-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$40</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative" style="width: 14rem; height: 28rem;">
+                            <img src="./images/product20.png" class="card-img-top img-fluid h-50 rounded-top-4" style="object-fit: contain;" alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Organic Shampoos</h5>
+                                <div class="stars d-flex gap-1 pt-1 star-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$65</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative" style="width: 14rem; height: 28rem;">
+                            <img src="./images/product21.webp" class="card-img-top img-fluid h-50 rounded-top-4"
+                                alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Body Cold Cream</h5>
+                                <div class="stars d-flex gap-1 pt-1 star-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$35</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="mirketsuMilla" class="mirketsu-milla bg-body py-4 ps-4 pe-4 rounded-2 mb-4" style="box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);">
+                    <h2 class="pb-4">mirketsuMilla</h2>
+                    <div class="cards row justify-content-center gap-3">
+                        <a href="./products-detail/tuffleFluffyDress.html" class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative"
+                            style="width: 14rem; height: 28rem;">
+                            <img src="./images/dress1.jpg" class="card-img-top img-fluid h-50 rounded-top-4" alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pink Tuffle Fluffy Mini Dress</h5>
+                                <div class="stars d-flex gap-1 pt-1 star-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$85</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
 
-
+                            </div>
+                        </a>
+                        <a href="./products-detail/blackWhiteCardigan.html" class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative" style="width: 14rem; height: 28rem;">
+                            <img src="./images/dress2.jpg" class="card-img-top img-fluid h-50 rounded-top-4"
+                                alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Black and White Striped Knitted Cardigan</h5>
+                                <div class="stars d-flex gap-1 pt-1 star-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$50</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative" style="width: 14rem; height: 28rem;">
+                            <img src="./images/dress3.jpg" class="card-img-top img-fluid h-50 rounded-top-4"
+                                alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Mint Green Knitted Cardigan</h5>
+                                <div class="stars d-flex gap-1 pt-1 star-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$65</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card col-lg-3 col-md-6 ps-0 pe-0 rounded-4 position-relative" style="width: 14rem; height: 28rem;">
+                            <img src="./images/dress4.jpeg" class="card-img-top img-fluid h-50 rounded-top-4"
+                                alt="...">
+                            <div class="bg-light rounded-circle position-absolute"
+                                style="top: 10px; right: 10px; box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.11);">
+                                <i class="fa-regular fa-heart fs-5 d-flex justify-content-center align-items-center"
+                                    style="width: 33px; height: 33px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Satin Petrol Blue Mini Dress</h5>
+                                <div class="stars d-flex gap-1 pt-1 star-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="pt-2">$72</p>
+                                <div class="d-flex">
+                                    <h6 class="bg-success rounded-start-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-truck pe-1"></i>Fast Delivery</h6>
+                                    <h6 class="bg-dark-subtle rounded-end-3 text-body ps-2 pe-2 py-2"><i
+                                            class="fa-solid fa-cube pe-1"></i>Free Cargo</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-warning-subtle py-5">
+        <div class="container">
+            <div class="footer-content row justify-content-around gap-5">
+                <div class="col-lg-3">
+                    <h4 class="mb-3 fs-2 fw-semibold" style="font-family: 'Italianno', cursive;">mirketsuStore</h4>
+                    <ul class="list ps-0">
+                        <li class="mb-3">Who we are</li>
+                        <li class="mb-3">Contact us</li>
+                        <li class="mb-3">F.A.Q</li>
+                        <li class="footer-payment bg-dark-subtle bg-opacity-50 d-flex mt-3 m-auto align-items-baseline gap-4 rounded-3 ps-2">
+                            <div class="troy-img"><img class="img-fluid w-100" src="./images/footer1.webp" alt=""></div>
+                            <div class="master-card-img"><img class="img-fluid w-100" src="./images/footer2.webp" alt=""></div>
+                            <div class="visa-img"><img class="img-fluid w-50" src="./images/footer3.webp" alt=""></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="mb-4 fw-semibold">Mobile Applications</h4>
+                    <div class="footer-aps">
+                        <a href="#"><img class="img-fluid w-50 mb-3" src="./images/ios.svg" alt=""></a>
+                        <a href="#"><img class="img-fluid w-50 mb-3" src="./images/google.svg" alt=""></a>
+                        <a href="#"><img class="img-fluid w-50" src="./images/huawei.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="mb-4 fw-semibold">Social Media</h4>
+                    <div class="footer-icon d-flex gap-4 text-center">
+                        <a class="bg-body-secondary rounded-circle" href="#"><i class="fa-brands fa-facebook-f d-flex justify-content-center align-items-center" style="width: 33px; height: 33px;"></i></a>
+                        <a class="bg-body-secondary rounded-circle" href="#"><i class="fa-brands fa-instagram d-flex justify-content-center align-items-center" style="width: 33px; height: 33px; color: rebeccapurple;"></i></a>
+                        <a class="bg-body-secondary rounded-circle" href="#"><i class="fa-brands fa-twitter d-flex justify-content-center align-items-center" style="width: 33px; height: 33px; color: deepskyblue;"></i></a>
+                        <a class="bg-body-secondary rounded-circle" href="#"><i class="fa-brands fa-youtube d-flex justify-content-center align-items-center" style="width: 33px; height: 33px; color: red;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

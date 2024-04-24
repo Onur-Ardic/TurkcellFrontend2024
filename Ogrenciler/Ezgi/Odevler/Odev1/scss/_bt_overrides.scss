@@ -1,3 +1,16 @@
 $success: #72fac6;
-$success-bg-subtle: #02c97d;
+$success-bg-subtle: #1a6045;
+$warning-bg-subtle: rgb(251, 243, 239);
+$danger-bg-subtle: rgb(252, 232, 235);
 $h1-font-size: 60px;
+$h5-font-size: 14px;
+$h6-font-size: 10px;
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 6,
+);
