@@ -16,7 +16,7 @@
       </button>
       <div class="offcanvas offcanvas-end" id="nav-content">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="img/e-commerce1.png" alt=""></h5>
+          <h5 class="offcanvas-title" id="offcanvas-header"><img src="img/e-commerce1.png" alt=""></h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -58,12 +58,12 @@
         <div class="container">
             <div class="row filters">
                 <div class="col-lg-4 col-xl-3 col-12 navbar-expand-lg">
-                  <button class="btn btn-primary d-block d-lg-none mt-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                  <button class="btn btn-primary d-block d-lg-none mt-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#categories" aria-controls="categories">
                     <i class="fa-solid fa-filter"></i>
                   </button>
-                  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="categories" aria-labelledby="offcanvas-header-category">
                     <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="staticBackdropLabel">Filter</h5>
+                      <h5 class="offcanvas-title" id="offcanvas-header-category">Filter</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -163,15 +163,15 @@
                                     <label class="form-check-label w-75" for="category-1"><i class="fa-solid fa-star"></i> Above 4 Stars</label>
                                   </div>
                                   <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="category-1">
+                                    <input type="checkbox" class="form-check-input" id="category-2">
                                     <label class="form-check-label w-75" for="category-1"><i class="fa-solid fa-star"></i> Above 3 Stars</label>
                                   </div>
                                   <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="category-1">
+                                    <input type="checkbox" class="form-check-input" id="category-3">
                                     <label class="form-check-label w-75" for="category-1"><i class="fa-solid fa-star"></i> Above 2 Stars</label>
                                   </div>
                                   <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="category-1">
+                                    <input type="checkbox" class="form-check-input" id="category-4">
                                     <label class="form-check-label w-75" for="category-1"><i class="fa-solid fa-star"></i> Above 1 Stars</label>
                                   </div>                                
                               </div>
@@ -412,11 +412,11 @@
         </div>
         
     </main>
-    <div class="modal fade" id="favorite" tabindex="-1" data-bs-backdrop="static" aria-labelledby="modalHead" aria-hidden="true">
+    <div class="modal fade" id="favorite" tabindex="-1" data-bs-backdrop="static" aria-labelledby="modal-head-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="modalHead">Favoriler</h1>
+            <h1 class="modal-title fs-5" id="modal-head-1">Favoriler</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -451,10 +451,18 @@
           </div>
           <div class="col border-top border-2 p-md-3 p-5">
             <h3>Subscribe</h3>
-            <div class="mt-4">
-              <input type="text" class="form-control" placeholder="Enter your e-mail...">
-              <button class="btn btn-outline-danger mt-2 w-100">Subscribe</button>
-            </div>
+            <form class="needs-validation" novalidate>
+              <div class="mt-4">
+                <input type="email" class="form-control" placeholder="Enter your e-mail..." required>
+                <div class="valid-feedback">
+                  Looks good...
+                </div>
+                <div class="invalid-feedback">
+                  Enter your mail!
+                </div>
+                <button class="btn btn-outline-danger mt-2 w-100">Subscribe</button>
+              </div>
+            </form>  
           </div>
           <div class="col border-top border-2 p-md-3 p-5">
             <h3>Social Links</h3>
