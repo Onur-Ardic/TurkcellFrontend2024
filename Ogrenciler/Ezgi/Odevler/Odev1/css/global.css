@@ -17,8 +17,33 @@ a {
   cursor: pointer;
 }
 
-ul li {
+i {
   cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.bg-1 {
+  background-color: rgb(255, 161, 208);
+}
+
+.bg-2 {
+  background-color: rgb(170, 177, 248);
+}
+
+.bg-3 {
+  background-color: rgb(124, 68, 255);
+}
+
+.bg-4 {
+  background-color: orange;
+}
+
+.star-color {
+  color: #ffc000;
 }
 
 /*# sourceMappingURL=global.css.map */
