@@ -1,0 +1,17 @@
+@keyframes textGradientAnimation {
+    0% {
+        background-position: 0%;
+    }
+    25% {
+        background-position: 30%;
+    }
+    50% {
+        background-position: 60%;
+    }
+    75% {
+        background-position: 90%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}

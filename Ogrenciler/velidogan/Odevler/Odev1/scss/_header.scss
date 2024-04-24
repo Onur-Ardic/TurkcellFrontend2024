@@ -1,12 +1,5 @@
 @import "general_css";
 .main-navbar{
-    // .nav-link{
-    //     border: 1px solid transparent;
-    //     &:hover{
-    //         color: $light;
-    //         border: 1px solid $light;
-    //     }
-    // }
     .nav-link{
         @include nav-link($light);
     }

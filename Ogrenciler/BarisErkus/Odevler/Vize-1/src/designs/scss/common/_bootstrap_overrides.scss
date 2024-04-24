@@ -1,0 +1,18 @@
+// #region Imports
+@import "../common/variables";
+// #endregion
+// #region Colors
+$primary: $main-color;
+// #endregion
+// #region Font
+$font-family-base: "Jersey 15", sans-serif;
+$font-size-base: $main-font-size;
+// #endregion
+// #region Accordion
+$accordion-color: $accordion-primary-color;
+$accordion-bg: $main-accordion-bg;
+$accordion-button-color: $accordion-primary-color;
+$accordion-button-active-color: $accordion-primary-color;
+$accordion-button-active-bg: $main-color;
+$accordion-button-focus-box-shadow: $main-color;
+// #endregion

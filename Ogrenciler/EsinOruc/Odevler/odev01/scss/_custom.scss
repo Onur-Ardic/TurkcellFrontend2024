@@ -52,6 +52,22 @@ p {
     right: 0;
   }
 }
+.faq {
+  .card {
+    transition: 1s ease all;
+    &:hover {
+      transform: scale(1.02);
+      transform: translateY(-10px);
+
+      .card-body {
+        a {
+          color: $danger;
+        }
+      }
+    }
+  }
+}
+
 .footer {
   .logo {
     .card {
@@ -117,10 +133,15 @@ p {
     }
   }
   .footer {
+    text-align: center;
+    justify-content: center;
     .logo {
       .card {
         display: none;
       }
+    }
+    .footer-middle {
+      margin-top: 30px !important;
     }
   }
 }

@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$custom-colors: (
+  "soft-peach": #eee,
+  "milk-white": #fafcff,
+  "tropical-lagoon": rgb(2, 130, 146),
+  "fiery-mandarin": rgb(245, 86, 37),
+  "charcoal": rgb(22, 22, 22),
+  "platinum": rgb(229, 227, 210),
+  "logo-bg": rgb(8, 9, 3),
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$h8-font-size: $font-size-base * 0.5;
+$h12-font-size: $font-size-base * 0.75;
+$h20-font-size: $font-size-base * 1.25;
+$h36-font-size: $font-size-base * 2.25;
+$custom-sizes: (
+  8: $h8-font-size,
+  12: $h12-font-size,
+  20: $h20-font-size,
+  36: $h36-font-size,
+);
+$font-sizes: map-merge($font-sizes, $custom-sizes);
+
+$custom-spacers: (
+  20: $spacer * 1.25,
+  30: $spacer * 1.9,
+  32: $spacer * 2,
+  40: $spacer * 2.5,
+  60: $spacer * 3.75,
+);
+$spacers: map-merge($spacers, $custom-spacers);

@@ -1,0 +1,48 @@
+.product-link{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+
+    &:hover{
+        color: $primary;
+}
+}
+
+.slider-title h2{
+  @include transform(200px,250px,rotate(180deg));
+  z-index: 99;
+  writing-mode: vertical-lr;
+  width: 50px; 
+  white-space: nowrap; 
+  @extend %title-animation-product;
+}
+.carousel-inner {
+  & img{
+  object-fit: cover;
+
+  }
+}
+.card{
+  transition: transform 0.3s ease;
+  .price{
+    opacity: 0;
+  }
+    &:hover {
+      transform: scale(1.1);
+      .price{
+        opacity: 1;
+        
+        & .empty-green:hover{
+            background-image: url(https://r.resimlink.com/1B9iU8GHtaw.png);
+          }
+        }
+      }
+    }
+  
+  .card-body{
+     & a:hover{
+      background-color: $dark;
+      color: $light;
+    } 
+
+   
+  }
