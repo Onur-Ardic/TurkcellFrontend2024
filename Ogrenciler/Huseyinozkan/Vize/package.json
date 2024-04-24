@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "fslightbox": "^3.4.1",
     "sass": "^1.75.0"
   }
 }
