@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowers</title>
+    <!-- Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- İcon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 sticky">
+        <div class="container d-flex">
+          <a class="navbar-brand" href="index.html">
+            <img class="img-fluid rounded text-primary" alt="" />Bloom Flower
+            Shop</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flowers-nav"
+            aria-controls="flowers-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="flowers-nav">
+            <div class="flex-grow-1">
+              <ul class="nav navbar-nav gap-3 justify-content-end">
+                <li class="nav-item">
+                  <a
+                    href="index.html"
+                    class="nav-link text-dark text-decoration-none"
+                    aria-current="page"
+                    >ANASAYFA</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link text-decoration-none"
+                    >HAKKIMIZDA</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-decoration-none"
+                    >ÜRÜNLERİMİZ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="sss.html" class="nav-link text-decoration-none"
+                    >SSS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link text-dark"
+                    ><span class="lnr lnr-magnifier"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero py-5 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <img class="img-fluid" src="./assets/img/bg.svg" alt="bg-img" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 m-auto p-4">
+            <h1 class="text-start fw-bolder">
+              Doğanın <br />
+              Eşsiz Güzelliği <br />
+              Sizinle
+              <img
+                class="img-fluid mb-2"
+                src="./assets/img/vector.svg"
+                alt=""
+              />
+            </h1>
+            <p class="font-size-base">
+              Çiçekler, doğanın bize sunduğu en büyüleyici hediyelerden biridir.
+              Her bir yaprakta, doğanın mükemmelliğini ve sanatını görebiliriz.
+              Biz, bu eşsiz güzellikleri sizinle buluşturmak için varız. Çünkü
+              biliyoruz ki, çiçekler sadece birer bitki değil, aynı zamanda
+              duyguların, düşüncelerin ve anların sessiz elçileridir.
+            </p>
+            <div class="buttons">
+              <a href="" class="text-decoration-none">
+                <button
+                  class="btn text-primary bg-white border border-primary rounded rounded-pill py-4 px-4"
+                >
+                  Tüm Koleksiyonlar
+                </button>
+              </a>
+              <a href="" class="text-decoration-none">
+                <button
+                  class="btn text-white bg-primary border border-primary rounded rounded-pill py-4 px-4"
+                >
+                  Keşfet
+                  <i class="fa-solid fa-circle-arrow-right"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flowers">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 text-white py-4 px-4">
+            <div
+              class="flw-content bg-danger px-5 py-5 d-flex align-items-center"
+            >
+              <div class="d-flex flex-column-reverse">
+                <h4 class="fs-6 fw-light">
+                  Gelinliklerle uyumlu ve özel günler için tasarlanmış çiçek
+                  tacı modelleri bulunur.
+                </h4>
+                <h3>Gelin Koleksiyonu</h3>
+              </div>
+              <img class="img-fluid" src="./assets/img/1.svg" alt="flw_1" />
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 text-white py-4 px-4">
+            <div
+              class="flw-content bg-danger px-5 py-5 d-flex align-items-center"
+            >
+              <div class="d-flex flex-column-reverse">
+                <h4 class="fs-6 fw-light">
+                  Mevsimlere özel çiçek tacı modelleri bulunur. İlkbahar, yaz,
+                  sonbahar ve kış temalı çiçek tacı tasarımları mevsimlere uygun
+                  çiçeklerle ve renklerle oluşturulmuş olabilir.
+                </h4>
+                <h3>Mevsimlere Göre Koleksiyon</h3>
+              </div>
+              <img class="img-fluid" src="./assets/img/2.svg" alt="flw_2" />
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 text-white py-4 px-4">
+            <div
+              class="flw-content bg-success px-5 py-5 d-flex align-items-center"
+            >
+              <div class="d-flex flex-column-reverse">
+                <h4 class="fs-6 fw-light">
+                  Minimalist ve modern tarzda tasarlanmış sade ve şık çiçek tacı
+                  modelleri bulunur.
+                </h4>
+                <h3>Minimalist Ve Modern Koleksiyon</h3>
+              </div>
+              <img class="img-fluid" src="./assets/img/3.svg" alt="flw_3" />
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 text-white py-4 px-4">
+            <div
+              class="flw-content bg-info px-5 py-5 d-flex align-items-center"
+            >
+              <div class="d-flex flex-column-reverse">
+                <h4 class="fs-6 fw-light">
+                  Eski zamanlardan esinlenilmiş romantik ve vintage tarzda çiçek
+                  tacı modelleri bulunur.
+                </h4>
+                <h3>Vintage Tarzı Koleksiyon</h3>
+              </div>
+              <img class="img-fluid" src="./assets/img/4.svg" alt="flw_4" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flower-quality">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-5 mb-5">
+            <img class="img-fluid" src="./assets/img/img2.svg" alt="" />
+          </div>
+          <div class="col-12 col-md-8 col-lg-7 my-auto">
+            <h1 class="fw-bold">Çiçek Kalitesi</h1>
+            <h1 class="fw-bold text-end">Önceliğimizdir</h1>
+            <p class="fs-6 mt-5">
+              Çiçeklerin kalitesi, onların güzelliğini, tazeliğini ve ömrünü
+              doğrudan etkiler. Bu yüzden biz, çiçek seçiminde ve bakımında en
+              yüksek standartları benimsiyoruz. Her bir çiçek, özenle seçilmiş,
+              en iyi çiftliklerden gelmektedir. Çünkü biz, size sadece çiçek
+              değil, bir parça doğa sunmak istiyoruz. Çünkü doğanın bize sunduğu
+              bu eşsiz güzelliği en sizlere en taze, en canlı ve en güzel
+              çiçekleri sunarak, her anınızı özel kılmak için buradayız. Doğanın
+              zarafetiyle buluşmak ve unutulmaz anlar yaratmak için bize
+              katılın.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sustainability mb-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-8 my-auto">
+            <h1 class="fw-bold">Sürdürülebilirlik ve</h1>
+            <h1 class="fw-bold">Doğaya Saygı</h1>
+            <p class="fs-6 mt-5">
+              Doğanın bize sunduğu bu eşsiz güzellikleri korumak ve gelecek
+              nesillere aktarmak bizim için önemlidir. Bu nedenle,
+              çiçeklerimizin yetiştirilme ve işlenme sürecinde sürdürülebilirlik
+              ve çevre dostu yaklaşımları benimseme-kteyiz.Çiçek tacı
+              tasarımlarımızda kullanılan çiçekler ve diğer doğal
+              malzemeler,sertifikalı organik kaynaklardan temin edilir. Kimyasal
+              gübreler veya zararlı tarım ilaçları kullanılmadan yetiştirilen
+              çiçekler,doğanın dengesini korumaya ve biyoçeşitliliği
+              desteklemeye yardımcı olur.
+            </p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <img class="img-fluid" src="./assets/img/img5.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section
+      class="bg-flower py-5"
+      style="background-image: url(./assets/img/bg_flower.svg)"
+    >
+      <div class="container py-5" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h3>Ut fugiat aliquam aut non</h3>
+            <p>
+             "Kadınların güzelliği, doğanın renkli çiçekleriyle birleştiğinde, gerçek bir büyüye dönüşür."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="flower py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-5 mb-5 mt-auto p-0">
+            <img class="img-fluid" src="./assets/img/img6.svg" alt="" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-7 my-auto">
+            <h1 class="fw-bold">Özenle Hazırlanan</h1>
+            <h1 class="fw-bold text-center">Çiçek Tacı</h1>
+            <h1 class="fw-bold text-end">Tasarımları</h1>
+            <p class="fs-6 mt-4">
+              Her bir çiçek tacı, müşterilerimizin benzersiz tarzına ve
+              tercihlerine uygun olarak özel olarak tasarlanabilir. Renkler,
+              boyutlar ve stiller konusunda geniş bir seçenek sunarak, herkesin
+              hayalindeki çiçek tacını gerçeğe dönüştürmek için çaba sarf
+              ediyoruz.Ayrıca çiçeklerin kırılganlığına ve doğal yapısına saygı
+              göstererek, tasarımın her aşamasında dikkatli bir işleme süreci
+              uygularız. Her bir yaprak ve petal, özenle işlenir ve bir araya
+              getirilir, böylece doğanın zarafetiyle buluşan eşsiz bir görünüm
+              elde edilir.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flowers-card py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="section-title text-center mb-4 pb-2">
+              <h4 class="title mb-4">Çiçek Tacı Modellerimiz</h4>
+              <p class="text-muted para-desc mx-auto mb-0">
+                Kadınların güzelliği, doğanın renkli çiçekleriyle birleştiğinde,
+                gerçek bir büyüye dönüşür
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gy-3">
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid bg-white text-center">
+              <div class="product-image position-relative overflow-hidden">
+                <a href="#" class="image d-block">
+                  <img class="pic-1" src="./assets/img/1.png" />
+                  <img class="pic-2" src="./assets/img/11.png" />
+                </a>
+                <a
+                  href="#"
+                  class="product-like-icon"
+                  data-tip="Add to Wishlist"
+                >
+                  <i class="far fa-heart"></i>
+                </a>
+                <ul
+                  class="product-links m-0 p-0 list-unstyled opacity-100 position-absolute"
+                >
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fas fa-shopping-cart"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-random"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Women's Top</a></h3>
+                <div class="price">$75.99</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid bg-white text-center">
+              <div class="product-image position-relative overflow-hidden">
+                <a href="#" class="image d-block">
+                  <img class="pic-1" src="./assets/img/12.png" />
+                  <img class="pic-2" src="./assets/img/4.png" />
+                </a>
+                <span class="product-sale-label">Sale</span>
+                <a
+                  href="#"
+                  class="product-like-icon"
+                  data-tip="Add to Wishlist"
+                >
+                  <i class="far fa-heart"></i>
+                </a>
+                <ul
+                  class="product-links m-0 p-0 list-unstyled opacity-100 position-absolute"
+                >
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fas fa-shopping-cart"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-random"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Blue Flower Crown</a></h3>
+                <div class="price"><span>$86.33</span> $71.55</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid bg-white text-center">
+              <div class="product-image position-relative overflow-hidden">
+                <a href="#" class="image d-block">
+                  <img class="pic-1" src="./assets/img/06.jpeg" />
+                  <img class="pic-2" src="./assets/img/07.jpeg" />
+                </a>
+                <span class="product-sale-label">Sale</span>
+                <a
+                  href="#"
+                  class="product-like-icon"
+                  data-tip="Add to Wishlist"
+                >
+                  <i class="far fa-heart"></i>
+                </a>
+                <ul
+                  class="product-links m-0 p-0 list-unstyled opacity-100 position-absolute"
+                >
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fas fa-shopping-cart"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-random"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Boho Orange Flower Crown </a></h3>
+                <div class="price"><span>$86.33</span> $71.55</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid bg-white text-center">
+              <div class="product-image position-relative overflow-hidden">
+                <a href="#" class="image d-block">
+                  <img class="pic-1" src="./assets/img/03.jpeg" />
+                  <img class="pic-2" src="./assets/img/04.jpeg" />
+                </a>
+                <span class="product-sale-label">Sale</span>
+                <a
+                  href="#"
+                  class="product-like-icon"
+                  data-tip="Add to Wishlist"
+                >
+                  <i class="far fa-heart"></i>
+                </a>
+                <ul
+                  class="product-links m-0 p-0 list-unstyled opacity-100 position-absolute"
+                >
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fas fa-shopping-cart"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-random"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Pink Flower Crown</a></h3>
+                <div class="price"><span>$86.33</span> $71.55</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid bg-white text-center">
+              <div class="product-image position-relative overflow-hidden">
+                <a href="#" class="image d-block">
+                  <img class="pic-1" src="./assets/img/magenta.jpeg" />
+                  <img class="pic-2" src="./assets/img/1.png" />
+                </a>
+                <span class="product-sale-label">Sale</span>
+                <a
+                  href="#"
+                  class="product-like-icon"
+                  data-tip="Add to Wishlist"
+                >
+                  <i class="far fa-heart"></i>
+                </a>
+                <ul
+                  class="product-links m-0 p-0 list-unstyled opacity-100 position-absolute"
+                >
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fas fa-shopping-cart"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-random"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Peony Flower Crown</a></h3>
+                <div class="price"><span>$86.33</span> $71.55</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid bg-white text-center">
+              <div class="product-image position-relative overflow-hidden">
+                <a href="#" class="image d-block">
+                  <img class="pic-1" src="./assets/img/01.jpeg" />
+                  <img class="pic-2" src="./assets/img/02.jpeg" />
+                </a>
+                <span class="product-sale-label">Sale</span>
+                <a
+                  href="#"
+                  class="product-like-icon"
+                  data-tip="Add to Wishlist"
+                >
+                  <i class="far fa-heart"></i>
+                </a>
+                <ul
+                  class="product-links m-0 p-0 list-unstyled opacity-100 position-absolute"
+                >
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fas fa-shopping-cart"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-random"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">Dried Flower Crown</a></h3>
+                <div class="price"><span>$86.33</span> $71.55</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid bg-white text-center">
+              <div class="product-image position-relative overflow-hidden">
+                <a href="#" class="image d-block">
+                  <img class="pic-1" src="./assets/img/9.jpeg" />
+                  <img class="pic-2" src="./assets/img/51.jpeg" />
+                </a>
+                <span class="product-sale-label">Sale</span>
+                <a
+                  href="#"
+                  class="product-like-icon"
+                  data-tip="Add to Wishlist"
+                >
+                  <i class="far fa-heart"></i>
+                </a>
+                <ul
+                  class="product-links m-0 p-0 list-unstyled opacity-100 position-absolute"
+                >
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fas fa-shopping-cart"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-random"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-content">
+                <h3 class="title"><a href="#">MeadBow Flower Crown</a></h3>
+                <div class="price"><span>$86.33</span> $71.55</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="product-grid bg-white text-center">
+              <div class="product-image position-relative overflow-hidden">
+                <a href="#" class="image d-block">
+                  <img class="pic-1" src="./assets/img/88.jpeg" />
+                  <img class="pic-2" src="./assets/img/88.jpeg" />
+                </a>
+                <span class="product-sale-label">Sale</span>
+                <a
+                  href="#"
+                  class="product-like-icon"
+                  data-tip="Add to Wishlist"
+                >
+                  <i class="far fa-heart"></i>
+                </a>
+                <ul
+                  class="product-links m-0 p-0 list-unstyled opacity-100 position-absolute"
+                >
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fas fa-shopping-cart"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white bg-primary d-block rounded rounded-circle"
+                      href="#"
+                      ><i class="fa fa-random"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-content">
+                <h3 class="title">
+                  <a href="#">Breathtaking Pink Flower Crown</a>
+                </h3>
+                <div class="price"><span>$86.33</span> $71.55</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-team py-5">
+      <div class="container py-5">
+        <div class="row text-center mt-5 mb-3">
+          <h1 class="fw-bold mb-5">Uzman Ekibimiz</h1>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-3 text-center">
+            <div class="card-content">
+              <img
+                src="https://rosebud.qodeinteractive.com/wp-content/uploads/2018/02/team-3.jpg"
+                alt="person"
+                class="img-fluid"
+              />
+              <div class="card-info mt-4">
+                <h5 class="card-title">AMELY HUNTER</h5>
+                <p class="card-text text-primary">Kurucu</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3 text-center">
+            <div class="card-content">
+              <img
+                src="	https://rosebud.qodeinteractive.com/wp-content/uploads/2018/02/team-4.jpg"
+                alt="person"
+                class="img-fluid"
+              />
+              <div class="card-info mt-4">
+                <h5 class="card-title">AMBER GREEN</h5>
+                <p class="card-text text-primary">Tasarımcı</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3 text-center">
+            <div class="card-content">
+              <img
+                src="	https://rosebud.qodeinteractive.com/wp-content/uploads/2018/02/team-2.jpg"
+                alt="person"
+                class="img-fluid"
+              />
+              <div class="card-info mt-4">
+                <h5 class="card-title">EMILY ROBİNSON</h5>
+                <p class="card-text text-primary">ÇİÇEKÇİ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="text-white">
+              <h4 class="mb-3">Kategoriler</h4>
+              <ul class="list-unstyled">
+                <li class="py-1">
+                  <a href="#" class="text-decoration-none text-white-50 fs-6"
+                    >Gelin Kolkesiyonu</a
+                  >
+                </li>
+                <li class="py-1">
+                  <a href="#" class="text-decoration-none text-white-50 fs-6"
+                    >Vintage Tarzı Koleksiyon</a
+                  >
+                </li>
+                <li class="py-1">
+                  <a href="#" class="text-decoration-none text-white-50 fs-6"
+                    >Minimalist ve Modern Koleksiyon</a
+                  >
+                </li>
+                <li class="py-1">
+                  <a href="#" class="text-decoration-none text-white-50 fs-6"
+                    >Mevsimlere Göre Koleksiyon</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="text-white pe-5">
+              <h4 class="mb-4">Hakkımızda</h4>
+              <p class="text-white-50">
+                Flower Crown, doğanın güzelliklerini özgün ve el yapımı çiçek
+                tacı tasarımlarıyla buluşturan bir markadır. Her bir çiçek tacı,
+                sevgiyle ve özenle hazırlanır, sizin özel anlarınızı
+                renklendirmek için bekler.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="row mb-4">
+              <h4 class="text-white">Instagram Feed</h4>
+            </div>
+            <div class="row gy-3">
+              <div class="col-12 col-md-4 col-lg-4">
+                <img class="img-fluid" src="./assets/img/ft.jpeg" alt="" />
+              </div>
+              <div class="col-12 col-md-4 col-lg-4">
+                <img class="img-fluid" src="./assets/img/ft2.jpeg" alt="" />
+              </div>
+              <div class="col-12 col-md-4 col-lg-4">
+                <img class="img-fluid" src="./assets/img/38.png" alt="" />
+              </div>
+              <div class="col-12 col-md-4 col-lg-4">
+                <img class="img-fluid" src="./assets/img/ft5.jpeg" alt="" />
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-4">
+                <img class="img-fluid" src="./assets/img/ft33.jpeg" alt="" />
+              </div>
+              <div class="col-12 col-md-4 col-lg-4">
+                <img class="img-fluid" src="./assets/img/40.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row py-5 mt-3">
+          <div class="col-12 col-md-10">
+            <p class="text-white-50">
+              Copyright ©2024 Tüm Hakları Saklıdır | Şevval Erhan
+              <span class="text-primary"
+                ><i class="fa-regular fa-heart"></i
+              ></span>
+              by <span class="text-primary">Turkcell</span>
+            </p>
+          </div>
+          <div class="col-12 col-md-2 d-flex gap-3">
+            <a
+              href="#"
+              class="text-center fs-5 align-self-center text-white footer-logo"
+              ><i class="fa-brands fa-facebook-f p-2"></i
+            ></a>
+            <a
+              href="#"
+              class="text-center fs-5 align-self-center text-white footer-logo"
+              ><i class="fa-brands fa-twitter p-2"></i
+            ></a>
+            <a
+              href="#"
+              class="text-center fs-5 align-self-center text-white footer-logo"
+              ><i class="fa-brands fa-dribbble p-2"></i
+            ></a>
+            <a
+              href="#"
+              class="text-center fs-5 align-self-center text-white footer-logo"
+              ><i class="fa-brands fa-behance p-2"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
