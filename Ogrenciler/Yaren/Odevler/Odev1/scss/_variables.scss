@@ -1,0 +1,37 @@
+$custom-colors: (
+  "purple": #4d4a85,
+  "cored": #ac5040,
+  "orangeish": #ee8661,
+  "naboo-blue": #7bd3ea,
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$h12-font-size: $font-size-base * 0.75;
+$h14-font-size: $font-size-base * 0.9;
+$h20-font-size: $font-size-base * 1.25;
+$h25-font-size: $font-size-base * 1.75;
+$h36-font-size: $font-size-base * 2.25;
+$custom-sizes: (
+  12: $h12-font-size,
+  14: $h14-font-size,
+  20: $h20-font-size,
+  25: $h25-font-size,
+  36: $h36-font-size,
+);
+$font-sizes: map-merge($font-sizes, $custom-sizes);
+
+$custom-spacers: (
+  20: $spacer * 1.25,
+  30: $spacer * 1.9,
+  40: $spacer * 2.5,
+  60: $spacer * 3.75,
+  120: $spacer * 7.5,
+  225: $spacer * 10,
+);
+$spacers: map-merge($spacers, $custom-spacers);
+
+$custom-position-values: (
+  37: 37%,
+  60: 60%,
+);
+$position-values: map-merge($position-values, $custom-position-values);

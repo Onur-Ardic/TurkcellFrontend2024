@@ -1,0 +1,47 @@
+@mixin gradient-directional(
+  $start-color: $primary-700,
+  $end-color: $secondary-800,
+  $hover-start-color: $gray-700,
+  $hover-end-color: $gray-800,
+  $deg: 45deg,
+  $start-percent: 0%,
+  $end-percent: 100%
+) {
+  background-image: linear-gradient($deg, $start-color, $end-color);
+  &:hover {
+    background-image: linear-gradient(
+      $deg,
+      $hover-start-color,
+      $hover-end-color
+    );
+  }
+}
+@mixin background-hover(
+  $bg-color,
+  $text-color,
+  $button-color,
+  $button-text-color,
+  $bg-hover-color,
+  $text-hover-color,
+  $button-hover-color: $primary,
+  $button-hover-text-color: $white
+) {
+  background-color: $bg-color;
+  * {
+    color: $text-color;
+  }
+  button {
+    background-color: $button-color;
+    color: $button-text-color;
+  }
+  &:hover {
+    background-color: $bg-hover-color;
+    * {
+      color: $text-hover-color;
+    }
+    button {
+      background-color: $button-hover-color;
+      color: $button-hover-text-color;
+    }
+  }
+}

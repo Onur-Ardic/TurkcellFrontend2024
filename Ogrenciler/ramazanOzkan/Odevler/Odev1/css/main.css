@@ -12,12 +12,25 @@
   color: #067bc2 !important;
   border-radius: 15px;
 }
+.nav-link img {
+  filter: invert(34%) sepia(98%) saturate(874%) hue-rotate(171deg) brightness(92%) contrast(97%);
+}
 .nav-link:hover {
   color: white !important;
   background-color: #067bc2 !important;
 }
-.nav-link:hover .bi-person {
-  fill: white !important;
+.nav-link:hover img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(317deg) brightness(104%) contrast(101%);
+}
+
+.card {
+  overflow: hidden;
+}
+.card img {
+  transition: 0.8 all ease;
+}
+.card:hover img {
+  scale: 1.1;
 }
 
 /*!
@@ -11871,17 +11884,41 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none2;
+}
+
 .logo {
-  height: 75px;
+  height: 120px;
   width: 120px;
+}
+
+.bg-grey {
+  background-color: #C0C0C0;
 }
 
 .bg-color-blue2 {
   background-color: #84bcda;
 }
 
+.bg-color-yellow {
+  background-color: #ecc30b;
+}
+
+.color-blue2 {
+  color: #84bcda;
+}
+
+.color-blue {
+  color: #067bc2;
+}
+
+.color-white {
+  color: #fff;
+}
+
 .category-btn {
-  color: white;
+  color: #fff;
   background-color: #067bc2;
   height: 37.6px;
   width: 110.6px;
@@ -11921,17 +11958,124 @@ textarea.form-control-lg {
   z-index: 1;
 }
 
-.img-div {
+.img-div, .hunting-img, .categories {
   background-image: url("../img/tanıtım.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
+  color: #fff;
 }
 
 .kampanya img {
-  width: 70%;
+  width: 60%;
   border-radius: 15px;
+}
+.kampanya ul li {
+  list-style: none;
+}
+.kampanya ul li img {
+  width: 20px;
+  margin-right: 15px;
+}
+
+.categories {
+  background-image: url("../img/bg1.jpeg");
+  border-radius: 40px;
+  padding: 16px;
+  gap: 16px;
+}
+
+.main-product img {
+  width: 100%;
+  margin: 50px 0px;
+  border-radius: 20px;
+  max-height: 766px;
+}
+
+.other-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.other-products a {
+  display: block;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.other-products a img {
+  width: 100%;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  max-height: 375px;
+}
+.other-products a img:hover {
+  transform: scale(1.2);
+}
+
+.section-5 .card {
+  border: 0;
+}
+
+.section-6 .qr {
+  width: 64px;
+  height: 64px;
+}
+.section-6 a {
+  color: black;
+  text-decoration: none;
+}
+.section-6 .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.markalar img {
+  width: 150px;
+  height: 150px;
+}
+
+.illustration img {
+  filter: invert(34%) sepia(98%) saturate(874%) hue-rotate(171deg) brightness(92%) contrast(97%);
+}
+
+.lnr {
+  font-family: Linearicons-Free;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hunting-img {
+  background-image: url("../img/hunting.jpg");
+  height: 70vh;
+}
+
+@media screen and (max-width: 768px) {
+  .media-col {
+    flex-direction: column;
+  }
+  .media-col-reverse {
+    flex-direction: column-reverse;
+  }
+}
+.carousel-inner .carousel-item {
+  position: relative;
+}
+.carousel-inner .carousel-item a {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.product-detail-big-image {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

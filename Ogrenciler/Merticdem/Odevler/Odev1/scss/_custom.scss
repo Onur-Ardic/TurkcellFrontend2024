@@ -1,0 +1,122 @@
+@mixin color($background, $title) {
+  background-color: $background;
+  color: $title;
+}
+
+.jersey-25-regular {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+img {
+  width: 600px;
+  height: 450px;
+}
+p {
+  color: rgb(122, 122, 122);
+}
+
+.choose-Us {
+  list-style-type: none;
+}
+.bg-color {
+  background-image: radial-gradient(
+    circle,
+    #030504,
+    #0d1915,
+    #102721,
+    #0e3630,
+    #014641
+  );
+}
+.card-color {
+  background-image: radial-gradient(
+    circle,
+    #111b16,
+    #12221d,
+    #102721,
+    #0f3a33,
+    #04504b
+  );
+}
+.card-color:hover {
+  box-shadow: 0px 0px 10px white !important;
+  transition: 0.4s;
+}
+.fs-5 {
+  font-size: 5rem !important;
+}
+.fs-2 {
+  font-size: 2rem !important;
+}
+
+.fs-1 {
+  font-size: 1.5rem !important;
+}
+
+.bg-Section {
+  background-image: url("../Img-3.jpg");
+}
+.bg-About-Us {
+  background-image: url("../Img-4.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.t-color {
+  color: white;
+}
+
+.grid {
+  grid-gap: 25px !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 1000px;
+}
+
+#middle {
+  margin-top: 500px;
+}
+#btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: rgb(53, 59, 59);
+  color: darkgray;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#btn:hover {
+  @include color(#04504b, #fff);
+}
+.zoom:hover {
+  transform: scale(1.1);
+  border-radius: 15px;
+}
+.zoom {
+  transition: 0.2s;
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}

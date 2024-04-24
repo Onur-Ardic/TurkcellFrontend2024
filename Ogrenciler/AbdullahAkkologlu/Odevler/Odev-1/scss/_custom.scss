@@ -1,0 +1,95 @@
+@import "./mixin.scss";
+a {
+  text-decoration: none;
+}
+a,
+button,
+i {
+  cursor: pointer;
+}
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+.navbar-icon {
+  color: white;
+  &:hover {
+    color: $primary;
+  }
+}
+.img-sm {
+  animation: vertical-move 3s infinite ease-in-out;
+}
+#product-detail {
+  .btn-group-colors {
+    label {
+      height: 35px;
+      width: 35px;
+    }
+  }
+}
+#products {
+  .product-card {
+    .card-button {
+      @include gradient-directional($secondary, $primary, $dark, $black);
+    }
+  }
+}
+#why-choose-us {
+  .card {
+    @include background-hover(white, $dark, $primary, white, $primary, white);
+  }
+}
+#partners {
+  .partner-card {
+    filter: grayscale(100%);
+    img {
+      max-height: 90px;
+    }
+  }
+}
+#hero {
+  .hero-left {
+    @extend .img-sm;
+    animation-duration: 5s;
+  }
+  .nav-item {
+    @include background-hover($dark, white, $primary, white, $primary, white);
+  }
+}
+#plans {
+  .popular {
+    scale: 1.1;
+  }
+  .plan {
+    @include background-hover(transparent, $dark, $dark, $white, $dark, $white);
+  }
+}
+#about-us {
+  .our-team {
+    cursor: pointer;
+    .team-member {
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px -3px;
+        scale: 1.02;
+      }
+    }
+  }
+}
+@media (max-width: 1002px) {
+  #plans {
+    .popular {
+      scale: 1;
+    }
+  }
+}
+@keyframes vertical-move {
+  0% {
+    transform: translateY(-0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(-0px);
+  }
+}

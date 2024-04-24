@@ -1,0 +1,94 @@
+$tropical: rgba(2, 130, 146, 0.2);
+$milk-white: #fafcff;
+$charcoal: rgb(22, 22, 22);
+$powder-blue: rgb(174, 202, 205);
+$tropical-lagoon: rgb(2, 130, 146);
+$black: rgb(8, 9, 3);
+$gradientColor: linear-gradient(
+  to right,
+  rgba(2, 130, 146, 1) 0%,
+  rgba(249, 169, 104, 1) 50%,
+  rgba(245, 86, 37, 1) 100%
+);
+.nav-top {
+  a {
+    cursor: pointer;
+  }
+}
+.carousel-item {
+  img {
+    max-height: 85vh;
+  }
+}
+
+.our-categories {
+  .list-group-item {
+    border-radius: 50px;
+    transition: all 1s ease;
+    &:hover {
+      background-color: $tropical !important;
+    }
+  }
+}
+
+.our-product {
+  img {
+    box-shadow: rgba(50, 50, 93, 0.4) 5px 5px, rgba(50, 50, 93, 0.3) 8px 8px,
+      rgba(50, 50, 93, 0.2) 12px 12px, rgba(50, 50, 93, 0.1) 15px 15px;
+    opacity: 0.9;
+    transition: all 1.5s ease;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.our-sellers {
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: all 1.5s ease;
+    &:hover {
+      filter: blur(1px);
+    }
+  }
+}
+
+@mixin header($size, $color, $weight, $lineHeight) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+
+@mixin button($padding, $borderRad, $color, $bgColor, $fontSize) {
+  padding: $padding;
+  border-radius: $borderRad;
+  color: $color;
+  background: $bgColor !important;
+  font-size: $fontSize;
+  border: 0;
+}
+
+.btn-buy {
+  @include button(12px 30px, 10px, $milk-white, $black, 15px);
+  transition: all 1.5s ease;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn-soon {
+  @extend .btn-buy;
+}
+
+.product-title {
+  @include header(20px, $charcoal, 400, 1.2);
+}
+a {
+  color: #fafcff;
+}
+.w-35 {
+  width: 35% !important;
+}

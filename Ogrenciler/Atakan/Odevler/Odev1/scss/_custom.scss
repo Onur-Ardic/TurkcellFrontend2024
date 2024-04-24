@@ -1,0 +1,82 @@
+* {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.navbar {
+  .container {
+    .navbar-collapse {
+      flex-grow: 0 !important;
+    }
+  }
+}
+.hero {
+  .second-h1 {
+    font-family: Verdana, sans-serif;
+  }
+}
+.clubs-for-sale {
+  .second-h2 {
+    font-family: Verdana, sans-serif;
+  }
+  .col {
+    .card {
+      width: auto;
+      min-height: 425px;
+      &:hover {
+        background: #198754;
+        color: white;
+      }
+      .image {
+        img {
+          width: auto;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+.prices {
+  .col {
+    .card {
+      background: #6c757d;
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 0;
+      border-left: 0;
+      .list-unstyled {
+        li,
+        h5 {
+          font-family: Verdana, sans-serif;
+        }
+      }
+    }
+    .card {
+      border-top: 1px solid transparent;
+    }
+    &:hover {
+      .card {
+        border-top: 1px solid #198754;
+      }
+      .card-title,
+      .mo {
+        color: #0dcaf0 !important;
+      }
+    }
+  }
+}
+.help {
+  .second-h2 {
+    font-family: Verdana, sans-serif;
+  }
+  .col {
+    .card {
+      width: auto;
+      min-height: 250px;
+      h3 {
+        font-family: Verdana, sans-serif;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap.scss"; 
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.buttons i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.badge {
+    font-weight: 400;
+    line-height: 13px;
+}
+
+.saka-footer .nav-link {
+    color: #ddd;
+}
+
+.products {
+    padding: 60px 0;
+}
+
+.product-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-price {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #dc3545;
+}
+
+.hakkimizda {
+    display: block;
+    color: #4d4d4d;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    orphans: 2;
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    white-space: normal;
+    widows: 2;
+    word-spacing: 0px;
+    -webkit-text-stroke-width: 0px;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
+
+.brands img{
+
+    @media (max-width: 768px) {
+        width: 50px;
+        }
+      }
