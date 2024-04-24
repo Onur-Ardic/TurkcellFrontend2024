@@ -13513,8 +13513,15 @@ p:hover {
   .faq .right-flowers {
     display: none !important;
   }
+  .footer {
+    text-align: center;
+    justify-content: center;
+  }
   .footer .logo .card {
     display: none;
+  }
+  .footer .footer-middle {
+    margin-top: 30px !important;
   }
 }
 @media (max-width: 990px) {
