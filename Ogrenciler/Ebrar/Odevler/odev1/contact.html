@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>SculptArt Contact</title>
+    <title>SculptArt İletişim</title>
   </head>
   <body>
     <header
@@ -144,11 +144,7 @@
     <script>
       (() => {
         "use strict";
-
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
         const forms = document.querySelectorAll(".needs-validation");
-
-        // Loop over them and prevent submission
         Array.from(forms).forEach((form) => {
           form.addEventListener(
             "submit",
@@ -157,7 +153,6 @@
                 event.preventDefault();
                 event.stopPropagation();
               }
-
               form.classList.add("was-validated");
             },
             false
