@@ -1,11 +1,8 @@
 $custom-colors: (
-  "bluish-purple": #6247ea,
-  "original-yellow": #b19e26,
-  "blue-harcoal": #04091e,
+  "purple": #4d4a85,
+  "cored": #ac5040,
+  "orangeish": #ee8661,
   "naboo-blue": #7bd3ea,
-
-  "light-mint": #9cafaa,
-  "milk-white": #fafcff,
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
