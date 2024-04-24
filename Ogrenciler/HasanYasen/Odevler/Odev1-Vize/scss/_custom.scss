@@ -1,0 +1,51 @@
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+body {
+    background-image: url("../assets/body-background.jpg");
+}
+h4 {
+    color: $success;
+}
+nav {
+    .nav-link:hover,
+    .dropdown-item:hover {
+        color: $success;
+    }
+    .lnr {
+        &:hover {
+            color: $success;
+            cursor: pointer;
+        }
+    }
+}
+#home {
+    box-shadow: inset 0 0 0 1000px black;
+    &::before {
+        content: "";
+        background-image: url("../assets/home/home-background.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.15;
+    }
+    .see-more:hover {
+        color: $success;
+    }
+}
+#categories,
+#best-sellers,
+#products {
+    img:hover {
+        transition: all ease 0.3s;
+        transform: scale(1.1);
+    }
+}
+.footer-categories-item:hover {
+    color: $success !important;
+}
