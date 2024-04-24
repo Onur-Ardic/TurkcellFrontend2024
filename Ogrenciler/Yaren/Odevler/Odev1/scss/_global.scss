@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poller+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  color: white;
+  font-family: "Crete Round", static;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@mixin backgroundimg($bgsize, $bgposition, $bgheight) {
+  background-size: $bgsize;
+  background-position: $bgposition;
+  height: $bgheight;
+}
+
+@mixin cardimgsize($imgwidth, $imgheight, $objectfit) {
+  width: $imgwidth;
+  height: $imgheight;
+  object-fit: $objectfit;
+}
