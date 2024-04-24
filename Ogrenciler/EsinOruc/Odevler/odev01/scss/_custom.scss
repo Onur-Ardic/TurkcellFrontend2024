@@ -117,10 +117,15 @@ p {
     }
   }
   .footer {
+    text-align: center;
+    justify-content: center;
     .logo {
       .card {
         display: none;
       }
+    }
+    .footer-middle {
+      margin-top: 30px !important;
     }
   }
 }

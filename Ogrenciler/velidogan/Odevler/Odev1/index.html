@@ -31,7 +31,7 @@
           </button>
           <div class="offcanvas offcanvas-end" id="nav-content">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="img/e-commerce1.png" alt=""></h5>
+              <h5 class="offcanvas-title" id="offcanvas-header"><img src="img/e-commerce1.png" alt=""></h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -295,11 +295,11 @@
           </div>          
         </section>
     </main>
-    <div class="modal fade" id="favorite" tabindex="-1" data-bs-backdrop="static" aria-labelledby="modalHead" aria-hidden="true">
+    <div class="modal fade" id="favorite" tabindex="-1" data-bs-backdrop="static" aria-labelledby="modal-head-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="modalHead">Favoriler</h1>
+            <h1 class="modal-title fs-5" id="modal-head-1">Favoriler</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -334,10 +334,18 @@
           </div>
           <div class="col border-top border-2 p-md-3 p-5">
             <h3>Subscribe</h3>
-            <div class="mt-4">
-              <input type="text" class="form-control" placeholder="Enter your e-mail...">
-              <button class="btn btn-outline-danger mt-2 w-100">Subscribe</button>
-            </div>
+            <form class="needs-validation" novalidate>
+              <div class="mt-4">
+                <input type="email" class="form-control" placeholder="Enter your e-mail..." required>
+                <div class="valid-feedback">
+                  Looks good...
+                </div>
+                <div class="invalid-feedback">
+                  Enter your mail!
+                </div>
+                <button class="btn btn-outline-danger mt-2 w-100">Subscribe</button>
+              </div>
+            </form>            
           </div>
           <div class="col border-top border-2 p-md-3 p-5">
             <h3>Social Links</h3>
@@ -373,6 +381,26 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+    </script>
     <script>
       const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
       const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
