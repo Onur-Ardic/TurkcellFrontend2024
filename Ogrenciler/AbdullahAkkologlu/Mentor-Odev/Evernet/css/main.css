@@ -12686,8 +12686,54 @@ textarea.form-control-lg {
   animation-delay: 2.6s;
 }
 
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.line-height-1 {
+  line-height: 30px;
+}
+
+.navbar {
+  box-shadow: 0px 19px 55px 0px rgba(98, 81, 146, 0.08);
+}
+
 .rotate {
   animation: round-animation 30s infinite linear;
+}
+
+#brands .row {
+  margin-top: -30px;
+}
+#brands .row img {
+  cursor: pointer;
+  opacity: 75%;
+}
+#brands .row img:hover {
+  opacity: 100%;
+}
+
+#exclusive-feature .polygon {
+  background-image: url("../assets/Polygon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#exclusive-feature .card {
+  transition: all 0.3s ease-in-out;
+}
+#exclusive-feature .card .exlusive-card-icon {
+  color: #58468c;
+}
+#exclusive-feature .card:hover {
+  box-shadow: 0px 0px 43px 0px rgba(89, 75, 128, 0.11);
+}
+#exclusive-feature .card:hover .exlusive-card-icon {
+  color: #ff4800;
 }
 
 @keyframes slideInLeft {
