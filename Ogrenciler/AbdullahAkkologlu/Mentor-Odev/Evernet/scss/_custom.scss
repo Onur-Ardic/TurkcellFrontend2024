@@ -1,0 +1,118 @@
+#hero {
+  background-image: url("../assets/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  .slider-overflow {
+    padding-top: 200px;
+    overflow: hidden;
+    .left-side {
+      h1 {
+        animation: slideInLeft 1s;
+      }
+      p {
+        animation: slideInLeft 1s;
+        animation-delay: 0.3s;
+      }
+      button {
+        animation: slideInLeft 1s;
+        animation-delay: 0.6s;
+      }
+    }
+    .right-side {
+      .hero-board {
+        animation: slideInRight 1s;
+        animation-delay: 0.6s;
+      }
+      .hero-man {
+        left: 100px;
+        animation: slideInLeft-Small 1s;
+        animation-delay: 1s;
+      }
+      .cog-img1-container {
+        top: 70px;
+        left: 130px;
+        animation: slideInLeft-Small 1s;
+        animation-delay: 1.4s;
+      }
+      .cog-img2-container {
+        top: 150px;
+        right: 50px;
+        animation: slideInRight 1s;
+        animation-delay: 1.8s;
+      }
+      .cog-img3 {
+        top: 270px;
+        left: 40px;
+        animation: slideInLeft-Small 1s;
+        animation-delay: 2.2s;
+      }
+      .cog-img4 {
+        top: 420px;
+        right: 210px;
+        animation: fadeInUp 1s;
+        animation-delay: 2.6s;
+      }
+    }
+  }
+}
+.rotate {
+  animation: round-animation 30s infinite linear;
+}
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft-Small {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes round-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
