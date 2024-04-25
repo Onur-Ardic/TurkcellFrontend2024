@@ -57,8 +57,50 @@
     }
   }
 }
+a {
+  text-decoration: none;
+}
+a,
+button {
+  cursor: pointer;
+}
+.line-height-1 {
+  line-height: 30px;
+}
+.navbar {
+  box-shadow: 0px 19px 55px 0px rgba(98, 81, 146, 0.08);
+}
 .rotate {
   animation: round-animation 30s infinite linear;
+}
+#brands .row {
+  margin-top: -30px;
+  img {
+    cursor: pointer;
+    opacity: 75%;
+    &:hover {
+      opacity: 100%;
+    }
+  }
+}
+#exclusive-feature {
+  .polygon {
+    background-image: url("../assets/Polygon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .card {
+    transition: all 0.3s ease-in-out;
+    .exlusive-card-icon {
+      color: $secondary;
+    }
+    &:hover {
+      box-shadow: 0px 0px 43px 0px rgba(89, 75, 128, 0.11);
+      .exlusive-card-icon {
+        color: $primary;
+      }
+    }
+  }
 }
 @keyframes slideInLeft {
   0% {
