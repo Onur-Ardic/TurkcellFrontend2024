@@ -1,3 +1,4 @@
+@import "animation.scss";
 #hero {
   background-image: url("../assets/hero-bg.jpg");
   background-repeat: no-repeat;
@@ -102,59 +103,98 @@ button {
     }
   }
 }
-@keyframes slideInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-500px);
+#download-apps {
+  background-image: url("../assets/download_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#powerful-service {
+  .card {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: translateY(-10px);
+    }
   }
-  100% {
-    transform: translateX(0);
+  a {
+    &:hover {
+      color: $primary !important;
+    }
   }
 }
-@keyframes slideInLeft-Small {
-  0% {
-    opacity: 0;
-    transform: translateX(-200px);
+#most-powerful-software {
+  .bg-round {
+    width: 200px;
+    height: 200px;
+    top: -60px;
+    right: 30px;
+    background-color: #f1f0f6;
+    animation: scaleUpDown 5s infinite ease-in-out;
   }
-  100% {
-    transform: translateX(0);
+  .bg-round-sm {
+    width: 100px;
+    height: 100px;
+    bottom: -40px;
+    left: -30px;
+    background-color: #f1f0f6;
+    animation: scaleUpDown 5s infinite ease-in-out;
   }
-}
-
-@keyframes round-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    opacity: 0;
-    transform: translateY(-200px);
-  }
-  100% {
-    transform: translateY(0);
+  .software-img-sm {
+    animation: vertical-move 5s infinite ease-in-out;
   }
 }
-@keyframes slideInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(500px);
-  }
-  100% {
-    transform: translateX(0);
+#plans {
+  .card {
+    &:hover {
+      transform: translateY(-10px);
+      transition: all 0.3s ease-in-out;
+      a {
+        background-color: white !important;
+        color: $primary !important;
+        border: $primary 1px solid;
+      }
+    }
   }
 }
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
+#our-blog {
+  .card {
+    .blog-card-header {
+      &:hover {
+        color: $primary !important;
+      }
+    }
+    &:hover {
+      .blog-card-icon-span {
+        background-color: $primary;
+        .blog-card-icon {
+          color: white !important;
+        }
+      }
+    }
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+}
+#footer-top {
+  background-image: url("../assets/footer_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .newsletter {
+    .newsletter-icon {
+      &::after {
+        content: "";
+        position: absolute;
+        left: -62px;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 56px 50px;
+        border-color: transparent transparent #1a191c transparent;
+      }
+    }
+  }
+  .social-icon {
+    width: 40px;
+    height: 40px;
   }
 }

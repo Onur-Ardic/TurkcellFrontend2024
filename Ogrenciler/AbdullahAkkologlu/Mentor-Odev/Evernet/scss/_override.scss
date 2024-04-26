@@ -1,17 +1,20 @@
 $font-family-base: "Poppins", sans-serif;
 $primary: #ff4800;
 $secondary: #58468c;
+$info: #f6f6f7;
+$dark: #161517;
+$dark-bg-subtle: #0f0e0f;
 $navbar-light-color: $secondary;
 $navbar-light-hover-color: $primary;
 $navbar-light-active-color: $primary;
 
 $font-size-base: 1rem;
-$h1-font-size: $font-size-base * 3.375;
+$h1-font-size: $font-size-base * 3.375; //54px
 $h2-font-size: $font-size-base * 2.25; //36px
-$h3-font-size: $font-size-base * 1.75;
-$h4-font-size: $font-size-base * 1.25;
+$h3-font-size: $font-size-base * 2.875; //46px
+$h4-font-size: $font-size-base * 1.5; //20px
 $h5-font-size: $font-size-base;
-$h6-font-size: $font-size-base * 0.85;
+$h6-font-size: $font-size-base * 0.85; //13.6px
 
 $spacer: 1rem;
 $spacers: (
@@ -24,3 +27,4 @@ $spacers: (
   6: $spacer * 6.25,
   7: $spacer * 12,
 );
+$enable-negative-margins: true;
