@@ -75,12 +75,19 @@ var'a dışarıdan her yerde erişilebilir
 push metodları ile const çalışır
 
 !!!!
-Javacsriptin iki aşaması var  
+Javacsriptin iki aşaması var
+
 1. okuma aşaması.
-Değişken fonksiyon falan var mı varsa tüm fonksyion ve değişkenleri belleğe atıyor fonksiyonları olduğu gibi tutuyor değerler atanmışsa değeriyle yoksa undefined olarak tutuyor.
+   Değişken fonksiyon falan var mı varsa tüm fonksyion ve değişkenleri belleğe atıyor fonksiyonları olduğu gibi tutuyor değerler atanmışsa değeriyle yoksa undefined olarak tutuyor.
 
 Sonra motor javascript dosyasını çalışıtırıyo
 bunun amacı bellek yönetimi
 
 let'Te hoisting geçerli değil sadece var'Da geçerli
 
+Ayrıca, let ve const anahtar kelimeleri ile bildirilen değişkenler de hoist edilir, ancak onlar "Temporal Dead Zone" adı verilen bir bölgede kalırlar bildirimlerine kadar, bu yüzden onları bildirimlerinden önce kullanmaya çalışırsanız bir hata alırsınız.
+
+İki eşittir sadece değeri kıyaslar, 3 tane eşittir veri tipini de kıyaslar
+
+
+İki eşit değil değeri kıyaslar, 3 tane eşit değil tipi de hesaplar
