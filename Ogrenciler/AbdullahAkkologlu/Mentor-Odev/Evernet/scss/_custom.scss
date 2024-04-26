@@ -1,6 +1,6 @@
 @import "animation.scss";
 #hero {
-  background-image: url("../assets/hero-bg.jpg");
+  background-image: url("https://themebeyond.com/html/evernet/img/slider/slider_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -174,7 +174,7 @@ button {
   }
 }
 #footer-top {
-  background-image: url("../assets/footer_bg.jpg");
+  background-image: url("https://themebeyond.com/html/evernet/img/bg/footer_bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -196,5 +196,14 @@ button {
   .social-icon {
     width: 40px;
     height: 40px;
+  }
+  .border-dashed {
+    border-bottom: 1px dashed #838383;
+  }
+  .useful-link {
+    color: #969696;
+    &:hover {
+      color: $primary;
+    }
   }
 }
