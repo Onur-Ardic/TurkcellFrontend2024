@@ -1,3 +1,7 @@
 29-04-2023: Animasyon giris
 05-04-2023: Scss ve sass giris
 15-04-2024: Bootstrap giris
+17-04-2024: Scss ile Bootstrap'e nasil mudahele edebilecegimiz gosterildi(Override)
+19-04-2024: Vize Odev 1
+22-04-2024: Javascripte giris
+24-04-2024: Vize Odev 1 sunum yapildi
