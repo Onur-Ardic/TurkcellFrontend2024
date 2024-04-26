@@ -15,10 +15,18 @@
 // var secondNumber = "20";
 // console.log(firstNumaber - secondNumber);
 
-// Hoisting
-// var firstNumaber;
-// console.log(firstNumaber);
-// firstNumaber = 10;
+//! Hoisting
+//? bu sekilde undefined dönecek fakat
+// var firstNumber;
+// console.log(firstNumber);
+// firstNumber = 10;
+//? bu sekilde ise hoisting uygulanacak(jsnin motoru ile alakali, sadece var icin gecerli let-const'da ise yaram)
+// firstNumber2=10;
+// var firstNumber2;
+// console.log(firstNumber2)
+//* bunun sebebi ise jsnin motoru once sayfa yuklenmeden tum degiskenleri hafizaya aliyor ondan sonra site yuklenirken bu degiskenlere eger tanimlanmis degerler var ise onlara atama yapiyor boylece hoisting kavrami ortaya cikiyor
+
+//burada da hoisting uygulaniyor.
 // a();
 // function a() {
 //   console.log("a fonksiyonu cagrildi");
@@ -27,7 +35,7 @@
 // Boolean (true, false)
 
 // var isAdult = false;
-
+// let age = "18"
 // if (age) {
 //   age >= 18 ? (isAdult = true) : (isAdult = false);
 //   console.log(isAdult ? "Reşit" : "Reşit Değil");
@@ -36,9 +44,11 @@
 // Undefined Veri Tipleri - Tanımsız
 // var useName;
 // console.log(useName);
-// console.log(typeof useName);
+// console.log("type: ",typeof useName);
 
 // Null - Boş değer
+// * null bir obje degildir fakat typeof operatörü ile kontrol edildiğinde null, "object" olarak görünür.
+// * Bu, JavaScript'in eski bir hata ve uyumluluk sorunudur. Daha sonra fark edilse de degistirilmemistir
 // var isNull = null;
 // console.log(isNull);
 // console.log(typeof isNull);
@@ -156,9 +166,10 @@
 
 // let sonuc;
 // sonuc = Math.PI;
-// sonuc = Math.floor(3.8);
-// sonuc = Math.ceil(3.1);
-// sonuc = Math.round(3.4);
+// sonuc = Math.floor(3.8); //asagi yuvarlar
+// sonuc = Math.ceil(3.1); //yukari yuvarlar
+// sonuc = Math.round(3.4); //3e yuvarlar
+// sonuc = Math.round(3.6); //4e yuvarlar
 // sonuc = Math.sqrt(64);
 // sonuc = Math.floor(Math.random() * 100);
 // console.log(sonuc, typeof sonuc);
