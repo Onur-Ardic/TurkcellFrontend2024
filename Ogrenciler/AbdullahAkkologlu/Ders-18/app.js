@@ -1,26 +1,30 @@
-let randomNumber = Math.floor(Math.random() * 100) + 1;
-let guessCount = 1;
-for (let i = 0; ; i++) {
-  let guess = parseInt(prompt("Enter your guess: "));
-  if (randomNumber == guess) {
-    break;
-  } else {
-    console.log("Yanlış");
-    if (guess > randomNumber) {
-      console.log("Tahminiz büyük");
+function guessGame() {
+  let randomNumber = Math.floor(Math.random() * 100) + 1;
+  let guessCount = 0;
+  for (let i = 0; ; i++) {
+    let guess = Number(prompt("Tahminizi giriniz: "));
+    guessCount += 1;
+    if (isNaN(guess) || guess < 1 || guess > 100) {
+      console.log(
+        `${guessCount}. deneme: Geçersiz giriş. Lütfen 1 ile 100 arasında bir sayı giriniz.`
+      );
+      continue;
+    }
+    if (guess === randomNumber) {
+      break;
+    } else if (guess > randomNumber) {
+      console.log(`${guessCount}. deneme: Yanlış. Tahmininizi küçültünüz.`);
     } else {
-      console.log("Tahminiz küçük");
+      console.log(`${guessCount}. deneme: Yanlış. Tahmininizi büyütünüz.`);
     }
   }
-  guessCount += 1;
-}
-
-if (guessCount < 5) {
-  console.log("Mükemmel" + " " + guessCount + " " + "seferde bildiniz.");
-} else if (guessCount < 10) {
-  console.log("İyi" + " " + guessCount + " " + "seferde bildiniz.");
-} else if (guessCount < 15) {
-  console.log("Normal" + " " + guessCount + " " + "seferde bildiniz.");
-} else {
-  console.log("Kötü" + " " + guessCount + " " + "seferde bildiniz.");
+  if (guessCount < 3) {
+    console.log(`Mükemmel: ${guessCount} seferde bildiniz.`);
+  } else if (guessCount < 5) {
+    console.log(`İyi: ${guessCount} seferde bildiniz.`);
+  } else if (guessCount < 8) {
+    console.log(`Normal: ${guessCount} seferde bildiniz.`);
+  } else {
+    console.log(`Kötü: ${guessCount} seferde bildiniz.`);
+  }
 }
