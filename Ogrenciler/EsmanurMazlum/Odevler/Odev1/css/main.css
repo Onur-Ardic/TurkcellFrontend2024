@@ -11910,6 +11910,7 @@ section {
   opacity: 0.5;
 }
 .can-you-buy .category-header:hover {
+  cursor: pointer;
   color: #05668D;
 }
 .can-you-buy .category-content .img {
@@ -11971,7 +11972,7 @@ footer .logo {
   width: 200px;
   height: 200px;
 }
-footer a {
+footer .icons a {
   font-size: 14px;
   line-height: 30px;
   color: rgb(30, 30, 30);
@@ -11982,9 +11983,15 @@ footer a {
   text-align: center;
   display: inline-block;
 }
-footer a:hover {
+footer .icons a:hover {
   background-color: #05668D;
   color: #F8F9FA;
+}
+footer .products a {
+  color: #F8F9FA;
+}
+footer .products a:hover {
+  color: #05668D;
 }
 
 .see-more .col-lg-2 .see-more-item {

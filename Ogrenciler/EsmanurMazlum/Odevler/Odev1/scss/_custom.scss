@@ -80,6 +80,7 @@ section {
         opacity: 0.5;
 
         &:hover {
+            cursor: pointer;
             color: $primary;
         }
     }
@@ -161,7 +162,7 @@ footer {
         height: 200px;
     }
 
-    a {
+    .icons a {
         font-size: 14px;
         line-height: 30px;
         color: $dark;
@@ -175,6 +176,13 @@ footer {
         &:hover {
             background-color: $primary;
             color: $secondary;
+        }
+    }
+
+    .products a{
+        color: $secondary;
+        &:hover{
+            color: $primary;
         }
     }
 }
