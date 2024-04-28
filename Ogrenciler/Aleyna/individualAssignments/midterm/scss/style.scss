@@ -42,10 +42,12 @@
   .stone-card-wrapper {
     .stone-left {
       background-image: url("../assets/stone.jpg");
+      background-position: center;
       @include wrapimage;
     }
     .stone-right {
       background-image: url("../assets/jewellery.jpg");
+      background-position: center;
       @include wrapimage;
     }
 
