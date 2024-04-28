@@ -250,11 +250,11 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: calc(1.26rem + 0.12vw);
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 }
 
@@ -8700,7 +8700,7 @@ textarea.form-control-lg {
 }
 
 .fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: calc(1.26rem + 0.12vw) !important;
 }
 
 .fs-5 {
@@ -13615,7 +13615,7 @@ textarea.form-control-lg {
     font-size: 2.875rem !important;
   }
   .fs-4 {
-    font-size: 1.5rem !important;
+    font-size: 1.35rem !important;
   }
 }
 @media print {
@@ -13729,12 +13729,69 @@ textarea.form-control-lg {
     transform: translateY(0);
   }
 }
+@keyframes animationFramesOne {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  20% {
+    transform: translate(70px, 0px) rotate(35deg);
+  }
+  40% {
+    transform: translate(140px, 70px) rotate(70deg);
+  }
+  60% {
+    transform: translate(70px, 140px) rotate(120deg);
+  }
+  80% {
+    transform: translate(-40px, 70px) rotate(140deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+.btn_primary {
+  background-color: #ff4800;
+}
+.btn_primary:hover {
+  background-color: #58468c;
+}
+
 #hero {
   background-image: url("https://themebeyond.com/html/evernet/img/slider/slider_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+}
+#hero .plus-icon {
+  left: 30%;
+  top: 30%;
+  animation: animationFramesOne 10s infinite linear;
+}
+#hero .plus-icon-2 {
+  left: 10%;
+  bottom: 30%;
+  animation: animationFramesOne 15s infinite linear;
+}
+#hero .plus-icon-3 {
+  left: 40%;
+  bottom: 50%;
+  animation: animationFramesOne 12s infinite linear;
+}
+#hero .circle-icon {
+  left: 10%;
+  top: 40%;
+  animation: animationFramesOne 30s infinite linear;
+}
+#hero .circle-icon-2 {
+  left: 50%;
+  top: 30%;
+  animation: animationFramesOne 30s infinite linear;
+}
+#hero .circle-icon-3 {
+  left: 40%;
+  bottom: 10%;
+  animation: animationFramesOne 30s infinite linear;
 }
 #hero .slider-overflow {
   padding-top: 200px;
@@ -13745,44 +13802,36 @@ textarea.form-control-lg {
 }
 #hero .slider-overflow .left-side p {
   animation: slideInLeft 1s;
-  animation-delay: 0.3s;
 }
 #hero .slider-overflow .left-side button {
   animation: slideInLeft 1s;
-  animation-delay: 0.6s;
 }
 #hero .slider-overflow .right-side .hero-board {
   animation: slideInRight 1s;
-  animation-delay: 0.6s;
 }
 #hero .slider-overflow .right-side .hero-man {
   left: 100px;
   animation: slideInLeft-Small 1s;
-  animation-delay: 1s;
 }
 #hero .slider-overflow .right-side .cog-img1-container {
   top: 70px;
   left: 130px;
   animation: slideInLeft-Small 1s;
-  animation-delay: 1.4s;
 }
 #hero .slider-overflow .right-side .cog-img2-container {
   top: 150px;
   right: 50px;
   animation: slideInRight 1s;
-  animation-delay: 1.8s;
 }
 #hero .slider-overflow .right-side .cog-img3 {
   top: 270px;
   left: 40px;
   animation: slideInLeft-Small 1s;
-  animation-delay: 2.2s;
 }
 #hero .slider-overflow .right-side .cog-img4 {
   top: 420px;
   right: 210px;
   animation: fadeInUp 1s;
-  animation-delay: 2.6s;
 }
 
 a {
@@ -13818,17 +13867,20 @@ button {
 }
 
 #exclusive-feature .polygon {
-  background-image: url("../assets/Polygon.png");
-  background-position: center;
+  background-image: url("https://themebeyond.com/html/evernet/img/shape/Polygon.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 #exclusive-feature .card {
+  background-color: transparent;
   transition: all 0.3s ease-in-out;
 }
 #exclusive-feature .card .exlusive-card-icon {
   color: #58468c;
 }
 #exclusive-feature .card:hover {
+  background-color: white;
   box-shadow: 0px 0px 43px 0px rgba(89, 75, 128, 0.11);
 }
 #exclusive-feature .card:hover .exlusive-card-icon {
@@ -13836,12 +13888,18 @@ button {
 }
 
 #download-apps {
-  background-image: url("../assets/download_bg.jpg");
+  background-image: url("https://themebeyond.com/html/evernet/img/bg/download_bg.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
+#powerful-service {
+  background-image: url("https://themebeyond.com/html/evernet/img/bg/services_shape.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 #powerful-service .card {
   transition: all 0.3s ease-in-out;
 }
@@ -13894,9 +13952,9 @@ button {
 
 #footer-top {
   background-image: url("https://themebeyond.com/html/evernet/img/bg/footer_bg.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 #footer-top .newsletter .newsletter-icon::after {
   content: "";
@@ -13921,6 +13979,16 @@ button {
 }
 #footer-top .useful-link:hover {
   color: #ff4800;
+}
+
+@media (max-width: 991px) {
+  #hero {
+    min-height: auto;
+    margin-bottom: 50px;
+  }
+  #hero .slider-overflow {
+    padding-top: 50px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
