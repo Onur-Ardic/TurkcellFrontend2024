@@ -1,0 +1,487 @@
+/* Esmanur's Part End */
+
+.header-top {
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+  padding: 9px 15px;
+  align-items: center;
+}
+
+.header-top .header-delivery {
+  padding: 5px;
+}
+
+.header-menu ul {
+  grid-template-columns: auto auto auto auto;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.header-menu > ul > li > a:hover {
+  color: #ffb91f;
+}
+
+.header-content {
+  grid-template-columns: auto 500px auto auto;
+  padding-top: 26px;
+  padding-bottom: 28px;
+}
+
+.header-content .logo-wrapper > img {
+  height: 58px;
+  width: 150px;
+}
+
+.header-content .searchbar > form {
+  max-width: 100%;
+  background-color: rgba(248, 248, 248, 1);
+  border-radius: 60px;
+}
+
+.header-content .searchbar > form > select {
+  width: 190px;
+  border-width: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 30px;
+  padding-right: 18px;
+  margin-right: 7px;
+  background-color: transparent;
+  line-height: 24px;
+  position: relative;
+}
+
+.search-table {
+  border-color: rgba(235, 235, 235, 1);
+  position: relative;
+}
+
+.search-table .search-content {
+  grid-template-columns: 200px 40px;
+  padding: 0px 10px;
+  width: 100%;
+}
+
+.search-table .search-content > input {
+  padding: 12px 60px 12px 18px;
+  border-width: 0;
+  background: transparent;
+}
+
+.search-table .search-content .search-button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+.search-table .search-content .search-button i {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language-currency {
+  padding-left: 50px;
+  grid-template-columns: auto auto;
+}
+
+.header-right {
+  grid-template-columns: auto auto auto;
+  column-gap: 20px;
+}
+
+.header-right > div {
+  position: relative;
+}
+
+.header-right > div > .amount {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-size: 14px;
+  background: rgba(255, 185, 31, 1);
+  text-align: center;
+}
+
+.bottom-section {
+  border-top: 1px solid #c5c5c5;
+}
+
+.menu-wrapper {
+  width: 60%;
+}
+
+.menu-wrapper > ul > li:hover {
+  color: #ffb91f;
+  cursor: pointer;
+}
+
+.call-us {
+  padding: 12px 40px;
+  gap: 20px;
+  height: 60px;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/07/slide1_1.jpg)
+      no-repeat center center/cover;
+  height: 745px;
+}
+
+.hero-content {
+  gap: 60px;
+}
+
+.hero-form {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 420px;
+  height: 479px;
+  padding: 30px;
+}
+
+.hero-form > form > h2 {
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.hero-form > form > div > select {
+  padding: 12px 30px 12px 15px;
+  border-color: rgb(203, 203, 203);
+  border-width: 1px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 350px;
+  color: rgba(132, 132, 132, 1);
+}
+
+.hero-form > form > button {
+  margin-top: 25px;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 42px;
+  width: 115px;
+  height: 49px;
+}
+
+.text {
+  width: 60%;
+}
+
+.titles > button {
+  padding: 18px 40px;
+  border-radius: 50px;
+  border: none;
+  margin-top: 50px;
+}
+
+.category-wrapper {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.category-text > .buttons {
+  margin-top: 15px;
+}
+
+.category-text > .buttons > .button {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  padding-top: 10px;
+  padding-left: 12px;
+  margin-right: 10px;
+}
+
+.category-text > .buttons > .button:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.category-image > a {
+  display: block;
+  width: 170px;
+  height: 170px;
+  border-radius: 10px;
+  overflow: hidden; /* resmi a tagının arkasına aldı*/
+  margin-bottom: 5px;
+}
+
+.category-image:hover > h3 > a {
+  color: #fff;
+}
+
+.category-image > a > img {
+  transition: 250ms ease;
+  transform-origin: bottom center;
+  width: 100%;
+  height: 100%;
+}
+
+.category-image > a > img:hover {
+  transform: scale(1.1);
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Esmanur's Part End */
+
+/* Umutcan's Part Start */
+
+.title {
+  grid-template-columns: 250px 250px;
+  margin-top: 80px;
+}
+.bestseller-cards {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-top: 60px;
+}
+.card {
+  width: 320px;
+  height: 440px;
+  border: 1px solid rgba(235, 235, 235, 1);
+}
+.yuzdelik-indirim {
+  position: relative;
+  left: 15px;
+  top: 10px;
+  padding: 5px 28px;
+  width: 30px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+.fiyat {
+  grid-template-columns: 80px 80px;
+  padding-left: 15px;
+}
+.stars {
+  object-fit: cover;
+  width: 100px;
+  padding-left: 10px;
+}
+.old-price {
+  text-decoration: line-through;
+}
+.banner {
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.banner-1 {
+  background-image: url(https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/banner-1.jpg);
+  height: 350px;
+  width: 100%;
+  background-position: center;
+}
+.banner-1:hover {
+  cursor: pointer;
+  background-size: 150%;
+}
+.banner-1 button:hover {
+  background-color: white;
+  color: #ffb91f;
+}
+.banner-2 {
+  background-image: url(https://druco-be87.kxcdn.com/druco/wp-content/uploads/2022/08/banner-2.jpg);
+  background-position: center;
+  width: 100%;
+  height: 350px;
+}
+.banner-2:hover {
+  cursor: pointer;
+  background-size: 150%;
+}
+.banner-2 button:hover {
+  background-color: white;
+  color: #ffb91f;
+}
+.banner button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+.banner-content {
+  justify-content: flex-start;
+  grid-template-rows: 2fr 1fr 1fr;
+  padding-left: 35px;
+  padding-top: 50px;
+}
+.products-title {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.product-div {
+  /* border: 1px solid gray; */
+  /* border-right: 1px solid gray;
+  border-bottom: 1px solid gray; */
+  width: 400px;
+  height: 250px;
+  grid-template-columns: 1fr 1fr;
+}
+.product-content {
+  justify-content: flex-start;
+}
+.product-content button {
+  font-weight: 600;
+  border: none;
+  background-color: #ffb91f;
+  margin-top: 5px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+.product-content button:hover {
+  background-color: #202020;
+  color: #ffb91f;
+}
+.products {
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+.popular-parts {
+  margin-top: 100px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.popular-parts button {
+  background-color: white;
+  border: 1px solid #cbcbcb;
+  padding: 14px 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.popular-parts button:hover {
+  background-color: #ffb91f;
+}
+.genuine-banner {
+  background-image: url(https://demothemesky-be87.kxcdn.com/druco/wp-content/uploads/2022/08/banner-3.jpg);
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.genuine-content {
+  margin-left: 150px;
+  padding-top: 50px;
+  max-width: 500px;
+  line-height: 78px;
+}
+
+/* Umutcan's Part End */
+
+/* Alpay's Part Start */
+.blog {
+  grid-template-areas:
+    "card1 card2"
+    "card1 card3"
+    "card1 card4";
+}
+.button {
+  padding: 8px 26px;
+  border: none;
+  border-radius: 42px;
+}
+.button:hover {
+  background-color: #202020;
+  color: #ffb91f;
+}
+.card1 {
+  grid-area: card1;
+  border: 1px solid rgba(235, 235, 235, 1);
+  width: 615px;
+  border-radius: 10px;
+}
+.card2 {
+  grid-area: card2;
+  border-bottom: 1px solid rgba(235, 235, 235, 1);
+  width: 500px;
+}
+.card3 {
+  grid-area: card3;
+  border-bottom: 1px solid rgba(235, 235, 235, 1);
+  width: 500px;
+}
+.card4 {
+  grid-area: card4;
+  width: 500px;
+}
+.card-image {
+  width: 615px;
+  height: 355px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-content {
+  padding: 20px;
+}
+#support {
+  background-image: url("assets/images/home-about.jpg");
+  height: 600px;
+}
+.icon {
+  width: 70px;
+  height: 70px;
+}
+.newsletter-btn {
+  background-color: #202020;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+}
+.newsletter-btn:hover {
+  background-color: #ffb91f;
+  color: #202020;
+}
+.input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+.input-group {
+  border: 1px solid rgba(24, 24, 24, 1);
+  width: 500px;
+  height: 50px;
+  padding: 15px 5px 15px 15px;
+  border-radius: 50px;
+}
+#newsletter {
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+#copyright {
+  background-color: #000;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(24, 24, 24, 1);
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 80px 0;
+}
+
+ul {
+  list-style-type: none;
+}
+footer > li {
+  margin-bottom: 20px;
+}
+li:hover {
+  color: #ffb91f;
+}
+/* Alpay's Part End */
