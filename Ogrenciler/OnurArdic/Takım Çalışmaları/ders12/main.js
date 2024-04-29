@@ -17,11 +17,11 @@ const tercih = process()
 switch (tercih) {
   case 1:
     let result = 1
-    for (let i = 1; i < value; i++) {
+    for (let i = 1; i <= value; i++) {
       result *= i
     }
 
-    alert(`${value} Asal değeri: ${result}`)
+    alert(`${value} Faktöriyel Değeri: ${result}`)
 
     break
   case 2:
