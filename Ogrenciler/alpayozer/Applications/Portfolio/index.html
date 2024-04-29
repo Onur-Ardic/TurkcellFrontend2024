@@ -5,59 +5,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alpay's Page</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header>
+    <section class="main-content py-5">
       <div class="container">
-        <nav>
-          <a href="#" class="header-logo">
-            <img
-              src="https://demo.cocobasic.com/seppo-html/demo-5/images/logo.png"
-              alt="Logo"
-            />
-          </a>
-        </nav>
-      </div>
-    </header>
-    <section id="main-content">
-      <div class="container">
-        <div class="main">
-          <div class="main-text">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
             <h1>
               Work <br />
               in Progress
             </h1>
-            <div class="wave-image"></div>
-            <p>COMING SOON</p>
-            <form action="">
-              <img
-                src="https://demo.cocobasic.com/seppo-html/demo-5/images/arrow.png"
-                alt="arrow-icon"
-              />
-              <input
-                type="text"
-                placeholder="Enter your email address to subscribe"
-              />
-              <button>SUBSCRIBE</button>
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-9">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email address to subscribe.."
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Looks bad!</div>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-dark" type="submit">Subcribe</button>
+              </div>
             </form>
           </div>
-          <div class="main-image">
-            <div class="img-box">
-              <img src="./assets/profil.png" alt="" />
+          <div class="col-lg-6">
+            <div class="row">
+              <img
+                class="rounded-circle img-fluid w-50 mx-auto"
+                src="assets/profil.png"
+                alt="profil-image"
+              />
             </div>
-            <div>
-              <h4>Alpay Özer</h4>
-              <p>Frontend Developer</p>
-              <p>Hakkımda</p>
-              <div class="social-media">
-                <a href="">Linkedin</a>
-                <a href="">Github</a>
-                <a href="">Instagram</a>
+            <div class="row">
+              <h3>Alpay Özer</h3>
+              <h6>Frontend Developer</h6>
+              <p>
+                A passionate frontend developer and final year computer
+                engineering student from Turkey.I’m currently working on
+                <span class="fw-medium"
+                  >Turkcell Geleceği Yazanlar-Gençlere Yatırım Geleceğe Yazılım
+                  3.0</span
+                >
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-4">
+                <a
+                  target="_blank"
+                  class="fs-4 text-decoration-none"
+                  href="https://www.linkedin.com/in/alpayozer/"
+                  ><i class="fa-brands fa-linkedin me-3"></i> Linkedin</a
+                >
+              </div>
+              <div class="col-lg-4 col-4">
+                <a
+                  target="_blank"
+                  class="fs-4 text-decoration-none"
+                  href="https://github.com/alpayozer"
+                  ><i class="fa-brands fa-github me-3"></i> Github</a
+                >
+              </div>
+              <div class="col-lg-4 col-4">
+                <a
+                  target="_blank"
+                  class="fs-4 text-decoration-none"
+                  href="https://medium.com/@alpayozer"
+                  ><i class="fa-brands fa-medium me-3"></i> Medium</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="applications py-5">
+      <div class="container">
+        <h2 class="text-center py-5">Applications</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12 mb-5">
+            <div class="card text-center">
+              <img
+                src="./assets/marsues.png"
+                class="card-img-top min-h"
+                alt="marseus"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Marsues</h5>
+              </div>
+              <div class="card-footer text-body-secondary">
+                Html, Css, Scss, Bootstrap, Responsive
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-5">
+            <div class="card text-center">
+              <img
+                src="./assets/styza.png"
+                class="card-img-top min-h"
+                alt="styza"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Styza</h5>
+              </div>
+              <div class="card-footer text-body-secondary">
+                Html, Css, Scss, Responsive
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-5">
+            <div class="card text-center">
+              <img
+                src="./assets/biniog.png"
+                class="card-img-top min-h"
+                alt="biniog"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Biniog</h5>
+              </div>
+              <div class="card-footer text-body-secondary">Html, Css</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-5">
+            <div class="card text-center">
+              <img
+                src="./assets/agon.png"
+                class="card-img-top min-h"
+                alt="agon"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Agon</h5>
+              </div>
+              <div class="card-footer text-body-secondary">Html, Css</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12 mb-5">
+            <div class="card text-center">
+              <img
+                src="./assets/druco.png"
+                class="card-img-top min-h"
+                alt="druco"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Druco</h5>
+              </div>
+              <div class="card-footer text-body-secondary">Html, Css</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-5">
+            <div class="card text-center">
+              <img
+                src="./assets/hosthub.png"
+                class="card-img-top min-h"
+                alt="hosthub"
+              />
+              <div class="card-body">
+                <h5 class="card-title">HostHub</h5>
+              </div>
+              <div class="card-footer text-body-secondary">
+                Html, Css, Scss, Bootstrap
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-5">
+            <div class="card text-center">
+              <img
+                src="./assets/imagine.png"
+                class="card-img-top min-h"
+                alt="imagine"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Imagine</h5>
+              </div>
+              <div class="card-footer text-body-secondary">Html, Css, Scss</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-5">
+            <div class="card text-center">
+              <img
+                src="./assets/upstart.png"
+                class="card-img-top min-h"
+                alt="upstart"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Upstart</h5>
+              </div>
+              <div class="card-footer text-body-secondary">Html, Css</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
   </body>
 </html>
