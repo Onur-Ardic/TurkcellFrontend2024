@@ -1,11 +1,11 @@
-let sayi = Math.floor(Math.random() * 20);
+let sayi = Math.floor(Math.random() * 100);
 let tahmin = 1;
 let maxScore = 100; 
 let minScore = 10; 
 let score = 0;
 
 for(let i = 0;i > -1;i++){
-    let tahminSayi = Number(prompt("1 ile 20 arasında sayı giriniz."));
+    let tahminSayi = Number(prompt("1 ile 100 arasında sayı giriniz."));
     if(tahminSayi == " "){
         alert("geçersiz karakter");
     }else{
