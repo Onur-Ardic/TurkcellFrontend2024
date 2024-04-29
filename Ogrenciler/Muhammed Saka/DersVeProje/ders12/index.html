@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İşlem Seçimi</title>
+</head>
+<body>
+  <h2>İşlem Seçimi</h2>
+  <label for="number">Bir sayı girin:</label>
+  <input type="number" id="number">
+  <br>
+  <label for="operation">İşlem seçin:</label>
+  <select id="operation">
+    <option value="1">Faktöriyel</option>
+    <option value="2">Asal sayı</option>
+    <option value="3">Çift mi tek mi?</option>
+    <option value="4">Süper Sayı olup olmadığı</option>
+  </select>
+  <br>
+  <button onclick="calculate()">Hesapla</button>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+  <script>
+    function calculate() {
+      const number = parseInt(document.getElementById('number').value);
+      const operation = parseInt(document.getElementById('operation').value);
+      let result;
+      switch (operation) {
+        case 1:
+          result = `Faktöriyel: ${factorial(number)}`;
+          break;
+        case 2:
+          result = `Asal sayı mı: ${isPrime(number)}`;
+          break;
+        case 3:
+          result = `Çift mi tek mi: ${isEven(number) ? 'Çift' : 'Tek'}`;
+          break;
+        case 4:
+          result = `Süper Sayı mı: ${isSuper(number)}`;
+          break;
+        default:
+          result = "Geçersiz seçenek!";
+      }
+      document.getElementById('result').innerHTML = result;
+    }
+  </script>
+</body>
+</html>
