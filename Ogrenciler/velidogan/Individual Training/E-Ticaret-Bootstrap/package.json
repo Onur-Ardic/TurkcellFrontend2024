@@ -1,0 +1,17 @@
+{
+  "name": "e-ticaret-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass -w scss:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "fslightbox": "^3.4.1",
+    "sass": "^1.75.0"
+  }
+}
