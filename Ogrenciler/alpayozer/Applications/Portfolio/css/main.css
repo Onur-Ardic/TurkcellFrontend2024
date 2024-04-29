@@ -11850,24 +11850,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.main-content .wave-image {
-  background-image: url("https://demo.cocobasic.com/seppo-html/demo-5/images/wavy-shape.png");
-  width: 100%;
-  height: 20px;
-  background-size: 645px 20px;
-  background-repeat: repeat-x;
-  animation: wavy-motion 15s linear infinite;
-  margin: 25px 0;
-}
-
-@keyframes wavy-motion {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 645px;
-  }
-}
 .min-h {
   min-height: 150px;
 }
