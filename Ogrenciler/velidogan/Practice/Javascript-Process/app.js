@@ -1,23 +1,15 @@
 const value = Number(prompt('Lütfen bir sayı giriniz'));
-function process() {
-  alert(`
+const process = Number(prompt(`
   1 - Faktöriyel Hesaplama
   2 - Tek Çift Hesaplama
   3 - Süper Sayı Hesaplama
   4 - Asal Sayı Hesaplama
-  `)
+  `))
 
-  const switchCase = Number(prompt('Lütfen bir işlem seçiniz'))
-
-  return switchCase;
-}
-
-const tercih = process();
-
-switch (tercih) {
+switch (process) {
   case 1:
     let result = 1
-    for (let i = 1; i < value; i++) {
+    for (let i = 1; i <= value; i++) {
       result *= i
     }
 
