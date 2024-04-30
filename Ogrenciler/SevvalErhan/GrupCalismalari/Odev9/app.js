@@ -33,14 +33,14 @@ while (true) {
           break;
       
         default: 
-
-        break;
+            alert("Hatalı İşlem");
+          break;
         
       }
 
       let cevap = prompt("Devam etmek istiyor musunuz ?(E/H)");
-      if (cevap.toUppercase() == "H") {
-        return
+      if (cevap == "H") {
+        break;
       }
 }
 
