@@ -197,9 +197,9 @@ button {
 }
 #plans {
   .card {
+    transition: all 0.3s ease-in-out;
     &:hover {
       transform: translateY(-10px);
-      transition: all 0.3s ease-in-out;
       a {
         background-color: white !important;
         color: $primary !important;

@@ -13935,9 +13935,11 @@ button {
   animation: vertical-move 5s infinite ease-in-out;
 }
 
+#plans .card {
+  transition: all 0.3s ease-in-out;
+}
 #plans .card:hover {
   transform: translateY(-10px);
-  transition: all 0.3s ease-in-out;
 }
 #plans .card:hover a {
   background-color: white !important;
