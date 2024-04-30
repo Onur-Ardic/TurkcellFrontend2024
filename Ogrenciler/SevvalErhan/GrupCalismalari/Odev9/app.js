@@ -2,15 +2,6 @@ const toplama = (numberOne , numberTwo) => numberOne + numberTwo;
 const cikarma = (numberOne , numberTwo) => numberOne - numberTwo;
 const bölme = (numberOne , numberTwo) => numberOne / numberTwo;
 const carpma = (numberOne , numberTwo) => numberOne * numberTwo;
-const tercih = (cevap) => {
-    let cevap = prompt("Devam etmek istiyor musunuz ?(E/H)")
-    if (cevap.toUppercase() == "H") {
-   return
-    }
-    else{
-       window.location.reload()
-    }
-};
 
 while (true) {
     const numberOne = Number(prompt ("Birinci sayıyı giriniz"));
@@ -28,21 +19,28 @@ while (true) {
         case 1:
             alert(toplama (numberOne , numberTwo))
         
-          break
+          break;
         case 2:
             alert(cikarma (numberOne , numberTwo))
-          break
+          break;
       
         case 3:
             alert(bölme (numberOne , numberTwo))
-          break
+          break;
       
         case 4:
             alert(carpma (numberOne , numberTwo))
-          break
+          break;
       
-        default: tercih()
+        default: 
+
+        break;
         
+      }
+
+      let cevap = prompt("Devam etmek istiyor musunuz ?(E/H)");
+      if (cevap.toUppercase() == "H") {
+        return
       }
 }
 
