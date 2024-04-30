@@ -17,3 +17,5 @@
 - ### Odev 7 - 15/04/2024: <br> https://preview.colorlib.com/theme/imagine/
 
 - ### Odev 8 - 17/04/2024: <br> https://preview.colorlib.com/theme/hosthub/
+
+- ### Odev 9 - 29/04/2024: <br> Javascript ile Basit bir Hesap Makinesi

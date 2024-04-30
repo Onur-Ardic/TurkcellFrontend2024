@@ -6,3 +6,4 @@
 22-04-2024: Javascripte giris
 24-04-2024: Vize Odev 1 sunum yapildi
 26-04-2024: Js String Array Metotlari - Sayi Tahmin Oyunu
+29-04-2024: Js Fonksiyonlar & Donguler - Hesap Makinesi Odevi 
