@@ -1,0 +1,15 @@
+*{
+    background-color: grey;
+}
+.btnPrimary{
+    color: black;
+    background-color: aliceblue;
+}
+.btnSecondary{
+    color: black;
+    background-color: antiquewhite;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
