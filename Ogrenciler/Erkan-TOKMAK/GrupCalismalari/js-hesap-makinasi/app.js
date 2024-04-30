@@ -41,3 +41,55 @@ switch(islem){
     }
 }
 }
+
+
+// with UI 
+let x=0;
+let y=0;
+let operator=0;
+
+let display = document.getElementById('display');
+
+function appendToDisplay(value) {
+  display.value += value;
+}
+function clearDisplay() {
+    display.value = '';
+}
+
+function plus(){
+    x=display.value;
+    display.value='';
+    operator=1;
+}
+function minus(){
+    x=display.value;
+    display.value='';
+    operator=2;
+}
+function multip(){
+    x=display.value;
+    display.value='';
+    operator=3;
+}
+function division(){
+    x=display.value;
+    display.value='';
+    operator=4;
+}
+
+function result(){
+    y=display.value;
+    if(operator == 1){
+        display.value=parseInt(x)+parseInt(y);
+    }
+    else if(operator==2){
+        display.value=parseInt(x)-parseInt(y);
+    }
+    else if(operator==3){
+        display.value=parseInt(x)*parseInt(y);
+    }
+    else{
+        display.value=parseInt(x)/parseInt(y);
+    }
+}

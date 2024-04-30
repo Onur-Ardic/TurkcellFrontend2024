@@ -1,5 +1,5 @@
 *{
-    background-color: grey;
+    /* background-color: grey; */
 }
 .btnPrimary{
     color: black;
@@ -12,4 +12,8 @@
 .grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+}
+.margin5px{
+    margin: 5px;
 }
