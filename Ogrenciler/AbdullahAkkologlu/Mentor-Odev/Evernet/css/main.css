@@ -13857,8 +13857,13 @@ button {
 
 #brands .row {
   margin-top: -30px;
+  overflow-x: auto;
+}
+#brands .row::-webkit-scrollbar {
+  display: none;
 }
 #brands .row img {
+  width: 180px;
   cursor: pointer;
   opacity: 75%;
 }
