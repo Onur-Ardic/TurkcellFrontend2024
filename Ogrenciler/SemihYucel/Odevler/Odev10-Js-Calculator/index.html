@@ -9,6 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
+  background-image: url(https://m.media-amazon.com/images/I/61EtSQ7KqqL._AC_SL1000_.jpg);
   margin: 0;
   padding: 0;
   display: flex;
@@ -27,12 +28,16 @@ body {
 
 input, select, button {
   margin: 5px;
+  height: 30px;
   padding: 5px;
+  width: 150px;
 }
 
 button {
-  background-color: #007bff;
+  background-color: #000407;
   color: #fff;
+  width: 100px;
+  height: 40px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -48,7 +53,7 @@ button:hover {
   <h1>Hesap Makinesi</h1>
   <input type="number" id="num1" placeholder="Birinci sayı">
   <input type="number" id="num2" placeholder="İkinci sayı">
-  <select id="islem">
+  <select id="islem" style="height: 40px !important;">
     <option value="topla">Toplama</option>
     <option value="cikar">Çıkarma</option>
     <option value="carp">Çarpma</option>
