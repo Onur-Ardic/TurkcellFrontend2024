@@ -118,8 +118,12 @@ button {
 #brands {
   .row {
     margin-top: -30px;
-
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     img {
+      width: 180px;
       cursor: pointer;
       opacity: 75%;
       &:hover {
@@ -128,7 +132,6 @@ button {
     }
   }
 }
-
 #exclusive-feature {
   .polygon {
     @include background-image(
@@ -194,9 +197,9 @@ button {
 }
 #plans {
   .card {
+    transition: all 0.3s ease-in-out;
     &:hover {
       transform: translateY(-10px);
-      transition: all 0.3s ease-in-out;
       a {
         background-color: white !important;
         color: $primary !important;

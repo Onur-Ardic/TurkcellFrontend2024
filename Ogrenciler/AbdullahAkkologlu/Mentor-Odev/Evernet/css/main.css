@@ -13857,8 +13857,13 @@ button {
 
 #brands .row {
   margin-top: -30px;
+  overflow-x: auto;
+}
+#brands .row::-webkit-scrollbar {
+  display: none;
 }
 #brands .row img {
+  width: 180px;
   cursor: pointer;
   opacity: 75%;
 }
@@ -13930,9 +13935,11 @@ button {
   animation: vertical-move 5s infinite ease-in-out;
 }
 
+#plans .card {
+  transition: all 0.3s ease-in-out;
+}
 #plans .card:hover {
   transform: translateY(-10px);
-  transition: all 0.3s ease-in-out;
 }
 #plans .card:hover a {
   background-color: white !important;
