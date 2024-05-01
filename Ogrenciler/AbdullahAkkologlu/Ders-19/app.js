@@ -15,9 +15,9 @@ function bol(num1, num2) {
 }
 
 while (true) {
-  var num1 = Number(prompt("Birinci sayıyı giriniz"));
-  var num2 = Number(prompt("İkinci sayıyı giriniz"));
-  var islem = Number(
+  const num1 = Number(prompt("Birinci sayıyı giriniz"));
+  const num2 = Number(prompt("İkinci sayıyı giriniz"));
+  const islem = Number(
     prompt(
       "Yapmak istediğiniz işlemi seçiniz:\n 1-Toplama\n 2-Çıkarma\n 3-Çarpma\n 4-Bölme"
     )
@@ -44,8 +44,8 @@ while (true) {
       break;
   }
 
-  var devam = prompt("Başka bir işlem yapmak ister misiniz? (E/H)");
-  if (devam !== "E") {
+  const devam = prompt("Başka bir işlem yapmak ister misiniz? (E/H)");
+  if (devam.toUpperCase() !== "E") {
     break;
   }
 }
