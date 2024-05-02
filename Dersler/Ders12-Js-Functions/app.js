@@ -62,10 +62,20 @@
 // } while (i < 5);
 
 // Array map()
-const langs = ["Python", "Java", "C#", "C++"];
+// const langs = ["Python", "Java", "C#", "C++"];
 
 // langs.forEach(function (lang) {
 //   console.log(lang);
 // })
 
-langs.map((lang) => console.log(lang));
+// langs.map((lang) => console.log(lang));
+
+let not = 65;
+
+if (not>50) {
+    
+    console.log("Sınavı Geçtiniz")
+}
+else {
+    console.log("Sınavdan Kaldınız")
+}
