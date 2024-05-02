@@ -12,4 +12,9 @@
 05-04-2024: Assignments: (https://preview.colorlib.com/theme/directoryads/), (http://demos.codexcoder.com/labartisan/html/smartsass/index-pos.html), (https://demo.cocobasic.com/seppo-html/demo-5/index.html)
 15-04-2024: Assignment: https://preview.colorlib.com/theme/imagine/
 17-04-2024: Assignment: https://preview.colorlib.com/theme/hosthub/
-19-04-2024: 
+19-04-2024: Midterm exam
+22-04-2024: Midterm exam
+24-04-2024: Learn JavaScript
+26-04-2024: Make number guessing game
+29-04-2024: Make a calculator
+03-05-2024: 

@@ -12,4 +12,9 @@
 05-04-2024: Making applications (https://preview.colorlib.com/theme/directoryads/), (http://demos.codexcoder.com/labartisan/html/smartsass/index-pos.html), (https://demo.cocobasic.com/seppo-html/demo-5/index.html)
 15-04-2024: Bootstrap
 17-04-2024: Bootstrap - SCSS (Override)
-19-04-2024: 
+19-04-2024: Have a chat and to inform
+22-04-2024: Javascript
+24-04-2024: Making project presentations
+26-04-2024: Javascript
+29-04-2024: Javascript
+03-05-2024: 

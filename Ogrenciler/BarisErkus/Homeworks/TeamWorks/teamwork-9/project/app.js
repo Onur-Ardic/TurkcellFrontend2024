@@ -32,7 +32,7 @@ Tüm işlemlerin sonuçlarını görmek için (.) 'Nokta' işaretini kullanını
         case "**":
             alert(`Üs Alma İşlemi: ${pow(userValue1, userValue2)}`);
             break;
-        case ".": 
+        case ".":
             alert(`Toplam: ${sum(userValue1, userValue2)}
 Fark: ${subs(userValue1, userValue2)}
 Çarpım: ${multiple(userValue1, userValue2)}
