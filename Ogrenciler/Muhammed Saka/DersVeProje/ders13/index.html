@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bilgi Formu</title>
+</head>
+<body>
+
+<form id="bilgiFormu">
+    <label for="ad">Ad:</label><br>
+    <input type="text" id="ad" name="ad"><br>
+    <label for="soyad">Soyad:</label><br>
+    <input type="text" id="soyad" name="soyad"><br>
+    <label for="yas">Yaş:</label><br>
+    <input type="number" id="yas" name="yas"><br>
+    <label for="memleket">Memleket:</label><br>
+    <input type="text" id="memleket" name="memleket"><br><br>
+    <button type="button" onclick="bilgiGoster()">Bilgileri Göster</button>
+</form>
+
+<div id="bilgiGosterim"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
