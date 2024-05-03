@@ -25,7 +25,11 @@ while (true) {
           break;
       
         case 3:
+          if(numberTwo == 0){
+            alert("0 ile bölüm tanımsızdır.")
+          }else{
             alert(bölme (numberOne , numberTwo))
+          }
           break;
       
         case 4:
