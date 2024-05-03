@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .button {
+      padding: 20px 10px;
+      border-radius: 10px;
+      font-size: 24px;
+      color: #fff;
+      background-color: yellowgreen;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    .button:hover {
+      transform: scale(1.1);
+    }
+  </style>
   <body>
-    <h3>Hello WOrld</h3>
-    <button onclick=basla()>Baslamak icin tiklayin</button>
+    <div class="container">
+      <h2 style="font-weight: bolder">Hesap Makinesi Uygulamasi</h2>
+      <button onclick="basla()" class="button">Baslamak icin tiklayin</button>
+    </div>
     <script src="./app.js"></script>
   </body>
 </html>
