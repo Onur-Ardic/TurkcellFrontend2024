@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", system-ui;
+}
+.container {
+  max-width: 800px;
+  margin: 100px auto;
+}
+.playground {
+  display: flex;
+  justify-content: space-between;
+}
+.container .computer-section {
+  width: 47%;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgb(233, 250, 255);
+}
+.container .user-section {
+  width: 47%;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgb(230, 255, 237);
+}
+img {
+  width: 100%;
+}
+
+.shakeAnimation {
+  animation: shake 1500ms infinite;
+}
+.moveAnimation {
+  animation: move-animation 0.5s ease-in-out;
+  animation-iteration-count: 3;
+}
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.option {
+  border-radius: 50%;
+  font-size: 48px;
+  cursor: pointer;
+  border: none;
+}
+.scores {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 28%;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes move-animation {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+}
