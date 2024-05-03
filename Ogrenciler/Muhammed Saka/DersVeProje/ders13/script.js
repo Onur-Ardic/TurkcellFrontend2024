@@ -4,10 +4,8 @@ function bilgiGoster() {
     var yas = document.getElementById("yas").value;
     var memleket = document.getElementById("memleket").value;
 
-    var bilgiMetni = "Ad: " + ad + "<br>" +
-                     "Soyad: " + soyad + "<br>" +
-                     "Yaş: " + yas + "<br>" +
-                     "Memleket: " + memleket;
-
-    document.getElementById("bilgiGosterim").innerHTML = bilgiMetni;
+    console.log("Ad: " + ad);
+    console.log("Soyad: " + soyad);
+    console.log("Yaş: " + yas);
+    console.log("Memleket: " + memleket);
 }
