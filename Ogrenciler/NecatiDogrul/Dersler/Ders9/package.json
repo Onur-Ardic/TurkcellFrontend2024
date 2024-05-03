@@ -1,14 +1,16 @@
 {
-  "name": "ders9",
+  "name": "ders11",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass -w scss:css"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.72.0"
+    "bootstrap": "^5.3.3",
+    "sass": "^1.75.0"
   }
 }
