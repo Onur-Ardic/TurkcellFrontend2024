@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Takım Çalışması</title>
+  </head>
+
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+
+      h1 {
+        text-align: center;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        input {
+          padding: 10px 20px;
+        }
+
+        button {
+          padding: 10px 20px;
+          background-color: #6d3b66;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+        }
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Kayıt Formu</h1>
+
+      <form id="form">
+        <input type="text" placeholder="Adınızı Giriniz" id="name" />
+        <input type="text" placeholder="Soyadınızı Giriniz" id="surname" />
+        <input type="text" placeholder="Yaşınızı Giriniz" id="age" />
+        <input type="text" placeholder="Adresinizi Giriniz" id="address" />
+
+        <button type="submit">Kayıt Ol</button>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
