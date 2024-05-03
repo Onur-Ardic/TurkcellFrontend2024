@@ -89,5 +89,6 @@ Ayrıca, let ve const anahtar kelimeleri ile bildirilen değişkenler de hoist e
 
 İki eşittir sadece değeri kıyaslar, 3 tane eşittir veri tipini de kıyaslar
 
-
 İki eşit değil değeri kıyaslar, 3 tane eşit değil tipi de hesaplar
+
+for ve while yerine artık map kullanıyoruz

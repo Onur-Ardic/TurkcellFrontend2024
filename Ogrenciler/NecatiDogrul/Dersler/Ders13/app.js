@@ -108,26 +108,26 @@ c = 20;
 // console.log(value);
 // document.write(value);
 
-//prompt ile kullanıcı rastgele sayı tahmin oyunu prompt ile
-
-//prompt ile kullanıcı rastgele sayı tahmin oyunu prompt ile
-
-const number = Math.floor(Math.random()*10+1);
+const randomNumber = Math.floor(Math.random()*100);
 let guess;
-let guessCount = 0;
-let guessLimit = 3;
+let guessLimit=3;
+let guessCount=0;
 let outOfGuess = false;
-let score=0;
 
 
-while(!outOfGuess){
-    guess = prompt("Bir sayı giriniz:");
+while(!outOfGuess) {
+    guess = prompt("0 ile 100 arasında bir sayı tahmin ediniz.");
     guessCount++;
-    if(guess==number){
-        alert(`Tebrikler ${guessCount} denemede bildiniz`);
-        outOfGuess = true;
-    }else if(guessLimit==guessCount){
-        alert("Bilemediniz, tahmin hakkınız bitti, Sayı şuydu:" + number);
-        outOfGuess = true;
+    if(guess == randomNumber){
+        alert(`Tebrikler ${guessCount}. denemede doğru bildiniz`);
+        outOfGuess=true;
+    }else if(guessCount==guessLimit){
+        alert(`Üzgünüm hakkınız bitti. 
+        Tutulan sayı: ${randomNumber}`);
+        outOfGuess=true;
+    }else if(randomNumber>guessLimit){
+        alert("Daha büyük bir sayı giriniz");
+    }else if(randomNumber<guessLimit){
+        alert("Daha küçük bir sayı giriniz");
     }
 }
