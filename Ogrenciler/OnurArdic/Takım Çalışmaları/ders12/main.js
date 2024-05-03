@@ -1,32 +1,28 @@
-const value = Number(prompt('Lütfen bir sayı giriniz'))
-function process() {
-  alert(`
+const value = prompt('Lütfen bir sayı giriniz')
+const process = Number(
+  prompt(`
+  
   1 - Faktöriyel Hesaplama
   2 - Tek Çift Hesaplama
   3 - Süper Sayı Hesaplama
   4 - Asal Sayı Hesaplama
-  `)
 
-  const switchCase = Number(prompt('Lütfen bir işlem seçiniz'))
+  `),
+)
 
-  return switchCase
-}
-
-const tercih = process()
-
-switch (tercih) {
+switch (process) {
   case 1:
     let result = 1
     for (let i = 1; i <= value; i++) {
       result *= i
     }
 
-    alert(`${value} Faktöriyel Değeri: ${result}`)
+    alert(`${value} Faktöriyeli: ${result}`)
 
     break
   case 2:
-    for (let i = 0; i < value; i++) {
-      if (value % 2 == 0) {
+    for (let i = 1; i <= value; i++) {
+      if (value % 2 === 0) {
         alert(`${value} Sayı çifttir`)
         break
       } else {
@@ -39,14 +35,16 @@ switch (tercih) {
   case 3:
     let sayiToplam = 0
     for (let i = 1; i < value; i++) {
-      if (value % i == 0) {
+      if (value % i === 0) {
         sayiToplam += i
       }
     }
     if (value == sayiToplam) {
       alert(`${value} Sayı süper sayıdır`)
+      break
     } else {
       alert(`${value} Sayı süper sayı değildir`)
+      break
     }
     break
 
@@ -61,4 +59,6 @@ switch (tercih) {
       }
     }
     break
+
+  default:
 }
