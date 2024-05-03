@@ -92,3 +92,5 @@ Ayrıca, let ve const anahtar kelimeleri ile bildirilen değişkenler de hoist e
 İki eşit değil değeri kıyaslar, 3 tane eşit değil tipi de hesaplar
 
 for ve while yerine artık map kullanıyoruz
+
+innerHTML'in performans ve güvenlik zaafiyetleri var onun yerine innerText kullan
