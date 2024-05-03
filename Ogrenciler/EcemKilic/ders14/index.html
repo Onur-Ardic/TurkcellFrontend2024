@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Bilgi Formu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Kullanıcı Bilgi Formu</h2>
+        <form id="userInfoForm">
+            <div>
+                <label for="firstName">İsim:</label>
+                <input type="text" id="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Soyisim:</label>
+                <input type="text" id="lastName" required>
+            </div>
+            <div>
+                <label for="age">Yaş:</label>
+                <input type="number" id="age" required>
+            </div>
+            <div>
+                <label for="city">Şehir:</label>
+                <input type="text" id="city" required>
+            </div>
+            <button type="submit">Kaydet</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
