@@ -1,9 +1,3 @@
-// let islem, sayi1, sayi2;
-
-// islem = parseInt(
-//   prompt("İşlem seçiniz: 1. Toplama 2. Çıkarma 3. Bölme 4. Çarpma 5. Çıkış")
-// );
-
 while (true) {
 
     let sayi1 = Number(prompt("1. sayıyı giriniz"));
@@ -12,27 +6,10 @@ while (true) {
     let islem = Number(prompt("İşlem seçiniz: 1. Toplama 2. Çıkarma 3. Bölme 4. Çarpma 5. Çıkış"));
     if(islem == 5) break;
 
-    hesapla(sayi1,sayi2);
+    hesapla(sayi1,sayi2, islem);
 
     let devam = prompt("Devam etmek istiyor musun? Evet için e Hayır için h tuşuna basınız.");
     if(devam === "h" || devam === "H") break; 
-
-
-//   sayi1 = parseInt(prompt("1. sayıyı giriniz"));
-//   sayi2 = parseInt(prompt("2. sayıyı giriniz"));
-
-//   alert(hesapla(sayi1, sayi2));
-
-//   var devam = prompt(
-//     "Devam etmek istiyor musun? Evet için e Hayır için h tuşuna basınız."
-//   );
-//   if (devam === "h") {
-//     break;
-//   } else if (devam === "e") {
-//     islem = parseInt(
-//       prompt("İşlem seçiniz: 1. Toplama 2. Çıkarma 3. Bölme 4. Çarpma 5. Çıkış")
-//     );
-//   } 
 }
 
 function toplama(x, y) {
@@ -53,7 +30,7 @@ function carpma(x, y) {
 }
 
 
-function hesapla(x, y) {
+function hesapla(x, y,islem) {
     switch (islem) {
       case 1:
         return alert(toplama(x, y));
