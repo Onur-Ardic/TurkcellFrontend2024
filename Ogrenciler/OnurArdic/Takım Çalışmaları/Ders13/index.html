@@ -34,21 +34,47 @@
         }
       }
     }
+
+    .person-card {
+      .card-wrapper {
+        display: flex;
+        justify-content: space-center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .card {
+        background-color: #df2f2f;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 5px;
+        text-align: center;
+        color: #fff;
+      }
+    }
   </style>
   <body>
-    <div class="container">
-      <h1>Kayıt Formu</h1>
+    <section class="form-section">
+      <div class="container">
+        <h1>Kayıt Formu</h1>
 
-      <form id="form">
-        <input type="text" placeholder="Adınızı Giriniz" id="name" />
-        <input type="text" placeholder="Soyadınızı Giriniz" id="surname" />
-        <input type="text" placeholder="Yaşınızı Giriniz" id="age" />
-        <input type="text" placeholder="Adresinizi Giriniz" id="address" />
+        <form id="form">
+          <input type="text" placeholder="Adınızı Giriniz" id="name" required />
+          <input type="text" placeholder="Soyadınızı Giriniz" id="surname" required />
+          <input type="number" placeholder="Yaşınızı Giriniz" id="age" required />
+          <input type="text" placeholder="Adresinizi Giriniz" id="address" required />
+          <button type="submit">Kayıt Ol</button>
+        </form>
+      </div>
+    </section>
 
-        <button type="submit">Kayıt Ol</button>
-      </form>
-    </div>
+    <section class="person-card">
+      <div class="container">
+        <h1>Kayıt Bilgileri</h1>
 
+        <div class="card-wrapper" id="cardWrapper"></div>
+      </div>
+    </section>
     <script src="main.js"></script>
   </body>
 </html>
