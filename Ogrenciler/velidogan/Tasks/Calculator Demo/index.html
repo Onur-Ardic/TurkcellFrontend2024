@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .numbers div{
+            padding: 10px;
+            margin: 5px 0;
+            transition: all .5s;
+            border-radius: 5px;
+            border: 1px solid navy;
+            cursor: pointer;
+            font-size: 25px;
+        }
+        .numbers div:last-child{
+            margin: 5px 0 0;
+        }
+        .numbers div:hover{
+            background-color: navy;
+            color: #fff;
+        }
+        .process div{
+            padding: 15px;
+            color: crimson;
+            transition: all .5s;
+            border-radius: 5px;
+            border: 1px solid crimson;
+            cursor: pointer;
+        }
+        .process div:hover{
+            background-color: crimson;
+            color: #fff;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4 mx-auto">
+                <div class="card">
+                    <div class="card-header">
+                        Hesapla
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="number" id="numberInput" class="form-control">
+                            <button id="equal" class="btn btn-danger btn-lg"><i class="fa-solid fa-calculator "></i></button>
+                            <button id="clear" class="btn btn-primary btn-lg"><i class="fa-solid fa-eraser"></i></button>
+                        </div>
+                        <div class="row mt-3 text-center mx-0 gap-2 justify-content-center">
+                            <div class="row row-cols-3 col-8 numbers g-1">
+                                <div class="col">1</div>
+                                <div class="col">2</div>
+                                <div class="col">3</div>
+                                <div class="col">4</div>
+                                <div class="col">5</div>
+                                <div class="col">6</div>
+                                <div class="col">7</div>
+                                <div class="col">8</div>
+                                <div class="col">9</div>
+                                <div class="col-10 mx-auto">0</div>
+                            </div>
+                            <div class="row flex-column col-2 process w-auto gy-1 align-items-center">
+                                <div class="col special" id="multiply"><i class="fa-solid fa-xmark fa-2x ms-auto"></i></div>
+                                <div class="col" id="divide"><i class="fa-solid fa-divide fa-2x"></i></div>
+                                <div class="col" id="plus"><i class="fa-solid fa-plus fa-2x"></i></div>
+                                <div class="col" id="minus"><i class="fa-solid fa-minus fa-2x"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-title">Sonuç</div>
+                        <div id="response" class="d-inline-block display-5">
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const numbers = document.querySelectorAll(".numbers div");
+        const process = document.querySelectorAll(".process div");
+        let numberInput = document.querySelector("#numberInput")
+        const equal = document.querySelector("#equal")
+        const clear = document.querySelector("#clear")
+        let response = document.querySelector("#response")
+
+
+        for(let number of numbers){
+            number.addEventListener("click",function(){
+                let value = numberInput.value;
+                numberInput.value = value + number.textContent;
+            })
+        }
+
+        for(let pro of process){
+            pro.addEventListener("click",function(){
+                if (numberInput.value !== "") {
+                    response.innerHTML = numberInput.value;
+                    numberInput.value = "";
+                }
+                document.querySelector("div.special").classList.remove("special");
+                pro.classList.add("special"); 
+                if(document.querySelector(".card-footer > i")){
+                    document.querySelector(".card-footer > *:last-child").remove();
+                }              
+                if(pro.classList.contains("special")){
+                    response.insertAdjacentHTML("afterend",pro.innerHTML)
+                }
+            })           
+        }
+
+        equal.addEventListener("click",function(){
+            let value = Number(response.innerHTML);
+            if(document.querySelector("#multiply").classList.contains("special")){
+                response.innerHTML = Number(numberInput.value) * value;
+            }else if(document.querySelector("#divide").classList.contains("special")){
+                if(Number(numberInput.value) == 0){
+                    response.innerHTML = "0 ile bölüm tanımsızdır."
+                }else{
+                    response.innerHTML = value / Number(numberInput.value);
+                }
+            }else if(document.querySelector("#plus").classList.contains("special")){
+                response.innerHTML = value + Number(numberInput.value);
+            }else if(document.querySelector("#minus").classList.contains("special")){
+                response.innerHTML = value - Number(numberInput.value);
+            }        
+            numberInput.value = "";
+            document.querySelector(".card-footer > *:last-child").remove();
+        })
+
+        clear.addEventListener("click",function(){
+            numberInput.value = "";
+            response.innerHTML = "";
+            document.querySelector(".card-footer > i").remove();
+        })
+    </script>
+</body>
+</html>

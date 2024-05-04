@@ -1,10 +1,13 @@
 while (true) {
+  let sayi1 = Number(prompt("1. sayıyı giriniz"));
+  let sayi2 = Number(prompt("2. sayıyı giriniz"));
 
-    let sayi1 = Number(prompt("1. sayıyı giriniz"));
-    let sayi2 = Number(prompt("2. sayıyı giriniz"));
+  let islem = Number(
+    prompt("İşlem seçiniz: 1. Toplama 2. Çıkarma 3. Bölme 4. Çarpma 5. Çıkış")
+  );
+  if (islem == 5) break;
 
-    let islem = Number(prompt("İşlem seçiniz: 1. Toplama 2. Çıkarma 3. Bölme 4. Çarpma 5. Çıkış"));
-    if(islem == 5) break;
+  hesapla(sayi1, sayi2);
 
     hesapla(sayi1,sayi2, islem);
 
@@ -46,4 +49,3 @@ function hesapla(x, y,islem) {
          alert("Geçersiz karakter girdiniz");
     }
   }
-  
