@@ -4,6 +4,10 @@ const age = document.getElementById('age')
 const address = document.getElementById('address')
 const form = document.getElementById('form')
 const inputs = document.querySelectorAll('input')
+const cardWrapper = document.getElementById('cardWrapper')
+const personArray = []
+
+console.log(personArray)
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
@@ -19,16 +23,25 @@ form.addEventListener('submit', (e) => {
     address: formAddress,
   }
 
-  console.log(person)
-
-  const personİnfo = JSON.stringify(person)
-
-  console.log(personİnfo)
-
-  alert(personİnfo)
+  personArray.push(person)
 
   inputs.forEach((input) => {
     input.value = ''
     input.style.border = '1px solid blue'
   })
+
+  const result = `
+      <div class="card-body">
+        <h5 class="card-title" id="name">${person.name}</h5>
+        <p class="card-text" id="surname">${person.surname}</p>
+        <p class="card-text" id="age">${person.age}</p>
+        <p class="card-text" id="address">${person.address}</p>
+    </div>
+  `
+
+  const card = document.createElement('div')
+  card.classList.add('card')
+  card.innerHTML = result
+
+  cardWrapper.appendChild(card)
 })
