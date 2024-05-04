@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!--                                                                  form da adı soy adı yaşı adres verileri obje içersine kaydetsin. input a tıklandığında içi focus olsun keyup olsun cerceve rengi değişsin
@@ -13,13 +14,104 @@
          
 
 -->
-    <form action="">
-      <input type="text" id="name" />
-      <input type="text" id="surname" />
-      <input type="number" id="age" />
-      <textarea name="address" id="address" cols="30" rows="10"></textarea>
-      <button type="submit" id="save">SAVE</button>
+    <!--
+    <h1>User Form</h1>
+    <form id="userForm">
+      <label for="nameInput">Name:</label><br />
+      <input type="text" id="nameInput" name="name" required /><br />
+      <label for="surnameInput">Surname:</label><br />
+      <input type="text" id="surnameInput" name="surname" required /><br />
+      <label for="ageInput">Age:</label><br />
+      <input type="number" id="ageInput" name="age" required /><br />
+      <label for="address">Address:</label><br />
+      <input type="text" id="address" name="address" required /><br />
+      <label for="city">City:</label><br />
+      <input type="text" id="city" name="city" required /><br /><br />
+      <button type="button" id="save" onclick="addUser()">Add User</button>
     </form>
+-->
+    <h1 class="text-center mt-5">User Form</h1>
+    <form id="form" class="needs-validation container" novalidate>
+      <div class="form-row">
+        <div class="col-md-4 mb-3 mx-auto">
+          <label for="nameInput">First name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nameInput"
+            placeholder="First name"
+            value=""
+            required
+          />
+          <div class="valid-tooltip">Looks good!</div>
+        </div>
+        <div class="col-md-4 mb-3 mx-auto">
+          <label for="surnameInput">Last name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="surnameInput"
+            placeholder="Last name"
+            value=""
+            required
+          />
+          <div class="valid-tooltip">Looks good!</div>
+        </div>
+        <div class="col-md-4 mb-3 mx-auto">
+          <label for="ageInput">Age</label>
+
+          <input
+            type="number"
+            class="form-control"
+            id="ageInput"
+            placeholder="Age"
+            required
+          />
+          <div class="invalid-tooltip">
+            Please choose a unique and valid age.
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-4 mb-3 mx-auto">
+          <label for="address">Addres</label>
+          <input
+            type="text"
+            class="form-control"
+            id="address"
+            placeholder="address"
+            required
+          />
+          <div class="invalid-tooltip">Please provide a valid address.</div>
+        </div>
+        <div class="col-md-4 mb-3 mx-auto">
+          <label for="validationTooltip04">City</label>
+          <input
+            type="text"
+            class="form-control"
+            id="city"
+            placeholder="city"
+            required
+          />
+          <div class="invalid-tooltip">Please provide a valid city.</div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3 mx-auto">
+        <button
+          class="btn btn-primary"
+          type="submit"
+          id="save"
+          onclick="addUser()"
+        >
+          Submit form
+        </button>
+      </div>
+    </form>
+
+    <h2 class="text-center">User List</h2>
+    <ul id="userList"></ul>
+
     <script src="app.js"></script>
   </body>
 </html>

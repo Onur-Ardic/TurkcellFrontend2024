@@ -1,63 +1,46 @@
-const nameInput = document.getElementById("name");
-const surnameInput = document.getElementById("surname");
-const ageInput = document.getElementById("age");
-const addressInput = document.getElementById("address");
-
-const person = {
-  name: "",
-  surname: "",
-  age: "",
-  address: "",
+const inputs = {
+  name: document.getElementById("nameInput"),
+  surname: document.getElementById("surnameInput"),
+  age: document.getElementById("ageInput"),
+  address: document.getElementById("address"),
+  city: document.getElementById("city"),
 };
+
+const userList = document.getElementById("userList");
+const personList = [];
 
 function changeBorderColor(element, color) {
   element.style.borderColor = color;
 }
 
-nameInput.addEventListener("focus", () =>
-  changeBorderColor(nameInput, "orange")
-);
-nameInput.addEventListener("blur", () => {
-  changeBorderColor(nameInput, "gray");
-  person.name = nameInput.value;
+Object.values(inputs).forEach((input) => {
+  input.addEventListener("blur", () => changeBorderColor(input, "green"));
 });
-nameInput.addEventListener("keyup", () =>
-  changeBorderColor(nameInput, "green")
-);
 
-surnameInput.addEventListener("focus", () =>
-  changeBorderColor(surnameInput, "blue")
-);
-surnameInput.addEventListener("blur", () => {
-  changeBorderColor(surnameInput, "gray");
-  person.surname = surnameInput.value;
-});
-surnameInput.addEventListener("keyup", () =>
-  changeBorderColor(surnameInput, "green")
-);
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const newUser = {
+    name: inputs.name.value.trim(),
+    surname: inputs.surname.value.trim(),
+    age: inputs.age.value.trim(),
+    address: inputs.address.value.trim(),
+    city: inputs.city.value.trim(),
+  };
 
-ageInput.addEventListener("focus", () => changeBorderColor(ageInput, "blue"));
-ageInput.addEventListener("blur", () => {
-  changeBorderColor(ageInput, "gray");
-  person.age = ageInput.value;
+  personList.push(newUser);
+  displayUsers();
+  clearInputs();
 });
-ageInput.addEventListener("keyup", () => changeBorderColor(ageInput, "green"));
 
-addressInput.addEventListener("focus", () =>
-  changeBorderColor(addressInput, "blue")
-);
-addressInput.addEventListener("blur", () => {
-  changeBorderColor(addressInput, "gray");
-  person.address = addressInput.value;
-});
-addressInput.addEventListener("keyup", () =>
-  changeBorderColor(addressInput, "green")
-);
+function displayUsers() {
+  userList.textContent = "";
+  personList.forEach((person) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = `Name: ${person.name}, Surname: ${person.surname}, Age: ${person.age}, Address: ${person.address}, City: ${person.city}`;
+    userList.appendChild(listItem);
+  });
+}
 
-// Adding click event listener to the button
-const button = document.getElementById("save");
-button.addEventListener("click", () => {
-  alert(
-    `Age: ${person.age}\nAddress: ${person.address}\nName: ${person.name}\nSurname: ${person.surname}`
-  );
-});
+function clearInputs() {
+  Object.values(inputs).forEach((input) => (input.value = ""));
+}
