@@ -49,7 +49,7 @@ btn.addEventListener("click", function () {
     function faktoriyel(number) {
       let faktoriyel = 1;
       for (let i = 1; i <= number; i++) {
-        faktoriyel *= i;
+        faktoriyel = faktoriyel * i;
       }
       alert(faktoriyel);
     }
@@ -57,7 +57,7 @@ btn.addEventListener("click", function () {
       let toplam = 0;
       for (let i = 1; i < number; i++) {
         if (number % i == 0) {
-          toplam += i;
+          toplam = toplam + i;
         }
       }
       if (toplam == number) {
