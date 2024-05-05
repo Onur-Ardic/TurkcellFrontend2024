@@ -17,6 +17,11 @@ function saveData() {
 
     // Kaydedilen verileri göster
     showSavedData();
+
+    document.getElementById('name').value = '';
+    document.getElementById('surname').value = '';
+    document.getElementById('age').value = '';
+    document.getElementById('address').value = '';
 }
 
 function resetForm() {
