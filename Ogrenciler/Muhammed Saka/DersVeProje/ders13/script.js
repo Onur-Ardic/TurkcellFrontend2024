@@ -16,7 +16,6 @@ function saveData() {
     newData.age = age.value;    
     newData.address = address.value;  
     
-    // Kaydedilen verileri göster
     showSavedData();
 
     name.value = '';
@@ -28,19 +27,19 @@ function saveData() {
 function resetForm() {
     document.getElementById('myForm').reset();
     formData = [];
-    document.getElementById('savedData').innerHTML = ''; // Kaydedilen verileri temizle
+    document.getElementById('savedData').innerHTML = '';
 }
 
 function showSavedData() {
 
         const card = document.createElement('div');
-        card.classList.add('card');
+        card.classList.add('card'); 
 
         card.innerHTML = `
-            <p><strong>Adı:</strong> ${newData.name}</p>
-            <p><strong>Soyadı:</strong> ${newData.surname}</p>
-            <p><strong>Yaşı:</strong> ${newData.age}</p>
-            <p><strong>Adresi:</strong> ${newData.address}</p>
+            <h3><strong>Adı:</strong> ${newData.name}</h3>
+            <h3><strong>Soyadı:</strong> ${newData.surname}</h3>
+            <h3><strong>Yaşı:</strong> ${newData.age}</h3>
+            <h3><strong>Adresi:</strong> ${newData.address}</h3>
         `;
 
         savedDataContainer.appendChild(card);
