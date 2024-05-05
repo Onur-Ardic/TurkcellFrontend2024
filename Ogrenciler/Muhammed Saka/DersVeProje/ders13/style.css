@@ -15,22 +15,34 @@
   }
 
   button {
-    padding: 10px 20px;
-    background-color: #6d3b66;
-    color: #fff;
+    padding: 10px 40px;
+    background-color: #07700b63;  
+    color: #ffffff;     
     border: none;
     border-radius: 4px;
     margin-bottom: 20px;
   }
 
+  
+  button:hover {
+    background-color: #0bea07;
+    color: #130808;
+    cursor: pointer;
+  }
+
   .card {
-    background-color: #df2f2f;
+    background-color: #0254c7;
     width: 200px;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
     color: #fff;
     margin: 15px 0;
+  } 
+
+  .card:hover {
+    background-color: #0b0bea;
+    box-shadow: #0254c7;
   }
 
   .card-wrapper {
@@ -48,4 +60,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;    
+  }
+
+  .button-center {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
   }
