@@ -16,8 +16,6 @@ function saveData() {
     newData.age = age.value;    
     newData.address = address.value;  
     
-
-
     // Kaydedilen verileri göster
     showSavedData();
 
@@ -34,7 +32,6 @@ function resetForm() {
 }
 
 function showSavedData() {
-    savedDataContainer.innerHTML = '';
 
         const card = document.createElement('div');
         card.classList.add('card');
