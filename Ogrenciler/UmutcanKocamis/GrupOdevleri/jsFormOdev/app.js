@@ -40,4 +40,5 @@ function temizleme() {
   surnameInput.value = "";
   cityInput.value = "";
   ageInput.value = "";
+  alert("Input'lar temizlendi.");
 }
