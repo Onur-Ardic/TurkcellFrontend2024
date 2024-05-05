@@ -66,7 +66,7 @@
                       </div>
                     
                       <div class="mb-4 row justify-content-between me-1 px-2 ">
-                        <button  data-mdb-ripple-init type="button" class="btn btn-primary btn-block col-lg-3 mb-2">Kaydet</button>
+                        <button  data-mdb-ripple-init type="button" class="btn btn-primary btn-block col-lg-3 mb-2" id="save">Kaydet</button>
                     
                         <button data-mdb-ripple-init type="button" class="btn btn-warning btn-block col-lg-3 mb-2" id="cls">Temizle</button>
 
@@ -93,8 +93,17 @@
                 </div>              
             </div>
 
-            </div>
         </div>
+        <div class="row">
+          <h2 class="mb-5" id="saveHeader" style="display: none;">Kaydettiğiniz Kartlar</h2>
+        <div class="col-lg-6 " id="savedCardsContainer">
+        </div>
+        <div class="col-lg-6 " id="savedCardsContainer2">
+        </div>
+        <button type="button" class="btn btn-danger" style="display: none;" id="clsCards"  >Temizle</button>
+      </div>
+
+     </div>
 
        
         
