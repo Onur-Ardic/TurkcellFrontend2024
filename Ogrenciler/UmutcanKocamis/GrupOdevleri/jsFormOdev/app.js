@@ -28,7 +28,7 @@ function kaydetme() {
   info.surname = surnameInput.value;
   info.city = cityInput.value;
   info.age = ageInput.value;
-  //Ekrana göstermek için
+
   name.innerHTML = info.name;
   surname.innerHTML = info.surname;
   city.innerHTML = info.city;
