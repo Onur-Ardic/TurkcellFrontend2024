@@ -28,7 +28,7 @@ function kaydetme() {
   info.surname = surnameInput.value;
   info.city = cityInput.value;
   info.age = ageInput.value;
-  //Ekrana göstermek için
+  //Ekranda göstermek için
   name.innerHTML = info.name;
   surname.innerHTML = info.surname;
   city.innerHTML = info.city;
@@ -40,4 +40,5 @@ function temizleme() {
   surnameInput.value = "";
   cityInput.value = "";
   ageInput.value = "";
+  alert("Input'lar temizlendi.");
 }
