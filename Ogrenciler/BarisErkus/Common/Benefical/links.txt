@@ -2,6 +2,8 @@
 - https://www.w3schools.com/
 - https://developer.mozilla.org/
 - https://devdocs.io/
+- https://learngitbranching.js.org/
+- https://courseflix.net/
 
 # Challenges
 - https://www.frontendmentor.io/challenges/
