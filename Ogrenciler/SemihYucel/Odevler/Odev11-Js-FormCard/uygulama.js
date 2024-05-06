@@ -18,7 +18,7 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
 });
 
 const save = () => {
-    let nameVal = name.value; //direkt böyle de kullanılıyormuş keyup ile de kullanılıyor
+    let nameVal = name.value;
     let surNameVal = surName.value;
     let titleVal = title.value;
     let telephoneVal = telephone.value;
@@ -26,7 +26,7 @@ const save = () => {
     let cityVal = city.value;
     let backgroundColorVal = backgroundColor.value;
     let textColorVal = textColor.value;
-    let logoVal = logo.value.split('\\').pop();
+    let logoVal = logo.value.split('\\').pop(); //dosya adını alır tam yolunu almadan 
 
     formData.push({
         Name: nameVal,
