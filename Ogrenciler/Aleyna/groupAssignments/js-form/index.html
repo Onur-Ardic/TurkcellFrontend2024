@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Takım Çalışması</title>
+    <title>Kayıt Formu</title>
   </head>
 
   <style>
@@ -44,12 +44,20 @@
         gap: 1rem;
       }
       .card {
-        background-color: #df2f2f;
+        background-color: #6d3b6688;
         width: 200px;
+        height: 200px;
         padding: 1rem;
         border-radius: 5px;
         text-align: center;
         color: #fff;
+      }
+      .delete-btn {
+        background-color: #f54545;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 5px 10px;
       }
     }
   </style>
@@ -60,9 +68,24 @@
 
         <form id="form">
           <input type="text" placeholder="Adınızı Giriniz" id="name" required />
-          <input type="text" placeholder="Soyadınızı Giriniz" id="surname" required />
-          <input type="number" placeholder="Yaşınızı Giriniz" id="age" required />
-          <input type="text" placeholder="Adresinizi Giriniz" id="address" required />
+          <input
+            type="text"
+            placeholder="Soyadınızı Giriniz"
+            id="surname"
+            required
+          />
+          <input
+            type="number"
+            placeholder="Yaşınızı Giriniz"
+            id="age"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Adresinizi Giriniz"
+            id="address"
+            required
+          />
           <button type="submit">Kayıt Ol</button>
         </form>
       </div>
