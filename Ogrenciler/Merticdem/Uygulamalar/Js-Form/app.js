@@ -55,5 +55,3 @@ button.addEventListener("click", (e) => {
   }
   
 });
-
-console.log(infos);
