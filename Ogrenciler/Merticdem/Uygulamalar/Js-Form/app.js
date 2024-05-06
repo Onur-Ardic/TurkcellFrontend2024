@@ -45,7 +45,7 @@ function submitinfos() {
 button.addEventListener("click", (e) => {
   e.preventDefault();
   if(name.value == "" || age.value == "" || city.value =="" || mail.value == ""){
-    alert("Değer giriniz.");
+    alert("Bütün alanları doldurunuz.");
   }else{
     submitinfos();
     name.value = "";
