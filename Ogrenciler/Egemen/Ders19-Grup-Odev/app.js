@@ -16,9 +16,7 @@ function calculate(operation) {
         clearInputsBtn.style.display = "block";
         return;
     }
-
     let sonuc;
-
     switch (operation) {
         case 'add':
             sonuc = num1 + num2;
@@ -44,7 +42,6 @@ function calculate(operation) {
     result.innerText = `Sonuç: ${sonuc}`;
     clearInputsBtn.style.display = "block";
 }
-
 btnSum.addEventListener("click", () => calculate('add'));
 btnSubs.addEventListener("click", () => calculate('subtract'));
 btnMultiple.addEventListener("click", () => calculate('multiply'));
