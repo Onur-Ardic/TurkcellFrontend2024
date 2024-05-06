@@ -44,11 +44,16 @@ function submitinfos() {
 }
 button.addEventListener("click", (e) => {
   e.preventDefault();
-  submitinfos();
-  name.value = "";
-  age.value = "";
-  city.value = "";
-  mail.value = "";
+  if(name.value == "" || age.value == "" || city.value =="" || mail.value == ""){
+    alert("Değer giriniz.");
+  }else{
+    submitinfos();
+    name.value = "";
+    age.value = "";
+    city.value = "";
+    mail.value = "";
+  }
+  
 });
 
 console.log(infos);
