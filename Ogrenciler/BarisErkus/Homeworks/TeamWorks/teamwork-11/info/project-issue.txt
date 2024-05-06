@@ -1,0 +1,7 @@
+# XOX Oyunu
+
+- 3x3'lük bir tablo olacak, bu tablo üzerinde X ve O işaretleri yer alacak.
+
+- Oyun başladığında X işareti ile başlayacak, X işareti yerleştirdikten sonra O işareti yerleştirecek ve bu şekilde devam edecek.
+
+- Oyunu kazanan taraf belirlenecek. (3 tane yan yana, çapraz, alt alta)
