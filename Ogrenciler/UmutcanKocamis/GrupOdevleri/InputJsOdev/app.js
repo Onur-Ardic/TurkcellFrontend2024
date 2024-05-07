@@ -79,7 +79,7 @@ function display(array) {
     card.appendChild(row);
 
     const imageDiv = document.createElement("div");
-    imageDiv.classList.add("col-6");
+    imageDiv.classList.add("col-md-6");
     card.appendChild(imageDiv);
     const imageName = document.createElement("img");
     imageName.classList.add("img-fluid");
@@ -87,7 +87,7 @@ function display(array) {
     imageDiv.appendChild(imageName);
 
     const cardBody = document.createElement("div");
-    cardBody.classList.add("card-body", "col-6", "p-0", "my-auto");
+    cardBody.classList.add("card-body", "col-md-6", "p-md-0", "my-auto");
     card.appendChild(cardBody);
     const title = document.createElement("h2");
     title.classList.add("card-title", "mb-1");
