@@ -1,0 +1,126 @@
+@media (max-width: 992px) {
+  .header {
+    height: max-content;
+    .hero {
+      grid-template-columns: 100%;
+
+      .shape-1 {
+        display: none;
+      }
+
+      .hero-right {
+        margin-top: 4rem;
+        .img-first,
+        .img-second {
+          display: none;
+        }
+      }
+    }
+    .navbar {
+      .check-btn {
+        display: block;
+        order: 2;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 4px;
+      }
+      .navbar-items {
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        height: 0;
+        visibility: hidden;
+        left: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #fcfcfc;
+        transition: 0.4s ease;
+
+        a {
+          font-size: 20px;
+          margin: 1rem;
+          line-height: 30px;
+        }
+
+        i {
+          display: none;
+        }
+      }
+
+      #checkbox {
+        &:checked ~ .navbar-items {
+          height: 80%;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  // !-----Omnichannel------
+
+  .omnichannel {
+    &-wrapper {
+      grid-template-columns: 100%;
+
+      .omnichannel-left {
+        .omnichannel-list {
+          li {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+  //!-----Stores-----
+  .stores{
+    &-wrapper{
+      grid-template-columns: 100%;
+    }
+  }
+  //!-----Extend-----
+  .extend{ 
+    &-wrapper{
+      grid-template-columns: 100%;
+    }
+    &-right{
+      img{
+        width: 500px;
+        height: 500px;
+      }
+  }
+  }
+  //!-----Features-----
+  .features-content{
+    flex-direction: column;
+  }
+  //!-----Testimonials-----
+  .testimonials-content{
+    flex-direction: column;
+  }
+  //!-----Sponsors-----
+  .sponsors-group{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  //!----Footer-----
+  .footer{
+    &-top{
+      flex-direction: column;
+      &-links{
+        flex-direction: column;
+      }
+    }
+    &-body{
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+  }
+  //!-----ScrollToTop-----
+  .efekt1{
+    right: 5rem;
+  }
+  .efekt2{
+    right: 5rem;
+  }
+}
