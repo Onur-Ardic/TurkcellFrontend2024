@@ -1,0 +1,7 @@
+body {
+    background-image: linear-gradient(to bottom, #021129, #0c2445, #1a3863, #294c83, #3862a4);
+}
+
+.formBackground{
+    background-color: rgba(255, 255, 255, 0.3);
+}
