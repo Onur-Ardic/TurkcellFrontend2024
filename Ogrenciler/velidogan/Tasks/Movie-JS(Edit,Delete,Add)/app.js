@@ -33,10 +33,10 @@ function displayMovies(filter){
         if(movie.type == filter || filter == "All"){
             let col = `
                 <div class="col">
-                    <div class="card" id="${movie.id}" position-relative>
+                    <div class="card my-3" id="${movie.id}" position-relative>
                         <img src="${movie.image}" alt="" class="img-fluid">
                         <div class="dropdown position-absolute top-0 end-0">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-ellipsis"></i>
                             </button>
                             <ul class="dropdown-menu">
@@ -64,8 +64,8 @@ btnAdd.addEventListener("click",newMovie);
 
 function newMovie(){
     for(let input of inputs){
-        console.log(input.required)
-        if(input.required == false){
+        if(input.value == ""){
+            alert("Lütfen doldur.")
             return;
         }
     }
@@ -88,6 +88,11 @@ function newMovie(){
     yearInput.value = "";
     typeInput.value = "";
     imageInput.value = "";
+    movieNameShows.innerText = "";
+    directorShows.innerText = "";
+    yearShows.innerText = "";
+    typeShows.innerText = "";
+    imgShows.src = "";
     localStorage.setItem("movieList",JSON.stringify(movieList));
     displayMovies(document.querySelector("#filters div.active").textContent);
 }
