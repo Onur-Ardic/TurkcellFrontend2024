@@ -13,23 +13,9 @@
     <title>Document</title>
   </head>
   <body>
-    <!--  <form action="" id="movieForm">
-       <label for="name"></label>
-      <input type="text" id="name" />
-           <label for="director"></label>
-      <input type="text" id="director" />
-       <label for="year"></label>
-      <input type="number" id="year" />
-      <label for="genre"></label>
-      <input type="text" id="genre" />
-      <label for="image"></label>
-      <input type="text" id="image" />
-      <button id="submitButton">Add</button>
-    </form> -->
-
     <div class="container">
       <div class="row p-5">
-        <div class="col-3 p-3">
+        <div class="col-lg-3 p-3">
           <form id="movieForm">
             <div class="mb-3">
               <label for="name" class="form-label">Movie Name</label>
@@ -45,19 +31,38 @@
             </div>
             <div class="mb-3">
               <label for="genre" class="form-label">Genre</label>
-              <input type="text" class="form-control" id="genre" />
+              <select id="genre" class="form-select">
+                <option value="" selected disabled>Select a Genre</option>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Horror">Horror</option>
+                <option value="Sci-fi">Science Fiction</option>
+                <option value="Romance">Romance</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Animation">Animation</option>
+                <option value="Documentary">Documentary</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Crime">Crime</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Western">Western</option>
+                <option value="Musical">Musical</option>
+                <option value="Historical">Historical</option>
+                <option value="Biography">Biography</option>
+              </select>
             </div>
             <div class="mb-3">
               <label for="image" class="form-label">Image</label>
               <input type="text" class="form-control" id="image" />
             </div>
             <button type="submit" id="submitButton" class="btn btn-primary">
-              Submit
+              Add
             </button>
           </form>
         </div>
-        <div class="col-9">
-          <div class="cards row gap-3"></div>
+        <div class="col-lg-9">
+          <div class="cards row"></div>
         </div>
       </div>
     </div>
