@@ -166,3 +166,54 @@ function clean() {
   genreInput.value = "";
   imageInput.value = "";
 }
+
+// [
+//   {
+//     name: "La La Land",
+//     director: "Damien Chazella",
+//     year: "2016",
+//     genre: "Musical",
+//     image:
+//       "https://m.media-amazon.com/images/S/pv-target-images/178c2a0f654a66eda07ca098fa243728b6bc7c5f4359863860e12c50be3b8e39.jpg",
+//   },
+//   {
+//     name: "Fight Club",
+//     director: "David Fincher",
+//     year: "1999",
+//     genre: "Action",
+//     image:
+//       "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+//   },
+//   {
+//     name: "Inglourious Basterds",
+//     director: "Quentin Tarantino",
+//     year: "2009",
+//     genre: "Historical",
+//     image:
+//       "https://m.media-amazon.com/images/M/MV5BOTJiNDEzOWYtMTVjOC00ZjlmLWE0NGMtZmE1OWVmZDQ2OWJhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg",
+//   },
+//   {
+//     name: "Babylon",
+//     director: "Damien Chazella",
+//     year: "2022",
+//     genre: "Action",
+//     image:
+//       "https://cdn.sanity.io/images/j0wdmpyb/production/aae41c363bdd0b7d56cb90e8064bd15b6160fd3a-954x1350.webp?fp-x=0.5&fp-y=0.5&w=640&h=906&fit=crop&crop=focalpoint&auto=format",
+//   },
+//   {
+//     name: "Pulp Fiction",
+//     director: "Quentin Tarantino",
+//     year: "1994",
+//     genre: "Action",
+//     image:
+//       "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+//   },
+//   {
+//     name: "Interstaller",
+//     director: "Christopher Nolan",
+//     year: "2014",
+//     genre: "Sci-fi",
+//     image:
+//       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRE8xZbi8r7ImwqImi3Wow7AoKwATmbFldLmtbbu5O9w&s",
+//   },
+// ];
