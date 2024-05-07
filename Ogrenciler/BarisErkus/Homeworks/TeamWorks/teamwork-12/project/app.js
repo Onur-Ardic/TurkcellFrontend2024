@@ -12,22 +12,15 @@ document.getElementById('imageInput').addEventListener('change', event => {
 });
 
 // Kind
-let kind;
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll('.dropdown-menu a').forEach(element => {
-        element.addEventListener('click', e => {
-            kind = e.target.getAttribute('data-value');
-        });
-    });
-});
-// Dropdown içerisinde seçilen elemanın yazılması
-document.querySelectorAll('.dropdown-item').forEach(item => {
-    item.addEventListener('click', function () {
-        document.getElementById('movieKind').innerHTML = this.innerHTML;
+let kind = "Belirtilmedi";
+document.querySelectorAll('.dropdown-menu a').forEach(element => {
+    element.addEventListener('click', event => {
+        kind = event.target.dataset.value;
+        document.getElementById('movieKind').innerText = event.target.dataset.value;
     });
 });
 
-document.getElementById('addToCollection').addEventListener('click', (event) => {
+document.getElementById('addToCollection').addEventListener('click', () => {
     if (document.getElementById('imageInput').checkValidity() &&
         document.getElementById('movieNameInput').checkValidity() &&
         document.getElementById('movieTopic').checkValidity() &&
@@ -45,12 +38,13 @@ const addToCollection = () => {
     card.style.margin = '1rem'
     // Image Preview
     const imagePreview = document.createElement('div');
-    imagePreview.classList.add('imagePreview');
+    imagePreview.classList = 'imagePreview d-flex align-items-center justify-content-center';
     // Image
     let lsImage = localStorage.getItem('selectedImage')
     if (lsImage) {
         let imgElement = document.createElement('img');
         imgElement.src = lsImage;
+        imgElement.style.height = "15rem"
         // localStorage.clear()
         imgElement.classList.add('img-fluid');
         imagePreview.appendChild(imgElement)
@@ -103,6 +97,7 @@ const addToCollection = () => {
     // Loop over them and prevent submission
     Array.from(forms).forEach(form => {
         form.addEventListener('submit', event => {
+            event.preventDefault();
             if (!form.checkValidity()) {
                 event.preventDefault()
                 event.stopPropagation()
