@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: white;
+}
+.playground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+  text-align: center;
+}
+.btn {
+  font-family: "Permanent Marker", cursive;
+  height: 150px;
+  width: 150px;
+  font-size: 96px;
+  border: 1px solid gainsboro;
+}
+.row {
+  display: flex;
+}
+.scores {
+  font-size: 22px;
+  font-weight: 600;
+}
+#resetButton {
+  font-size: 22px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 7px;
+  background-color: #336cfa;
+  cursor: pointer;
+}
