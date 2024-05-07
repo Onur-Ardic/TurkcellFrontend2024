@@ -32,7 +32,7 @@ const faktoriyelFunc = (girilenSayi) => {
     alert(girilenSayi + " sayısının faktöriyeli: " + faktoriyel)
 }
 const asalFunc = (girilenSayi) => {
-    if (girilenSayi == 0 || girilenSayi == 1) return alert(girilenSayi + " sayısı asal değildir")
+    if (girilenSayi == 0 || girilenSayi == 1) return alert(girilenSayi + " sayısı asal değildir!")
     for (i = 2; i < girilenSayi; i++) {
         if (girilenSayi % i === 0) return alert(girilenSayi + " sayısı asal değildir!")
     }

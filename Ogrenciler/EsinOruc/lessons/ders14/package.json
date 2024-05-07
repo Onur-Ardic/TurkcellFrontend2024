@@ -1,0 +1,17 @@
+{
+  "name": "ders14",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass -w scss:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.76.0",
+    "scss": "^0.2.4"
+  }
+}

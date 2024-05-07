@@ -94,3 +94,8 @@ Ayrıca, let ve const anahtar kelimeleri ile bildirilen değişkenler de hoist e
 for ve while yerine artık map kullanıyoruz
 
 innerHTML'in performans ve güvenlik zaafiyetleri var onun yerine innerText kullan
+
+event capturing nedir eventbubbling nedir farkları nedir
+
+
+map konusuna dikkat

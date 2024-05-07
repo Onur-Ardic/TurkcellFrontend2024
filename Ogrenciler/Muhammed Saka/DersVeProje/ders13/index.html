@@ -3,25 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bilgi Formu</title>
+<link rel="stylesheet" href="style.css">
+<title>Form Örneği</title>
 </head>
 <body>
 
-<form id="bilgiFormu">
-    <label for="ad">Ad:</label><br>
-    <input type="text" id="ad" name="ad"><br>
-    <label for="soyad">Soyad:</label><br>
-    <input type="text" id="soyad" name="soyad"><br>
-    <label for="yas">Yaş:</label><br>
-    <input type="number" id="yas" name="yas"><br>
-    <label for="memleket">Memleket:</label><br>
-    <input type="text" id="memleket" name="memleket"><br><br>
-    <button type="button" onclick="bilgiGoster()">Bilgileri Göster</button>
-</form>
-
-<div id="bilgiGosterim"></div>
+<div class="container">
+    <form id="myForm">
+        <label for="name">Adı:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="surname">Soyadı:</label>
+        <input type="text" id="surname" name="surname"><br><br>
+        
+        <label for="age">Yaşı:</label>
+        <input type="number" id="age" name="age"><br><br>
+        
+        <label for="address">Adresi:</label>
+        <input type="text" id="address" name="address"><br><br>
+        <div class="button-center">
+        <button type="button" onclick="saveData()">Kaydet</button>
+        <button type="button" onclick="resetForm()">Sıfırla</button>
+    </div>
+    </form>
+    <div id="savedData"></div>   
+</div> 
 
 <script src="script.js"></script>
-
 </body>
 </html>

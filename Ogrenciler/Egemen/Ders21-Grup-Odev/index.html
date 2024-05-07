@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XOX Oyunu</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td {
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td onclick="play(this)"></td>
+        <td onclick="play(this)"></td>
+        <td onclick="play(this)"></td>
+      </tr>
+      <tr>
+        <td onclick="play(this)"></td>
+        <td onclick="play(this)"></td>
+        <td onclick="play(this)"></td>
+      </tr>
+      <tr>
+        <td onclick="play(this)"></td>
+        <td onclick="play(this)"></td>
+        <td onclick="play(this)"></td>
+      </tr>
+    </table>
+    <p>X Skor: <span id="xSkor">0</span></p>
+    <p>O Skor: <span id="oSkor">0</span></p>
+    <script src="app.js" defer></script>
+  </body>
+</html>
