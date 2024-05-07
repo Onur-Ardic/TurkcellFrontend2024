@@ -1,11 +1,14 @@
 body {
-  background-color: black;
+  background: url(https://r.resimlink.com/SZi1lXs73LR.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .container {
   width: 1180px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  justify-content: left;
+
   flex-direction: column;
 }
 .boxes {
@@ -16,12 +19,14 @@ body {
   grid-template-rows: repeat(3, 100px);
   justify-content: center;
   border-radius: 10px;
-  margin: 0 auto;
 }
 .box {
   border: 1px solid white;
   padding: 10px;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
   color: rgb(0, 102, 255);
