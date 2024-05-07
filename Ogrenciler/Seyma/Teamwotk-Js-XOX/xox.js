@@ -25,20 +25,24 @@ function startGame() {
   player.textContent = `${currentPlayer}'s turn`;
   running = true;
 }
-function itemClicked() {
-  const id = this.getAttribute("id");
 
-  if (options[id] != "" || !running) {
+function itemClicked(event) {
+  const clickedItem = event.target;
+  const id = clickedItem.getAttribute("id");
+
+  if (options[id] !== "" || !running) {
     return;
   }
 
-  updateItem(this, id);
+  updateItem(clickedItem, id);
   checkWinner();
 }
+
 function updateItem(item, index) {
   options[index] = currentPlayer;
   item.textContent = currentPlayer;
   item.style.color = currentPlayer == "X" ? "#ffc107" : "#1976d2";
+  item.style.fontSize = "36px";
 }
 function changePlayer() {
   if (currentPlayer == "X") {
