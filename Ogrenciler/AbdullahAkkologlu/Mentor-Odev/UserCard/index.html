@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <input type="text" id="name-input" placeholder="Name" />
+        <input type="date" id="date-input" placeholder="Date" />
+        <input type="age" id="age-input" placeholder="Age" />
+      </form>
+      <button id="add-button">Add</button>
+    </div>
+    <div>
+      <input id="search-input" type="text" placeholder="Search" />
+      <table id="table">
+        <tr>
+          <th><button id="name-button">Name</button></th>
+          <th><button id="date-button">Date</button></th>
+          <th><button id="age-button">Age</button></th>
+        </tr>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
