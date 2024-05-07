@@ -14,46 +14,79 @@
     </style>
 </head>
 
-<body class="d-flex flex-column align-items-center justify-content-center">
-    <div class="container">
+<body class="d-flex flex-column align-items-center">
+    <div class="container mt-5">
         <div class="row">
             <div class="col">
-                <div class="input-group mb-3">
-                    <input type="file" class="form-control" id="imageInput" accept="image/png, image/jpeg, image/jpg">
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="movieNameInput" placeholder="Film Adı">
-                    <label for="movieNameInput">Film Adı</label>
-                </div>
-                <div class="mb-3 form-floating">
-                    <input type="text" class="form-control" id="movieTopic" placeholder="Konusu"></input>
-                    <label for="movieTopic">Konusu</label>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <div class="form-floating mb-3 col-5">
-                        <input type="text" class="form-control" id="directorInput" placeholder="Yönetmen">
-                        <label for="directorInput">Yönetmen</label>
+                <form class="needs-validation" novalidate>
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="imageInput"
+                            accept="image/png, image/jpeg, image/jpg" required>
+                        <div class="valid-feedback">
+                            Hmmm Bu Doğru Görünüyor...
+                        </div>
+                        <div class="invalid-feedback">
+                            Allah Allah Bir Aksilik Var Gibi
+                        </div>
                     </div>
-                    <div class="form-floating mb-3 col-5">
-                        <input type="number" class="form-control" id="yearInput" placeholder="Yılı">
-                        <label for="yearInput">Yılı</label>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="movieNameInput" placeholder="Film Adı" required>
+                        <label for="movieNameInput">Film Adı</label>
+                        <div class="valid-feedback">
+                            Hmmm Bu Doğru Görünüyor...
+                        </div>
+                        <div class="invalid-feedback">
+                            Allah Allah Bir Aksilik Var Gibi
+                        </div>
                     </div>
-                    <div class="dropdown">
-                        <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="movieKind"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Türü
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="movieKind">
-                            <li><a class="dropdown-item" href="#" data-value="Bilim Kurgu">Bilim Kurgu</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="Korku / Gerilim">Korku / Gerilim</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="Komedi">Komedi</a></li>
-                        </ul>
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" id="movieTopic" placeholder="Konusu" required></input>
+                        <label for="movieTopic">Konusu</label>
+                        <div class="valid-feedback">
+                            Hmmm Bu Doğru Görünüyor...
+                        </div>
+                        <div class="invalid-feedback">
+                            Allah Allah Bir Aksilik Var Gibi
+                        </div>
                     </div>
-                </div>
-                <div class="d-flex justify-content-end mt-5">
-                    <button class="btn btn-primary btn-lg" onclick="addToCollection()" id="addToCollection">Koleksiyona
-                        Ekle</button>
-                </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="form-floating mb-3 col-5">
+                            <input type="text" class="form-control" id="directorInput" placeholder="Yönetmen" required>
+                            <label for="directorInput">Yönetmen</label>
+                            <div class="valid-feedback">
+                                Hmmm Bu Doğru Görünüyor...
+                            </div>
+                            <div class="invalid-feedback">
+                                Allah Allah Bir Aksilik Var Gibi
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3 col-5">
+                            <input type="number" class="form-control" id="yearInput" placeholder="Yılı" required>
+                            <label for="yearInput">Yılı</label>
+                            <div class="valid-feedback">
+                                Hmmm Bu Doğru Görünüyor...
+                            </div>
+                            <div class="invalid-feedback">
+                                Allah Allah Bir Aksilik Var Gibi
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="movieKind"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Türü
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="movieKind">
+                                <li><a class="dropdown-item" href="#" data-value="Bilim Kurgu">Bilim Kurgu</a></li>
+                                <li><a class="dropdown-item" href="#" data-value="Korku / Gerilim">Korku / Gerilim</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-value="Komedi">Komedi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end mt-5">
+                        <button class="btn btn-primary btn-lg" id="addToCollection">Koleksiyona Ekle</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
