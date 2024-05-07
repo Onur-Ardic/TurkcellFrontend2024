@@ -12,29 +12,39 @@ document.getElementById('imageInput').addEventListener('change', event => {
 });
 
 // Kind
-let kind;
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll('.dropdown-menu a').forEach(element => {
-        element.addEventListener('click', e => {
-            kind = e.target.getAttribute('data-value');
-        });
+let kind = "Belirtilmedi";
+document.querySelectorAll('.dropdown-menu a').forEach(element => {
+    element.addEventListener('click', event => {
+        kind = event.target.dataset.value;
+        document.getElementById('movieKind').innerText = event.target.dataset.value;
     });
+});
+
+document.getElementById('addToCollection').addEventListener('click', () => {
+    if (document.getElementById('imageInput').checkValidity() &&
+        document.getElementById('movieNameInput').checkValidity() &&
+        document.getElementById('movieTopic').checkValidity() &&
+        document.getElementById('directorInput').checkValidity() &&
+        document.getElementById('yearInput').checkValidity()) {
+        addToCollection();
+    }
 });
 
 const addToCollection = () => {
     // Card
     const card = document.createElement('div');
-    card.classList.add('card');
+    card.classList = 'card shadow p-2 border-0';
     card.style.width = '25rem'
     card.style.margin = '1rem'
     // Image Preview
     const imagePreview = document.createElement('div');
-    imagePreview.classList.add('imagePreview');
+    imagePreview.classList = 'imagePreview d-flex align-items-center justify-content-center';
     // Image
     let lsImage = localStorage.getItem('selectedImage')
     if (lsImage) {
         let imgElement = document.createElement('img');
         imgElement.src = lsImage;
+        imgElement.style.height = "15rem"
         // localStorage.clear()
         imgElement.classList.add('img-fluid');
         imagePreview.appendChild(imgElement)
@@ -64,13 +74,11 @@ const addToCollection = () => {
     const year = document.createElement('p');
     year.innerText = document.getElementById('yearInput').value
 
-    cardFooter.appendChild(knd);
-    cardFooter.appendChild(director);
-    cardFooter.appendChild(year);
+    let footers = [knd, director, year];
+    footers.forEach(element => cardFooter.appendChild(element));
 
-    cardBody.appendChild(cardTitle);
-    cardBody.appendChild(cardText);
-    cardBody.appendChild(cardFooter);
+    let bodies = [cardTitle, cardText, cardFooter]
+    bodies.forEach(element => cardBody.appendChild(element));
 
     card.appendChild(imagePreview);
     card.appendChild(cardBody);
@@ -78,16 +86,24 @@ const addToCollection = () => {
     document.getElementById('card-container').appendChild(card);
 }
 
-{/* <div class="card" style="width: 18rem;" >
-    imgpreview
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-            <div class="d-flex justify-content-between">
-                <p>Tür</p>
-                <p>Yönetmen</p>
-                <p>Yıl</p>
-            </div>
-        </div>
-</div> */}
+//? Validation
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+            event.preventDefault();
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+        }, false)
+    })
+})()

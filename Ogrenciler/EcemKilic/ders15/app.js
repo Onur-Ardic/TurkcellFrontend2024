@@ -40,6 +40,7 @@ for (let field = 0; field < fields.length; field++) {
             range = "X";
             turn.textContent = `Sıra ${range} de`
         }        
+        
     });
 }
 
@@ -52,9 +53,18 @@ function control(range){
             div.textContent = `${range} kazandı.`
             fieldss.style.pointerEvents = "none"
             result.appendChild(div);
-            return false;
-        }
+            return
+        }        
     }     
+    for(let i = 0; i < fields.length;i++){
+        if(!fields[i].classList.contains("selected")){
+            return
+        }
+    }
+    let div = document.createElement("div")
+    div.classList.add("bg-success","p-3","text-white");
+    div.textContent = `Berabere`
+    result.appendChild(div);
 }
 
 playAgain.addEventListener("click",() => {
