@@ -64,17 +64,47 @@ function display(array) {
   cards.innerHTML = "";
   array.map((movie) => {
     const card = document.createElement("div");
+    card.classList.add("card", "col-3");
+    const cardBody = document.createElement("div");
+    cardBody.classList.add("card-body");
+    card.appendChild(cardBody);
+    const title = document.createElement("h5");
+    title.classList.add("card-title");
+    cardBody.appendChild(title);
+    title.textContent = movie.name;
+
+    const directorName = document.createElement("p");
+    directorName.classList.add("card-text");
+    cardBody.appendChild(directorName);
+    directorName.textContent = movie.director;
+
+    const yearName = document.createElement("p");
+    yearName.classList.add("card-text");
+    cardBody.appendChild(yearName);
+    yearName.textContent = movie.year;
+
+    const genreName = document.createElement("p");
+    genreName.classList.add("card-text");
+    cardBody.appendChild(genreName);
+    genreName.textContent = movie.genre;
+
+    const imageName = document.createElement("p");
+    imageName.classList.add("card-text");
+    cardBody.appendChild(imageName);
+    imageName.textContent = movie.image;
+
     const deleteButton = document.createElement("button");
+    deleteButton.classList.add("btn", "btn-primary");
     deleteButton.textContent = "Delete";
     deleteButton.addEventListener("click", () => {
       deleteMovie(movie.name);
     });
     const updateButton = document.createElement("button");
+    updateButton.classList.add("btn", "btn-danger");
     updateButton.addEventListener("click", () => {
       updateMovie(movie.name);
     });
     updateButton.textContent = "Update";
-    card.textContent = movie.name + " " + movie.director;
     card.appendChild(deleteButton);
     card.appendChild(updateButton);
     cards.appendChild(card);
