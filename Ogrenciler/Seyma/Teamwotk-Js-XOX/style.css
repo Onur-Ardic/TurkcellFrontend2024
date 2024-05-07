@@ -1,35 +1,37 @@
 body {
-    background-color: black;
+  background-color: black;
 }
-.container{
-    width: 1180px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.container {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.boxes{
-    width: 30%;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    justify-content: center;
-    border-radius: 10px ;
-    margin: 0 auto;
+.boxes {
+  width: 30%;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0 auto;
 }
-.box{
-    border: 1px solid white;
-    padding: 10px;
-    border-radius: 5px;
+.box {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
 }
 h1 {
-    color: rgb(0, 102, 255);
-   
+  color: rgb(0, 102, 255);
 }
 .btn {
-    padding: 10px 25px;
-    background-color: rgb(0, 102, 255);
-    color: white;
-    font-weight: 600;
+  padding: 10px 25px;
+  background-color: rgb(0, 102, 255);
+  color: white;
+  font-weight: 600;
+}
+#player {
+  color: aquamarine;
 }
