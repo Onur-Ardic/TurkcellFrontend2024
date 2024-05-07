@@ -10,6 +10,27 @@
         .dropdown-toggle::after{
             display: none;
         }
+        #filters div{
+            margin: 5px 10px;
+            border: 1px solid navy;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+        #filters div:hover{
+            margin: 5px 10px;
+            border: 1px solid navy;
+            background-color: navy;
+            color: white;
+        }
+        #filters div.active{
+            margin: 5px 10px;
+            border: 1px solid crimson;
+            background-color: crimson;
+            color: white;
+        }
+        #movies .card img{
+            height: 200px;
+        }
     </style>
 </head>
 <body>
@@ -35,16 +56,32 @@
                     </div>
                     <div class="my-3">
                         <label for="imageInput" class="form-label">Image:</label>
-                        <input type="file" id="imageInput" class="form-control" required>
+                        <input type="text" id="imageInput" class="form-control" required>
                     </div>
                     <button id="btnAdd" class="btn btn-danger">Submit</button>
                 </form>
             </div>
             <div class="col-5 p-5">
-                
+                <div id="cardShows" class="card position-relative">
+                    <div class="card-body">
+                        <img src="" alt="" class="opacity-50 w-100" style="height: 400px;">
+                        <div class="position-absolute top-50 start-50 translate-middle mt-3">
+                            <h2 class="card-title"><span class="d-block fst-italic"></span></h2>
+                            <h3 class="fw-medium my-3"><span class="d-block fst-italic"></span></h2>
+                            <p class="fw-medium my-3 year "><span class="d-block fst-italic"></span></p>
+                            <p class="fw-medium my-3 type"><span class="d-block fst-italic"></span></p>
+                        </div>                        
+                    </div>
+                </div>
             </div>
         </div>
         <h1 class="my-5">MOVİES</h1>
+        <div id="filters" class="d-flex">
+            <div class="active">All</div>
+            <div>Komedi</div>
+            <div>Aksiyon</div>
+            <div>Bilim Kurgu</div>
+        </div>
         <div id="movies" class="row row-cols-lg-4 row-cols-md-3 my-3">            
             <!-- <div class="col">
                 <div class="card">
