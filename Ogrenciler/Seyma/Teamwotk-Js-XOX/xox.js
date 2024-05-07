@@ -41,7 +41,7 @@ function itemClicked(event) {
 function updateItem(item, index) {
   options[index] = currentPlayer;
   item.textContent = currentPlayer;
-  item.style.color = currentPlayer == "X" ? "#ffc107" : "#1976d2";
+  item.style.color = currentPlayer == "X" ? "#ffff" : "#ffff";
   item.style.fontSize = "36px";
 }
 function changePlayer() {
