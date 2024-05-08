@@ -1,3 +1,28 @@
+body {
+  background-color: #fffaee; /* Arka plan rengi */
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
 
+.btn-primary {
+  border: 1px solid #842cf0 !important;
+  background: #ac6cfa;
+}
+.btn-primary:hover {
+  background-color: #5718a3;
+}
+
+.custom-inp {
+  border-radius: 5px;
+  border: 1px solid #4d257c !important;
+  background-color: #e0d3ee;
+}
+
+.btn-secondary {
+  border: 1px solid #842cf0 !important;
+  background: #3235de;
+}
+.btn-secondary:hover {
+  background-color: #2b2c70;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style> 
+        .dropdown-toggle::after{
+            display: none;
+        }
+        /* #filters div{
+            margin: 5px 10px;
+            border: 1px solid navy;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+        #filters div:hover{
+            margin: 5px 10px;
+            border: 1px solid navy;
+            background-color: navy;
+            color: white;
+        }
+        #filters div.active{
+            margin: 5px 10px;
+            border: 1px solid crimson;
+            background-color: crimson;
+            color: white;
+        } */
+        #movies .card img{
+            height: 200px;
+        }
+        #filters div.active{
+            background-color: black;
+            color: white;
+            border-color: black;
+        }
+        body #add{
+            background: url("https://img.lovepik.com/bg/20240330/3D-Background-Brings-Life-to-an-Empty-Movie-Theater_5595871_wh860.jpg!/fw/860") no-repeat center/cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="add" class="w-100">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-6 col-12">
+                <form>
+                    <div class="my-3">
+                        <label for="movieNameInput" class="form-label fw-bold text-light bg-dark rounded px-3 py-1">Movie Name:</label>
+                        <input type="text" id="movieNameInput" class="form-control">
+                    </div>
+                    <div class="my-3">
+                        <label for="directorInput" class="form-label fw-bold text-light bg-dark rounded px-3 py-1">Director:</label>
+                        <input type="text" id="directorInput" class="form-control">
+                    </div>
+                    <div class="my-3">
+                        <label for="yearInput" class="form-label fw-bold text-light bg-dark rounded px-3 py-1">Year:</label>
+                        <input type="number" id="yearInput" class="form-control" >
+                    </div>
+                    <div class="my-3">
+                        <label for="typeInput" class="form-label fw-bold text-light bg-dark rounded px-3 py-1">Type:</label>
+                        <input type="text" id="typeInput" class="form-control" >
+                    </div>
+                    <div class="my-3">
+                        <label for="imageInput" class="form-label fw-bold text-light bg-dark rounded px-3 py-1">Image:</label>
+                        <input type="text" id="imageInput" class="form-control" >
+                    </div>
+                    <button id="btnAdd" class="btn btn-dark" type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="col-lg-5 col-md-6 col-12 p-5">
+                <div id="cardShows" class="card position-relative">
+                    <div class="card-body">
+                        <img src="" alt="" class="opacity-50 w-100" style="height: 400px;">
+                        <div class="position-absolute top-50 start-50 translate-middle mt-3">
+                            <h2 class="card-title"><span class="d-block fst-italic"></span></h2>
+                            <h3 class="fw-medium my-3"><span class="d-block fst-italic"></span></h2>
+                            <p class="fw-medium my-3 year "><span class="d-block fst-italic"></span></p>
+                            <p class="fw-medium my-3 type"><span class="d-block fst-italic"></span></p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="container">
+        <h1 class="my-5">MOVIES</h1>
+        <div id="filters" class="d-flex gap-2">
+            <div class="active btn btn-outline-dark">All</div>
+            <div class="btn btn-outline-dark">Comedy</div>
+            <div class="btn btn-outline-dark">Action</div>
+            <div class="btn btn-outline-dark">Science Fiction</div>
+        </div>
+        <div id="movies" class="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-1">            
+            <!-- <div class="col">
+                <div class="card">
+                    <img src="img/pisi.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h2 id="movieName" class="card-title">Movie Name: <span>Yüzüklerin Efendisi</span></h2>
+                        <h3 class="fw-medium my-3" id="director">Director: <span>VELİ</span></h2>
+                        <p class="fw-medium my-3" id="year">Year: <span>2025</span></p>
+                        <p class="fw-medium my-3" id="type">Type: <span>Komedi</span></p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>        
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,7 +1,6 @@
 function writeToInput(text) {
   var inputElement = document.getElementById("textToCalculate");
   inputElement.value += text;
-  console.log(inputElement.value);
 }
 
 function deleteAnElement() {
@@ -12,4 +11,10 @@ function deleteAnElement() {
 }
 function allClear() {
   document.getElementById("textToCalculate").value = "";
+}
+function calculate() {
+  const result = math.evaluate(
+    document.getElementById("textToCalculate").value
+  );
+  document.getElementById("result").innerText = result;
 }
