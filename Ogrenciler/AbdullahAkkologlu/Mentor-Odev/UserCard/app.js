@@ -27,6 +27,7 @@ function refreshUI(array) {
     const ageTd = document.createElement("td");
     ageTd.textContent = user.age;
     const buttonTd = document.createElement("button");
+    buttonTd.classList.add("btn", "btn-danger");
     buttonTd.addEventListener("click", () => {
       deleteRow(user.name);
     });
@@ -39,7 +40,8 @@ function refreshUI(array) {
   });
 }
 
-function addToArray() {
+function addToArray(e) {
+  e.preventDefault();
   const newUser = {
     name: nameInput.value,
     date: dateInput.value,
@@ -50,12 +52,15 @@ function addToArray() {
     dateInput.value === "" ||
     ageInput.value === ""
   ) {
-    alert("hata");
+    alert("Lütfen tüm alanları doldurunuz!");
     return;
   }
   userFromLS.push(newUser);
   localStorage.setItem("usersArray", JSON.stringify(userFromLS));
   refreshUI(userFromLS);
+  nameInput.value = "";
+  dateInput.value = "";
+  ageInput.value = "";
 }
 addButton.addEventListener("click", addToArray);
 refreshUI(userFromLS);
