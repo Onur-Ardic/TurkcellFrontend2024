@@ -6,6 +6,7 @@ let movieGenre = document.querySelector("#movieGenre");
 let moviePoster = document.querySelector("#moviePoster");
 
 let movieCardContainer = document.querySelector(".movieCardContainer");
+let isEdited = false;
 
 document
   .getElementById("movieForm")
@@ -25,7 +26,7 @@ function movieCardCreate() {
   let moviePosterValue = moviePoster.value;
 
   movieCards.push({
-    movieId: movieCards.length + 1,
+    movieId: crypto.randomUUID(),
     movieName: movieNameValue,
     movieDirector: movieDirectorValue,
     movieYear: movieYearValue,
@@ -61,14 +62,56 @@ function showCards() {
         <p class="p-2" id="movieYearCard">Vizyon Tarihi: ${movie.movieYear}</p>
         <p class="p-2" id="movieGenreCard">Türü: ${movie.movieGenre}</p>
         <div class="d-flex justify-content-between p-2">
-          <button type="submit" class="btn btn-success">
-            Güncelle
+          <button type="submit" class="btn btn-success updateBtn" onclick='updateMovie("${movie.movieId}")'>
+            Degistir
           </button>
-          <button type="submit" class="btn btn-warning">Sil</button>
+          <button type="submit" class="btn btn-warning deleteBtn" data-movie-id="${movie.movieId}">Sil</button>
         </div>
       </div>
     </div>`;
     movieCardContainer.appendChild(card);
-    console.log(movieCards)
   });
+
+
+  document.querySelectorAll(".deleteBtn").forEach((deleteButton) => {
+    deleteButton.addEventListener("click", function () {
+      let movieId = this.getAttribute("data-movie-id");
+      deleteMovie(movieId);
+    });
+  });
+
 }
+
+function deleteMovie(movieId) {
+  movieCards = movieCards.filter((movie) => movie.movieId != movieId);
+  localStorage.setItem("moviesData", JSON.stringify(movieCards));
+
+  showCards();
+}
+
+function updateMovie(movieId) {
+  getMovieInfo(movieId)
+}
+
+function getMovieInfo(movieId) {
+  let moviesData = JSON.parse(localStorage.getItem("moviesData"))
+  let selectedMovie = moviesData.find((movie) => movie.movieId === movieId);
+  movieName.value = selectedMovie.movieName
+  movieDirector.value = selectedMovie.movieDirector
+  movieYear.value = selectedMovie.movieYear
+  movieGenre.value = selectedMovie.movieGenre
+  moviePoster.value = selectedMovie.moviePoster
+  isEdited = true;
+  if (isEdited) {
+    document.getElementById("afisOlustur").classList.add("d-none")
+    document.getElementById("bilgileriGuncelle").classList.remove("d-none")
+  }
+}
+
+// document.querySelectorAll("#bilgileriGuncelle").forEach((updateButton) => {
+//   updateButton.addEventListener("click", function () {
+//     let movieId = this.getAttribute("data-movie-id");
+//     console.log("bilgileri guncelle:", movieId)
+//     // updateMovie(movieId);
+//   });
+// });
