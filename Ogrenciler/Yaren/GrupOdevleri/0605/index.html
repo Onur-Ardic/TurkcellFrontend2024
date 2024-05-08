@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinema Koleksiyon</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-secondary">
+    <div class="container">
+      <div class="my-5">
+        <h2 class="fw-semibold">FİLM KOLEKSİYONU OLUŞTURMA</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <form id="movieForm">
+            <div class="mb-3">
+              <label for="movieName" class="form-label">Film Adı:</label>
+              <input type="text" class="form-control" id="movieName" />
+            </div>
+            <div class="mb-3">
+              <label for="movieDirector" class="form-label"
+                >Yönetmen Adı:</label
+              >
+              <input type="text" class="form-control" id="movieDirector" />
+            </div>
+            <div class="mb-3">
+              <label for="movieYear" class="form-label">Vizyon Tarihi:</label>
+              <input
+                type="number"
+                min="1950"
+                max="2024"
+                class="form-control"
+                id="movieYear"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="movieGenre" class="form-label">Türü:</label>
+              <input type="text" class="form-control" id="movieGenre" />
+            </div>
+            <div class="mb-3">
+              <label for="moviePoster" class="form-label">Afiş Linki:</label>
+              <input type="url" class="form-control" id="moviePoster" />
+            </div>
+            <button type="submit" class="btn btn-dark">Afiş Oluştur</button>
+          </form>
+        </div>
+        <div class="col-lg-6 ps-5">
+          <div
+            class="movieCard rounded-4 p-5 mt-3 d-flex flex-column justify-content-center"
+            id="movieCard"
+          >
+            <!--Büyük harfe çevireceğiz-->
+            <div class="text-white">
+              <p class="p-2" id="movieNameCard">Film Adı</p>
+              <p class="p-2" id="movieDirectorCard">Yönetmen Adı</p>
+              <p class="p-2" id="movieYearCard">Vizyon Tarihi</p>
+              <p class="p-2" id="movieGenreCard">Türü</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="my-5"><h2 class="fw-semibold">OLUŞTURULAN AFİŞLER</h2></div>
+        <div class="movieCardContainer d-flex flex-wrap">
+          <!-- <div class="col-lg-6 ps-5">
+            <div
+              class="movieCard rounded-4 p-5 mt-3 d-flex flex-column justify-content-center"
+              id="movieCard"
+            >
+              <div class="text-white">
+                <p class="p-2" id="movieNameCard">Film Adı</p>
+                <p class="p-2" id="movieDirectorCard">Yönetmen Adı</p>
+                <p class="p-2" id="movieYearCard">Vizyon Tarihi</p>
+                <p class="p-2" id="movieGenreCard">Türü</p>
+                <div class="d-flex justify-content-between p-2">
+                  <button type="submit" class="btn btn-success">
+                    Güncelle
+                  </button>
+                  <button type="submit" class="btn btn-warning">Sil</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
