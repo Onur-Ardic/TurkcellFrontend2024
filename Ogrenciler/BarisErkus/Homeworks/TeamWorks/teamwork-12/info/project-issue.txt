@@ -6,6 +6,6 @@
 
 - her bir kart içinde de film ile ilgili afiş ve diğer bilgiler olacak, aynı zamanda bu kart üzerinde 2 adet buton olacak biri silme diğeri de güncelleme işi yapacak.
 
-- güncelleme butonuna tıklandığında bilgiler tekrar yukarıdaki forma yaılıp orada düzenlenecek.
+- güncelleme butonuna tıklandığında bilgiler tekrar yukarıdaki forma yazılıp orada düzenlenecek.
 
 - localstorage kullanılacak.
