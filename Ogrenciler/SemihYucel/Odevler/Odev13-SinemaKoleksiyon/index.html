@@ -10,25 +10,31 @@
     <div class="container mt-5">
         <h1>Film Ekle</h1>
         <form id="filmForm" class="mb-3">
-            <div class="mb-3">
-                <label for="filmAdi" class="form-label">Film Adı:</label>
-                <input type="text" class="form-control" id="filmAdi" required>
-            </div>
-            <div class="mb-3">
-                <label for="yonetmen" class="form-label">Yönetmen:</label>
-                <input type="text" class="form-control" id="yonetmen" required>
-            </div>
-            <div class="mb-3">
-                <label for="yil" class="form-label">Yıl:</label>
-                <input type="number" class="form-control" id="yil" required>
-            </div>
-            <div class="mb-3">
-                <label for="tur" class="form-label">Tür:</label>
-                <input type="text" class="form-control" id="tur" required>
-            </div>
-            <div class="mb-3">
-                <label for="afisUrl" class="form-label">Afiş URL:</label>
-                <input type="url" class="form-control" id="afisUrl" required>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="filmAdi" class="form-label">Film Adı:</label>
+                        <input type="text" class="form-control" id="filmAdi" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="yonetmen" class="form-label">Yönetmen:</label>
+                        <input type="text" class="form-control" id="yonetmen" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="yil" class="form-label">Yıl:</label>
+                        <input type="number" class="form-control" id="yil" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tur" class="form-label">Tür:</label>
+                        <input type="text" class="form-control" id="tur" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="afisUrl" class="form-label">URL:</label>
+                    <input type="url" class="form-control" id="afisUrl" required>
+                </div>
             </div>
             <button type="submit" class="btn btn-primary">Ekle</button>
         </form>
@@ -36,7 +42,7 @@
         <h1>Film Koleksiyonu</h1>
         <div id="filmKoleksiyonu" class="row"></div>
     </div>
-
+    
     <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,31 @@
+.container {
+    background-image: url('https://st4.depositphotos.com/9904426/27435/i/600/depositphotos_274353086-stock-photo-old-vintage-movie-projector-on.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+    .form-control {
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    background-color: #fff;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.btn-primary {
+    width: 100%; 
+    max-width: 200px; 
+    margin: 0 auto;
+}
