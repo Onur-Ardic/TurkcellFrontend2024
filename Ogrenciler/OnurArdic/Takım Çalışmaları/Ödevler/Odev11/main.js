@@ -15,12 +15,7 @@ window.onload = function () {
     addİtem(movieValue)
   }
 }
-window.onload = function () {
-  for (let i = 0; i < localStorage.length; i++) {
-    const movieValue = localStorage.key(i)
-    addİtem(movieValue)
-  }
-}
+
 addMovieForm.addEventListener('submit', (e) => {
   e.preventDefault()
   const movie = {
