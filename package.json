@@ -2,6 +2,5 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "sass": "^1.76.0"
-
   }
 }
