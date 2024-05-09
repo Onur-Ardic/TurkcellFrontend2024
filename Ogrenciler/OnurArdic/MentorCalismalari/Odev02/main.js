@@ -1,6 +1,9 @@
 const firstName = document.getElementById('name')
 const surName = document.getElementById('surname')
-const ticketWrapper = document.querySelector('.ticket-card-reserved')
+const ticketWrapper = document.querySelector('.ticket-wrapper')
+const ticketName = document.getElementById('name')
+const ticketSurname = document.getElementById('surname')
+const ticketChair = document.getElementById('ticket-chair')
 const reservedValue = []
 
 window.onload = function () {
@@ -38,6 +41,7 @@ chair.forEach((chairİtem) => {
       const value = confirm(
         `${chairNumber} Numaralı Koltuğu Rezerve Edeceksiniz Onaylıyor musunuz?`,
       )
+      reservedValue.length = 0
 
       if (value === true) {
         const person = {
@@ -49,22 +53,11 @@ chair.forEach((chairİtem) => {
         chairİtem.style.color = 'white'
         chairİtem.innerText = `${chairNumber} Numaralı Koltuk Rezerve Edildi`
         localStorage.setItem(`${chairNumber}`, JSON.stringify(person))
-        for (let i = 0; i < localStorage.length; i++) {
-          let key = localStorage.key(i)
-          let value = localStorage.getItem(key)
-          reservedValue.push({ key: key, value: JSON.parse(value) })
-          reservedValue.forEach((item) => {
-            console.log(item)
-            const ticket = `
-            <div class="person-info d-flex top-0 p-2 justify-content-between gap-3 position-absolute end-0">
-            <p class="name" id="name">${item.value.name}</p>
-            <p class="surname" id="surname">${item.value.surname}</p>
-            <span>${item.key}</span>
-          </div>
-            `
-
-            ticketWrapper.innerHTML += ticket
-          })
+        if (ticketChair.innerText === person.chairNumber) {
+          ticketChair.innerText = person.chairNumber
+        } else {
+          ticketChair.innerText += ', ' + person.chairNumber
+          ticketName.innerText = `${person.name} ${person.surname}`
         }
       }
     }
