@@ -52,9 +52,17 @@
               <label for="moviePoster" class="form-label">Afiş Linki:</label>
               <input type="url" class="form-control" id="moviePoster" />
             </div>
-            <button type="submit" class="btn btn-dark" id="afisOlustur">Afiş Oluştur</button>
-            <button type="submit" class="btn btn-success d-none" id="bilgileriGuncelle">Bilgileri Guncelle</button>
           </form>
+          <button type="submit" class="btn btn-dark" id="afisOlustur">
+            Afiş Oluştur
+          </button>
+          <button
+            type="submit"
+            class="btn btn-success d-none"
+            id="bilgileriGuncelle"
+          >
+            Film Bilgileri Guncelle
+          </button>
         </div>
         <div class="col-lg-6 ps-5">
           <div
@@ -62,38 +70,18 @@
             id="movieCard"
           >
             <!--Büyük harfe çevireceğiz-->
-            <div class="text-white">
-              <p class="p-2" id="movieNameCard">Film Adı</p>
-              <p class="p-2" id="movieDirectorCard">Yönetmen Adı</p>
-              <p class="p-2" id="movieYearCard">Vizyon Tarihi</p>
-              <p class="p-2" id="movieGenreCard">Türü</p>
+            <div class="text-white" id="movieCardInformation">
+              <p class="p-2" id="movieNameCard">Film Adı:</p>
+              <p class="p-2" id="movieDirectorCard">Yönetmen Adı:</p>
+              <p class="p-2" id="movieYearCard">Vizyon Tarihi:</p>
+              <p class="p-2" id="movieGenreCard">Türü:</p>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="my-5"><h2 class="fw-semibold">OLUŞTURULAN AFİŞLER</h2></div>
-        <div class="movieCardContainer d-flex flex-wrap">
-          <!-- <div class="col-lg-6 ps-5">
-            <div
-              class="movieCard rounded-4 p-5 mt-3 d-flex flex-column justify-content-center"
-              id="movieCard"
-            >
-              <div class="text-white">
-                <p class="p-2" id="movieNameCard">Film Adı</p>
-                <p class="p-2" id="movieDirectorCard">Yönetmen Adı</p>
-                <p class="p-2" id="movieYearCard">Vizyon Tarihi</p>
-                <p class="p-2" id="movieGenreCard">Türü</p>
-                <div class="d-flex justify-content-between p-2">
-                  <button type="submit" class="btn btn-success">
-                    Güncelle
-                  </button>
-                  <button type="submit" class="btn btn-warning">Sil</button>
-                </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
+        <div class="movieCardContainer d-flex flex-wrap mb-5"></div>
       </div>
     </div>
     <script src="app.js"></script>
