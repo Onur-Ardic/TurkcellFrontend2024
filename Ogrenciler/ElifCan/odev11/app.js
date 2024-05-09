@@ -21,9 +21,7 @@ addMoviebutton.addEventListener("click", (e) => {
 });
 addMovieForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  if (document.getElementById("staticBackdropLabel").innerText == "Güncelle") {
-    elif();
-  }
+
   const movie = {
     id: count++,
     name: movieName.value.trim(),
@@ -101,12 +99,16 @@ function updateMovie(movieValue) {
   document.getElementById("year").value = movie.year;
   document.getElementById("category").value = movie.category;
   document.getElementById("movieimage").value = movie.image;
+  if (document.getElementById("staticBackdropLabel").innerText == "Güncelle") {
+    elif(movieValue);
+  }
 }
-function elif() {
+function elif(movieValue) {
   console.log("eliff");
   movieNameList = movieNameList.filter((movie) => movie.name !== movieValue);
   movieNameList.push(movie);
   localStorage.setItem("movieNameList", JSON.stringify(movieNameList));
+  // deleteMovie(movieValue);
 }
 
 const selectElementFilter = document.getElementById("categoryFilter");
