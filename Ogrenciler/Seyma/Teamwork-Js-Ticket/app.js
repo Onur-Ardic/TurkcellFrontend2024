@@ -6,6 +6,10 @@ const inputs = {
     imageUrl: document.getElementById("imageUrl"),
   };
   
+
+
+  
+
   const moviesList = document.getElementById("moviesList");
   const movieList = [];
   
@@ -37,14 +41,24 @@ const inputs = {
       movieType: inputs.movieType.value.trim(),
       imageUrl: inputs.imageUrl.value.trim(),
     };
-  
+    
+    function localSave () {
+        let filmListesi = JSON.parse(localStorage.getItem("filmListesi")) || [];
+        filmListesi.push(newUser);
+        localStorage.setItem("filmListesi", JSON.stringify(filmListesi));
+    
+      }
+
+      
     movieList.push(newUser);
     displayUsers();
+    localSave ();
     clearInputs();
+    
   });
   function displayUsers() {
     moviesList.textContent = "";
-    movieList.forEach((movie) => {
+    movieList.forEach((movie, index) => {
       // Create a list item to hold the Bootstrap card
       const listItem = document.createElement("li");
       listItem.className = "mb-3"; // Add margin-bottom for spacing
@@ -101,12 +115,39 @@ const inputs = {
       image.style.width = "18rem"
       image.src = movie.imageUrl;
       pimageUrl.className = "card-text";
-      pimageUrl.textContent = `: ${movie.imageUrl}`;
+      
       liimageUrl.appendChild(pimageUrl);
       ul.appendChild(liimageUrl);
       cardBody.appendChild(ul);
       cardBody.appendChild(image);
-  
+      const updateBtn = document.createElement("button");
+      updateBtn.textContent = "Güncelle";
+      updateBtn.className = "btn btn-primary mt-3";
+      // Add event listener to update button
+      updateBtn.addEventListener("click", () => {
+        // Update input values with the selected movie's information
+        inputs.name.value = movie.name;
+        inputs.director.value = movie.director;
+        inputs.year.value = movie.year;
+        inputs.movieType.value = movie.movieType;
+        inputs.imageUrl.value = movie.imageUrl;
+      });
+      movieList.splice(index, 1);
+
+      const deleteButton = document.createElement ("button");
+      deleteButton.textContent = "Sil" ;
+      deleteButton.className = "btn btn-danger mt-3 me-2";
+      deleteButton.addEventListener("click", () => {
+        // Remove the selected movie from the movieList array
+        movieList.splice(index, 1);
+        // Display the updated list
+        displayUsers();
+        // Update local storage
+        localSave();
+      });
+
+      cardBody.appendChild(updateBtn);
+      cardBody.appendChild(deleteButton);
       card.appendChild(cardBody);
   
       listItem.appendChild(card);
@@ -122,3 +163,4 @@ const inputs = {
     });
   }
   
+ 
