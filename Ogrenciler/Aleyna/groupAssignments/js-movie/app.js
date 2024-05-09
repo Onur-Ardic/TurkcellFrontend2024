@@ -12,6 +12,7 @@ const typeShows = document.querySelector("#cardShows .type span");
 const imgShows = document.querySelector("#cardShows img");
 const filters = document.querySelectorAll("#filters div");
 const inputs = document.querySelectorAll("form input");
+const form = document.querySelector("form");
 let editId;
 let editStatus = false;
 let image;
@@ -40,8 +41,8 @@ function displayMovies(filter){
                                 <i class="fa-solid fa-ellipsis"></i>
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#" onclick="deleteMovie(${movie.id})"><i class="fa-solid fa-trash"></i> Delete</a></li>
-                                <li><a class="dropdown-item" href="#" onclick='editMovie(${movie.id},"${movie.movieName}","${movie.director}","${movie.year}","${movie.type}","${movie.image}")'><i class="fa-solid fa-pen-nib"></i> Edit</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="deleteMovie('${movie.id}')"><i class="fa-solid fa-trash"></i> Delete</a></li>
+                                <li><a class="dropdown-item" href="#" onclick='editMovie("${movie.id}","${movie.movieName}","${movie.director}","${movie.year}","${movie.type}","${movie.image}")'><i class="fa-solid fa-pen-nib"></i> Edit</a></li>
                             </ul>
                         </div>
                         <div class="card-body">
@@ -60,17 +61,11 @@ function displayMovies(filter){
     
 }
 
-btnAdd.addEventListener("click",newMovie);
+form.addEventListener("submit",newMovie)
 
 function newMovie(){
-    for(let input of inputs){
-        if(input.value == ""){
-            alert("Lütfen doldur.")
-            return;
-        }
-    }
     if(!editStatus){
-        movieList.push( {"id":movieList.length + 1,"movieName":movieNameInput.value,"director":directorInput.value,"year":yearInput.value,"type":typeInput.value,"image":imageInput.value});
+        movieList.push( {"id":crypto.randomUUID(),"movieName":movieNameInput.value,"director":directorInput.value,"year":yearInput.value,"type":typeInput.value,"image":imageInput.value});
     }else{
         for(let movie of movieList){
             if(editId == movie.id){
@@ -81,6 +76,7 @@ function newMovie(){
                 movie.image = imageInput.value;
             }
         }
+        btnAdd.textContent = "Submit";
     }
     editStatus = false;
     movieNameInput.value = "";
@@ -92,7 +88,7 @@ function newMovie(){
     directorShows.innerText = "";
     yearShows.innerText = "";
     typeShows.innerText = "";
-    imgShows.src = "";
+    imgShows.src = "img/Red and Blue Movie Night Poster.png";
     localStorage.setItem("movieList",JSON.stringify(movieList));
     displayMovies(document.querySelector("#filters div.active").textContent);
 }
@@ -111,6 +107,7 @@ function editMovie(id,name,director,year,type,image){
     typeShows.innerText = type;
     imgShows.src = image;
     editStatus = true;
+    btnAdd.textContent = "Update";
 }
 
 function deleteMovie(id){
