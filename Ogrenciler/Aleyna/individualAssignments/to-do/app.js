@@ -3,42 +3,80 @@ const addButton = document.getElementById("inputAdd");
 const deleteButton = document.getElementById("inputDelete");
 const activeCard = document.querySelector(".activeCard");
 const passiveCard = document.querySelector(".passiveCard");
+const imageInput = document.getElementById("inputImage");
+
+// kartları sürüklemek için
+let currentCard = null;
 
 addButton.addEventListener("click", function () {
-  let text = textInput.value.trim();
+  const text = textInput.value.trim();
   if (text) {
-    let card = document.createElement("div");
+    const card = document.createElement("div");
     card.classList.add("card");
+    card.draggable = true;
     card.textContent = text;
-    card.addEventListener("click", moveToDone);
+
+    card.addEventListener("dragstart", dragCard);
+    card.addEventListener("contextmenu", editCardInline);
+    card.addEventListener("click", deleteButton);
+
     activeCard.appendChild(card);
     textInput.value = "";
+    localStorage.setItem(text, JSON.stringify(text));
   }
 });
 
-deleteButton.addEventListener("click", function () {
-  textInput.value = "";
-});
-
-function moveToDone(event) {
-  const card = event.target;
-  activeCard.removeChild(card);
-  passiveCard.appendChild(card);
-  card.removeEventListener("click", moveToDone);
-  card.addEventListener("click", deleteCard);
+function dragCard(event) {
+  currentCard = event.target; // sürüklenen kart
 }
-function deleteCard(event) {
+
+// kartı bırakmak için allow
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function dropCard(event, target) {
+  event.preventDefault();
+
+  // nereye bırakıldığını anlamak için
+  if (target === "active") {
+    activeCard.appendChild(currentCard);
+  } else if (target === "passive") {
+    passiveCard.appendChild(currentCard);
+  }
+
+  currentCard = null; // kart dragını resetlemek
+}
+
+// sağ clickle kartı editlemek için 'editCardInline'
+function editCardInline(event) {
+  event.preventDefault();
+
   const card = event.target;
-  passiveCard.removeChild(card);
+
+  if (card.firstChild.tagName !== "INPUT") {
+    const input = document.createElement("input");
+    input.type = "text";
+    input.value = card.textContent;
+
+    card.textContent = "";
+    card.appendChild(input);
+
+    const saveChanges = () => {
+      card.textContent = input.value;
+    };
+
+    input.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        saveChanges();
+      }
+    });
+  }
 }
 
 const initialActiveCards = document.querySelectorAll(".activeCard .card");
 initialActiveCards.forEach((card) => {
-  card.addEventListener("click", moveToDone);
+  card.draggable = true;
+  card.addEventListener("dragstart", dragCard); // sol  ile sürükleme
+  card.addEventListener("contextmenu", editCardInline); // sağ ile düzenleme
 });
-
-const result = `
-  <div class="card">
-    <p class="card-text" id="inputText">${toDoActive.textInput}</p>
-  </div>
-  `;
