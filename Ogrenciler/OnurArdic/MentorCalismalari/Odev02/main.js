@@ -1,21 +1,22 @@
 const firstName = document.getElementById('name')
 const surName = document.getElementById('surname')
 const ticketWrapper = document.querySelector('.ticket-wrapper')
-const ticketName = document.getElementById('name')
-const ticketSurname = document.getElementById('surname')
+const ticketName = document.getElementById('ticket-name')
+const ticketSurname = document.getElementById('ticket-surname')
 const ticketChair = document.getElementById('ticket-chair')
+const alertBootstrap = document.getElementById('alert')
 const reservedValue = []
 
 window.onload = function () {
   for (let i = 0; i < localStorage.length; i++) {
     const chosenChair = localStorage.key(i)
+
     const chairs = document.querySelectorAll('.chair')
 
     chairs.forEach((chairElement) => {
       if (chairElement.innerText === chosenChair) {
         chairElement.style.backgroundColor = 'green'
         chairElement.style.color = 'white'
-        chairElement.innerText = `${chosenChair} Numaralı Koltuk Rezerve Edildi.`
       }
     })
   }
@@ -34,14 +35,20 @@ chair.forEach((chairİtem) => {
       if (value === true) {
         chairİtem.style.backgroundColor = 'white'
         chairİtem.style.color = 'black'
-        chairİtem.innerText = `${chairNumber}`
         localStorage.removeItem(chairNumber)
       }
     } else {
       const value = confirm(
         `${chairNumber} Numaralı Koltuğu Rezerve Edeceksiniz Onaylıyor musunuz?`,
       )
-      reservedValue.length = 0
+
+      if (firstName.value == '') {
+        const alertText = document.createTextNode('İsim ve soyisim alanı boş bırakılamaz')
+        alertBootstrap.innerHTML = ''
+        alertBootstrap.appendChild(alertText)
+        alertBootstrap.style.border = '3px solid red'
+        return
+      }
 
       if (value === true) {
         const person = {
@@ -51,13 +58,15 @@ chair.forEach((chairİtem) => {
         }
         chairİtem.style.backgroundColor = 'green'
         chairİtem.style.color = 'white'
-        chairİtem.innerText = `${chairNumber} Numaralı Koltuk Rezerve Edildi`
         localStorage.setItem(`${chairNumber}`, JSON.stringify(person))
         if (ticketChair.innerText === person.chairNumber) {
+          console.log('if çalıştı')
           ticketChair.innerText = person.chairNumber
         } else {
+          console.log('else çalıştı')
           ticketChair.innerText += ', ' + person.chairNumber
-          ticketName.innerText = `${person.name} ${person.surname}`
+          ticketName.innerText = `${person.name} `
+          ticketSurname.innerText = `${person.surname} `
         }
       }
     }
