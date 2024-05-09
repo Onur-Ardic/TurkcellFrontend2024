@@ -4,6 +4,7 @@ const movieYear = document.getElementById("year");
 const movieCategory = document.getElementById("category");
 const movieİmage = document.getElementById("movieimage");
 const addMovieForm = document.getElementById("modal-form");
+const addMoviebutton = document.getElementById("addMovieButton");
 const movieWrapper = document.querySelector(".movie-card-wrapper");
 const deleteBtn = document.getElementById("delete-btn");
 
@@ -15,9 +16,14 @@ window.onload = function () {
     addİtem(movieName.name);
   });
 };
-
+addMoviebutton.addEventListener("click", (e) => {
+  document.getElementById("staticBackdropLabel").innerText = "Film Ekle";
+});
 addMovieForm.addEventListener("submit", (e) => {
   e.preventDefault();
+  if (document.getElementById("staticBackdropLabel").innerText == "Güncelle") {
+    elif();
+  }
   const movie = {
     id: count++,
     name: movieName.value.trim(),
@@ -88,22 +94,18 @@ function deleteMovie(movieValue) {
 
 function updateMovie(movieValue) {
   //movie bilgilerini aldım.
+  document.getElementById("staticBackdropLabel").innerText = "Güncelle";
   const movie = movieNameList.find((movie) => movie.name === movieValue);
-
   document.getElementById("moviename").value = movie.name;
   document.getElementById("moviedirector").value = movie.director;
   document.getElementById("year").value = movie.year;
   document.getElementById("category").value = movie.category;
-  console.log(movie.image);
-  let a = document.getElementById("movieimage");
-  console.log(a);
-  document.getElementById("movieimage").src = movie.image;
-
-  //console.log(movieNameList);
+  document.getElementById("movieimage").value = movie.image;
+}
+function elif() {
+  console.log("eliff");
   movieNameList = movieNameList.filter((movie) => movie.name !== movieValue);
-  //console.log(movieNameList);
   movieNameList.push(movie);
-  deleteMovie(movieValue);
   localStorage.setItem("movieNameList", JSON.stringify(movieNameList));
 }
 
