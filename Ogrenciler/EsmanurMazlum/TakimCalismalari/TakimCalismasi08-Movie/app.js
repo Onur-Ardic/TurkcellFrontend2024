@@ -15,8 +15,7 @@ function save() {
   let filmTuruVal = filmTuru.value;
   let filmAfisVal = filmAfis.value;
 
- 
-  console.log(filmAdiVal, filmYonetmenVal, filmYiliVal, filmTuruVal)
+  console.log(filmAdiVal, filmYonetmenVal, filmYiliVal, filmTuruVal);
   infos.push({
     filmId: id,
     filmAdi: filmAdiVal,
@@ -24,7 +23,7 @@ function save() {
     filmYili: filmYiliVal,
     filmTuru: filmTuruVal,
     filmAfis: filmAfisVal,
-  })
+  });
   localStorage.setItem("filmler", JSON.stringify(infos));
 }
 
@@ -50,26 +49,26 @@ function getMovies() {
     const cardFooter = document.createElement("div");
     cardFooter.classList.add("card-footer");
     card.appendChild(cardFooter);
-  
+
     // console.log(film.filmId, film.filmAdi, film.filmYonetmen, film.filmYili, film.filmAfis)
-    
+
     const filmAdiText = document.createTextNode(film.filmAdi);
     cardHeader.appendChild(filmAdiText);
-    
+
     const filmYonetmen = document.createTextNode(film.filmYonetmen);
     let pYon = document.createElement("p");
     pYon.appendChild(filmYonetmen);
     cardBody.appendChild(pYon);
-     
+
     const filmYili = document.createTextNode(film.filmYili);
     let pYear = document.createElement("p");
     pYear.appendChild(filmYili);
     cardBody.appendChild(pYear);
-    
+
     const filmTuru = document.createTextNode(film.filmTuru);
     let p = document.createElement("p");
     p.appendChild(filmTuru);
-    cardBody.appendChild(p)
+    cardBody.appendChild(p);
 
     // cardHeader.textContent = film.filmAdi;
     // cardHeader.textContent = filmTuru;
@@ -83,9 +82,19 @@ function getMovies() {
     btnDel.className = "btn btn-danger w-100";
     btnDel.textContent = "Sil";
     cardFooter.appendChild(btnDel);
-  
-  })
-};
+    btnDel.addEventListener("click", () => deleteMovies(col.id));
+
+  });
+}
+
+function deleteMovies(filmId) {
+  infos = infos.filter((film) => film.filmId !== parseInt(filmId));
+  localStorage.setItem("filmler", JSON.stringify(infos));
+  document.getElementById(filmId).remove(); 
+}
+
+
+
 
 getMovies();
 
