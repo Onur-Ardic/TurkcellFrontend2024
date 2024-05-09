@@ -17,4 +17,6 @@
 24-04-2024: Learn JavaScript
 26-04-2024: Make number guessing game
 29-04-2024: Make a calculator
-03-05-2024: 
+03-05-2024: Make a Cinema Collection
+06-05-2024: Make XOX
+10-05-2024: 
