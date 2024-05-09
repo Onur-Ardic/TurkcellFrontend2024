@@ -4,10 +4,11 @@ const movieYear = document.getElementById("year");
 const movieCategory = document.getElementById("category");
 const movieİmage = document.getElementById("movieimage");
 const addMovieForm = document.getElementById("modal-form");
+const addMoviebutton = document.getElementById("addMovieButton");
 const movieWrapper = document.querySelector(".movie-card-wrapper");
 const deleteBtn = document.getElementById("delete-btn");
 
-const movieNameList = JSON.parse(localStorage.getItem("movieNameList")) || [];
+let movieNameList = JSON.parse(localStorage.getItem("movieNameList")) || [];
 let count = 1;
 
 window.onload = function () {
@@ -15,9 +16,12 @@ window.onload = function () {
     addİtem(movieName.name);
   });
 };
-
+addMoviebutton.addEventListener("click", (e) => {
+  document.getElementById("staticBackdropLabel").innerText = "Film Ekle";
+});
 addMovieForm.addEventListener("submit", (e) => {
   e.preventDefault();
+
   const movie = {
     id: count++,
     name: movieName.value.trim(),
@@ -38,11 +42,11 @@ function addİtem(movieValue) {
 
   const value = `
       <div class="card position-relative col-4" data-key="${movieİtem.name}">
-      <div class="card-image">
+      <div class="card-image w-100">
         <img
           src="${movieİtem.image}"
           alt="${movieİtem.name}"
-          class="img-fluid rounded-top"
+          class="img-fluid rounded-top object-fit-cover  "
         />
       </div>
       <div class="card-content p-1 text-white">
@@ -87,29 +91,30 @@ function deleteMovie(movieValue) {
 }
 
 function updateMovie(movieValue) {
-  //   document.getElementById("staticBackdropLabel").innerText = "Güncelle";
-  //   document.document.querySelector(`[data-key="${movieValue}"]`).innerHTML =
-  //     "elif";
-  //   console.log(document.querySelector(".formMovieName").innerText);
-  //   const card = document.querySelector(`[data-key="${movieValue}"]`);
-  //   const name = card.querySelector("h5").innerText;
-  //   const year = card.querySelector(".movie-card-info p:first-child").innerText;
-  //   const director = card.querySelector(
-  //     ".movie-card-info p:nth-child(2)"
-  //   ).innerText;
-  //   const category = card.querySelector(".movie-category span").innerText;
-  //   const updatedMovie = {
-  //     name: name,
-  //     director: director,
-  //     year: year,
-  //     category: category,
-  //   };
-  //   localStorage.setItem(movieValue, JSON.stringify(updatedMovie));
+  //movie bilgilerini aldım.
+  document.getElementById("staticBackdropLabel").innerText = "Güncelle";
+  const movie = movieNameList.find((movie) => movie.name === movieValue);
+  document.getElementById("moviename").value = movie.name;
+  document.getElementById("moviedirector").value = movie.director;
+  document.getElementById("year").value = movie.year;
+  document.getElementById("category").value = movie.category;
+  document.getElementById("movieimage").value = movie.image;
+  if (document.getElementById("staticBackdropLabel").innerText == "Güncelle") {
+    elif(movieValue);
+  }
+}
+function elif(movieValue) {
+  console.log("eliff");
+  movieNameList = movieNameList.filter((movie) => movie.name !== movieValue);
+  movieNameList.push(movie);
+  localStorage.setItem("movieNameList", JSON.stringify(movieNameList));
+  // deleteMovie(movieValue);
 }
 
-//for category options+
+const selectElementFilter = document.getElementById("categoryFilter");
+const selectElementAdd = document.getElementById("category");
+//for category options
 const movieCategories = [
-  "All Categories",
   "Action",
   "Comedy",
   "Drama",
@@ -120,17 +125,20 @@ const movieCategories = [
   "Horror",
   "Animation",
 ];
-
-const selectElement = document.getElementById("categoryFilter");
+const optionAllCategories = document.createElement("option");
+optionAllCategories.textContent = "All Categories";
+optionAllCategories.textContent = "All Categories";
+selectElementFilter.appendChild(optionAllCategories);
 
 movieCategories.forEach((category) => {
   const option = document.createElement("option");
   option.textContent = category;
-  option.textContent == "All Categories"
-    ? (option.value = "")
-    : (option.value = category);
+  option.textContent = category;
 
-  selectElement.appendChild(option);
+  selectElementFilter.appendChild(option);
+
+  const optionForAdd = option.cloneNode(true);
+  selectElementAdd.appendChild(optionForAdd);
 });
 
 document
@@ -151,6 +159,7 @@ document
     });
   });
 
+//bunu kısaltalım bi ara
 document
   .getElementById("movienameFilter")
   .addEventListener("input", function () {

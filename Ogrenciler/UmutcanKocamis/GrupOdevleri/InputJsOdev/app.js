@@ -73,7 +73,7 @@ function display(array) {
   cards.innerHTML = "";
   array.map((movie) => {
     const card = document.createElement("div");
-    card.classList.add("card", "col-lg-6");
+    card.classList.add("card", "col-xl-5");
     const row = document.createElement("div");
     row.classList.add("row", "my-auto");
     card.appendChild(row);
@@ -82,7 +82,7 @@ function display(array) {
     imageDiv.classList.add("col-md-6");
     card.appendChild(imageDiv);
     const imageName = document.createElement("img");
-    imageName.classList.add("img-fluid");
+    imageName.classList.add("img-fluid", "rounded-2");
     imageName.src = movie.image;
     imageDiv.appendChild(imageName);
 
