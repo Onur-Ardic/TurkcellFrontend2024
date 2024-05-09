@@ -1,5 +1,5 @@
-const fields = document.querySelectorAll(".fields .col");
-const fieldss = document.querySelector(".fields");
+const fieldCols = document.querySelectorAll(".fields .col");
+const fields = document.querySelector(".fields");
 const playAgain = document.querySelector(".btn");
 const body = document.querySelector("body");
 const result = document.querySelector(".result");
@@ -18,48 +18,49 @@ const winCombiantions = [
   [2, 4, 6],
 ];
 
-for (let field = 0; field < fields.length; field++) {
-  fields[field].addEventListener("click", () => {
+for (let field = 0; field < fieldCols.length; field++) {
+  fieldCols[field].addEventListener("click", () => {
     if (range == "X") {
-      fields[field].textContent = "X";
-      fields[field].style.pointerEvents = "none";
-      fields[field].style.backgroundColor = "#54627B";
-      fields[field].style.color = "white";
-      fields[field].classList.add("selected");
+      fieldCols[field].textContent = "X";
+      fieldCols[field].style.pointerEvents = "none";
+      fieldCols[field].style.backgroundColor = "#54627B";
+      fieldCols[field].style.color = "white";
+      fieldCols[field].classList.add("selected");
       control(range);
       range = "O";
       turn.textContent = `Turn to play ${range} `;
     } else {
-      fields[field].textContent = "O";
-      fields[field].style.pointerEvents = "none";
-      fields[field].style.backgroundColor = "crimson";
-      fields[field].style.color = "white";
-      fields[field].classList.add("selected");
+      fieldCols[field].textContent = "O";
+      fieldCols[field].style.pointerEvents = "none";
+      fieldCols[field].style.backgroundColor = "crimson";
+      fieldCols[field].style.color = "white";
+      fieldCols[field].classList.add("selected");
       control(range);
       range = "X";
       turn.textContent = `Turn to play ${range} `;
     }
-  });
+    
+  }); 
 }
 
 function control(range) {
   for (let box = 0; box < winCombiantions.length; box++) {
     let [x, y, z] = winCombiantions[box];
     if (
-      fields[x].textContent == range &&
-      fields[y].textContent == range &&
-      fields[z].textContent == range
+      fieldCols[x].textContent == range &&
+      fieldCols[y].textContent == range &&
+      fieldCols[z].textContent == range
     ) {
       let div = document.createElement("div");
       div.classList.add("bg-success", "p-3", "text-white");
       div.textContent = `${range} WON !`;
-      fieldss.style.pointerEvents = "none";
+      fields.style.pointerEvents = "none";
       result.appendChild(div);
       return;
     }
   }
-  for (let i = 0; i < fields.length; i++) {
-    if (!fields[i].classList.contains("selected")) {
+  for (let i = 0; i < fieldCols.length; i++) {
+    if (!fieldCols[i].classList.contains("selected")) {
       return;
     }
   }
