@@ -21,6 +21,16 @@
 .choose-chair {
   margin: 0 auto;
 
+  .ticket-area {
+    .ticket-area-right {
+      .ticket-card-reserved {
+        height: 100px;
+        background: url(https://img.freepik.com/free-vector/realistic-horizontal-cinema-movie-time-poster-with-3d-glasses-snacks-tickets-clapper-reel-blue-background-with-bokeh-vector-illustration_1284-77013.jpg);
+        background-size: cover;
+      }
+    }
+  }
+
   .line {
     height: 5px;
     width: 100%;
