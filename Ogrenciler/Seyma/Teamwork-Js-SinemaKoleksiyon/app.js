@@ -99,16 +99,16 @@ function displayMovies() {
   let filmListesi = JSON.parse(localStorage.getItem("filmListesi")) || [];
 
   filmListesi.forEach((movie, index) => {
-    // Create a list item to hold the Bootstrap card
+    // Kart itemları oluşturma
     const listItem = document.createElement("li");
     listItem.className = "mb-3"; // Add margin-bottom for spacing
 
-    // Create card container
+    // carrd container oluşturma
     const card = document.createElement("div");
     card.className = "card bg-light border-0 text-secondary shadow-sm";
     card.style.width = "22rem";
 
-    // Create card body
+    //  card body oluşturma
     const cardBody = document.createElement("div");
     cardBody.className = "card-body";
 
