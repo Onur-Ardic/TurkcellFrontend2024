@@ -5,10 +5,9 @@ const filmTuru = document.getElementById("filmTuru");
 const fid = document.getElementById("filmId");
 const filmAfis = document.getElementById("filmAfis");
 let editMovieId;
-
 let infos = JSON.parse(localStorage.getItem("filmler")) || [];
-
 let id = infos.length;
+
 function save(filmId) {
   let filmAdiVal = filmAdi.value;
   let filmYonetmenVal = filmYonetmen.value;
@@ -17,14 +16,7 @@ function save(filmId) {
   let filmAfisVal = filmAfis.value;
   console.log(filmId);
   console.log(filmAdiVal, filmYonetmenVal, filmYiliVal, filmTuruVal);
-  infos.map((film) => {
-    // film.filmId === parseInt(filmId);
-    console.log(film.filmId);
-    console.log(filmId);
-
-  });
-  let editId = 0;
-  console.log(editId);
+  let editId = infos.findIndex((film) => film.filmId === parseInt(filmId));
   if (fid.value) {
     infos[editId] = {
       filmId: parseInt(filmId),
@@ -46,12 +38,21 @@ function save(filmId) {
     });
   }
   localStorage.setItem("filmler", JSON.stringify(infos));
+  getMovies();
+}
+
+const clear = () => {
+  filmAdi.value = "";
+  filmYonetmen.value = "";
+  filmYili.value = "";
+  filmTuru.value = "";
+  fid.value = "";
 }
 
 const cardRow = document.getElementById("cardRow");
 function getMovies() {
   let filmler = JSON.parse(localStorage.getItem("filmler"));
-
+  cardRow.innerHTML = "";
   filmler?.forEach((film) => {
     const col = document.createElement("div");
     col.classList.add("col-4");
@@ -65,42 +66,33 @@ function getMovies() {
     card.appendChild(cardHeader);
     const cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
+    cardBody.style.backgroundImage = `url(${film.filmAfis})`;
+    cardBody.style.backgroundSize = "cover";
+    cardBody.style.backgroundPosition = "center";
+    cardBody.style.height = "600px";
     card.appendChild(cardBody);
-
     const cardFooter = document.createElement("div");
     cardFooter.classList.add("card-footer");
     card.appendChild(cardFooter);
-
-    // console.log(film.filmId, film.filmAdi, film.filmYonetmen, film.filmYili, film.filmAfis)
-
     const filmAdiText = document.createTextNode(film.filmAdi);
     cardHeader.appendChild(filmAdiText);
-
     const filmYonetmen = document.createTextNode(film.filmYonetmen);
     let pYon = document.createElement("p");
     pYon.appendChild(filmYonetmen);
-    cardBody.appendChild(pYon);
-
+    cardHeader.appendChild(pYon);
     const filmYili = document.createTextNode(film.filmYili);
     let pYear = document.createElement("p");
     pYear.appendChild(filmYili);
-    cardBody.appendChild(pYear);
-
+    cardHeader.appendChild(pYear);
     const filmTuru = document.createTextNode(film.filmTuru);
     let p = document.createElement("p");
     p.appendChild(filmTuru);
-    cardBody.appendChild(p);
-
-    // cardHeader.textContent = film.filmAdi;
-    // cardHeader.textContent = filmTuru;
-    // cardHeader.textContent = filmYonetmen;
-    // cardHeader.textContent = filmYili;
+    cardHeader.appendChild(p);
     const btnEdit = document.createElement("button");
     btnEdit.className = "btn btn-secondary w-100 mb-2";
     btnEdit.textContent = "Düzenle";
     cardFooter.appendChild(btnEdit);
     btnEdit.addEventListener("click", () => editMovie(col.id));
-
     const btnDel = document.createElement("button");
     btnDel.className = "btn btn-danger w-100";
     btnDel.textContent = "Sil";
@@ -110,13 +102,13 @@ function getMovies() {
 }
 
 function deleteMovies(filmId) {
-  infos = infos.filter((film) => film.filmId === parseInt(filmId));
+  infos = infos.filter((film) => film.filmId !== parseInt(filmId));
   localStorage.setItem("filmler", JSON.stringify(infos));
   document.getElementById(filmId).remove();
 }
 
 function editMovie(filmId) {
-  infos = infos.filter((film) => {
+  infos.map((film) => {
     if (film.filmId === parseInt(filmId)) {
       fid.value = film.filmId;
       filmAdi.value = film.filmAdi;
@@ -126,7 +118,6 @@ function editMovie(filmId) {
     }
   });
   editMovieId = filmId;
-  console.log(editMovieId);
 }
 
 getMovies();
@@ -134,4 +125,5 @@ getMovies();
 document.getElementById("form").addEventListener("submit", (e) => {
   e.preventDefault();
   save(editMovieId);
+  clear();
 });

@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <form id="form">
-            <input type="text" class="form-control" id="filmId">
+            <input type="text" class="form-control" id="filmId" hidden>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Film Adı:</label>
               <input type="text" class="form-control" id="filmAdi">
@@ -32,8 +32,8 @@
                 <input type="text" class="form-control" id="filmTuru">
             </div>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Film Afişi:</label>
-                <input type="file" class="form-control" id="filmAfis">
+                <label for="exampleInputEmail1" class="form-label">Film Afişi: (url adresini yapıştırınız.)</label>
+                <input type="text" class="form-control" id="filmAfis">
             </div>
             <button type="submit" class="btn btn-primary form-control">Kaydet</button>
         </form>
