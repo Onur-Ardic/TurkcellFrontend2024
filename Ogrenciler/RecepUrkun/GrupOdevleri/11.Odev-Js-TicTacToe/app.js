@@ -14,43 +14,28 @@ const startGame = () => {
 const bolgeSec = (block) => {
     if (block.textContent == "") {
         block.textContent = player;
-        // if (player == "X") {
-        //     block.style.color = "red"
-        // }
-        // else{
-        //     block.style.color = "green"
-        // }
         block.style.color = (player === "X") ? "red" : "green";
         playerDegistir();
     }
     else {
-        block.classList.add("border-danger", "text-danger");
+        block.classList.add("border-danger", "text-warning");
         setTimeout(() => {
-            block.classList.remove("border-danger", "text-danger");
-        }, 1500);
+            block.classList.remove("border-danger", "text-warning");
+        }, 1000);
     }
     kazandiMi()
     berabereMi()
 
     if (gameOver) {
         winnerPlayer.classList.remove("d-none")
-        winnerPlayer.classList.add("text-success")
+        winnerPlayer.classList.add("text-warning")
         currentPlayer.classList.add("d-none")
-        winnerPlayer.textContent = `Oyun bitti! Kazanan: ${winner}`
+        winnerPlayer.textContent = `Game is Over! Winner: ${winner}`
         blocks.forEach(block => block.style.pointerEvents = 'none')
     }
 }
 
 const playerDegistir = () => {
-    // if (player == "X") {
-    //     player = "O"
-    //     currentPlayer.textContent = `${player}'s Turn!`
-    //     return
-    // }
-    // else if (player == "O") {
-    //     player = "X"
-    //     currentPlayer.textContent = `${player}'s Turn!`
-    // }
     player = (player == "X") ? "O" : "X"
     currentPlayer.textContent = `${player}'s Turn!`
 }
@@ -118,13 +103,13 @@ const caprazKontrolEt = () => {
 }
 
 const berabereMi = () => {
-    const degerler = [];
-    blocks.forEach(block => degerler.push(block.textContent))
-    if (!degerler.includes("")) {
+    const blockTextContents = [];
+    blocks.forEach(block => blockTextContents.push(block.textContent))
+    if (!blockTextContents.includes("")) {
+        currentPlayer.classList.add("text-info")
         currentPlayer.textContent = "Berabere!"
         blocks.forEach(block => block.style.pointerEvents = 'none')
     }
-    console.log(degerler)
 }
 
 const sifirla = () => {
@@ -133,7 +118,7 @@ const sifirla = () => {
     winner = undefined;
     winnerPlayer.classList.add("d-none");
     currentPlayer.classList.remove("d-none");
-    currentPlayer.textContent = "Player: X";
+    currentPlayer.textContent = `Player: ${player}`;
     blocks.forEach(block => block.style.pointerEvents = 'auto');
 }
 startGame()

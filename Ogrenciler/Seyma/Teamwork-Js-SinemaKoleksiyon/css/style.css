@@ -11845,9 +11845,8 @@ textarea.form-control-lg {
   }
 }
 .user-from {
-  background-image: url(assets/img/hobbit.png);
+  background-image: url(https://img.freepik.com/free-photo/spooky-gothic-cathedral-dark-symbol-ancient-spirituality-generated-by-artificial-intelligence_188544-241546.jpg?t=st=1715348467~exp=1715352067~hmac=47717a1fb41c3284c972108796238ccbbba52c6e5f97fc6d28e02dfdc9f727ec&w=2000);
   height: 100vh;
-  width: 100vw;
   background-size: cover;
 }
 
