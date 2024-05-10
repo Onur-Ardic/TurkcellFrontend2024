@@ -1,0 +1,14 @@
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.input1-div {
+  width: 100%;
+}
+.label {
+  min-width: 200px;
+  width: 200px;
+}

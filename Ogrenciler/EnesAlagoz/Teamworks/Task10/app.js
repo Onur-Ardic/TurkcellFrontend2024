@@ -8,14 +8,16 @@ let gameOver = false;
 let winner;
 
 function startGame() {
-  playerText.textContent = `${currentPlayer}'in Sırası !`; // currentPlayer olarak güncellendi
-  blocks.forEach((block) => block.addEventListener("click", () => chooseArea(block)));
+  playerText.textContent = `${currentPlayer === player1 ? "Ronaldo" : "Messi"}'nin Sırası !`;
+  blocks.forEach((block) => {
+    block.style.backgroundColor = "transparent"; // Başlangıçta hücrelerin arka plan rengini varsayılan rengine döndürme
+    block.addEventListener("click", () => chooseArea(block));
+  });
 }
-
 function chooseArea(block) {
   if (block.textContent === "") {
     block.textContent = currentPlayer;
-    block.style.color = currentPlayer === player1 ? "black" : "red"; // currentPlayer'a göre renk değiştirme
+    block.style.color = currentPlayer === player1 ? "black" : "red"; // ternary operatörü ile currentPlayer'a göre renk değiştirme
 
     turnPlayer();
   } else {
@@ -31,14 +33,25 @@ function chooseArea(block) {
   checkTie();
 
   if (gameOver) {
-    playerText.textContent = `Oyun Bitti, ${winner} Kazandı!`;
+    if (winner === player1) {
+      winner = "Ronaldo";
+    } else if (winner === player2) {
+      winner = "Messi";
+    } else {
+      playerText.textContent = "Oyun Berabere Bitti!";
+    }
+
+    if (winner) {
+      playerText.textContent = `Oyun Bitti, ${winner} Kazandı!`;
+    }
+
     blocks.forEach((block) => (block.style.pointerEvents = "none"));
   }
 }
 
 function turnPlayer() {
   currentPlayer = currentPlayer === player1 ? player2 : player1; // currentPlayer'a göre güncellendi
-  playerText.textContent = `${currentPlayer}'in Sırası`; // currentPlayer olarak güncellendi
+  playerText.textContent = `${currentPlayer === player1 ? "Ronaldo" : "Messi"}'nin Sırası`; // currentPlayer olarak güncellendi
 }
 
 function checkWin() {
@@ -73,6 +86,19 @@ function checkRows() {
 
   if (row1 || row2 || row3) {
     gameOver = true;
+    if (row1) {
+      blocks[0].style.backgroundColor = "lightgreen";
+      blocks[1].style.backgroundColor = "lightgreen";
+      blocks[2].style.backgroundColor = "lightgreen";
+    } else if (row2) {
+      blocks[3].style.backgroundColor = "lightgreen";
+      blocks[4].style.backgroundColor = "lightgreen";
+      blocks[5].style.backgroundColor = "lightgreen";
+    } else if (row3) {
+      blocks[6].style.backgroundColor = "lightgreen";
+      blocks[7].style.backgroundColor = "lightgreen";
+      blocks[8].style.backgroundColor = "lightgreen";
+    }
   }
   if (row1) return (winner = blocks[0].textContent);
   if (row2) return (winner = blocks[3].textContent);
@@ -95,6 +121,19 @@ function checkColumns() {
 
   if (col1 || col2 || col3) {
     gameOver = true;
+    if (col1) {
+      blocks[0].style.backgroundColor = "lightgreen";
+      blocks[3].style.backgroundColor = "lightgreen";
+      blocks[6].style.backgroundColor = "lightgreen";
+    } else if (col2) {
+      blocks[1].style.backgroundColor = "lightgreen";
+      blocks[4].style.backgroundColor = "lightgreen";
+      blocks[7].style.backgroundColor = "lightgreen";
+    } else if (col3) {
+      blocks[2].style.backgroundColor = "lightgreen";
+      blocks[5].style.backgroundColor = "lightgreen";
+      blocks[8].style.backgroundColor = "lightgreen";
+    }
   }
   if (col1) return (winner = blocks[0].textContent);
   if (col2) return (winner = blocks[1].textContent);
@@ -113,6 +152,15 @@ function checkDiagonals() {
 
   if (diag1 || diag2) {
     gameOver = true;
+    if (diag1) {
+      blocks[0].style.backgroundColor = "lightgreen";
+      blocks[4].style.backgroundColor = "lightgreen";
+      blocks[8].style.backgroundColor = "lightgreen";
+    } else if (diag2) {
+      blocks[2].style.backgroundColor = "lightgreen";
+      blocks[4].style.backgroundColor = "lightgreen";
+      blocks[6].style.backgroundColor = "lightgreen";
+    }
   }
   if (diag1) return (winner = blocks[0].textContent);
   if (diag2) return (winner = blocks[2].textContent);
@@ -123,11 +171,12 @@ function restartGame() {
     block.textContent = "";
     block.style.color = "initial";
     block.style.pointerEvents = "auto";
+    block.style.backgroundColor = "transparent";
   });
   currentPlayer = player1; // currentPlayer'ı player1'e geri döndürdüm
   gameOver = false;
   winner = undefined;
-  playerText.textContent = `${currentPlayer}'ın Sırası!`; // currentPlayer olarak güncellendi
+  playerText.textContent = `${currentPlayer === player1 ? "Ronaldo" : "Messi"}'nin Sırası`; // currentPlayer olarak güncellendi
 }
 
 startGame();
