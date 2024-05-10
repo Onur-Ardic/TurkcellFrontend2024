@@ -2,28 +2,49 @@ const filmAdi = document.getElementById("filmAdi");
 const filmYonetmen = document.getElementById("filmYonetmen");
 const filmYili = document.getElementById("filmYili");
 const filmTuru = document.getElementById("filmTuru");
-
+const fid = document.getElementById("filmId");
 const filmAfis = document.getElementById("filmAfis");
+let editMovieId;
 
 let infos = JSON.parse(localStorage.getItem("filmler")) || [];
 
 let id = infos.length;
-function save() {
+function save(filmId) {
   let filmAdiVal = filmAdi.value;
   let filmYonetmenVal = filmYonetmen.value;
   let filmYiliVal = filmYili.value;
   let filmTuruVal = filmTuru.value;
   let filmAfisVal = filmAfis.value;
-
+  console.log(filmId);
   console.log(filmAdiVal, filmYonetmenVal, filmYiliVal, filmTuruVal);
-  infos.push({
-    filmId: id,
-    filmAdi: filmAdiVal,
-    filmYonetmen: filmYonetmenVal,
-    filmYili: filmYiliVal,
-    filmTuru: filmTuruVal,
-    filmAfis: filmAfisVal,
+  infos.map((film) => {
+    // film.filmId === parseInt(filmId);
+    console.log(film.filmId);
+    console.log(filmId);
+
   });
+  let editId = 0;
+  console.log(editId);
+  if (fid.value) {
+    infos[editId] = {
+      filmId: parseInt(filmId),
+      filmAdi: filmAdiVal,
+      filmYonetmen: filmYonetmenVal,
+      filmYili: filmYiliVal,
+      filmTuru: filmTuruVal,
+      filmAfis: filmAfisVal,
+    };
+    editMovieId = null;
+  } else {
+    infos.push({
+      filmId: id,
+      filmAdi: filmAdiVal,
+      filmYonetmen: filmYonetmenVal,
+      filmYili: filmYiliVal,
+      filmTuru: filmTuruVal,
+      filmAfis: filmAfisVal,
+    });
+  }
   localStorage.setItem("filmler", JSON.stringify(infos));
 }
 
@@ -78,26 +99,39 @@ function getMovies() {
     btnEdit.className = "btn btn-secondary w-100 mb-2";
     btnEdit.textContent = "Düzenle";
     cardFooter.appendChild(btnEdit);
+    btnEdit.addEventListener("click", () => editMovie(col.id));
+
     const btnDel = document.createElement("button");
     btnDel.className = "btn btn-danger w-100";
     btnDel.textContent = "Sil";
     cardFooter.appendChild(btnDel);
     btnDel.addEventListener("click", () => deleteMovies(col.id));
-
   });
 }
 
 function deleteMovies(filmId) {
-  infos = infos.filter((film) => film.filmId !== parseInt(filmId));
+  infos = infos.filter((film) => film.filmId === parseInt(filmId));
   localStorage.setItem("filmler", JSON.stringify(infos));
-  document.getElementById(filmId).remove(); 
+  document.getElementById(filmId).remove();
 }
 
-
-
+function editMovie(filmId) {
+  infos = infos.filter((film) => {
+    if (film.filmId === parseInt(filmId)) {
+      fid.value = film.filmId;
+      filmAdi.value = film.filmAdi;
+      filmYonetmen.value = film.filmYonetmen;
+      filmTuru.value = film.filmTuru;
+      filmYili.value = film.filmYili;
+    }
+  });
+  editMovieId = filmId;
+  console.log(editMovieId);
+}
 
 getMovies();
 
 document.getElementById("form").addEventListener("submit", (e) => {
-  save();
+  e.preventDefault();
+  save(editMovieId);
 });
