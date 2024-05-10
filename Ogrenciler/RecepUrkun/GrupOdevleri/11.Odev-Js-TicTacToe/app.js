@@ -41,65 +41,21 @@ const playerDegistir = () => {
 }
 
 const kazandiMi = () => {
-    satirKontrolEt()
-    sutunKontrolEt()
-    caprazKontrolEt()
-}
+    const winningCombinations = [
+        [0, 1, 2], [3, 4, 5], [6, 7, 8],
+        [0, 3, 6], [1, 4, 7], [2, 5, 8],
+        [0, 4, 8], [2, 4, 6]
+    ];
 
-const satirKontrolEt = () => {
-    let satir1 = blocks[0].textContent == blocks[1].textContent
-        && blocks[0].textContent == blocks[2].textContent
-        && blocks[0].textContent != ""
-    let satir2 = blocks[3].textContent == blocks[4].textContent
-        && blocks[3].textContent == blocks[5].textContent
-        && blocks[3].textContent != ""
-    let satir3 = blocks[6].textContent == blocks[7].textContent
-        && blocks[6].textContent == blocks[8].textContent
-        && blocks[6].textContent != ""
-
-    if (satir1 || satir2 || satir3) {
-        gameOver = true;
+    for (let i = 0; i < winningCombinations.length; i++) {
+        const [a, b, c] = winningCombinations[i];
+        if (blocks[a].textContent == blocks[b].textContent
+            && blocks[a].textContent == blocks[c].textContent
+            && blocks[a].textContent != "") {
+            gameOver = true;
+            return winner = blocks[a].textContent;
+        }
     }
-
-    //eğer kazanan bu satirlardan biriyse bunun içindeki değeri al ve onu winner yap zaten 1 tanesi yetiyor
-    if (satir1) return winner = blocks[0].textContent
-    if (satir2) return winner = blocks[3].textContent
-    if (satir3) return winner = blocks[6].textContent
-}
-const sutunKontrolEt = () => {
-    let sutun1 = blocks[0].textContent == blocks[3].textContent
-        && blocks[0].textContent == blocks[6].textContent
-        && blocks[0].textContent != ""
-    let sutun2 = blocks[1].textContent == blocks[4].textContent
-        && blocks[1].textContent == blocks[7].textContent
-        && blocks[1].textContent != ""
-    let sutun3 = blocks[2].textContent == blocks[5].textContent
-        && blocks[2].textContent == blocks[8].textContent
-        && blocks[2].textContent != ""
-
-    if (sutun1 || sutun2 || sutun3) {
-        gameOver = true;
-    }
-
-    if (sutun1) return winner = blocks[0].textContent
-    if (sutun2) return winner = blocks[1].textContent
-    if (sutun3) return winner = blocks[2].textContent
-
-}
-const caprazKontrolEt = () => {
-    let capraz1 = blocks[0].textContent == blocks[4].textContent
-        && blocks[0].textContent == blocks[8].textContent
-        && blocks[0].textContent != ""
-    let capraz2 = blocks[2].textContent == blocks[4].textContent
-        && blocks[2].textContent == blocks[6].textContent
-        && blocks[2].textContent != ""
-
-    if (capraz1 || capraz2) {
-        gameOver = true;
-    }
-
-    if (capraz1) return winner = blocks[0].textContent
-    if (capraz2) return winner = blocks[2].textContent
 }
 
 const berabereMi = () => {
