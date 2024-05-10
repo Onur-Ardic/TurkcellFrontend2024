@@ -11844,5 +11844,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.user-from {
+  background-image: url(assets/img/hobbit.png);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
 
 /*# sourceMappingURL=style.css.map */
