@@ -25,6 +25,7 @@ const boxCheck = () => {
   for (let i = 0; i < winningConditions.length; i++) {
     const [a, b, c] = winningConditions[i];
     if (gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
+      console.log(gameBoard[a])
       result.innerText = `${player} Player Win !!`;
       win = winningConditions[i];
       return true;
