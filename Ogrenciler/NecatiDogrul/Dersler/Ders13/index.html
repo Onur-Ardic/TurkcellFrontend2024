@@ -5,6 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="app.js"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
   </head>
-  <body></body>
+  <style>
+    input:focus {
+      outline: none;
+    }
+  </style>
+
+  <body>
+    <form id="myForm" style="margin-left: 200px">
+      Ad:
+      <br />
+      <input
+        type="text"
+        id="name"
+        onfocus="focusFunction(this)"
+        onblur="blurFunction(this)"
+      /><br />
+      Soyad:
+      <br />
+      <input
+        type="text"
+        id="surname"
+        onfocus="focusFunction(this)"
+        onblur="blurFunction(this)"
+      /><br />
+      Yaş:
+      <br />
+      <input
+        type="text"
+        id="age"
+        onfocus="focusFunction(this)"
+        onblur="blurFunction(this)"
+      />
+      <span id="ageError" style="color: red"></span><br />
+
+      Şehir:
+      <br />
+      <input
+        type="text"
+        id="city"
+        onfocus="focusFunction(this)"
+        onblur="blurFunction(this)"
+      /><br />
+      <input type="button" value="Submit" onclick="submitForm()" />
+    </form>
+
+    <div
+      class="card"
+      style="width: 18rem; margin-left: 200px; margin-top: 30px"
+    >
+      <div class="card-body">
+        <h5 class="card-title" id="cardName"></h5>
+        <h6 class="card-subtitle mb-2 text-muted" id="cardSurname"></h6>
+        <p class="card-text" id="cardAge"></p>
+        <p class="card-text" id="cardCity"></p>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,86 @@
+.slider {
+  img {
+    height: 400px;
+    aspect-ratio: 16/9;
+  }
+}
+
+.movie-card {
+  .card {
+    width: 250px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.25rem;
+    }
+  }
+}
+
+.choose-chair {
+  margin: 0 auto;
+
+  .ticket-area {
+    .ticket-area-right {
+      .ticket-card-reserved {
+        height: 100px;
+        background: url(https://img.freepik.com/free-vector/realistic-horizontal-cinema-movie-time-poster-with-3d-glasses-snacks-tickets-clapper-reel-blue-background-with-bokeh-vector-illustration_1284-77013.jpg);
+        background-size: cover;
+      }
+    }
+  }
+
+  .line {
+    height: 5px;
+    width: 100%;
+    display: block;
+  }
+  .chair-wrapper {
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 2fr);
+    margin-top: 200px;
+  }
+  .chair {
+    position: relative;
+    height: 100px;
+    width: 150px;
+    border: 1px solid #000;
+    &:hover {
+      background-color: #000;
+      color: #fff;
+      transition: 0.3s ease;
+      cursor: pointer;
+      #deleteBtn {
+        color: #fff;
+      }
+    }
+
+    #deleteBtn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 1.3rem;
+      background-color: transparent;
+      border: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 0 auto;
+  }
+  .choose-chair {
+    .chair-wrapper {
+      margin-top: 100px;
+      width: 300px;
+      justify-content: flex-start;
+
+      .chair {
+        width: 100%;
+        height: 50px;
+      }
+    }
+  }
+}

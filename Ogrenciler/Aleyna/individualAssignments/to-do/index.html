@@ -75,6 +75,7 @@
       }
       .card {
         margin: 0.5rem;
+        cursor: move;
       }
     }
   </style>
@@ -87,13 +88,22 @@
           <input type="text" id="inputText" />
           <input type="submit" id="inputAdd" value="Add" />
           <input type="submit" id="inputDelete" value="Delete" />
+          <input type="file" id="inputImage" />
         </div>
 
         <div class="toDoActive row" id="toDoActive">
-          <div class="activeCard col-4" draggable="true">
+          <div
+            class="activeCard col-4"
+            ondragover="allowDrop(event)"
+            ondrop="dropCard(event, 'active')"
+          >
             <h6 class="text-white">To-Do</h6>
           </div>
-          <div class="passiveCard col-4">
+          <div
+            class="passiveCard col-4"
+            ondragover="allowDrop(event)"
+            ondrop="dropCard(event, 'passive')"
+          >
             <h6 class="text-white">Done</h6>
           </div>
         </div>

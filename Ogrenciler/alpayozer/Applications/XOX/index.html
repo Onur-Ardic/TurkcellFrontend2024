@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XOX-Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      body {
+        background-color: #ffe6e6;
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 50px;
+      }
+      .border {
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+      }
+      .box {
+        background-color: #e1afd1;
+        color: white;
+        font-weight: bold;
+        font-size: 80px;
+      }
+      .bg-win {
+        background-color: #7469b6;
+        color: white;
+      }
+      .reset-button {
+        background-color: #7469b6;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 20px;
+        width: 100px;
+        border: none;
+        padding: 10px 5px;
+      }
+      .tie {
+        background-color: crimson;
+      }
+      @media only screen and (max-width: 768px) {
+        .border {
+          height: 100px;
+          width: 100px;
+        }
+        .box {
+          font-size: 40px;
+        }
+        h1 {
+          font-size: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-3 pt-3">
+      <div class="row justify-content-center">
+        <h1 class="d-flex justify-content-center align-items-center mb-5">
+          XOX-Game
+        </h1>
+      </div>
+      <div class="row justify-content-center">
+        <button
+          class="box mx-2 my-2 col-lg-4 col-4 border d-flex justify-content-center align-items-center"
+          id="0"
+        ></button>
+        <button
+          class="box mx-2 my-2 col-lg-4 col-4 border d-flex justify-content-center align-items-center"
+          id="1"
+        ></button>
+        <button
+          class="box mx-2 my-2 col-lg-4 col-4 border d-flex justify-content-center align-items-center"
+          id="2"
+        ></button>
+      </div>
+      <div class="row justify-content-center">
+        <button
+          class="box mx-2 my-2 col-lg-4 col-4 border d-flex justify-content-center align-items-center"
+          id="3"
+        ></button>
+        <button
+          class="box mx-2 my-2 col-lg-4 col-4 border d-flex justify-content-center align-items-center"
+          id="4"
+        ></button>
+        <button
+          class="box mx-2 my-2 col-lg-4 col-4 border d-flex justify-content-center align-items-center"
+          id="5"
+        ></button>
+      </div>
+      <div class="row justify-content-center">
+        <button
+          class="box mx-2 my-2 col-lg-4 col-4 border d-flex justify-content-center align-items-center"
+          id="6"
+        ></button>
+        <button
+          class="box mx-2 my-2 col-lg-4 col-4 border d-flex justify-content-center align-items-center"
+          id="7"
+        ></button>
+        <button
+          class="box mx-2 my-2 col-lg-4 col-4 border d-flex justify-content-center align-items-center"
+          id="8"
+        ></button>
+      </div>
+      <div class="d-flex justify-content-center gap-5 m-auto">
+        <h1
+          id="result"
+          class="d-flex justify-content-center align-items-center mt-3"
+        ></h1>
+        <button
+          id="reset"
+          class="d-flex justify-content-center align-items-center reset-button"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -8,3 +8,5 @@
 26-04-2024: Js String Array Metotlari - Sayi Tahmin Oyunu
 29-04-2024: Js Fonksiyonlar & Donguler - Hesap Makinesi Odevi 
 03-05-2024: Js Doma Giris - Form ve Card Odevi
+06-05-2024: Js LocalStorage & ES6 - XOX ve Movie Card Odevi
+10-05-2024:

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Sinema Koleksiyonu</title>
+    <style>
+        .input-area {
+            background-color: #031046;
+        }
+
+        input,
+        textarea {
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border: 2px solid #f7dffc;
+            box-shadow: 0 0 10px #f7dffc;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .film-cards-area {
+            background-color: #deeaff;
+        }
+
+        .card {
+            background-color: rgb(35, 35, 35);
+        }
+
+        #save {
+            border: none;
+            background-color: rgb(255, 24, 24);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="input-area py-5">
+        <div class="container text-white">
+            <h2 class="row justify-content-center">Kendi Film Koleksiyonunuzu Oluşturun</h2>
+            <form id="form" class="row justify-content-around mt-5">
+                <div class="col-lg-5 d-flex flex-column gap-5">
+                    <input id="name" type="text" placeholder="Film adı">
+                    <input id="type" type="text" placeholder="Tür">
+                    <input id="director" type="text" placeholder="Yönetmen">
+                    <input id="film_url" type="text" placeholder="URL...">
+                </div>
+                <div class="col-lg-5 d-flex flex-column gap-5">
+                    <input id="imdb" type="text" placeholder="IMDb puanı">
+                    <textarea name="movie-description" id="movie-description"
+                        placeholder="Film açıklaması..."></textarea>
+                    <input id="cast" type="text" placeholder="Başrol oyuncu kadrosu">
+                </div>
+            </form>
+            <div class="row justify-content-center w-25 my-4 py-3">
+                <button class="rounded-4 p-2 text-white fw-bold" id="save">Kaydet</button>
+            </div>
+        </div>
+    </div>
+    <div id="card-area" class="film-cards-area py-5">
+        <div class="container">
+            <!-- <div class="card my-5 text-white" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="..." class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Film Adı</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-type"><i>Türü:</i></p>
+                            <p class="card-director"><i>Yönetmen:</i></p>
+                            <p class="card-year"><i>Yıl:</i></p>
+                            <p class="card-imdb"><i>IMDb:</i></p>
+                            <p class="card-cast"><i>Oyuncular:</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
