@@ -21,7 +21,7 @@ const bolgeSec = (block) => {
         block.classList.add("border-danger", "text-warning");
         setTimeout(() => {
             block.classList.remove("border-danger", "text-warning");
-        }, 1500);
+        }, 1000);
     }
     kazandiMi()
     berabereMi()
@@ -30,7 +30,7 @@ const bolgeSec = (block) => {
         winnerPlayer.classList.remove("d-none")
         winnerPlayer.classList.add("text-warning")
         currentPlayer.classList.add("d-none")
-        winnerPlayer.textContent = `Oyun bitti! Kazanan: ${winner}`
+        winnerPlayer.textContent = `Game is Over! Winner: ${winner}`
         blocks.forEach(block => block.style.pointerEvents = 'none')
     }
 }
@@ -103,9 +103,9 @@ const caprazKontrolEt = () => {
 }
 
 const berabereMi = () => {
-    const degerler = [];
-    blocks.forEach(block => degerler.push(block.textContent))
-    if (!degerler.includes("")) {
+    const blockTextContents = [];
+    blocks.forEach(block => blockTextContents.push(block.textContent))
+    if (!blockTextContents.includes("")) {
         currentPlayer.classList.add("text-info")
         currentPlayer.textContent = "Berabere!"
         blocks.forEach(block => block.style.pointerEvents = 'none')
