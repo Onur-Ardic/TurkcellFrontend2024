@@ -1,18 +1,22 @@
 const firstName = document.getElementById('name')
 const surName = document.getElementById('surname')
-const ticketWrapper = document.querySelector('.ticket-card-reserved')
+const ticketWrapper = document.querySelector('.ticket-wrapper')
+const ticketName = document.getElementById('ticket-name')
+const ticketSurname = document.getElementById('ticket-surname')
+const ticketChair = document.getElementById('ticket-chair')
+const alertBootstrap = document.getElementById('alert')
 const reservedValue = []
 
 window.onload = function () {
   for (let i = 0; i < localStorage.length; i++) {
     const chosenChair = localStorage.key(i)
+
     const chairs = document.querySelectorAll('.chair')
 
     chairs.forEach((chairElement) => {
       if (chairElement.innerText === chosenChair) {
         chairElement.style.backgroundColor = 'green'
         chairElement.style.color = 'white'
-        chairElement.innerText = `${chosenChair} Numaralı Koltuk Rezerve Edildi.`
       }
     })
   }
@@ -31,13 +35,20 @@ chair.forEach((chairİtem) => {
       if (value === true) {
         chairİtem.style.backgroundColor = 'white'
         chairİtem.style.color = 'black'
-        chairİtem.innerText = `${chairNumber}`
         localStorage.removeItem(chairNumber)
       }
     } else {
       const value = confirm(
         `${chairNumber} Numaralı Koltuğu Rezerve Edeceksiniz Onaylıyor musunuz?`,
       )
+
+      if (firstName.value == '') {
+        const alertText = document.createTextNode('İsim ve soyisim alanı boş bırakılamaz')
+        alertBootstrap.innerHTML = ''
+        alertBootstrap.appendChild(alertText)
+        alertBootstrap.style.border = '3px solid red'
+        return
+      }
 
       if (value === true) {
         const person = {
@@ -47,24 +58,15 @@ chair.forEach((chairİtem) => {
         }
         chairİtem.style.backgroundColor = 'green'
         chairİtem.style.color = 'white'
-        chairİtem.innerText = `${chairNumber} Numaralı Koltuk Rezerve Edildi`
         localStorage.setItem(`${chairNumber}`, JSON.stringify(person))
-        for (let i = 0; i < localStorage.length; i++) {
-          let key = localStorage.key(i)
-          let value = localStorage.getItem(key)
-          reservedValue.push({ key: key, value: JSON.parse(value) })
-          reservedValue.forEach((item) => {
-            console.log(item)
-            const ticket = `
-            <div class="person-info d-flex top-0 p-2 justify-content-between gap-3 position-absolute end-0">
-            <p class="name" id="name">${item.value.name}</p>
-            <p class="surname" id="surname">${item.value.surname}</p>
-            <span>${item.key}</span>
-          </div>
-            `
-
-            ticketWrapper.innerHTML += ticket
-          })
+        if (ticketChair.innerText === person.chairNumber) {
+          console.log('if çalıştı')
+          ticketChair.innerText = person.chairNumber
+        } else {
+          console.log('else çalıştı')
+          ticketChair.innerText += ', ' + person.chairNumber
+          ticketName.innerText = `${person.name} `
+          ticketSurname.innerText = `${person.surname} `
         }
       }
     }

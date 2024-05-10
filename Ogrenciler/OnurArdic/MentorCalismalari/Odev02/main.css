@@ -1,7 +1,7 @@
 .slider {
   img {
     height: 400px;
-    object-fit: cover;
+    aspect-ratio: 16/9;
   }
 }
 
@@ -68,6 +68,9 @@
 }
 
 @media (max-width: 768px) {
+  .card {
+    margin: 0 auto;
+  }
   .choose-chair {
     .chair-wrapper {
       margin-top: 100px;

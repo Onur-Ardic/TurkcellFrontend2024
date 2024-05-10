@@ -39,6 +39,9 @@
         body #add{
             background: url("https://img.lovepik.com/bg/20240330/3D-Background-Brings-Life-to-an-Empty-Movie-Theater_5595871_wh860.jpg!/fw/860") no-repeat center/cover;
         }
+        #cardShows img{
+            height: 400px;
+        }
     </style>
 </head>
 <body>
@@ -49,23 +52,23 @@
                 <form>
                     <div class="my-3">
                         <label for="movieNameInput" class="form-label fw-bold text-light bg-dark rounded px-3 py-1">Movie Name:</label>
-                        <input type="text" id="movieNameInput" class="form-control">
+                        <input type="text" id="movieNameInput" class="form-control" required>
                     </div>
                     <div class="my-3">
                         <label for="directorInput" class="form-label fw-bold text-light bg-dark rounded px-3 py-1">Director:</label>
-                        <input type="text" id="directorInput" class="form-control">
+                        <input type="text" id="directorInput" class="form-control" required>
                     </div>
                     <div class="my-3">
                         <label for="yearInput" class="form-label fw-bold text-light bg-dark rounded px-3 py-1">Year:</label>
-                        <input type="number" id="yearInput" class="form-control" >
+                        <input type="number" id="yearInput" class="form-control" required>
                     </div>
                     <div class="my-3">
                         <label for="typeInput" class="form-label fw-bold text-light bg-dark rounded px-3 py-1">Type:</label>
-                        <input type="text" id="typeInput" class="form-control" >
+                        <input type="text" id="typeInput" class="form-control" required>
                     </div>
                     <div class="my-3">
                         <label for="imageInput" class="form-label fw-bold text-light bg-dark rounded px-3 py-1">Image:</label>
-                        <input type="text" id="imageInput" class="form-control" >
+                        <input type="text" id="imageInput" class="form-control" required>
                     </div>
                     <button id="btnAdd" class="btn btn-dark" type="submit">Submit</button>
                 </form>
@@ -73,7 +76,7 @@
             <div class="col-lg-5 col-md-6 col-12 p-5">
                 <div id="cardShows" class="card position-relative">
                     <div class="card-body">
-                        <img src="" alt="" class="opacity-50 w-100" style="height: 400px;">
+                        <img src="img/Red and Blue Movie Night Poster.png" alt="" class="opacity-50 w-100">
                         <div class="position-absolute top-50 start-50 translate-middle mt-3">
                             <h2 class="card-title"><span class="d-block fst-italic"></span></h2>
                             <h3 class="fw-medium my-3"><span class="d-block fst-italic"></span></h2>

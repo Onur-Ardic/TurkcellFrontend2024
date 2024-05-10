@@ -13,6 +13,119 @@
     />
   </head>
   <body>
+    <header>
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Add Task
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form id="modal-form">
+                <div class="mb-3">
+                  <label for="taskName" class="form-label">Task Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="taskName"
+                    placeholder="Enter Task Name"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="taskExp" class="form-label"
+                    >Task Explanation</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="taskExp"
+                    placeholder="Please explain your task."
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label" style="display: block"
+                    >Priority</label
+                  >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="taskPriority"
+                      id="priority1"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="priority1">1</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="taskPriority"
+                      id="priority2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="priority2">2</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="taskPriority"
+                      id="priority3"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="priority3">3</label>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="mb-2" for="category">Select Status</label>
+
+                  <select
+                    class="form-select"
+                    aria-label="select Status"
+                    id="taskStatus"
+                  >
+                    <option selected>Select Status</option>
+
+                    <option value="created">Created</option>
+                    <option value="inProgress">In progres</option>
+                    <option value="done">Done</option>
+                  </select>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                  id="addButton"
+                >
+                  Ekle
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <section class="vh-100 gradient-custom-2">
       <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
@@ -35,7 +148,7 @@
                     <div
                       class="progress-bar bg-success px-0"
                       role="progressbar"
-                      style="width: 100%"
+                      style="width: 75%"
                       aria-valuenow="75"
                       aria-valuemin="0"
                       aria-valuemax="100"
@@ -46,7 +159,14 @@
                   <div class="col-4">
                     <div class="row">
                       <div class="col d-flex justify-content-center">
-                        <button class="btn btn-primary w-50 h-100">Add</button>
+                        <button
+                          class="btn btn-primary w-50 h-100"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#staticBackdrop"
+                        >
+                          Add
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -62,7 +182,8 @@
                   </div>
                   <div class="col-2 border-bottom three-section">DONE</div>
                 </div>
-                <table class="table-striped table text-white">
+                <div id="table-container" class="table-container"></div>
+                <!-- <table class="table-striped table text-white">
                   <thead>
                     <tr>
                       <th scope="col">Task Name</th>
@@ -72,12 +193,23 @@
                       <th scope="col">aaa</th>
                     </tr>
                   </thead>
-                </table>
+                </table> -->
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
