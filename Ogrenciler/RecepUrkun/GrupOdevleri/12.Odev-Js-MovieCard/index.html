@@ -23,16 +23,21 @@
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <form id="movieForm">
+          <form id="movieForm" class="needs-validation">
             <div class="mb-3">
               <label for="movieName" class="form-label">Film Adı:</label>
-              <input type="text" class="form-control" id="movieName" />
+              <input type="text" class="form-control" id="movieName" required />
             </div>
             <div class="mb-3">
               <label for="movieDirector" class="form-label"
                 >Yönetmen Adı:</label
               >
-              <input type="text" class="form-control" id="movieDirector" />
+              <input
+                type="text"
+                class="form-control"
+                id="movieDirector"
+                required
+              />
             </div>
             <div class="mb-3">
               <label for="movieYear" class="form-label">Vizyon Tarihi:</label>
@@ -42,34 +47,44 @@
                 max="2024"
                 class="form-control"
                 id="movieYear"
+                required
               />
             </div>
             <div class="mb-3">
               <label for="movieGenre" class="form-label">Türü:</label>
-              <input type="text" class="form-control" id="movieGenre" />
+              <input
+                type="text"
+                class="form-control"
+                id="movieGenre"
+                required
+              />
             </div>
             <div class="mb-3">
               <label for="moviePoster" class="form-label">Afiş Linki:</label>
-              <input type="url" class="form-control" id="moviePoster" />
+              <input
+                type="url"
+                class="form-control"
+                id="moviePoster"
+                required
+              />
             </div>
+            <button type="submit" class="btn btn-dark" id="afisOlustur">
+              Afiş Oluştur
+            </button>
+            <button
+              type="submit"
+              class="btn btn-success d-none"
+              id="bilgileriGuncelle"
+            >
+              Film Bilgileri Guncelle
+            </button>
           </form>
-          <button type="submit" class="btn btn-dark" id="afisOlustur">
-            Afiş Oluştur
-          </button>
-          <button
-            type="submit"
-            class="btn btn-success d-none"
-            id="bilgileriGuncelle"
-          >
-            Film Bilgileri Guncelle
-          </button>
         </div>
         <div class="col-lg-6 ps-5">
           <div
             class="movieCard rounded-4 p-5 mt-3 d-flex flex-column justify-content-center"
             id="movieCard"
           >
-            <!--Büyük harfe çevireceğiz-->
             <div class="text-white" id="movieCardInformation">
               <p class="p-2" id="movieNameCard">Film Adı:</p>
               <p class="p-2" id="movieDirectorCard">Yönetmen Adı:</p>
@@ -85,5 +100,29 @@
       </div>
     </div>
     <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      (() => {
+        "use strict";
+        const forms = document.querySelectorAll(".needs-validation");
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
   </body>
 </html>

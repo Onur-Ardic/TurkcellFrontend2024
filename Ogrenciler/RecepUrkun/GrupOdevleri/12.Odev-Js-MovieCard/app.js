@@ -13,7 +13,7 @@ let cardFilmYonetmen = document.querySelector("#movieDirectorCard")
 let cardFilmYear = document.querySelector("#movieYearCard")
 let cardFilmTur = document.querySelector("#movieGenreCard")
 
-const inputaGirilenBilgileriCardaYazdir = () => {
+const updateCardWithInputValues = () => {
   movieName.addEventListener("keyup", function () {
     cardFilmIsim.textContent = "Film Adı: " + movieName.value;
   });
@@ -28,12 +28,12 @@ const inputaGirilenBilgileriCardaYazdir = () => {
   });
 }
 
-inputaGirilenBilgileriCardaYazdir()
+updateCardWithInputValues()
 showCards();
 
-document.querySelector("#afisOlustur").addEventListener("click", function () {
-  movieCardCreate();
-  clearForm();
+document.getElementById('movieForm').addEventListener('submit', function (event) {
+  event.preventDefault();
+  movieCardCreate()
 });
 
 function movieCardCreate() {
@@ -55,6 +55,7 @@ function movieCardCreate() {
   localStorage.setItem("moviesData", JSON.stringify(movieCards));
   showCards();
   cardBilgileriniTemizle()
+  clearForm()
 }
 
 function showCards() {
@@ -65,7 +66,7 @@ function showCards() {
       card.classList.add("col-12", "col-md-6", "col-lg-4", "p-3");
       card.innerHTML = `
       <div
-        class="movieCard rounded-4 p-5 mt-3 d-flex flex-column justify-content-center"
+        class="movieCard rounded-4 p-5 mt-3 d-flex flex-column justify-content-center h-100"
         id="movieCard"
         style="background: url('${movie.moviePoster}');
         object-fit:cover;
@@ -77,7 +78,7 @@ function showCards() {
           <p class="p-2 fw-bold" id="movieYearCard">Vizyon Tarihi: ${movie.movieYear}</p>
           <p class="p-2 fw-bold" id="movieGenreCard">Türü: ${movie.movieGenre}</p>
           <div class="d-flex justify-content-between p-2">
-            <button type="button" class="btn btn-success updateBtn" onclick='updateMovie("${movie.movieId}")'>
+            <button type="button" class="btn btn-success updateBtn" onclick='getSelectedMovieInfo("${movie.movieId}")'>
               Degistir
             </button>
             <button type="button" class="btn btn-warning deleteBtn" onclick='deleteMovie("${movie.movieId}")'>Sil</button>
@@ -95,11 +96,7 @@ function deleteMovie(movieId) {
   showCards()
 }
 
-function updateMovie(movieId) {
-  getMovieInfo(movieId);
-}
-
-function getMovieInfo(movieId) {
+function getSelectedMovieInfo(movieId) {
   let selectedMovie = movieCards.find((movie) => movie.movieId === movieId);
   movieName.value = selectedMovie.movieName;
   movieDirector.value = selectedMovie.movieDirector;
@@ -109,11 +106,11 @@ function getMovieInfo(movieId) {
   checkEdited(true)
 
   document.querySelector("#bilgileriGuncelle").addEventListener("click", function () {
-    filmBilgileriGuncelle(movieId);
+    updateMovieInformation(movieId);
   });
 }
 
-function filmBilgileriGuncelle(movieId) {
+function updateMovieInformation(movieId) {
   let selectedMovieIndex = movieCards.findIndex((movie) => movie.movieId === movieId);
   movieCards[selectedMovieIndex].movieName = movieName.value;
   movieCards[selectedMovieIndex].movieDirector = movieDirector.value;
@@ -126,8 +123,6 @@ function filmBilgileriGuncelle(movieId) {
   clearForm();
   showCards()
   cardBilgileriniTemizle()
-
-  // Düzenleme işlemini sonlandır
   checkEdited(false)
 }
 
