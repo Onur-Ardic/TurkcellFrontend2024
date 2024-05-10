@@ -12,13 +12,13 @@ function play(cell) {
     if (firstCalc > 4) {
       // console.log("tetiklendi");
       if (checkWin()) {
-        // alert(currentPlayer + " Kazandı!");
+        alert(currentPlayer + " Kazandı!");
         xSkor.textContent = xPoint;
         oSkor.textContent = oPoint;
-        if (xPoint == 5) {
-          alert("X Kazandı!");
+        if(xPoint == 5) {
+            alert("X Kazandı!");
         } else if (oPoint == 5) {
-          alert("O Kazandı!");
+            alert("O Kazandı!");
         }
         resetGame();
         return;
