@@ -1,36 +1,36 @@
-let form = document.querySelector('#form')
-let saveBtn = document.querySelector('#save')
-let filmCollection = []
-let cardArea = document.querySelector('#card-area')
-const name = document.querySelector('#name').value
-const type = document.querySelector('#type').value
-const director = document.querySelector('#director').value
-//img alınacak
-const imdb = document.querySelector('#imdb').value
-const desc = document.querySelector('#movie-description').value
-const cast = document.querySelector('#cast').value
+let form = document.querySelector("#form");
+let filmCollection = [];
+let cardArea = document.querySelector("#card-area");
+const name = document.querySelector("#name");
+const type = document.querySelector("#type");
+const director = document.querySelector("#director");
+const afis = document.querySelector("#afis-url");
+const imdb = document.querySelector("#imdb");
+const desc = document.querySelector("#movie-description");
+const cast = document.querySelector("#cast");
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault()
-    const film = {
-        name: name,
-        type: type,
-        director: director,
-        imdb: imdb,
-        desc: desc,
-        cast: cast
-    }
-    filmCollection.push(film)
+  e.preventDefault();
+  const film = {
+    name: name.value,
+    type: type.value,
+    director: director.value,
+    imdb: imdb.value,
+    desc: desc.value,
+    cast: cast.value,
+    img: afis.value,
+  };
+  filmCollection.push(film);
+  localStorage.setItem("movieArray", JSON.stringify(filmCollection));
 
-    const addFilmCard = () => {
-        const result = `<div class="card my-5 text-white" style="max-width: 540px;">
+  const result = `<div class="card col-12 col-md-6 col-lg-6 my-5 text-white" style="max-width: 540px;">
         <div class="row g-0">
-            <div class="col-md-4">
-                <img src="..." class="img-fluid rounded-start" alt="...">
+            <div class="col-md-4 col-4">
+                <img src="${film.img}" class="img-fluid rounded-start" alt="...">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 col-8">
                 <div class="card-body">
-                    <h5 class="card-title">${film.name}</h5>
+                    <h5 class="card-title fw-bold">${film.name}</h5>
                     <p class="card-text">${film.desc}</p>
                     <p class="card-type"><i>Türü: ${film.type}</i></p>
                     <p class="card-director"><i>Yönetmen: ${film.director}</i></p>
@@ -39,10 +39,8 @@ form.addEventListener("submit", (e) => {
                 </div>
             </div>
         </div>
-    </div>`
-    }
-    addFilmCard()
-    cardArea.appendChild(result)
-    cardArea.innerHTML += result
-    document.querySelector('#form ').reset()
-})
+    </div>`;
+
+  cardArea.innerHTML = result;
+  document.querySelector("#form ").reset();
+});
