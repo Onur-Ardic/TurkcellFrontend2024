@@ -7,7 +7,7 @@ const inputs = {
 };
 displayMovies();
 //
-
+//
 //Validation kontrol
 function updateBorderColor(input) {
   if (input.value.trim() === "") {
