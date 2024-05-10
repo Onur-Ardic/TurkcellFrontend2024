@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="a"></section>
+    <section class="user-from p-5">
+      <!-- bg-white w-75 mx-auto py-5-->
+      <div class="wrapper">
+       
+        <h1 class="text-center text-white">Film Koleksiyonu</h1>
+        <form id="form" class="needs-validation container">
+          <div class="form-row">
+            <div class="col-md-4 mb-3 mx-auto">
+              <label for="nameInput " class="text-white  fw-bold">Film Adı</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nameInput"
+                placeholder="Film Adı"
+                required
+              />
+            </div>
+            <div class="col-md-4 mb-3 mx-auto">
+              <label for="directorInput" class="text-white  fw-bold">Yönetmen Adı</label>
+              <input
+                type="text"
+                class="form-control"
+                id="directorInput"
+                placeholder="Yönetmen Adı"
+                required
+              />
+            </div>
+            <div class="col-md-4 mb-3 mx-auto">
+              <label for="yearInput" class="text-white  fw-bold ">Yılı</label>
+              <input
+                type="year"
+                class="form-control"
+                id="yearInput"
+                placeholder="Yılı"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-4 mb-3 mx-auto">
+              <label for="type" class="text-white fw-bold"> Film Türü</label>
+              <select
+                id="movieType"
+                class="form-select"
+                aria-label="Default select example"
+              >
+                <option selected>Film Türü Seçiniz</option>
+                <option value="1">Bilim Kurgu</option>
+                <option value="2">Aksiyon</option>
+                <option value="3">Macera</option>
+                <option value="4">Fantastik</option>
+                <option value="5">Romantik</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3 mx-auto">
+              <label for="imageUrl" class="text-white fw-bold" >Resim Afiş Linki</label>
+              <input
+                type="url"
+                class="form-control"
+                id="imageUrl"
+                placeholder="https://tvplus.com.tr/"
+                required
+              />
+              //
+            </div>
+          </div>
+          <div id="formEnd" class="col-md-4 mb-3 d-flex mx-auto">
+            <button id="submit" class="btn btn-success " type="submit">
+              Film Oluştur
+            </button>
+          </div>
+        </form>
+      
+      </div>
+    </section>
+    <section class="user-list p-5">
+      <h2 class="text-center ">Film Listesi</h2>
+      <div class="container">
+        <ul id="moviesList" class="list-unstyled d-flex flex-wrap gap-3"></ul>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>

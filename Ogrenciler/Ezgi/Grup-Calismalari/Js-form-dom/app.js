@@ -1,8 +1,6 @@
-
 let btn = document.querySelector('#saveBtn')
 let form = document.querySelector(".form")
 let users = []
-
 
 form.addEventListener("submit", function (e) {
     e.preventDefault()
@@ -11,14 +9,12 @@ form.addEventListener("submit", function (e) {
     let age = document.querySelector("#age").value
     let city = document.querySelector("#city").value
 
-
-
-
     const userInfo = {
         name: name,
         surname: surname,
         age: age,
-        city: city    }
+        city: city    
+    }
     users.push(userInfo)
 
     const addCard = () => {
@@ -27,10 +23,13 @@ form.addEventListener("submit", function (e) {
        cardDOM.classList.add('card')
        cardDOM.style.backgroundColor = '#fdf5e6'
        cardDOM.style.padding = '20px 10px'
+
        let cardbodyDOM = document.createElement('div')
        cardbodyDOM.classList.add('card-body')
+
        let h4DOM = document.createElement('h4')
        h4DOM.classList.add('card-title')
+
        let pDOM = document.createElement('p')
        pDOM.classList.add('card-text')
 

@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  background-color: #0da192;
+  padding: 10px;
+}
+.cell {
+  background-color: #14bdac;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.btn {
+  margin-top: 20px;
+  background-color: #0da192;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  cursor: pointer;
+}
+.btn:hover {
+  color: white;
+}
+.d-flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
