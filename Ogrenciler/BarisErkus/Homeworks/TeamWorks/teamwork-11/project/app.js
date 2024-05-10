@@ -1,3 +1,4 @@
+// Çok boyutlu array
 let board = [
     ["", "", ""],
     ["", "", ""],
@@ -11,14 +12,6 @@ let OCount = 0;
 let currentPlayer = player1;
 
 const buttons = document.querySelectorAll(".row button")
-
-const handleClick = (row, col) => {
-    if (board[row][col] === "") {
-        document.getElementById("cell" + row + col).textContent = currentPlayer;
-        board[row][col] = currentPlayer;
-        currentPlayer = currentPlayer === player1 ? player2 : player1;
-    }
-}
 
 const checkWinner = () => {
     // Yan yana
@@ -54,12 +47,13 @@ const checkWinner = () => {
     }
     if (board[0][2] === board[1][1] && board[1][1] === board[2][0] && board[0][2] !== "") {
         board[1][1] === "X" ? XCount++ : OCount++;
-        const button02 = document.getElementById("cell02");
-        const button11 = document.getElementById("cell11");
-        const button20 = document.getElementById("cell20");
-        button02.style.backgroundColor = "yellow";
-        button11.style.backgroundColor = "yellow";
-        button20.style.backgroundColor = "yellow";
+        const crossButtons = ["cell02", "cell11", "cell20"];
+        crossButtons.forEach(buttonId => {
+            const button = document.getElementById(buttonId);
+            if (button) {
+                button.style.backgroundColor = "yellow";
+            }
+        });
         return `${board[1][1]} kazandı!`;
     }
     if (gameOver()) {
@@ -68,6 +62,14 @@ const checkWinner = () => {
         return "Berabere"
     }
     return null;
+}
+
+const handleClick = (row, col) => {
+    if (board[row][col] === "") {
+        document.getElementById("cell" + row + col).textContent = currentPlayer;
+        board[row][col] = currentPlayer;
+        currentPlayer = currentPlayer === player1 ? player2 : player1;
+    }
 }
 
 buttons.forEach((button) => {
@@ -81,7 +83,6 @@ buttons.forEach((button) => {
         }
     });
 });
-
 
 const reset = () => {
     buttons.forEach((button) => {

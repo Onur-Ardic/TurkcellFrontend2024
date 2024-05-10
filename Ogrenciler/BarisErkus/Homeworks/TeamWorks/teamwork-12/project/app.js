@@ -24,12 +24,13 @@ document.querySelectorAll('.dropdown-menu a').forEach(element => {
     });
 });
 
-document.getElementById('addToCollection').addEventListener('click', () => {
+document.getElementById('addToCollection').addEventListener('click', e => {
     if (document.getElementById('imageInput').checkValidity() &&
         document.getElementById('movieNameInput').checkValidity() &&
         document.getElementById('movieTopic').checkValidity() &&
         document.getElementById('directorInput').checkValidity() &&
         document.getElementById('yearInput').checkValidity()) {
+        e.preventDefault();
         addToCollection();
     }
 });
@@ -121,7 +122,8 @@ const addToCollection = () => {
     document.getElementById('directorInput').value = "";
     document.getElementById('yearInput').value = "";
     // Update Card
-    buttonUpdate.addEventListener('click', () => {
+    buttonUpdate.addEventListener('click', e => {
+        e.preventDefault();
         // document.getElementById('imageInput').value = selectedFile;
         document.getElementById('movieNameInput').value = cardTitle.innerText;
         document.getElementById('movieTopic').value = cardText.innerText;
@@ -137,8 +139,6 @@ const addToCollection = () => {
         card.remove();
     });
 }
-
-
 
 // Validation
 (() => {
