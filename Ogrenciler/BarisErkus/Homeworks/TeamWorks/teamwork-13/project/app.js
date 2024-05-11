@@ -1,4 +1,16 @@
-let cardList = localStorage.getItem('cardList') ? JSON.parse(localStorage.getItem('cardList')) : [];
+let cardList = [];
+
+//#region Local storage functions
+function getCardList() {
+    const cardList = localStorage.getItem('cardList');
+    return cardList ? JSON.parse(cardList) : [];
+}
+
+function setCardList(cardList) {
+    localStorage.setItem('cardList', JSON.stringify(cardList));
+}
+//#endregion
+
 function MovieCard(image, name, subject, kind, director, year) {
     this.image = image;
     this.name = name;
@@ -7,11 +19,11 @@ function MovieCard(image, name, subject, kind, director, year) {
     this.director = director;
     this.year = year;
 }
-//#region UI
-function UI() {
-}
+
+//#region Arayüz işlemleri
+function UI() { }
 const ui = new UI();
-UI.prototype.listenerEvent = function (id, event, action) {
+UI.prototype.addEvent = function (id, event, action) {
     document.getElementById(id).addEventListener(event, action);
 }
 UI.prototype.createItem = function (element, classList, innerText = "") {
@@ -22,7 +34,7 @@ UI.prototype.createItem = function (element, classList, innerText = "") {
     }
     return item;
 }
-UI.prototype.creatCard = function (movieCard) {
+UI.prototype.createCard = function (movieCard) {
     // Card
     const card = ui.createItem('div', 'card shadow p-2 border-0');
     card.style = 'width: 18rem; margin: 1rem;';
@@ -40,9 +52,9 @@ UI.prototype.creatCard = function (movieCard) {
     const cardText = ui.createItem('p', 'card-text', movieCard.subject);
     const cardInfos = ui.createItem('div', 'd-flex justify-content-between flex-wrap');
 
-    const kind = ui.createItem('p', '', movieCard.kind);
+    const kind = ui.createItem('p', 'kind', movieCard.kind);
     const director = ui.createItem('p', 'fw-bold', movieCard.director);
-    const year = ui.createItem('p', '', movieCard.year);
+    const year = ui.createItem('p', 'year', movieCard.year);
     // Card Buttons
     const cardButtons = ui.createItem('div', 'd-flex justify-content-center gap-3 flex-wrap mb-2');
     const buttonUpdate = ui.createItem('button', 'btn btn-success');
@@ -68,9 +80,10 @@ UI.prototype.creatCard = function (movieCard) {
 }
 UI.prototype.deleteCard = function (event) {
     if (event.target.classList.contains('btn-danger')) {
-        event.target.parentElement.parentElement.remove();
-        cardList = cardList.filter(element => element.name != event.target.parentElement.parentElement.children[1].children[0].innerText);
-        localStorage.setItem('cardList', JSON.stringify(cardList));
+        const itemElement = event.target.parentElement.parentElement;
+        itemElement.remove();
+        cardList = cardList.filter(element => element.name != itemElement.children[1].children[0].innerText);
+        setCardList(cardList);
     }
 }
 UI.prototype.deleteAllCard = function () {
@@ -80,32 +93,32 @@ UI.prototype.deleteAllCard = function () {
 }
 UI.prototype.updateCard = function (event) {
     if (event.target.classList.contains('btn-success')) {
-        const tempCard = cardList.filter(element => element.name == event.target.parentElement.parentElement.children[1].children[0].innerText)[0];
+        const itemElement = event.target.parentElement.parentElement;
+        const tempCard = cardList.filter(element => element.name == itemElement.children[1].children[0].innerText)[0];
 
-        event.target.parentElement.parentElement.remove();
-        cardList = cardList.filter(element => element.name != event.target.parentElement.parentElement.children[1].children[0].innerText);
-        localStorage.setItem('cardList', JSON.stringify(cardList));
-
-        document.getElementById('movieNameInput').value = tempCard.name;
-        document.getElementById('movieTopic').value = tempCard.subject;
-        document.getElementById('directorInput').value = tempCard.director;
-        document.getElementById('yearInput').value = tempCard.year;
+        itemElement.remove();
+        cardList = cardList.filter(element => element.name != itemElement.children[1].children[0].innerText);
+        setCardList(cardList);
+        setValue('movieNameInput', tempCard.name);
+        setValue('movieTopic', tempCard.subject);
+        setValue('directorInput', tempCard.director);
+        setValue('yearInput', tempCard.year);
         document.getElementById('movieKind').innerText = kind;
         localStorage.setItem('selectedImage', tempCard.image);
     }
 }
 UI.prototype.clearInputs = function () {
     localStorage.removeItem('selectedImage');
-    document.getElementById('imageInput').value = "";
-    document.getElementById('movieNameInput').value = "";
-    document.getElementById('movieTopic').value = "";
+    setValue('imageInput', '');
+    setValue('movieNameInput', '');
+    setValue('movieTopic', '');
+    setValue('directorInput', '');
+    setValue('yearInput', '');
     document.getElementById('movieKind').innerText = "Türü";
-    document.getElementById('directorInput').value = "";
-    document.getElementById('yearInput').value = "";
 }
 //#endregion
 
-// Get Image
+//#region Get Image
 let selectedImage;
 document.getElementById('imageInput').addEventListener('change', event => {
     let selectedImage = event.target.files[0];
@@ -117,7 +130,8 @@ document.getElementById('imageInput').addEventListener('change', event => {
         reader.readAsDataURL(selectedImage);
     }
 });
-// Get Kind
+//#endregion
+//#region Get Kind
 let kind = "Belirtilmedi";
 document.querySelectorAll('.dropdown-menu a').forEach(element => {
     element.addEventListener('click', event => {
@@ -125,30 +139,42 @@ document.querySelectorAll('.dropdown-menu a').forEach(element => {
         document.getElementById('movieKind').innerText = event.target.dataset.value;
     });
 });
+//#endregion
+//#region Get - Set Value
+function getValue(id) {
+    return document.getElementById(id).value;
+}
+function setValue(id, value) {
+    document.getElementById(id).value = value;
+}
+//#endregion
 
 function addMovie() {
-    const name = document.getElementById('movieNameInput').value;
-    const subject = document.getElementById('movieTopic').value;
-    const director = document.getElementById('directorInput').value;
-    const year = document.getElementById('yearInput').value;
+    const name = getValue('movieNameInput');
+    const subject = getValue('movieTopic');
+    const director = getValue('directorInput');
+    const year = getValue('yearInput');
+
     if (name && subject && director && year) {
         const movieCardExample = new MovieCard(localStorage.getItem('selectedImage'), name, subject, kind, director, year)
         cardList.push(movieCardExample);
-        localStorage.setItem('cardList', JSON.stringify(cardList));
-        ui.creatCard(movieCardExample);
+        setCardList(cardList);
+        ui.createCard(movieCardExample);
         ui.clearInputs();
     }
 }
 
+//#region Load
 window.onload = function () {
+    cardList = getCardList();
     cardList.forEach(element => {
-        ui.creatCard(element);
+        ui.createCard(element);
     });
 }
-ui.listenerEvent('deleteAllItemButton', 'click', ui.deleteAllCard);
-ui.listenerEvent('card-container', 'click', ui.deleteCard);
-ui.listenerEvent('card-container', 'click', ui.updateCard);
-ui.listenerEvent("addToCollection", 'click', addMovie);
+ui.addEvent('deleteAllItemButton', 'click', ui.deleteAllCard);
+ui.addEvent('card-container', 'click', ui.deleteCard);
+ui.addEvent('card-container', 'click', ui.updateCard);
+ui.addEvent("addToCollection", 'click', addMovie);
 // Validation
 (() => {
     'use strict'
@@ -169,3 +195,4 @@ ui.listenerEvent("addToCollection", 'click', addMovie);
         }, false)
     })
 })()
+//#endregion
