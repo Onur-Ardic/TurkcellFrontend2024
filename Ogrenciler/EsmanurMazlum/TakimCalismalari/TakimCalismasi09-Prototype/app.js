@@ -1,5 +1,3 @@
-// import { Movie } from "prototype.js";
-
 const filmAdi = document.getElementById("filmAdi");
 const filmYonetmen = document.getElementById("filmYonetmen");
 const filmYili = document.getElementById("filmYili");
@@ -7,73 +5,47 @@ const filmTuru = document.getElementById("filmTuru");
 const fid = document.getElementById("filmId");
 const filmAfis = document.getElementById("filmAfis");
 let editMovieId;
-let infos = JSON.parse(localStorage.getItem("filmler")) || [];
-
-function Movie(ad, yonetmen, yil, tur, afis){
-    this.ad = ad;
-    this.yonetmen = yonetmen;
-    this.yil = yil;
-    this.tur = tur;
-    this.afis = afis;
-}  
-
-function save(filmId) {
-  let id = infos.length;
-
-  
-  let movie = new Movie(filmAdi.value, filmYonetmen.value, filmYili.value, filmTuru.value, filmAfis.value);
-  console.log(movie);
-
-  let editId = infos.findIndex((film) => film.filmId === parseInt(filmId));
+let movies = JSON.parse(localStorage.getItem("movies")) || [];
+function Movie(id, ad, yonetmen, yil, tur, afis) {
+  this.id = id;
+  this.ad = ad;
+  this.yonetmen = yonetmen;
+  this.yil = yil;
+  this.tur = tur;
+  this.afis = afis;
+}
+Movie.prototype.save = function () {
+  let movies = JSON.parse(localStorage.getItem("movies")) || [];
+  let editId = movies.findIndex((film) => film.id == fid.value);
+  console.log(editId);
   if (fid.value) {
-    infos[editId] = {filmId: parseInt(filmId), movie}
-    // {
-    //   filmId: parseInt(filmId),
-    //   filmAdi: filmAdiVal,
-    //   filmYonetmen: filmYonetmenVal,
-    //   filmYili: filmYiliVal,
-    //   filmTuru: filmTuruVal,
-    //   filmAfis: filmAfisVal,
-    // };
+    let movie = new Movie(Number(fid.value), filmAdi.value, filmYonetmen.value, filmYili.value, filmTuru.value, filmAfis.value);
+    movies[editId] = { id: fid.value, ...movie };
     editMovieId = null;
   } else {
-    infos = [...infos, {filmId: id, ...movie}];
-    console.log(infos);
-   
-    // ({
-    //   filmId: id,
-    //   filmAdi: filmAdiVal,
-    //   filmYonetmen: filmYonetmenVal,
-    //   filmYili: filmYiliVal,
-    //   filmTuru: filmTuruVal,
-    //   filmAfis: filmAfisVal,
-    // });
+    let movie = new Movie(Number(Math.floor(Math.random() * 10000)), filmAdi.value, filmYonetmen.value, filmYili.value, filmTuru.value, filmAfis.value);
+    movies.push(movie);
   }
-  getMovies();
-
- 
-
+  localStorage.setItem("movies", JSON.stringify(movies));
+  Movie.prototype.clear();
+  Movie.prototype.getMovies();
 }
-
-let films = localStorage.setItem("filmler", JSON.stringify(infos));
-
-console.log(films);
-
-const clear = () => {
+Movie.prototype.clear = () => {
+  filmAdi.value = "";
+  filmYonetmen.value = "";
+  filmYili.value = "";
+  filmTuru.value = "";
+  filmAfis.value = "";
   fid.value = "";
-  let delMovie = Movie("","","","","");
-  return delMovie;
 }
-
 const cardRow = document.getElementById("cardRow");
-
-function getMovies() {
-  let filmler = JSON.parse(localStorage.getItem("filmler"));
+Movie.prototype.getMovies = function () {
+  let data = JSON.parse(localStorage.getItem("movies"));
   cardRow.innerHTML = "";
-  filmler?.forEach((film) => {
+  data?.forEach((film) => {
     const col = document.createElement("div");
     col.classList.add("col-4");
-    col.id = `${film.filmId}`;
+    col.id = `${Number(film.id)}`;
     cardRow.appendChild(col);
     const card = document.createElement("div");
     card.className = "card my-3";
@@ -83,7 +55,7 @@ function getMovies() {
     card.appendChild(cardHeader);
     const cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
-    cardBody.style.backgroundImage = `url(${film.filmAfis})`;
+    cardBody.style.backgroundImage = `url(${film.afis})`;
     cardBody.style.backgroundSize = "cover";
     cardBody.style.backgroundPosition = "center";
     cardBody.style.height = "600px";
@@ -91,17 +63,17 @@ function getMovies() {
     const cardFooter = document.createElement("div");
     cardFooter.classList.add("card-footer");
     card.appendChild(cardFooter);
-    const filmAdiText = document.createTextNode(film.filmAdi);
+    const filmAdiText = document.createTextNode(film.ad);
     cardHeader.appendChild(filmAdiText);
-    const filmYonetmen = document.createTextNode(film.filmYonetmen);
+    const filmYonetmen = document.createTextNode(film.yonetmen);
     let pYon = document.createElement("p");
     pYon.appendChild(filmYonetmen);
     cardHeader.appendChild(pYon);
-    const filmYili = document.createTextNode(film.filmYili);
+    const filmYili = document.createTextNode(film.yil);
     let pYear = document.createElement("p");
     pYear.appendChild(filmYili);
     cardHeader.appendChild(pYear);
-    const filmTuru = document.createTextNode(film.filmTuru);
+    const filmTuru = document.createTextNode(film.tur);
     let p = document.createElement("p");
     p.appendChild(filmTuru);
     cardHeader.appendChild(p);
@@ -109,47 +81,38 @@ function getMovies() {
     btnEdit.className = "btn btn-secondary w-100 mb-2";
     btnEdit.textContent = "Düzenle";
     cardFooter.appendChild(btnEdit);
-    btnEdit.addEventListener("click", () => editMovie(col.id));
+    btnEdit.addEventListener("click", () => Movie.prototype.editMovie(col.id));
     const btnDel = document.createElement("button");
     btnDel.className = "btn btn-danger w-100";
     btnDel.textContent = "Sil";
     cardFooter.appendChild(btnDel);
-    btnDel.addEventListener("click", () => deleteMovies(col.id));
+    btnDel.addEventListener("click", () => Movie.prototype.deleteMovies(col.id));
   });
 }
-
-function deleteMovies(filmId) {
-  infos = infos.filter((film) => film.filmId !== parseInt(filmId));
-  localStorage.setItem("filmler", JSON.stringify(infos));
+Movie.prototype.deleteMovies = (filmId) => {
+  movies = movies.filter((film) => Number(film.id) !== Number(filmId));
+  localStorage.setItem("movies", JSON.stringify(movies));
   document.getElementById(filmId).remove();
+  Movie.prototype.clear();
 }
-
-function editMovie(filmId) {
-
-  infos.map((film) => {
-    if (film.filmId === parseInt(filmId)){
-      let movie = new Movie(film.filmAdi, film.filmYonetmen, film.filmYili, film.filmTuru, film.filmAfis)
-      infos[editId] = {filmId: parseInt(filmId), movie}
-      // infos[editId] = {filmId: fid.value, movie};
-
-    }    
-    //   {
-    //   fid.value = film.filmId;
-    //   filmAdi.value = film.filmAdi;
-    //   filmYonetmen.value = film.filmYonetmen;
-    //   filmTuru.value = film.filmTuru;
-    //   filmYili.value = film.filmYili;
-    //   filmAfis.value = film.filmAfis;
-    // }
-  });
+Movie.prototype.editMovie = (filmId) => {
+  console.log(filmId);
+  movies.map((film) => {
+    if (Number(film.id) === Number(filmId)) {
+      console.log(film)
+      fid.value = Number(film.id);
+      filmAdi.value = film.ad;
+      filmYonetmen.value = film.yonetmen;
+      filmTuru.value = film.tur;
+      filmYili.value = film.yil;
+      filmAfis.value = film.afis;
+    }
+  })
   editMovieId = filmId;
 }
-
-
-getMovies();
-
+Movie.prototype.getMovies();
 document.getElementById("form").addEventListener("submit", (e) => {
   e.preventDefault();
-  save(editMovieId);
-  clear();
+  Movie.prototype.save(editMovieId);
+  Movie.prototype.clear();
 });
