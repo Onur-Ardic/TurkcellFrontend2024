@@ -14,4 +14,3 @@
 
 const key1 ="name";
 const key2 = {a: 10, b: 20};
-const key3 = ()=>
