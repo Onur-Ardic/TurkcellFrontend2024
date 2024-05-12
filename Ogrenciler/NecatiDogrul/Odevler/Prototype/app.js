@@ -11,9 +11,6 @@ const storage = new Storage();
 const ui = new UI();
 ui.display(storage.getMoviesLocal());
 submitButton.addEventListener("click", (e) => {
-  updateMode ? editMovie(e) : addMovie(e);
-});
-function addMovie(e) {
   e.preventDefault();
   const movie = new Movie(
     nameInput.value,
@@ -22,16 +19,5 @@ function addMovie(e) {
     genreInput.value,
     imageInput.value
   );
-  storage.setMoviesLocal(movie);
-}
-function editMovie(e) {
-  e.preventDefault();
-  const updatedObject = {
-    name: nameInput.value,
-    director: directorInput.value,
-    year: yearInput.value,
-    genre: genreInput.value,
-    image: imageInput.value,
-  };
-  storage.editMovie(updatedObject);
-}
+  updateMode ? storage.editMovie(movie) : storage.setMoviesLocal(movie);
+});
