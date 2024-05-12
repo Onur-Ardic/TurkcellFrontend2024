@@ -16,14 +16,15 @@
       }
 
       input,
-      textarea {
+      textarea,select{
         border: none;
         border-radius: 20px;
         padding: 10px;
       }
 
       input:focus,
-      textarea:focus {
+      textarea:focus,
+      select:focus {
         outline: none;
         border: 2px solid #f7dffc;
         box-shadow: 0 0 10px #f7dffc;
@@ -54,11 +55,20 @@
         <form id="form" class="row justify-content-around mt-5">
           <div class="col-lg-5 d-flex flex-column gap-5 mb-5">
             <input id="name" type="text" placeholder="Film adı" />
-            <input id="type" type="text" placeholder="Tür" />
+            <select name="" id="type">
+              <option value="bilim-kurgu">Bilim Kurgu</option>
+              <option value="aksiyon">Aksiyon</option>
+              <option value="ask">Aşk</option>
+              <option value="korku-gerilim">Korku/Gerilim</option>
+              <option value="drama">Drama</option>
+              <option value="animasyon">Animasyon</option>
+              <option value="komedi">Komedi</option>
+            </select>
             <input id="director" type="text" placeholder="Yönetmen" />
             <input id="afis-url" type="text" placeholder="Resim URL..." />
           </div>
           <div class="col-lg-5 d-flex flex-column gap-5">
+            <input id="year" type="text" placeholder="Yıl" />
             <input id="imdb" type="text" placeholder="IMDb puanı" />
             <textarea
               name="movie-description"

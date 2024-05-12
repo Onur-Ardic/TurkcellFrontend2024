@@ -4,43 +4,63 @@ let cardArea = document.querySelector("#card-area");
 const name = document.querySelector("#name");
 const type = document.querySelector("#type");
 const director = document.querySelector("#director");
-const afis = document.querySelector("#afis-url");
+const img = document.querySelector("#afis-url");
+const year = document.querySelector("#year")
 const imdb = document.querySelector("#imdb");
 const desc = document.querySelector("#movie-description");
 const cast = document.querySelector("#cast");
 
+function Movie(name, type, director, img, year, imdb, desc, cast) {
+  this.name = name.value;
+  this.type = type.value;
+  this.director = director.value;
+  this.img = img.value;
+  this.year = year.value
+  this.imdb = imdb.value;
+  this.desc = desc.value;
+  this.cast = cast.value;
+}
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const film = {
-    name: name.value,
-    type: type.value,
-    director: director.value,
-    imdb: imdb.value,
-    desc: desc.value,
-    cast: cast.value,
-    img: afis.value,
-  };
-  filmCollection.push(film);
-  localStorage.setItem("movieArray", JSON.stringify(filmCollection));
-
-  const result = `<div class="card col-12 col-md-6 col-lg-6 my-5 text-white" style="max-width: 540px;">
+  e.preventDefault()
+  const movie = new Movie(
+    name,
+    type,
+    director,
+    img,
+    year,
+    imdb,
+    desc,
+    cast
+  )
+  filmCollection.push(movie)
+  localStorage.setItem("movieList", JSON.stringify(filmCollection))
+  console.log(filmCollection)
+})
+const createMovieCard = () => {
+  const movieList = JSON.parse(localStorage.getItem("movieList"))
+  for (let i = 0; i < movieList.length; i++) {
+    const result =
+      `<div class="card my-5 text-white" style="max-width: 540px;">
         <div class="row g-0">
-            <div class="col-md-4 col-4">
-                <img src="${film.img}" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8 col-8">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">${film.name}</h5>
-                    <p class="card-text">${film.desc}</p>
-                    <p class="card-type"><i>Türü: ${film.type}</i></p>
-                    <p class="card-director"><i>Yönetmen: ${film.director}</i></p>
-                    <p class="card-imdb"><i>IMDb: ${film.imdb}</i></p>
-                    <p class="card-cast"><i>Oyuncular: ${film.cast}</i></p>
-                </div>
-            </div>
+          <div class="col-md-4">
+             <img src="${movieList[i].img}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+          <div class="card-body">
+              <h5 class="card-title">${movieList[i].name}</h5>
+              <p class="card-text">${movieList[i].desc}</p>
+              <p class="card-type"><i>Türü: ${movieList[i].type}</i></p>
+              <p class="card-director"><i>Yönetmen: ${movieList[i].director}</i></p>
+              <p class="card-year"><i>Yıl: ${movieList[i].year}</i></p>
+              <p class="card-imdb"><i>IMDb: ${movieList[i].imdb}</i></p>
+              <p class="card-cast"><i>Oyuncular: ${movieList[i].cast}</i></p>
+              <button class="btn btn-danger">Delete</button>
+              <button class="btn btn-warning">Update</button>
+          </div>
         </div>
-    </div>`;
-
-  cardArea.innerHTML = result;
-  document.querySelector("#form ").reset();
-});
+  </div>
+</div>`
+    cardArea.innerHTML = result
+  }
+}
+createMovieCard()
