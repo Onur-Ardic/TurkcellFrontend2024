@@ -1,15 +1,5 @@
 let cardList = [];
-
-//#region Local storage functions
-function getCardList() {
-    const cardList = localStorage.getItem('cardList');
-    return cardList ? JSON.parse(cardList) : [];
-}
-
-function setCardList(cardList) {
-    localStorage.setItem('cardList', JSON.stringify(cardList));
-}
-//#endregion
+const ls = new LocalStorage();
 
 function MovieCard(image, name, subject, kind, director, year) {
     this.image = image;
@@ -35,9 +25,6 @@ UI.prototype.createItem = function (element, classList, innerText = "") {
     return item;
 }
 UI.prototype.createCard = function (movieCard) {
-    // Card
-    const card = ui.createItem('div', 'card shadow p-2 border-0');
-    card.style = 'width: 18rem; margin: 1rem;';
     // Image
     const imagePreview = ui.createItem('div', 'imagePreview d-flex align-items-center justify-content-center');
     let lsImage = movieCard.image;
@@ -47,22 +34,20 @@ UI.prototype.createCard = function (movieCard) {
         imgElement.src = lsImage;
         imagePreview.appendChild(imgElement)
     }
+
+    // Card
+    const card = ui.createItem('div', 'card shadow p-2 border-0');
+    card.style = 'width: 18rem; margin: 1rem;';
     const cardBody = ui.createItem('div', 'card-body');
     const cardTitle = ui.createItem('h5', 'card-title', movieCard.name);
     const cardText = ui.createItem('p', 'card-text', movieCard.subject);
     const cardInfos = ui.createItem('div', 'd-flex justify-content-between flex-wrap');
-
     const kind = ui.createItem('p', 'kind', movieCard.kind);
     const director = ui.createItem('p', 'fw-bold', movieCard.director);
     const year = ui.createItem('p', 'year', movieCard.year);
-    // Card Buttons
     const cardButtons = ui.createItem('div', 'd-flex justify-content-center gap-3 flex-wrap mb-2');
-    const buttonUpdate = ui.createItem('button', 'btn btn-success');
-    buttonUpdate.href = "#"
-    buttonUpdate.textContent = "Güncelle"
-    const buttonDelete = ui.createItem('button', 'btn btn-danger');
-    buttonDelete.href = "#"
-    buttonDelete.textContent = "Sil"
+    const buttonUpdate = ui.createItem('button', 'btn btn-success', "Güncelle");
+    const buttonDelete = ui.createItem('button', 'btn btn-danger', "Sil");
 
     let infos = [kind, director, year];
     infos.forEach(element => cardInfos.appendChild(element));
@@ -80,10 +65,14 @@ UI.prototype.createCard = function (movieCard) {
 }
 UI.prototype.deleteCard = function (event) {
     if (event.target.classList.contains('btn-danger')) {
+        // Card'ın tamamını seç
         const itemElement = event.target.parentElement.parentElement;
+        // HTML'den sil
         itemElement.remove();
+        // Card -> Card Body -> Card Title'dan ismi al ve Card'ı listeden sil
         cardList = cardList.filter(element => element.name != itemElement.children[1].children[0].innerText);
-        setCardList(cardList);
+        // LocalStorage'dan sil
+        ls.setCardList(cardList);
     }
 }
 UI.prototype.deleteAllCard = function () {
@@ -93,12 +82,15 @@ UI.prototype.deleteAllCard = function () {
 }
 UI.prototype.updateCard = function (event) {
     if (event.target.classList.contains('btn-success')) {
+        // Card'ın tamamını seç
         const itemElement = event.target.parentElement.parentElement;
         const tempCard = cardList.filter(element => element.name == itemElement.children[1].children[0].innerText)[0];
 
         itemElement.remove();
         cardList = cardList.filter(element => element.name != itemElement.children[1].children[0].innerText);
-        setCardList(cardList);
+        ls.setCardList(cardList);
+
+        // Değerleri inputların içerisine tekrar yaz
         setValue('movieNameInput', tempCard.name);
         setValue('movieTopic', tempCard.subject);
         setValue('directorInput', tempCard.director);
@@ -150,15 +142,16 @@ function setValue(id, value) {
 //#endregion
 
 function addMovie() {
+    const image = localStorage.getItem('selectedImage');
     const name = getValue('movieNameInput');
     const subject = getValue('movieTopic');
     const director = getValue('directorInput');
     const year = getValue('yearInput');
 
     if (name && subject && director && year) {
-        const movieCardExample = new MovieCard(localStorage.getItem('selectedImage'), name, subject, kind, director, year)
+        const movieCardExample = new MovieCard(image, name, subject, kind, director, year)
         cardList.push(movieCardExample);
-        setCardList(cardList);
+        ls.setCardList(cardList);
         ui.createCard(movieCardExample);
         ui.clearInputs();
     }
@@ -166,7 +159,7 @@ function addMovie() {
 
 //#region Load
 window.onload = function () {
-    cardList = getCardList();
+    cardList = ls.getCardList();
     cardList.forEach(element => {
         ui.createCard(element);
     });
@@ -175,6 +168,8 @@ ui.addEvent('deleteAllItemButton', 'click', ui.deleteAllCard);
 ui.addEvent('card-container', 'click', ui.deleteCard);
 ui.addEvent('card-container', 'click', ui.updateCard);
 ui.addEvent("addToCollection", 'click', addMovie);
+//#endregion
+
 // Validation
 (() => {
     'use strict'
@@ -195,4 +190,3 @@ ui.addEvent("addToCollection", 'click', addMovie);
         }, false)
     })
 })()
-//#endregion
