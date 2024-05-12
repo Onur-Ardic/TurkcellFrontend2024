@@ -18,6 +18,39 @@ Film.prototype.render = function(index) {
         <p><strong>Yıl:</strong> ${this.yil}</p>
         <p><strong>Tür:</strong> ${this.tur}</p>        
     `;
+// const img = document.createElement("img");
+// img.src = this.afisUrl;
+// img.alt = "örnek-resim";
+// filmBilgisi.appendChild(img);
+
+// const adiParagraf = document.createElement("p");
+// const adiStrong = document.createElement("strong");
+// adiStrong.textContent = "Adı:";
+// adiParagraf.appendChild(adiStrong);
+// adiParagraf.appendChild(document.createTextNode(this.filmAdi));
+// filmBilgisi.appendChild(adiParagraf);
+
+// const yonetmenParagraf = document.createElement("p");
+// const yonetmenStrong = document.createElement("strong");
+// yonetmenStrong.textContent = "Yönetmen:";
+// yonetmenParagraf.appendChild(yonetmenStrong);
+// yonetmenParagraf.appendChild(document.createTextNode(this.yonetmen));
+// filmBilgisi.appendChild(yonetmenParagraf);
+
+// const yilParagraf = document.createElement("p");
+// const yilStrong = document.createElement("strong");
+// yilStrong.textContent = "Yıl:";
+// yilParagraf.appendChild(yilStrong);
+// yilParagraf.appendChild(document.createTextNode(this.yil));
+// filmBilgisi.appendChild(yilParagraf);
+
+// const turParagraf = document.createElement("p");
+// const turStrong = document.createElement("strong");
+// turStrong.textContent = "Tür:";
+// turParagraf.appendChild(turStrong);
+// turParagraf.appendChild(document.createTextNode(this.tur));
+// filmBilgisi.appendChild(turParagraf);
+  
 
     const silButton = document.createElement("button");
     silButton.classList.add("btn","me-5","btn-danger");
