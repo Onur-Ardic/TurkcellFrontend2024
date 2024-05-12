@@ -11,12 +11,13 @@
     <section class="user-from p-5">
       <!-- bg-white w-75 mx-auto py-5-->
       <div class="wrapper">
-       
         <h1 class="text-center text-white">Film Koleksiyonu</h1>
         <form id="form" class="needs-validation container">
           <div class="form-row">
             <div class="col-md-4 mb-3 mx-auto">
-              <label for="nameInput " class="text-white  fw-bold">Film Adı</label>
+              <label for="nameInput " class="text-white fw-bold"
+                >Film Adı</label
+              >
               <input
                 type="text"
                 class="form-control"
@@ -26,7 +27,9 @@
               />
             </div>
             <div class="col-md-4 mb-3 mx-auto">
-              <label for="directorInput" class="text-white  fw-bold">Yönetmen Adı</label>
+              <label for="directorInput" class="text-white fw-bold"
+                >Yönetmen Adı</label
+              >
               <input
                 type="text"
                 class="form-control"
@@ -36,7 +39,7 @@
               />
             </div>
             <div class="col-md-4 mb-3 mx-auto">
-              <label for="yearInput" class="text-white  fw-bold ">Yılı</label>
+              <label for="yearInput" class="text-white fw-bold">Yılı</label>
               <input
                 type="year"
                 class="form-control"
@@ -63,7 +66,9 @@
               </select>
             </div>
             <div class="col-md-4 mb-3 mx-auto">
-              <label for="imageUrl" class="text-white fw-bold" >Resim Afiş Linki</label>
+              <label for="imageUrl" class="text-white fw-bold"
+                >Resim Afiş Linki</label
+              >
               <input
                 type="url"
                 class="form-control"
@@ -75,20 +80,22 @@
             </div>
           </div>
           <div id="formEnd" class="col-md-4 mb-3 d-flex mx-auto">
-            <button id="submit" class="btn btn-success " type="submit">
+            <button id="submit" class="btn btn-success" type="submit">
               Film Oluştur
             </button>
           </div>
         </form>
-      
       </div>
     </section>
     <section class="user-list p-5">
-      <h2 class="text-center ">Film Listesi</h2>
+      <h2 class="text-center">Film Listesi</h2>
       <div class="container">
         <ul id="moviesList" class="list-unstyled d-flex flex-wrap gap-3"></ul>
       </div>
     </section>
+    <script src="./storage.js"></script>
+    <script src="./movie.js"></script>
+    <script src="./ui.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
