@@ -1,33 +1,19 @@
-// import { Movie } from './movie.js';
-// import { Storage } from './storage.js'
-
 let movieName = document.querySelector("#movieName");
 let movieDirector = document.querySelector("#movieDirector");
 let movieYear = document.querySelector("#movieYear");
 let movieGenre = document.querySelector("#movieGenre");
 let moviePoster = document.querySelector("#moviePoster");
+let movieCardContainer = document.querySelector(".movieCardContainer");
 
 let storage = new Storage()
+let ui = new UI()
 
-document.getElementById('movieForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-    movieCardCreate()
-});
+document.addEventListener("DOMContentLoaded", function () {
+    ui.displayAllMoviesToUI()
+})
 
-function movieCardCreate() {
-    let movieNameValue = movieName.value;
-    let movieDirectorValue = movieDirector.value;
-    let movieYearValue = movieYear.value;
-    let movieGenreValue = movieGenre.value;
-    let moviePosterValue = moviePoster.value;
-    const newMovie = new Movie(movieNameValue, movieDirectorValue, movieYearValue, movieGenreValue, moviePosterValue)
-    newMovie.showInfo()
-    storage.addAllMoviesToStorage(newMovie);
-    console.log(storage.getMoviesFromStorage())
-}
-
-document.getElementById('sil').addEventListener("click", function () {
-    storage.deleteMovieFromStorage("62b25dfa-9b71-4a5d-b14c-aa13f0945889")
+document.getElementById('afisOlustur').addEventListener("click", function () {
+    ui.movieCardCreate()
 })
 
 function Movie(name, director, year, genre, poster) {
@@ -37,19 +23,14 @@ function Movie(name, director, year, genre, poster) {
     this.year = year;
     this.genre = genre;
     this.poster = poster;
-    this.showInfo = function () {
-        console.log(this.name, this.director, this.year, this.genre, this.poster);
-    };
-    console.log(this.name)
 }
 
 function Storage() { }
 
-Storage.prototype.addAllMoviesToStorage = function (newMovie) {
+Storage.prototype.addMovies = function (newMovie) {
     let movies = this.getMoviesFromStorage();
     movies.push(newMovie);
     this.addMovieToStorage(movies);
-    console.log(Storage.prototype)
 }
 
 Storage.prototype.deleteMovieFromStorage = function (movieId) {
@@ -66,6 +47,106 @@ Storage.prototype.getMoviesFromStorage = function () {
     return JSON.parse(localStorage.getItem("moviesDataPrototype")) || [];
 }
 
-// Storage.prototype.deleteAllMoviesFromStorage = function () {
-//     localStorage.removeItem("moviesDataPrototype");
-// }
+function UI() { }
+
+UI.prototype.movieCardCreate = function () {
+    let movieNameValue = movieName.value;
+    let movieDirectorValue = movieDirector.value;
+    let movieYearValue = movieYear.value;
+    let movieGenreValue = movieGenre.value;
+    let moviePosterValue = moviePoster.value;
+    if (movieNameValue == "" || movieDirectorValue == "" || movieYearValue == "" || movieGenreValue == "" || moviePosterValue == "") {
+        alert("Boş girilmez!")
+    }
+    else {
+        const newMovie = new Movie(movieNameValue, movieDirectorValue, movieYearValue, movieGenreValue, moviePosterValue)
+        storage.addMovies(newMovie);
+        ui.displayAllMoviesToUI()
+        ui.clearInputs()
+    }
+}
+
+UI.prototype.clearInputs = function () {
+    movieName.value = "";
+    movieDirector.value = "";
+    movieYear.value = "";
+    movieGenre.value = "";
+    moviePoster.value = "";
+}
+
+UI.prototype.deleteMovieFromUI = function (movieId) {
+    storage.deleteMovieFromStorage(movieId)
+    this.displayAllMoviesToUI()
+}
+
+UI.prototype.displayAllMoviesToUI = function () {
+    //localstorage'da bulunan tum filmleri UI'a ekle
+    movieCardContainer.innerHTML = ""
+    let movieCards = storage.getMoviesFromStorage()
+    if (movieCards.length > 0) {
+        movieCards.forEach((movie) => {
+            let card = document.createElement("div")
+            card.classList.add("col-12", "col-md-6", "col-lg-4", "p-3")
+            card.innerHTML = `
+      <div
+        class="movieCard rounded-4 p-5 mt-3 d-flex flex-column justify-content-center h-100"
+        id="movieCard"
+        style="background: url('${movie.poster}');
+        object-fit:cover;
+        background-size: cover; background-position: center;"
+      >
+        <div class="text-white">
+          <h5 class="p-2 fw-bold" id="movieNameCard">Film Adı: ${movie.name}</h5>
+          <p class="p-2 fw-bold" id="movieDirectorCard">Yönetmen Adı: ${movie.director}</p>
+          <p class="p-2 fw-bold" id="movieYearCard">Vizyon Tarihi: ${movie.year}</p>
+          <p class="p-2 fw-bold" id="movieGenreCard">Türü: ${movie.genre}</p>
+          <div class="d-flex justify-content-between p-2">
+            <button type="button" class="btn btn-success updateBtn" 
+            onclick='ui.editMovieUI("${movie.movieId}")'>
+              Degistir
+            </button>
+            <button type="button" class="btn btn-warning deleteBtn" 
+            onclick='ui.deleteMovieFromUI("${movie.movieId}")'>Sil</button>
+          </div>
+        </div>
+      </div>`;
+            movieCardContainer.appendChild(card);
+        })
+    }
+}
+
+UI.prototype.editMovieUI = function (movieId) {
+    let allMovies = storage.getMoviesFromStorage()
+
+    let selectedMovie = allMovies.find((movie) => movie.movieId === movieId);
+    movieName.value = selectedMovie.name;
+    movieDirector.value = selectedMovie.director;
+    movieYear.value = selectedMovie.year;
+    movieGenre.value = selectedMovie.genre;
+    moviePoster.value = selectedMovie.poster;
+    ui.checkEdited(true)
+
+    document.querySelector("#bilgileriGuncelle").addEventListener("click", function () {
+        let selectedMovieIndex = allMovies.findIndex((movie) => movie.movieId === movieId);
+        allMovies[selectedMovieIndex].name = movieName.value;
+        allMovies[selectedMovieIndex].director = movieDirector.value;
+        allMovies[selectedMovieIndex].year = movieYear.value;
+        allMovies[selectedMovieIndex].genre = movieGenre.value;
+        allMovies[selectedMovieIndex].poster = moviePoster.value;
+        storage.addMovieToStorage(allMovies)
+        ui.displayAllMoviesToUI()
+        ui.clearInputs()
+        ui.checkEdited(false)
+    })
+}
+
+UI.prototype.checkEdited = function (isEdited) {
+    if (!isEdited) {
+        document.getElementById("afisOlustur").classList.remove("d-none");
+        document.getElementById("bilgileriGuncelle").classList.add("d-none");
+    }
+    else {
+        document.getElementById("afisOlustur").classList.add("d-none");
+        document.getElementById("bilgileriGuncelle").classList.remove("d-none");
+    }
+}
