@@ -99,3 +99,5 @@ event capturing nedir eventbubbling nedir farkları nedir
 
 
 map konusuna dikkat
+
+prototype mülakatlarda soruyor varol hoca
