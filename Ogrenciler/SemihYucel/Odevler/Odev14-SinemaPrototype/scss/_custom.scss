@@ -1,31 +1,88 @@
 .container {
-    background-image: url('https://st4.depositphotos.com/9904426/27435/i/600/depositphotos_274353086-stock-photo-old-vintage-movie-projector-on.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
+  //   background-image: url("https://st4.depositphotos.com/9904426/27435/i/600/depositphotos_274353086-stock-photo-old-vintage-movie-projector-on.jpg");
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  background-color: #383a3c;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-    .form-control {
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    padding: .375rem .75rem;
-    line-height: 1.5;
-    background-color: #fff;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  background-color: #fff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .form-control:focus {
-    border-color: #80bdff;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .btn-primary {
-    width: 100%; 
-    max-width: 200px; 
-    margin: 0 auto;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
 }
+
+.filmKarti {
+  color: white;
+  max-width: 580px;
+  margin: 10px auto; /* Eşit şekilde sağa ve sola dayalı */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background: linear-gradient(
+    90deg,
+    rgb(56, 58, 60),
+    rgb(155, 154, 154),
+    rgb(56, 58, 60)
+  );
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  transition: max-width 0.3s;
+  flex-direction: column;
+  align-items: flex-start;
+  img {
+    width: 100%;
+    height: 450px;
+    border-radius: 5px;
+  }
+}
+
+.filmBilgisi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px; /* Kart içindeki bilgilerin üstünde 10px boşluk bırakır */
+  margin-left: 10px; /* Kartın sol kenarından 10px uzaklık */
+  margin-right: 10px; /* Kartın sağ kenarından 10px uzaklık */
+}
+
+.filmBilgisi img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+// .filmKarti button {
+//   background-color: #f44336;
+//   color: white;
+//   border: none;
+//   padding: 5px 10px;
+//   margin: 5px auto;
+//   border-radius: 3px;
+//   cursor: pointer;
+//   width: 80px;
+//   display: block;
+//   transition: background-color 0.3s;
+// }
+// .filmKarti button:hover {
+//   background-color: #d32f2f;
+// }
