@@ -25,13 +25,14 @@ updateFilmButton.addEventListener("click", () => {
 });
 
 function getFilmDataFromForm() {
-  return {
+  const formValues = {
     name: document.getElementById("film-name").value,
     director: document.getElementById("director").value,
     year: document.getElementById("year").value,
     genre: document.getElementById("genre").value,
     posterUrl: document.getElementById("poster-url").value,
   };
+  return new Movie(formValues);
 }
 
 function resetForm() {
@@ -41,16 +42,11 @@ function resetForm() {
   updateFilmButton.style.display = "none";
 }
 
-function loadFilms() {
-  const films = getFilmsFromStorage();
-  films.forEach(displayFilmCard);
-}
-
 function addFilm(film) {
   const films = getFilmsFromStorage();
   films.push(film);
   saveFilmsToStorage(films);
-  displayFilmCard(film, films.length - 1);
+  film.displayCard(films.length - 1);
 }
 
 function updateFilm(film, index) {
@@ -84,28 +80,10 @@ function editFilm(index) {
 function refreshFilmCollection() {
   filmCollection.innerHTML = "";
   const films = getFilmsFromStorage();
-  films.forEach(displayFilmCard);
-}
-
-function displayFilmCard(film, index) {
-  const filmCard = document.createElement("div");
-  filmCard.className = "film-card";
-  filmCard.innerHTML = `
-        <div class="film-details">
-            <img src="./img/${film.posterUrl}.jpg" alt="${film.name}">
-            <div class="film-info">
-                <strong>${film.name}</strong>
-                <p>Yönetmen: ${film.director}</p>
-                <p>Yıl: ${film.year}</p>
-                <p>Tür: ${film.genre}</p>
-            </div>
-            <div class="card-buttons">
-                <button onclick="editFilm(${index})">Güncelle</button>
-                <button onclick="deleteFilm(${index})">Sil</button>
-            </div>
-        </div>
-    `;
-  filmCollection.appendChild(filmCard);
+  films.forEach((film, index) => {
+    film = new Movie(film);
+    film.displayCard(index);
+  });
 }
 
 function getFilmsFromStorage() {
@@ -115,3 +93,45 @@ function getFilmsFromStorage() {
 function saveFilmsToStorage(films) {
   localStorage.setItem("films", JSON.stringify(films));
 }
+function loadFilms() {
+  const films = getFilmsFromStorage();
+  // console.log(films);
+  films.forEach((film, index) => {
+    console.log(film);
+    film = new Movie(film);
+    console.log(film);
+
+    film.displayCard(index);
+  });
+}
+
+function Movie({ name, director, year, genre, posterUrl }) {
+  this.name = name;
+  this.director = director;
+  this.year = year;
+  this.genre = genre;
+  this.posterUrl = posterUrl;
+}
+Movie.prototype.egemen = function ({ filmname }) {
+  console.log("test1");
+};
+Movie.prototype.displayCard = function (index) {
+  const filmCard = document.createElement("div");
+  filmCard.className = "film-card";
+  filmCard.innerHTML = `
+          <div class="film-details">
+              <img src="${this.posterUrl}" alt="${this.name}">
+              <div class="film-info">
+                  <strong>${this.name}</strong>
+                  <p>Yönetmen: ${this.director}</p>
+                  <p>Yıl: ${this.year}</p>
+                  <p>Tür: ${this.genre}</p>
+              </div>
+              <div class="card-buttons">
+                  <button onclick="editFilm(${index})">Güncelle</button>
+                  <button onclick="deleteFilm(${index})">Sil</button>
+              </div>
+          </div>
+      `;
+  filmCollection.appendChild(filmCard);
+};
