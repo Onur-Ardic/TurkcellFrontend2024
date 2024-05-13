@@ -1,0 +1,65 @@
+#theatre {
+    border: inset black 10px;
+    height: 300px;
+    width: 80%;
+    margin: 2em auto;
+    text-align: center;
+    line-height: 120px;
+    font-size: 30px;
+    position: relative;
+    overflow: hidden;
+    background: url(http://webdesignpop.com/wp-content/uploads/2015/02/cover-1552x2189.png);
+    color: rgba(255,255,255, 0.3);
+    text-shadow: 0 0 2px yellow , 0 0 4px black,0 0 6px white;
+}
+
+#theatre #curtain-left, #theatre #curtain-right {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: -30px;
+    bottom: -30px;
+    width: 61%;
+    transition: all 4s ease-out;
+    transform: rotate(0deg);
+    background-color: #A90505;
+    background-image: linear-gradient(90deg,  transparent 10%, rgba(255,255,255,.25) 50% ,transparent 65% );
+    background-repeat: repeat;
+    box-shadow: 0 0 10px #555 ,inset 0 -60px  60px -30px  rgba(255,255,255, 0.5), inset 0 90px  60px -30px  rgba(0,0,0, 0.5);
+    background-size: 80px;
+}
+
+#curtain-left { left: -10% }
+
+#curtain-right { right: -10% }
+
+#theatre:hover #curtain-right, #theatre:hover #curtain-left {
+    width: 0;
+    background-size: 1px;
+    transition: all 4s ease;
+    transform: rotate(15deg);
+}
+
+div#theatre:hover #curtain-right {
+    transition: all 4s ease;
+    transform: rotate(-15deg);
+}
+
+#theatre p {
+    width: 50%;
+    margin: 0.5em auto;
+    position: relative;
+    z-index: 3;
+}
+
+#theatre p:first-of-type:before {
+    content: '';
+    position: absolute;
+    border-radius: 150px;
+    box-shadow: 0 0 10px 70px rgba(255,255,255,0.4);
+    height: 0.1px;
+    width: 3px;
+    top: 6.5em;
+    left: 49%;
+    transform: rotate(25deg) skew(15deg,5deg);
+}
