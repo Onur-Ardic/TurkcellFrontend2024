@@ -1,4 +1,3 @@
-//import * as Movies from "./movie";
 const inputs = {
   name: document.getElementById("nameInput"),
   director: document.getElementById("directorInput"),
@@ -6,10 +5,19 @@ const inputs = {
   movieType: document.getElementById("movieType"),
   imageUrl: document.getElementById("imageUrl"),
 };
-
-const movies = new Movies();
-
 displayMovies();
+//
+
+//
+//Validation kontrol
+function updateBorderColor(input) {
+  if (input.value.trim() === "") {
+    input.style.borderColor = "red";
+  } else {
+    input.style.borderColor = "green";
+  }
+}
+//
 
 //İnputs Events
 Object.values(inputs).forEach((input) => {
@@ -25,28 +33,70 @@ document.getElementById("form").addEventListener("submit", (e) => {
     e.stopPropagation();
     return;
   } else {
-    let moviesCount = storage.getMoviesFromStorage();
-    let id = moviesCount[moviesCount.length - 1] + 1 || 0;
-    movies.addMovie(id);
+    let filmListesi = JSON.parse(localStorage.getItem("filmListesi")) || [];
+    let id = filmListesi[filmListesi.length - 1] + 1;
+    //inputlara girilen değeri alıyoruz
+    const newMovie = {
+      name: inputs.name.value.trim(),
+      director: inputs.director.value.trim(),
+      year: inputs.year.value.trim(),
+      movieType: inputs.movieType.value.trim(),
+      imageUrl: inputs.imageUrl.value.trim(),
+      id: id,
+    };
+
+    addMovies(newMovie);
     displayMovies();
     clearInputs();
   }
 });
 
+//Localstorage e kaydetme fonksiyonu
+function addMovies(newMovie) {
+  let filmListesi = JSON.parse(localStorage.getItem("filmListesi")) || [];
+  filmListesi.push(newMovie);
+  localStorage.setItem("filmListesi", JSON.stringify(filmListesi));
+}
+//silme işlemi
+function deleteMovie(movieId) {
+  let filmListesi = JSON.parse(localStorage.getItem("filmListesi")) || [];
+
+  filmListesi.forEach((movie, index) => {
+    if (movie.id == movieId) {
+      filmListesi.splice(index, 1);
+    }
+  });
+  localStorage.setItem("filmListesi", JSON.stringify(filmListesi));
+  // Silme işleminden sonra güncel kaydedilmiş kartları göstermek için yeniden çağırdık
+  displayMovies();
+}
 //
 
 //güncelleme işlemi
 function updateMovie(movieId) {
+  let filmListesi = JSON.parse(localStorage.getItem("filmListesi")) || [];
+  filmListesi.forEach((movie, index) => {
+    if (movie.id == movieId) {
+      filmListesi[index].name = inputs.name.value.trim();
+      filmListesi[index].director = inputs.director.value.trim();
+      filmListesi[index].year = inputs.year.value.trim();
+      filmListesi[index].movieType = inputs.movieType.value.trim();
+      filmListesi[index].imageUrl = inputs.imageUrl.value.trim();
+    }
+  });
+  localStorage.setItem("filmListesi", JSON.stringify(filmListesi));
+  document.getElementById("submit").style.display = "block";
   clearInputs();
   displayMovies();
 }
+//
 
 //Oluşturulan Kartları göstermek için
 function displayMovies() {
   const moviesList = document.getElementById("moviesList");
   moviesList.textContent = "";
 
-  let filmListesi = storage.getMoviesFromStorage();
+  let filmListesi = JSON.parse(localStorage.getItem("filmListesi")) || [];
 
   filmListesi.forEach((movie, index) => {
     // Kart itemları oluşturma
@@ -114,7 +164,6 @@ function displayMovies() {
     updateBtn.textContent = "Güncelle";
     updateBtn.className = "btn btn-primary mt-3";
     // Add event listener to update button
-
     updateBtn.addEventListener("click", () => {
       clearInputs();
 
@@ -132,14 +181,8 @@ function displayMovies() {
       guncellebuton.className = "btn btn-danger mt-3 guncelleButton";
 
       guncellebuton.addEventListener("click", () => {
-        storage.updateMovieFromStorage({
-          id: movie.id,
-          name: inputs.name.value.trim(),
-          director: inputs.director.value.trim(),
-          year: parseInt(inputs.year.value.trim(), 10),
-          movieType: inputs.movieType.value.trim(),
-          imageUrl: inputs.imageUrl.value.trim(),
-        });
+        updateMovie(movie.id);
+        Storage.deleteMovieFromStorage();
       });
       const formEnd = document.getElementById("formEnd");
       formEnd.appendChild(guncellebuton);
@@ -150,7 +193,7 @@ function displayMovies() {
     deleteButton.className = "btn btn-danger mt-3 me-2";
     deleteButton.addEventListener("click", () => {
       // Remove the selected movie from the movieList array
-      movies.deleteMovie(movie.id);
+      deleteMovie(movie.id);
     });
     cardBody.appendChild(updateBtn);
     cardBody.appendChild(deleteButton);
