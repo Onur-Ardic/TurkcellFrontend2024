@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        #game-board {
+            width: 600px;
+            height: 600px;
+            border: 1px solid #000;
+            margin: 25px auto;
+            position: relative;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        #snake {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(0, 255, 47);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #food {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(255, 255, 0);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="game-board">
+        <div id="snake"></div>
+        <div id="food"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
