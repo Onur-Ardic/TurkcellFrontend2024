@@ -78,7 +78,7 @@ UI.prototype.editMovieUI = function (movieId) {
         ui.displayAllMoviesToUI()
         ui.clearInputs()
         ui.checkEdited(false)
-    })
+    }, { once: true })
 }
 
 UI.prototype.checkEdited = function (isEdited) {
@@ -93,9 +93,5 @@ UI.prototype.checkEdited = function (isEdited) {
 }
 
 UI.prototype.clearInputs = function () {
-    movieName.value = "";
-    movieDirector.value = "";
-    movieYear.value = "";
-    movieGenre.value = "";
-    moviePoster.value = "";
+    [movieName, movieDirector, movieYear, movieGenre, moviePoster].forEach(input => input.value = "");
 }
