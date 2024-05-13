@@ -1,28 +1,28 @@
-function UI(){
-    this.movieNameInput = document.getElementById("movieNameInput");
-    this.directorInput = document.getElementById("directorInput");
-    this.yearInput = document.getElementById("yearInput");
-    this.typeInput = document.getElementById("typeInput");
-    this.imageInput = document.getElementById("imageInput");
-    this.movies = document.getElementById("movies");
-    this.btnAdd = document.getElementById("btnAdd");
-    this.movieNameShows = document.querySelector("#cardShows h2 span");
-    this.directorShows = document.querySelector("#cardShows h3 span");
-    this.yearShows = document.querySelector("#cardShows .year span");
-    this.typeShows = document.querySelector("#cardShows .type span");
-    this.imgShows = document.querySelector("#cardShows img");
-    this.filters = document.querySelectorAll("#filters div");
-    this.inputs = document.querySelectorAll("form input");
-    this.form = document.querySelector("form");
+//html elementleri
+function UI() {
+  this.movieNameInput = document.getElementById("movieNameInput");
+  this.directorInput = document.getElementById("directorInput");
+  this.yearInput = document.getElementById("yearInput");
+  this.typeInput = document.getElementById("typeInput");
+  this.imageInput = document.getElementById("imageInput");
+  this.movies = document.getElementById("movies");
+  this.btnAdd = document.getElementById("btnAdd");
+  this.movieNameShows = document.querySelector("#cardShows h2 span");
+  this.directorShows = document.querySelector("#cardShows h3 span");
+  this.yearShows = document.querySelector("#cardShows .year span");
+  this.typeShows = document.querySelector("#cardShows .type span");
+  this.imgShows = document.querySelector("#cardShows img");
+  this.filters = document.querySelectorAll("#filters div");
+  this.inputs = document.querySelectorAll("form input");
+  this.form = document.querySelector("form");
 }
+// alınan kartların listelenmesi
+UI.prototype.displayMovies = function (filter, movieList) {
+  this.movies.innerHTML = "";
 
-
-UI.prototype.displayMovies = function(filter,movieList){
-    this.movies.innerHTML = "";
-
-    for(let movie of movieList){
-        if(movie.type == filter || filter == "All"){
-            let col = `
+  for (let movie of movieList) {
+    if (movie.type == filter || filter == "All") {
+      let col = `
                 <div class="col">
                     <div class="card my-3" id="${movie.id}" position-relative>
                         <img src="${movie.image}" alt="" class="img-fluid">
@@ -44,9 +44,7 @@ UI.prototype.displayMovies = function(filter,movieList){
                     </div>
                 </div>
             `;
-            this.movies.insertAdjacentHTML("beforeend",col);
-        }
-        
+      this.movies.insertAdjacentHTML("beforeend", col);
     }
-    
-}
+  }
+};
