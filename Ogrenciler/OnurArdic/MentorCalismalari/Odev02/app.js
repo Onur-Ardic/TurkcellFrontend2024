@@ -42,10 +42,16 @@ function alertFunction(alert, alertText) {
 }
 seat.forEach((seatValue) => {
   seatValue.addEventListener('click', () => {
-    if ((name, surname)) {
-      chooseChair(seatValue)
+    const isReserved = localStorage.getItem(seatValue.textContent)
+    if (isReserved) {
+      const reservedPerson = JSON.parse(isReserved)
+      deleteİtem(seatValue, reservedPerson)
     } else {
-      alertFunction('alert-danger', 'İsim soy isim alanları boş bırakılamaz')
+      if (name && surname) {
+        chooseChair(seatValue)
+      } else {
+        alertFunction('alert-danger', 'İsim ve soyisim alanları boş bırakılamaz')
+      }
     }
   })
 })
@@ -57,7 +63,7 @@ function chooseChair(seatNumber) {
     seat: seatNumber.textContent,
   }
 
-  const value = confirm(`${person} , Rezervasyon işlemini onaylıyor musunuz ?`)
+  const value = confirm(`${seat} , Rezervasyon işlemini onaylıyor musunuz ?`)
 
   if (value) {
     checkSeat(seatNumber, person)
@@ -68,15 +74,11 @@ function chooseChair(seatNumber) {
 }
 
 function checkSeat(seatNumber, person) {
-  if (seatNumber.style.backgroundColor === 'green') {
-    deleteİtem(seatNumber, person)
-  } else {
-    console.log(seatNumber)
-    seatNumber.style.backgroundColor = 'green'
-    seatNumber.style.color = 'white'
-    localStorage.setItem(`${person.seat}`, JSON.stringify(person))
-    alertFunction('alert-success', 'Rezervasyon işlemi başarıyla tamamlandı')
-  }
+  console.log(seatNumber)
+  seatNumber.style.backgroundColor = 'green'
+  seatNumber.style.color = 'white'
+  localStorage.setItem(`${person.seat}`, JSON.stringify(person))
+  alertFunction('alert-primary', 'Rezervasyon işlemi başarıyla tamamlandı')
 }
 
 function deleteİtem(seatNumber, person) {
@@ -87,8 +89,8 @@ function deleteİtem(seatNumber, person) {
     seatNumber.style.backgroundColor = 'white'
     seatNumber.style.color = 'black'
     localStorage.removeItem(`${person.seat}`)
-    alertFunction('alert-success', 'Rezervasyon işlemi iptal edildi')
+    alertFunction('alert-primary', 'Rezervasyon işlemi iptal edildi')
   } else {
-    alertFunction('alert-danger', 'Rezervasyon işlemi iptal edildi')
+    alertFunction('alert-danger', 'Rezervasyon işlemi iptal edilemedi')
   }
 }
