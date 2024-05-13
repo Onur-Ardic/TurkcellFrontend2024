@@ -38,7 +38,7 @@ UI.prototype.displayMovies = function () {
         </div>
         <div class="card-footer mb-2">
         <button onclick='ui.deleteMovieUI("${movie.id}")' class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-          <button onclick='ui.updateMovieUI("${movie.id}")' class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+          <button onclick='ui.editMovieUI("${movie.id}")' class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
         </div>
       </div>
     </div>
@@ -52,10 +52,11 @@ UI.prototype.deleteMovieUI = function (id) {
   this.displayMovies();
 };
 
-UI.prototype.updateMovieUI = function (id) {
-  console.log(id, "iddd");
+let editMovie;
+UI.prototype.editMovieUI = function (id) {
   let allMovies = movieCrud.getMovies();
   let movie = allMovies.find((movie) => movie.id === id);
+  editMovie = movie;
   title.value = movie.title;
   director.value = movie.director;
   description.value = movie.description;
@@ -64,18 +65,23 @@ UI.prototype.updateMovieUI = function (id) {
   imageSource.value = movie.image;
   updateButton.removeAttribute("disabled");
   submitButton.setAttribute("disabled", true);
-
-  updateButton.addEventListener("click", () => {
-    movie.title = title.value;
-    movie.director = director.value;
-    movie.description = description.value;
-    movie.genre = genre.value;
-    movie.year = releaseDate.value;
-    movie.image = imageSource.value;
-    movieCrud.updateMovie(movie);
-    this.clearForm();
-    this.displayMovies();
-    submitButton.removeAttribute("disabled");
-    updateButton.setAttribute("disabled", true);
-  });
 };
+
+UI.prototype.updateMovieUI = function (movie) {
+  movie.title = title.value;
+  movie.director = director.value;
+  movie.description = description.value;
+  movie.genre = genre.value;
+  movie.year = releaseDate.value;
+  movie.image = imageSource.value;
+  movieCrud.updateMovie(movie);
+  this.clearForm();
+  this.displayMovies();
+  submitButton.removeAttribute("disabled");
+  updateButton.setAttribute("disabled", true);
+  editMovie = null;
+};
+
+updateButton.addEventListener("click", () => {
+  ui.updateMovieUI(editMovie);
+});

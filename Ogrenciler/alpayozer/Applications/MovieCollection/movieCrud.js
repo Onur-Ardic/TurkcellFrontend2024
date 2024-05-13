@@ -23,7 +23,6 @@ MovieCrud.prototype.deleteMovie = function (id) {
 
 MovieCrud.prototype.updateMovie = function (movie) {
   let movies = this.getMovies();
-  movies = movies.map((m) => (m.id === movie.id ? movie : m)); //burası sıkıntılı
-  console.log(movies, "movies");
+  movies = movies.map((m) => (m.id === movie.id ? movie : m));
   this.setMovies(movies);
 };
