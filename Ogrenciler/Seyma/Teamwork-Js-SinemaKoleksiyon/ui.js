@@ -1,5 +1,23 @@
 function UI() {}
 
+
+UI.prototype.displayMovies = function (){
+  
+  const moviesList = document.getElementById("moviesList");
+  moviesList.textContent = "";
+
+  let filmListesi = JSON.parse(localStorage.getItem("movies")) || [];
+  
+  filmListesi.forEach((film) => {
+    const listItem = document.createElement("li");
+    listItem.className = "mb-3";
+    this.createMovieCard (film);
+    this.movieTypes (film);
+  });
+  
+  
+};
+
 UI.prototype.createMovieCard = function (movie) {
   const listItem = document.createElement("li");
   listItem.className = "mb-3";
@@ -44,7 +62,7 @@ UI.prototype.createDetailsList = function (movie) {
   ul.appendChild(this.createListItem(`Yönetmen: ${movie.director}`));
   ul.appendChild(this.createListItem(`Yılı: ${movie.year}`));
   ul.appendChild(
-    this.createListItem(`Film Türü: ${this.getMovieType(movie.movieType)}`)
+    this.createListItem(`Film Türü: ${movie.movieType}`)
   );
   return ul;
 };
@@ -58,8 +76,26 @@ UI.prototype.createListItem = function (text) {
   return li;
 };
 
+// ben ekledim
+UI.prototype.movieTypes = function (movie) {
+  const movieTypes = {
+    1: "Bilim Kurgu",
+    2: "Aksiyon",
+    3: "Drama",
+    4: "Komedi",
+    5: "Korku",
+  };
+  const limovieType = document.createElement("li");
+  const pmovieType = document.createElement("p");
+  pmovieType.className = "card-text";
+    pmovieType.textContent = `Film Türü : ${
+      movieTypes[movie.movieType] || "Bilinmeyen Tür"}`;
+    limovieType.appendChild(pmovieType);
+    document.querySelector("ul").appendChild(limovieType);
+}
+
 UI.prototype.createImage = function (imageUrl) {
-  const image = document.createElement("iframe");
+  const image = document.createElement("img");
   image.style.width = "18rem";
   image.src = imageUrl;
   return image;
@@ -81,7 +117,7 @@ UI.prototype.createDeleteButton = function (movieId) {
   button.className = "btn btn-danger mt-3 me-2";
   button.onclick = () => {
     storage.deleteMovieFromStorage(movieId);
-    displayMovies();
+    this.displayMovies();
   };
   return button;
 };
@@ -101,13 +137,26 @@ UI.prototype.fillFormWithMovieData = function (movie) {
     movie.movieType = inputs.movieType.value.trim();
     movie.imageUrl = inputs.imageUrl.value.trim();
     storage.updateMovieFromStorage(movie);
-    displayMovies();
+    this.displayMovies();
     clearInputs();
     updateButton.onclick = submitNewMovie;
   };
   updateButton.textContent = "Güncelle";
+  document.getElementById("submit").style.display = "none";
+
 };
+function clearInputs() {
+  Object.values(inputs).forEach((input) => {
+    input.value = "";
+    input.style.borderColor = ""; // Reset the border color
+  });
+  const elements = document.getElementsByClassName("guncelleButton");
+  while (elements.length > 0) {
+    elements[0].parentNode.removeChild(elements[0]);
+  }
+}
 
 function submitNewMovie(e) {
   e.preventDefault();
 }
+

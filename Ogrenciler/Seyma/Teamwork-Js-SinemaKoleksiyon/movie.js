@@ -15,5 +15,6 @@ Movies.prototype.addMovie = function (id) {
 
 Movies.prototype.deleteMovie = function (movieId) {
   storage.deleteMovieFromStorage(movieId);
-  displayMovies();
+  let ui = new UI();
+  ui.displayMovies();
 };

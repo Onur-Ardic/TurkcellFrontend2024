@@ -18,7 +18,6 @@ Storage.prototype.deleteMovieFromStorage = function (movieId) {
 
 Storage.prototype.getMoviesFromStorage = function () {
   let movies = JSON.parse(localStorage.getItem("movies")) || [];
-  console.log(movies);
   return movies;
 };
 
