@@ -7,6 +7,8 @@ function Film(filmAdi, yonetmen, yil, tur, afisUrl) {
 }
 
 Film.prototype.render = function (index) {
+  const self = this;
+
   const filmKarti = document.createElement("div");
   filmKarti.classList.add("filmKarti");
 
@@ -19,31 +21,37 @@ Film.prototype.render = function (index) {
         <p><strong>Tür:</strong> ${this.tur}</p>        
     `;
 
-  const silButton = document.createElement("button");
-  silButton.classList.add("btn", "me-5", "btn-danger");
-  silButton.textContent = "Sil";
-  silButton.addEventListener("click", () => {
-    this.removeFromLocalStorage(index);
-  });
+  const buttonDiv = createButtonDiv(index, self);
 
-  const guncelleButton = document.createElement("button");
-  guncelleButton.classList.add("btn", "btn-info");
-  guncelleButton.textContent = "Güncelle";
-  guncelleButton.addEventListener("click", () => {
-    this.updateFormValues(index);
-  });
+  filmKarti.appendChild(filmBilgisi);
+  filmKarti.appendChild(buttonDiv);
+  filmKoleksiyonu.appendChild(filmKarti);
+};
+
+function createButtonDiv(index, self) {
+  const buttons = [
+    { text: "Sil", classes: ["btn", "me-5", "btn-danger"], onClick: () => self.removeFromLocalStorage(index) },
+    { text: "Güncelle", classes: ["btn", "btn-info"], onClick: () => self.updateFormValues(index) }
+  ];
 
   const buttonDiv = document.createElement("div");
   buttonDiv.classList.add("d-flex", "justify-content-center");
-  buttonDiv.appendChild(silButton);
-  buttonDiv.appendChild(guncelleButton);
 
-  filmKarti.appendChild(filmBilgisi);
-  // filmKarti.appendChild(silButton);
-  // filmKarti.appendChild(guncelleButton);
-  filmKoleksiyonu.appendChild(filmKarti);
-  filmKarti.appendChild(buttonDiv);
-};
+  buttons.forEach(button => {
+    const btn = createButton(button.text, button.classes, button.onClick);
+    buttonDiv.appendChild(btn);
+  });
+
+  return buttonDiv;
+}
+
+function createButton(text, classes, onClick) {
+  const button = document.createElement("button");
+  button.classList.add(...classes);
+  button.textContent = text;
+  button.addEventListener("click", onClick);
+  return button;
+}
 
 Film.prototype.removeFromLocalStorage = function (index) {
   let filmListesi = JSON.parse(localStorage.getItem("filmListesi"));
@@ -52,7 +60,6 @@ Film.prototype.removeFromLocalStorage = function (index) {
   filmKoleksiyonunuGuncelle();
 };
 
-//kartdaki verilerin input kutucuklarına doldurulması.
 Film.prototype.updateFormValues = function (index) {
   document.getElementById("filmAdi").value = this.filmAdi;
   document.getElementById("yonetmen").value = this.yonetmen;
@@ -60,18 +67,18 @@ Film.prototype.updateFormValues = function (index) {
   document.getElementById("tur").value = this.tur;
   document.getElementById("afisUrl").value = this.afisUrl;
 
-  this.removeFromLocalStorage(index);
+  this.removeFromLocalStorage(index); // Kartı silme işlemi
 };
 
 document.addEventListener("DOMContentLoaded", function () {
   filmKoleksiyonunuGuncelle();
-}); // site yüklendiğinde tüm storage teki  kayıtları ekrana basmak için, (ilk açılış)
+});
 
 function filmKoleksiyonunuGuncelle() {
   const filmKoleksiyonu = document.getElementById("filmKoleksiyonu");
   filmKoleksiyonu.textContent = "";
 
-  const filmListesi = JSON.parse(localStorage.getItem("filmListesi"));
+  const filmListesi = JSON.parse(localStorage.getItem("filmListesi")) || [];
 
   filmListesi.forEach((film, index) => {
     const newFilm = new Film(film.filmAdi, film.yonetmen, film.yil, film.tur, film.afisUrl);
@@ -81,15 +88,14 @@ function filmKoleksiyonunuGuncelle() {
 
 const filmForm = document.getElementById("filmForm");
 filmForm.addEventListener("submit", function (event) {
-  console.log(filmForm);
-  event.preventDefault(); //sayfanın yenilenmesini engelledik.
+  event.preventDefault();
   const filmAdi = document.getElementById("filmAdi").value;
   const yonetmen = document.getElementById("yonetmen").value;
   const yil = document.getElementById("yil").value;
   const tur = document.getElementById("tur").value;
   const afisUrl = document.getElementById("afisUrl").value;
   const film = new Film(filmAdi, yonetmen, yil, tur, afisUrl);
-  let filmListesi = JSON.parse(localStorage.getItem("filmListesi"));
+  let filmListesi = JSON.parse(localStorage.getItem("filmListesi")) || [];
   filmListesi.push(film);
   localStorage.setItem("filmListesi", JSON.stringify(filmListesi));
   filmForm.reset();
