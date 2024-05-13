@@ -9,10 +9,8 @@ UI.prototype.displayMovies = function (){
   let filmListesi = JSON.parse(localStorage.getItem("movies")) || [];
   
   filmListesi.forEach((film) => {
-    const listItem = document.createElement("li");
-    listItem.className = "mb-3";
-    this.createMovieCard (film);
-    this.movieTypes (film);
+    const listItem = this.createMovieCard (film);
+    moviesList.appendChild(listItem);
   });
   
   
