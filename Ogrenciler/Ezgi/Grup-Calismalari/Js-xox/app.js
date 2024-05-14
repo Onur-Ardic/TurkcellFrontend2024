@@ -1,83 +1,116 @@
-// Fonksiyon xox_oyunu():
-//     Oyun_tahtası = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]  # 3x3 boş bir tahta oluşturulur
-//     Oyun_sonu = False  # Oyunun bitip bitmediğini belirten bir değişken
+const blocks = document.querySelectorAll(".block");
+const playerText = document.getElementById("player");
+const errorText = document.getElementById("error");
+let player = "X";
+let gameOver = false;
+let winner;
 
-//     While Oyun_sonu == False:
-//         Oyun_tahtasını_göster(Oyun_tahtası)  # Oyun tahtası ekrana basılır
-//         X_hamlesi(Oyun_tahtası)  # X oyuncusunun hamlesi yapılır
-//         Oyun_sonu = Oyunu_kontrol_et(Oyun_tahtası)  # Oyunun bitip bitmediği kontrol edilir
-//         Eğer Oyun_sonu == True ise:
-//             Oyun_tahtasını_göster(Oyun_tahtası)  # Son durumu ekrana basılır
-//             Durum_bildir("X kazandı!")  # X kazandı mesajı verilir
-//             Break  # Döngüden çıkılır
 
-//         Oyun_tahtasını_göster(Oyun_tahtası)  # Oyun tahtası ekrana basılır
-//         O_hamlesi(Oyun_tahtası)  # O oyuncusunun hamlesi yapılır
-//         Oyun_sonu = Oyunu_kontrol_et(Oyun_tahtası)  # Oyunun bitip bitmediği kontrol edilir
-//         Eğer Oyun_sonu == True ise:
-//             Oyun_tahtasını_göster(Oyun_tahtası)  # Son durumu ekrana basılır
-//             Durum_bildir("O kazandı!")  # O kazandı mesajı verilir
-//             Break  # Döngüden çıkılır
+function startGame() {
+    playerText.textContent = `${player}'s Turn !`
+    blocks.forEach(block => block.addEventListener("click", () => chooseArea(block)))
+}
 
-//     Durum_bildir("Oyun bitti!")  # Oyunun bittiği mesajı verilir
+function chooseArea(block) {
+    if (block.textContent === "") {
+        block.textContent = player;
+        if (player === "O") {
+            block.style.color = "red"
+        }
+        turnPlayer();
+    } else {
+        errorText.textContent = "Heyy, it's not empty "
+        block.style.border = "2px solid red"
+        setTimeout(() => {
+            errorText.textContent = ""
+            block.style.border = "1px solid black"
+        }, 2500)
+    }
 
-// Fonksiyon Oyun_tahtasını_göster(Oyun_tahtası):
-//     For satır in Oyun_tahtası:
-//         For eleman in satır:
-//             Ekrana_yaz(eleman + " ")  # Tahtayı ekrana bas
-//         Ekrana_yaz("\n")  # Yeni satıra geç
+    checkWin();
+    checkTie();
 
-// Fonksiyon X_hamlesi(Oyun_tahtası):
-//     Satır = Kullanıcıdan_satır_al()  # Kullanıcıdan satır bilgisini al
-//     Sütun = Kullanıcıdan_sütun_al()  # Kullanıcıdan sütun bilgisini al
-//     Eğer Oyun_tahtası[Satır][Sütun] boş ise:
-//         Oyun_tahtası[Satır][Sütun] = "X"  # Belirtilen konuma X koy
-//     Değilse:
-//         Durum_bildir("Geçersiz hamle! Lütfen başka bir konum seçin.")
-//         X_hamlesi(Oyun_tahtası)  # Tekrar hamle yap
+    if (gameOver) {
+        playerText.textContent = `Game is over, ${winner} Won`;
+        blocks.forEach(block => block.style.pointerEvents = 'none');
+    }
+}
 
-// Fonksiyon O_hamlesi(Oyun_tahtası):
-//     Rastgele_Satır = Rastgele_sayı_üret(0, 2)  # Rastgele bir satır seç
-//     Rastgele_Sütun = Rastgele_sayı_üret(0, 2)  # Rastgele bir sütun seç
-//     Eğer Oyun_tahtası[Rastgele_Satır][Rastgele_Sütun] boş ise:
-//         Oyun_tahtası[Rastgele_Satır][Rastgele_Sütun] = "O"  # Belirtilen konuma O koy
-//     Değilse:
-//         O_hamlesi(Oyun_tahtası)  # Tekrar hamle yap
+function turnPlayer() {
+    if (player === "X") {
+        player = "O";
+        playerText.textContent = `${player}'s Turn !`
+        return;
+    } else if (player === "O") {
+        player = "X";
+        playerText.textContent = `${player}'s Turn !`
 
-// Fonksiyon Oyunu_kontrol_et(Oyun_tahtası):
-//     # Tahtada kazanan bir durum var mı kontrol et
-//     Eğer Satır_kazananı(Oyun_tahtası, "X") veya Sütun_kazananı(Oyun_tahtası, "X") veya Köşegen_kazananı(Oyun_tahtası, "X"):
-//         Return True
-//     Eğer Satır_kazananı(Oyun_tahtası, "O") veya Sütun_kazananı(Oyun_tahtası, "O") veya Köşegen_kazananı(Oyun_tahtası, "O"):
-//         Return True
-//     # Tahta dolu mu kontrol et
-//     Eğer Tahta_dolu_mu(Oyun_tahtası):
-//         Return True
-//     Return False
+    }
+}
 
-// Fonksiyon Satır_kazananı(Oyun_tahtası, oyuncu):
-//     For satır in Oyun_tahtası:
-//         Eğer satır[0] == oyuncu ve satır[1] == oyuncu ve satır[2] == oyuncu:
-//             Return True
-//     Return False
+function checkWin() {
+    // win
+    checkRows()
+    checkColumns()
+    checkDiagonals()
+}
 
-// Fonksiyon Sütun_kazananı(Oyun_tahtası, oyuncu):
-//     For i in range(3):
-//         Eğer Oyun_tahtası[0][i] == oyuncu ve Oyun_tahtası[1][i] == oyuncu ve Oyun_tahtası[2][i] == oyuncu:
-//             Return True
-//     Return False
+function checkTie() {
+    // tie
+    const values = [];
+    blocks.forEach(block => values.push(block.textContent))
+    if (!values.includes("")) {
+        playerText.textContent = "Tie !";
+        blocks.forEach(block => block.style.pointerEvents = 'none');
+    }
+}
 
-// Fonksiyon Köşegen_kazananı(Oyun_tahtası, oyuncu):
-//     Eğer (Oyun_tahtası[0][0] == oyuncu ve Oyun_tahtası[1][1] == oyuncu ve Oyun_tahtası[2][2] == oyuncu) veya (Oyun_tahtası[0][2] == oyuncu ve Oyun_tahtası[1][1] == oyuncu ve Oyun_tahtası[2][0] == oyuncu):
-//         Return True
-//     Return False
+function checkRows() {
+    // check rows
+    let row1 = blocks[0].textContent == blocks[1].textContent &&
+        blocks[0].textContent == blocks[2].textContent && blocks[0].textContent !== ""
+    let row2 = blocks[3].textContent == blocks[4].textContent &&
+        blocks[3].textContent == blocks[5].textContent && blocks[3].textContent !== ""
+    let row3 = blocks[6].textContent == blocks[7].textContent &&
+        blocks[6].textContent == blocks[8].textContent && blocks[6].textContent !== ""
 
-// Fonksiyon Tahta_dolu_mu(Oyun_tahtası):
-//     For satır in Oyun_tahtası:
-//         For eleman in satır:
-//             Eğer eleman boş değil ise:
-//                 Return True
-//     Return False
+    if (row1 || row2 || row3) {
+        gameOver = true
+    }
+    if (row1) return winner = blocks[0].textContent
+    if (row2) return winner = blocks[3].textContent
+    if (row3) return winner = blocks[6].textContent
+}
 
-// Fonksiyon Durum_bildir(mesaj):
-//     Ekrana_yaz(mesaj + "\n")
+function checkColumns() {
+    // check cols
+    let col1 = blocks[0].textContent == blocks[3].textContent &&
+        blocks[0].textContent == blocks[6].textContent && blocks[0].textContent !== ""
+    let col2 = blocks[1].textContent == blocks[4].textContent &&
+        blocks[1].textContent == blocks[7].textContent && blocks[1].textContent !== ""
+    let col3 = blocks[2].textContent == blocks[5].textContent &&
+        blocks[2].textContent == blocks[8].textContent && blocks[2].textContent !== ""
+
+    if (col1 || col2 || col3) {
+        gameOver = true
+    }
+    if (col1) return winner = blocks[0].textContent
+    if (col2) return winner = blocks[1].textContent
+    if (col3) return winner = blocks[2].textContent
+}
+
+function checkDiagonals() {
+    // check diag
+    let dia1 = blocks[0].textContent == blocks[4].textContent &&
+        blocks[0].textContent == blocks[8].textContent && blocks[0].textContent !== ""
+    let dia2 = blocks[2].textContent == blocks[4].textContent &&
+        blocks[2].textContent == blocks[6].textContent && blocks[2].textContent !== ""
+
+    if (dia1 || dia2) {
+        gameOver = true
+    }
+    if (dia1) return winner = blocks[0].textContent
+    if (dia2) return winner = blocks[2].textContent
+}
+
+startGame();
