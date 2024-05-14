@@ -29,4 +29,7 @@ document.getElementById("form").addEventListener("submit", (e) => {
   e.preventDefault();
   var movieInstance = new Movies();
   movieInstance.addMovie();
+  ui.displayMovies();
+
 });
+

@@ -27,8 +27,9 @@ Storage.prototype.updateMovieFromStorage = function (updateMovie) {
     if (movie.id == updateMovie.id) {
       movies[index] = updateMovie;
     }
+    localStorage.setItem("movies", JSON.stringify(movies));
   });
-  localStorage.setItem("movies", JSON.stringify(movies));
+
 };
 
 Storage.prototype.getMovieFromStorage = function (movieId) {
