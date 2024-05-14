@@ -1,6 +1,5 @@
 function UI() {}
 
-
 UI.prototype.displayMovies = function (){
   
   const moviesList = document.getElementById("moviesList");
@@ -78,8 +77,6 @@ UI.prototype.createListItem = function (text) {
   li.appendChild(p);
   return li;
 };
-
-// ben ekledim
 UI.prototype.movieTypes = function () {
   const movieTypes = {
     1: "Bilim Kurgu",
@@ -111,11 +108,10 @@ UI.prototype.createUpdateButton = function (movie) {
   button.onclick = () => {
     this.fillFormWithMovieData(movie);
     this.guncelleButon(movie);
-    console.log(movie);
   };
   return button;
+  
 };
-
 
 UI.prototype.createDeleteButton = function (movieId) {
   const button = document.createElement("button");
@@ -133,6 +129,19 @@ UI.prototype.guncelleButon = function (movie) {
   guncelleButon.textContent = "Güncelle";
   guncelleButon.className = "btn btn-danger mt-3 guncelleButton";
   formEnd.appendChild(guncelleButon);
+  document.getElementById("filmOlustur").style.display = "none";
+  guncelleButon.onclick = () => {
+    movie.name = inputs.name.value.trim();
+    movie.director = inputs.director.value.trim();
+    movie.year = parseInt(inputs.year.value.trim(), 10);
+    movie.movieType = inputs.movieType.value.trim();
+    movie.imageUrl = inputs.imageUrl.value.trim();
+    storage.updateMovieFromStorage(movie);
+    document.getElementById("filmOlustur").style.display = "block";
+    this.displayMovies();
+    clearInputs();
+    submitNewMovie;
+  };
 }
 
 UI.prototype.fillFormWithMovieData = function (movie) {
@@ -141,27 +150,11 @@ UI.prototype.fillFormWithMovieData = function (movie) {
   inputs.year.value = movie.year.toString();
   inputs.movieType.value = movie.movieType;
   inputs.imageUrl.value = movie.imageUrl;
-
-  const updateButton = document.getElementsByClassName("guncelleButton");
-  updateButton.onclick = () => {
-    movie.name = inputs.name.value.trim();
-    movie.director = inputs.director.value.trim();
-    movie.year = parseInt(inputs.year.value.trim(), 10);
-    movie.movieType = inputs.movieType.value.trim();
-    movie.imageUrl = inputs.imageUrl.value.trim();
-    console.log(movie);
-    storage.updateMovieFromStorage(movie);
-    this.displayMovies();
-    clearInputs();
-    updateButton.onclick = submitNewMovie;
-  };
-  updateButton.textContent = "Güncelle";
-  document.getElementById("submit").style.display = "none";
-
 };
+
 function clearInputs() {
   Object.values(inputs).forEach((input) => {
-    input.value = "";
+    input.value = ""; //Reset value after
     input.style.borderColor = ""; // Reset the border color
   });
   const elements = document.getElementsByClassName("guncelleButton");
