@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import { movie } from "./movie.js";
 import { Storage } from "./storage.js";
 import { UI } from "./ui.js";
@@ -10,6 +11,18 @@ const saveMovieButton = document.getElementById("modal-form"); //inside the moda
 const addMoviebutton = document.getElementById("addMovieButton");
 const movieWrapper = document.querySelector(".movie-card-wrapper");
 const deleteBtn = document.getElementById("delete-btn");
+=======
+const movieName = document.getElementById('moviename')
+const movieDirector = document.getElementById('moviedirector')
+const movieYear = document.getElementById('year')
+const movieİmage = document.getElementById('movieimage')
+const movieCategory = document.getElementById('category')
+const saveMovieButton = document.getElementById('modal-form') //inside the modal
+const addMoviebutton = document.getElementById('addMovieButton')
+const movieWrapper = document.querySelector('.movie-card-wrapper')
+const deleteBtn = document.getElementById('delete-btn')
+const searchFilter = document.getElementById('categoryFilter')
+>>>>>>> Stashed changes
 
 let movieNameToUpdate;
 
@@ -78,6 +91,7 @@ saveMovieButton.addEventListener("submit", (e) => {
 //       option.textContent = category;
 //       movieCategory.appendChild(option);
 
+<<<<<<< Updated upstream
 //       console.log(option);
 //     });
 //   }
@@ -87,3 +101,20 @@ saveMovieButton.addEventListener("submit", (e) => {
 //   }
 // }
 // const dropDown = new DropdownElements(BaseCategories);
+=======
+class DropdownElements {
+  constructor(BaseCategories) {
+    this.categories = BaseCategories
+    this.categories.forEach((category) => {
+      const option = document.createElement('option')
+      option.textContent = category
+      movieCategory.appendChild(option)
+    })
+  }
+
+  addCategory(element) {
+    this.categories.push(element)
+  }
+}
+const dropDown = new DropdownElements(BaseCategories)
+>>>>>>> Stashed changes
