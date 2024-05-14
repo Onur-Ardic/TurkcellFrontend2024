@@ -1,103 +1,96 @@
-function Film(filmAdi, yonetmen, yil, tur, afisUrl) {
-  this.filmAdi = filmAdi;
-  this.yonetmen = yonetmen;
-  this.yil = yil;
-  this.tur = tur;
-  this.afisUrl = afisUrl;
-}
+import { UI } from "./ui.js";
 
-Film.prototype.render = function (index) {
-  const self = this;
+class BaseFilm {
+  constructor(filmAdi, yonetmen, yil, tur, afisUrl) {
+    // Film bilgilerini tanımlayan constructor
+    this.filmAdi = filmAdi;
+    this.yonetmen = yonetmen;
+    this.yil = yil;
+    this.tur = tur;
+    this.afisUrl = afisUrl;
+  }
 
-  const filmKarti = document.createElement("div");
-  filmKarti.classList.add("filmKarti");
+  static getFilmListesi() {
+    // localStorage'dan film listesini alır
+    return JSON.parse(localStorage.getItem("filmListesi")) || [];
+  }
 
-  const filmBilgisi = document.createElement("div");
-  filmBilgisi.innerHTML = `
-        <img src="${this.afisUrl}" alt="örnek-resim">
-        <p><strong>Adı:</strong> ${this.filmAdi}</p>
-        <p><strong>Yönetmen:</strong> ${this.yonetmen}</p>
-        <p><strong>Yıl:</strong> ${this.yil}</p>
-        <p><strong>Tür:</strong> ${this.tur}</p>        
+  static setFilmListesi(filmListesi) {
+    // localStorage'a film listesini kaydeder
+    localStorage.setItem("filmListesi", JSON.stringify(filmListesi));
+  }
+
+  removeFromLocalStorage(index) {
+    // Belirtilen indeksteki filmi listeden siler ve günceller
+    const filmListesi = BaseFilm.getFilmListesi();
+    filmListesi.splice(index, 1);
+    BaseFilm.setFilmListesi(filmListesi);
+    BaseFilm.renderFilmCollection();
+  }
+
+  updateFormValues(index) {
+    // Form alanlarını günceller ve filmi listeden siler
+    ["filmAdi", "yonetmen", "yil", "tur", "afisUrl"].forEach((id) => {
+      document.getElementById(id).value = this[id];
+    });
+    this.removeFromLocalStorage(index);
+  }
+
+  createFilmCard(index) {
+    // Film kartını oluşturur ve döndürür
+    const filmKarti = UI.createElement("div", ["filmKarti"]);
+
+    const filmBilgisi = UI.createElement("div");
+    filmBilgisi.innerHTML = `
+      <img src="${this.afisUrl}" alt="örnek-resim">
+      <p><strong>Adı:</strong> ${this.filmAdi}</p>
+      <p><strong>Yönetmen:</strong> ${this.yonetmen}</p>
+      <p><strong>Yıl:</strong> ${this.yil}</p>
+      <p><strong>Tür:</strong> ${this.tur}</p>
     `;
 
-  const buttonDiv = createButtonDiv(index, self);
+    const buttonDiv = UI.createButtonDiv(index, this);
 
-  filmKarti.appendChild(filmBilgisi);
-  filmKarti.appendChild(buttonDiv);
-  filmKoleksiyonu.appendChild(filmKarti);
-};
+    filmKarti.appendChild(filmBilgisi);
+    filmKarti.appendChild(buttonDiv);
+    return filmKarti;
+  }
 
-function createButtonDiv(index, self) {
-  const buttons = [
-    { text: "Sil", classes: ["btn", "me-5", "btn-danger"], onClick: () => self.removeFromLocalStorage(index) },
-    { text: "Güncelle", classes: ["btn", "btn-info"], onClick: () => self.updateFormValues(index) }
-  ];
+  static renderFilmCollection() {
+    // Film koleksiyonunu ekrana render eder
+    const filmKoleksiyonu = document.getElementById("filmKoleksiyonu");
+    filmKoleksiyonu.textContent = "";
 
-  const buttonDiv = document.createElement("div");
-  buttonDiv.classList.add("d-flex", "justify-content-center");
-
-  buttons.forEach(button => {
-    const btn = createButton(button.text, button.classes, button.onClick);
-    buttonDiv.appendChild(btn);
-  });
-
-  return buttonDiv;
+    BaseFilm.getFilmListesi().forEach((film, index) => {
+      const newFilm = new BaseFilm(
+        film.filmAdi,
+        film.yonetmen,
+        film.yil,
+        film.tur,
+        film.afisUrl
+      );
+      filmKoleksiyonu.appendChild(newFilm.createFilmCard(index));
+    });
+  }
 }
 
-function createButton(text, classes, onClick) {
-  const button = document.createElement("button");
-  button.classList.add(...classes);
-  button.textContent = text;
-  button.addEventListener("click", onClick);
-  return button;
-}
-
-Film.prototype.removeFromLocalStorage = function (index) {
-  let filmListesi = JSON.parse(localStorage.getItem("filmListesi"));
-  filmListesi.splice(index, 1);
-  localStorage.setItem("filmListesi", JSON.stringify(filmListesi));
-  filmKoleksiyonunuGuncelle();
-};
-
-Film.prototype.updateFormValues = function (index) {
-  document.getElementById("filmAdi").value = this.filmAdi;
-  document.getElementById("yonetmen").value = this.yonetmen;
-  document.getElementById("yil").value = this.yil;
-  document.getElementById("tur").value = this.tur;
-  document.getElementById("afisUrl").value = this.afisUrl;
-
-  this.removeFromLocalStorage(index); // Kartı silme işlemi
-};
-
-document.addEventListener("DOMContentLoaded", function () {
-  filmKoleksiyonunuGuncelle();
-});
-
-function filmKoleksiyonunuGuncelle() {
-  const filmKoleksiyonu = document.getElementById("filmKoleksiyonu");
-  filmKoleksiyonu.textContent = "";
-
-  const filmListesi = JSON.parse(localStorage.getItem("filmListesi")) || [];
-
-  filmListesi.forEach((film, index) => {
-    const newFilm = new Film(film.filmAdi, film.yonetmen, film.yil, film.tur, film.afisUrl);
-    newFilm.render(index);
-  });
-}
+document.addEventListener("DOMContentLoaded", BaseFilm.renderFilmCollection);
 
 const filmForm = document.getElementById("filmForm");
-filmForm.addEventListener("submit", function (event) {
+filmForm.addEventListener("submit", (event) => {
+  // Form submit edildiğinde yeni bir film ekler
   event.preventDefault();
-  const filmAdi = document.getElementById("filmAdi").value;
-  const yonetmen = document.getElementById("yonetmen").value;
-  const yil = document.getElementById("yil").value;
-  const tur = document.getElementById("tur").value;
-  const afisUrl = document.getElementById("afisUrl").value;
-  const film = new Film(filmAdi, yonetmen, yil, tur, afisUrl);
-  let filmListesi = JSON.parse(localStorage.getItem("filmListesi")) || [];
+  const film = new BaseFilm(
+    document.getElementById("filmAdi").value,
+    document.getElementById("yonetmen").value,
+    document.getElementById("yil").value,
+    document.getElementById("tur").value,
+    document.getElementById("afisUrl").value
+  );
+
+  const filmListesi = BaseFilm.getFilmListesi();
   filmListesi.push(film);
-  localStorage.setItem("filmListesi", JSON.stringify(filmListesi));
+  BaseFilm.setFilmListesi(filmListesi);
   filmForm.reset();
-  filmKoleksiyonunuGuncelle();
+  BaseFilm.renderFilmCollection();
 });
