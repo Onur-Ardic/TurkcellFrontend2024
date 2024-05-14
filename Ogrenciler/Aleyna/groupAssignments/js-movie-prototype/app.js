@@ -9,7 +9,7 @@ const movielist = new MovieList(movieList);
 
 ui.displayMovies("All", movielist.getList());
 
-//bind
+//bind-form elementini secip submit eventini dinliyoruz submitse formu kaydet
 ui.form.addEventListener("submit", () => {
   movielist.newMovie();
 });
@@ -37,5 +37,5 @@ ui.typeInput.addEventListener("input", function () {
 });
 ui.imageInput.addEventListener("input", function () {
   let newBack = `${ui.imageInput.value}`;
-  ui.imgShows.src = newBack;
+  ui.imgShows.src = newBack; //cardshows da gösterilen resmin değerini newback içine atıyoruz
 });

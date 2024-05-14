@@ -10,7 +10,7 @@ let editStatus = false;
 MovieList.prototype.getList = function () {
   return this.movieList;
 };
-
+//yeni bir movie yükleme yada güncelleme metodu
 MovieList.prototype.newMovie = function () {
   ui.movies.innerHTML = ""; //textContent, innerText
 
@@ -27,6 +27,7 @@ MovieList.prototype.newMovie = function () {
     );
   } else {
     for (let movie of this.movieList) {
+      // movie'yi döndürüyoruz
       if (editId == movie.id) {
         movie.movieName = ui.movieNameInput.value;
         movie.director = ui.directorInput.value;
@@ -90,7 +91,7 @@ MovieList.prototype.deleteMovie = function (id) {
     }
   }
 
-  this.movieList.splice(deleteId, 1);
+  this.movieList.splice(deleteId, 1); //kendisi
   localStorage.setItem("movieList", JSON.stringify(this.movieList));
   ui.displayMovies(
     document.querySelector("#filters div.active").textContent,
