@@ -44,7 +44,9 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">Film Ekle</h1>
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Film Ekle
+                </h1>
                 <button
                   type="button"
                   class="btn-close"
@@ -62,11 +64,19 @@
                       id="moviename"
                       aria-describedby="emailHelp"
                     />
-                    <div id="emailHelp" class="form-text">Lütfen bir film adı giriniz...</div>
+                    <div id="emailHelp" class="form-text">
+                      Lütfen bir film adı giriniz...
+                    </div>
                   </div>
                   <div class="mb-3">
-                    <label for="moviedirector" class="form-label">Film Yönetmeni</label>
-                    <input type="text" class="form-control" id="moviedirector" />
+                    <label for="moviedirector" class="form-label"
+                      >Film Yönetmeni</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="moviedirector"
+                    />
                   </div>
                   <div class="mb-3">
                     <label for="year" class="form-label">Çıkış Yılı</label>
@@ -74,19 +84,36 @@
                   </div>
                   <div class="mb-3">
                     <label class="mb-2" for="category">Film Kategorisi</label>
-                    <select class="form-select" id="category" aria-label="Category">
+                    <select
+                      class="form-select"
+                      id="category"
+                      aria-label="Category"
+                    >
                       <option selected>Choose a Category</option>
                     </select>
                   </div>
                   <div class="mb-3">
-                    <label for="movieimage" class="form-label">Movie İmage</label>
-                    <input type="text" class="form-control" id="movieimage" src="" />
+                    <label for="movieimage" class="form-label"
+                      >Movie İmage</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="movieimage"
+                      src=""
+                    />
                   </div>
-                  <button id="saveMovie" type="submit" class="btn btn-primary">Ekle</button>
+                  <button id="saveMovie" type="submit" class="btn btn-primary">
+                    Ekle
+                  </button>
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
                   Kapat
                 </button>
               </div>
@@ -116,7 +143,12 @@
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="input-group mb-3">
             <div class="form-floating">
-              <input type="text" class="form-control" id="directorFilter" placeholder="Director" />
+              <input
+                type="text"
+                class="form-control"
+                id="directorFilter"
+                placeholder="Director"
+              />
               <label for="directorFilter">Director</label>
             </div>
           </div>
@@ -124,7 +156,11 @@
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="input-group mb-3">
             <div class="form-floating">
-              <select class="form-select" id="categoryFilter" aria-label="Category">
+              <select
+                class="form-select"
+                id="categoryFilter"
+                aria-label="Category"
+              >
                 <option selected>Choose a Category</option>
               </select>
               <label for="categoryFilter">Category</label>
@@ -134,7 +170,12 @@
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="input-group mb-3">
             <div class="form-floating">
-              <input type="text" class="form-control" id="yearFilter" placeholder="Year" />
+              <input
+                type="text"
+                class="form-control"
+                id="yearFilter"
+                placeholder="Year"
+              />
               <label for="yearFilter">Year</label>
             </div>
           </div>
@@ -152,7 +193,11 @@
       </div>
     </section>
 
-    <script src="oop.js"></script>
+    <script src="oop.js" type="module"></script>
+    <script src="storage.js" type="module"></script>
+    <script src="ui.js" type="module"></script>
+
+    <script src="movie.js" type="module"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

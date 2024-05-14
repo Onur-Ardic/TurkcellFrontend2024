@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .gradient-custom-2 {
   background: #7e40f6;
   background: linear-gradient(to right, rgb(126, 64, 246), rgb(80, 139, 252));
@@ -20,6 +21,16 @@
   color: #ffc400;
   border-color: #ffc400 !important;
   text-shadow: #ffc400;
+}
+
+.vhh {
+  min-height: 100vh; /* En az %100 viewport yüksekliği */
+  height: auto; /* İçeriğe göre otomatik yükseklik */
+}
+
+.custom-icon {
+  background-color: transparent !important; /* İkon rengi */
+  color: #ffc400 !important; /* Arka plan rengi */
 }
 
 /*# sourceMappingURL=main.css.map */

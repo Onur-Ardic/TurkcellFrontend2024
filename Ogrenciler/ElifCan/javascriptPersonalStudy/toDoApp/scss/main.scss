@@ -26,3 +26,11 @@
     text-shadow: #ffc400;
   }
 }
+.vhh {
+  min-height: 100vh; /* En az %100 viewport yüksekliği */
+  height: auto; /* İçeriğe göre otomatik yükseklik */
+}
+.custom-icon {
+  background-color: transparent !important; /* İkon rengi */
+  color: #ffc400 !important; /* Arka plan rengi */
+}

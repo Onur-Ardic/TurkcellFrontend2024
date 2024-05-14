@@ -23,6 +23,7 @@ const BaseCategories = [
   "Horror",
   "Animation",
 ];
+
 const movieStorage = new Storage();
 const Page = new UI();
 const dropdown = new DropDownElements(BaseCategories);
@@ -83,6 +84,7 @@ function DeleteMovie(movieName) {
   movieStorage.DeleteMovie(movieName);
 }
 
+//************Movie*************
 function movie(name, director, year, category, image) {
   this.name = name;
   this.director = director;
@@ -91,6 +93,7 @@ function movie(name, director, year, category, image) {
   this.image = image;
 }
 
+//************Storage*************
 function Storage() {
   this.movieNameList = JSON.parse(localStorage.getItem("movieNameList")) || [];
 }
@@ -131,6 +134,7 @@ Storage.prototype.UpdateMovie = function (moviNameToUpdate, movie) {
   Page.Update(moviNameToUpdate, movie);
 };
 
+//************UI*************
 function UI() {}
 
 UI.prototype.AddCard = function (name, image, year, director, category) {
@@ -195,6 +199,7 @@ UI.prototype.Update = function (moviNameToUpdate, movie) {
   movieCard.querySelector("img").src = movie.image;
 };
 
+//************Dropdown*************
 function DropDownElements(categoryArray) {
   this.movieCategories = categoryArray;
 }
@@ -211,6 +216,7 @@ DropDownElements.prototype.AddCategory = function (element) {
   this.movieCategories.push(element);
 };
 
+//************filter*************
 const FilteredCards = new FilterInput();
 function FilterInput() {}
 
