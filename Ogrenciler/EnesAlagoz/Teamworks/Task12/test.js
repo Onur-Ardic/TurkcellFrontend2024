@@ -1,3 +1,5 @@
+import { UI } from "./ui.js";
+
 class BaseFilm {
   constructor(filmAdi, yonetmen, yil, tur, afisUrl) {
     // Film bilgilerini tanımlayan constructor
@@ -18,7 +20,7 @@ class BaseFilm {
     localStorage.setItem("filmListesi", JSON.stringify(filmListesi));
   }
 
-  static removeFromLocalStorage(index) {
+  removeFromLocalStorage(index) {
     // Belirtilen indeksteki filmi listeden siler ve günceller
     const filmListesi = BaseFilm.getFilmListesi();
     filmListesi.splice(index, 1);
@@ -26,23 +28,19 @@ class BaseFilm {
     BaseFilm.renderFilmCollection();
   }
 
-  static updateFormValues(index, film) {
+  updateFormValues(index) {
     // Form alanlarını günceller ve filmi listeden siler
-    document.getElementById("filmAdi").value = film.filmAdi;
-    document.getElementById("yonetmen").value = film.yonetmen;
-    document.getElementById("yil").value = film.yil;
-    document.getElementById("tur").value = film.tur;
-    document.getElementById("afisUrl").value = film.afisUrl;
-
-    BaseFilm.removeFromLocalStorage(index); // Kartı silme işlemi
+    ["filmAdi", "yonetmen", "yil", "tur", "afisUrl"].forEach((id) => {
+      document.getElementById(id).value = this[id];
+    });
+    this.removeFromLocalStorage(index);
   }
 
   createFilmCard(index) {
     // Film kartını oluşturur ve döndürür
-    const filmKarti = document.createElement("div");
-    filmKarti.classList.add("filmKarti");
+    const filmKarti = UI.createElement("div", ["filmKarti"]);
 
-    const filmBilgisi = document.createElement("div");
+    const filmBilgisi = UI.createElement("div");
     filmBilgisi.innerHTML = `
       <img src="${this.afisUrl}" alt="örnek-resim">
       <p><strong>Adı:</strong> ${this.filmAdi}</p>
@@ -51,40 +49,11 @@ class BaseFilm {
       <p><strong>Tür:</strong> ${this.tur}</p>
     `;
 
-    const buttonDiv = this.createButtonDiv(index);
+    const buttonDiv = UI.createButtonDiv(index, this);
 
     filmKarti.appendChild(filmBilgisi);
     filmKarti.appendChild(buttonDiv);
     return filmKarti;
-  }
-
-  createButtonDiv(index) {
-    // Sil ve Güncelle butonlarını oluşturur ve döndürür
-    const buttonDiv = document.createElement("div");
-    buttonDiv.classList.add("d-flex", "justify-content-center");
-
-    const buttons = [
-      {
-        text: "Sil",
-        classes: ["btn", "me-5", "btn-danger"],
-        onClick: () => BaseFilm.removeFromLocalStorage(index),
-      },
-      {
-        text: "Güncelle",
-        classes: ["btn", "btn-info"],
-        onClick: () => BaseFilm.updateFormValues(index, this),
-      },
-    ];
-
-    buttons.forEach(({ text, classes, onClick }) => {
-      const button = document.createElement("button");
-      button.classList.add(...classes);
-      button.textContent = text;
-      button.addEventListener("click", onClick);
-      buttonDiv.appendChild(button);
-    });
-
-    return buttonDiv;
   }
 
   static renderFilmCollection() {
@@ -92,9 +61,7 @@ class BaseFilm {
     const filmKoleksiyonu = document.getElementById("filmKoleksiyonu");
     filmKoleksiyonu.textContent = "";
 
-    const filmListesi = BaseFilm.getFilmListesi();
-
-    filmListesi.forEach((film, index) => {
+    BaseFilm.getFilmListesi().forEach((film, index) => {
       const newFilm = new BaseFilm(
         film.filmAdi,
         film.yonetmen,
@@ -107,22 +74,20 @@ class BaseFilm {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Sayfa yüklendiğinde film koleksiyonunu render eder
-  BaseFilm.renderFilmCollection();
-});
+document.addEventListener("DOMContentLoaded", BaseFilm.renderFilmCollection);
 
 const filmForm = document.getElementById("filmForm");
 filmForm.addEventListener("submit", (event) => {
   // Form submit edildiğinde yeni bir film ekler
   event.preventDefault();
-  const filmAdi = document.getElementById("filmAdi").value;
-  const yonetmen = document.getElementById("yonetmen").value;
-  const yil = document.getElementById("yil").value;
-  const tur = document.getElementById("tur").value;
-  const afisUrl = document.getElementById("afisUrl").value;
+  const film = new BaseFilm(
+    document.getElementById("filmAdi").value,
+    document.getElementById("yonetmen").value,
+    document.getElementById("yil").value,
+    document.getElementById("tur").value,
+    document.getElementById("afisUrl").value
+  );
 
-  const film = new BaseFilm(filmAdi, yonetmen, yil, tur, afisUrl);
   const filmListesi = BaseFilm.getFilmListesi();
   filmListesi.push(film);
   BaseFilm.setFilmListesi(filmListesi);
