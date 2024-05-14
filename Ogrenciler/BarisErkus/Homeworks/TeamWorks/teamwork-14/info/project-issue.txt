@@ -10,4 +10,4 @@
 
 - localstorage kullanılacak.
 
-PROTOTYPE
+CLASS
