@@ -33,7 +33,7 @@
 // super - base class
 class Person {
   constructor(name, age) {
-    this.name = name;
+    this.name = name;-ü
     this.age = age;
   }
   showInfos() {
