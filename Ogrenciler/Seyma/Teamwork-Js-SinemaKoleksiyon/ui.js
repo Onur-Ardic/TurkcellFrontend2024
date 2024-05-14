@@ -120,10 +120,11 @@ UI.prototype.createDeleteButton = function (movieId) {
   button.onclick = () => {
     storage.deleteMovieFromStorage(movieId);
     this.displayMovies();
+    clearInputs();
   };
   return button;
 };
-
+  
 UI.prototype.guncelleButon = function (movie) {
   const guncelleButon = document.createElement("button");
   guncelleButon.textContent = "Güncelle";
