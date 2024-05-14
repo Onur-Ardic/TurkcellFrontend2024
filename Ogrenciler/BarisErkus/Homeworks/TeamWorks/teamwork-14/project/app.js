@@ -37,8 +37,6 @@ document.querySelectorAll('.dropdown-menu a').forEach(element => {
 });
 //#endregion
 
-
-
 function addMovie() {
     ui.name = document.getElementById('movieNameInput').value;
     ui.subject = document.getElementById('movieTopic').value;

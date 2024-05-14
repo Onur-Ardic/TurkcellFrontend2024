@@ -52,12 +52,15 @@ class UI {
 
         this.cardContainer.appendChild(card);
     }
-    deleteCard(event) {
+    deleteItemElement(itemElement) {
+        itemElement.remove();
+        cardList = cardList.filter(element => element.name != itemElement.children[1].children[0].innerText);
+        localStorage.setItem('cardList', JSON.stringify(cardList));
+    }
+    deleteCard = (event) => {
         if (event.target.classList.contains('btn-danger')) {
             const itemElement = event.target.parentElement.parentElement;
-            itemElement.remove();
-            cardList = cardList.filter(element => element.name != itemElement.children[1].children[0].innerText);
-            localStorage.setItem('cardList', JSON.stringify(cardList));
+            this.deleteItemElement(itemElement);
         }
     }
     deleteAllCard() {
@@ -65,14 +68,12 @@ class UI {
         localStorage.removeItem('cardList');
         window.location.reload();
     }
-    updateCard(event) {
+    updateCard = (event) => {
         if (event.target.classList.contains('btn-success')) {
             const itemElement = event.target.parentElement.parentElement;
             const tempCard = cardList.filter(element => element.name == itemElement.children[1].children[0].innerText)[0];
 
-            itemElement.remove();
-            cardList = cardList.filter(element => element.name != itemElement.children[1].children[0].innerText);
-            localStorage.setItem('cardList', JSON.stringify(cardList));
+            this.deleteItemElement(itemElement);
 
             document.getElementById('movieNameInput').value = tempCard.name;
             document.getElementById('movieTopic').value = tempCard.subject;
