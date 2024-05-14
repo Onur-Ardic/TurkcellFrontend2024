@@ -57,29 +57,37 @@ UI.prototype.deleteMovieFromUI = function (movieId) {
 }
 
 UI.prototype.editMovieUI = function (movieId) {
-    let allMovies = storage.getMoviesFromStorage()
+    let allMovies = storage.getMoviesFromStorage();
+    let selectedMovie = allMovies.find(movie => movie.movieId === movieId);
 
-    let selectedMovie = allMovies.find((movie) => movie.movieId === movieId);
-    movieName.value = selectedMovie.name;
-    movieDirector.value = selectedMovie.director;
-    movieYear.value = selectedMovie.year;
-    movieGenre.value = selectedMovie.genre;
-    moviePoster.value = selectedMovie.poster;
-    this.checkEdited(true)
+    const setMovieInputs = (movie) => {
+        movieName.value = movie.name;
+        movieDirector.value = movie.director;
+        movieYear.value = movie.year;
+        movieGenre.value = movie.genre;
+        moviePoster.value = movie.poster;
+    };
 
-    document.querySelector("#bilgileriGuncelle").addEventListener("click", function () {
-        let selectedMovieIndex = allMovies.findIndex((movie) => movie.movieId === movieId);
-        allMovies[selectedMovieIndex].name = movieName.value;
-        allMovies[selectedMovieIndex].director = movieDirector.value;
-        allMovies[selectedMovieIndex].year = movieYear.value;
-        allMovies[selectedMovieIndex].genre = movieGenre.value;
-        allMovies[selectedMovieIndex].poster = moviePoster.value;
-        storage.addMovieToStorage(allMovies)
-        ui.displayAllMoviesToUI()
-        ui.clearInputs()
-        ui.checkEdited(false)
-    }, { once: true })
-}
+    setMovieInputs(selectedMovie);
+    this.checkEdited(true);
+
+    const updateMovie = () => {
+        Object.assign(selectedMovie, {
+            name: movieName.value,
+            director: movieDirector.value,
+            year: movieYear.value,
+            genre: movieGenre.value,
+            poster: moviePoster.value,
+        });
+
+        storage.addMovieToStorage(allMovies);
+        ui.displayAllMoviesToUI();
+        ui.clearInputs();
+        ui.checkEdited(false);
+    };
+
+    document.querySelector("#bilgileriGuncelle").addEventListener("click", updateMovie, { once: true });
+};
 
 UI.prototype.checkEdited = function (isEdited) {
     if (!isEdited) {
