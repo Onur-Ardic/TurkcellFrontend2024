@@ -9,6 +9,7 @@ body {
 .container {
   max-width: 900px;
   margin: 40px auto;
+  position: relative;
 }
 .flip-card {
   background-color: transparent;
@@ -55,4 +56,15 @@ button {
 }
 img {
   height: 100%;
+}
+.resetBtn {
+  background-color: #0a75bc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: -35px;
+  right: 70px;
 }

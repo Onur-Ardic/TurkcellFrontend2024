@@ -1,6 +1,7 @@
 const cards = document.getElementsByClassName("flip-card");
 const cardInner = document.getElementsByClassName("flip-card-inner");
 const container = document.querySelector(".container");
+const resetBtn = document.querySelector(".resetBtn");
 const data = [
   {
     id: 1,
@@ -88,3 +89,9 @@ for (let i = 0; i < cards.length; i++) {
     }
   });
 }
+resetBtn.addEventListener("click", () => {
+  for (let i = 0; i < cards.length; i++) {
+    cardInner[i].classList.remove("flipClass");
+    cardInner[i].classList.remove("match");
+  }
+});

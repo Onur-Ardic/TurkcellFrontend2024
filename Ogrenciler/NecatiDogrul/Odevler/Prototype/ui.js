@@ -16,6 +16,19 @@ UI.prototype.removeChilds = function (element) {
     element.removeChild(element.firstChild);
   }
 };
+UI.prototype.validation = function () {
+  if (
+    nameInput.value === "" ||
+    directorInput.value === "" ||
+    yearInput.value === "" ||
+    genreInput.value === "" ||
+    imageInput.value === ""
+  ) {
+    alert("Tüm alanları doldurunuz!");
+    return false;
+  }
+  return true;
+};
 UI.prototype.display = function (array) {
   this.removeChilds(cards);
   array.map((movie) => {
@@ -100,17 +113,4 @@ UI.prototype.clean = function () {
   yearInput.value = "";
   genreInput.value = "";
   imageInput.value = "";
-};
-UI.prototype.validation = function () {
-  if (
-    nameInput.value === "" ||
-    directorInput.value === "" ||
-    yearInput.value === "" ||
-    genreInput.value === "" ||
-    imageInput.value === ""
-  ) {
-    alert("Tüm alanları doldurunuz!");
-    return false;
-  }
-  return true;
 };
