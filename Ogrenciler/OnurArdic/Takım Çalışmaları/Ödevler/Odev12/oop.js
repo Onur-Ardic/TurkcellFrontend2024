@@ -1,9 +1,8 @@
 const movieName = document.getElementById('moviename')
 const movieDirector = document.getElementById('moviedirector')
 const movieYear = document.getElementById('year')
-const movieCategory = document.getElementById('category')
 const movieİmage = document.getElementById('movieimage')
-
+const movieCategory = document.getElementById('category')
 const saveMovieButton = document.getElementById('modal-form') //inside the modal
 const addMoviebutton = document.getElementById('addMovieButton')
 const movieWrapper = document.querySelector('.movie-card-wrapper')
@@ -24,34 +23,56 @@ const BaseCategories = [
   'Animation',
 ]
 
-addMoviebutton.addEventListener('click', () => {
-  document.getElementById('staticBackdropLabel').innerText = 'Film Ekle'
-  document.getElementById('saveMovie').innerText = 'Ekle'
-})
-
-class movie {
-  constructor(name, image, year, director, category) {
+class Movie {
+  constructor(name, director, year, category, image) {
     this.name = name
-    this.image = image
-    this.year = year
     this.director = director
+    this.year = year
     this.category = category
+    this.image = image
   }
 }
 
-saveMovieButton.addEventListener('submit', (e) => {
-  e.preventDefault()
-  const mymovie = new movie(
-    movieName.value.trim(),
-    movieDirector.value.trim(),
-    movieYear.value.trim(),
-    movieCategory.value.trim(),
-    movieİmage.value.trim(),
-  )
-
-  if (document.getElementById('staticBackdropLabel').innerText == 'Film Ekle') {
-    movieStorage.AddMovie(mymovie)
-  } else {
-    movieStorage.UpdateMovie(movieNameToUpdate, mymovie)
+class Storage {
+  constructor() {
+    this.movieList = JSON.parse(localStorage.getItem('movieList')) || []
   }
-})
+
+  addMovie(movie) {
+    this.movieList.push(movie)
+    localStorage.setItem('movieList', JSON.stringify(this.movieList))
+  }
+
+  deleteMovie(movieName) {
+    this.movieList = this.movieList.filter((movie) => movie.name !== movieName)
+    localStorage.setItem('movieList', JSON.stringify(this.movieList))
+  }
+
+  updateMovie(movieNameToUpdate, updatedMovie) {
+    this.movieList = this.movieList.map((movie) => {
+      if (movie.name === movieNameToUpdate) {
+        return updatedMovie
+      }
+      return movie
+    })
+    localStorage.setItem('movieList', JSON.stringify(this.movieList))
+  }
+}
+
+class DropdownElements {
+  constructor(BaseCategories) {
+    this.categories = BaseCategories
+    this.categories.forEach((category) => {
+      const option = document.createElement('option')
+      option.textContent = category
+      movieCategory.appendChild(option)
+
+      console.log(option)
+    })
+  }
+
+  addCategory(element) {
+    this.categories.push(element)
+  }
+}
+const dropDown = new DropdownElements(BaseCategories)
