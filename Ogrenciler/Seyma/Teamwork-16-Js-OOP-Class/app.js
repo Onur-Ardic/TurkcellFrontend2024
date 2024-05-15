@@ -8,22 +8,11 @@ const inputs = {
 
 UI.displayMovies();
 
-//Validation kontrol
-function updateBorderColor(input) {
-  if (input.value.trim() === "") {
-    input.style.borderColor = "red";
-  } else {
-    input.style.borderColor = "green";
-  }
-}
-
-//İnputs Events
 Object.values(inputs).forEach((input) => {
-  input.addEventListener("focus", () => updateBorderColor(input));
-  input.addEventListener("input", () => updateBorderColor(input));
+  input.addEventListener("focus", () => UI.updateBorderColor(input));
+  input.addEventListener("input", () => UI.updateBorderColor(input));
 });
 
-//Formda submit butonuna tıklandığında sayfa yenilenmiyor
 document.getElementById("form").addEventListener("submit", (e) => {
   e.preventDefault();
   Movies.addMovie();

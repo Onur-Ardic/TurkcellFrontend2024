@@ -2,15 +2,13 @@ class UI {
   static displayMovies() {
     const moviesList = document.getElementById("moviesList");
     moviesList.textContent = "";
-
-    let filmListesi = JSON.parse(localStorage.getItem("movies")) || [];
+    let filmListesi = Storage.getMoviesFromStorage();
 
     filmListesi.forEach((film) => {
       const listItem = this.createMovieCard(film);
       moviesList.appendChild(listItem);
     });
-    storage.getMoviesFromStorage();
-
+    Storage.getMoviesFromStorage();
     this.createDeleteButton();
   }
 
@@ -58,7 +56,7 @@ class UI {
     ul.className = "list-unstyled";
     ul.appendChild(this.createListItem(`Yönetmen: ${movie.director}`));
     ul.appendChild(this.createListItem(`Yılı: ${movie.year}`));
-    ul.appendChild(this.createMovieTypeItem(movie)); // Update to use a specific function for movie type
+    ul.appendChild(this.createMovieTypeItem(movie));
     return ul;
   }
 
@@ -74,9 +72,9 @@ class UI {
     const movieTypes = {
       1: "Bilim Kurgu",
       2: "Aksiyon",
-      3: "Drama",
-      4: "Komedi",
-      5: "Korku",
+      3: "Macera",
+      4: "Fantastik",
+      5: "Romantik",
     };
 
     const li = document.createElement("li");
@@ -112,7 +110,7 @@ class UI {
     button.textContent = "Sil";
     button.className = "btn btn-danger mt-3 me-2";
     button.onclick = () => {
-      storage.deleteMovieFromStorage(movieId);
+      Storage.deleteMovieFromStorage(movieId);
       UI.displayMovies();
       UI.clearInputs();
     };
@@ -131,7 +129,7 @@ class UI {
       movie.year = parseInt(inputs.year.value.trim(), 10);
       movie.movieType = inputs.movieType.value.trim();
       movie.imageUrl = inputs.imageUrl.value.trim();
-      storage.updateMovieFromStorage(movie);
+      Storage.updateMovieFromStorage(movie);
       document.getElementById("filmOlustur").style.display = "block";
       this.displayMovies();
       UI.clearInputs();
@@ -149,8 +147,8 @@ class UI {
 
   static clearInputs() {
     Object.values(inputs).forEach((input) => {
-      input.value = ""; //Reset value after
-      input.style.borderColor = ""; // Reset the border color
+      input.value = "";
+      input.style.borderColor = "";
     });
     const elements = document.getElementsByClassName("guncelleButton");
     while (elements.length > 0) {
@@ -159,5 +157,12 @@ class UI {
   }
   static submitNewMovie(e) {
     e.preventDefault();
+  }
+  static updateBorderColor(input) {
+    if (input.value.trim() === "") {
+      input.style.borderColor = "red";
+    } else {
+      input.style.borderColor = "green";
+    }
   }
 }

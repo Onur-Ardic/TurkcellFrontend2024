@@ -1,11 +1,11 @@
 class Storage {
-  addMovieToStorage(newMovie) {
+  static addMovieToStorage(newMovie) {
     let movies = this.getMoviesFromStorage();
     movies.push(newMovie);
     localStorage.setItem("movies", JSON.stringify(movies));
   }
 
-  deleteMovieFromStorage(movieId) {
+  static deleteMovieFromStorage(movieId) {
     let movies = this.getMoviesFromStorage();
     movies.forEach((movie, index) => {
       if (movie.id == movieId) {
@@ -15,12 +15,12 @@ class Storage {
     });
   }
 
-  getMoviesFromStorage() {
+  static getMoviesFromStorage() {
     let movies = JSON.parse(localStorage.getItem("movies")) || [];
     return movies;
   }
 
-  updateMovieFromStorage(updateMovie) {
+  static updateMovieFromStorage(updateMovie) {
     let movies = this.getMoviesFromStorage();
     movies.forEach((movie, index) => {
       if (movie.id == updateMovie.id) {
@@ -29,9 +29,8 @@ class Storage {
       localStorage.setItem("movies", JSON.stringify(movies));
     });
   }
-
-  getMovieFromStorage(movieId) {
+  static getMovieFromStorage(movieId) {
     let movies = this.getMoviesFromStorage();
     return movies.find((movie) => movie.id == movieId);
-  }
+  } 
 }

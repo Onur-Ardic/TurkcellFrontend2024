@@ -1,6 +1,14 @@
-const storage = new Storage();
+
 
 class Movies {
+  constructor(name, director, year, movieType, imageUrl) {
+    this.name = name;
+    this.director = director;
+    this.year = year;
+    this.movieType = movieType;
+    this.imageUrl = imageUrl;
+    this.id = crypto.randomUUID();
+     }
   static addMovie() {
     const newMovie = {
       name: inputs.name.value.trim(),
@@ -10,20 +18,11 @@ class Movies {
       imageUrl: inputs.imageUrl.value.trim(),
       id: crypto.randomUUID(),
     };
-    storage.addMovieToStorage(newMovie); // storage class değiştiğinde burayı da değiştir
+    Storage.addMovieToStorage(newMovie); 
   }
   static deleteMovie(movieId) {
-    storage.deleteMovieFromStorage(movieId);
-    let ui = new UI();
-    ui.displayMovies();
-  }
-
-  constructor(name, director, year, movieType, imageUrl) {
-    this.name = name;
-    this.director = director;
-    this.year = year;
-    this.movieType = movieType;
-    this.imageUrl = imageUrl;
-    this.id = crypto.randomUUID();
+    Storage.deleteMovieFromStorage(movieId);
+    UI.displayMovies();
   }
 }
+
