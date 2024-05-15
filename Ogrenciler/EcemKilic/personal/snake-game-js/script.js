@@ -9,6 +9,7 @@ let move = 20; // Hareket hızı (px)
 const boardWidth = gameBoard.offsetWidth;
 const boardHeight = gameBoard.offsetHeight;
 const snakeSize = snake.offsetWidth;
+var snakeHeight = 20;
 
 document.addEventListener('keydown', event => {
     if (event.key === 'ArrowUp') {
@@ -44,10 +45,6 @@ function updatePosition() {
     // Yılanın yeni pozisyonunu güncelle
     snake.style.left = snakex + 'px';
     snake.style.top = snakey + 'px';
-    console.log(`${snakex}`);
-    console.log(`${snakey}`);
-    console.log(`${foodx}`);
-    console.log(`${foody}`);
 }
 
 function createFood() {
@@ -55,7 +52,6 @@ function createFood() {
     foody = Math.floor(Math.random()*30)*20;
     food.style.left = foodx + 'px';
     food.style.top = foody + 'px';
-    console.log(`${foodx} ${foody}`)
 }
 
 function eatFood() {
@@ -63,5 +59,7 @@ function eatFood() {
 }
 
 function updateBody() {
-    snake.style.height = 100 + 'px';
+    snakeHeight = parseFloat(snakeHeight) + parseFloat(100);
+    snake.style.height = snakeHeight + 'px';
+    console.log(snakeHeight);
 }
