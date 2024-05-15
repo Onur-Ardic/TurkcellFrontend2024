@@ -1,6 +1,5 @@
 export class UI {
   static createButton(text, classes, onClick) {
-    // Tek bir buton oluşturur ve döndürür
     const button = document.createElement("button");
     button.classList.add(...classes);
     button.textContent = text;
@@ -9,7 +8,6 @@ export class UI {
   }
 
   static createButtonDiv(index, film) {
-    // Sil ve Güncelle butonlarını oluşturur ve döndürür
     const buttonDiv = document.createElement("div");
     buttonDiv.classList.add("d-flex", "justify-content-center");
 
@@ -28,7 +26,6 @@ export class UI {
   }
 
   static createElement(tag, classes = [], attributes = {}) {
-    // Yeni bir HTML elementi oluşturur
     const element = document.createElement(tag);
     classes.forEach((cls) => element.classList.add(cls));
     for (const key in attributes) {
