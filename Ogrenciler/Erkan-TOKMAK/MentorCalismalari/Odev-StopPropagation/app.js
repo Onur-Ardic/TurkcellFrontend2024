@@ -6,6 +6,10 @@ document.querySelector("#myCheckBox").addEventListener("click", (e) => {
     console.log("CheckBox İşaretlendi");
     e.stopPropagation();
 });
+document.querySelector("#myCheckBox1").addEventListener("click", (e) => {
+    console.log("CheckBox 1 İşaretlendi");
+    // e.stopPropagation();
+});
 
 
 // Örnek 2
@@ -15,8 +19,9 @@ const test1 = (e) => {
     console.log("test1 çalıştı");
     e.stopImmediatePropagation();
 }
-const test2 = () => { 
+const test2 = (e) => { 
     console.log("test2 çalıştı");
+    e.stopImmediatePropagation();
 }
-myBtn.addEventListener("click", test1);
 myBtn.addEventListener("click", test2);
+myBtn.addEventListener("click", test1);

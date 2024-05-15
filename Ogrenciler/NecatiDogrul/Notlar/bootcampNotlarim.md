@@ -101,3 +101,9 @@ event capturing nedir eventbubbling nedir farkları nedir
 map konusuna dikkat
 
 prototype mülakatlarda soruyor varol hoca
+
+react react native react query
+bu anahtar kelimeleri linkedinde kullana
+anahtar kelimelerle ilgili paylaşımlar yap deneyimlerde bu kelimeleri bulundur
+
+linkedin doğrulama

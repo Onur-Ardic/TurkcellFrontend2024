@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
     <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
         #game-board {
             width: 600px;
             height: 600px;
             border: 1px solid #000;
             margin: 25px auto;
-            position: relative;
-            overflow-y: hidden;
-            overflow-x: hidden;
+            display: grid;
+            grid-template-columns: repeat(30, 20px);
+            grid-template-rows: repeat(30, 20px);
+            gap: 1px;
         }
+
 
         #snake {
             width: 20px;
