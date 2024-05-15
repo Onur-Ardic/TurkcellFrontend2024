@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Egemen Kaplan",
+        "department": "Stajyer",
+        "salary": 25
+    },
+    {
+        "name": "Varol Maksutoglu",
+        "department": "Bilisim",
+        "salary": 5000
+    },
+    {
+        "name": "Kgemen Eaplan",
+        "department": "IK",
+        "salary": 2500
+    }
+]
