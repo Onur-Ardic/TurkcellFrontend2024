@@ -7,6 +7,7 @@ const saveMovieButton = document.getElementById('modal-form')
 const addMoviebutton = document.getElementById('addMovieButton')
 const movieWrapper = document.querySelector('.movie-card-wrapper')
 const submitButton = document.getElementById('saveMovie')
+const editBtn = document.querySelector('.btn-warning')
 
 window.addEventListener('DOMContentLoaded', function () {
   const savedMovies = JSON.parse(localStorage.getItem('movies'))
@@ -25,7 +26,7 @@ function createMovie() {
   const movieCategoryValue = movieCategory.value.trim()
   const movieImageValue = movieImage.value.trim()
 
-  return new Movie(
+  return new movie(
     movieNameValue,
     movieDirectorValue,
     movieYearValue,
@@ -37,13 +38,22 @@ function createMovie() {
 saveMovieButton.addEventListener('click', function (event) {
   event.preventDefault()
   const myMovie = createMovie()
-  console.log(myMovie)
 })
 
 addMoviebutton.addEventListener('click', function (event) {
   const myMovie = createMovie()
   console.log(myMovie)
+  document.getElementById('staticBackdropLabel').innerText = 'Film Ekle'
+  clearForm()
 })
+
+function clearForm() {
+  movieName.value = ''
+  movieDirector.value = ''
+  movieYear.value = ''
+  movieImage.value = ''
+  movieCategory.value = ''
+}
 
 submitButton.addEventListener('click', function (event) {
   event.preventDefault()
@@ -53,16 +63,6 @@ submitButton.addEventListener('click', function (event) {
   localStorage.setItem('movies', JSON.stringify(savedMovies))
   displayMovie(myMovie)
 })
-
-class Movie {
-  constructor(name, director, year, category, image) {
-    this.name = name
-    this.director = director
-    this.year = year
-    this.category = category
-    this.image = image
-  }
-}
 
 function displayMovie(movie) {
   const movieDiv = document.createElement('div')
@@ -92,7 +92,6 @@ function displayMovie(movie) {
       </div>
     `
 
-  // Yeni oluşturulan film kartını movieWrapper içine ekleyin
   movieWrapper.appendChild(movieDiv)
 
   const deleteBtn = movieDiv.querySelector('.delete-button')
@@ -109,21 +108,31 @@ function displayMovie(movie) {
 }
 
 addMoviebutton.addEventListener('click', function () {
-  const newMovie = createMovie() // Yeni bir film nesnesi oluştur
-  fillModal(newMovie) // Oluşturulan film nesnesini fillModal fonksiyonuna ile
+  const newMovie = createMovie()
+  fillModal(newMovie.name)
 })
 
-function fillModal(newMovie) {
+editBtn.addEventListener('click', function (event) {
+  const movieDiv = event.target.closest('.card')
+  const movieName = movieDiv.dataset.key
   const savedMovies = JSON.parse(localStorage.getItem('movies')) || []
-  const movieName = document.getElementById('moviename').value
-  const movie = savedMovies.find((movie) => movie.name === movieName)
+  const updateMovie = savedMovies.find((movie) => movie.name === movieName)
 
-  if (movie) {
-    document.getElementById('moviename').value = movie.name
-    document.getElementById('moviedirector').value = movie.director
-    document.getElementById('year').value = movie.year
-    document.getElementById('movieimage').value = movie.image
-    document.getElementById('category').value = movie.category
+  localStorage.removeItem(updateMovie)
+  fillModal(updateMovie)
+})
+
+function fillModal(selectedMovieName) {
+  document.getElementById('staticBackdropLabel').innerText = 'Güncelle'
+  const savedMovies = JSON.parse(localStorage.getItem('movies')) || []
+  const updateMovie = savedMovies.find((movie) => movie.name === selectedMovieName)
+
+  if (updateMovie) {
+    document.getElementById('moviename').value = updateMovie.name
+    document.getElementById('moviedirector').value = updateMovie.director
+    document.getElementById('year').value = updateMovie.year
+    document.getElementById('movieimage').value = updateMovie.image
+    document.getElementById('category').value = updateMovie.category
   } else {
     console.log('Movie not found in local storage.')
   }
