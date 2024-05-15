@@ -1,0 +1,17 @@
+{
+  "name": "Teamwork-16-Js-OOP-Class",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass -w scss:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.77.0",
+    "scss": "^0.2.4"
+  }
+}
