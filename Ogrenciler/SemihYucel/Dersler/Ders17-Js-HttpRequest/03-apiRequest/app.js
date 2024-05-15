@@ -9,13 +9,11 @@ function getAllData() {
             const data = JSON.parse(this.responseText);
             list.innerHTML = ""; 
             data.forEach((post) => {
-                const row = document.createElement('div');
+                const row = document.createElement('tr');
                 row.innerHTML = `
-                <div class="card"> 
-                <h3>${post.title}</h3> 
-                <p>${post.body}</p> 
-                <p></p> 
-                </div>
+                    <td>${post.title}</td>
+                    <td>${post.body}</td>
+                    <td></td>
                 `;
                 list.appendChild(row);
 
@@ -28,7 +26,7 @@ function getAllData() {
                         const imageElement = document.createElement('img');
                         imageElement.src = imageUrl;
                         imageElement.classList.add('img-thumbnail');
-                        row.querySelector('p:last-child').appendChild(imageElement);
+                        row.querySelector('td:last-child').appendChild(imageElement);
                     } else {
                         console.error('Resim yüklenirken hata oluştu.');
                     }
