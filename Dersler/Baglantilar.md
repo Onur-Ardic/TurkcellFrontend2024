@@ -18,9 +18,4 @@
 
 ## Okumalar
 
-
-
-!
-
-.
-
+- [This Nedir?](https://medium.com/frontend-development-with-js/javascript-this-ne-anlama-geliyor-77d548e969ae)
