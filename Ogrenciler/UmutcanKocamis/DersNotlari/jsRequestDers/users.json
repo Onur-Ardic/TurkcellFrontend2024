@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Umutcan",
+    "department": "Frontend",
+    "salary": "5000"
+  },
+  {
+    "name": "Abdullah",
+    "department": "Full-Stack",
+    "salary": "8000"
+  },
+  {
+    "name": "Necati",
+    "department": "Backend",
+    "salary": "5000"
+  }
+]

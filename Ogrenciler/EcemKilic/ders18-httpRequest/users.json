@@ -1,0 +1,17 @@
+{
+    {
+        "name": "varol maksutoğlu",
+        "department": "bilişim",
+        "salary": 5000
+    },
+    {
+        "name": "ecem kılıç",
+        "department": "bilişim",
+        "salary": 3000
+    },
+    {
+        "name": "ezgi karakaya",
+        "department": "bilişim",
+        "salary": 1000
+    }
+}
