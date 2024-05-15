@@ -6,8 +6,7 @@ const inputs = {
   imageUrl: document.getElementById("imageUrl"),
 };
 
-const ui = new UI();
-ui.displayMovies();
+UI.displayMovies();
 
 //Validation kontrol
 function updateBorderColor(input) {
@@ -27,9 +26,6 @@ Object.values(inputs).forEach((input) => {
 //Formda submit butonuna tıklandığında sayfa yenilenmiyor
 document.getElementById("form").addEventListener("submit", (e) => {
   e.preventDefault();
-  var movieInstance = new Movies();
-  movieInstance.addMovie();
-  ui.displayMovies();
-
+  Movies.addMovie();
+  UI.displayMovies();
 });
-

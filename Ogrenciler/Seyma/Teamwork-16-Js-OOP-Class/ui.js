@@ -1,83 +1,76 @@
-
 class UI {
-
-  static displayMovies (){
+  static displayMovies() {
     const moviesList = document.getElementById("moviesList");
     moviesList.textContent = "";
-  
+
     let filmListesi = JSON.parse(localStorage.getItem("movies")) || [];
-    
+
     filmListesi.forEach((film) => {
-      const listItem = this.createMovieCard (film);
+      const listItem = this.createMovieCard(film);
       moviesList.appendChild(listItem);
     });
     storage.getMoviesFromStorage();
-  
+
     this.createDeleteButton();
-    
-  };
-  
-  static createMovieCard (movie) {
-    
+  }
+
+  static createMovieCard(movie) {
     const listItem = document.createElement("li");
-  
+
     listItem.className = "mb-3";
-  
+
     const card = document.createElement("div");
     card.className = "card bg-light border-0 text-secondary shadow-sm";
     card.style.width = "22rem";
-  
+
     const cardBody = this.createCardBody(movie);
     card.appendChild(cardBody);
     listItem.appendChild(card);
     return listItem;
-  };
-  
-  static createCardBody (movie) {
+  }
+
+  static createCardBody(movie) {
     const cardBody = document.createElement("div");
     cardBody.className = "card-body";
-  
+
     const title = document.createElement("h5");
     title.className = "card-title";
     title.textContent = movie.name;
     cardBody.appendChild(title);
-  
+
     const ul = this.createDetailsList(movie);
     cardBody.appendChild(ul);
-  
+
     const image = this.createImage(movie.imageUrl);
     cardBody.appendChild(image);
-  
+
     const updateBtn = this.createUpdateButton(movie);
     cardBody.appendChild(updateBtn);
-  
+
     const deleteButton = this.createDeleteButton(movie.id);
     cardBody.appendChild(deleteButton);
-  
+
     return cardBody;
-  };
-  
-  static createDetailsList (movie) {
-  
+  }
+
+  static createDetailsList(movie) {
     const ul = document.createElement("ul");
     ul.className = "list-unstyled";
     ul.appendChild(this.createListItem(`Yönetmen: ${movie.director}`));
     ul.appendChild(this.createListItem(`Yılı: ${movie.year}`));
-    ul.appendChild(
-      this.createListItem(`Film Türü: ${movie.movieType}`)
-    );
+    ul.appendChild(this.createListItem(`Film Türü: ${movie.movieType}`));
     return ul;
-  };
-  
-  static createListItem (text) {
+  }
+
+  static createListItem(text) {
     const li = document.createElement("li");
     const p = document.createElement("p");
     p.className = "card-text";
     p.textContent = text;
     li.appendChild(p);
     return li;
-  };
-  static movieTypes () {
+  }
+  static movieTypes() {
     const movieTypes = {
       1: "Bilim Kurgu",
       2: "Aksiyon",
@@ -88,20 +81,21 @@ class UI {
     const limovieType = document.createElement("li");
     const pmovieType = document.createElement("p");
     pmovieType.className = "card-text";
-      pmovieType.textContent = `Film Türü : ${
-        movieTypes[movie.movieType] || "Bilinmeyen Tür"}`;
-      limovieType.appendChild(pmovieType);
-      document.querySelector("ul").appendChild(limovieType);
+    pmovieType.textContent = `Film Türü : ${
+      movieTypes[movie.movieType] || "Bilinmeyen Tür"
+    }`;
+    limovieType.appendChild(pmovieType);
+    document.querySelector("ul").appendChild(limovieType);
   }
-  
-  static createImage (imageUrl) {
+
+  static createImage(imageUrl) {
     const image = document.createElement("img");
     image.style.width = "18rem";
     image.src = imageUrl;
     return image;
-  };
-  
-  static createUpdateButton (movie) {
+  }
+
+  static createUpdateButton(movie) {
     const button = document.createElement("button");
     button.textContent = "Güncelle";
     button.className = "btn btn-primary mt-3";
@@ -110,22 +104,21 @@ class UI {
       this.guncelleButon(movie);
     };
     return button;
-    
-  };
-  
-  static createDeleteButton (movieId) {
+  }
+
+  static createDeleteButton(movieId) {
     const button = document.createElement("button");
     button.textContent = "Sil";
     button.className = "btn btn-danger mt-3 me-2";
     button.onclick = () => {
       storage.deleteMovieFromStorage(movieId);
       UI.displayMovies();
-      clearInputs();
+      UI.clearInputs();
     };
     return button;
-  };
-    
-  static guncelleButon (movie) {
+  }
+
+  static guncelleButon(movie) {
     const guncelleButon = document.createElement("button");
     guncelleButon.textContent = "Güncelle";
     guncelleButon.className = "btn btn-danger mt-3 guncelleButton";
@@ -140,19 +133,19 @@ class UI {
       storage.updateMovieFromStorage(movie);
       document.getElementById("filmOlustur").style.display = "block";
       this.displayMovies();
-      clearInputs();
+      UI.clearInputs();
       submitNewMovie;
     };
   }
-  
-  static fillFormWithMovieData (movie) {
+
+  static fillFormWithMovieData(movie) {
     inputs.name.value = movie.name;
     inputs.director.value = movie.director;
     inputs.year.value = movie.year.toString();
     inputs.movieType.value = movie.movieType;
     inputs.imageUrl.value = movie.imageUrl;
-  };
-  
+  }
+
   static clearInputs() {
     Object.values(inputs).forEach((input) => {
       input.value = ""; //Reset value after
@@ -167,6 +160,3 @@ class UI {
     e.preventDefault();
   }
 }
-
-
-
