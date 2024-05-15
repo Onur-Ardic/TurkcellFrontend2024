@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js OOP Class Sinema Koleksiyon</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .input-section {
+        background: linear-gradient(
+            rgba(22, 28, 45, 0.5),
+            rgba(22, 28, 45, 0.5)
+          ),
+          url("https://ares.shiftdelete.net/2024/01/harry-potter-dizisi-1.jpeg")
+            no-repeat center center/cover;
+      }
+      .moviesContainer {
+        background-color: #deeaff;
+        min-height: 100vh;
+      }
+      .movie-image {
+        height: 400px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="input-section">
+      <div class="container">
+        <div class="row py-5 justify-content-center align-items-center">
+          <h1 class="text-white py-5 fw-bold text-center">
+            Kendi Film Koleksiyonunuzu Oluşturun
+          </h1>
+          <form
+            id="inputForm"
+            class="row g-3 needs-validation text-white"
+            novalidate
+          >
+            <div class="col-md-6 col-6 col-lg-6">
+              <label for="title" class="form-label">Movie Title</label>
+              <input type="text" class="form-control" id="title" required />
+              <div class="invalid-feedback">Title required</div>
+            </div>
+            <div class="col-md-6 col-6 col-lg-6">
+              <label for="director" class="form-label">Movie Director</label>
+              <input type="text" class="form-control" id="director" required />
+            </div>
+            <div class="col-md-8 col-8 col-lg-8">
+              <label for="description" class="form-label"
+                >Movie Description</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="description"
+                required
+                maxlength="170"
+              />
+              <div class="invalid-feedback">Description required</div>
+            </div>
+            <div class="col-md-4 col-4 col-lg-4">
+              <label for="genre" class="form-label">Movie Genre</label>
+              <select class="form-select" id="genre" required>
+                <option selected disabled value="">Choose a Genre</option>
+                <option>Action</option>
+                <option>Drama</option>
+                <option>Romantic</option>
+                <option>Romantic Comedy</option>
+                <option>Science Fiction</option>
+                <option>Horror</option>
+                <option>Comedy</option>
+              </select>
+              <div class="invalid-feedback">Genre required</div>
+            </div>
+            <div class="col-md-4 col-4 col-lg-4">
+              <label for="releaseDate" class="form-label">Release Date</label>
+              <input
+                type="number"
+                class="form-control"
+                id="releaseDate"
+                required
+              />
+              <div class="invalid-feedback">Release date required</div>
+            </div>
+            <div class="col-md-8 col-8 col-lg-8">
+              <label for="imageSource" class="form-label">Image Source</label>
+              <input
+                type="text"
+                class="form-control"
+                id="imageSource"
+                required
+              />
+              <div class="invalid-feedback">Image source required</div>
+            </div>
+          </form>
+          <div
+            class="col-md-12 col-12 col-lg-12 d-flex justify-content-end mt-3"
+          >
+            <button
+              id="submitButton"
+              class="btn btn-success mx-3 fw-medium"
+              type="submit"
+            >
+              Submit Form
+            </button>
+            <button
+              disabled
+              id="updateButton"
+              class="btn btn-warning fw-medium"
+            >
+              Update Form
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="moviesContainer">
+      <div class="container">
+        <div class="row">
+          <h1 class="py-5 fw-bold text-center">Eklenen Filmler</h1>
+          <div class="row" id="movies"></div>
+        </div>
+      </div>
+    </section>
+    <script src="movieCrud.js"></script>
+    <script src="ui.js"></script>
+    <script src="movie.js"></script>
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
