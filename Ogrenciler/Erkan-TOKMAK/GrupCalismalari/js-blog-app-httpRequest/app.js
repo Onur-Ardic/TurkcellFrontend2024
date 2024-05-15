@@ -5,6 +5,7 @@ tarih = tarih.toDateString();
 function getAllData() {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+    xhr.send();
     xhr.onload = function () {
         console.log("xhr onload");
         if (this.status === 200) {
@@ -32,12 +33,10 @@ function getAllData() {
             </div>
                 `
             }
-
         } else {
             console.log('Bir hata oluştu, veriler alınamadı.');
         }
     }
-    xhr.send();
+    
 }
-
 window.addEventListener('load', getAllData);
