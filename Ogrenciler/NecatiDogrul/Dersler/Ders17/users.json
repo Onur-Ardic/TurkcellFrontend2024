@@ -1,0 +1,17 @@
+[
+    {
+        "name":"Varol Maksutoğlu",
+        "department":"Bilişim",
+        "salary":5000
+    },
+    {
+        "name":"Mehmet Yılmaz",
+        "department":"İnsan Kaynakları",
+        "salary":4000
+    },
+    {
+        "name":"Ahmet Yılmaz",
+        "department":"İnsan Kaynakları",
+        "salary":3000
+    }
+]
