@@ -49,16 +49,12 @@ UI.prototype.addTask = function (Storage, Task) {
     this.selectedTask = Task;
   });
 
-  //   let addButtonInsidetheModal = tdElement.querySelector("#updateTaskIcon");
-  //   updateIcon.addEventListener("click", () => {
-  //     //Storage.updateTask(Task);
-  //     this.FillModal(Task);
-  //   });
-
   trElement.appendChild(tdElement);
   document.getElementById("elif").appendChild(trElement);
 
-  Storage.addTask(Task);
+  if (!Storage.isExist(Task)) {
+    Storage.addTask(Task);
+  }
 };
 
 UI.prototype.DeleteTask = function (TaskId) {
@@ -66,6 +62,7 @@ UI.prototype.DeleteTask = function (TaskId) {
 };
 
 UI.prototype.FillModal = function (Task) {
+  document.getElementById("staticBackdropLabel").textContent = "Update Task";
   document.getElementById("taskName").value = Task.name;
   document.getElementById("taskExp").value = Task.explanation;
   const statusSelect = document.getElementById("taskStatus");

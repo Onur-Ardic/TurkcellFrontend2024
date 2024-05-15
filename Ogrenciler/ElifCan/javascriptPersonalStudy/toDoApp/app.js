@@ -11,6 +11,24 @@ const modalElement = document.getElementById("staticBackdrop");
 modalElement.addEventListener("hidden.bs.modal", function () {
   ui.selectedTask = null;
 });
+
+document
+  .getElementById("staticBackdrop")
+  .addEventListener("show.bs.modal", () => {
+    if (ui.selectedTask == null) {
+      document.getElementById("staticBackdropLabel").textContent = "Add Task";
+      const inputFields = document
+        .getElementById("modal-form")
+        .querySelectorAll('input[type="text"]');
+      inputFields.forEach((input) => (input.value = ""));
+
+      const radioButtons = document.querySelectorAll('input[type="radio"]');
+      radioButtons.forEach((radio) => (radio.checked = false));
+
+      const statusDropdown = document.getElementById("taskStatus");
+      statusDropdown.selectedIndex = 0;
+    }
+  });
 const taskStorage = new Storage();
 const ui = new UI();
 submitTask.addEventListener("click", addTask);
@@ -49,18 +67,13 @@ function addTask() {
     ui.UpdateTask(task, taskStorage);
     //storage'a da göndereceğiz...
   }
-  //   console.log(ui.selectedTask);
-  //   let trElement = document.createElement("tr");
-  //   toDoList.forEach((item) => {
-  //     Object.keys(item).forEach((key) => {
-  //       let tdElement = document.createElement("td");
-  //       let tdText = document.createTextNode(item[key]);
-  //       tdElement.appendChild(tdText);
-  //       trElement.appendChild(tdElement);
-  //     });
-  //   });
-  //   document.getElementById("elif").appendChild(trElement);
 }
+
+window.onload = function () {
+  taskStorage.todoList.forEach((task) => {
+    ui.addTask(taskStorage, task);
+  });
+};
 
 // function createTable() {
 //   let table = document.createElement("table");

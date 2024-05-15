@@ -24,7 +24,9 @@ Storage.prototype.UpdateTask = function (Task, taskToUpdate) {
   });
   localStorage.setItem("todoList", JSON.stringify(this.todoList));
 };
-
+Storage.prototype.isExist = function (Task) {
+  return this.todoList.includes(Task);
+};
 export { Storage };
 
 //  Storage.prototype.AddMovie = function (movie) {
