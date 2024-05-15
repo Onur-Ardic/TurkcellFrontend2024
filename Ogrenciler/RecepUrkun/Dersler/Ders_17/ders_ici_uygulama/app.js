@@ -1,11 +1,11 @@
 class Request {
     static getAllData() {
         const xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+        xhr.open("GET", "https://jsonplaceholder.typicode.com/posts?_limit=20", true);
         xhr.onload = function () {
             let cards = document.querySelector(".cardContainer")
             if (this.status === 200) {
-                const datas = JSON.parse(this.response).splice(0, 20)
+                const datas = JSON.parse(this.response)
                 datas.forEach((card) => {
                     cards.innerHTML += `
                     <div class="card rounded-4" style="width: 18rem;">
