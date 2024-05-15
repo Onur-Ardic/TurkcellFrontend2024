@@ -58,7 +58,7 @@ class UI {
     ul.className = "list-unstyled";
     ul.appendChild(this.createListItem(`Yönetmen: ${movie.director}`));
     ul.appendChild(this.createListItem(`Yılı: ${movie.year}`));
-    ul.appendChild(this.createListItem(`Film Türü: ${movie.movieType}`));
+    ul.appendChild(this.createMovieTypeItem(movie)); // Update to use a specific function for movie type
     return ul;
   }
 
@@ -70,7 +70,7 @@ class UI {
     li.appendChild(p);
     return li;
   }
-  static movieTypes() {
+  static createMovieTypeItem(movie) {
     const movieTypes = {
       1: "Bilim Kurgu",
       2: "Aksiyon",
@@ -78,14 +78,15 @@ class UI {
       4: "Komedi",
       5: "Korku",
     };
-    const limovieType = document.createElement("li");
-    const pmovieType = document.createElement("p");
-    pmovieType.className = "card-text";
-    pmovieType.textContent = `Film Türü : ${
+
+    const li = document.createElement("li");
+    const p = document.createElement("p");
+    p.className = "card-text";
+    p.textContent = `Film Türü: ${
       movieTypes[movie.movieType] || "Bilinmeyen Tür"
     }`;
-    limovieType.appendChild(pmovieType);
-    document.querySelector("ul").appendChild(limovieType);
+    li.appendChild(p);
+    return li;
   }
 
   static createImage(imageUrl) {
