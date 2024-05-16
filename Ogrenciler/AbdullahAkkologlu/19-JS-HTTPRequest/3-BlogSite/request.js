@@ -20,17 +20,4 @@ class Request {
     };
     xhr.send();
   }
-  //   static getImage() {
-  //     const xhr = new XMLHttpRequest();
-  //     xhr.open("GET", "https://picsum.photos/id/0/5000/3333", true);
-  //     xhr.onload = function () {
-  //       if (this.status === 200) {
-  //         const data = JSON.parse(this.responseText);
-  //         console.log(data);
-  //       } else {
-  //         console.log("Bir hata oluştu.");
-  //       }
-  //     };
-  //     xhr.send();
-  //   }
 }
