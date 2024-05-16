@@ -38,6 +38,7 @@ class UI {
     }
 
     static loadContent = () => {
+        // Callback
         API.getPosts((posts) => {
             this.renderPosts(posts);
         });
