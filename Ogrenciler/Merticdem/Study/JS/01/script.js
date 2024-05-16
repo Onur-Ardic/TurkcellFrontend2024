@@ -47,5 +47,6 @@ if (votesInteresting === votesMindBlowing) {
 } else if (votesInteresting > votesMindBlowing) {
   console.log("Interesting fact! ");
 }
+
 // falsy values : 0, "" , null , undefined
 // truthy  values : everything else..
