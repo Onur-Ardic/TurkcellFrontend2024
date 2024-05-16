@@ -26,3 +26,16 @@
 - https://app.diagrams.net/
 - https://dont-code.net/
 - https://wallhere.com/
+
+# APIs
+- https://fakerjs.dev/
+- https://jsonplaceholder.typicode.com/
+- https://fakestoreapi.com/docs
+- https://www.themealdb.com/api.php
+- https://www.pokemon.com/us/pokedex
+- https://my-json-server.typicode.com/
+- https://api.github.com/users
+- https://www.exchangerate-api.com/
+
+# Read
+- This - https://medium.com/frontend-development-with-js/javascript-this-ne-anlama-geliyor-77d548e969ae

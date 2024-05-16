@@ -20,4 +20,5 @@
 03-05-2024: Make a Cinema Collection
 06-05-2024: Make XOX
 10-05-2024: Make a Cinema Collection with prototype
-13-05-2024:
+13-05-2024: Make a Cinema Collection with class
+15-05-2024: Make a Blog with XMLHttpRequest
