@@ -1,5 +1,3 @@
-const cards = document.getElementById("cards");
-const image = document.querySelector(".card-img-top");
 let imgId = Math.floor(Math.random() * 100);
 let postId = Math.floor(Math.random() * 80);
 class Request {

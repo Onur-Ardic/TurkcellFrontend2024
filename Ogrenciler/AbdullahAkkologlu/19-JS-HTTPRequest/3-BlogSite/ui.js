@@ -1,3 +1,5 @@
+const cards = document.getElementById("cards");
+const image = document.querySelector(".card-img-top");
 class UI {
   static createCard(titleText, textText) {
     const card = document.createElement("div");
