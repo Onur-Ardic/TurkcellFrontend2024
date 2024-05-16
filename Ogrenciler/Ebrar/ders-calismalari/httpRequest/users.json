@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Ebrar Nur",
+    "department": "software engineer",
+    "salary": 50000
+  },
+  {
+    "name": "esin",
+    "department": "software engineer",
+    "salary": 60000
+  },
+  {
+    "name": "seyma",
+    "department": "IT",
+    "salary": 70000
+  }
+]
