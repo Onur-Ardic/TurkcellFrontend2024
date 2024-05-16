@@ -1,0 +1,11 @@
+.card {
+  width: 25rem;
+}
+.card:hover {
+  background-color: #ede4c0 !important;
+}
+.card img {
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+}
