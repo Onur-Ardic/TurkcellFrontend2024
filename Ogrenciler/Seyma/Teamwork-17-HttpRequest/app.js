@@ -11,10 +11,10 @@ function getAllData() {
             data.forEach((post) => {
                 const row = document.createElement('div');
                 row.innerHTML = `
-                <div class="card"> 
-                <h3>${post.title}</h3> 
-                <p>${post.body}</p> 
-                <p></p> 
+                <div class="card col-md-6"
+                <h3 class"">${post.title}</h3> 
+                <p class="">${post.body}</p> 
+                <p></p>
                 </div>
                 `;
                 list.appendChild(row);
