@@ -11,4 +11,4 @@
 06-05-2024: Js LocalStorage & ES6 - XOX ve Movie Card Odevi
 10-05-2024: Js OOP - Prototype - Movie Card with Prototype
 13-05-2024: Js OOP - Class - Movie Card with Class
-15-05-2024:
+15-05-2024: JS Http Request

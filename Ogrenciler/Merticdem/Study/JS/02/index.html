@@ -3,119 +3,149 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>Sinema Koleksiyonu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
-      .input-area {
-        background-color: #031046;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
-
-      input,
-      textarea,
-      select {
-        border: none;
-        border-radius: 20px;
-        padding: 10px;
+      .input-section {
+        background: linear-gradient(
+            rgba(22, 28, 45, 0.5),
+            rgba(22, 28, 45, 0.5)
+          ),
+          url("https://ares.shiftdelete.net/2024/01/harry-potter-dizisi-1.jpeg")
+            no-repeat center center/cover;
       }
-
-      input:focus,
-      textarea:focus,
-      select:focus {
-        outline: none;
-        border: 2px solid #f7dffc;
-        box-shadow: 0 0 10px #f7dffc;
-        transition: border-color 0.3s, box-shadow 0.3s;
-      }
-
-      .film-cards-area {
+      .moviesContainer {
         background-color: #deeaff;
+        min-height: 100vh;
       }
-
-      .card {
-        background-color: rgb(35, 35, 35);
-      }
-
-      #save {
-        border: none;
-        background-color: rgb(255, 24, 24);
+      .movie-image {
+        height: 400px;
+        object-fit: cover;
       }
     </style>
   </head>
-
   <body>
-    <div class="input-area py-5">
-      <div class="container text-white">
-        <h2 class="row justify-content-center">
-          Kendi Film Koleksiyonunuzu Oluşturun
-        </h2>
-        <form id="form" class="row justify-content-around mt-5">
-          <div class="col-lg-5 d-flex flex-column gap-5 mb-5">
-            <input id="name" type="text" placeholder="Film adı" />
-            <select name="" id="type">
-              <option value="bilim-kurgu">Bilim Kurgu</option>
-              <option value="aksiyon">Aksiyon</option>
-              <option value="ask">Aşk</option>
-              <option value="korku-gerilim">Korku/Gerilim</option>
-              <option value="drama">Drama</option>
-              <option value="animasyon">Animasyon</option>
-              <option value="komedi">Komedi</option>
-            </select>
-            <input id="director" type="text" placeholder="Yönetmen" />
-            <input id="afis-url" type="text" placeholder="Resim URL..." />
-          </div>
-          <div class="col-lg-5 d-flex flex-column gap-5">
-            <input id="year" type="text" placeholder="Yıl" />
-            <input id="imdb" type="text" placeholder="IMDb puanı" />
-            <textarea
-              name="movie-description"
-              id="movie-description"
-              placeholder="Film açıklaması..."
-            ></textarea>
-            <input id="cast" type="text" placeholder="Başrol oyuncu kadrosu" />
-          </div>
-          <div class="row justify-content-center w-25 my-4 py-3">
-            <button class="rounded-4 p-2 text-white fw-bold" id="save">
-              Kaydet
+    <section class="input-section">
+      <div class="container">
+        <div class="row py-5 justify-content-center align-items-center">
+          <h1 class="text-white py-5 fw-bold text-center">
+            Kendi Film Koleksiyonunuzu Oluşturun
+          </h1>
+          <form
+            id="inputForm"
+            class="row g-3 needs-validation text-white"
+            novalidate
+          >
+            <div class="col-md-6 col-6 col-lg-6">
+              <label for="title" class="form-label">Movie Title</label>
+              <input type="text" class="form-control" id="title" required />
+              <div class="invalid-feedback">Title required</div>
+            </div>
+            <div class="col-md-6 col-6 col-lg-6">
+              <label for="director" class="form-label">Movie Director</label>
+              <input type="text" class="form-control" id="director" required />
+            </div>
+            <div class="col-md-8 col-8 col-lg-8">
+              <label for="description" class="form-label"
+                >Movie Description</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="description"
+                required
+                maxlength="170"
+              />
+              <div class="invalid-feedback">Description required</div>
+            </div>
+            <div class="col-md-4 col-4 col-lg-4">
+              <label for="genre" class="form-label">Movie Genre</label>
+              <select class="form-select" id="genre" required>
+                <option selected disabled value="">Choose a Genre</option>
+                <option>Action</option>
+                <option>Drama</option>
+                <option>Romantic Comedy</option>
+                <option>Science Fiction</option>
+                <option>Horror</option>
+                <option>Comedy</option>
+              </select>
+              <div class="invalid-feedback">Genre required</div>
+            </div>
+            <div class="col-md-4 col-4 col-lg-4">
+              <label for="releaseDate" class="form-label">Release Date</label>
+              <input
+                type="number"
+                class="form-control"
+                id="releaseDate"
+                required
+              />
+              <div class="invalid-feedback">Release date required</div>
+            </div>
+            <div class="col-md-8 col-8 col-lg-8">
+              <label for="imageSource" class="form-label">Image Source</label>
+              <input
+                type="text"
+                class="form-control"
+                id="imageSource"
+                required
+              />
+              <div class="invalid-feedback">Image source required</div>
+            </div>
+          </form>
+          <div
+            class="col-md-12 col-12 col-lg-12 d-flex justify-content-end mt-3"
+          >
+            <button
+              id="submitButton"
+              class="btn btn-success mx-3 fw-medium"
+              type="submit"
+            >
+              Submit Form
+            </button>
+            <button
+              disabled
+              id="updateButton"
+              class="btn btn-warning fw-medium"
+            >
+              Update Form
             </button>
           </div>
-        </form>
+        </div>
       </div>
-    </div>
-    <div class="film-cards-area py-5">
+    </section>
+    <section class="moviesContainer">
       <div class="container">
-        <div id="card-area"></div>
-        <!-- <div class="card my-5 text-white" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Film Adı</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-type"><i>Türü:</i></p>
-                            <p class="card-director"><i>Yönetmen:</i></p>
-                            <p class="card-year"><i>Yıl:</i></p>
-                            <p class="card-imdb"><i>IMDb:</i></p>
-                            <p class="card-cast"><i>Oyuncular:</i></p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+        <div class="row">
+          <h1 class="py-5 fw-bold text-center">Eklenen Filmler</h1>
+          <div class="row" id="movies"></div>
+        </div>
       </div>
-    </div>
-
+    </section>
+    <script src="movieCrud.js"></script>
+    <script src="ui.js"></script>
+    <script src="movie.js"></script>
+    <script src="main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="app.js"></script>
   </body>
 </html>
