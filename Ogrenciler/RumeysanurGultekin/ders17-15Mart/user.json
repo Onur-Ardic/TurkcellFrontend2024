@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Varol Maksutoğlu",
+        "deparmant": "Bilişim",
+        "salary":5000
+    },
+    {
+        "name": "Enes",
+        "deparmant":"Bilişim",
+        "salary": 4000
+    },
+    {
+        "name": "Ömür",
+        "deparmant":"Muhasebe",
+        "salary": 5500
+    }
+]
