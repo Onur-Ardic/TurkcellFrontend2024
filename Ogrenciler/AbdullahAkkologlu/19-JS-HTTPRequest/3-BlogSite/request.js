@@ -9,7 +9,7 @@ class Request {
     xhr.onload = function () {
       if (this.status === 200) {
         const data = JSON.parse(this.responseText);
-        data.slice(postId, postId + 20).forEach((post) => {
+        data.slice(postId, postId + 21).forEach((post) => {
           const card = UI.createCard(post.title, post.body);
           imgId++;
           cards.appendChild(card);
