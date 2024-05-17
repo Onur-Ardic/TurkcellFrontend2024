@@ -16,7 +16,7 @@ function getAllData() {
             <div class="col-4">
                 <div class="card my-3">
                     <div class="card-header">
-                        <img src="https://picsum.photos/seed/picsum/350/350" 
+                        <img src="https://picsum.photos/400/350?random=${i}" 
                         alt="blog-image" class="img-fluid rounded-3">
                     </div>
                     <div class="card-body" style="height: 250px">
