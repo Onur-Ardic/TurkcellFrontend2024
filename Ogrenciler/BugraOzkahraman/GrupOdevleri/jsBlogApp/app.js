@@ -7,10 +7,8 @@ function getAllData() {
   xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
   xhr.send();
   xhr.onload = function () {
-    console.log("xhr onload");
     if (this.status === 200) {
       let data = JSON.parse(this.responseText);
-      console.log(this.responseText);
       for (let i = 0; i < 20; i++) {
         blog.innerHTML += `
             <div class="col-4">
