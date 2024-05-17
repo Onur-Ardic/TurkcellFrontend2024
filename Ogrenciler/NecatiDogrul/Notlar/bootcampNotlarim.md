@@ -97,7 +97,6 @@ innerHTML'in performans ve güvenlik zaafiyetleri var onun yerine innerText kull
 
 event capturing nedir eventbubbling nedir farkları nedir
 
-
 map konusuna dikkat
 
 prototype mülakatlarda soruyor varol hoca
@@ -107,3 +106,13 @@ bu anahtar kelimeleri linkedinde kullana
 anahtar kelimelerle ilgili paylaşımlar yap deneyimlerde bu kelimeleri bulundur
 
 linkedin doğrulama
+
+mdn promise konusuna bak mülakatlarda çıkabilir
+
+promise nedir: size bir söz veriyorum bir alacağım var bu alacağı alırsa başka birine borcu ödeyeceğim gelmezse fail oluyor.
+
+javascript senkron bir dil her şeyi tek tek işliyor
+
+fetch promise döndürür
+
+es2022 ile async'siz await kullanılabiliyor ama tarayıcalar şuan es2022 desteklemediği için hata veriyor
