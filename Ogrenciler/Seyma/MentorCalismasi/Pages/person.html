@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Person Info</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="text-center bg-dark">
+  <form class="form-signin d-flex row rounded-2 text-white">
+    <h1 class="h3 mb-3 font-weight-normal">Kişisel Bilgilerinizi Giriniz</h1>
+    <i class="bi bi-person" style="font-size: 6rem;"></i>
+    <div class="d-flex row justify-content-center ps-3">
+      <label for="name" class="sr-only text-start">Ad</label>
+      <input type="name" id="nameInput" class="form-control" placeholder="Adınız" required="" autofocus="">
+
+      <label for="name" class="sr-only text-start">Soyad</label>
+      <input type="name" id="surNameInput" class="form-control" placeholder="Soyadınız" required="" autofocus="">
+      <label for="inputEmail" class="sr-only text-start">Email adresiniz</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email adresiniz" required="" autofocus="">
+      <label for="inputEmail" class="sr-only text-start">Tc Kimlik Numaranız</label>
+      <input type="text" id="inputTc" class="form-control" placeholder="11111111111" required="" autofocus="">
+    </div>
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-danger btn-block mt-2 py-2 w-25" type="button" id="saveNextButton">Kaydet ve İleri</button>
+    </div>
+
+  </form>
+  <script src="../Js/app.js"></script>
+</body>
+</html>

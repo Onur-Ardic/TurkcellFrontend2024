@@ -18,3 +18,5 @@ document.getElementById("form").addEventListener("submit", (e) => {
   Movies.addMovie();
   UI.displayMovies();
 });
+
+console.log(this);
