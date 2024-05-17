@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Film Koleksiyonu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Film Koleksiyonu</h1>
+      <form id="film-form">
+        <input type="text" id="film-name" placeholder="Film Adı" required />
+        <input type="text" id="director" placeholder="Yönetmen" required />
+        <input
+          type="number"
+          id="year"
+          placeholder="Yıl"
+          min="1900"
+          max="2100"
+          required />
+        <input type="text" id="genre" placeholder="Tür" required />
+        <input type="text" id="poster-url" placeholder="Afiş URL'si" required />
+        <button type="submit" id="add-film">Film Ekle</button>
+        <button type="button" id="update-film" style="display: none">
+          Güncelle
+        </button>
+      </form>
+      <div id="film-collection"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
