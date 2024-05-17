@@ -7,8 +7,8 @@ function getAllData() {
             return;
         }
 
-        const list = document.getElementById("posts");
-        list.innerHTML = "";
+        const list = document.getElementById("posts"); // "posts" ID'sine sahip HTML elemanını alır.
+        list.innerHTML = ""; 
 
         posts.forEach(post => {
             Request.getImage((error, imageUrl) => {
