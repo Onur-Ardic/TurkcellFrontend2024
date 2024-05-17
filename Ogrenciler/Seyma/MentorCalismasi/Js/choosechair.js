@@ -7,15 +7,13 @@ chairwrapper.addEventListener("click", function (e){
     if(e.target.classList.contains("chair") && !e.target.classList.contains("reserved")  && !e.target.classList.contains("selected") ){
        e.target.classList.toggle("selected");
        let selectedChairCount = chairwrapper.querySelectorAll(".chair.selected").length;
-       var chairName = e.target.innerText;
+       let chairName = e.target.innerText;
        chairs.push(chairName)
        localStorage.setItem("chairName", JSON.stringify(chairs));
        localStorage.setItem("chair", selectedChairCount);
     }
     else if(e.target.classList.contains("chair") && !e.target.classList.contains("reserved") ){
        let chairName = e.target.innerText;
-       console.log(chairName);
-       console.log(chairs.findIndex(a => a === chairName));
        chairs.splice(chairs.findIndex(a => a === chairName), 1);
        localStorage.setItem("chairName", JSON.stringify(chairs));
 

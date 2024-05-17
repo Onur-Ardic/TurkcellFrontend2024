@@ -1,12 +1,14 @@
 let getMovieName = localStorage.getItem("film");
 let selectedChairs = localStorage.getItem("chair");
-let personInfo = JSON.parse( localStorage.getItem("save"));
+//let personInfo = JSON.stringify(localStorage.getItem("save"));
 const ticketCreated = document.getElementById("biletOlusturuldu");
 let filmAdi = document.getElementById("filmAdi")
 filmAdi.innerText = getMovieName;
+let getkoltukbilgi = JSON.parse(localStorage.getItem("chairName"));
 let koltukBilgi = document.getElementById("koltukBilgi");
-let biletfiyati = document.getElementById("koltukBilgi");
+koltukBilgi.innerText = getkoltukbilgi;
 let resim = document.getElementById("resim");
+
 
 if (getMovieName == "Avatar") {
   resim.src =
@@ -22,3 +24,16 @@ if (getMovieName == "Avatar") {
     "https://images.justwatch.com/poster/265835203/s332/yesil-yol";
 }
 
+let totalPrice = selectedChairs * 100;
+let totalPriceText = document.getElementById("biletfiyati");
+totalPriceText.innerText = totalPrice;
+
+
+//let personInfoText = document.getElementById("personInfoText");
+//personInfoText.innerText = personInfo;
+
+
+let buyTicket = document.getElementById("buyTicket");
+buyTicket.addEventListener("click", () => {
+    alert("Biletiniz Oluşturuldu İyi Seyirler Dileriz...");
+});
