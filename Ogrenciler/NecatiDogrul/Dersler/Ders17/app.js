@@ -1,25 +1,44 @@
-document.getElementById("getButton").addEventListener("click", getAllData);
+let nameInput = document.getElementById("name");
+let directorInput = document.getElementById("director");
+let yearInput = document.getElementById("year");
+let submitButton = document.getElementById("submitButton");
+let cards = document.querySelector(".cards");
+let movies;
 
-function getAllData() {
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
-    xhr.onload = function () {
-        let list = document.getElementById("posts");
-        if (this.status === 200) {
-            const data = JSON.parse(this.responseText);
-            data.forEach((post) => {
-                const imageUrl = `https://picsum.photos/200/300?random=${post.id}`;
-                list.innerHTML += `
-                    <div class="post">
-                        <img src="${imageUrl}" alt="Post Image">
-                        <h2>${post.title}</h2>
-                        <p>${post.body}</p>
-                    </div>
-                `;
-            });
-        } else {
-            console.log("Bir hata oluştu, veriler alınamadı.");
-        }
-    };
-    xhr.send();
+if(localStorage.getItem("movies")){
+    movies = JSON.parse(localStorage.getItem("movies"));
+} else {
+    movies = [];
+    localStorage.setItem("movies", JSON.stringify(movies));
 }
+
+
+//submite basıldığında formdaki değerler local'e yazılsın
+submitButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    addMovie();
+});
+
+function addMovie() {
+    let newMovie = {
+        name: nameInput.value,
+        director: directorInput.value,
+        year: yearInput.value
+    }
+    movies.push(newMovie);
+    console.log(movies);
+    localStorage.setItem("movies", JSON.stringify(movies));
+}
+
+function display(){
+    let displayMovies = JSON.parse(localStorage.getItem("movies"));
+    console.log(displayMovies);
+    cards.innerHTML = "";
+    
+
+
+
+
+
+}
+display();
