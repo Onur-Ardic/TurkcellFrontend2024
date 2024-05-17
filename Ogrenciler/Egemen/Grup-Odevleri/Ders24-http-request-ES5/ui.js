@@ -1,3 +1,5 @@
+const cards = document.getElementById("cards");
+const image = document.querySelector(".card-img-top");
 class UI {
   static createCard(titleText, textText) {
     const card = document.createElement("div");
@@ -11,6 +13,9 @@ class UI {
     const img = document.createElement("img");
     img.classList.add("card-img-top", "my-2");
     img.src = `https://picsum.photos/id/${imgId}/500/333`;
+    img.onerror = function () { // bozuk id'li resimler gelirse yüklenecek resmi değiştiriyoruz.
+      img.src = `https://picsum.photos/id/1/500/`;
+    };
     const cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
     const title = document.createElement("h5");
