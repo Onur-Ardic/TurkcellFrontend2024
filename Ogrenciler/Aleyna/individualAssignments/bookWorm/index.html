@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>BookWorm</title>
+  </head>
+  <body>
+    <header class="col-12 bg-black p-2">
+      <banner>
+        <h6 class="fst-normal text-light text-center mt-1">
+          <i
+            class="fa-brands fa-pagelines fa-flip-horizontal"
+            style="color: #edf3fd"
+          ></i>
+          Welcome to scroll through digital pages..
+          <i class="fa-brands fa-pagelines" style="color: #edf3fd"></i>
+        </h6>
+      </banner>
+    </header>
+
+    <section>
+      <div class="container">
+        <img class="title-img pt-5 w-100" src="assets/title.png" />
+      </div>
+    </section>
+
+    <section class="bookInput">
+      <div class="container">
+        <h1 class="text-center">Book Info</h1>
+        <form id="book-form">
+          <input type="text" id="title" placeholder="Book Name" required />
+          <input type="text" id="author" placeholder="Arthor" required />
+          <input
+            type="text"
+            id="year"
+            placeholder="Year of Publication"
+            required
+          />
+          <input type="text" id="genre" placeholder="Genre" required />
+          <input type="url" id="image" placeholder="Image URL" required />
+          <button type="submit">Add a Book</button>
+        </form>
+
+        <form class="filter" style="flex-direction: row">
+          <input
+            type="text"
+            id="filter-author"
+            placeholder="Filter by Author"
+          />
+          <input type="text" id="filter-genre" placeholder="Filter by Genre" />
+          <input type="text" id="filter-year" placeholder="Filter by Year" />
+          <button id="clear-filters">Clean Filters</button>
+        </form>
+
+        <div id="book-list"></div>
+      </div>
+    </section>
+
+    <div id="edit-modal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <span class="close"></span>
+          <h2>Edit Book</h2>
+          <form id="edit-book-form">
+            <input type="hidden" id="edit-id" />
+            <input
+              type="text"
+              id="edit-title"
+              placeholder="Book's Name"
+              required
+            />
+            <input type="text" id="edit-author" placeholder="Author" required />
+            <input
+              type="text"
+              id="edit-year"
+              placeholder="Year of Publication"
+              required
+            />
+            <input type="text" id="edit-genre" placeholder="Genre" required />
+            <input
+              type="url"
+              id="edit-image"
+              placeholder="Image URL"
+              required
+            />
+            <button type="submit" data-bs-dismiss="modal">
+              Update the Book
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="book.js"></script>
+    <script src="books.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
