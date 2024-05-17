@@ -1,0 +1,27 @@
+.movie-card {
+    .movie-card-wrapper {
+      .card {
+        border: 1px solid #ccc;
+        width: 280px;
+        background-color: #1a1422;
+        color: #554c54;
+  
+        .movie-category {
+          top: 10px;
+          left: 10px;
+          background-color: crimson;
+        }
+  
+        .btn-wrapper {
+          top: 10px;
+          right: 10px;
+        }
+  
+        img {
+          /* height: 220px; */
+          width: 100%;
+        }
+      }
+    }
+  }
+  
