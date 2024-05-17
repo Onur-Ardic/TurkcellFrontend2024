@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Erkan",
+        "department": "IT",
+        "salary": "30000"
+    },
+    {
+        "name": "Ahmet",
+        "department": "IT",
+        "salary": "20000"
+    },
+    {
+        "name": "Mehmet",
+        "department": "IK",
+        "salary": "10000"
+    },
+    {
+        "name": "Murat",
+        "department": "CEO",
+        "salary": "35000"
+    }
+]
