@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "name": "Varol Maksutoğlu",
+      "department": "Bilişim",
+      "salary": 5000
+    },
+    {
+      "name": "Buğra Özkahraman",
+      "department": "Bilişim",
+      "salary": 30000
+    },
+    {
+      "name": "Ebrar Nur",
+      "department": "Psikolog",
+      "salary": 30000
+    },
+    {
+      "name": "Onur Ardıç",
+      "department": "Bilişim",
+      "salary": 30000
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
