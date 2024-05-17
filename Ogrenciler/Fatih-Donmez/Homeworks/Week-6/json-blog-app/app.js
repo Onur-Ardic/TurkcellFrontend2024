@@ -1,5 +1,6 @@
-document.getElementById("getButton").addEventListener("click", getAllData);
-
+document.addEventListener("DOMContentLoaded", function () {
+  getAllData();
+});
 function getAllData() {
   const xhr = new XMLHttpRequest();
   xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
@@ -16,7 +17,7 @@ function getAllData() {
             <div class="card mb-3">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src=https://picsum.photos/id/${post?.id + Math.floor(Math.random() * 100)}/200/300 class="img-fluid rounded-start" alt="Post Image">
+                  <img src=https://picsum.photos/id/${post?.id + Math.floor(Math.random() * 100)}/200/600 class="img-fluid rounded-start" alt="Post Image">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
