@@ -7,7 +7,7 @@ function getAllData() {
             return;
         }
 
-        const list = document.getElementById("posts"); // "posts" ID'sine sahip HTML elemanını alır.
+        const list = document.getElementById("posts");
         list.innerHTML = ""; 
 
         posts.forEach(post => {
