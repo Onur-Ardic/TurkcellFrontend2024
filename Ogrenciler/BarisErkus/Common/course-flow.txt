@@ -20,4 +20,6 @@
 03-05-2024: Javascript DOM
 06-05-2024: Javascript LocalStorage - ES6
 10-05-2024: Javascript OOP - Prototype
-13-05-2024:
+13-05-2024: Javascript OOP - Class
+15-05-2024: Api Request - XMLHttpRequest
+18-05-2024: Api Request - async-await, fetch, promise
