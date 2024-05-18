@@ -1,6 +1,5 @@
 let getMovieName = localStorage.getItem("film");
 let selectedChairs = localStorage.getItem("chair");
-//let personInfo = JSON.stringify(localStorage.getItem("save"));
 const ticketCreated = document.getElementById("biletOlusturuldu");
 let filmAdi = document.getElementById("filmAdi")
 filmAdi.innerText = getMovieName;
@@ -28,12 +27,15 @@ let totalPrice = selectedChairs * 100;
 let totalPriceText = document.getElementById("biletfiyati");
 totalPriceText.innerText = totalPrice;
 
-
-//let personInfoText = document.getElementById("personInfoText");
-//personInfoText.innerText = personInfo;
-
+getPersonInfo();
+function getPersonInfo() {
+  let personInfoText = document.getElementById("personInfoText");
+  let personInfoIObject = JSON.parse(localStorage.getItem("save"));
+  personInfoText.innerText = personInfoIObject.nameInput + " " + personInfoIObject.surNameInput + " " + personInfoIObject.inputTc + " " + personInfoIObject.inputEmail;
+};
 
 let buyTicket = document.getElementById("buyTicket");
 buyTicket.addEventListener("click", () => {
-    alert("Biletiniz Oluşturuldu İyi Seyirler Dileriz...");
+  alert("Biletiniz Oluşturuldu İyi Seyirler Dileriz...");
 });
+localStorage.getItem("save", JSON.Parse(personInfo));
