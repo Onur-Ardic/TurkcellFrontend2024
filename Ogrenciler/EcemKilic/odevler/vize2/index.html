@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kütüphane Projesi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .book-card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Kütüphane Projesi</h1>
+        
+        <div class="text-right mb-4">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#bookModal">Kitap Ekle</button>
+        </div>
+        
+        <!-- Filtreleme ve Arama -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <input type="text" id="searchInput" class="form-control" placeholder="Kitap adı veya yazar">
+            </div>
+            <div class="col-md-4">
+                <select id="categoryFilter" class="form-control">
+                    <option value="">Kategoriye Göre Filtrele</option>
+                    <!-- Kategoriler dinamik olarak eklenecek -->
+                </select>
+            </div>
+            <div class="col-md-4">
+                <select id="authorFilter" class="form-control">
+                    <option value="">Yazara Göre Filtrele</option>
+                    <!-- Yazarlar dinamik olarak eklenecek -->
+                </select>
+            </div>
+        </div>
+
+        <!-- Sıralama -->
+        <div class="text-right mb-4">
+            <select id="sortOrder" class="form-control w-25">
+                <option value="az">A-Z</option>
+                <option value="za">Z-A</option>
+                <option value="date">Tarih</option>
+            </select>
+        </div>
+
+        <!-- Kitap Listesi -->
+        <div id="bookList" class="row">
+            <!-- Kitap kartları dinamik olarak eklenecek -->
+        </div>
+    </div>
+
+    <!-- Kitap Ekleme Modalı -->
+    <div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-labelledby="bookModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookModalLabel">Kitap Ekle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookForm">
+                        <div class="form-group">
+                            <label for="title">Kitap Adı</label>
+                            <input type="text" class="form-control" id="title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="author">Yazar</label>
+                            <input type="text" class="form-control" id="author" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Kategori</label>
+                            <input type="text" class="form-control" id="category" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Yazıldığı Tarih</label>
+                            <input type="number" class="form-control" id="year" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cover">Kapak Görsel URL'i</label>
+                            <input type="url" class="form-control" id="cover" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kaydet</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Main JS File -->
+    <script src="app.js"></script>
+</body>
+</html>
