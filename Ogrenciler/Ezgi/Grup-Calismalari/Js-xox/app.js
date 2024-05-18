@@ -19,7 +19,7 @@ function chooseArea(block) {
         }
         turnPlayer();
     } else {
-        errorText.textContent = "Heyy, it's not empty "
+        errorText.textContent = "Heyy, it's not empty! "
         block.style.border = "2px solid red"
         setTimeout(() => {
             errorText.textContent = ""
@@ -49,14 +49,12 @@ function turnPlayer() {
 }
 
 function checkWin() {
-    // win
     checkRows()
     checkColumns()
     checkDiagonals()
 }
 
 function checkTie() {
-    // tie
     const values = [];
     blocks.forEach(block => values.push(block.textContent))
     if (!values.includes("")) {
@@ -66,7 +64,6 @@ function checkTie() {
 }
 
 function checkRows() {
-    // check rows
     let row1 = blocks[0].textContent == blocks[1].textContent &&
         blocks[0].textContent == blocks[2].textContent && blocks[0].textContent !== ""
     let row2 = blocks[3].textContent == blocks[4].textContent &&
@@ -83,7 +80,6 @@ function checkRows() {
 }
 
 function checkColumns() {
-    // check cols
     let col1 = blocks[0].textContent == blocks[3].textContent &&
         blocks[0].textContent == blocks[6].textContent && blocks[0].textContent !== ""
     let col2 = blocks[1].textContent == blocks[4].textContent &&
@@ -100,7 +96,6 @@ function checkColumns() {
 }
 
 function checkDiagonals() {
-    // check diag
     let dia1 = blocks[0].textContent == blocks[4].textContent &&
         blocks[0].textContent == blocks[8].textContent && blocks[0].textContent !== ""
     let dia2 = blocks[2].textContent == blocks[4].textContent &&
