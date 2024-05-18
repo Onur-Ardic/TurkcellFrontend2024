@@ -17,7 +17,9 @@ class Request {
     static getImage(callback) {
         const xhr = new XMLHttpRequest();
         xhr.open("GET", 'https://picsum.photos/200/300', true);
-        xhr.responseType = 'blob'; // Yanıt tipini "blob" olarak ayarlar, bu sayede yanıt bir binary veri (resim) olarak gelir.
+        xhr.responseType = 'blob'; // Yanıt tipini "blob" olarak ayarlıyoruz çünkü görsel veriler için bu şekilde 
+        //gözükmesi için kullanırız ancak blob tarayıcıda gözükmediğinden
+        //aşağıda onu imageUrl olarak ayarlıyoruz.
         xhr.onload = function() {
             if (this.status === 200) {
                 const imageUrl = URL.createObjectURL(this.response); // Blob yanıtını bir URL'ye dönüştürür.
