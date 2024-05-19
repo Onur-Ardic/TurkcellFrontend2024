@@ -6,7 +6,23 @@ const bookImage = document.getElementById('bookİmg')
 const bookPrice = document.getElementById('bookPrice')
 const bookCategory = document.getElementById('bookCategory')
 const saveBookButton = document.getElementById('modal-form')
+const ModalTitle = document.getElementById('addBookLabel')
+const navAddBtn = document.getElementById('navAddBookBtn')
+const navFormBtn = document.getElementById('navFormBtn')
+const modalUpdateBtn = document.getElementById('modalUpdateBtn')
+console.log(navAddBtn)
 
+navAddBtn.addEventListener('click', () => {
+  ModalTitle.innerText = 'Kitap Ekle'
+  bookName.value = ''
+  bookAuthor.value = ''
+  bookDate.value = ''
+  bookImage.value = ''
+  bookPrice.value = ''
+  bookCategory.value = ''
+  modalUpdateBtn.style.display = 'none'
+  navFormBtn.style.display = 'block'
+})
 class UI {
   static createBookCard(book) {
     const cardDiv = document.createElement('div')
@@ -61,7 +77,16 @@ class UI {
     )
 
     const editButton = document.createElement('button')
+    editButton.id = `${book.id}`
     editButton.classList.add('btn', 'btn-warning')
+    editButton.setAttribute('data-bs-toggle', 'modal')
+    editButton.setAttribute('data-bs-target', '#addBook')
+    editButton.addEventListener('click', function () {
+      requestValidation.editBook(book, book.id)
+      ModalTitle.textContent = 'Kitap Düzenle'
+      modalUpdateBtn.style.display = 'block'
+      navFormBtn.style.display = 'none'
+    })
 
     const editIcon = document.createElement('i')
     editIcon.classList.add('fa-solid', 'fa-pen')

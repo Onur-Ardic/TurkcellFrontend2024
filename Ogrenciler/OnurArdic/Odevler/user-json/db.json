@@ -1,6 +1,15 @@
 {
   "books": [
     {
+      "bookname": "Çığlık Attığını Kimse Duymayacak",
+      "author": "Stephanie Perkins",
+      "date": "2017",
+      "price": "300",
+      "category": "Çocuk - Gençlik",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWpIC6hwp7gmU0SD9vgjqg8-IJh6WjnPf_7_fIv7a4Gw&s",
+      "id": "1"
+    },
+    {
       "id": "2",
       "bookname": "Metro 2035",
       "category": "bilimkurgu",

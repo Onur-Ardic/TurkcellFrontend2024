@@ -51,9 +51,10 @@
               <li class="nav-item">
                 <button
                   type="button"
-                  class="btn btn-warning"
+                  class="btn btn-warning navAddBookBtn"
                   data-bs-toggle="modal"
                   data-bs-target="#addBook"
+                  id="navAddBookBtn"
                 >
                   Kitap Ekle
                 </button>
@@ -234,7 +235,15 @@
                   <input type="text" class="form-control" id="bookİmg" placeholder="Kitap Resmi" />
                 </div>
 
-                <button class="btn btn-success">Ekle</button>
+                <button class="btn btn-success" id="navFormBtn">Ekle</button>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-dismiss="modal"
+                  id="modalUpdateBtn"
+                >
+                  Güncelle
+                </button>
               </form>
             </div>
             <div class="modal-footer">
