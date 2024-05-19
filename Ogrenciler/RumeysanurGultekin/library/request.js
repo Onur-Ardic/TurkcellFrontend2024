@@ -1,65 +1,10 @@
-// class Request {
-//     constructor(url){
-//         this.url = "http://localhost:3000/books";
-//     }
-//     async get(url) {
-//       const response = await fetch(this.url);
-//       if (!response.ok) {
-//         throw new Error("Bir hata oluştu", response.status);
-//       };
-//       const data = await response.json();
-//       return data;
-//     }
-
-//     async post(url, data) {
-//         const response = await fetch(this.url, {
-//             method : "POST",
-//             body: JSON.stringify(post),
-//             headers: {
-//               "Content-type": "application/json;",
-//             },
-//         });
-//         if (!response.ok) {
-//           throw new Error("Bir hata oluştu", response.status);
-//         };
-//         const data = await response.json();
-//         return data;
-//       }
-
-//     async put(id, data) {
-//         const response = await fetch(this.url + "/" + id, {
-//             method : "PUT",
-//             body: JSON.stringify(data),
-//             headers: {
-//               "Content-type": "application/json;",
-//             },
-//         });
-//         if (!response.ok) {
-//           throw new Error("Bir hata oluştu", response.status);
-//         };
-//         const data = await response.json();
-//         return data;
-//       }  
-
-//     async delete(id) {
-//         const response = await fetch(this.url + "/" + id, {
-//             method : "DELETE",
-//         });
-//         if (!response.ok) {
-//           throw new Error("Bir hata oluştu", response.status);
-//         };
-//         const data = await response.json();
-//         return data;
-//       }    
-//   }
-  
 class Request {
   constructor(url){
             this.url = url;
         }
 
   static get(url) {
-      fetch(`${url}/books`)
+      fetch(`${url}`)
         .then((response) => response.json())
         .then((data) => console.log(data))
         .catch((err) => reject(err, "Veri alınamadı."));
@@ -78,32 +23,40 @@ class Request {
       })
       .then((data) => console.log(data))
   }
-  // static put(url,data,id) {    
-  //     fetch(url + "/" + id, {
-  //       method: "PUT",
-  //       body: JSON.stringify(data),
-  //       headers: {
-  //         "Content-type": "application/json;",
-  //       },
-  //     })
-  //       .then(response => response.json())
-  //       .then(response => {
-  //         console.log("response:"+JSON.stringify(data)); alert("Book Added!")
-  //       })
-  //       .then((data) => console.log(data))
-  // }
-  // static delete(url) {
-  //   return new Promise((resolve, reject) => {
-  //     fetch("http://localhost:3000/books", {
-  //       method: "DELETE",
-  //     })
-  //       .then((response) => response.json())
-  //       .then(() => resolve("Veri Silindi"))
-  //       .catch((err) => reject(err, "Hata Alındı."));
-  //   });
-  // }
+  static delete(url) {
+      fetch(url, {
+        method: "DELETE",
+      })
+        .then((response) => response.json())
+        .then(() => resolve("Veri Silindi"))
+        .catch((err) => reject(err, "Hata Alındı."));
+    };
 }
 
 function resolve(data){
   console.log(data);
 }
+
+
+
+
+// class getData {
+//   static sendDataBook(book) {
+//     Request.post('http://localhost:3000/books', {
+//       image: book.image,
+//       bookname: book.bookname,
+//       author: book.author,
+//       date: book.date,
+//       categories: book.categories,
+//       id: book.id,
+//     });
+//   }
+
+//   static deleteBook(bookId) {
+//     Request.delete(`http://localhost:3000/books/${bookId}`)
+//       .then(() => {
+//         console.log(`${bookId} kitabı başarıyla silinmiştir`);
+//       })
+//       .catch((err) => console.error(err));
+//   }
+// }
