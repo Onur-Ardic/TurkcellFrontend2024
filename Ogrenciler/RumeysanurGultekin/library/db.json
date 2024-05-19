@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "id": "8537",
+      "image": "https://www.hippo.com/sites/default/files/content/blog/image/2022-02/how-to-make-a-home-library-hero.jpg",
+      "bookname": "aa",
+      "author": "aa",
+      "date": "1212",
+      "category": "1"
+    },
+    {
+      "id": "29bfe501-4cb7-40e3-9b29-235bf4190048",
+      "image": "https://tr.web.img4.acsta.net/c_310_420/pictures/bzp/01/35784.jpg",
+      "bookname": "dasd",
+      "author": "asdasd",
+      "date": "123",
+      "categories": "1"
+    },
+    {
+      "id": "bf4124ed-259c-42d5-a780-6915319a2aad",
+      "image": "https://tr.web.img2.acsta.net/c_310_420/pictures/bzp/01/27070.jpg",
+      "bookname": "vbvbn",
+      "author": "nvbn",
+      "date": "3424",
+      "categories": "3"
+    }
+  ]
+}

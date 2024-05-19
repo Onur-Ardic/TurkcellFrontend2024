@@ -32,6 +32,37 @@ document
 const taskStorage = new Storage();
 const ui = new UI();
 submitTask.addEventListener("click", addTask);
+document
+  .getElementById("inProgress-tasks")
+  .addEventListener("click", showInProgress);
+
+document.getElementById("done-tasks").addEventListener("click", showDone);
+
+document.getElementById("all-tasks").addEventListener("click", showAll);
+
+function showInProgress() {
+  taskStorage.todoList.forEach((task) => {
+    ui.DeleteTask(task.name);
+    if (task.status == "InProgress") {
+      ui.ShowTask(task.name);
+    }
+  });
+}
+function showAll() {
+  taskStorage.todoList.forEach((task) => {
+    ui.DeleteTask(task.name);
+    ui.ShowTask(task.name);
+  });
+}
+
+function showDone() {
+  taskStorage.todoList.forEach((task) => {
+    ui.DeleteTask(task.name);
+    if (task.status == "done") {
+      ui.ShowTask(task.name);
+    }
+  });
+}
 
 ui.CreateTable();
 
@@ -63,54 +94,26 @@ function addTask() {
   if (ui.selectedTask == null) {
     //taskStorage.addTask(task);
     ui.addTask(taskStorage, task);
+    progressBar();
   } else {
     ui.UpdateTask(task, taskStorage);
-    //storage'a da göndereceğiz...
+    progressBar();
   }
 }
 
 window.onload = function () {
+  progressBar();
   taskStorage.todoList.forEach((task) => {
     ui.addTask(taskStorage, task);
   });
 };
-
-// function createTable() {
-//   let table = document.createElement("table");
-//   table.classList.add("table");
-//   table.id = "elif";
-//   table.classList.add("table-striped");
-//   let trHeader = document.createElement("tr");
-
-//   let headers = ["Task Name", "Explanation", "Priority", "Status", "Action"];
-
-//   headers.forEach((headerText) => {
-//     let thElement = document.createElement("th");
-//     let thText = document.createTextNode(headerText);
-//     thElement.appendChild(thText);
-//     trHeader.appendChild(thElement);
-//   });
-//   table.appendChild(trHeader);
-
-//   document.getElementById("table-container").appendChild(table);
-// }
-
-// const priorityRadios = document.querySelectorAll('input[name="taskPriority"]');
-// //tüm radiobutonları seçtim
-
-// // Her bir radio düğmesine bir olay dinleyici ekledim
-// priorityRadios.forEach((radio) => {
-//   radio.addEventListener("change", function () {
-//     selectedPriority = this.value;
-//     console.log("Seçili öncelik:", selectedPriority);
-//   });
-// });
-
-// const selectStatus = document.getElementById("taskStatus");
-
-// // Seçim listesine bir olay dinleyici ekleyin
-// selectStatus.addEventListener("change", function () {
-//   // Seçilen seçeneğin değerini alın
-//   selectedStatus = this.value;
-//   console.log("Seçili durum:", selectedStatus);
-// });
+function progressBar() {
+  let totalTasks = taskStorage.todoList.length;
+  let doneTasks = taskStorage.todoList.filter(
+    (task) => task.status === "done"
+  ).length;
+  let percentage = (doneTasks / totalTasks) * 100;
+  let progressBar = document.querySelector(".progress-bar");
+  progressBar.style.width = `${percentage}%`;
+  progressBar.textContent = `${percentage.toFixed(2)}% is done`;
+}

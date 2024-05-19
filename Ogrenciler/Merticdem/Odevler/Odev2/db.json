@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Kitap 1",
+      "author": "Yazar 1",
+      "category": "Kategori 1",
+      "date": "2020-01-01",
+      "cover": "https://example.com/cover1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Kitap 2",
+      "author": "Yazar 2",
+      "category": "Kategori 2",
+      "date": "2020-01-02",
+      "cover": "https://example.com/cover2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Kitap 3",
+      "author": "Yazar 3",
+      "category": "Kategori 3",
+      "date": "2020-01-03",
+      "cover": "https://example.com/cover3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Kitap 4",
+      "author": "Yazar 4",
+      "category": "Kategori 4",
+      "date": "2020-01-04",
+      "cover": "https://example.com/cover4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Kitap 5",
+      "author": "Yazar 5",
+      "category": "Kategori 5",
+      "date": "2020-01-05",
+      "cover": "https://example.com/cover5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Kitap 6",
+      "author": "Yazar 6",
+      "category": "Kategori 6",
+      "date": "2020-01-06",
+      "cover": "https://example.com/cover6.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Kitap 7",
+      "author": "Yazar 7",
+      "category": "Kategori 7",
+      "date": "2020-01-07",
+      "cover": "https://example.com/cover7.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Kitap 8",
+      "author": "Yazar 8",
+      "category": "Kategori 8",
+      "date": "2020-01-08",
+      "cover": "https://example.com/cover8.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Kitap 9",
+      "author": "Yazar 9",
+      "category": "Kategori 9",
+      "date": "2020-01-09",
+      "cover": "https://example.com/cover9.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Kitap 10",
+      "author": "Yazar 10",
+      "category": "Kategori 10",
+      "date": "2020-01-10",
+      "cover": "https://example.com/cover10.jpg"
+    }
+  ]
+}

@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport", 
-		content="width=device-width, initial-scale=1.0">
-	<title>Snake Game</title>
-    <style>
-        /* Write CSS Here */
-        body {
-            text-align: center;
-        }
-        .geeks {
-            font-size: 40px;
-            font-weight: bold;
-            color: green;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<h1>Snake Game with</h1>
+    <h1>Snake Game</h1>
     <div class="score">
         <div id="scoreBox">Score: 0</div>
         <div id="hiscoreBox">HiScore: 0</div>
         <div id="gameStatus">Game Started</div>
         <div id="scoreBoard"></div>
     </div>
-	<canvas id="board"></canvas>
-    
-	<script src="app.js"></script>
+    <div class="game-container" id="gameBoard"></div>
+    <button id="restartButton">Restart Game</button>
+    <script src="app.js"></script>
 </body>
 </html>

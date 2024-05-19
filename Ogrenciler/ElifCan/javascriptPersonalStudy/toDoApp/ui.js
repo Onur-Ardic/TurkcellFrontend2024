@@ -2,6 +2,7 @@ function UI() {
   this.selectedPriority;
   this.selectedStatus;
   this.selectedTask = null;
+
   const priorityRadios = document.querySelectorAll(
     'input[name="taskPriority"]'
   );
@@ -24,6 +25,7 @@ UI.prototype.addTask = function (Storage, Task) {
 
   let trElement = document.createElement("tr");
   trElement.id = Task.name;
+
   properties.forEach((property) => {
     let tdElement = document.createElement("td");
     tdElement.textContent = Task[property];
@@ -59,6 +61,10 @@ UI.prototype.addTask = function (Storage, Task) {
 
 UI.prototype.DeleteTask = function (TaskId) {
   document.querySelector(`[id="${TaskId}"]`).style.display = "none";
+};
+
+UI.prototype.ShowTask = function (TaskId) {
+  document.querySelector(`[id="${TaskId}"]`).style.display = "table-row";
 };
 
 UI.prototype.FillModal = function (Task) {

@@ -1,5 +1,5 @@
 class MovieCrud {
-  constructor() {}
+
 
   getMovies() {
     let movies = JSON.parse(localStorage.getItem("movies")) || [];

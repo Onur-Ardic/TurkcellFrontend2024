@@ -18,8 +18,9 @@ Storage.prototype.deleteTask = function (Task) {
 
 Storage.prototype.UpdateTask = function (Task, taskToUpdate) {
   this.todoList.forEach((item, index) => {
-    if (item.name === Task.name) {
-      this.todoList.splice(index, 1); // Listeden çıkarma
+    if (item.name == taskToUpdate.name) {
+      this.todoList[index] = Task;
+      console.log(taskToUpdate);
     }
   });
   localStorage.setItem("todoList", JSON.stringify(this.todoList));

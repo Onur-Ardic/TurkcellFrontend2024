@@ -1,0 +1,57 @@
+{
+  "users": [
+    {
+      "name": "Varol Maksutoğlu",
+      "department": "Bilişim",
+      "salary": 5000,
+      "id": "6d9e"
+    },
+    {
+      "name": "Enes Söl",
+      "department": "Bilişim",
+      "salary": 7000,
+      "id": "7468"
+    },
+    {
+      "name": "Ömür Kasap",
+      "department": "Muhasebe",
+      "salary": 6000,
+      "id": "4668"
+    },
+    {
+      "name": "Egehan Demir",
+      "department": "IK",
+      "salary": 5500,
+      "id": "9182"
+    },
+    {
+      "id": "c9bb",
+      "name": "asd",
+      "department": "asd",
+      "salary": "asd"
+    },
+    {
+
+      "name": "osman",
+      "department": "123",
+      "salary": "123",
+      "id": "a46d"
+    },
+    {
+      "name": "mehmet",
+      "department": "123",
+      "salary": "123",
+      "id": "a46d"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

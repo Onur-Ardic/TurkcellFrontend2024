@@ -1,7 +1,5 @@
 class UI {
-  constructor() {
-    this.editMovie = null;
-  }
+
 
   addMoviesUI(movie) {
     movieCrud.addMovie(movie);
@@ -70,7 +68,6 @@ class UI {
   }
 
   updateMovieUI() {
-
     this.editMovie.title = title.value;
     this.editMovie.director = director.value;
     this.editMovie.description = description.value;
@@ -83,7 +80,6 @@ class UI {
     submitButton.removeAttribute("disabled");
     updateButton.setAttribute("disabled", true);
     this.editMovie = null;
-
   }
 }
 
