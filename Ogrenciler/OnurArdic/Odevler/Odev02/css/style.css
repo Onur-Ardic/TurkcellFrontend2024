@@ -1,0 +1,16 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+* {
+  font-family: "SF Pro Display", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+main .main-wrapper .item-wrapper .book-card-wrapper .book-card {
+  width: 200px;
+}
+main .main-wrapper .item-wrapper .book-card-wrapper .book-card .book-card-img img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
