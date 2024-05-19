@@ -2,13 +2,15 @@
   "books": [
     {
       "bookname": "Çığlık Attığını Kimse Duymayacak",
-      "category": "aksiyon",
       "author": "Stephanie Perkins",
-      "price": "300",
       "date": "2017",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWpIC6hwp7gmU0SD9vgjqg8-IJh6WjnPf_7_fIv7a4Gw&s"
+      "price": "300",
+      "category": "Çocuk - Gençlik",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWpIC6hwp7gmU0SD9vgjqg8-IJh6WjnPf_7_fIv7a4Gw&s",
+      "id": "1"
     },
     {
+      "id": "2",
       "bookname": "Metro 2035",
       "category": "bilimkurgu",
       "author": "Dmitri Glukhovsky",
@@ -17,6 +19,7 @@
       "image": "https://i.dr.com.tr/cache/500x400-0/originals/0001689565001-1.jpg"
     },
     {
+      "id": "3",
       "bookname": "Arsen Lüpen - Kibar Hırsız",
       "category": "polisiye",
       "author": "Maurice Leblanc",
@@ -25,6 +28,7 @@
       "image": "https://img.kitapyurdu.com/v1/getImage/fn:11675360/wh:true/wi:800"
     },
     {
+      "id": "4",
       "bookname": "Arsen Lüpen - Herlock Sholmes'e Karşı",
       "category": "aksiyon",
       "author": "Stephanie Perkins",
@@ -32,8 +36,8 @@
       "date": "2017",
       "image": "https://img.kitapyurdu.com/v1/getImage/fn:11360582/wh:true/wi:800"
     },
-
     {
+      "id": "5",
       "bookname": "Her şey Vaktini Bekler",
       "category": "felsefe",
       "author": "Hakan Mengüç",
@@ -41,8 +45,8 @@
       "date": "2017",
       "image": "https://m.media-amazon.com/images/I/41eRJeXT6WL.jpg"
     },
-
     {
+      "id": "6",
       "bookname": "Aşırı Düşünme Kitabı",
       "category": "felsefe",
       "author": "Gwendoline Smith",
@@ -50,8 +54,8 @@
       "date": "2017",
       "image": "https://m.media-amazon.com/images/I/41Bgb6Za-+L._SY445_SX342_.jpg"
     },
-
     {
+      "id": "7",
       "bookname": "3391 Kilometre",
       "category": "romantik",
       "author": "Beyza Alkoç",
@@ -59,8 +63,8 @@
       "date": "2017",
       "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQfP9wmSWsV2HDrAiGluKAVOLgTkpwb7-ZdefY9BqPq_ImA7m0wolRTg7nH7UufwYZMgwrsDKVncoUGw2fJWWwSPQa0osqyniYK7j5GCKUY&usqp=CAE"
     },
-
     {
+      "id": "8",
       "bookname": "0 Kilometre",
       "category": "romantik",
       "author": "Beyza Alkoç",
@@ -68,8 +72,8 @@
       "date": "2017",
       "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTEmUZz6CawoRNMqljiyZsufatHGVgOiI7BAFFABB9WKdc9x9yyDKpZlQO2eP8lTh6wdZ0UDxJmpImZ-zSUGJ1nYOJLm8TzMfKMytdwecWAkhRBaZwsdN6sGA&usqp=CAE"
     },
-
     {
+      "id": "9",
       "bookname": "Yere Yakın Yıldızlara Uzak",
       "category": "romantik",
       "author": "Emine Tavuz",
@@ -77,8 +81,8 @@
       "date": "2017",
       "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSGUpQhXot-tmsSsv-mx9GIXsRcMvwA9gUZ3P1LSdAUxfWoH2epPtHp-HNGF7PBJQ0U1S4xETo0sGiHZCT3c4nkIBNN8e-0wuk1eBESSKw-&usqp=CAE"
     },
-
     {
+      "id": "10",
       "bookname": "The Walking Death",
       "category": "aksiyon",
       "author": "Robert Kirkman",
