@@ -1,109 +1,58 @@
-const bookWrapper = document.querySelector('.book-card-wrapper')
-
-class Request {
-  static get(url) {
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        UI.getOnUI(data)
-      })
-      .catch((err) => console.log(err))
-  }
-  static post(url, data) {
-    return new Promise((resolve, reject) => {
-      fetch(url, {
-        method: 'POST',
-        body: JSON.stringify(data),
-        headers: {
-          'Content-type': 'application/json;',
-        },
-      })
-        .then((response) => response.json())
-        .then((data) => resolve(data))
-        .catch((err) => reject(err, 'Hata Alındı.'))
-    })
+class Books {
+  constructor(bookname, author, date, price, category, image, id) {
+    this.id = Math.floor(Math.random() * 10000)
+    this.bookname = bookname
+    this.author = author
+    this.date = date
+    this.price = price
+    this.category = category
+    this.image = image
   }
 }
 
-class UI {
-  static createBookCard(book) {
-    const cardDiv = document.createElement('div')
-    cardDiv.classList.add('book-card', 'border', 'position-relative')
+saveBookButton.addEventListener('submit', function (event) {
+  event.preventDefault()
+  const myBook = createBook()
+  requestValidation.sendBook(myBook)
+})
 
-    const imgDiv = document.createElement('div')
-    imgDiv.classList.add('book-card-img')
+function createBook() {
+  const bookNameValue = bookName.value.trim()
+  const bookAuthorValue = bookAuthor.value.trim()
+  const bookDateValue = bookDate.value.trim()
+  const bookPriceValue = bookPrice.value.trim()
+  const bookCategoryValue = bookCategory.value.trim()
+  const bookImageValue = bookImage.value.trim()
 
-    const img = document.createElement('img')
-    img.src = `${book.image}`
-    img.alt = `${book.bookname}`
-    img.classList.add('img-fluid')
-    imgDiv.appendChild(img)
+  return new Books(
+    bookNameValue,
+    bookAuthorValue,
+    bookDateValue,
+    bookPriceValue,
+    bookCategoryValue,
+    bookImageValue,
+  )
+}
 
-    const infoDiv = document.createElement('div')
-    infoDiv.classList.add('book-card-info', 'p-3')
-
-    const title = document.createElement('h5')
-    title.textContent = `${book.bookname}`
-    infoDiv.appendChild(title)
-
-    const bookInfoDiv = document.createElement('div')
-    bookInfoDiv.classList.add('book-info', 'd-flex', 'gap-1', 'flex-column')
-
-    const author = document.createElement('p')
-    author.classList.add('book-card-author')
-    author.textContent = `Yazar: ${book.author}`
-
-    const publisher = document.createElement('p')
-    publisher.classList.add('book-card-publisher')
-    publisher.textContent = `Tarih: ${book.date}`
-
-    const price = document.createElement('p')
-    price.classList.add('book-card-price', 'text-danger')
-    price.textContent = `Fiyat:${book.price}TL`
-
-    bookInfoDiv.appendChild(author)
-    bookInfoDiv.appendChild(publisher)
-    bookInfoDiv.appendChild(price)
-    infoDiv.appendChild(bookInfoDiv)
-
-    const buttonDiv = document.createElement('div')
-    buttonDiv.classList.add(
-      'card-btn',
-      'position-absolute',
-      'top-0',
-      'end-0',
-      'm-1',
-      'd-flex',
-      'gap-1',
-      'flex-column',
-    )
-
-    const editButton = document.createElement('button')
-    editButton.classList.add('btn', 'btn-warning')
-    const editIcon = document.createElement('i')
-    editIcon.classList.add('fa-solid', 'fa-pen')
-    editButton.appendChild(editIcon)
-
-    const deleteButton = document.createElement('button')
-    deleteButton.classList.add('btn', 'btn-danger')
-    const deleteIcon = document.createElement('i')
-    deleteIcon.classList.add('fa-solid', 'fa-trash')
-    deleteButton.appendChild(deleteIcon)
-
-    buttonDiv.appendChild(editButton)
-    buttonDiv.appendChild(deleteButton)
-
-    cardDiv.appendChild(imgDiv)
-    cardDiv.appendChild(infoDiv)
-    cardDiv.appendChild(buttonDiv)
-
-    bookWrapper.appendChild(cardDiv)
-  }
-
-  static getOnUI(data) {
-    data.forEach((book) => {
-      UI.createBookCard(book)
+class requestValidation {
+  static sendBook(book) {
+    Request.post('http://localhost:3000/books', {
+      bookname: book.bookname,
+      author: book.author,
+      date: book.date,
+      price: book.price,
+      category: book.category,
+      image: book.image,
+      id: book.id,
     })
   }
+
+  static deleteBook(bookId) {
+    console.log(bookId)
+    Request.delete(`http://localhost:3000/books/${bookId}`)
+      .then(() => {
+        console.log(`${bookId} kitabı başarıyla silindi.`)
+      })
+      .catch((err) => console.error(err))
+  }
 }
-Request.get('http://localhost:3000/books')
