@@ -3,14 +3,16 @@ const bookName = document.getElementById('bookName')
 const bookAuthor = document.getElementById('bookAuthor')
 const bookDate = document.getElementById('bookDate')
 const bookImage = document.getElementById('bookİmg')
-const bookPrice = document.getElementById('bookPrice')
+const bookPublisher = document.getElementById('bookPublisher')
 const bookCategory = document.getElementById('bookCategory')
 const saveBookButton = document.getElementById('modal-form')
 const ModalTitle = document.getElementById('addBookLabel')
 const navAddBtn = document.getElementById('navAddBookBtn')
 const navFormBtn = document.getElementById('navFormBtn')
 const modalUpdateBtn = document.getElementById('modalUpdateBtn')
-console.log(navAddBtn)
+const categoryFilters = document.querySelectorAll('.categoriy-list input[type="checkbox"]:checked')
+console.log(categoryFilters)
+const publisherFilters = document.querySelectorAll('.bookmark-list input[type="checkbox"]:checked')
 
 navAddBtn.addEventListener('click', () => {
   ModalTitle.innerText = 'Kitap Ekle'
@@ -18,7 +20,7 @@ navAddBtn.addEventListener('click', () => {
   bookAuthor.value = ''
   bookDate.value = ''
   bookImage.value = ''
-  bookPrice.value = ''
+  bookPublisher.value = ''
   bookCategory.value = ''
   modalUpdateBtn.style.display = 'none'
   navFormBtn.style.display = 'block'
@@ -27,6 +29,11 @@ class UI {
   static createBookCard(book) {
     const cardDiv = document.createElement('div')
     cardDiv.classList.add('book-card', 'border', 'position-relative')
+
+    const bookCards = document.querySelectorAll('.book-card')
+    bookCards.forEach((bookCard) => {
+      UI.filterHandler(bookCard, book)
+    })
 
     const imgDiv = document.createElement('div')
     imgDiv.classList.add('book-card-img')
@@ -52,16 +59,16 @@ class UI {
     author.textContent = `Yazar: ${book.author}`
 
     const publisher = document.createElement('p')
-    publisher.classList.add('book-card-publisher')
-    publisher.textContent = `Tarih: ${book.date}`
+    publisher.classList.add('book-card-publisher', 'text-danger')
+    publisher.textContent = `Yayınevi: ${book.publisher}`
 
-    const price = document.createElement('p')
-    price.classList.add('book-card-price', 'text-danger')
-    price.textContent = `Fiyat:${book.price}TL`
+    const date = document.createElement('p')
+    date.classList.add('book-card-date')
+    date.textContent = `Tarih: ${book.date}`
 
     bookInfoDiv.appendChild(author)
+    bookInfoDiv.appendChild(date)
     bookInfoDiv.appendChild(publisher)
-    bookInfoDiv.appendChild(price)
     infoDiv.appendChild(bookInfoDiv)
 
     const buttonDiv = document.createElement('div')
@@ -107,11 +114,9 @@ class UI {
 
     buttonDiv.appendChild(editButton)
     buttonDiv.appendChild(deleteButton)
-
     cardDiv.appendChild(imgDiv)
     cardDiv.appendChild(infoDiv)
     cardDiv.appendChild(buttonDiv)
-
     bookWrapper.appendChild(cardDiv)
   }
 
@@ -119,5 +124,30 @@ class UI {
     data.forEach((book) => {
       UI.createBookCard(book)
     })
+  }
+
+  static filterHandler(bookCard, book) {
+    const category = book.category
+    const publisher = book.publisher
+
+    let isVisible = true
+
+    categoryFilters.forEach((filter) => {
+      if (!category.includes(filter.value)) {
+        isVisible = false
+      }
+    })
+
+    publisherFilters.forEach((filter) => {
+      if (!publisher.includes(filter.value)) {
+        isVisible = false
+      }
+    })
+
+    if (isVisible) {
+      bookCard.style.display = 'block'
+    } else {
+      bookCard.style.display = 'none'
+    }
   }
 }
