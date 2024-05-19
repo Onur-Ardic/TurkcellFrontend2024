@@ -1,11 +1,12 @@
 
 class Book {
-  constructor(image, bookname, author, date, categories) {
+  constructor(image, bookname, author, date, categories,id) {
       this.image = image;
       this.bookname = bookname;
       this.author = author;
       this.date = date;
       this.categories = categories;
+      this.id = crypto.randomUUID();
   }
   
 }
@@ -134,9 +135,8 @@ document.getElementById("formKitap").addEventListener("submit",function (e) {
   // }
   
   // getJsonFile();
-
-Request.get("http://localhost:3000/books");
   
+  Request.post("http://localhost:3000/books",book);
 
   // // var jsonveri = JSON.stringify(book);
   // // var veri = JSON.parse(jsonveri);
@@ -146,6 +146,7 @@ Request.get("http://localhost:3000/books");
 
 
 });
+Request.get("http://localhost:3000");
 
 
 

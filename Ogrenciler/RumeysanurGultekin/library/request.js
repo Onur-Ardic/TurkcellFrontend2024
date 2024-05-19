@@ -59,49 +59,49 @@ class Request {
         }
 
   static get(url) {
-      fetch(url)
+      fetch(`${url}/books`)
         .then((response) => response.json())
         .then((data) => console.log(data))
         .catch((err) => reject(err, "Veri alınamadı."));
   }
   static post(url, data) {
-    return new Promise((resolve, reject) => {
-      fetch("http://localhost:3000/books", {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: {
-          "Content-type": "application/json;",
-        },
+    fetch(url, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-type": "application/json;",
+      },
+    })
+      .then(response => console.log(response.json()))
+      .then(response => {
+        console.log("response:"+JSON.stringify(data)); alert("Book Added!")
       })
-        .then((response) => response.json())
-        .then((data) => resolve(data))
-        .catch((err) => reject(err, "Hata Alındı."));
-    });
+      .then((data) => console.log(data))
   }
-  static put(url, data) {
-    return new Promise((resolve, reject) => {
-      fetch("http://localhost:3000/books", {
-        method: "PUT",
-        body: JSON.stringify(data),
-        headers: {
-          "Content-type": "application/json;",
-        },
-      })
-        .then((response) => response.json())
-        .then((data) => resolve(data))
-        .catch((err) => reject(err, "Hata Alındı."));
-    });
-  }
-  static delete(url) {
-    return new Promise((resolve, reject) => {
-      fetch("http://localhost:3000/books", {
-        method: "DELETE",
-      })
-        .then((response) => response.json())
-        .then(() => resolve("Veri Silindi"))
-        .catch((err) => reject(err, "Hata Alındı."));
-    });
-  }
+  // static put(url,data,id) {    
+  //     fetch(url + "/" + id, {
+  //       method: "PUT",
+  //       body: JSON.stringify(data),
+  //       headers: {
+  //         "Content-type": "application/json;",
+  //       },
+  //     })
+  //       .then(response => response.json())
+  //       .then(response => {
+  //         console.log("response:"+JSON.stringify(data)); alert("Book Added!")
+  //       })
+  //       .then((data) => console.log(data))
+  // }
+  // static delete(url) {
+  //   return new Promise((resolve, reject) => {
+  //     fetch("http://localhost:3000/books", {
+  //       method: "DELETE",
+  //     })
+  //       .then((response) => response.json())
+  //       .then(() => resolve("Veri Silindi"))
+  //       .catch((err) => reject(err, "Hata Alındı."));
+  //   });
+  // }
 }
 
 function resolve(data){
