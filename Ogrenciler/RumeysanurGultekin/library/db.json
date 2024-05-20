@@ -1,52 +1,20 @@
 {
   "books": [
     {
-      "id": "8537",
-      "image": "https://www.hippo.com/sites/default/files/content/blog/image/2022-02/how-to-make-a-home-library-hero.jpg",
-      "bookname": "aa",
-      "author": "aa",
-      "date": "1212",
-      "category": "1"
-    },
-    {
-      "id": "3b0364df-838c-4a9a-b336-62fefaee0fc2",
-      "image": "https://tamadres.com/media/catalog/product/cache/7aaa48ea9734ca445e6a222a3fe7d59a/1/6/165018_9786053326090_98288.jpg",
-      "bookname": "Olağanüstü Bir Gece",
-      "author": "Stefan Zweig",
-      "date": "2010",
+      "id": "1ee88af0-5646-4fca-ba19-d374da036e3b",
+      "image": "https://img.kitapyurdu.com/v1/getImage/fn:1107942/wh:true/wi:500",
+      "bookname": "Beyoğlu'nun En Güzel Abisi",
+      "author": "Ahmet Ümit",
+      "date": "2013",
       "categories": "2"
     },
     {
-      "id": "099c65af-3de1-4c0d-8faa-e94250ee7c9e",
-      "image": "adfsdfdsa",
-      "bookname": "sfdsadf",
-      "author": "sfadsdf",
-      "date": "23123",
-      "categories": "1"
-    },
-    {
-      "id": "01218b10-86e1-4ef4-b90a-b4004e01b059",
-      "image": "34234",
-      "bookname": "324324324234234",
-      "author": "234234234",
-      "date": "234234234",
-      "categories": "1"
-    },
-    {
-      "id": "d97e238f-ab3d-400e-88c2-a9ded4139ce6",
-      "image": "sdfsadf",
-      "bookname": "sadfsadf",
-      "author": "asfds",
-      "date": "124134",
-      "categories": "1"
-    },
-    {
-      "id": "fb36abc5-125d-4249-ac71-ed2fb1051579",
-      "image": "weqrwerewqr",
-      "bookname": "ewqrwereqw",
-      "author": "qwerewqr",
-      "date": "1243143",
-      "categories": "1"
+      "id": "21b99082-156d-4bc2-a204-77954c9ac4f2",
+      "image": "https://img.kitapyurdu.com/v1/getImage/fn:2983869/wh:true/wi:800",
+      "bookname": "Bit Palas",
+      "author": "Elif Şafak",
+      "date": "2002",
+      "categories": "2"
     }
   ]
 }

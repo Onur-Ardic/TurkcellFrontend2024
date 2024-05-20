@@ -10,12 +10,22 @@ class Book {
     
   }
   class UI {
+    clearInput() {
+      document.getElementById("imageInput").value = "";
+      document.getElementById("bookName").value = "";
+      document.getElementById("bookAuthor").value = "";
+      document.getElementById("bookDate").value = "";
+      document.getElementById("categoriesInput").value = "";
+  };
+
+    
     createCard(book) {
   
        const booklist = document.getElementById("booklist");
         const card = document.createElement("div");
-        card.classList.add("card", "mb-3");
-        card.style.maxWidth = "240px";
+        card.classList.add("card", "mb-3", "border-white" , "bg-warning");
+        card.style.maxWidth = "350px";
+        card.style.maxHeight = "250px"
   
         const row = document.createElement("div");
         row.classList.add("row", "g-0");
@@ -54,14 +64,61 @@ class Book {
         const buttonUpdate = document.createElement("button");
         buttonUpdate.classList.add("btn", "btn-success" , "my-3" , "btn-sm");
         buttonUpdate.textContent = "Güncelle";
+        buttonUpdate.addEventListener('click', function() {
+          const modal = new bootstrap.Modal(document.getElementById('exampleModalLong'));
+          modal.show();
+      
+          // Kartın verilerini modal forma doldur
+          document.getElementById('imageInput').value = book.image;
+          document.getElementById('bookName').value = book.bookname;
+          document.getElementById('bookAuthor').value = book.author;
+          document.getElementById('bookDate').value = book.date;
+          document.getElementById('categoriesInput').value = book.categories;
+      
+          // Modal gizlendiğinde içeriği temizle
+          modal.addEventListener('hidden.bs.modal', function () {
+              // Formu temizle
+              clearInput();
+          });
+      
+          // Güncelleme işlemini gerçekleştir
+          document.getElementById('addBook').addEventListener('click', function(e) {
+              e.preventDefault();
+      
+              const updatedData = {
+                  image: document.getElementById('imageInput').value,
+                  bookname: document.getElementById('bookName').value,
+                  author: document.getElementById('bookAuthor').value,
+                  date: document.getElementById('bookDate').value,
+                  categories: document.getElementById('categoriesInput').value
+              };
+      
+              // Veritabanında güncelleme yap
+              Request.update("http://localhost:3000/books", book.id, updatedData);
+      
+              // Eski kartı ekrandan kaldır
+              card.remove();
+      
+              // Yeni kartı ekle
+              const ui = new UI();
+              ui.createCard(updatedData);
+          });
+      });
+      
+              
+      
+        
   
         const buttonDelete = document.createElement('button');
         buttonDelete.classList.add("btn", "btn-danger" , "btn-sm");
         buttonDelete.textContent = "Sil";
-        buttonDelete.addEventListener('click',function(){
-          card.remove();
-          getData.deleteBook(book.id)
-        })
+        // buttonDelete.addEventListener('click',function(){
+        //   card.remove();
+        // })
+        buttonDelete.addEventListener('click', function() {
+          card.remove(); // Kartı ekrandan kaldır
+          Request.delete("http://localhost:3000/books", book.id); // Veritabanından kitabı sil
+      });
   
         imgDiv.appendChild(img);
         row.appendChild(imgDiv);
@@ -98,11 +155,5 @@ class Book {
       // formLibrary.appendChild(kitabıgor);
       
       }
-      clearInput() {
-        document.getElementById("imageInput").value = "";
-        document.getElementById("bookName").value = "";
-        document.getElementById("bookAuthor").value = "";
-        document.getElementById("bookDate").value = "";
-        document.getElementById("categoriesInput").value = "";
-    };
+      
   }

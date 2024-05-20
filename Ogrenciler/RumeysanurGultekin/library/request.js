@@ -27,14 +27,34 @@ class Request {
       })
       .then((data) => console.log(data))
   }
-  static delete(url) {
-      fetch(url, {
-        method: "DELETE",
+   static delete(url, id) {
+      fetch(`${url}/${id}`, { // URL'ye id'yi ekleyerek silinecek kitabı belirtiyoruz
+          method: "DELETE",
       })
-        .then((response) => response.json())
-        .then(() => resolve("Veri Silindi"))
-        .catch((err) => reject(err, "Hata Alındı."));
-    };
+      .then((response) => response.json())
+      .then(() => console.log("Veri Silindi")) // Silme başarılı olduğunda bir mesaj yazdırabiliriz
+      .catch((err) => console.error(err, "Hata Alındı."));
+}
+    static update(url, id, newData) {
+      fetch(`${url}/${id}`, {
+          method: "PUT",
+          body: JSON.stringify(newData),
+          headers: {
+              "Content-type": "application/json;",
+          },
+      })
+      .then(response => response.json())
+      .then(() => console.log("Veri Güncellendi"))
+      .catch((err) => console.error(err, "Hata Alındı."));
+    }
+  // static delete(url) {
+  //     fetch(url, {
+  //       method: "DELETE",
+  //     })
+  //       .then((response) => response.json())
+  //       .then(() => resolve("Veri Silindi"))
+  //       .catch((err) => reject(err, "Hata Alındı."));
+  //   };
 }
 
 function resolve(data){
