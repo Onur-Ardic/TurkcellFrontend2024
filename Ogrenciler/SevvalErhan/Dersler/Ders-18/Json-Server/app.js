@@ -21,7 +21,7 @@ class UI {
       cardDiv.classList.add("card");
 
       const cardBodyDiv = document.createElement("div");
-      cardBodyDiv.classList.add("card-body");
+      cardBodyDiv.classList.add("card-body", "bg-secondary", "text-white");
 
       const cardTitle = document.createElement("h5");
       cardTitle.classList.add("card-title");
