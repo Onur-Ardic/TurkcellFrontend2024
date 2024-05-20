@@ -16,15 +16,31 @@ class UI {
     users.forEach((user) => {
       const userDiv = document.createElement("div");
       userDiv.classList.add("col-lg-3");
-      userDiv.innerHTML = `
-            <div class="card"">
-                <div class="card-body">
-                    <h5 class="card-title">${user.name}</h5>
-                    <p class="card-text">${user.department}</p>
-                    <p class="card-text">${user.salary}</p>
-                </div>
-            </div>
-                `;
+
+      const cardDiv = document.createElement("div");
+      cardDiv.classList.add("card");
+
+      const cardBodyDiv = document.createElement("div");
+      cardBodyDiv.classList.add("card-body");
+
+      const cardTitle = document.createElement("h5");
+      cardTitle.classList.add("card-title");
+      cardTitle.textContent = user.name;
+
+      const cardDepartment = document.createElement("p");
+      cardDepartment.classList.add("card-text");
+      cardDepartment.textContent = user.department;
+
+      const cardSalary = document.createElement("p");
+      cardSalary.classList.add("card-text");
+      cardSalary.textContent = user.salary;
+
+      cardBodyDiv.appendChild(cardTitle);
+      cardBodyDiv.appendChild(cardDepartment);
+      cardBodyDiv.appendChild(cardSalary);
+
+      cardDiv.appendChild(cardBodyDiv);
+      userDiv.appendChild(cardDiv);
       usersDiv.appendChild(userDiv);
     });
   }
