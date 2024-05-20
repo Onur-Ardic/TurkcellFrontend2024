@@ -1,0 +1,21 @@
+{
+  "books": [
+    {
+      "id": "2",
+      "BookName": "ezilenler",
+      "Author": "Agathe Christy",
+      "Category": "Aksiyon",
+      "PublishedDate": "1996-05-11"
+    },
+    {
+      "id": "3",
+      "BookName": "Doğu",
+      "Author": "Agathe Christy",
+      "Category": "Aksiyon",
+      "PublishedDate": "1996-05-11"
+    },
+    {
+      "id": "wDIEI2j"
+    }
+  ]
+}
