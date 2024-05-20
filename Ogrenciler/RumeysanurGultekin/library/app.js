@@ -10,8 +10,6 @@ class Book {
   }
   
 }
-
-
 class UI {
   createCard(book) {
 
@@ -61,6 +59,10 @@ class UI {
       const buttonDelete = document.createElement('button');
       buttonDelete.classList.add("btn", "btn-danger" , "btn-sm");
       buttonDelete.textContent = "Sil";
+      buttonDelete.addEventListener('click',function(){
+        card.remove();
+        getData.deleteBook(book.id)
+      })
 
       imgDiv.appendChild(img);
       row.appendChild(imgDiv);
@@ -104,7 +106,18 @@ class UI {
       document.getElementById("bookDate").value = "";
       document.getElementById("categoriesInput").value = "";
   };
-
+  // static getIT(data){
+  //   data.foreach((book) => {
+  //     UI.createCard(book)
+  //   })
+  // }
+  // yazarlistesi (){
+  //   const yazarilistele = document.getElementById("yazarilistele") ;
+  //   yazarilistele.addEventListener("click", function() {
+  //     yazarilistele.innerText = "book.author";
+      
+  //   })
+  // }
 
  }
 
@@ -137,6 +150,10 @@ document.getElementById("formKitap").addEventListener("submit",function (e) {
   // getJsonFile();
   
   Request.post("http://localhost:3000/books",book);
+  // getData.sendDataBook(book);
+  // getIT();
+
+
 
   // // var jsonveri = JSON.stringify(book);
   // // var veri = JSON.parse(jsonveri);
@@ -146,7 +163,5 @@ document.getElementById("formKitap").addEventListener("submit",function (e) {
 
 
 });
-Request.get("http://localhost:3000");
-
-
+Request.get("http://localhost:3000/books");
 
