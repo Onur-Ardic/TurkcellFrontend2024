@@ -1,0 +1,26 @@
+.custom-btn {
+  background-color: #212529;
+  color: white;
+  border: 1px solid white;
+}
+.custom-btn:hover {
+  background-color: white !important;
+  color: #212529 !important;
+  border: 1px solid #212529;
+}
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #212529;
+  border-color: #212529;
+}
+.custom-radio .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba(33, 37, 98, 0.25);
+}
+.card-img-top {
+  width: 186px;
+  height: 268px;
+}
+.custom-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.5);
+  border: 1px solid rgba(255, 0, 0, 0.5);
+}
