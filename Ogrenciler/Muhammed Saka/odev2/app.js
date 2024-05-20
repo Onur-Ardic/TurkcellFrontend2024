@@ -13,7 +13,7 @@ function fetchBooks() {
 
 
 function loadCategories() {
-  const categories = ['Korku', 'Aksiyon', 'Aşk', 'Oyun', 'Komedi', 'Romantik Komedi', 'Gerilim']; // Burada kategorileri manuel olarak belirledik
+  const categories = ['Korku', 'Aksiyon', 'Aşk', 'Oyun', 'Komedi', 'Romantik Komedi', 'Gerilim'];
   const categorySelect = document.getElementById('filter-category');
 
   categories.forEach(category => {
@@ -27,7 +27,7 @@ function loadCategories() {
 document.addEventListener('DOMContentLoaded', () => {
   fetchBooks();
   setupFilters();
-  loadCategories(); // Yeni kategori yükleme fonksiyonunu çağırın
+  loadCategories(); 
 });
 
 function displayBooks(books) {

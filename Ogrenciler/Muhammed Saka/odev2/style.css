@@ -7,6 +7,11 @@ body {
   margin-bottom: 20px;
 }
 
+.navbar-brand img {
+  height: 30px;
+  margin-right: 10px;
+}
+
 .card {
   border: none;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -50,9 +55,4 @@ body {
   top: 20px;
   right: 20px;
   z-index: 1050;
-}
-
-.navbar-brand img {
-  height: 30px;
-  margin-right: 10px;
 }
