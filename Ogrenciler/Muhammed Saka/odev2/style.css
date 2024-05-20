@@ -51,3 +51,8 @@ body {
   right: 20px;
   z-index: 1050;
 }
+
+.navbar-brand img {
+  height: 30px;
+  margin-right: 10px;
+}
