@@ -29,3 +29,28 @@ document.querySelector('.btn-info').addEventListener('click', function (event) {
     }
   })
 })
+
+function compareBooks(a, b, sortType) {
+  if (sortType === 'price-low' || sortType === 'price-high') {
+    const bookA = a.querySelector('h5').textContent.toLowerCase().trim()
+    const bookB = b.querySelector('h5').textContent.toLowerCase().trim()
+    return sortType === 'price-high' ? bookB.localeCompare(bookA) : bookA.localeCompare(bookB)
+  } else if (sortType === 'date') {
+    const dateA = new Date(a.dataset.date)
+    const dateB = new Date(b.dataset.date)
+    return dateA - dateB
+  }
+}
+
+document.getElementById('filter-sort').addEventListener('change', function () {
+  const sortType = this.value
+  const bookWrapper = document.querySelector('.book-card-wrapper')
+  const bookCards = document.querySelectorAll('.book-card')
+
+  const sortedBookCards = Array.from(bookCards).sort((a, b) => compareBooks(a, b, sortType))
+
+  bookWrapper.innerHTML = ''
+  sortedBookCards.forEach((bookCard) => {
+    bookWrapper.appendChild(bookCard)
+  })
+})
