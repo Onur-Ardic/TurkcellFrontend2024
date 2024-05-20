@@ -1,6 +1,7 @@
 {
   "books": [
     {
+      "id": "1",
       "title": "Tutunamayanlar",
       "year": "1972",
       "coverUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11462655/wh:true/wi:800",
@@ -10,8 +11,7 @@
         "authorImageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:1196677/wi:200/wh:b260d396e",
         "biography": "Oğuz Atay, 12 Ekim 1934 tarihinde İnebolu'da doğdu. İlk ve orta öğrenimini Kastamonu'da tamamladı. 1955 yılında Ankara Üniversitesi Dil ve Tarih-Coğrafya Fakültesi Türk Dili ve Edebiyatı Bölümü'ne girdi. 1957 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'ne geçti. 1962 yılında mezun olduktan sonra İstanbul'da çeşitli liselerde öğretmenlik yaptı. 1964 yılında Ankara'ya dönerek Millî Eğitim Bakanlığı'nda çeşitli görevlerde bulundu. 1970 yılında İstanbul'a dönerek Robert Kolej'de öğretmenlik yaptı. 1975 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'ne asistan olarak atandı. 1977 yılında İstanbul'da öldü."
       },
-      "description": "Tutunamayanlar, Oğuz Atay'ın 1972 yılında yayımlanan ilk romanıdır. Roman, Türk edebiyatında postmodernizmin ilk örneklerinden biri olarak kabul edilir. Roman, birinci tekil şahıs ağzından anlatılmıştır. Romanın kahramanı, Turgut Özben'dir. Roman, Turgut'un bir psikiyatriste yazdığı mektuplarla başlar. Turgut, mektuplarında çocukluk arkadaşı olan Teoman'ın intihar etmesi üzerine yaşadığı travmayı anlatır. Roman, Turgut'un çocukluk arkadaşlarıyla olan ilişkilerini, ailesiyle olan ilişkilerini, iş hayatını ve yaşadığı travmaları anlatır.",
-      "id": "1"
+      "description": "Tutunamayanlar, Oğuz Atay'ın 1972 yılında yayımlanan ilk romanıdır. Roman, Türk edebiyatında postmodernizmin ilk örneklerinden biri olarak kabul edilir. Roman, birinci tekil şahıs ağzından anlatılmıştır. Romanın kahramanı, Turgut Özben'dir. Roman, Turgut'un bir psikiyatriste yazdığı mektuplarla başlar. Turgut, mektuplarında çocukluk arkadaşı olan Teoman'ın intihar etmesi üzerine yaşadığı travmayı anlatır. Roman, Turgut'un çocukluk arkadaşlarıyla olan ilişkilerini, ailesiyle olan ilişkilerini, iş hayatını ve yaşadığı travmaları anlatır."
     },
     {
       "id": "2",
