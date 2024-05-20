@@ -1,22 +1,15 @@
 function filterHandler(bookCard, book) {
-  console.log(bookCard)
-  console.log(book)
-
   const categoryFilter = document.getElementById('bookCategoryFilter')
+  const cardCategory = bookCard.querySelector('.book-card-category')
 
   categoryFilter.addEventListener('change', function () {
-    const selectedCategory = categoryFilter.value
+    const selectedCategory = categoryFilter.value.toLowerCase().trim()
+    const bookCategory = cardCategory.innerText.toLowerCase().trim()
 
-    bookCard.forEach((bookCard) => {
-      const bookCategory = bookCard.dataset.category.toLowerCase()
-
-      if (selectedCategory === 'all' || bookCategory === selectedCategory.toLowerCase()) {
-        bookCard.style.display = 'block'
-        console.log(`${bookCard.dataset.bookname} kartı görüntülendi.`)
-      } else {
-        bookCard.style.display = 'none'
-        console.log(`${bookCard.dataset.bookname} kartı gizlendi.`)
-      }
-    })
+    if (selectedCategory === 'all' || bookCategory === selectedCategory) {
+      bookCard.style.display = 'block'
+    } else {
+      bookCard.style.display = 'none'
+    }
   })
 }

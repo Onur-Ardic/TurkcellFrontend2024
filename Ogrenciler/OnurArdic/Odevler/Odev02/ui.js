@@ -58,9 +58,15 @@ class UI {
     date.classList.add('book-card-date')
     date.textContent = `Tarih: ${book.date}`
 
+    const category = document.createElement('p')
+    category.classList.add('book-card-category')
+    category.id = 'bookCardCategory'
+    category.textContent = `${book.category}`
+
     bookInfoDiv.appendChild(author)
     bookInfoDiv.appendChild(date)
     bookInfoDiv.appendChild(publisher)
+    bookInfoDiv.appendChild(category)
     infoDiv.appendChild(bookInfoDiv)
 
     const buttonDiv = document.createElement('div')
