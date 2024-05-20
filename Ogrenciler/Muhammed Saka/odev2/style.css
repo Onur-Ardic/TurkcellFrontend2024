@@ -13,30 +13,38 @@ body {
 }
 
 .card {
-  border: none;
-  transition: transform 0.2s, box-shadow 0.2s;
-  background-color: #495057;
-  color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
 }
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.card img {
+.card-img-top {
   height: 200px;
   object-fit: cover;
 }
 
-.card-body {
-  text-align: center;
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
 }
 
 #book-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+}
+
+#book-list .col-md-3 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 #bookModal .modal-header {
