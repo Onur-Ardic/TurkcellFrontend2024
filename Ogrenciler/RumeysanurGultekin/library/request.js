@@ -2,13 +2,17 @@ class Request {
   constructor(url){
             this.url = url;
         }
-
-  static get(url) {
-      fetch(`${url}`)
-        .then((response) => response.json())
-        .then((data) => console.log(data))
-        .catch((err) => reject(err, "Veri alınamadı."));
-  }
+        static get(url) {
+          fetch(`${url}`)
+              .then((response) => response.json())
+              .then((data) => {
+                  const ui = new UI(); // UI sınıfından bir örnek oluştur
+                  data.forEach((book) => {
+                      ui.createCard(book); // UI sınıfındaki createCard metodu ile kitap kartını oluştur
+                  });
+              })
+              .catch((err) => console.error(err, "Veri alınamadı."));
+      }
   static post(url, data) {
     fetch(url, {
       method: "POST",
