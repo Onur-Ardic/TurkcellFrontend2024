@@ -16,17 +16,14 @@
   <body>
     <header class="header">
       <div class="navbar-top bg-warning">
-        <marquee class="py-1 mt-1"
-          >Yeni kitaplarda %20 indirim fırsatını kaçırma
-          <a class="me-1" href="#">Tıkla</a>alışverişe başla</marquee
-        >
+        <marquee class="py-1 mt-1">Labirent serisi kütüphaneye eklenecek </marquee>
       </div>
       <nav class="navbar navbar-expand-lg bg-black">
         <div class="container-fluid">
-          <a class="navbar-brand text-white fw-bold fs-4" href="#">Kitapçım</a>
+          <a class="navbar-brand text-white fw-bold fs-4" href="#">Kitaplarım</a>
 
           <button
-            class="navbar-toggler"
+            class="navbar-toggler bg-white"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -209,12 +206,17 @@
                   <input type="text" class="form-control" id="bookAuthor" placeholder="Yazar" />
                 </div>
                 <div class="mb-3">
-                  <label for="bookPublisher" class="form-label">Yayımlanma Yılı</label>
+                  <label for="bookDate" class="form-label">Yayımlanma Yılı</label>
                   <input type="text" class="form-control" id="bookDate" placeholder="Tarih" />
                 </div>
                 <div class="mb-3">
-                  <label for="bookPrice" class="form-label">Fiyat</label>
-                  <input type="text" class="form-control" id="bookPrice" placeholder="Fiyat" />
+                  <label for="bookPublisher" class="form-label">Yayınevi</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="bookPublisher"
+                    placeholder="Yayınevi"
+                  />
                 </div>
 
                 <div class="mb-3 d-flex flex-column">
@@ -257,6 +259,7 @@
     <script src="request.js"></script>
     <script src="ui.js"></script>
     <script src="main.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
