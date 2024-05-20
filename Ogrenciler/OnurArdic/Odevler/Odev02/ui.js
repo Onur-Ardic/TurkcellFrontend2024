@@ -10,9 +10,6 @@ const ModalTitle = document.getElementById('addBookLabel')
 const navAddBtn = document.getElementById('navAddBookBtn')
 const navFormBtn = document.getElementById('navFormBtn')
 const modalUpdateBtn = document.getElementById('modalUpdateBtn')
-const categoryFilters = document.querySelectorAll('.categoriy-list input[type="checkbox"]:checked')
-console.log(categoryFilters)
-const publisherFilters = document.querySelectorAll('.bookmark-list input[type="checkbox"]:checked')
 
 navAddBtn.addEventListener('click', () => {
   ModalTitle.innerText = 'Kitap Ekle'
@@ -29,11 +26,6 @@ class UI {
   static createBookCard(book) {
     const cardDiv = document.createElement('div')
     cardDiv.classList.add('book-card', 'border', 'position-relative')
-
-    const bookCards = document.querySelectorAll('.book-card')
-    bookCards.forEach((bookCard) => {
-      UI.filterHandler(bookCard, book)
-    })
 
     const imgDiv = document.createElement('div')
     imgDiv.classList.add('book-card-img')
@@ -118,36 +110,17 @@ class UI {
     cardDiv.appendChild(infoDiv)
     cardDiv.appendChild(buttonDiv)
     bookWrapper.appendChild(cardDiv)
+
+    const bookCards = document.querySelectorAll('.book-card')
+
+    bookCards.forEach((bookCard) => {
+      filterHandler(bookCard, book)
+    })
   }
 
   static getOnUI(data) {
     data.forEach((book) => {
       UI.createBookCard(book)
     })
-  }
-
-  static filterHandler(bookCard, book) {
-    const category = book.category
-    const publisher = book.publisher
-
-    let isVisible = true
-
-    categoryFilters.forEach((filter) => {
-      if (!category.includes(filter.value)) {
-        isVisible = false
-      }
-    })
-
-    publisherFilters.forEach((filter) => {
-      if (!publisher.includes(filter.value)) {
-        isVisible = false
-      }
-    })
-
-    if (isVisible) {
-      bookCard.style.display = 'block'
-    } else {
-      bookCard.style.display = 'none'
-    }
   }
 }
