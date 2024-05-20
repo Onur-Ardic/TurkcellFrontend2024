@@ -6,7 +6,7 @@ class Request {
       let blogs = document.querySelector(".blogContainer");
       const createRandomNumber = () => Math.floor(Math.random() * 100);
       if (this.status === 200) {
-        const datas = JSON.parse(this.response);
+        const datas = JSON.parse(this.responseText);
         datas.forEach((blog) => {
           if (blog.id <= 20) {
             blogs.innerHTML += `
