@@ -1,0 +1,134 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Tutunamayanlar",
+      "year": "1972",
+      "coverUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11462655/wh:true/wi:800",
+      "genre": "Roman",
+      "author": {
+        "authorName": "Oğuz Atay",
+        "authorImageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:1196677/wi:200/wh:b260d396e",
+        "biography": "Oğuz Atay, 12 Ekim 1934 tarihinde İnebolu'da doğdu. İlk ve orta öğrenimini Kastamonu'da tamamladı. 1955 yılında Ankara Üniversitesi Dil ve Tarih-Coğrafya Fakültesi Türk Dili ve Edebiyatı Bölümü'ne girdi. 1957 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'ne geçti. 1962 yılında mezun olduktan sonra İstanbul'da çeşitli liselerde öğretmenlik yaptı. 1964 yılında Ankara'ya dönerek Millî Eğitim Bakanlığı'nda çeşitli görevlerde bulundu. 1970 yılında İstanbul'a dönerek Robert Kolej'de öğretmenlik yaptı. 1975 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'ne asistan olarak atandı. 1977 yılında İstanbul'da öldü."
+      },
+      "description": "Tutunamayanlar, Oğuz Atay'ın 1972 yılında yayımlanan ilk romanıdır. Roman, Türk edebiyatında postmodernizmin ilk örneklerinden biri olarak kabul edilir. Roman, birinci tekil şahıs ağzından anlatılmıştır. Romanın kahramanı, Turgut Özben'dir. Roman, Turgut'un bir psikiyatriste yazdığı mektuplarla başlar. Turgut, mektuplarında çocukluk arkadaşı olan Teoman'ın intihar etmesi üzerine yaşadığı travmayı anlatır. Roman, Turgut'un çocukluk arkadaşlarıyla olan ilişkilerini, ailesiyle olan ilişkilerini, iş hayatını ve yaşadığı travmaları anlatır."
+    },
+    {
+      "id": "2",
+      "title": "Tehlikeli Oyunlar",
+      "year": "1973",
+      "coverUrl": "https://i.dr.com.tr/cache/600x600-0/originals/0000000061603-1.jpg",
+      "genre": "Roman",
+      "author": {
+        "authorName": "Oğuz Atay",
+        "authorImageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:1196677/wi:200/wh:b260d396e",
+        "biography": "Oğuz Atay, 12 Ekim 1934 tarihinde İnebolu'da doğdu. İlk ve orta öğrenimini Kastamonu'da tamamladı. 1955 yılında Ankara Üniversitesi Dil ve Tarih-Coğrafya Fakültesi Türk Dili ve Edebiyatı Bölümü'ne girdi. 1957 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'ne geçti. 1962 yılında mezun olduktan sonra İstanbul'da çeşitli liselerde öğretmenlik yaptı. 1964 yılında Ankara'ya dönerek Millî Eğitim Bakanlığı'nda çeşitli görevlerde bulundu. 1970 yılında İstanbul'a dönerek Robert Kolej'de öğretmenlik yaptı. 1975 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'ne asistan olarak atandı. 1977 yılında İstanbul'da öldü."
+      },
+      "description": "Tehlikeli Oyunlar, Oğuz Atay'ın 1973 yılında yayımlanan ikinci romanıdır. Roman, Türk edebiyatında postmodernizmin ilk örneklerinden biri olarak kabul edilir. Roman, birinci tekil şahıs ağzından anlatılmıştır. Romanın kahramanı, Selim Işık'tır. Roman, Selim'in bir psikiyatriste yazdığı mektuplarla başlar. Selim, mektuplarında çocukluk arkadaşı olan Teoman'ın intihar etmesi üzerine yaşadığı travmayı anlatır. Roman, Selim'in çocukluk arkadaşlarıyla olan ilişkilerini, ailesiyle olan ilişkilerini, iş hayatını ve yaşadığı travmaları anlatır."
+    },
+    {
+      "id": "3",
+      "title": "Suç ve Ceza",
+      "year": "1866",
+      "coverUrl": "https://static.ticimax.cloud/41831/uploads/urunresimleri/buyuk/suc-ve-ceza-fyodor-dostoyevski-9786052-49d179.png",
+      "genre": "Roman",
+      "author": {
+        "authorName": "Fyodor Mihayloviç Dostoyevski",
+        "authorImageUrl": "https://r2.1k-cdn.com/sig/size:256/plain/https%3A%2F%2F1k-cdn.com%2Fresimler%2Fyazarlar%2F73622_hASgt_1527370965.jpg",
+        "biography": "Fyodor Mihayloviç Dostoyevski, 11 Kasım 1821 tarihinde Moskova'da doğdu. Dostoyevski, 1837 yılında Petersburg Mühendislik Akademisi'ne girdi. 1843 yılında akademiyi bitirdikten sonra askerlik hizmetine başladı. 1844 yılında askerlik hizmetinden ayrıldıktan sonra Petersburg'ta bir edebiyat dergisinde çalışmaya başladı. 1846 yılında ilk romanı olan İnsancıklar'ı yayımladı. 1850 yılında idam cezası, Sibirya'ya sürgüne çevrildi. 1859 yılında Petersburg'ta bir edebiyat dergisi kurdu. 1864 yılında ilk eşi öldü. 1867 yılında ikinci eşiyle evlendi. 1881 yılında Petersburg'da öldü."
+      },
+      "description": "Suç ve Ceza, Fyodor Mihayloviç Dostoyevski'nin 1866 yılında yayımlanan romanıdır. Roman, Rus edebiyatının en önemli eserlerinden biri olarak kabul edilir. Roman, birinci tekil şahıs ağzından anlatılmıştır. Romanın kahramanı, Raskolnikov'dur. Roman, Raskolnikov'un bir kadını öldürmesi ve bu cinayeti işlerken yaşadığı duygusal çatışmaları anlatır. Roman, Raskolnikov'un cinayeti işlemesinin ardından yaşadığı vicdan azabını, suçluluk duygusunu ve intikam duygusunu anlatır."
+    },
+    {
+      "id": "4",
+      "title": "Karamazov Kardeşler",
+      "year": "1880",
+      "coverUrl": "https://img.kitapyurdu.com/v1/getImage/fn:5635516/wh:true/wi:500",
+      "genre": "Roman",
+      "author": {
+        "authorName": "Fyodor Mihayloviç Dostoyevski",
+        "authorImageUrl": "https://r2.1k-cdn.com/sig/size:256/plain/https%3A%2F%2F1k-cdn.com%2Fresimler%2Fyazarlar%2F73622_hASgt_1527370965.jpg",
+        "biography": "Fyodor Mihayloviç Dostoyevski, 11 Kasım 1821 tarihinde Moskova'da doğdu. Dostoyevski, 1837 yılında Petersburg Mühendislik Akademisi'ne girdi. 1843 yılında akademiyi bitirdikten sonra askerlik hizmetine başladı. 1844 yılında askerlik hizmetinden ayrıldıktan sonra Petersburg'ta bir edebiyat dergisinde çalışmaya başladı. 1846 yılında ilk romanı olan İnsancıklar'ı yayımladı. 1850 yılında idam cezası, Sibirya'ya sürgüne çevrildi. 1859 yılında Petersburg'ta bir edebiyat dergisi kurdu. 1864 yılında ilk eşi öldü. 1867 yılında ikinci eşiyle evlendi. 1881 yılında Petersburg'da öldü."
+      },
+      "description": "Karamazov Kardeşler, Fyodor Mihayloviç Dostoyevski'nin 1880 yılında yayımlanan romanıdır. Roman, Rus edebiyatının en önemli eserlerinden biri olarak kabul edilir. Roman, birinci tekil şahıs ağzından anlatılmıştır. Romanın kahramanı, Dimitri, İvan ve Alyoşa Karamazov'dur. Roman, Karamazov kardeşlerin babaları Fyodor Karamazov tarafından öldürülmesi üzerine yaşadıkları duygusal çatışmaları anlatır. Roman, Karamazov kardeşlerin babaları Fyodor Karamazov'un ölümü üzerine miras kavgası yapmalarını, aşk ilişkilerini ve yaşadıkları trajedileri anlatır."
+    },
+    {
+      "id": "5",
+      "title": "Hamlet",
+      "year": "1603",
+      "coverUrl": "https://cdn.kobo.com/book-images/695eb39e-9405-4c4b-8267-302344f0f5f7/353/569/90/False/hamlet-15.jpg",
+      "genre": "Trajedi",
+      "author": {
+        "authorName": "William Shakespeare",
+        "authorImageUrl": "https://nationaltoday.com/wp-content/uploads/2022/04/50-William-Shakespeare-1200x834.jpg",
+        "biography": "William Shakespeare, 26 Nisan 1564 tarihinde İngiltere'nin Stratford-upon-Avon kasabasında doğdu. Babası, bir deri tüccarıydı. Shakespeare, 1582 yılında Anne Hathaway ile evlendi. 1583 yılında ilk çocuğu Susanna doğdu. 1585 yılında ikinci çocuğu Hamnet ve Judith doğdu. 1592 yılında Londra'ya taşındı. 1594 yılında Lord Chamberlain Tiyatrosu'nda oyuncu ve yazar olarak çalışmaya başladı. 1599 yılında Globe Tiyatrosu'nu kurdu. 1603 yılında Kraliyet Tiyatrosu'nda oyuncu ve yazar olarak çalışmaya başladı. 1613 yılında emekli oldu. 1616 yılında öldü."
+      },
+      "description": "Hamlet, William Shakespeare'in 1603 yılında yazdığı trajedi türündeki oyunudur. Oyun, Danimarka prensi Hamlet'in babasının ölümünün ardından yaşadığı duygusal çatışmaları ve intikam duygusunu anlatır. Oyun, Hamlet'in babasının ölümünün ardından annesi Gertrude ile amcası Kral Claudius'un evlenmesi üzerine yaşadığı duygusal çatışmaları anlatır. Oyun, Hamlet'in babasının ölümünün ardından annesi Gertrude ile amcası Kral Claudius'un evlenmesi üzerine intikam duygusuyla hareket etmesini ve yaşadığı trajedileri anlatır."
+    },
+    {
+      "id": "6",
+      "title": "Aşk ve Gurur",
+      "year": "1813",
+      "coverUrl": "https://img.kitapyurdu.com/v1/getImage/fn:3095891/wh:true/wi:800",
+      "genre": "Roman",
+      "author": {
+        "authorName": "Jane Austen",
+        "authorImageUrl": "https://cdn.britannica.com/12/172012-050-DAA7CE6B/Jane-Austen-Cassandra-engraving-portrait-1810.jpg",
+        "biography": "Jane Austen, 16 Aralık 1775 tarihinde İngiltere'nin Steventon kasabasında doğdu. Babası, bir rahipti. Austen, 1783 yılında evinde eğitim görmeye başladı. 1795 yılında ilk romanı olan Aşk ve Gurur'u yazdı. 1811 yılında Sense and Sensibility adlı romanını yayımladı. 1813 yılında Pride and Prejudice adlı romanını yayımladı. 1814 yılında Mansfield Park adlı romanını yayımladı. 1815 yılında Emma adlı romanını yayımladı. 1817 yılında Persuasion adlı romanını yayımladı. 1817 yılında Northanger Abbey adlı romanını yayımladı. 1817 yılında öldü."
+      },
+      "description": "Aşk ve Gurur, Jane Austen'in 1813 yılında yayımlanan romanıdır. Roman, İngiliz edebiyatının en önemli eserlerinden biri olarak kabul edilir. Roman, birinci tekil şahıs ağzından anlatılmıştır. Romanın kahramanı, Elizabeth Bennet'tir. Roman, Elizabeth Bennet'in ailesiyle olan ilişkilerini, aşk ilişkilerini ve yaşadığı trajedileri anlatır. Roman, Elizabeth Bennet'in ailesiyle olan ilişkilerini, aşk ilişkilerini ve yaşadığı trajedileri anlatır."
+    },
+    {
+      "id": "7",
+      "title": "Zengin Baba Yoksul Baba",
+      "year": "1997",
+      "coverUrl": "https://i.dr.com.tr/cache/600x600-0/originals/0001758255001-1.jpg",
+      "genre": "Finans",
+      "author": {
+        "authorName": "Robert T. Kiyosaki",
+        "authorImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Robert_Kiyosaki_by_Gage_Skidmore_2.jpg/1200px-Robert_Kiyosaki_by_Gage_Skidmore_2.jpg",
+        "biography": "Robert T. Kiyosaki, 8 Nisan 1947 tarihinde Amerika Birleşik Devletleri'nin Hilo şehrinde doğdu. Kiyosaki, 1965 yılında Amerika Birleşik Devletleri Deniz Kuvvetleri'ne katıldı. 1973 yılında Deniz Kuvvetleri'nden ayrıldıktan sonra iş dünyasına atıldı. 1997 yılında Zengin Baba Yoksul Baba adlı kitabını yayımladı. 1998 yılında Cashflow Quadrant adlı kitabını yayımladı. 2000 yılında Rich Dad's Guide to Investing adlı kitabını yayımladı. 2002 yılında Rich Dad's Rich Kid Smart Kid adlı kitabını yayımladı. 2004 yılında Rich Dad's Retire Young Retire Rich adlı kitabını yayımladı."
+      },
+      "description": "Zengin Baba Yoksul Baba, Robert T. Kiyosaki'nin 1997 yılında yayımlanan kitabıdır. Kitap, finansal özgürlük ve zenginlik konularında tavsiyeler verir. Kitap, Kiyosaki'nin çocukluk döneminde yaşadığı deneyimleri ve babası ile zengin bir arkadaşının babası arasındaki farkları anlatır. Kitap, Kiyosaki'nin finansal özgürlük ve zenginlik konularında tavsiyeler verir. Kitap, Kiyosaki'nin finansal özgürlük ve zenginlik konularında tavsiyeler verir."
+    },
+    {
+      "id": "8",
+      "title": "Satranç",
+      "year": "1941",
+      "coverUrl": "https://m.media-amazon.com/images/I/61ialm+EQ2L._AC_UF894,1000_QL80_.jpg",
+      "genre": "Roman",
+      "author": {
+        "authorName": "Stefan Zweig",
+        "authorImageUrl": "https://images.mubicdn.net/images/cast_member/14666/cache-259061-1506233789/image-w856.jpg?size=800x",
+        "biography": "Stefan Zweig, 28 Kasım 1881 tarihinde Avusturya-Macaristan İmparatorluğu'nun Viyana şehrinde doğdu. Zweig, 1900 yılında Viyana Üniversitesi Hukuk Fakültesi'ne girdi. 1904 yılında Viyana Üniversitesi Hukuk Fakültesi'nden mezun oldu. 1904 yılında Viyana Üniversitesi Hukuk Fakültesi'nde doktora yaptı. 1904 yılında Viyana Üniversitesi Hukuk Fakültesi'nde öğretim görevlisi olarak göreve başladı. 1914 yılında I. Dünya Savaşı'nın başlaması üzerine İsviçre'ye göç etti. 1942 yılında Brezilya'da öldü."
+      },
+      "description": "Satranç, Stefan Zweig'ın 1941 yılında yayımlanan romanıdır. Roman, Zweig'ın en önemli eserlerinden biri olarak kabul edilir. Roman, birinci tekil şahıs ağzından anlatılmıştır. Romanın kahramanı, Mirko Czentovic'tir. Roman, Mirko Czentovic'in satranç oyunundaki ustalığını ve zekasını anlatır. Roman, Mirko Czentovic'in satranç oyunundaki ustalığını ve zekasını anlatır."
+    },
+    {
+      "id": "9",
+      "title": "Göğe Bakma Durağı",
+      "year": "1966",
+      "coverUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000264816-1.jpg",
+      "genre": "Şiir",
+      "author": {
+        "authorName": "Turgut Uyar",
+        "authorImageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:1413923/wi:200/wh:53daf161f",
+        "biography": "Turgut Uyar, 4 Ağustos 1927 tarihinde İstanbul'da doğdu. İlk ve orta öğrenimini İstanbul'da tamamladı. 1945 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'ne girdi. 1949 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'nden mezun oldu. 1952 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'nde öğretim görevlisi olarak göreve başladı. 1955 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'nde doçent oldu. 1960 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'nde profesör oldu. 1985 yılında İstanbul'da öldü."
+      },
+      "description": "Göğe Bakma Durağı, Turgut Uyar'ın 1966 yılında yayımlanan şiir kitabıdır. Kitap, Türk edebiyatının en önemli şiir kitaplarından biri olarak kabul edilir. Kitap, Turgut Uyar'ın en önemli şiirlerini içerir."
+    },
+    {
+      "id": "10",
+      "title": "Yazılımın Kitabı",
+      "year": "2024",
+      "coverUrl": "https://m.media-amazon.com/images/I/81msmMqA7BL._AC_UF1000,1000_QL80_.jpg",
+      "genre": "Teknoloji",
+      "author": {
+        "authorName": "Varol Maksutoğlu",
+        "authorImageUrl": "https://media.licdn.com/dms/image/C4D03AQEZAY3WNHLzew/profile-displayphoto-shrink_800_800/0/1538573307210?e=2147483647&v=beta&t=SQIHtn6agZ7NHuC6EG7UB6Sg1tlANQ0gQBjkiS-0qVE",
+        "biography": "For 6 years outside of working hours courses and specially at home; He teaches 3D design (3DSMax, AutoCAD, Revit, Lumion, Twinmotion, Stechup), Programming (Python, C, C ++, Html, CSS, JS, VueJS, React, Bootstrap), Project Management (Project, Primavera) and Game Development (Unity, Unreal Engine). You may want to make an appointment so you can write messages to get private lessons."
+      },
+      "description": "Yazılımın Kitabını Varol Maksutoğlu yazmıştır."
+    }
+  ]
+}
