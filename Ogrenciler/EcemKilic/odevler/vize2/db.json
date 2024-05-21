@@ -3,34 +3,82 @@
     {
       "id": 1,
       "title": "Kürk Mantolu Madonna",
-      "author": "Yazar 1",
-      "category": "Kategori 1",
-      "year": 2020,
-      "cover": "https://picsum.photos/200/300"
+      "author": "Sabahattin Ali",
+      "category": "Roman",
+      "year": 1943,
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/K%C3%BCrk_Mantolu_Madonna.djvu/page1-734px-K%C3%BCrk_Mantolu_Madonna.djvu.jpg"
     },
     {
       "id": 2,
-      "title": "Satranç",
-      "author": "Yazar 2",
-      "category": "Kategori 2",
-      "year": 2019,
-      "cover": "https://picsum.photos/200/300"
+      "title": "Tutunamayanlar",
+      "author": "Oğuz Atay",
+      "category": "Roman",
+      "year": 1971,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/a/a2/Tutunamayanlar-kapak.jpg"
     },
     {
       "id": 3,
-      "title": "Sefiller",
-      "author": "Yazar 2",
-      "category": "Kategori 2",
-      "year": 2018,
-      "cover": "https://picsum.photos/200/300"
+      "title": "Saatleri Ayarlama Enstitüsü",
+      "author": "Ahmet Hamdi Tanpınar",
+      "category": "Roman",
+      "year": 1961,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/5/52/Saatleri_Ayarlama_Enstit%C3%BCs%C3%BC.jpg"
     },
     {
-      "id": "b125",
-      "title": "Ateşten Gömlek",
-      "author": "Halide Edip Adıvar",
-      "category": "Kurgu",
-      "year": "1922",
-      "cover": "data:image/jpeg;base64,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"
+      "id": 4,
+      "title": "İnce Memed",
+      "author": "Yaşar Kemal",
+      "category": "Roman",
+      "year": 1955,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/thumb/6/69/InceMemed.jpg/195px-InceMemed.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Aşk",
+      "author": "Elif Şafak",
+      "category": "Roman",
+      "year": 2009,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/thumb/8/82/A%C5%9Fk_Kapak.jpg/330px-A%C5%9Fk_Kapak.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Puslu Kıtalar Atlası",
+      "author": "İhsan Oktay Anar",
+      "category": "Fantastik",
+      "year": 1995,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/thumb/a/ad/%C4%B0hsan_Oktay_Anar_-_Puslu_K%C4%B1talar_Atlas%C4%B1.jpg/330px-%C4%B0hsan_Oktay_Anar_-_Puslu_K%C4%B1talar_Atlas%C4%B1.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Otomatik Portakal",
+      "author": "Anthony Burgess",
+      "category": "Roman",
+      "year": 1962,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/4/49/Antony_Burgess-Otomatik_Portakal.jpg?20140202165143"
+    },
+    {
+      "id": 8,
+      "title": "Simyacı",
+      "author": "Paulo Coelho",
+      "category": "Roman",
+      "year": 1988,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/d/d4/Simyac%C4%B1.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Benim Adım Kırmızı",
+      "author": "Orhan Pamuk",
+      "category": "Roman",
+      "year": 1998,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/9/95/Benim_Adim_kirmizi.JPG"
+    },
+    {
+      "id": 10,
+      "title": "Serenad",
+      "author": "Zülfü Livaneli",
+      "category": "Roman",
+      "year": 2011,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/thumb/f/ff/Serenadroman.jpg/330px-Serenadroman.jpg"
     }
   ]
 }

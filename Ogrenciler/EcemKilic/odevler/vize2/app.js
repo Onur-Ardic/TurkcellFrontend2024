@@ -32,22 +32,60 @@ function loadBooks() {
 function displayBooks() {
     const bookList = document.getElementById('bookList');
     bookList.innerHTML = '';
+
     books.forEach(book => {
         const bookCard = document.createElement('div');
         bookCard.classList.add('col-md-4', 'book-card');
-        bookCard.innerHTML = `
-            <div class="card">
-                <img src="${book.cover}" class="card-img-top" alt="${book.title}">
-                <div class="card-body">
-                    <h5 class="card-title">${book.title}</h5>
-                    <p class="card-text">${book.author}</p>
-                    <p class="card-text">${book.category}</p>
-                    <p class="card-text">${book.year}</p>
-                    <button class="btn btn-primary" onclick="editBook(${book.id})">Düzenle</button>
-                    <button class="btn btn-danger" onclick="deleteBook(${book.id})">Sil</button>
-                </div>
-            </div>
-        `;
+        
+        const card = document.createElement('div');
+        card.classList.add('card');
+        
+        const img = document.createElement('img');
+        img.src = book.cover;
+        img.alt = book.title;
+        img.classList.add('card-img-top', 'img-fluid');
+        
+        const cardBody = document.createElement('div');
+        cardBody.classList.add('card-body');
+        
+        const title = document.createElement('h5');
+        title.classList.add('card-title');
+        title.textContent = book.title;
+        
+        const author = document.createElement('p');
+        author.classList.add('card-text');
+        author.textContent = book.author;
+        
+        const category = document.createElement('p');
+        category.classList.add('card-text');
+        category.textContent = book.category;
+        
+        const year = document.createElement('p');
+        year.classList.add('card-text');
+        year.textContent = book.year;
+        
+        const editButton = document.createElement('button');
+        editButton.classList.add('btn', 'btn-primary');
+        editButton.textContent = 'Düzenle';
+        editButton.onclick = function() { editBook(book.id) };
+        
+        const deleteButton = document.createElement('button');
+        deleteButton.classList.add('btn', 'btn-danger');
+        deleteButton.textContent = 'Sil';
+        deleteButton.onclick = function() { deleteBook(book.id) };
+
+        cardBody.appendChild(title);
+        cardBody.appendChild(author);
+        cardBody.appendChild(category);
+        cardBody.appendChild(year);
+        cardBody.appendChild(editButton);
+        cardBody.appendChild(deleteButton);
+        
+        card.appendChild(img);
+        card.appendChild(cardBody);
+        
+        bookCard.appendChild(card);
+        
         bookList.appendChild(bookCard);
     });
 }
