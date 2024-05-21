@@ -5,7 +5,6 @@ import {
   showUpdateBookModal,
 } from './components/BookHandlers.js';
 import { applyFiltersAndSort } from './components/FilterAndSort.js';
-import Toast from './components/Toastify.js';
 
 class UI {
   constructor() {

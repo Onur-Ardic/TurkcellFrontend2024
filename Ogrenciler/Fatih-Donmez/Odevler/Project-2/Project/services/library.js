@@ -1,5 +1,3 @@
-import Book from '../models/book.js';
-
 class Library {
   constructor() {
     this.books = [];
