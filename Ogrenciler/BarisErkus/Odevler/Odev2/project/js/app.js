@@ -1,6 +1,7 @@
 const api = new API(baseUrl);
 document.addEventListener('DOMContentLoaded', () => {
-    api.getBooks().then(data => getBooks(data));
+    api.getBooks().then(data => displayBooks(data));
+
     const form = document.getElementById('bookForm');
     form.addEventListener('submit', (event) => saveBook(event));
     document.addEventListener('click', (event) => chooseOperation(event));
@@ -8,8 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.sort-option').forEach(option => sortBooks(option));
     document.getElementById('addNewBook').addEventListener('click', () => UI.clearForm());
 });
-
-function getBooks(data) {
+function displayBooks(data) {
     UI.renderBooks(data);
     UI.renderFilterOptions(data);
 }
@@ -18,6 +18,8 @@ function saveBook(event) {
     const formData = UI.getFormData();
     const { coverUrl, title, year, genre, description, authorImageUrl, authorName, biography } = formData;
     const bookId = saveButton.getAttribute('data-id');
+
+    const bookModal = bootstrap.Modal.getInstance(document.getElementById('createBookModal'));
 
     if (bookId) {
         api.updateBook(bookId, {
@@ -33,6 +35,12 @@ function saveBook(event) {
             description
         }).then(() => {
             saveButton.innerText = 'Kaydet';
+            saveButton.removeAttribute('data-id');
+            bookModal.hide();
+            UI.clearCardContainer();
+            UI.clearFilterDropDownContainer();
+            api.getBooks().then(data => displayBooks(data));
+            UI.showAlert('Kitap başarıyla güncellendi.', 'success');
         });
     } else {
         api.createBook({
@@ -47,7 +55,15 @@ function saveBook(event) {
                 biography
             },
             description
-        })
+        }).then(() => {
+            bookModal.hide();
+            UI.clearCardContainer();
+            UI.clearFilterDropDownContainer();
+            api.getBooks().then(data => displayBooks(data));
+            UI.showAlert('Kitap başarıyla eklendi.', 'success');
+        }).catch(() => {
+            UI.showAlert('Kitap eklenirken bir hata oluştu.', 'danger');
+        });
     }
 }
 function chooseOperation(event) {
@@ -57,6 +73,9 @@ function chooseOperation(event) {
         if (bookId) {
             api.deleteBook(bookId).then(() => {
                 bookCard.remove();
+                UI.showAlert('Kitap başarıyla silindi.', 'danger');
+            }).catch(() => {
+                UI.showAlert('Kitap silinirken bir hata oluştu.', 'info');
             });
         }
     }
@@ -117,7 +136,6 @@ function sortBooks(option) {
         });
     });
 }
-
 (() => {
     'use strict'
     const forms = document.querySelectorAll('.needs-validation')
