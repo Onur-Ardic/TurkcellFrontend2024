@@ -11848,9 +11848,12 @@ h1, .h1 {
   margin-bottom: 20px;
 }
 
-.filter-section {
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.category-scroll {
+  max-height: 150px;
+  overflow-y: scroll;
+  background-color: #f9f9f9;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
 }
 
 .toast-container {
@@ -11868,22 +11871,22 @@ h1, .h1 {
     opacity: 1;
   }
 }
-.card {
+.col-md-9 .card {
   position: relative;
   transition: all 0.3s ease;
 }
-.card:hover {
+.col-md-9 .card:hover {
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   scale: 1.05;
 }
-.card:hover .card-buttons {
+.col-md-9 .card:hover .card-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   animation: showButtons 0.5s forwards;
 }
-.card .card-buttons {
+.col-md-9 .card .card-buttons {
   position: absolute;
   top: 0;
   right: 0;

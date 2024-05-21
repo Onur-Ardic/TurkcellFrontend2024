@@ -129,8 +129,9 @@ class UI {
         this.loadFilterOptions.bind(this),
       );
     });
-    cardButtons.appendChild(deleteButton);
+
     cardButtons.appendChild(updateButton);
+    cardButtons.appendChild(deleteButton);
 
     cardBody.appendChild(title);
     cardBody.appendChild(author);
