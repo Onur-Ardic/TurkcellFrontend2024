@@ -1,49 +1,94 @@
 {
   "books": [
     {
-      "nameBook": "Da Vinci Şifresi sonnn",
-      "writer": "Dan Brown",
-      "description": "İsa ile ilgili tarihi sırlar ve Da Vinci'nin eserlerinde bu sırlarla ilgili ipuçları bıraktığına değinilir. Ayrıca Da Vinci'nin gizli bir tarikata üye olduğundan bahsetmektedir.",
-      "category": "Polisiye",
-      "date": "2003",
-      "image": "https://www.altinkitaplar.com.tr/static/img/2023/10/da_vinci_sifresi-m.jpg",
-      "id": "fba4b568-0afe-4062-ae3f-2f3205b031b4"
-    },
-    {
-      "nameBook": "Masumiyet Müzesi 11111111111",
-      "writer": "Orhan Pamuk",
-      "description": "İsa ile ilgili tarihi sırlar ve Da Vinci'nin eserlerinde bu sırlarla ilgili ipuçları bıraktığına değinilir. Ayrıca Da Vinci'nin gizli bir tarikata üye olduğundan bahsetmektedir.",
-      "category": "Aşk",
-      "date": "2013",
-      "image": "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg",
-      "id": "056e1b9c-42f5-4eeb-9c91-31f413a1fe78"
-    },
-    {
-      "id": "94aca42a-15f8-4d5b-baff-7c10b4d0c82d",
+      "id": "f465a237-500c-472b-9025-0a1ed50953cf",
       "nameBook": "Hanımın Çiftliği",
       "writer": "Orhan Kemal",
-      "description": "İsa ile ilgili tarihi sırlar ve Da Vinci'nin eserlerinde bu sırlarla ilgili ipuçları bıraktığına değinilir. Ayrıca Da Vinci'nin gizli bir tarikata üye olduğundan bahsetmektedir.",
-      "date": "1993",
+      "description": "İnsanın en soylu duygularından biri olan aşkın soysuzlaştığı bir dünyayı anlatan Hanımın Çiftliği,  büyük yazar Orhan Kemal'in ustalığının doruklarına ulaştığı bir roman.",
+      "date": "1961",
       "category": "Aşk",
+      "image": "https://www.alfayayinlari.com/upload/9789752897038.jpg"
+    },
+    {
+      "id": "01ea133a-2fd8-42a9-bed0-ea2cabfd961f",
+      "nameBook": "Masumiyet Müzesi",
+      "writer": "Orhan Pamuk",
+      "description": "1974 ile 2000'lerin başı arasında geçen Masumiyet Müzesi romanı, biri zengin diğeri orta halli iki aile üzerinden geçmişe dönüşler ve hatıralarla birlikte 1950-2000 arasında İstanbul hayatını anlatır.",
+      "date": "2008",
+      "category": "Aşk",
+      "image": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/orhan-pamuk-masumiyet-muzesi.jpg"
+    },
+    {
+      "id": "6008429d-1b62-461d-9f63-ea18b651c23a",
+      "nameBook": "Da Vinci Şifresi",
+      "writer": "Dan Brown",
+      "description": "İsa ile ilgili tarihi sırlar ve Da Vinci'nin eserlerinde bu sırlarla ilgili ipuçları bıraktığına değinilir. Ayrıca Da Vinci'nin gizli bir tarikata üye olduğundan bahsetmektedir.",
+      "date": "2003",
+      "category": "Polisiye",
       "image": "https://www.altinkitaplar.com.tr/static/img/2023/10/da_vinci_sifresi-m.jpg"
     },
     {
-      "id": "9cc109a3-5313-4c90-a11a-469e4aa22629",
-      "nameBook": "Lord Edgware'i Kim Öldürdü?",
-      "writer": "saaas",
-      "description": "asddasd",
-      "date": "asdasd",
+      "id": "2232e40e-d06c-4f60-bf37-fddd80b64e2a",
+      "nameBook": "Marslı",
+      "writer": "Andy Weir",
+      "description": "Andy Weir'in kurgu yeteneğini gözler önüne serdiği Marslı romanı 2035 yılında geçiyor. Romanın hikâyesi ise Mars'ta mahsur kalan Amerikalı astronot Mark Watney'i takip ediyor. ",
+      "date": "2011",
       "category": "Bilim-Kurgu",
-      "image": "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg"
+      "image": "https://i.dr.com.tr/cache/500x400-0/originals/0000000625238-1.jpg"
     },
     {
-      "id": "0b4270f2-3a52-4a7b-96b8-6e3bff5006b6",
-      "nameBook": "Lord Edgware'i Kim Öldürdü?",
-      "writer": "saaas",
-      "description": "asddasd",
-      "date": "asdasd",
-      "category": "Bilim-Kurgu",
-      "image": "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg"
+      "nameBook": "Kendi Gök Kubbemiz",
+      "writer": "Yahya Kemal Beyatlı",
+      "description": " Eski ve yeni, doğu ve batı, vatan ve İstanbul sevgisi ve insana dair her tür özlem, aşk ve ölüm temaları şairin dizelerinde vücut bulur.",
+      "category": "Şiir",
+      "date": "1961",
+      "image": "https://cdn2.dokuzsoft.com/u/cukurovakitap/img/c/k/e/kendi-gok-kubbemiz0dc9681949913edd5e8ca21282fd7be1.jpg",
+      "id": "4a578f45-f1e0-407d-aabb-a577ef7f37a9"
+    },
+    {
+      "nameBook": "Medyum",
+      "writer": "Stephen King",
+      "description": "Alkolizm sorunları ve öfke kontrol bozukluğu nedeniyle öğretmenlik işini kaybeden Jack Torrance adındaki yazarın alkolü bırakması, kendisi ve ailesinin hayatını düzene koyma çabası ile başlar.",
+      "category": "Korku-Gerilim",
+      "date": "1977",
+      "image": "https://www.altinkitaplar.com.tr/static/img/2016/04/medyum2-m.jpg",
+      "id": "4f293bda-57cd-4130-b8d5-ea6171948f48"
+    },
+    {
+      "nameBook": "Şah & Sultan",
+      "writer": "İskender Pala",
+      "description": "Osmanlı padişahı Yavuz Sultan Selim ile Safevî hükümdarı Şah İsmail arasındaki ikili rekabete ve Sünni-Şii meselesine değinilmiştir.",
+      "category": "Tarihi",
+      "date": "2010",
+      "image": "https://m.media-amazon.com/images/I/71EQCGF0iJL._AC_UF1000,1000_QL80_.jpg",
+      "id": "5c7c2133-782d-4093-a971-eb8da4d3e53c"
+    },
+    {
+      "nameBook": "Sevginin Gücü",
+      "writer": " Caroline Richards",
+      "description": "Ayıcık sevgi dolu anlarını düşünürse ateşböcekleri ışıldayıp yolunu aydınlatacakmış. Acaba Ayıcık evinin yolunu bulmak için sevginin gücünü kullanabilecek mi?",
+      "category": "Çocuk",
+      "date": "2019",
+      "image": "https://www.iskultur.com.tr/webp/2019/12/Sevginin-Gucu-15.png",
+      "id": "e1121833-95ac-4ff8-8e08-0bdc2ae5c221"
+    },
+    {
+      "nameBook": "wdESFSF",
+      "writer": "das",
+      "description": "asd",
+      "category": "Polisiye",
+      "date": "ads",
+      "image": "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg",
+      "id": "35c9de50-ef6a-453a-bd9f-39b6c9db11ab"
+    },
+    {
+      "nameBook": "asd SONNNNNN",
+      "writer": "asd",
+      "description": "asd",
+      "category": "Polisiye",
+      "date": "asd",
+      "image": "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg",
+      "id": "5223544c-0a16-43bd-b354-d3042e8579c8"
     }
   ]
 }

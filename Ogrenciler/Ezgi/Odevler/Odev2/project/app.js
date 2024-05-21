@@ -12,6 +12,7 @@ const deleteBtn = document.querySelector('.delete-btn')
 const editBtn = document.querySelector('.edit-btn')
 const modalUpdateBtn = document.querySelector('#modalUpdateBtn')
 const clearBtn = document.querySelector('#clearBtn')
+const searchBtn = document.querySelector('#searchBtn')
 const addBookBtn = document.querySelector('#addBookBtn')
 const addBookModalTitle = document.getElementById('addBookModalTitle')
 
@@ -20,26 +21,38 @@ class Book {
     constructor(nameBook, writer, description, category, date, image) {
         this.id = crypto.randomUUID();
         this.nameBook = nameBook,
-        this.writer = writer,
-        this.description = description,
-        this.category = category,
-        this.date = date,
-        this.image = image || "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg"
+            this.writer = writer,
+            this.description = description,
+            this.category = category,
+            this.date = date,
+            this.image = image || "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg"
     }
 }
 
-
-clearBtn.addEventListener("click", function(){
-    UI.removeBooksUI()
+document.querySelector('#searchBtn').addEventListener('click', function (e) {
+    e.preventDefault()
+    const searchValue = searchInput.value.toLowerCase()
+    const books = document.querySelectorAll('.card')
+    books.forEach(book => {
+        const nameBook = book.querySelector('.card-name').textContent.toLowerCase();
+        const writer = book.querySelector('.card-writer').textContent.toLowerCase();
+        if (nameBook.includes(searchValue) || writer.includes(searchValue)) {
+            book.style.display = "block";
+        } else {
+            book.style.display = "none";
+        }
+    })
 })
-document.addEventListener('DOMContentLoaded', function() {
-    UI.searchUI();
+
+clearBtn.addEventListener("click", function () {
+    UI.removeBooksUI()
+    // RequestProcess.deleteAllBooks();
+})
+document.addEventListener('DOMContentLoaded', function () {
     RequestProcess.getBooks()
 });
 
-saveForm.addEventListener("click", function (e) {
-    e.preventDefault()
-
+saveForm.addEventListener("click", function () {
     const book = new Book(
         nameBook.value,
         writer.value,
@@ -69,22 +82,30 @@ class RequestProcess {
         })
     }
     static deleteBook(id) {
-
         return Request.delete(`http://localhost:3000/books/${id}`)
             .then(() => {
                 console.log(`${id} kitabı başarıyla silindi.`)
             })
 
     }
+    // static deleteAllBooks() {
+    //     Request.delete("http://localhost:3000/books")
+    //         .then(() => {
+    //             console.log("Tüm kitaplar başarıyla silindi.");
+    //         })
+    //         .catch((error) => {
+    //             console.error("Kitapları silme işlemi başarısız oldu:", error);
+    //         });
+    // }
     static updateBook(id, book) {
-            nameBook.value = book.nameBook,
+        nameBook.value = book.nameBook,
             writer.value = book.writer,
             description.value = book.description,
             category.value = book.category,
             date.value = book.date,
             image.value = book.image
 
-            modalUpdateBtn.addEventListener("click", function (e) {
+        modalUpdateBtn.addEventListener("click", function (e) {
             e.preventDefault()
             const currentNameBook = nameBook.value
             const currentWriter = writer.value
@@ -96,7 +117,7 @@ class RequestProcess {
             Request.put(`http://localhost:3000/books/${id}`, {
                 nameBook: currentNameBook,
                 writer: currentWriter,
-                description : currentDescription,
+                description: currentDescription,
                 category: currentCategory,
                 date: currentDate,
                 image: currentImage,
