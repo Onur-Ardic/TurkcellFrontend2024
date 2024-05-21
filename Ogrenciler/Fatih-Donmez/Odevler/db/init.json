@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "id": "deab4eeb-3b21-4444-a6ab-a9b2d030825b",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "category": "Fiction",
+      "year": 1960,
+      "coverUrl": "https://covers.openlibrary.org/b/id/8228691-L.jpg"
+    },
+    {
+      "id": "deab4eeb-3b21-4444-a6ab-a9b2d030825c",
+      "title": "1984",
+      "author": "George Orwell",
+      "category": "Dystopian",
+      "year": 1949,
+      "coverUrl": "https://covers.openlibrary.org/b/id/7222246-L.jpg"
+    },
+    {
+      "id": "deab4eeb-3b21-4444-a6ab-a9b2d030825d",
+      "title": "Moby-Dick",
+      "author": "Herman Melville",
+      "category": "Adventure",
+      "year": 1851,
+      "coverUrl": "https://covers.openlibrary.org/b/id/7222160-L.jpg"
+    },
+    {
+      "id": "deab4eeb-3b21-4444-a6ab-a9b2d030825z",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "category": "Romance",
+      "year": 1813,
+      "coverUrl": "https://covers.openlibrary.org/b/id/8110901-L.jpg"
+    },
+    {
+      "id": "deab4eeb-3b21-4444-a6ab-a9b2d030825g",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "category": "Tragedy",
+      "year": 1925,
+      "coverUrl": "https://covers.openlibrary.org/b/id/8224485-L.jpg"
+    },
+    {
+      "id": "deab4eeb-3b21-4444-a6ab-a9b2d030825u",
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "category": "Historical",
+      "year": 1869,
+      "coverUrl": "https://covers.openlibrary.org/b/id/7221450-L.jpg"
+    },
+    {
+      "id": "deab4eeb-3b21-4444-a6ab-a9b2d030825y",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "category": "Fiction",
+      "year": 1951,
+      "coverUrl": "https://covers.openlibrary.org/b/id/8221251-L.jpg"
+    },
+    {
+      "id": "deab4eeb-3b21-4444-a6ab-a9b2d030825p",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "category": "Fantasy",
+      "year": 1937,
+      "coverUrl": "https://covers.openlibrary.org/b/id/8305831-L.jpg"
+    },
+    {
+      "id": "deab4eeb-3b21-4444-a6ab-a9b2d030825o",
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "category": "Science Fiction",
+      "year": 1932,
+      "coverUrl": "https://covers.openlibrary.org/b/id/7222176-L.jpg"
+    },
+    {
+      "id": "deab4eeb-3b21-4444-a6ab-a9b2d030825r",
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "category": "Fantasy",
+      "year": 1954,
+      "coverUrl": "https://covers.openlibrary.org/b/id/8221250-L.jpg"
+    }
+  ]
+}
