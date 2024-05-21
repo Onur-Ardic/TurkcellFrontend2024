@@ -35,7 +35,56 @@
         </div>
     </nav>
     <div class="container py-5 d-flex justify-content-around">    
-        <a class="btn btn-dark text-white mt-auto custom-btn" href="#">Ürün Ekle</a>
+        <a class="btn btn-dark text-white mt-auto custom-btn" data-toggle="modal" data-target="#bookModal" href="#">Ürün Ekle</a>
+        <div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-labelledby="bookModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="bookModalLabel">Yeni Kitap Bilgileri</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form id="bookForm">
+                    <div class="form-group">
+                      <label for="bookTitle">Başlık</label>
+                      <input type="text" class="form-control" id="bookTitle" placeholder="Kitap başlığı">
+                    </div>
+                    <div class="form-group">
+                      <label for="bookAuthor">Yazar</label>
+                      <input type="text" class="form-control" id="bookAuthor" placeholder="Yazar adı">
+                    </div>
+                    <div class="form-group">
+                      <label for="bookPrice">Fiyat</label>
+                      <input type="number" class="form-control" id="bookPrice" placeholder="Kitap fiyatı">
+                    </div>
+                    <div class="form-group">
+                      <label for="bookCategory">Kategori</label>
+                      <input type="text" class="form-control" id="bookCategory" placeholder="Kitap kategorisi">
+                    </div>
+                    <div class="form-group">
+                      <label for="publicationYear">Yayın Yılı</label>
+                      <input type="number" class="form-control" id="publicationYear" placeholder="Yayın yılı">
+                    </div>
+                    <div class="form-group">
+                      <label for="bookImg">Resim URL</label>
+                      <input type="text" class="form-control" id="bookImg" placeholder="Kitap resim URL'si">
+                    </div>
+                    <div class="form-group">
+                      <img src="" id="bookImgPreview" class="img-fluid" alt="Kitap Resmi" style="display: none;">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                  <button type="button" class="btn btn-primary" id="saveBookButton">Kaydet</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         <form class="form-inline my-2 my-lg-0 d-flex">
             <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Arama" aria-label="Search">
             <a class="btn btn-dark text-white mt-auto custom-btn" href="#">Ara</a>
@@ -90,6 +139,9 @@
         <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Okiyirum 2024</p></div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
     <script src="app.js"></script>
 </body>
