@@ -59,3 +59,9 @@
         transform: rotateY(0deg);
     }
 }
+.alert-container {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1050;
+}

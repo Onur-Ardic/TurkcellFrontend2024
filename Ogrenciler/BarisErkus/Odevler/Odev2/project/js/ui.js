@@ -28,6 +28,10 @@ class UI {
     static clearCardContainer() {
         cardContainer.innerHTML = '';
     }
+    static clearFilterDropDownContainer() {
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        dropdownMenu.innerHTML = '';
+    }
     static renderFilterOptions(data) {
         const menu = document.getElementById('dropdownMenu');
         const genres = new Set();
@@ -41,7 +45,9 @@ class UI {
         UIHelper.populateFilterMenu(menu, 'Kategori', genres, 'genre');
         UIHelper.addDivider(menu);
         UIHelper.populateFilterMenu(menu, 'Yazar', authors, 'author');
-
+        this.filterBooks();
+    }
+    static filterBooks() {
         const filterOptions = document.querySelectorAll('.filter-option');
 
         filterOptions.forEach(option => {
@@ -51,12 +57,28 @@ class UI {
                 const filterValue = option.dataset.value.toLowerCase();
 
                 const cards = document.querySelectorAll('.book-card');
-
                 cards.forEach(card => {
                     const cardValue = card.querySelector(`.card-${filterBy}`).textContent.toLowerCase();
                     card.style.display = cardValue.includes(filterValue) ? 'block' : 'none';
                 });
             });
         });
+    }
+    static showAlert(message, type) {
+        const alertContainer = document.getElementById('alert-container');
+        const alert = document.createElement('div');
+        alert.className = `alert alert-${type} alert-dismissible fade show`;
+        alert.role = 'alert';
+        alert.innerHTML = `
+            ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        `;
+        alertContainer.appendChild(alert);
+
+        setTimeout(() => {
+            alert.classList.remove('show');
+            alert.classList.add('fade');
+            setTimeout(() => alert.remove(), 150);
+        }, 3000);
     }
 }

@@ -15,7 +15,7 @@ class API {
         return this.fetchRequest(`${this.baseUrl}/books`);
     }
     async createBook(book) {
-        if (!APIHelper.isValid(book)) return;
+        if (!APIHelper.isValid(book)) throw new Error('Geçersiz kitap bilgisi');
         return this.fetchRequest(`${this.baseUrl}/books`, {
             method: 'POST',
             body: JSON.stringify(book),
