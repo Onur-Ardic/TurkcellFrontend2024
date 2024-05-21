@@ -79,6 +79,38 @@
       "category": "Roman",
       "year": 2011,
       "cover": "https://upload.wikimedia.org/wikipedia/tr/thumb/f/ff/Serenadroman.jpg/330px-Serenadroman.jpg"
+    },
+    {
+      "title": "ecem kılıç",
+      "author": "ecem",
+      "category": "deneme",
+      "year": "1940",
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/K%C3%BCrk_Mantolu_Madonna.djvu/page1-734px-K%C3%BCrk_Mantolu_Madonna.djvu.jpg",
+      "id": "efe8"
+    },
+    {
+      "id": "0625",
+      "title": "ecem kılıç",
+      "author": "ecem",
+      "category": "deneme",
+      "year": "1940",
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/K%C3%BCrk_Mantolu_Madonna.djvu/page1-734px-K%C3%BCrk_Mantolu_Madonna.djvu.jpg"
+    },
+    {
+      "id": "b464",
+      "title": "dvsvdsv",
+      "author": "sdvsv",
+      "category": "sdvsdv",
+      "year": "2323324",
+      "cover": "https://tr.wikipedia.org/wiki/Dosya:Afghanistan_oil_Paintings.jpg"
+    },
+    {
+      "id": "304a",
+      "title": "Kürk Mantolu Madonna deneme",
+      "author": "Sabahattin Ali",
+      "category": "Roman",
+      "year": "1943",
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/K%C3%BCrk_Mantolu_Madonna.djvu/page1-734px-K%C3%BCrk_Mantolu_Madonna.djvu.jpg"
     }
   ]
 }
