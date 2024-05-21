@@ -31,7 +31,7 @@
             
             <div id="ModalLibrary" class="flex justify-content-center">
                 
-                <button type="button" class="btn btn-warning px-5" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
+                <button type="button" class="btn btn-warning px-5" data-bs-toggle="modal" data-bs-target="#exampleModalLong" >
                     Kitap Ekle:
                 </button>
                 
@@ -64,13 +64,16 @@
                                     <div class="my-4">
                                         <select class="form-select" aria-label="Default select example" id="categoriesInput">
                                             <option selected="">Kitabın Kategorisini Seçiniz:</option>
-                                            <option value="1">Kişisel Gelişim</option>
-                                            <option value="2">Roman</option>
-                                            <option value="3">Araştırma ve Tarih</option>
+                                            <option value="Kişisel Gelişim">Kişisel Gelişim</option>
+                                            <option value="Roman">Roman</option>
+                                            <option value="Çocuk ve Gençlik">Çocuk ve Gençlik</option>
                                         </select>
                                     </div>
                                     <div class="my-2 d-grid">
                                         <button type="submit" class="btn btn-danger" id="addBook">Kitap Ekle</button>
+                                    </div>
+                                    <div class="my-2 d-grid">
+                                        <button type="submit" disabled class="btn btn-danger" id="updateBook">Güncelle</button>
                                     </div>
                                 </form>
                             </div>
@@ -87,37 +90,47 @@
     </section>
     <section id="kutuphane" class="bg-warning ">
         <div  id="library" class="container py-3">
-            <h2 class="text-center my-5">KİTAP LİSTESİ</h2>
+            
             <div id="librarybody" class="row">
-                <div id="bookfilter" class="col-2 border-right-dark">
-                    <h3>Filtrele</h3>
-                    <div id="siralama">
-                        <div class="dropdown my-5">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div id="bookfilter" class="col-2 border-right-dark mt-5">
+                    <div id="searchAuthorDiv">
+                        <label class="fs-6 fw-bold mb-2 mt-5">Yazar Adına Göre Ara:</label>
+                        <input id="searchAuthor" placeholder="Yazarın adını giriniz.." class="mb-3 form-control" type="text">
+                    </div>
+                    <form id="searchBookDiv">
+                        <label class="fs-6 fw-bold mb-2">Kitap Adına Göre Ara:</label>
+                        <input id="searchBookName" placeholder="Kitabın adını giriniz.." class="mb-3 form-control" type="text">
+                        <button type="submit" class="btn btn-danger mb-4" id="searchBb">Ara:</button>
+                    </form>
+                    <div id="siralama " class="mb-5">
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle px-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Sırala
                             </a>
                           
                             <ul class="dropdown-menu">
-                              <li><button class="dropdown-item" href="#">A-Z</button></li>
-                              <li><button class="dropdown-item" href="#">Z-A</button></li>
-                              <li><button class="dropdown-item" href="#">Tarihe Göre Sırala</button></li>
+                              <li><button class="dropdown-item" href="#" id="sortA">A-Z</button></li>
+                              <li><button class="dropdown-item" href="#" id="sortZ">Z-A</button></li>
+                              <li><button class="dropdown-item" href="#" id="sortDate">Tarihe Göre Sırala</button></li>
                             </ul>
                           </div>
                     </div>
+                    
                     <div id="kategorifiltrele">
                         <h4>Kategori</h4>
                         <div id="kategoributon" class="d-flex flex-column">
-                            <button class="btn btn-secondary my-2">Roman</button>
-                            <button class="btn btn-secondary my-2">Kişisel Gelişim</button>
-                            <button class="btn btn-secondary my-2">Araştırma ve Tarih</button>
+                            <button class="btn btn-secondary my-2 me-5" id="selectR">Roman</button>
+                            <button class="btn btn-secondary my-2 me-5" id="selectK">Kişisel Gelişim</button>
+                            <button class="btn btn-secondary my-2 me-5" id="selectC">Çocuk ve Gençlik</button>
                         </div>
                     </div>
-                    <div id="yazarFiltrele">
+                    <!-- <div id="yazarFiltrele">
                         <button class="btn btn-secondary" id="yazarilistele"></button>
-                    </div>
+                    </div> -->
                 </div>
-                <div id="booklist" class="col-10">
-                    <h3 class="text-center">Books</h3>
+                <div id="bookaddlist" class="col-10"> 
+                    <h2 class="text-center my-5">KİTAP LİSTESİ</h2>
+                    <div id="booklist" class="row" >
                     <!-- <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                           <div class="col-md-4">
@@ -138,12 +151,16 @@
                       </div> -->
                 </div>
             </div>
+                
+            </div>
             
             
         </div>
     </section>
    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ></script>
+   <script src="uı.js"></script>
    <script src="request.js"></script>
    <script src="app.js"></script>
+   <script src="filter.js"></script>
 </body>
 </html>

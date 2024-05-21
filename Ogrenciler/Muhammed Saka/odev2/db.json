@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "title": "CS:GO Kısa Tatikler",
+      "author": "Varol Maksutoğlu",
+      "category": "Oyun",
+      "year": "2024",
+      "cover": "https://i.hizliresim.com/c6pd8ae.png",
+      "id": "1dd4"
+    },
+    {
+      "id": "9ecd",
+      "title": "İntikam",
+      "author": "Varol Maksutoğlu",
+      "category": "Aksiyon",
+      "year": "2024",
+      "cover": "https://i.hizliresim.com/brqfamx.png "
+    },
+    {
+      "title": "Derin Acılar",
+      "author": "Varol Maksutoğlu",
+      "category": "Aşk",
+      "year": "2024",
+      "cover": "https://i.hizliresim.com/1dutcls.png",
+      "id": "d4d2"
+    }
+  ]
+}

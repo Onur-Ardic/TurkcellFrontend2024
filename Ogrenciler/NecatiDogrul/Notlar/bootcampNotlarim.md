@@ -116,3 +116,9 @@ javascript senkron bir dil her şeyi tek tek işliyor
 fetch promise döndürür
 
 es2022 ile async'siz await kullanılabiliyor ama tarayıcalar şuan es2022 desteklemediği için hata veriyor
+
+arrow function otomatik olarak this'i bind ediyor
+
+yani bir objenin içinde arrow function yazarsak o objeyi döner
+
+array içinde this olurs

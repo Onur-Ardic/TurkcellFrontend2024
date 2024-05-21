@@ -1,0 +1,49 @@
+{
+  "books": [
+    {
+      "nameBook": "Da Vinci Şifresi sonnn",
+      "writer": "Dan Brown",
+      "description": "İsa ile ilgili tarihi sırlar ve Da Vinci'nin eserlerinde bu sırlarla ilgili ipuçları bıraktığına değinilir. Ayrıca Da Vinci'nin gizli bir tarikata üye olduğundan bahsetmektedir.",
+      "category": "Polisiye",
+      "date": "2003",
+      "image": "https://www.altinkitaplar.com.tr/static/img/2023/10/da_vinci_sifresi-m.jpg",
+      "id": "fba4b568-0afe-4062-ae3f-2f3205b031b4"
+    },
+    {
+      "nameBook": "Masumiyet Müzesi 11111111111",
+      "writer": "Orhan Pamuk",
+      "description": "İsa ile ilgili tarihi sırlar ve Da Vinci'nin eserlerinde bu sırlarla ilgili ipuçları bıraktığına değinilir. Ayrıca Da Vinci'nin gizli bir tarikata üye olduğundan bahsetmektedir.",
+      "category": "Aşk",
+      "date": "2013",
+      "image": "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg",
+      "id": "056e1b9c-42f5-4eeb-9c91-31f413a1fe78"
+    },
+    {
+      "id": "94aca42a-15f8-4d5b-baff-7c10b4d0c82d",
+      "nameBook": "Hanımın Çiftliği",
+      "writer": "Orhan Kemal",
+      "description": "İsa ile ilgili tarihi sırlar ve Da Vinci'nin eserlerinde bu sırlarla ilgili ipuçları bıraktığına değinilir. Ayrıca Da Vinci'nin gizli bir tarikata üye olduğundan bahsetmektedir.",
+      "date": "1993",
+      "category": "Aşk",
+      "image": "https://www.altinkitaplar.com.tr/static/img/2023/10/da_vinci_sifresi-m.jpg"
+    },
+    {
+      "id": "9cc109a3-5313-4c90-a11a-469e4aa22629",
+      "nameBook": "Lord Edgware'i Kim Öldürdü?",
+      "writer": "saaas",
+      "description": "asddasd",
+      "date": "asdasd",
+      "category": "Bilim-Kurgu",
+      "image": "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg"
+    },
+    {
+      "id": "0b4270f2-3a52-4a7b-96b8-6e3bff5006b6",
+      "nameBook": "Lord Edgware'i Kim Öldürdü?",
+      "writer": "saaas",
+      "description": "asddasd",
+      "date": "asdasd",
+      "category": "Bilim-Kurgu",
+      "image": "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg"
+    }
+  ]
+}

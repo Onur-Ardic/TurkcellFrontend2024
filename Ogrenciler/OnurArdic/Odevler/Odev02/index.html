@@ -13,6 +13,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
     <header class="header">
       <div class="navbar-top bg-warning">
@@ -67,58 +68,44 @@
         <section class="filter-area col-md-3">
           <div class="category-filter-wrapper">
             <h5>Filtrele</h5>
+
             <hr />
-            <ul class="categoriy-list border p-3">
+            <ul class="category-list border p-3">
               <h3>Kategori</h3>
-              <li>
-                <input type="checkbox" />
-                Edebiyat
-              </li>
-              <li>
-                <input type="checkbox" />
-                Çocuk - Gençlik
-              </li>
-              <li>
-                <input type="checkbox" />
-                Araştırma - Tarih
-              </li>
-              <li>
-                <input type="checkbox" />
-                Polisiye - Aksiyon
-              </li>
-              <li>
-                <input type="checkbox" />
-                Bilim
-              </li>
-              <li>
-                <input type="checkbox" />
-                Mizah
-              </li>
-              <li>
-                <input type="checkbox" />
-                Çizgi Roman
-              </li>
+
+              <select id="bookCategoryFilter" class="w-100 border-1 p-2 rounded-1">
+                <option value="all">Tüm Kategoriler</option>
+                <option value="Edebiyat">Edebiyat</option>
+                <option value="Çocuk - Gençlik">Çocuk - Gençlik</option>
+                <option value="Araştırma - Tarih">Araştırma - Tarih</option>
+                <option value="Polisiye - Aksiyon">Polisiye - Aksiyon</option>
+                <option value="Bilim">Bilim</option>
+                <option value="Mizah">Mizah</option>
+                <option value="Çizgi - Roman">Çizgi Roman</option>
+                <option value="Romantik">Romantik</option>
+                <option value="Bilim - Kurgu">Bilim Kurgu</option>
+              </select>
             </ul>
 
             <ul class="bookmark-list p-3 border">
               <h3>Yayınevi</h3>
               <li>
-                <input type="checkbox" />
+                <input type="checkbox" value="kitapçım" />
                 Kitapçım
               </li>
 
               <li>
-                <input type="checkbox" />
+                <input type="checkbox" value="epsilon" />
                 Epsilon
               </li>
 
               <li>
-                <input type="checkbox" />
+                <input type="checkbox" value="penquin" />
                 Penquin
               </li>
 
               <li>
-                <input type="checkbox" />
+                <input type="checkbox" value="işbankası" />
                 İş Bankası Kültür Yayınları
               </li>
             </ul>
@@ -143,6 +130,10 @@
           </div>
           <div class="book-card-wrapper mt-5 d-flex gap-1 flex-wrap">
             <!-- <div class="book-card border position-relative">
+
+        <div class="book-card-wrapper mt-5 d-flex gap-1 flex-wrap">
+          <!- <div class="book-card border position-relative">
+
               <div class="book-card-img">
                 <img
                   src="https://cdn.dsmcdn.com/ty1304/product/media/images/prod/SPM/PIM/20240508/12/e187ad4c-e9a9-3cab-96ec-d9d2ecf09f8c/1_org_zoom.jpg"
@@ -259,6 +250,7 @@
     <script src="request.js"></script>
     <script src="ui.js"></script>
     <script src="main.js"></script>
+    <script src="filter.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

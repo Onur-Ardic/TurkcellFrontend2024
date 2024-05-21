@@ -3,6 +3,7 @@ let ChoosenMovieName = document.getElementById("choosenMovieName");
 ChoosenMovieName.innerText = getMovieName;
 const chairwrapper = document.getElementById("chair-wrapper");
 let chairs = [];
+
 chairwrapper.addEventListener("click", function (e){
     if(e.target.classList.contains("chair") && !e.target.classList.contains("reserved")  && !e.target.classList.contains("selected") ){
        e.target.classList.toggle("selected");
