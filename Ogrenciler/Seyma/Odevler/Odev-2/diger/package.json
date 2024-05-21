@@ -12,6 +12,7 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "icons": "^1.0.0",
+    "json-server": "0.17.4",
     "sass": "^1.77.2"
   }
 }

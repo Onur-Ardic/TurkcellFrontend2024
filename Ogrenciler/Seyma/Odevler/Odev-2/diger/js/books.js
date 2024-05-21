@@ -1,8 +1,5 @@
 let lastBook = "";
 
-
-
-
 class Book {
   constructor(id, name, author, category, date, imgUrl) {
     this.id = id;
@@ -13,35 +10,37 @@ class Book {
     this.imgUrl = imgUrl;
   }
 
-  // static saveBook(bookName, author, category, publishedDate, imgUrl) {
-  //   let bookName = document.getElementById("#bookName").value;
-  //   let author = document.getElementById("#author").value;
-  //   let publishedDate = document.getElementById("#publishedDate").value;
-  //   let imgUrl = document.getElementById("#imgUrl").value;
-  //   let category = document.getElementById("#category").value;
-  //   const bookObj1 = {
-  //     BookName: bookName,
-  //     Author: author.value,
-  //     Category: category,
-  //     PublishedDate: publishedDate,
-  //     ImageUrl: imgUrl
-  //   };
-    // books.forEach((book) => {});
-  // }
+  static async saveBook() {
+    let bookName = document.getElementById("bookName").value;
+    let author = document.getElementById("author").value;
+    let publishedDate = document.getElementById("publishedDate").value;
+    let category = document.getElementById("category").value;
+    let imgUrl = document.getElementById("imgUrl").value;
+  
+    const bookObj = {
+      "BookName": bookName,
+      "Author": author,
+      "Category": category,
+      "PublishedDate": publishedDate,
+      "imgUrl": imgUrl
+    };
+   
+    const book = await Request.post("http://localhost:3000/books", bookObj);
+
+    display();
+  }
 
   static showBooks(books) {
     var booksDiv = document.getElementById("books");
     booksDiv.innerHTML = "";
     booksDiv.className = "d-flex flex-wrap gap-3";
-    
 
     books.forEach((book) => {
       let bookDiv = document.createElement("div");
-      bookDiv.className = "card bg-dark border-0 text-secondary shadow-sm";
-      bookDiv.style.width = "10rem";
-      bookDiv.style.backgroundImage = `url(${book.ImgUrl})`;
+      bookDiv.className = "card border-0 text-secondary shadow-sm";
+      bookDiv.style.width = "15rem";
+      bookDiv.style.backgroundImage = `url(${book.imgUrl})`;
       bookDiv.style.backgroundSize = "cover";
-      bookDiv.style.backgroundPosition = "center";
       bookDiv.style.color = "white"; 
 
       let bookName = document.createElement("h4");
@@ -51,6 +50,7 @@ class Book {
       let category = document.createElement("p");
       let imgUrl = document.createElement("img");
       let deleteButton = document.createElement("button");
+      deleteButton.id = "deleteButton";
 
       bookName.innerHTML = book.BookName;
       author.innerHTML = book.Author;
@@ -60,7 +60,11 @@ class Book {
 
       deleteButton.innerText = "Delete";
       deleteButton.className = "btn w-50 btn-outline-warning";
-
+      deleteButton.addEventListener("click", 
+      (e) => {
+        e.preventDefault();
+        this.deleteBook(book.id);
+      });
       // deleteButton.addEventListener("click", (e) => {
       //   Book.deleteBook(book);
       // });
@@ -72,20 +76,45 @@ class Book {
       bookDiv.appendChild(imgUrl);
       bookDiv.appendChild(deleteButton);
       booksDiv.appendChild(bookDiv);
-
+      return ;
     });
   }
 
+
+  static removeinput(){
+    let bookName = document.getElementById("bookName").value = "";
+    let author = document.getElementById("author").value = "";
+    let publishedDate = document.getElementById("publishedDate").value = "";
+    let category = document.getElementById("category").value = "";
+    let imgUrl = document.getElementById("imgUrl").value = "";
+  }
+
   static updateBook(id) {
-    let bookObj = {
-      BookName: bookName,
-      Author: author,
-      Category: category,
-      PublishedDate: publishedDate,
+    const bookObj = {
+      "BookName": bookName,
+      "Author": author,
+      "Category": category,
+      "PublishedDate": publishedDate,
+      "imgUrl": imgUrl
     };
     return Request.put("http://localhost:3000/books")
       .then((data) => resolve(data))
       .catch((err) => reject(err, "Hata Alındı."));
   }
+
+
+  static deleteBook (id) {
+  const bookObj = {
+    "BookName": bookName,
+    "Author": author,
+    "Category": category,
+    "PublishedDate": publishedDate,
+    "imgUrl": imgUrl
+  };
+  
+  const book = Request.deleteBook(`http://localhost:3000/books/${id}`);
+
+  display();
+}
 }
 
