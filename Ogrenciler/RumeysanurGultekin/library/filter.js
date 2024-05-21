@@ -52,15 +52,27 @@ document.getElementById("sortDate").addEventListener("click", function(){
         .catch(error => console.error(error, "Kitaplar sıralanamadı."));
 })
 
-//çalışmıyor
-document.getElementById("searchBb").addEventListener("click", function(e){
+
+document.getElementById("searchBookDiv").addEventListener("submit", function(e){
     e.preventDefault();
     ui.clearBookOnPage();
     let search = document.getElementById("searchBookName").value.trim();
-    Request.get("http://localhost:3000/books?author_like=" ,search)
+    Request.get("http://localhost:3000/books?author_like=" + search)
         .then(data => ui.createCard(data));
 
-        document.getElementById("searchBookName").innerHTML = "";
+        document.getElementById("searchBookName").value = "";
+
+
+});
+
+document.getElementById("searchAuthor").addEventListener("submit", function(e){
+    e.preventDefault();
+    ui.clearBookOnPage();
+    let search = document.getElementById("searchBookName").value.trim();
+    Request.get("http://localhost:3000/books?author_like=" + search)
+        .then(data => ui.createCard(data));
+
+        document.getElementById("searchBookName").value = "";
 
 
 });

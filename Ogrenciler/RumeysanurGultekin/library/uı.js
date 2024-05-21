@@ -9,7 +9,7 @@ class Book {
     }
     
   }
-  class UI {
+class UI {
     clearInput() {
       document.getElementById("imageInput").value = "";
       document.getElementById("bookName").value = "";
@@ -74,6 +74,8 @@ class Book {
           document.getElementById('bookAuthor').value = book.author;
           document.getElementById('bookDate').value = book.date;
           document.getElementById('categoriesInput').value = book.categories;
+
+
       
           // Modal gizlendiğinde içeriği temizle
           modal.addEventListener('hidden.bs.modal', function () {
@@ -96,6 +98,7 @@ class Book {
               // Yeni kartı ekle
               const ui = new UI();
               ui.createCard(updatedData);
+              Request.update("http://localhost:3000/books", book.id, updatedData);
           });
       });
         const buttonDelete = document.createElement('button');

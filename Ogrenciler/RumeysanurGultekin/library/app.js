@@ -11,7 +11,8 @@ document.getElementById("formKitap").addEventListener("submit",function (e) {
   console.log("Values:", image, bookname, author, date, categories);
 
   const book = new Book(image, bookname, author, date, categories);
-
+  console.log(book);
+  
   const ui = new UI();
   ui.createCard(book);
   ui.clearInput();
