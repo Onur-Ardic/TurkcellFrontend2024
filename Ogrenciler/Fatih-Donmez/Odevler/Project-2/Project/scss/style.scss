@@ -1,7 +1,10 @@
 h1 {
   margin-bottom: 20px;
 }
-
+.sticky {
+  position: sticky;
+  top: 20px;
+}
 .category-scroll {
   max-height: 150px;
   overflow-y: scroll;

@@ -82,11 +82,16 @@ class UI {
 
     const cardBody = document.createElement('div');
     cardBody.className = 'card-body';
+    const starContainer = document.createElement('span');
+    starContainer.className = 'd-block';
+
     for (let i = 0; i < book.star; i++) {
       const star = document.createElement('i');
       star.className = 'bi bi-star-fill text-warning';
-      cardBody.appendChild(star);
+      starContainer.appendChild(star);
     }
+
+    cardBody.appendChild(starContainer);
 
     const title = document.createElement('h5');
     title.className = 'card-title mt-2';

@@ -6,6 +6,8 @@
       "author": "Harper Lee",
       "category": "Fiction",
       "year": 1960,
+      "star": 5,
+
       "coverUrl": "https://covers.openlibrary.org/b/id/8228691-L.jpg"
     },
     {
@@ -14,6 +16,7 @@
       "author": "George Orwell",
       "category": "Dystopian",
       "year": 1949,
+      "star": 4,
       "coverUrl": "https://covers.openlibrary.org/b/id/7222246-L.jpg"
     },
     {
@@ -22,6 +25,7 @@
       "author": "Herman Melville",
       "category": "Adventure",
       "year": 1851,
+      "star": 4,
       "coverUrl": "https://covers.openlibrary.org/b/id/7222160-L.jpg"
     },
     {
@@ -30,6 +34,7 @@
       "author": "Jane Austen",
       "category": "Romance",
       "year": 1813,
+      "star": 5,
       "coverUrl": "https://covers.openlibrary.org/b/id/8110901-L.jpg"
     },
     {
@@ -38,6 +43,7 @@
       "author": "F. Scott Fitzgerald",
       "category": "Tragedy",
       "year": 1925,
+      "star": 5,
       "coverUrl": "https://covers.openlibrary.org/b/id/8224485-L.jpg"
     },
     {
@@ -46,6 +52,7 @@
       "author": "Leo Tolstoy",
       "category": "Historical",
       "year": 1869,
+      "star": 5,
       "coverUrl": "https://covers.openlibrary.org/b/id/7221450-L.jpg"
     },
     {
@@ -54,6 +61,7 @@
       "author": "J.D. Salinger",
       "category": "Fiction",
       "year": 1951,
+      "star": 5,
       "coverUrl": "https://covers.openlibrary.org/b/id/8221251-L.jpg"
     },
     {
@@ -62,6 +70,7 @@
       "author": "J.R.R. Tolkien",
       "category": "Fantasy",
       "year": 1937,
+      "star": 5,
       "coverUrl": "https://covers.openlibrary.org/b/id/8305831-L.jpg"
     },
     {
@@ -70,6 +79,7 @@
       "author": "Aldous Huxley",
       "category": "Science Fiction",
       "year": 1932,
+      "star": 5,
       "coverUrl": "https://covers.openlibrary.org/b/id/7222176-L.jpg"
     },
     {
@@ -78,6 +88,7 @@
       "author": "J.R.R. Tolkien",
       "category": "Fantasy",
       "year": 1954,
+      "star": 3,
       "coverUrl": "https://covers.openlibrary.org/b/id/8221250-L.jpg"
     }
   ]
