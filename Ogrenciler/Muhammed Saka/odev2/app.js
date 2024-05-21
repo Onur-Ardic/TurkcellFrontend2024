@@ -11,6 +11,25 @@ function fetchBooks() {
     });
 }
 
+
+function loadCategories() {
+  const categories = ['Korku', 'Aksiyon', 'Aşk', 'Oyun', 'Komedi', 'Romantik Komedi', 'Gerilim'];
+  const categorySelect = document.getElementById('filter-category');
+
+  categories.forEach(category => {
+    const option = document.createElement('option');
+    option.value = category;
+    option.textContent = category;
+    categorySelect.appendChild(option);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetchBooks();
+  setupFilters();
+  loadCategories(); 
+});
+
 function displayBooks(books) {
   const bookList = document.getElementById('book-list');
   bookList.innerHTML = '';
@@ -184,3 +203,5 @@ function showAlert(message, type) {
     alertContainer.style.display = 'none';
   }, 3000);
 }
+
+

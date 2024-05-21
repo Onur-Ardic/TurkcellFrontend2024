@@ -1,0 +1,35 @@
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+.page{
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url("./assets/images/background.jpeg")
+            no-repeat center center/cover;
+
+}
+.book-image {
+  width: 250px;
+  height: 360px;
+  object-fit: cover;
+}
+.card{
+  width: 32rem;
+  background-color: rgb(35, 35, 35);
+}
+em{
+  font-size: 13px;
+}
+#kitapKurdu{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.body{
+  background-color: rgb(255, 242, 230);
+
+}
+

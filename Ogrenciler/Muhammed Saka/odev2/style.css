@@ -1,41 +1,66 @@
 body {
-    background-color: #f8f9fa;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  #book-filters .form-control {
-    margin: 0.5rem 0;
-  }
-  
-  .card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .modal-header {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .modal-title {
-    font-weight: bold;
-  }
-  
-  .modal-body {
-    background-color: #f8f9fa;
-  }
-  
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-brand img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+#book-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#book-list .col-md-3 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#bookModal .modal-header {
+  background-color: #007bff;
+  color: white;
+}
+
+#bookModal .modal-content {
+  border-radius: 10px;
+  background-color: #495057;
+  color: #f8f9fa;
+}
+
+#alert-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1050;
+}

@@ -22,8 +22,19 @@
           placeholder="Kitap Ara"
           id="search"
         />
-        <select name="" class="form-control mt-2" id="categoryFilter"></select>
+        <select class="form-control mt-2" id="authorFilter">
+          <option value="0">Yazara Göre Seçiniz</option>
+        </select>
+        <select name="" class="form-control mt-2" id="categoryFilter">
+          <option value="0">Kategoriye Göre Seçiniz</option>
+        </select>
+        <select class="form-control mt-2" id="selectOrder">
+          <option value="az">A-Z Sıralama</option>
+          <option value="za">Z-A Sıralama</option>
+          <option value="date">Tarihe Göre Sıralama</option>
+        </select>
       </div>
+      <div id="bookList" class="row"></div>
     </div>
     <script src="app.js"></script>
     <script
