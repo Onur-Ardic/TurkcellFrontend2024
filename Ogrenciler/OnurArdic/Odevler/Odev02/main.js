@@ -50,10 +50,7 @@ class requestValidation {
 
   static deleteBook(bookId) {
     Request.delete(`http://localhost:3000/books/${bookId}`)
-      .then(() => {
-        console.log(`${bookId} kitabı başarıyla silindi.`)
-      })
-      .catch((err) => console.error(err))
+    .catch((err) => console.error(err))
   }
 
   static editBook(book, bookId) {
