@@ -2,7 +2,8 @@ class Request {
   constructor(url){
             this.url = url;
         }
-        static get(url) {
+        
+  static get(url) {
           fetch(`${url}`)
               .then((response) => response.json())
               .then((data) => {

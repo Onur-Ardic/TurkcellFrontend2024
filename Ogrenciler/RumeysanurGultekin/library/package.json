@@ -1,7 +1,6 @@
 {
   "name": "library",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "sass": "sass -w scss:css"
@@ -12,5 +11,6 @@
     "bootstrap": "^5.3.3",
     "json-server": "^0.17.4",
     "sass": "^1.77.2"
-  }
+  },
+  "description": ""
 }

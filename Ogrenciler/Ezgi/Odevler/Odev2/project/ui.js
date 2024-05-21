@@ -8,11 +8,11 @@ class UI {
 
     static clearModalForm() {
         nameBook.value = "",
-        writer.value = "",
-        description.value = "",
-        category.value = "",
-        date.value = "",
-        image.value = ""
+            writer.value = "",
+            description.value = "",
+            category.value = "",
+            date.value = "",
+            image.value = ""
     }
 
     static removeBooksUI() {
@@ -79,7 +79,7 @@ class UI {
         cardBodyInfo.append(cardWriter, categoryAndDateText, cardDescription)
 
         const cardFooter = document.createElement('div')
-        cardFooter.classList.add('cardFooter', 'mb-2', 'd-flex', 'gap-1')
+        cardFooter.classList.add('cardFooter', 'mb-3', 'd-flex', 'gap-1', 'ms-3')
 
         colMd6.append(cardBody, cardFooter)
 
@@ -124,28 +124,6 @@ class UI {
             UI.displayBooksUI(book)
         })
     }
-
-    static searchUI() {
-        const searchInput = document.querySelector('#searchInput')
-        const searchBtn = document.querySelector('#searchBtn')
-
-        searchInput.addEventListener("keyup", function () {
-            const searchValue = searchInput.value.toLowerCase()
-            const books = document.querySelectorAll('.card')
-            books.forEach(book => {
-                const nameBook = book.querySelector('.card-name').textContent.toLowerCase();
-                const writer = book.querySelector('.card-writer').textContent.toLowerCase();
-                if (nameBook.includes(searchValue) || writer.includes(searchValue)) {
-                    book.style.display = "block";
-                } else {
-                    book.style.display = "none";
-                }
-            })
-        })
-
-    }
-
-
 }
 
 

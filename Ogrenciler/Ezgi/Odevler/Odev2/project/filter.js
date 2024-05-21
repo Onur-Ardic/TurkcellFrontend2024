@@ -10,7 +10,7 @@ const sortZ = document.querySelector('#sortZ')
 const sortDate = document.querySelector('#sortDate')
 
 
-sienceFiction.addEventListener("click", function() {
+sienceFiction.addEventListener("click", function () {
     UI.removeBooksUI()
     Request.get("http://localhost:3000/books?category=Bilim-Kurgu")
         .then(data => {
@@ -18,10 +18,10 @@ sienceFiction.addEventListener("click", function() {
             console.log(data);
         })
         .catch(error => console.error(error, "Bilim-Kurgu kategorisinde kitaplar getirilemedi."));
-        
+
 });
 
-poem.addEventListener("click", function() {
+poem.addEventListener("click", function () {
     UI.removeBooksUI()
     Request.get("http://localhost:3000/books?category=Şiir")
         .then(data => {
@@ -29,10 +29,10 @@ poem.addEventListener("click", function() {
             console.log(data);
         })
         .catch(error => console.error(error, "Şiir kategorisinde kitaplar getirilemedi."));
-        
+
 });
 
-detective.addEventListener("click", function() {
+detective.addEventListener("click", function () {
     UI.removeBooksUI()
     Request.get("http://localhost:3000/books?category=Polisiye")
         .then(data => {
@@ -40,9 +40,9 @@ detective.addEventListener("click", function() {
             console.log(data);
         })
         .catch(error => console.error(error, "Polisiye kategorisinde kitaplar getirilemedi."));
-        
+
 });
-historical.addEventListener("click", function() {
+historical.addEventListener("click", function () {
     UI.removeBooksUI()
     Request.get("http://localhost:3000/books?category=Tarihi")
         .then(data => {
@@ -50,9 +50,9 @@ historical.addEventListener("click", function() {
             console.log(data);
         })
         .catch(error => console.error(error, "Tarihi kategorisinde kitaplar getirilemedi."));
-        
+
 });
-horrorThriller.addEventListener("click", function() {
+horrorThriller.addEventListener("click", function () {
     UI.removeBooksUI()
     Request.get("http://localhost:3000/books?category=Korku-Gerilim")
         .then(data => {
@@ -60,9 +60,9 @@ horrorThriller.addEventListener("click", function() {
             console.log(data);
         })
         .catch(error => console.error(error, "Korku-Gerilim kategorisinde kitaplar getirilemedi."));
-        
+
 });
-love.addEventListener("click", function() {
+love.addEventListener("click", function () {
     UI.removeBooksUI()
     Request.get("http://localhost:3000/books?category=Aşk")
         .then(data => {
@@ -70,9 +70,9 @@ love.addEventListener("click", function() {
             console.log(data);
         })
         .catch(error => console.error(error, "Aşk kategorisinde kitaplar getirilemedi."));
-        
+
 });
-kid.addEventListener("click", function() {
+kid.addEventListener("click", function () {
     UI.removeBooksUI()
     Request.get("http://localhost:3000/books?category=Çocuk")
         .then(data => {
@@ -80,23 +80,23 @@ kid.addEventListener("click", function() {
             console.log(data);
         })
         .catch(error => console.error(error, "Çocuk kategorisinde kitaplar getirilemedi."));
-        
+
 });
-sortA.addEventListener("click", function(){
+sortA.addEventListener("click", function () {
     UI.removeBooksUI()
     Request.get("http://localhost:3000/books?_sort=nameBook&_order=asc")
         .then(data => UI.displayBooksUI(data))
         .catch(error => console.error(error, "Kitaplar sıralanamadı."));
 })
 
-sortZ.addEventListener("click", function(){
+sortZ.addEventListener("click", function () {
     UI.removeBooksUI()
     Request.get("http://localhost:3000/books?_sort=nameBook&_order=desc")
         .then(data => UI.displayBooksUI(data))
         .catch(error => console.error(error, "Kitaplar sıralanamadı."));
 })
 
-document.getElementById("sortDate").addEventListener("click", function(){
+document.getElementById("sortDate").addEventListener("click", function () {
     UI.removeBooksUI()
     Request.get("http://localhost:3000/books?_sort=date&_order=asc")
         .then(data => UI.displayBooksUI(data))

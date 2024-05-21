@@ -72,9 +72,6 @@
                                     <div class="my-2 d-grid">
                                         <button type="submit" class="btn btn-danger" id="addBook">Kitap Ekle</button>
                                     </div>
-                                    <div class="my-2 d-grid">
-                                        <button type="submit" disabled class="btn btn-danger" id="updateBook">Güncelle</button>
-                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -93,10 +90,10 @@
             
             <div id="librarybody" class="row">
                 <div id="bookfilter" class="col-2 border-right-dark mt-5">
-                    <div id="searchAuthorDiv">
+                    <form id="searchAuthorDiv">
                         <label class="fs-6 fw-bold mb-2 mt-5">Yazar Adına Göre Ara:</label>
                         <input id="searchAuthor" placeholder="Yazarın adını giriniz.." class="mb-3 form-control" type="text">
-                    </div>
+                    </form>
                     <form id="searchBookDiv">
                         <label class="fs-6 fw-bold mb-2">Kitap Adına Göre Ara:</label>
                         <input id="searchBookName" placeholder="Kitabın adını giriniz.." class="mb-3 form-control" type="text">

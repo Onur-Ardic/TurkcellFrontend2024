@@ -1,84 +1,20 @@
 {
   "books": [
     {
-      "id": 1,
-      "title": "1984",
-      "author": "George Orwell",
-      "category": "Dystopian",
-      "publishedDate": "1949-06-08",
-      "coverImageUrl": "https://example.com/1984.jpg"
-    },
-    {
-      "id": 2,
-      "title": "To Kill a Mockingbird",
-      "author": "Harper Lee",
-      "category": "Classic",
-      "publishedDate": "1960-07-11",
-      "coverImageUrl": "https://example.com/to_kill_a_mockingbird.jpg"
-    },
-    {
-      "id": 3,
-      "title": "Pride and Prejudice",
-      "author": "Jane Austen",
-      "category": "Romance",
-      "publishedDate": "1813-01-28",
-      "coverImageUrl": "https://example.com/pride_and_prejudice.jpg"
-    },
-    {
-      "id": 4,
-      "title": "The Great Gatsby",
-      "author": "F. Scott Fitzgerald",
-      "category": "Classic",
-      "publishedDate": "1925-04-10",
-      "coverImageUrl": "https://example.com/the_great_gatsby.jpg"
-    },
-    {
-      "id": 5,
-      "title": "Moby Dick",
-      "author": "Herman Melville",
-      "category": "Adventure",
-      "publishedDate": "1851-11-14",
-      "coverImageUrl": "https://example.com/moby_dick.jpg"
-    },
-    {
-      "id": 6,
-      "title": "War and Peace",
-      "author": "Leo Tolstoy",
-      "category": "Historical Fiction",
-      "publishedDate": "1869-01-01",
-      "coverImageUrl": "https://example.com/war_and_peace.jpg"
-    },
-    {
-      "id": 7,
-      "title": "The Catcher in the Rye",
-      "author": "J.D. Salinger",
-      "category": "Classic",
-      "publishedDate": "1951-07-16",
-      "coverImageUrl": "https://example.com/the_catcher_in_the_rye.jpg"
-    },
-    {
-      "id": 8,
-      "title": "The Hobbit",
+      "id": "8",
+      "title": "The Hobbit2",
       "author": "J.R.R. Tolkien",
       "category": "Fantasy",
       "publishedDate": "1937-09-21",
       "coverImageUrl": "https://example.com/the_hobbit.jpg"
     },
     {
-      "id": 9,
-      "title": "Crime and Punishment",
-      "author": "Fyodor Dostoevsky",
-      "category": "Philosophical Fiction",
-      "publishedDate": "1866-01-01",
-      "coverImageUrl": "https://example.com/crime_and_punishment.jpg"
-    },
-    {
-      "id": 10,
-      "title": "Brave New World",
-      "author": "Aldous Huxley",
-      "category": "Dystopian",
-      "publishedDate": "1932-08-01",
-      "coverImageUrl": "https://example.com/brave_new_world.jpg"
+      "id": "3",
+      "title": "osman",
+      "author": "asd",
+      "category": "123",
+      "publishedDate": "0012-03-12",
+      "coverImageUrl": "https://pz0fpvezntt4.merlincdn.net/productimages/119614/big/9789750741388_806.jpg"
     }
   ]
 }
