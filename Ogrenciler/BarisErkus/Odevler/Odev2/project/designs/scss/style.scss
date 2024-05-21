@@ -1,0 +1,67 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./common/bootstrap_overrides";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/alert";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/placeholders";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/tooltip";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/helpers";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/utilities/api";
+@import "./common/custom";
+
+.book-card {
+    width: 25rem;
+    min-height: 60rem;
+
+    .card-body {
+        backface-visibility: hidden;
+        transition: transform 0.6s;
+        padding: 1.25rem;
+
+        .card-img-top {
+            height: 22rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .card-front {
+        background-color: #f8f9fa;
+    }
+
+    .card-back {
+        background-color: #fff;
+        transform: rotateY(180deg);
+    }
+
+    &:hover .card-front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover .card-back {
+        transform: rotateY(0deg);
+    }
+}
+.alert-container {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1050;
+}

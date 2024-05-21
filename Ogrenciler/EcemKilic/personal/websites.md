@@ -19,3 +19,6 @@ https://animate.style/
 https://www.uidesigndaily.com/
 https://sass-lang.com/documentation/cli/dart-sass/
 https://preview.colorlib.com/theme/directoryads/
+
+
+https://github.com/cemtatli/lugat  opensources kaynak fork için

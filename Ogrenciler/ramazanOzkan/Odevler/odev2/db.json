@@ -1,71 +1,142 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Ramazan ÖZKAN"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Authority1"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Authority2"
-
     }
   ],
-  "books":  [
+  "books": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Harry Potter",
       "author": "J.K. Rowling",
       "price": 20,
-      "category":"Fantezi",
-      "publicationYear":1997, 
-      "upDate":"19/05/2024",
-      "updateUser":"1",
-      "addDa(te":"15/05/2024",
-      "img":"https://i.idefix.com/resize/800/0/cache/600x600-0/originals/0000000105599-1.jpg"
+      "category": "Fantezi",
+      "publicationYear": 1997,
+      "upDate": "19/05/2024",
+      "updateUser": "1",
+      "img": "https://i.idefix.com/resize/800/0/cache/600x600-0/originals/0000000105599-1.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Yüzüklerin Efendisi - Yüzük Kardeşliği",
       "author": "J. R. R. Tolkien",
       "price": 200,
-      "category":"Fantezi",
-      "publicationYear":1953,
-      "upDate":"19/05/2024",
-      "updateUser":"1",
-      "addDate":"15/05/2024",
-      "img":"https://image01.idefix.com/resize/800/0/product/1112210/the-fellowship-of-the-ring-6544a542bb50e.jpg"
+      "category": "Fantezi",
+      "publicationYear": 1953,
+      "upDate": "19/05/2024",
+      "updateUser": "1",
+      "img": "https://image01.idefix.com/resize/800/0/product/1112210/the-fellowship-of-the-ring-6544a542bb50e.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Yüzüklerin Efendisi - İki Kule",
       "author": "J. R. R. Tolkien",
       "price": 250,
-      "category":"Fantezi",
-      "publicationYear":1954,
-      "upDate":"19/05/2024",
-      "updateUser":"1",
-      "addDate":"15/05/2024",
-      "img":"https://image01.idefix.com/resize/800/0/product/219275/yuzuklerin-efendisi-ii-iki-kule-6436bf32b1356.jpg"
+      "category": "Fantezi",
+      "publicationYear": 1954,
+      "upDate": "19/05/2024",
+      "updateUser": "1",
+      "img": "https://image01.idefix.com/resize/800/0/product/219275/yuzuklerin-efendisi-ii-iki-kule-6436bf32b1356.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Yüzüklerin Efendisi-Kralın Dönüşü",
       "author": "J. R. R. Tolkien",
       "price": 300,
-      "category":"Fantezi",
-      "publicationYear":1955,
-      "upDate":"19/05/2024",
-      "updateUser":"1",
-      "addDate":"15/05/2024",
-      "img":"https://upload.wikimedia.org/wikipedia/tr/5/55/Kral%C4%B1n_D%C3%B6n%C3%BC%C5%9F%C3%BC_Kitap.jpg"
+      "category": "Fantezi",
+      "publicationYear": 1955,
+      "upDate": "19/05/2024",
+      "updateUser": "1",
+      "img": "https://upload.wikimedia.org/wikipedia/tr/5/55/Kral%C4%B1n_D%C3%B6n%C3%BC%C5%9F%C3%BC_Kitap.jpg"
+    },
+    {
+      "id": null,
+      "title": "ramazan",
+      "author": "özkan",
+      "price": "2552",
+      "category": "deneme",
+      "publicationYear": "2024",
+      "upDate": "2024-05-20T20:00:05.781Z",
+      "updateUser": "currentUser",
+      "img": "https://m.media-amazon.com/images/I/51MVdrFt-xL._SY466_.jpg"
+    },
+    {
+      "id": null,
+      "title": "ramazan-22",
+      "author": "özkan",
+      "price": "2552",
+      "category": "deneme",
+      "publicationYear": "2024",
+      "upDate": "2024-05-20T20:14:00.234Z",
+      "updateUser": "currentUser",
+      "img": "https://m.media-amazon.com/images/I/51MVdrFt-xL._SY466_.jpg"
+    },
+    {
+      "id": null,
+      "title": "ramazan-22",
+      "author": "özkan",
+      "price": "2552",
+      "category": "deneme",
+      "publicationYear": "2024",
+      "upDate": "2024-05-20T20:14:16.340Z",
+      "updateUser": "currentUser",
+      "img": "https://m.media-amazon.com/images/I/51MVdrFt-xL._SY466_.jpg"
+    },
+    {
+      "id": null,
+      "title": "ramazan12121",
+      "author": "özkan",
+      "price": "2552",
+      "category": "deneme",
+      "publicationYear": "2024",
+      "upDate": "2024-05-20T20:22:03.514Z",
+      "updateUser": "currentUser",
+      "img": "https://m.media-amazon.com/images/I/51MVdrFt-xL._SY466_.jpg"
+    },
+    {
+      "id": null,
+      "title": "ramazan-22",
+      "author": "özkan",
+      "price": "2552",
+      "category": "deneme",
+      "publicationYear": "2024",
+      "upDate": "2024-05-20T20:22:46.692Z",
+      "updateUser": "currentUser",
+      "img": "https://m.media-amazon.com/images/I/51MVdrFt-xL._SY466_.jpg"
+    },
+    {
+      "id": null,
+      "title": "ramazan-22",
+      "author": "özkan",
+      "price": "996",
+      "category": "deneme",
+      "publicationYear": "1998",
+      "upDate": "2024-05-20T20:24:39.879Z",
+      "updateUser": "currentUser",
+      "img": "https://img.kitapyurdu.com/v1/getImage/fn:12535/wh:true/wi:800"
+    },
+    {
+      "id": null,
+      "title": "ramazan-22",
+      "author": "özkan",
+      "price": "996",
+      "category": "deneme",
+      "publicationYear": "1998",
+      "upDate": "2024-05-20T20:24:51.412Z",
+      "updateUser": "currentUser",
+      "img": "https://img.kitapyurdu.com/v1/getImage/fn:12535/wh:true/wi:800"
     }
   ],
   "profile": {
     "name": "typicode"
   }
- 
 }

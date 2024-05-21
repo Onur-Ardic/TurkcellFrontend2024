@@ -1,0 +1,92 @@
+{
+  "books": [
+    {
+      "name": "Suç ve Ceza",
+      "author": "Fyodor Dostoyevski",
+      "category": "Klasik Edebiyat",
+      "date": "1866-01-01",
+      "cover": "https://kabalcikitap.com/wp-content/uploads/suc-ceza.jpg",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Küçük Prens",
+      "author": "Antoine de Saint-Exupéry",
+      "category": "Çocuk Edebiyatı",
+      "date": "1943-04-06",
+      "cover": "https://www.kaknus.com.tr/wp-content/uploads/2018/03/K%C3%BC%C3%A7%C3%BCk-Prens-KAPAK.jpg"
+    },
+    {
+      "id": "3",
+      "name": "1984",
+      "author": "George Orwell",
+      "category": "Distopya",
+      "date": "1949-06-08",
+      "cover": "https://m.media-amazon.com/images/I/81StSOpmkjL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Bülbülü Öldürmek",
+      "author": "Harper Lee",
+      "category": "Sosyal Roman",
+      "date": "1960-07-11",
+      "cover": "https://img.kitapyurdu.com/v1/getImage/fn:6712400/wh:true/wi:800"
+    },
+    {
+      "id": "5",
+      "name": "Sefiller",
+      "author": "Victor Hugo",
+      "category": "Tarihi Roman",
+      "date": "1862-04-01",
+      "cover": "https://cdn.akakce.com/-/sefiller-victor-hugo-z.jpg"
+    },
+    {
+      "name": "Aşk ve Gurur",
+      "author": "Jane Austen",
+      "category": "Romantik Roman",
+      "date": "1813-01-30",
+      "cover": "https://img.kitapyurdu.com/v1/getImage/fn:3095891/wh:true/wi:800",
+      "id": "6"
+    },
+    {
+      "id": "7",
+      "name": "Yüzüklerin Efendisi",
+      "author": "J.R.R. Tolkien",
+      "category": "Fantastik",
+      "date": "1954-07-29",
+      "cover": "https://img.kitapyurdu.com/v1/getImage/fn:11718457/wh:true/wi:800"
+    },
+    {
+      "id": "8",
+      "name": "Uçurtma Avcısı",
+      "author": "Khaled Hosseini",
+      "category": "Dram",
+      "date": "2003-05-29",
+      "cover": "https://tr.web.img3.acsta.net/c_310_420/pictures/bzp/03/57735.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Hayvan Çiftliği",
+      "author": "George Orwell",
+      "category": "Alegori",
+      "date": "1945-08-17",
+      "cover": "https://img.kitapyurdu.com/v1/getImage/fn:11447395/wh:true/wi:500"
+    },
+    {
+      "id": 10,
+      "name": "Dönüşüm",
+      "author": "Franz Kafka",
+      "category": "Modernist Roman",
+      "date": "1915-01-01",
+      "cover": "https://www.istanbulkitapcisi.com/donusum-682767-klasikler-p-kitap-yayincilik-franz-kafka-778819-68-B.jpg"
+    },
+    {
+      "id": "c359",
+      "name": "denem",
+      "author": "fsdfdsfsd",
+      "category": "fsdfdsfds",
+      "date": "2024-05-15",
+      "cover": "https://www.turhost.com/blog/wp-content/uploads/2019/05/kapak-1.jpg"
+    }
+  ]
+}

@@ -27,12 +27,13 @@ let totalPrice = selectedChairs * 100;
 let totalPriceText = document.getElementById("biletfiyati");
 totalPriceText.innerText = totalPrice;
 
-getPersonInfo();
+
 function getPersonInfo() {
   let personInfoText = document.getElementById("personInfoText");
   let personInfoIObject = JSON.parse(localStorage.getItem("save"));
   personInfoText.innerText = personInfoIObject.nameInput + " " + personInfoIObject.surNameInput + " " + personInfoIObject.inputTc + " " + personInfoIObject.inputEmail;
 };
+getPersonInfo();
 
 let buyTicket = document.getElementById("buyTicket");
 buyTicket.addEventListener("click", () => {

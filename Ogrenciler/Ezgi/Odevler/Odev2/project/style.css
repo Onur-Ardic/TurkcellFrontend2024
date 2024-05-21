@@ -1,0 +1,36 @@
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+.page{
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url("./assets/images/background.jpeg")
+            no-repeat center center/cover;
+
+}
+.book-image {
+  width: 250px;
+  height: 360px;
+  object-fit: cover;
+}
+.card{
+  /* width: 32rem; */
+  flex: 1 1 calc(50% - 16px); /* Her kart, boşluk hariç konteyner genişliğinin %50'sini kaplar */
+  box-sizing: border-box;
+  background-color: rgb(35, 35, 35);
+}
+em{
+  font-size: 13px;
+}
+.body{
+  background-color: rgb(255, 242, 230);
+}
+.filter-area-item{
+  transition: background-color 0.3s ease;
+}
+.filter-area-item:hover{
+  background-color: rgb(255, 173, 19) !important;
+}
