@@ -29,7 +29,7 @@ class Request{
     return new Promise((resolve, reject) => {
       fetch(url, {
         method: "PUT",
-        body: JSON.stringify(bookObj),
+        body: JSON.stringify(data),
         headers: {
           "Content-type": "application/json;",
         },
