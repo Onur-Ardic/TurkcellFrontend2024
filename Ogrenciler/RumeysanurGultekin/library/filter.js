@@ -57,22 +57,22 @@ document.getElementById("searchBookDiv").addEventListener("submit", function(e){
     e.preventDefault();
     ui.clearBookOnPage();
     let search = document.getElementById("searchBookName").value.trim();
-    Request.get("http://localhost:3000/books?author_like=" + search)
+    Request.get("http://localhost:3000/books?bookname_like=" + search)
         .then(data => ui.createCard(data));
 
-        document.getElementById("searchBookName").value = "";
+        document.getElementById("searchBookName").innerHTML = "";
 
 
 });
 
-document.getElementById("searchAuthor").addEventListener("submit", function(e){
+document.getElementById("searchAuthorDiv").addEventListener("submit", function(e){
     e.preventDefault();
     ui.clearBookOnPage();
-    let search = document.getElementById("searchBookName").value.trim();
+    let search = document.getElementById("searchBookAuthor").value.trim();
     Request.get("http://localhost:3000/books?author_like=" + search)
         .then(data => ui.createCard(data));
 
-        document.getElementById("searchBookName").value = "";
+        document.getElementById("searchBookAuthor").innerHTML = "";
 
 
 });
