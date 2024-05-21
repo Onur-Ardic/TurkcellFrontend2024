@@ -6,9 +6,9 @@ class Request {
           fetch(`${url}`)
               .then((response) => response.json())
               .then((data) => {
-                  const ui = new UI(); // UI sınıfından bir örnek oluştur
+                  const ui = new UI(); 
                   data.forEach((book) => {
-                      ui.createCard(book); // UI sınıfındaki createCard metodu ile kitap kartını oluştur
+                      ui.createCard(book); 
                   });
               })
               .catch((err) => console.error(err, "Veri alınamadı."));
@@ -32,7 +32,7 @@ class Request {
           method: "DELETE",
       })
       .then((response) => response.json())
-      .then(() => console.log("Veri Silindi")) // Silme başarılı olduğunda bir mesaj yazdırabiliriz
+      .then(() => console.log("Veri Silindi"))
       .catch((err) => console.error(err, "Hata Alındı."));
 }
     static update(url, id, newData) {
@@ -47,14 +47,7 @@ class Request {
       .then(() => console.log("Veri Güncellendi"))
       .catch((err) => console.error(err, "Hata Alındı."));
     }
-  // static delete(url) {
-  //     fetch(url, {
-  //       method: "DELETE",
-  //     })
-  //       .then((response) => response.json())
-  //       .then(() => resolve("Veri Silindi"))
-  //       .catch((err) => reject(err, "Hata Alındı."));
-  //   };
+  
 }
 
 function resolve(data){
@@ -64,23 +57,3 @@ function resolve(data){
 
 
 
-// class getData {
-//   static sendDataBook(book) {
-//     Request.post('http://localhost:3000/books', {
-//       image: book.image,
-//       bookname: book.bookname,
-//       author: book.author,
-//       date: book.date,
-//       categories: book.categories,
-//       id: book.id,
-//     });
-//   }
-
-//   static deleteBook(bookId) {
-//     Request.delete(`http://localhost:3000/books/${bookId}`)
-//       .then(() => {
-//         console.log(`${bookId} kitabı başarıyla silinmiştir`);
-//       })
-//       .catch((err) => console.error(err));
-//   }
-// }

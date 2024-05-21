@@ -20,12 +20,11 @@ class Book {
 
     
     createCard(book) {
-  
        const booklist = document.getElementById("booklist");
         const card = document.createElement("div");
-        card.classList.add("card", "mb-3", "border-white" , "bg-warning");
+        card.classList.add("card", "border" , "bg-warning" , "col-4", "m-1");
         card.style.maxWidth = "350px";
-        card.style.maxHeight = "250px"
+        card.style.maxHeight = "230px"
   
         const row = document.createElement("div");
         row.classList.add("row", "g-0");
@@ -34,7 +33,7 @@ class Book {
         imgDiv.classList.add("col-md-6");
   
         const img = document.createElement("img");
-        img.classList.add("img-fluid", "rounded-start");
+        img.classList.add("img-fluid", "rounded-start" , "h-75");
         img.src = book.image;
   
         const textDiv = document.createElement("div");
@@ -43,8 +42,8 @@ class Book {
         const cardBody = document.createElement("div");
         cardBody.classList.add("card-body");
   
-        const title = document.createElement("h5");
-        title.classList.add("card-title");
+        const title = document.createElement("p");
+        title.classList.add("card-title" , "fs-5" , "fw-bold");
         title.innerText = book.bookname;
   
         const author = document.createElement("p");
@@ -64,6 +63,7 @@ class Book {
         const buttonUpdate = document.createElement("button");
         buttonUpdate.classList.add("btn", "btn-success" , "my-3" , "btn-sm");
         buttonUpdate.textContent = "Güncelle";
+        
         buttonUpdate.addEventListener('click', function() {
           const modal = new bootstrap.Modal(document.getElementById('exampleModalLong'));
           modal.show();
@@ -93,33 +93,20 @@ class Book {
                   categories: document.getElementById('categoriesInput').value
               };
       
-              // Veritabanında güncelleme yap
-              Request.update("http://localhost:3000/books", book.id, updatedData);
-      
-              // Eski kartı ekrandan kaldır
-              card.remove();
-      
               // Yeni kartı ekle
               const ui = new UI();
               ui.createCard(updatedData);
           });
       });
-      
-              
-      
-        
-  
         const buttonDelete = document.createElement('button');
         buttonDelete.classList.add("btn", "btn-danger" , "btn-sm");
         buttonDelete.textContent = "Sil";
-        // buttonDelete.addEventListener('click',function(){
-        //   card.remove();
-        // })
+
         buttonDelete.addEventListener('click', function() {
-          card.remove(); // Kartı ekrandan kaldır
-          Request.delete("http://localhost:3000/books", book.id); // Veritabanından kitabı sil
+          card.remove(); 
+          Request.delete("http://localhost:3000/books", book.id); 
       });
-  
+
         imgDiv.appendChild(img);
         row.appendChild(imgDiv);
         cardBody.appendChild(title);
@@ -132,28 +119,11 @@ class Book {
         textDiv.appendChild(cardBody);
         row.appendChild(textDiv);
         card.appendChild(row);
-        booklist.appendChild(card);
-  
-      // const formLibrary = document.getElementById("booklist");
-  
-      // const kitabıgor = document.createElement("div");
-  
-      // kitabıgor.innerHTML = `
-      // <div class="card mb-3" style="max-width: 540px;">
-      //   <div class="row g-0">
-      //     <div class="col-md-4">
-      //       <img src="${book.image}" class="img-fluid rounded-start" alt="...">
-      //     </div>
-      //     <div class="col-md-8">
-      //       <div class="card-body">
-      //         <h5 class="card-title">${book.bookname}</h5>
-      //         <p class="card-text">${book.author}</p>
-      //         <p class="card-text"><small class="text-body-secondary">${book.date}</small></p>
-      //       </div>
-      //     </div>
-      //     </div> `;
-      // formLibrary.appendChild(kitabıgor);
-      
-      }
-      
+        booklist.appendChild(card);    
+      } 
+
+    clearBookOnPage() {
+      const bookList = document.getElementById("booklist");
+      bookList.innerHTML = "";
+    }  
   }
