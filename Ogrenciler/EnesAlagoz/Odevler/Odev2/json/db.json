@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "On Kişiydiler",
+      "author": "Agatha Christie",
+      "category": "Polisiye",
+      "year": 2024,
+      "coverUrl": "https://www.kitapsepeti.com/on-kisiydiler-on-kucuk-zenci-571371-82-O.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Arka Sokaktaki Cinayet",
+      "author": "Agatha Christie",
+      "category": "Polisiye",
+      "year": 2023,
+      "coverUrl": "https://www.kitapsepeti.com/arka-sokaktaki-cinayet-247234-38-O.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Elf Kraliçesi`ne İtaat Edeceksiniz",
+      "author": "J. M. Kearl",
+      "category": "Fantastik",
+      "year": 2024,
+      "coverUrl": "https://www.kitapsepeti.com/elf-kralicesine-itaat-edeceksiniz-471754-893275-47-O.png"
+    },
+    {
+      "id": 4,
+      "title": "Harry Potter ve Ateş Kadehi - 4",
+      "author": "J. K. Rowling",
+      "category": "Fantastik",
+      "year": 2023,
+      "coverUrl": "https://www.kitapsepeti.com/harry-potter-ve-ates-kadehi-4-170324-32-O.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Atmaca",
+      "author": "Yunus Ozan",
+      "category": "Aksiyon-Macera",
+      "year": 2014,
+      "coverUrl": "https://www.kitapsepeti.com/yuzukteki-esrar-4-atmaca-301487-10-O.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Birimiz Ölmek Üzere",
+      "author": "Karen M. McManus",
+      "category": "Aksiyon-Macera",
+      "year": 2022,
+      "coverUrl": "https://www.kitapsepeti.com/birimiz-olmek-uzere-389575-598562-38-O.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Genç Werther’in Acıları",
+      "author": "Johann Wolfgang von Goethe",
+      "category": "Klasikler",
+      "year": 2019,
+      "coverUrl": "https://www.kitapsepeti.com/genc-wertherin-acilari-143494-292558-14-O.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Ay Işığı Sokağı",
+      "author": "Stefan Zweig",
+      "category": "Klasikler",
+      "year": 2022,
+      "coverUrl": "https://www.kitapsepeti.com/ay-isigi-sokagi-16105-263852-16-O.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Garfield Şişmanlıyor",
+      "author": "Jim Davis",
+      "category": "Karikatür",
+      "year": 2023,
+      "coverUrl": "https://www.kitapsepeti.com/garfield-sismanliyor-4-293293-11-O.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Acı Çeken Bilim Adamları",
+      "author": "Nick Arnold",
+      "category": "Karikatür",
+      "year": 2020,
+      "coverUrl": "https://www.kitapsepeti.com/aci-ceken-bilim-adamlari-eglenceli-bilgi-30-269917-26-O.jpg"
+    }
+  ]
+}
