@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    font-family: "VT323", monospace;
+    font-weight: 500;
+    font-size: 24px;
+    font-style: normal;
+}
+.neon-shadow{
+    box-shadow: -1px 11px 46px -20px rgba(248,35,77,0.75);
+}
+.neon-border{
+    border-color: #e403f4;
+    box-shadow: 1px -1px 82px 5px  #e403f4 inset;
+}
+.typing{
+    color: green;
+    overflow: hidden;
+    border-right: .1px solid;
+    width: 56ch;
+    animation: typing 6s steps(200, end), blink-caret 0.5s step-end infinite alternate;
+}
+@keyframes typing { 
+    from { width: 0; } 
+}
+@keyframes blink-caret { 
+    50% { border-color: transparent; } 
+}
