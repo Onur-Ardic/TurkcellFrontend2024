@@ -151,81 +151,80 @@ function addBook(e) {
         });
 }
 
-// function editBook(id) {
-//     const book = books.find(book => book.id === id);
-//     if (!book) {
-//         alert("Kitap bulunamadı.");
-//         return;
-//     }
+function editBook(id) {
+    const book = books.find(book => book.id === id);
+    document.getElementById('title').value = book.title;
+    document.getElementById('author').value = book.author;
+    document.getElementById('category').value = book.category;
+    document.getElementById('year').value = book.year;
+    document.getElementById('cover').value = book.cover;
 
-//     // Modal içerisindeki input alanlarına kitap bilgilerini doldur
-//     document.getElementById('editTitle').value = book.title;
-//     document.getElementById('editAuthor').value = book.author;
-//     document.getElementById('editCategory').value = book.category;
-//     document.getElementById('editYear').value = book.year;
-//     document.getElementById('editCover').value = book.cover;
+    document.getElementById('bookForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        updateBook(id);
+    });
 
-//     // Modalı aç
-//     const modal = new bootstrap.Modal(document.getElementById('editBookModal'));
-//     modal.show();
+    const modal = new bootstrap.Modal(document.getElementById('bookModal'));
+    modal.show();
 
-//     // Düzenleme formunu submit ettiğimizde kitap bilgilerini güncelle
-//     document.getElementById('editBookForm').addEventListener('submit', function(e) {
-//         e.preventDefault();
+    $('#bookModal').on('hide.bs.modal', function () {
+        document.getElementById('bookForm').reset();
+    });
+}
 
-//         const updatedBook = {
-//             id: book.id, // Kitap ID'si değişmemeli
-//             title: document.getElementById('editTitle').value,
-//             author: document.getElementById('editAuthor').value,
-//             category: document.getElementById('editCategory').value,
-//             year: document.getElementById('editYear').value,
-//             cover: document.getElementById('editCover').value
-//         };
+function updateBook(id) {
+    const title = document.getElementById('title').value;
+    const author = document.getElementById('author').value;
+    const category = document.getElementById('category').value;
+    const year = document.getElementById('year').value;
+    const cover = document.getElementById('cover').value;
 
-//         // Kitap bilgilerini güncelle
-//         fetch(`http://localhost:3000/books/${id}`, {
-//             method: 'PUT',
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             },
-//             body: JSON.stringify(updatedBook)
-//         })
-//         .then(response => response.json())
-//         .then(data => {
-//             // Veri setindeki kitabın bilgilerini güncelle
-//             const index = books.findIndex(book => book.id === id);
-//             if (index !== -1) {
-//                 books[index] = updatedBook;
-//                 displayBooks();
-//             }
+    const updatedBook = {
+        id: id,
+        title: title,
+        author: author,
+        category: category,
+        year: year,
+        cover: cover
+    };
 
-//             // Modalı kapat
-//             modal.hide();
-//         })
-//         .catch(error => {
-//             alert('Kitap güncellenirken bir hata oluştu: ' + error);
-//         });
-//     });
-// }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const editButtons = document.querySelectorAll('.edit-btn');
-//     editButtons.forEach(button => {
-//         button.addEventListener('click', function() {
-//             const bookId = this.dataset.bookId;
-//             editBook(bookId);
-//         });
-//     });
-// });
+    fetch(`http://localhost:3000/books/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(updatedBook)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('HTTP error ' + response.status);
+        }
+        return response.json();
+    })
+    .then(data => {
+        const index = books.findIndex(book => book.id === id);
+        books[index] = data;
+        displayBooks();
+        $('#bookModal').modal('hide');
+        document.getElementById('bookForm').reset();
+        document.getElementById('bookForm').removeEventListener('submit', updateBook);
+        document.getElementById('bookForm').addEventListener('submit', addBook);
+    })
+    .catch(error => {
+        alert('Kitap güncellenirken bir hata oluştu. Lütfen tekrar deneyin.');
+    });
+}
 
 function deleteBook(id) {
-    fetch(`http://localhost:3000/books/${id}`, {
-        method: 'DELETE'
-    })
-        .then(() => {
-            books = books.filter(book => book.id !== id);
-            displayBooks();
-        });
+    if (confirm("Kitabı silmek istediğinizden emin misiniz?")) {
+        fetch(`http://localhost:3000/books/${id}`, {
+            method: 'DELETE'
+        })
+            .then(() => {
+                books = books.filter(book => book.id !== id);
+                displayBooks();
+            });
+    }
 }
 
 function filterBooks() {

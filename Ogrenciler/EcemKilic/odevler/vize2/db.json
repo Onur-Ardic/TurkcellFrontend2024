@@ -49,7 +49,7 @@
       "cover": "https://upload.wikimedia.org/wikipedia/tr/thumb/a/ad/%C4%B0hsan_Oktay_Anar_-_Puslu_K%C4%B1talar_Atlas%C4%B1.jpg/330px-%C4%B0hsan_Oktay_Anar_-_Puslu_K%C4%B1talar_Atlas%C4%B1.jpg"
     },
     {
-      "id": "8",
+      "id": "7",
       "title": "Simyacı",
       "author": "Paulo Coelho",
       "category": "Roman",
@@ -57,7 +57,7 @@
       "cover": "https://upload.wikimedia.org/wikipedia/tr/d/d4/Simyac%C4%B1.jpg"
     },
     {
-      "id": "9",
+      "id": "8",
       "title": "Benim Adım Kırmızı",
       "author": "Orhan Pamuk",
       "category": "Roman",
@@ -65,7 +65,7 @@
       "cover": "https://upload.wikimedia.org/wikipedia/tr/9/95/Benim_Adim_kirmizi.JPG"
     },
     {
-      "id": "10",
+      "id": "9",
       "title": "Serenad",
       "author": "Zülfü Livaneli",
       "category": "Roman",
@@ -73,28 +73,20 @@
       "cover": "https://upload.wikimedia.org/wikipedia/tr/thumb/f/ff/Serenadroman.jpg/330px-Serenadroman.jpg"
     },
     {
-      "title": "sfgagas",
-      "author": "afgadfg",
-      "category": "komedi",
-      "year": "2024-05-14",
-      "cover": "https://cdn.pixabay.com/photo/2024/04/01/17/55/straubing-8669480_1280.jpg",
-      "id": "7d84"
+      "id": "10",
+      "title": "Anayurt Oteli",
+      "author": "Yusuf Atılgan",
+      "category": "Roman",
+      "year": "1973",
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/a/ae/Yusuf_At%C4%B1lgan_Anayurt_Oteli.jpg?20120122185657"
     },
     {
-      "id": "b93f",
-      "title": "sfgagas",
-      "author": "afgadfg",
-      "category": "komedi",
-      "year": "2024-05-14",
-      "cover": "https://cdn.pixabay.com/photo/2024/04/01/17/55/straubing-8669480_1280.jpg"
-    },
-    {
-      "id": "500b",
-      "title": "Kürk Mantolu Madonna",
-      "author": "Sabahattin Ali",
-      "category": "Kurgu",
-      "year": "1943-01-01",
-      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/K%C3%BCrk_Mantolu_Madonna.djvu/page1-734px-K%C3%BCrk_Mantolu_Madonna.djvu.jpg"
+      "id": "4b34",
+      "title": "Ateşten Gömlek",
+      "author": "Halide Edip Adıvar",
+      "category": "Roman",
+      "year": "1922",
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/3/37/Atesten_Gomlek.jpg?20180903212950"
     }
   ]
 }
