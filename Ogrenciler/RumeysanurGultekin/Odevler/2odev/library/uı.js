@@ -62,10 +62,14 @@ class UI {
   
         const buttonUpdate = document.createElement("button");
         buttonUpdate.classList.add("btn", "btn-success" , "my-3" , "btn-sm",  "btn-sm" , "me-3");
+        buttonUpdate.id="buttonUpdated"
         buttonUpdate.textContent = "Güncelle";
         buttonUpdate.setAttribute('data-bs-toggle', 'modal')
         buttonUpdate.setAttribute('data-bs-target', '#modalAc')
-        
+      
+        buttonUpdate.addEventListener("click", function(){
+          document.querySelector("#ModalKitapEkle").click();
+        })
 
         const buttonDelete = document.createElement('button');
         buttonDelete.classList.add("btn", "btn-danger" , "btn-sm", );
@@ -96,3 +100,5 @@ class UI {
       bookList.innerHTML = "";
     }  
   }
+
+ 

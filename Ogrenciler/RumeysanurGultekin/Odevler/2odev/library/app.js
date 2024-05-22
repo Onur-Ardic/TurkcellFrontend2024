@@ -1,7 +1,3 @@
-// document.getElementById("ModalKitapEkle").addEventListener("click", function(){
-//     document.getElementById("addBook").style.display = "block";
-//     document.getElementById("updateBook").style.display = "none";
-// })
 
 
 document.getElementById("formKitap").addEventListener("submit",function (e) {

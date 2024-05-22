@@ -60,8 +60,6 @@ document.getElementById("searchBookDiv").addEventListener("submit", function(e){
     Request.get("http://localhost:3000/books?bookname_like=" + search)
         .then(data => ui.createCard(data));
 
-
-
 });
 
 document.getElementById("searchAuthorDiv").addEventListener("submit", function(e){
