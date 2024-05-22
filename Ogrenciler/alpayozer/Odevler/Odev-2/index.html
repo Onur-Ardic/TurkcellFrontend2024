@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">A-Library</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#bookModal"
+            >
+              Add Book
+            </button>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="landing-section py-5 bg-body-secondary">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-5 col-12 d-flex flex-column justify-content-center"
+          >
+            <h1 class="">Welcome to A-Library</h1>
+            <p class="">
+              A-Library is a platform where you can add, update and delete
+              books.
+            </p>
+            <!-- <form id="" class="d-flex" role="search"> -->
+            <input
+              onkeyup="searchInput()"
+              id="search"
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <!-- <button class="btn btn-outline-success" type="submit">
+              Search
+            </button> -->
+            <!-- </form> -->
+          </div>
+          <div
+            class="col-lg-7 col-12 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              src="./assets/pexels-nitin-arya-386173-1029141.jpg"
+              alt="book"
+              class="img-fluid w-50"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tab-books py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-12">
+            <div class="row mb-3">
+              <select
+                id="publisherSelect"
+                class="form-select"
+                aria-label="Publisher Select"
+              >
+                <option value="All" selected>Choose the publisher</option>
+                <option value="İş Bankası">İş Bankası</option>
+                <option value="Altın Kitaplar">Altın Yayınları</option>
+                <option value="Can Yayınları">Can Yayınları</option>
+              </select>
+            </div>
+            <div class="row">
+              <select
+                id="authorSelect"
+                class="form-select"
+                aria-label="Author select"
+              >
+                <option value="All" selected>Choose the author</option>
+                <option value="George Orwell">George Orwell</option>
+                <option value="Matt Haig">Matt Haig</option>
+                <option value="Napoleon Hill">Napoleon Hill</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-9 col-10">
+            <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="home-tab-pane"
+                  aria-selected="true"
+                >
+                  All Books
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="roman_tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#roman-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="roman-tab-pane"
+                  aria-selected="false"
+                >
+                  Roman
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="gelisim_tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#gelisim-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="gelisim-tab-pane"
+                  aria-selected="false"
+                >
+                  Kişisel Gelişim
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home-tab-pane"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+                tabindex="0"
+              >
+                <div id="books" class="row"></div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="roman-tab-pane"
+                role="tabpanel"
+                aria-labelledby="roman-tab"
+                tabindex="0"
+              >
+                <div id="nav_roman" class="row"></div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="gelisim-tab-pane"
+                role="tabpanel"
+                aria-labelledby="gelisim-tab"
+                tabindex="0"
+              >
+                <div id="nav_gelisim" class="row"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1 col-2">
+            <select
+              id="sortingSelect"
+              class="form-select"
+              aria-label="Sort type select"
+            >
+              <option value="0" selected>Sort</option>
+              <option value="1">A-Z</option>
+              <option value="2">Z-A</option>
+              <option value="3">Date</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="bookModal"
+      tabindex="-1"
+      aria-labelledby="bookModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="bookModalLabel">Add Book</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  name="title"
+                  placeholder="Enter title"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="author" class="form-label">Author</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="author"
+                  name="author"
+                  placeholder="Enter author"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
+                <!--
+                <input
+                  type="text"
+                  class="form-control"
+                  id="category"
+                  name="category"
+                  placeholder="Enter category"
+                /> -->
+                <select
+                  id="category"
+                  class="form-select"
+                  aria-label="Category Select"
+                >
+                  <option selected>Choose the category</option>
+                  <option value="Roman">Roman</option>
+                  <option value="Kişisel Gelişim">Kişisel Gelişim</option>
+                  <option value="Deneme">Deneme</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="publication_date" class="form-label"
+                  >Publication Date</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="publication_date"
+                  name="publication_date"
+                  placeholder="Enter publication date"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="cover_image" class="form-label">Cover Image</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cover_image"
+                  name="cover_image"
+                  placeholder="Enter cover image"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button id="addBook" type="button" class="btn btn-primary">
+              Kitap Ekle
+            </button>
+            <button
+              id="updateBook"
+              type="button"
+              class="btn btn-primary d-none"
+            >
+              Kitap Güncelle
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/book.js"></script>
+    <script src="js/request.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/bookProcessor.js"></script>
+    <script src="js/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
