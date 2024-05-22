@@ -95,7 +95,7 @@ document.getElementById('book-form').addEventListener('submit', async function (
   });
   
   document.getElementById('bookModal').addEventListener('show.bs.modal', () => {
-    document.getElementById('bookModalLabel').innerText = "Kitap Ekle";
+    document.getElementById('bookModalLabel').innerText = "Add Book";
     document.getElementById('book-form').reset();
     delete document.getElementById('book-form').dataset.id;
 });
