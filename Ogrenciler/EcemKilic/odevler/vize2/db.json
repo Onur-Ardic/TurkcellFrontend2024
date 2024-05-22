@@ -1,0 +1,92 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Kürk Mantolu Madonna",
+      "author": "Sabahattin Ali",
+      "category": "Roman",
+      "year": 1943,
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/K%C3%BCrk_Mantolu_Madonna.djvu/page1-734px-K%C3%BCrk_Mantolu_Madonna.djvu.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Tutunamayanlar",
+      "author": "Oğuz Atay",
+      "category": "Roman",
+      "year": 1971,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/a/a2/Tutunamayanlar-kapak.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Saatleri Ayarlama Enstitüsü",
+      "author": "Ahmet Hamdi Tanpınar",
+      "category": "Roman",
+      "year": 1961,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/5/52/Saatleri_Ayarlama_Enstit%C3%BCs%C3%BC.jpg"
+    },
+    {
+      "id": "4",
+      "title": "İnce Memed",
+      "author": "Yaşar Kemal",
+      "category": "Roman",
+      "year": 1955,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/thumb/6/69/InceMemed.jpg/195px-InceMemed.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Aşk",
+      "author": "Elif Şafak",
+      "category": "Roman",
+      "year": 2009,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/thumb/8/82/A%C5%9Fk_Kapak.jpg/330px-A%C5%9Fk_Kapak.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Puslu Kıtalar Atlası",
+      "author": "İhsan Oktay Anar",
+      "category": "Fantastik",
+      "year": 1995,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/thumb/a/ad/%C4%B0hsan_Oktay_Anar_-_Puslu_K%C4%B1talar_Atlas%C4%B1.jpg/330px-%C4%B0hsan_Oktay_Anar_-_Puslu_K%C4%B1talar_Atlas%C4%B1.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Simyacı",
+      "author": "Paulo Coelho",
+      "category": "Roman",
+      "year": 1988,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/d/d4/Simyac%C4%B1.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Benim Adım Kırmızı",
+      "author": "Orhan Pamuk",
+      "category": "Roman",
+      "year": 1998,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/9/95/Benim_Adim_kirmizi.JPG"
+    },
+    {
+      "id": "9",
+      "title": "Serenad",
+      "author": "Zülfü Livaneli",
+      "category": "Roman",
+      "year": 2011,
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/thumb/f/ff/Serenadroman.jpg/330px-Serenadroman.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Anayurt Oteli",
+      "author": "Yusuf Atılgan",
+      "category": "Roman",
+      "year": "1973",
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/a/ae/Yusuf_At%C4%B1lgan_Anayurt_Oteli.jpg?20120122185657"
+    },
+    {
+      "id": "4b34",
+      "title": "Ateşten Gömlek",
+      "author": "Halide Edip Adıvar",
+      "category": "Roman",
+      "year": "1922",
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/3/37/Atesten_Gomlek.jpg?20180903212950"
+    }
+  ]
+}
