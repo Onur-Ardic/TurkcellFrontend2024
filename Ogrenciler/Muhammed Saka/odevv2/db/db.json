@@ -73,12 +73,20 @@
       "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qafKG2sZeCMhBUYrGAGXqfYeVQdefZXja_BiGHyXFtK0-gM_ZQNAbfB_J0U3GCw-FsU&usqp=CAU"
     },
     {
-      "id": "c15b",
       "title": "Sanat ve Edebiyat Yazıları",
       "author": "Murat Belge",
       "category": "Bilim Kurgu",
-      "year": "2005",
-      "cover": "https://iletisim.com.tr/Images/UserFiles/Images/Spot/sanat-ve-edebiyat-yazilari-2.jpg"
+      "year": "2006",
+      "cover": "https://iletisim.com.tr/Images/UserFiles/Images/Spot/sanat-ve-edebiyat-yazilari-2.jpg",
+      "id": "c15b"
+    },
+    {
+      "id": "f17c",
+      "title": "deneme",
+      "author": "silincek",
+      "category": "Korku",
+      "year": "1000",
+      "cover": "https://via.placeholder.com/150"
     }
   ]
 }

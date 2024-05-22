@@ -10,9 +10,9 @@ class Filter {
   }
 
   loadAuthors() {
-    const authors = [...new Set(this.books.map(book => book.author))]; // Benzersiz yazar isimlerini alıyoruz
+    const authors = [...new Set(this.books.map(book => book.author))]; 
     const authorSelect = document.getElementById('filter-author');
-    authorSelect.innerHTML = '<option value="">Yazar</option>'; // Varsayılan boş seçeneği ekliyoruz
+    authorSelect.innerHTML = '<option value="">Yazar</option>'; 
 
     authors.forEach(author => {
       const option = document.createElement('option');
