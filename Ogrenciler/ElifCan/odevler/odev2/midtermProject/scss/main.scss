@@ -1,28 +1,22 @@
 .card {
-  //   width: 280px;
   border: none;
   background: #ffffff;
   border: 1px solid #e0e3eb;
   color: #661e56;
-  img {
-    /* height: 220px; */
-    width: 100%;
-  }
 }
 
 .btn-wrapper {
-  left: -100px; /* Başlangıçta butonu görünmez ve solda yapar */
-  top: 10px; /* Butonun yukarıdan uzaklığı */
-  transition: left 0.5s ease, opacity 0.5s ease; /* Animasyon */
+  top: -100px;
+  left: 10px;
+  transition: top 0.5s ease, opacity 0.5s ease;
   opacity: 0;
 }
 .card:hover .btn-wrapper {
-  left: 10px; /* Hover olduğunda butonu görünen yerine kaydırır */
+  top: 10px;
   opacity: 1;
 }
 
 .leftPart {
-  height: 100vh;
   overflow-y: auto;
   border-right: 1px solid #ddd;
 }

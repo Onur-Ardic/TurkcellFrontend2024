@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Turkcell Akademi</title>
+  <title>Kitap Koleksiyonu</title>
   <link rel="icon" href="image/akademi.ico" type="image/x-icon">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css" rel="stylesheet">
@@ -14,7 +14,7 @@
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="image/logo.png" alt="Site Logo" style="height: 30px; margin-right: 10px;">
-        <strong>Turkcell Akademi</strong>
+        <strong>Kitap Koleksiyonu</strong>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -48,7 +48,7 @@
           <option value="Bilim Kurgu">Bilim Kurgu</option>
           <option value="Gerilim">Gerilim</option>
           <option value="Oyun">Oyun</option>
-          <!-- Daha fazla kategori ekleyin -->
+
         </select>
       </div>
       <div class="col-md-3 mb-2">
@@ -90,8 +90,17 @@
             </div>
             <div class="form-group">
               <label for="category">Kategori</label>
-              <input type="text" class="form-control" id="category" required>
-            </div>
+              <select class="form-control" id="category" required>
+                  <option value="">Kategori Seçin</option>
+                  <option value="Korku">Korku</option>
+                  <option value="Aksiyon">Aksiyon</option>
+                  <option value="Macera">Macera</option>
+                  <option value="Bilim Kurgu">Bilim Kurgu</option>
+                  <option value="Aşk">Aşk</option>
+                  <option value="Gerilim">Gerilim</option>
+                  <option value="Oyun">Oyun</option>
+              </select>
+          </div>
             <div class="form-group">
               <label for="year">Yazıldığı Tarih</label>
               <input type="text" class="form-control" id="year" required>

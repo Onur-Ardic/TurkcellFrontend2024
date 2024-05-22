@@ -9821,7 +9821,7 @@ progress {
   }
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0.5rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -9864,7 +9864,6 @@ progress {
 }
 
 .alert-container {
-  position: fixed;
   bottom: 1rem;
   right: 1rem;
   z-index: 1050;

@@ -1,0 +1,92 @@
+{
+  "books": [
+    {
+      "image": "https://img.kitapyurdu.com/v1/getImage/fn:2983869/wh:true/wi:800",
+      "bookname": "Bit Palas",
+      "author": "Elif Şafak",
+      "date": "2002",
+      "categories": "Roman",
+      "id": "9a4ef8c1-ac80-40ff-88a9-7519d333299b"
+    },
+    {
+      "id": "7f3b4866-0637-4366-a978-b5c764941076",
+      "image": "https://i.dr.com.tr/cache/600x600-0/originals/0001747507001-1.jpg",
+      "bookname": "Pembe Fili Düşünme",
+      "author": "Zeynep Selvili",
+      "date": "2020",
+      "categories": "Kişisel Gelişim"
+    },
+    {
+      "id": "44124bed-9f01-4490-a291-bffe4b81a21b",
+      "image": "https://img.kitapyurdu.com/v1/getImage/fn:11798998/wh:true/wi:500",
+      "bookname": "Görünmez İp",
+      "author": "Patrice Karst",
+      "date": "2023",
+      "categories": "Çocuk ve Gençlik"
+    },
+    {
+      "image": "https://img.kitapyurdu.com/v1/getImage/fn:10416288/wh:true/wi:800",
+      "bookname": "Sevginin Gücü",
+      "author": "Carolina Richards",
+      "date": "2019",
+      "categories": "Çocuk ve Gençlik",
+      "id": "04a378da-ebae-48e6-aef8-052cdfa369f2"
+    },
+    {
+      "image": "https://img.kitapyurdu.com/v1/getImage/fn:1107942/wh:true/wi:500",
+      "bookname": "Beyoğlu'nun En Güzel Abisi",
+      "author": "Ahmet Ümit",
+      "date": "2012",
+      "categories": "Roman",
+      "id": "96d35b80-da75-40d5-ab1e-92b0fee64eec"
+    },
+    {
+      "image": "https://img.kitapyurdu.com/v1/getImage/fn:127473/wh:true/wi:800",
+      "bookname": "Ferrarisi'ni Satan Bilge",
+      "author": "Robin Sharma",
+      "date": "2020",
+      "categories": "Kişisel Gelişim",
+      "id": "4344d16c-c693-4710-8207-4180321f82d3"
+    },
+    {
+      "image": "https://i.dr.com.tr/cache/500x400-0/originals/0001831187001-1.jpg",
+      "bookname": "Sınırlar",
+      "author": "Henry Cloud",
+      "date": "2009",
+      "categories": "Kişisel Gelişim",
+      "id": "d648d428-fbc3-441c-b165-a5f7c198f92f"
+    },
+    {
+      "image": "https://img.kitapyurdu.com/v1/getImage/fn:11676587/wh:true/wi:800",
+      "bookname": "Işıklar Sönünce",
+      "author": "Agatha Cristie",
+      "date": "1997",
+      "categories": "Roman",
+      "id": "93276fbb-d8aa-446e-ab56-905518bfb22f"
+    },
+    {
+      "image": "https://img.kitapyurdu.com/v1/getImage/fn:11221036/wh:true/wi:220",
+      "bookname": "Atomik Alışkanlıklar",
+      "author": "James Clear",
+      "date": "2020",
+      "categories": "Kişisel Gelişim",
+      "id": "7bcb43a7-e698-4d88-9520-eaf875e352f3"
+    },
+    {
+      "image": "https://i.dr.com.tr/cache/600x600-0/originals/0000000719285-1.jpg",
+      "bookname": "Seninle Başlamadı",
+      "author": "Mark Wolyyn",
+      "date": "2016",
+      "categories": "Kişisel Gelişim",
+      "id": "595b8a92-324d-4cb1-9d6c-720ae64bddb3"
+    },
+    {
+      "image": "https://i.dr.com.tr/cache/500x400-0/originals/0000000070386-1.jpg",
+      "bookname": "Dört Anlaşma",
+      "author": " Don Miguel Ruiz ",
+      "date": "1999",
+      "categories": "Kişisel Gelişim",
+      "id": "82c0bb50-9b2a-4b44-adb6-637d7ec36eba"
+    }
+  ]
+}
