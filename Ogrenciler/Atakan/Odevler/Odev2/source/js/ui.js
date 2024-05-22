@@ -9,67 +9,88 @@ class UI {
         let card = document.createElement("div");
         card.classList.add("col-lg-6", "p-3");
 
-        let cardInner = document.createElement("div");
-        cardInner.classList.add("card", "mb-3");
-        cardInner.style.maxWidth = "500px";
+        let innerDiv = document.createElement("div");
+        innerDiv.classList.add("card", "mb-3");
+        innerDiv.style.maxWidth = "500px";
 
-        let cardBody = document.createElement("div");
-        cardBody.classList.add("row", "g-0");
+        let rowDiv = document.createElement("div");
+        rowDiv.classList.add("row", "g-0");
 
-        let imgColumn = document.createElement("div");
-        imgColumn.classList.add("col-md-4");
+        let colDiv1 = document.createElement("div");
+        colDiv1.classList.add("col-md-4");
+
         let img = document.createElement("img");
         img.src = book.cover;
         img.classList.add("img-fluid", "rounded-start");
-        img.alt = "Book Cover";
-        imgColumn.appendChild(img);
-        cardBody.appendChild(imgColumn);
+        img.alt = "Cover Image";
 
-        let textColumn = document.createElement("div");
-        textColumn.classList.add("col-md-8", "bg-warning", "bg-opacity-25");
-        let cardText = document.createElement("div");
-        cardText.classList.add("card-body");
+        colDiv1.appendChild(img);
+
+        let colDiv2 = document.createElement("div");
+        colDiv2.classList.add("col-md-8", "bg-warning", "bg-opacity-25");
+
+        let cardBody = document.createElement("div");
+        cardBody.classList.add("card-body");
+
         let title = document.createElement("h6");
         title.classList.add("card-title");
         title.textContent = book.name;
+
         let author = document.createElement("p");
         author.classList.add("card-text", "pt-2");
         author.textContent = "Yazarı: " + book.author;
+
         let category = document.createElement("p");
         category.classList.add("card-text");
-        category.innerHTML = `<small class="text-body-secondary">Kategori: ${book.category}</small>`;
+        let categorySmall = document.createElement("small");
+        categorySmall.classList.add("text-body-secondary");
+        categorySmall.textContent = "Kategori: " + book.category;
+        category.appendChild(categorySmall);
+
         let year = document.createElement("p");
         year.classList.add("card-text", "pb-2");
-        year.innerHTML = `<small class="text-body-secondary">Yayım Tarihi: ${book.year}</small>`;
-        let buttons = document.createElement("div");
-        buttons.classList.add("d-flex", "justify-content-between");
-        let editBtn = document.createElement("button");
-        editBtn.type = "button";
-        editBtn.classList.add("btn", "btn-success", "editBtn");
-        editBtn.setAttribute("data-bs-toggle", "modal");
-        editBtn.setAttribute("data-bs-target", "#bookModal");
-        editBtn.onclick = function () {
+        let yearSmall = document.createElement("small");
+        yearSmall.classList.add("text-body-secondary");
+        yearSmall.textContent = "Yayım Tarihi: " + book.year;
+        year.appendChild(yearSmall);
+
+        let buttonDiv = document.createElement("div");
+        buttonDiv.classList.add("d-flex", "justify-content-between");
+
+        let editButton = document.createElement("button");
+        editButton.type = "button";
+        editButton.classList.add("btn", "btn-success", "editBtn");
+        editButton.dataset.bsToggle = "modal";
+        editButton.dataset.bsTarget = "#bookModal";
+        editButton.onclick = () => {
           UI.editBook(book.id);
+          UI.requestAllDataAndDisplay();
         };
-        editBtn.textContent = "Düzenle";
-        let deleteBtn = document.createElement("button");
-        deleteBtn.type = "button";
-        deleteBtn.classList.add("btn", "btn-danger", "deleteBtn");
-        deleteBtn.onclick = function () {
-          UI.deleteBook(book.id);
-        };
-        deleteBtn.textContent = "Sil";
-        buttons.appendChild(editBtn);
-        buttons.appendChild(deleteBtn);
-        cardText.appendChild(title);
-        cardText.appendChild(author);
-        cardText.appendChild(category);
-        cardText.appendChild(year);
-        cardText.appendChild(buttons);
-        textColumn.appendChild(cardText);
-        cardBody.appendChild(textColumn);
-        cardInner.appendChild(cardBody);
-        card.appendChild(cardInner);
+        editButton.textContent = "Düzenle";
+
+        let deleteButton = document.createElement("button");
+        deleteButton.type = "button";
+        deleteButton.classList.add("btn", "btn-danger", "deleteBtn");
+        deleteButton.onclick = () => UI.deleteBook(book.id);
+        deleteButton.textContent = "Sil";
+
+        buttonDiv.appendChild(editButton);
+        buttonDiv.appendChild(deleteButton);
+
+        cardBody.appendChild(title);
+        cardBody.appendChild(author);
+        cardBody.appendChild(category);
+        cardBody.appendChild(year);
+        cardBody.appendChild(buttonDiv);
+
+        colDiv2.appendChild(cardBody);
+
+        rowDiv.appendChild(colDiv1);
+        rowDiv.appendChild(colDiv2);
+
+        innerDiv.appendChild(rowDiv);
+
+        card.appendChild(innerDiv);
 
         bookContainer.appendChild(card);
       });
