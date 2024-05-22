@@ -31,7 +31,6 @@ class UI {
       "position-absolute",
       "btn-wrapper",
       "d-flex",
-      "flex-column",
       "gap-2"
     );
 
@@ -61,7 +60,7 @@ class UI {
     const textDiv = document.createElement("div");
     textDiv.classList.add("text-center");
 
-    const titleHeading = document.createElement("h5");
+    const titleHeading = document.createElement("h4");
     titleHeading.classList.add("bookNameOnCard");
     titleHeading.id = "bookNameOnCard";
     titleHeading.style.maxWidth = "100%";
@@ -140,6 +139,7 @@ class UI {
     const publishDate = document.getElementById("publishDate").value;
     const category = document.getElementById("bookcategory").value;
     const picture = document.getElementById("bookPicture").value;
+
     if (id == null) {
       id = crypto.randomUUID();
     }
