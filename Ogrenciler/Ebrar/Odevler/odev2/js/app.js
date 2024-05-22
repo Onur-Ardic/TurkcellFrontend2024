@@ -24,7 +24,7 @@ addBookForm.addEventListener("submit", async (event) => {
       document.getElementById("author").value,
       document.getElementById("category").value,
       document.getElementById("date").value,
-      document.getElementById("coverImgUrl").value
+      document.getElementById("coverImageUrl").value
     );
     await Request.post("http://localhost:3000/books", book);
   } else {
@@ -34,8 +34,9 @@ addBookForm.addEventListener("submit", async (event) => {
       document.getElementById("author").value,
       document.getElementById("category").value,
       document.getElementById("date").value,
-      document.getElementById("coverImgUrl").value
+      document.getElementById("coverImageUrl").value
     );
+
     await Request.put("http://localhost:3000/books", updatedBook, updateId);
     ui.addBookForm.querySelector("button").textContent = "Kaydet";
   }
@@ -51,7 +52,7 @@ function bookForUpdate(book) {
   document.getElementById("author").value = book.author;
   document.getElementById("category").value = book.category;
   document.getElementById("date").value = book.date;
-  document.getElementById("coverImgUrl").value = book.coverImgUrl;
+  document.getElementById("coverImageUrl").value = book.coverImgUrl;
   document.getElementById("addBookForm").querySelector("button").textContent =
     "Güncelle";
   document.getElementById("bookAddBtn").click();
