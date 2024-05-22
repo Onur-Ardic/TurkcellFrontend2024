@@ -1,0 +1,39 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.footerHeader {
+  font-family: "Freeman", sans-serif;
+}
+
+.book-img {
+  max-height: 320px;
+  width: 100%;
+}
+
+:root[data-bs-theme="dark"] .bookCard {
+  box-shadow: rgb(218, 217, 216) 2px 6px 14px;
+}
+
+:root[data-bs-theme="light"] .bookCard {
+  box-shadow: rgb(0, 0, 0, 0.2) 2px 6px 14px;
+}
+
+.bookCard {
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.bookCard:hover {
+  transform: scale(1.02);
+}

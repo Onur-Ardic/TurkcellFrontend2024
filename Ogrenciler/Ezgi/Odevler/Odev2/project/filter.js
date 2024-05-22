@@ -3,6 +3,8 @@ const sortSelect = document.querySelector('#sortSelect')
 
 filterValues.forEach(filterValue => {
     filterValue.addEventListener('click', function () {
+        filterValues.forEach(item => item.classList.remove('active'))
+        this.classList.add('active')
         let filterValue = this.value
         UI.removeBooksUI()
         if(filterValue === "Tümü"){
