@@ -1,51 +1,36 @@
 {
   "books": [
     {
-      "id": "1",
-      "BookName": "Küçük Prens",
-      "Author": "Antoine de Saint-Exupery",
-      "Category": "Children’s",
-      "PublishedDate": "1943"
-    },
-    {
-      "id": "2",
-      "BookName": "Mutlu Olma İhtimali",
-      "Author": "Sigmund Freud",
-      "Category": "Philosophy",
-      "PublishedDate": "2020"
-    },
-    {
-      "id": "3",
+      "id": "41ed",
       "BookName": "Doğu Ekspresinde Cinayet",
-      "Author": "Agatha Christie",
+      "Author": "Agathe Christy",
+      "Category": "Autobiography",
+      "PublishedDate": "1996",
+      "imgUrl": "https://www.cihatayaz.com/wp-content/uploads/2017/06/slider_item_01.gif"
+    },
+    {
+      "id": "a428",
+      "BookName": "sdjfnjlvn",
+      "Author": "Agathe Christy",
       "Category": "Crime",
-      "PublishedDate": "2020"
+      "PublishedDate": "1996",
+      "imgUrl": "https://www.cihatayaz.com/wp-content/uploads/2017/06/slider_item_01.gif"
     },
     {
-      "id": "4",
-      "BookName": "Veronika Ölmek İstiyor",
-      "Author": "Paulo Coelho",
-      "Category": "Novel",
-      "PublishedDate": "2005"
+      "id": "c911",
+      "BookName": "sdjfnjlvn",
+      "Author": "Agathe Christy",
+      "Category": "Crime",
+      "PublishedDate": "1996",
+      "imgUrl": "https://img.kitapyurdu.com/v1/getImage/fn:4890428/wh:true/miw:200/mih:200"
     },
     {
-      "id": "5",
-      "BookName": "Ezilenler",
-      "Author": "Dostoyevski",
-      "Category": "Novel",
-      "PublishedDate": "2010"
-    },
-    {
-      "id": "5oWfjmf"
-    },
-    {
-      "id": "vwlBTsd"
-    },
-    {
-      "id": "R2Jwo2G"
-    },
-    {
-      "id": "xgY2DWw"
+      "id": "950a",
+      "BookName": "hsdşfhkj",
+      "Author": "Agathe Christy",
+      "Category": "History",
+      "PublishedDate": "1996",
+      "imgUrl": "https://www.cihatayaz.com/wp-content/uploads/2017/06/slider_item_01.gif"
     }
   ]
 }

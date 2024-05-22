@@ -1,0 +1,22 @@
+{
+  "name": "odev2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:css",
+    "json-server": "json-server --watch ../db.json",
+    "start": "concurrently \"npm run sass\" \"npm run json-server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "sass": "^1.77.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "json-server": "^1.0.0-beta.0"
+  }
+}

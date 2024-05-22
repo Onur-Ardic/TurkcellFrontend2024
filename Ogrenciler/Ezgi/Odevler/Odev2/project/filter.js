@@ -1,104 +1,51 @@
-const sienceFiction = document.querySelector('#science-fiction')
-const poem = document.querySelector('#poem')
-const detective = document.querySelector('#detective')
-const historical = document.querySelector('#historical')
-const horrorThriller = document.querySelector('#horror-thriller')
-const love = document.querySelector('#love')
-const kid = document.querySelector('#kid')
-const sortA = document.querySelector('#sortA')
-const sortZ = document.querySelector('#sortZ')
-const sortDate = document.querySelector('#sortDate')
+const filterValues = document.querySelectorAll('.filter-area-item');
+const sortSelect = document.querySelector('#sortSelect')
 
-
-sienceFiction.addEventListener("click", function () {
-    UI.removeBooksUI()
-    Request.get("http://localhost:3000/books?category=Bilim-Kurgu")
-        .then(data => {
-            data.forEach(book => UI.displayBooksUI(book))
-            console.log(data);
-        })
-        .catch(error => console.error(error, "Bilim-Kurgu kategorisinde kitaplar getirilemedi."));
-
+filterValues.forEach(filterValue => {
+    filterValue.addEventListener('click', function () {
+        filterValues.forEach(item => item.classList.remove('active'))
+        this.classList.add('active')
+        let filterValue = this.value
+        UI.removeBooksUI()
+        if(filterValue === "Tümü"){
+            Request.get("http://localhost:3000/books")
+                .then(data => {
+                    data.forEach(book => UI.displayBooksUI(book))
+                })
+                .catch(error => console.error(error, "Kitaplar getirilemedi."));
+        }else {
+            Request.get(`http://localhost:3000/books?category=${filterValue}`)
+                .then(data => {
+                    data.forEach(book => UI.displayBooksUI(book))
+                })
+                .catch(error => console.error(error, "Kitaplar getirilemedi."));
+        }
+    });
 });
 
-poem.addEventListener("click", function () {
-    UI.removeBooksUI()
-    Request.get("http://localhost:3000/books?category=Şiir")
-        .then(data => {
-            data.forEach(book => UI.displayBooksUI(book));
-            console.log(data);
-        })
-        .catch(error => console.error(error, "Şiir kategorisinde kitaplar getirilemedi."));
+sortSelect.addEventListener('change', function () {
+    let sortValue = this.value;
+    const books = Array.from(document.querySelectorAll('.card'));
 
+   const sortedBooks = books.sort((a, b) => {
+        const dateA = a.querySelector('.category-date').textContent.split("/")[1].trim();
+        const dateB = b.querySelector('.category-date').textContent.split("/")[1].trim();
+        if (sortValue === "A-Z") {
+            return a.querySelector('.card-name').textContent.localeCompare(b.querySelector('.card-name').textContent)
+        } else if (sortValue === "Z-A") {
+            return b.querySelector('.card-name').textContent.localeCompare(a.querySelector('.card-name').textContent)
+        } else if (sortValue === "desc") {
+            return dateB.localeCompare(dateA)
+        } else if (sortValue === "asc") {
+            return dateA.localeCompare(dateB)
+        }else {
+            return 0;
+        }
+    })
+    UI.removeBooksUI()
+    sortedBooks.forEach(book => {
+        booksArea.appendChild(book)
+    })
 });
 
-detective.addEventListener("click", function () {
-    UI.removeBooksUI()
-    Request.get("http://localhost:3000/books?category=Polisiye")
-        .then(data => {
-            data.forEach(book => UI.displayBooksUI(book));
-            console.log(data);
-        })
-        .catch(error => console.error(error, "Polisiye kategorisinde kitaplar getirilemedi."));
 
-});
-historical.addEventListener("click", function () {
-    UI.removeBooksUI()
-    Request.get("http://localhost:3000/books?category=Tarihi")
-        .then(data => {
-            data.forEach(book => UI.displayBooksUI(book));
-            console.log(data);
-        })
-        .catch(error => console.error(error, "Tarihi kategorisinde kitaplar getirilemedi."));
-
-});
-horrorThriller.addEventListener("click", function () {
-    UI.removeBooksUI()
-    Request.get("http://localhost:3000/books?category=Korku-Gerilim")
-        .then(data => {
-            data.forEach(book => UI.displayBooksUI(book));
-            console.log(data);
-        })
-        .catch(error => console.error(error, "Korku-Gerilim kategorisinde kitaplar getirilemedi."));
-
-});
-love.addEventListener("click", function () {
-    UI.removeBooksUI()
-    Request.get("http://localhost:3000/books?category=Aşk")
-        .then(data => {
-            data.forEach(book => UI.displayBooksUI(book));
-            console.log(data);
-        })
-        .catch(error => console.error(error, "Aşk kategorisinde kitaplar getirilemedi."));
-
-});
-kid.addEventListener("click", function () {
-    UI.removeBooksUI()
-    Request.get("http://localhost:3000/books?category=Çocuk")
-        .then(data => {
-            data.forEach(book => UI.displayBooksUI(book));
-            console.log(data);
-        })
-        .catch(error => console.error(error, "Çocuk kategorisinde kitaplar getirilemedi."));
-
-});
-sortA.addEventListener("click", function () {
-    UI.removeBooksUI()
-    Request.get("http://localhost:3000/books?_sort=nameBook&_order=asc")
-        .then(data => UI.displayBooksUI(data))
-        .catch(error => console.error(error, "Kitaplar sıralanamadı."));
-})
-
-sortZ.addEventListener("click", function () {
-    UI.removeBooksUI()
-    Request.get("http://localhost:3000/books?_sort=nameBook&_order=desc")
-        .then(data => UI.displayBooksUI(data))
-        .catch(error => console.error(error, "Kitaplar sıralanamadı."));
-})
-
-document.getElementById("sortDate").addEventListener("click", function () {
-    UI.removeBooksUI()
-    Request.get("http://localhost:3000/books?_sort=date&_order=asc")
-        .then(data => UI.displayBooksUI(data))
-        .catch(error => console.error(error, "Kitaplar sıralanamadı."));
-})

@@ -19,156 +19,150 @@
 
 <body>
 
-        <div class="page">
-            <nav class="navbar navbar-expand-lg mb-2">
-                <div class="container d-flex gap-5">
-                    <a class="navbar-brand text-white fs-2 fw-bold" href="#">Kitap Kurdu</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Sırala
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a id="sortA" class="dropdown-item" href="#">A-Z</a></li>
-                                    <li><a id="sortZ" class="dropdown-item" href="#">Z-A</a></li>
-                                    <li><a id="sortDate" class="dropdown-item" href="#">Tarih</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <button id="addBookBtn" type="button" class="btn btn-success fw-bold fs-6" data-bs-toggle="modal"
-                                    data-bs-target="#addBookModal">
-                                    Kitap Ekle+
-                                </button>
-                                <div class="modal fade" id="addBookModal" data-bs-backdrop="static" data-bs-keyboard="false"
-                                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="addBookModalTitle">Kitap Ekle</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form id="addBookForm">
-                                                    <div class="mb-3">
-                                                        <label for="nameBook" class="form-label">Kitap Adı:</label>
-                                                        <input type="text" class="form-control" id="nameBook">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="writer" class="form-label">Yazarı:</label>
-                                                        <input type="text" class="form-control" id="writer">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="description" class="form-label">Açıklama:</label>
-                                                        <input type="text" class="form-control" id="description"
-                                                            maxlength="200" />
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="category" class="form-label">Kategori:</label>
-                                                        <select class="form-control" name="category" id="category">
-                                                            <option>Bilim-Kurgu</option>
-                                                            <option>Şiir</option>
-                                                            <option>Polisiye</option>
-                                                            <option>Tarihi</option>
-                                                            <option>Korku-Gerilim</option>
-                                                            <option>Aşk</option>
-                                                            <option>Çocuk</option>
-                                                        </select>
-                                                    </div>
-    
-                                                    <div class="mb-3">
-                                                        <label for="date" class="form-label">Basım Yılı:</label>
-                                                        <input type="text" class="form-control" id="date">
-                                                    </div>
-    
-                                                    <div class="mb-3">
-                                                        <label for="image" class="form-label">Resim URL:</label>
-                                                        <input type="text" class="form-control" id="image">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <button type="button" disabled class="btn btn-warning"
-                                                            data-bs-dismiss="modal" id="modalUpdateBtn">
-                                                            Güncelle
-                                                        </button>
-                                                        <button id="saveForm" type="submit"
-                                                            class="btn btn-success">Ekle</button>
-                                                    </div>
-                                                </form>
-                                            </div>
-    
+    <div class="page">
+        <nav class="navbar navbar-expand-lg mb-2">
+            <div class="container d-flex gap-5">
+                <a class="navbar-brand text-white fs-2 fw-bold" href="#">Kitap Kurdu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item dropdown">
+                            <select class="form-select fw-medium" id="sortSelect">
+                                <option selected value="default">Varsayılan Sıralama</option>
+                                <option value="A-Z">A-Z</option>
+                                <option value="Z-A">Z-A</option>
+                                <option value="desc">Tarihe Göre Sırala (Yeni)</option>
+                                <option value="asc">Tarihe Göre Sırala (Eski)</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <button id="addBookBtn" type="button" class="btn btn-success fw-bold fs-6"
+                                data-bs-toggle="modal" data-bs-target="#addBookModal">
+                                Kitap Ekle+
+                            </button>
+                            <div class="modal fade" id="addBookModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="addBookModalTitle">Kitap Ekle</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                         </div>
+                                        <div class="modal-body">
+                                            <form id="addBookForm">
+                                                <div class="mb-3">
+                                                    <label for="nameBook" class="form-label">Kitap Adı:</label>
+                                                    <input type="text" class="form-control" id="nameBook">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="writer" class="form-label">Yazarı:</label>
+                                                    <input type="text" class="form-control" id="writer">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="description" class="form-label">Açıklama:</label>
+                                                    <input type="text" class="form-control" id="description"
+                                                        maxlength="250" />
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="category" class="form-label">Kategori:</label>
+                                                    <select class="form-control" name="category" id="category">
+                                                        <option>Bilim-Kurgu</option>
+                                                        <option>Şiir</option>
+                                                        <option>Polisiye</option>
+                                                        <option>Tarihi</option>
+                                                        <option>Korku-Gerilim</option>
+                                                        <option>Aşk</option>
+                                                        <option>Çocuk</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label for="date" class="form-label">Basım Yılı:</label>
+                                                    <input type="text" class="form-control" id="date">
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label for="image" class="form-label">Resim URL:</label>
+                                                    <input type="text" class="form-control" id="image">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <button type="button" disabled class="btn btn-warning"
+                                                        data-bs-dismiss="modal" id="modalUpdateBtn">
+                                                        Güncelle
+                                                    </button>
+                                                    <button id="saveForm" type="submit" class="btn btn-success"
+                                                        data-bs-dismiss="modal">Ekle</button>
+                                                </div>
+                                            </form>
+                                        </div>
+
                                     </div>
                                 </div>
-    
-                            </li>
-                            <li class="nav-item text-black">
-                                <button id="clearBtn" class="nav-link bg-dark-subtle rounded-2 text-black fw-bold" aria-current="page"
-                                    href="#">Temizle</button>
-                            </li>
-                        </ul>
-                        <form class="d-flex text-white" role="search">
-                            <input id="searchInput" class="form-control me-2" type="search" placeholder="Ara"
-                                aria-label="Search">
-                            <button id="searchBtn" class="btn btn-outline-success" type="submit"><i
-                                    class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-            <div class="page-hero text-white pb-3">
-                <div class="container">
-                    <div class="row">
-                        <div
-                            class="filter-area mb-3 d-flex align-items-baseline justify-content-center gap-3  text-black p-3 rounded-3">
-                            <div>
-                                <input type="button" class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0" id="science-fiction" name="science-fiction" value="Bilim-Kurgu">
-                            
                             </div>
-                            <div>
-                                <input type="button" class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0" id="poem" name="poem" value="Şiir">
-                                
-                            </div>
-                            <div>
-                                <input type="button" class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0" id="detective" name="detective" value="Polisiye">
-                                
-                            </div>
-                            <div>
-                                <input type="button" class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0" id="historical" name="historical" value="Tarihi">
-                                
-                            </div>
-                            <div>
-                                <input type="button" class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0" id="horror-thriller" name="horror-thriller" value="Korku-Gerilim">
-                                
-                            </div>
-                            <div>
-                                <input type="button" class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0" id="love" name="love" value="Aşk">
-                                
-                            </div>
-                            <div>
-                                <input type="button" class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0" id="kid" name="kid" value="Çocuk">
-                                
-                            </div>
-                        </div>
-                    </div>
+
+                        </li>
+                        <li class="nav-item text-black">
+                            <button id="clearBtn" class="nav-link bg-dark-subtle rounded-2 text-black fw-bold"
+                                aria-current="page" href="#">Temizle</button>
+                        </li>
+                    </ul>
+                    <form class="d-flex text-white" role="search">
+                        <input id="searchInput" class="form-control me-2" type="search" placeholder="Ara"
+                            aria-label="Search">
+                        <button id="searchBtn" class="btn btn-outline-success" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
                 </div>
             </div>
-        </div>
-        <div class="body py-5">
+        </nav>
+        <div class="page-hero text-white pb-3">
             <div class="container">
-                <h2 class="row justify-content-center fw-bold py-5">KÜTÜPHANEM</h2>
-                <div id="books-area" class="books-container d-flex flex-wrap gap-4"></div>
+                <div class="row">
+                    <div
+                        class="filter-area mb-3 d-flex align-items-baseline justify-content-center gap-3  text-black p-3 rounded-3">
+                        <button id="all" name="all" value="Tümü"
+                            class="filter-area-item active bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0">Tümü</button>
+                        <button
+                            class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
+                            id="science-fiction" name="science-fiction" value="Bilim-Kurgu">Bilim-Kurgu</button>
+                        <button
+                            class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
+                            id="poem" name="poem" value="Şiir">Şiir</button>
+                        <button
+                            class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
+                            id="detective" name="detective" value="Polisiye">Polisiye</button>
+                        <button
+                            class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
+                            id="historical" name="historical" value="Tarihi">Tarihi</button>
+                        <button
+                            class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
+                            id="horror-thriller" name="horror-thriller" value="Korku-Gerilim">Korku-Gerilim</button>
+                        <button
+                            class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
+                            id="love" name="love" value="Aşk">Aşk</button>
+                        <button
+                            class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
+                            id="kid" name="kid" value="Çocuk">Çocuk</button>
+                    </div>
+
+                </div>
             </div>
         </div>
-
-
-
+    </div>
+    </div>
+    <div class="body py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold py-5">KÜTÜPHANEM</h2>
+            <div id="books-area" class="books-container d-flex flex-wrap gap-4"></div>
+        </div>
+    </div>
+    </div>
+    <script src="book.js"></script>
     <script src="request.js"></script>
     <script src="ui.js"></script>
     <script src="filter.js"></script>

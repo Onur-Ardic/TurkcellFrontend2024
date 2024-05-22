@@ -123,16 +123,33 @@ function sortBooks(option) {
                     sortedBooks = data.sort((a, b) => (a.year < b.year ? 1 : -1));
                     break;
                 case 'alpha':
-                    sortedBooks = data.sort((a, b) => (a.title > b.title ? 1 : -1));
+                    sortedBooks = data.sort((a, b) => a.title.localeCompare(b.title));
                     break;
                 case 'reverse-alpha':
-                    sortedBooks = data.sort((a, b) => (a.title < b.title ? 1 : -1));
+                    sortedBooks = data.sort((a, b) => b.title.localeCompare(a.title));
                     break;
                 default:
                     sortedBooks = data;
             }
             UI.clearCardContainer();
             UI.renderBooks(sortedBooks);
+        });
+    });
+}
+
+function filterBooks() {
+    const filterOptions = document.querySelectorAll('.filter-option');
+    filterOptions.forEach(option => {
+        option.addEventListener('click', function (e) {
+            e.preventDefault();
+            const filterBy = option.dataset.filter;
+            const filterValue = option.dataset.value.toLowerCase();
+
+            const cards = document.querySelectorAll('.book-card');
+            cards.forEach(card => {
+                const cardValue = card.querySelector(`.card-${filterBy}`).textContent.toLowerCase();
+                card.style.display = cardValue.includes(filterValue) ? 'block' : 'none';
+            });
         });
     });
 }

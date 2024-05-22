@@ -16,11 +16,45 @@
   box-shadow: 0 0 0 0.2rem rgba(33, 37, 98, 0.25);
 }
 .card-img-top {
-  width: 186px;
+  width: 200px;
   height: 268px;
 }
 .custom-input:focus {
   outline: none;
   box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.5);
   border: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+.card-img-top {
+  transition: transform 0.2s;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+.card {
+  overflow: hidden;
+}
+
+@media (max-width: 580px) {
+  .xs-col {
+    flex-direction: column !important;
+    align-items: center;
+    margin: 10px 10px;
+  }
+  a {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-md-dcol {
+    flex-direction: column;
+  }
+  .xs-mb-5 {
+    margin-bottom: 12px;
+  }
+  a {
+    font-size: 12px !important;
+  }
 }

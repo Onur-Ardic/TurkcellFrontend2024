@@ -1,0 +1,31 @@
+body {
+    font-family: "Autour One", system-ui;
+    font-weight: 400;
+    background-image: url(./assets/bodyBackground.jpg);
+    background-position: center;
+}
+.text-overflow {
+    height: 1.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+input:focus,
+select:focus {
+    border: 1px solid black !important;
+    box-shadow: none !important;
+}
+.user-select-btn {
+    font-size: 14px;
+}
+.banner img {
+    animation: banner-img-animation 1.5s infinite ease-in;
+}
+@keyframes banner-img-animation {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+}

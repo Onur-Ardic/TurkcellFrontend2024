@@ -73,22 +73,76 @@
       "id": "e1121833-95ac-4ff8-8e08-0bdc2ae5c221"
     },
     {
-      "nameBook": "wdESFSF",
-      "writer": "das",
-      "description": "asd",
-      "category": "Polisiye",
-      "date": "ads",
-      "image": "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg",
-      "id": "35c9de50-ef6a-453a-bd9f-39b6c9db11ab"
+      "id": "a1093910-84f5-4259-8837-fb67a066bbd1",
+      "nameBook": "Vukuat Var",
+      "writer": "Orhan Kemal",
+      "description": "Toprağını kaybedip yoksullaşan köylülerle gittikçe güçlenen toprak ağaları arasında gerilen ilişkileri ele alırken kadın işçilerin de bu ilişki içinde kimliklerini yeniden oluşturmasına tanıklık ediyor.",
+      "category": "Tarihi",
+      "date": "1958",
+      "image": "https://1k-cdn.com/resimler/kitaplar/122305_6bdef_1586270573.jpg"
     },
     {
-      "nameBook": "asd SONNNNNN",
-      "writer": "asd",
-      "description": "asd",
+      "id": "c094c9ca-a9ca-46a5-8384-2610fb1f1241",
+      "nameBook": "Benim Adım Kırmızı",
+      "writer": "Orhan Pamuk",
+      "description": "1591 yılında Osmanlı Padişahı III. Murad'ın saltanat döneminde 9 gün süreyle karlı bir havada İstanbul'da geçer. ",
+      "category": "Tarihi",
+      "date": "1998",
+      "image": "https://i.dr.com.tr/cache/600x600-0/originals/0000000451871-1.jpg"
+    },
+    {
+      "id": "d2f77405-724f-4c20-8a4a-e7dca0a7e68c",
+      "nameBook": "Melekler ve Şeytanlar",
+      "writer": "Dan Brown",
+      "description": "Teoloji uzmanı Robert Langdon, tarihteki en güçlü yeraltı şebekesi olan İlluminati adlı antik gizli kardeşlik cemiyetinin tekrar canlandığını öğrenir. ",
       "category": "Polisiye",
-      "date": "asd",
-      "image": "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg",
-      "id": "5223544c-0a16-43bd-b354-d3042e8579c8"
+      "date": "2000",
+      "image": "https://i.dr.com.tr/cache/600x600-0/originals/0000000298884-1.jpg"
+    },
+    {
+      "id": "fa95e834-b5e2-49cb-869a-e6f58f94fa88",
+      "nameBook": "Artemis",
+      "writer": "Andy Weir",
+      "description": "Hamal ve kaçakçı olan Jasmine \"Jazz\" Bashara, kendini şehrin kontrolü için bir komploya karışmış halde buluyor ve komployu arkadaşlarıyla beraber kendi lehine çevirmeye çalışıyorlar. ",
+      "category": "Bilim-Kurgu",
+      "date": "2017",
+      "image": "https://storage.evrimagaci.org/old/mi_media/ba81b1c31bbd28e6470ae14fb899bfaa.jpeg"
+    },
+    {
+      "id": "982eeede-efed-4ea9-91d6-44b01563fae2",
+      "nameBook": "Eğil Dağlar",
+      "writer": "Yahya Kemal Beyatlı",
+      "description": "Yahya Kemalin İstiklâl Harbi yazıları ile 1919ların o buhranlı günlerindeki düşünce ve görüşlerini açıkladığı nesir, fıkra, makale ve hatıralarını bir araya toplayan eser.",
+      "category": "Şiir",
+      "date": "1966",
+      "image": "https://1k-cdn.com/resimler/kitaplar/9414_f37c3_1579465317.jpg"
+    },
+    {
+      "id": "ff8bbac1-8db6-4ec5-be00-d73d84d80fcb",
+      "nameBook": "Yeşil Yol",
+      "writer": "Stephen King",
+      "description": "bir hapishane görevlisi ile bir mahkumun öyküsünü anlatıyor. Paul Edgecomb'un hapishanedeki görevi, idama mahkum edilen mahkumları son yolculuklarına uğurlamaktır. Çalıştığı yıllar içerisinde yüzlerce mahkumu idam etmiştir. ",
+      "category": "Korku-Gerilim",
+      "date": "1996",
+      "image": "https://img.kitapyurdu.com/v1/getImage/fn:5813625/wh:true/wi:800"
+    },
+    {
+      "id": "dc17d198-e231-4c03-8980-17bdb12d144b",
+      "nameBook": "das ssss",
+      "writer": "adsas",
+      "description": "adsdsa",
+      "category": "Bilim-Kurgu",
+      "date": "1961",
+      "image": "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg"
+    },
+    {
+      "id": "a5852308-f6a2-43c5-9cd5-538de7ac243c",
+      "nameBook": "asda",
+      "writer": "sdas",
+      "description": "sdasd",
+      "category": "Bilim-Kurgu",
+      "date": "2003",
+      "image": "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg"
     }
   ]
 }
