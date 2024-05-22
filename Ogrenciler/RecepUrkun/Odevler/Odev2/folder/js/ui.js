@@ -1,8 +1,4 @@
 class UI {
-    static showAlert(type) {
-        alert(type === "success" ? "Başarılı" : "Hatalı");
-    }
-
     static async renderBooks(searchBook = "", sortBook = "", category = "", author = "") {
         while (bookContainer.firstChild) {
             bookContainer.removeChild(bookContainer.firstChild);
@@ -187,7 +183,7 @@ class UI {
             });
             this.renderBooks()
         } catch (error) {
-            console.error("Filtreler alınırken hata oluştu:", error);
+            UI.ShowErrorMessage("Filtreler alınırken hata oluştu", 'danger')
         }
     };
 
@@ -235,6 +231,19 @@ class UI {
         headerSentence.appendChild(figcaption);
     }
 
+    static ShowErrorMessage(message, type) {
+        if (!errorMessage) return;
+    
+        errorMessage.className = '';
+        errorMessage.classList.add('alert', `alert-${type}`, 'text-center', 'd-block');
+        errorMessage.textContent = message;
+
+        setTimeout(() => {
+            errorMessage.classList.remove('d-block');
+            errorMessage.classList.add('d-none');
+        }, 3000);
+    }
+    
     static clearInputs() {
         kitapKapakResmi.value = ""
         kitapAdi.value = ""

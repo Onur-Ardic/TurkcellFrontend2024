@@ -16,6 +16,7 @@ const kitapGuncelleBtn = document.getElementById("kitapGuncelle")
 const modalCloseBtn = document.getElementById("modalCloseBtn")
 const kitapModalTitle = document.getElementById("kitapModalLabel")
 const changeThemeBtn = document.getElementById('changeTheme');
+const errorMessage = document.getElementById('errorMessage');
 const kitapModal = new bootstrap.Modal(document.getElementById('kitapModal'));
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -68,7 +69,7 @@ const runAllEventListener = () => {
 
 const yeniKitapOlustur = () => {
     if (kitapKapakResmi.value == "" || kitapAdi.value == "" || kitapYazari.value == "" || kitapKategori.value == "" || kitapKategori.value == "" || kitapTarih.value == "")
-        UI.showAlert("hatali")
+        UI.ShowErrorMessage("Kitap Eklerken Boş Alan Bırakılmaz", 'danger');
     else {
         const yeniKitap = new Book(
             kitapAdi.value,
@@ -78,7 +79,7 @@ const yeniKitapOlustur = () => {
             kitapKapakResmi.value
         );
         kitapEkleDb(yeniKitap);
-        // UI.showAlert("success");
+        UI.ShowErrorMessage("Kitap Başarıyla Eklendi", 'success');
         kitapModal.hide();
         UI.clearInputs();
     }
@@ -93,6 +94,7 @@ const kitapEkleDb = async (kitap) => {
 const deleteBook = async (kitapId) => {
     await apiHelper.deleteBookFromDb(kitapId)
     UI.renderBooks();
+    UI.ShowErrorMessage("Kitap Başarıyla Silindi", 'info');
 };
 
 const updateBook = async (kitapId) => {
@@ -126,6 +128,7 @@ const changeInfoBook = async (kitapId) => {
     kitapModal.hide();
     UI.renderBooks();
     await UI.addFiltersToDropdown();
+    UI.ShowErrorMessage("Kitap Başarıyla Güncellendi", 'info');
     isEditMode(false)
 }
 

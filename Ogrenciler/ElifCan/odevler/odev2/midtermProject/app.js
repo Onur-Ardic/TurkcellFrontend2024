@@ -18,7 +18,10 @@ window.onload = function () {
       showErrorToast();
     });
 
-  document.getElementById("publishDate").setAttribute("max", new Date());
+  const today = new Date();
+  const formattedToday = today.toISOString().slice(0, 10);
+  const publishDateInput = document.getElementById("publishDate");
+  publishDateInput.setAttribute("max", formattedToday);
 };
 
 function handleDeleteButtonClick(book) {

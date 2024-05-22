@@ -12,7 +12,6 @@ class UI {
       element.removeChild(element.firstChild);
     }
   }
-
   static async createFilterCheckBoxes() {
     this.removeChilds(dropdownCategoryCheckbox);
     this.removeChilds(dropdownAuthorCheckbox);
