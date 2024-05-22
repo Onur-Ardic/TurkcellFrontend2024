@@ -7,7 +7,7 @@ function displayBooks(books) {
     bookCard.classList.add("col-lg-3");
 
     const card = document.createElement("div");
-    card.classList.add("card");
+    card.classList.add("card","mb-2");
     card.id = book.id;
 
     const cardInfo = document.createElement("div");

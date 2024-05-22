@@ -14,11 +14,8 @@ window.addEventListener("load", () => {
 document.querySelectorAll("#category-list input").forEach((input) => {
   input.addEventListener("click", () => {
       const categoryId = input.id;
-      
-  Requests.get(`http://localhost:3000/books?category=${categoryId}`).then(
-    (data) => displayBooks(data)
-  );
-});
+      Requests.get(`http://localhost:3000/books?category=${categoryId}`).then((data) => displayBooks(data));
+  });
 });
 
 document.querySelectorAll("#author-list input").forEach((input) => {
