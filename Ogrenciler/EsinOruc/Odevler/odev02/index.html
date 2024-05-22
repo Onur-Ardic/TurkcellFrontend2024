@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heritage Books</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light pt-3">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">
+            <span class="brand-heritage fw-bold position-relative"
+              >Heritage</span
+            >Books
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link fw-normal" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-normal" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-white border">Shopping</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="hero-wrapper my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mt-200">
+              <h1 class="fw-bold">
+                <span class="fw-bold"
+                  >We hold the conviction that language can soothe the soul
+                </span>
+                <span class="fw-bold text-warning">.</span>
+              </h1>
+              <p>
+                Our rich collection allows you to discover works that have stood
+                the test of time and a legacy that preserves the authors'
+                original voices.
+              </p>
+            </div>
+            <div class="col-lg-6 text-center position-relative">
+              <img
+                class="header-books img-fluid w-75 rounded-circle"
+                src="https://i.pinimg.com/564x/7e/97/53/7e9753d235cc313faa821f483de49b20.jpg"
+                alt="Heritage Books"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="safe-payments my-5 mt-100">
+      <div class="container">
+        <div class="row">
+          <div
+            class="card col-lg-4 col-md-12 d-flex flex-row border-0 rounded-0 border-end"
+          >
+            <img
+              class="img-fluid me-5"
+              src="./assets/img/delivary1.png"
+              alt="icons image"
+            />
+            <div class="content">
+              <h5>Free Delivery</h5>
+              <p>Free shipping around the world for all orders over $120</p>
+            </div>
+          </div>
+          <div
+            class="card col-lg-4 col-md-12 d-flex flex-row border-0 rounded-0 border-end"
+          >
+            <img
+              class="img-fluid me-5"
+              src="./assets/img/visa2.png"
+              alt="icons image"
+            />
+            <div class="content">
+              <h5>Safe Payment</h5>
+              <p>
+                With our payment gateway, don’t worry about your information
+              </p>
+            </div>
+          </div>
+          <div
+            class="card col-lg-4 col-md-12 d-flex flex-row border-0 rounded-0"
+          >
+            <img
+              class="img-fluid me-5"
+              src="./assets/img/friendly3.png"
+              alt="icons image"
+            />
+            <div class="content">
+              <h5>Friendly Services</h5>
+              <p>You have 30-day return guarantee for every single order</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="filter-search my-5 mt-100">
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="accordion" id="filterAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAuthors">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseAuthors"
+                  >
+                    Writers
+                  </button>
+                </h2>
+                <div
+                  id="collapseAuthors"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingAuthors"
+                >
+                  <div class="accordion-body" id="authorsContainer">
+                    <!-- Yazar checkbox'ları buraya eklenecek -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCategories">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseCategories"
+                  >
+                    Category
+                  </button>
+                </h2>
+                <div
+                  id="collapseCategories"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingCategories"
+                >
+                  <div class="accordion-body" id="categoriesContainer">
+                    <!-- Kategori checkbox'ları buraya eklenecek -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-lg-2 col-md-12 my-2">
+                <button
+                  type="button"
+                  class="btn btn-white border"
+                  data-bs-toggle="modal"
+                  data-bs-target="#addCardModal"
+                >
+                  Add to Book +
+                </button>
+              </div>
+              <div class="col-lg-8 col-md-12 my-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="searchInput"
+                  placeholder="Books and Writer search.."
+                  oninput="Search.filterCards()"
+                />
+              </div>
+
+              <div class="col-lg-2 col-md-12 my-2">
+                <select
+                  class="form-select"
+                  name="filter"
+                  id="filter"
+                  onchange="Filter.sortCards()"
+                >
+                  <option value="">Default</option>
+                  <option value="text-asc">A - Z</option>
+                  <option value="text-desc">Z - A</option>
+                  <option value="year-asc">Date Asc</option>
+                  <option value="year-desc">Date Desc</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-4" id="cardContainer"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      class="modal fade"
+      id="addCardModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="addCardModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="addCardModalLabel">
+              Book Create Modal
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6">
+                <label for="validationBookName" class="form-label"
+                  >Book Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationBookName"
+                  value=""
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationNameAuthor" class="form-label"
+                  >Author Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationNameAuthor"
+                  value=""
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustomUsername" class="form-label"
+                  >Image Url</label
+                >
+                <div class="input-group has-validation">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustomImageUrl"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <div class="invalid-feedback">Please choose a Category.</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationYear" class="form-label">Year</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="validationYear"
+                  required
+                />
+                <div class="invalid-feedback">Please provide a valid Year.</div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCategory" class="form-label"
+                  >Category</label
+                >
+                <select class="form-select" id="validationCategory" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option value="Horror">Horror</option>
+                  <option value="self-improvement">self-improvement</option>
+                  <option value="Science Fiction">Science Fiction</option>
+                  <option value="Fiction">Fiction</option>
+                  <option value="Romance">Romance</option>
+                  <option value="Fantasy">Fantasy</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid Category.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button
+                    id="saveButton"
+                    class="btn btn-warning text-white"
+                    type="submit"
+                  >
+                    Create Book
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="updateModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="updateModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="updateModalLabel">
+              Book Update Modal
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form
+              id="formUpdate"
+              class="row g-3 needs-validatio-update"
+              novalidate
+            >
+              <div class="col-md-6">
+                <label for="updateBookName" class="form-label">Book Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="updateBookName"
+                  value=""
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-6">
+                <label for="updateNameAuthor" class="form-label"
+                  >Author Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="updateNameAuthor"
+                  value=""
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-6">
+                <label for="updateCustomImageUrl" class="form-label"
+                  >Image Url</label
+                >
+                <div class="input-group has-validation">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="updateCustomImageUrl"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <div class="invalid-feedback">Please choose a Image.</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="updateYear" class="form-label">Year</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="updateYear"
+                  required
+                />
+                <div class="invalid-feedback">Please provide a valid Year.</div>
+              </div>
+              <div class="col-md-12">
+                <label for="updateCategory" class="form-label">Category</label>
+                <select class="form-select" id="updateCategory" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option value="Horror">Horror</option>
+                  <option value="self-improvement">self-improvement</option>
+                  <option value="Science Fiction">Science Fiction</option>
+                  <option value="Fiction">Fiction</option>
+                  <option value="Romance">Romance</option>
+                  <option value="Fantasy">Fantasy</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid Category.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button
+                    id="updateBookSaveButton"
+                    class="btn btn-warning text-white"
+                    type="submit"
+                  >
+                    Update Book
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-white text-dark pt-4 pb-2 border-top w-75 m-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="fw-bold">HeritageBooks</h5>
+            <p>
+              Discover timeless books and preserve the legacy of great authors.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold">Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-secondary">Home</a></li>
+              <li><a href="#" class="text-secondary">About</a></li>
+              <li><a href="#" class="text-secondary">Shopping</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold">Contact Us</h5>
+            <p>Email: info@heritagebooks.com</p>
+            <p>Phone: +123 456 7890</p>
+          </div>
+        </div>
+        <div class="text-center pt-3">
+          <p class="text-secondary mb-0">
+            © 2024 Heritage Books. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/search.js"></script>
+    <script src="./js/filter.js"></script>
+    <script src="./js/book.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/request.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

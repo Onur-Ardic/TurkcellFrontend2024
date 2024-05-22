@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kütüphaneden Ödünç Aldığım Kitaplar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">KÜTÜPHANEDEN ÖDÜNÇ ALDIĞIM KİTAPLAR</h1>
+    <div class="tools my-5 d-flex gap-3 justify-content-center flex-column flex-sm-row">
+      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookModal">
+        Yeni Kitap Ekle
+      </button>
+      <input type="text" id="searchInput" class="form-control w-25 d-none d-md-block"
+        placeholder="Kitap adı veya yazar ara" />
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Sırala
+        </button>
+        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+          <li class="dropdown-item">A-Z</li>
+          <li><a class="dropdown-item" href="#">Z-A</a></li>
+          <li><a class="dropdown-item" href="#">Tarihe Göre</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton2"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Filtrele
+        </button>
+        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item" href="#">Otobiyografi</a></li>
+          <li><a class="dropdown-item" href="#">Roman</a></li>
+          <li class="border-bottom"><a class="dropdown-item" href="#">Macera</a></li>
+          <li><a class="dropdown-item" href="#">Albert Camus</a></li>
+          <li><a class="dropdown-item" href="#">Y.N Harari</a></li>
+          <li><a class="dropdown-item" href="#">Dan Brown</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div id="books" class="row row-cols-1 row-cols-xxl-5 row-cols-xl-4 row-cols-md-2 g-4 mb-5 justify-content-center">
+    </div>
+  </div>
+  <div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="bookModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookModalLabel">Yeni Kitap Ekle</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="bookForm">
+            <div class="mb-3">
+              <label for="title" class="form-label">Kitap Adı</label>
+              <input type="text" class="form-control" id="title" required />
+            </div>
+            <div class="mb-3">
+              <label for="author" class="form-label">Yazar</label>
+              <input type="text" class="form-control" id="author" required />
+            </div>
+            <div class="mb-3">
+              <label for="category" class="form-label">Kategori</label>
+              <input type="text" class="form-control" id="category" required />
+            </div>
+            <div class="mb-3">
+              <label for="year" class="form-label">Yazıldığı Tarih</label>
+              <input type="number" class="form-control" id="year" required />
+            </div>
+            <div class="mb-3">
+              <label for="cover" class="form-label">Kapak Görsel URL'i</label>
+              <input type="text" class="form-control" id="cover" required />
+            </div>
+            <button type="submit" class="btn btn-success">Kaydet</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -10,15 +10,6 @@
       "img": "https://i.dr.com.tr/cache/600x600-0/originals/0002038715001-1.jpg"
     },
     {
-      "id": "0002",
-      "name": "Otostopçunun Galaksi Rehberi",
-      "author": "Douglas Adam",
-      "publisher": "Alfa Yayinlari",
-      "category": "Bilim Kurgu",
-      "written_date": "1978",
-      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0001711082001-1.jpg"
-    },
-    {
       "id": "0003",
       "name": "Gece Yarısı Kütüphanesi",
       "author": "Matt Haig",
@@ -139,6 +130,14 @@
       "category": "Bilim Kurgu",
       "written_date": "1953",
       "img": "https://i.dr.com.tr/cache/500x400-0/originals/0001750151001-1.jpg"
+    },
+    {
+      "id": "e47b45e5-248a-4a35-9d60-e199b9262f60",
+      "name": "1984",
+      "author": "George Orwell",
+      "category": "Roman",
+      "written_date": "1948",
+      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0000000064038-1.jpg"
     }
   ],
   "sentence": [

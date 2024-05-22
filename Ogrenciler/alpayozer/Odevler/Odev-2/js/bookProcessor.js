@@ -73,4 +73,22 @@ class BookProcessor {
     });
     return bookArray;
   }
+  static async bookSorting(sortParam) {
+    let kitaplar;
+    if (sortParam == 0) {
+      ui.showBooks();
+      return;
+    } else if (sortParam == 1) {
+      kitaplar = await BookProcessor.sortBooksAsc();
+    } else if (sortParam == 2) {
+      kitaplar = await BookProcessor.sortBooksDesc();
+    } else if (sortParam == 3) {
+      kitaplar = await BookProcessor.sortBooksDate();
+    }
+    ui.displayBook(kitaplar);
+  }
+  static async searchInput() {
+    const bookDeneme = await BookProcessor.searchBooks(searchBookInput.value);
+    ui.displayBook(bookDeneme);
+  }
 }

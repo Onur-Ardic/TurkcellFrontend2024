@@ -15,6 +15,7 @@ const kitapEkleBtn = document.getElementById("kitapEkle")
 const kitapGuncelleBtn = document.getElementById("kitapGuncelle")
 const modalCloseBtn = document.getElementById("modalCloseBtn")
 const kitapModalTitle = document.getElementById("kitapModalLabel")
+const changeThemeBtn = document.getElementById('changeTheme');
 const kitapModal = new bootstrap.Modal(document.getElementById('kitapModal'));
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -23,26 +24,21 @@ document.addEventListener("DOMContentLoaded", () => {
     UI.sortAllBooksToUI()
     UI.addFiltersToDropdown();
     isEditMode(false)
-    changeTheme()
 });
 
 const changeTheme = () => {
-    const button = document.getElementById('theme-toggle');
-
-    button.addEventListener('click', function () {
-        const currentTheme = document.body.getAttribute('data-bs-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        document.body.setAttribute('data-bs-theme', newTheme);
-        const allButtons = document.querySelectorAll(".btnChange")
-        allButtons.forEach(button => {
-            if (newTheme === 'dark') {
-                button.classList.remove('btn-outline-dark');
-                button.classList.add('btn-outline-light');
-            } else {
-                button.classList.remove('btn-outline-light');
-                button.classList.add('btn-outline-dark');
-            }
-        });
+    const currentTheme = document.body.getAttribute('data-bs-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.body.setAttribute('data-bs-theme', newTheme);
+    const allButtons = document.querySelectorAll(".btnChange")
+    allButtons.forEach(button => {
+        if (newTheme === 'dark') {
+            button.classList.remove('btn-outline-dark');
+            button.classList.add('btn-outline-light');
+        } else {
+            button.classList.remove('btn-outline-light');
+            button.classList.add('btn-outline-dark');
+        }
     });
 }
 
@@ -63,6 +59,10 @@ const runAllEventListener = () => {
     modalCloseBtn.addEventListener("click", () => {
         UI.clearInputs()
         isEditMode(false)
+    })
+
+    changeThemeBtn.addEventListener("click", () => {
+        changeTheme()
     })
 }
 
