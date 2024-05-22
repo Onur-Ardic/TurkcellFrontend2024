@@ -34,6 +34,9 @@ em{
 .filter-area-item:hover{
   background-color: rgb(255, 173, 19) !important;
 }
+.active{
+  background-color: rgb(255, 173, 19) !important;
+}
 @media screen and (max-width:768px){
   .card{
     flex: 1 1 calc(100%);

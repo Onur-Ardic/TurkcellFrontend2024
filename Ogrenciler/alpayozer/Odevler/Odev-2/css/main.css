@@ -11852,7 +11852,6 @@ textarea.form-control-lg {
 }
 .card {
   height: 300px;
-  border: none;
   box-shadow: 0 0 10px 0 rgb(0, 0, 0);
 }
 .card img {
@@ -11861,14 +11860,11 @@ textarea.form-control-lg {
   object-fit: cover;
 }
 .card .card-body {
-  position: absolute;
-  bottom: 0;
   background-color: rgb(29, 21, 46);
   width: 100%;
   display: none;
 }
 .card .card-icon {
-  position: absolute;
   top: 5px;
   right: 5px;
 }
@@ -11886,6 +11882,12 @@ textarea.form-control-lg {
 }
 .card:hover .card-body {
   display: block;
+}
+
+.landing-section {
+  background-image: url("../assets/pexels-nitin-arya-386173-1029141.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=main.css.map */

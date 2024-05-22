@@ -1,36 +1,84 @@
 {
   "books": [
     {
-      "id": "41ed",
-      "BookName": "Doğu Ekspresinde Cinayet",
-      "Author": "Agathe Christy",
-      "Category": "Autobiography",
-      "PublishedDate": "1996",
-      "imgUrl": "https://www.cihatayaz.com/wp-content/uploads/2017/06/slider_item_01.gif"
+      "BookName": "Böyle Buyurdu Zerdüşt",
+      "Author": "Friedrich Nietzsche",
+      "Category": "Philosophy",
+      "PublishedDate": "2011",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000374251-1.jpg",
+      "id": "pHavLuP"
     },
     {
-      "id": "a428",
-      "BookName": "sdjfnjlvn",
-      "Author": "Agathe Christy",
-      "Category": "Crime",
-      "PublishedDate": "1996",
-      "imgUrl": "https://www.cihatayaz.com/wp-content/uploads/2017/06/slider_item_01.gif"
+      "BookName": "Güneşi Uyandıralım",
+      "Author": "Jose Mauro De Vasconcelos",
+      "Category": "Novel",
+      "PublishedDate": "2018",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0001788928001-1.jpg",
+      "id": "cR_7hZ_"
     },
     {
-      "id": "c911",
-      "BookName": "sdjfnjlvn",
-      "Author": "Agathe Christy",
-      "Category": "Crime",
-      "PublishedDate": "1996",
-      "imgUrl": "https://img.kitapyurdu.com/v1/getImage/fn:4890428/wh:true/miw:200/mih:200"
+      "BookName": "Veronika Ölmek İstiyor",
+      "Author": "Paulo Coelho",
+      "Category": "Novel",
+      "PublishedDate": "2000",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000064829-1.jpg",
+      "id": "C-nzT1T"
     },
     {
-      "id": "950a",
-      "BookName": "hsdşfhkj",
-      "Author": "Agathe Christy",
-      "Category": "History",
-      "PublishedDate": "1996",
-      "imgUrl": "https://www.cihatayaz.com/wp-content/uploads/2017/06/slider_item_01.gif"
+      "BookName": "Beyaz Diş",
+      "Author": "Jack London",
+      "Category": "Novel",
+      "PublishedDate": "2003",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0001788066001-1.jpg",
+      "id": "4s0wwla"
+    },
+    {
+      "BookName": "Küçük Prens",
+      "Author": " Antoine de Saint-Exupery",
+      "Category": "Novel",
+      "PublishedDate": "1999",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000628979-1.jpg",
+      "id": "_iuBQCz"
+    },
+    {
+      "BookName": "Siyah Lale",
+      "Author": "Alexandre Dumas",
+      "Category": "Novel",
+      "PublishedDate": "1975",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000691986-1.jpg",
+      "id": "b_ZkPZF"
+    },
+    {
+      "BookName": "İnsancıklar",
+      "Author": "Dostoyevski",
+      "Category": "Novel",
+      "PublishedDate": "1980",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0002093978001-1.jpg",
+      "id": "c2OPr7Z"
+    },
+    {
+      "BookName": "Martı",
+      "Author": "Anton Çehov",
+      "Category": "Drama",
+      "PublishedDate": "1995",
+      "imgUrl": "https://i.dr.com.tr/cache/600x600-0/originals/0001911390001-1.jpg",
+      "id": "inDUEBv"
+    },
+    {
+      "BookName": "Yüzbaşının Kızı",
+      "Author": "Puşkin",
+      "Category": "Philosophy",
+      "PublishedDate": "1972",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0001930865001-1.jpg",
+      "id": "yG8Oddk"
+    },
+    {
+      "BookName": "Cehennem",
+      "Author": "Dan Brown",
+      "Category": "Novel",
+      "PublishedDate": "1984",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000442778-1.jpg",
+      "id": "gIeAaTy"
     }
   ]
 }

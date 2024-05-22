@@ -58,11 +58,11 @@
     },
     {
       "id": "1008",
-      "name": "Fantastik Canavarlar Nelerdir, Nerede Bulunurlar?",
-      "author": "Newt Scamander",
+      "name": "Ozan Beedle'ın Hikâyeleri",
+      "author": "J.K. Rowling",
       "category": "Fantezi",
-      "year": 2001,
-      "cover": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/HP_Fantastik_Canavarlar-1826-1.jpg"
+      "year": 2007,
+      "cover": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/ozan-beedle-kap-2625.jpg"
     },
     {
       "id": "1009",
@@ -74,11 +74,11 @@
     },
     {
       "id": "1010",
-      "name": "Ozan Beedle'ın Hikâyeleri",
-      "author": "J.K. Rowling",
+      "name": "Fantastik Canavarlar Nelerdir?",
+      "author": "Newt Scamander",
       "category": "Fantezi",
-      "year": 2007,
-      "cover": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/ozan-beedle-kap-2625.jpg"
+      "year": 2001,
+      "cover": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/HP_Fantastik_Canavarlar-1826-1.jpg"
     }
   ]
 }

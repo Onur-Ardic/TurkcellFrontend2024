@@ -15,20 +15,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-  
 </head>
 <body>
   <section id="homepage">
     <div class="background">
       <div class="container">
-        <div id="saveBook">
-          
-        </div>
-        <!-- modal -->
         <div class="modal" id="addBookModal" tabindex="-1" role="dialog" aria-labelledby="addBookModal"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
+          <div class="modal-content p-3">
             <div class="modal-header">
               <h5 class="add-book-modal-title" id="ModalLabel">Add a Book</h5>
               <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
@@ -78,30 +73,107 @@
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-light border d-flex rounded-1">
-        <button type="submit" class="btn btn-danger" data-bs-toggle="modal" data-bs-action="create" data-bs-target="#addBookModal" data-whatever="@getbootstrap"
-           >Add a Book</button>
-        <form class="form-inline d-flex">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0"id="searchTitle" type="submit">Search</button>
-        </form>
-        <select class="btn btn-outline-success dropdown-toggle" id="ranking" style="width: 300px;" data-bs-toggle="dropdown" aria-expanded="false">
-          Action>
-          <option value="1">Recommended Ranking</option>
-          <option value="2"> Sort from A to Z</option>
-          <option value="3">Sort from Z to A</option>
-          <option value="4">Sort by Date</option>
-        </select>
+      <div class="modal" id="updateBookModal" tabindex="-1" role="dialog" aria-labelledby="updateBookModal"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h5 class="add-book-modal-title" id="UpdateModalLabel">Update Book</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="add-book-modal-body">
+            <form>
+              <input type="hidden" id="updatebookid" value="" />
+              <div class="form-group">
+                <label for="name" class="col-form-label">bookName: </label>
+                <input type="text" class="form-control" id="updatebookName">
+              </div>
+
+              <div class="form-group">
+                <label for="author" class="col-form-label">Author: </label>
+                <input class="form-control" id="updateauthor"></input>
+              </div>
+              <div class="form-group">
+                <label for="imgUrl" class="col-form-label">Img Url </label>
+                <input class="form-control" id="updateimgUrl"></input>
+              </div>
+
+              <div class="form-group">
+                <label for="category" class="col-form-label">Category Name: </label>
+                <select id="updatecategory" class="form-control form-control-lg">
+                  <option value="1">Choose a Category</option>
+                  <option value="Autobiography">Autobiography</option>
+                  <option value="History">History</option>
+                  <option value="Philosophy">Philosophy</option>
+                  <option value="Scientific6">Scientific</option>
+                  <option value="Crime">Crime</option>
+                  <option value="Drama">Drama</option>
+                  <option value="Novel">Novel</option>
+                </select>
+
+              </div>
+              <div class="form-group">
+                <label for="publishedDate" class="col-form-label">Published Date: </label>
+                <input class="form-control" id="updatepublishedDate" placeholder="date"></input>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" id="updateBookBtn" class="btn btn-primary" data-bs-dismiss="modal">Update Book</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <nav class="navbar navbar-light d-flex rounded-1 p-2">
+        <div class="w-25">
+          <img class="w-50" src="https://r.resimlink.com/akeAb_q52PJ.png" alt="">
+        </div>
+       <a class="text-info text-decoration-none" href="#books">See Collection</a>
       </nav>
-       
-        <div id="books">
+      <div id="home" class="d-flex mt-5">
+        <div class="col-8 p-4">
+          <h1>Add Your Book Collection</h1>
+          <p>Enjoy it!</p>
+          <button type="submit" class="btn btn-warning" data-bs-toggle="modal" data-bs-action="create" data-bs-target="#addBookModal" data-whatever="@getbootstrap"
+           >Add a Book</button>
+        </div>
+        <div class="col-4 position-relative">
+          <img id="animation-img" class="w-100" src="https://r.resimlink.com/4rpjqJAlyg.png" alt="">
+        </div>
+      </div>
+      <div id="booksholder"> 
+        <img class="w-100" src="https://r.resimlink.com/dv9IHtkhOTV.png" alt="">
+      </div>
+      <div id = "searchResult" class="px-5">
+      </div>
+      <div id="bookstop" class="d-flex gap-2 px-2 mb-3">
+        <form class="form-inline d-flex ms-auto">
+          <input class="form-control mr-sm-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+          <button class="btn btn-warning my-2 my-sm-0"id="searchButton" type="submit">Search</button>
+      </form>
+      <select class="btn btn-warning dropdown-toggle" id="ranking" style="width: 300px;" data-bs-toggle="dropdown" aria-expanded="false">
+        Action>
+        <option value="1">Recommended Ranking</option>
+        <option value="2"> Sort from A to Z</option>
+        <option value="3">Sort from Z to A</option>
+        <option value="4">Sort by Date</option>
+      </select>
+      </div>
+        <div id="books" class="d-flex flex-wrap gap-1">
         </div>
       </div>
     </div>
   </section>
-  <section>
+  <section id="footer">
+    <div class="container">
+        <div class="w-25">
+          <img class="w-25" src="https://r.resimlink.com/akeAb_q52PJ.png" alt="">
+        </div>
+    </div>
   </section>
-
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>

@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "id": 2,
+      "title": "Falling Fast",
+      "author": "Bianca Iosivoni",
+      "category": "Romance",
+      "year": "2019",
+      "coverImageUrl": "https://i.pinimg.com/564x/73/ed/e2/73ede218887d103492c00987a0c23bf4.jpg"
+    },
+    {
+      "title": "Keeping Hope",
+      "author": "Anna Savass",
+      "coverImageUrl": "https://i.pinimg.com/564x/04/a4/fb/04a4fb12d6b49725a4919d5546875c9a.jpg",
+      "year": "2022",
+      "category": "Romance",
+      "id": "6"
+    },
+    {
+      "id": "4",
+      "title": "Everything I Didn't Say",
+      "author": "Kim Nina Ocker",
+      "category": "Romance",
+      "year": "2018",
+      "coverImageUrl": "https://i.pinimg.com/564x/07/49/58/07495873fc7f739f1a42a4a87ce1fbb7.jpg"
+    },
+    {
+      "id": "5",
+      "title": "The Trot Runner",
+      "author": "Elsie Silver",
+      "category": "Fiction",
+      "year": "2021",
+      "coverImageUrl": "https://i.pinimg.com/736x/90/91/04/9091045a601c04b3032add935e11a724.jpg"
+    },
+    {
+      "id": 1,
+      "title": "The Dragon Princess",
+      "author": "Author Name",
+      "category": "Fantasy",
+      "year": "2019",
+      "coverImageUrl": "https://i.pinimg.com/736x/6f/e8/27/6fe827f565ab8c22219af09ca772f3e6.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Fall to Earth",
+      "author": "Ken Britz",
+      "category": "Science Fiction",
+      "year": "2017",
+      "coverImageUrl": "https://i.pinimg.com/564x/83/37/9a/83379aed5992ab136023d5dfef56293a.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Was Die Spiegel Wissen",
+      "author": "Maggie Stiefvater",
+      "category": "Fantasy",
+      "year": "2019",
+      "coverImageUrl": "https://i.pinimg.com/564x/59/c3/99/59c3995c1ac151b11678d640148d3f23.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Whisper of Sins",
+      "author": "Juliane Maibach",
+      "category": "Fantasy",
+      "year": "2020",
+      "coverImageUrl": "https://i.pinimg.com/564x/35/45/b2/3545b24ef0686272123a330d99a9fb29.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Help Me,I'm Stuck",
+      "author": "Vaughn Carter",
+      "category": "self-improvement",
+      "year": "2018",
+      "coverImageUrl": "https://i.pinimg.com/564x/03/83/90/0383906a1229d1fe8e761071220cdf98.jpg"
+    },
+    {
+      "id": "10",
+      "title": "The Year of the Witching",
+      "author": "Alexis Henderson",
+      "category": "Horror",
+      "year": "2020",
+      "coverImageUrl": "https://i.pinimg.com/564x/29/3e/6f/293e6f874182f18b33a1292558a9d283.jpg"
+    }
+  ]
+}

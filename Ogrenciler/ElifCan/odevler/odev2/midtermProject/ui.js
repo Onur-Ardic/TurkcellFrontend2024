@@ -31,12 +31,11 @@ class UI {
       "position-absolute",
       "btn-wrapper",
       "d-flex",
-      "flex-column",
       "gap-2"
     );
 
     const deleteButton = document.createElement("button");
-    deleteButton.classList.add("btn", "btn-primary");
+    deleteButton.classList.add("btn", "btn-primary", "bg-btn", "border-0");
     deleteButton.innerHTML = '<i class="bi bi-trash3"></i>';
     deleteButton.addEventListener("click", () => {
       deleteButtonClickHandler(book);
@@ -45,7 +44,7 @@ class UI {
     btnWrapperDiv.appendChild(deleteButton);
 
     const updateButton = document.createElement("button");
-    updateButton.classList.add("btn", "btn-primary");
+    updateButton.classList.add("btn", "btn-primary", "bg-btn", "border-0");
     updateButton.innerHTML = '<i class="bi bi-pencil-square"></i>';
     updateButton.setAttribute("data-bs-toggle", "modal");
     updateButton.setAttribute("data-bs-target", "#bookModal");
@@ -61,7 +60,7 @@ class UI {
     const textDiv = document.createElement("div");
     textDiv.classList.add("text-center");
 
-    const titleHeading = document.createElement("h5");
+    const titleHeading = document.createElement("h4");
     titleHeading.classList.add("bookNameOnCard");
     titleHeading.id = "bookNameOnCard";
     titleHeading.style.maxWidth = "100%";
@@ -140,6 +139,7 @@ class UI {
     const publishDate = document.getElementById("publishDate").value;
     const category = document.getElementById("bookcategory").value;
     const picture = document.getElementById("bookPicture").value;
+
     if (id == null) {
       id = crypto.randomUUID();
     }

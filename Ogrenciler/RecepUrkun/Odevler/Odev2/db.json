@@ -1,0 +1,199 @@
+{
+  "books": [
+    {
+      "id": "0001",
+      "name": "Nutuk",
+      "author": "Mustafa Kemal Atatürk",
+      "publisher": "Can Yayınları",
+      "category": "Söylev",
+      "written_date": "1927",
+      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0002038715001-1.jpg"
+    },
+    {
+      "id": "0003",
+      "name": "Gece Yarısı Kütüphanesi",
+      "author": "Matt Haig",
+      "publisher": "Domingo Yayinevi",
+      "category": "Bilim Kurgu",
+      "written_date": "2020",
+      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0001922926001-1.jpg"
+    },
+    {
+      "id": "0004",
+      "name": "Gurur ve Önyargı",
+      "author": "Jane Austen",
+      "publisher": "Türkiye İş Bankası Kültür Yayınları",
+      "category": "Dünya Klasikleri",
+      "written_date": "1813",
+      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0000000202084-1.jpg"
+    },
+    {
+      "id": "0005",
+      "name": "Momo",
+      "author": "Michael Ende",
+      "publisher": "Pegasus Yayınları",
+      "category": "Roman",
+      "written_date": "1973",
+      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0001719390001-1.jpg"
+    },
+    {
+      "id": "0006",
+      "name": "Veronika Ölmek İstiyor",
+      "author": "Paulo Coelho",
+      "publisher": "Can Yayınları",
+      "category": "Roman",
+      "written_date": "1998",
+      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0000000064829-1.jpg"
+    },
+    {
+      "id": "0007",
+      "name": "Çocukluğun Sonu",
+      "author": "Arthur C. Clarke",
+      "publisher": "İthaki Yayınları",
+      "category": "Bilim Kurgu",
+      "written_date": "1953",
+      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0000000674339-1.jpg"
+    },
+    {
+      "id": "0008",
+      "name": "Sineklerin Tanrısı",
+      "author": "William Golding",
+      "publisher": "Türkiye İş Bankası Kültür Yayınları",
+      "category": "Roman",
+      "written_date": "1954",
+      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0000000107800-1.jpg"
+    },
+    {
+      "id": "0009",
+      "name": "İnsanlar",
+      "author": "Matt Haig",
+      "publisher": "Domingo Yayınevi",
+      "category": "Bilim Kurgu",
+      "written_date": "2013",
+      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0001969669001-1.jpg"
+    },
+    {
+      "id": "0010",
+      "name": "Tanrı Olmak Zor İş",
+      "author": "Arkadi Strugatski",
+      "publisher": "İthaki Yayınları",
+      "category": "Bilim Kurgu",
+      "written_date": "2017",
+      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0001708287001-1.jpg"
+    },
+    {
+      "id": "0011",
+      "name": "Dorian Gray'in Portresi",
+      "author": "Oscar Wilde",
+      "publisher": "Türkiye İş Bankası Kültür Yayınları",
+      "category": "Dünya Klasikleri",
+      "written_date": "1891",
+      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0001783290001-1.jpg"
+    },
+    {
+      "id": "0012",
+      "name": "Aspidistra",
+      "author": "George Orwell",
+      "publisher": "Can Yayınları",
+      "category": "Roman",
+      "written_date": "1936",
+      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0000000189315-1.jpg"
+    },
+    {
+      "id": "825e8814-2201-489f-bcc1-7280b249613f",
+      "name": "Atomik Alışkanlıklar",
+      "author": "James Clear",
+      "category": "Kişisel Gelişim",
+      "written_date": "2018",
+      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0001983750001-1.jpg"
+    },
+    {
+      "name": "Romeo ve Juliet",
+      "author": "William Shakespeare",
+      "category": "Dünya Klasikleri",
+      "written_date": "1596",
+      "img": "https://www.iskultur.com.tr/webp/2010/02/Romeo-ve-Juliet-6.png",
+      "id": "6283d08a-6493-431f-ad0a-69ee45acedca"
+    },
+    {
+      "id": "20e6645a-d30a-4892-908f-4a5f19685048",
+      "name": "Otomatik Portakal",
+      "author": "Anthony Burgess",
+      "category": "Roman",
+      "written_date": "1961",
+      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0001806049001-1.jpg"
+    },
+    {
+      "id": "db82ff20-d7e1-4221-815d-dca0b41aac6f",
+      "name": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "category": "Bilim Kurgu",
+      "written_date": "1953",
+      "img": "https://i.dr.com.tr/cache/500x400-0/originals/0001750151001-1.jpg"
+    },
+    {
+      "id": "e47b45e5-248a-4a35-9d60-e199b9262f60",
+      "name": "1984",
+      "author": "George Orwell",
+      "category": "Roman",
+      "written_date": "1948",
+      "img": "https://i.dr.com.tr/cache/600x600-0/originals/0000000064038-1.jpg"
+    }
+  ],
+  "sentence": [
+    {
+      "id": "0",
+      "content": "Koltuk altında kitaplar taşıdığını görüyorum kardeşim. Bugünlerde hâlâ kitap okuyan birine rastlamak gerçekten nadide bir zevk.",
+      "bookName": "Omomatik Portakal",
+      "bookAuthor": "Anthony Burgess"
+    },
+    {
+      "id": "1",
+      "content": "Çünkü yıldızlara giden yol ikiye ayrılıyordu ve ikisi de sonunda insanların hayal ve korkularına uygun değildi.",
+      "bookName": "Çocukluğun Sonu",
+      "bookAuthor": "Arthur C. Clarke"
+    },
+    {
+      "id": "2",
+      "content": "Bunu gece günlüğüme yazacağım. Neyi? Ateşten yananın ateşe doymadığını.",
+      "bookName": "Dorian Gray'in Portresi",
+      "bookAuthor": "Oscar Wilde"
+    },
+    {
+      "id": "3",
+      "content": "“Dünya çabalarımın değerini bilmeyecektir,” dedi kendi kendine. Anlaşılmamaktan gurur duyuyordu, çünkü tüm dahiler bu bedeli ödemişlerdi.",
+      "bookName": "Veronika Ölmek İstiyor",
+      "bookAuthor": "Paulo Coelho"
+    },
+    {
+      "id": "4",
+      "content": "İmkansız diye bir şey yoktu. Bunu biliyordum, çünkü aslında her şeyin imkansız olduğunu ve bu yüzden de hayatta mümkün olan her şeyin imkansızlıklardan ibaret olduğunu biliyordum",
+      "bookName": "İnsanlar",
+      "bookAuthor": "Matt Haig"
+    },
+    {
+      "id": "5",
+      "content": "Binlerce kez iyi geceler sana! Binlerce kez beter olsun gece, senin ışığın yoksa!",
+      "bookName": "Romeo ve Juliet",
+      "bookAuthor": "William Shakespeare"
+    },
+    {
+      "id": "6",
+      "content": "Bu gezegenin şöyle bir sorunu vardı. Üzerinde yaşayan halkın büyük bölümü çoğu zaman mutsuzdu. Bu sorun için pek çok çözüm önerilmişti, ama bunların çoğu  genellikle yeşil renkli küçük kağıt parçalarının hareketleriyle ilgiliydi. Bu da tuhaftı çünkü aslında mutsuz olanlar yeşil renkli küçük kağıt parçaları değildi.",
+      "bookName": "Otostopçunun Galaksi Rehberi",
+      "bookAuthor": "Douglas Adam"
+    },
+    {
+      "id": "7",
+      "content": "Dünyayı tanıdıkça hoşnutsuzluğum daha da artıyor; her geçen gün insan karakterinin tutarsızlığına ve akıllı, duygulu görünenlere bile güvenilmeyeceğine olan inancım güçleniyor.",
+      "bookName": "Gurur ve Önyargı",
+      "bookAuthor": "Jane Austen"
+    },
+    {
+      "id": "8",
+      "content": "Ey Türk Gençliği! Birinci vazifen, Türk istiklâlini, Türk Cumhuriyeti'ni, ilelebet muhafaza ve müdafaa etmektir.",
+      "bookName": "Nutuk",
+      "bookAuthor": "Mustafa Kemal Atatürk"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "category": "Fiction",
+      "dateWritten": "1960-07-11",
+      "coverImageUrl": "https://cdn.kobo.com/book-images/4e1af857-e0e8-45fa-8922-e4bff584beca/1200/1200/False/to-kill-a-mockingbird-4.jpg"
+    },
+    {
+      "id": 2,
+      "name": "1984",
+      "author": "George Orwell",
+      "category": "Dystopian",
+      "dateWritten": "1949-06-08",
+      "coverImageUrl": "https://cdn.penguin.co.uk/dam-assets/books/9780141036144/9780141036144-jacket-large.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "category": "Romance",
+      "dateWritten": "1813-01-28",
+      "coverImageUrl": "https://m.media-amazon.com/images/M/MV5BMTA1NDQ3NTcyOTNeQTJeQWpwZ15BbWU3MDA0MzA4MzE@._V1_.jpg"
+    },
+    {
+      "id": 4,
+      "name": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "category": "Fiction",
+      "dateWritten": "1925-04-10",
+      "coverImageUrl": "https://cdn.kobo.com/book-images/2411acbb-9daa-43fb-a5a2-a9aec064e17e/1200/1200/False/the-great-gatsby-238.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Moby Dick",
+      "author": "Herman Melville",
+      "category": "Adventure",
+      "dateWritten": "1851-10-18",
+      "coverImageUrl": "https://cloud.firebrandtech.com/api/v2/image/111/9780785839781/CoverArtHigh/XL"
+    },
+    {
+      "id": 6,
+      "name": "War and Peace",
+      "author": "Leo Tolstoy",
+      "category": "Historical Fiction",
+      "dateWritten": "1869-01-01",
+      "coverImageUrl": "https://m.media-amazon.com/images/I/51lLr8b16DL.jpg"
+    },
+    {
+      "id": 7,
+      "name": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "category": "Fiction",
+      "dateWritten": "1951-07-16",
+      "coverImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxBvlPyAj1avSL0MnPDin7KvUesc6INykXWAfZxwu-tQ&s"
+    },
+    {
+      "id": 8,
+      "name": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "category": "Fantasy",
+      "dateWritten": "1937-09-21",
+      "coverImageUrl": "https://m.media-amazon.com/images/I/81FvxUUWe1L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "category": "Psychological Fiction",
+      "dateWritten": "1866-01-01",
+      "coverImageUrl": "https://target.scene7.com/is/image/Target/GUEST_6fcd8659-0815-42ff-ba76-f6670406afb9?wid=488&hei=488&fmt=pjpeg"
+    },
+    {
+      "id": 10,
+      "name": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "category": "Philosophical Fiction",
+      "dateWritten": "1880-01-01",
+      "coverImageUrl": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781625583826/brothers-karamazov-9781625583826_hr.jpg"
+    }
+  ]
+}

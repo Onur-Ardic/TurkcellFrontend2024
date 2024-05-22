@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kütüphanem</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freeman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body data-bs-theme="light">
+    <div id="errorMessage" class="alert text-center d-none"></div>
+    <nav>
+      <div class="container-fluid">
+        <div class="row text-center p-3 align-items-center">
+          <div class="col-2 d-none d-sm-block">
+            <a href="./index.html">
+              <img
+                src="./assets/logo.png"
+                alt="logo"
+                class="img-fluid rounded-4"
+                style="width: 80px"
+            /></a>
+          </div>
+          <div class="col-8 d-none d-sm-block">
+            <h4 class="text-center display-6 m-0 text-warning footerHeader">
+              KUTUPHANEM
+            </h4>
+          </div>
+          <div class="col-sm-2 col-12">
+            <button id="changeTheme" class="btn">
+              <i class="fa-solid fa-book fa-2x"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div>
+      <div class="container-fluid">
+        <div class="col-10 mx-auto p-3">
+          <figure class="text-center" id="sentence"></figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="mainMenu">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="row d-flex align-items-end py-3 border-top">
+              <div
+                class="col-12 col-lg-6 d-flex justify-content-evenly flex-md-row flex-column text-center gap-2 gap-lg-0 order-2 order-md-1"
+              >
+                <div id="addBookModal">
+                  <button
+                    type="button"
+                    class="btn btnChange btn-outline-dark"
+                    data-bs-toggle="modal"
+                    data-bs-target="#kitapModal"
+                  >
+                    Kitap Ekleyin
+                  </button>
+                  <div
+                    class="modal fade"
+                    id="kitapModal"
+                    tabindex="-1"
+                    aria-labelledby="kitapModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="kitapModalLabel">
+                            Kitap Ekleyin
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="form-floating mb-3">
+                            <input
+                              type="url"
+                              class="form-control"
+                              id="kitapKapakResmi"
+                              placeholder="Kitap Resmi Url.."
+                            />
+                            <label for="kitapKapakResmi"
+                              >Kitap Kapak Resmi</label
+                            >
+                          </div>
+
+                          <div class="form-floating mb-3">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="kitapAdi"
+                              placeholder="Kitap Adı.."
+                            />
+                            <label for="kitapAdi">Kitap Adı</label>
+                          </div>
+
+                          <div class="form-floating mb-3">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="kitapYazari"
+                              placeholder="Kitap Yazarı.."
+                            />
+                            <label for="kitapYazari">Kitap Yazarı</label>
+                          </div>
+
+                          <div class="form-floating mb-3">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="kitapKategori"
+                              placeholder="Kitap Kategori.."
+                            />
+                            <label for="kitapYazari">Kitap Kategorisi</label>
+                          </div>
+
+                          <div class="form-floating">
+                            <input
+                              type="number"
+                              class="form-control"
+                              id="kitapTarih"
+                              placeholder="Kitap Yazım Tarihi.."
+                            />
+                            <label for="kitapTarih">Kitap Yazım Tarihi</label>
+                          </div>
+                        </div>
+
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                            id="modalCloseBtn"
+                          >
+                            Kapat
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="kitapEkle"
+                          >
+                            Ekle
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary d-none"
+                            id="kitapGuncelle"
+                          >
+                            Güncelle
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="bookAlignment">
+                  <div class="dropdown">
+                    <button
+                      class="btn btnChange btn-outline-dark dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Sıralama
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li>
+                        <a class="dropdown-item" id="sortNameAZ"
+                          >Kitap Adı (A-Z)</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="sortNameZA"
+                          >Kitap Adı (Z-A)</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" id="sortDateNewToOld"
+                          >Tarih (Yeniden Eskiye)</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="sortDateOldToNew"
+                          >Tarih (Eskiden Yeniden)</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="bookFilter">
+                  <div class="dropdown">
+                    <button
+                      class="btn btnChange btn-outline-dark dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Filtrele
+                    </button>
+                    <ul
+                      class="dropdown-menu dropdown-menu-dark"
+                      id="categoryDropdown"
+                    ></ul>
+                  </div>
+                </div>
+
+                <div>
+                  <button class="btn btnChange btn-outline-dark" id="sifirla">
+                    Sıfırla
+                  </button>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6 d-flex order-1 order-md-2">
+                <div class="col-10 mx-auto mt-3">
+                  <form class="mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input
+                      type="search"
+                      class="form-control"
+                      placeholder="Kitap adi giriniz"
+                      aria-label="Search"
+                      id="searchInput"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="book_container py-4">
+                <div class="container">
+                  <div
+                    class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-5"
+                    id="bookContainer"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/book.js"></script>
+    <script src="./js/request.js"></script>
+    <script src="./js/apiHelper.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
