@@ -12,3 +12,6 @@
 10-05-2024: Js OOP - Prototype - Movie Card with Prototype
 13-05-2024: Js OOP - Class - Movie Card with Class
 15-05-2024: JS Http Request
+17-05-2024: JS Api Request (Fetch-Async&Await-Promise)-JsonServer | Vize 2 verildi(BooksCrud)
+20-05-2024: JS this - Kısa Bir Mulakat Provası
+22-05-2024: JS Vize 2 Sunum
