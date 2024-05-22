@@ -1,103 +1,48 @@
 class UI {
   constructor() {
-    this.request = new Request();
-    this.init();
-  }
-
-  init() {
-    $('#bookModal').on('hidden.bs.modal', () => {
-      this.resetForm();
-    });
+    this.bookList = document.getElementById('book-list');
+    this.alertContainer = document.getElementById('alert-container');
   }
 
   displayBooks(books) {
-    const bookList = document.getElementById('book-list');
-    bookList.innerHTML = '';
+    this.bookList.innerHTML = '';
+
     books.forEach(book => {
       const bookCard = document.createElement('div');
-      bookCard.classList.add('col-md-3', 'mb-4');
+      bookCard.className = 'col-md-3 mb-4'; // 3 sütun düzeni için col-md-3
       bookCard.innerHTML = `
-        <div class="card">
+        <div class="card h-100">
           <img src="${book.cover}" class="card-img-top" alt="${book.title}">
           <div class="card-body">
             <h5 class="card-title">${book.title}</h5>
-            <p class="card-text">${book.author}</p>
-            <p class="card-text"><small class="text-muted">${book.category} | ${book.year}</small></p>
-            <button class="btn btn-danger btn-sm delete-btn" data-id="${book.id}">Sil</button>
-            <button class="btn btn-secondary btn-sm edit-btn" data-id="${book.id}">Düzenle</button>
+            <p class="card-text">Yazar: ${book.author}</p>
+            <p class="card-text">Kategori: ${book.category}</p>
+            <p class="card-text">Yazıldığı Tarih: ${book.year}</p>
+            <button class="btn btn-primary btn-edit" data-id="${book.id}" data-toggle="modal" data-target="#bookModal">Düzenle</button>
+            <button class="btn btn-danger btn-delete" data-id="${book.id}">Sil</button>
           </div>
         </div>
       `;
-      bookList.appendChild(bookCard);
+      this.bookList.appendChild(bookCard);
     });
 
-    this.addEventListeners();
+    this.setupEditButtons();
+    this.setupDeleteButtons();
   }
 
-  addEventListeners() {
-    const deleteButtons = document.querySelectorAll('.delete-btn');
-    deleteButtons.forEach(button => {
-      button.addEventListener('click', (e) => {
-        const bookId = e.target.getAttribute('data-id');
-        this.request.deleteBook(bookId)
-          .then(() => this.request.fetchBooks())
-          .then(books => this.displayBooks(books))
-          .then(() => this.showAlert('Kitap başarıyla silindi!', 'success'))
-          .catch(err => this.showAlert('Kitap silinirken hata oluştu!', 'danger'));
-      });
-    });
-
-    const editButtons = document.querySelectorAll('.edit-btn');
-    editButtons.forEach(button => {
-      button.addEventListener('click', (e) => {
-        const bookId = e.target.getAttribute('data-id');
-        this.openEditModal(bookId);
-      });
-    });
-  }
-
-  resetForm() {
-    const form = document.getElementById('book-form');
-    form.reset();
-    form.removeAttribute('data-book-id');
-    document.getElementById('modalTitle').textContent = 'Kitap Ekle';
-  }
-
-  openEditModal(id) {
-    this.request.fetchBook(id)
-      .then(book => {
-        document.getElementById('modalTitle').textContent = 'Kitap Güncelle';
-        document.getElementById('title').value = book.title;
-        document.getElementById('author').value = book.author;
-        document.getElementById('category').value = book.category;
-        document.getElementById('year').value = book.year;
-        document.getElementById('cover').value = book.cover;
-
-        const form = document.getElementById('book-form');
-        form.setAttribute('data-book-id', id);
-        $('#bookModal').modal('show');
-      });
-  }
-
-  showAlert(message, type) {
-    const alertContainer = document.getElementById('alert-container');
-    alertContainer.className = `alert alert-${type}`;
-    alertContainer.textContent = message;
-    alertContainer.style.display = 'block';
+  showAlert(message, className) {
+    this.alertContainer.className = `alert alert-${className}`;
+    this.alertContainer.textContent = message;
+    this.alertContainer.style.display = 'block';
 
     setTimeout(() => {
-      alertContainer.style.display = 'none';
+      this.alertContainer.style.display = 'none';
     }, 3000);
   }
 
-  getFormData() {
-    return {
-      title: document.getElementById('title').value,
-      author: document.getElementById('author').value,
-      category: document.getElementById('category').value,
-      year: document.getElementById('year').value,
-      cover: document.getElementById('cover').value
-    };
+  clearForm() {
+    document.getElementById('book-id').value = ''; // ID alanını sıfırla
+    document.getElementById('book-form').reset();
   }
 
   setupFilters(filter) {
@@ -106,4 +51,145 @@ class UI {
     document.getElementById('filter-author').addEventListener('change', () => filter.filterBooks());
     document.getElementById('sort-books').addEventListener('change', () => filter.sortBooks());
   }
+
+  setupEditButtons() {
+    const editButtons = document.querySelectorAll('.btn-edit');
+    editButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        const id = e.target.getAttribute('data-id');
+        this.fillFormWithBook(id);
+      });
+    });
+  }
+
+  setupDeleteButtons() {
+    const deleteButtons = document.querySelectorAll('.btn-delete');
+    deleteButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        const id = e.target.getAttribute('data-id');
+        this.deleteBook(id);
+      });
+    });
+  }
+
+  fillFormWithBook(id) {
+    fetch(`http://localhost:3000/books/${id}`)
+      .then(response => response.json())
+      .then(book => {
+        document.getElementById('book-id').value = book.id;
+        document.getElementById('title').value = book.title;
+        document.getElementById('author').value = book.author;
+        document.getElementById('category').value = book.category;
+        document.getElementById('year').value = book.year;
+        document.getElementById('cover').value = book.cover;
+
+        $('#bookModal').modal('show');
+      })
+      .catch(error => console.error('Error fetching book:', error));
+  }
+
+  deleteBook(id) {
+    fetch(`http://localhost:3000/books/${id}`, {
+      method: 'DELETE',
+    })
+    .then(() => {
+      this.showAlert('Kitap silindi', 'success');
+      this.fetchBooksAndDisplay();
+    })
+    .catch(error => {
+      console.error('Error deleting book:', error);
+      this.showAlert('Kitap silinirken bir hata oluştu', 'danger');
+    });
+  }
+
+  fetchBooksAndDisplay() {
+    fetch('http://localhost:3000/books')
+      .then(response => response.json())
+      .then(books => {
+        const filter = new Filter();
+        filter.setBooks(books);
+        this.displayBooks(books);
+        this.setupFilters(filter);
+      })
+      .catch(error => console.error('Error fetching books:', error));
+  }
 }
+
+// Modal açıldığında formun sıfırlanması için event listener ekle
+$('#bookModal').on('show.bs.modal', function (e) {
+  const button = $(e.relatedTarget); // Modal'ı açan butonu belirle
+  const isEditMode = button.hasClass('btn-edit'); // Butonun düzenleme butonu olup olmadığını kontrol et
+  
+  if (!isEditMode) {
+    const ui = new UI();
+    ui.clearForm();
+  }
+});
+
+// Modal kapandığında formun sıfırlanması için event listener ekle
+$('#bookModal').on('hidden.bs.modal', function () {
+  const ui = new UI();
+  ui.clearForm();
+});
+
+// Kitap ekleme veya güncelleme işlemi için submit event listener
+document.getElementById('book-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  
+  const id = document.getElementById('book-id').value;
+  const title = document.getElementById('title').value;
+  const author = document.getElementById('author').value;
+  const category = document.getElementById('category').value;
+  const year = document.getElementById('year').value;
+  const cover = document.getElementById('cover').value;
+
+  const book = { title, author, category, year, cover };
+
+  if (id) {
+    // Kitap güncelleme işlemi
+    fetch(`http://localhost:3000/books/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(book),
+    })
+    .then(() => {
+      const ui = new UI();
+      ui.showAlert('Kitap güncellendi', 'success');
+      ui.fetchBooksAndDisplay();
+      $('#bookModal').modal('hide');
+    })
+    .catch(error => {
+      console.error('Error updating book:', error);
+      const ui = new UI();
+      ui.showAlert('Kitap güncellenirken bir hata oluştu', 'danger');
+    });
+  } else {
+    // Yeni kitap ekleme işlemi
+    fetch('http://localhost:3000/books', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(book),
+    })
+    .then(() => {
+      const ui = new UI();
+      ui.showAlert('Kitap eklendi', 'success');
+      ui.fetchBooksAndDisplay();
+      $('#bookModal').modal('hide');
+    })
+    .catch(error => {
+      console.error('Error adding book:', error);
+      const ui = new UI();
+      ui.showAlert('Kitap eklenirken bir hata oluştu', 'danger');
+    });
+  }
+});
+
+// DOMContentLoaded event handler
+document.addEventListener('DOMContentLoaded', () => {
+  const ui = new UI();
+  ui.fetchBooksAndDisplay();
+});
