@@ -1,7 +1,7 @@
 class Request{
-    static async get(url,sort){
+    static async get(url){
         try{
-            const response = await fetch(url + sort);
+            const response = await fetch(url);
             if(!response.ok)
                 throw new Error("Kitap bulunamadı.")
             const data = await response.json();
@@ -16,9 +16,9 @@ class Request{
                 method: "POST",
                 body: JSON.stringify(data),
                 headers: {
-                "Content-type": "application/json;",
+                "Content-type": "application/json",
                 }
-            });
+            })
             if(!response.ok){
                 throw new Error("Kitap Eklenemedi.")
             }
@@ -27,28 +27,27 @@ class Request{
             ui.error(err.message);
         }
     }
-    static async put(url,data,id){
+    static async put(url,data){
         try {
-            const response = await fetch(url + "/" + id, {
+            const response = await fetch(url, {
                 method: "PUT",
                 body: JSON.stringify(data),
                 headers: {
-                "Content-type": "application/json;",
+                "Content-type": "application/json",
                 }
-            });
+            })
             if(!response.ok){
-                e.preventDefault()
                 throw new Error("Kitap Düzenlenemedi.")
             }
         } catch (err) {
             ui.error(err.message);
         }
     }
-    static async delete(url,id){
+    static async delete(url){
         try {
-            const response = await fetch(url + "/" + id,{
+            const response = await fetch(url,{
                 method: "DELETE"
-            }); 
+            });
             if(!response.ok){
                 throw new Error("Kitap Silinemedi.")
             }

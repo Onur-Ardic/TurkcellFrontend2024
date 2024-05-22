@@ -1,0 +1,172 @@
+{
+  "books": [
+    {
+      "id": "0183",
+      "name": "1984",
+      "author": "George Orwell",
+      "category": "Romance",
+      "year": "1949",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0001903076001-1.jpg"
+    },
+    {
+      "id": "e415",
+      "name": "Kuyucaklı Yusuf",
+      "author": "Sabahattin Ali",
+      "category": "Romance",
+      "year": "1937",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000052460-1.jpg"
+    },
+    {
+      "id": "a0c2",
+      "name": "Yaz",
+      "author": "Albert Camus",
+      "category": "Romance",
+      "year": "1942",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000064297-1.jpg"
+    },
+    {
+      "id": "1495",
+      "name": "Kırmızı Pazartesi",
+      "author": "Gabriel Garcia Marquez",
+      "category": "Romance",
+      "year": "1981",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000064101-1.jpg"
+    },
+    {
+      "id": "eb87",
+      "name": "Bu Ülke",
+      "author": "Cemil Meriç",
+      "category": "Essay",
+      "year": "1974",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000061673-1.jpg"
+    },
+    {
+      "id": "02b5",
+      "name": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "category": "Horror",
+      "year": "1951",
+      "imgUrl": "https://m.media-amazon.com/images/I/61fgOuZfBGL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "29c5",
+      "name": "Aşk-ı Memnu",
+      "author": "Halit Ziya Uşaklıgil",
+      "category": "Romance",
+      "year": "1899",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0001762680001-1.jpg"
+    },
+    {
+      "id": "e5a9",
+      "name": "Dönüşüm",
+      "author": "Franz Kafka",
+      "category": "Romance",
+      "year": "1915",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000064022-1.jpg"
+    },
+    {
+      "id": "fa1d",
+      "name": "İnce Memed",
+      "author": "Yaşar Kemal",
+      "category": "Romance",
+      "year": "1955",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000147918-1.jpg"
+    },
+    {
+      "id": "fbc7",
+      "name": "Harry Potter ve Felsefe Taşı",
+      "author": "J. K. Rowling",
+      "category": "Fantasy",
+      "year": "1997",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000105599-1.jpg"
+    },
+    {
+      "id": "46c8",
+      "name": "Harry Potter ve Sırlar Odası",
+      "author": "J. K. Rowling",
+      "category": "Fantasy",
+      "year": "1998",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000105931-1.jpg"
+    },
+    {
+      "id": "5d3f",
+      "name": "Harry Potter ve Azkaban Tutsağı",
+      "author": "J. K. Rowling",
+      "category": "Fantasy",
+      "year": "1999",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000107298-1.jpg"
+    },
+    {
+      "id": "f7e8",
+      "name": "Harry Potter ve Ateş Kadehi",
+      "author": "J. K. Rowling",
+      "category": "Fantasy",
+      "year": "2000",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000110898-1.jpg"
+    },
+    {
+      "id": "9a43",
+      "name": "Harry Potter ve Zümrüdüanka Yoldaşlığı",
+      "author": "J. K. Rowling",
+      "category": "Fantasy",
+      "year": "2003",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000141001-1.jpg"
+    },
+    {
+      "id": "9b0d",
+      "name": "Harry Potter ve Melez Prens",
+      "author": "J. K. Rowling",
+      "category": "Fantasy",
+      "year": "2005",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000187015-1.jpg"
+    },
+    {
+      "id": "7f1d",
+      "name": "Harry Potter ve Ölüm Yadigarları",
+      "author": "J. K. Rowling",
+      "category": "Fantasy",
+      "year": "2007",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000247902-1.jpg"
+    },
+    {
+      "id": "96fe",
+      "name": "Menziller",
+      "author": "Cahit Zarifoğlu",
+      "category": "Poetry",
+      "year": "2000",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000542027-1.jpg"
+    },
+    {
+      "id": "173d",
+      "name": "Yedi Güzel Adam",
+      "author": "Cahit Zarifoğlu",
+      "category": "Poetry",
+      "year": "1986",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000542028-1.jpg"
+    },
+    {
+      "id": "3650",
+      "name": "Kürk Mantolu Madonna",
+      "author": "Sabahattin Ali",
+      "category": "Romance",
+      "year": "1943",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000058245-1.jpg"
+    },
+    {
+      "id": "52c9",
+      "name": "Atmosware",
+      "author": "Varol Maksutoğlu",
+      "category": "Technology",
+      "year": "2024",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-5CnjMT3UjpXrjLrhGjXd2mUX4F4lahuMzZ0Zi6qfHw&s"
+    },
+    {
+      "id": "8cc6",
+      "name": "Turkcell",
+      "author": "Varol Maksutoğlu",
+      "category": "Technology",
+      "year": "2024",
+      "imgUrl": "https://logowik.com/content/uploads/images/791_turkcell.jpg"
+    }
+  ]
+}

@@ -35,6 +35,7 @@ class UI {
 
             const img = document.createElement("img");
             img.src = book.imgUrl;
+            img.alt = book.name;
             imageDiv.appendChild(img);
 
             const buttonDiv = document.createElement("div");

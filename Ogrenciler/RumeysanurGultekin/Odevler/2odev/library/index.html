@@ -41,34 +41,34 @@
             
             <div id="ModalLibrary" class="flex justify-content-center">
                 
-                <button type="button" class="btn btn-warning px-5" data-bs-toggle="modal" data-bs-target="#exampleModalLong" id="ModalLKitapEkle" >
+                <button type="button" class="btn btn-warning px-5" data-bs-toggle="modal" data-bs-target="#ModalAc" id="ModalKitapEkle" >
                     Kitap Ekle:
                 </button>
                 
-                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal fade" id="ModalAc" tabindex="-1" role="dialog" aria-labelledby="ModalAclongTitle" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Kütüphaneye Kitap Ekle:</h5>
+                        <h5 class="modal-title" id="ModalAcTitle">Kütüphaneye Kitap Ekle:</h5>
                         </div>
                         <div class="modal-body">
                             <div id="formVerileri" class="mx-5 ">
                                 <form id="formKitap">
                                     <div class="my-3">
-                                        <label for="exampleFormControlInput1" class="form-label"
+                                        <label for="Input1" class="form-label"
                                           >Kitap Kapağı Ekle:</label>
                                         <input type="text" class="form-control" id="imageInput" required />
                                       </div>
                                     <div class="my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Kitap adı:</label>
+                                        <label for="Input1" class="form-label">Kitap adı:</label>
                                         <input type="text" class="form-control" id="bookName">
                                     </div>
                                     <div class="my-2">
-                                        <label  for="exampleFormControlInput1" class="form-label">Kitap yazarı:</label>
+                                        <label  for="Input1" class="form-label">Kitap yazarı:</label>
                                         <input type="text" class="form-control" id="bookAuthor">
                                     </div>
                                     <div class="my-2">
-                                        <label for="exampleFormControlInput1" class="form-label">Yayım Tarihi:</label>
+                                        <label for="Input1" class="form-label">Yayım Tarihi:</label>
                                         <input type="number"  class="form-control" id="bookDate">
                                     </div>
                                     <div class="my-4">
@@ -82,9 +82,9 @@
                                     <div class="my-2 d-grid">
                                         <button type="submit" class="btn btn-danger" id="addBook">Kitap Ekle</button>
                                     </div>
-                                    <!-- <div class="my-2 d-grid">
+                                    <div class="my-2 d-grid">
                                         <button type="submit" disabled class="btn btn-danger" id="updateBook">Güncelle</button>
-                                    </div> -->
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -103,10 +103,10 @@
             
             <div id="librarybody" class="row">
                 <div id="bookfilter" class="col-2 border-right-dark mt-5">
-                    <div id="searchAuthorDiv">
+                    <form id="searchAuthorDiv">
                         <label class="fs-6 fw-bold mb-2 mt-5">Yazar Adına Göre Ara:</label>
                         <input id="searchAuthor" placeholder="Yazarın adını giriniz.." class="mb-3 form-control" type="text">
-                    </div>
+                    </form>
                     <form id="searchBookDiv">
                         <label class="fs-6 fw-bold mb-2">Kitap Adına Göre Ara:</label>
                         <input id="searchBookName" placeholder="Kitabın adını giriniz.." class="mb-3 form-control" type="text">

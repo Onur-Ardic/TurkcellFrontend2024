@@ -58,13 +58,45 @@ class UI {
       categories.classList.add("card-text", "my-1");
       categories.innerText = book.categories;
   
-        const buttonDiv = document.createElement("div");
+      const buttonDiv = document.createElement("div");
   
-        const buttonUpdate = document.createElement("button");
-        buttonUpdate.classList.add("btn", "btn-success" , "my-3" , "btn-sm",  "btn-sm" , "me-3");
-        buttonUpdate.textContent = "Güncelle";
-        buttonUpdate.setAttribute('data-bs-toggle', 'modal')
-        buttonUpdate.setAttribute('data-bs-target', '#modalAc')
+      const buttonUpdate = document.createElement("button");
+      buttonUpdate.classList.add("btn", "btn-success" , "my-3" , "btn-sm",  "btn-sm" , "me-3");
+      buttonUpdate.id="buttonUpdated"
+      buttonUpdate.textContent = "Güncelle";
+      buttonUpdate.setAttribute('data-bs-toggle', 'modal')
+      buttonUpdate.setAttribute('data-bs-target', '#modalAc')
+
+      buttonUpdate.addEventListener("click", (function (book) {
+        return function () {
+          document.querySelector("#ModalKitapEkle").click();
+            document.getElementById("imageInput").value = book.image;
+            document.getElementById("bookName").value = book.bookname;
+            document.getElementById("bookAuthor").value = book.author;
+            document.getElementById("bookDate").value = book.date;
+            document.getElementById("categoriesInput").value = book.categories;
+
+            const kitapekle =  document.getElementById("addBook")
+            console.log(kitapekle.style);
+           
+            currentBookId = book.id;
+            document.getElementById("addBook").style.display = "none !important" ;
+            document.getElementById("updateBook").style.display = "block !important";
+        };
+    })(book));
+
+      //   buttonUpdate.addEventListener("click", (function(book) {
+      //     return function() {
+      //       document.querySelector("#ModalKitapEkle").click();
+      //         document.getElementById("imageInput").value = book.image;
+      //         document.getElementById("bookName").value = book.bookname;
+      //         document.getElementById("bookAuthor").value = book.author;
+      //         document.getElementById("bookDate").value = book.date;
+      //         document.getElementById("categoriesInput").value = book.categories;
+      //         
+      //     };
+      // })(book));
+
         
 
         const buttonDelete = document.createElement('button');
@@ -96,3 +128,5 @@ class UI {
       bookList.innerHTML = "";
     }  
   }
+
+ 
