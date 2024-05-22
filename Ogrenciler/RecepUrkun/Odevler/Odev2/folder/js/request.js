@@ -5,7 +5,7 @@ class Request {
             const data = await response.json();
             return data;
         } catch (err) {
-            throw new Error("Veri alınamadı.");
+            UI.ShowErrorMessage(err.message, 'danger')
         }
     }
 
@@ -21,7 +21,7 @@ class Request {
             const responseData = await response.json();
             return responseData;
         } catch (err) {
-            throw new Error("Hata Alındı.");
+            UI.ShowErrorMessage(err.message, 'danger')
         }
     }
 
@@ -37,7 +37,7 @@ class Request {
             const responseData = await response.json();
             return responseData;
         } catch (err) {
-            throw new Error("Hata Alındı.");
+            UI.ShowErrorMessage(err.message, 'danger')
         }
     }
 
@@ -49,7 +49,7 @@ class Request {
             const responseData = await response.json();
             return responseData;
         } catch (err) {
-            throw new Error("Hata Alındı.");
+            UI.ShowErrorMessage(err.message, 'danger')
         }
     }
 }
