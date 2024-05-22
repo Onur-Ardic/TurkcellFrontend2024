@@ -31,7 +31,7 @@ class UI {
 
   createBookCard(book) {
     const column = document.createElement("div");
-    column.classList.add("col-lg-2", "mb-5");
+    column.classList.add("col-lg-2", "mb-5", "col-6", "col-md-4");
 
     const card = document.createElement("div");
     card.classList.add("card");
@@ -41,7 +41,13 @@ class UI {
     img.src = book.cover_image;
 
     const cardBody = document.createElement("div");
-    cardBody.classList.add("card-body", "text-center", "text-white");
+    cardBody.classList.add(
+      "card-body",
+      "text-center",
+      "text-white",
+      "position-absolute",
+      "bottom-0"
+    );
 
     const title = document.createElement("p");
     title.innerText = book.date;
@@ -50,7 +56,12 @@ class UI {
     author.innerText = book.author;
 
     const cardIcon = document.createElement("div");
-    cardIcon.classList.add("card-icon", "d-flex", "flex-column");
+    cardIcon.classList.add(
+      "card-icon",
+      "d-flex",
+      "flex-column",
+      "position-absolute"
+    );
 
     const updateIcon = document.createElement("i");
     updateIcon.classList.add("fa-solid", "fa-pen");

@@ -56,29 +56,20 @@
       <div class="container">
         <div class="row">
           <div
-            class="col-lg-5 col-12 d-flex flex-column justify-content-center"
+            class="col-lg-12 col-12 d-flex flex-column justify-content-center text-white"
           >
-            <h1 class="">Welcome to A-Library</h1>
-            <p class="">
+            <h1>Welcome to A-Library</h1>
+            <p>
               A-Library is a platform where you can add, update and delete
               books.
             </p>
             <input
               onkeyup="BookProcessor.searchInput()"
               id="search"
-              class="form-control me-2"
+              class="form-control me-2 w-50"
               type="search"
               placeholder="Search"
               aria-label="Search"
-            />
-          </div>
-          <div
-            class="col-lg-7 col-12 d-flex flex-column justify-content-center align-items-center"
-          >
-            <img
-              src="./assets/pexels-nitin-arya-386173-1029141.jpg"
-              alt="book"
-              class="img-fluid w-50"
             />
           </div>
         </div>
@@ -227,8 +218,8 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
-            <form>
+          <form id="modalForm" class="needs-validation">
+            <div class="modal-body">
               <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
                 <input
@@ -237,6 +228,7 @@
                   id="title"
                   name="title"
                   placeholder="Enter title"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -247,6 +239,7 @@
                   id="author"
                   name="author"
                   placeholder="Enter author"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -257,6 +250,7 @@
                   id="publisher"
                   name="publisher"
                   placeholder="Enter publisher"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -265,6 +259,7 @@
                   id="category"
                   class="form-select"
                   aria-label="Category Select"
+                  required
                 >
                   <option selected>Choose the category</option>
                   <option value="Roman">Roman</option>
@@ -282,6 +277,7 @@
                   id="publication_date"
                   name="publication_date"
                   placeholder="Enter publication date"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -292,29 +288,30 @@
                   id="cover_image"
                   name="cover_image"
                   placeholder="Enter cover image"
+                  required
                 />
               </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-danger"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button id="addBook" type="button" class="btn btn-success">
-              Kitap Ekle
-            </button>
-            <button
-              id="updateBook"
-              type="button"
-              class="btn btn-warning d-none"
-            >
-              Kitap Güncelle
-            </button>
-          </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button id="addBook" type="submit" class="btn btn-success">
+                Kitap Ekle
+              </button>
+              <button
+                id="updateBook"
+                type="submit"
+                class="btn btn-warning d-none"
+              >
+                Kitap Güncelle
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

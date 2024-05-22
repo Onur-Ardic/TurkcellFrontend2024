@@ -10,11 +10,11 @@
     },
     {
       "id": "2",
-      "image": "https://i.dr.com.tr/cache/600x600-0/originals/0001747507001-1.jpg",
-      "bookname": "Var Mısın?",
-      "author": "Doğan Cüceloğlu",
+      "image": "https://i.dr.com.tr/cache/500x400-0/originals/0001903551001-1.jpg",
+      "bookname": "Bütün Şiirleri ",
+      "author": "Orhan Veli Kanık",
       "date": "2021",
-      "categories": "Kişisel Gelişim"
+      "categories": "Şiir"
     },
     {
       "id": "3",
@@ -82,19 +82,19 @@
     },
     {
       "id": "11",
-      "image": "https://i.dr.com.tr/cache/500x400-0/originals/0001922926001-1.jpg",
-      "bookname": "Gece Yarısı Kütüphanesi",
-      "author": "Matt Haig",
-      "date": "2021",
-      "categories": "Roman"
-    },
-    {
-      "id": "12",
       "image": "https://i.dr.com.tr/cache/154x170-0/originals/0002118033001-1.jpg",
       "bookname": "Naneyi Yedik Lokantası",
       "author": "Mert Arık",
       "date": "2024",
       "categories": "Çocuk"
+    },
+    {
+      "id": "12",
+      "image": "https://i.dr.com.tr/cache/500x400-0/originals/0001922926001-1.jpg",
+      "bookname": "Gece Yarısı Kütüphanesi",
+      "author": "Matt Haig",
+      "date": "2021",
+      "categories": "Roman"
     }
   ]
 }
