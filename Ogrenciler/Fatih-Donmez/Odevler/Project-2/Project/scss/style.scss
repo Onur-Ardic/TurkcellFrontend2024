@@ -1,0 +1,60 @@
+h1 {
+  margin-bottom: 20px;
+}
+.sticky {
+  position: sticky;
+  top: 20px;
+}
+.category-scroll {
+  max-height: 150px;
+  overflow-y: scroll;
+  background-color: #f9f9f9;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+}
+
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+@keyframes showButtons {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.col-md-9 {
+  .card {
+    position: relative;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      scale: 1.05;
+      .card-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: showButtons 0.5s forwards;
+      }
+    }
+
+    .card-buttons {
+      position: absolute;
+
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}

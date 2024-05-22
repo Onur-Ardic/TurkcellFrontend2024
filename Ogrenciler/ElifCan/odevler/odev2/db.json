@@ -4,7 +4,7 @@
       "id": "bb88776f-75b1-4d57-b8aa-4b09d5ab83b1",
       "bookName": "Çalıkuşu",
       "writer": "Reşat Nuri Güntekin",
-      "category": "Aşk",
+      "category": "Novel",
       "publishDate": "1922-02-02",
       "picture": "https://productimages.hepsiburada.net/s/199/550/110000169955580.jpg/format:webp"
     },
@@ -12,7 +12,7 @@
       "id": "4631495d-5abf-4aab-b5d5-18fe4a83cdc9",
       "bookName": "Akşam Güneşi",
       "writer": "Reşat Nuri Güntekin",
-      "category": "Roman",
+      "category": "Novel",
       "publishDate": "2000-11-02",
       "picture": "https://productimages.hepsiburada.net/s/182/550/110000146207942.jpg/format:webp"
     },
@@ -20,23 +20,15 @@
       "id": "821a9490-3439-44ca-8fa7-f581775e3d6e",
       "bookName": "Yaprak Dökümü",
       "writer": "Reşat Nuri Güntekin",
-      "category": "Roman",
+      "category": "Novel",
       "publishDate": "2015-03-22",
       "picture": "https://productimages.hepsiburada.net/s/23/550/10008100372530.jpg/format:webp"
-    },
-    {
-      "id": "d91a2449-9c36-4239-91bf-25bf6c4d09dc",
-      "bookName": "Hayvan Çiftliği",
-      "writer": "Geroge Orwell",
-      "category": "Roman",
-      "publishDate": "2021-03-22",
-      "picture": "https://productimages.hepsiburada.net/s/37/550/10535236698162.jpg/format:webp"
     },
     {
       "id": "1db03c75-d42b-4de1-a268-353cb231227f",
       "bookName": "Fareler Ve İnsanlar",
       "writer": "John Steinbeck",
-      "category": "Roman",
+      "category": "Fantasy",
       "publishDate": "2021-03-22",
       "picture": "https://productimages.hepsiburada.net/s/556/550/110000618712797.jpg/format:webp"
     },
@@ -44,7 +36,7 @@
       "id": "7bcf4029-3535-4423-9278-a5f64309b05a",
       "bookName": "Pinokyo",
       "writer": "Carlo Collodi",
-      "category": "Roman",
+      "category": "History",
       "publishDate": "2021-03-19",
       "picture": "https://productimages.hepsiburada.net/s/550/550/110000611543343.jpg/format:webp"
     },
@@ -52,7 +44,7 @@
       "id": "6c8d0a05-386c-47b3-815d-0ca7ec271598",
       "bookName": "Heidi",
       "writer": "Johanna spyri",
-      "category": "Roman",
+      "category": "Novel",
       "publishDate": "2021-03-19",
       "picture": "https://productimages.hepsiburada.net/s/550/550/110000611543345.jpg/format:webp"
     },
@@ -60,7 +52,7 @@
       "id": "96201225-bf81-4dfd-9082-88e538fbc557",
       "bookName": "Ömerin Çocukluğu",
       "writer": "Muallim Naci",
-      "category": "Roman",
+      "category": "Romance",
       "publishDate": "2023-06-17",
       "picture": "https://productimages.hepsiburada.net/s/550/550/110000611543346.jpg/format:webp"
     },
@@ -68,7 +60,7 @@
       "id": "73199d7d-b6cf-46f5-a5b2-1ca73b45ca14",
       "bookName": "Kuyucaklı Yusuf",
       "writer": "Sabahattin Ali",
-      "category": "Roman",
+      "category": "Romance",
       "publishDate": "1996-07-24",
       "picture": "https://productimages.hepsiburada.net/s/1/550/9503432245298.jpg/format:webp"
     },
@@ -76,9 +68,25 @@
       "id": "a7ee9075-8df6-4cd7-8bbb-59437cbf650c",
       "bookName": "Dokuzuncu Hariciye Koğuşu",
       "writer": "Peyami Safa",
-      "category": "Roman",
+      "category": "Romance",
       "publishDate": "2024-05-12",
       "picture": "https://productimages.hepsiburada.net/s/189/550/110000154431351.jpg/format:webp"
+    },
+    {
+      "id": "4f074454-c54d-4e53-9cc6-c23f220df361",
+      "bookName": "You Like It Darker",
+      "writer": "Stephen King",
+      "category": "Novel",
+      "publishDate": "2023-11-03",
+      "picture": "https://m.media-amazon.com/images/I/41xDqGkBQ2L._SY445_SX342_.jpg"
+    },
+    {
+      "id": "12101414-8885-499e-8618-b114cfcf72f6",
+      "bookName": "d",
+      "writer": "d",
+      "category": "Science Fiction",
+      "publishDate": "2024-05-18",
+      "picture": "https://productimages.hepsiburada.net/s/39/222-222/10641359634482.jpg/format:webp"
     }
   ]
 }

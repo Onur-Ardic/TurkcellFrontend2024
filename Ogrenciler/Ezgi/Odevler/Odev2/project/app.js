@@ -19,11 +19,11 @@ const addBookModalTitle = document.getElementById('addBookModalTitle')
 
 document.querySelector('#searchBtn').addEventListener('click', function (e) {
     e.preventDefault()
-    const searchValue = searchInput.value.toLowerCase()
+    const searchValue = searchInput.value.toLowerCase().trim()
     const books = document.querySelectorAll('.card')
     books.forEach(book => {
-        const nameBook = book.querySelector('.card-name').textContent.toLowerCase();
-        const writer = book.querySelector('.card-writer').textContent.toLowerCase();
+        const nameBook = book.querySelector('.card-name').textContent.toLowerCase().trim();
+        const writer = book.querySelector('.card-writer').textContent.toLowerCase().trim();
         if (nameBook.includes(searchValue) || writer.includes(searchValue)) {
             book.style.display = "block";
         } else {
@@ -33,9 +33,6 @@ document.querySelector('#searchBtn').addEventListener('click', function (e) {
     searchInput.value = ''
 })
 
-clearBtn.addEventListener("click", function () {
-    UI.removeBooksUI()
-})
 document.addEventListener('DOMContentLoaded', function () {
     Request.get("http://localhost:3000/books").then((books) => {
         books.forEach(book => {
@@ -43,6 +40,10 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     })
 });
+
+clearBtn.addEventListener("click", function () {
+    UI.removeBooksUI()
+})
 
 saveForm.addEventListener("click", function (e) {
     e.preventDefault()

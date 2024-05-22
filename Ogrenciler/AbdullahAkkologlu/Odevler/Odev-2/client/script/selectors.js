@@ -43,7 +43,7 @@ window.addEventListener("scroll", () => {
   agatha.style.left = value * 2 + "px";
   heroBook.style.bottom = value * -0.75 + "px";
 });
-bootstrapModal = new bootstrap.Modal(document.getElementById("staticBackdrop"));
+bootstrapModal = new bootstrap.Modal(document.getElementById("bookModel"));
 for (let key in inputs) {
   inputs[key].addEventListener("input", () => {
     document.querySelector(`#${key}Require`).textContent = "";

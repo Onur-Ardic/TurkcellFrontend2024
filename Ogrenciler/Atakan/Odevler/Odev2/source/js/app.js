@@ -21,12 +21,12 @@ quitButton.addEventListener("click", function () {
 let addButton = bookModal.querySelector("#addButton");
 addButton.addEventListener("click", function () {
   UI.bookCardCreate();
-  bookModal.style.display = "none";
+  UI.requestAllDataAndDisplay();
 });
 
 let updateButton = bookModal.querySelector("#updateButton");
 updateButton.addEventListener("click", function () {
   UI.updateBook();
-  bookModal.style.display = "none";
   UI.setButtonStatus();
+  UI.requestAllDataAndDisplay();
 });

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book</title>
+    <title>A-Library</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
@@ -17,7 +17,7 @@
     <section>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-          <a class="navbar-brand" href="#">A-Library</a>
+          <a class="navbar-brand" href="./index.html">A-Library</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -32,12 +32,17 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Books</a
+                >
               </li>
             </ul>
             <button
               type="button"
-              class="btn btn-primary"
+              class="btn btn-secondary"
               data-bs-toggle="modal"
               data-bs-target="#bookModal"
             >
@@ -58,19 +63,14 @@
               A-Library is a platform where you can add, update and delete
               books.
             </p>
-            <!-- <form id="" class="d-flex" role="search"> -->
             <input
-              onkeyup="searchInput()"
+              onkeyup="BookProcessor.searchInput()"
               id="search"
               class="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <!-- <button class="btn btn-outline-success" type="submit">
-              Search
-            </button> -->
-            <!-- </form> -->
           </div>
           <div
             class="col-lg-7 col-12 d-flex flex-column justify-content-center align-items-center"
@@ -95,9 +95,13 @@
                 aria-label="Publisher Select"
               >
                 <option value="All" selected>Choose the publisher</option>
-                <option value="İş Bankası">İş Bankası</option>
+                <option value="İş Bankası Yayınları">
+                  İş Bankası Yayınları
+                </option>
                 <option value="Altın Kitaplar">Altın Yayınları</option>
                 <option value="Can Yayınları">Can Yayınları</option>
+                <option value="Domingo Yayınları">Domingo Yayınları</option>
+                <option value="Koridor Yayıncılık">Koridor Yayıncılık</option>
               </select>
             </div>
             <div class="row">
@@ -110,6 +114,8 @@
                 <option value="George Orwell">George Orwell</option>
                 <option value="Matt Haig">Matt Haig</option>
                 <option value="Napoleon Hill">Napoleon Hill</option>
+                <option value="Victor Hugo">Victor Hugo</option>
+                <option value="Anthony Burgess">Anthony Burgess</option>
               </select>
             </div>
           </div>
@@ -118,12 +124,12 @@
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link active"
-                  id="home-tab"
+                  id="allBooks-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#home-tab-pane"
+                  data-bs-target="#allBooks-tab-pane"
                   type="button"
                   role="tab"
-                  aria-controls="home-tab-pane"
+                  aria-controls="allBooks-tab-pane"
                   aria-selected="true"
                 >
                   All Books
@@ -161,9 +167,9 @@
             <div class="tab-content" id="myTabContent">
               <div
                 class="tab-pane fade show active"
-                id="home-tab-pane"
+                id="allBooks-tab-pane"
                 role="tabpanel"
-                aria-labelledby="home-tab"
+                aria-labelledby="allBooks-tab"
                 tabindex="0"
               >
                 <div id="books" class="row"></div>
@@ -203,8 +209,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Modal -->
     <div
       class="modal fade"
       id="bookModal"
@@ -246,15 +250,17 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="category" class="form-label">Category</label>
-                <!--
+                <label for="publisher" class="form-label">Publisher</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="category"
-                  name="category"
-                  placeholder="Enter category"
-                /> -->
+                  id="publisher"
+                  name="publisher"
+                  placeholder="Enter publisher"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
                 <select
                   id="category"
                   class="form-select"
@@ -263,7 +269,7 @@
                   <option selected>Choose the category</option>
                   <option value="Roman">Roman</option>
                   <option value="Kişisel Gelişim">Kişisel Gelişim</option>
-                  <option value="Deneme">Deneme</option>
+                  <option value="Dünya Klasikleri">Dünya Klasikleri</option>
                 </select>
               </div>
               <div class="mb-3">
@@ -293,18 +299,18 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-danger"
               data-bs-dismiss="modal"
             >
               Close
             </button>
-            <button id="addBook" type="button" class="btn btn-primary">
+            <button id="addBook" type="button" class="btn btn-success">
               Kitap Ekle
             </button>
             <button
               id="updateBook"
               type="button"
-              class="btn btn-primary d-none"
+              class="btn btn-warning d-none"
             >
               Kitap Güncelle
             </button>
@@ -312,7 +318,6 @@
         </div>
       </div>
     </div>
-
     <script src="js/book.js"></script>
     <script src="js/request.js"></script>
     <script src="js/ui.js"></script>
