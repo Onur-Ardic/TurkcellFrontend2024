@@ -9,7 +9,6 @@ class Request {
     const response = await fetch(url, {
       method: "DELETE",
     });
-    UI.showAlert("success", "Book has been deleted");
     return response;
   }
 

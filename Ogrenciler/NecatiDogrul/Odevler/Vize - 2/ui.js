@@ -89,7 +89,7 @@ class UI {
       .then((response) => {
         if (response.ok) {
           this.removeBookFromUI(id);
-          this.showAlert("success", "Book has been deleted");
+          this.showAlert("danger", "Book has been deleted");
           console.log(`Book with ID ${id} has been deleted`);
         } else {
           console.log(`Failed to delete book with ID ${id}`);
@@ -253,10 +253,8 @@ class UI {
     closeButton.setAttribute("data-bs-dismiss", "alert");
     closeButton.setAttribute("aria-label", "Close");
     alertDiv.appendChild(closeButton);
-
     const alerthtml = document.querySelector("#alerthtml");
     alerthtml.appendChild(alertDiv);
-
     setTimeout(() => {
       alertDiv.classList.remove("show");
       alertDiv.classList.add("hide");
