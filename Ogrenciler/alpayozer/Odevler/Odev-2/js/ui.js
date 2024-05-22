@@ -128,7 +128,7 @@ class UI {
     );
     addBookButton.classList.add("d-none");
     updateBookButton.classList.remove("d-none");
-    bookModalLabel.innerText = "Update Book";
+    bookModalLabel.innerText = "Kitap Güncelle";
 
     Request.get(`http://localhost:3000/books/${id}`)
       .then((data) => {

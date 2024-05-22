@@ -10,13 +10,13 @@
       "id": "1"
     },
     {
-      "id": "2",
       "title": "Otomatik Portakal",
       "author": "Anthony Burgess",
       "publisher": "İş Bankası Yayınları",
       "category": "Roman",
       "date": "1962",
-      "cover_image": "https://cdn.bkmkitap.com/otomatik-portakal-379619-9497817-37-O.jpg"
+      "cover_image": "https://cdn.bkmkitap.com/otomatik-portakal-379619-9497817-37-O.jpg",
+      "id": "2"
     },
     {
       "id": "3",

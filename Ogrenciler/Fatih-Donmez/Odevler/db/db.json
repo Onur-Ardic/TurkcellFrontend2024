@@ -3,10 +3,11 @@
     {
       "id": "deab4eeb-3b21-4444-a6ab-a9b2d030825b",
       "title": "To Kill a Mockingbird",
-      "author": "Harper Leeer",
-      "category": "Fictionzse",
-      "year": "1960",
+      "author": "Harper Lee",
+      "category": "Fiction",
+      "year": 1960,
       "star": 5,
+
       "coverUrl": "https://covers.openlibrary.org/b/id/8228691-L.jpg"
     },
     {
@@ -22,8 +23,8 @@
       "id": "deab4eeb-3b21-4444-a6ab-a9b2d030825d",
       "title": "Moby-Dick",
       "author": "Herman Melville",
-      "category": "Adventure2",
-      "year": "1851",
+      "category": "Adventure",
+      "year": 1851,
       "star": 4,
       "coverUrl": "https://covers.openlibrary.org/b/id/7222160-L.jpg"
     },
