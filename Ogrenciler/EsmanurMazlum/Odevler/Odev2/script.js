@@ -22,7 +22,6 @@ document.querySelectorAll("#category-list input").forEach((input) => {
 });
 
 document.querySelectorAll("#author-list input").forEach((input) => {
-  console.log(input);
   input.addEventListener("click", () => {
     Requests.get(`http://localhost:3000/books?author=${input.value}`).then(
       (data) => displayBooks(data)
@@ -33,10 +32,8 @@ document.querySelectorAll("#author-list input").forEach((input) => {
 let editId;
 function selectedBook(book) {
 document.querySelector("#add-book-btn").click();
-console.log(book);
 title.value = book.name;
 author.value = book.author;
-console.log(title.value);
 category.querySelector("option").value = book.category;
 releaseDate.value = book.releaseDate;
 url.value = book.url;
@@ -51,7 +48,6 @@ Requests.delete(`http://localhost:3000/books/${id}`);
 document.getElementById("sort").addEventListener("change", (e) => {
 const key = e.target.value;
 let url = "http://localhost:3000/books";
-console.log(typeof key);
 switch (key) {
   case "a-z":
     url += "?_sort=name";
