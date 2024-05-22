@@ -12,6 +12,7 @@ class UI {
       element.removeChild(element.firstChild);
     }
   }
+
   static async createFilterCheckBoxes() {
     this.removeChilds(dropdownCategoryCheckbox);
     this.removeChilds(dropdownAuthorCheckbox);
@@ -282,12 +283,8 @@ class UI {
       books.sort((a, b) => new Date(a.date) - new Date(b.date));
     } else if (orderRadios.yearDesc.checked) {
       books.sort((a, b) => new Date(b.date) - new Date(a.date));
-    } else {
-      const data = await fetchData();
-      this.render(data);
-      return;
     }
-    this.render(books);
+    UI.render(books);
   }
   static clean() {
     for (let key in inputs) {
