@@ -30,37 +30,30 @@
 .book-card {
     width: 25rem;
     min-height: 60rem;
-
     .card-body {
         backface-visibility: hidden;
         transition: transform 0.6s;
         padding: 1.25rem;
-
         .card-img-top {
             height: 22rem;
             margin-bottom: 1rem;
         }
     }
-
     .card-front {
         background-color: #f8f9fa;
     }
-
     .card-back {
         background-color: #fff;
         transform: rotateY(180deg);
     }
-
     &:hover .card-front {
         transform: rotateY(-180deg);
     }
-
     &:hover .card-back {
         transform: rotateY(0deg);
     }
 }
 .alert-container {
-    position: fixed;
     bottom: 1rem;
     right: 1rem;
     z-index: 1050;

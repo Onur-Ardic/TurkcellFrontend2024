@@ -5,9 +5,7 @@ class BookCard {
 
         const cardBodyFront = this.createCardBodyFront(book);
         const cardBodyBack = this.createCardBodyBack(book);
-
         [cardBodyFront, cardBodyBack].forEach(element => card.appendChild(element));
-
         return card;
     }
     static createCardBodyFront(book) {
