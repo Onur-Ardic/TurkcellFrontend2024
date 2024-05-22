@@ -27,6 +27,7 @@ document.querySelectorAll("#author-list input").forEach((input) => {
 });
 
 let editId;
+let editStatus= false;
 function selectedBook(book) {
 document.querySelector("#add-book-btn").click();
 title.value = book.name;
@@ -36,6 +37,8 @@ releaseDate.value = book.releaseDate;
 url.value = book.url;
 document.getElementById("modal-submit").textContent = "Update";
 editId = book.id;
+editStatus = true;
+
 }
 
 function deleteBook(id) {
@@ -74,18 +77,18 @@ Requests.get(`http://localhost:3000/books?q=${key}`).then((data) =>
 document.getElementById('book-form').addEventListener('submit', async function (e) {
     e.preventDefault();
   
-    const name = title.value;
-    const author = author.value;
-    const category = category.value;
-    const date = releaseDate.value;
-    const imgUrl = url.value;
+    const titleVal = title.value;
+    const authorVal = author.value;
+    const categoryVal = category.value;
+    const dateVal = releaseDate.value;
+    const imgUrlVal = url.value;
   
-      if (editId) {
-        const updatedBook = new Book(editId, name, author, category, date, imgUrl);
+      if (editStatus) {
+        const updatedBook = new Book(editId, titleVal, authorVal, categoryVal, dateVal, imgUrlVal);
         await Requests.put(`http://localhost:3000/books/${editId}`, updatedBook);
         delete document.getElementById('book-form').dataset.id;
       } else {
-        const newBook = new Book(crypto.randomUUID() ,name, author, category, date, imgUrl);
+        const newBook = new Book(crypto.randomUUID() ,titleVal, authorVal, categoryVal, dateVal, imgUrlVal);
         await Requests.post('http://localhost:3000/books', newBook);
       }
 
@@ -95,7 +98,7 @@ document.getElementById('book-form').addEventListener('submit', async function (
   });
   
   document.getElementById('bookModal').addEventListener('show.bs.modal', () => {
-    document.getElementById('bookModalLabel').innerText = "Add Book";
+    document.getElementById('bookModalLabel').innerText = "Kitap Ekle";
     document.getElementById('book-form').reset();
     delete document.getElementById('book-form').dataset.id;
 });
