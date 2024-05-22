@@ -9,18 +9,19 @@ class UI {
       }
     );
   }
+
   displayBook(book) {
     books.innerHTML = "";
     book.forEach((element) => {
       this.addBookToUI(element);
     });
   }
+
   tabDisplayBook(filter = "") {
     nav_roman.innerHTML = "";
     nav_gelisim.innerHTML = "";
     Request.get(`http://localhost:3000/books?category=${filter}`).then(
       (book) => {
-        console.log(book, "gelen filtreli");
         book.forEach((element) => {
           this.addBookToTab(element);
         });
@@ -53,13 +54,12 @@ class UI {
 
     const updateIcon = document.createElement("i");
     updateIcon.classList.add("fa-solid", "fa-pen");
-    updateIcon.addEventListener("click", () => updateBook(book.id));
+    updateIcon.addEventListener("click", () => this.updateBook(book.id));
 
     const deleteIcon = document.createElement("i");
     deleteIcon.classList.add("fa-solid", "fa-trash");
-    deleteIcon.addEventListener("click", () => deleteBook(book.id));
+    deleteIcon.addEventListener("click", () => this.deleteBook(book.id));
 
-    // cardBody.appendChild(author);
     cardBody.appendChild(title);
 
     cardIcon.appendChild(updateIcon);
@@ -86,5 +86,70 @@ class UI {
     } else if (book.category == "Kişisel Gelişim") {
       nav_gelisim.appendChild(column);
     }
+  }
+
+  deleteBook(id) {
+    Request.delete(`http://localhost:3000/books/${id}`)
+      .then((data) => {
+        return data;
+      })
+      .catch((err) => {
+        throw new Error(err);
+      });
+  }
+
+  addBook(book) {
+    Request.post("http://localhost:3000/books", book)
+      .then((data) => {
+        return data;
+      })
+      .catch((err) => {
+        throw new Error(err);
+      });
+  }
+
+  updateBook(id) {
+    const bookModal = new bootstrap.Modal(
+      document.getElementById("bookModal"),
+      {
+        keyboard: false,
+      }
+    );
+    addBookButton.classList.add("d-none");
+    updateBookButton.classList.remove("d-none");
+    bookModalLabel.innerText = "Update Book";
+
+    Request.get(`http://localhost:3000/books/${id}`)
+      .then((data) => {
+        title.value = data.title;
+        author.value = data.author;
+        publisher.value = data.publisher;
+        category.value = data.category;
+        date.value = data.date;
+        cover_image.value = data.cover_image;
+      })
+      .catch((err) => {
+        throw new Error(err);
+      });
+
+    bookModal.show();
+
+    updateBookButton.addEventListener("click", () => {
+      const book = new Book(
+        title.value,
+        author.value,
+        publisher.value,
+        category.value,
+        date.value,
+        cover_image.value
+      );
+      Request.put(`http://localhost:3000/books/${id}`, book)
+        .then((data) => {
+          return data;
+        })
+        .catch((err) => {
+          throw new Error(err);
+        });
+    });
   }
 }
