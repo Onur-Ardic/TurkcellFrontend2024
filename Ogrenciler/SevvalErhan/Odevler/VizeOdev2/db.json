@@ -1,0 +1,112 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "booktitle": "Şeker Portakalı",
+      "author": "Jose Mauro De Vasconcelos",
+      "date": "2019",
+      "publisher": "CAN YAYINLARI",
+      "category": "Edebiyat",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11462950/wh:true/wi:220"
+    },
+    {
+      "id": "2",
+      "booktitle": "Bilinçaltının Gücü",
+      "author": "Joseph Murphy",
+      "date": "2020",
+      "publisher": "DİYOJEN YAYINCILIK",
+      "category": "Psikoloji",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11403822/wh:true/wi:220"
+    },
+    {
+      "booktitle": "Gazi Mustafa Kemal Atatürk",
+      "author": "Prof. Dr. İlber Ortaylı",
+      "date": "2020",
+      "publisher": "KRONİK KİTAP",
+      "category": "Tarih",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11239152/wh:true/wi:220",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "booktitle": "1984",
+      "author": "George Orwell",
+      "date": "2019",
+      "publisher": "Penguin Books",
+      "category": "Distopya",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11484453/wh:true/wi:220"
+    },
+    {
+      "id": "5",
+      "booktitle": "Harry Potter ve Felsefe Taşı",
+      "author": "J.K. Rowling",
+      "date": "2023",
+      "publisher": "YAPI KREDİ YAYINLARI",
+      "category": "Fantastik",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:1109383/wh:true/wi:220"
+    },
+    {
+      "id": "6",
+      "booktitle": "Dijital Kale",
+      "author": "Dan Brown",
+      "date": "1998",
+      "publisher": "ALTIN KİTAPLAR",
+      "category": "Teknoloji",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11753515/wh:true/wi:220"
+    },
+    {
+      "id": "7",
+      "booktitle": "Antik Kentler",
+      "author": "Charles Gates",
+      "date": "2011",
+      "publisher": "KOÇ ÜNİVERSİTESİ YAYINLARI",
+      "category": "Arkeoloji",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11862742/wh:true/wi:220"
+    },
+    {
+      "id": "8",
+      "booktitle": "İnsanın Anlam Arayışı",
+      "author": "Viktor Emil Frankl",
+      "date": "2019",
+      "publisher": "MAVİBULUT YAYINCILIK",
+      "category": "Felsefe",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11614703/wh:true/wi:220"
+    },
+    {
+      "id": "9",
+      "booktitle": "Mülksüzler",
+      "author": "Ursula K. Le Guin",
+      "date": "2021",
+      "publisher": " METİS YAYINLARI",
+      "category": "Bilim Kurgu",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11612179/wh:true/wi:220"
+    },
+    {
+      "id": "10",
+      "booktitle": "Suç ve Ceza",
+      "author": "Fyodor Dostoyevsky",
+      "date": "1866",
+      "publisher": "KAPRA YAYINCILIK",
+      "category": "Edebiyat",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11592410/wh:true/wi:256"
+    },
+    {
+      "id": "3cda",
+      "booktitle": "sf",
+      "author": "vse",
+      "date": "2024",
+      "publisher": "fsdfv",
+      "category": "Edebiyat",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11614703/wh:true/wi:220"
+    },
+    {
+      "id": "baf8",
+      "booktitle": "feesf",
+      "author": "sdfsf",
+      "date": "2024",
+      "publisher": "fsd",
+      "category": "Tarih",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11764839/wi:100/wh:true"
+    }
+  ]
+}

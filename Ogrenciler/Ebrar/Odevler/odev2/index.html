@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <link
+      rel="shortcut icon"
+      href="https://i.hizliresim.com/gnsdbz7.png"
+      type="image/x-icon" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <title>BookStore</title>
+    <style>
+      .card-img {
+        height: 300px;
+        object-fit: contain;
+      }
+        .nav-item {
+            list-style: none;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: white;
+        }
+         .nav-link:hover {
+            color: orange !important ;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-success opacity-75 mb-5 d-flex justify-content-evenly">
+        <div class="d-flex">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://i.hizliresim.com/gnsdbz7.png"
+                alt="bookStore"
+                height="120" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-center"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a
+                  class="nav-link text-white fs-3"
+                  
+                  href="#"
+                  >Anasayfa</a
+                >
+              </li>
+
+              <li class="nav-item">
+                  <a
+                  class="nav-link text-white fs-3"
+                
+                  href="contact.html"
+                  >İletişim</a
+                >
+               
+              </li>
+               
+            </ul>
+          </div>
+          
+        </div>
+            <div class="d-flex">
+        <ul class="container d-flex justify-content-end align-items-end">
+            <li class="nav-item">
+                <a class="nav-link  fs-3 mx-2" aria-current="page">Ebrar Nur Çalışkan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link s fs-3" aria-current="page" href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+      </nav>
+    </header>
+    <main class="container ">
+      <div class="row">
+        <div class="col-lg-2">
+         
+          <div class="my-3 ">
+            <select id="searchCategory" class="form-select p-3">
+              <option selected value="">Kategoriler</option>
+              <option value="bilimKurgu">Bilim Kurgu</option>
+              <option value="fantastik">Fantastik</option>
+              <option value="polisiye">Polisiye</option>
+              <option value="romantik">Romantik</option>
+              <option value="macera">Macera</option>
+            </select>
+          </div>
+          <select id="sort" class="form-select my-3 p-3">
+            <option selected value="">Sırala</option>
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+            <option value="oldest">Eskiye Göre</option>
+            <option value="newest">Yeniye Göre</option>
+          </select>
+          <form class="my-3" role="search">
+        <input id="searchBookName" class="form-control me-2 p-3" type="search" placeholder="Kitap Adı Ara.." aria-label="Search">
+       
+      </form>
+      <form role="search">
+        <input id="searchBookAuthor" class="form-control me-2 p-3" type="search" placeholder="Yazar Ara.." aria-label="Search">
+      
+      </form>
+       <button
+            id="bookAddBtn"
+            type="button"
+            class="btn btn-success my-3 p-3"
+            data-bs-toggle="modal"
+            data-bs-target="#bookAdd">
+            Kitap Ekleyin
+          </button>
+        </div>
+        
+        <div class="col-lg-10">
+          <section id="booksCollection" class="row">
+          </section>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="bookAdd"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="bookAddLabel">Kitap Ekleyin</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addBookForm" class="w-100 needs-validation" novalidate>
+                  <div class="mb-3">
+                    <label for="bookTitle" class="form-label">Kitap Adı:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="bookTitle"
+                      required />
+
+                    <div class="invalid-feedback">
+                      Lütfen kitap adını yazın!
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="author" class="form-label">Yazar:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="author"
+                      required />
+
+                    <div class="invalid-feedback">
+                      Lütfen yazarın adını girin!
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="date" class="form-label">Tarih:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="date"
+                      required />
+
+                    <div class="invalid-feedback">
+                      Lütfen kitabın yayımlandığı tarihi girin!
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="coverImgUrl" class="form-label" >Kitap Kapak Fotoğrafı Url:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="coverImgUrl"
+                      required />
+
+                    <div class="invalid-feedback">
+                      Lütfen kitabın kapak fotoğrafının urlsini girin!
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="category" class="form-label">Kategori:</label>
+                    <select id="category" class="form-select" required>
+                      <option>Lütfen Kategori Seçin</option>
+                      <option value="bilimKurgu">Bilim Kurgu</option>
+                       <option value="fantastik">Fantastik</option>
+                        <option value="polisiye">Polisiye</option>
+                      <option value="romantik">Romantik</option>
+                      <option value="macera">Macera</option>
+                    </select>
+
+                    <div class="invalid-feedback">
+                      Lütfen kategori seçin!
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-success">Kaydet</button>
+                </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="errorModalLabel">Hata</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modalMessage">
+        Kitapları yüklerken bir hata oluştu. Lütfen daha sonra tekrar deneyin.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+   
+    <script>
+      (() => {
+        "use strict";
+
+        const forms = document.querySelectorAll(".needs-validation");
+
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+    <script src="js/book.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/request.js"></script>
+   <script type="module" src="js/sort.js"></script>
+    <script type="module" src="js/search.js"></script>
+    <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   
+  </body>
+</html>
