@@ -79,6 +79,22 @@
       "category": "Novel",
       "date": "1516",
       "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0002026787001-1.jpg"
+    },
+    {
+      "id": "16a9c395-d895-4abb-9ab8-a30f74f44150",
+      "name": "dsadsa",
+      "author": "asdad",
+      "category": "Novel",
+      "date": "3213",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000374848-1.jpg"
+    },
+    {
+      "id": "99f33a3d-4e71-4a22-965c-7316eb5d6f9a",
+      "name": "Anna Karenina",
+      "author": "Lev Nikolayeviç Tolstoy",
+      "category": "Novel",
+      "date": "3123",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000325204-1.jpg"
     }
   ]
 }

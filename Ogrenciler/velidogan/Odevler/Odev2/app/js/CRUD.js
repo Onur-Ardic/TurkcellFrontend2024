@@ -16,7 +16,7 @@ class Request{
                 method: "POST",
                 body: JSON.stringify(data),
                 headers: {
-                "Content-type": "application/json;",
+                "Content-type": "application/json",
                 }
             });
             if(!response.ok){
@@ -33,7 +33,7 @@ class Request{
                 method: "PUT",
                 body: JSON.stringify(data),
                 headers: {
-                "Content-type": "application/json;",
+                "Content-type": "application/json",
                 }
             });
             if(!response.ok){
