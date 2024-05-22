@@ -1,10 +1,10 @@
-import Library from './services/library.js';
+import Library from "./services/library.js";
 import {
   removeBookHandler,
   showAddBookModal,
   showUpdateBookModal,
-} from './components/BookHandlers.js';
-import { applyFiltersAndSort } from './components/FilterAndSort.js';
+} from "./components/BookHandlers.js";
+import { applyFiltersAndSort } from "./components/FilterAndSort.js";
 
 class UI {
   constructor() {
@@ -20,8 +20,8 @@ class UI {
   }
 
   displayBooks(books) {
-    const booksContainer = document.getElementById('booksContainer');
-    booksContainer.textContent = '';
+    const booksContainer = document.getElementById("booksContainer");
+    booksContainer.textContent = "";
     books.forEach((book) => {
       booksContainer.appendChild(this.createBookCard(book));
     });
@@ -31,110 +31,110 @@ class UI {
     const categories = this.library.getCategories();
     const authors = this.library.getAuthors();
 
-    const categoryCheckboxes = document.getElementById('categoryCheckboxes');
-    categoryCheckboxes.textContent = ''; // Temizlemeyince ekleme işlemi sonrasında aynı kategoriler tekrar ekleniyor.
+    const categoryCheckboxes = document.getElementById("categoryCheckboxes");
+    categoryCheckboxes.textContent = "";
     categories.forEach((category) => {
-      const checkbox = document.createElement('input');
-      checkbox.type = 'checkbox';
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
       checkbox.value = category;
       checkbox.id = `category-${category}`;
-      checkbox.addEventListener('change', () => this.applyFiltersAndSort());
+      checkbox.addEventListener("change", () => this.applyFiltersAndSort());
 
       categoryCheckboxes.appendChild(checkbox);
 
-      const label = document.createElement('label');
+      const label = document.createElement("label");
       label.htmlFor = `category-${category}`;
       label.textContent = category;
       categoryCheckboxes.appendChild(label);
 
-      categoryCheckboxes.appendChild(document.createElement('br'));
+      categoryCheckboxes.appendChild(document.createElement("br"));
     });
 
-    const authorCheckboxes = document.getElementById('authorCheckboxes');
-    authorCheckboxes.textContent = ''; // Temizlemeyince ekleme işlemi sonrasında aynı yazarlar tekrar ekleniyor.
+    const authorCheckboxes = document.getElementById("authorCheckboxes");
+    authorCheckboxes.textContent = "";
     authors.forEach((author) => {
-      const checkbox = document.createElement('input');
-      checkbox.type = 'checkbox';
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
       checkbox.value = author;
       checkbox.id = `author-${author}`;
-      checkbox.addEventListener('change', () => this.applyFiltersAndSort());
+      checkbox.addEventListener("change", () => this.applyFiltersAndSort());
 
       authorCheckboxes.appendChild(checkbox);
 
-      const label = document.createElement('label');
+      const label = document.createElement("label");
       label.htmlFor = `author-${author}`;
       label.textContent = author;
       authorCheckboxes.appendChild(label);
 
-      authorCheckboxes.appendChild(document.createElement('br'));
+      authorCheckboxes.appendChild(document.createElement("br"));
     });
   }
 
   createBookCard(book) {
-    const colDiv = document.createElement('div');
-    colDiv.className = 'col-md-4 mb-4';
+    const colDiv = document.createElement("div");
+    colDiv.className = "col-md-4 mb-4";
 
-    const cardDiv = document.createElement('div');
-    cardDiv.className = 'card';
+    const cardDiv = document.createElement("div");
+    cardDiv.className = "card";
 
-    const img = document.createElement('img');
+    const img = document.createElement("img");
     img.src = book.coverUrl;
-    img.className = 'card-img-top';
+    img.className = "card-img-top";
     img.alt = book.title;
-    img.style.maxHeight = '300px';
+    img.style.maxHeight = "300px";
 
-    const cardBody = document.createElement('div');
-    cardBody.className = 'card-body';
-    const starContainer = document.createElement('span');
-    starContainer.className = 'd-block';
+    const cardBody = document.createElement("div");
+    cardBody.className = "card-body";
+    const starContainer = document.createElement("span");
+    starContainer.className = "d-block";
 
     for (let i = 0; i < book.star; i++) {
-      const star = document.createElement('i');
-      star.className = 'bi bi-star-fill text-warning';
+      const star = document.createElement("i");
+      star.className = "bi bi-star-fill text-warning";
       starContainer.appendChild(star);
     }
 
     cardBody.appendChild(starContainer);
 
-    const title = document.createElement('h5');
-    title.className = 'card-title mt-2';
+    const title = document.createElement("h5");
+    title.className = "card-title mt-2";
     title.textContent = book.title;
 
-    const author = document.createElement('p');
-    author.className = 'card-text';
+    const author = document.createElement("p");
+    author.className = "card-text";
     author.textContent = book.author;
 
-    const category = document.createElement('p');
-    category.className = 'card-text';
+    const category = document.createElement("p");
+    category.className = "card-text";
     category.textContent = book.category;
 
-    const year = document.createElement('p');
-    year.className = 'card-text';
+    const year = document.createElement("p");
+    year.className = "card-text";
     year.textContent = book.year;
 
-    const cardButtons = document.createElement('div');
-    cardButtons.className = 'card-buttons d-flex justify-content-around ';
+    const cardButtons = document.createElement("div");
+    cardButtons.className = "card-buttons d-flex justify-content-around ";
 
-    const deleteButton = document.createElement('button');
-    deleteButton.className = 'btn btn-danger';
-    deleteButton.textContent = 'Sil';
-    deleteButton.addEventListener('click', async () => {
+    const deleteButton = document.createElement("button");
+    deleteButton.className = "btn btn-danger";
+    deleteButton.textContent = "Sil";
+    deleteButton.addEventListener("click", async () => {
       await removeBookHandler(
         this.library,
         book.id,
-        this.displayBooks.bind(this),
+        this.displayBooks.bind(this)
       );
     });
 
-    const updateButton = document.createElement('button');
-    updateButton.className = 'btn btn-primary';
-    updateButton.textContent = 'Güncelle';
-    updateButton.addEventListener('click', () => {
+    const updateButton = document.createElement("button");
+    updateButton.className = "btn btn-primary";
+    updateButton.textContent = "Güncelle";
+    updateButton.addEventListener("click", () => {
       showUpdateBookModal(
         book,
         this.library,
         this.displayBooks.bind(this),
-        this.loadFilterOptions.bind(this),
+        this.loadFilterOptions.bind(this)
       );
     });
 
@@ -156,39 +156,40 @@ class UI {
   }
 
   setupEventListeners() {
-    document.getElementById('addBookButton').addEventListener('click', () => {
+    document.getElementById("addBookButton").addEventListener("click", () => {
       showAddBookModal(
         this.library,
         this.displayBooks.bind(this),
-        this.loadFilterOptions.bind(this),
+        this.loadFilterOptions.bind(this)
       );
     });
+
     document
-      .getElementById('searchInput')
-      .addEventListener('input', () =>
-        applyFiltersAndSort(this.library, this.displayBooks.bind(this)),
+      .getElementById("searchInput")
+      .addEventListener("input", () =>
+        applyFiltersAndSort(this.library, this.displayBooks.bind(this))
       );
 
     document
       .querySelectorAll("#categoryCheckboxes input[type='checkbox']")
       .forEach((cb) =>
-        cb.addEventListener('change', () =>
-          applyFiltersAndSort(this.library, this.displayBooks.bind(this)),
-        ),
+        cb.addEventListener("change", () =>
+          applyFiltersAndSort(this.library, this.displayBooks.bind(this))
+        )
       );
 
     document
       .querySelectorAll("#authorCheckboxes input[type='checkbox']")
       .forEach((cb) =>
-        cb.addEventListener('change', () =>
-          applyFiltersAndSort(this.library, this.displayBooks.bind(this)),
-        ),
+        cb.addEventListener("change", () =>
+          applyFiltersAndSort(this.library, this.displayBooks.bind(this))
+        )
       );
 
     document
-      .getElementById('sortSelect')
-      .addEventListener('change', () =>
-        applyFiltersAndSort(this.library, this.displayBooks.bind(this)),
+      .getElementById("sortSelect")
+      .addEventListener("change", () =>
+        applyFiltersAndSort(this.library, this.displayBooks.bind(this))
       );
   }
   applyFiltersAndSort() {
