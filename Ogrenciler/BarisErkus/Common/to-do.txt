@@ -22,4 +22,7 @@
 10-05-2024: Make a Cinema Collection with prototype
 13-05-2024: Make a Cinema Collection with class
 15-05-2024: Make a Blog with XMLHttpRequest
-18-05-2024: Midterm exam 2
+17-05-2024: Midterm exam 2
+20-05-2024: Midterm exam 2
+22-05-2024: Set up react dependencies
+24-05-2024: 

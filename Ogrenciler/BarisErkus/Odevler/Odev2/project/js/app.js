@@ -82,14 +82,21 @@ function chooseOperation(event) {
     if (event.target.matches('.btn-update-book')) {
         const bookCard = UI.getCard(event.target, '.btn-update-book');
         if (!bookCard) return;
-        UIHelper.setInputValue('coverUrl', UIHelper.getCardAttribute(bookCard, '.card-front img', 'src'));
-        UIHelper.setInputValue('title', UIHelper.getCardTextContent(bookCard, '.card-front .card-title'));
-        UIHelper.setInputValue('year', UIHelper.getCardTextContent(bookCard, '.card-front .card-date').replace('Tarih: ', ''));
-        UIHelper.setInputValue('genre', UIHelper.getCardTextContent(bookCard, '.card-front .card-genre').replace('Tür: ', ''));
-        UIHelper.setInputValue('description', UIHelper.getCardTextContent(bookCard, '.card-front .card-description'));
-        UIHelper.setInputValue('authorImageUrl', UIHelper.getCardAttribute(bookCard, '.card-back img', 'src'));
-        UIHelper.setInputValue('authorName', UIHelper.getCardTextContent(bookCard, '.card-back .card-title'));
-        UIHelper.setInputValue('biography', UIHelper.getCardTextContent(bookCard, '.card-back .card-biography'));
+        const fields = {
+            coverUrl: UIHelper.getCardAttribute(bookCard, '.card-front img', 'src'),
+            title: UIHelper.getCardTextContent(bookCard, '.card-front .card-title'),
+            year: UIHelper.getCardTextContent(bookCard, '.card-front .card-date').replace('Tarih: ', ''),
+            genre: UIHelper.getCardTextContent(bookCard, '.card-front .card-genre').replace('Tür: ', ''),
+            description: UIHelper.getCardTextContent(bookCard, '.card-front .card-description'),
+            authorImageUrl: UIHelper.getCardAttribute(bookCard, '.card-back img', 'src'),
+            authorName: UIHelper.getCardTextContent(bookCard, '.card-back .card-title'),
+            biography: UIHelper.getCardTextContent(bookCard, '.card-back .card-biography')
+        };
+
+        Object.entries(fields).forEach(([key, value]) => {
+            UIHelper.setInputValue(key, value);
+        });
+
         saveButton.innerText = 'Güncelle';
         saveButton.setAttribute('data-id', bookCard.getAttribute('data-id'));
     }

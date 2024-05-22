@@ -14,7 +14,7 @@
 17-04-2024: Bootstrap - SCSS (Override)
 19-04-2024: Have a chat and to inform
 22-04-2024: Javascript
-24-04-2024: Making project presentations
+24-04-2024: Making midterm 1 presentations
 26-04-2024: Javascript String - Array methods
 29-04-2024: Javascript Functions
 03-05-2024: Javascript DOM
@@ -22,4 +22,7 @@
 10-05-2024: Javascript OOP - Prototype
 13-05-2024: Javascript OOP - Class
 15-05-2024: Api Request - XMLHttpRequest
-18-05-2024: Api Request - async-await, fetch, promise, Json Server
+17-05-2024: Api Request - async-await, fetch, promise, Json Server
+22-05-2024: Have a chat and to inform
+22-05-2024: Making midterm 2 presentations
+24-05-2024: 
