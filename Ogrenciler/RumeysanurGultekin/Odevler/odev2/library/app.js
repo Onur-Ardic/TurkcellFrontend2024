@@ -1,5 +1,17 @@
 
 
+document.getElementById("ModalKitapEkle").addEventListener("click", function(){
+  const kitapekle = document.getElementById("addBook")
+  const updateBook = document.getElementById("updateBook")
+
+  kitapekle.style.display = "block";
+  updateBook.style.display = "none";
+  kitapekle.removeAttribute("disabled");
+
+  const ui = new UI();
+  ui.clearInput();
+})
+
 document.getElementById("formKitap").addEventListener("submit",function (e) {
     e.preventDefault();
     

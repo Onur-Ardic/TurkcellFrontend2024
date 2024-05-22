@@ -67,35 +67,26 @@ class UI {
       buttonUpdate.setAttribute('data-bs-toggle', 'modal')
       buttonUpdate.setAttribute('data-bs-target', '#modalAc')
 
-      buttonUpdate.addEventListener("click", (function (book) {
-        return function () {
-          document.querySelector("#ModalKitapEkle").click();
-            document.getElementById("imageInput").value = book.image;
-            document.getElementById("bookName").value = book.bookname;
-            document.getElementById("bookAuthor").value = book.author;
-            document.getElementById("bookDate").value = book.date;
-            document.getElementById("categoriesInput").value = book.categories;
+      buttonUpdate.addEventListener("click", (() => {
+        document.querySelector("#ModalKitapEkle").click();
+        document.getElementById("imageInput").value = book.image;
+        document.getElementById("bookName").value = book.bookname;
+        document.getElementById("bookAuthor").value = book.author;
+        document.getElementById("bookDate").value = book.date;
+        document.getElementById("categoriesInput").value = book.categories;
+  
+        const kitapekle = document.getElementById("addBook")
+        const updateBook = document.getElementById("updateBook")
+  
+        kitapekle.style.display = "none";
+        updateBook.style.display = "block";
+        updateBook.removeAttribute("disabled");
 
-            const kitapekle =  document.getElementById("addBook")
-            console.log(kitapekle.style);
-           
-            currentBookId = book.id;
-            document.getElementById("addBook").style.display = "none !important" ;
-            document.getElementById("updateBook").style.display = "block !important";
-        };
-    })(book));
-
-      //   buttonUpdate.addEventListener("click", (function(book) {
-      //     return function() {
-      //       document.querySelector("#ModalKitapEkle").click();
-      //         document.getElementById("imageInput").value = book.image;
-      //         document.getElementById("bookName").value = book.bookname;
-      //         document.getElementById("bookAuthor").value = book.author;
-      //         document.getElementById("bookDate").value = book.date;
-      //         document.getElementById("categoriesInput").value = book.categories;
-      //         
-      //     };
-      // })(book));
+        updateBook.addEventListener("click",function(){
+          
+        } )
+  
+      }));
 
         
 
