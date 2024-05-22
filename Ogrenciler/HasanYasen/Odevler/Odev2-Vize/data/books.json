@@ -151,22 +151,6 @@
       "category": "Romance",
       "year": "1943",
       "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000058245-1.jpg"
-    },
-    {
-      "id": "52c9",
-      "name": "Atmosware",
-      "author": "Varol Maksutoğlu",
-      "category": "Technology",
-      "year": "2024",
-      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-5CnjMT3UjpXrjLrhGjXd2mUX4F4lahuMzZ0Zi6qfHw&s"
-    },
-    {
-      "id": "8cc6",
-      "name": "Turkcell",
-      "author": "Varol Maksutoğlu",
-      "category": "Technology",
-      "year": "2024",
-      "imgUrl": "https://logowik.com/content/uploads/images/791_turkcell.jpg"
     }
   ]
 }
