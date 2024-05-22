@@ -6,9 +6,7 @@ class API {
     }
     async fetchRequest(url, options) {
         const response = await fetch(url, options);
-        if (!response.ok) {
-            return [];
-        }
+        if (!response.ok) return [];
         return response.json();
     }
     async getBooks() {

@@ -20,7 +20,7 @@ class UIHelper {
     static clearInputValue(id) {
         document.getElementById(id).value = '';
     }
-    static populateFilterMenu(menu, headerText, items, filterType) {
+    static fillFilterMenu(menu, headerText, items, filterType) {
         const header = this.createHtmlItem('li');
         const headerLink = this.createHtmlItem('a', ['dropdown-item', 'disabled', 'text-center'], headerText);
         headerLink.href = '#';

@@ -42,27 +42,13 @@ class UI {
             authors.add(book.author.authorName);
         });
 
-        UIHelper.populateFilterMenu(menu, 'Kategori', genres, 'genre');
+        const sortedGenres = Array.from(genres).sort();
+        const sortedAuthors = Array.from(authors).sort();
+
+        UIHelper.fillFilterMenu(menu, 'Kategori', sortedGenres, 'genre');
         UIHelper.addDivider(menu);
-        UIHelper.populateFilterMenu(menu, 'Yazar', authors, 'author');
-        this.filterBooks();
-    }
-    static filterBooks() {
-        const filterOptions = document.querySelectorAll('.filter-option');
-
-        filterOptions.forEach(option => {
-            option.addEventListener('click', function (e) {
-                e.preventDefault();
-                const filterBy = option.dataset.filter;
-                const filterValue = option.dataset.value.toLowerCase();
-
-                const cards = document.querySelectorAll('.book-card');
-                cards.forEach(card => {
-                    const cardValue = card.querySelector(`.card-${filterBy}`).textContent.toLowerCase();
-                    card.style.display = cardValue.includes(filterValue) ? 'block' : 'none';
-                });
-            });
-        });
+        UIHelper.fillFilterMenu(menu, 'Yazar', sortedAuthors, 'author');
+        filterBooks();
     }
     static showAlert(message, type) {
         const alertContainer = document.getElementById('alert-container');
