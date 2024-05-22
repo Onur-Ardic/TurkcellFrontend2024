@@ -35,7 +35,7 @@ class UI {
     );
 
     const deleteButton = document.createElement("button");
-    deleteButton.classList.add("btn", "btn-primary");
+    deleteButton.classList.add("btn", "btn-primary", "bg-btn", "border-0");
     deleteButton.innerHTML = '<i class="bi bi-trash3"></i>';
     deleteButton.addEventListener("click", () => {
       deleteButtonClickHandler(book);
@@ -44,7 +44,7 @@ class UI {
     btnWrapperDiv.appendChild(deleteButton);
 
     const updateButton = document.createElement("button");
-    updateButton.classList.add("btn", "btn-primary");
+    updateButton.classList.add("btn", "btn-primary", "bg-btn", "border-0");
     updateButton.innerHTML = '<i class="bi bi-pencil-square"></i>';
     updateButton.setAttribute("data-bs-toggle", "modal");
     updateButton.setAttribute("data-bs-target", "#bookModal");
