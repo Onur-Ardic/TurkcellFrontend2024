@@ -40,6 +40,7 @@ class Book {
   }
 
   static updateBook(bookID) {
+    event.preventDefault();
     const formData = {
       title: document.getElementById("updateBookName").value,
       author: document.getElementById("updateNameAuthor").value,

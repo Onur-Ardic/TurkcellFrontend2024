@@ -7,7 +7,7 @@ function displayBooks(books) {
     bookCard.classList.add("col-lg-3");
 
     const card = document.createElement("div");
-    card.classList.add("card");
+    card.classList.add("card","mb-2");
     card.id = book.id;
 
     const cardInfo = document.createElement("div");
@@ -67,12 +67,6 @@ function displayBooks(books) {
       deleteBook(book.id);
     };
 
-    // cardBody.appendChild(title);
-    // cardBody.appendChild(author);
-    // cardBody.appendChild(category);
-    // cardBody.appendChild(releaseDate);
-
-
     cardInfo.appendChild(img);
     bookInfo.appendChild(title);
     bookInfo.appendChild(author);
@@ -81,8 +75,6 @@ function displayBooks(books) {
     cardInfo.appendChild(bookInfo);
 
     cardBody.appendChild(cardInfo);
-
-    // card.appendChild(img);
     card.appendChild(cardBody);
 
     btnDiv.appendChild(updateButton);

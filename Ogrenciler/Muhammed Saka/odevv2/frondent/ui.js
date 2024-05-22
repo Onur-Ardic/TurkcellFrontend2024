@@ -115,7 +115,6 @@ class UI {
   }
 }
 
-// Modal açıldığında formun sıfırlanması için event listener ekle
 $('#bookModal').on('show.bs.modal', function (e) {
   const button = $(e.relatedTarget);
   const isEditMode = button.hasClass('btn-edit');
@@ -126,13 +125,11 @@ $('#bookModal').on('show.bs.modal', function (e) {
   }
 });
 
-// Modal kapandığında formun sıfırlanması için event listener ekle
 $('#bookModal').on('hidden.bs.modal', function () {
   const ui = new UI();
   ui.clearForm();
 });
 
-// Kitap ekleme veya güncelleme işlemi için submit event listener
 document.getElementById('book-form').addEventListener('submit', function (e) {
   e.preventDefault();
   
@@ -188,7 +185,6 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
   }
 });
 
-// DOMContentLoaded event handler
 document.addEventListener('DOMContentLoaded', () => {
   const ui = new UI();
   ui.fetchBooksAndDisplay();

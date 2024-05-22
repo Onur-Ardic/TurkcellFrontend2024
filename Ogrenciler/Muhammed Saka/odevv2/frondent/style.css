@@ -15,6 +15,7 @@ body {
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease;
+  min-height: 450px;
 }
 
 .card:hover {
@@ -22,7 +23,7 @@ body {
 }
 
 .card-img-top {
-  height: 200px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -34,6 +35,12 @@ body {
 
 .card-text {
   font-size: 1rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #book-list {
@@ -65,3 +72,13 @@ body {
   z-index: 1050;
 }
 
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

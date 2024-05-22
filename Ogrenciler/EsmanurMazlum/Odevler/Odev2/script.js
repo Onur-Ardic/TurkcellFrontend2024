@@ -14,15 +14,11 @@ window.addEventListener("load", () => {
 document.querySelectorAll("#category-list input").forEach((input) => {
   input.addEventListener("click", () => {
       const categoryId = input.id;
-      
-  Requests.get(`http://localhost:3000/books?category=${categoryId}`).then(
-    (data) => displayBooks(data)
-  );
-});
+      Requests.get(`http://localhost:3000/books?category=${categoryId}`).then((data) => displayBooks(data));
+  });
 });
 
 document.querySelectorAll("#author-list input").forEach((input) => {
-  console.log(input);
   input.addEventListener("click", () => {
     Requests.get(`http://localhost:3000/books?author=${input.value}`).then(
       (data) => displayBooks(data)
@@ -33,10 +29,8 @@ document.querySelectorAll("#author-list input").forEach((input) => {
 let editId;
 function selectedBook(book) {
 document.querySelector("#add-book-btn").click();
-console.log(book);
 title.value = book.name;
 author.value = book.author;
-console.log(title.value);
 category.querySelector("option").value = book.category;
 releaseDate.value = book.releaseDate;
 url.value = book.url;
@@ -51,7 +45,6 @@ Requests.delete(`http://localhost:3000/books/${id}`);
 document.getElementById("sort").addEventListener("change", (e) => {
 const key = e.target.value;
 let url = "http://localhost:3000/books";
-console.log(typeof key);
 switch (key) {
   case "a-z":
     url += "?_sort=name";
@@ -102,7 +95,7 @@ document.getElementById('book-form').addEventListener('submit', async function (
   });
   
   document.getElementById('bookModal').addEventListener('show.bs.modal', () => {
-    document.getElementById('bookModalLabel').innerText = "Kitap Ekle";
+    document.getElementById('bookModalLabel').innerText = "Add Book";
     document.getElementById('book-form').reset();
     delete document.getElementById('book-form').dataset.id;
 });
