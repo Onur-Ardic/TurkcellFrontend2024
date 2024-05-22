@@ -13,9 +13,7 @@ async function getBooks() {
   UI.displayBooks(books);
 }
 async function searchBooks() {
-  const searchInput = document
-    .getElementById("searchInput")
-    .value.toLowerCase();
+  const searchInput = document.getElementById("searchInput").value.toLowerCase();
   const response = await fetch("http://localhost:3000/books");
   const books = await response.json();
   const filteredBooks = books.filter(
@@ -63,9 +61,7 @@ async function handleBookActions(e) {
     );
     UI.populateForm(bookData);
     document.getElementById("bookForm").removeEventListener("submit", addBook);
-    document
-      .getElementById("bookForm")
-      .addEventListener("submit", (event) => updateBook(event, id));
+    document.getElementById("bookForm").addEventListener("submit", (event) => updateBook(event, id));
   }
 }
 
@@ -91,9 +87,7 @@ async function updateBook(e, id) {
   UI.updateBookInList(updatedBook);
   UI.clearFields();
   document.querySelector(".btn-close").click();
-  document
-    .getElementById("bookForm")
-    .removeEventListener("submit", (event) => updateBook(event, id));
+  document.getElementById("bookForm").removeEventListener("submit", (event) => updateBook(event, id));
   document.getElementById("bookForm").addEventListener("submit", addBook);
 }
 
