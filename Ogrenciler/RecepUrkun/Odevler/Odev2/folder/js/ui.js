@@ -205,19 +205,31 @@ class UI {
     };
 
     static getRandomSentence = async () => {
-        const response = await apiHelper.getSentenceFromDb()
-        const randomId = Math.floor(Math.random() * response.length)
-        const sentence = response[randomId]
-        headerSentence.innerHTML += `
-        <blockquote class="blockquote">
-                <p class="fs-6">
-                  ${sentence.content}
-                </p>
-              </blockquote>
-              <figcaption class="blockquote-footer">
-                ${sentence.bookAuthor}
-                <cite title="Book Title">${sentence.bookName}</cite>
-              </figcaption>`
+        const response = await apiHelper.getSentenceFromDb();
+        const randomId = Math.floor(Math.random() * response.length);
+        const sentence = response[randomId];
+    
+        const blockquote = document.createElement('blockquote');
+        blockquote.classList.add('blockquote');
+    
+        const p = document.createElement('p');
+        p.classList.add('fs-6');
+        p.textContent = sentence.content;
+    
+        blockquote.appendChild(p);
+    
+        const figcaption = document.createElement('figcaption');
+        figcaption.classList.add('blockquote-footer');
+        figcaption.textContent = sentence.bookAuthor;
+    
+        const cite = document.createElement('cite');
+        cite.title = "Book Title";
+        cite.textContent = sentence.bookName;
+    
+        figcaption.appendChild(cite);
+    
+        headerSentence.appendChild(blockquote);
+        headerSentence.appendChild(figcaption);
     }
 
     static clearInputs() {
