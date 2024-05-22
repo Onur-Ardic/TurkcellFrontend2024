@@ -137,7 +137,7 @@ class UI {
       ""
     );
     updateButton.setAttribute("data-bs-toggle", "modal");
-    updateButton.setAttribute("data-bs-target", "#staticBackdrop");
+    updateButton.setAttribute("data-bs-target", "#bookModel");
     updateButton.addEventListener("click", () => {
       this.passValuesToModal(id);
     });
