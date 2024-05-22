@@ -2560,13 +2560,13 @@ textarea.form-control-lg {
   filter: brightness(90%);
 }
 .form-check-input:focus {
-  border-color: #86b7fe;
+  border-color: #eae2b7;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-check-input:checked {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #eae2b7;
+  border-color: #eae2b7;
 }
 .form-check-input:checked[type=checkbox] {
   --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
@@ -13444,6 +13444,11 @@ p:hover {
   color: #f77f00;
 }
 
+.btn:hover {
+  color: #ff6600;
+  border-color: #ff6600;
+}
+
 * {
   font-family: "Lato", sans-serif;
   font-weight: 100;
@@ -13457,6 +13462,11 @@ a {
 
 p:hover {
   color: #f77f00;
+}
+
+.btn:hover {
+  color: #ff6600;
+  border-color: #ff6600;
 }
 
 .header .brand-heritage {
