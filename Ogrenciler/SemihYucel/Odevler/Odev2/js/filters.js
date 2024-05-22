@@ -12,7 +12,7 @@ async function searchBooks() {
     const data = await fetchBooks();
     let sortedBooks;
     if (sortValue === "a-z") {
-      sortedBooks = data.sort((a, b) => a.name.localeCompare(b.name));// burda neden a b sort ne iş yarıyor
+      sortedBooks = data.sort((a, b) => a.name.localeCompare(b.name));
     } else if (sortValue === "z-a") {
       sortedBooks = data.sort((a, b) => b.name.localeCompare(a.name));
     } else if (sortValue === "date") {
@@ -34,13 +34,13 @@ async function searchBooks() {
     displayBooks(filteredBooks);
   }
     function populateFilters(books) {
-    const categories = [...new Set(books.map(book => book.category))]; // burdaki 3 nokta ne set ne
+    const categories = [...new Set(books.map(book => book.category))];
     const authors = [...new Set(books.map(book => book.author))];
   
     populateFilterOptions("filterCategory", categories, "Kategoriye Göre Filtrele");
     populateFilterOptions("filterAuthor", authors, "Yazara Göre Filtrele");
   }
-    function populateFilterOptions(elementId, options, defaultOptionText) { // bura ne yapıyor
+    function populateFilterOptions(elementId, options, defaultOptionText) {
     const filterElement = document.getElementById(elementId);
     filterElement.innerHTML = "";
     const defaultOption = document.createElement("option");
