@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,8 +22,7 @@
     <div class="background">
       <div class="container">
         <div id="saveBook">
-          <button type="submit" class="btn btn-danger" data-bs-toggle="modal" data-bs-action="create" data-bs-target="#addBookModal" data-whatever="@getbootstrap"
-           >Add a Book</button>
+          
         </div>
         <!-- modal -->
         <div class="modal" id="addBookModal" tabindex="-1" role="dialog" aria-labelledby="addBookModal"
@@ -41,17 +39,21 @@
               <form>
                 <div class="form-group">
                   <label for="name" class="col-form-label">bookName: </label>
-                  <input type="text" class="form-control" id="book-name">
+                  <input type="text" class="form-control" id="bookName">
                 </div>
   
                 <div class="form-group">
                   <label for="author" class="col-form-label">Author: </label>
                   <input class="form-control" id="author"></input>
                 </div>
+                <div class="form-group">
+                  <label for="imgUrl" class="col-form-label">Img Url </label>
+                  <input class="form-control" id="imgUrl"></input>
+                </div>
   
                 <div class="form-group">
                   <label for="category" class="col-form-label">Category Name: </label>
-                  <select class="form-control form-control-lg">
+                  <select id="category" class="form-control form-control-lg">
                     <option value="1">Choose a Category</option>
                     <option value="Autobiography">Autobiography</option>
                     <option value="History">History</option>
@@ -71,30 +73,33 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" id="saveBookBtn" class="btn btn-primary">Save Book</button>
+              <button type="button" id="saveBookBtn" class="btn btn-primary" data-bs-dismiss="modal">Save Book</button>
             </div>
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-light bg-light">
-        <form class="form-inline">
+      <nav class="navbar navbar-light border d-flex rounded-1">
+        <button type="submit" class="btn btn-danger" data-bs-toggle="modal" data-bs-action="create" data-bs-target="#addBookModal" data-whatever="@getbootstrap"
+           >Add a Book</button>
+        <form class="form-inline d-flex">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-outline-success my-2 my-sm-0"id="searchTitle" type="submit">Search</button>
         </form>
-      </nav>
-        <select id="ranking" style="width: 300px;">
+        <select class="btn btn-outline-success dropdown-toggle" id="ranking" style="width: 300px;" data-bs-toggle="dropdown" aria-expanded="false">
+          Action>
           <option value="1">Recommended Ranking</option>
           <option value="2"> Sort from A to Z</option>
           <option value="3">Sort from Z to A</option>
           <option value="4">Sort by Date</option>
         </select>
+      </nav>
+       
         <div id="books">
         </div>
       </div>
     </div>
   </section>
   <section>
-   
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -103,10 +108,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/request.js"></script>
   <script type="text/javascript" src="js/books.js"></script>
-  <script type="text/javascript" src="js/request.js"></script>
- 
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
-
 </html>

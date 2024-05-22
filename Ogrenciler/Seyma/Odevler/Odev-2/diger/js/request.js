@@ -16,12 +16,17 @@ class Request{
         method: "POST",
         body: JSON.stringify(data),
         headers: {
-          "Content-type": "application/json;",
+          "Content-type": "application/json; charset=UTF-8",
         },
       })
-        .then((response) => response.json())
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+          }
+          return response.json();
+        })
         .then((data) => resolve(data))
-        .catch((err) => reject(err, "Hata Alındı."));
+        .catch((err) => reject('Fetch error: ' + err.message));
     });
   }
 

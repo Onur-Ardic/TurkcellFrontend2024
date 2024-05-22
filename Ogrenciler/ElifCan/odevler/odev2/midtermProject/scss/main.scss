@@ -1,0 +1,65 @@
+.card {
+  //   width: 280px;
+  border: none;
+  background: #ffffff;
+  border: 1px solid #e0e3eb;
+  color: #661e56;
+  img {
+    /* height: 220px; */
+    width: 100%;
+  }
+}
+
+.btn-wrapper {
+  left: -100px; /* Başlangıçta butonu görünmez ve solda yapar */
+  top: 10px; /* Butonun yukarıdan uzaklığı */
+  transition: left 0.5s ease, opacity 0.5s ease; /* Animasyon */
+  opacity: 0;
+}
+.card:hover .btn-wrapper {
+  left: 10px; /* Hover olduğunda butonu görünen yerine kaydırır */
+  opacity: 1;
+}
+
+.leftPart {
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+}
+
+.bookLogo {
+  width: 80px;
+  height: 40px;
+}
+* {
+  font-family: Roboto;
+}
+
+@media (max-width: 576px) {
+  .bookLogo {
+    width: 60px;
+    height: 30px;
+  }
+}
+
+.bg-nav {
+  background-color: #5b0bfc;
+}
+.bg-left {
+  background-color: #fcfcfd;
+}
+.bg-right {
+  background-color: #fcfcfd;
+}
+.bg-btn {
+  background-color: #5b0bfc;
+  &:hover {
+    background-color: #2e0481;
+  }
+}
+
+#footer {
+  background-image: url("https://kultur.istanbul/gorsel/2022/03/kapak.png");
+  opacity: 0.9;
+  padding: 20px;
+}
