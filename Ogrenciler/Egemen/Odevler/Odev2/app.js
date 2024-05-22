@@ -12,26 +12,22 @@ async function getBooks() {
   const books = await response.json();
   UI.displayBooks(books);
 }
-
 async function searchBooks() {
   const searchInput = document
     .getElementById("searchInput")
     .value.toLowerCase();
   const response = await fetch("http://localhost:3000/books");
   const books = await response.json();
-
   const filteredBooks = books.filter(
     (book) =>
       book.title.toLowerCase().includes(searchInput) ||
       book.author.toLowerCase().includes(searchInput)
   );
-
   UI.displayBooks(filteredBooks);
 }
 
 async function addBook(e) {
   e.preventDefault();
-
   const title = document.getElementById("title").value;
   const author = document.getElementById("author").value;
   const category = document.getElementById("category").value;
@@ -53,7 +49,6 @@ async function addBook(e) {
   UI.clearFields();
   document.querySelector(".btn-close").click();
 }
-
 async function handleBookActions(e) {
   if (e.target.classList.contains("delete")) {
     const id = e.target.getAttribute("data-id");
@@ -127,7 +122,6 @@ async function filterOrSortBooks(e) {
 
   UI.displayBooks(books);
 }
-
 class Book {
   constructor(title, author, category, year, cover) {
     this.title = title;

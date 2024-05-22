@@ -4,7 +4,6 @@ class UI {
     booksDiv.innerText = "";
     books.forEach((book) => UI.addBookToList(book));
   }
-
   static addBookToList(book) {
     const booksContainer = document.getElementById("books");
     const col = document.createElement("div");
@@ -52,13 +51,11 @@ class UI {
     col.appendChild(bookCard);
     booksContainer.appendChild(col);
   }
-
   static deleteBook(target) {
     if (target.classList.contains("delete")) {
       target.parentElement.parentElement.parentElement.remove();
     }
   }
-
   static updateBookInList(book) {
     const booksContainer = document.getElementById("books");
     booksContainer
@@ -66,7 +63,6 @@ class UI {
       .parentElement.parentElement.parentElement.remove();
     UI.addBookToList(book);
   }
-
   static populateForm(book) {
     document.getElementById("title").value = book.title;
     document.getElementById("author").value = book.author;
@@ -76,7 +72,6 @@ class UI {
     const modal = new bootstrap.Modal(document.getElementById("bookModal"));
     modal.show();
   }
-
   static clearFields() {
     document.getElementById("title").value = "";
     document.getElementById("author").value = "";
