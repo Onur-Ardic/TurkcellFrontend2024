@@ -9,7 +9,7 @@ class UI {
 
     books.forEach(book => {
       const bookCard = document.createElement('div');
-      bookCard.className = 'col-md-3 mb-4'; // 3 sütun düzeni için col-md-3
+      bookCard.className = 'col-md-3 mb-4';
       bookCard.innerHTML = `
         <div class="card h-100">
           <img src="${book.cover}" class="card-img-top" alt="${book.title}">
@@ -18,8 +18,8 @@ class UI {
             <p class="card-text">Yazar: ${book.author}</p>
             <p class="card-text">Kategori: ${book.category}</p>
             <p class="card-text">Yazıldığı Tarih: ${book.year}</p>
-            <button class="btn btn-primary btn-edit" data-id="${book.id}" data-toggle="modal" data-target="#bookModal">Düzenle</button>
             <button class="btn btn-danger btn-delete" data-id="${book.id}">Sil</button>
+            <button class="btn btn-primary btn-edit" data-id="${book.id}" data-toggle="modal" data-target="#bookModal">Düzenle</button>
           </div>
         </div>
       `;
@@ -41,7 +41,7 @@ class UI {
   }
 
   clearForm() {
-    document.getElementById('book-id').value = ''; // ID alanını sıfırla
+    document.getElementById('book-id').value = '';
     document.getElementById('book-form').reset();
   }
 
@@ -117,8 +117,8 @@ class UI {
 
 // Modal açıldığında formun sıfırlanması için event listener ekle
 $('#bookModal').on('show.bs.modal', function (e) {
-  const button = $(e.relatedTarget); // Modal'ı açan butonu belirle
-  const isEditMode = button.hasClass('btn-edit'); // Butonun düzenleme butonu olup olmadığını kontrol et
+  const button = $(e.relatedTarget);
+  const isEditMode = button.hasClass('btn-edit');
   
   if (!isEditMode) {
     const ui = new UI();
