@@ -1,0 +1,12 @@
+@import "global";
+
+body {
+  background-color: #feece2;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.nav-item {
+  @include fonts("Poetsen One", 400, normal);
+}

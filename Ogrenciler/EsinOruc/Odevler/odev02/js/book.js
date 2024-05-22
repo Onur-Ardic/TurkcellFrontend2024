@@ -55,6 +55,6 @@ class Book {
   static deleteBook(bookId) {
     Request.delete(`http://localhost:3000/books/${bookId}`)
       .then((message) => {})
-      .catch((err) => console.error("Silme işlemi başarısız:", err));
+      .catch((err) => console.error("Book has been deleted:", err));
   }
 }

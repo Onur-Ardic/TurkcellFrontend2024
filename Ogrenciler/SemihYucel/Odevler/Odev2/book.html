@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kitap Bahçesi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/global.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="js/request.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/filters.js" defer></script>
+</head>
+<style>
+  .card-img-top {
+  height: 500px;
+  object-fit: cover;
+}
+.form-select {
+  border-radius: 0.25rem;
+  padding: 10px;
+  font-size: 1rem;
+}
+.btn-primary,
+.btn-secondary {
+  font-size: 1rem;
+  padding: 10px;
+}
+.container {
+  margin-top: 2rem;
+}
+#bookList {
+  margin-top: 2rem;
+}
+</style>
+<body>
+  <div class="main clearfix position-relative">
+    <div class="main_1 clearfix position-absolute top-0 w-100">
+      <section id="header">
+        <nav class="navbar navbar-expand-md navbar-light" id="navbar_sticky">
+          <div class="container-xl">
+            <a class="navbar-brand fs-2 p-0 fw-bold text-white m-0 me-5" href="index.html"><i class="fa fa-book me-1 col_red"></i> Kitap Bahçesi </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Ana Sayfa</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Kitaplık
+                  </a>
+                  <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="book.html">Tüm Kitaplar</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">İletişim</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav mb-0 ms-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle dropdown_search" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <ul class="dropdown-menu drop_1 drop_o p-3" aria-labelledby="navbarDropdown" data-bs-popper="none">
+                    <li>
+                      <div class="input-group p-2">
+                        <input type="text" id="searchInput" class="form-control border-0" placeholder="Kitap veya Yazar Ara">
+                        <span class="input-group-btn">
+                          <button class="btn btn-primary bg-transparent border-0 fs-5" type="button" id="searchButton">
+                            <i class="fa fa-search col_red"></i>
+                          </button>
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </div>
+    <div class="main_blog clearfix">
+      <section id="center" class="center_blog">
+        <div class="container-xl">
+          <div class="row center_o1">
+            <div class="col-md-12">
+              <h2 class="text-white">Kitaplık</h2>
+              <h6 class="mb-0 mt-3 fw-normal col_red"><a class="text-light" href="#">Ana Sayfa</a> <span class="mx-2 text-light">/</span> Kitaplık</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3">
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#bookModal">Kitap Ekle</button>
+      </div>
+      <div class="col-md-9 d-flex justify-content-end flex-wrap">
+        <div class="col-md-5 mb-3 me-2">
+          <select id="filterCategory" class="form-select">
+            <option value="">Kategoriye Göre Filtrele</option>
+          </select>
+        </div>
+        <div class="col-md-5 mb-3">
+          <select id="filterAuthor" class="form-select">
+            <option value="">Yazara Göre Filtrele</option>
+          </select>
+        </div>
+        <div class="col-md-5 me-2">
+          <select id="sortBooks" class="form-select">
+            <option value="a-z">A-Z Sırala</option>
+            <option value="z-a">Z-A Sırala</option>
+            <option value="date">Tarihe Göre Sırala</option>
+          </select>
+        </div>
+        <div class="col-md-5">
+          <button id="resetFilters" class="btn btn-secondary w-100">Filtreleri Sıfırla</button>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5" id="bookList">
+      <!-- Kitap listesi burada görüntülenecek -->
+    </div>
+  </div>
+  
+  
+  <section id="footer" class="p_3 bg_dark">
+    <div class="container-xl">
+    <div class="row footer_1 text-center">
+    <div class="col-md-12">
+     <h1 class="text-white">İlk 30 gününüz için başlayın.	</h1>
+     <p class="text-light">Okumaya hazır mısınız? Üyeliğinizi oluşturmak veya yeniden başlatmak için e-posta adresinizi girin.	 </p>
+     <div class="input-group w-50 m-auto">
+          <input type="text" class="form-control rounded-0 fs-6" placeholder=" e-mail address">
+          <span class="input-group-btn">
+            <button class="btn btn-primary bg_red rounded-0 bg_red fw-bold" type="button">
+              BAŞLA </button>
+          </span>
+      </div>
+    </div>
+    </div>
+    <div class="row footer_2 mt-4 pt-4">
+    <div class="col-md-4">
+     <div class="footer_2i">
+      <h5 class="text-white">Sorularınız için? Arayın 0850-380-6444</h5>
+      <select name="categories" class="form-select mt-4 bg-transparent w-50 rounded-0 fw-bold" required="">
+        <option value="">Türkçe</option>
+        <option>Fransızca</option>
+        <option>Almanca</option>
+        <option>İngilizce</option>
+        <option>İspanyolca</option>
+        </select>
+     </div>
+    </div>
+    <div class="col-md-2">
+     <div class="footer_2i">
+        <h5 class="text-uppercase col_red mb-3">Ana Sayfa</h5>
+      <ul class="mb-0 row">
+       <li class="col-md-12 col-6 p-0"><a class="text-light" href="#">Ana Sayfa</a></li>
+       <li class="mt-2 col-md-12 col-6 p-0"><a class="text-light" href="#">İletişim</a></li>
+       <li class="mt-2 col-md-12 col-6 p-0"><a class="text-light" href="#">Yasal Uyarılar</a></li>
+       <li class="mt-2 col-md-12 col-6 p-0"><a class="text-light" href="#">Gizlilik Politikası</a></li>
+      </ul>
+     </div>
+    </div>
+    <div class="col-md-2">
+     <div class="footer_2i">
+        <h5 class="text-uppercase col_red mb-3">DESTEK</h5>
+      <ul class="mb-0 row">
+      <li class="col-md-12 col-6 p-0"><a class="text-light" href="#">Yardım</a></li>
+       <li class="mt-2 col-md-12 col-6 p-0"><a class="text-light" href="#">FAQ</a></li>
+       <li class="mt-2 col-md-12 col-6 p-0"><a class="text-light" href="#">Gizlilik Güvenlik</a></li>
+       <li class="mt-2 col-md-12 col-6 p-0"><a class="text-light" href="#">Destek</a></li>
+      </ul>
+     </div>
+    </div>
+    <div class="col-md-4">
+     <div class="footer_2i">
+      <h5 class="text-uppercase col_red mb-3">Bülten</h5>
+      <input class="form-control mt-3 bg-white rounded-0" placeholder="Email" type="text">
+      <h6 class="mb-0 text-uppercase mt-4"><a class="button" href="#"><i class="fa fa-location-arrow me-1"></i>ŞİMDİ GÖNDER</a></h6>
+     </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  
+  <section id="footer_b">
+    <div class="container-xl">
+    <div class="row footer_b1 text-center">
+    <div class="col-md-12">
+      <p class="mb-0 text-light">© 2024 All Rights Reserved | Design by <a class="col_red" href="https://semihycl.com/tr">Semih Yücel</a></p>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Kitap Modal -->
+  <div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="bookModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookModalLabel">Kitap Ekle</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="bookForm">
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="bookName" class="form-label">Kitap Adı</label>
+              <input type="text" class="form-control" id="bookName" required>
+            </div>
+            <div class="mb-3">
+              <label for="bookAuthor" class="form-label">Yazar</label>
+              <input type="text" class="form-control" id="bookAuthor" required>
+            </div>
+            <div class="mb-3">
+              <label for="bookCategory" class="form-label">Kategori</label>
+              <input type="text" class="form-control" id="bookCategory" required>
+            </div>
+            <div class="mb-3">
+              <label for="bookDate" class="form-label">Tarih</label>
+              <input type="date" class="form-control" id="bookDate" required>
+            </div>
+            <div class="mb-3">
+              <label for="bookCover" class="form-label">Kapak Resmi URL'si</label>
+              <input type="url" class="form-control" id="bookCover" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            <button type="submit" class="btn btn-primary" id="saveButton">Kaydet</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

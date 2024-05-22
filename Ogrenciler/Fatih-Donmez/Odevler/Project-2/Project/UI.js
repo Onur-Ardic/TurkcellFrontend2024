@@ -38,6 +38,8 @@ class UI {
       checkbox.type = 'checkbox';
       checkbox.value = category;
       checkbox.id = `category-${category}`;
+      checkbox.addEventListener('change', () => this.applyFiltersAndSort());
+
       categoryCheckboxes.appendChild(checkbox);
 
       const label = document.createElement('label');
@@ -55,6 +57,8 @@ class UI {
       checkbox.type = 'checkbox';
       checkbox.value = author;
       checkbox.id = `author-${author}`;
+      checkbox.addEventListener('change', () => this.applyFiltersAndSort());
+
       authorCheckboxes.appendChild(checkbox);
 
       const label = document.createElement('label');
@@ -186,6 +190,9 @@ class UI {
       .addEventListener('change', () =>
         applyFiltersAndSort(this.library, this.displayBooks.bind(this)),
       );
+  }
+  applyFiltersAndSort() {
+    applyFiltersAndSort(this.library, this.displayBooks.bind(this));
   }
 }
 

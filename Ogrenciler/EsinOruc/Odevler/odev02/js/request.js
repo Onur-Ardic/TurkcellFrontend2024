@@ -8,7 +8,7 @@ class Request {
         });
       })
       .catch((err) => {
-        console.error(err, "Veri alınamadı.");
+        console.error(err, "Books not found");
         throw err;
       });
   }
@@ -38,7 +38,7 @@ class Request {
       })
         .then((response) => response.json())
         .then((data) => resolve(data))
-        .catch((err) => reject(err, "Hata Alındı."));
+        .catch((err) => reject(err, "Error Received"));
     });
   }
   static delete(url) {
@@ -47,8 +47,8 @@ class Request {
         method: "DELETE",
       })
         .then((response) => response.json())
-        .then(() => resolve("Veri Silindi"))
-        .catch((err) => reject(err, "Hata Alındı."));
+        .then(() => resolve("book has been deleted"))
+        .catch((err) => reject(err, "Error Received"));
     });
   }
 

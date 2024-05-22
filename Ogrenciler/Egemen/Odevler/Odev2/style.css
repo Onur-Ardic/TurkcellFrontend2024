@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body, .modal-body, .modal-header{
+    background-color: #b8d3dc;
+}
+.btn-edit{
+    background-color: #a6c0c7;
+}
+.btn-delete{
+    background-color: rgba(211, 39, 20, 0.745);
+    color: white;
+}
+.btn-delete:hover, .btn-edit:hover{
+    border: 1px solid black;
+    color: black;
+}

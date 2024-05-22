@@ -50,8 +50,9 @@
           <div class="row">
             <div class="col-lg-6 mt-200">
               <h1 class="fw-bold">
-                <span class="fw-bold"
-                  >We hold the conviction that language can soothe the soul
+                <span class="fw-bold">
+                  <span class="fw-bold text-warning"> We hold </span>We hold the
+                  conviction that language can soothe the soul
                 </span>
                 <span class="fw-bold text-warning">.</span>
               </h1>
@@ -124,14 +125,16 @@
       <div class="container my-4">
         <div class="row">
           <div class="col-lg-3">
-            <div class="accordion" id="filterAccordion">
+            <div class="accordion shadow-sm" id="filterAccordion">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingAuthors">
                   <button
-                    class="accordion-button collapsed"
+                    class="accordion-button collapsed fw-normal"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseAuthors"
+                    aria-expanded="false"
+                    aria-controls="collapseAuthors"
                   >
                     Writers
                   </button>
@@ -140,6 +143,7 @@
                   id="collapseAuthors"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingAuthors"
+                  data-bs-parent="#filterAccordion"
                 >
                   <div class="accordion-body" id="authorsContainer">
                     <!-- Yazar checkbox'ları buraya eklenecek -->
@@ -150,10 +154,12 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingCategories">
                   <button
-                    class="accordion-button collapsed"
+                    class="accordion-button collapsed fw-normal"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseCategories"
+                    aria-expanded="false"
+                    aria-controls="collapseCategories"
                   >
                     Category
                   </button>
@@ -162,6 +168,7 @@
                   id="collapseCategories"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingCategories"
+                  data-bs-parent="#filterAccordion"
                 >
                   <div class="accordion-body" id="categoriesContainer">
                     <!-- Kategori checkbox'ları buraya eklenecek -->
@@ -175,7 +182,7 @@
               <div class="col-lg-2 col-md-12 my-2">
                 <button
                   type="button"
-                  class="btn btn-white border"
+                  class="btn btn-white border shadow-sm"
                   data-bs-toggle="modal"
                   data-bs-target="#addCardModal"
                 >
@@ -185,7 +192,7 @@
               <div class="col-lg-8 col-md-12 my-2">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control shadow-sm"
                   id="searchInput"
                   placeholder="Books and Writer search.."
                   oninput="Search.filterCards()"
@@ -194,7 +201,7 @@
 
               <div class="col-lg-2 col-md-12 my-2">
                 <select
-                  class="form-select"
+                  class="form-select shadow-sm"
                   name="filter"
                   id="filter"
                   onchange="Filter.sortCards()"

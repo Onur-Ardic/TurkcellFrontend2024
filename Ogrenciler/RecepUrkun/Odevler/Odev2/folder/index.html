@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body data-bs-theme="light">
+    <div id="errorMessage" class="alert text-center d-none"></div>
     <nav>
       <div class="container-fluid">
         <div class="row text-center p-3 align-items-center">
@@ -38,7 +39,9 @@
             </h4>
           </div>
           <div class="col-sm-2 col-12">
-            <button id="changeTheme" class="btn"><i class="fa-solid fa-book fa-2x"></i></button></i>
+            <button id="changeTheme" class="btn">
+              <i class="fa-solid fa-book fa-2x"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -55,7 +58,7 @@
     <div class="mainMenu">
       <div class="container">
         <div class="row">
-          <div class="col-12 ">
+          <div class="col-12">
             <div class="row d-flex align-items-end py-3 border-top">
               <div
                 class="col-12 col-lg-6 d-flex justify-content-evenly flex-md-row flex-column text-center gap-2 gap-lg-0 order-2 order-md-1"
@@ -175,7 +178,7 @@
                 <div id="bookAlignment">
                   <div class="dropdown">
                     <button
-                      class="btn btnChange btn-outline-dark dropdown-toggle" 
+                      class="btn btnChange btn-outline-dark dropdown-toggle"
                       type="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
@@ -221,8 +224,7 @@
                     <ul
                       class="dropdown-menu dropdown-menu-dark"
                       id="categoryDropdown"
-                    >
-                    </ul>
+                    ></ul>
                   </div>
                 </div>
 

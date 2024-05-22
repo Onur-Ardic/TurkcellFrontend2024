@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Library Project</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  </head>
+  <body>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="bookModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bookModal">Kitap Ekle</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-4">
+              <div class="mb-3 row">
+                <label for="bookTitle" class="col-md-2 col-form-label">Kitap Adı :</label>
+                <div class="col-md-10">
+                  <input class="form-control" type="text" id="bookTitle">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="author" class="col-md-2 col-form-label">Yazar Adı :</label>
+                <div class="col-md-10">
+                  <input class="form-control" type="text" id="author">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="date_time" class="col-md-2 col-form-label">Yayınlandığı Tarih :</label>
+                <div class="col-md-10">
+                  <input class="form-control" type="date" id="date_time">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="publisher" class="col-md-2 col-form-label">Yayınevi :</label>
+                <div class="col-md-10">
+                  <input class="form-control" type="text" id="publisher">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="categorySelect" class="col-md-2 col-form-label">Kategori :</label>
+                <div class="col-md-10">
+                  <select class="form-select" id="categorySelect">
+                    <option value="" selected="">Kategori Seçiniz</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="imgUrl" class="col-md-2 col-form-label">Kitap Resmi :</label>
+                <div class="col-md-10">
+                  <input class="form-control" type="url" id="imgUrl">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger" id="saveBookButton">Kaydet</button>
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Kapat</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Offcanvas navbar large" style="background: rgb(89 63 54) !important;">
+      <div class="container">
+        <a class="navbar-brand" href="#">Kitapçım</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Kitapçım</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <button class="btn btn-outline-light d-inline-flex align-items-center" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Kitap Ekle
+                </button>
+              </li>
+            </ul>
+            <form class="d-flex mt-3 mt-lg-0" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class=" mb-4 bg-body-white rounded-3">
+        <div class="py-5">
+          <img class="col-md-12 fs-4 img-fluid" src="./assets/img/book.jpeg">
+          </img>
+        </div>
+      </div>
+
+      <!-- Filtreleme için input alanı -->
+      <div class="container">
+        <div class="row g-2 pb-4 mb-4 bg-opacity-10 border-bottom border-dark">
+          <h1>Filtreleme</h1>
+          <div class="col-md-4">
+            <div class="form-floating">
+              <select class="form-select" id="floatingSelectGrid2">
+              </select>
+              <label for="floatingSelectGrid2">Kategori</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-floating">
+              <select class="form-select" id="floatingSelectGrid">
+              </select>
+              <label for="floatingSelectGrid">Yazar</label>
+            </div>
+          </div>
+          <div class="col-md-2 d-flex align-items-center mr-4">
+            <button type="button" class="btn btn-outline-danger  btn-lg" id="resetButton">Filtrelemeyi Sıfırla</button>
+          </div>
+          <div class="col-md-2 btn-group">
+            <div class="form-floating">
+              <select class="form-select" id="letterSelect">
+                <option selected>Seçmek için Tıklayınız</option>
+                <option value="1">A-Z</option>
+                <option value="2">Z-A</option>
+              </select>
+              <label for="letterSelect">Harf</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row mb-2" id="bookList">
+        </div>
+      </div>
+    </main>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="app.js"></script>
+    
+  </body>
+</html>
+  

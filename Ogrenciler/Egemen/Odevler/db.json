@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Sefiller",
+      "author": "Victor Hugo",
+      "category": "Roman",
+      "year": "1862",
+      "cover": "https://m.media-amazon.com/images/I/61aUx7bqJbL._SY466_.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Simyacı",
+      "author": "Paulo Coelho",
+      "category": "Macera",
+      "year": "1988",
+      "cover": "https://img.kitapyurdu.com/v1/getImage/fn:11819904/wh:true/wi:220"
+    },
+    {
+      "id": "3",
+      "title": "Nutuk",
+      "author": "M. Kemal Atatürk",
+      "category": "Otobiyografi",
+      "year": "1927",
+      "cover": "https://media.babil.com/kitap/0258060_nutuk_27989.jpeg"
+    },
+    {
+      "id": "4",
+      "title": "Melekler ve Şeytanlar",
+      "author": "Dan Brown",
+      "category": "Gerilim",
+      "year": "2000",
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/f/f4/Melekler_ve_%C5%9Eeytanlar_kapak_resmi.jpeg"
+    },
+    {
+      "title": "Sadece Şeyma",
+      "author": "Şeyma Subaşı",
+      "category": "Otobiyografi",
+      "year": "2019",
+      "cover": "https://img.kitapyurdu.com/v1/getImage/fn:9025014/wh:true/wi:800",
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "title": "Yabancı",
+      "author": "Albert Camus",
+      "category": "Roman",
+      "year": "1942",
+      "cover": "https://img.kitapyurdu.com/v1/getImage/fn:11262270/wh:true/miw:200/mih:200"
+    },
+    {
+      "id": "7",
+      "title": "Sisifos Söyleni",
+      "author": "Albert Camus",
+      "category": "Felsefe",
+      "year": "1942",
+      "cover": "https://www.canyayinlari.com/productimages/120483/original/9789755107264_766.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Sapiens",
+      "author": "Y.N Harari",
+      "category": "Kurgusal Olmayan",
+      "year": "2011",
+      "cover": "https://i.dr.com.tr/cache/600x600-0/originals/0000000633872-1.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Homo Deus",
+      "author": "Y.N Harari",
+      "category": "Kurgusal Olmayan",
+      "year": "2015",
+      "cover": "https://img.kitapyurdu.com/v1/getImage/fn:2671335/wh:true/miw:200/mih:200"
+    },
+    {
+      "id": "10",
+      "title": "Da Vinci Şifresi",
+      "author": "Dan Brown",
+      "category": "Roman",
+      "year": "2003",
+      "cover": "https://upload.wikimedia.org/wikipedia/tr/thumb/0/0b/Da_Vinci_%C5%9Eifresi.jpg/220px-Da_Vinci_%C5%9Eifresi.jpg"
+    }
+  ]
+}

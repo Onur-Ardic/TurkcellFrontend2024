@@ -14,6 +14,11 @@ p:hover {
   color: #f77f00;
 }
 
+.btn:hover {
+  color: #ff6600;
+  border-color: #ff6600;
+}
+
 .header .brand-heritage {
   display: inline-block;
 }
