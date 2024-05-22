@@ -1,84 +1,92 @@
 {
   "books": [
     {
-      "id": 1,
-      "title": "Kitap 1",
-      "author": "Yazar 1",
-      "category": "Kategori 1",
-      "date": "2020-01-01",
-      "cover": "https://example.com/cover1.jpg"
+      "title": "Kurt Olmak",
+      "author": "KERSTIN EKMAN",
+      "category": "Aksiyon",
+      "date": "2024-05-07",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/kurt-olmak-07d7-4.png",
+      "id": "1"
     },
     {
-      "id": 2,
-      "title": "Kitap 2",
-      "author": "Yazar 2",
-      "category": "Kategori 2",
-      "date": "2020-01-02",
-      "cover": "https://example.com/cover2.jpg"
+      "title": "Naneyi Yedik Lokantası",
+      "author": "Mert Arık",
+      "category": "Hikaye",
+      "date": "2024-06-05",
+      "cover": "https://img.kitapyurdu.com/v1/getImage/fn:11890861/wh:true/wi:220",
+      "id": "2"
     },
     {
-      "id": 3,
-      "title": "Kitap 3",
-      "author": "Yazar 3",
-      "category": "Kategori 3",
-      "date": "2020-01-03",
-      "cover": "https://example.com/cover3.jpg"
+      "title": "Küçük Prens",
+      "author": "Antoine De Saint Exupery",
+      "category": "Hikaye",
+      "date": "2022-03-16",
+      "cover": "https://img.kitapyurdu.com/v1/getImage/fn:11468334/wh:true/wi:220",
+      "id": "3"
     },
     {
-      "id": 4,
-      "title": "Kitap 4",
-      "author": "Yazar 4",
-      "category": "Kategori 4",
+      "id": "4",
+      "title": "Falcı",
+      "author": "Stephen King",
+      "category": "Roman",
       "date": "2020-01-04",
-      "cover": "https://example.com/cover4.jpg"
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/falci-yeni-kapak-d6f-40.jpg"
     },
     {
-      "id": 5,
-      "title": "Kitap 5",
-      "author": "Yazar 5",
-      "category": "Kategori 5",
+      "id": "5",
+      "title": "Sarsılmak",
+      "author": "Zafer Köse",
+      "category": "Roman",
       "date": "2020-01-05",
-      "cover": "https://example.com/cover5.jpg"
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/sarsilmak-28-4a6.jpg"
     },
     {
-      "id": 6,
-      "title": "Kitap 6",
-      "author": "Yazar 6",
-      "category": "Kategori 6",
+      "id": "6",
+      "title": "Muhbir",
+      "author": "Serhan Kurşun",
+      "category": "Roman",
       "date": "2020-01-06",
-      "cover": "https://example.com/cover6.jpg"
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/muhbir-93d2-8.png"
     },
     {
-      "id": 7,
-      "title": "Kitap 7",
-      "author": "Yazar 7",
-      "category": "Kategori 7",
-      "date": "2020-01-07",
-      "cover": "https://example.com/cover7.jpg"
+      "id": "7",
+      "title": "Uzun Zaman Önce",
+      "author": "Zekeriya Çetin",
+      "category": "Roman",
+      "date": "2023-11-02",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/uzun-zaman-once-3-86e3.png"
     },
     {
-      "id": 8,
-      "title": "Kitap 8",
-      "author": "Yazar 8",
-      "category": "Kategori 8",
-      "date": "2020-01-08",
-      "cover": "https://example.com/cover8.jpg"
+      "id": "8",
+      "title": "Metaverse",
+      "author": "Sangyun Kim",
+      "category": "Kişisel Gelişim",
+      "date": "2023-01-01",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/metaverse-4fd5-4.png"
     },
     {
-      "id": 9,
-      "title": "Kitap 9",
-      "author": "Yazar 9",
-      "category": "Kategori 9",
-      "date": "2020-01-09",
-      "cover": "https://example.com/cover9.jpg"
+      "id": "9",
+      "title": "Cezmi",
+      "author": "Namık Kemal",
+      "category": "Roman",
+      "date": "2016-09-02",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/cezmi-fa21f8-c0b.jpg"
     },
     {
-      "id": 10,
-      "title": "Kitap 10",
-      "author": "Yazar 10",
-      "category": "Kategori 10",
-      "date": "2020-01-10",
-      "cover": "https://example.com/cover10.jpg"
+      "id": "10",
+      "title": "Genel Psikoloji",
+      "author": "Prof. Dr. Feriha Balkış Baymur",
+      "category": "Psikoloji",
+      "date": "1985-01-01",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/genel-piskoloji--8ec8-.png"
+    },
+    {
+      "id": "11",
+      "title": "Şeker Portakalı",
+      "author": "Jose Mauro De Vasconcelos",
+      "category": "Hikaye",
+      "date": "2019-09-06",
+      "cover": "https://img.kitapyurdu.com/v1/getImage/fn:11462950/wh:true/wi:220"
     }
   ]
 }
