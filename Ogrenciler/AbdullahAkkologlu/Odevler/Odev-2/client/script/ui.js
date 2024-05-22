@@ -1,3 +1,4 @@
+let cachedBooks = [];
 class UI {
   static createElement(tag, classNames = [], appendChilds = [], textContent) {
     const element = document.createElement(tag);
@@ -11,12 +12,13 @@ class UI {
       element.removeChild(element.firstChild);
     }
   }
+
   static async createFilterCheckBoxes() {
     this.removeChilds(dropdownCategoryCheckbox);
     this.removeChilds(dropdownAuthorCheckbox);
-    const books = await fetchData();
     const categorySet = new Set();
     const authorSet = new Set();
+    const books = await getAllBooks();
     books.forEach((book) => {
       if (!categorySet.has(book.category)) {
         categorySet.add(book.category);
@@ -242,8 +244,7 @@ class UI {
     const selectedAuthors = Array.from(
       dropdownAuthorCheckbox.querySelectorAll("input:checked")
     ).map((checkbox) => checkbox.nextSibling.textContent);
-    const books = await fetchData();
-    const filteredBooks = books.filter(
+    const filteredBooks = cachedBooks.filter(
       (book) =>
         (selectedCategories.length === 0 ||
           selectedCategories.includes(book.category)) &&
@@ -254,16 +255,14 @@ class UI {
   static async passValuesToModal(id) {
     updateMode = true;
     bookId = id;
-    const books = await fetchData();
-    const bookIndex = books.findIndex((book) => book.id === id);
+    const bookIndex = cachedBooks.findIndex((book) => book.id === id);
     for (let key in inputs) {
-      inputs[key].value = books[bookIndex][key];
+      inputs[key].value = cachedBooks[bookIndex][key];
     }
   }
   static async filterBySearch(e) {
     const searchText = e.target.value.toLowerCase();
-    const data = await fetchData();
-    const filteredData = data.filter((book) => {
+    const filteredData = cachedBooks.filter((book) => {
       return (
         book.name.toLowerCase().includes(searchText) ||
         book.author.toLowerCase().includes(searchText)
@@ -353,7 +352,6 @@ searchInput.addEventListener("input", (e) => {
 });
 Object.values(orderRadios).forEach((radio) => {
   radio.addEventListener("change", async () => {
-    const books = await fetchData();
-    UI.sortBooks(books);
+    UI.sortBooks(cachedBooks);
   });
 });

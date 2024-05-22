@@ -13,11 +13,12 @@ async function fetchData() {
 function renderBooks(books) {
   UI.render(books);
 }
-getAllBooks();
 async function getAllBooks() {
-  const books = await fetchData();
-  renderBooks(books);
+  cachedBooks = await fetchData();
+  renderBooks(cachedBooks);
+  return cachedBooks;
 }
+getAllBooks();
 async function handlePost() {
   const newBook = new Book(
     ...Object.values(inputs).map((input) => {
