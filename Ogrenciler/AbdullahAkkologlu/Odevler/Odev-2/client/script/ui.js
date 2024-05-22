@@ -283,8 +283,12 @@ class UI {
       books.sort((a, b) => new Date(a.date) - new Date(b.date));
     } else if (orderRadios.yearDesc.checked) {
       books.sort((a, b) => new Date(b.date) - new Date(a.date));
+    } else {
+      const data = await fetchData();
+      this.render(data);
+      return;
     }
-    UI.render(books);
+    this.render(books);
   }
   static clean() {
     for (let key in inputs) {

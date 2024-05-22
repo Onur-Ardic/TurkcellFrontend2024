@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "id": "7g6h5c2f-d1h4-6b69-0h59-0i61d2d2h9i0",
+      "name": "Harry Potter ve Ateş Kadehi",
+      "author": "J. K. Rowling",
+      "category": "Fantastik",
+      "date": "2000",
+      "coverImgUrl": "https://i.hizliresim.com/nsbg042.jpeg"
+    },
+    {
+      "id": "8h7i6d3f-e2i5-7c70-1i62-1j72e3e3i1j1",
+      "name": "Doğu Ekspresinde Cinayet",
+      "author": "Agatha Christie",
+      "category": "Polisiye",
+      "date": "1934",
+      "coverImgUrl": "https://i.hizliresim.com/5v86qo3.jpeg"
+    },
+    {
+      "id": "9i8j7e4f-f3j6-8d71-2j73-2k83f4f4j2k2",
+      "name": "Not Defteri",
+      "author": "Nicholas Sparks",
+      "category": "Romantik",
+      "date": "1996",
+      "coverImgUrl": "https://i.hizliresim.com/r23p615.jpeg"
+    },
+    {
+      "id": "0j9k8f5f-g4k7-9e72-3k84-3l94g5g5k3l3",
+      "name": "Robinson Crusoe",
+      "author": "Daniel Defoe",
+      "category": "Macera",
+      "date": "1719",
+      "coverImgUrl": "https://i.hizliresim.com/hwa11nk.png"
+    },
+    {
+      "id": "6f5g4b1f-c9g3-5a58-9g48-9h50c1c1g8h9",
+      "name": "Yıldız Gemisi Askerleri",
+      "author": "Robert A. Heinlein",
+      "category": "Bilim Kurgu",
+      "date": "1959",
+      "coverImgUrl": "https://i.hizliresim.com/oq6yclb.jpeg"
+    },
+    {
+      "id": "7h6i5j2k-d0h4-6b69-1i59-0j61d2d2i9j0",
+      "name": "1984",
+      "author": "George Orwell",
+      "category": "Fantastik",
+      "date": "1949",
+      "coverImgUrl": "https://r.resimlink.com/faTh4j9k.jpg"
+    },
+    {
+      "id": "8j7k6l3m-e1i5-7c70-2j60-1k72e3e3j0k1",
+      "name": "Dune",
+      "author": "Frank Herbert",
+      "category": "Bilim Kurgu",
+      "date": "1965",
+      "coverImgUrl": "https://r.resimlink.com/_LN8n.jpeg"
+    },
+    {
+      "id": "9l8m7n4o-f2j6-8d71-3k61-2l83f4f4k1l2",
+      "name": "Cesur Yeni Dünya",
+      "author": "Aldous Huxley",
+      "category": "Macera",
+      "date": "1932",
+      "coverImgUrl": "https://r.resimlink.com/AOTfI.jpeg"
+    },
+    {
+      "id": "0n9o8p5q-g3k7-9e82-4l72-3m94g5g5l2m3",
+      "name": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "category": "Romantik",
+      "date": "1953",
+      "coverImgUrl": "https://r.resimlink.com/Eo1VS85Fn.jpeg"
+    },
+    {
+      "id": "f7c7d3b4-0a8e-4c2e-8f7b-74e6d3d1e5d2",
+      "name": "The Enigma of the Lost City",
+      "author": "A. N. Myst",
+      "category": "Macera",
+      "date": "2005-09-15",
+      "coverImgUrl": "https://r.resimlink.com/Bv2-3UKxJS.jpg"
+    }
+  ]
+}
