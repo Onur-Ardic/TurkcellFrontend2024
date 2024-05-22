@@ -1,7 +1,7 @@
+const apiURL = "http://localhost:3000/books";
 class Request {
-  static apiURL = "http://localhost:3000/books";
   static async request(method, endpoint, data = null) {
-    const url = `${this.apiURL}${endpoint ? `/${endpoint}` : ""}`;
+    const url = `${apiURL}${endpoint ? `/${endpoint}` : ""}`;
     const options = {
       method: method,
       headers: { "Content-type": "application/json;" },

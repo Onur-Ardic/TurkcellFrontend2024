@@ -1,14 +1,6 @@
 {
   "books": [
     {
-      "name": "1985",
-      "author": "George Orwell",
-      "category": "Sci-fi",
-      "date": "1949",
-      "cover_img": "https://i.dr.com.tr/cache/600x600-0/originals/0000000064038-1.jpg",
-      "id": "2"
-    },
-    {
       "name": "Moby Dick",
       "author": "Herman Melville",
       "category": "Romance",
