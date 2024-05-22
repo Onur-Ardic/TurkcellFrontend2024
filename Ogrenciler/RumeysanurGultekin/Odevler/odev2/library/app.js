@@ -23,16 +23,21 @@ document.getElementById("formKitap").addEventListener("submit",function (e) {
   
     console.log("Values:", image, bookname, author, date, categories);
   
-    const book = new Book(image, bookname, author, date, categories);
-    console.log(book);
-    
+    const book = new Book(image, bookname, author, date, categories, crypto.randomUUID());
     const ui = new UI();
     ui.createCard(book);
     ui.clearInput();
-    console.log("Card created");
   
+    console.log(!editId);
+
+   if (!!editId){
+    const book1 = new Book(image, bookname, author, date, categories, editId);
+    Request.update("http://localhost:3000/books", editId, book1)
+    editId = null;
+   }else {
     
     Request.post("http://localhost:3000/books",book);
+   } 
   
   });
   
