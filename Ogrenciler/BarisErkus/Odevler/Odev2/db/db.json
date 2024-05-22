@@ -1,7 +1,20 @@
 {
   "books": [
     {
-      "id": "4",
+      "id": "3ebed5f8-4429-449e-9c18-205dfd12cb8d",
+      "title": "Aşk ve Gurur",
+      "year": "1813",
+      "coverUrl": "https://img.kitapyurdu.com/v1/getImage/fn:3095891/wh:true/wi:800",
+      "genre": "Roman",
+      "author": {
+        "authorName": "Jane Austen",
+        "authorImageUrl": "https://cdn.britannica.com/12/172012-050-DAA7CE6B/Jane-Austen-Cassandra-engraving-portrait-1810.jpg",
+        "biography": "Jane Austen, 16 Aralık 1775 tarihinde İngiltere'nin Steventon kasabasında doğdu. Babası, bir rahipti. Austen, 1783 yılında evinde eğitim görmeye başladı. 1795 yılında ilk romanı olan Aşk ve Gurur'u yazdı. 1811 yılında Sense and Sensibility adlı romanını yayımladı. 1813 yılında Pride and Prejudice adlı romanını yayımladı. 1814 yılında Mansfield Park adlı romanını yayımladı. 1815 yılında Emma adlı romanını yayımladı. 1817 yılında Persuasion adlı romanını yayımladı. 1817 yılında Northanger Abbey adlı romanını yayımladı. 1817 yılında öldü."
+      },
+      "description": "Aşk ve Gurur, Jane Austen'in 1813 yılında yayımlanan romanıdır. Roman, İngiliz edebiyatının en önemli eserlerinden biri olarak kabul edilir. Roman, birinci tekil şahıs ağzından anlatılmıştır. Romanın kahramanı, Elizabeth Bennet'tir. Roman, Elizabeth Bennet'in ailesiyle olan ilişkilerini, aşk ilişkilerini ve yaşadığı trajedileri anlatır. Roman, Elizabeth Bennet'in ailesiyle olan ilişkilerini, aşk ilişkilerini ve yaşadığı trajedileri anlatır."
+    },
+    {
+      "id": "9c6327ae-676c-4b73-ba81-cf885ed065be",
       "title": "Karamazov Kardeşler",
       "year": "1880",
       "coverUrl": "https://img.kitapyurdu.com/v1/getImage/fn:5635516/wh:true/wi:500",
@@ -14,7 +27,7 @@
       "description": "Karamazov Kardeşler, Fyodor Mihayloviç Dostoyevski'nin 1880 yılında yayımlanan romanıdır. Roman, Rus edebiyatının en önemli eserlerinden biri olarak kabul edilir. Roman, birinci tekil şahıs ağzından anlatılmıştır. Romanın kahramanı, Dimitri, İvan ve Alyoşa Karamazov'dur. Roman, Karamazov kardeşlerin babaları Fyodor Karamazov tarafından öldürülmesi üzerine yaşadıkları duygusal çatışmaları anlatır. Roman, Karamazov kardeşlerin babaları Fyodor Karamazov'un ölümü üzerine miras kavgası yapmalarını, aşk ilişkilerini ve yaşadıkları trajedileri anlatır."
     },
     {
-      "id": "5",
+      "id": "bbd0fe26-cbe4-4747-960a-1533d404431f",
       "title": "Hamlet",
       "year": "1603",
       "coverUrl": "https://cdn.kobo.com/book-images/695eb39e-9405-4c4b-8267-302344f0f5f7/353/569/90/False/hamlet-15.jpg",
@@ -27,7 +40,7 @@
       "description": "Hamlet, William Shakespeare'in 1603 yılında yazdığı trajedi türündeki oyunudur. Oyun, Danimarka prensi Hamlet'in babasının ölümünün ardından yaşadığı duygusal çatışmaları ve intikam duygusunu anlatır. Oyun, Hamlet'in babasının ölümünün ardından annesi Gertrude ile amcası Kral Claudius'un evlenmesi üzerine yaşadığı duygusal çatışmaları anlatır. Oyun, Hamlet'in babasının ölümünün ardından annesi Gertrude ile amcası Kral Claudius'un evlenmesi üzerine intikam duygusuyla hareket etmesini ve yaşadığı trajedileri anlatır."
     },
     {
-      "id": "7",
+      "id": "bbe5902e-3efd-43a6-be13-4c1cf49c0ea0",
       "title": "Zengin Baba Yoksul Baba",
       "year": "1997",
       "coverUrl": "https://i.dr.com.tr/cache/600x600-0/originals/0001758255001-1.jpg",
@@ -40,7 +53,7 @@
       "description": "Zengin Baba Yoksul Baba, Robert T. Kiyosaki'nin 1997 yılında yayımlanan kitabıdır. Kitap, finansal özgürlük ve zenginlik konularında tavsiyeler verir. Kitap, Kiyosaki'nin çocukluk döneminde yaşadığı deneyimleri ve babası ile zengin bir arkadaşının babası arasındaki farkları anlatır. Kitap, Kiyosaki'nin finansal özgürlük ve zenginlik konularında tavsiyeler verir. Kitap, Kiyosaki'nin finansal özgürlük ve zenginlik konularında tavsiyeler verir."
     },
     {
-      "id": "8",
+      "id": "c621805d-ea63-4803-866e-c5b1db9258d9",
       "title": "Satranç",
       "year": "1941",
       "coverUrl": "https://m.media-amazon.com/images/I/61ialm+EQ2L._AC_UF894,1000_QL80_.jpg",
@@ -53,7 +66,6 @@
       "description": "Satranç, Stefan Zweig'ın 1941 yılında yayımlanan romanıdır. Roman, Zweig'ın en önemli eserlerinden biri olarak kabul edilir. Roman, birinci tekil şahıs ağzından anlatılmıştır. Romanın kahramanı, Mirko Czentovic'tir. Roman, Mirko Czentovic'in satranç oyunundaki ustalığını ve zekasını anlatır. Roman, Mirko Czentovic'in satranç oyunundaki ustalığını ve zekasını anlatır."
     },
     {
-      "id": "9",
       "title": "Göğe Bakma Durağı",
       "year": "1966",
       "coverUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000264816-1.jpg",
@@ -63,10 +75,11 @@
         "authorImageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:1413923/wi:200/wh:53daf161f",
         "biography": "Turgut Uyar, 4 Ağustos 1927 tarihinde İstanbul'da doğdu. İlk ve orta öğrenimini İstanbul'da tamamladı. 1945 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'ne girdi. 1949 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'nden mezun oldu. 1952 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'nde öğretim görevlisi olarak göreve başladı. 1955 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'nde doçent oldu. 1960 yılında İstanbul Üniversitesi Edebiyat Fakültesi Felsefe Bölümü'nde profesör oldu. 1985 yılında İstanbul'da öldü."
       },
-      "description": "Göğe Bakma Durağı, Turgut Uyar'ın 1966 yılında yayımlanan şiir kitabıdır. Kitap, Türk edebiyatının en önemli şiir kitaplarından biri olarak kabul edilir. Kitap, Turgut Uyar'ın en önemli şiirlerini içerir."
+      "description": "Göğe Bakma Durağı, Turgut Uyar'ın 1966 yılında yayımlanan şiir kitabıdır. Kitap, Türk edebiyatının en önemli şiir kitaplarından biri olarak kabul edilir. Kitap, Turgut Uyar'ın en önemli şiirlerini içerir.",
+      "id": "b9beccba-09b8-433a-aa7d-b14e9881bb82"
     },
     {
-      "id": "10",
+      "id": "8a49c649-5a5d-4b00-bd18-7d2ddeb50ee2",
       "title": "Yazılımın Kitabı",
       "year": "2024",
       "coverUrl": "https://m.media-amazon.com/images/I/81msmMqA7BL._AC_UF1000,1000_QL80_.jpg",
@@ -79,17 +92,43 @@
       "description": "Yazılımın Kitabını Varol Maksutoğlu yazmıştır."
     },
     {
-      "id": "3ebed5f8-4429-449e-9c18-205dfd12cb8d",
-      "title": "Aşk ve Gurur",
-      "year": "1813",
-      "coverUrl": "https://img.kitapyurdu.com/v1/getImage/fn:3095891/wh:true/wi:800",
+      "id": "07262866-2fd9-4c7e-9837-8751c9c322b6",
+      "title": "Tutunamayanlar",
+      "year": "1971",
+      "coverUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11462655/wh:true/wi:800",
       "genre": "Roman",
       "author": {
-        "authorName": "Jane Austen",
-        "authorImageUrl": "https://cdn.britannica.com/12/172012-050-DAA7CE6B/Jane-Austen-Cassandra-engraving-portrait-1810.jpg",
-        "biography": "Jane Austen, 16 Aralık 1775 tarihinde İngiltere'nin Steventon kasabasında doğdu. Babası, bir rahipti. Austen, 1783 yılında evinde eğitim görmeye başladı. 1795 yılında ilk romanı olan Aşk ve Gurur'u yazdı. 1811 yılında Sense and Sensibility adlı romanını yayımladı. 1813 yılında Pride and Prejudice adlı romanını yayımladı. 1814 yılında Mansfield Park adlı romanını yayımladı. 1815 yılında Emma adlı romanını yayımladı. 1817 yılında Persuasion adlı romanını yayımladı. 1817 yılında Northanger Abbey adlı romanını yayımladı. 1817 yılında öldü."
+        "authorName": "Oğuz Atay",
+        "authorImageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:1196677/wi:200/wh:b260d396e",
+        "biography": "Oğuz Atay, 12 Ekim 1934 tarihinde Türkiye'nin İnebolu ilçesinde doğdu. Atay, 1951 yılında TED Ankara Koleji'ni bitirdi. 1955 yılında Ankara Üniversitesi Siyasal Bilgiler Fakültesi'ne girdi. 1959 yılında Ankara Üniversitesi Siyasal Bilgiler Fakültesi'nden mezun oldu. 1962 yılında Ankara Üniversitesi Siyasal Bilgiler Fakültesi'nde öğretim görevlisi olarak göreve başladı. 1977 yılında Ankara'da öldü."
       },
-      "description": "Aşk ve Gurur, Jane Austen'in 1813 yılında yayımlanan romanıdır. Roman, İngiliz edebiyatının en önemli eserlerinden biri olarak kabul edilir. Roman, birinci tekil şahıs ağzından anlatılmıştır. Romanın kahramanı, Elizabeth Bennet'tir. Roman, Elizabeth Bennet'in ailesiyle olan ilişkilerini, aşk ilişkilerini ve yaşadığı trajedileri anlatır. Roman, Elizabeth Bennet'in ailesiyle olan ilişkilerini, aşk ilişkilerini ve yaşadığı trajedileri anlatır."
+      "description": "Tutunamayanlar, Oğuz Atay'ın 1971 yılında yayımlanan romanıdır. Roman, Türk edebiyatının en önemli eserlerinden biri olarak kabul edilir. Roman, birinci tekil şahıs ağzından anlatılmıştır. Romanın kahramanı, Selim Işık'tır. Roman, Selim Işık'ın yaşadığı duygusal çatışmaları ve intikam duygusunu anlatır. Roman, Selim Işık'ın yaşadığı duygusal çatışmaları ve intikam duygusunu anlatır."
+    },
+    {
+      "id": "3cbeaa14-2fea-4aab-a598-db7c467f59c8",
+      "title": "Tehlikeli Oyunlar",
+      "year": "1973",
+      "coverUrl": "https://i.dr.com.tr/cache/600x600-0/originals/0000000061603-1.jpg",
+      "genre": "Roman",
+      "author": {
+        "authorName": "Oğuz Atay",
+        "authorImageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:1196677/wi:200/wh:b260d396e",
+        "biography": "Oğuz Atay, 12 Ekim 1934 tarihinde Türkiye'nin İnebolu ilçesinde doğdu. Atay, 1951 yılında TED Ankara Koleji'ni bitirdi. 1955 yılında Ankara Üniversitesi Siyasal Bilgiler Fakültesi'ne girdi. 1959 yılında Ankara Üniversitesi Siyasal Bilgiler Fakültesi'nden mezun oldu. 1962 yılında Ankara Üniversitesi Siyasal Bilgiler Fakültesi'nde öğretim görevlisi olarak göreve başladı. 1977 yılında Ankara'da öldü."
+      },
+      "description": "Kişinin kendiyle savaşmasını ve yenmesini, kendini dönüştürmesini hayati bir sorun olarak algılamaya çağıran, çarpıcı ve sarsıcı bir roman. Romanın baş kişisi Hikmet Benol, toplumdaki yoğun kargaşanın temelinde yatan gerçekliği araştırırken, gerçeklerle içtenlikle ilgilenmenin toplumu yönetenlerce tehlikeli görüldüğünü seziyor ve `oyun oynuyormuş gibi` ilgilenmenin ve yaşamanın yollarını araştırıyor. Ve hem `tehlikeli` hem de `oyun`la dolu bir yolda gidebileceği son noktaya kadar ilerliyor..."
+    },
+    {
+      "id": "364f4918-963a-4122-8e63-3843e5e4cfdd",
+      "title": "Suç ve Ceza",
+      "year": "1866",
+      "coverUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000222780-1.jpg",
+      "genre": "Roman",
+      "author": {
+        "authorName": "Fyodor Mihayloviç Dostoyevski",
+        "authorImageUrl": "https://r2.1k-cdn.com/sig/size:256/plain/https%3A%2F%2F1k-cdn.com%2Fresimler%2Fyazarlar%2F73622_hASgt_1527370965.jpg",
+        "biography": "Fyodor Mihayloviç Dostoyevski, 11 Kasım 1821 tarihinde Moskova'da doğdu. Dostoyevski, 1837 yılında Petersburg Mühendislik Akademisi'ne girdi. 1843 yılında akademiyi bitirdikten sonra askerlik hizmetine başladı. 1844 yılında askerlik hizmetinden ayrıldıktan sonra Petersburg'ta bir edebiyat dergisinde çalışmaya başladı. 1846 yılında ilk romanı olan İnsancıklar'ı yayımladı. 1850 yılında idam cezası, Sibirya'ya sürgüne çevrildi. 1859 yılında Petersburg'ta bir edebiyat dergisi kurdu. 1864 yılında ilk eşi öldü. 1867 yılında ikinci eşiyle evlendi. 1881 yılında Petersburg'da öldü."
+      },
+      "description": "Tüm zamanların en çok konuşulan romanlarından Suç ve Ceza, psikolojik derinliği ve topluma tuttuğu aynayla gündemde kalmaya devam ediyor. St. Petersburg’dan dünyaya yayılan, hatta sınırlarını edebiyatın dışına çıkararak tartışma platformlarına ve sinema festivallerine taşıyan bu yapıt, tekrar tekrar okunmaya ve konuşulmaya değer!\n\nDünyanın en büyük yazarlarından kabul edilen Rus Yazar Fyodor Mihayloviç Dostoyevski’nin 1866’da yayımlanan ölümsüz eseri Suç ve Ceza, tüm insanlığı kavrayan bir öyküye sahip. Aklın, inancın ve eylemlerin vicdan ile muhakemesini tüm çıplaklığıyla yansıtan eser, sizi "
     }
   ]
 }
