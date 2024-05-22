@@ -82,13 +82,13 @@
       "cover_image": "https://cdn.bkmkitap.com/denizler-altinda-yirmi-bin-fersah-11638942-26-O.jpg"
     },
     {
-      "id": "10",
       "title": "Rezonans Kanunu",
       "author": "Pierre Franckh",
       "publisher": "Koridor Yayıncılık",
       "category": "Kişisel Gelişim",
       "date": "2019",
-      "cover_image": "https://cdn.bkmkitap.com/rezonans-kanunu-373649-13431412-37-O.jpg"
+      "cover_image": "https://cdn.bkmkitap.com/rezonans-kanunu-373649-13431412-37-O.jpg",
+      "id": "10"
     }
   ]
 }

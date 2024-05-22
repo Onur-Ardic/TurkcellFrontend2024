@@ -17,7 +17,7 @@
     <section>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-          <a class="navbar-brand" href="./index.html">A-Library</a>
+          <a class="navbar-brand" href="./index.html">A-Kütüphane</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -36,7 +36,7 @@
                   class="nav-link active"
                   aria-current="page"
                   href="./index.html"
-                  >Books</a
+                  >Kitaplar</a
                 >
               </li>
             </ul>
@@ -46,7 +46,7 @@
               data-bs-toggle="modal"
               data-bs-target="#bookModal"
             >
-              Add Book
+              Kitap Ekle
             </button>
           </div>
         </div>
@@ -58,17 +58,17 @@
           <div
             class="col-lg-12 col-12 d-flex flex-column justify-content-center text-white"
           >
-            <h1>Welcome to A-Library</h1>
+            <h1>A-Kütüphaneye hoşgeldiniz</h1>
             <p>
-              A-Library is a platform where you can add, update and delete
-              books.
+              A-Kütüphane,kitap ekleyebileceğiniz, güncelleyebileceğiniz ve
+              silebileceğiniz bir platformdur.
             </p>
             <input
               onkeyup="BookProcessor.searchInput()"
               id="search"
               class="form-control me-2 w-50"
               type="search"
-              placeholder="Search"
+              placeholder="Aradağınız kitabı giriniz"
               aria-label="Search"
             />
           </div>
@@ -85,7 +85,7 @@
                 class="form-select"
                 aria-label="Publisher Select"
               >
-                <option value="All" selected>Choose the publisher</option>
+                <option value="All" selected>Yayınevi Seçiniz</option>
                 <option value="İş Bankası Yayınları">
                   İş Bankası Yayınları
                 </option>
@@ -95,13 +95,13 @@
                 <option value="Koridor Yayıncılık">Koridor Yayıncılık</option>
               </select>
             </div>
-            <div class="row">
+            <div class="row mb-3">
               <select
                 id="authorSelect"
                 class="form-select"
                 aria-label="Author select"
               >
-                <option value="All" selected>Choose the author</option>
+                <option value="All" selected>Yazar seçiniz</option>
                 <option value="George Orwell">George Orwell</option>
                 <option value="Matt Haig">Matt Haig</option>
                 <option value="Napoleon Hill">Napoleon Hill</option>
@@ -109,8 +109,20 @@
                 <option value="Anthony Burgess">Anthony Burgess</option>
               </select>
             </div>
+            <div class="row">
+              <select
+                id="sortingSelect"
+                class="form-select"
+                aria-label="Sort type select"
+              >
+                <option value="0" selected>Sırala</option>
+                <option value="1">A-Z</option>
+                <option value="2">Z-A</option>
+                <option value="3">Date</option>
+              </select>
+            </div>
           </div>
-          <div class="col-lg-9 col-10">
+          <div class="col-lg-9 col-12">
             <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button
@@ -123,7 +135,7 @@
                   aria-controls="allBooks-tab-pane"
                   aria-selected="true"
                 >
-                  All Books
+                  Tüm Kitaplar
                 </button>
               </li>
               <li class="nav-item" role="presentation">
@@ -185,18 +197,6 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-1 col-2">
-            <select
-              id="sortingSelect"
-              class="form-select"
-              aria-label="Sort type select"
-            >
-              <option value="0" selected>Sort</option>
-              <option value="1">A-Z</option>
-              <option value="2">Z-A</option>
-              <option value="3">Date</option>
-            </select>
-          </div>
         </div>
       </div>
     </section>
@@ -210,7 +210,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="bookModalLabel">Add Book</h1>
+            <h1 class="modal-title fs-5" id="bookModalLabel">Kitap Ekle</h1>
             <button
               type="button"
               class="btn-close"
@@ -221,47 +221,47 @@
           <form id="modalForm" class="needs-validation">
             <div class="modal-body">
               <div class="mb-3">
-                <label for="title" class="form-label">Title</label>
+                <label for="title" class="form-label">Kitap İsmi</label>
                 <input
                   type="text"
                   class="form-control"
                   id="title"
                   name="title"
-                  placeholder="Enter title"
+                  placeholder="Kitap ismi giriniz"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="author" class="form-label">Author</label>
+                <label for="author" class="form-label">Yazar</label>
                 <input
                   type="text"
                   class="form-control"
                   id="author"
                   name="author"
-                  placeholder="Enter author"
+                  placeholder="Yazar ismi giriniz"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="publisher" class="form-label">Publisher</label>
+                <label for="publisher" class="form-label">Yayınevi</label>
                 <input
                   type="text"
                   class="form-control"
                   id="publisher"
                   name="publisher"
-                  placeholder="Enter publisher"
+                  placeholder="Yayınevini giriniz"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="category" class="form-label">Category</label>
+                <label for="category" class="form-label">Kategori</label>
                 <select
                   id="category"
                   class="form-select"
                   aria-label="Category Select"
                   required
                 >
-                  <option selected>Choose the category</option>
+                  <option selected>Kategori seçiniz</option>
                   <option value="Roman">Roman</option>
                   <option value="Kişisel Gelişim">Kişisel Gelişim</option>
                   <option value="Dünya Klasikleri">Dünya Klasikleri</option>
@@ -269,25 +269,25 @@
               </div>
               <div class="mb-3">
                 <label for="publication_date" class="form-label"
-                  >Publication Date</label
+                  >Yayın Tarihi</label
                 >
                 <input
                   type="number"
                   class="form-control"
                   id="publication_date"
                   name="publication_date"
-                  placeholder="Enter publication date"
+                  placeholder="Yayın tarihi giriniz"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="cover_image" class="form-label">Cover Image</label>
+                <label for="cover_image" class="form-label">Kapak Resmi</label>
                 <input
                   type="text"
                   class="form-control"
                   id="cover_image"
                   name="cover_image"
-                  placeholder="Enter cover image"
+                  placeholder="Kapak resmini url olarak giriniz"
                   required
                 />
               </div>
@@ -298,14 +298,14 @@
                 class="btn btn-danger"
                 data-bs-dismiss="modal"
               >
-                Close
+                Kapat
               </button>
               <button id="addBook" type="submit" class="btn btn-success">
                 Kitap Ekle
               </button>
               <button
                 id="updateBook"
-                type="submit"
+                type="button"
                 class="btn btn-warning d-none"
               >
                 Kitap Güncelle
