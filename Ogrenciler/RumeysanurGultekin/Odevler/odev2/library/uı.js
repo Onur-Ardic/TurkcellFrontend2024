@@ -5,7 +5,7 @@ class Book {
         this.author = author;
         this.date = date;
         this.categories = categories;
-        this.id = crypto.randomUUID();
+        this.id = id;
     }
     
   }
@@ -66,6 +66,9 @@ class UI {
       buttonUpdate.textContent = "Güncelle";
       buttonUpdate.setAttribute('data-bs-toggle', 'modal')
       buttonUpdate.setAttribute('data-bs-target', '#modalAc')
+      buttonUpdate.setAttribute("onclick" , `selectedbook(new Book ('${book.image}', '${book.bookname}', '${book.author}', '${book.date}', '${book.categories}', '${book.id}'))`);
+      
+      
 
       buttonUpdate.addEventListener("click", (() => {
         document.querySelector("#ModalKitapEkle").click();
@@ -82,9 +85,7 @@ class UI {
         updateBook.style.display = "block";
         updateBook.removeAttribute("disabled");
 
-        updateBook.addEventListener("click",function(){
-          
-        } )
+        
   
       }));
 
@@ -119,5 +120,17 @@ class UI {
       bookList.innerHTML = "";
     }  
   }
+let editId
 
+function selectedbook(book){
+  document.querySelector("#ModalKitapEkle").click();
+  document.getElementById("imageInput").value = book.image;
+  document.getElementById("bookName").value = book.bookname;
+  document.getElementById("bookAuthor").value = book.author;
+  document.getElementById("bookDate").value = book.date;
+  document.getElementById("categoriesInput").value = book.categories;
+
+  editId = book.id;
+
+}
  

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "ali",
+    "age": 17,
+    "city": "istanbul"
+  },
+  {
+    "name": "veli",
+    "age": 18,
+    "city": "ankara"
+  },
+  {
+    "name": "ayşe",
+    "age": 19,
+    "city": "izmir"
+  }
+]

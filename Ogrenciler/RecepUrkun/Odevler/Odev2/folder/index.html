@@ -20,14 +20,15 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body data-bs-theme="light">
-    <nav class="">
+    <div id="errorMessage" class="alert text-center d-none"></div>
+    <nav>
       <div class="container-fluid">
         <div class="row text-center p-3 align-items-center">
           <div class="col-2 d-none d-sm-block">
             <a href="./index.html">
               <img
                 src="./assets/logo.png"
-                alt=""
+                alt="logo"
                 class="img-fluid rounded-4"
                 style="width: 80px"
             /></a>
@@ -38,13 +39,15 @@
             </h4>
           </div>
           <div class="col-sm-2 col-12">
-            <button id="theme-toggle" class="btn"><i class="fa-solid fa-book fa-2x"></i></button></i>
+            <button id="changeTheme" class="btn">
+              <i class="fa-solid fa-book fa-2x"></i>
+            </button>
           </div>
         </div>
       </div>
     </nav>
 
-    <div class="">
+    <div>
       <div class="container-fluid">
         <div class="col-10 mx-auto p-3">
           <figure class="text-center" id="sentence"></figure>
@@ -52,10 +55,10 @@
       </div>
     </div>
 
-    <div class="mainMenu  ">
+    <div class="mainMenu">
       <div class="container">
         <div class="row">
-          <div class="col-12 ">
+          <div class="col-12">
             <div class="row d-flex align-items-end py-3 border-top">
               <div
                 class="col-12 col-lg-6 d-flex justify-content-evenly flex-md-row flex-column text-center gap-2 gap-lg-0 order-2 order-md-1"
@@ -175,7 +178,7 @@
                 <div id="bookAlignment">
                   <div class="dropdown">
                     <button
-                      class="btn btnChange btn-outline-dark dropdown-toggle" 
+                      class="btn btnChange btn-outline-dark dropdown-toggle"
                       type="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
@@ -221,8 +224,7 @@
                     <ul
                       class="dropdown-menu dropdown-menu-dark"
                       id="categoryDropdown"
-                    >
-                    </ul>
+                    ></ul>
                   </div>
                 </div>
 

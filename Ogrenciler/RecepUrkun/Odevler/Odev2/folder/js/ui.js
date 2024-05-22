@@ -1,10 +1,8 @@
 class UI {
-    static showAlert(type) {
-        alert(type === "success" ? "Başarılı" : "Hatalı");
-    }
-
     static async renderBooks(searchBook = "", sortBook = "", category = "", author = "") {
-        bookContainer.innerHTML = "";
+        while (bookContainer.firstChild) {
+            bookContainer.removeChild(bookContainer.firstChild);
+        }
         let bookCards = await apiHelper.getBookFromDb();
 
         if (searchBook) {
@@ -22,32 +20,15 @@ class UI {
         }
 
         if (sortBook) {
-            switch (sortBook) {
-                case "name-asc":
-                    bookCards.sort((a, b) => a.name.localeCompare(b.name));
-                    break;
-                case "name-desc":
-                    bookCards.sort((a, b) => b.name.localeCompare(a.name));
-                    break;
-                case "date-asc":
-                    bookCards.sort((a, b) => new Date(a.written_date) - new Date(b.written_date));
-                    break;
-                case "date-desc":
-                    bookCards.sort((a, b) => new Date(b.written_date) - new Date(a.written_date));
-                    break;
-            }
+            const sortFunctions = {
+                "name-asc": (a, b) => a.name.localeCompare(b.name),
+                "name-desc": (a, b) => b.name.localeCompare(a.name),
+                "date-asc": (a, b) => new Date(a.written_date) - new Date(b.written_date),
+                "date-desc": (a, b) => new Date(b.written_date) - new Date(a.written_date)
+            };
+            bookCards.sort(sortFunctions[sortBook]);
         }
 
-        // if (sortBook) {
-        //     const sortFunctions = {
-        //         "name-asc": (a, b) => a.name.localeCompare(b.name),
-        //         "name-desc": (a, b) => b.name.localeCompare(a.name),
-        //         "date-asc": (a, b) => new Date(a.written_date) - new Date(b.written_date),
-        //         "date-desc": (a, b) => new Date(b.written_date) - new Date(a.written_date)
-        //     };
-        //     bookCards.sort(sortFunctions[sortBook]);
-        // }
-        
         bookCards.forEach(book => {
             const col = document.createElement('div');
             col.classList.add('col');
@@ -68,11 +49,15 @@ class UI {
 
             const bookName = document.createElement('p');
             bookName.classList.add('card-text', 'text-center', 'mb-1');
-            bookName.innerHTML = `<b>${book.name}</b>`;
+            const bookNameContent = document.createElement('b');
+            bookNameContent.textContent = book.name;
+            bookName.appendChild(bookNameContent);
 
             const authorName = document.createElement('h6');
             authorName.classList.add('card-text', 'm-0', 'text-center', 'opacity-50', 'mb-1');
-            authorName.innerHTML = `<i>${book.author}</i>`;
+            const authorNameContent = document.createElement('i');
+            authorNameContent.textContent = book.author;
+            authorName.appendChild(authorNameContent);
 
             const badgeContainer = document.createElement('div');
             badgeContainer.classList.add('d-flex', 'justify-content-center');
@@ -119,7 +104,10 @@ class UI {
 
             const writtenDate = document.createElement('small');
             writtenDate.classList.add('text-body-secondary');
-            writtenDate.innerHTML = `<strong>${new Date(book.written_date).getFullYear()}</strong>`;
+
+            const strong = document.createElement('strong');
+            strong.textContent = new Date(book.written_date).getFullYear();
+            writtenDate.appendChild(strong);
 
             cardFooter.appendChild(buttonGroup);
             cardFooter.appendChild(writtenDate);
@@ -142,10 +130,15 @@ class UI {
             const authors = [...new Set(books.map(book => book.author))];
 
             const categoryDropdown = document.getElementById("categoryDropdown");
-            categoryDropdown.innerHTML = '';
+            while (categoryDropdown.firstChild) {
+                categoryDropdown.removeChild(categoryDropdown.firstChild);
+            }
 
             const categoryHeader = document.createElement("li");
-            categoryHeader.innerHTML = '<h6 class="dropdown-header">Kategoriler</h6>';
+            const categoryHeaderContent = document.createElement("h6");
+            categoryHeaderContent.classList.add("dropdown-header");
+            categoryHeaderContent.textContent = "Kategoriler";
+            categoryHeader.appendChild(categoryHeaderContent);
             categoryDropdown.appendChild(categoryHeader);
 
             categories.forEach(category => {
@@ -163,11 +156,16 @@ class UI {
             });
 
             const divider = document.createElement("li");
-            divider.innerHTML = '<hr class="dropdown-divider" />';
+            const dividerContent = document.createElement("hr");
+            dividerContent.classList.add("dropdown-divider");
+            divider.appendChild(dividerContent);
             categoryDropdown.appendChild(divider);
 
             const authorHeader = document.createElement("li");
-            authorHeader.innerHTML = '<h6 class="dropdown-header">Yazarlar</h6>';
+            const authorHeaderContent = document.createElement("h6");
+            authorHeaderContent.classList.add("dropdown-header");
+            authorHeaderContent.textContent = "Yazarlar";
+            authorHeader.appendChild(authorHeaderContent);
             categoryDropdown.appendChild(authorHeader);
 
             authors.forEach(author => {
@@ -185,7 +183,7 @@ class UI {
             });
             this.renderBooks()
         } catch (error) {
-            console.error("Filtreler alınırken hata oluştu:", error);
+            UI.ShowErrorMessage("Filtreler alınırken hata oluştu", 'danger')
         }
     };
 
@@ -205,21 +203,47 @@ class UI {
     };
 
     static getRandomSentence = async () => {
-        const response = await apiHelper.getSentenceFromDb()
-        const randomId = Math.floor(Math.random() * response.length)
-        const sentence = response[randomId]
-        headerSentence.innerHTML += `
-        <blockquote class="blockquote">
-                <p class="fs-6">
-                  ${sentence.content}
-                </p>
-              </blockquote>
-              <figcaption class="blockquote-footer">
-                ${sentence.bookAuthor}
-                <cite title="Book Title">${sentence.bookName}</cite>
-              </figcaption>`
+        const response = await apiHelper.getSentenceFromDb();
+        const randomId = Math.floor(Math.random() * response.length);
+        const sentence = response[randomId];
+
+        const blockquote = document.createElement('blockquote');
+        blockquote.classList.add('blockquote');
+
+        const p = document.createElement('p');
+        p.classList.add('fs-6');
+        p.textContent = sentence.content;
+
+        blockquote.appendChild(p);
+
+        const figcaption = document.createElement('figcaption');
+        figcaption.classList.add('blockquote-footer');
+        figcaption.textContent = sentence.bookAuthor;
+
+        const cite = document.createElement('cite');
+        cite.classList.add('ms-2');
+        cite.title = "Book Title";
+        cite.textContent = sentence.bookName;
+
+        figcaption.appendChild(cite);
+
+        headerSentence.appendChild(blockquote);
+        headerSentence.appendChild(figcaption);
     }
 
+    static ShowErrorMessage(message, type) {
+        if (!errorMessage) return;
+    
+        errorMessage.className = '';
+        errorMessage.classList.add('alert', `alert-${type}`, 'text-center', 'd-block');
+        errorMessage.textContent = message;
+
+        setTimeout(() => {
+            errorMessage.classList.remove('d-block');
+            errorMessage.classList.add('d-none');
+        }, 3000);
+    }
+    
     static clearInputs() {
         kitapKapakResmi.value = ""
         kitapAdi.value = ""

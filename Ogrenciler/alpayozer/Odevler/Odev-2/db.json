@@ -3,8 +3,9 @@
     {
       "title": "Bir İdam Mahkumunun Son Günü",
       "author": "Victor Hugo",
+      "publisher": "İş Bankası Yayınları",
       "category": "Roman",
-      "date": "2024",
+      "date": "1829",
       "cover_image": "https://cdn.bkmkitap.com/bir-idam-mahkumunun-son-gunu-57569-12243410-57-O.jpg",
       "id": "1"
     },
@@ -12,94 +13,82 @@
       "id": "2",
       "title": "Otomatik Portakal",
       "author": "Anthony Burgess",
+      "publisher": "İş Bankası Yayınları",
       "category": "Roman",
-      "date": "2024",
-      "cover_image": "https://cdn.bkmkitap.com/otomatik-portakal-379619-9497817-37-O.jpg",
-      "publisher": "İş Bankası"
+      "date": "1962",
+      "cover_image": "https://cdn.bkmkitap.com/otomatik-portakal-379619-9497817-37-O.jpg"
     },
     {
       "id": "3",
       "title": "Gece Yarısı Kütüphanesi",
       "author": "Matt Haig",
+      "publisher": "Domingo Yayınları",
       "category": "Roman",
-      "date": "2024",
-      "cover_image": "https://cdn.bkmkitap.com/gece-yarisi-kutuphanesi-12102179-55-O.jpg",
-      "publisher": "Domingo"
+      "date": "2020",
+      "cover_image": "https://cdn.bkmkitap.com/gece-yarisi-kutuphanesi-12102179-55-O.jpg"
     },
     {
       "id": "4",
       "title": "Düşün ve Zengin Ol",
       "author": "Napoleon Hill",
+      "publisher": "Altın Kitaplar",
       "category": "Kişisel Gelişim",
-      "date": "2024",
-      "cover_image": "https://cdn.bkmkitap.com/dusun-ve-zengin-ol-13447828-44-O.jpg",
-      "publisher": "Altın Kitaplar"
+      "date": "1937",
+      "cover_image": "https://cdn.bkmkitap.com/dusun-ve-zengin-ol-13447828-44-O.jpg"
     },
     {
       "id": "5",
-      "title": "Zengin Baba Yoksul Baba",
-      "author": "Napoleon Hill",
-      "category": "Kişisel Gelişim",
-      "date": "2024",
-      "cover_image": "https://cdn.bkmkitap.com/zengin-baba-yoksul-baba-295790-13471148-29-O.jpg",
-      "publisher": "Altın Kitaplar"
-    },
-    {
-      "id": "6",
       "title": "Hayvan Çiftliği",
       "author": "George Orwell",
+      "publisher": "Can Yayınları",
       "category": "Roman",
-      "date": "2023",
-      "cover_image": "https://cdn.bkmkitap.com/hayvan-ciftligi-13455902-79-O.jpg",
-      "publisher": "Can Yayınları"
+      "date": "1945",
+      "cover_image": "https://cdn.bkmkitap.com/hayvan-ciftligi-13455902-79-O.jpg"
+    },
+    {
+      "title": "Zengin Baba Yoksul Baba",
+      "author": "Robert Kiyosaki",
+      "publisher": "Alfa Yayınları",
+      "category": "Kişisel Gelişim",
+      "date": "1997",
+      "cover_image": "https://cdn.bkmkitap.com/zengin-baba-yoksul-baba-295790-13471148-29-O.jpg",
+      "id": "6"
     },
     {
       "id": "7",
       "title": "1984",
       "author": "George Orwell",
+      "publisher": "Can Yayınları",
       "category": "Roman",
-      "date": "2023",
-      "cover_image": "https://cdn.bkmkitap.com/1984-13451065-64-O.jpg",
-      "publisher": "Can Yayınları"
+      "date": "1949",
+      "cover_image": "https://cdn.bkmkitap.com/1984-13451065-64-O.jpg"
     },
     {
       "id": "8",
       "title": "Bilinçaltının Gücü",
       "author": "Joseph Murphy",
+      "publisher": "Diyojen Yayıncılık",
       "category": "Kişisel Gelişim",
-      "date": "2022",
-      "cover_image": "https://cdn.bkmkitap.com/bilincaltinin-gucu-403289-13473210-40-O.jpg",
-      "publisher": "Diyojen Yayıncılık"
-    }
-  ],
-  "categories": [
-    {
-      "id": "1",
-      "name": "kategori 1"
+      "date": "1963",
+      "cover_image": "https://cdn.bkmkitap.com/bilincaltinin-gucu-403289-13473210-40-O.jpg"
     },
     {
-      "id": "2",
-      "name": "kategori 2"
+      "id": "9",
+      "title": "Denizler Altında Yirmi Bin Fersah",
+      "author": "Jules Verne",
+      "publisher": "İş Bankası Yayınları",
+      "category": "Dünya Klasikleri",
+      "date": "1999",
+      "cover_image": "https://cdn.bkmkitap.com/denizler-altinda-yirmi-bin-fersah-11638942-26-O.jpg"
     },
     {
-      "id": "3",
-      "name": "kategori 3"
-    },
-    {
-      "id": "4",
-      "name": "kategori 4"
-    },
-    {
-      "id": "5",
-      "name": "kategori 5"
-    },
-    {
-      "id": "6",
-      "name": "kategori 6"
-    },
-    {
-      "id": "7",
-      "name": "kategori 7"
+      "title": "Rezonans Kanunu",
+      "author": "Pierre Franckh",
+      "publisher": "Koridor Yayıncılık",
+      "category": "Kişisel Gelişim",
+      "date": "2019",
+      "cover_image": "https://cdn.bkmkitap.com/rezonans-kanunu-373649-13431412-37-O.jpg",
+      "id": "10"
     }
   ]
 }

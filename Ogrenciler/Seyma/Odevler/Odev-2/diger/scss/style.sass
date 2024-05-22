@@ -1,16 +1,63 @@
-* 
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap')
+
+*
   margin: 0
   padding: 0
   box-sizing: border-box
 
-  #homepage
-    height: 100vw
+h1, h2, h3, h4, h5
+  font-family: "Lato", sans-serif
+  font-weight: 400
+  font-style: normal
+
+p
+  font-family: "Lato", sans-serif
+  font-weight: 300
+  font-style: italic
+
+#homepage
+  font-family: Roboto, Arial, sans-serif
+  background-color: #e4ebeb
+  .container
+    max-width: 1120px
+    margin: 0 auto
+#booksholder
+  margin-top: -3rem
+#home
+  height: 20rem
+  #animation-img
+    animation: direction 2s linear infinite
+    position: absolute
+
+#footer
+  background-color: #909fb3
+  height: 5rem
+  .container
+    max-width: 1120px
+    margin: 0 auto
+
+@keyframes direction
+    0%,
     
-    .background
-      background-image: url("https://r.resimlink.com/_Hwot.png")
-      background-repeat: no-repeat
-      background-size: cover
-      width: 100vw
-      height: 100vh
-      padding-top: 50px
+    100%
+      bottom: 0
+
+    50%
+      bottom: 10px
+
+@keyframes showTopText
+  0%
+    transform: translate3d(0, 100%, 0)
+  40%, 
+  60% 
+    transform: translate3d(0, 50%, 0)
+  100% 
+    transform: translate3d(0, 0, 0)
+
+@keyframes showBottomText
+  0% 
+    transform: translate3d(0, -100%, 0)
+  100% 
+    transform: translate3d(0, 0, 0)
     

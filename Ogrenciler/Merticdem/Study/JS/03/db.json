@@ -1,0 +1,116 @@
+{
+  "books": [
+    {
+      "title": "Kurt Olmak",
+      "author": "KERSTIN EKMAN",
+      "category": "Kategori 1",
+      "date": "3333-01-01",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/kurt-olmak-07d7-4.png",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "GasLighting",
+      "author": "Deborah Vinall",
+      "category": "Kategori 2",
+      "date": "2020-01-02",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/gaslighting-7d07-d.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Elohim'in Çocukları",
+      "author": "Orhan Bahtiyar",
+      "category": "Kategori 3",
+      "date": "2020-01-03",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/elohimin-cocuklari-4338-b.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Falcı",
+      "author": "Stephen King",
+      "category": "Kategori 4",
+      "date": "2020-01-04",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/falci-yeni-kapak-d6f-40.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Sarsılmak",
+      "author": "Zafer Köse",
+      "category": "Kategori 5",
+      "date": "2020-01-05",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/sarsilmak-28-4a6.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Muhbir",
+      "author": "Serhan Kurşun",
+      "category": "Kategori 6",
+      "date": "2020-01-06",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/muhbir-93d2-8.png"
+    },
+    {
+      "id": "7",
+      "title": "Uzun Zaman Önce",
+      "author": "Zekeriya Çetin",
+      "category": "Kategori 7",
+      "date": "2020-01-07",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/uzun-zaman-once-3-86e3.png"
+    },
+    {
+      "id": "8",
+      "title": "Metaverse",
+      "author": "Sangyun Kim",
+      "category": "Kategori 8",
+      "date": "2020-01-08",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/metaverse-4fd5-4.png"
+    },
+    {
+      "id": "9",
+      "title": "Cezmi",
+      "author": "Namık Kemal",
+      "category": "Kategori 9",
+      "date": "2020-01-09",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/cezmi-fa21f8-c0b.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Genel Psikoloji",
+      "author": "Feriha",
+      "category": "Kategori 1",
+      "date": "1111-11-11",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/genel-piskoloji--8ec8-.png"
+    },
+    {
+      "id": "11",
+      "title": "mertinevi",
+      "author": "mert",
+      "category": "davud",
+      "date": "2024-05-24",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/kurt-olmak-07d7-4.png"
+    },
+    {
+      "id": "12",
+      "title": "qeqegqeg",
+      "author": "qgqegeq",
+      "category": "qerqer",
+      "date": "2024-05-16",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/calikusu-3c6c.jpg"
+    },
+    {
+      "id": "13",
+      "title": "qeqegqeg",
+      "author": "KERSTIN EKMAN",
+      "category": "qerqer",
+      "date": "2024-05-14",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/kurt-olmak-07d7-4.png"
+    },
+    {
+      "id": "14",
+      "title": "114134",
+      "author": "13414",
+      "category": "314134",
+      "date": "2024-05-10",
+      "cover": "https://static.ticimax.cloud/cdn-cgi/image/width=188,quality=85/6196/uploads/urunresimleri/buyuk/kurt-olmak-07d7-4.png"
+    }
+  ]
+}

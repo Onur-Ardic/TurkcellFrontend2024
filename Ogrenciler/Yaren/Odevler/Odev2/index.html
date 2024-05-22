@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Library Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-sm  bg-primary"
+     
+    >
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-logo">
+          <img src="./img/Resized_Logo_100x70.png" alt="" class="img-fluid pt-2 " />
+        </a>
+
+        <div class="collapse navbar-collapse" id="bookNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+            <li class="nav-item ms-4 fs-3">
+              <a class="nav-link active" aria-current="page" href="#"></a>
+                <div class="headerText  d-flex align-items-center"><div class="library">
+                  <span class="letter-color text-mediumpink">L</span>
+                <span class="letter-color text-success">i</span>
+                <span class="letter-color text-mediumpink">b</span>
+                <span class="letter-color text-success">r</span>
+                <span class="letter-color text-mediumpink">a</span>
+                <span class="letter-color text-success">r</span>
+                <span class="letter-color text-mediumpink">y</span></div>
+                
+               <div class="project ms-3"><span class="letter-color text-success">P </span>
+                <span class="letter-color text-mediumpink">r</span>
+                <span class="letter-color text-success">o</span>
+                <span class="letter-color text-mediumpink">j</span>
+                <span class="letter-color text-success">e</span>
+                <span class="letter-color text-mediumpink">c</span>
+                <span class="letter-color text-success">t</span></div> 
+              </div>
+              </a>
+            </li>
+
+          </ul>
+          <div class="col-md-4 d-flex justify-content-end align-items-end">
+            <input
+              type="text"
+              class="form-control text-center  fst-italic"
+              placeholder="Enter Book Name or Author..."
+              id="searchText"
+              onkeyup="searchBook()"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="banner-area pb-30">
+      <div
+        class="banner-container position-relative d-flex align-items-center justify-content-center"
+      >
+        <img
+          class="d-block w-100"
+          height="300"
+          src="https://www.trinitybemidji.org/wp-content/uploads/2018/06/bible-study-1920-x-500.jpg"
+          alt="banner"
+        />
+        <h2 class="position-absolute fst-italic text-winered">
+          "Books are a uniquely portable magic."
+          <span> - Stephen King</span>
+        </h2>
+      </div>
+    </div>
+    <div class="container pt-3 pb-5">
+      <div class="row g-3  py-2 mb-5 justify-content-center">
+        <div class="col-12 col-sm-4 col-md-3 d-flex justify-content-center">
+          <button
+            class="btn btn-primary text-success btn-md"
+            data-bs-target="#bookModal"
+            data-bs-toggle="modal"
+            type="button"
+          >
+            ADD BOOK
+          </button>
+        </div>
+    
+        <div class="col-12 col-sm-4 col-md-3 d-flex justify-content-center">
+          <button
+            class="btn btn-primary text-success btn-md"
+            data-bs-target="#filterModal"
+            data-bs-toggle="modal"
+            type="button"
+          >
+            FILTER
+          </button>
+        </div>
+    
+        <div class="col-12 col-sm-4 col-md-3 d-flex justify-content-center">
+          <div class="dropdown">
+            <button
+              class="btn btn-lightpink text-success dropdown-toggle btn-md"
+              type="button"
+              id="sortDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              SORT
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="sortDropdown">
+              <li><a class="dropdown-item" href="#"  id="default"onclick="sortBooks('default')">Default</a></li>
+              <li><a class="dropdown-item" href="#" id="sort-az" onclick="sortBooks('asc')">A-Z</a></li>
+              <li><a class="dropdown-item" href="#" id="sort-za" onclick="sortBooks('desc')">Z-A</a></li>
+              <li><a class="dropdown-item" href="#" id="sort-date" onclick="sortBooks('date')">Date</a></li>
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+     <div class="table-responsive">
+      <table class="table mt-5">
+        <thead>
+          <tr class="fs-5  ">
+            <th class="text-winered">#</th>
+            <th class="text-winered">Book Name</th>
+            <th class="text-winered">Author</th>
+            <th class="text-winered">Category</th>
+            <th class="text-winered">Written Date</th>
+            <th class="text-winered">Cover Image</th>
+            <th class="text-winered">Actions</th>
+          </tr>
+        </thead>
+        <tbody class="fs-20"id="booksTBody">
+        </tbody>
+      </table>
+    </table>
+    </div>
+    
+  </div>
+
+    <div class="row ">
+   
+      <div class="bookCardContainer "></div>
+    </div>
+ 
+  </div>
+
+    <div
+      class="modal fade"
+      id="bookModal"
+      aria-hidden="true"
+      aria-labelledby="bookModelLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bookModelLabel">BOOK INFO</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="bookname" class="form-label">Book Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="bookname"
+                  placeholder="Write book Name please"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="author" class="form-label">Author:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="author"
+                  placeholder="Write author please"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="category" class="form-label">Category:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="category"
+                  placeholder="Write category please"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="writtendate" class="form-label"
+                  >Written Date:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="writtendate"
+                  placeholder="Write written date please"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="coverimage" class="form-label">Cover Image:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="coverimage"
+                  placeholder="Write cover image URL please"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary" id="saveBtn">
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="filterModal"
+      tabindex="-1"
+      aria-labelledby="filterModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="filterModalLabel">Filter</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <input
+                type="text"
+                id="filterCategory"
+                class="form-control"
+                placeholder="Please enter category"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                id="filterAuthor"
+                class="form-control"
+                placeholder="Please enter author name"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary" id="applyFilter" data-bs-dismiss="modal" >
+              Filter
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="js/book.js"></script>
+    <script src="js/bookService.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+    
+ 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  
+
+  </body>
+</html> 
+

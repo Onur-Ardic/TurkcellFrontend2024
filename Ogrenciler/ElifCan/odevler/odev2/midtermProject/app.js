@@ -18,7 +18,10 @@ window.onload = function () {
       showErrorToast();
     });
 
-  document.getElementById("publishDate").setAttribute("max", new Date());
+  const today = new Date();
+  const formattedToday = today.toISOString().slice(0, 10);
+  const publishDateInput = document.getElementById("publishDate");
+  publishDateInput.setAttribute("max", formattedToday);
 };
 
 function handleDeleteButtonClick(book) {
@@ -44,6 +47,7 @@ function updateButtonClickHandler(book) {
 
   UI.fillModal(book);
   bookId = book.id;
+  CheckValidity();
 }
 
 document
@@ -70,6 +74,7 @@ document
     } else {
       const addUrl = `http://localhost:3000/books`;
       const newBook = UI.getBook();
+
       req
         .post(addUrl, newBook)
         .then((data) => {
@@ -150,6 +155,7 @@ document.getElementById("addButton").addEventListener("click", function () {
   document.getElementById("previewImage").style.display = "none";
   document.getElementById("bookModalLabel").textContent = "Add Book";
   document.getElementById("updateButtonInsideModal").textContent = "Add";
+  CheckValidity();
 });
 
 document
@@ -182,4 +188,40 @@ function showErrorToast() {
   const toastEl = document.getElementById("errorToast");
   const toast = new bootstrap.Toast(toastEl);
   toast.show();
+}
+function CheckValidity() {
+  document
+    .getElementById("bookName")
+    .addEventListener("input", checkConditions);
+  document
+    .getElementById("bookWriter")
+    .addEventListener("input", checkConditions);
+  document
+    .getElementById("publishDate")
+    .addEventListener("input", checkConditions);
+  document
+    .getElementById("bookcategory")
+    .addEventListener("input", checkConditions);
+  document
+    .getElementById("bookPicture")
+    .addEventListener("input", checkConditions);
+}
+
+function checkConditions() {
+  const isBookNameValid = bookName.value.length > 0;
+  const isBookWriterValid = bookWriter.value.length > 0;
+  const isPublishDateValid = publishDate.value !== "";
+  const isBookCategoryValid = bookcategory.value !== "";
+  const isBookPictureValid = bookPicture.value !== "";
+  if (
+    isBookNameValid &&
+    isBookWriterValid &&
+    isPublishDateValid &&
+    isBookCategoryValid &&
+    isBookPictureValid
+  ) {
+    document.getElementById("updateButtonInsideModal").disabled = false;
+  } else {
+    document.getElementById("updateButtonInsideModal").disabled = true;
+  }
 }

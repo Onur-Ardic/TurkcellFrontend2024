@@ -1,0 +1,7 @@
+$custom-colors: (
+  "winered": #8b322c,
+  "lightpink": #ffd0d0,
+  "mediumpink": #fea8ad,
+  "cream": #f4dedb,
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
