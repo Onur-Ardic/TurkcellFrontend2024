@@ -1,71 +1,127 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Ramazan ÖZKAN"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Authority1"
-    },
-    {
-      "id": 3,
-      "name": "Authority2"
-
     }
   ],
-  "books":  [
+  "books": [
     {
-      "id": 1,
-      "title": "Harry Potter",
-      "author": "J.K. Rowling",
-      "price": 20,
-      "category":"Fantezi",
-      "publicationYear":1997, 
-      "upDate":"19/05/2024",
-      "updateUser":"1",
-      "addDa(te":"15/05/2024",
-      "img":"https://i.idefix.com/resize/800/0/cache/600x600-0/originals/0000000105599-1.jpg"
+      "id": "1716332232902",
+      "title": "Yüzüklerin Efendisi",
+      "author": "J.R.R  Tolkien",
+      "price": 524,
+      "category": "Fantezi",
+      "publicationYear": "2001",
+      "upDate": "2024-05-21T23:24:39.233Z",
+      "updateUser": "currentUser",
+      "img": "https://image01.idefix.com/resize/800/0/product/194237/yuzuklerin-efendisi-tek-cilt-ozel-basim-6436901443e79.jpg"
     },
     {
-      "id": 2,
-      "title": "Yüzüklerin Efendisi - Yüzük Kardeşliği",
-      "author": "J. R. R. Tolkien",
-      "price": 200,
-      "category":"Fantezi",
-      "publicationYear":1953,
-      "upDate":"19/05/2024",
-      "updateUser":"1",
-      "addDate":"15/05/2024",
-      "img":"https://image01.idefix.com/resize/800/0/product/1112210/the-fellowship-of-the-ring-6544a542bb50e.jpg"
+      "id": "1716332479762",
+      "title": "Efendi",
+      "author": "Soner Yalçın",
+      "price": 50,
+      "category": "Araştırma",
+      "publicationYear": "2012",
+      "upDate": "2024-05-21T23:20:29.152Z",
+      "updateUser": "currentUser",
+      "img": "https://www.incikitap.com/u/incikitap/img/c/i/m/img-1126-1-jpg-1651015723.jpg"
     },
     {
-      "id": 3,
-      "title": "Yüzüklerin Efendisi - İki Kule",
-      "author": "J. R. R. Tolkien",
-      "price": 250,
-      "category":"Fantezi",
-      "publicationYear":1954,
-      "upDate":"19/05/2024",
-      "updateUser":"1",
-      "addDate":"15/05/2024",
-      "img":"https://image01.idefix.com/resize/800/0/product/219275/yuzuklerin-efendisi-ii-iki-kule-6436bf32b1356.jpg"
+      "id": "1716332581510",
+      "title": "İnsan Mühendisliği",
+      "author": "Nüvit Osmay",
+      "price": 350,
+      "category": "Kişisel Gelişim",
+      "publicationYear": "2016",
+      "upDate": "2024-05-21T23:03:01.510Z",
+      "updateUser": "currentUser",
+      "img": "https://i.dr.com.tr/cache/500x400-0/originals/0000000114080-1.jpg"
     },
     {
-      "id": 3,
-      "title": "Yüzüklerin Efendisi-Kralın Dönüşü",
-      "author": "J. R. R. Tolkien",
-      "price": 300,
-      "category":"Fantezi",
-      "publicationYear":1955,
-      "upDate":"19/05/2024",
-      "updateUser":"1",
-      "addDate":"15/05/2024",
-      "img":"https://upload.wikimedia.org/wikipedia/tr/5/55/Kral%C4%B1n_D%C3%B6n%C3%BC%C5%9F%C3%BC_Kitap.jpg"
+      "id": "1716332792332",
+      "title": "Da Vinci Şifresi",
+      "author": "Dan Brown",
+      "price": 160,
+      "category": "Kurgu",
+      "publicationYear": "2003",
+      "upDate": "2024-05-21T23:06:32.332Z",
+      "updateUser": "currentUser",
+      "img": "https://i.dr.com.tr/cache/500x400-0/originals/0000000142987-1.jpg"
+    },
+    {
+      "id": "1716333186275",
+      "title": "Melekler ve Şeytanlar",
+      "author": "Dan Brown",
+      "price": 236,
+      "category": "Kurgu",
+      "publicationYear": "2004",
+      "upDate": "2024-05-21T23:13:06.275Z",
+      "updateUser": "currentUser",
+      "img": "https://i.dr.com.tr/cache/500x400-0/originals/0000000298884-1.jpg"
+    },
+    {
+      "id": "1716333368852",
+      "title": "İstanbul  Hatırası",
+      "author": "Ahmet Ümit",
+      "price": 246,
+      "category": "Roman",
+      "publicationYear": "2019",
+      "upDate": "2024-05-21T23:16:08.852Z",
+      "updateUser": "currentUser",
+      "img": "https://img.kitapyurdu.com/v1/getImage/fn:33514/wh:true/wi:220"
+    },
+    {
+      "id": "1716333722047",
+      "title": "Sin",
+      "author": "Orkun Uçar",
+      "price": 45,
+      "category": "Fantezi",
+      "publicationYear": "2013",
+      "upDate": "2024-05-21T23:22:41.887Z",
+      "updateUser": "currentUser",
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1383863596i/18759471.jpg"
+    },
+    {
+      "id": "1716333849168",
+      "title": "Öte dünya",
+      "author": "Brandon Mull",
+      "price": 295,
+      "category": "Fantezi",
+      "publicationYear": "2015",
+      "upDate": "2024-05-21T23:24:09.168Z",
+      "updateUser": "currentUser",
+      "img": "https://img.kitapyurdu.com/v1/getImage/fn:1029336/wh:true/wi:220"
+    },
+    {
+      "id": "1716334033648",
+      "title": "Cehennem Makineleri",
+      "author": "Philip Reeve ",
+      "price": 230,
+      "category": "Fantezi",
+      "publicationYear": "2019",
+      "upDate": "2024-05-21T23:27:13.648Z",
+      "updateUser": "currentUser",
+      "img": "https://img.kitapyurdu.com/v1/getImage/fn:179719/wh:true/wi:220"
+    },
+    {
+      "id": "1716334212792",
+      "title": "Dijital Kale",
+      "author": "Dan Brown",
+      "price": 305,
+      "category": "Kurgu",
+      "publicationYear": "2023",
+      "upDate": "2024-05-21T23:30:12.792Z",
+      "updateUser": "currentUser",
+      "img": "https://img.kitapyurdu.com/v1/getImage/fn:11753515/wh:true/wi:220"
     }
   ],
   "profile": {
     "name": "typicode"
   }
- 
 }

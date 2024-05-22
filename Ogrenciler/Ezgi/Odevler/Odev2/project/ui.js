@@ -1,11 +1,4 @@
 class UI {
-
-    static addBooksUI(book) {
-        RequestProcess.addBook(book)
-        this.displayBooksUI()
-        this.clearModalForm()
-    }
-
     static clearModalForm() {
         nameBook.value = "",
         writer.value = "",
@@ -16,16 +9,17 @@ class UI {
     }
 
     static removeBooksUI() {
-        const booksArea = document.querySelector('#books-area')
         booksArea.innerHTML = ''
     }
 
     static displayBooksUI(book) {
-
+    
         const bookCard = document.createElement("div");
         bookCard.classList.add('card', 'my-5')
         bookCard.style.color = 'white'
+        bookCard.setAttribute("data-id", `${book.id}`)
 
+        
         const row = document.createElement('div')
         row.classList.add('row')
 
@@ -33,7 +27,7 @@ class UI {
         imgDiv.classList.add('book-image', 'col-md-6')
 
         const img = document.createElement('img')
-        img.classList.add('book-image', 'img-fluid', 'rounded-start')
+        img.classList.add('book-image', 'img-fluid', 'rounded-start', 'col')
         img.src = `${book.image}`
         img.alt = `${book.nameBook}`
 
@@ -60,16 +54,8 @@ class UI {
         cardWriter.textContent = `${book.writer}`
 
         const categoryAndDateText = document.createElement('div')
-        categoryAndDateText.classList.add('d-flex', 'fw-medium', 'mb-3')
+        categoryAndDateText.classList.add('d-flex', 'fw-medium', 'mb-3', 'category-date')
         categoryAndDateText.textContent = `${book.category} / ${book.date}`
-
-        const cardCategory = document.createElement('p')
-        cardCategory.classList.add('card-category')
-
-        const cardDate = document.createElement('p')
-        cardDate.classList.add('card-date')
-
-        categoryAndDateText.append(cardCategory, cardDate)
 
         const cardDescription = document.createElement('em')
         cardDescription.classList.add('card-description')
@@ -79,26 +65,24 @@ class UI {
         cardBodyInfo.append(cardWriter, categoryAndDateText, cardDescription)
 
         const cardFooter = document.createElement('div')
-        cardFooter.classList.add('cardFooter', 'mb-2', 'd-flex', 'gap-1')
+        cardFooter.classList.add('cardFooter', 'mb-3', 'd-flex', 'gap-1', 'ms-3')
 
         colMd6.append(cardBody, cardFooter)
 
         const deleteBtn = document.createElement('button')
         deleteBtn.classList.add('btn', 'btn-danger', 'delete-btn')
-        deleteBtn.id = `${book.id}`
         deleteBtn.addEventListener('click', function () {
             bookCard.remove()
-            RequestProcess.deleteBook(book.id)
+            Request.delete(`http://localhost:3000/books/${book.id}`);
         })
 
 
         const editBtn = document.createElement('button')
         editBtn.classList.add('btn', 'btn-warning', 'edit-btn')
-        editBtn.id = `${book.id}`
         editBtn.setAttribute('data-bs-toggle', 'modal')
         editBtn.setAttribute('data-bs-target', '#addBookModal')
         editBtn.addEventListener('click', function () {
-            RequestProcess.updateBook(book.id, book)
+            UI.FillInputs(book)
             addBookModalTitle.textContent = 'Kitap Düzenle'
             modalUpdateBtn.removeAttribute('disabled')
             saveForm.setAttribute('disabled', true)
@@ -116,36 +100,16 @@ class UI {
         deleteBtn.appendChild(deleteIcon)
         editBtn.appendChild(editIcon)
         booksArea.appendChild(bookCard)
-
-
     }
-    static pressToUI(data) {
-        data.forEach((book) => {
-            UI.displayBooksUI(book)
-        })
+    static FillInputs(book) {
+        nameBook.value = book.nameBook,
+        writer.value = book.writer,
+        description.value = book.description,
+        category.value = book.category,
+        date.value = book.date,
+        image.value = book.image
+        modalUpdateBtn.setAttribute('data-id', book.id)
     }
-
-    static searchUI() {
-        const searchInput = document.querySelector('#searchInput')
-        const searchBtn = document.querySelector('#searchBtn')
-
-        searchInput.addEventListener("keyup", function () {
-            const searchValue = searchInput.value.toLowerCase()
-            const books = document.querySelectorAll('.card')
-            books.forEach(book => {
-                const nameBook = book.querySelector('.card-name').textContent.toLowerCase();
-                const writer = book.querySelector('.card-writer').textContent.toLowerCase();
-                if (nameBook.includes(searchValue) || writer.includes(searchValue)) {
-                    book.style.display = "block";
-                } else {
-                    book.style.display = "none";
-                }
-            })
-        })
-
-    }
-
-
 }
 
 

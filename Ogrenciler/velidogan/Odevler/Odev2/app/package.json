@@ -1,0 +1,19 @@
+{
+  "name": "odev2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch scss:css",
+    "start-server": "npx json-server ../db/db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3",
+    "json-server": "^0.17.4",
+    "sass": "^1.77.2"
+  }
+}

@@ -1,0 +1,63 @@
+#listBooks {
+    img{
+        height: 250px;
+    }
+}
+
+#error{
+    position: sticky;
+    top: 45%;
+    background-color: rgb(220, 20, 60);
+    z-index: 1;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    animation: err 1s alternate infinite;
+    padding: 10px; 
+    display: none;
+    width: 20%;
+    margin: -44px auto 0;
+    border-radius: 5px;
+}
+#error.show{
+    display: block;
+}
+@keyframes err{
+    to{
+        background-color: rgba(220, 20, 60,.5);
+        color: rgb(0, 0, 0,1);
+    }
+    from{
+        background-color: rgba(220, 20, 60,1);
+        color: rgb(255, 255, 255, 1);
+    }
+}
+
+.carousel-inner::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+}
+
+@media (min-width:993px){
+    #bookCarousel{
+        img{
+            height: 100vh;
+        }
+    }
+}
+
+@media (max-width:992px){
+    #bookCarousel{
+        height: 50vh;
+        img{
+            height: 480px;
+        }
+        h2{
+            font-size: 16px;
+        }
+    }
+}
+

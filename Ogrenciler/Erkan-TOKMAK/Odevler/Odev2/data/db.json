@@ -1,0 +1,100 @@
+{
+  "library": [
+    {
+      "name": "Sızma Sanatı",
+      "author": "Kevin Mitnick",
+      "year": "2005",
+      "genre": "Eğitim",
+      "picture": "https://m.media-amazon.com/images/I/71ltoCqM4TL._AC_UY218_.jpg",
+      "id": "ff74"
+    },
+    {
+      "name": "Ghost In The Wires: My Adventures as the World's Most Wanted Hacke",
+      "author": "Kevin Mitnick",
+      "year": "2001",
+      "genre": "Learning",
+      "picture": "https://m.media-amazon.com/images/I/41Hr0UyPsZL._SY445_SX342_.jpg",
+      "id": "9326"
+    },
+    {
+      "name": "Aldatma Sanatı",
+      "author": "Kevin Mitnick",
+      "year": "2001",
+      "genre": "Eğitim",
+      "picture": "https://m.media-amazon.com/images/I/61qes0ST80L._AC_UY218_.jpg",
+      "id": "81fb"
+    },
+    {
+      "name": "The Red Team Hacker'S Handbook: Mastering Offensice Security Techniques",
+      "author": "Mayer Hass",
+      "year": "2023",
+      "genre": "Learning",
+      "picture": "https://m.media-amazon.com/images/I/61KRjvAWD4L._AC_UL320_.jpg",
+      "id": "ec94"
+    },
+    {
+      "name": "The Art of Intrusion: The Real Stories Behind the Exploits of Hackers, Intruders and Deceivers",
+      "author": "Kevin Mitnick",
+      "year": "2005",
+      "genre": "Learning",
+      "picture": "https://m.media-amazon.com/images/I/61BkBK4YodL._AC_UY218_.jpg",
+      "id": "2ccb"
+    },
+    {
+      "name": "The Art of Deception: Controlling the Human Element of Security",
+      "author": "Kevin Mitnick",
+      "year": "2002",
+      "genre": "Learning",
+      "picture": "https://m.media-amazon.com/images/I/61YfjvcvSGL._AC_UY218_.jpg",
+      "id": "b823"
+    },
+    {
+      "id": "e7dc",
+      "name": "The Art of Invisibility: The World's Most Famous Hacker Teaches You How to Be Safe in the Age of Big Brother and Big Data",
+      "author": "Kevin Mitnick",
+      "year": "2019",
+      "genre": "Eğitim",
+      "picture": "https://m.media-amazon.com/images/I/61jHBH3wewL._AC_UY218_.jpg"
+    },
+    {
+      "id": "a401",
+      "name": "Hacker",
+      "author": "Malorie Blackman",
+      "year": "2004",
+      "genre": "Eğitim",
+      "picture": "https://m.media-amazon.com/images/I/81aendCExQL._AC_UY218_.jpg"
+    },
+    {
+      "id": "d042",
+      "name": "Bir Hackerin İkinci Hayatı",
+      "author": "M. Alparslan Akyıldız",
+      "year": "2018",
+      "genre": "Roman",
+      "picture": "https://m.media-amazon.com/images/I/512caV7PSmL._AC_UY218_.jpg"
+    },
+    {
+      "name": "The Web Application Hacker′s Handbook: Finding and Exploiting Security Flaws",
+      "author": "Dafydd Stuttard",
+      "year": "2011",
+      "genre": "Learning",
+      "picture": "https://m.media-amazon.com/images/I/81a2pCFfm9L._AC_UY218_.jpg",
+      "id": "4faa"
+    },
+    {
+      "name": "The Hacker Playbook: 3 Practical Guite to Penetration Testing",
+      "author": "Peter Kim",
+      "year": "2018",
+      "genre": "Learning",
+      "picture": "https://m.media-amazon.com/images/I/81qcFkBYCjL._AC_UY218_.jpg",
+      "id": "0e88"
+    },
+    {
+      "name": "The Hacker Playbook: Practical Guide To Penetration Testing",
+      "author": "Peter Kim",
+      "year": "2014",
+      "genre": "Learning",
+      "picture": "https://m.media-amazon.com/images/I/71IZQLtWjWL._AC_UY218_.jpg",
+      "id": "0528"
+    }
+  ]
+}

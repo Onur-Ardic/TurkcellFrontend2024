@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "title": "Yüzüklerin Efendisi",
+      "author": "J.R.R Tolkien",
+      "category": "Macera",
+      "year": "1954",
+      "cover": "https://i.dr.com.tr/cache/500x400-0/originals/0000000113094-1.jpg",
+      "id": "23a7a932-05d4-4f01-8c42-6d6d940a5895"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "category": "Bilim Kurgu",
+      "year": "1949",
+      "cover": "https://m.media-amazon.com/images/I/61ZewDE3beL._AC_UF1000,1000_QL80_.jpg",
+      "id": "32ad3f23-e664-40d9-986a-a8e4551589ae"
+    },
+    {
+      "id": "c1144603-dfd1-4c43-b6b6-773051c8b251",
+      "title": "Şeker Portakalı",
+      "author": "José Mauro de Vasconcelos",
+      "category": "Dram",
+      "year": "1968",
+      "cover": "https://img.kitapyurdu.com/v1/getImage/fn:11462950/wh:true/wi:500"
+    },
+    {
+      "title": "Satranç",
+      "author": "Stefan Zweig",
+      "category": "Psikolojik",
+      "year": "1942",
+      "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLEdrnAWrbcTBgmUmmh5ma7RJoffyjBXTycQP3CDy0Ag&s",
+      "id": "144752da-b38e-4d82-8d5a-efeeb038cf63"
+    },
+    {
+      "id": "672bd612-7a8a-4b68-b834-156e6fe1fb7e",
+      "title": "Ulysses",
+      "author": "James Joyce",
+      "category": "Postmodern",
+      "year": "1920",
+      "cover": "https://m.media-amazon.com/images/I/71VwqninLUL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "title": "Bülbülü Öldürmek",
+      "author": "Harper Lee",
+      "category": "Dünya Klasikleri",
+      "year": "1960",
+      "cover": "https://i.dr.com.tr/cache/600x600-0/originals/0001863920001-1.jpg",
+      "id": "acba543f-7dfb-4cc8-94e5-d1418d863014"
+    },
+    {
+      "id": "6a73a603-3485-4bbb-b5a3-363d1f50aca7",
+      "title": "Hayvan Çiftliği",
+      "author": "George Orwell",
+      "category": "Distopik",
+      "year": "1945",
+      "cover": "https://i.dr.com.tr/cache/600x600-0/originals/0000000105409-1.jpg"
+    },
+    {
+      "id": "8a1d3b8d-0546-4a4d-b26b-f799671486bb",
+      "title": "Amok Koşucusu",
+      "author": "Stefan Zweig",
+      "category": "Psikolojik",
+      "year": "1922",
+      "cover": "https://m.media-amazon.com/images/I/61WvkjkS2jL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "3b45104b-2938-407a-aade-193982dabcf1",
+      "title": "Yabancı",
+      "author": "Albert Camus",
+      "category": "Polisiye",
+      "year": "1942",
+      "cover": "https://img.kitapyurdu.com/v1/getImage/fn:11262270/wh:true/miw:200/mih:200"
+    },
+    {
+      "title": "Gurur ve Önyargı",
+      "author": "Jane Austen",
+      "category": "Romantik",
+      "year": "1813",
+      "cover": "https://www.soysalyayinlari.com.tr/u/soysalyayinlari/img/c/g/u/gururveonyargi-1605170614.jpg",
+      "id": "5f82d240-7754-47c5-ba4b-43a5dfc924c4"
+    }
+  ]
+}

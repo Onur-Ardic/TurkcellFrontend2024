@@ -1,48 +1,147 @@
 {
   "books": [
     {
-      "nameBook": "Da Vinci Şifresi sonnn",
-      "writer": "Dan Brown",
-      "description": "İsa ile ilgili tarihi sırlar ve Da Vinci'nin eserlerinde bu sırlarla ilgili ipuçları bıraktığına değinilir. Ayrıca Da Vinci'nin gizli bir tarikata üye olduğundan bahsetmektedir.",
-      "category": "Polisiye",
-      "date": "2003",
-      "image": "https://www.altinkitaplar.com.tr/static/img/2023/10/da_vinci_sifresi-m.jpg",
-      "id": "fba4b568-0afe-4062-ae3f-2f3205b031b4"
-    },
-    {
-      "nameBook": "Masumiyet Müzesi 11111111111",
-      "writer": "Orhan Pamuk",
-      "description": "İsa ile ilgili tarihi sırlar ve Da Vinci'nin eserlerinde bu sırlarla ilgili ipuçları bıraktığına değinilir. Ayrıca Da Vinci'nin gizli bir tarikata üye olduğundan bahsetmektedir.",
-      "category": "Aşk",
-      "date": "2013",
-      "image": "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg",
-      "id": "056e1b9c-42f5-4eeb-9c91-31f413a1fe78"
-    },
-    {
-      "id": "94aca42a-15f8-4d5b-baff-7c10b4d0c82d",
+      "id": "f465a237-500c-472b-9025-0a1ed50953cf",
       "nameBook": "Hanımın Çiftliği",
       "writer": "Orhan Kemal",
-      "description": "İsa ile ilgili tarihi sırlar ve Da Vinci'nin eserlerinde bu sırlarla ilgili ipuçları bıraktığına değinilir. Ayrıca Da Vinci'nin gizli bir tarikata üye olduğundan bahsetmektedir.",
-      "date": "1993",
+      "description": "İnsanın en soylu duygularından biri olan aşkın soysuzlaştığı bir dünyayı anlatan Hanımın Çiftliği,  büyük yazar Orhan Kemal'in ustalığının doruklarına ulaştığı bir roman.",
+      "date": "1961",
       "category": "Aşk",
+      "image": "https://www.alfayayinlari.com/upload/9789752897038.jpg"
+    },
+    {
+      "id": "01ea133a-2fd8-42a9-bed0-ea2cabfd961f",
+      "nameBook": "Masumiyet Müzesi",
+      "writer": "Orhan Pamuk",
+      "description": "1974 ile 2000'lerin başı arasında geçen Masumiyet Müzesi romanı, biri zengin diğeri orta halli iki aile üzerinden geçmişe dönüşler ve hatıralarla birlikte 1950-2000 arasında İstanbul hayatını anlatır.",
+      "date": "2008",
+      "category": "Aşk",
+      "image": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/orhan-pamuk-masumiyet-muzesi.jpg"
+    },
+    {
+      "id": "6008429d-1b62-461d-9f63-ea18b651c23a",
+      "nameBook": "Da Vinci Şifresi",
+      "writer": "Dan Brown",
+      "description": "İsa ile ilgili tarihi sırlar ve Da Vinci'nin eserlerinde bu sırlarla ilgili ipuçları bıraktığına değinilir. Ayrıca Da Vinci'nin gizli bir tarikata üye olduğundan bahsetmektedir.",
+      "date": "2003",
+      "category": "Polisiye",
       "image": "https://www.altinkitaplar.com.tr/static/img/2023/10/da_vinci_sifresi-m.jpg"
     },
     {
-      "id": "9cc109a3-5313-4c90-a11a-469e4aa22629",
-      "nameBook": "Lord Edgware'i Kim Öldürdü?",
-      "writer": "saaas",
-      "description": "asddasd",
-      "date": "asdasd",
+      "id": "2232e40e-d06c-4f60-bf37-fddd80b64e2a",
+      "nameBook": "Marslı",
+      "writer": "Andy Weir",
+      "description": "Andy Weir'in kurgu yeteneğini gözler önüne serdiği Marslı romanı 2035 yılında geçiyor. Romanın hikâyesi ise Mars'ta mahsur kalan Amerikalı astronot Mark Watney'i takip ediyor. ",
+      "date": "2011",
       "category": "Bilim-Kurgu",
+      "image": "https://i.dr.com.tr/cache/500x400-0/originals/0000000625238-1.jpg"
+    },
+    {
+      "nameBook": "Kendi Gök Kubbemiz",
+      "writer": "Yahya Kemal Beyatlı",
+      "description": " Eski ve yeni, doğu ve batı, vatan ve İstanbul sevgisi ve insana dair her tür özlem, aşk ve ölüm temaları şairin dizelerinde vücut bulur.",
+      "category": "Şiir",
+      "date": "1961",
+      "image": "https://cdn2.dokuzsoft.com/u/cukurovakitap/img/c/k/e/kendi-gok-kubbemiz0dc9681949913edd5e8ca21282fd7be1.jpg",
+      "id": "4a578f45-f1e0-407d-aabb-a577ef7f37a9"
+    },
+    {
+      "nameBook": "Medyum",
+      "writer": "Stephen King",
+      "description": "Alkolizm sorunları ve öfke kontrol bozukluğu nedeniyle öğretmenlik işini kaybeden Jack Torrance adındaki yazarın alkolü bırakması, kendisi ve ailesinin hayatını düzene koyma çabası ile başlar.",
+      "category": "Korku-Gerilim",
+      "date": "1977",
+      "image": "https://www.altinkitaplar.com.tr/static/img/2016/04/medyum2-m.jpg",
+      "id": "4f293bda-57cd-4130-b8d5-ea6171948f48"
+    },
+    {
+      "nameBook": "Şah & Sultan",
+      "writer": "İskender Pala",
+      "description": "Osmanlı padişahı Yavuz Sultan Selim ile Safevî hükümdarı Şah İsmail arasındaki ikili rekabete ve Sünni-Şii meselesine değinilmiştir.",
+      "category": "Tarihi",
+      "date": "2010",
+      "image": "https://m.media-amazon.com/images/I/71EQCGF0iJL._AC_UF1000,1000_QL80_.jpg",
+      "id": "5c7c2133-782d-4093-a971-eb8da4d3e53c"
+    },
+    {
+      "nameBook": "Sevginin Gücü",
+      "writer": " Caroline Richards",
+      "description": "Ayıcık sevgi dolu anlarını düşünürse ateşböcekleri ışıldayıp yolunu aydınlatacakmış. Acaba Ayıcık evinin yolunu bulmak için sevginin gücünü kullanabilecek mi?",
+      "category": "Çocuk",
+      "date": "2019",
+      "image": "https://www.iskultur.com.tr/webp/2019/12/Sevginin-Gucu-15.png",
+      "id": "e1121833-95ac-4ff8-8e08-0bdc2ae5c221"
+    },
+    {
+      "id": "a1093910-84f5-4259-8837-fb67a066bbd1",
+      "nameBook": "Vukuat Var",
+      "writer": "Orhan Kemal",
+      "description": "Toprağını kaybedip yoksullaşan köylülerle gittikçe güçlenen toprak ağaları arasında gerilen ilişkileri ele alırken kadın işçilerin de bu ilişki içinde kimliklerini yeniden oluşturmasına tanıklık ediyor.",
+      "category": "Tarihi",
+      "date": "1958",
+      "image": "https://1k-cdn.com/resimler/kitaplar/122305_6bdef_1586270573.jpg"
+    },
+    {
+      "id": "c094c9ca-a9ca-46a5-8384-2610fb1f1241",
+      "nameBook": "Benim Adım Kırmızı",
+      "writer": "Orhan Pamuk",
+      "description": "1591 yılında Osmanlı Padişahı III. Murad'ın saltanat döneminde 9 gün süreyle karlı bir havada İstanbul'da geçer. ",
+      "category": "Tarihi",
+      "date": "1998",
+      "image": "https://i.dr.com.tr/cache/600x600-0/originals/0000000451871-1.jpg"
+    },
+    {
+      "id": "d2f77405-724f-4c20-8a4a-e7dca0a7e68c",
+      "nameBook": "Melekler ve Şeytanlar",
+      "writer": "Dan Brown",
+      "description": "Teoloji uzmanı Robert Langdon, tarihteki en güçlü yeraltı şebekesi olan İlluminati adlı antik gizli kardeşlik cemiyetinin tekrar canlandığını öğrenir. ",
+      "category": "Polisiye",
+      "date": "2000",
+      "image": "https://i.dr.com.tr/cache/600x600-0/originals/0000000298884-1.jpg"
+    },
+    {
+      "id": "fa95e834-b5e2-49cb-869a-e6f58f94fa88",
+      "nameBook": "Artemis",
+      "writer": "Andy Weir",
+      "description": "Hamal ve kaçakçı olan Jasmine \"Jazz\" Bashara, kendini şehrin kontrolü için bir komploya karışmış halde buluyor ve komployu arkadaşlarıyla beraber kendi lehine çevirmeye çalışıyorlar. ",
+      "category": "Bilim-Kurgu",
+      "date": "2017",
+      "image": "https://storage.evrimagaci.org/old/mi_media/ba81b1c31bbd28e6470ae14fb899bfaa.jpeg"
+    },
+    {
+      "id": "982eeede-efed-4ea9-91d6-44b01563fae2",
+      "nameBook": "Eğil Dağlar",
+      "writer": "Yahya Kemal Beyatlı",
+      "description": "Yahya Kemalin İstiklâl Harbi yazıları ile 1919ların o buhranlı günlerindeki düşünce ve görüşlerini açıkladığı nesir, fıkra, makale ve hatıralarını bir araya toplayan eser.",
+      "category": "Şiir",
+      "date": "1966",
+      "image": "https://1k-cdn.com/resimler/kitaplar/9414_f37c3_1579465317.jpg"
+    },
+    {
+      "id": "ff8bbac1-8db6-4ec5-be00-d73d84d80fcb",
+      "nameBook": "Yeşil Yol",
+      "writer": "Stephen King",
+      "description": "bir hapishane görevlisi ile bir mahkumun öyküsünü anlatıyor. Paul Edgecomb'un hapishanedeki görevi, idama mahkum edilen mahkumları son yolculuklarına uğurlamaktır. Çalıştığı yıllar içerisinde yüzlerce mahkumu idam etmiştir. ",
+      "category": "Korku-Gerilim",
+      "date": "1996",
+      "image": "https://img.kitapyurdu.com/v1/getImage/fn:5813625/wh:true/wi:800"
+    },
+    {
+      "id": "a34a2f88-6947-4bc5-9b23-3832dcf519d9",
+      "nameBook": "asd SONNNNNN",
+      "writer": "asd",
+      "description": "asd",
+      "category": "Bilim-Kurgu",
+      "date": "1961",
       "image": "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg"
     },
     {
-      "id": "0b4270f2-3a52-4a7b-96b8-6e3bff5006b6",
-      "nameBook": "Lord Edgware'i Kim Öldürdü?",
-      "writer": "saaas",
-      "description": "asddasd",
-      "date": "asdasd",
+      "id": "868d06e5-c8d8-4480-adb1-1563c5cefab4",
+      "nameBook": "awd sss",
+      "writer": "ads",
+      "description": "asd",
       "category": "Bilim-Kurgu",
+      "date": "1961",
       "image": "https://dusunbil.com/wp-content/uploads/2018/01/YourCareer-Dec15-1024x768.jpg"
     }
   ]

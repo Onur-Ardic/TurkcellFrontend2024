@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "id": "1001",
+      "name": "Harry Potter ve Felsefe Taşı",
+      "author": "J. K. Rowling",
+      "category": "Roman",
+      "year": 1997,
+      "cover": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/Harry-Potter_1-Felsefe-tasi-8266-1.jpg"
+    },
+    {
+      "id": "1002",
+      "name": "Harry Potter ve Sırlar Odası",
+      "author": "J. K. Rowling",
+      "category": "Roman",
+      "year": 1998,
+      "cover": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/Sirlar-odasi-kap-8267.jpg"
+    },
+    {
+      "id": "1003",
+      "name": "Harry Potter ve Azkaban Tutsağı",
+      "author": "J. K. Rowling",
+      "category": "Roman",
+      "year": 1999,
+      "cover": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/Azkaban-Tutsagi-kap-8268.jpg"
+    },
+    {
+      "id": "1004",
+      "name": "Harry Potter ve Ateş Kadehi",
+      "author": "J. K. Rowling",
+      "category": "Roman",
+      "year": 2000,
+      "cover": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/4-Ates-Kadehi.jpg"
+    },
+    {
+      "id": "1005",
+      "name": "Harry Potter ve Zümrüdüanka Yoldaşlığı",
+      "author": "J. K. Rowling",
+      "category": "Roman",
+      "year": 2003,
+      "cover": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/Harry-Potter_5-Zumruduanka-Yoldasligii-8264.jpg"
+    },
+    {
+      "id": "1006",
+      "name": "Harry Potter ve Melez Prens",
+      "author": "J. K. Rowling",
+      "category": "Roman",
+      "year": 2005,
+      "cover": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/Harry-Potter_6-Melez-Prens-8263.jpg"
+    },
+    {
+      "id": "1007",
+      "name": "Harry Potter ve Ölüm Yadigârları",
+      "author": "J. K. Rowling",
+      "category": "Roman",
+      "year": 2007,
+      "cover": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/Harry-Potter_7-Olum-Yadigarlari-8265.jpg"
+    },
+    {
+      "id": "1008",
+      "name": "Fantastik Canavarlar Nelerdir, Nerede Bulunurlar?",
+      "author": "Newt Scamander",
+      "category": "Fantezi",
+      "year": 2001,
+      "cover": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/HP_Fantastik_Canavarlar-1826-1.jpg"
+    },
+    {
+      "id": "1009",
+      "name": "Çağlar Boyu Quidditch",
+      "author": "Kennilworthy Whisp",
+      "category": "Fantezi",
+      "year": 2001,
+      "cover": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/HP_Caglar_Boyu_Quidditch-1822-1.jpg"
+    },
+    {
+      "id": "1010",
+      "name": "Ozan Beedle'ın Hikâyeleri",
+      "author": "J.K. Rowling",
+      "category": "Fantezi",
+      "year": 2007,
+      "cover": "https://www.yapikrediyayinlari.com.tr/dosyalar/2017/03/ozan-beedle-kap-2625.jpg"
+    }
+  ]
+}

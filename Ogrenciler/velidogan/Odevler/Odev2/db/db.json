@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "id": "e1466575-6366-414e-8614-ae29c4144794",
+      "name": "Anna Karenina",
+      "author": "Lev Nikolayeviç Tolstoy",
+      "category": "Novel",
+      "date": "1878",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000374848-1.jpg"
+    },
+    {
+      "id": "ad0f0e9f-f92c-4367-ba35-41548bc38f86",
+      "name": "Harry Potter ve Felsefe Taşı",
+      "author": "J. K. Rowling",
+      "category": "Novel",
+      "date": "1999",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000105599-1.jpg"
+    },
+    {
+      "id": "4d3c5589-e476-4f4b-a7c9-c08c76f4950e",
+      "name": "Nutuk",
+      "author": "Mustafa Kemal Atatürk",
+      "category": "Historical",
+      "date": "1927",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000325204-1.jpg"
+    },
+    {
+      "id": "0a99bc86-db95-4820-a118-59748930db2a",
+      "name": "Cumhuriyet'in Doğuşu - Kurtuluş ve Kuruluş Yılları",
+      "author": "İlber ORTAYLI",
+      "category": "Historical",
+      "date": "2023",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0002082664001-1.jpg"
+    },
+    {
+      "id": "be5d0119-a51b-4f14-a2c9-c1663073d469",
+      "name": "İmparatorluktan Cumhuriyete",
+      "author": "Halil İnalcık",
+      "category": "Historical",
+      "date": "1995",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0001788681001-1.jpg"
+    },
+    {
+      "id": "4f81dcba-6c8b-4d57-8c87-59b05fa03253",
+      "name": "Tanrı Yanılgısı",
+      "author": "Richard Dawkins",
+      "category": "Religious",
+      "date": "2006",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000417529-1.jpg"
+    },
+    {
+      "id": "dd1e86ed-bc0f-42ba-b220-0e407aa1d193",
+      "name": "God Is Not Great: How Religion Poisons Everything",
+      "author": "Christopher Hitchens",
+      "category": "Religious",
+      "date": "2007",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000303913-1.jpg"
+    },
+    {
+      "id": "3ef133ae-848d-4017-bab3-d457b7d472b1",
+      "name": "The End of Faith: Religion, Terror, and the Future of Reason",
+      "author": "Sam Harris",
+      "category": "Religious",
+      "date": "2004",
+      "imgUrl": "data:image/jpeg;base64,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"
+    },
+    {
+      "id": "29b21253-8ca6-4565-9882-18cc92a7d01f",
+      "name": "Şu Çılgın Türkler",
+      "author": "Turgut Özakman",
+      "category": "Novel",
+      "date": "2005",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0000000177540-1.jpg"
+    },
+    {
+      "id": "fd53840b-a989-40a5-baa2-5810e783c1bc",
+      "name": "Ütopya",
+      "author": "Thomas Moore",
+      "category": "Novel",
+      "date": "1516",
+      "imgUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0002026787001-1.jpg"
+    }
+  ]
+}
