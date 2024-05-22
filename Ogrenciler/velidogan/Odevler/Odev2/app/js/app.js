@@ -86,7 +86,7 @@ ui.sort.addEventListener("change",(e) => {
 
 ui.searchName.addEventListener("input",(e) => {
     let key = e.target.value;
-    Request.get(`http://localhost:3000/books?author_like=${key}`)
+    Request.get(`http://localhost:3000/books?name_like=${key}`)
         .then(data => ui.displayBooks(data));
 })
 
