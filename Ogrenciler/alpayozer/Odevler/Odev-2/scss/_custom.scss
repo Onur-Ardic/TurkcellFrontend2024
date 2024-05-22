@@ -1,6 +1,6 @@
 .card{
     height: 300px;
-    border: none;
+    // border: none;
     box-shadow: 0 0 10px 0 rgb(0, 0, 0);
     img{
         width: 100%;
@@ -8,21 +8,18 @@
         object-fit: cover;
     }
     .card-body{
-        position: absolute;
-        bottom: 0;
         background-color: rgb(29, 21, 46);
         width: 100%;
         display: none;
     }
     .card-icon{
-        position:absolute;
         top:5px;
         right:5px;
         i{
             display: none;
             font-size: 12px;
-            color: #000000;
-            background-color: #ffffff;
+             color: #000000;
+             background-color: #ffffff;
             padding: 0.5rem;
             border-radius: 50%;
             margin-bottom: 5px;
@@ -38,4 +35,9 @@
             display: block;
         }
     }
+}
+.landing-section{
+    background-image: url("../assets/pexels-nitin-arya-386173-1029141.jpg");
+    background-size: cover;
+    background-position: center;
 }

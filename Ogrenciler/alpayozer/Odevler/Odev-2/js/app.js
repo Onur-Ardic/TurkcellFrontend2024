@@ -20,6 +20,7 @@ const searchBookInput = document.getElementById("search");
 const sortingSelect = document.getElementById("sortingSelect");
 const publisherSelect = document.getElementById("publisherSelect");
 const authorSelect = document.getElementById("authorSelect");
+const modalForm = document.getElementById("modalForm");
 
 const ui = new UI();
 
@@ -27,7 +28,7 @@ window.onload = () => {
   ui.showBooks();
 };
 
-addBookButton.addEventListener("click", function () {
+modalForm.addEventListener("submit", function () {
   const book = new Book(
     title.value,
     author.value,
