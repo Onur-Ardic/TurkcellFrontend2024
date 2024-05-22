@@ -19,7 +19,7 @@ class Request {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
-          "Content-type": "application/json;",
+          "Content-type": "application/json",
         },
       })
         .then(response => console.log(response.json()))
@@ -29,7 +29,7 @@ class Request {
         .then((data) => console.log(data))
     }
      static delete(url, id) {
-        fetch(`${url}/${id}`, { // URL'ye id'yi ekleyerek silinecek kitabı belirtiyoruz
+        fetch(`${url}/${id}`, { 
             method: "DELETE",
         })
         .then((response) => response.json())
@@ -41,7 +41,7 @@ class Request {
             method: "PUT",
             body: JSON.stringify(newData),
             headers: {
-                "Content-type": "application/json;",
+                "Content-type": "application/json",
             },
         })
         .then(response => response.json())
