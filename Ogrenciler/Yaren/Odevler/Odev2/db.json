@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "bookName": "Dune",
+      "author": "Frank Herbert",
+      "category": "scifi",
+      "writtenDate": 1965,
+      "coverImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWFWiK-Q4Uxw_NqxboFq9pJyP1K9-DVXOS6Uo6OREWxg&s "
+    },
+    {
+      "id": "2",
+      "bookName": "A Game of Thrones",
+      "author": "George R.R. Martin",
+      "category": "fantasy",
+      "writtenDate": 1996,
+      "coverImage": "https://m.media-amazon.com/images/I/714ExofeKJL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "3",
+      "bookName": "Aylak Adam",
+      "author": "Yusuf Atilgan",
+      "category": "Psychological ",
+      "writtenDate": 1959,
+      "coverImage": "https://img.kitapyurdu.com/v1/getImage/fn:1010850/wh:true/wi:500"
+    },
+    {
+      "id": "4",
+      "bookName": "Foundation",
+      "author": "Isaac Asimov",
+      "category": "scifi",
+      "writtenDate": 1951,
+      "coverImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMyG_BmQBOdh8QELx_PZTtIygeyCoo4EYIemPdMKbt_y6ruEiEEPYoa1xKw3djPoayNy0&usqp=CAU "
+    },
+    {
+      "id": "5",
+      "bookName": "The Lightning Thief",
+      "author": "Rick Riordan",
+      "category": "adventure",
+      "writtenDate": 2005,
+      "coverImage": "https://m.media-amazon.com/images/I/81cvPZfuApL._AC_UF1000,1000_QL80_.jpg "
+    },
+    {
+      "id": "6",
+      "bookName": "The Shining",
+      "author": "Stephen King",
+      "category": "horror",
+      "writtenDate": 1977,
+      "coverImage": "https://m.media-amazon.com/images/I/71oXpXeWbML._AC_UF1000,1000_QL80_.jpg "
+    },
+    {
+      "id": "7",
+      "bookName": "I, Robot",
+      "author": "Isaac Asimov",
+      "category": "scifi",
+      "writtenDate": 1950,
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1497545507i/1796948.jpg "
+    },
+    {
+      "id": "8",
+      "bookName": "Metro 2033",
+      "author": "Dmitry Glukhovsky",
+      "category": "scifi",
+      "writtenDate": 2002,
+      "coverImage": "https://i.dr.com.tr/cache/500x400-0/originals/0000000667877-1.jpg "
+    },
+    {
+      "id": "9",
+      "bookName": "Howl's Moving astle",
+      "author": "Diana Wynne Jones",
+      "category": "children",
+      "writtenDate": 1986,
+      "coverImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5hHXtGbVIWCMYxys0juiAa4iKsU4UyxdoqwYdpXA0YbmzqOS4jzDV8NmefbCcKf93eBA&usqp=CAU "
+    },
+    {
+      "bookName": "A Wizard of Earthsea",
+      "author": "Ursula K. Le Guin",
+      "category": "fantasy",
+      "writtenDate": 1968,
+      "coverImage": "https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg ",
+      "id": "10"
+    }
+  ]
+}

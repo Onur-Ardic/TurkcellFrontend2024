@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  border: none;
+}
+
+@mixin fonts($fontfamily, $fontweight, $fontstyle) {
+  font-family: $fontfamily;
+  font-weight: $fontweight;
+  font-style: $fontstyle;
+}
