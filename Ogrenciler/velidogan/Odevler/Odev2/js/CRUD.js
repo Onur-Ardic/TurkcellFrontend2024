@@ -20,7 +20,6 @@ class Request{
                 }
             });
             if(!response.ok){
-                e.preventDefault()
                 throw new Error("Kitap Eklenemedi.")
             }
 
