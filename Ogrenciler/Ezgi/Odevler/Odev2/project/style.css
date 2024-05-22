@@ -17,7 +17,6 @@ body{
   object-fit: cover;
 }
 .card{
-  /* width: 32rem; */
   flex: 1 1 calc(50% - 16px); /* Her kart, boşluk hariç konteyner genişliğinin %50'sini kaplar */
   box-sizing: border-box;
   background-color: rgb(35, 35, 35);
@@ -27,10 +26,20 @@ em{
 }
 .body{
   background-color: rgb(255, 242, 230);
+  min-height: 100vh;
 }
 .filter-area-item{
   transition: background-color 0.3s ease;
 }
 .filter-area-item:hover{
   background-color: rgb(255, 173, 19) !important;
+}
+@media screen and (max-width:768px){
+  .card{
+    flex: 1 1 calc(100%);
+  }
+  .book-image{
+    width: 100%;
+    object-fit: contain;
+  }
 }
