@@ -60,7 +60,6 @@ document.getElementById("searchBookDiv").addEventListener("submit", function(e){
     Request.get("http://localhost:3000/books?bookname_like=" + search)
         .then(data => ui.createCard(data));
 
-        document.getElementById("searchBookName").innerHTML = "";
 
 
 });
@@ -68,11 +67,8 @@ document.getElementById("searchBookDiv").addEventListener("submit", function(e){
 document.getElementById("searchAuthorDiv").addEventListener("submit", function(e){
     e.preventDefault();
     ui.clearBookOnPage();
-    let search = document.getElementById("searchBookAuthor").value.trim();
-    Request.get("http://localhost:3000/books?author_like=" + search)
+    let search = document.getElementById("searchAuthor").value.trim();
+    Request.get("http://localhost:3000/books?author_like=" +search)
         .then(data => ui.createCard(data));
-
-        document.getElementById("searchBookAuthor").innerHTML = "";
-
-
+ 
 });
