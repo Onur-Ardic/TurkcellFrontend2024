@@ -125,46 +125,29 @@
                 <div class="row">
                     <div
                         class="filter-area mb-3 d-flex align-items-baseline justify-content-center gap-3  text-black p-3 rounded-3">
-                        <div>
-                            <input type="button"
-                                class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
-                                id="all" name="all" value="Tümü">
-                        </div>
-                        <div>
-                            <input type="button"
-                                class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
-                                id="science-fiction" name="science-fiction" value="Bilim-Kurgu">
-                        </div>
-                        <div>
-                            <input type="button"
-                                class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
-                                id="poem" name="poem" value="Şiir">
-                        </div>
-                        <div>
-                            <input type="button"
-                                class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
-                                id="detective" name="detective" value="Polisiye">
-                        </div>
-                        <div>
-                            <input type="button"
-                                class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
-                                id="historical" name="historical" value="Tarihi">
-                        </div>
-                        <div>
-                            <input type="button"
-                                class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
-                                id="horror-thriller" name="horror-thriller" value="Korku-Gerilim">
-                        </div>
-                        <div>
-                            <input type="button"
-                                class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
-                                id="love" name="love" value="Aşk">
-                        </div>
-                        <div>
-                            <input type="button"
-                                class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
-                                id="kid" name="kid" value="Çocuk">
-                        </div>
+                        <button id="all" name="all" value="Tümü"
+                            class="filter-area-item active bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0">Tümü</button>
+                        <button
+                            class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
+                            id="science-fiction" name="science-fiction" value="Bilim-Kurgu">Bilim-Kurgu</button>
+                        <button
+                            class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
+                            id="poem" name="poem" value="Şiir">Şiir</button>
+                        <button
+                            class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
+                            id="detective" name="detective" value="Polisiye">Polisiye</button>
+                        <button
+                            class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
+                            id="historical" name="historical" value="Tarihi">Tarihi</button>
+                        <button
+                            class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
+                            id="horror-thriller" name="horror-thriller" value="Korku-Gerilim">Korku-Gerilim</button>
+                        <button
+                            class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
+                            id="love" name="love" value="Aşk">Aşk</button>
+                        <button
+                            class="filter-area-item bg-warning-subtle fw-bold py-2 ps-3 pe-3 rounded-4 border border-0"
+                            id="kid" name="kid" value="Çocuk">Çocuk</button>
                     </div>
 
                 </div>
@@ -175,36 +158,9 @@
     <div class="body py-5">
         <div class="container">
             <h2 class="text-center fw-bold py-5">KÜTÜPHANEM</h2>
-            <div id="books-area" class="books-container d-flex flex-wrap gap-4">
-                <!-- <div class="col" id="col">
-                    <div class="card my-5" data-id="f465a237-500c-472b-9025-0a1ed50953cf" style="color: white;">
-                        <div class="row">
-                            <div class="book-image col-md-6"><img class="book-image img-fluid rounded-start"
-                                    src="https://www.alfayayinlari.com/upload/9789752897038.jpg" alt="Hanımın Çiftliği">
-                            </div>
-                            <div class="col-md-6 d-flex flex-column justify-content-between">
-                                <div class="card-body d-flex flex-column gap-1">
-                                    <h4 class="card-name fw-bold">Hanımın Çiftliği</h4>
-                                    <div class="card-body-info">
-                                        <p class="card-writer fw-medium mb-0">Orhan Kemal</p>
-                                        <div class="d-flex fw-medium mb-3 category-date">Aşk / 1961</div><em
-                                            class="card-description">İnsanın en soylu duygularından biri olan aşkın
-                                            soysuzlaştığı bir dünyayı anlatan Hanımın Çiftliği, büyük yazar Orhan
-                                            Kemal'in ustalığının doruklarına ulaştığı bir roman.</em>
-                                    </div>
-                                </div>
-                                <div class="cardFooter mb-3 d-flex gap-1 ms-3"><button
-                                        class="btn btn-danger delete-btn"><i
-                                            class="fa-solid fa-trash"></i></button><button
-                                        class="btn btn-warning edit-btn" data-bs-toggle="modal"
-                                        data-bs-target="#addBookModal"><i
-                                            class="fa-solid fa-pen-to-square"></i></button></div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div> 
-            </div>
+            <div id="books-area" class="books-container d-flex flex-wrap gap-4"></div>
         </div>
+    </div>
     </div>
     <script src="book.js"></script>
     <script src="request.js"></script>
