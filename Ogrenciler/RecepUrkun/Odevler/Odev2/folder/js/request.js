@@ -26,7 +26,6 @@ class Request {
     }
 
     static async put(baseUrl, data) {
-        console.log(data)
         try {
             const response = await fetch(baseUrl, {
                 method: "PUT",

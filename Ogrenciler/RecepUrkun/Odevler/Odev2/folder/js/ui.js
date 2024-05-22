@@ -55,13 +55,13 @@ class UI {
             bookName.classList.add('card-text', 'text-center', 'mb-1');
             const bookNameContent = document.createElement('b');
             bookNameContent.textContent = book.name;
-            bookName.appendChild(bookNameContent);            
+            bookName.appendChild(bookNameContent);
 
             const authorName = document.createElement('h6');
             authorName.classList.add('card-text', 'm-0', 'text-center', 'opacity-50', 'mb-1');
             const authorNameContent = document.createElement('i');
             authorNameContent.textContent = book.author;
-            authorName.appendChild(authorNameContent);            
+            authorName.appendChild(authorNameContent);
 
             const badgeContainer = document.createElement('div');
             badgeContainer.classList.add('d-flex', 'justify-content-center');
@@ -143,7 +143,7 @@ class UI {
             categoryHeaderContent.classList.add("dropdown-header");
             categoryHeaderContent.textContent = "Kategoriler";
             categoryHeader.appendChild(categoryHeaderContent);
-            categoryDropdown.appendChild(categoryHeader);            
+            categoryDropdown.appendChild(categoryHeader);
 
             categories.forEach(category => {
                 const li = document.createElement("li");
@@ -170,7 +170,7 @@ class UI {
             authorHeaderContent.classList.add("dropdown-header");
             authorHeaderContent.textContent = "Yazarlar";
             authorHeader.appendChild(authorHeaderContent);
-            categoryDropdown.appendChild(authorHeader);            
+            categoryDropdown.appendChild(authorHeader);
 
             authors.forEach(author => {
                 const li = document.createElement("li");
@@ -225,6 +225,7 @@ class UI {
         figcaption.textContent = sentence.bookAuthor;
 
         const cite = document.createElement('cite');
+        cite.classList.add('ms-2');
         cite.title = "Book Title";
         cite.textContent = sentence.bookName;
 
