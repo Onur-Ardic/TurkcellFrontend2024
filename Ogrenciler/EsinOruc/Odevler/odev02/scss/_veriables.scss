@@ -1,0 +1,7 @@
+$custom-spacers: (
+  50: $spacer * 3.125,
+  100: $spacer * 6.3,
+  150: $spacer * 9.375,
+  200: $spacer * 12.5,
+);
+$spacers: map-merge($spacers, $custom-spacers);
