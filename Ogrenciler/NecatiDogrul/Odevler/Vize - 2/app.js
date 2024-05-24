@@ -1,6 +1,10 @@
-UI.displayBooks();
 const addBookButton = document.querySelector("#addBookButton");
-addBookButton.addEventListener("click", (e) => {
+let books = [];
+document.addEventListener("DOMContentLoaded", () => {
+  UI.displayBooks();
+});
+
+document.querySelector("#form").addEventListener("submit", (e) => {
   e.preventDefault();
   const title = document.querySelector("#title").value;
   const author = document.querySelector("#author").value;
@@ -19,8 +23,12 @@ addBookButton.addEventListener("click", (e) => {
       coverImageUrl
     );
 
-    UI.createBook(newBook);
-    UI.addBookToUI(newBook);
+    UI.createBook(newBook).then((book) => {
+      books.push(book);
+      UI.createCard(book);
+      document.querySelector("#form").reset();
+      new bootstrap.Modal(document.getElementById("exampleModal")).hide();
+    });
   });
 });
 
@@ -42,7 +50,11 @@ document.querySelector("#updateForm").addEventListener("submit", function (e) {
     publishedDate,
     coverImageUrl,
   };
-  UI.updateBook(id, updatedBook);
+  UI.updateBook(id, updatedBook).then(() => {
+    document.querySelector("#cards").textContent = "";
+    UI.displayBooks();
+    new bootstrap.Modal(document.getElementById("updateModal")).hide(); 
+  });
 });
 
 document.querySelector("#sortDropdown").addEventListener("change", (e) => {
@@ -70,32 +82,4 @@ document.querySelector("#search").addEventListener("keyup", function (e) {
     .value.trim()
     .toLowerCase();
   UI.searchBooks(searchText);
-});
-
-document.querySelector("#updateForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  const id = document
-    .querySelector("#updateBookButton")
-    .getAttribute("data-id");
-  const title = document.querySelector("#updateTitle").value;
-  const author = document.querySelector("#updateAuthor").value;
-  const category = document.querySelector("#updateCategory").value;
-  const publishedDate = document.querySelector("#updatePublishedDate").value;
-  const coverImageUrl = document.querySelector("#updateCoverImageUrl").value;
-  const updatedBook = {
-    id,
-    title,
-    author,
-    category,
-    publishedDate,
-    coverImageUrl,
-  };
-  UI.updateBook(id, updatedBook);
-});
-
-document.querySelector("#filterForm").addEventListener("keyup", function (e) {
-  e.preventDefault();
-  const category = document.querySelector("#filterCategory").value;
-  const author = document.querySelector("#filterAuthor").value;
-  UI.filterBooks(category, author);
 });

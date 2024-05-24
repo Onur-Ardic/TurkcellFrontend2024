@@ -40,3 +40,4 @@
 
 # Read
 - This - https://medium.com/frontend-development-with-js/javascript-this-ne-anlama-geliyor-77d548e969ae
+- GYGY - https://medium.com/@baris.erkus/turkcell-gen%C3%A7lere-yat%C4%B1r%C4%B1m-gelece%C4%9Fe-yaz%C4%B1l%C4%B1m-front-end-bootcamp-hikayem-28e56a49b3b8
