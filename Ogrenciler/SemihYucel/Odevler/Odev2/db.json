@@ -1,12 +1,12 @@
 {
   "books": [
     {
+      "id": "1",
       "name": "Suç ve Ceza",
       "author": "Fyodor Dostoyevski",
       "category": "Klasik Edebiyat",
       "date": "1866-01-01",
-      "cover": "https://kabalcikitap.com/wp-content/uploads/suc-ceza.jpg",
-      "id": "1"
+      "cover": "https://kabalcikitap.com/wp-content/uploads/suc-ceza.jpg"
     },
     {
       "id": "2",
@@ -64,21 +64,22 @@
       "date": "2003-05-29",
       "cover": "https://tr.web.img3.acsta.net/c_310_420/pictures/bzp/03/57735.jpg"
     },
-    {
-      "id": "9",
-      "name": "Hayvan Çiftliği",
-      "author": "George Orwell",
-      "category": "Alegori",
-      "date": "1945-08-17",
-      "cover": "https://img.kitapyurdu.com/v1/getImage/fn:11447395/wh:true/wi:500"
-    },
-    {
-      "id": 10,
-      "name": "Dönüşüm",
-      "author": "Franz Kafka",
-      "category": "Modernist Roman",
-      "date": "1915-01-01",
-      "cover": "https://www.istanbulkitapcisi.com/donusum-682767-klasikler-p-kitap-yayincilik-franz-kafka-778819-68-B.jpg"
-    }
-  ]
-}
+      {
+        "id": 9,
+        "name": "Hayvan Çiftliği",
+        "author": "George Orwell",
+        "category": "Alegori",
+        "date": "1945-08-17",
+        "cover": "https://img.kitapyurdu.com/v1/getImage/fn:11447395/wh:true/wi:500"
+      },
+      {
+        "id": 10,
+        "name": "Dönüşüm",
+        "author": "Franz Kafka",
+        "category": "Modernist Roman",
+        "date": "1915-01-01",
+        "cover": "https://www.istanbulkitapcisi.com/donusum-682767-klasikler-p-kitap-yayincilik-franz-kafka-778819-68-B.jpg"
+      }
+    ]
+  }
+  
