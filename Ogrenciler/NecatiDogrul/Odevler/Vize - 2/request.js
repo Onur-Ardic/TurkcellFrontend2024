@@ -41,4 +41,10 @@ class Request {
     const data = await response.json();
     return data;
   }
+
+  static async getAllBooks() {
+    const response = await fetch("http://localhost:3000/books");
+    const data = await response.json();
+    return data;
+  }
 }

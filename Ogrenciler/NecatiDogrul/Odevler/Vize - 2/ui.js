@@ -6,7 +6,8 @@ class UI {
     appendChilds.forEach((appendChild) => element.appendChild(appendChild));
     return element;
   }
-  static addBookToUI(book) {
+
+  static createCard(book) {
     const cards = document.querySelector("#cards");
     const coverImage = this.createElement("img", [
       "card-img-top",
@@ -48,7 +49,6 @@ class UI {
       ["card-body", "col-md-6", "p-md-1", "my-auto"],
       [title, author, category, publishedDate, updateButton, deleteButton]
     );
-
     const imageDiv = this.createElement("div", ["col-md-6"], [coverImage]);
     const row = this.createElement(
       "div",
@@ -64,24 +64,25 @@ class UI {
     cards.appendChild(card);
   }
 
-  static displayBooks() {
-    Request.get("http://localhost:3000/books")
-      .then((books) => {
-        books.forEach((book) => {
-          const newBook = new Book(
-            book.id,
-            book.title,
-            book.author,
-            book.category,
-            book.publishedDate,
-            book.coverImageUrl
-          );
-          UI.addBookToUI(newBook);
-        });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+  static displayBooks(booksArray) {
+    booksArray.forEach((book) => {
+      const newBook = new Book(
+        book.id,
+        book.title,
+        book.author,
+        book.category,
+        book.publishedDate,
+        book.coverImageUrl
+      );
+      UI.createCard(newBook);
+    });
+  }
+
+  static removeBookFromUI(id) {
+    const bookCard = document.querySelector(`[data-id="${id}"]`);
+    if (bookCard) {
+      bookCard.remove();
+    }
   }
 
   static deleteBook(id) {
@@ -89,7 +90,6 @@ class UI {
       .then((response) => {
         if (response.ok) {
           this.removeBookFromUI(id);
-          this.showAlert("danger", "Book has been deleted");
           console.log(`Book with ID ${id} has been deleted`);
         } else {
           console.log(`Failed to delete book with ID ${id}`);
@@ -98,13 +98,6 @@ class UI {
       .catch((err) => {
         console.log(err);
       });
-  }
-
-  static removeBookFromUI(id) {
-    const bookCard = document.getElementById(id);
-    if (bookCard) {
-      bookCard.remove();
-    }
   }
 
   static async getBookCount() {
@@ -116,7 +109,6 @@ class UI {
     return Request.post("http://localhost:3000/books", book)
       .then((response) => {
         console.log(`Book with ID ${response.id} has been created`);
-        this.showAlert("success", "Book has been added successfully");
         return response;
       })
       .catch((err) => {
@@ -136,18 +128,28 @@ class UI {
     new bootstrap.Modal(document.getElementById("updateModal")).show();
   }
 
-  static updateBook(id, updatedBook) {
-    Request.put(`http://localhost:3000/books/${id}`, updatedBook)
+  static async updateBook(id, updatedBook) {
+    return Request.put(`http://localhost:3000/books/${id}`, updatedBook)
       .then((response) => {
         console.log(`Book with ID ${id} has been updated`);
-        document.querySelector("#cards").textContent = "";
-        UI.displayBooks();
-        this.showAlert("success", "Book has been updated successfully");
+        const bookCard = document.querySelector(`[data-id="${id}"]`);
+        if (bookCard) {
+          bookCard.querySelector(".card-title").textContent = updatedBook.title;
+          bookCard.querySelector(".card-text:nth-of-type(1)").textContent =
+            updatedBook.author;
+          bookCard.querySelector(".card-text:nth-of-type(2)").textContent =
+            updatedBook.category;
+          bookCard.querySelector(".card-text:nth-of-type(3)").textContent =
+            updatedBook.publishedDate;
+          bookCard.querySelector(".card-img-top").src =
+            updatedBook.coverImageUrl;
+        }
       })
       .catch((err) => {
         console.log(err);
       });
   }
+
   static filterBooks(category, author) {
     Request.get("http://localhost:3000/books")
       .then((books) => {
@@ -172,7 +174,7 @@ class UI {
             book.publishedDate,
             book.coverImageUrl
           );
-          UI.addBookToUI(newBook);
+          UI.createCard(newBook);
         });
       })
       .catch((err) => {
@@ -210,7 +212,7 @@ class UI {
           book.publishedDate,
           book.coverImageUrl
         );
-        UI.addBookToUI(newBook);
+        UI.createCard(newBook);
       });
     });
   }
@@ -233,35 +235,11 @@ class UI {
             book.publishedDate,
             book.coverImageUrl
           );
-          UI.addBookToUI(newBook);
+          UI.createCard(newBook);
         });
       })
       .catch((err) => {
         console.log(err);
       });
   }
-
-  static showAlert(type, message) {
-    const alertDiv = this.createElement(
-      "div",
-      ["alert", `alert-${type}`, "alert-dismissible", "fade", "show"],
-      [],
-      message
-    );
-    const closeButton = this.createElement("button", ["btn-close"], [], "");
-    closeButton.setAttribute("type", "button");
-    closeButton.setAttribute("data-bs-dismiss", "alert");
-    closeButton.setAttribute("aria-label", "Close");
-    alertDiv.appendChild(closeButton);
-    const alerthtml = document.querySelector("#alerthtml");
-    alerthtml.appendChild(alertDiv);
-    setTimeout(() => {
-      alertDiv.classList.remove("show");
-      alertDiv.classList.add("hide");
-      setTimeout(() => {
-        alertDiv.remove();
-      }, 500);
-    }, 10000);
-  }
 }
-
