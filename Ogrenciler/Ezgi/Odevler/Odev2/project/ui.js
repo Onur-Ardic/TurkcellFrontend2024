@@ -101,6 +101,7 @@ class UI {
         editBtn.appendChild(editIcon)
         booksArea.appendChild(bookCard)
     }
+    
     static FillInputs(book) {
         nameBook.value = book.nameBook,
         writer.value = book.writer,
