@@ -1,0 +1,28 @@
+{
+  "movie": [
+    {
+      "id": "394",
+      "movieName": "Böcük Adam",
+      "movieDirector": "Onur",
+      "movieYear": "2021",
+      "movieCategories": "Aksiyon",
+      "moviePoster": "https://image.api.playstation.com/vulcan/ap/rnd/202009/3021/B2aUYFC0qUAkNnjbTHRyhrg3.png"
+    },
+    {
+      "id": "126",
+      "movieName": "Batman Diyarbakıra Dönüş",
+      "movieDirector": "Onur",
+      "movieYear": "2242",
+      "movieCategories": "Aksiyon",
+      "moviePoster": "https://image.api.playstation.com/vulcan/img/rnd/202010/2621/H9v5o8vP6RKkQtR77LIGrGDE.png"
+    },
+    {
+      "id": "895",
+      "movieName": "Hayri Potur",
+      "movieDirector": "Aleyna",
+      "movieYear": "9870",
+      "movieCategories": "Gerilim",
+      "moviePoster": "https://i.ytimg.com/vi/x0TFJG23wTA/maxresdefault.jpg"
+    }
+  ]
+}
