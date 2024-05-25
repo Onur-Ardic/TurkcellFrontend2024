@@ -7,6 +7,7 @@ import MovieList from "./components/MovieList";
 function App() {
   const [data, setData] = useState([]);
   const [newMovie, setNewMovie] = useState({
+    id: crypto.randomUUID(),
     name: "",
     director: "",
     genre: "",
