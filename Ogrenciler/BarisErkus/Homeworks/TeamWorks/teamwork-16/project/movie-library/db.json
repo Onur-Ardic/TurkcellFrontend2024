@@ -1,0 +1,67 @@
+{
+  "movies": [
+    {
+      "id": "479597d1-7f0e-4b7c-a343-4b755705a72e",
+      "img": "https://resizing.flixster.com/LHH5SvybzNWHdHxRfyh-ZMDQIFE=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjEyODEwMS53ZWJw",
+      "name": "The 100",
+      "desc": "The 100, ilk gösterimi 19 Mart 2014'te The CW'de yapılan ve 30 Eylül 2020'de sona eren Amerikan kıyamet sonrası, bilim kurgu ve dram türündeki televizyon dizisi. Jason Rothenberg tarafından geliştirilen dizi, Kass Morgan'ın aynı adlı genç yetişkin roman serisine dayanıyor.",
+      "director": "Elif CAN",
+      "year": "2014",
+      "category": "Bilim Kurgu"
+    },
+    {
+      "id": "f574354f-ded8-4a1f-baa2-d568c909d8a8",
+      "img": "https://i.ytimg.com/vi/MEoSCT-OhJQ/maxresdefault.jpg",
+      "name": "Cennet Mahallesi",
+      "desc": "Cennet Mahallesi, Erler Film imzalı, 11 Haziran 2004 ile 9 Haziran 2007 tarihleri arasında Show TV'de yayımlanan komedi türündeki Türk televizyon dizisi. 3 sezondan oluşan dizi, 119. bölümü ile ekranlara veda etti. 1981 yılında yayınlanan Gırgıriye filminin dizi versiyonudur.",
+      "director": "Türker İnanoğlu",
+      "year": "2004",
+      "category": "Komedi"
+    },
+    {
+      "id": "01d37ebb-a0b2-49d9-a38f-3ade1cc780c6",
+      "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoFCHo9EBrswtjn0q-EUeNwDKoZHPQFnmxc24GryRv9U0J5gG_",
+      "name": "The Devil's Hour",
+      "desc": "The Devil's Hour, Tom Moran tarafından yaratılan ve Steven Moffat'ın yapım şirketi Hartswood Films aracılığıyla yürütücü yapımcılığını üstlendiği bir İngiliz drama gerilim televizyon dizisidir. Dizi altı bölümden oluşuyor ve 28 Ekim 2022'de Amazon Prime Video'da gösterime girdi.",
+      "director": "Barış ERKUŞ",
+      "year": "2002",
+      "category": "Bilim Kurgu"
+    },
+    {
+      "id": "68f9a97d-7fcd-41cd-8a2c-fe1094776fd3",
+      "img": "https://www.newslabturkey.org/wp-content/uploads/2022/11/the-playlist-wide.jpeg",
+      "name": "The Playlist",
+      "desc": "The Playlist, Netflix için oluşturulmuş bir belgesel drama mini dizisidir. Sven Carlsson ve Jonas Leijonhufvud tarafından yazılan Spotify Untold kitabından ilham alınmıştır. Per-Olav Sørensen'in yönettiği dizi, İsveç müzik yayını şirketi Spotify'ın doğuşunun ve ilk zorluklarının \"kurgusal\" bir hikayesini anlatıyor.",
+      "director": "Enes ALAGÖZ",
+      "year": "2014",
+      "category": "Belgesel"
+    },
+    {
+      "id": "a2c0d52e-f4ec-4549-a352-4db072a9ca1e",
+      "img": "https://m.media-amazon.com/images/S/pv-target-images/9ba08f6062dc6677a6e52eb759649cdab4eeca1196c79fe014795f05e6cdbaa2._SX1080_FMjpg_.jpg",
+      "name": "HIMYM",
+      "desc": "How I Met Your Mother, ABD'de yayın yapan CBS kanalında, 19 Eylül 2005'ten 31 Mart 2014'e kadar yayınlamış olan, yaratıcılığı ve yapımcılığını Carter Bays ve Craig Thomas'ın, 196 bölümünün yönetmenliğini Pamela Fryman'in, başrollerini Josh Radnor, Jason Segel, Neil",
+      "director": "Barış ERKUŞ",
+      "year": "2000",
+      "category": "Komedi"
+    },
+    {
+      "id": "977c1098-9258-4981-a969-71896125a968",
+      "img": "https://upload.wikimedia.org/wikipedia/en/9/9d/Queen_of_the_South_%28TV_series%29_Title_Card.jpg",
+      "name": "Queen of South",
+      "desc": "Queen of the South, M.A. Fortin ve Joshua John Miller tarafından geliştirilen bir Amerikan suç draması televizyon dizisidir. Dizi 23 Haziran 2016'da gösterime girdi ve 9 Haziran 2021'de USA Network'te yayınlanan 62 bölümle sona erdi.",
+      "director": "Enes ALAGÖZ",
+      "year": "2016",
+      "category": "Aksiyon"
+    },
+    {
+      "id": "1c0e3b71-2118-40c6-b5b7-6975e7570c70",
+      "img": "https://upload.wikimedia.org/wikipedia/tr/8/8b/Kingsman_The_Secret_Service_poster.jpg",
+      "name": "KingsMan",
+      "desc": "Gary, çok küçük yasta babasını bir askeri görevde yitirir. Bu gizli görev neticesinde ailesine bir madalya takdim edilir ve aileye bir kereye mahsus olmak üzere yardim istemeleri için bir telefon numarası verilir.",
+      "director": " Matthew Vaughn",
+      "year": "2015",
+      "category": "Aksiyon"
+    }
+  ]
+}
