@@ -1,0 +1,33 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+}
+.card {
+  max-width: 100%;
+  margin: auto;
+}
+.card .button-delete  {
+  background: #EA0F0F;
+  color: #fff;
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card .button-delete:hover {
+  background: rgba(225, 36, 36, 0.811);
+  color: #fff;
+}
+
+.card .button-update  {
+  background: #05992D;
+  color: #fff;
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card .button-update:hover {
+  background: rgb(31, 186, 60);
+  color: #fff;
+}
