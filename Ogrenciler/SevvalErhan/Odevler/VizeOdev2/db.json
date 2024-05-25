@@ -1,13 +1,13 @@
 {
   "books": [
     {
-      "id": "1",
-      "booktitle": "Şeker Portakalı",
+      "booktitle": "Şeker Portakalıı",
       "author": "Jose Mauro De Vasconcelos",
       "date": "2019",
       "publisher": "CAN YAYINLARI",
       "category": "Edebiyat",
-      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11462950/wh:true/wi:220"
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11462950/wh:true/wi:220",
+      "id": "1"
     },
     {
       "id": "2",
@@ -35,15 +35,6 @@
       "publisher": "Penguin Books",
       "category": "Distopya",
       "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11484453/wh:true/wi:220"
-    },
-    {
-      "id": "5",
-      "booktitle": "Harry Potter ve Felsefe Taşı",
-      "author": "J.K. Rowling",
-      "date": "2023",
-      "publisher": "YAPI KREDİ YAYINLARI",
-      "category": "Fantastik",
-      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:1109383/wh:true/wi:220"
     },
     {
       "id": "6",
@@ -91,22 +82,31 @@
       "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11592410/wh:true/wi:256"
     },
     {
-      "id": "3cda",
       "booktitle": "sf",
-      "author": "vse",
+      "author": "Viktor Emil Frankl",
       "date": "2024",
       "publisher": "fsdfv",
-      "category": "Edebiyat",
-      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11614703/wh:true/wi:220"
+      "category": "Felsefe",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11614703/wh:true/wi:220",
+      "id": "3cda"
     },
     {
-      "id": "baf8",
-      "booktitle": "feesf",
-      "author": "sdfsf",
+      "booktitle": "dsvs",
+      "author": "vds",
       "date": "2024",
-      "publisher": "fsd",
-      "category": "Tarih",
-      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11764839/wi:100/wh:true"
+      "publisher": "Penguin Bookss",
+      "category": "Felsefe",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11614703/wh:true/wi:220",
+      "id": "6544"
+    },
+    {
+      "id": "e61d",
+      "booktitle": "aa",
+      "author": "fd",
+      "date": "2024",
+      "publisher": "Penguin Bookss",
+      "category": "Psikoloji",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11614703/wh:true/wi:220"
     }
   ]
 }

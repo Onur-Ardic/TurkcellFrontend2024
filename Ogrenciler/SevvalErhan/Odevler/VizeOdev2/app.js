@@ -337,6 +337,18 @@ class Library {
       console.error("Error updating book:", error);
     }
   }
+  populateCategoryDropdown() {
+    const categories = [...new Set(this.books.map((book) => book.category))];
+    const categorySelect = document.getElementById("categorySelect");
+    categorySelect.innerHTML =
+      '<option value="" selected>Kategori Seçiniz</option>';
+    categories.forEach((category) => {
+      const option = document.createElement("option");
+      option.value = category;
+      option.textContent = category;
+      categorySelect.appendChild(option);
+    });
+  }
 
   async deleteBook(bookId) {
     try {
@@ -373,19 +385,6 @@ class Library {
       option.value = author;
       option.textContent = author;
       authorSelect.appendChild(option);
-    });
-  }
-
-  populateCategoryDropdown() {
-    const categories = [...new Set(this.books.map((book) => book.category))];
-    const categorySelect = document.getElementById("categorySelect");
-    categorySelect.innerHTML =
-      '<option value="" selected>Kategori Seçiniz</option>';
-    categories.forEach((category) => {
-      const option = document.createElement("option");
-      option.value = category;
-      option.textContent = category;
-      categorySelect.appendChild(option);
     });
   }
 
