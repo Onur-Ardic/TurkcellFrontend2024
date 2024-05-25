@@ -3,6 +3,7 @@ import Form from './form'
 
 const Card = () => {
   const [movieData, setMovieData] = useState([])
+  const [movieToEdit, setMovieToEdit] = useState(null)
 
   useEffect(() => {
     fetch('http://localhost:3000/movie')
@@ -19,8 +20,12 @@ const Card = () => {
     setMovieData([...movieData, newMovie])
   }
 
+  const editMovie = (updatedMovie) => {
+    setMovieData(movieData.map((movie) => (movie.id === updatedMovie.id ? updatedMovie : movie)))
+    setMovieToEdit(null)
+  }
+
   const deleteHandler = (id) => {
-    console.log(typeof id)
     fetch(`http://localhost:3000/movie/${id}`, {
       method: 'DELETE',
     })
@@ -33,9 +38,14 @@ const Card = () => {
       })
       .catch((err) => console.log(err))
   }
+
+  const updateHandler = (movie) => {
+    setMovieToEdit(movie)
+  }
+
   return (
     <>
-      <Form addMovie={addMovie} />
+      <Form addMovie={addMovie} movieToEdit={movieToEdit} onEdit={editMovie} />
       <div className="card-wrapper flex gap-3 mt-20">
         {movieData.map((movie) => (
           <div key={movie.id} className="card border p-0">
@@ -52,9 +62,13 @@ const Card = () => {
               <p className="movie-year">{movie.movieYear}</p>
               <p className="movie-category">{movie.movieCategories}</p>
             </div>
-
             <div className="btn-wrapper flex gap-3">
-              <button className="btn btn-primary border bg-yellow-400 p-1 m-1">Güncelle</button>
+              <button
+                className="btn btn-primary border bg-yellow-400 p-1 m-1"
+                onClick={() => updateHandler(movie)}
+              >
+                Güncelle
+              </button>
               <button
                 className="btn btn-danger p-1 m-1 bg-red-400 w-20"
                 onClick={() => deleteHandler(movie.id)}
