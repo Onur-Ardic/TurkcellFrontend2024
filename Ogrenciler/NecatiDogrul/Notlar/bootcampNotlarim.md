@@ -122,3 +122,15 @@ arrow function otomatik olarak this'i bind ediyor
 yani bir objenin içinde arrow function yazarsak o objeyi döner
 
 array içinde this olurs
+
+-----React-------
+Sanal DOM hızlı render sağlamaz ilk lansmanda yanlışlıkla söylemiş
+
+vue'da da sanal dom var
+
+react 19'Da useMemo kalkacak
+
+reportWebVitals googleAnalytics raporları için
+
+React.StrictMode
+anlamlı hatalar oluşturur ve boş fragment oluşturur
