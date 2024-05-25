@@ -1,0 +1,84 @@
+{
+  "movies": [
+    {
+      "id": "68f6",
+      "name": "Interstellar",
+      "author": "Christopher Nolan",
+      "category": "Bilim Kurgu",
+      "releaseDate": 2014,
+      "url": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/y1TKElkgWOl90iFik3GHlgJdphm.jpg"
+    },
+    {
+      "name": "Dune",
+      "author": "Denis Villeneuve",
+      "category": "Bilim Kurgu",
+      "releaseDate": 2021,
+      "url": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/roeYIqWHyVHcjWDk6SOaepNEk0y.jpg",
+      "id": "fd0e"
+    },
+    {
+      "name": "For Sama",
+      "author": "Michael Ende",
+      "category": "Belgesel",
+      "releaseDate": 2019,
+      "url": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/mDna51F8QfrJFZOgPGQUz3VKqsB.jpg",
+      "id": "db32"
+    },
+    {
+      "name": "The Fall Guy",
+      "author": " David Leitch",
+      "category": "Aksiyon",
+      "releaseDate": 2024,
+      "url": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/svF3z06DyGDahLo1t5qW128PmiF.jpg",
+      "id": "d718"
+    },
+    {
+      "name": "The Pianist",
+      "author": "Roman Polanski",
+      "category": "Savaş",
+      "releaseDate": 2002,
+      "url": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/8gdOy6vd1lK2KyakZroETXyB4re.jpg",
+      "id": "55bb"
+    },
+    {
+      "name": "Forrest Gump",
+      "author": "Robert Zemeckis",
+      "category": "Romantik",
+      "releaseDate": 1994,
+      "url": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+      "id": "6b2e"
+    },
+    {
+      "name": "Ghostbusters",
+      "author": "Jules Payot",
+      "category": "Komedi",
+      "releaseDate": 1984,
+      "url": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/mLg3IVwzlruZblvajC4Czrp07RL.jpg",
+      "id": "4d55"
+    },
+    {
+      "name": "The Shawshank Redemption",
+      "author": "Frank Darabont",
+      "category": "Dram",
+      "releaseDate": 1995,
+      "url": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/dXyIK3s8ZN7FH3AoaeyaBqX0eoJ.jpg",
+      "id": "43ab"
+    },
+    {
+      "name": "The Godfather",
+      "author": "Francis Ford Coppola",
+      "category": "Dram",
+      "releaseDate": 1972,
+      "url": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/obYjrjFT4iZV09YAXu53iBA51Js.jpg",
+      "id": "f5e2"
+    },
+    {
+      "id": "39e9",
+      "name": "dgdfg",
+      "author": "fdg",
+      "category": "fgfd",
+      "releaseDate": "gdfg",
+      "url": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/obYjrjFT4iZV09YAXu53iBA51Js.jpg"
+    }
+  ]
+}

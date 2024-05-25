@@ -33,6 +33,7 @@ class UI {
     );
     deleteButton.addEventListener("click", (e) => {
       e.preventDefault();
+      e.stopPropagation();
       this.deleteBook(book.id);
     });
     const updateButton = this.createElement(
@@ -41,7 +42,9 @@ class UI {
       [],
       "Update"
     );
-    updateButton.addEventListener("click", () => {
+    updateButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
       this.showUpdateModal(book);
     });
     const cardBody = this.createElement(
@@ -106,14 +109,14 @@ class UI {
   }
 
   static async createBook(book) {
-    return Request.post("http://localhost:3000/books", book)
-      .then((response) => {
-        console.log(`Book with ID ${response.id} has been created`);
-        return response;
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    try {
+      const response = await Request.post("http://localhost:3000/books", book);
+      console.log(`Book with ID ${response.id} has been created`);
+      return response;
+    } catch (err) {
+      console.log(err);
+      return null;
+    }
   }
 
   static showUpdateModal(book) {
@@ -129,25 +132,28 @@ class UI {
   }
 
   static async updateBook(id, updatedBook) {
-    return Request.put(`http://localhost:3000/books/${id}`, updatedBook)
-      .then((response) => {
-        console.log(`Book with ID ${id} has been updated`);
-        const bookCard = document.querySelector(`[data-id="${id}"]`);
-        if (bookCard) {
-          bookCard.querySelector(".card-title").textContent = updatedBook.title;
-          bookCard.querySelector(".card-text:nth-of-type(1)").textContent =
-            updatedBook.author;
-          bookCard.querySelector(".card-text:nth-of-type(2)").textContent =
-            updatedBook.category;
-          bookCard.querySelector(".card-text:nth-of-type(3)").textContent =
-            updatedBook.publishedDate;
-          bookCard.querySelector(".card-img-top").src =
-            updatedBook.coverImageUrl;
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    try {
+      const response = await Request.put(
+        `http://localhost:3000/books/${id}`,
+        updatedBook
+      );
+      console.log(`Book with ID ${id} has been updated`);
+      const bookCard = document.querySelector(`[data-id="${id}"]`);
+      if (bookCard) {
+        bookCard.querySelector(".card-title").textContent = updatedBook.title;
+        bookCard.querySelector(".card-text:nth-of-type(1)").textContent =
+          updatedBook.author;
+        bookCard.querySelector(".card-text:nth-of-type(2)").textContent =
+          updatedBook.category;
+        bookCard.querySelector(".card-text:nth-of-type(3)").textContent =
+          updatedBook.publishedDate;
+        bookCard.querySelector(".card-img-top").src = updatedBook.coverImageUrl;
+      }
+      return true;
+    } catch (err) {
+      console.log(err);
+      return false;
+    }
   }
 
   static filterBooks(category, author) {
