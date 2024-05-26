@@ -1,0 +1,100 @@
+{
+  "movies": [
+    {
+      "id": "0001",
+      "name": "Interstellar",
+      "director": "Christopher Nolan",
+      "genre": "Sci-Fi",
+      "releaseDate": "2014",
+      "poster": "https://img.fruugo.com/product/6/84/32299846_max.jpg"
+    },
+    {
+      "id": "0002",
+      "name": "Inception",
+      "director": "Christopher Nolan",
+      "genre": "Sci-Fi",
+      "releaseDate": "2010",
+      "poster": "https://m.media-amazon.com/images/I/91Rc8cAmnAL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": "0003",
+      "name": "Logan",
+      "director": "James Mangold",
+      "genre": "Action",
+      "releaseDate": "2017",
+      "poster": "https://m.media-amazon.com/images/I/51wewtpj08L._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": "0004",
+      "name": "Oppenheimer",
+      "director": "Christopher Nolan",
+      "genre": "Biography",
+      "releaseDate": "2023",
+      "poster": "https://m.media-amazon.com/images/I/71xDtUSyAKL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "0005",
+      "name": "Comet",
+      "director": "Sam Esmail",
+      "genre": "Drama",
+      "releaseDate": "2014",
+      "poster": "https://m.media-amazon.com/images/I/51YhANoVbRL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": "0006",
+      "name": "Pride and Prejudice",
+      "director": "Joe Wright",
+      "genre": "Drama",
+      "releaseDate": "2005",
+      "poster": "https://m.media-amazon.com/images/I/61L7KEkLbSL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "0007",
+      "name": "Coherence",
+      "director": "James Ward Byrkit",
+      "genre": "Mystery",
+      "releaseDate": "2013",
+      "poster": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6ceb8916723863.562b06d1df4c6.jpg"
+    },
+    {
+      "id": "0008",
+      "name": "303",
+      "director": "Hans Weingartner",
+      "genre": "Romance",
+      "releaseDate": "2018",
+      "poster": "http://www.avrupasinemasi.com/wp-content/uploads/2019/10/303-poster-640x905.jpg"
+    },
+    {
+      "id": "0009",
+      "name": "Lost in Transilation",
+      "director": "Sofia Coppola",
+      "genre": "Drama",
+      "releaseDate": "2003",
+      "poster": "https://m.media-amazon.com/images/I/61nFcq3+MPL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": "0010",
+      "name": "Atonement",
+      "director": "Joe Wright",
+      "genre": "Drama",
+      "releaseDate": "2007",
+      "poster": "https://m.media-amazon.com/images/I/51xaWxnxXCL._AC_.jpg"
+    },
+    {
+      "id": "0011",
+      "name": "Before Sunrise",
+      "director": "Richard Linklater",
+      "genre": "Drama",
+      "releaseDate": "2004",
+      "poster": "https://cdn.dsmcdn.com/ty358/product/media/images/20220313/2/68954570/414174014/1/1_org_zoom.jpg"
+    },
+    {
+      "id": "0012",
+      "name": "Project Almanac",
+      "director": "Dean Israelite",
+      "genre": "Mystery",
+      "releaseDate": "2015",
+      "poster": "https://m.media-amazon.com/images/I/71fPrboiL1L._AC_UF894,1000_QL80_.jpg"
+    }
+  ]
+}

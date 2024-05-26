@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { createData, deleteData, readData } from "./api/request";
+import { createData, deleteData, readData, updateData } from "./api/request";
 import Form from "./components/Form";
 import MovieList from "./components/MovieList";
 
 function App() {
   const [data, setData] = useState([]);
   const [newMovie, setNewMovie] = useState({
-    id: crypto.randomUUID(),
     name: "",
     director: "",
     genre: "",
@@ -23,8 +22,21 @@ function App() {
   }, []);
   const handlePostMovie = async (e) => {
     e.preventDefault();
-    await createData(newMovie);
-    setData([...data, newMovie]);
+    const existingMovie = data.find((movie) => movie.id === newMovie.id);
+    if (!existingMovie) {
+      const newMovieData = {
+        id: crypto.randomUUID(),
+        ...newMovie,
+      };
+      await createData(newMovieData);
+      setData([...data, newMovieData]);
+    } else {
+      await updateData(existingMovie.id, newMovie);
+      setData(
+        data.map((movie) => (movie.id === existingMovie.id ? newMovie : movie))
+      );
+    }
+    setNewMovie({ name: "", director: "", genre: "", year: "", image: "" });
   };
   const handleDeleteMovie = async (e, movieId) => {
     e.preventDefault();
@@ -32,10 +44,20 @@ function App() {
     setData(data.filter((movie) => movie.id !== movieId));
   };
   return (
-    <>
-      <Form setNewMovie={setNewMovie} handlePostMovie={handlePostMovie} />
-      <MovieList data={data} handleDeleteMovie={handleDeleteMovie} />
-    </>
+    <div className="container">
+      <div className="row">
+        <Form
+          setNewMovie={setNewMovie}
+          handlePostMovie={handlePostMovie}
+          newMovie={newMovie}
+        />
+        <MovieList
+          data={data}
+          handleDeleteMovie={handleDeleteMovie}
+          setNewMovie={setNewMovie}
+        />
+      </div>
+    </div>
   );
 }
 
