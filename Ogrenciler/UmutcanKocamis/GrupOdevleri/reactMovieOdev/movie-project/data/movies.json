@@ -1,0 +1,68 @@
+{
+  "movies": [
+    {
+      "id": "2",
+      "name": "Fight Club",
+      "director": "David Fincher",
+      "year": "1999",
+      "category": "Action",
+      "image": "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Inglourious Basterds",
+      "director": "Quentin Tarantino",
+      "year": "2009",
+      "category": "Historical",
+      "image": "https://m.media-amazon.com/images/M/MV5BOTJiNDEzOWYtMTVjOC00ZjlmLWE0NGMtZmE1OWVmZDQ2OWJhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Babylon",
+      "director": "Damien Chazella",
+      "year": "2022",
+      "category": "Action",
+      "image": "https://cdn.sanity.io/images/j0wdmpyb/production/aae41c363bdd0b7d56cb90e8064bd15b6160fd3a-954x1350.webp?fp-x=0.5&fp-y=0.5&w=640&h=906&fit=crop&crop=focalpoint&auto=format"
+    },
+    {
+      "id": "5",
+      "name": "Pulp Fiction",
+      "director": "Quentin Tarantino",
+      "year": "1994",
+      "category": "Action",
+      "image": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Interstaller",
+      "director": "Christopher Nolan",
+      "year": "2014",
+      "category": "Sci-fi",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRE8xZbi8r7ImwqImi3Wow7AoKwATmbFldLmtbbu5O9w&s"
+    },
+    {
+      "id": "7c3b",
+      "name": "John Wick",
+      "director": "Chad Stahelski",
+      "category": "Action",
+      "year": "2014",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_.jpg"
+    },
+    {
+      "id": "61ca",
+      "name": "The Matrix",
+      "director": "Wachowski Brothers",
+      "category": "Action",
+      "year": "1999",
+      "image": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
+    },
+    {
+      "id": "3e9e",
+      "name": "The Pianist",
+      "director": "Roman Polanski",
+      "category": "Drama",
+      "year": "2002",
+      "image": "https://upload.wikimedia.org/wikipedia/tr/c/c0/The_Pianist_Poster.jpg"
+    }
+  ]
+}
