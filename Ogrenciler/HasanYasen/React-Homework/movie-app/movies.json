@@ -1,0 +1,32 @@
+{
+  "movies": [
+    {
+      "title": "Interstellar",
+      "director": "Christopher Nolan",
+      "category": "Science Fiction",
+      "year": "2014",
+      "imgUrl": "https://image.tmdb.org/t/p/original//gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+    },
+    {
+      "title": "Dune: Part Two",
+      "director": "Denis Villeneuve",
+      "category": "Adventure",
+      "year": "2024",
+      "imgUrl": "https://image.tmdb.org/t/p/original//gho58bYmw9juYXmUSHRJKOngJGn.jpg"
+    },
+    {
+      "title": "Deadpool",
+      "director": "Tim Miller",
+      "category": "Action",
+      "year": "2016",
+      "imgUrl": "https://image.tmdb.org/t/p/original//fSRb7vyIP8rQpL0I47P3qUsEKX3.jpg"
+    },
+    {
+      "title": "Poor Things",
+      "director": "Yorgos Lanthimos",
+      "category": "Romance",
+      "year": "2023",
+      "imgUrl": "https://image.tmdb.org/t/p/original//kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg"
+    }
+  ]
+}

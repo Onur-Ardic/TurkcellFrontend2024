@@ -1,0 +1,25 @@
+.button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.button.submit {
+  background-color: #05aa3c;
+  color: #fff;
+}
+
+.button.warning {
+  background-color: #ffbb00;
+  color: #fff;
+}
+
+.button.danger {
+  background-color: #dc3545;
+  color: #fff;
+}

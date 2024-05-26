@@ -1,5 +1,3 @@
-let blogs = document.querySelector(".blogContainer");
-
 class UI {
   static displayOnUi(data) {
     data.forEach((user) => {

@@ -1,0 +1,39 @@
+let data
+
+export async function getMovies(url) {
+    const response = await fetch(url)
+    data = await response.json()
+    return data
+}
+
+export async function postMovie(url, data) {
+    const response = await fetch(url, {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+            "Content-type": "application/json"
+        }
+    })
+    data = await response.json()
+    return data
+}
+
+export async function putMovie(url, data) {
+    const response = await fetch(url, {
+        method: "PUT",
+        body: JSON.stringify(data),
+        headers: {
+            "Content-type": "application/json"
+        }
+    })
+    data = await response.json()
+    return data
+}
+
+export async function deleteMovie(url) {
+    const response = await fetch(url, {
+        method: "DELETE"
+    })
+    data = await response.json()
+    return data
+}
