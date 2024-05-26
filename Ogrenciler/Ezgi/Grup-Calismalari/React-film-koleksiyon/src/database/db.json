@@ -1,52 +1,20 @@
 {
   "movies": [
     {
-      "id": "2",
-      "title": "lksdk",
-      "director": "ksldn",
-      "category": "sdnsd",
-      "year": "sdfkj",
-      "image": "sdnf"
+      "id": "4b8c",
+      "title": "thor",
+      "director": "thor",
+      "category": "thor",
+      "year": "thor",
+      "image": "https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_.jpg"
     },
     {
-      "id": "3",
-      "title": "lksdk",
-      "director": "ksldn",
-      "category": "sdnsd",
-      "year": "sdfkj",
-      "image": "sdnf"
-    },
-    {
-      "id": "4",
-      "title": "lksdk",
-      "director": "ksldn",
-      "category": "sdnsd",
-      "year": "sdfkj",
-      "image": "sdnf"
-    },
-    {
-      "id": "a7ec",
-      "title": "asdasd",
-      "director": "asdsad",
-      "category": "dasda",
-      "year": "dasda",
-      "image": "adsdasd"
-    },
-    {
-      "id": "ef2e",
-      "title": "Ezgi ",
-      "director": "karakaya",
-      "category": "asd",
-      "year": "ads",
-      "image": "das"
-    },
-    {
-      "id": "5a92",
-      "title": "ASDADS",
-      "director": "ADSDAS",
-      "category": "DASDA",
-      "year": "ADSDS",
-      "image": "ADSSDA"
+      "id": "0cfc",
+      "title": "Thor",
+      "director": "alpay özer",
+      "category": "Marvel",
+      "year": "2020",
+      "image": "https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_.jpg"
     }
   ]
 }
