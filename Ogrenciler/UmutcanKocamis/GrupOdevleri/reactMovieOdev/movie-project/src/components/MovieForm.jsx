@@ -28,7 +28,8 @@ function MovieForm({ handleSave, movie }) {
     setMovieData({ ...movieData, [name]: value });
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     handleSave(movieData);
   };
 
@@ -96,9 +97,7 @@ function MovieForm({ handleSave, movie }) {
           />
         </div>
 
-        <button className="btn btn-primary" type="submit">
-          Add
-        </button>
+        <button className="btn btn-primary">Submit</button>
       </form>
     </>
   );
