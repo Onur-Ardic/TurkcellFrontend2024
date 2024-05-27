@@ -1,7 +1,7 @@
 {
   "books": [
     {
-      "id": 2,
+      "id": "2",
       "title": "Falling Fast",
       "author": "Bianca Iosivoni",
       "category": "Romance",
@@ -17,14 +17,6 @@
       "id": "6"
     },
     {
-      "id": "4",
-      "title": "Everything I Didn't Say",
-      "author": "Kim Nina Ocker",
-      "category": "Romance",
-      "year": "2018",
-      "coverImageUrl": "https://i.pinimg.com/564x/07/49/58/07495873fc7f739f1a42a4a87ce1fbb7.jpg"
-    },
-    {
       "id": "5",
       "title": "The Trot Runner",
       "author": "Elsie Silver",
@@ -33,7 +25,7 @@
       "coverImageUrl": "https://i.pinimg.com/736x/90/91/04/9091045a601c04b3032add935e11a724.jpg"
     },
     {
-      "id": 1,
+      "id": "1",
       "title": "The Dragon Princess",
       "author": "Author Name",
       "category": "Fantasy",
@@ -41,7 +33,7 @@
       "coverImageUrl": "https://i.pinimg.com/736x/6f/e8/27/6fe827f565ab8c22219af09ca772f3e6.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Fall to Earth",
       "author": "Ken Britz",
       "category": "Science Fiction",
