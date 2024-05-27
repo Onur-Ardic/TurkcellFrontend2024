@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <section class="calculator" id="calculator">
+      <div class="container w-400">
+        <div class="row mb-5 mt-3">
+          <input
+            id="numberScreen"
+            value=""
+            class="text-end number-input rounded-pill border-0"
+            type="text"
+          />
+          <p id="result"></p>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="clearScreen()"
+              id="allClearButton"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <h2>AC</h2>
+            </button>
+          </div>
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="clearOne()"
+              id="clearButton"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <h2>C</h2>
+            </button>
+          </div>
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('%')"
+              id="modeButton"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <h2>MOD</h2>
+            </button>
+          </div>
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('/')"
+              id="divisionButton"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <h2>/</h2>
+            </button>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('7')"
+              id="numberSeven"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <img src="assets/7.png" alt="" />
+            </button>
+          </div>
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('8')"
+              id="numberEight"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <img src="assets/8.png" alt="" />
+            </button>
+          </div>
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('9')"
+              id="numberNine"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <img src="assets/9.png" alt="" />
+            </button>
+          </div>
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('*')"
+              id="multiplicationButton"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <h2>x</h2>
+            </button>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('4')"
+              id="numberFour"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <img src="assets/4.png" alt="" />
+            </button>
+          </div>
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('5')"
+              id="numberFive"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <img src="assets/5.png" alt="" />
+            </button>
+          </div>
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('6')"
+              id="numberSix"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <img src="assets/6.png" alt="" />
+            </button>
+          </div>
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('-')"
+              id="minusButton"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <h2>-</h2>
+            </button>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('1')"
+              id="numberOne"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <img src="assets/1.png" alt="" />
+            </button>
+          </div>
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('2')"
+              id="numberTwo"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <img src="assets/2.png" alt="" />
+            </button>
+          </div>
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('3')"
+              id="numberThree"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <img src="assets/3.png" alt="" />
+            </button>
+          </div>
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('+')"
+              id="plusButton"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <h2>+</h2>
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-6">
+            <button
+              onclick="calculator('0')"
+              id="numberZero"
+              class="w-100 rounded-pill number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <img src="assets/0.png" alt="" />
+            </button>
+          </div>
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('.')"
+              id="dotButton"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <h2>.</h2>
+            </button>
+          </div>
+          <div class="col-lg-3 col-3">
+            <button
+              onclick="calculator('=')"
+              id="equalButton"
+              class="number-img d-flex justify-content-center align-items-center border-0"
+            >
+              <h2>=</h2>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
