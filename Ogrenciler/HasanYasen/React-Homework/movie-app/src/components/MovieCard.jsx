@@ -2,7 +2,7 @@ import { putMovie, deleteMovie, getMovies } from "../../request/request";
 
 const url = "http://localhost:3000/movies";
 
-function MovieCard({ movies, setMovies }) {
+function MovieCard({ movies, setMovies, setSelectedMovie }) {
   const deletePostMovie = async (id) => {
     await deleteMovie(id);
     await getMovies(url).then((movies) => setMovies(movies));
@@ -27,7 +27,7 @@ function MovieCard({ movies, setMovies }) {
                   className="btn btn-dark text-white"
                   data-bs-toggle="modal"
                   data-bs-target="#updateMovieModal"
-                  onClick={() => update(movie.id)}
+                  onClick={() => setSelectedMovie(movie)}
                 >
                   Update a Movie
                 </button>
