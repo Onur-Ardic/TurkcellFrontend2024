@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { fetchMovies, addMovie, deleteMovie, updateMovie } from './service/api';
 import MovieForm from './components/MovieForm';
 import MovieList from './components/MovieList';
-import './styles.css';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
