@@ -1,20 +1,28 @@
 {
   "movies": [
     {
-      "id": "4b8c",
-      "title": "thor",
-      "director": "thor",
-      "category": "thor",
-      "year": "thor",
-      "image": "https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_.jpg"
+      "id": "3cbd",
+      "title": "Arif V 216",
+      "director": "Kivanç Baruönü",
+      "category": "Komedi",
+      "year": "2018",
+      "image": "https://img04.imgsinemalar.com/images/afis_dev/a/arif-v-216-1660924820.jpg"
     },
     {
-      "id": "0cfc",
-      "title": "Thor",
-      "director": "alpay özer",
-      "category": "Marvel",
-      "year": "2020",
-      "image": "https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_.jpg"
+      "id": "82ee",
+      "title": "The Prestige",
+      "director": "Christopher Nolan",
+      "category": "Bilim-Kurgu",
+      "year": "2006",
+      "image": "https://img01.imgsinemalar.com/images/afis_dev/p/prestij-1660915246.jpg"
+    },
+    {
+      "id": "a593",
+      "title": "Interstellar2",
+      "director": "Christopher Nolan",
+      "category": "Bilim-Kurgu",
+      "year": "2014",
+      "image": "https://img05.imgsinemalar.com/images/afis_dev/y/yildizlararasi-1660915535.jpg"
     }
   ]
 }
