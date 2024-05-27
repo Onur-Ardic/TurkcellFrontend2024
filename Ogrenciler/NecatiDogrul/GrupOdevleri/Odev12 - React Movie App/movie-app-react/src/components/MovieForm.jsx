@@ -30,12 +30,14 @@ const MovieForm = ({ addMovie }) => {
         value={director}
         onChange={(e) => setDirector(e.target.value)}
       />
+
       <input
         type="text"
         placeholder="Year"
         value={year}
         onChange={(e) => setYear(e.target.value)}
       />
+      
       <input
         type="text"
         placeholder="Image URL"

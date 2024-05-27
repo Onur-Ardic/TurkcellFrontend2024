@@ -35,6 +35,34 @@ h1 {
   line-height: 1.1;
 }
 
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -65,61 +93,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-#root {
-  width: 100%;
-}
-
-* {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-.movie-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-}
-
-.movie-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  width: 200px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  position: relative;
-  background-color: #fff;
-  color: black;
-  margin: 16px;
-}
-
-.movie-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.movie-card h3 {
-  margin: 8px 0;
-}
-
-.movie-card p {
-  margin: 4px 0;
-}
-
-.movie-card button {
-  margin-top: 8px;
-  margin-right: 4px;
-}
-
-.formMovie {
-  display: flex;
-  justify-content: center;
-}
-
-.form {
-  display: flex;
-  gap: 10px;
 }
