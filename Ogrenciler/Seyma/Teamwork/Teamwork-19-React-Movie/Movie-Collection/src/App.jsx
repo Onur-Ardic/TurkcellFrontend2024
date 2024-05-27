@@ -12,26 +12,32 @@ function App() {
     type: "",
     image: "",
   });
+
   const [data, setData] = useState([]);
 
   const handleData = async () => {
-    const getData = await get();
-    setData(getData);
+    const getFetchData = await get();
+    setData(getFetchData);
   };
 
   useEffect(() => {
     handleData();
-  }, [newMovie]);
+  }, [newMovie, data]);
 
   const postMovie = (e) => {
     e.preventDefault();
-    post(newMovie);
+    const checkMovieId = data.find((movie)=> movie.id === newMovie.id);
+    if(!checkMovieId) {
+      post(newMovie);
+    } else {
+      update(checkMovieId.id, newMovie);
+    }
     setMovie({ name: "", director: "", year: "", type: "", image:"" });
   };
 
-  const updateMovie = async (id, data) => {
-    const updateData = await update(id, data);
-    setData(updateData);
+  const deleteMovie = (e, id) => {
+    e.preventDefault();
+    deleteData(id);
   }
 
   return (
@@ -41,7 +47,7 @@ function App() {
         <div className="container">
           <div className="row">
           <Form newMovie={newMovie} setMovie={setMovie} postMovie={postMovie} />
-          <List data={data} updateMovie ={updateMovie} />
+          <List data={data} setMovie ={setMovie} deleteMovie={deleteMovie} />
           </div>
         </div>
       </div>

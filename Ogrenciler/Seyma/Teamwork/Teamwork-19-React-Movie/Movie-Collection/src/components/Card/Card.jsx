@@ -1,13 +1,14 @@
 import React from "react";
+import './Card.css'
 
-const Card = ({movie, updateMovie}) => {
+const Card = ({movie, setMovie, deleteMovie}) => {
   return (
     <div id={movie.id} className="col-4">
       <div className="card mb-3">
-        <div className="card-header">
+        <div className="card-header imgHeight">
           <img
             src={movie.image}
-            className="img-fluid rounded-start"
+            className="w-100 h-100 rounded-start"
             alt="..."
           />
         </div>
@@ -20,8 +21,8 @@ const Card = ({movie, updateMovie}) => {
           <p className="card-text">
             <small className="text-body-secondary">{movie.type}</small>
           </p>
-          <button className="btn btn-danger me-3">Delete</button>
-          <button onSubmit={updateMovie}  className="btn btn-success">Update</button>
+          <button onClick={(e)=> {deleteMovie(e, movie.id)}} className="btn btn-danger me-3">Delete</button>
+          <button onClick={() => {setMovie(movie)}}  className="btn btn-success">Update</button>
         </div>
       </div>
     </div>
