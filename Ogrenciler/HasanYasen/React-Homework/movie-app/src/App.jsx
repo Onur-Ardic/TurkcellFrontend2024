@@ -3,7 +3,6 @@ import { getMovies, postMovie } from "../request/request";
 
 const url = "http://localhost:3000/movies";
 
-// Components
 import MovieCard from "./components/MovieCard";
 import AddModal from "./components/AddModal";
 import UpdateModal from "./components/UpdateModal";

@@ -108,17 +108,14 @@ function AddModal({ setMovies }) {
                     required
                   >
                     <option value="">Select your option</option>
-                    <option value="History">History</option>
+                    <option value="Animation">Animation</option>
                     <option value="Adventure">Adventure</option>
-                    <option value="Biography">Biography</option>
                     <option value="Horror">Horror</option>
                     <option value="Romance">Romance</option>
                     <option value="Science">Science</option>
-                    <option value="Poetry">Poetry</option>
-                    <option value="Essay">Essay</option>
-                    <option value="Mystery">Mystery</option>
                     <option value="Fantasy">Fantasy</option>
-                    <option value="Technology">Technology</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Action">Action</option>
                   </select>
                   <div className="invalid-feedback">Category is required.</div>
                 </div>

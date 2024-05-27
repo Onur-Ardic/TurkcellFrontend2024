@@ -13,14 +13,14 @@ function MovieCard({ movies, setMovies, setSelectedMovie }) {
       <div className="row">
         {movies.map((movie, index) => {
           return (
-            <div key={index} className="card col-3">
+            <div key={index} className="card col-3 ">
               <div className="card-header">
                 <div>{movie.title}</div>
               </div>
               <div>{movie.director}</div>
               <div>{movie.category}</div>
               <div>{movie.year}</div>
-              <img src={movie.imgUrl}></img>
+              <img style={{ height: "450px" }} src={movie.imgUrl}></img>
               <div className="card-footer d-flex justify-content-center gap-3">
                 <button
                   type="button"
