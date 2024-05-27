@@ -1,0 +1,12 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "filmName": "Ahmet",
+      "year": 100,
+      "director": "Fatih",
+      "genre": "Drama",
+      "posterUrl": ""
+    }
+  ]
+}
