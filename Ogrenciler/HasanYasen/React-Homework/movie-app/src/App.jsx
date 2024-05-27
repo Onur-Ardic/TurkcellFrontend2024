@@ -3,7 +3,6 @@ import { getMovies, postMovie } from "../request/request";
 
 const url = "http://localhost:3000/movies";
 
-// Components
 import MovieCard from "./components/MovieCard";
 import AddModal from "./components/AddModal";
 import UpdateModal from "./components/UpdateModal";
@@ -11,8 +10,10 @@ import UpdateModal from "./components/UpdateModal";
 function App() {
   const [movies, setMovies] = useState([]);
 
+  const [selectedMovie, setSelectedMovie] = useState(null);
+
   useEffect(() => {
-    getMovies(url).then((movies) => setMovies(movies));
+    getMovies(url).then(setMovies);
   }, []);
 
   return (
@@ -26,8 +27,12 @@ function App() {
         Add a Movie
       </button>
       <AddModal setMovies={setMovies} />
-      <UpdateModal setMovies={setMovies} />
-      <MovieCard movies={movies} setMovies={setMovies} />
+      <UpdateModal setMovies={setMovies} existingMovie={selectedMovie} />
+      <MovieCard
+        movies={movies}
+        setMovies={setMovies}
+        setSelectedMovie={setSelectedMovie}
+      />
     </>
   );
 }

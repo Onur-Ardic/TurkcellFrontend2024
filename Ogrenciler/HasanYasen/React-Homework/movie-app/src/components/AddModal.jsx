@@ -3,34 +3,29 @@ import { getMovies, postMovie } from "../../request/request";
 const url = "http://localhost:3000/movies";
 
 function AddModal({ setMovies }) {
-  function handleNameChange(e) {
-    setMovieName(e.target.value);
-  }
-  function handleDirectorChange(e) {
-    setMovieDirector(e.target.value);
-  }
-  function handleYearChange(e) {
-    setMovieYear(e.target.value);
-  }
-  function handleImgUrlChange(e) {
-    setMovieImgUrl(e.target.value);
-  }
-  function handleCategoryChange(e) {
-    setMovieCategory(e.target.value);
+  const [movie, setMovie] = useState({
+    name: "",
+    director: "",
+    year: "",
+    imgUrl: "",
+    category: "",
+  });
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setMovie((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   }
 
-  const [movieName, setMovieName] = useState("");
-  const [movieDirector, setMovieDirector] = useState("");
-  const [movieYear, setMovieYear] = useState("");
-  const [movieImgUrl, setMovieImgUrl] = useState("");
-  const [movieCategory, setMovieCategory] = useState("");
   async function add() {
     const newMovie = {
-      title: movieName,
-      director: movieDirector,
-      year: movieYear,
-      imgUrl: movieImgUrl,
-      category: movieCategory,
+      title: movie.name,
+      director: movie.director,
+      year: movie.year,
+      imgUrl: movie.imgUrl,
+      category: movie.category,
     };
     await postMovie(url, newMovie);
     await getMovies(url).then((movies) => setMovies(movies));
@@ -69,11 +64,12 @@ function AddModal({ setMovies }) {
                     Movie name:
                   </label>
                   <input
-                    value={movieName}
+                    value={movie.name}
                     type="text"
-                    onChange={handleNameChange}
+                    onChange={handleChange}
                     className="form-control"
                     id="movieNameForAdd"
+                    name="name"
                     required
                     spellCheck="false"
                     autoComplete="off"
@@ -87,11 +83,12 @@ function AddModal({ setMovies }) {
                     Author:
                   </label>
                   <input
-                    value={movieDirector}
+                    value={movie.director}
                     type="text"
-                    onChange={handleDirectorChange}
+                    onChange={handleChange}
                     className="form-control"
                     id="movieAuthorForAdd"
+                    name="director"
                     required
                     spellCheck="false"
                     autoComplete="off"
@@ -103,27 +100,22 @@ function AddModal({ setMovies }) {
                     Category:
                   </label>
                   <select
-                    value={movieCategory}
-                    onChange={handleCategoryChange}
-                    name="movieCategoryForAdd"
+                    value={movie.category}
+                    onChange={handleChange}
+                    name="category"
                     id="movieCategoryForAdd"
                     className="form-select"
                     required
                   >
-                    <option value="" defaultValue>
-                      Select your option
-                    </option>
-                    <option value="History">History</option>
+                    <option value="">Select your option</option>
+                    <option value="Animation">Animation</option>
                     <option value="Adventure">Adventure</option>
-                    <option value="Biography">Biography</option>
                     <option value="Horror">Horror</option>
                     <option value="Romance">Romance</option>
                     <option value="Science">Science</option>
-                    <option value="Poetry">Poetry</option>
-                    <option value="Essay">Essay</option>
-                    <option value="Mystery">Mystery</option>
                     <option value="Fantasy">Fantasy</option>
-                    <option value="Technology">Technology</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Action">Action</option>
                   </select>
                   <div className="invalid-feedback">Category is required.</div>
                 </div>
@@ -133,10 +125,11 @@ function AddModal({ setMovies }) {
                   </label>
                   <input
                     type="number"
-                    value={movieYear}
-                    onChange={handleYearChange}
+                    value={movie.year}
+                    onChange={handleChange}
                     className="form-control"
                     id="movieYearForAdd"
+                    name="year"
                     required
                     spellCheck="false"
                   />
@@ -147,11 +140,12 @@ function AddModal({ setMovies }) {
                     Image URL:
                   </label>
                   <input
-                    value={movieImgUrl}
-                    onChange={handleImgUrlChange}
+                    value={movie.imgUrl}
+                    onChange={handleChange}
                     type="text"
                     className="form-control"
                     id="movieImgUrlForAdd"
+                    name="imgUrl"
                     spellCheck="false"
                     autoComplete="off"
                   />
@@ -167,12 +161,7 @@ function AddModal({ setMovies }) {
                   >
                     Cancel
                   </button>
-                  <button
-                    id="addToList"
-                    className="btn btn-dark"
-                    type="submit"
-                    onClick={add}
-                  >
+                  <button className="btn btn-dark" type="submit" onClick={add}>
                     Add to List
                   </button>
                 </div>

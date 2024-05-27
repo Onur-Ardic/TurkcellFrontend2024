@@ -1,46 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { getMovies, putMovie } from "../../request/request";
 const url = "http://localhost:3000/movies";
 
-function UpdateModal({ setMovies }) {
-  function handleNameChange(e) {
-    setMovieName(e.target.value);
-  }
-  function handleDirectorChange(e) {
-    setMovieDirector(e.target.value);
-  }
-  function handleYearChange(e) {
-    setMovieYear(e.target.value);
-  }
-  function handleImgUrlChange(e) {
-    setMovieImgUrl(e.target.value);
-  }
-  function handleCategoryChange(e) {
-    setMovieCategory(e.target.value);
+function UpdateModal({ setMovies, existingMovie }) {
+  const [movie, setMovie] = useState({
+    name: "",
+    director: "",
+    year: "",
+    imgUrl: "",
+    category: "",
+  });
+
+  useEffect(() => {
+    if (existingMovie) {
+      setMovie({
+        name: existingMovie.title,
+        director: existingMovie.director,
+        year: existingMovie.year,
+        imgUrl: existingMovie.imgUrl,
+        category: existingMovie.category,
+      });
+    }
+  }, [existingMovie]);
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setMovie((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   }
 
-  const [movieName, setMovieName] = useState("");
-  const [movieDirector, setMovieDirector] = useState("");
-  const [movieYear, setMovieYear] = useState("");
-  const [movieImgUrl, setMovieImgUrl] = useState("");
-  const [movieCategory, setMovieCategory] = useState("");
-
-  async function update(
-    movieName,
-    movieDirector,
-    movieYear,
-    movieImgUrl,
-    movieCategory
-  ) {
-    const newMovie = {
-      title: movieName,
-      director: movieDirector,
-      year: movieYear,
-      imgUrl: movieImgUrl,
-      category: movieCategory,
+  async function handleUpdate() {
+    const updatedMovie = {
+      title: movie.name,
+      director: movie.director,
+      year: movie.year,
+      imgUrl: movie.imgUrl,
+      category: movie.category,
     };
-    await putMovie(url, newMovie);
-    await getMovies(url).then((movies) => setMovies(movies));
+
+    await putMovie(`${url}/${existingMovie.id}`, updatedMovie);
+    const updatedMovies = await getMovies(url);
+    setMovies(updatedMovies);
   }
 
   return (
@@ -70,40 +72,54 @@ function UpdateModal({ setMovies }) {
                 id="updateForm"
                 className="row g-3 needs-validation"
                 noValidate
+                onSubmit={handleUpdate}
               >
                 <div className="col-md-6">
                   <label htmlFor="movieNameForUpdate" className="form-label">
                     Movie name:
                   </label>
                   <input
-                    value={movieName}
+                    value={movie.name}
                     type="text"
-                    onChange={handleNameChange}
+                    onChange={handleChange}
                     className="form-control"
                     id="movieNameForUpdate"
+                    name="name"
                     required
-                    spellCheck="false"
                     autoComplete="off"
                   />
-                  <div className="invalid-feedback">
-                    Movie name is required.
-                  </div>
                 </div>
                 <div className="col-md-6">
-                  <label htmlFor="movieAuthorForUpdate" className="form-label">
-                    Author:
+                  <label
+                    htmlFor="movieDirectorForUpdate"
+                    className="form-label"
+                  >
+                    Director:
                   </label>
                   <input
-                    value={movieDirector}
+                    value={movie.director}
                     type="text"
-                    onChange={handleDirectorChange}
+                    onChange={handleChange}
                     className="form-control"
-                    id="movieAuthorForUpdate"
+                    id="movieDirectorForUpdate"
+                    name="director"
                     required
-                    spellCheck="false"
                     autoComplete="off"
                   />
-                  <div className="invalid-feedback">Author is required.</div>
+                </div>
+                <div className="col-md-6">
+                  <label htmlFor="movieYearForUpdate" className="form-label">
+                    Year:
+                  </label>
+                  <input
+                    value={movie.year}
+                    type="number"
+                    onChange={handleChange}
+                    className="form-control"
+                    id="movieYearForUpdate"
+                    name="year"
+                    required
+                  />
                 </div>
                 <div className="col-md-6">
                   <label
@@ -113,61 +129,38 @@ function UpdateModal({ setMovies }) {
                     Category:
                   </label>
                   <select
-                    value={movieCategory}
-                    onChange={handleCategoryChange}
-                    name="movieCategoryForUpdate"
-                    id="movieCategoryForUpdate"
+                    value={movie.category}
+                    onChange={handleChange}
+                    name="category"
                     className="form-select"
+                    id="movieCategoryForUpdate"
                     required
                   >
-                    <option value="" defaultValue>
-                      Select your option
-                    </option>
-                    <option value="History">History</option>
+                    <option value="">Select your option</option>
+                    <option value="Animation">Animation</option>
                     <option value="Adventure">Adventure</option>
-                    <option value="Biography">Biography</option>
                     <option value="Horror">Horror</option>
                     <option value="Romance">Romance</option>
                     <option value="Science">Science</option>
-                    <option value="Poetry">Poetry</option>
-                    <option value="Essay">Essay</option>
-                    <option value="Mystery">Mystery</option>
                     <option value="Fantasy">Fantasy</option>
-                    <option value="Technology">Technology</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Action">Action</option>
                   </select>
                   <div className="invalid-feedback">Category is required.</div>
-                </div>
-                <div className="col-md-6">
-                  <label htmlFor="movieYearForUpdate" className="form-label">
-                    Year:
-                  </label>
-                  <input
-                    type="number"
-                    value={movieYear}
-                    onChange={handleYearChange}
-                    className="form-control"
-                    id="movieYearForUpdate"
-                    required
-                    spellCheck="false"
-                  />
-                  <div className="invalid-feedback">Year is required.</div>
                 </div>
                 <div className="col-12">
                   <label htmlFor="movieImgUrlForUpdate" className="form-label">
                     Image URL:
                   </label>
                   <input
-                    value={movieImgUrl}
-                    onChange={handleImgUrlChange}
+                    value={movie.imgUrl}
+                    onChange={handleChange}
                     type="text"
                     className="form-control"
                     id="movieImgUrlForUpdate"
-                    spellCheck="false"
+                    name="imgUrl"
                     autoComplete="off"
                   />
-                  <div className="valid-feedback">
-                    If you do not enter a URL, the default image is shown.
-                  </div>
                 </div>
                 <div className="modal-footer">
                   <button
@@ -178,12 +171,11 @@ function UpdateModal({ setMovies }) {
                     Cancel
                   </button>
                   <button
-                    id="updateToList"
-                    className="btn btn-dark"
                     type="submit"
-                    onClick={update}
+                    className="btn btn-dark"
+                    onClick={handleUpdate}
                   >
-                    Update to List
+                    Update Movie
                   </button>
                 </div>
               </form>
