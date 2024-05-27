@@ -1,0 +1,68 @@
+{
+  "movies": [
+    {
+      "title": "Poor Things",
+      "director": "Yorgos Lanthimos",
+      "year": "2023",
+      "imgUrl": "https://image.tmdb.org/t/p/original//kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg",
+      "category": "Romance",
+      "id": "1"
+    },
+    {
+      "title": "Deadpool",
+      "director": "Tim Miller",
+      "year": "2016",
+      "imgUrl": "https://image.tmdb.org/t/p/original//fSRb7vyIP8rQpL0I47P3qUsEKX3.jpg",
+      "category": "Adventure",
+      "id": "2"
+    },
+    {
+      "title": "Atlas",
+      "director": "Brad Peyton",
+      "year": "2024",
+      "imgUrl": "https://www.themoviedb.org/t/p/w1280/bcM2Tl5HlsvPBnL8DKP9Ie6vU4r.jpg",
+      "category": "Action",
+      "id": "3"
+    },
+    {
+      "title": "Godzilla x Kong: The New Empire",
+      "director": "Adam Wingard",
+      "year": "2024",
+      "imgUrl": "https://www.themoviedb.org/t/p/w1280/z1p34vh7dEOnLDmyCrlUVLuoDzd.jpg",
+      "category": "Science",
+      "id": "4"
+    },
+    {
+      "title": "Kingdom of the Planet of the Apes",
+      "director": "Amanda Silver",
+      "year": "2024",
+      "imgUrl": "https://www.themoviedb.org/t/p/w1280/gKkl37BQuKTanygYQG1pyYgLVgf.jpg",
+      "category": "Science",
+      "id": "5"
+    },
+    {
+      "title": "The Shawshank Redemption ",
+      "director": "Frank Darabont",
+      "year": "1994",
+      "imgUrl": "https://www.themoviedb.org/t/p/w1280/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+      "category": "Drama",
+      "id": "6"
+    },
+    {
+      "title": "The Green Mile",
+      "director": "Frank Darabont",
+      "year": "1999",
+      "imgUrl": "https://www.themoviedb.org/t/p/w1280/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg",
+      "category": "Fantasy",
+      "id": "7"
+    },
+    {
+      "title": "Thelma the Unicornn",
+      "director": "Jared Hess",
+      "year": "2024",
+      "imgUrl": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/yutiEZ7taGDNau2jGjKIdDwQpDw.jpg",
+      "category": "Animation",
+      "id": "8"
+    }
+  ]
+}
