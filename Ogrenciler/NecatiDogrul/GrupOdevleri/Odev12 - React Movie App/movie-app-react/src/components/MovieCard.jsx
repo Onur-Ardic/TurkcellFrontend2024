@@ -40,7 +40,7 @@ const MovieCard = ({ movie, deleteMovie, updateMovie }) => {
         </>
       ) : (
         <>
-          <img src={movie.image} alt={`${movie.title} poster`} className="movie-image" />
+          <img src={movie.image} className="movie-image" />
           <h3>{movie.title}</h3>
           <p><strong>Director:</strong> {movie.director}</p>
           <p><strong>Year:</strong> {movie.year}</p>
