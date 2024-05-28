@@ -1,38 +1,156 @@
 {
-    "todos":
-    [
-        {
-            "id": 1,
-            "title": "title",
-            "description": "descriiption",
-            "endDate": "endDate",
-            "categories" : "On Hold",
-            "date": "date"
-        },
-        {
-            "id": 2,
-            "title": "title2",
-            "description": "descriiption2",
-            "endDate": "endDate2",
-            "categories" : "In Progress",
-            "date": "date2"
-        },
-        {
-            "id": 3,
-            "title": "title3",
-            "description": "descriiption3",
-            "endDate": "endDate3",
-            "categories" : "Done",
-            "date": "date3"
-        }
-        ,
-        {
-            "id": 3,
-            "title": "title3",
-            "description": "descriiption3",
-            "endDate": "endDate4",
-            "categories" : "Done",
-            "date": "date3"
-        }
-    ]
+  "todos": [
+    {
+      "id": "2",
+      "title": "title2",
+      "description": "descriiption2",
+      "endDate": "endDate2",
+      "categories": "To Do",
+      "date": "date2"
+    },
+    {
+      "id": "3",
+      "title": "title3",
+      "description": "descriiption3",
+      "endDate": "endDate3",
+      "categories": "In Progress",
+      "date": "date3"
+    },
+    {
+      "id": "4",
+      "title": "title3",
+      "description": "descriiption3",
+      "endDate": "endDate4",
+      "categories": "Done",
+      "date": "date3"
+    },
+    {
+      "id": "66ec",
+      "title": "asdasd",
+      "date": "28.05.2024 23:23",
+      "categories": "To Do",
+      "endDate": "2024-05-30T00:24",
+      "description": "asdasdasd"
+    },
+    {
+      "id": "1188",
+      "title": "asdasd",
+      "date": "28.05.2024 23:40",
+      "categories": "",
+      "endDate": "2024-05-28T23:46",
+      "description": "asdasdasd"
+    },
+    {
+      "id": "39a5",
+      "title": "asdasd",
+      "date": "28.05.2024 23:40",
+      "categories": "To Do",
+      "endDate": "2024-05-28T04:40",
+      "description": "asdasd"
+    },
+    {
+      "id": "87a1",
+      "title": "asdasd",
+      "date": "28.05.2024 23:41",
+      "categories": "In Progress",
+      "endDate": "2024-05-28T23:44",
+      "description": "asdasd"
+    },
+    {
+      "id": "e743",
+      "title": "asdasd",
+      "date": "28.05.2024 23:41",
+      "categories": "",
+      "endDate": "2024-05-28T00:41",
+      "description": "asdasdsad"
+    },
+    {
+      "id": "3ad1",
+      "title": "asdasd",
+      "date": "28.05.2024 23:41",
+      "categories": "",
+      "endDate": "2024-05-28T23:42",
+      "description": "asdasd"
+    },
+    {
+      "id": "bb10",
+      "title": "asdasd",
+      "date": "28.05.2024 23:42",
+      "categories": "",
+      "endDate": "2024-05-28T00:42",
+      "description": "asdsad"
+    },
+    {
+      "id": "f76c",
+      "title": "asdasd",
+      "date": "28.05.2024 23:42",
+      "categories": "",
+      "endDate": "2024-05-28T23:43",
+      "description": "asdasd"
+    },
+    {
+      "id": "8dc0",
+      "title": "asdas",
+      "date": "28.05.2024 23:50",
+      "categories": "To Do",
+      "endDate": "2024-05-28T23:51",
+      "description": "asdasd"
+    },
+    {
+      "id": "1cc9",
+      "title": "asdasd",
+      "date": "28.05.2024 23:51",
+      "categories": "To Do",
+      "endDate": "2024-05-28T23:53",
+      "description": "adasd"
+    },
+    {
+      "id": "cccf",
+      "title": "asdasd",
+      "date": "28.05.2024 23:53",
+      "categories": "In Progress",
+      "endDate": "2024-05-28T23:54",
+      "description": "asdasd"
+    },
+    {
+      "id": "f149",
+      "title": "asdasd",
+      "date": "28.05.2024 23:54",
+      "categories": "Done",
+      "endDate": "2024-05-28T00:54",
+      "description": "asdasd"
+    },
+    {
+      "id": "bcff",
+      "title": "asdsadasd",
+      "date": "28.05.2024 23:55",
+      "categories": "Done",
+      "endDate": "2024-05-28T03:59",
+      "description": "asdasdasd"
+    },
+    {
+      "id": "62bc",
+      "title": "asdasd",
+      "date": "29.05.2024 00:04",
+      "categories": "Done",
+      "endDate": "2024-05-29T00:06",
+      "description": "sadasdasdasdasdsadsasadasdasdasdasdsadsasadasdasdasdasdsadsasadasdasdasdasdsadsa"
+    },
+    {
+      "id": "4dc2",
+      "title": "Silme Fonksiyonu",
+      "date": "29.05.2024 00:12",
+      "categories": "On Hold",
+      "endDate": "2024-05-30T17:59",
+      "description": "Silme Fonksiyonu yapılacak"
+    },
+    {
+      "id": "2a16",
+      "title": "Güncelleme fonksiyonu",
+      "date": "29.05.2024 00:12",
+      "categories": "On Hold",
+      "endDate": "2024-05-30T17:59",
+      "description": "Güncelleme fonksiyonu yapılacak"
+    }
+  ]
 }
