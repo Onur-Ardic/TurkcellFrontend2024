@@ -1,32 +1,29 @@
-import { useEffect, useState } from "react";
-import "./App.css";
-import ListItem from "./components/ListItem";
-import styles from "./CustomStyle.module.css";
+import { useEffect, useState } from 'react'
+import './App.css'
+import ListItem from './components/ListItem'
+import styles from './CustomStyle.module.css'
 
 function App() {
-  const [value, setValue] = useState(0);
-  const students = ["Varol", "Veli", "Rümeysanur", "Egemen"];
+  const [value, setValue] = useState(0)
+  const students = ['Varol', 'Veli', 'Rümeysanur', 'Egemen']
   useEffect(() => {
-    console.log("Tıklandı");
-  }, [value]);
+    console.log('Tıklandı')
+  }, [value])
   return (
     <>
       <ul>
         {students.map((student, index) => {
-          return <ListItem student={student} key={index} value={value} />;
+          return <ListItem student={student} key={index} value={value} />
         })}
-        <button
-          className={styles.customButton}
-          onClick={() => setValue(value + 1)}
-        >
+        <button className={styles.customButton} onClick={() => setValue(value + 1)}>
           Tıkla
         </button>
       </ul>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
 
 // import { useState, useEffect } from "react";
 // import "./App.css";
