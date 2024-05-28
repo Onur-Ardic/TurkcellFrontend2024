@@ -56,5 +56,5 @@ export const getOptions = async () => {
   const result = await response.json();
   const options = new Set();
   result.forEach((toDo)=> {options.add(toDo.categories)})
-  return options;
+  return Array.from(options);
 };

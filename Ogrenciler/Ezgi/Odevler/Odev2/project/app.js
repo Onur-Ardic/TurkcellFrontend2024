@@ -61,6 +61,7 @@ saveForm.addEventListener("click", function (e) {
     UI.clearModalForm()
 })
 
+
 modalUpdateBtn.addEventListener("click", async function (e) {
     e.preventDefault();
     const newBook = new Book(
