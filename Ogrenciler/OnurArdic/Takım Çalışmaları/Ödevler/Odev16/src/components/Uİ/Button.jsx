@@ -1,5 +1,9 @@
-const Button = () => {
-  return <button type="submit">Todo Ekle</button>
-}
+const Button = ({ addHandler }) => {
+  return (
+    <button type="submit" onClick={addHandler} id="addTodoButton">
+      Todo Ekle
+    </button>
+  );
+};
 
-export default Button
+export default Button;
