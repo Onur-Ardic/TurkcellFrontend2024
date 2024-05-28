@@ -1,0 +1,20 @@
+{
+  "tasks": [
+    {
+      "id": "ba474f51-19cb-458e-bf1f-67eee3d5073a",
+      "title": "alkdjals",
+      "status": "todo",
+      "createDate": "28.05.2024 17:53:40",
+      "updateDate": "",
+      "deadline": "2024-05-29"
+    },
+    {
+      "id": "55df2a06-1e22-42f4-8145-b9d3a20cf451",
+      "title": "şevval",
+      "status": "done",
+      "createDate": "28.05.2024 17:57:34",
+      "updateDate": "28.05.2024 19:01:52",
+      "deadline": "2024-05-31"
+    }
+  ]
+}
