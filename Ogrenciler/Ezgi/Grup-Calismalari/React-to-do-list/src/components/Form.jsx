@@ -1,34 +1,24 @@
 import React from 'react'
+import FormCss from "../css/Form.module.css"
 
-const Form = ({inputText, setInputText, todos, setTodos}) => {
 
-    const inputTextHandler = (e) => {
-        setInputText(e.target.value)
+const Form = ({ todo, setToDo,addUpdate}) => {
+
+    const inputTextHandler = (e,input) => {
+      setToDo({...todo,[input]: e.target.value})
     }
 
-    const submitTodoHandler = (e) => {
-        e.preventDefault()
-        setTodos([...todos, {
-            text: inputText,
-            completed: false,
-            id: Math.random()*1000
-        }])
-        setInputText('')
-    }
-
-
-
-
-  return (
-    <>
-      <form>
-        <div className="search">
-            <input type="text" className='todo-input' placeholder='What are you doing today?'onChange={inputTextHandler} value={inputText}/>
-            <button className='todo-button' type='submit' onClick={submitTodoHandler}>Add Task</button>
-        </div>
-      </form>
-    </>
-  )
+    return (
+      <>
+        <form className={FormCss.form}>
+              <input type="text" className='todo-input' placeholder='What are you doing today?' onChange={(e)=>inputTextHandler(e,"text")} value={todo.text}/>
+              
+              <button className='todo-button' type='submit' onClick={addUpdate}>
+                Add Task
+              </button>              
+        </form>
+      </>
+    )
 }
 
 export default Form

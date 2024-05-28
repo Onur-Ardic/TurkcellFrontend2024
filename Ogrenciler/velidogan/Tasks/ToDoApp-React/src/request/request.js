@@ -3,7 +3,7 @@ class Request{
         try{
             const response = await fetch(url);
             if(!response.ok)
-                throw new Error("Görev bulunamadı.")
+                throw new Error("Kitap bulunamadı.")
             const data = await response.json();
             return data;
         } catch (err) {
@@ -20,7 +20,7 @@ class Request{
                 }
             })
             if(!response.ok){
-                throw new Error("Görev Eklenemedi.")
+                throw new Error("Kitap Eklenemedi.")
             }
   
         } catch (err) {
@@ -37,7 +37,7 @@ class Request{
                 }
             })
             if(!response.ok){
-                throw new Error("Görev Düzenlenemedi.")
+                throw new Error("Kitap Düzenlenemedi.")
             }
         } catch (err) {
           console.log(err.message);
@@ -49,7 +49,7 @@ class Request{
                 method: "DELETE"
             });
             if(!response.ok){
-                throw new Error("Görev Silinemedi.")
+                throw new Error("Kitap Silinemedi.")
             }
         } catch (err) {
             console.log(err.message);
