@@ -1,0 +1,23 @@
+.card {
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.cardBody {
+  display: flex;
+  gap: 1rem;
+}
+.cardText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1rem;
+  flex: 1;
+}
+.cardBody .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
