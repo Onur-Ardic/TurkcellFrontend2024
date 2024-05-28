@@ -1,4 +1,5 @@
 import { postTask, putTask } from "../service/request";
+import styles from "../CustomStyle.module.css";
 
 const ToDoForm = ({ tasks, setTasks, task, setTask }) => {
   const addTask = async (e) => {
@@ -31,24 +32,26 @@ const ToDoForm = ({ tasks, setTasks, task, setTask }) => {
     });
   };
   return (
-    <div>
-      <form id="form" onSubmit={addTask}>
+    <>
+      <form className={styles.form} id="form" onSubmit={addTask}>
         <input
+          className={styles.toDoFormInput}
           type="text"
           placeholder="Görev Adı..."
           onChange={(e) => setTask({ ...task, task: e.target.value })}
           value={task.task}
         />
-        <input
+        <textarea
+          className={styles.toDoFormInput}
           type="text"
           placeholder="Açıklama..."
           onChange={(e) => setTask({ ...task, desc: e.target.value })}
           value={task.desc}
         />
         {/* <input type="checkbox" placeholder="Açıklama..." /> */}
-        <button type="submit">Ekle</button>
+        <button className={styles.customButton} type="submit">Ekle</button>
       </form>
-    </div>
+    </>
   );
 };
 
