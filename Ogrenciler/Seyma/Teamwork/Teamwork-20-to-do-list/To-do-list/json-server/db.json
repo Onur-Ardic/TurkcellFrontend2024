@@ -1,0 +1,29 @@
+{
+    "todos":
+    [
+        {
+            "id": 1,
+            "title": "title",
+            "description": "descriiption",
+            "endDate": "endDate",
+            "categories" : "On Hold",
+            "date": "date"
+        },
+        {
+            "id": 2,
+            "title": "title2",
+            "description": "descriiption2",
+            "endDate": "endDate2",
+            "categories" : "In Progress",
+            "date": "date2"
+        },
+        {
+            "id": 3,
+            "title": "title3",
+            "description": "descriiption3",
+            "endDate": "endDate3",
+            "categories" : "Done",
+            "date": "date3"
+        }
+    ]
+}
