@@ -1,0 +1,10 @@
+.formButton {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  height: min-content;
+}
+.formButton:hover {
+  background-color: black;
+  color: white;
+}
