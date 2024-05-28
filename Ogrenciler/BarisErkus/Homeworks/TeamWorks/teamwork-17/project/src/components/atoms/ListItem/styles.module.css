@@ -1,0 +1,49 @@
+.listItem {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(85, 85, 85);
+  padding: 1rem 0;
+  border-bottom: 1px solid rgb(190, 190, 190);
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    div {
+      p {
+        font-size: 0.75rem;
+        color: rgb(165, 165, 165);
+      }
+    }
+  }
+
+  .trashContainer {
+    cursor: pointer;
+  }
+
+  .tickContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+  }
+
+  .checked {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: gray;
+    color: gray;
+  }
+}

@@ -1,0 +1,13 @@
+#root {
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  margin-top: 5rem;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}

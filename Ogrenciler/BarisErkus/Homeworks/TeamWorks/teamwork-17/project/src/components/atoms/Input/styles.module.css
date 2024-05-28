@@ -1,0 +1,11 @@
+.mainInput {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  width: 50%;
+  font-size: 1.25rem;
+  &:focus {
+    outline-color: rgb(216, 149, 49);
+  }
+}
