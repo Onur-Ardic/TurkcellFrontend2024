@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap");
+body {
+  background-color: #121212;
+  font-family: "Belanosima", sans-serif;
+}
+* {
+  color: white;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.taskListDiv {
+  display: flex;
+  justify-content: space-between;
+}

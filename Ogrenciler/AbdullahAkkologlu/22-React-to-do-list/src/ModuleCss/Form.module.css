@@ -1,0 +1,31 @@
+form {
+  display: flex;
+  margin: 2rem 0;
+  * {
+    color: #000;
+  }
+}
+select,
+input {
+  width: 30%;
+  margin-right: 1rem;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 10px 10px;
+  box-shadow: 0.1px 0.1px 3px rgb(138, 138, 255) inset;
+  background-color: white;
+}
+input:focus,
+select:focus {
+  border: 2px solid rgb(168, 168, 254);
+}
+.button {
+  background-color: rgba(0, 0, 0, 0.911);
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  padding: 5px 20px;
+  color: white;
+}

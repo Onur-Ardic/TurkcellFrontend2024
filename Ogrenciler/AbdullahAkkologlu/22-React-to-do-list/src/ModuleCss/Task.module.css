@@ -1,0 +1,102 @@
+.card {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  padding: 2rem;
+  margin-bottom: 30px;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    animation: rotate 4s linear infinite;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: #000;
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.title {
+  margin-top: 0;
+}
+.calenderIcon {
+  margin-right: 10px;
+}
+.deadline {
+  display: flex;
+  align-items: center;
+}
+.button {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  margin-right: 10px;
+}
+.green {
+  background-color: rgb(207, 242, 165);
+  color: rgb(93, 127, 53);
+  box-shadow: 1px 1px 20px rgb(207, 242, 165);
+}
+.purple {
+  background-color: rgb(191, 191, 252);
+  color: rgb(68, 68, 111);
+  box-shadow: 0px 0px 20px rgb(191, 191, 252);
+}
+.blue {
+  background-color: rgb(160, 160, 255);
+  color: rgb(22, 22, 108);
+  box-shadow: 0px 0px 20px rgb(160, 160, 255);
+  width: 50%;
+}
+.form {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #000;
+
+  input {
+    width: 89%;
+  }
+  select {
+    width: 100%;
+  }
+}
+.card-todo::before {
+  background-image: conic-gradient(
+    transparent,
+    rgb(0, 208, 255),
+    transparent 30%
+  );
+}
+.card-inprogress::before {
+  background-image: conic-gradient(
+    transparent,
+    rgb(255, 157, 0),
+    transparent 30%
+  );
+}
+.card-done::before {
+  background-image: conic-gradient(
+    transparent,
+    rgb(0, 255, 38),
+    transparent 30%
+  );
+}

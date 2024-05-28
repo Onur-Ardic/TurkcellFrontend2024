@@ -1,19 +1,51 @@
 {
   "tasks": [
     {
-      "id": "ba474f51-19cb-458e-bf1f-67eee3d5073a",
-      "title": "alkdjals",
-      "status": "todo",
-      "createDate": "28.05.2024 17:53:40",
-      "updateDate": "",
+      "id": "44a380f4-f67e-4331-a7b4-37f976482651",
+      "createDate": "28.05.2024 19:24:05",
+      "title": "react öğren",
+      "status": "inprogress",
+      "updateDate": "29.05.2024 01:44:02",
       "deadline": "2024-05-29"
     },
     {
-      "id": "55df2a06-1e22-42f4-8145-b9d3a20cf451",
-      "title": "şevval",
+      "id": "45115a50-af39-4470-8e61-8910c77cfa4c",
+      "createDate": "28.05.2024 19:24:15",
+      "title": "çöpleri çıkar",
+      "status": "inprogress",
+      "updateDate": "29.05.2024 02:25:50",
+      "deadline": "2024-05-31"
+    },
+    {
+      "id": "b484b414-8968-4d79-8ea8-e7325099a3f6",
+      "createDate": "28.05.2024 19:24:25",
+      "title": "okey oyna",
       "status": "done",
-      "createDate": "28.05.2024 17:57:34",
-      "updateDate": "28.05.2024 19:01:52",
+      "updateDate": "29.05.2024 00:15:04",
+      "deadline": "2024-06-01"
+    },
+    {
+      "id": "54376ba8-4f6b-4948-a80a-e543d912eff6",
+      "createDate": "29.05.2024 01:16:23",
+      "title": "necati",
+      "status": "done",
+      "updateDate": "29.05.2024 02:22:11",
+      "deadline": "2024-05-31"
+    },
+    {
+      "id": "2c4280f3-d76e-4197-ac3a-45e6647de8ad",
+      "createDate": "29.05.2024 01:16:40",
+      "title": "necatisdfsdfsdf",
+      "status": "todo",
+      "updateDate": "",
+      "deadline": "2024-05-31"
+    },
+    {
+      "id": "c16d7e05-cc1b-41c9-aeb0-6425a6cff12d",
+      "createDate": "29.05.2024 01:16:43",
+      "title": "sdfsdf",
+      "status": "todo",
+      "updateDate": "29.05.2024 01:44:06",
       "deadline": "2024-05-31"
     }
   ]
