@@ -38,7 +38,7 @@ export const Cards = ({ toDo, onDelete, onUpdate }) => {
     <>
       <div className={styles.card}>
         {isEditing ? (
-          <>
+          <div className={styles.editForm}>
             <InputGroups
               text="Title"
               name="title"
@@ -53,7 +53,6 @@ export const Cards = ({ toDo, onDelete, onUpdate }) => {
             />
             <InputGroups
               type="select"
-              // options={options}
               text="Categories"
               name="categories"
               value={editedToDo.categories}
@@ -66,8 +65,15 @@ export const Cards = ({ toDo, onDelete, onUpdate }) => {
               value={editedToDo.endDate}
               onChange={handleChange}
             />
-            <Button text="Güncelle" type="submit" onClick={handleUpdate} />
-          </>
+            <div className={styles.editFormButton}>
+              <Button text="Güncelle" type="submit" onClick={handleUpdate} />
+              <Button
+                text="İptal"
+                type="submit"
+                onClick={() => setIsediting(!isEditing)}
+              />
+            </div>
+          </div>
         ) : (
           <div className="card-body">
             <h5 className={styles.titleStyle}>{toDo.title}</h5>
@@ -79,8 +85,14 @@ export const Cards = ({ toDo, onDelete, onUpdate }) => {
             <div className={styles.descriptionStyles}>
               <p>Açıklama: {toDo.description}</p>
             </div>
-            <Button text="Sil" onClick={() => onDelete(toDo.id)} />
-            <Button text="G" onClick={() => setIsediting(!isEditing)} />
+            <Button
+              text={<i className="bi bi-trash"></i>}
+              onClick={() => onDelete(toDo.id)}
+            />
+            <Button
+              text={<i className="bi bi-pencil-square"></i>}
+              onClick={() => setIsediting(!isEditing)}
+            />
             <p className={styles.dateStyle}>{toDo.date}</p>
           </div>
         )}

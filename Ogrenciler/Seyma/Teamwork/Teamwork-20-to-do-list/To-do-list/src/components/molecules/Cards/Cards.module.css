@@ -14,6 +14,18 @@
   flex-grow: 1;
   width: 100%;
 }
+.editForm {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  /* flex-basis: calc(33.333% - 10px);
+  flex-grow: 1; */
+  width: 100%;
+}
 
 .dateStyle {
   font-size: 0.7rem;

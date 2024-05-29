@@ -1,5 +1,4 @@
 import React from "react";
-import { Options } from "../options/Options";
 import styles from "./Selects.module.css";
 
 export const Selects = ({ value, onChange, name }) => {

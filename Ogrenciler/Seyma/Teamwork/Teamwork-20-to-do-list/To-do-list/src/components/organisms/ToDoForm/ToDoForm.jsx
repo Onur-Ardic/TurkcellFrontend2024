@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { InputGroups } from "../../molecules/inputGroups/InputGroups";
 import { Button } from "../../atoms/buttons/Button";
-import { getOptions } from "../../../service/Api";
 import "./ToDoForm.css";
 
 export const ToDoForm = ({ onAdd }) => {
-  // const [options, setOptions] = useState([]);
   const [toDo, setToDo] = useState({
     title: "",
     date: "",
@@ -18,11 +16,6 @@ export const ToDoForm = ({ onAdd }) => {
     const { name, value } = e.target;
     setToDo({ ...toDo, [name]: value });
   };
-
-  // const fetchOptions = async () => {
-  //   const allOptions = await getOptions();
-  //   setOptions(allOptions);
-  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -43,10 +36,6 @@ export const ToDoForm = ({ onAdd }) => {
     });
   };
 
-  // useEffect(() => {
-  //   fetchOptions();
-  // }, []);
-
   return (
     <>
       <div>
@@ -65,7 +54,6 @@ export const ToDoForm = ({ onAdd }) => {
           />
           <InputGroups
             type="select"
-            // options={options}
             text="Categories"
             name="categories"
             value={toDo.categories}
