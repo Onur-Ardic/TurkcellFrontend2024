@@ -1,0 +1,36 @@
+{
+  "tasks": [
+    {
+      "id": "87720a96-1b6e-4562-80ea-a3ad5875c024",
+      "createDate": "5/29/2024, 3:37:56 PM",
+      "title": "React Öğrenilecek !",
+      "status": "inprogress",
+      "updateDate": "5/29/2024, 3:38:44 PM",
+      "deadline": "2024-04-30"
+    },
+    {
+      "id": "d5427eb3-61cf-417c-ae33-d9fbe8cc1498",
+      "createDate": "5/29/2024, 3:38:10 PM",
+      "title": "İş Bulunacak !",
+      "status": "todo",
+      "updateDate": "5/29/2024, 6:09:55 PM",
+      "deadline": "2024-05-02"
+    },
+    {
+      "id": "3807deac-f54b-4adb-8465-3679b1e540e1",
+      "createDate": "5/29/2024, 3:38:31 PM",
+      "title": "Saygınlık",
+      "status": "todo",
+      "updateDate": "5/29/2024, 7:07:39 PM",
+      "deadline": "2024-05-03"
+    },
+    {
+      "id": "b6986dfd-8cf3-4d02-82cb-2c9032d61f44",
+      "createDate": "5/29/2024, 5:59:14 PM",
+      "title": "Disiplin",
+      "status": "inprogress",
+      "updateDate": "5/29/2024, 5:59:22 PM",
+      "deadline": "2024-05-22"
+    }
+  ]
+}
