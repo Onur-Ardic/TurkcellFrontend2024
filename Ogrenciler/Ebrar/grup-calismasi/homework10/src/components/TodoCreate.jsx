@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./css/todocreate.modules.css"
+import "./css/todocreate.modules.css";
+import { FcBusinesswoman } from "react-icons/fc";
 
 function TodoCreate({ onCreateTodo }) {
   const [newTodo, setNewTodo] = useState("");
@@ -20,14 +21,17 @@ function TodoCreate({ onCreateTodo }) {
 
   return (
     <div className="todo-create">
-      <h2>Create ToDo List</h2>
+      <h1>
+        Hello User! <FcBusinesswoman className="woman-icon" />
+      </h1>
+
       <input
         type="text"
-        placeholder="Todo giriniz"
+        placeholder="Bir sonraki görevin.."
         value={newTodo}
         onChange={(e) => setNewTodo(e.target.value)}
       />
-      <button onClick={createTodo}>Todo Olustur</button>
+      <button onClick={createTodo}>Görev Oluştur</button>
     </div>
   );
 }
