@@ -42,6 +42,7 @@ function App() {
     if (!validation(task)) return;
     await createData(task);
     setTasks([...tasks, task]);
+    setNewTask({ title: "", status: "todo", updateDate: "", deadline: "" });
   };
   const handleDelete = async (id) => {
     await deleteData(id);

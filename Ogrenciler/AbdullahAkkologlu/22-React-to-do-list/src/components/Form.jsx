@@ -5,6 +5,7 @@ const Form = ({ newTask, setNewTask, handleSubmit }) => {
       <input
         type="text"
         placeholder="title"
+        value={newTask.title}
         onChange={(e) => {
           setNewTask({ ...newTask, title: e.target.value });
         }}
@@ -12,6 +13,7 @@ const Form = ({ newTask, setNewTask, handleSubmit }) => {
       <input
         type="date"
         placeholder="deadline"
+        value={newTask.deadline}
         onChange={(e) => {
           setNewTask({ ...newTask, deadline: e.target.value });
         }}

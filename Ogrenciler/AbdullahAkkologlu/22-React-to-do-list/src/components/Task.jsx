@@ -1,6 +1,8 @@
 import { useState } from "react";
 import TaskCss from "../ModuleCss/Task.module.css";
 import { SlCalender } from "react-icons/sl";
+import { MdUpdate } from "react-icons/md";
+import { LuPenSquare } from "react-icons/lu";
 const Task = ({
   task,
   handleDelete,
@@ -20,6 +22,10 @@ const Task = ({
       default:
         return "";
     }
+  };
+  const dateFormatter = (date) => {
+    const formattedDate = date.split("-");
+    return `${formattedDate[2]}.${formattedDate[1]}.${formattedDate[0]}`;
   };
   return (
     <div className={`${TaskCss.card} ${getStatusClass(task.status)}`}>
@@ -63,12 +69,21 @@ const Task = ({
         </form>
       ) : (
         <>
-          <h3 className={TaskCss.title}>{task.title}</h3>
-          <p className={TaskCss.deadline}>
-            <SlCalender className={TaskCss.calenderIcon} />
-            {task.deadline}
+          <h1 className={TaskCss.title}>{task.title}</h1>
+          <p className={TaskCss.alignIcon}>
+            <SlCalender />
+            {dateFormatter(task.deadline)}
           </p>
-          <p>{task.createDate}</p>
+          <p className={TaskCss.alignIcon}>
+            <LuPenSquare />
+            {task.createDate}
+          </p>
+          {task.updateDate && (
+            <p className={TaskCss.alignIcon}>
+              <MdUpdate /> {task.updateDate}
+            </p>
+          )}
+
           <button
             className={`${TaskCss.button} ${TaskCss.purple}`}
             onClick={() => {
