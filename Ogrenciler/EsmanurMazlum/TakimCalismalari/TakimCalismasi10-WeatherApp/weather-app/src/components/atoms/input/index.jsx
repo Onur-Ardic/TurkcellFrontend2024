@@ -1,10 +1,9 @@
-import "./style.css"
+import './style.css'
 
-
-function Input({text, onChange, value}) {
+function Input({ text, onChange, value }) {
   return (
     <>
-        <input className='input' onInput={onChange} value={value} name={text}/>
+      <input className="input" onInput={onChange} value={value} placeholder={text} />
     </>
   )
 }

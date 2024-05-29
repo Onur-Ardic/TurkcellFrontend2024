@@ -10,7 +10,7 @@ const TodoList = ({ setId }) => {
       .then((data) => {
         setOnData(data)
       })
-  })
+  }, [])
 
   const deleteHandler = (data) => {
     fetch(`http://localhost:3000/todo/${data.id}`, {
@@ -18,7 +18,7 @@ const TodoList = ({ setId }) => {
     })
       .then((response) => {
         if (response.ok) {
-          setOnData(onData.filter((data) => data.id !== id))
+          setOnData(onData.filter((todo) => todo.id !== data.id))
         }
       })
       .catch((err) => {
