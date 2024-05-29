@@ -1,0 +1,91 @@
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+.main {
+  min-width: 80%;
+  /* max-width: auto; */
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.toDoFormInput {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+}
+.customButton {
+  background-color: rgba(14, 174, 35, 0.615);
+  height: 40px;
+  color: white;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+  border: none;
+}
+.list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.listItem {
+  position: relative;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: rgba(11, 211, 51, 0.071);
+  width: 40%;
+  padding: 10px 50px 10px 10px;
+  overflow-wrap: break-word;
+}
+.listItemChecked {
+  position: relative;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: rgba(11, 211, 51, 0.73);
+  width: 40%;
+  padding: 10px 50px 10px 10px;
+  overflow-wrap: break-word;
+}
+
+.taskInfos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.tools {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 12px;
+}
+.dates {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 100;
+  font-size: 14px;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.itemBtn {
+  padding: 6px 12px;
+  background-color: transparent;
+}
+.itemBtn:hover {
+  background-color: rgba(98, 168, 44, 0.432);
+  color: white;
+}
