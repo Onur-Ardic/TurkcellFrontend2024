@@ -1,0 +1,22 @@
+.title {
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputStyle {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
