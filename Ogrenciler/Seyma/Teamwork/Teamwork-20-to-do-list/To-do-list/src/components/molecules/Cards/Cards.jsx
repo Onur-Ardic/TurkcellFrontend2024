@@ -12,8 +12,6 @@ export const Cards = ({ toDo, onDelete, onUpdate }) => {
     day: "2-digit",
     month: "2-digit",
     year: "numeric",
-  });
-  const formattedTime = date.toLocaleTimeString("tr-TR", {
     hour: "2-digit",
     minute: "2-digit",
   });
@@ -79,9 +77,8 @@ export const Cards = ({ toDo, onDelete, onUpdate }) => {
             <h5 className={styles.titleStyle}>{toDo.title}</h5>
             <h6 className={styles.endDateStyle}>
               Bitiş Tarihi:
-              {formattedDate} {formattedTime}
+              {formattedDate}
             </h6>
-
             <div className={styles.descriptionStyles}>
               <p>Açıklama: {toDo.description}</p>
             </div>
