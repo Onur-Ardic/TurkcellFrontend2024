@@ -17,6 +17,7 @@ const MovieForm = ({ onAdd }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
     setMovie({ ...movie, [name]: value });
   };
 

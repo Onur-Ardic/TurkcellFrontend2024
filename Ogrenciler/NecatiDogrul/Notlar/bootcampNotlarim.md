@@ -134,3 +134,10 @@ reportWebVitals googleAnalytics raporları için
 
 React.StrictMode
 anlamlı hatalar oluşturur ve boş fragment oluşturur
+
+bir componenti tamamen dışa aktarmak istiyorsak export default kullanıyoruz,
+bir kısmını dışa aktarmak için export kullanıyoruz.
+
+js uzantısı kullanınca createElement('div',.....) ile yapman lazım ama jsx olunca react kendi oluşturuyor
+
+Bir state'in değeri set..... methodu kullanılarak değiştirildiğinde o component tekrar render edilir.

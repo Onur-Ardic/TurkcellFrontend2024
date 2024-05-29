@@ -1,0 +1,36 @@
+{
+  "toDoList": [
+    {
+      "id": "94d2920d-33fa-47f1-990a-3b44face35f0",
+      "task": "Grup arkadaşlarınla to-do list projesini bitir..",
+      "desc": "Module.css kullanılacak. Yapılacaklar db.json'da tutulacak. Task'ın eklenme ve güncellenme tarihi gösterilecek.",
+      "addDate": "29.05.2024 13:06:04",
+      "updateDate": "29.05.2024 14:12:36",
+      "status": "completed"
+    },
+    {
+      "id": "4099764a-05eb-4251-89d6-c986e593cb94",
+      "task": "React Çalış!!",
+      "desc": "React ile ilgili yer imlerine eklediğin 3 makaleyi oku.",
+      "addDate": "29.05.2024 13:19:26",
+      "updateDate": "29.05.2024 14:57:37",
+      "status": "pending"
+    },
+    {
+      "id": "9a6afc32-5620-4dac-9e19-d809d100925c",
+      "task": "Enes derste sunacak!!!",
+      "desc": "denememememememesdasd",
+      "addDate": "29.05.2024 14:39:03",
+      "updateDate": "29.05.2024 15:15:36",
+      "status": "completed"
+    },
+    {
+      "id": "3a0b7079-108a-42c1-899b-1a675c448a74",
+      "task": "asdasd",
+      "desc": "asddsa",
+      "addDate": "29.05.2024 14:44:52",
+      "updateDate": "29.05.2024 14:44:52",
+      "status": "pending"
+    }
+  ]
+}

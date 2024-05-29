@@ -12,8 +12,8 @@ import {
 function App() {
   const [movies, setMovies] = useState([]);
 
-  const updateMovieUI = async (editMovie) => {
-    const updatedMovie = await updateMovie(editMovie.id, editMovie);
+  const updateMovieUI = async (editedMovie) => {
+    const updatedMovie = await updateMovie(editedMovie.id, editedMovie);
     setMovies(
       movies.map((m) => (m.id === updatedMovie.data.id ? updatedMovie.data : m))
     );

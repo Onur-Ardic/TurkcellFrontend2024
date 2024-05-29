@@ -1,0 +1,20 @@
+{
+  "toDoList": [
+    {
+      "id": "6067",
+      "content": "To Do List Ödevi",
+      "deadline": "2024-05-29",
+      "addingDate": "28.05.2024 22:35",
+      "updatedDate": "",
+      "updateStatus": 0
+    },
+    {
+      "id": "5e66",
+      "content": "Bootcamp Finali",
+      "deadline": "2024-06-21",
+      "addingDate": "28.05.2024 22:35",
+      "updatedDate": "",
+      "updateStatus": 0
+    }
+  ]
+}
