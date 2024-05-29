@@ -66,7 +66,7 @@ export const ToDoForm = ({ onAdd }) => {
             value={toDo.endDate}
             onChange={handleChange}
           />
-          <Button text="ekle" type="submit" />
+          <Button text="Add" type="submit" />
         </form>
       </div>
     </>

@@ -64,9 +64,9 @@ export const Cards = ({ toDo, onDelete, onUpdate }) => {
               onChange={handleChange}
             />
             <div className={styles.editFormButton}>
-              <Button text="Güncelle" type="submit" onClick={handleUpdate} />
+              <Button text="Edit" type="submit" onClick={handleUpdate} />
               <Button
-                text="İptal"
+                text="Cancel"
                 type="submit"
                 onClick={() => setIsediting(!isEditing)}
               />
@@ -76,11 +76,11 @@ export const Cards = ({ toDo, onDelete, onUpdate }) => {
           <div className="card-body">
             <h5 className={styles.titleStyle}>{toDo.title}</h5>
             <h6 className={styles.endDateStyle}>
-              Bitiş Tarihi:
+              End Date:
               {formattedDate}
             </h6>
             <div className={styles.descriptionStyles}>
-              <p>Açıklama: {toDo.description}</p>
+              <p>Description: {toDo.description}</p>
             </div>
             <Button
               text={<i className="bi bi-trash"></i>}
