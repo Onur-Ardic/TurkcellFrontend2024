@@ -1,0 +1,16 @@
+{
+  "todos": [
+    {
+      "id": "deab4eeb-3b21-4444-a6ab-a9b2d030825b",
+      "title": "React To Do App Yapılacak",
+      "description": "React + db.jsozn ile yap. Axios Kullanma",
+      "date": "29.05.2024"
+    },
+    {
+      "id": 1716992406362,
+      "title": "fasdfsdf",
+      "description": "sdfsdf",
+      "date": "29.05.2024"
+    }
+  ]
+}

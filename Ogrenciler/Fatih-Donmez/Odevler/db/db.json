@@ -7,15 +7,14 @@
       "category": "Fiction",
       "year": 1960,
       "star": 5,
-
       "coverUrl": "https://covers.openlibrary.org/b/id/8228691-L.jpg"
     },
     {
       "id": "deab4eeb-3b21-4444-a6ab-a9b2d030825c",
-      "title": "1984",
+      "title": "1984\"z",
       "author": "George Orwell",
       "category": "Dystopian",
-      "year": 1949,
+      "year": "1949",
       "star": 4,
       "coverUrl": "https://covers.openlibrary.org/b/id/7222246-L.jpg"
     },
@@ -90,6 +89,14 @@
       "year": 1954,
       "star": 3,
       "coverUrl": "https://covers.openlibrary.org/b/id/8221250-L.jpg"
+    },
+    {
+      "id": "f57e382a-a302-4450-9dd1-7083c600c7ed",
+      "title": "ahmet",
+      "author": "asdfasdf",
+      "category": "Hacı",
+      "year": "2000",
+      "coverUrl": "asdfasdf"
     }
   ]
 }

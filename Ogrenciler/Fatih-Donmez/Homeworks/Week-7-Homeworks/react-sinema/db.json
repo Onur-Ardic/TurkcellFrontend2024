@@ -1,52 +1,20 @@
 {
   "movies": [
     {
-      "id": "1",
-      "filmName": "Ahmet",
-      "year": 100,
-      "director": "Fatih",
-      "genre": "Drama",
-      "posterUrl": ""
+      "id": "2218",
+      "filmName": "Yusuf Ahmetfszd",
+      "director": "Bfgds",
+      "year": "2000",
+      "genre": "asdfgzsf",
+      "posterUrl": "https://upload.wikimedia.org/wikipedia/tr/6/6f/Turkcell_logo.png"
     },
     {
-      "id": "4695",
-      "filmName": "Mehmet",
-      "director": "sadfdsaf",
+      "id": "890",
+      "filmName": "Varol",
+      "director": "fdsafsd",
       "year": "2000",
-      "genre": "adsfsadf",
-      "posterUrl": ""
-    },
-    {
-      "id": 2512,
-      "filmName": "BUGRA",
-      "director": "BUGRA",
-      "year": "2000",
-      "genre": "BUGRA",
-      "posterUrl": ""
-    },
-    {
-      "id": 7746,
-      "filmName": "zzz",
-      "director": "zzz",
-      "year": "2000",
-      "genre": "BUGRA",
-      "posterUrl": ""
-    },
-    {
-      "id": 281,
-      "filmName": "zzzzsdfs",
-      "director": "zzzdsfzdf",
-      "year": "2000",
-      "genre": "BUGRA",
-      "posterUrl": ""
-    },
-    {
-      "id": 4308,
-      "filmName": "asfdfds",
-      "director": "sadfasdf",
-      "year": "2000",
-      "genre": "asdfsdaf",
-      "posterUrl": "http"
+      "genre": "adfsafdaszsf",
+      "posterUrl": "sadfsdfsdf"
     }
   ]
 }

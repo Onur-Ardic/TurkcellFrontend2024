@@ -1,0 +1,28 @@
+{
+  "movies": [
+    {
+      "id": "e1466575-6366-414e-8614-ae29c4144794",
+      "name": "Ice Age",
+      "author": "Chris Wedge",
+      "category": "Comedy",
+      "date": "2003",
+      "imgUrl": "https://tr.web.img4.acsta.net/c_310_420/pictures/bzp/01/35784.jpg"
+    },
+    {
+      "id": "ad0f0e9f-f92c-4367-ba35-41548bc38f86",
+      "name": "Yüzüklerin Efendisi: Kralın Dönüşüüüüüüüüüü",
+      "author": "Peter Jackson",
+      "category": "Fantastic",
+      "date": "2003",
+      "imgUrl": "https://tr.web.img2.acsta.net/c_310_420/pictures/bzp/01/39187.jpg"
+    },
+    {
+      "id": "4d3c5589-e476-4f4b-a7c9-c08c76f4950e",
+      "name": "The Godfather",
+      "author": "Francis Ford Coppola",
+      "category": "Dedektif",
+      "date": "1973",
+      "imgUrl": "https://tr.web.img4.acsta.net/c_310_420/medias/nmedia/18/91/63/78/20155809.jpg"
+    }
+  ]
+}

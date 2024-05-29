@@ -8,9 +8,9 @@ const FilmCollection = ({ film, formSubmitHandler }) => {
   }
   return (
     <div className="film-card">
-      <div class="film-details">
+      <div class = "film-details">
         <img src={film.posterUrl} alt={film.name} />
-        <div class="film-info">
+        <div class = "film-info">
           <strong>{film.filmName}</strong>
           <p>Yönetmen: {film.director}</p>
           <p>Yıl: {film.year}</p>

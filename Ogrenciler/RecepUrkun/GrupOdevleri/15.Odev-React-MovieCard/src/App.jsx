@@ -34,7 +34,6 @@ function App() {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    // console.log(name, value)
     setNewMovie({ ...newMovie, [name]: value });
   };
 

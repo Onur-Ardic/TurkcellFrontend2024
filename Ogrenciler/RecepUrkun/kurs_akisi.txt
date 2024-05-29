@@ -15,4 +15,5 @@
 17-05-2024: JS Api Request (Fetch-Async&Await-Promise)-JsonServer | Vize 2 verildi(BooksCrud)
 20-05-2024: JS this - Kısa Bir Mulakat Provası
 22-05-2024: JS Vize 2 Sunum
-24-05-2024: Reacte Giriş - Vize 2 odevi React'le yapilacak
+24-05-2024: Reacte Giriş - Odev: Movie App React'le yapilacak
+27-05-2024: React useEffect & map - Odev: Todo App with React(Add ve Update zamanlari tutulacak)

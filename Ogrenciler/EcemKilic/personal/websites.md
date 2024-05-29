@@ -22,3 +22,6 @@ https://preview.colorlib.com/theme/directoryads/
 
 
 https://github.com/cemtatli/lugat  opensources kaynak fork için
+
+"react/prop-types": "off", // eslint proptypes hatası için eslint.cjs 15ten sonraya
+
