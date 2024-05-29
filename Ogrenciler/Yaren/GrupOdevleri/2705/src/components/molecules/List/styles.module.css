@@ -1,0 +1,7 @@
+.list {
+  background-color: var(--primary-color);
+  padding: 2rem 3rem;
+  width: 75%;
+  border-radius: 2rem;
+  margin-top: 5rem;
+}
