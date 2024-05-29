@@ -1,52 +1,36 @@
 {
   "tasks": [
     {
-      "id": "44a380f4-f67e-4331-a7b4-37f976482651",
-      "createDate": "28.05.2024 19:24:05",
-      "title": "react öğren",
+      "id": "87720a96-1b6e-4562-80ea-a3ad5875c024",
+      "createDate": "5/29/2024, 3:37:56 PM",
+      "title": "React Öğrenilecek !",
       "status": "inprogress",
-      "updateDate": "29.05.2024 15:22:00",
-      "deadline": "2024-05-29"
+      "updateDate": "5/29/2024, 3:38:44 PM",
+      "deadline": "2024-04-30"
     },
     {
-      "id": "b484b414-8968-4d79-8ea8-e7325099a3f6",
-      "createDate": "28.05.2024 19:24:25",
-      "title": "okey oyna",
-      "status": "done",
-      "updateDate": "29.05.2024 00:15:04",
-      "deadline": "2024-06-01"
-    },
-    {
-      "id": "54376ba8-4f6b-4948-a80a-e543d912eff6",
-      "createDate": "29.05.2024 01:16:23",
-      "title": "necati",
+      "id": "d5427eb3-61cf-417c-ae33-d9fbe8cc1498",
+      "createDate": "5/29/2024, 3:38:10 PM",
+      "title": "İş Bulunacak !",
       "status": "todo",
-      "updateDate": "29.05.2024 15:22:23",
-      "deadline": "2024-05-31"
+      "updateDate": "5/29/2024, 6:09:55 PM",
+      "deadline": "2024-05-02"
     },
     {
-      "id": "b9327eb9-1601-4f02-bda1-f8d36742276a",
-      "createDate": "29.05.2024 15:29:08",
-      "title": "asdasdas",
+      "id": "3807deac-f54b-4adb-8465-3679b1e540e1",
+      "createDate": "5/29/2024, 3:38:31 PM",
+      "title": "Saygınlık",
+      "status": "todo",
+      "updateDate": "5/29/2024, 7:07:39 PM",
+      "deadline": "2024-05-03"
+    },
+    {
+      "id": "b6986dfd-8cf3-4d02-82cb-2c9032d61f44",
+      "createDate": "5/29/2024, 5:59:14 PM",
+      "title": "Disiplin",
       "status": "inprogress",
-      "updateDate": "29.05.2024 15:29:51",
-      "deadline": "2024-05-31"
-    },
-    {
-      "id": "62afa82d-0255-4289-8b33-ccd5043f271d",
-      "createDate": "29.05.2024 15:29:14",
-      "title": "asdasd",
-      "status": "todo",
-      "updateDate": "",
-      "deadline": "2024-05-30"
-    },
-    {
-      "id": "75cfc25b-daf0-41ee-8cc5-fc60871ef6a3",
-      "createDate": "29.05.2024 15:30:04",
-      "title": "aleyna",
-      "status": "done",
-      "updateDate": "29.05.2024 15:30:07",
-      "deadline": "2024-05-30"
+      "updateDate": "5/29/2024, 5:59:22 PM",
+      "deadline": "2024-05-22"
     }
   ]
 }
