@@ -1,4 +1,5 @@
 const url = "http://localhost:3000/todos";
+
 export const get = async () => {
   const response = await fetch(url);
   if (!response.ok) {
@@ -48,13 +49,11 @@ export const deleteData = async (id) => {
   return "Deleted";
 };
 
-export const getOptions = async () => {
-  const response = await fetch(url);
+export const getFiltered = async (category) => {
+  const response = await fetch(url + `?categories=${category}`);
   if (!response.ok) {
     throw new Error("404 not found");
   }
   const result = await response.json();
-  const options = new Set();
-  result.forEach((toDo)=> {options.add(toDo.categories)})
-  return Array.from(options);
+  return result;
 };

@@ -7,7 +7,6 @@ import FilmCollection from "./components/FilmCollection";
 function App() {
   const [films, setFilms] = useState([]);
   const formSubmitHandler = () => {
-    console.log("test");
     fetchMovies();
   };
   const fetchMovies = async () => {
@@ -21,7 +20,6 @@ function App() {
   useEffect(() => {
     fetchMovies();
   }, []);
-  // console.log(films);
   films.forEach((film) => {
     if (
       film.posterUrl === "" ||
@@ -41,7 +39,13 @@ function App() {
         <AddMovieForm formSubmitHandler={formSubmitHandler} />
         <div id="film-collection">
           {films
-            ? films?.map((film) => <FilmCollection film={film} key={film.id} />)
+            ? films?.map((film) => (
+                <FilmCollection
+                  formSubmitHandler={formSubmitHandler}
+                  film={film}
+                  key={film.id}
+                />
+              ))
             : "Loading..."}
         </div>
       </div>

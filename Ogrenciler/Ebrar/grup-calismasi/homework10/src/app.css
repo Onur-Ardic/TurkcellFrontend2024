@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap");
+
+* {
+  background-color: #f5aeaf;
+  font-family: Nunito;
+}
+.App {
+  margin: 100px 200px;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+}

@@ -1,10 +1,10 @@
-const API_URL = 'http://localhost:3000/movies';
+const api = 'http://localhost:3000/movies';
 
 export const fetchMovies = async () => {
   try {
-    const response = await fetch(API_URL);
+    const response = await fetch(api);
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error('Error fetch');
     }
     const data = await response.json();
     return data;
@@ -16,7 +16,7 @@ export const fetchMovies = async () => {
 
 export const addMovie = async (movie) => {
   try {
-    const response = await fetch(API_URL, {
+    const response = await fetch(api, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -24,7 +24,7 @@ export const addMovie = async (movie) => {
       body: JSON.stringify(movie),
     });
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error('Error addmovie');
     }
     const data = await response.json();
     return data;
@@ -36,11 +36,11 @@ export const addMovie = async (movie) => {
 
 export const deleteMovie = async (id) => {
   try {
-    const response = await fetch(`${API_URL}/${id}`, {
+    const response = await fetch(`${api}/${id}`, {
       method: 'DELETE',
     });
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error('Error deletemovie');
     }
   } catch (error) {
     console.error('Error deleting movie:', error);
@@ -50,7 +50,7 @@ export const deleteMovie = async (id) => {
 
 export const updateMovie = async (id, updatedMovie) => {
   try {
-    const response = await fetch(`${API_URL}/${id}`, {
+    const response = await fetch(`${api}/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ export const updateMovie = async (id, updatedMovie) => {
       body: JSON.stringify(updatedMovie),
     });
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error('Error update movie');
     }
     const data = await response.json();
     return data;

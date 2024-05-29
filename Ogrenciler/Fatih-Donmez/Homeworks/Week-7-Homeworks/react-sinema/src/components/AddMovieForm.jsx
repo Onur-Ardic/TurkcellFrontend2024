@@ -12,7 +12,7 @@ const AddMovieForm = ({ formSubmitHandler }) => {
   let filmId = Math.floor(Math.random() * 10000);
 
   useEffect(() => {
-    setFilm({ ...film, id: filmId });
+    setFilm({ ...film, id: `${filmId}` });
   }, []);
 
   const handleInputs = (e) => {
@@ -24,7 +24,7 @@ const AddMovieForm = ({ formSubmitHandler }) => {
     const response = await addFilmToDb(film);
     if (response.id) {
       filmId = Math.floor(Math.random() * 10000);
-      setFilm({ ...film, id: filmId });
+      setFilm({ ...film, id: `${filmId}` });
       formSubmitHandler();
     }
   };

@@ -1,0 +1,44 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "name": "La La Land",
+      "director": "Damien Chazzel",
+      "genre": "Musical",
+      "year": 2016,
+      "image": "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Inglorous Bastards 2",
+      "director": "Tarantino 2",
+      "genre": "Musical",
+      "year": 2016,
+      "image": "https://m.media-amazon.com/images/M/MV5BOTJiNDEzOWYtMTVjOC00ZjlmLWE0NGMtZmE1OWVmZDQ2OWJhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg"
+    },
+    {
+      "name": "Batman",
+      "director": "Nolan",
+      "genre": "Musical",
+      "year": 2016,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROE5xwAH1C5P47qMAyG2rffn9KF4JjWks7sbBXPy1TJw&s",
+      "id": "3"
+    },
+    {
+      "name": "Babylon",
+      "director": "Chazzel",
+      "genre": "Musical",
+      "year": 2016,
+      "image": "https://tr.web.img4.acsta.net/c_310_420/pictures/22/12/07/13/12/2602884.jpg",
+      "id": "4"
+    },
+    {
+      "id": "48680256-71d8-42ca-a4b1-ed6638ff4015",
+      "name": "Hızlı ve Öfkeli",
+      "director": "Vin Diesel",
+      "genre": "Action",
+      "year": "2019",
+      "image": "https://tr.web.img4.acsta.net/pictures/23/04/20/08/50/2513648.jpg"
+    }
+  ]
+}

@@ -1,13 +1,18 @@
-import React from 'react'
-import { Labels } from '../../atoms/labels/Labels'
-import { Input } from '../../atoms/inputs/Input'
-import { Selects } from '../../atoms/selects/Selects'
+import React from "react";
+import { Labels } from "../../atoms/labels/Labels";
+import { Input } from "../../atoms/inputs/Input";
+import { Selects } from "../../atoms/selects/Selects";
+import styles from "./InputGroups.module.css";
 
-export const InputGroups = ({options, text, onChange, value, type, name}) => {
+export const InputGroups = ({ text, onChange, value, type, name }) => {
   return (
-    <>
-    <Labels htmlFor={name} text={text}/>
-    {type == "select"? <Selects options={options} onChange={onChange} />: <Input type={type} name={name} onChange={onChange} value={value}/> }
-    </>
-  )
-}
+    <div className={styles.inputGroup}>
+      <Labels htmlFor={name} text={text} />
+      {type == "select" ? (
+        <Selects value={value} name={name} onChange={onChange} />
+      ) : (
+        <Input type={type} name={name} onChange={onChange} value={value} />
+      )}
+    </div>
+  );
+};

@@ -30,10 +30,10 @@ const ToDoCard = ({ toDo, deleteToDoUI, updateToDoUI, addingDate }) => {
     }
   };
 
-  useEffect(() => {
-    const remainingDays = leftTime(toDo);
-    console.log(`Kalan gün: ${remainingDays}`);
-  }, []);
+  // useEffect(() => {
+  //   const remainingDays = leftTime(toDo);
+  //   console.log(`Kalan gün: ${remainingDays}`);
+  // }, []);
 
   return (
     <>

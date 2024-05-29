@@ -8,7 +8,7 @@ const App = () => {
 
   useEffect(() => {
     loadMovies();
-  }, []);
+  }, []); //mount edildiğinde 1 kez çalış
 
   const loadMovies = async () => {
     try {
