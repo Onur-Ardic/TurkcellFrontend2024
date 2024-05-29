@@ -26,6 +26,14 @@ small {
   color: #888;
   font-size: 0.8rem;
 }
+.todo-section input {
+  background-color: #f5edee;
+  padding: 8px 5px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 .todo-actions {
   display: flex;
   padding-bottom: 45px;

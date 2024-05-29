@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoIosRemoveCircle } from "react-icons/io";
 import { FaCheck, FaEdit } from "react-icons/fa";
-import  './css/todo.modules.css'
+import "./css/todo.modules.css";
 
 function Todo({ todo, onRemoveTodo, onUpdateTodo }) {
   const [editable, setEditable] = useState(false);
@@ -12,7 +12,7 @@ function Todo({ todo, onRemoveTodo, onUpdateTodo }) {
       id: todo.id,
       content: newTodo,
       createdAt: todo.createdAt,
-      updatedAt: new Date().toISOString(),
+      updatedAt: new Date(),
     };
     onUpdateTodo(request);
     setEditable(false);
@@ -34,7 +34,7 @@ function Todo({ todo, onRemoveTodo, onUpdateTodo }) {
         ) : (
           <div className="todo-content">{todo.content}</div>
         )}
-        <small>Created At: {new Date(todo.createdAt).toLocaleString()}</small> 
+        <small>Created At: {new Date(todo.createdAt).toLocaleString()}</small>
         <small>Updated At: {new Date(todo.updatedAt).toLocaleString()}</small>
       </div>
       <div className="todo-actions">
