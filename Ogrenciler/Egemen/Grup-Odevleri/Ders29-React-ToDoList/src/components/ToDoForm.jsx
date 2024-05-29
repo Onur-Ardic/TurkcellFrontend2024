@@ -1,7 +1,7 @@
 import { postTask, putTask } from "../service/request";
 import styles from "../CustomStyle.module.css";
 
-const ToDoForm = ({ tasks, setTasks, task, setTask }) => {
+const ToDoForm = ({ tasks, setTasks, task, setTask, isChecked }) => {
   const addTask = async (e) => {
     e.preventDefault();
     const updatedTask = tasks.find((item) => item.id === task.id)
@@ -16,6 +16,7 @@ const ToDoForm = ({ tasks, setTasks, task, setTask }) => {
       const renewTask = {
         ...task,
         updateDate: new Date().toLocaleString(),
+        status: isChecked? "completed" : "pending",
       };
       await putTask(updatedTask.id, renewTask);
       setTasks(
@@ -28,7 +29,7 @@ const ToDoForm = ({ tasks, setTasks, task, setTask }) => {
       desc: "",
       addDate: new Date().toLocaleString(),
       updateDate: new Date().toLocaleString(),
-      status: "pending",
+      status: "",
     });
   };
   return (
@@ -48,8 +49,12 @@ const ToDoForm = ({ tasks, setTasks, task, setTask }) => {
           onChange={(e) => setTask({ ...task, desc: e.target.value })}
           value={task.desc}
         />
-        {/* <input type="checkbox" placeholder="Açıklama..." /> */}
-        <button className={styles.customButton} type="submit">Ekle</button>
+        {task.id? (
+          <button className={styles.customButton} type="submit">
+            Güncelle
+          </button>
+        ): <button className={styles.customButton} type="submit">Ekle</button>
+        }
       </form>
     </>
   );

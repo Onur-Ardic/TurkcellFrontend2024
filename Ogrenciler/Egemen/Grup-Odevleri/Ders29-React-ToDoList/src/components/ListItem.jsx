@@ -1,25 +1,30 @@
 import { useState } from "react";
 import styles from "../CustomStyle.module.css";
+import { putTask } from "../service/request";
 
 const ListItem = ({ item, removeTask, setTask }) => {
-  // const date = new Date();
-  const [isChecked, setIsChecked] = useState(false);
-  const handleCheckboxChange = (e) => {
-    setIsChecked(e.target.checked);
+  const [isCheck, setIsCheck] = useState(item.status==="completed"? true : false);
+  const handleCheckboxChange = async (e) => {
+    setIsCheck(e.target.checked);
+    console.log(isCheck)
+    await putTask(item.id, {
+      ...item,
+      status: isCheck? "pending" : "completed",
+    });
   };
   return (
     <>
-      <div className={isChecked? styles.listItemChecked :styles.listItem}>
+      <div className={isCheck? styles.listItemChecked :styles.listItem}>
         <div className={styles.taskInfos}>
           <h3>{item.task}</h3>
-          <p>Açıklama: {item.desc}</p>
+          <p><i><b>Açıklama:</b></i> {item.desc}</p>
           <div className={styles.dates}>
-            <p>O. Tarihi: {item.addDate}</p>
-            <p>D. Tarihi: {item.updateDate}</p>
+            <p><b>Ol. Tarihi:</b> <i>{item.addDate}</i></p>
+            <p><b>Düz. Tarihi: </b><i>{item.updateDate}</i></p>
           </div>
         </div>
         <div className={styles.tools}>
-          <input className={styles.checkbox} type="checkbox"  onChange={handleCheckboxChange}/>
+          <input className={styles.checkbox} type="checkbox" checked={isCheck} onChange={handleCheckboxChange}/>
           <div className={styles.btns}>
             <button className={styles.itemBtn} onClick={() => removeTask(item.id)}><i className="fa-regular fa-trash-can"></i></button>
             <button className={styles.itemBtn} onClick={() => setTask(item)}><i className="fa-solid fa-pen-to-square"></i></button>

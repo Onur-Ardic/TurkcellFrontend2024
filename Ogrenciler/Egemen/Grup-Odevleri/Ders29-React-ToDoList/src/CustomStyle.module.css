@@ -1,10 +1,9 @@
+*{
+  box-sizing: border-box;
+}
 body{
   background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-}
-.main{
-  min-width: 80%;
-  /* max-width: auto; */
 }
 .form{
   display: flex;
@@ -20,7 +19,7 @@ body{
   width: 60%;
 }
 .customButton{
-  background-color: rgba(14, 174, 35, 0.615);
+  background-color: rgba(11, 211, 51, 0.655);
   height: 40px;
   color: white;
   padding: 0 1rem;
@@ -34,6 +33,7 @@ body{
   gap: 12px;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 100%;
 }
 .listItem {
   position: relative;
@@ -48,10 +48,11 @@ body{
   position: relative;
   border: 1px solid gray;
   border-radius: 10px;
-  background-color: rgba(11, 211, 51, 0.73);
+  background-color: rgba(11, 211, 51, 0.656);
   width: 40%;
   padding: 10px 50px 10px 10px;
   overflow-wrap: break-word;
+  color: white;
 }
 
 .taskInfos{
@@ -76,6 +77,9 @@ body{
   font-weight: 100;
   font-size: 14px;
 }
+.dates b{
+  font-weight: 500;
+}
 .btns{
   display: flex;
   flex-direction: column;
@@ -88,4 +92,16 @@ body{
 .itemBtn:hover{
   background-color: rgba(98, 168, 44, 0.432);
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .toDoFormInput{
+     width: 90%;
+ 
+  }
+  .listItem{
+    width: 85%;
+  }
+  .listItemChecked{
+    width: 85%;
+  }
 }

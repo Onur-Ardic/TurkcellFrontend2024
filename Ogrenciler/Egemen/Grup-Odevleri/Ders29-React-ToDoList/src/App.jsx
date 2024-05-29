@@ -11,7 +11,7 @@ function App() {
     desc: "",
     addDate: new Date().toLocaleString(),
     updateDate: new Date().toLocaleString(),
-    status: false
+    status: "pending"
   })
 
   const [tasks, setTasks] = useState([]);
@@ -27,11 +27,14 @@ function App() {
     await deleteTask(id);
     setTasks(tasks.filter((task) => task.id!== id));
   }
+  function isChecked(value) {
+    return value;
+  }
   return (
     <div className={styles.main}>
       <h1>To Do List</h1>
-      <ToDoForm tasks={tasks} setTasks={setTasks} task={task} setTask={setTask}/>
-      <List tasks={tasks} removeTask={removeTask} setTask={setTask}/>
+      <ToDoForm tasks={tasks} setTasks={setTasks} task={task} setTask={setTask} isChecked={isChecked}/>
+      <List tasks={tasks} removeTask={removeTask} setTask={setTask} isChecked={isChecked}/>
     </div>
   );
 }
