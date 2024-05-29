@@ -17,7 +17,7 @@ function App() {
     })
       .then((data) => data.json())
       .then((response) => setDataInfo(response))
-      .catch((error) => alert(error + 'Hatası'))
+      .catch((error) => alert(error + 'Hatası '))
   }
 
   const handleChange = (e) => {
