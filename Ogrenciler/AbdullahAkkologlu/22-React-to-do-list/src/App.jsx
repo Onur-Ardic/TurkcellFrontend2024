@@ -1,23 +1,20 @@
 import { useEffect, useState } from "react";
-import "./App.css";
 import { createData, deleteData, readData, updateData } from "./request";
 import TaskList from "./components/TaskList";
 import Form from "./components/Form";
+import AppCss from "./ModuleCss/App.module.css";
 
 function App() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState({
-    id: crypto.randomUUID(),
     title: "",
     status: "todo",
-    createDate: new Date().toLocaleString(),
     updateDate: "",
     deadline: "",
   });
   const [updatedTask, setUpdatedTask] = useState({
     title: "",
     status: "",
-    createDate: new Date().toLocaleString(),
     updateDate: "",
     deadline: "",
   });
@@ -37,9 +34,14 @@ function App() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!validation(newTask)) return;
-    await createData(newTask);
-    setTasks([...tasks, newTask]);
+    const task = {
+      id: crypto.randomUUID(),
+      createDate: new Date().toLocaleString(),
+      ...newTask,
+    };
+    if (!validation(task)) return;
+    await createData(task);
+    setTasks([...tasks, task]);
   };
   const handleDelete = async (id) => {
     await deleteData(id);
@@ -60,37 +62,40 @@ function App() {
     done: tasks.filter((task) => task.status === "done"),
   };
   return (
-    <>
+    <div className={AppCss.container}>
       <Form
         newTask={newTask}
         setNewTask={setNewTask}
         handleSubmit={handleSubmit}
       />
-      <h1>To Do</h1>
-      <TaskList
-        tasks={filteredData.todo}
-        handleDelete={handleDelete}
-        updatedTask={updatedTask}
-        setUpdatedTask={setUpdatedTask}
-        handleUpdate={handleUpdate}
-      />
-      <h1>In progress</h1>
-      <TaskList
-        tasks={filteredData.inprogress}
-        handleDelete={handleDelete}
-        updatedTask={updatedTask}
-        setUpdatedTask={setUpdatedTask}
-        handleUpdate={handleUpdate}
-      />
-      <h1>Done</h1>
-      <TaskList
-        tasks={filteredData.done}
-        handleDelete={handleDelete}
-        updatedTask={updatedTask}
-        setUpdatedTask={setUpdatedTask}
-        handleUpdate={handleUpdate}
-      />
-    </>
+      <div className={AppCss.taskListDiv}>
+        <TaskList
+          title={"To Do"}
+          tasks={filteredData.todo}
+          handleDelete={handleDelete}
+          updatedTask={updatedTask}
+          setUpdatedTask={setUpdatedTask}
+          handleUpdate={handleUpdate}
+        />
+        <TaskList
+          title={"In Progress"}
+          tasks={filteredData.inprogress}
+          handleDelete={handleDelete}
+          updatedTask={updatedTask}
+          setUpdatedTask={setUpdatedTask}
+          handleUpdate={handleUpdate}
+        />
+
+        <TaskList
+          title={"Done"}
+          tasks={filteredData.done}
+          handleDelete={handleDelete}
+          updatedTask={updatedTask}
+          setUpdatedTask={setUpdatedTask}
+          handleUpdate={handleUpdate}
+        />
+      </div>
+    </div>
   );
 }
 

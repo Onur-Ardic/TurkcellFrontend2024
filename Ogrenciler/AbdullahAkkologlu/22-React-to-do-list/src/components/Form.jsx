@@ -1,3 +1,4 @@
+import FormCss from "../ModuleCss/Form.module.css";
 const Form = ({ newTask, setNewTask, handleSubmit }) => {
   return (
     <form onSubmit={handleSubmit}>
@@ -15,7 +16,9 @@ const Form = ({ newTask, setNewTask, handleSubmit }) => {
           setNewTask({ ...newTask, deadline: e.target.value });
         }}
       />
-      <button type="submit">Submit</button>
+      <button type="submit" className={FormCss.button}>
+        Submit
+      </button>
     </form>
   );
 };

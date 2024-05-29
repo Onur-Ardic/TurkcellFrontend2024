@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import TaskCss from "../ModuleCss/Task.module.css";
+import { SlCalender } from "react-icons/sl";
 const Task = ({
   task,
   handleDelete,
@@ -8,11 +9,23 @@ const Task = ({
   handleUpdate,
 }) => {
   const [isEditing, setIsEditing] = useState(false);
-
+  const getStatusClass = (status) => {
+    switch (status) {
+      case "todo":
+        return TaskCss["card-todo"];
+      case "inprogress":
+        return TaskCss["card-inprogress"];
+      case "done":
+        return TaskCss["card-done"];
+      default:
+        return "";
+    }
+  };
   return (
-    <div>
+    <div className={`${TaskCss.card} ${getStatusClass(task.status)}`}>
       {isEditing ? (
         <form
+          className={TaskCss.form}
           onSubmit={(e) => {
             e.preventDefault();
             setIsEditing(false);
@@ -44,15 +57,20 @@ const Task = ({
               setUpdatedTask({ ...updatedTask, deadline: e.target.value });
             }}
           />
-          <button type="submit">Onayla</button>
+          <button className={`${TaskCss.button} ${TaskCss.blue}`} type="submit">
+            Onayla
+          </button>
         </form>
       ) : (
         <>
-          <h3>{task.title}</h3>
-          <h6>{task.status}</h6>
-          <p>{task.deadline}</p>
+          <h3 className={TaskCss.title}>{task.title}</h3>
+          <p className={TaskCss.deadline}>
+            <SlCalender className={TaskCss.calenderIcon} />
+            {task.deadline}
+          </p>
           <p>{task.createDate}</p>
           <button
+            className={`${TaskCss.button} ${TaskCss.purple}`}
             onClick={() => {
               handleDelete(task.id);
             }}
@@ -60,6 +78,7 @@ const Task = ({
             Delete
           </button>
           <button
+            className={`${TaskCss.button} ${TaskCss.green}`}
             onClick={() => {
               setIsEditing(true);
               setUpdatedTask(task);
