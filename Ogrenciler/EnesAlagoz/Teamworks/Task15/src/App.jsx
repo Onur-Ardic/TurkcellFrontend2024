@@ -1,14 +1,18 @@
 import { getWeather } from "./request";
-import "./App.css";
+import { WeatherList } from "./components/WeatherList";
+import { useEffect } from "react";
 
 function App() {
-  function buttonClick() {
-    const weather = getWeather();
-    console.log(weather);
-  }
+  let weather = [];
+  useEffect(() => {
+    getWeather().then((data) => {
+      weather.push(data.result);
+    });
+  }, []);
+
   return (
     <>
-      <button onClick={buttonClick}>Deneme</button>
+      <WeatherList weather={weather} />
     </>
   );
 }
