@@ -22,11 +22,11 @@
       "image": "https://image.tmdb.org/t/p/w500/a26cQPRhJPX6GbWfQbvZdrrp9j9.jpg"
     },
     {
-      "id": "7",
-      "title": "Forrest Gump",
+      "title": "Forrest Gump2",
       "director": "Robert Zemeckis",
       "year": "1994",
-      "image": "https://image.tmdb.org/t/p/w500/saHP97rTPS5eLmrLQEcANmKrsFl.jpg"
+      "image": "https://image.tmdb.org/t/p/w500/saHP97rTPS5eLmrLQEcANmKrsFl.jpg",
+      "id": "7"
     },
     {
       "id": "9",
