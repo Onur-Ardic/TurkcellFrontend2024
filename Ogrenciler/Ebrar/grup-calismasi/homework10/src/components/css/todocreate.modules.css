@@ -1,58 +1,55 @@
-/* .todo-create{
-    display: flex;
-    align-items: center;
-    margin: 1rem 0;
-    border: 1px solid;
-   
-}
-.todo-create input{
-    
-    font-size: 1rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    flex-grow: 1;
-    margin-right: 0.5rem;
-    color: red;
-
-
-} */
-
 .todo-create {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0;
-    border: 3px solid brown;
-    padding: 40px 80px;
-    width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5edee;
+  margin: 1rem 0;
+  border: 3px groove black;
+  border-radius: 21px;
+  padding: 100px 80px;
+  width: 300px;
+  box-shadow: -14px 11px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.todo-create h1 {
+  color: black;
+  background-color: #f5edee;
+
+  .woman-icon {
+    font-size: 35px;
+    background-color: #f5edee;
   }
-  .todo-create h2{
-    color: brown;
-    margin-bottom: 2rem;
-  }
-  
-  .todo-create input[type="text"] {
-    font-size: 1rem;
-    padding: 0.5rem;
-    border: 1px solid brown;
-    border-radius: 4px;
-    flex-grow: 1;
-    margin-right: 0.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .todo-create button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 4px;
-    background-color: brown;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .todo-create button:hover {
-    background-color: #2980b9;
-  }
+}
+
+.todo-create input[type="text"] {
+  font-size: 1rem;
+  background-color: #f5edee;
+  padding: 0.8rem 2rem 0.8rem 2rem;
+  border: 1px solid black;
+  border-radius: 4px;
+
+  flex-grow: 1;
+  margin-right: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.todo-create input::placeholder {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.todo-create button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.todo-create button:hover {
+  background-color: #c8d41f;
+  transition: 0.5s;
+}
