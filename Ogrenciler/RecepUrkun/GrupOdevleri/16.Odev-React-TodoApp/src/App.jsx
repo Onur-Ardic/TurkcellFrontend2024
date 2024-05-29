@@ -29,14 +29,15 @@ function App() {
     }
 
     const todo = {
+      id: crypto.randomUUID(),
       title: newTodo,
       completed: false,
       created_at: new Date().toLocaleString(),
       updated_at: "",
     };
 
-    const addedTodo = await addTodoToDb(todo);
-    setTodos([...todos, addedTodo]);
+    await addTodoToDb(todo);
+    setTodos([...todos, todo]);
     setNewTodo("");
   };
 
@@ -52,8 +53,8 @@ function App() {
       ...updatedFields,
       updated_at: new Date().toLocaleString(),
     };
-    const updated = await updateTodoFromDb(id, updatedTodo);
-    setTodos(todos.map((todo) => (todo.id === id ? updated : todo)));
+    await updateTodoFromDb(id, updatedTodo);
+    setTodos(todos.map((todo) => (todo.id === id ? updatedTodo : todo)));
   };
 
   return (
