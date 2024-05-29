@@ -1,0 +1,52 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.banner {
+  background-color: #5c96ac;
+}
+
+#searchDiv {
+  i {
+    top: 3px;
+    right: 10px;
+  }
+}
+
+#searchInput {
+  width: 227px;
+}
+
+@media (max-width: 768px) {
+  #searchInput {
+    width: 100%;
+  }
+}
+
+.card {
+  width: 280px;
+  height: 300px;
+  img {
+    height: 300px;
+    width: auto;
+  }
+}
+
+.imgwrapper {
+  overflow: hidden;
+  img {
+    transition: transform 0.3s ease;
+  }
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
+
+.main-wrapper .col {
+  img {
+    transition: transform 0.3s ease;
+  }
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
