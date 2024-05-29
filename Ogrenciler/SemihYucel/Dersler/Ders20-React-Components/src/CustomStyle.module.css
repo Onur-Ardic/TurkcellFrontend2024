@@ -1,0 +1,10 @@
+.customButton{
+  background-color: rgb(128, 86, 86);
+  height: 40px;
+  color: white;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+  border: none;
+}
