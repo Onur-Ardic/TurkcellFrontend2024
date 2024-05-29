@@ -4,7 +4,7 @@ import styles from "../CustomStyle.module.css";
 const ToDoForm = ({ tasks, setTasks, task, setTask, isChecked }) => {
   const addTask = async (e) => {
     e.preventDefault();
-    const updatedTask = tasks.find((item) => item.id === task.id);
+    const updatedTask = tasks.find((item) => item.id === task.id); // tasks dizisindeki her bir item kontrol eder  id ler işeit se find fonk. o görevi döndürür
     if (!updatedTask) {
       const newTask = {
         id: crypto.randomUUID(),
