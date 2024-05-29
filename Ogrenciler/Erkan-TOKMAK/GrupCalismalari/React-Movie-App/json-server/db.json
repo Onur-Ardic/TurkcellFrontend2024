@@ -1,0 +1,28 @@
+{
+  "movies": [
+    {
+      "name": "Lucy",
+      "director": "kuş",
+      "year": "1423",
+      "type": "Bilim Kurgu",
+      "image": "https://m.media-amazon.com/images/S/pv-target-images/f4c678096ef12447eca19a5c21d3b02001e90215c174508b73e3ee1e65ca4cd8.jpg",
+      "id": "GfVPoUf"
+    },
+    {
+      "name": "dfsgsgf",
+      "director": "seyma",
+      "year": "2023",
+      "type": "Aksiyon",
+      "image": "https://m.media-amazon.com/images/S/pv-target-images/f4c678096ef12447eca19a5c21d3b02001e90215c174508b73e3ee1e65ca4cd8.jpg",
+      "id": "wfVyIxO"
+    },
+    {
+      "name": "hjgvhj",
+      "director": "seyma",
+      "year": "2023",
+      "type": "Fantastik",
+      "image": "https://upload.wikimedia.org/wikipedia/tr/thumb/3/3b/YesilYol.jpg/220px-YesilYol.jpg",
+      "id": "GcQxmsd"
+    }
+  ]
+}
