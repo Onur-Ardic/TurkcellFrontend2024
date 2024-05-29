@@ -4,6 +4,7 @@ import { ToDoForm } from "./components/organisms/ToDoForm/ToDoForm";
 import { deleteData, get, post, update } from "./service/Api";
 import { Navbar } from "./components/organisms/Navbar/Navbar";
 import CategoryCardGroup from "./components/layout/CategoryCardGroup/CategoryCardGroup";
+import { Button } from "./components/atoms/buttons/Button";
 
 function App() {
   const [toDo, setToDo] = useState([]);
@@ -46,13 +47,16 @@ function App() {
               <div className="col-lg-10">
                 <div className="d-flex py-1 px-2 justify-content-between">
                   <h5 className="text-muted">Daily Tasks</h5>
-                  <button
-                    className="btn btn-info btn-sm"
+                  <Button
+                    className="btn btn-info btn-sm text-white"
                     onClick={() => setView(!view)}
-                  >
-                    <i className="bi bi-list"></i>/
-                    <i className="bi bi-grid"></i>
-                  </button>
+                    text={
+                      <>
+                        <i className="bi bi-list"></i>/
+                        <i className="bi bi-grid"></i>
+                      </>
+                    }
+                  />
                 </div>
                 <CategoryCardGroup
                   view={view}
