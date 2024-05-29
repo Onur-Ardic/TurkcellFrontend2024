@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -10,59 +10,107 @@ function App() {
   });
   const [editIndex, setEditIndex] = useState(null);
 
+  useEffect(() => {
+    fetch("http://localhost:3000/todos")
+      .then((response) => response.json())
+      .then((data) => setTodos(data))
+      .catch((error) =>
+        console.error("There was an error fetching the todos!", error)
+      );
+  }, []);
+
   const formSubmitHandler = (e) => {
     e.preventDefault();
     if (editIndex !== null) {
-      const updatedTodos = [...todos];
-      updatedTodos[editIndex] = currentTodo;
-      setTodos(updatedTodos);
-      setEditIndex(null);
+      fetch(`http://localhost:3000/todos/${currentTodo.id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(currentTodo),
+      })
+        .then((response) => response.json())
+        .then((updatedTodo) => {
+          const updatedTodos = todos.map((todo) =>
+            todo.id === updatedTodo.id ? updatedTodo : todo
+          );
+          setTodos(updatedTodos);
+          setEditIndex(null);
+          setCurrentTodo({ id: "", title: "", description: "", date: "" });
+        })
+        .catch((error) =>
+          console.error("There was an error updating the todo!", error)
+        );
     } else {
       if (!currentTodo.title || !currentTodo.description)
         return alert("Please fill the form");
       const today = new Date();
-      currentTodo.id = today.getTime();
-      currentTodo.date = today.toLocaleDateString();
-      setTodos([...todos, currentTodo]);
+      const newTodo = {
+        ...currentTodo,
+        id: today.getTime(),
+        date: today.toLocaleDateString(),
+      };
+      fetch("http://localhost:3000/todos", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newTodo),
+      })
+        .then((response) => response.json())
+        .then((addedTodo) => {
+          setTodos([...todos, addedTodo]);
+          setCurrentTodo({ id: "", title: "", description: "", date: "" });
+        })
+        .catch((error) =>
+          console.error("There was an error adding the todo!", error)
+        );
     }
-    setCurrentTodo({ id: "", title: "", description: "", date: "" });
-  };
-  console.log(currentTodo);
-  console.log(todos);
-  const removeTodoHandler = (index) => {
-    const newTodos = todos.filter((_, i) => i !== index);
-    setTodos(newTodos);
   };
 
-  const editTodoHandler = (index) => {
-    setCurrentTodo(todos[index]);
-    setEditIndex(index);
+  const removeTodoHandler = (id) => {
+    fetch(`http://localhost:3000/todos/${id}`, {
+      method: "DELETE",
+    })
+      .then(() => {
+        const newTodos = todos.filter((todo) => todo.id !== id);
+        setTodos(newTodos);
+      })
+      .catch((error) =>
+        console.error("There was an error deleting the todo!", error)
+      );
+  };
+
+  const editTodoHandler = (id) => {
+    const todoToEdit = todos.find((todo) => todo.id === id);
+    setCurrentTodo(todoToEdit);
+    setEditIndex(id);
   };
 
   return (
     <div className="d-flex flex-column justify-content-center align-items-center vh-100 w-full">
       <h1 className="text-center my-4">Todo List</h1>
       <form onSubmit={formSubmitHandler}>
-        <div class="mb-3">
-          <label class="form-label">Title</label>
+        <div className="mb-3">
+          <label className="form-label">Title</label>
           <input
             onChange={(e) =>
               setCurrentTodo({ ...currentTodo, title: e.target.value })
             }
             value={currentTodo.title}
             type="text"
-            class="form-control"
+            className="form-control"
           />
         </div>
-        <div class="mb-3">
-          <label class="form-label">Description</label>
+        <div className="mb-3">
+          <label className="form-label">Description</label>
           <input
             onChange={(e) =>
               setCurrentTodo({ ...currentTodo, description: e.target.value })
             }
             value={currentTodo.description}
             type="text"
-            class="form-control"
+            className="form-control"
           />
         </div>
         <div className="input-group mb-3">
@@ -72,31 +120,31 @@ function App() {
         </div>
       </form>
       <div className="row container">
-        {todos?.map((item, index) => (
-          <div key={index} className="col-3">
+        {todos?.map((item) => (
+          <div key={item.id} className="col-3">
             <div
-              class="card"
+              className="card"
               style={{
                 width: "18rem",
                 maxWidth: "20rem",
               }}
             >
-              <div class="card-body">
-                <h5 class="card-title">Title:{item.title}</h5>
-                <p class="card-text">Description: {item.description}</p>
-                <h6 class="card-text">Date: {item.date}</h6>
+              <div className="card-body">
+                <h5 className="card-title">Title: {item.title}</h5>
+                <p className="card-text">Description: {item.description}</p>
+                <h6 className="card-text">Date: {item.date}</h6>
                 <div>
                   <a
                     href="#"
-                    onClick={() => removeTodoHandler(index)}
-                    class="btn btn-danger"
+                    onClick={() => removeTodoHandler(item.id)}
+                    className="btn btn-danger"
                   >
                     Remove
                   </a>
                   <a
                     href="#"
-                    onClick={() => editTodoHandler(index)}
-                    class="btn btn-primary"
+                    onClick={() => editTodoHandler(item.id)}
+                    className="btn btn-primary"
                   >
                     Edit
                   </a>
