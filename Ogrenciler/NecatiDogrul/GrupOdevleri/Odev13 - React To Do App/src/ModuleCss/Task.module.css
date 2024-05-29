@@ -1,0 +1,104 @@
+.card {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  padding: 2rem;
+  margin-bottom: 30px;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    animation: rotate 4s linear infinite;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: #000;
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.title {
+  margin-top: 0;
+}
+
+.alignIcon {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.button {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.green {
+  background-color: rgb(207, 242, 165);
+  color: rgb(55, 76, 31);
+  box-shadow: 1px 1px 20px rgb(207, 242, 165);
+}
+.purple {
+  background-color: rgb(191, 191, 252);
+  color: rgb(68, 68, 111);
+  box-shadow: 0px 0px 20px rgb(191, 191, 252);
+}
+.blue {
+  background-color: rgb(71, 71, 255);
+  color: rgb(8, 8, 113);
+  box-shadow: 0px 0px 20px rgb(71, 71, 255);
+  width: 50%;
+  color: white;
+}
+.form {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #000;
+
+  input {
+    width: 89%;
+  }
+  select {
+    width: 100%;
+  }
+}
+.card-todo::before {
+  background-image: conic-gradient(
+    transparent,
+    rgb(146, 235, 255),
+    transparent 30%
+  );
+}
+.card-inprogress::before {
+  background-image: conic-gradient(
+    transparent,
+    rgb(255, 195, 99),
+    transparent 30%
+  );
+}
+.card-done::before {
+  background-image: conic-gradient(
+    transparent,
+    rgb(165, 255, 179),
+    transparent 30%
+  );
+}
