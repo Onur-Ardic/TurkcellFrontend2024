@@ -25,4 +25,6 @@
 17-05-2024: Midterm exam 2
 20-05-2024: Midterm exam 2
 22-05-2024: Set up react dependencies
-24-05-2024: 
+24-05-2024: Make a Cinema Collection with react
+27-05-2024: Make a To-Do App with react
+29-05-2024: 

@@ -25,4 +25,6 @@
 17-05-2024: Api Request - async-await, fetch, promise, Json Server
 22-05-2024: Have a chat and to inform
 22-05-2024: Making midterm 2 presentations
-24-05-2024: 
+24-05-2024: Introduction to react
+27-05-2024: React - useEffect
+29-05-2024: Repeat react fundamentals
