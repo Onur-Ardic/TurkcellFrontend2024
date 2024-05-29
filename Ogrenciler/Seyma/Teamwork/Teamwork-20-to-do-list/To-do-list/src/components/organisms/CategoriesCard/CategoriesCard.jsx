@@ -20,7 +20,7 @@ export const CategoriesCard = ({ view, toDo, title, color }) => {
         view ? styles.categoriesCardVertical : styles.categoriesCardHorizontal
       } ${styles[color]}`}
     >
-      <h2>{title}</h2>
+      <h2 className={styles.cardsTitle}>{title}</h2>
       {filtered.map((toDo, index) => (
         <Cards toDo={toDo} key={index} />
       ))}

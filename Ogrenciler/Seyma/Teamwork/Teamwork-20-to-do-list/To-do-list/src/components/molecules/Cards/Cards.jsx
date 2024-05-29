@@ -17,16 +17,16 @@ export const Cards = ({ toDo }) => {
     <>
       <div className={styles.card}>
         <div className="card-body">
-          <h5 className="card-title text-danger">{toDo.title}</h5>
-          <h6>Eklenen tarih:{toDo.date}</h6>
-          <h6 className="card-subtitle mb-2 text-muted">
+          <h5 className={styles.titleStyle}>{toDo.title}</h5>
+          <h6 className= {styles.endDateStyle}>
             Bitiş Tarihi:
             {formattedDate} {formattedTime}
           </h6>
-          <h6 className="card-subtitle text-muted">{toDo.categories}</h6>
-          <p className="card-text">{toDo.description}</p>
-          <Button text="delete" />
-          <Button text="güncelle" />
+         
+          <div className={styles.descriptionStyles}><p>Açıklama: {toDo.description}</p></div> 
+          <Button text="" />
+          <Button text="" />
+          <p className= {styles.dateStyle}>{toDo.date}</p>
         </div>
       </div>
     </>

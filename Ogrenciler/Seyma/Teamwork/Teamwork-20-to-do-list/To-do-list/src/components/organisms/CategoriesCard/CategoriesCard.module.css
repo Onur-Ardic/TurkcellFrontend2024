@@ -9,6 +9,7 @@
   padding: 10px;
   margin: 10px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: inline;
 }
 .categoriesCardVertical {
   display: flex;
@@ -19,14 +20,21 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 .pink {
-  background-color: #fac8f4;
+  background-color: #FDF5D7;
+  color: rgb(255, 200, 0);
 }
 .blue {
-  background-color: #c8e3f9;
+  background-color: #BBD9F4;
+  color: blue;
 }
 .green {
   background-color: #d6fac8;
+  color: green;
 }
 .yellow {
-  background-color: #fae6c8;
+  background-color: #F8C8A0;
+  color: #ff7300;
+}
+.cardsTitle{
+  font-size: 1rem;
 }

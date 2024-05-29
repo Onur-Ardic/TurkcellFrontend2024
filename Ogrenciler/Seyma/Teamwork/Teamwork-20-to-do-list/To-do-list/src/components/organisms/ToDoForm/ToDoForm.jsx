@@ -50,7 +50,7 @@ export const ToDoForm = ({ onAdd }) => {
   return (
     <>
     <div >
-      <form onSubmit={handleSubmit}>
+      <form className="mt-3" onSubmit={handleSubmit}>
         <InputGroups
           text="Title"
           name="title"

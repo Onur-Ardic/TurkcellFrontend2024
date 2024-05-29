@@ -2,11 +2,9 @@ h2 {
     font-size: 1.2rem;
 }
 
-
 #homePage {
-    background-image: url(https://r.resimlink.com/7KHl1Oz.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('https://r.resimlink.com/7KHl1Oz.png');
+    background-size: contain;
     min-height: 100vh;
     padding: 10px;
 }
@@ -14,7 +12,6 @@ h2 {
 #main {
     background: rgba(255, 255, 255, 0.29);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.7px);
     -webkit-backdrop-filter: blur(5.7px);
     border: 1px solid rgba(255, 255, 255, 0.28);

@@ -32,11 +32,14 @@ function App() {
     <Navbar />
       <div className="container-fluid">
         <div className="row">
-          <div className="col-lg-3 formStyles">
+          <div className="col-lg-2 formStyles">
             <ToDoForm onAdd={addTodoUI} />
           </div>
-          <div className="col-lg-9">
-          <button onClick={() => setView(!view)}><i class="bi bi-list"></i>/<i class="bi bi-grid"></i></button>
+          <div className="col-lg-10">
+            <div className="d-flex py-1 px-2 justify-content-between">
+            <h5 className="text-muted">Daily Tasks</h5>
+          <button className="btn btn-info btn-sm" onClick={() => setView(!view)}><i className="bi bi-list"></i>/<i className="bi bi-grid"></i></button>
+            </div>
             <CategoryCardGroup view={view} toDo={toDo} />
           </div>
         </div>
