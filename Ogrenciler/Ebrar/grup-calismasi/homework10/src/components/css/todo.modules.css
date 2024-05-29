@@ -1,36 +1,51 @@
 .todo {
-    display: flex;
-    align-items: center;
-    background-color: floralwhite;
-    border: 2px solid brown;
-    margin: 50px;
-    padding: 20px;
-    width: 300px;
- 
+  display: flex;
+  align-items: center;
+  background-color: #f5edee;
+  border: 3px groove black;
+  border-radius: 21px;
+  box-shadow: -14px 11px 4px 0px rgba(0, 0, 0, 0.75);
+  margin: 50px;
+  padding: 20px;
+  width: 300px;
 }
-.todo-content{
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    
+
+.todo-section {
+  background-color: #f5edee;
 }
-small{
-    color: #888;
-    font-size: 0.8rem;
-    margin-top: 1rem;
+
+.todo-content {
+  background-color: #f5edee;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
-.todo-actions{
-    display: flex;
-    flex-direction: row;
+small {
+  display: block;
+  background-color: #f5edee;
+  color: #888;
+  font-size: 0.8rem;
 }
-/* .io-ios-remove-circle{
-    margin-right: 12px;
-    font-size: 1.5rem;
-    margin-left: 1rem;
-} */
-.io-ios-remove-circle, .fa-check, .fa-edit {
+.todo-actions {
+  display: flex;
+  padding-bottom: 45px;
+  padding-left: 40px;
+  background-color: #f5edee;
+}
+
+.io-ios-remove-circle,
+.fa-check,
+.fa-edit {
+  background-color: #f5edee;
   font-size: 1.5rem;
   cursor: pointer;
   margin-left: 0.5rem;
-  color: brown;
+  color: black;
+}
+
+.io-ios-remove-circle:hover,
+.fa-check:hover,
+.fa-edit:hover {
+  color: #c097e5;
+  transition: 0.5s;
 }

@@ -1,22 +1,22 @@
 {
   "tasks": [
     {
-      "content": "Kitap Oku",
-      "id": 702.4437806131413,
-      "createdAt": "2024-05-29T09:02:07.077Z",
-      "updatedAt": "2024-05-29T09:02:07.077Z"
+      "id": 565.9899778721635,
+      "content": "Ödev Düzenleme",
+      "createdAt": "2024-05-29T11:50:27.539Z",
+      "updatedAt": "2024-05-29T13:56:52.363Z"
     },
     {
-      "id": 706.5731100519539,
-      "content": "React ToDo List Projesi Hazırlamalısın",
-      "createdAt": "2024-05-29T09:02:21.375Z",
-      "updatedAt": "2024-05-29T09:02:59.440Z"
+      "id": 347.1408322467922,
+      "content": "React Öğrenme",
+      "createdAt": "2024-05-29T13:07:38.399Z",
+      "updatedAt": "2024-05-29T13:56:05.485Z"
     },
     {
-      "content": "JavaScript Projesi Hazırla",
-      "id": 382.8250315459861,
-      "createdAt": "2024-05-29T09:02:42.530Z",
-      "updatedAt": "2024-05-29T09:02:42.530Z"
+      "content": "Derse Katılma",
+      "id": 663.9616701350426,
+      "createdAt": "2024-05-29T13:36:40.319Z",
+      "updatedAt": "2024-05-29T13:36:40.320Z"
     }
   ]
 }

@@ -25,7 +25,8 @@ const App = () => {
     }
     return true
   }
-  const addUpdate = async () => {
+  const addUpdate = async (e) => {
+    e.preventDefault();
     if(!validationStatus()){
       return
     }

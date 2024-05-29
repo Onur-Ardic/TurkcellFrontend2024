@@ -10,7 +10,7 @@ export const Selects = ({ value, onChange, name }) => {
       onChange={onChange}
     >
       <option value="" disabled>
-        Bir kategori seçiniz
+        Select a category
       </option>
       <option value="On Hold" key="On Hold">
         On Hold
