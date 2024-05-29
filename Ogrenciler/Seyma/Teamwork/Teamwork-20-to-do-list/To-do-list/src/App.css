@@ -1,0 +1,35 @@
+h2 {
+    font-size: 1.2rem;
+}
+
+
+#homePage {
+    background-image: url(https://r.resimlink.com/7KHl1Oz.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+#main {
+    background: rgba(255, 255, 255, 0.29);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    height: 98%;
+    width: 98%;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.formStyles {
+    padding: 10px;
+    border-radius:10px;
+    min-height: 98%;
+    background: rgba(255, 255, 255, 0.107);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+}

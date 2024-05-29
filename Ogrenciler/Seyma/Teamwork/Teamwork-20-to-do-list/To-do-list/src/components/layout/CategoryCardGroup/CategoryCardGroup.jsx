@@ -5,7 +5,7 @@ function CategoryCardGroup({ toDo, view }) {
   return (
     <div className="container">
       <div className="row">
-        <div className={view ? "col-lg-3" : "row"}>
+        <div className={view ? "col-lg-3 px-1" : "row"}>
           <CategoriesCard
             view={view}
             toDo={toDo}
@@ -13,10 +13,10 @@ function CategoryCardGroup({ toDo, view }) {
             title="On Hold"
           />
         </div>
-        <div className={view ? "col-lg-3" : "row"}>
+        <div className={view ? "col-lg-3 px-1" : "row"}>
           <CategoriesCard view={view} toDo={toDo} color="pink" title="To Do" />
         </div>
-        <div className={view ? "col-lg-3" : "row"}>
+        <div className={view ? "col-lg-3 px-1" : "row"}>
           <CategoriesCard
             view={view}
             toDo={toDo}
@@ -24,7 +24,7 @@ function CategoryCardGroup({ toDo, view }) {
             title="In Progress"
           />
         </div>
-        <div className={view ? "col-lg-3" : "row"}>
+        <div className={view ? "col-lg-3 px-1" : "row"}>
           <CategoriesCard view={view} toDo={toDo} color="yellow" title="Done" />
         </div>
       </div>

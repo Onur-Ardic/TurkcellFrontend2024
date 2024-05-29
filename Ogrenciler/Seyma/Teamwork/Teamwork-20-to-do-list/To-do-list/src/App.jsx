@@ -27,18 +27,23 @@ function App() {
 
   return (
     <>
-      <Navbar />
+    <section id="homePage">
+      <div id="main">
+    <Navbar />
       <div className="container-fluid">
-        <button onClick={() => setView(!view)}>Horizontal/Vertical</button>
         <div className="row">
-          <div className="col-lg-3">
+          <div className="col-lg-3 formStyles">
             <ToDoForm onAdd={addTodoUI} />
           </div>
           <div className="col-lg-9">
+          <button onClick={() => setView(!view)}><i class="bi bi-list"></i>/<i class="bi bi-grid"></i></button>
             <CategoryCardGroup view={view} toDo={toDo} />
           </div>
         </div>
       </div>
+      </div>
+    </section>
+      
     </>
   );
 }
