@@ -24,8 +24,8 @@ export function App() {
     try {
       const todoTime = {
         ...newTodo,
-        createdAt: new Date().toISOString(),
-        updatedAt: new Date().toISOString(),
+        createdAt: new Date(),
+        updatedAt: new Date(),
       };
       const createdTodo = await createData(todoTime);
       setTodos([...todos, createdTodo]);
@@ -36,11 +36,11 @@ export function App() {
 
   const updateTodo = async (updatedTodo) => {
     try {
-      const todoWithTimestamp = {
+      const todoWithTime = {
         ...updatedTodo,
-        updatedAt: new Date().toISOString(),
+        updatedAt: new Date(),
       };
-      const result = await updateData(updatedTodo.id, todoWithTimestamp);
+      const result = await updateData(updatedTodo.id, todoWithTime);
       const updatedTodos = todos.map((todo) =>
         todo.id !== updatedTodo.id ? todo : result
       );
