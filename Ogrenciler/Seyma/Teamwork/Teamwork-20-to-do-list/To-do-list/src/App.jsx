@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import { ToDoForm } from "./components/organisms/ToDoForm/ToDoForm";
-import { deleteData, get, getOptions, post, update } from "./service/Api";
-import { Cards } from "./components/molecules/Cards/Cards";
+import { deleteData, get, post, update } from "./service/Api";
 import { Navbar } from "./components/organisms/Navbar/Navbar";
-import { CategoriesCard } from "./components/organisms/CategoriesCard/CategoriesCard";
 import CategoryCardGroup from "./components/layout/CategoryCardGroup/CategoryCardGroup";
 
 function App() {
@@ -59,7 +57,7 @@ function App() {
                 <CategoryCardGroup
                   view={view}
                   toDo={toDo}
-                  onUpdate={(editTodo) => updateToDoUI(editTodo)}
+                  onUpdate={(editedTodo) => updateToDoUI(editedTodo)}
                   onDelete={(id) => deleteToDoUI(id)}
                 />
               </div>

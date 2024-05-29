@@ -20,11 +20,11 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 .pink {
-  background-color: #FDF5D7;
+  background-color: #fdf5d7;
   color: rgb(255, 200, 0);
 }
 .blue {
-  background-color: #BBD9F4;
+  background-color: #bbd9f4;
   color: blue;
 }
 .green {
@@ -32,9 +32,9 @@
   color: green;
 }
 .yellow {
-  background-color: #F8C8A0;
+  background-color: #f8c8a0;
   color: #ff7300;
 }
-.cardsTitle{
+.cardsTitle {
   font-size: 1rem;
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./CategoriesCard.module.css";
 import { Cards } from "../../molecules/Cards/Cards";
-import { deleteData, getFiltered, update } from "../../../service/Api";
+import { getFiltered } from "../../../service/Api";
 
 export const CategoriesCard = ({
   view,

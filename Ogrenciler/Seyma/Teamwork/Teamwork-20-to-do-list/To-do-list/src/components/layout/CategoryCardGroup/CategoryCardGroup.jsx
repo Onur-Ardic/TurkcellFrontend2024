@@ -3,9 +3,9 @@ import { CategoriesCard } from "../../organisms/CategoriesCard/CategoriesCard";
 
 function CategoryCardGroup({ toDo, view, onDelete, onUpdate }) {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="row">
-        <div className={view ? "col-lg-3 px-2" : "row"}>
+        <div className={view ? "col-lg-3 px-2 mb-3" : "row"}>
           <CategoriesCard
             view={view}
             toDo={toDo}
@@ -15,7 +15,7 @@ function CategoryCardGroup({ toDo, view, onDelete, onUpdate }) {
             onUpdate={onUpdate}
           />
         </div>
-        <div className={view ? "col-lg-3 px-2" : "row"}>
+        <div className={view ? "col-lg-3 px-2 mb-3" : "row"}>
           <CategoriesCard
             view={view}
             toDo={toDo}
@@ -25,7 +25,7 @@ function CategoryCardGroup({ toDo, view, onDelete, onUpdate }) {
             onUpdate={onUpdate}
           />
         </div>
-        <div className={view ? "col-lg-3 px-2" : "row"}>
+        <div className={view ? "col-lg-3 px-2 mb-3" : "row"}>
           <CategoriesCard
             view={view}
             toDo={toDo}
@@ -35,7 +35,7 @@ function CategoryCardGroup({ toDo, view, onDelete, onUpdate }) {
             onUpdate={onUpdate}
           />
         </div>
-        <div className={view ? "col-lg-3 px-2" : "row"}>
+        <div className={view ? "col-lg-3 px-2 mb-3" : "row"}>
           <CategoriesCard
             view={view}
             toDo={toDo}
