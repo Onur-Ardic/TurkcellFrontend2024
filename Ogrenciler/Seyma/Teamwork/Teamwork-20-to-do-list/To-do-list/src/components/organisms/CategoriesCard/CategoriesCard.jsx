@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from "react";
 import styles from "./CategoriesCard.module.css";
 import { Cards } from "../../molecules/Cards/Cards";
-import { getFiltered } from "../../../service/Api";
+import { deleteData, getFiltered, update } from "../../../service/Api";
 
-export const CategoriesCard = ({ view, toDo, title, color }) => {
+export const CategoriesCard = ({
+  view,
+  toDo,
+  title,
+  color,
+  onDelete,
+  onUpdate,
+}) => {
   const [filtered, setFiltered] = useState([]);
+
   const fetchCategories = async () => {
     const selectCategories = await getFiltered(title);
     setFiltered(selectCategories);
@@ -22,7 +30,12 @@ export const CategoriesCard = ({ view, toDo, title, color }) => {
     >
       <h2 className={styles.cardsTitle}>{title}</h2>
       {filtered.map((toDo, index) => (
-        <Cards toDo={toDo} key={index} />
+        <Cards
+          toDo={toDo}
+          key={index}
+          onDelete={(id) => onDelete(id)}
+          onUpdate={onUpdate}
+        />
       ))}
     </div>
   );

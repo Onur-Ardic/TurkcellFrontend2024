@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { InputGroups } from "../../molecules/inputGroups/InputGroups";
 import { Button } from "../../atoms/buttons/Button";
 import { getOptions } from "../../../service/Api";
-import './ToDoForm.css'
+import "./ToDoForm.css";
 
 export const ToDoForm = ({ onAdd }) => {
   // const [options, setOptions] = useState([]);
@@ -49,38 +49,38 @@ export const ToDoForm = ({ onAdd }) => {
 
   return (
     <>
-    <div >
-      <form className="mt-3" onSubmit={handleSubmit}>
-        <InputGroups
-          text="Title"
-          name="title"
-          value={toDo.title}
-          onChange={handleChange}
+      <div>
+        <form className="mt-3" onSubmit={handleSubmit}>
+          <InputGroups
+            text="Title"
+            name="title"
+            value={toDo.title}
+            onChange={handleChange}
           />
-        <InputGroups
-          text="Description"
-          name="description"
-          value={toDo.description}
-          onChange={handleChange}
+          <InputGroups
+            text="Description"
+            name="description"
+            value={toDo.description}
+            onChange={handleChange}
           />
-        <InputGroups
-          type="select"
-          // options={options}
-          text="Categories"
-          name="categories"
-          value={toDo.categories}
-          onChange={handleChange}
+          <InputGroups
+            type="select"
+            // options={options}
+            text="Categories"
+            name="categories"
+            value={toDo.categories}
+            onChange={handleChange}
           />
-        <InputGroups
-          type="datetime-local"
-          text="EndDate"
-          name="endDate"
-          value={toDo.endDate}
-          onChange={handleChange}
+          <InputGroups
+            type="datetime-local"
+            text="EndDate"
+            name="endDate"
+            value={toDo.endDate}
+            onChange={handleChange}
           />
-        <Button text="ekle" type="submit" />
-      </form>
-          </div>
+          <Button text="ekle" type="submit" />
+        </form>
+      </div>
     </>
   );
 };
