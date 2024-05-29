@@ -3,3 +3,6 @@
   background-color: gray;
   color: black;
 }
+input::placeholder {
+  color: black;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Input.module.css";
 
-const Input = ({ type = "text", name, value, onChange }) => {
+const Input = ({ type = "text", name, value, onChange, placeholder }) => {
   return (
     <>
       <input
@@ -10,6 +10,7 @@ const Input = ({ type = "text", name, value, onChange }) => {
         name={name}
         value={value}
         onChange={onChange}
+        placeholder={placeholder}
         id={name}
       />
     </>

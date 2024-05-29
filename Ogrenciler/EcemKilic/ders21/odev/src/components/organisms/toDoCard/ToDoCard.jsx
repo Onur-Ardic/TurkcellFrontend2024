@@ -2,7 +2,13 @@ import React from "react";
 import Button from "../../atoms/button/Button";
 import styles from "./ToDoCard.module.css";
 
-const ToDoCard = ({ toDo, deleteToDoUI, updateToDoUI, showUpdateButton }) => {
+const ToDoCard = ({
+  toDo,
+  deleteToDoUI,
+  updateToDoUI,
+  showUpdateButton,
+  colorProgress,
+}) => {
   function formatDate(date) {
     const d = new Date(date);
     const year = d.getFullYear();
@@ -32,18 +38,23 @@ const ToDoCard = ({ toDo, deleteToDoUI, updateToDoUI, showUpdateButton }) => {
 
   return (
     <>
-      <div className={styles.card}>
+      <div className={`${styles.card} ${colorProgress}`}>
         <div className={styles.cardBody}>
           <div className={styles.cardText}>
-            <p>{toDo.content}</p>
+            <p className={styles.title}>{toDo.content}</p>
             <p>{`Son Tarih: ${formatDate(toDo.deadline)}`}</p>
             <p>{leftTime(toDo)}</p>
-            <p>{toDo.addingDate}</p>
-            <p>{toDo.updatedDate ? toDo.updatedDate : ""}</p>
-          </div>
-          <div className={styles.buttons}>
-            {showUpdateButton && <Button text="İleri Taşı" onClick={updateToDoUI} />}
-            <Button text="Sil" onClick={deleteToDoUI} />
+            <p>Ekleme Tarihi: {toDo.addingDate}</p>
+            <p>
+              İşlem Tarihi:{" "}
+              {toDo.updatedDate ? toDo.updatedDate : "İşlem Bekliyor"}
+            </p>
+            <div className={styles.buttons}>
+              {showUpdateButton && (
+                <Button text="İleri Taşı" onClick={updateToDoUI} />
+              )}
+              <Button text="Sil" onClick={deleteToDoUI} />
+            </div>
           </div>
         </div>
       </div>

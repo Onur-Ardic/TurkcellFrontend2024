@@ -22,6 +22,7 @@ const ToDoForm = ({ addToDoUI, toDo, setToDo }) => {
           type="text"
           name={"content"}
           value={toDo.content}
+          placeholder="Yeni Görev Girin..."
           onChange={handleChange}
           onClick={() => {
             addToDoUI(toDo);
