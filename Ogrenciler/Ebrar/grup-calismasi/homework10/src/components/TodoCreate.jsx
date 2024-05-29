@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./css/todocreate.modules.css"
 
 function TodoCreate({ onCreateTodo }) {
   const [newTodo, setNewTodo] = useState("");
@@ -19,6 +20,7 @@ function TodoCreate({ onCreateTodo }) {
 
   return (
     <div className="todo-create">
+      <h2>Create ToDo List</h2>
       <input
         type="text"
         placeholder="Todo giriniz"

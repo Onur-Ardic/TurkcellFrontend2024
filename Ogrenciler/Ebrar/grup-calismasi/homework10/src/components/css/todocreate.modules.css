@@ -1,0 +1,58 @@
+/* .todo-create{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    border: 1px solid;
+   
+}
+.todo-create input{
+    
+    font-size: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+    margin-right: 0.5rem;
+    color: red;
+
+
+} */
+
+.todo-create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    border: 3px solid brown;
+    padding: 40px 80px;
+    width: 300px;
+  }
+  .todo-create h2{
+    color: brown;
+    margin-bottom: 2rem;
+  }
+  
+  .todo-create input[type="text"] {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid brown;
+    border-radius: 4px;
+    flex-grow: 1;
+    margin-right: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .todo-create button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .todo-create button:hover {
+    background-color: #2980b9;
+  }
