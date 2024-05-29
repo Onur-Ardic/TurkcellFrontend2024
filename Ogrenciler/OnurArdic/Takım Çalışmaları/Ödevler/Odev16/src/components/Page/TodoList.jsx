@@ -1,43 +1,43 @@
-import PropTypes from "prop-types";
-import { useEffect, useState } from "react";
-import styles from "../../CustomStyle.module.css";
-import "./page.css";
+import PropTypes from 'prop-types'
+import { useEffect, useState } from 'react'
+import styles from '../../CustomStyle.module.css'
+import './page.css'
 const TodoList = ({ setId }) => {
-  const [onData, setOnData] = useState([]);
+  const [onData, setOnData] = useState([])
   useEffect(() => {
-    fetch("http://localhost:3000/todo")
+    fetch('http://localhost:3000/todo')
       .then((res) => res.json())
       .then((data) => {
-        setOnData(data);
-      });
-  });
+        setOnData(data)
+      })
+  })
 
   const deleteHandler = (data) => {
     fetch(`http://localhost:3000/todo/${data.id}`, {
-      method: "DELETE",
+      method: 'DELETE',
     })
       .then((response) => {
         if (response.ok) {
-          setOnData(onData.filter((data) => data.id !== id));
+          setOnData(onData.filter((data) => data.id !== id))
         }
       })
       .catch((err) => {
-        console.log(err.message);
-      });
-  };
+        console.log(err.message)
+      })
+  }
 
   const fillInputHandler = (data) => {
-    document.getElementById("todoİnput").value = data.todoTitle;
-    document.getElementById("addTodoButton").textContent = "Düzenle";
-    setId(data.id);
-  };
+    document.getElementById('todoİnput').value = data.todoTitle
+    document.getElementById('addTodoButton').textContent = 'Düzenle'
+    setId(data.id)
+  }
 
   function formatDate(date) {
-    return new Date(date).toLocaleDateString("tr-TR", {
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric",
-    });
+    return new Date(date).toLocaleDateString('tr-TR', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+    })
   }
   return (
     <ul className="todoList">
@@ -57,11 +57,11 @@ const TodoList = ({ setId }) => {
         </li>
       ))}
     </ul>
-  );
-};
+  )
+}
 
 TodoList.propTypes = {
   setSelectedDataId: PropTypes.func,
-};
+}
 
-export default TodoList;
+export default TodoList
