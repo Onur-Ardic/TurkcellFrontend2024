@@ -1,0 +1,19 @@
+.cardBody{
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+}
+h1 span{
+        font-size: 3rem;
+}
+img{
+    width: 30px;
+}
+.imgBig{
+    width: 50px;
+}
+td,th{
+    background: transparent !important;
+    color: #fff !important;
+}
