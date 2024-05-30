@@ -36,8 +36,23 @@
   height: 10rem;
 }
 .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   width: 40rem;
   height: 3rem;
+  margin-bottom: 4rem;
+}
+.InputArea {
+  padding-left: 1rem;
+  border-color: transparent;
+  height: 60%;
+  border-radius: 1rem;
+}
+.btn {
+  height: 80%;
+  border-radius: 0.7rem;
 }
 
 .label {
@@ -48,16 +63,13 @@
 .select {
   padding: 10px 15px;
   font-size: 1em;
-  border: 2px solid #007bff;
-  border-radius: 5px;
-  background-color: #fff;
+
   color: #333;
   outline: none;
   transition: all 0.3s ease;
 }
 
 .select:focus {
-  border-color: #0056b3;
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
 
@@ -71,10 +83,9 @@
 }
 .desc {
   width: 100%;
-
   align-items: center;
-
   justify-content: center;
+  margin-bottom: 2rem;
 }
 .up {
   height: 10rem;
@@ -90,4 +101,23 @@
 }
 .bgclear {
   background-image: url("https://st3.depositphotos.com/1003525/17602/i/450/depositphotos_176027626-stock-photo-sun-blue-sky-white-clouds.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  color: black;
+}
+
+.bgother {
+  background-image: url("https://saglikagi.com/wp-content/uploads/2023/02/kapali-hava-768x512.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: black;
+}
+.bgrain {
+  background-image: url("https://www.flaskocaeli.com/foto/20190509104418yeni-manset.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
 }
