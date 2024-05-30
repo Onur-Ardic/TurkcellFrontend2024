@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
-import CardGroup from "../molecules/CardGroup/CardGroup";
-import InputGroup from "../molecules/InputGroup/InputGroup";
-import TextGroup from "../molecules/TextGroup/TextGroup";
+import { useEffect, useState } from "react";
+import CardGroup from "../../molecules/CardGroup/CardGroup";
+import InputGroup from "../../molecules/InputGroup/InputGroup";
+import TextGroup from "../../molecules/TextGroup/TextGroup";
 import styles from "./styles.module.css";
+import Button from "../../atoms/Button/Button";
 
 const Weather = () => {
   const [weathers, setWeathers] = useState([]);
@@ -17,13 +18,17 @@ const Weather = () => {
         document.body.style.backgroundImage = 'url("./src/assets/rain.jpg")';
       } else if (selectedWeather.status?.toLowerCase() === "clouds") {
         document.body.style.backgroundImage = 'url("./src/assets/clouds1.png")';
+      } else if (selectedWeather.status?.toLowerCase() === "snow") {
+        document.body.style.backgroundImage =
+          'url("https://images.unsplash.com/photo-1581947454454-daf5f7200128?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")';
       }
     } else {
       document.body.style.backgroundImage = 'url("./src/assets/lightning.jpg")';
     }
   }
-  function getWeather(city) {
-    fetch(
+
+  async function getWeather(city) {
+    await fetch(
       `https://api.collectapi.com/weather/getWeather?data.lang=tr&data.city=${city}`,
       {
         headers: {
@@ -34,16 +39,20 @@ const Weather = () => {
     )
       .then((response) => response.json())
       .then((data) => {
-        setWeathers(data?.result);
-        setSelectedWeather(data?.result[0]);
+        if (data.success) {
+          setWeathers(data.result);
+          setSelectedWeather(data.result[0]);
+        } else {
+          setSelectedWeather(null);
+        }
       })
-      .catch((err) => console.log(err))
-      .finally(() => changeBackgroundImage());
+      .catch((err) => console.log(err));
   }
 
-  function searchCity() {
-    getWeather(city);
+  async function searchCity() {
+    await getWeather(city);
   }
+
   useEffect(() => {
     getWeather(city);
   }, []);
@@ -54,14 +63,28 @@ const Weather = () => {
 
   if (!weathers || !selectedWeather) {
     return (
-      <div>
+      <div className={styles.errorContainer}>
         <p>Bulunamadı</p>
+        <p className={styles.atmosware}>
+          Bugün hava kötü ama yine de Atmosware&apos;da çalışmak için çok güzel.
+        </p>
+
+        <Button
+          text="Tekrardan Arama Yap"
+          onClick={() => getWeather("Ankara")}
+        />
       </div>
     );
   }
+
   return (
     <div className={styles.groups}>
-      <InputGroup setCity={setCity} city={city} onClick={searchCity} />
+      <InputGroup
+        setCity={setCity}
+        city={city}
+        onClick={searchCity}
+        text="Ara"
+      />
       <TextGroup
         date={selectedWeather.date}
         day={selectedWeather.day}

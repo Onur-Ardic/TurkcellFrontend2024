@@ -1,10 +1,9 @@
-import React from "react";
 import WeatherCard from "../../atoms/WeatherCard/WeatherCard";
 import styles from "./styles.module.css";
 
 const CardGroup = ({ weathers, setSelectedWeather }) => {
   return (
-    <div div className={styles.cards}>
+    <div className={styles.cards}>
       {weathers.map((weather, index) => {
         return (
           <WeatherCard
