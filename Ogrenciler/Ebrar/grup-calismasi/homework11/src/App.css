@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+* {
+  font-family: Poetsen One;
+}
+
+.bgImage {
+  background: url(https://r.resimlink.com/9AG1KDa8gy.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
