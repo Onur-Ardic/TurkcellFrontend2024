@@ -31,12 +31,10 @@ function App() {
       throw error;
     }
   };
-  console.log(weather);
-
   return (
     <>
       <div className="container">
-        <h1 className="text-center">Weather </h1>
+        <h1 className="text-center mt-5 text-warning">-SkyWatcher-</h1>
         <div className="d-flex text-center justify-content-center align-items-center gap-3 m-5">
           <input
             type="text"
@@ -46,23 +44,19 @@ function App() {
             placeholder="Şehir giriniz"
             style={{ width: "600px" }}
           />
-          <button
-            class="btn btn-outline-primary"
-            type="button"
-            onClick={fetchData}
-          >
-            Button
+          <button className="btn btn-danger" type="button" onClick={fetchData}>
+            Ara
           </button>
         </div>
 
-        <div className="d-flex flex-wrap justify-content-center gap-2 text-center">
+        <div className="d-flex flex-wrap justify-content-center text-center">
           {weather.map((data, index) =>
             index == 0 ? (
-              <div className="card col-5">
+              <div className="card col-12 main-day" key={index}>
                 <div className="card-body">
                   <div className="d-flex justify-content-center align-items-center gap-4">
                     <img src={weather[0]?.icon} width={150} />
-                    <h3 className="fs-2">{weather[0]?.degree}°C</h3>
+                    <h2 className="text-danger">{weather[0]?.degree}°C</h2>
                   </div>
 
                   <h3>{city.toUpperCase()}</h3>
@@ -72,27 +66,26 @@ function App() {
                     <h3>{weather[0]?.date} </h3>
                   </div>
                   <div className="fw-bold">
-                    <p>Nem Oranı {weather[0]?.humidity}%</p>
+                    <h4>Nem Oranı {weather[0]?.humidity}%</h4>
                   </div>
                   <h1>{weather[0]?.description.toUpperCase()}</h1>
                 </div>
               </div>
             ) : (
-              <div className="card col-4">
+              <div className="card col-6 other-day" key={index}>
                 <div className="card-body">
                   <div className="d-flex justify-content-center align-items-center gap-4">
                     <img src={data.icon} width={50} />
-                    <h3 className="fs-4">{data.degree}°C</h3>
+                    <h4 className="text-danger">{data.degree}°C</h4>
                   </div>
-                  <h3>{city.toUpperCase()}</h3>
                   <div className="d-flex justify-content-center gap-5 mb-3">
-                    <h3>{data.day} </h3>
-                    <h3>{data.date} </h3>
+                    <h5>{data.day} </h5>
+                    <h5>{data.date} </h5>
                   </div>
                   <div className="fw-bold">
-                    <p>Nem Oranı {data.humidity}%</p>
+                    <h6>Nem Oranı {data.humidity}%</h6>
                   </div>
-                  <h1>{data.description.toUpperCase()}</h1>
+                  <h3>{data.description.toUpperCase()}</h3>
                 </div>
               </div>
             )
