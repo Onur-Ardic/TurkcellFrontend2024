@@ -1,3 +1,6 @@
+body {
+  background-size: cover;
+}
 .groups {
   display: flex;
   flex-direction: column;
