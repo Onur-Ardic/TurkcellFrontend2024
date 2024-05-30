@@ -3,10 +3,10 @@ import ShowWeatherCss from "../css/ShowWeather.module.css";
 import Input from "./Input";
 
 function ShowWeather({ city, setCity, handleCity, currentWeather }) {
-
+    console.log(currentWeather)
   return (
     <>
-      <div className="position-absolute top-50 start-50 translate-middle w-100">
+      <div className="position-absolute top-50 start-50 translate-middle w-100 z-1">
         <div className="container-fluid container-md">
           <div className="row align-items-center">
             <Input city={city} setCity={setCity} handleCity={handleCity} />
@@ -47,7 +47,7 @@ function ShowWeather({ city, setCity, handleCity, currentWeather }) {
                                     <tr key={index}>
                                         <td>{weather?.day}</td>
                                         <td><img src={weather?.icon} alt=""/></td>
-                                        <td>{weather?.description}</td>
+                                        <td className="text-capitalize">{weather?.description}</td>
                                         <td>{parseInt(weather?.degree)} °C </td>
                                     </tr>
                                 ))

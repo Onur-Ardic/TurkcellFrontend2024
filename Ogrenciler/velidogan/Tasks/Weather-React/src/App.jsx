@@ -21,14 +21,17 @@ function App() {
   }
   
   useEffect(()=>{
-    if(currentWeather){
+    if(currentWeather.length > 0){
       setWeatherBg(currentWeather[0]?.status)
+    }else{
+      console.log("veli")
+      setWeatherBg("Default")
     }
   },[currentWeather])
 
   return (
     <>
-      <div className={`${WeatherBg[weatherBg]} ${WeatherBg.bg}`}>
+      <div className={`${WeatherBg[weatherBg]} ${WeatherBg.bg} ${WeatherBg.defaultSpe}`}>
         <ShowWeather city={city} setCity={setCity} handleCity={handleCity} currentWeather={currentWeather} />
       </div>
     </>
