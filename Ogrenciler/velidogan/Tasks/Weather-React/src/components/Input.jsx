@@ -5,8 +5,10 @@ function Input({city,setCity,handleCity}) {
     
     return (
         <>
-            <input type="text" value={city} onChange={(e)=>{setCity(e.target.value)}}/>
-            <button onClick={handleCity}>Hava Durumu</button>
+            <div className="input-group">
+                <input type="text" value={city} onChange={(e)=>{setCity(e.target.value)}} className='form-control'/>
+                <button onClick={handleCity} className='btn btn-outline-danger'>Hava Durumu</button>
+            </div>            
         </>
     )
 }
