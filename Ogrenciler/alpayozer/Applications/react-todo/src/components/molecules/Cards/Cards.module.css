@@ -1,0 +1,49 @@
+.card {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.349);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  flex-basis: calc(33.333% - 10px);
+  flex-grow: 1;
+  width: 100%;
+}
+.editForm {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  /* flex-basis: calc(33.333% - 10px);
+  flex-grow: 1; */
+  width: 100%;
+}
+
+.dateStyle {
+  font-size: 0.7rem;
+  color: rgb(31, 93, 192);
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+.endDateStyle {
+  font-size: 0.6rem;
+  color: rgb(31, 93, 192);
+  font-weight: 400;
+}
+.titleStyle {
+  font-size: 1rem;
+  color: rgb(31, 93, 192);
+}
+.descriptionStyles {
+  font-size: 0.8rem;
+  color: rgb(31, 93, 192);
+}

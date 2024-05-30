@@ -1,10 +1,10 @@
 import "./App.css";
-import WeatherCard from "./components/atoms/WeatherCard";
-//apikey 4iHtt44IyVLSrUsjHrwgmX:4EdntZ0EkrTAZaUnJw4Vxh
+import Weather from "./components/organisms/Weather/Weather";
+
 function App() {
   return (
     <>
-      <WeatherCard />
+      <Weather />
     </>
   );
 }
