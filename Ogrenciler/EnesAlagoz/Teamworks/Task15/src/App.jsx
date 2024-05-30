@@ -1,18 +1,11 @@
-import { getWeather } from "./request";
+import InputArea from "./components/InputArea";
 import { WeatherList } from "./components/WeatherList";
-import { useEffect } from "react";
 
 function App() {
-  let weather = [];
-  useEffect(() => {
-    getWeather().then((data) => {
-      weather.push(data.result);
-    });
-  }, []);
-
   return (
     <>
-      <WeatherList weather={weather} />
+      <InputArea />
+      <WeatherList />
     </>
   );
 }

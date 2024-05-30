@@ -1,7 +1,5 @@
-const url = "https://api.collectapi.com/weather/getWeather?data.lang=tr&data.city=ankara";
-
-export async function getWeather() {
-  const response = await fetch(url, {
+export async function getWeather(city) {
+  const response = await fetch(`https://api.collectapi.com/weather/getWeather?data.lang=tr&data.city=${city}`, {
     method: "GET",
     headers: {
       "Content-type": "application/json",
