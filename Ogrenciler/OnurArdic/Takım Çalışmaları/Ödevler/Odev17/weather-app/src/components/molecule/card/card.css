@@ -18,9 +18,15 @@
   border: 1px solid #ccc;
   padding: 1rem;
   width: 380px;
+  transition: 0.6s ease;
   .card-left {
     img {
       width: 140px;
     }
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: #121212;
   }
 }
