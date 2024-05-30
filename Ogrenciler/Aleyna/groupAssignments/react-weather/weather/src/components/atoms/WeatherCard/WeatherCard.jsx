@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-const index = () => {
+const WeatherCard = () => {
   return (
     <div className={styles.container}>
       <h5 className={styles.date}>17.02.2024</h5>
@@ -14,4 +14,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default WeatherCard;
