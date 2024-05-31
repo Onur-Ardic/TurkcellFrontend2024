@@ -33,7 +33,7 @@ function InputArea() {
     setWeather([]);
     setLoading(true);
     await getWeather(city).then((data) => {
-      setWeather((prev) => [...prev, data.result]);
+      setWeather((city) => [...city, data.result]);
     });
     setLoading(false);
     setshowCity(city);
