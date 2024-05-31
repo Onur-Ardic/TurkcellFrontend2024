@@ -1,27 +1,88 @@
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: black;
 }
 
 .search {
   display: flex;
-  gap: 1rem;
+  margin-bottom: 20px;
 }
+
 .search input {
-  width: 40%;
-  border-radius: 5px;
-  border: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.search button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .weather {
   display: flex;
-  gap: 25px;
-}
-
-.weather .cardList {
-  display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
 }
 
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cardToday {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cardToday img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cardToday p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.card-left, .card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.degree {
+  font-size: 24px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

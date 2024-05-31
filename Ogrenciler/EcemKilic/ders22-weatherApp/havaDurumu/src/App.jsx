@@ -41,7 +41,7 @@ function App() {
         </div>
 
         <div className='weather'>
-          <div className="cardToday">
+          <div className="card">
             {weatherData.slice(0, 1).map((data, index) => (
                 <Card key={index} data={data} />
             ))}
