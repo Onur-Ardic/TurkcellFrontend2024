@@ -1,0 +1,27 @@
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0 30px;
+  width: 100px;
+  height: auto;
+  text-align: center;
+  cursor: pointer;
+}
+.date {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.img {
+  width: 75px;
+  height: 75px;
+}
+.degree {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
