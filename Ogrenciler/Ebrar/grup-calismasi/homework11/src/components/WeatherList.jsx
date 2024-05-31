@@ -5,7 +5,13 @@ function updateBackgroundColor(description) {
     case "parçalı az bulutlu":
       return "rgba(163, 167, 170, 0.747)";
     case "hafif yağmur":
+      return "rgba(92, 180, 218, 0.747)";
+    case "orta şiddetli yağmur":
       return "rgba(92, 157, 218, 0.747)";
+    case "parçalı bulutlu":
+      return "rgba(93, 127, 160, 0.747)";
+    case "az bulutlu":
+      return "rgba(127, 184, 238, 0.747)";
     case "kapalı":
       return "#696969";
     default:
