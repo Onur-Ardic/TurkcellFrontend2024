@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styles from "./MiniCard.module.css";
-
 import { useDate } from "../../../date/useDate";
 
 const MiniCard = ({ time, temp, icon, description }) => {

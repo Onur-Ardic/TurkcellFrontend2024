@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
 import styles from "./App.module.css";
-import { WeatherCard, MiniCard } from "./components/organisms/WeatherInfo";
+import WeatherCard from "./components/organisms/WeatherInfo/WeatherCard";
+import MiniCard from "./components/organisms/WeatherInfo/MiniCard";
 import { getWeatherData } from "./services/api";
 import SearchBar from "./components/molecules/SearchBar/SearchBar";
+
 
 function App() {
   const [input, setInput] = useState("");
   const [weather, setWeather] = useState({});
   const [values, setValues] = useState([]);
-  const [place, setPlace] = useState("Antalya");
+  const [place, setPlace] = useState("Ankara");
   const [thisLocation, setLocation] = useState("");
 
   const parseDate = (dateString) => {

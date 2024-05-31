@@ -5,9 +5,7 @@ export const useDate = (initialDate) => {
   const [date, setDate] = useState(new Date(initialDate));
 
   useEffect(() => {
-    if (initialDate) {
       setDate(new Date(initialDate));
-    }
   }, [initialDate]);
 
   const day = date.toLocaleDateString(locale, { weekday: "long" });

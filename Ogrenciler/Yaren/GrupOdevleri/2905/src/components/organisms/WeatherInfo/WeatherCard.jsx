@@ -1,5 +1,4 @@
 import React from "react";
-import { useDate } from "../../../date/useDate";
 import styles from "./WeatherCard.module.css";
 
 const WeatherCard = ({
@@ -12,7 +11,6 @@ const WeatherCard = ({
   min,
   max,
 }) => {
-  const { time } = useDate();
 
   return (
     <div className={styles.weatherCard}>
