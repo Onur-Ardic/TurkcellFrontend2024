@@ -24,7 +24,6 @@ function App() {
     if(currentWeather.length > 0){
       setWeatherBg(currentWeather[0]?.status)
     }else{
-      console.log("veli")
       setWeatherBg("Default")
     }
   },[currentWeather])

@@ -1,0 +1,61 @@
+body {
+  background: #000;
+}
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 1200px;
+}
+
+.search {
+  display: flex;
+  gap: 1rem;
+  button {
+    padding: 0.5rem;
+    width: 100px;
+    background: #292828;
+    color: white;
+    border-radius: 5px;
+  }
+}
+.search input {
+  width: 40%;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.weather {
+  display: flex;
+  gap: 25px;
+  margin-top: 3rem;
+}
+
+.weather .cardList .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  text-align: center;
+  gap: 3rem;
+
+  img {
+    width: 100px;
+  }
+  .cardToday {
+    width: 150px;
+  }
+}
+.card-left {
+  text-align: center;
+  img {
+    width: 400px;
+  }
+}
+.cardToday {
+  background: #292828;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}

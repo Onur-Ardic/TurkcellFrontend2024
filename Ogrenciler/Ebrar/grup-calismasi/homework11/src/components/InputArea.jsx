@@ -22,16 +22,21 @@ function InputArea() {
 
   const [weather, setWeather] = useState([]);
   const [city, setCity] = useState("");
+  const [showCity, setshowCity] = useState("");
+  const [loading, setLoading] = useState(false);
 
   function handleChange(e) {
     setCity(e.target.value);
   }
 
-  function handleClick() {
+  async function handleClick() {
     setWeather([]);
-    getWeather(city).then((data) => {
-      setWeather((prev) => [...prev, data.result]);
+    setLoading(true);
+    await getWeather(city).then((data) => {
+      setWeather((city) => [...city, data.result]);
     });
+    setLoading(false);
+    setshowCity(city);
     setCity("");
   }
 
@@ -55,7 +60,11 @@ function InputArea() {
           Send
         </button>
       </div>
-      <WeatherList weather={weather} />
+      {loading ? (
+        <p>Loading</p>
+      ) : (
+        <WeatherList weather={weather} showCity={showCity} />
+      )}
     </div>
   );
 }

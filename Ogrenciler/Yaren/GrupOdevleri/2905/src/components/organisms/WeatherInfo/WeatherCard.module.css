@@ -16,27 +16,27 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
 .temperature {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .location {
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
 }
 
 .dateTime {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 1rem;
-  font-weight: bold;
-  color: rgb(151, 126, 138);
+  font-weight: normal;
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
 }
 
@@ -52,11 +52,9 @@
   justify-content: space-between;
   margin-top: 1rem;
   gap: 1rem;
-  font-weight: bold;
-
+  font-weight: normal;
   font-size: 1.5rem;
-
-  color: rgb(151, 126, 138);
+  color: rgb(255, 255, 255);
 }
 
 .night,
@@ -69,7 +67,7 @@
 .night span,
 .humidity span {
   font-weight: semibold;
-  color: rgb(151, 126, 138);
+  color: rgb(255, 255, 255);
 }
 .minMax {
   display: flex;
@@ -77,19 +75,22 @@
   padding: 1rem 0;
   font-size: 1.25rem;
   gap: 1rem;
-  font-weight: bold;
-
-  color: rgb(151, 126, 138);
+  font-weight: normal;
+  color: rgb(255, 255, 255);
 }
 
 .description {
   text-align: center;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: normal;
   padding: 1rem 0;
 }
 
 .iconImage {
-  width: 4rem; /* İkonun genişliğini ayarlayın */
-  height: 4rem; /* İkonun yüksekliğini ayarlayın */
+  width: 4rem;
+  height: 4rem;
+}
+.weatherCard i {
+  font-size: 1.5rem;
+  color: #fdd020;
 }

@@ -1,5 +1,5 @@
 import Card from "./Card";
-const ShowCase = ({ data, capitalize }) => {
+const ShowCase = ({ data, capitalize, activeDay }) => {
   if (!data || !data.result || data.result.length === 0) {
     return <p>No data available</p>;
   }
@@ -25,7 +25,7 @@ const ShowCase = ({ data, capitalize }) => {
     };
     return details[status] || details.default;
   };
-  const statusDetails = getStatusDetails(data.result[0].status);
+  const statusDetails = getStatusDetails(data.result[activeDay].status);
   return (
     <div className="container mt-5">
       <div
@@ -36,17 +36,20 @@ const ShowCase = ({ data, capitalize }) => {
       >
         <div className="col-lg-9 bg-dark bg-opacity-25 rounded-5 p-5">
           <h1 className="cityName">{capitalize(data.city)}</h1>
-          <h3 className="text-white mb-5 ms-2">{data.result[0].date}</h3>
+          <h3 className="text-white mb-5 ms-2">
+            {data.result[activeDay].date}
+          </h3>
           <h3 className="text-white ">{statusDetails.sentence}</h3>
         </div>
         <div className="col-lg-3">
           <Card
-            day={data.result[0]}
+            day={data.result[activeDay]}
             col={"col-12"}
             bg={"purple-bg"}
             color={"text-white"}
             dayBg={"bg-white"}
             dayColor={"purple"}
+            capitalize={capitalize}
           />
         </div>
       </div>
