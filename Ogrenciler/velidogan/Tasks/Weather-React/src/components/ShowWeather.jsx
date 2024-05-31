@@ -3,7 +3,6 @@ import ShowWeatherCss from "../css/ShowWeather.module.css";
 import Input from "./Input";
 
 function ShowWeather({ city, setCity, handleCity, currentWeather }) {
-    console.log(currentWeather)
   return (
     <>
       <div className="position-absolute top-50 start-50 translate-middle w-100 z-1">
