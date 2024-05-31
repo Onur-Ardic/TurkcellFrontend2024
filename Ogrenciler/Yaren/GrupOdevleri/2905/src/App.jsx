@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./App.module.css";
-import {
-  BackgroundLayout,
-  WeatherCard,
-  MiniCard,
-} from "./components/organisms/WeatherInfo";
+import { WeatherCard, MiniCard } from "./components/organisms/WeatherInfo";
 import { getWeatherData } from "./services/api";
 import SearchBar from "./components/molecules/SearchBar/SearchBar";
 
@@ -24,16 +20,6 @@ function App() {
     try {
       const data = await getWeatherData(place);
       const currentWeather = data.result[0];
-      const weather = {
-        temp: currentWeather.degree,
-        humidity: currentWeather.humidity,
-        description: currentWeather.description,
-        icon: currentWeather.icon,
-        night: currentWeather.night,
-        status: currentWeather.status,
-        min: currentWeather.min,
-        max: currentWeather.max,
-      };
 
       const dailyForecast = data.result.map((entry) => ({
         datetime: parseDate(entry.date),
@@ -46,7 +32,7 @@ function App() {
 
       const location = data.city;
 
-      setWeather(weather);
+      setWeather(currentWeather);
       setValues(dailyForecast);
       setLocation(location);
     } catch (error) {
@@ -73,22 +59,24 @@ function App() {
   };
 
   return (
-    <div className={styles.appContainer}>
-      <nav className={styles.navBar}>
-        <h1 className={styles.title}>Weather App</h1>
-        <SearchBar
-          value={input}
-          onChange={handleInputChange}
-          onKeyUp={handleKeyUp}
-          placeholder="Search city"
-        />
-      </nav>
-      <BackgroundLayout />
+    <section className={styles.background}>
+      <div className={styles.navContainer}>
+        <nav className={styles.navBar}>
+          <h1 className={styles.title}>Weather App</h1>
+          <SearchBar
+            value={input}
+            onChange={handleInputChange}
+            onKeyUp={handleKeyUp}
+            placeholder="Search city"
+          />
+        </nav>
+      </div>
+
       <div className={styles.mainContent}>
         <WeatherCard
           place={thisLocation}
           humidity={weather.humidity}
-          temperature={weather.temp}
+          temperature={weather.degree}
           icon={weather.icon}
           description={weather.description}
           night={weather.night}
@@ -108,7 +96,7 @@ function App() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
