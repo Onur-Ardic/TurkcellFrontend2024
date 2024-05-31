@@ -1,0 +1,18 @@
+.card {
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin: 2rem;
+  width: 250px;
+  background-color: rgb(197, 244, 244);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+img {
+  height: auto;
+  width: 5rem;
+}

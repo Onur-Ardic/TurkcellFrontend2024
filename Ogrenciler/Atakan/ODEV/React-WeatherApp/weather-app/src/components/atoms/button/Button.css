@@ -1,0 +1,11 @@
+.button {
+  background-color: blue;
+  color: white;
+  border-radius: 0.25rem;
+}
+
+.button:hover {
+  background-color: aqua;
+  color: black;
+  cursor: pointer;
+}

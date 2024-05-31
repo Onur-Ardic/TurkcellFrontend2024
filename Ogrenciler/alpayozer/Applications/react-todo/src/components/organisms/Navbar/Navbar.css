@@ -1,0 +1,12 @@
+.navbar{
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.107);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.041);
+
+}
+.profiles{
+    width: 3%;
+}

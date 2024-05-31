@@ -1,0 +1,26 @@
+.Rain{
+    background: url("https://wallpapers.com/images/hd/rain-desktop-uclb7s647ti6w9xu.jpg") no-repeat center/cover;
+}
+.Clouds{
+    background: url("https://wallpapers.com/images/hd/clouds-4k-730etvicfwa10vb0.jpg") no-repeat center/cover;
+}
+.Clear{
+    background: url("https://cdn.wallpapersafari.com/2/26/HKFAQ9.jpg") no-repeat center/cover;
+}
+.Default{
+    background: url("../assets/bg.webp") no-repeat center/cover;    
+}
+.defaultSpe{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+.bg::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0,.6);
+}

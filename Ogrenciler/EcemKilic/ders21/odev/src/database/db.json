@@ -13,24 +13,24 @@
       "content": "Bootcamp Finali",
       "deadline": "2024-06-21",
       "addingDate": "29.05.2024 16:03",
-      "updatedDate": "29.05.2024 16:17",
+      "updatedDate": "30.05.2024 20:21",
+      "updateStatus": 2
+    },
+    {
+      "id": "a55f",
+      "content": "Yeni Görev",
+      "deadline": "2024-06-07",
+      "addingDate": "30.05.2024 19:31",
+      "updatedDate": "30.05.2024 20:17",
       "updateStatus": 1
     },
     {
-      "id": "15bf",
-      "content": "dfg",
-      "deadline": "2024-06-08",
-      "addingDate": "29.05.2024 16:51",
-      "updatedDate": "29.05.2024 16:52",
-      "updateStatus": 2
-    },
-    {
-      "id": "ff44",
-      "content": "dsdsd",
-      "deadline": "2024-06-08",
-      "addingDate": "29.05.2024 16:53",
-      "updatedDate": "29.05.2024 16:53",
-      "updateStatus": 2
+      "id": "44aa",
+      "content": "gsgsdsg",
+      "deadline": "2024-05-15",
+      "addingDate": "30.05.2024 19:32",
+      "updatedDate": "",
+      "updateStatus": 0
     }
   ]
 }

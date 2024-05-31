@@ -1,0 +1,55 @@
+.background {
+  background-image: url(https://r.resimlink.com/5MFLfzDngEw.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.navContainer {
+  padding: 16px;
+}
+
+.navBar {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: rgba(225, 225, 225, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(225, 225, 225, 0.18);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto;
+  color: white;
+}
+
+.mainContent {
+  max-width: 1240px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem auto;
+  color: white;
+}
+
+.miniCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 70%;
+}
+
+.weatherCard {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
