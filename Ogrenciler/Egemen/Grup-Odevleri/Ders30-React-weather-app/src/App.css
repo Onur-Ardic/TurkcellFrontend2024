@@ -1,0 +1,37 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+.container {
+  max-width: 1680px;
+}
+.purple {
+  color: #353589;
+}
+.purple-bg {
+  background-color: #353589;
+}
+.weather-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.weather-card:hover {
+  background-color: #353589 !important;
+  * {
+    color: rgb(234, 234, 234) !important;
+  }
+  .purple-bg {
+    background-color: white;
+  }
+  .card-title {
+    color: #353589 !important;
+  }
+}
+.cityName {
+  color: white;
+  font-size: 8rem;
+}
+.showCaseBanner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
