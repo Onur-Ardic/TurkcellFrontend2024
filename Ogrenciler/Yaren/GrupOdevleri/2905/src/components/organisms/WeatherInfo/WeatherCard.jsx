@@ -11,11 +11,10 @@ const WeatherCard = ({
   min,
   max,
 }) => {
-
   return (
     <div className={styles.weatherCard}>
       <div className={styles.weatherInfo}>
-        <img src={icon} className={styles.iconImage} />
+        <img src={icon} className={styles.iconImage} alt="weather icon" />
         <p className={styles.temperature}>{temperature} &deg;C</p>
       </div>
       <div className={styles.location}>{place}</div>

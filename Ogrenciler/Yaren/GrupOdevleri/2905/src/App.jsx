@@ -5,7 +5,6 @@ import MiniCard from "./components/organisms/WeatherInfo/MiniCard";
 import { getWeatherData } from "./services/api";
 import SearchBar from "./components/molecules/SearchBar/SearchBar";
 
-
 function App() {
   const [input, setInput] = useState("");
   const [weather, setWeather] = useState({});
