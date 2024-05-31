@@ -8,8 +8,8 @@ function App() {
   const [dataInfo, setDataInfo] = useState([])
   const [city, setCity] = useState('')
 
-  function handler() {
-    fetch(`https://api.collectapi.com/weather/getWeather?data.lang=tr&data.city=${city}`, {
+  async function handler() {
+    await fetch(`https://api.collectapi.com/weather/getWeather?data.lang=tr&data.city=${city}`, {
       headers: {
         'Content-type': 'application/json',
         authorization: 'apikey 3nb0w5KYSjqnKgOrCPFmje:3cGh2KapR91zcIgTh7u9U5',
@@ -23,6 +23,8 @@ function App() {
   const handleChange = (e) => {
     setCity(e.target.value)
   }
+
+  const isRaining = dataInfo.result?.some((data) => data.description.includes('yağmur'))
 
   return (
     <>
@@ -39,6 +41,21 @@ function App() {
           {dataInfo.result?.map((data, index) => (
             <Card key={index} data={data} />
           ))}
+        </div>
+      )}
+
+      {isRaining && (
+        <div className="rain-container">
+          <div className="rain"></div>
+          <div className="rain"></div>
+          <div className="rain"></div>
+          <div className="rain"></div>
+          <div className="rain"></div>
+          <div className="rain"></div>
+          <div className="rain"></div>
+          <div className="rain"></div>
+          <div className="rain"></div>
+          <div className="rain"></div>
         </div>
       )}
     </>

@@ -1,17 +1,18 @@
-import React from "react";
 import WeatherCard from "../../atoms/WeatherCard/WeatherCard";
 import styles from "./styles.module.css";
 
-const CardGroup = () => {
+const CardGroup = ({ weathers, setSelectedWeather }) => {
   return (
-    <div div className={styles.cards}>
-      <WeatherCard />
-      <WeatherCard />
-      <WeatherCard />
-      <WeatherCard />
-      <WeatherCard />
-      <WeatherCard />
-      <WeatherCard />
+    <div className={styles.cards}>
+      {weathers.map((weather, index) => {
+        return (
+          <WeatherCard
+            key={index}
+            weather={weather}
+            setSelectedWeather={setSelectedWeather}
+          />
+        );
+      })}
     </div>
   );
 };

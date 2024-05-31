@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import WeatherCard from "./WeatherCard";
 import styles from "./WeatherCard.module.css";
-
 export const WeatherPage = () => {
   const [weather, setWeather] = useState([]);
   const [selectedCity, setSelectedCity] = useState("ankara");
 
-  const handleCityChange = (event) => {
-    setSelectedCity(event.target.value);
-  };
+  function handleCityChange() {
+    setSelectedCity(document.getElementById("inputVal").value);
+  }
   useEffect(() => {
     fetch(
       `https://api.collectapi.com/weather/getWeather?data.lang=tr&data.city=${selectedCity}`,
@@ -21,28 +20,28 @@ export const WeatherPage = () => {
       }
     )
       .then((res) => res.json())
-      .then((data) => setWeather(data));
+      .then((data) => {
+        if (data.success) {
+          setWeather(data);
+        } else {
+          setWeather([]);
+        }
+      });
   }, [selectedCity]);
 
   return (
     <div>
       <div className={styles.nav}>
-        <select
-          id="city"
-          value={selectedCity}
-          onChange={handleCityChange}
-          className={styles.select}
-        >
-          <option value="istanbul">Istanbul</option>
-          <option value="ankara" selected>
-            Ankara
-          </option>
-          <option value="izmir">Izmir</option>
-          <option value="bursa">Bursa</option>
-          <option value="antalya">Antalya</option>
-        </select>
+        <input type="text" name="" id="inputVal" className={styles.InputArea} />
+        <button className={styles.btn} onClick={handleCityChange}>
+          ara
+        </button>
       </div>
-      {weather ? <WeatherCard cityWeather={weather} /> : <div>Loading...</div>}
+      {weather.length != 0 ? (
+        <WeatherCard cityWeather={weather} />
+      ) : (
+        <div>Not Found!</div>
+      )}
     </div>
   );
 };

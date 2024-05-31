@@ -5,6 +5,7 @@
   border-radius: 10px;
   border: none;
   padding: 10px 15px;
+  color: white;
   &:focus {
     outline-color: rgb(70, 95, 180);
   }

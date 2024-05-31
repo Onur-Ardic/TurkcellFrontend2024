@@ -1,0 +1,29 @@
+body {
+  background-size: cover;
+}
+.groups {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 97vh;
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+
+  p {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
+
+.atmosware {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 600;
+  color: orangered;
+}

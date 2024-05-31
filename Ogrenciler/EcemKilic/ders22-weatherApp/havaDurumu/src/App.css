@@ -1,0 +1,27 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.search {
+  display: flex;
+  gap: 1rem;
+}
+.search input {
+  width: 40%;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.weather {
+  display: flex;
+  gap: 25px;
+}
+
+.weather .cardList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
