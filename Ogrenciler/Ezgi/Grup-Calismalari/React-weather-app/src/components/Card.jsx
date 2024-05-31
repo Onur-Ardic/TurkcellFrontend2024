@@ -1,8 +1,21 @@
-const Card = ({ day, col, bg, color, dayBg, dayColor }) => {
+const Card = ({
+  day,
+  col,
+  bg,
+  color,
+  dayBg,
+  dayColor,
+  setActiveDay,
+  index,
+  capitalize,
+}) => {
   return (
     <>
       <div
-        className={`weather-card card ${col} rounded-5 text-center  border border-0 shadow ${bg}`}
+        onClick={() => {
+          setActiveDay(index);
+        }}
+        className={`weather-card card ${col} rounded-5 text-center  border-0 shadow ${bg}`}
       >
         <img src={day.icon} className="card-img-top p-3" alt="..." />
         <div className="card-body d-flex flex-column gap-2">
@@ -23,9 +36,7 @@ const Card = ({ day, col, bg, color, dayBg, dayColor }) => {
             <i className={`fa-solid fa-droplet me-2 ${color}`}></i>
             {day.humidity}%
           </p>
-          <p className={`fs-5  ${color}`}>
-            {day.description.charAt(0).toUpperCase() + day.description.slice(1)}
-          </p>
+          <p className={`fs-5  ${color}`}>{capitalize(day.description)}</p>
         </div>
       </div>
     </>

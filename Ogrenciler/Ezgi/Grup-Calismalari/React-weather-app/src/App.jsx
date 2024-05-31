@@ -6,15 +6,15 @@ import ShowCase from "./components/ShowCase";
 import CardList from "./components/CardList";
 
 function App() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
   const [city, setCity] = useState("giresun");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [activeDay, setActiveDay] = useState(0);
   const handleSubmit = async () => {
     try {
       setLoading(true);
       const result = await readData(city);
-      console.log(result); // Log the result to understand the structure
       setData(result);
       setCity("");
     } catch (error) {
@@ -29,7 +29,6 @@ function App() {
   const capitalize = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1);
   };
-  console.log(data);
   return (
     <>
       <Navbar setCity={setCity} handleSubmit={handleSubmit} city={city} />
@@ -39,9 +38,13 @@ function App() {
         <p>Error: {error}</p>
       ) : (
         <>
-          <ShowCase data={data} capitalize={capitalize} />
+          <ShowCase data={data} capitalize={capitalize} activeDay={activeDay} />
           <div className="container">
-            <CardList data={data} />
+            <CardList
+              data={data}
+              setActiveDay={setActiveDay}
+              capitalize={capitalize}
+            />
           </div>
         </>
       )}
