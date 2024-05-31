@@ -1,15 +1,17 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 20px;
   color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 90%;
 }
 
 .search {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .search input {
@@ -26,7 +28,9 @@
 
 .weather {
   display: flex;
+  justify-content: first baseline;
   flex-direction: row;
+  align-items: start;
 }
 
 .cardList {
@@ -34,11 +38,23 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.cardList .cardToday {
+  width: calc(30% - 50px);
+}
+
+.cardList .cardToday img {
+  width: 35%;
+}
+
+.cardList .cardToday p {
+  font-size: 8px;
 }
 
 .cardToday {
-  width: 300px;
+  width: 500px;
   padding: 10px;
   border-radius: 5px;
   background-color: #fff;
@@ -47,13 +63,13 @@
 }
 
 .cardToday img {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
 }
 
 .cardToday p {
   margin: 5px 0;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .card-left, .card-right {
@@ -85,4 +101,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.sunny {
+  background-image: url('./assets/sunny.gif');
+  background-size: cover;
+}
+
+.rainy {
+  background-image: url('./assets/rain.gif');
+  background-size: cover;
+}
+
+.cloudy {
+  background-image: url('./assets/cloud.gif');
+  background-size: cover;
+}
+
+.snowy {
+  background-image: url('./assets/snow.gif');
+  background-size: cover;
 }

@@ -32,15 +32,24 @@ function App() {
     setCity(e.target.value);
   }
 
+  const getWeatherBG = () => {
+    if (!todaysWeather) return '';
+    if (todaysWeather.status.toLowerCase().includes('clear')) return 'sunny';
+    if (todaysWeather.status.toLowerCase().includes('rain')) return 'rainy';
+    if (todaysWeather.status.toLowerCase().includes('cloud')) return 'cloudy';
+    if (todaysWeather.status.toLowerCase().includes('snow')) return 'snowy';
+    return '';
+  }
+
   return (
     <>
-      <div className='container'>
+      <div className={`container ${getWeatherBG()}`}>
         <div className='search'>
           <input type='text' onChange={handleCity} placeholder="Şehir giriniz..." />
           <button onClick={fetchWeather}>Getir</button>
         </div>
 
-        <div className='weather'>
+        <div className="weather">
           <div className="card">
             {weatherData.slice(0, 1).map((data, index) => (
                 <Card key={index} data={data} />
