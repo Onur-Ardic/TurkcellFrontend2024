@@ -20,10 +20,10 @@ const WeatherDetails = ({ weather }) => {
             <strong>{day.day}</strong>
           </div>
           <div className="col-lg-2 text-center">
-            <img id={`wrapper-icon-${day.day.toLowerCase().replace(' ', '-')}`} src={day.icon} className="w-100" alt={day.description} />
+          <img id={`wrapper-icon-${day.day}`} src={day.icon} className="w-100" alt={day.description} />
           </div>
           <div className="col-lg-4 text-end">
-            <span id={`wrapper-forecast-temp-${day.day.toLowerCase().replace(' ', '-')}`}>{Math.round(day.degree)}°</span>
+            <span id={`wrapper-forecast-temp-${day.day}`}>{Math.round(day.degree)}°</span>
           </div>
         </div>
       ))}

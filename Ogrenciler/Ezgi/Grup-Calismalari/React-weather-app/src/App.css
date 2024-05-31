@@ -1,7 +1,5 @@
 * {
   font-family: "Lato", sans-serif;
-  /* filter: blur(8px);
-  -webkit-filter: blur(8px); */
 }
 .container {
   max-width: 1680px;
@@ -14,6 +12,7 @@
 }
 .weather-card {
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .weather-card:hover {
   background-color: #353589 !important;
