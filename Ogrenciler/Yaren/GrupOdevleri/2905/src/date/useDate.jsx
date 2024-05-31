@@ -1,22 +1,16 @@
 import { useEffect, useState } from "react";
 
-export const useDate = (inputDate) => {
+export const useDate = (initialDate) => {
   const locale = "en-US";
-  const [date, setDate] = useState(new Date(inputDate));
+  const [date, setDate] = useState(new Date(initialDate));
 
   useEffect(() => {
-    if (inputDate) {
-      setDate(new Date(inputDate));
+    if (initialDate) {
+      setDate(new Date(initialDate));
     }
-  }, [inputDate]);
+  }, [initialDate]);
 
   const day = date.toLocaleDateString(locale, { weekday: "long" });
-  const formattedDate = `${day}, ${date.getDate()} ${date.toLocaleDateString(
-    locale,
-    {
-      month: "long",
-    }
-  )}`;
   const time = date.toLocaleTimeString(locale, {
     hour: "numeric",
     minute: "numeric",
@@ -25,7 +19,6 @@ export const useDate = (inputDate) => {
 
   return {
     day,
-    formattedDate,
     time,
   };
 };

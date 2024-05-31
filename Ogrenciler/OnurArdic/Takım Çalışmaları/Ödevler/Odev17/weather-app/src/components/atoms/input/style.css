@@ -9,6 +9,9 @@
   width: 200px;
   color: #fff;
   transition: 0.6s ease;
+  &::placeholder {
+    color: #fff;
+  }
 
   &:focus {
     border-bottom: 1px solid blueviolet;
@@ -22,5 +25,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  padding-top: 10px;
 }

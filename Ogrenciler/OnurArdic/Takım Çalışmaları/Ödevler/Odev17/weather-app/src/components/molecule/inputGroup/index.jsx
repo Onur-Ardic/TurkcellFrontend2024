@@ -1,5 +1,5 @@
-import Input from '../../atoms/input'
-import Button from '../../atoms/button'
+import Input from "../../atoms/input";
+import Button from "../../atoms/button";
 
 function InputGroup({ text, onChange, value, btnText, onClick }) {
   return (
@@ -9,7 +9,7 @@ function InputGroup({ text, onChange, value, btnText, onClick }) {
         <Button text={btnText} onClick={onClick} />
       </div>
     </>
-  )
+  );
 }
 
-export default InputGroup
+export default InputGroup;
