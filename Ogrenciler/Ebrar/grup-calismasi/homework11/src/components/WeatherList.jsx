@@ -13,15 +13,18 @@ function updateBackgroundColor(description) {
   }
 }
 
-const WeatherList = ({ weather }) => {
+const WeatherList = ({ weather, showCity }) => {
   return (
     <>
       <div className="container mt-5 pt-2">
+        <h1 className="text-center">{showCity}</h1>
         {weather?.map((days, index) => {
+          console.log(days[0]);
           return (
             <div key={index} className="row justify-content-center">
-              {days?.map((day, index) => {
+              {days.slice(0, 6)?.map((day, index) => {
                 const backgroundColor = updateBackgroundColor(day.description);
+
                 return (
                   <div
                     className="card col-3 me-5 mb-3 text-center shadow p-3 text-black"
