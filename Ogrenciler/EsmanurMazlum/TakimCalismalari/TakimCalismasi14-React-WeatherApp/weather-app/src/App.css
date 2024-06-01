@@ -1,0 +1,38 @@
+.bg {
+  background: url("assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.bg.Clear {
+  background: url("assets/sunny.png") no-repeat center center/cover;
+}
+.bg.Clouds {
+  background: linear-gradient(rgba(22, 28, 45, 0.5), rgba(22, 28, 45, 0.5)),
+    url("assets/cloudly.jpg") no-repeat center center/cover;
+}
+.bg.Rain {
+  background: linear-gradient(rgba(22, 28, 45, 0.5), rgba(22, 28, 45, 0.5)),
+    url("assets/rainy.png") no-repeat center center/cover;
+}
+.city-title {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .bg {
+    height: 100%;
+  }
+  .bg.Clear {
+    height: 100%;
+  }
+  .bg.Clouds {
+    height: 100%;
+  }
+  .bg.Rain {
+    height: 100%;
+  }
+}

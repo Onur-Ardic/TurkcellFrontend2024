@@ -14,7 +14,8 @@ const WeatherContainer = () => {
     setCity(e.target.value);
   };
 
-  const determineWeatherCondition = (description) => {
+  //refactor
+  const detectWeatherCondition = (description) => {
     if (description.includes("yağmur")) {
       return "rainy";
     } else if (description.includes("bulutlu")) {
@@ -42,7 +43,7 @@ const WeatherContainer = () => {
       setWeather(data.result);
       setDisplayedCity(cityName);
       setWeatherCondition(
-        determineWeatherCondition(data.result[0].description.toLowerCase())
+        detectWeatherCondition(data.result[0].description.toLowerCase())
       );
     } catch (error) {
       console.error("Error fetching weather:", error);

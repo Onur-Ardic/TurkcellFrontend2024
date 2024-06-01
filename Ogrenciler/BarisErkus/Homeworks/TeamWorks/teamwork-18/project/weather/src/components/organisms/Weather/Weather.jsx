@@ -11,20 +11,18 @@ const Weather = () => {
   const [city, setCity] = useState("Ankara");
 
   function changeBackgroundImage() {
-    if (selectedWeather) {
-      if (selectedWeather.status?.toLowerCase() === "clear") {
-        document.body.style.backgroundImage = 'url("./src/assets/sunny.jpg")';
-      } else if (selectedWeather.status?.toLowerCase() === "rain") {
-        document.body.style.backgroundImage = 'url("./src/assets/rain.jpg")';
-      } else if (selectedWeather.status?.toLowerCase() === "clouds") {
-        document.body.style.backgroundImage = 'url("./src/assets/clouds1.png")';
-      } else if (selectedWeather.status?.toLowerCase() === "snow") {
-        document.body.style.backgroundImage =
-          'url("https://images.unsplash.com/photo-1581947454454-daf5f7200128?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")';
-      }
-    } else {
-      document.body.style.backgroundImage = 'url("./src/assets/lightning.jpg")';
-    }
+    const backgroundImages = {
+      clear: 'url("./src/assets/sunny.jpg")',
+      rain: 'url("./src/assets/rain.jpg")',
+      clouds: 'url("./src/assets/clouds1.png")',
+      snow: 'url("https://images.unsplash.com/photo-1581947454454-daf5f7200128?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+      default: 'url("./src/assets/lightning.jpg")',
+    };
+
+    const status = selectedWeather?.status?.toLowerCase() || "default";
+    const backgroundImage = backgroundImages[status];
+
+    document.body.style.backgroundImage = backgroundImage;
   }
 
   async function getWeather(city) {
