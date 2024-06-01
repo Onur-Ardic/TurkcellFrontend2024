@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html, body {
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
   }
@@ -16,11 +16,10 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     width: 100%;
     background-image: url("https://img.freepik.com/free-vector/gradient-technology-background_23-2148884153.jpg");
-    background-size: cover; /* Arka plan resminin kapsama alanını belirler */
-    background-position: center; /* Resmi ortalar */
+    background-size: cover;
+    background-position: center;
     font-family: 'Poppins', sans-serif;
   }
 `;
