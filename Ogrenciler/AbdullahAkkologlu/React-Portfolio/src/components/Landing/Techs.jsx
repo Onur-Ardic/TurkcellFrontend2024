@@ -1,9 +1,10 @@
 import Tech from "./Tech";
+import { TechsUl } from "../../styles";
 
 const Techs = () => {
   return (
     <div>
-      <ul className="techs list-unstyled d-flex gap-2">
+      <TechsUl>
         <Tech tech="html" />
         <Tech tech="css" />
         <Tech tech="sass" />
@@ -11,7 +12,8 @@ const Techs = () => {
         <Tech tech="tailwind" />
         <Tech tech="js" />
         <Tech tech="react" />
-      </ul>
+        <Tech tech="styledcomponents" />
+      </TechsUl>
     </div>
   );
 };

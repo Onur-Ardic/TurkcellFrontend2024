@@ -3,7 +3,7 @@ import NavbarBrand from "./NavbarBrand";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg shadow-sm">
+    <nav className="navbar navbar-expand-lg">
       <div className="container">
         <NavbarBrand content="Akkologlu" />
         <button
