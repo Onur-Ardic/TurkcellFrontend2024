@@ -5,11 +5,11 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-image: url('./resources/Background.jpg');
+  width: 100%;
+  height: 100%;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
   margin: 0;
+  padding: 0;
 `;
 
 export const Form = styled.form`
@@ -18,6 +18,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -26,7 +27,7 @@ export const Form = styled.form`
 
 export const Input = styled.input`
   width: 80%;
-  background-color: #f5f5f59f;
+  background-color: black;
   border: none;
   border-radius: 10px;
   color: #4078c0;
@@ -67,7 +68,7 @@ export const Button = styled.button`
 
 export const CardContainer = styled.div`
   display: flex;
-  justify-content: center; /* Kartı ortalamak için bu satırı ekliyoruz */
+  justify-content: center;
   align-items: flex-start;
   gap: 2rem;
   margin-top: 2rem;
@@ -81,9 +82,10 @@ export const Card = styled.div`
   border-radius: 20px;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: row; /* Yatayda genişleme */
+  flex-direction: row;
   align-items: flex-start;
   padding: 3rem;
+  margin: 0 auto;
 `;
 
 export const Avatar = styled.img`
@@ -115,6 +117,12 @@ export const UserInfoContainer = styled.div`
       align-items: center;
     }
 
+    span {
+      font-size: 1.2rem;
+      color: #4078c0;
+      font-weight: bold;
+    }
+
     strong {
       font-size: 0.9rem;
       margin-left: 0.5rem;
@@ -129,7 +137,7 @@ export const DetailsSection = styled.div`
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
-  color: #000; /* Yazı rengini siyah yapıyoruz */
+  color: #000;
 
   div {
     margin-bottom: 0.5rem;

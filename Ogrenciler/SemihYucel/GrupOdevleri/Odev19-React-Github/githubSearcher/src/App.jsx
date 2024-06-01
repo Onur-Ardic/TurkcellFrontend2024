@@ -1,11 +1,13 @@
 import React from 'react';
 import UserInfo from './components/UserInfo';
+import GlobalStyle from './GlobalStyles';
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <GlobalStyle />
       <UserInfo />
-    </div>
+    </>
   );
 }
 
