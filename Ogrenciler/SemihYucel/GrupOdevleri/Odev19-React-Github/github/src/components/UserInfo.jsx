@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Container, Form, Input, Button } from '../styled';
+import UserCard from './UserCard';
 
 const UserInfo = () => {
   const [username, setUsername] = useState('');
@@ -24,23 +26,15 @@ const UserInfo = () => {
   };
 
   return (
-    <div>
-        <h1>Github İnfo</h1>
-        <form>
-        <input type='text' value={username} onChange={handleInputChange} placeholder='Github Adı'/>
-        <button type='submit' onClick={handleSubmit}>Verilerimi Çek</button>
-        </form>
-        {userData &&(
-            <div>
-            <h2>{userData.name}</h2>
-            <p>{userData.bio}</p>
-            <img src={userData.avatar_url} alt={userData.name} style={{ width: '100px' }} />
-            </div>
-  )}
-    </div>
+    <Container>
+      <h1>Github Bilgileri</h1>
+      <Form onSubmit={handleSubmit}>
+        <Input type='text' value={username} onChange={handleInputChange} placeholder='Github Username' />
+        <Button type='submit'>Verileri Getir</Button>
+      </Form>
+      {userData && <UserCard user={userData} />}
+    </Container>
   );
- 
 };
 
 export default UserInfo;
- 
