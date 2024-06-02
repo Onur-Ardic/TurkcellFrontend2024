@@ -1,17 +1,14 @@
 import Tech from "./Tech";
+import { TechsUl } from "../../styles";
 
-const Techs = () => {
+const Techs = ({ techs }) => {
   return (
     <div>
-      <ul className="techs list-unstyled d-flex gap-2">
-        <Tech tech="html" />
-        <Tech tech="css" />
-        <Tech tech="sass" />
-        <Tech tech="bootstrap" />
-        <Tech tech="tailwind" />
-        <Tech tech="js" />
-        <Tech tech="react" />
-      </ul>
+      <TechsUl>
+        {techs.map((tech, index) => (
+          <Tech key={index} tech={tech} />
+        ))}
+      </TechsUl>
     </div>
   );
 };

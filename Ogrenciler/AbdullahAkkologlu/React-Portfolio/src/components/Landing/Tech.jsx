@@ -1,8 +1,9 @@
+import { TechLi } from "../../styles";
 const Tech = ({ tech }) => {
   return (
-    <li className="tech">
+    <TechLi>
       <img src={`https://skillicons.dev/icons?i=${tech}`} alt={tech} />
-    </li>
+    </TechLi>
   );
 };
 

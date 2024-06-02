@@ -1,5 +1,5 @@
-const Icon = ({ category, title }) => {
-  return <i className={`fa-${category} fa-${title} fa-2xl`}></i>;
+const Icon = ({ category, title, size = "2xl" }) => {
+  return <i className={`fa-${category} fa-${title} fa-${size}`}></i>;
 };
 
 export default Icon;

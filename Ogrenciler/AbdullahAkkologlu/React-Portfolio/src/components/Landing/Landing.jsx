@@ -1,16 +1,15 @@
 import LandingContent from "./LandingContent";
 import LandingImage from "./LandingImage";
-import Techs from "./Techs";
+import { LandingContainer, RowBetween } from "../../styles";
 
 const Landing = () => {
   return (
-    <div className="container landing">
-      <div className="row justify-content-between">
+    <LandingContainer>
+      <RowBetween>
         <LandingContent />
         <LandingImage />
-        <Techs />
-      </div>
-    </div>
+      </RowBetween>
+    </LandingContainer>
   );
 };
 

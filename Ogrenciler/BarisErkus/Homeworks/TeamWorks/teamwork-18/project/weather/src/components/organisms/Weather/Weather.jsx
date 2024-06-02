@@ -12,11 +12,14 @@ const Weather = () => {
 
   function changeBackgroundImage() {
     const backgroundImages = {
-      clear: 'url("./src/assets/sunny.jpg")',
-      rain: 'url("./src/assets/rain.jpg")',
-      clouds: 'url("./src/assets/clouds1.png")',
+      clear:
+        'url("https://media.istockphoto.com/id/1007768414/photo/blue-sky-with-bright-sun-and-clouds.jpg?s=612x612&w=0&k=20&c=MGd2-v42lNF7Ie6TtsYoKnohdCfOPFSPQt5XOz4uOy4=")',
+      rain: 'url("https://s7d2.scene7.com/is/image/TWCNews/heavy_rain_jpg-11")',
+      clouds:
+        'url("https://images.ctfassets.net/4ivszygz9914/508a423c-c102-4eeb-8870-3b05526f0d72/368f2bd4675f73a3295aa22aece14e59/45d81ee8-0080-496c-9a08-3deabb9d94d8.jpg?fm=webp")',
       snow: 'url("https://images.unsplash.com/photo-1581947454454-daf5f7200128?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
-      default: 'url("./src/assets/lightning.jpg")',
+      default:
+        'url("https://s7d2.scene7.com/is/image/TWCNews/thunder-lightning-weather-2928925jpg")',
     };
 
     const status = selectedWeather?.status?.toLowerCase() || "default";

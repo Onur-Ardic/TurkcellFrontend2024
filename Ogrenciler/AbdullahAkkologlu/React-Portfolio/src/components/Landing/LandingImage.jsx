@@ -1,5 +1,6 @@
+import { LandingImageDiv } from "../../styles";
 const LandingImage = () => {
-  return <div className="col-5 landingImage"></div>;
+  return <LandingImageDiv width={40}></LandingImageDiv>;
 };
 
 export default LandingImage;
