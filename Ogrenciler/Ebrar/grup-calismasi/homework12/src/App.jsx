@@ -13,9 +13,10 @@ function App() {
   const [showUser, setShowUser] = useState([]);
   const [user, setUser] = useState("sevval-erhan");
   const [repoData, setRepoData] = useState([]);
-  
+  const [loading, setLoading] = useState(false);
     async function handleClick(user) {
       try {
+        setLoading(true);
         const data = await getUser(user);
         setShowUser([data]);
         const rData = await getRepos(user);
@@ -25,15 +26,19 @@ function App() {
         console.log(rData);
       } catch (error) {
         console.error("Error fetching user data:", error);
+      }finally{
+        setLoading(false);
       }
     }
     useEffect(() => {
       handleClick(user);
     }, []);
+
   return (
     <>
+      {!loading && <> 
       <NavbarExample handleClick={handleClick} setShowUser={setShowUser} user={user} setUser={setUser} />
-      <UserList showUser={showUser} repoData={repoData} />
+      <UserList showUser={showUser} repoData={repoData} /></>}
     </>
   );
 }
