@@ -1,0 +1,41 @@
+.main-day {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #33c4f5;
+}
+
+.other-day {
+  background-color: rgba(20, 94, 144, 0.4);
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  background-repeat: repeat-y;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

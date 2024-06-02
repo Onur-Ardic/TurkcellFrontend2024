@@ -1,0 +1,253 @@
+.container {
+    max-width: 1200px; 
+    padding: 1.4rem; 
+    margin: auto;
+} 
+.main{
+    animation: slide 10s infinite alternate;
+    position: relative;
+     
+    .projects{
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        img{
+            width: 10rem;
+            height: 80px;
+        }             
+    }
+    .projects > *{
+        z-index: 6;
+    }
+    .projects > *{
+        position: relative;
+        transition: all 2s;
+    }  
+    .projects > *:hover{
+        box-shadow: 0 0 15px 15px crimson;
+    }
+    .projects > *::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(0,0,0);
+        opacity: .5;
+        pointer-events: none;
+        transition: all 2s;
+    }
+    .projects:hover::after{
+        background-color: rgba(0,0,0);
+        opacity: 0;
+    }
+}
+.main .social{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}   
+.main .social a{
+    width: auto;
+    padding: 0.5rem 1rem;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+.main > .container{
+    position: relative;
+    height: 100%;
+}
+.main::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+}
+.main-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    position: relative;
+    
+          
+} 
+.main-info *{
+    z-index: 1;
+}
+.main-info> *{
+    width: 50%;
+} 
+.main-info-left{
+    h1{
+        font-size: 5rem;
+        animation: color 4s infinite alternate linear;
+    }
+    .contact-form{
+        display: grid;
+        grid-template-areas: 
+                        "name surname"
+                        "email email"
+                        "message message"
+                        "button button";
+        gap: 1rem;
+        .name{
+            grid-area: name;
+            animation: color 4s infinite alternate linear;
+        }
+        .surname{
+            grid-area: surname;
+        }
+        .email{
+            grid-area: email;
+        }
+        .message{
+            grid-area: message;
+            textarea{
+                height: 10rem;
+                background: rgba(0,0,0,.5);
+                border: 2px solid crimson;
+                color: #fff;
+            }                    
+        }
+        .message::placeholder{
+            font-size: 1.2rem;
+                    padding: 1rem;
+        }
+        .message:focus{
+            background-color: rgba(0,0,0,.5);
+            font-size: 1.2rem;
+            padding: 1.2rem;
+            color: rgba(0,0,0,1);
+        }
+        .btn-primary{
+            grid-area: button;
+            padding: 1rem;
+        }
+        input{
+            border-radius: 5px; 
+            padding: 1rem;
+            background: rgba(0,0,0,.5);
+            border: 2px solid crimson;
+            color: #fff;
+        }
+        input::placeholder{
+            font-size: 1.2rem;
+        }
+        input:focus{
+            background-color: rgba(0,0,0,.5);
+            font-size: 1.2rem;
+            color: rgba(0,0,0,1);
+        }
+    } 
+}
+.main-info-right{
+    position: relative;
+    .image{
+        text-align: center;
+        position: relative;
+        img {
+            border-radius: 50%;
+            width: 40%;  
+        };
+        .cover{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 41%;
+            height: 100%;
+            border-radius: 50%;
+            z-index: 1;
+            background-color: rgba(0,0,0,.5);
+            transition: all 2s;
+        }        
+    }
+    .image:hover .cover{
+        background-color: rgba(0,0,0,0);
+    } 
+    article{
+        margin: 1rem 0;
+        color: #fff;
+        padding: 1rem;
+        background: rgba(0,0,0,.8);
+        border-radius: 5px;
+    }
+} 
+
+@keyframes slide{
+    0%{
+        background: url("./assets/r7.webp") no-repeat center/cover;
+    }
+    25%{
+        background: url("./assets/coding2.png") no-repeat center/cover;
+    }
+    50%{
+        background: url("./assets/csgo.jpg") no-repeat center/cover;
+    }
+    75%{
+        background: url("./assets/edit.png") no-repeat center/cover;
+    }
+    100%{
+        background: url("./assets/ırl.webp") no-repeat center/cover;
+    }
+}
+@keyframes color{
+    0%{
+        color: white;
+    }
+    25%{
+        color: crimson;
+    }
+    50%{
+        color:aqua;
+    }
+    75%{
+        color:hotpink;
+    }
+    100%{
+        color:goldenrod;
+    }
+}
+@media (max-width:1050px){
+    .main{
+        height: 100%;
+    } 
+    .main-info{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .main-info> * {
+        width: 100%;
+    } 
+    .main-info-left{
+        .contact-form {
+            grid-template-areas:
+                "name" 
+                "surname"
+                "email"
+                "message"
+                "button";
+        }
+    }
+    .main-info-right{
+        .image::after{            
+            left: 141px;
+            width: 41%;
+            height: 40%;                  
+        }
+    }
+}
+

@@ -141,3 +141,5 @@ bir kısmını dışa aktarmak için export kullanıyoruz.
 js uzantısı kullanınca createElement('div',.....) ile yapman lazım ama jsx olunca react kendi oluşturuyor
 
 Bir state'in değeri set..... methodu kullanılarak değiştirildiğinde o component tekrar render edilir.
+
+useRef

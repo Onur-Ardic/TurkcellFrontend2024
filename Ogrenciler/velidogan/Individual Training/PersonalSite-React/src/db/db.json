@@ -1,0 +1,83 @@
+{
+  "projects": [
+    {
+      "link":"https://velidogan120.github.io/E-commerce/",
+      "image":"./src/assets/invidual-projects/E-commerce-vize1.png"
+    },
+    {
+      "link":"https://velidogan120.github.io/movieapp/",
+      "image":"./src/assets/invidual-projects//MovieApp.png"
+    },
+    {
+      "link":"https://velidogan120.github.io/Upstart-Flex/",
+      "image":"./src/assets/invidual-projects/Upstart.png"
+    },
+    {
+      "link":"https://velidogan120.github.io/Druco-Grid/",
+      "image":"./src/assets/invidual-projects/Druco.png"
+    },
+    {
+      "link":"https://velidogan120.github.io/Agon-Transition-Animation/",
+      "image":"./src/assets/invidual-projects/Agon.png"
+    },
+    {
+      "link":"https://velidogan120.github.io/Hotel-Flex/",
+      "image":"./src/assets/invidual-projects/Hotel.png"
+    },
+    {
+      "link":"https://velidogan120.github.io/DirectoryAds-SCSS/",
+      "image":"./src/assets/invidual-projects/Directory.png"
+    },
+    {
+      "link":"https://velidogan120.github.io/Freelancer-SCSS/",
+      "image":"./src/assets/invidual-projects/Freelancer.png"
+    },
+    {
+      "link":"https://velidogan120.github.io/SmartPos-SCSS/",
+      "image":"./src/assets/invidual-projects/Smart-POS.png"
+    },
+    {
+      "link":"https://velidogan120.github.io/Hosthub-Bootstrap-SCSS/",
+      "image":"./src/assets/invidual-projects/Hosthub.png"
+    },
+    {
+      "link":"https://velidogan120.github.io/Imagine-Bootstrap/",
+      "image":"./src/assets/invidual-projects/Imagine.png"
+    },
+    {
+      "link":"https://velidogan120.github.io/Calculator-Demo/",
+      "image":"./src/assets/invidual-projects/calculator.png"
+    },
+    {
+      "link":"https://velidogan120.github.io/Odev2/",
+      "image":"./src/assets/invidual-projects/library.png"
+    }
+  ],
+  "socials":[
+    {
+      "name":"Linkedin",
+      "link":"https://www.linkedin.com/in/veli-d-6a2887a2/",
+      "icon":"fa-brands fa-linkedin"
+    },
+    {
+      "name":"Instagram",
+      "link":"https://www.instagram.com/veli__dogan/",
+      "icon":"fa-brands fa-square-instagram"
+    },
+    {
+      "name":"Github",
+      "link":"https://github.com/velidogan120",
+      "icon":"fa-brands fa-square-github"
+    },
+    {
+      "name":"Steam",
+      "link":"https://steamcommunity.com/id/velidogan120/",
+      "icon":"fa-brands fa-steam"
+    },
+    {
+      "name":"Discord",
+      "link":"https://discord.gg/8zTyjSu2Tj",
+      "icon":"fa-brands fa-discord"
+    }
+  ]
+}
