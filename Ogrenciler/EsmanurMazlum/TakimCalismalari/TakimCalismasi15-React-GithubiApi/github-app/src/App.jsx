@@ -1,28 +1,41 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { getUsersApi, getUserApi } from './Api';
 import './App.css'
 import SearchBar from './components/SearchBar'
+import UserList from './components/UserList'
+import Errors from './components/Errors'
 
 function App() {
-  const [users, setUsers] = useState([]);
+
+  const input = useRef();
+  const [users, setUsers] = useState();
   const [target, setTarget] = useState("");
-  
+  const [error, setError] = useState(false);
+
   const onChange = (e) => {
     setTarget(e.target.value);
   }
 
-  const getUsers = async () => {
-    await fetch(`https://api.github.com/search/users?q=esmanurrr`)
-      .then(res => res.json()).then((data) => {setUsers(data)}).catch(err => console.log(err));
+  const getUsers = async (target) => {
+    try {
+      const usersData = await getUsersApi(target);
+      setUsers(usersData);
+      setTarget("");
+    } catch (error) {
+      setUsers("");
+      setError(true);
+    }
   }
 
-  // useEffect(() => {
-  //   getUsers(target);
-  // }, [target])
-
-
+  useEffect(() => {
+    input.current.focus();
+    if (target) { getUsers(target); }
+  }, [])
   return (
     <>
-      <SearchBar target={target} onChange={onChange} getUsers={getUsers}/>
+      <SearchBar target={target} onChange={onChange} getUsers={getUsers} input={input} />
+      {users ? <UserList users={users} /> : (error ? <Errors error={error} /> : <h2>Arama Yapınız</h2>)}
+      {users?.items?.length < 1 ? "Kullanıcı Bulunamadı": ""}
     </>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function SearchBar({target, onChange}) {
+function SearchBar({ target, onChange, getUsers, input }) {
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -10,9 +10,12 @@ function SearchBar({target, onChange}) {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="d-flex justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
-                        <form className="d-flex" role="search">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={target} onChange={(e) => onChange(e)}/>
-                            <button className="btn btn-outline-success" onSubmit={(e) => {getUsers(target, e)}}>Search</button>
+                        <form className="d-flex" role="search" onSubmit={(e) => {
+                            e.preventDefault();
+                            getUsers(target);
+                        }}>
+                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" ref={input} value={target} onChange={(e) => onChange(e)} />
+                            <button className="btn btn-outline-success" type='submit'>Search</button>
                         </form>
                     </div>
                 </div>
