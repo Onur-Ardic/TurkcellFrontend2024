@@ -1,4 +1,5 @@
 const url = "http://localhost:3000/movies";
+
 export const get = async () => {
   const response = await fetch(url);
   if (!response.ok) {

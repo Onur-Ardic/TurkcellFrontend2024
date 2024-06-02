@@ -1,0 +1,32 @@
+.card-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  gap: 1rem;
+}
+
+.card {
+  color: #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 380px;
+  transition: 0.6s ease;
+  .card-left {
+    img {
+      width: 140px;
+    }
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: #121212;
+  }
+}

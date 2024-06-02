@@ -1,0 +1,88 @@
+@import ../node_modules/bootstrap/scss/bootstrap.scss
+@import ../node_modules/bootstrap-icons/font/bootstrap-icons.css
+
+*
+    box-sizing: border-box
+    margin: 0
+    border: 0
+
+body
+    background: url(https://cdn.pixabay.com/photo/2023/03/15/20/46/background-7855413_1280.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-blend-mode: overlay
+
+.form-signin
+    padding: 15px
+    background: #dbcaca69
+
+#navbar
+    background: rgba(255, 255, 255, 0.2)
+    border-radius: 16px
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+    backdrop-filter: blur(5px)
+    -webkit-backdrop-filter: blur(5px)
+    margin: 1.5rem
+
+#choosemovie
+    width: 70%
+    padding: 15px
+    margin: 0 auto 0 auto
+    row-gap: 4rem
+    flex-wrap: wrap
+    .card
+        color: white
+        background: rgba(255, 255, 255, 0.2)
+        border-radius: 16px
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+        backdrop-filter: blur(5px)
+        -webkit-backdrop-filter: blur(5px)
+        width: 20%
+        height: 300px
+        #cardBody
+            height: 200px
+
+#choosechair
+    background: #dbcaca69
+    width: 90%
+    padding: 15px
+    margin: 10% auto 0 auto
+    .chair-wrapper
+        .chair
+            display: inline-block
+            grid-template-rows: auto
+            height: 50px
+            width: 50px
+            border: 1px solid white
+            &:hover
+                background-color: #f7de05
+                color: #fff
+                transition: 0.3s ease
+                cursor: pointer
+            &.reserved
+                background-color: #ffffff
+                color: #000000
+            &.selected
+                background-color: #f7de05
+                color: #fff
+
+    .full
+        display: inline-block
+        background-color: #ffffff
+        height: 50px
+        width: 50px
+    .empty
+        display: inline-block
+        border: 1px solid white
+        color: #fff
+        height: 50px
+        width: 50px
+    .sec
+        @extend .empty
+        background-color: #f7de05
+
+#createticket
+    background: #dbcaca69
+    width: 50%
+    padding: 15px
+    margin: 10% auto 0 auto

@@ -29,9 +29,7 @@ export const CategoriesCard = ({
       } ${styles[color]}`}
     >
       <h2 className={styles.cardsTitle}>{title}</h2>
-      {filtered.map((toDo, index) => (
-        <Cards
-          toDo={toDo}
+      {filtered.map((toDo, index) => (<Cards toDo={toDo}
           key={index}
           onDelete={(id) => onDelete(id)}
           onUpdate={onUpdate}
