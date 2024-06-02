@@ -34,10 +34,12 @@ function App() {
   return (
     <>
       <SearchBar target={target} onChange={onChange} getUsers={getUsers} input={input} />
-      {users ? <UserList users={users} /> : (error ? <Errors error={error} /> : <h2>Arama Yapınız</h2>)}
-      {users?.items?.length < 1 ? "Kullanıcı Bulunamadı": ""}
+      {users ? <UserList users={users} /> : (error ? <Errors error={error} /> : <div className='alert alert-info'><h2 className='text-center p-3'>Arama Yapınız</h2></div>)}
+      {users?.items?.length < 1 ? <div className='alert alert-warning'><h2 className='text-center p-3'>Kullanıcı Bulunamadı</h2></div>: ""}
     </>
   )
 }
 
 export default App
+
+

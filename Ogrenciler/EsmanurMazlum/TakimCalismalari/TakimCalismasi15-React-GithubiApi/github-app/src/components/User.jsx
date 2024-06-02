@@ -1,9 +1,10 @@
+import { ButtonDetails,UsrCard } from "../styled";
 
 function User({ user, handlePortal }) {
 
     return (
         <>
-            <div className="card my-3">
+            <UsrCard   >
                 <div className='row'>
                     <div className='col-2'>
                         <img src={user.avatar_url} width="100px" height="100px" />
@@ -15,10 +16,10 @@ function User({ user, handlePortal }) {
                         <p>{user.type}</p>
                     </div>
                     <div className="col-2 align-self-center">
-                        <button className="btn btn-info" onClick={(e) => { e.preventDefault(); handlePortal(user.login,e); }}>Details</button>
+                        <ButtonDetails onClick={(e) => { e.preventDefault(); handlePortal(user.login,e); }}>Details</ButtonDetails>
                     </div>
                 </div>
-            </div>
+            </UsrCard>
         </>
     )
 }

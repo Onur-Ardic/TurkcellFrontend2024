@@ -3,7 +3,7 @@ import React from 'react'
 const Errors = ({error}) => {
   return (
     <>
-    {error && <h2>Hata Aldın Tekrar Dene</h2>}
+    {error && <div className='alert alert-danger'><h2 className='text-center p-3'>Hata Aldın Tekrar Dene</h2></div>}
     </>
   )
 }
