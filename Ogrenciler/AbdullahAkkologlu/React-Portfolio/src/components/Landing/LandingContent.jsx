@@ -19,7 +19,18 @@ const LandingContent = () => {
         I'm a passionate frontend developer who loves crafting digital
         experiences that make a difference.
       </LandingDesc>
-      <Techs />
+      <Techs
+        techs={[
+          "html",
+          "css",
+          "sass",
+          "bootstrap",
+          "tailwind",
+          "js",
+          "react",
+          "styledcomponents",
+        ]}
+      />
       <RowBetween>
         <Col width={45}>
           <ConnectButton href="mailto:abdullahakkol@gmail.com">

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 0 auto 10rem auto;
 `;
 export const LandingContainer = styled(Container)`
   padding-top: 10rem;
@@ -20,6 +20,10 @@ export const Row = styled.div`
 `;
 export const RowBetween = styled(Row)`
   justify-content: space-between;
+`;
+export const UnderLineDiv = styled(RowBetween)`
+  border-bottom: 2px solid black;
+  margin-bottom: 0.75rem;
 `;
 export const Col = styled.div`
   width: ${(props) => props.width}%;
@@ -42,7 +46,6 @@ export const Ul = styled.ul`
 export const TechsUl = styled(Ul)`
   display: flex;
   gap: 1rem;
-  margin-bottom: 2.5rem;
 `;
 export const TechLi = styled.li`
   transition: 0.3s all ease-in-out;
@@ -72,5 +75,14 @@ export const ConnectButton = styled(Button)`
   gap: 0.5rem;
   color: white;
   background-color: black;
-  margin-right: ;
+  margin-top: 2.5rem;
+`;
+export const Image = styled.img`
+  width: 100%;
+`;
+export const ProjectName = styled.h1`
+  padding-bottom: 0.75rem;
+`;
+export const ProjectDesc = styled.p`
+  text-align: justify;
 `;
