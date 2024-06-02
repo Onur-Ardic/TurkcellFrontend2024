@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { getWeather } from "../request";
 import WeatherList from "./WeatherList";
 import { HiCloud } from "react-icons/hi";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
+
 import "./css/InputArea.css";
 
 function InputArea() {
@@ -61,7 +63,9 @@ function InputArea() {
         </button>
       </div>
       {loading ? (
-        <p>Loading</p>
+        <p className="text-center p-3 fs-5">
+          <AiOutlineLoading3Quarters />
+        </p>
       ) : (
         <WeatherList weather={weather} showCity={showCity} />
       )}
