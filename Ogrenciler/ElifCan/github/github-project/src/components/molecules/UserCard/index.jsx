@@ -4,11 +4,12 @@ import './index.css'
 const UserCard = ({ user }) => {
   console.log(user);
   return (
-    <>
-    <div>
+    <> 
+    <div className="userInfo">
+    <div className="profile">
     <img className="profileImg" src={user.avatar_url} alt="" />
     </div>
-    <div>
+    <div className="contentRight">
     <h2>{user.name}</h2>
       <i className="bi bi-people-fill"></i> <p>Followers: {user.followers}</p><p>Following: {user.following}</p>
       
@@ -22,9 +23,10 @@ const UserCard = ({ user }) => {
       <p>Company: {user.company} </p>
       <p>location:{user.location} </p>
       <p>Public Repos: {user.public_repos} </p>
-    
     </div>
    
+    </div>
+    
     </>
   );
 };
