@@ -5,10 +5,20 @@ import Modal from './Modal';
 
 const ProjectsContainer = styled.section`
   padding: 2rem;
-  background-color: #111;
-  color: #fff;
+  background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c'); /* Projeler bölümü için arka plan resmi */
+  background-size: cover;
+  background-position: center;
   text-align: center;
   width: 100%;
+  color: #fff;
+`;
+
+const ProjectsTitle = styled.h2`
+  border: 2px solid #fff;
+  background-color: #000;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
 `;
 
 const ProjectsGrid = styled.div`
@@ -39,7 +49,7 @@ const Projects = () => {
 
   return (
     <ProjectsContainer id="projects">
-      <h2>Projeler</h2>
+      <ProjectsTitle>Projeler</ProjectsTitle>
       <ProjectsGrid>
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} onDetailsClick={handleDetailsClick} />

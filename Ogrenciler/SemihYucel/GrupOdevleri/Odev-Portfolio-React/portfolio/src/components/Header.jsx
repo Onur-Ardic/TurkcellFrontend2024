@@ -5,6 +5,9 @@ const HeaderContainer = styled.header`
   padding: 6rem 2rem;
   color: #fff;
   text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1556761175-129418cb2dfe'); /* Header için arka plan resmi */
+  background-size: cover;
+  background-position: center;
 `;
 
 const ProfileImage = styled.img`
@@ -17,8 +20,8 @@ const ProfileImage = styled.img`
 const Header = () => (
   <HeaderContainer>
     <ProfileImage src="https://via.placeholder.com/150" alt="Profile" />
-    <h1>Ad Soyad</h1>
-    <p>email@example.com</p>
+    <h1>Semih YÜCEL</h1>
+    <p>semihycl0@gmail.com</p>
   </HeaderContainer>
 );
 

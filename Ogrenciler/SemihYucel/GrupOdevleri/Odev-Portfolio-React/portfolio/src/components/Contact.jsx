@@ -13,36 +13,47 @@ const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background-color: #333;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 `;
 
 const FormField = styled.div`
   margin-bottom: 1rem;
   width: 100%;
-  max-width: 400px;
 `;
 
 const Label = styled.label`
   display: block;
   margin-bottom: 0.5rem;
+  color: #ccc; 
 `;
 
 const Input = styled.input`
   width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
+  padding: 0.75rem;
+  border: 1px solid #555;
   border-radius: 4px;
+  background-color: #444;
+  color: #fff;
 `;
 
 const TextArea = styled.textarea`
   width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
+  padding: 0.75rem;
+  border: 1px solid #555;
   border-radius: 4px;
+  background-color: #444;
+  color: #fff;
   resize: none;
 `;
 
 const Button = styled.button`
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   background-color: #555;
   color: #fff;
   border: none;

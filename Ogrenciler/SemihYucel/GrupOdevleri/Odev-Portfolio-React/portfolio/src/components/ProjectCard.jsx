@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Card = styled.div`
-  background-color: #222;
+  background-color: #000; /* Kartların arka plan rengini siyah yapalım */
   border-radius: 8px;
   padding: 1rem;
   margin: 1rem;
