@@ -6,7 +6,7 @@ const Card = styled.div`
   border-radius: 8px;
   padding: 1rem;
   margin: 1rem;
-  width: 250px; /* Kart genişliğini artırdık */
+  width: 250px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -15,9 +15,9 @@ const Card = styled.div`
 
 const ProjectImage = styled.img`
   width: 100%;
-  height: 150px; /* Yüksekliği artırdık */
+  height: 150px;
   border-radius: 4px;
-  margin-bottom: 1rem; /* Görsel ile buton arasına boşluk ekledik */
+  margin-bottom: 1rem;
 `;
 
 const ProjectButton = styled.button`
@@ -25,7 +25,7 @@ const ProjectButton = styled.button`
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
-  margin-top: 1rem; /* Buton ile yazı arasına boşluk ekledik */
+  margin-top: 1rem;
   border-radius: 4px;
   cursor: pointer;
   &:hover {

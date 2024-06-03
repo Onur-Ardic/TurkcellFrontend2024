@@ -15,7 +15,7 @@ const ProjectsGrid = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem; /* Kartlar arasındaki boşluğu artırdık */
+  gap: 2rem;
 `;
 
 const Projects = () => {

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeaderContainer = styled.header`
-  padding: 6rem 2rem; /* Paddingi artırarak içeriğin daha iyi görünmesini sağladık */
+  padding: 6rem 2rem;
   color: #fff;
   text-align: center;
 `;

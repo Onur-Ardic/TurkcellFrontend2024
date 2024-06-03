@@ -5,8 +5,8 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #000; /* Arka plan siyah */
-    color: #fff; /* Yazı rengi beyaz */
+    background-color: #000;
+    color: #fff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
