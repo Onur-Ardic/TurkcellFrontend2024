@@ -3,11 +3,11 @@ class Request{
         try{
             const response = await fetch(url);
             if(!response.ok)
-                throw new Error("Kitap bulunamadı.")
+                throw new Error("Kullanıcı bulunamadı.")
             const data = await response.json();
             return data;
         } catch (err) {
-          console.log(err.message);
+          return err;
         }
     }
   }

@@ -28,17 +28,9 @@ const App = () => {
     }
     return true
   }
-<<<<<<< Updated upstream
   const addUpdate = async (e) => {
     e.preventDefault();
     if(!validationStatus()){
-=======
-
-
-  const addUpdate = async (e) => {
-    e.preventDefault()
-    if (!validationStatus()) {
->>>>>>> Stashed changes
       return
     }
     const currentDateTime = new Date().toLocaleString()

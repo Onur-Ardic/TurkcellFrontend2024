@@ -4,7 +4,7 @@ import { getUserApi } from '../Api';
 import UserPortal from './UserPortal';
 import { createPortal } from 'react-dom';
 
-const UserList = ({ users }) => {
+const UserList = ({ users, error, setError }) => {
 
   const [userDetail, setUserDetail] = useState();
   const [portal, setPortal] = useState(false);
@@ -17,9 +17,8 @@ const UserList = ({ users }) => {
       setPortal(true);
       const userDetails = await getUserApi(id);
       setUserDetail(userDetails);
-      console.log(userDetail)
     } catch (error) {
-      console.log(error);
+      setError(true);
     } finally {
       setLoading(false);
     }
@@ -36,7 +35,7 @@ const UserList = ({ users }) => {
           {!loading &&
             <>
               {users?.items?.map((user) => <User key={user.id} user={user} handlePortal={handlePortal} />)}
-              {portal && createPortal(<UserPortal userDetail={userDetail} closePortal={closePortal} />, document.body)}
+              {portal && createPortal(<UserPortal userDetail={userDetail} closePortal={closePortal} error={error}/>, document.body)}
 
             </>}
         </div>

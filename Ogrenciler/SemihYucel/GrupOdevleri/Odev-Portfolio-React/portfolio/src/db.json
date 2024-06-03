@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Proje 1",
+      "endDate": "2023-12-31",
+      "language": "JavaScript",
+      "description": "Bu proje bir örnek projedir.",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 2,
+      "name": "Proje 2",
+      "endDate": "2024-06-30",
+      "language": "Python",
+      "description": "Bu proje başka bir örnek projedir.",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 3,
+      "name": "Proje 3",
+      "endDate": "2024-01-15",
+      "language": "Java",
+      "description": "Bu proje bir Java projesidir.",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 4,
+      "name": "Proje 4",
+      "endDate": "2024-03-20",
+      "language": "C#",
+      "description": "Bu proje bir C# projesidir.",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 5,
+      "name": "Proje 5",
+      "endDate": "2024-05-10",
+      "language": "Ruby",
+      "description": "Bu proje bir Ruby projesidir.",
+      "image": "https://via.placeholder.com/150"
+    }
+  ]
+}

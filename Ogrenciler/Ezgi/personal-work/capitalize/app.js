@@ -9,5 +9,5 @@ const capitalizeTheFirstLetter = (sentence) => {
     return capitalizedWords.join(" ");
 }
 
-const sentence = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+const sentence = "Lorem ipsum dolor sit amet, consectetur adipiscing elit aliqua"
 console.log(capitalizeTheFirstLetter(sentence));

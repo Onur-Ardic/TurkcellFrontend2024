@@ -45,6 +45,35 @@ function App() {
 
     ui.addMoviesUI(movie);
   });
+
+  function MovieCrud() {
+    this.getMovies = function () {
+      let movies = JSON.parse(localStorage.getItem("movies")) || [];
+      return movies;
+    };
+
+    this.setMovies = function (movies) {
+      localStorage.setItem("movies", JSON.stringify(movies));
+    };
+
+    this.addMovie = function (movie) {
+      let movies = this.getMovies();
+      movies.push(movie);
+      this.setMovies(movies);
+    };
+
+    this.deleteMovie = function (id) {
+      let movies = this.getMovies();
+      movies = movies.filter((movie) => movie.id !== id);
+      this.setMovies(movies);
+    };
+
+    this.updateMovie = function (movie) {
+      let movies = this.getMovies();
+      movies = movies.map((m) => (m.id === movie.id ? movie : m));
+      this.setMovies(movies);
+    };
+  }
 }
 
 export default App;
