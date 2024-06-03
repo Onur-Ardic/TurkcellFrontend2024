@@ -1,4 +1,11 @@
-import { Col, ProjectName, ProjectDesc, UnderLineDiv } from "../../styles";
+import {
+  Col,
+  ProjectName,
+  ProjectDesc,
+  UnderLineDiv,
+  ConnectButton,
+  RowBetween,
+} from "../../styles";
 import Techs from "../Landing/Techs";
 
 const ProjectContent = ({ name, techs, desc }) => {
@@ -9,6 +16,14 @@ const ProjectContent = ({ name, techs, desc }) => {
         <Techs techs={techs} />
       </UnderLineDiv>
       <ProjectDesc>{desc}</ProjectDesc>
+      <RowBetween>
+        <Col width={45}>
+          <ConnectButton>Demo</ConnectButton>
+        </Col>
+        <Col width={45}>
+          <ConnectButton>Code</ConnectButton>
+        </Col>
+      </RowBetween>
     </Col>
   );
 };

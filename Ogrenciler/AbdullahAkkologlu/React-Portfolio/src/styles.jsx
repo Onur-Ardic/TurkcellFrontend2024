@@ -70,6 +70,7 @@ export const Button = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 `;
 export const ConnectButton = styled(Button)`
   gap: 0.5rem;
@@ -85,4 +86,7 @@ export const ProjectName = styled.h1`
 `;
 export const ProjectDesc = styled.p`
   text-align: justify;
+`;
+export const PaddingY = styled.div`
+  padding: 2rem 0;
 `;
