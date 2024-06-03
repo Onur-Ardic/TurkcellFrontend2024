@@ -27,4 +27,6 @@
 22-05-2024: Set up react dependencies
 24-05-2024: Make a Cinema Collection with react
 27-05-2024: Make a To-Do App with react
-29-05-2024: 
+29-05-2024: Make a Weather App with react
+31-05-2024: Make a portfolio and make an app with github api with react
+03-06-2024:

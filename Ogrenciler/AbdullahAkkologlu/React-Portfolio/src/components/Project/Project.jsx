@@ -1,13 +1,15 @@
-import { RowBetween } from "../../styles";
+import { RowBetween, PaddingY } from "../../styles";
 import ProjectContent from "./ProjectContent";
 import ProjectDemo from "./ProjectDemo";
 
 const Project = ({ gif, name, techs, desc }) => {
   return (
-    <RowBetween>
-      <ProjectContent name={name} techs={techs} desc={desc} />
-      <ProjectDemo gif={gif} />
-    </RowBetween>
+    <PaddingY>
+      <RowBetween>
+        <ProjectContent name={name} techs={techs} desc={desc} />
+        <ProjectDemo gif={gif} />
+      </RowBetween>
+    </PaddingY>
   );
 };
 
