@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$btnGradient: linear-gradient(to right, #ff5195, #ffb84b);
+$colorGray: #696969;
+$colorBg: #f9f2ff;
+$colorPink: #c961fa;
+$colorRed: #fd4372;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  color: $colorGray;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@mixin flexible($justify, $align, $direction, $gap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+@mixin font($size, $color, $weight, $lineHeight) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+
+@mixin button($padding, $borderRad, $color, $bgColor) {
+  padding: $padding;
+  border-radius: $borderRad;
+  color: $color;
+  background: $bgColor;
+}
+
+.container {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.bgColor {
+  background-color: #fffcfa;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+ul {
+  cursor: pointer;
+}
+
+h2 {
+  @include font(36px, black, 700, 48px);
+}
+h6 {
+  @include font(18px, black, 700, 30px);
+}
+h5 {
+  @include font(20px, black, 700, 24px);
+}
+
+.main-btn {
+  cursor: pointer;
+  @include button(16px 25px, 4px, #fff, $btnGradient);
+}
+
+.main-header {
+  h2,
+  h4 {
+    @include font(36px, black, 700, null);
+    margin: -10px 0 20px;
+  }
+  p {
+    @include font(16px, $colorGray, 400, null);
+    max-width: 650px;
+    margin: auto;
+  }
+}
+
+.hoverEffect {
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #bb6df7;
+  position: absolute;
+  content: "";
+}
+
+.col-6 {
+  width: 50%;
+}
+.col-3 {
+  width: 25%;
+}
