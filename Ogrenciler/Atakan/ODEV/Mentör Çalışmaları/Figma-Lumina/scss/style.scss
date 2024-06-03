@@ -1,0 +1,81 @@
+@import "./global.scss";
+
+header {
+  margin-top: 20px;
+  * {
+    color: white;
+  }
+  .arrow-repeat {
+    a {
+      .bi {
+        color: black;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .header-logo {
+    a {
+      font-size: 2.5rem;
+      color: black;
+    }
+  }
+  .header-nav {
+    .nav-list {
+      gap: 1.5rem;
+
+      .nav-list-item {
+        a {
+          .bi {
+            color: black;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+.hero-section::before {
+  content: "";
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("https://www.lorealparis.com.tr/-/media/project/loreal/brand-sites/oap/emea/tr/articles/2024/bright-reveal-home-banner-2024.jpg?rev=112783f990dd4242ba2dd8bd95af3471&cx=0.4&cy=0.54&cw=2000&ch=800&hash=CDF558135CAF71D4BB328D1344D027372A41A90A");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.hero-section {
+  * {
+    position: relative;
+  }
+  min-height: 100vh;
+}
+
+.welcome-section {
+  margin-top: 300px;
+  color: white;
+  h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  .btn {
+    background-color: transparent;
+    color: black;
+    border: 1px solid greenyellow;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    &:hover {
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
