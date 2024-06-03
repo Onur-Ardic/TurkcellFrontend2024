@@ -1,4 +1,4 @@
-import { tertiary } from "../../../common/colors";
+import { tertiary } from "../../../../common/colors";
 import { Card, Title, Paragraph, Col } from "./styled";
 
 const AcademicCard = ({
@@ -7,22 +7,22 @@ const AcademicCard = ({
   startDate = "",
   endDate = "",
   desc = "",
+  padding,
+  br,
 }) => {
   return (
-    <Card>
+    <Card padding={padding} br={br}>
       <Col>
         <Title>{company}</Title>
-        <Paragraph color={tertiary} fw="bold">
-          {title}
-        </Paragraph>
+        <Title color={tertiary}>{title}</Title>
         {desc === "" ? null : <Paragraph>{desc}</Paragraph>}
       </Col>
       <Col>
-        {startDate === "" ? null : (
-          <Paragraph textalign="end">{startDate}</Paragraph>
-        )}
         {endDate === "" ? null : (
           <Paragraph textalign="end">{endDate}</Paragraph>
+        )}
+        {startDate === "" ? null : (
+          <Paragraph textalign="end">{startDate}</Paragraph>
         )}
       </Col>
     </Card>

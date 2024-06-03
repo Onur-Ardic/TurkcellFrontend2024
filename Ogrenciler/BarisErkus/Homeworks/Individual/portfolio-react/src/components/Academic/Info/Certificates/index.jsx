@@ -1,4 +1,4 @@
-import { Title } from "../../../common/styled";
+import { Title } from "../../../../common/styled";
 import AcademicCard from "../AcademicCard";
 
 const Certificates = () => {
@@ -16,10 +16,6 @@ const Certificates = () => {
       title: "Patika.dev",
     },
     {
-      company: "ReactJS: Applied ReactJS - Redux Training",
-      title: "Udemy",
-    },
-    {
       company: "Web Programming with REACT",
       title: "BTK Academy",
     },
@@ -28,23 +24,27 @@ const Certificates = () => {
       title: "BTK Academy",
     },
     {
-      company: "Every Aspect SQL Server",
-      title: "BTK Academy",
-    },
-    {
-      company: "Project Management Fundamentals",
-      title: "BTK Academy",
-    },
-    {
       company: "Software Design Patterns",
       title: "BTK Academy",
+    },
+    {
+      title: (
+        <a href="https://www.linkedin.com/in/bariserkus/" target="_blank">
+          You can access all my certificates from my LinkedIn profile.
+        </a>
+      ),
     },
   ];
   return (
     <>
       <Title>Certificates</Title>
       {certificates.map((certificate, index) => (
-        <AcademicCard key={index} {...certificate} />
+        <AcademicCard
+          key={index}
+          {...certificate}
+          padding="30px 50px"
+          br="200px"
+        />
       ))}
     </>
   );

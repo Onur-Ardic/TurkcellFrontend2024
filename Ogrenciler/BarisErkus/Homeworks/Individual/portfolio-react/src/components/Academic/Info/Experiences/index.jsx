@@ -1,14 +1,14 @@
-import { Title } from "../../../common/styled";
+import { Title } from "../../../../common/styled";
 import AcademicCard from "../AcademicCard";
 
-const Experiances = () => {
-  const experiances = [
+const Experiences = () => {
+  const experiences = [
     {
       company: "Tosyalı Holding",
       title: "Research And Development Intern",
       startDate: "February 2024",
       endDate: "May 2024",
-      desc: "I improved my engineering skills during my time here. In the field of engineering; I learned about literature, patents, OPEX, R&D and RPA. Also in the field of computer engineering; I developed an application with artificial intelligence, made screen drawings of a web application using figma and coded these drawings using react.",
+      desc: "In this process, I improved my engineering skills. In the field of engineering; I learned about literature, patents, OPEX, R&D and RPA. Also in the field of computer engineering; I developed an application with artificial intelligence, made screen drawings of a web application using figma and coded these drawings using react.",
     },
     {
       company: "Freelance (Contract)",
@@ -36,7 +36,7 @@ const Experiances = () => {
       title: "Software Engineer Intern",
       startDate: "October 2022",
       endDate: "January 2023",
-      desc: "I worked mostly on the backend. I worked on a real project using C# (.NET) and SQL Server (EntityFramework).",
+      desc: "I worked generally on the backend. I worked on a real project using C# (.NET) and SQL Server (EntityFramework).",
     },
     {
       company: "Net Informatics & Soft Services",
@@ -48,12 +48,12 @@ const Experiances = () => {
   ];
   return (
     <>
-      <Title>Experiances</Title>
-      {experiances.map((experiance, index) => (
+      <Title>Experiences</Title>
+      {experiences.map((experiance, index) => (
         <AcademicCard key={index} {...experiance} />
       ))}
     </>
   );
 };
 
-export default Experiances;
+export default Experiences;

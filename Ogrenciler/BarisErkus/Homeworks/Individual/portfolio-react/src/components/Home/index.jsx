@@ -1,12 +1,20 @@
-import { A, Container } from "../../common/styled";
+import { tertiary } from "../../common/colors";
+import { A, Container, Subtitle } from "../../common/styled";
 import { Title, Paragraph } from "../../common/styled";
 import { Image, Strong, SocialMediaContainer, SocialMediaLink } from "./styled";
 
-const Home = ({ socialMediaLinks, email }) => {
+const Home = ({ socialMediaLinks }) => {
   return (
-    <Container id="home" direction="column" alignitems="center">
+    <Container
+      id="home"
+      direction="column"
+      alignitems="center"
+      padding="50px 50px 100px 50px"
+      className="animate__animated animate__backInUp"
+    >
       <Image src="myPhoto.jpg" alt="My Photo" />
       <Title>BARIŞ ERKUŞ</Title>
+      <Subtitle color={tertiary}>Front-End Developer</Subtitle>
       <Paragraph>
         <Strong>My philosophy:</Strong> Seeing myself as a project and
         developing this project in the best possible way. Software is my
@@ -24,8 +32,13 @@ const Home = ({ socialMediaLinks, email }) => {
           <i className="fa-brands fa-medium"></i>
         </SocialMediaLink>
       </SocialMediaContainer>
-      <A href={"mailto:" + email} padding="15px 50px" fontSize="1.5rem">
-        Contact Me
+      <A
+        href="cv.pdf"
+        download="Baris_Erkus_CV.pdf"
+        padding="10px 40px"
+        fontSize="1.5rem"
+      >
+        Download CV
       </A>
     </Container>
   );

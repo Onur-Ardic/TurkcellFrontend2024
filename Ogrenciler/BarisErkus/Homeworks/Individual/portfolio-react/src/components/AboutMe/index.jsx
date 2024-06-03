@@ -8,9 +8,11 @@ const AboutMe = () => {
       bgcolor={secondary}
       direction="column"
       alignitems="center"
+      justifycontent="center"
+      padding="100px 50px"
     >
       <Title>WHO IS BARIŞ ERKUŞ ?</Title>
-      <Paragraph>
+      <Paragraph mw="1500px">
         Barış Erkuş was born on April 18, 2002 in Adana. He studied at
         Iskenderun Technical University in 2020 - 2024. During his educational
         life here, he had an internship in 3 different companies, a full-time

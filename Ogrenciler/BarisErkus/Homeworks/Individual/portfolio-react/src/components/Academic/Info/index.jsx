@@ -1,13 +1,13 @@
-import { Col, Container } from "../../common/styled";
+import { Col, Container } from "../../../common/styled";
 import Certificates from "./Certificates";
 import Education from "./Education";
-import Experiances from "./Experiances";
+import Experiences from "./Experiences";
 
 const AcademicInfo = () => {
   return (
     <Container id="worksEducations" direction="row" justifycontent="center">
       <Col width="50%">
-        <Experiances />
+        <Experiences />
       </Col>
       <Col width="50%">
         <Education />

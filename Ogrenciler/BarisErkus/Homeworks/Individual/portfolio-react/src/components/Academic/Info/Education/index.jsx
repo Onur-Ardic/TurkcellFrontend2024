@@ -1,4 +1,4 @@
-import { Title } from "../../../common/styled";
+import { Title } from "../../../../common/styled";
 import AcademicCard from "../AcademicCard";
 
 const Education = () => {
@@ -21,7 +21,12 @@ const Education = () => {
     <>
       <Title>Education</Title>
       {educations.map((education, index) => (
-        <AcademicCard key={index} {...education} />
+        <AcademicCard
+          key={index}
+          {...education}
+          padding="30px 50px"
+          br="200px"
+        />
       ))}
     </>
   );
