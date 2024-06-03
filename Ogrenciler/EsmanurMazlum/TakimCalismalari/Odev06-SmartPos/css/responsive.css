@@ -1,0 +1,83 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+@media (max-width: 991px) {
+  .menu-wrapper {
+    display: none !important;
+  }
+  .header-bar {
+    display: block !important;
+  }
+  .container {
+    max-width: 960px;
+  }
+  .row {
+    justify-content: center !important;
+  }
+  .card-wrapper {
+    margin: 15px !important;
+  }
+  .lab-item {
+    width: 50% !important;
+  }
+  .retail-wrapper {
+    flex-direction: column !important;
+  }
+  .retail-wrapper .item {
+    width: 100% !important;
+  }
+  .swiper-slide {
+    flex-direction: column !important;
+    margin: 0 20px;
+  }
+  .tryfree {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .tryfree .ortala_artik {
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .links {
+    flex-direction: column;
+    padding-left: 80px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .header-bar {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .resim-1,
+  .resim-2,
+  .shape-1,
+  .shape-2,
+  .shape-3 {
+    display: none;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .banner-thumbs img {
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

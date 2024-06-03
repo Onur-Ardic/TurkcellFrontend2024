@@ -1,0 +1,31 @@
+body {
+  background-color: #a6a0bd;
+}
+.home {
+  height: 90vh;
+  position: relative;
+}
+.sideBar {
+  background: #d0cbe4;
+  width: 12rem;
+  height: 101vh;
+  position: absolute;
+  top: -60px;
+  right: 0;
+}
+.sliderBar {
+  height: 5rem;
+}
+.sideBarContent {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 60px 0 0 60px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 24rem;
+  height: 85vh;
+  top: 10%;
+  position: absolute;
+  right: 0;
+}
