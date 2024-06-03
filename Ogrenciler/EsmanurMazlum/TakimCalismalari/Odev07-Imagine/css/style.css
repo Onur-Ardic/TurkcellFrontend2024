@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif !important;
+  background-color: #fff;
+}
+
+section {
+  padding: 5em 0;
+}
+
+a {
+  color: #4285f4;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.primary-bg-color {
+  background-color: #4285f4 !important;
+}
+
+.primary-text-color {
+  color: gray;
+}
+
+.colorb {
+  color: black !important;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.hero-section .container .hero-info .get-started {
+  padding: 10px 30px;
+}
+
+.imagine-features-section .feature-info {
+  margin-bottom: 8rem;
+}
+.imagine-features-section .feature-cards {
+  gap: 30px;
+}
+.imagine-features-section .feature-cards .card {
+  border: none;
+  background-color: #f1f1f1;
+  padding: 40px 15px 15px;
+  margin: 0 0 64px;
+}
+.imagine-features-section .feature-cards .card .card-icon .icon-wrap {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #4285f4;
+  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+}
+.imagine-features-section .feature-cards .card .card-icon .icon-wrap i {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  color: #fff !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.imagine-features-section .feature-cards .card .card-body .card-text {
+  color: gray;
+}
+.imagine-features-section .feature-cards .card:hover {
+  background-color: #4285f4;
+  color: #fff;
+  transform: translateY(-10px);
+  transition: 0.3s all ease;
+}
+.imagine-features-section .feature-cards .card:hover .card-icon .icon-wrap {
+  background-color: #fff;
+}
+.imagine-features-section .feature-cards .card:hover .card-icon .icon-wrap i {
+  color: #4285f4 !important;
+}
+.imagine-features-section .feature-cards .card:hover .card-body .card-text {
+  color: #fff;
+}
+.imagine-features-section .feature-cards .card:hover .card-body a {
+  color: #fff;
+}
+
+.feature-big .container .feature-big-part {
+  margin-bottom: 10rem;
+}
+.feature-big .container .feature-big-part .feature-big-info h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.feature-big .container .feature-big-part .feature-big-info p {
+  color: gray;
+}
+.feature-big .container .feature-big-part .feature-big-info .author-box {
+  box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-left: 10px solid #4285f4;
+}
+.feature-big .container .feature-big-part .feature-big-info .author-box img {
+  max-width: 50px;
+  height: 50px;
+}
+.feature-big .container .feature-big-part .feature-big-info .author-box blockquote {
+  font-style: italic;
+  color: gray;
+}
+
+.about-us {
+  color: gray;
+}
+.about-us .section-title {
+  font-size: 40px;
+  color: #000;
+  font-weight: 700;
+}
+.about-us img {
+  width: 540px;
+}
+.about-us .ul-check li i {
+  color: #8bc34a;
+  margin-right: 1rem;
+}
+.about-us .learn-btn {
+  border-width: 2px;
+  background: #4285f4;
+  border-color: #4285f4;
+  color: #fff;
+  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+.our-team-section .container .row .col-7 .section-title {
+  font-size: 40px;
+  color: #000;
+  font-weight: 700;
+}
+.our-team-section .container .row .col-7 p {
+  font-size: 20px;
+  color: gray;
+  font-weight: 300;
+}
+.our-team-section .container .row .card {
+  border: none;
+}
+.our-team-section .container .row .card:hover .card-img {
+  overflow: hidden;
+}
+.our-team-section .container .row .card:hover .card-img img {
+  transform: scale(1.1);
+  transition: 0.3s all ease-in-out;
+  position: relative;
+}
+.our-team-section .container .row .card:hover .social {
+  z-index: 2;
+  padding: 20px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s all ease;
+  background: #4285f4;
+}
+.our-team-section .container .row .card .card-img .social a {
+  color: #fff;
+  padding: 5px;
+}
+.our-team-section .container .row .card .card-body {
+  padding: 0;
+}
+.our-team-section .container .row .card .card-body .sub-title {
+  font-size: 12px;
+  color: #4285f4;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.our-team-section .container .row .card .card-body .card-text {
+  font-size: 16px;
+  color: gray;
+  font-weight: 400;
+}
+
+.testimonials .section-title {
+  font-size: 40px;
+  color: #000;
+  font-weight: 700;
+}
+.testimonials .carousel .carousel-indicators button {
+  background-color: #dee2e6;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.testimonials .carousel .carousel-indicators button.active {
+  background-color: #4285f4;
+}
+.testimonials .carousel .carousel-inner .carousel-item img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.testimonials .carousel .carousel-inner .carousel-item i {
+  color: gray;
+}
+
+.blog-posts .section-title {
+  font-size: 40px;
+  color: #000;
+  font-weight: 700;
+}
+.blog-posts .card {
+  border: none;
+}
+.blog-posts .card img {
+  margin-bottom: 30px;
+}
+.blog-posts .card .card-body {
+  padding: 0;
+}
+.blog-posts .card .card-body .card-title {
+  font-size: 30px;
+}
+.blog-posts .card .card-body .meta {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+.blog-posts .card .card-body .card-text {
+  font-size: 16px;
+  color: gray;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.contact {
+  background-image: url(https://preview.colorlib.com/theme/imagine/images/hero_1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.contact::before {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+  background: linear-gradient(to right, #4286f4 0%, #42e2f4 100%);
+}
+.contact .section-title {
+  position: relative;
+  z-index: 1;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+.contact form {
+  position: relative;
+  z-index: 1;
+}
+.contact form label {
+  margin-bottom: 0.5rem;
+}
+.contact form .form-group {
+  margin-bottom: 1rem;
+}
+.contact form .form-control {
+  height: 43px;
+}
+.contact form textarea.form-control {
+  height: auto;
+}
+.contact form .btn.btn-primary {
+  border-width: 2px;
+  background: #4285f4;
+  border-color: #4285f4;
+  color: #fff;
+  position: relative;
+  transition: 0.3s all ease;
+  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+.footer p {
+  color: gray;
+}
+
+/*# sourceMappingURL=style.css.map */
