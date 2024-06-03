@@ -1,4 +1,5 @@
-import { Item, Links, NavbarItem, Nav, NavbarWrapper, NavbarLogo } from './styled'
+import { Links } from '../baseStyle'
+import { Item, NavbarItem, Nav, NavbarWrapper, NavbarLogo } from './styled'
 
 const Navbar = () => {
   return (
@@ -10,13 +11,18 @@ const Navbar = () => {
 
         <Item>
           <NavbarItem className="navbar-item">
-            <Links href="#">Anasayfa</Links>
+            <Links href="#Home">Anasayfa</Links>
           </NavbarItem>
           <NavbarItem className="navbar-item">
-            <Links href="#">Hakkımda</Links>
+            <Links href="#About">Hakkımda</Links>
           </NavbarItem>
           <NavbarItem className="navbar-item">
-            <Links href="#">Portfolio</Links>
+            <Links href="#Portfolio">Portfolio</Links>
+          </NavbarItem>
+          <NavbarItem className="navbar-item">
+            <Links style={{ backgroundColor: '#fff', color: '#000' }} href="OnurArdic.pdf">
+              Dowloand CV
+            </Links>
           </NavbarItem>
         </Item>
       </NavbarWrapper>

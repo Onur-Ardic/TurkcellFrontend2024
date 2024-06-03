@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chivo", sans-serif;
+  color: #101828;
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+p {
+  font-family: "Noto Sans", sans-serif;
+  color: #475467;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+input:focus {
+  outline: none;
+}
+.font-noto {
+  font-family: "Noto Sans", sans-serif;
+}
+.fs-13 {
+  font-size: 13px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-17 {
+  font-size: 17px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-28 {
+  font-size: 28px;
+}
+.fs-35 {
+  font-size: 35px;
+}
+.fs-42 {
+  font-size: 42px;
+}
+.fs-56 {
+  font-size: 56px;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.bg-lightgreen {
+  background-color: #bee1e6;
+}
+.bg-purple {
+  background-color: #cbd1e5;
+}
+.bg-gray {
+  background-color: #ebecf4;
+}
+.bg-green {
+  background-color: #006d77;
+}
+.bg-black {
+  background-color: #101828;
+}
+.bg-white {
+  background-color: #fff;
+}
+.color-green {
+  color: #006d77;
+}
+.color-white {
+  color: white;
+}
+.color-black {
+  color: #101828;
+}
+.color-lightgray {
+  color: #98a2b3;
+}
+.text-center {
+  text-align: center;
+}
+.card-rad {
+  border-radius: 16px;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+.align-start {
+  align-items: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.gap10 {
+  gap: 10px;
+}
+.gap20 {
+  gap: 20px;
+}
+.gap30 {
+  gap: 30px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.mt-70 {
+  margin-top: 70px;
+}
+.mt-120 {
+  margin-top: 120px;
+}
+.transition {
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.width-100 {
+  width: 100%;
+}

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Nav = styled.nav`
   padding: 1rem 1rem;
   margin: 0;
-  background-color: #474f7a;
+  background-color: #000;
 `
 
 export const NavbarWrapper = styled.div`
@@ -29,19 +29,4 @@ export const Item = styled.ul`
 
 export const NavbarItem = styled.li`
   font-size: 15px;
-`
-
-export const Links = styled.a`
-  text-decoration: none;
-  background-color: transparent;
-  color: #fafafa;
-  border: 1px solid #fafafa;
-  padding: 0.5rem 1rem;
-  transition: all 0.5s ease-in-out;
-
-  &:hover {
-    background-color: #fafafa;
-    color: #474f7a;
-    cursor: pointer;
-  }
 `

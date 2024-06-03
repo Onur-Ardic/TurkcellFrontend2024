@@ -19,7 +19,7 @@ body {
     width: 80vw;
     padding: 2rem;
     position: relative;
-   
+    align-content: center;
   
 }
 .backgroundCardBottom{
