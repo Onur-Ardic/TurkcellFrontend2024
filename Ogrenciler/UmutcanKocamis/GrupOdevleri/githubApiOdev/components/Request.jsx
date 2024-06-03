@@ -1,20 +1,40 @@
-class Request {
-  static async get(url) {
-    try {
-      const response = await fetch(url, {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          authorization: "apikey 4YybeDkkDoYBY0gAnpEiaf:492kTWobTcJIPmPas5l5nU",
-        },
-      });
-      if (!response.ok) throw new Error("Hava durumu getirilemedi.");
-      const data = await response.json();
-      return data;
-    } catch (err) {
-      console.log(err.message);
+export async function getUser(username) {
+  try {
+    const response = await fetch(`https://api.github.com/users/${username}`, {
+      method: "GET",
+      headers: {
+        "Content-type": "application/json",
+      },
+    });
+    if (!response.ok) {
+      throw new Error(`Error User: ${response.status} ${response.statusText}`);
     }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(error.message);
+    return null;
   }
 }
 
-export default Request;
+export async function getRepos(username) {
+  try {
+    const response = await fetch(
+      `https://api.github.com/users/${username}/repos`,
+      {
+        method: "GET",
+        headers: {
+          "Content-type": "application/json",
+        },
+      }
+    );
+    if (!response.ok) {
+      throw new Error(`Error Repos: ${response.status} ${response.statusText}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(error.message);
+    return [];
+  }
+}
