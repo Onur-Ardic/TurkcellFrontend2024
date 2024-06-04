@@ -1,9 +1,23 @@
+import { useState, useEffect } from 'react';
 import './App.css'
 import { Navbar } from './components/Navbar/Navbar'
-import Slider from './components/Slider/Slider'
-import Button from './components/atoms/buttons/Button'
+import { SideBar } from './components/organisms/SideBar/SideBar';
+import Slider from './components/organisms/Slider/Slider'
+
 function App() {
   
+  const [data, setData] = useState();
+  async function getData() {
+    await fetch(`https://api.github.com/users/seymabyzt`)
+      .then((data) => data.json())
+      .then((response) => setData(response))
+      .catch((e) => alert(e.message));
+  }
+  
+  
+  useEffect(() => {
+    getData(data)
+  }, []);
 
   return (
     <>
@@ -21,9 +35,7 @@ function App() {
         </div>
       </div>
       <div className='sideBar'>
-    <div className='sideBarContent'>
-    <Button text="Add" type="submit" />
-    </div>
+      <SideBar/>
       </div>
     </div>
 

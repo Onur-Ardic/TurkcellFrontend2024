@@ -1,0 +1,41 @@
+.sideBarContent {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 60px 0 0 60px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 24rem;
+    height: 85vh;
+    top: 10%;
+    position: absolute;
+    right: 0;
+    padding: 2rem;
+  }
+  .social{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 5rem;
+  }
+  .socialLogo{
+    width: 10rem;
+    height: 10rem;
+  }
+  .socialLogo img{
+    width: 10rem;
+    height: 10rem;
+  }
+  .button {
+    background: rgba(255, 255, 255, 0.043);
+    border: 1px black solid;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  
