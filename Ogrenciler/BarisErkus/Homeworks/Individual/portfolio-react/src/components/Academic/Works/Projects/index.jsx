@@ -36,8 +36,10 @@ const Projects = () => {
   ];
 
   return (
-    <>
-      <Title>Projects</Title>
+    <section aria-labelledby="projects-title">
+      <Title as="h1" id="projects-title">
+        Projects
+      </Title>
       {projects.map((project, index) => (
         <WorksCard
           key={index}
@@ -47,7 +49,7 @@ const Projects = () => {
           techStack={project.techStack}
         />
       ))}
-    </>
+    </section>
   );
 };
 

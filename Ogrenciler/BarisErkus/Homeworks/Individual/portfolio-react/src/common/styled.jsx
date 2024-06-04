@@ -34,15 +34,16 @@ export const Col = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  color: white;
   @media (max-width: 600px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `;
 
 export const Subtitle = styled.h2`
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: ${(props) => props.color || "white"};
   @media (max-width: 600px) {
@@ -51,8 +52,9 @@ export const Subtitle = styled.h2`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 1.5rem;
-  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: white;
   max-width: ${(props) => props.mw || "1070px"};
   @media (max-width: 600px) {
     font-size: 1rem;
@@ -73,5 +75,13 @@ export const A = styled.a`
   &:hover {
     background-color: white;
     color: ${tertiary};
+  }
+  &:focus {
+    outline: 2px solid ${tertiary};
+    outline-offset: 4px;
+  }
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    padding: 10px 20px;
   }
 `;

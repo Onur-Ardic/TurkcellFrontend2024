@@ -34,8 +34,10 @@ const Articles = () => {
   ];
 
   return (
-    <>
-      <Title>Articles</Title>
+    <section aria-labelledby="articles-title">
+      <Title as="h2" id="articles-title">
+        Articles
+      </Title>
       {articles.map((article, index) => (
         <ArticleCard
           key={index}
@@ -44,7 +46,7 @@ const Articles = () => {
           href={article.href}
         />
       ))}
-    </>
+    </section>
   );
 };
 

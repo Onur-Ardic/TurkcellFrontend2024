@@ -1,6 +1,15 @@
 import styled from "styled-components";
 import { primary, tertiary } from "../../../../../common/colors";
 
+export const A = styled.a`
+  color: ${tertiary};
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
@@ -13,13 +22,15 @@ export const Card = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   @media (max-width: 768px) {
-    width: 300px;
+    max-width: 300px;
   }
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   font-size: 1.7rem;
   font-weight: bold;
   margin: 20px 0;

@@ -1,7 +1,7 @@
 import { tertiary } from "../../common/colors";
 import { A, Container, Subtitle } from "../../common/styled";
 import { Title, Paragraph } from "../../common/styled";
-import { Image, Strong, SocialMediaContainer, SocialMediaLink } from "./styled";
+import { Image, SocialMediaContainer, SocialMediaLink } from "./styled";
 
 const Home = ({ socialMediaLinks }) => {
   return (
@@ -12,24 +12,38 @@ const Home = ({ socialMediaLinks }) => {
       padding="50px 50px 100px 50px"
       className="animate__animated animate__backInUp"
     >
-      <Image src="myPhoto.jpg" alt="My Photo" />
-      <Title>BARIŞ ERKUŞ</Title>
-      <Subtitle color={tertiary}>Front-End Developer</Subtitle>
+      <Image src="myPhoto.jpg" alt="Photo of Barış Erkuş" loading="lazy" />
+      <Title as="h1">BARIŞ ERKUŞ</Title>
+      <Subtitle color={tertiary} as="h2">
+        Front-End Developer
+      </Subtitle>
       <Paragraph>
-        <Strong>My philosophy:</Strong> Seeing myself as a project and
+        <strong>My philosophy:</strong> Seeing myself as a project and
         developing this project in the best possible way. Software is my
         passion. I would like to contribute to myself and your company with the
         energy that this passion gives me. I hope to work together.
       </Paragraph>
       <SocialMediaContainer>
-        <SocialMediaLink href={socialMediaLinks["github"]} target="_blank">
-          <i className="fa-brands fa-github"></i>
+        <SocialMediaLink
+          href={socialMediaLinks["github"]}
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <i className="fa-brands fa-github" aria-hidden="true"></i>
         </SocialMediaLink>
-        <SocialMediaLink href={socialMediaLinks["linkedin"]} target="_blank">
-          <i className="fa-brands fa-linkedin"></i>
+        <SocialMediaLink
+          href={socialMediaLinks["linkedin"]}
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i className="fa-brands fa-linkedin" aria-hidden="true"></i>
         </SocialMediaLink>
-        <SocialMediaLink href={socialMediaLinks["medium"]} target="_blank">
-          <i className="fa-brands fa-medium"></i>
+        <SocialMediaLink
+          href={socialMediaLinks["medium"]}
+          target="_blank"
+          aria-label="Medium"
+        >
+          <i className="fa-brands fa-medium" aria-hidden="true"></i>
         </SocialMediaLink>
       </SocialMediaContainer>
       <A
