@@ -17,6 +17,7 @@ export const LandingDesc = styled.h6`
 `;
 export const Row = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `;
 export const RowBetween = styled(Row)`
   justify-content: space-between;
@@ -88,5 +89,41 @@ export const ProjectDesc = styled.p`
   text-align: justify;
 `;
 export const PaddingY = styled.div`
-  padding: 2rem 0;
+  padding: 5rem 0;
+`;
+export const ArticleDiv = styled(Col)`
+  margin: 1rem 0;
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 1rem;
+  cursor: pointer;
+`;
+export const ArticleImage = styled.img`
+  width: 100%;
+  margin: auto 0;
+`;
+export const ArticleContent = styled(Col)`
+  padding: 0.5rem 1rem 0.5rem 0;
+`;
+export const MediumPicture = styled.img`
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+`;
+export const FlexAlign = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+`;
+export const ArticleTitle = styled.h5`
+  font-weight: 700;
+`;
+export const ArticleDesc = styled.p`
+  color: gray;
+  text-align: justify;
+`;
+export const ArticleImageDiv = styled(Col)`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 `;

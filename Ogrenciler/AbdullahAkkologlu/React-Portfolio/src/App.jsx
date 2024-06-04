@@ -1,6 +1,7 @@
 import "./App.css";
 import Landing from "./components/Landing/Landing";
 import Navbar from "./components/Navbar/Navbar";
+import Articles from "./components/Project/Article/Articles";
 import Projects from "./components/Project/Projects";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Landing />
       <Projects />
+      <Articles />
     </>
   );
 }
