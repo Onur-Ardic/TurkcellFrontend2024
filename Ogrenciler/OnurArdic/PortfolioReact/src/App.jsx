@@ -1,38 +1,36 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import Hero from './components/Hero/Hero'
-import Navbar from './components/Navbar/Navbar'
-import About from './components/About/About'
-import Portfolio from './components/Portfolio/Portfolio'
+import Home from './components/HomePage/Home'
+import Error from './components/ErroPage/Error'
 
 function App() {
   const [user, setUser] = useState('')
   const [repos, setRepos] = useState([])
+  const [error, setError] = useState(false)
 
   const getData = async () => {
-    await fetch('https://api.github.com/users/Onur-Ardic')
-      .then((response) => response.json())
-      .then((data) => {
-        setUser(data)
-        fetch('https://api.github.com/users/Onur-Ardic/repos')
-          .then((response) => response.json())
-          .then((data) => {
-            setRepos(data)
-          })
-      }, [])
-      .catch((error) => alert(error))
+    try {
+      const userResponse = await fetch('https://api.github.com/users/Onur-Ardic')
+      if (!userResponse.ok) {
+        throw new Error('User data fetch failed')
+      }
+      const userData = await userResponse.json()
+      setUser(userData)
+
+      const reposResponse = await fetch('https://api.github.com/users/Onur-Ardic/repos')
+      if (!reposResponse.ok) {
+        throw new Error('Repos data fetch failed')
+      }
+      const reposData = await reposResponse.json()
+      setRepos(reposData)
+    } catch (error) {
+      setError(true)
+    }
   }
   useEffect(() => {
     getData()
   }, [])
-  return (
-    <>
-      <Navbar />
-      <Hero user={user} />
-      <About />
-      <Portfolio repos={repos} />
-    </>
-  )
+  return <>{error ? <Error /> : <Home user={user} repos={repos} />}</>
 }
 
 export default App

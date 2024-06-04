@@ -1,12 +1,12 @@
 import { Links } from '../baseStyle'
-import { InfoWrapper, UserName } from './styled'
+import { AnimatedBio, InfoWrapper, UserName } from './styled'
 
 const HeroSectionLeft = ({ user }) => {
   const { name, followers, following, bio, public_repos } = user
   return (
     <div className="user-info pacifico">
       <UserName className="name">{name}</UserName>
-      <span style={{ fontSize: '20px', textAlign: 'center' }}>{bio}</span>
+      <AnimatedBio>{bio}</AnimatedBio>
       <InfoWrapper>
         <p>Followers: {followers}</p>
         <p>Following: {following}</p>
