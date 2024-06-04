@@ -1,19 +1,19 @@
 .social {
   display: flex;
   flex-wrap: wrap;
-  width: 20rem;
-  height: 20rem;
+  width: 17rem;
+  height: 17rem;
   margin-top: 5rem;
 }
 
 .socialLogo {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
 }
 
 .socialLogo img {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
 }
 
 .button {
