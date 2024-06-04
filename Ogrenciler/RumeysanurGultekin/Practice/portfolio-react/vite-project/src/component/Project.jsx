@@ -38,7 +38,7 @@ const Project = () => {
         margin-top: 20px;`
 
   return (
-    <Section>
+    <Section id='project'>
         <h1>Project</h1>
         <div style={{display:"flex",  flexWrap:"wrap", gap:"50px", justifyContent:"center"}}>
             <CardDiv>
