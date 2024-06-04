@@ -1,17 +1,20 @@
 body {
-  background-color: #101010;
+  background-color: #9d9797;
+  font-family: "Tajawal", sans-serif;
+
 }
 .home {
   height: 90vh;
   position: relative;
 }
 .sideBar {
-  background: #626264;
+  background: #3b3b3f;
   width: 12rem;
-  height: 101vh;
+  height: 200vh;
   position: absolute;
   top: -60px;
   right: 0;
+  z-index: -10;
 }
 .sliderBar {
   height: 5rem;
