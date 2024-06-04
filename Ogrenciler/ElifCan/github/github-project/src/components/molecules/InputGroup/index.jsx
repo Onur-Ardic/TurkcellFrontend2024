@@ -1,6 +1,7 @@
 import React from "react";
 import Input from "../../atom/Input";
 import Button from "../../atom/button";
+import "./inputGroup.css";
 export const InputGroup = ({
   type,
   Name,
@@ -11,7 +12,7 @@ export const InputGroup = ({
   placeholder,
 }) => {
   return (
-    <>
+    <div className="group">
       <Input
         type={type}
         name={Name}
@@ -20,6 +21,6 @@ export const InputGroup = ({
         placeholder={placeholder}
       />
       <Button onClick={onClick} text={text} />
-    </>
+    </div>
   );
 };

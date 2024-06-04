@@ -1,12 +1,20 @@
-*{
-    color: white;
+* {
+  color: white;
 }
 
-.profileImg{
-    width: 15rem;
-    border-radius: 50%;
+.profileImg {
+  width: 15rem;
+  border-radius: 50%;
 }
-.userInfo{
-    display: flex;
-    gap: 4rem;
+.userInfo {
+  display: flex;
+  gap: 4rem;
 }
+/* .contentRight {
+  background-image: url("https://r.resimlink.com/e0vPoDd85ix.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 800px;
+} */
