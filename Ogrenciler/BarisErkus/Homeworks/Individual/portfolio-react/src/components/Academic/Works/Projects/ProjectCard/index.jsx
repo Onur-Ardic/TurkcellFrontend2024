@@ -1,7 +1,7 @@
-import { tertiary } from "../../../../common/colors";
+import { tertiary } from "../../../../../common/colors";
 import { Card, CardContainer, Title, Paragraph, Image } from "./styled";
 
-const WorksCard = ({ img, title, desc, techStack }) => {
+const ProjectCard = ({ img, title, desc, techStack }) => {
   return (
     <Card>
       <CardContainer>
@@ -16,4 +16,4 @@ const WorksCard = ({ img, title, desc, techStack }) => {
   );
 };
 
-export default WorksCard;
+export default ProjectCard;

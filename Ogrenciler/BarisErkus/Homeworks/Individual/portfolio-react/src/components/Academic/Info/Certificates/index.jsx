@@ -28,8 +28,20 @@ const Certificates = () => {
       title: "BTK Academy",
     },
     {
+      company: "Project Management Fundamentals",
+      title: "BTK Academy",
+    },
+    {
+      company: "Every Aspect SQL Server",
+      title: "BTK Academy",
+    },
+    {
       title: (
-        <a href="https://www.linkedin.com/in/bariserkus/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/bariserkus/"
+          target="_blank"
+          style={{ fontSize: "1.25rem" }}
+        >
           You can access all my certificates from my LinkedIn profile.
         </a>
       ),
@@ -39,12 +51,7 @@ const Certificates = () => {
     <>
       <Title>Certificates</Title>
       {certificates.map((certificate, index) => (
-        <AcademicCard
-          key={index}
-          {...certificate}
-          padding="30px 50px"
-          br="200px"
-        />
+        <AcademicCard key={index} {...certificate} />
       ))}
     </>
   );

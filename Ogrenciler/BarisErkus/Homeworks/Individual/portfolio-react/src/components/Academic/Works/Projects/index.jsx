@@ -1,5 +1,5 @@
 import { Title } from "../../../../common/styled";
-import WorksCard from "../WorksCard";
+import WorksCard from "./ProjectCard";
 
 const Projects = () => {
   const projects = [

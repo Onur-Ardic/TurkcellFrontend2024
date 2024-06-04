@@ -5,6 +5,10 @@ export const Image = styled.img`
   width: 350px;
   height: 350px;
   border-radius: 50%;
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 200px;
+  }
 `;
 
 export const Strong = styled.strong`
@@ -15,6 +19,7 @@ export const SocialMediaContainer = styled.div`
   display: flex;
   gap: 50px;
   margin: 10px 0;
+  flex-wrap: wrap;
 `;
 
 export const SocialMediaLink = styled.a`

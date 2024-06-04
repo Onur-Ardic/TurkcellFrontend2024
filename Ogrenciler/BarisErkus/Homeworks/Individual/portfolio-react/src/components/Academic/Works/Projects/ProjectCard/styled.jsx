@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import { primary } from "../../../../common/colors";
+import { primary } from "../../../../../common/colors";
 
 const Card = styled.div`
   display: flex;
   gap: 50px;
   padding: 20px 50px 70px 0;
   border-bottom: 1px solid ${primary};
+  align-items: center;
   @media (max-width: 1850px) {
     flex-direction: column-reverse;
   }
@@ -22,10 +23,10 @@ const CardContainer = styled.div`
 `;
 
 const Image = styled.img`
-  width: ${(props) => props.width || "300px"};
+  width: 300px;
   border-radius: 10px;
   @media (max-width: 600px) {
-    width: 100%;
+    width: 250px;
   }
 `;
 

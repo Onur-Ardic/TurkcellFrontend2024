@@ -21,12 +21,7 @@ const Education = () => {
     <>
       <Title>Education</Title>
       {educations.map((education, index) => (
-        <AcademicCard
-          key={index}
-          {...education}
-          padding="30px 50px"
-          br="200px"
-        />
+        <AcademicCard key={index} {...education} />
       ))}
     </>
   );
