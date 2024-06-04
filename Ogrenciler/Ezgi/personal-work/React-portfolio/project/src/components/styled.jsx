@@ -1,45 +1,131 @@
-import styled, { createGlobalStyle } from 'styled-components';
-
+import styled, { keyframes } from 'styled-components';
 export const HeaderContainer = styled.header`
-position: relative;
-height: 100vh;
-background: #111111;
+background-color: #AEBFBE;
+height:100vh;
 color: white;
 display: flex;
 align-items: center;
 justify-content: center;
-z-index: 1; /* Ensures content appears above particles */
 `
-export const HeaderContent = styled.div`
-  position: relative;
-  z-index: 2;
+export const NavbarContainer = styled.div`
+  position: fixed;
+  top:0;
+  left:0;
+  height: 100%; 
+  z-index: 1000; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
+
+export const Navbar = styled.nav`
+display:flex;
+flex-direction: column;
+gap: 1.3rem;
+`
+export const ActiveNavbarItem = styled.a`
+  font-size: 1.5rem;
+  border: 2px solid #423189;
+  margin-left: 30px;
+  box-shadow: 0 4px 10px rgba(216, 183, 255, 0.5);
+  width: 50px;
+  height:50px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition: all .3s ease;
+  background-color: #DDDEFF;
+  color: #423189; /* İkon rengini burada belirleyin */
+
+`
+
+export const InactiveNavbarItem = styled(ActiveNavbarItem)`
+background-color: transparent;
+  color: #423189; /* İkon rengini burada belirleyin */
+`
+export const LeftSide = styled.div`
+  width: 60%;
+  padding-left: 150px
+`;
+
+export const RightSide = styled.div`
+  width:30%;
+  margin-right: 80px
+`;
+
+export const profilImageAnimation = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+`;
+
+export const ProfileImage = styled.img`
+  width: 100%;
+  border-radius: 50%;
+  animation: ${profilImageAnimation} 3s ease-in-out infinite;
+`;
+export const LeftSideTitle = styled.h1`
+font-size:1rem;
+max-width:200px;
+tex-align:left;
+background-color: #DDDEFF;
+color: #303030;
+border: 2px solid #4b0082;
+box-shadow: 0 4px 10px rgba(216, 183, 255, 0.5);
+padding: 10px 20px;
+`
+
+export const Introduction = styled.h2`
+  font-size: 2.3rem;
+  text-align: left;
+  margin: 20px 0;
+  color: #303030;
+`;
+export const IntroductionText = styled.p`
+max-width:500px;
+color: #737066;
+font-weight: 500;
+  font-size: 1rem;
+  text-align:left`
 
 export const Title = styled.h1`
   font-size: 1.5rem;
 `;
-
-export const Nav = styled.nav`
-  display: flex;
-  align-items: center;
-  gap:15px
-`;
-
-export const NavLink = styled.a`
+export const Wrapper = styled.div`
+display:flex;
+flex-direction: column;
+gap:25px
+`
+export const ButtonHeader = styled.button`
+  padding: 10px 20px;
+  max-width: 150px;
+  margin: 10px 0 2px 0;
+  border: none;
+  border-radius: 20px;
+  background-color: #297373;
   color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-size: 1.2em;
-`;
-
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all .5s ease;
+  &:hover {
+    background-color: #24403F;
+  }
+`
 export const SocialIcons = styled.div`
   display: flex;
   align-items: center;
+  text-align:left
 `;
 
 export const SocialIconLink = styled.a`
-  color: white;
-  margin-left: 15px;
+margin-right:10px;
   font-size: 1.5em;
   &:hover {
     color: #954dcc;
@@ -47,27 +133,16 @@ export const SocialIconLink = styled.a`
 `;
 //about
 export const AboutContainer = styled.section`
-position: relative;
-height: 100vh;
-background: #111111;
-color: white;
+background-image: url('assets/images/background.png');
+background-size: cover;
+width.100%;
+padding: 12rem 0;
 display: flex;
 align-items: center;
-justify-content: center;
-z-index: 1;
+justify-content: space-evenly;
 `;
-
-export const AboutContent = styled.div`
-  position: relative;
-  z-index: 2;
-`;
-
-
 export const TextContainer = styled.div`
-  max-width: 700px;
-  margin-right: 20px;
   text-align: left; 
-  padding: 20px; 
 `;
 
 export const ImageContainer = styled.div`
@@ -79,12 +154,13 @@ export const ImageContainer = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: 8%;
   object-fit: cover; 
 `;
 
 export const HeadingAbout = styled.h2`
   font-size: 3rem;
+  color: #303030;
 `;
 
 export const Description = styled.p`
@@ -92,11 +168,25 @@ export const Description = styled.p`
   color: #838383;
   font-size: 1.2rem;
 `;
+export const LogosContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+`;
+
+export const LogoImage = styled.img`
+  width: 60px;
+  height: 60px;
+  margin: 0 20px 0 0;
+  object-fit: cover
+`;
 //projects
 
 export const ProjectsContainer = styled.section`
   padding: 50px 20px;
-  background-image: linear-gradient(to bottom, #5a2880, #2a1323);
+  background-color:#D8A7B1
 `;
 
 export const Heading = styled.h2`
@@ -160,10 +250,6 @@ export const Button = styled.a`
   color: white;
   background-color: #333;
   transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: #561e00;
-  }
 `;
 
 export const SourceCodeButton = styled(Button)`
@@ -193,16 +279,17 @@ export const Overlay = styled.div`
 //contact
 export const ContactContainer = styled.section`
   padding: 50px 20px;
-  background-color: black;
+  background-color: #ECEDEF;
 `;
 
 export const ContactContent = styled.div`
-  background-color: #5a2880;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 10px; 
   max-width:500px;
   margin: 0 auto;
-  color:white;
+  color:#303030;
 `;
 
 export const HeadingContact = styled.h2`
@@ -222,15 +309,12 @@ export const Form = styled.form`
 
 export const Input = styled.input`
   padding: 10px;
-  color: white;
   margin: 10px 0;
-  border: 1px solid #ccc;
+  border: 1px solid #d8a7b1;
   border-radius: 4px;
   font-size: 1rem;
   outline: none;
-  background-color: #5a2880;
   &::placeholder {
-    color: white; 
     font-family: "Nunito", sans-serif;
     opacity: 0.8
   }
@@ -259,13 +343,3 @@ export const ButtonContact = styled.button`
 
 
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Nunito", sans-serif;
-  }
-`;
-
-export default GlobalStyle;

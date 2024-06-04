@@ -28,7 +28,7 @@ const Projects = () => {
 
   return (
     <ProjectsContainer id="projects">
-      <Heading>My Projects</Heading>
+      <Heading>Projects</Heading>
       <ProjectList>
         {projects?.map((project, index) => (
           <Project
