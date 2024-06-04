@@ -19,7 +19,9 @@ const Education = () => {
   ];
   return (
     <>
-      <Title>Education</Title>
+      <Title as="h1" id="education-title" aria-labelledby="education-title">
+        Education
+      </Title>
       {educations.map((education, index) => (
         <AcademicCard key={index} {...education} />
       ))}

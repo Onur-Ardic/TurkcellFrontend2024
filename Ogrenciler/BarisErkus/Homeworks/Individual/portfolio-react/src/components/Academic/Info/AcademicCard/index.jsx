@@ -7,24 +7,27 @@ const AcademicCard = ({
   startDate = "",
   endDate = "",
   desc = "",
-  padding,
-  br,
+  titlefs,
+  direction = "column",
+  justify = "space-between",
 }) => {
   return (
-    <Card padding={padding} br={br}>
-      <Col>
-        <Title>{company}</Title>
-        <Title color={tertiary}>{title}</Title>
-        {desc === "" ? null : <Paragraph>{desc}</Paragraph>}
+    <Card aria-labelledby={`${company}-title`}>
+      <Col direction={direction} justify={justify}>
+        <Title titlefs={titlefs} id={`${company}-title`}>
+          {company}
+        </Title>
+        <Title titlefs={titlefs} color={tertiary}>
+          {title}
+        </Title>
+        {desc && <Paragraph>{desc}</Paragraph>}
       </Col>
-      <Col>
-        {endDate === "" ? null : (
-          <Paragraph textalign="end">{endDate}</Paragraph>
-        )}
-        {startDate === "" ? null : (
-          <Paragraph textalign="end">{startDate}</Paragraph>
-        )}
-      </Col>
+      {(startDate || endDate) && (
+        <Col direction={direction}>
+          {endDate && <Paragraph textalign="end">{endDate}</Paragraph>}
+          {startDate && <Paragraph textalign="end">{startDate}</Paragraph>}
+        </Col>
+      )}
     </Card>
   );
 };

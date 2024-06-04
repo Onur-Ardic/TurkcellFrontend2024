@@ -1,13 +1,18 @@
-import { Card, Title, Image } from "./styled";
+import { A, Card, Title, Image } from "./styled";
 
 const ArticleCard = ({ img, href, title }) => {
   return (
-    <a href={href} target="_blank">
+    <A
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Read more about ${title}`}
+    >
       <Card>
         <Title>{title}</Title>
-        <Image src={img} alt="Article Image" />
+        <Image src={img} alt={`${title} thumbnail`} />
       </Card>
-    </a>
+    </A>
   );
 };
 

@@ -11,10 +11,6 @@ export const Image = styled.img`
   }
 `;
 
-export const Strong = styled.strong`
-  color: gray;
-`;
-
 export const SocialMediaContainer = styled.div`
   display: flex;
   gap: 50px;
@@ -28,5 +24,12 @@ export const SocialMediaLink = styled.a`
   transition: 0.3s;
   &:hover {
     color: ${tertiary};
+  }
+  &:focus {
+    outline: 3px solid ${tertiary};
+    outline-offset: 4px;
+  }
+  @media (max-width: 768px) {
+    font-size: 2rem;
   }
 `;

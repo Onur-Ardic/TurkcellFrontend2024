@@ -20,11 +20,14 @@ const Card = styled.div`
 
 const Col = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: ${(props) => props.direction};
+  justify-content: ${(props) => props.justify};
+  ${(props) =>
+    props.direction === "row" ? "width: 100%; flex-wrap: wrap;" : ""}
 `;
 
 const Title = styled.h2`
-  font-size: 1.5rem;
+  font-size: ${(props) => props.titlefs || "1.5rem"};
   font-weight: bold;
   text-align: start;
   color: ${(props) => props.color || "white"};
@@ -34,7 +37,7 @@ const Title = styled.h2`
 `;
 
 const Paragraph = styled.p`
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   max-width: 500px;
   color: ${(props) => props.color || "white"};
   font-weight: ${(props) => props.fw || "normal"};

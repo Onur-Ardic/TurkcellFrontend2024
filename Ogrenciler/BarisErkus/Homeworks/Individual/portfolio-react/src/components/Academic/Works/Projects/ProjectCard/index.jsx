@@ -11,7 +11,7 @@ const ProjectCard = ({ img, title, desc, techStack }) => {
           Tech Stack: {techStack}
         </Paragraph>
       </CardContainer>
-      <Image src={img}></Image>
+      <Image src={img} alt={`${title} project image`}></Image>
     </Card>
   );
 };

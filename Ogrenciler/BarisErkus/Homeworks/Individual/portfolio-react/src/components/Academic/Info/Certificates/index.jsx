@@ -1,5 +1,6 @@
 import { Title } from "../../../../common/styled";
 import AcademicCard from "../AcademicCard";
+import { A } from "./styled";
 
 const Certificates = () => {
   const certificates = [
@@ -36,22 +37,36 @@ const Certificates = () => {
       title: "BTK Academy",
     },
     {
-      title: (
-        <a
-          href="https://www.linkedin.com/in/bariserkus/"
+      company: "C# - SQL - Javascript - React",
+      title: "HackerRank",
+    },
+    {
+      company: "Ways to Work Effectively and Efficiently at Home",
+      title: "Udemy",
+    },
+    {
+      company: (
+        <A
+          href="https://www.linkedin.com/in/bariserkus/details/certifications/"
           target="_blank"
-          style={{ fontSize: "1.25rem" }}
         >
           You can access all my certificates from my LinkedIn profile.
-        </a>
+        </A>
       ),
     },
   ];
   return (
     <>
-      <Title>Certificates</Title>
+      <Title as="h1" id="certificate-title" aria-labelledby="certificate-title">
+        Certificates
+      </Title>
       {certificates.map((certificate, index) => (
-        <AcademicCard key={index} {...certificate} />
+        <AcademicCard
+          key={index}
+          {...certificate}
+          titlefs="1.25rem"
+          direction="row"
+        />
       ))}
     </>
   );

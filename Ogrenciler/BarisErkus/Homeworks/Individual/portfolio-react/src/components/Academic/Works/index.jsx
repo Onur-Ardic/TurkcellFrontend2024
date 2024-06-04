@@ -5,11 +5,11 @@ import Articles from "./Articles";
 
 const Works = () => {
   return (
-    <Container id="projectsArticles" bgcolor={secondary}>
-      <Col width="50%">
+    <Container id="projectsArticles" bgcolor={secondary} role="main">
+      <Col width="100%">
         <Projects />
       </Col>
-      <Col width="50%">
+      <Col width="100%">
         <Articles />
       </Col>
     </Container>

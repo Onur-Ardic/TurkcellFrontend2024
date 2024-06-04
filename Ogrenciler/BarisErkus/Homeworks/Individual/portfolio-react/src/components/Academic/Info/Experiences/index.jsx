@@ -48,9 +48,11 @@ const Experiences = () => {
   ];
   return (
     <>
-      <Title>Experiences</Title>
-      {experiences.map((experiance, index) => (
-        <AcademicCard key={index} {...experiance} />
+      <Title as="h1" id="experience-title" aria-labelledby="experience-title">
+        Experiences
+      </Title>
+      {experiences.map((experience, index) => (
+        <AcademicCard key={index} {...experience} />
       ))}
     </>
   );
