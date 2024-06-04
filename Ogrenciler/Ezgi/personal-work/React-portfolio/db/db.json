@@ -1,104 +1,116 @@
-
 {
-    "projects": [
-        {
-            "img": "img14.png",
-            "title": "Library App",
-            "description": "Library app with Javascript and Json server.",
-            "sourceCodeLink": "",
-            "demoLink": ""
-        },
-        {
-            "img": "img13.png",
-            "title": "E-Commerce Website",
-            "description": "E-commerce site with HTML, CSS and Bootstrap.",
-            "sourceCodeLink": "",
-            "demoLink": ""
-        },
-        {
-            "img": "img12.png",
-            "title": "Weather App",
-            "description": "Weather application with data pulled from weather API with React.",
-            "sourceCodeLink": "",
-            "demoLink": ""
-        },
-        {
-            "img": "img11.png",
-            "title": "To Do List",
-            "description": "To do list app with React that can be added, updated and deleted to do.",
-            "sourceCodeLink": "",
-            "demoLink": ""
-        },
-        {
-            "img": "img10.png",
-            "title": "Tic-Tac-Toe",
-            "description": "An XOX game you can play with Javascript.",
-            "sourceCodeLink": "",
-            "demoLink": ""
-        },
-        {
-            "img": "img9.png",
-            "title": "Movie App",
-            "description": "Movie app with Javascript where you can add, delete and update movies.",
-            "sourceCodeLink": "",
-            "demoLink": ""
-        },
-        {
-            "img": "img8.png",
-            "title": "Hosthub Template",
-            "description": "Template app with HTML, Scss and Bootstrap.",
-            "sourceCodeLink": "",
-            "demoLink": ""
-        },{
-            "img": "img7.png",
-            "title": "Imagine Template",
-            "description": "Template app with HTML, Scss and Bootstrap.",
-            "sourceCodeLink": "",
-            "demoLink": ""
-        },
-        {
-            "img": "img6.png",
-            "title": "SmartPOS Template",
-            "description": "Template app with HTML, Scss and Bootstrap.",
-            "sourceCodeLink": "",
-            "demoLink": ""
-        },
-
-        {
-            "img": "img5.png",
-            "title": "DirectoryAds Template",
-            "description": "Template app with HTML, Scss and Bootstrap.",
-            "sourceCodeLink": "",
-            "demoLink": ""
-        },
-        {
-            "img": "img4.png",
-            "title": "Animated Template",
-            "description": "Animated template with Html, Css and Bootstrap",
-            "sourceCodeLink": "",
-            "demoLink": ""
-        },
-        {
-            "img": "img3.png",
-            "title": "Druco Template",
-            "description": "Template app with HTML and Css.",
-            "sourceCodeLink": "",
-            "demoLink": ""
-        },
-        {
-            "img": "img2.png",
-            "title": "Biniog Template",
-            "description": "Template app with HTML and Css.",
-            "sourceCodeLink": "",
-            "demoLink": ""
-        },
-        {
-            "img": "img1.png",
-            "title": "Upstart Template",
-            "description": "Template app with HTML and Css.",
-            "sourceCodeLink": "",
-            "demoLink": ""
-        }
-
-    ]
+  "projects": [
+    {
+      "img": "img14.png",
+      "title": "Library App",
+      "description": "Library app with Javascript and Json server.",
+      "sourceCodeLink": "",
+      "demoLink": ""
+    },
+    {
+      "img": "img13.png",
+      "title": "E-Commerce Website",
+      "description": "E-commerce site with HTML, CSS and Bootstrap.",
+      "sourceCodeLink": "",
+      "demoLink": ""
+    },
+    {
+      "img": "img12.png",
+      "title": "Weather App",
+      "description": "Weather application with data pulled from weather API with React.",
+      "sourceCodeLink": "",
+      "demoLink": ""
+    },
+    {
+      "img": "img11.png",
+      "title": "To Do List",
+      "description": "To do list app with React that can be added, updated and deleted to do.",
+      "sourceCodeLink": "",
+      "demoLink": ""
+    },
+    {
+      "img": "img10.png",
+      "title": "Tic-Tac-Toe",
+      "description": "An XOX game you can play with Javascript.",
+      "sourceCodeLink": "",
+      "demoLink": ""
+    },
+    {
+      "img": "img9.png",
+      "title": "Movie App",
+      "description": "Movie app with Javascript where you can add, delete and update movies.",
+      "sourceCodeLink": "",
+      "demoLink": ""
+    },
+    {
+      "img": "img8.png",
+      "title": "Hosthub Template",
+      "description": "Template app with HTML, Scss and Bootstrap.",
+      "sourceCodeLink": "",
+      "demoLink": ""
+    },
+    {
+      "img": "img7.png",
+      "title": "Imagine Template",
+      "description": "Template app with HTML, Scss and Bootstrap.",
+      "sourceCodeLink": "",
+      "demoLink": ""
+    },
+    {
+      "img": "img6.png",
+      "title": "SmartPOS Template",
+      "description": "Template app with HTML, Scss and Bootstrap.",
+      "sourceCodeLink": "",
+      "demoLink": ""
+    },
+    {
+      "img": "img5.png",
+      "title": "DirectoryAds Template",
+      "description": "Template app with HTML, Scss and Bootstrap.",
+      "sourceCodeLink": "",
+      "demoLink": ""
+    },
+    {
+      "img": "img4.png",
+      "title": "Animated Template",
+      "description": "Animated template with Html, Css and Bootstrap",
+      "sourceCodeLink": "",
+      "demoLink": ""
+    },
+    {
+      "img": "img3.png",
+      "title": "Druco Template",
+      "description": "Template app with HTML and Css.",
+      "sourceCodeLink": "",
+      "demoLink": ""
+    },
+    {
+      "img": "img2.png",
+      "title": "Biniog Template",
+      "description": "Template app with HTML and Css.",
+      "sourceCodeLink": "",
+      "demoLink": ""
+    },
+    {
+      "img": "img1.png",
+      "title": "Upstart Template",
+      "description": "Template app with HTML and Css.",
+      "sourceCodeLink": "",
+      "demoLink": ""
+    }
+  ],
+  "contacts": [
+    {
+      "id": "cdec",
+      "name": "Ezgi Karakaya",
+      "email": "ezgikarakaya2000@gmail.com",
+      "message": "sdsdf"
+    },
+    {
+      "id": "27a2",
+      "name": "Ahmet Hamdi Karakaya",
+      "email": "ornek@gmail.com",
+      "message": "asfdhjsdhfgsdf"
+    }
+  ]
 }

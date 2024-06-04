@@ -156,6 +156,7 @@ export const Image = styled.img`
   height: 100%;
   border-radius: 8%;
   object-fit: cover; 
+
 `;
 
 export const HeadingAbout = styled.h2`

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {ContactContainer, ContactContent, HeadingContact, ContactInfo, Form, Input, TextArea, ButtonContact} from '../components/styled'
+import { addContacts } from '../api/API';
 
 
 function Contact() {
@@ -14,9 +15,26 @@ function Contact() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    try{
+      const response = await addContacts(formData)
+      if(response && response.data){
+        setFormData(response.data)
+        alert('Message sent successfully!')
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        });
+      }
+    }
+    catch (error){
+      console.error('Error:', error);
+      alert('Failed to send message.');
+    }
+
+
     setFormData({
       name: '',
       email: '',
