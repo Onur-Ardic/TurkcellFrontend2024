@@ -36,7 +36,11 @@ function App() {
     <>
       <Container>
         <Form setUser={setUser} fetchData={fetchData} input={input} />
-        {loading ? null : error ? (
+        {loading ? (
+          <SpinnerDiv>
+            <Spinner />
+          </SpinnerDiv>
+        ) : error ? (
           <p>{error.message}</p>
         ) : (
           <DivGap>
@@ -45,11 +49,6 @@ function App() {
           </DivGap>
         )}
       </Container>
-      {loading && (
-        <SpinnerDiv>
-          <Spinner />
-        </SpinnerDiv>
-      )}
     </>
   );
 }
