@@ -6,7 +6,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import GlobalStyle from './components/GlobalStyle';
-import particlesJS from 'particles.js';
+
 
 const AppContainer = styled.div`
   font-family: "Nunito", sans-serif;

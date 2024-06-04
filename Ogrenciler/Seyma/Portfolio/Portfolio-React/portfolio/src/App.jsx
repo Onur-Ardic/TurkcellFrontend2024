@@ -36,10 +36,9 @@ function App() {
       </div>
       <SideBar className='sideBarContent'/> 
   </section>
-  <section className='sliderBar'>
+  {/* <section className='sliderBar'>
   <Slider></Slider>
-  </section>
-
+  </section> */}
     </>
   )
 }
