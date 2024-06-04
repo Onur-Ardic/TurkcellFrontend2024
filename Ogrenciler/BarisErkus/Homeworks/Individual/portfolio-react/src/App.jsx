@@ -1,6 +1,7 @@
 import "./App.css";
 import AboutMe from "./components/AboutMe";
-import AcademicInfo from "./components/AcademicInfo";
+import AcademicInfo from "./components/Academic/Info";
+import Works from "./components/Academic/Works";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 
@@ -19,6 +20,7 @@ function App() {
       <Home socialMediaLinks={socialMediaLinks} email={email} />
       <AboutMe />
       <AcademicInfo />
+      <Works />
     </>
   );
 }
