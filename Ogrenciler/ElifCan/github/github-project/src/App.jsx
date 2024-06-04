@@ -44,14 +44,24 @@ function App() {
           text={"Get Person"}
           placeholder="Bir isim giriniz"
         />
-        <div className="backgroundCardBottom">
+        <div className="row">
+        <div className="backgroundCardBottom col-6">
           {data ? <UserCard user={data} /> : null}
         </div>
-        <div>
-          {repository.slice(0, 4).map((repo) => (
-            <RepoCard key={repo.id} repository={repo} />
-          ))}
+        <div className="repoCard col-6">
+          <div className="row">
+          {repository.slice(0, 6).map((repo) => {
+            return(
+              <div className="col-6">
+                <RepoCard key={repo.id} repository={repo} />
+              </div>
+            )
+          })}
+          </div>
+          
         </div>
+        </div>
+       
 
         <div className="topLeft">
           <img src="https://r.resimlink.com/9rhDAiKw.png" alt="" />
