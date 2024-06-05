@@ -14,7 +14,7 @@ const UserProfile = ({ userData }) => {
       <p>
         Followers: {userData.followers} - Following: {userData.following}
       </p>
-      <a href={userData.html_url} target="_blank" rel="noopener noreferrer">
+      <a href={userData.html_url} target="_blank">
         View Profile on GitHub
       </a>
     </div>
