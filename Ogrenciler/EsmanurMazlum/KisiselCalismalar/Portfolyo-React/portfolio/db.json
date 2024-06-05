@@ -1,0 +1,92 @@
+{
+    "projects": [
+      {
+        "id": "68f6",
+        "name": "Smile With Us",
+        "imgUrl": "assets/smilewithus.png",
+        "Technology": ["HTML", "SCSS", "Bootstrap"],
+        "githubUrl": "https://github.com/Esmanurrr/Smile-E-commerce",
+        "demoUrl": "https://smilewithus.netlify.app/"
+      },
+      {
+        "id": "fd0e",
+        "name": "Upstart",
+        "imgUrl": "assets/upstart.png",
+        "Technology": ["HTML", "CSS"],
+        "githubUrl": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EsmanurMazlum/TakimCalismalari/Odev01-Upstart",
+        "demoUrl": "https://upstartdemo.netlify.app/"
+      },
+      {
+        "name": "Biniog",
+        "imgUrl": "assets/biniog.png",
+        "Technology": ["HTML", "CSS"],
+        "githubUrl": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EsmanurMazlum/TakimCalismalari/Odev02-Biniog",
+        "demoUrl": "https://biniogdemo.netlify.app/",
+        "id": "db32"
+      },
+      {
+        "name": "Druco",
+        "imgUrl": "assets/druco.png",
+        "Technology": ["HTML", "CSS"],
+        "githubUrl": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EsmanurMazlum/TakimCalismalari/Odev03-Druco",
+        "demoUrl": "https://drucodemo.netlify.app/",
+        "id": "d718"
+      },
+      {
+        "name": "Agon",
+        "imgUrl": "assets/agon.png",
+        "Technology": ["HTML", "CSS"],
+        "githubUrl": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EsmanurMazlum/TakimCalismalari/Odev04-Agon",
+        "demoUrl": "https://agondemo.netlify.app/",
+        "id": "55bb"
+      },
+      {
+        "name": "Directory Ads",
+        "imgUrl": "assets/directoryads.png",
+        "Technology": ["HTML", "SCSS"],
+        "githubUrl": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EsmanurMazlum/TakimCalismalari/Odev05-DirectoryAds",
+        "demoUrl": "https://directoryadsdemo.netlify.app/",
+        "id": "6b2e"
+      },
+      {
+        "name": "SmartPos",
+        "imgUrl": "assets/smartpos.png",
+        "Technology": ["HTML", "SCSS"],
+        "githubUrl": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EsmanurMazlum/TakimCalismalari/Odev06-SmartPos",
+        "demoUrl": "https://smartposdemo.netlify.app/",
+        "id": "4d55"
+      },
+      {
+        "name": "Imagine",
+        "imgUrl": "assets/imagine.png",
+        "Technology": ["HTML", "SCSS", "Bootstrap"],
+        "githubUrl": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EsmanurMazlum/TakimCalismalari/Odev07-Imagine",
+        "demoUrl": "https://imaginedemo.netlify.app/",
+        "id": "0c7c"
+      },
+      {
+        "name": "HostHub",
+        "imgUrl": "assets/hosthub.png",
+        "Technology": ["HTML", "SCSS", "Bootstrap"],
+        "githubUrl": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EsmanurMazlum/TakimCalismalari/Odev08-HostHub",
+        "demoUrl": "https://hosthubdemo.netlify.app/",
+        "id": "43ab"
+      },
+      {
+        "name": "Register Form",
+        "imgUrl": "assets/registerform.png",
+        "Technology": ["HTML", "SCSS", "Bootstrap", "Javascript"],
+        "githubUrl": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EsmanurMazlum/TakimCalismalari/TakimCalismasi06-Js-RegisterForm",
+        "demoUrl": "https://registerformwithjs.netlify.app/",
+        "id": "43a4"
+      },
+      {
+        "name": "Create Movie List",
+        "imgUrl": "assets/movielist.png",
+        "Technology": ["HTML", "SCSS", "Bootstrap", "Javascript"],
+        "githubUrl": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EsmanurMazlum/TakimCalismalari/TakimCalismasi10-Js-Movie-Class",
+        "demoUrl": "https://filmlisteniolustur.netlify.app/",
+        "id": "437b"
+      }
+    ]
+  }
