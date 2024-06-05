@@ -1,0 +1,30 @@
+/* body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #ddd2cc;
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+}
