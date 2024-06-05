@@ -11,18 +11,19 @@ const UserCard = ({ user }) => {
     </div>
     <div className="contentRight">
     <h2>{user.name}</h2>
-      <i className="bi bi-people-fill"></i> <p>Followers: {user.followers}</p><p>Following: {user.following}</p>
-      
-      <a href={user.html_url} target="blank">
+      <i className="bi bi-people-fill"></i> <p><span className="fw-bold">Followers: </span> {user.followers}</p>
+      <p> <span className="fw-bold">Following: </span> {user.following}</p>
+      <p> <a href={user.html_url} target="blank" className="text-white">
         visit Github
-      </a>
-      <a href={user.blog} target="blank">
+      </a></p>
+      <p ><a href={user.blog} className="text-white" target="blank">
         Blog
-      </a>
-      <p>Bio: {user.bio} </p>
-      <p>Company: {user.company} </p>
-      <p>location:{user.location} </p>
-      <p>Public Repos: {user.public_repos} </p>
+      </a></p>
+      
+      <p> <span className="fw-bold">Bio: </span> {user.bio} </p>
+      <p><span className="fw-bold">Company: </span> {user.company} </p>
+      <p> <span className="fw-bold">location: </span>{user.location} </p>
+      <p> <span className="fw-bold">Public Repos: </span> {user.public_repos} </p>
     </div>
    
     </div>

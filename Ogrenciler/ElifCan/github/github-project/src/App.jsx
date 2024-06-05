@@ -44,7 +44,7 @@ function App() {
           text={"Get Person"}
           placeholder="Bir isim giriniz"
         />
-        <div className="row">
+        <div className="row content">
         <div className="backgroundCardBottom col-6">
           {data ? <UserCard user={data} /> : null}
         </div>
@@ -58,11 +58,8 @@ function App() {
             )
           })}
           </div>
-          
         </div>
         </div>
-       
-
         <div className="topLeft">
           <img src="https://r.resimlink.com/9rhDAiKw.png" alt="" />
         </div>

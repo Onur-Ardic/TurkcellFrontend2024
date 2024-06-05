@@ -19,7 +19,6 @@ body {
   width: 80vw;
   padding: 2rem;
   position: relative;
-  /* align-content: center; */
 }
 .backgroundCardBottom {
   /* display: flex;
@@ -47,6 +46,9 @@ body {
 }
 .onur{
   margin-top: 6rem;
+}
+.content{
+  margin-top: 7rem;
 }
 
 @keyframes gradient {
