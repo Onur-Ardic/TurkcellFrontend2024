@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "reactportfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,8 +13,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
-    "react-modal": "^3.16.1",
-    "styled-components": "^6.1.11"
+    "react-spinners": "^0.13.8"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
