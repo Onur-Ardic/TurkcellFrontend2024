@@ -5,7 +5,7 @@ import UserCard from "./components/molecules/UserCard";
 import RepoCard from "./components/molecules/RepoCard";
 
 function App() {
-  const [username, setUsername] = useState("alpayozer");
+  const [username, setUsername] = useState("waroi");
   const [data, setData] = useState(null);
   const [repository, setRepository] = useState([]);
 
@@ -14,6 +14,9 @@ function App() {
       .then((data) => data.json())
       .then((response) => setData(response))
       .catch((e) => alert(e.message));
+
+    fetchRepos();
+    setUsername("");
   }
 
   const fetchRepos = async () => {
@@ -28,7 +31,6 @@ function App() {
   }
   useEffect(() => {
     handleClick();
-    fetchRepos();
     setUsername("");
   }, []);
 
@@ -45,20 +47,20 @@ function App() {
           placeholder="Bir isim giriniz"
         />
         <div className="row content">
-        <div className="backgroundCardBottom col-6">
-          {data ? <UserCard user={data} /> : null}
-        </div>
-        <div className="repoCard col-6">
-          <div className="row">
-          {repository.slice(0, 6).map((repo) => {
-            return(
-              <div className="col-6">
-                <RepoCard key={repo.id} repository={repo} />
-              </div>
-            )
-          })}
+          <div className="backgroundCardBottom col-6">
+            {data ? <UserCard user={data} /> : null}
           </div>
-        </div>
+          <div className="repoCard col-6">
+            <div className="row">
+              {repository.slice(0, 6).map((repo) => {
+                return (
+                  <div className="col-6">
+                    <RepoCard key={repo.id} repository={repo} />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
         <div className="topLeft">
           <img src="https://r.resimlink.com/9rhDAiKw.png" alt="" />
