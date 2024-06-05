@@ -25,35 +25,35 @@ const Projects = () => {
                 />
                 <ProjectCard
                     title='Kütüphane Projesi'
-                    description='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!'
+                    description='Javascript ile yapılmış kütüphane projesi.'
                     src={projectTwo}
                     githubLink='https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/Muhammed%20Saka/odevv2'
                     projectLink='#'
                 />
                 <ProjectCard
                     title='Upstart Website'
-                    description='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!'
+                    description='Grup İle Yapmış Olduğumuz Web Sitesi'
                     src={projectThree}
                     githubLink='https://github.com/kullanici/proje3'
                     projectLink='https://shreethemes.in/upstart/layouts/index.html'
                 />
                 <ProjectCard
                     title='BINIOG Website'
-                    description='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!'
+                    description='Grup İle Yapmış Olduğumuz Web Sitesi'
                     src={projectFour}
                     githubLink='https://github.com/kullanici/proje4'
                     projectLink='https://geniusdevs.com/themeforest/biniog/biniog-dark1/index.html'
                 />
                 <ProjectCard
                     title='DRUCO Website'
-                    description='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!'
+                    description='Grup İle Yapmış Olduğumuz Web Sitesi'
                     src={projectFive}
                     githubLink='https://github.com/kullanici/proje5'
                     projectLink='https://demo.theme-sky.com/druco/'
                 />
                 <ProjectCard
                     title='Agon website'
-                    description='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!'
+                    description='Grup İle Yapmış Olduğumuz Web Sitesi'
                     src={projectSix}
                     githubLink='https://github.com/kullanici/proje6'
                     projectLink='https://agon-nextjs-13.vercel.app/index-2'
