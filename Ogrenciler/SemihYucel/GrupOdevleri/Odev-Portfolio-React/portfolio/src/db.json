@@ -6,7 +6,7 @@
       "endDate": "2023-12-31",
       "language": "JavaScript",
       "description": "Bu proje bir örnek projedir.",
-      "image": "https://via.placeholder.com/150"
+      "image": "https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "endDate": "2024-06-30",
       "language": "Python",
       "description": "Bu proje başka bir örnek projedir.",
-      "image": "https://via.placeholder.com/150"
+      "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "endDate": "2024-01-15",
       "language": "Java",
       "description": "Bu proje bir Java projesidir.",
-      "image": "https://via.placeholder.com/150"
+      "image": "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "endDate": "2024-03-20",
       "language": "C#",
       "description": "Bu proje bir C# projesidir.",
-      "image": "https://via.placeholder.com/150"
+      "image": "https://images.unsplash.com/photo-1506765515384-028b60a970df"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "endDate": "2024-05-10",
       "language": "Ruby",
       "description": "Bu proje bir Ruby projesidir.",
-      "image": "https://via.placeholder.com/150"
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475"
     }
   ]
 }

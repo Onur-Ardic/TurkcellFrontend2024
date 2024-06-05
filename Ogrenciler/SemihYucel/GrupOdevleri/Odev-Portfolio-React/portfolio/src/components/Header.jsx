@@ -83,7 +83,7 @@ const IconWrapper = styled.span`
 const Header = () => (
   <HeaderContainer>
     <Content>
-      <ProfileImage src="https://via.placeholder.com/150" alt="Profile" />
+    <ProfileImage src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo" />
       <TextContainer>
         <Name>Semih YÜCEL</Name>
         <Title>YAZILIM MÜHENDİSİ</Title>
