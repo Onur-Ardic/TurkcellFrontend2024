@@ -1,0 +1,300 @@
+/* Navbar */
+nav {
+    background-color: #4C01E0;
+    border-bottom: 0.063rem solid rgba(255, 255, 255, 0.15);
+}
+.nav-container {
+    justify-content: space-between;
+    padding: 1.375rem 23.75rem;
+}
+.nav-links ul li {
+    display: inline;
+    padding: 1.25rem;
+}
+.login {
+    padding: 0.625rem 1.25rem;
+    border-radius: 3.125rem;
+}
+/* Home 1 */
+.home-container {
+    padding: 9.375rem 0 12.5rem 0;
+    max-width: 68.75rem;
+}
+.home-container-left-side {
+    padding: 0 0.938rem;
+    width: 50%;
+}
+.home-container-right-side {
+    padding: 0 2rem;
+}
+.main-input {
+    padding: 1.25rem 1.563rem;
+    border-radius: 3.125rem;
+    width: 80%;
+}
+.main-input::placeholder {
+    color: #9CCAF0;
+}
+.main-image {
+    width: 30rem;
+    height: 31.25rem;
+}
+.home-left-side-header {
+    font-size: 3.125rem;
+    margin-bottom: 1.25rem;
+}
+.home-left-side-paragraph {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 3rem;
+}
+.home-left-side-play-button {
+    color: #9CCAF0;
+    width: 3.75rem;
+    height: 3.75rem;
+}
+.home-left-side-footer {
+    gap: 1.875rem
+}
+.main-button {
+    line-height: 3.25rem;
+    padding: 0 1.8rem;
+    background: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+    border: 0;
+    border-radius: 3.125rem;
+    /* Temp */
+    margin-left: 18.75rem;
+    margin-top: 0.25rem;
+}
+/* Top Card */
+.top-card-container {
+    gap: 1.875rem;
+    top: 75%;
+    left: 22%;
+}
+.top-card-item {
+    justify-content: space-around;
+    padding: 1.563rem;
+    width: 20.625rem;
+}
+.top-card-item-icon {
+    padding: 1.25rem;
+    font-size: 1.875rem;
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-bottom: 1.25rem;
+}
+.top-card-item-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.938rem;
+}
+.top-card-item-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.top-card-item-paragraph {
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+/* About 2 */
+.about {
+    padding: 18.75rem 0 6.25rem 0;
+}
+.about-container {
+    padding: 0 0.938rem;
+}
+.about-container-content {
+    gap: 6.25rem;
+    max-width: 77.5rem;
+}
+.about-container-content-right-side-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.375rem;
+}
+.about-container-content-right-side-paragraph {
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+.about-container-content-right-side-item {
+    margin: 1.25rem 0;
+}
+.about-container-content-right-side-item-icon {
+    font-size: 1.25rem;
+    width: 4.375rem;
+    height: 4.375rem;
+    margin-right: 1.25rem;
+    border-radius: 50%;
+    padding: 2.5rem;
+}
+.about-container-content-right-side-item-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+.about-container-content-right-side-item-paragraph {
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+/* Choose */
+.choose-container {
+    margin: 8rem 0;
+}
+.circle-box-list {
+    display: flex;
+    gap: 2rem;
+}
+.circle-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+.circle-box-circle {
+    border-radius: 50%;
+    padding: 2rem;
+    background: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+}
+/* Fast Profit */
+.fast-profit {
+    padding: 3rem 24rem;
+}
+.fast-profit-container {
+    border-radius: 0.75rem;
+    box-shadow: 0px 0px 10px #4e3b7b;
+    padding: 3rem;
+}
+.fast-profit-left img {
+    width: 25rem;
+}
+.fast-profit-right h4{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.fast-profit-right p{
+    font-size: 1.115rem;
+    line-height: 1.75rem;
+    margin-bottom: 2.5rem;
+}
+/* Investment Plans */
+.investment {
+    padding: 6rem 24rem;
+}
+.investment-button-container {
+    display: flex;
+    gap: 1.25rem;
+    margin-top: -5rem;
+}
+.investment-button {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 0px 10px #4e3b7b;
+}
+.investment-button-weekly {
+    background: transparent;
+}
+.investment-card-container {
+    gap: 1.25rem;
+    margin-top: 3rem;
+}
+.investment-card {
+    padding: 2rem;
+    background: #032055;
+}
+.price-rate {
+    padding: 1rem 7rem;
+    font-size: 1.5rem;
+    margin: 1.25rem 0;
+}
+.min-max-container {
+    gap: 0.75rem;
+}
+.investment-button {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 0px 10px #4e3b7b;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* How Does It Works */
+.how-does-it-works-container {
+    padding: 5rem 30rem;
+}
+.how-does-it-works-card-container {
+    gap: 1.25rem;
+}
+.how-does-it-works-card {
+    padding: 2rem;
+    gap: 1.25rem;
+}
+.how-does-it-works-card-pic {
+    padding: 3rem;
+    border-radius: 6rem;
+}
+/* Start Investment */
+.responsive-table {
+    margin-top: 2rem;
+}
+.table {
+    background: #001232;
+    padding: 1rem;
+}
+th {
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+tr {
+    gap: 12rem;
+    padding: 1rem;
+}
+td {
+    gap: 1rem;
+}
+/* Create Better Experience */
+.create-better-experiences-container {
+    padding: 5rem 30rem;
+    justify-content: space-between;
+}
+.create-better-experiences-button {
+    padding: 0 2.5rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 0px 10px #4e3b7b;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #8527E1;
+}
+/* Our Biggest Advantage */
+.our-biggest-advantage-container {
+    padding: 5rem 27rem;
+    justify-content: space-between;
+}
+.our-biggest-advantage-container-content-left {
+    gap: 1.25rem;
+}
+/* Our Top 5 Inventors */
+.our-top-5-inventors-container {
+    padding: 5rem 27rem;
+}
+.our-top-5-inventors-card-container {
+    gap: 1.25rem;
+
+}
+.our-top-5-inventors-card {
+    padding: 0 5rem;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+.our-top-5-inventors-card-img {
+    top: -4rem;
+    border-radius: 1rem;
+}
+.links {
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
