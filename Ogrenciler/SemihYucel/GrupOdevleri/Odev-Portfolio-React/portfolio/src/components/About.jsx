@@ -130,6 +130,7 @@ const DownloadButton = styled.a`
 
   &:hover {
     background-color: #009aa5;
+    color: #fff;
     transform: translateY(-3px);
   }
 `;
@@ -152,7 +153,7 @@ const About = () => (
           <InfoText>Ülke: Türkiye</InfoText>
           <InfoText>Dil: Türkçe, İngilizce</InfoText>
           <InfoText>Email Adresi: semihycl0@gmail.com</InfoText>
-          <DownloadButton href="#">
+          <DownloadButton href="https://semihycl.com/cv/Semih Yücel - CV.pdf">
             CV İndir
             <IconWrapper><FaDownload /></IconWrapper>
           </DownloadButton>

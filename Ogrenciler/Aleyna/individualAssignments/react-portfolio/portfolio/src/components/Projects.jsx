@@ -89,20 +89,20 @@ const projectData = [
   {
     title: "MOVIE ",
     description: "REACT",
-    image: "mac5.png",
+    image: "movie-r.png",
     team: "Aleyna Ertok, Esin Oruç , Hasan Yasen",
   },
   {
     title: "TO-DO",
     description: "REACT",
-    image: "site2.png",
+    image: "todo.png",
     team: "Aleyna Ertok, Egemen Kaplan, Enes Alagöz",
   },
 
   {
     title: "GITHUB CLONE",
     description: "REACT",
-    image: "site2.png",
+    image: "github.png",
     team: "Aleyna Ertok, Barış Erkuş, Onur Ardıç,Muhammed Saka",
   },
 
