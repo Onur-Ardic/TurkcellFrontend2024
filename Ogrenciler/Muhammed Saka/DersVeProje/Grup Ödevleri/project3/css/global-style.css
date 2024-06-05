@@ -1,0 +1,74 @@
+* {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #202020;
+  font-weight: 500;
+}
+h1 {
+  font-size: 60px;
+  font-weight: 1000;
+  color: white;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: none;
+}
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+button {
+  cursor: pointer;
+}
+.section {
+  padding: 5rem 0px;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.grid {
+  display: grid;
+}
+.text-center {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+.white {
+  color: white;
+}
+.main-text-color {
+  color: #ffb91f;
+}
+.main-background-color {
+  background-color: #ffb91f;
+}
+.hover-text-main:hover {
+  color: #ffb91f;
+}
+.pointer {
+  cursor: pointer;
+}
+.blog-main-right {
+  gap: 2rem;
+}
+hr {
+  border: 1px solid rgb(231, 231, 231);
+}
+.gap {
+  gap: 2rem;
+}
+.radius {
+  border-radius: 2.5rem;
+}

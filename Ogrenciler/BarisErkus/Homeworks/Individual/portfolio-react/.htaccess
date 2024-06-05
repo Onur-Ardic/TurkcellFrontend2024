@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# HTTPS'ye yönlendirme
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# SPA yönlendirmesi
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
+# HSTS ayarı
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"

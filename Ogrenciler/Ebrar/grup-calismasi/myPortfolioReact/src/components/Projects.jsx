@@ -6,6 +6,11 @@ import drucoImg from "../assets/druco.png";
 import smartposImg from "../assets/smartpos.png";
 import upstartImg from "../assets/upstart.png";
 import directoryadsImg from "../assets/directoryads.png";
+import sculptartImg from "../assets/sculpart.png";
+import weatherappImg from "../assets/weatherapp.png";
+import todolistImg from "../assets/todolist.png";
+import githubcloneImg from "../assets/githubclone.png";
+import bookstoreImg from "../assets/bookstore.png";
 
 const ProjectsContainer = styled.section`
   height: 100%;
@@ -97,6 +102,31 @@ const ProjectTitle = styled.div`
 `;
 
 const projectData = [
+  {
+    src: sculptartImg,
+    name: "SCULPTART",
+    link: "http://127.0.0.1:5501/Ogrenciler/Ebrar/Odevler/odev1/index.html",
+  },
+  {
+    src: bookstoreImg,
+    name: "BOOKSTORE",
+    link: "http://127.0.0.1:5501/Ogrenciler/Ebrar/Odevler/odev2/index.html",
+  },
+  {
+    src: githubcloneImg,
+    name: "GITHUB CLONE",
+    link: "http://localhost:5176/",
+  },
+  {
+    src: weatherappImg,
+    name: "WEATHER APP",
+    link: "http://localhost:5175/",
+  },
+  {
+    src: todolistImg,
+    name: "TODO LIST",
+    link: "http://localhost:5174/",
+  },
   {
     src: directoryadsImg,
     name: "DIRECTORYADS",

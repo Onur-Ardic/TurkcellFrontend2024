@@ -20,7 +20,8 @@ const Navbar = () => {
         <div className="collapse navbar-collapse " id="navbarPortfolio">
           <ul className="navbar-nav ms-auto gap-4">
             <NavLink text="Home" href="#" />
-            <NavLink text="Projects" href="#" />
+            <NavLink text="Projects" href="#projectsHeading" />
+            <NavLink text="Articles" href="#articlesHeading" />
             <NavLink text="About Me" href="#" />
             <NavLink text="Contact" href="#" />
           </ul>

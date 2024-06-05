@@ -1,6 +1,26 @@
 {
   "name": "portfolio-react",
   "private": true,
+  "homepage": "https://bariserkus.com/",
+  "author": {
+    "name": "Barış Erkus",
+    "email": "1bariserkus@gmail.com"
+  },
+  "description": "Barış Erkuş's portfolio website.",
+  "displayName": "Barış Erkuş",
+  "icon": "logo.jpg",
+  "keywords": [
+    "portfolio",
+    "website",
+    "react",
+    "Barış Erkuş",
+    "özgeçmiş",
+    "CV",
+    "Web Developer",
+    "Frontend Developer",
+    "React Developer"
+  ],
+  "publisher": "Barış Erkuş",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
