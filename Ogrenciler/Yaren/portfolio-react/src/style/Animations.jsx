@@ -1,6 +1,5 @@
 import { keyframes } from "styled-components";
 
-// Animasyon tanımları
 export const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -34,6 +33,7 @@ export const bounce = keyframes`
     transform: translateY(-15px);
   }
 `;
+
 export const typing = keyframes`
   from {
     width: 0;
@@ -47,4 +47,15 @@ export const blink = keyframes`
   50% {
     border-color: transparent;
   }
+`;
+
+export const octocatWave = keyframes`
+  0%, 100% { transform: rotate(0); }
+  20%, 60% { transform: rotate(-35deg); }
+  40%, 80% { transform: rotate(10deg); }
+`;
+
+export const rotate = keyframes`
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 `;

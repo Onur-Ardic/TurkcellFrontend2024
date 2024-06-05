@@ -1,7 +1,7 @@
 import React from 'react'
 import { InputCard } from '../css/InputCss'
 function Input({user,setUser,handleUser}) {
-
+    
     return (
         <>
             <div className="input-group">

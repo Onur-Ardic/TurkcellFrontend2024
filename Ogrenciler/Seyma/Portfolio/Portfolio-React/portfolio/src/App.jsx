@@ -19,14 +19,14 @@ function App() {
 
   return (
     <>
-    
   <section className='home'>
     <div className="container">
     <Navbar/>
-    <div className="row p-3 mt-5 p-md-5 text-white rounded">
+    <div ><img className='mt-3 rounded-5 w-25 mx-5' src="https://r.resimlink.com/h0f4k3H.jpeg" alt="" /></div>
+    <div className="row p-3 mt-2 p-md-5 text-white rounded">
         <div class="col-md-6 px-0">
           <h1 class="display-4 font-italic">Şeyma Bayezit</h1>
-          <p class="lead my-3"> About ME Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
+          <p class="lead my-3"> Hi, welcome to my page. I am a Front-end Developer program student at Turkcell Future Writers Bootcamp. During the bootcamp, I learn basic web development languages ​​such as HTML, CSS and JavaScript.</p>
           <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
         </div>
        <div><img src="" alt="" /></div>

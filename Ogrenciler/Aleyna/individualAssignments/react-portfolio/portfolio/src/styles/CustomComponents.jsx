@@ -29,8 +29,14 @@ export const Nav = styled.nav`
   align-items: center;
   padding: 20px;
   position: fixed;
-  width: 95%;
+  width: 99.9%;
   top: 0;
+  background: linear-gradient(
+    103deg,
+    rgba(237, 197, 180, 1) 4%,
+    rgba(235, 192, 200, 1) 36%,
+    rgba(148, 187, 233, 1) 93%
+  );
 `;
 
 export const NavMenuLogo = styled.div`
@@ -45,7 +51,7 @@ export const NavMenuRight = styled.div`
     color: black;
     font-size: 14px;
     line-height: 30px;
-    font-weight: 300;
+    font-weight: bold;
     text-decoration: none;
   }
 `;
@@ -83,12 +89,33 @@ export const ContentWrapper = styled.div`
 
 export const TopContent = styled.div`
   h1 {
-    font-size: 50px;
-    font-weight: 600;
-    color: black;
-    margin-bottom: 60px;
-    font-family: "Caudex", serif;
+    padding: 40px;
     text-align: center;
+    color: hsl(0, 0%, 28%);
+    font-size: 50px;
+    letter-spacing: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: linear-gradient(
+      to right,
+      hsl(0, 0%, 30%) 0,
+      hsl(0, 0%, 100%) 10%,
+      hsl(0, 0%, 30%) 20%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    @keyframes shine {
+      0% {
+        background-position: 0;
+      }
+      60% {
+        background-position: 600px;
+      }
+      100% {
+        background-position: 600px;
+      }
+    }
   }
   p {
     font-size: 24px;

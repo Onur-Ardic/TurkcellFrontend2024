@@ -8,7 +8,7 @@ import {
 } from "../../styles";
 import Techs from "../Landing/Techs";
 
-const ProjectContent = ({ name, techs, desc }) => {
+const ProjectContent = ({ name, techs, desc, demo, code }) => {
   return (
     <Col width={55}>
       <UnderLineDiv>
@@ -18,10 +18,14 @@ const ProjectContent = ({ name, techs, desc }) => {
       <ProjectDesc>{desc}</ProjectDesc>
       <RowBetween>
         <Col width={45}>
-          <ConnectButton>Demo</ConnectButton>
+          <ConnectButton href={demo} target="_blank">
+            Demo
+          </ConnectButton>
         </Col>
         <Col width={45}>
-          <ConnectButton>Code</ConnectButton>
+          <ConnectButton href={code} target="_blank">
+            Code
+          </ConnectButton>
         </Col>
       </RowBetween>
     </Col>

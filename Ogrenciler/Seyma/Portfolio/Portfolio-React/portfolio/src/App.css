@@ -1,5 +1,5 @@
 body {
-  background-color: #363434;
+  background-color: #000000;
   font-family: "Tajawal", sans-serif;
 
 }
@@ -10,7 +10,7 @@ body {
 .sideBar {
   background: #3b3b3f;
   width: 12rem;
-  height: 200vh;
+  height: 108vh;
   position: absolute;
   top: -60px;
   right: 0;

@@ -1,14 +1,20 @@
 import React from "react";
+import styled from "styled-components";
 import UserCard from "./UserCard";
 import RepoCard from "./RepoCard";
 
-const UserList = ({ showUser,repoData }) => {
+const Row = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const UserList = ({ showUser, repoData }) => {
   return (
-    <div className="container">
-      <div className='row justify-content-between'>
-      <UserCard showUser={showUser} />
-      <RepoCard repoData={repoData}/>
-    </div>
+    <div className="container pt-3">
+      <Row>
+        <UserCard showUser={showUser} />
+        <RepoCard repoData={repoData} />
+      </Row>
     </div>
   );
 };

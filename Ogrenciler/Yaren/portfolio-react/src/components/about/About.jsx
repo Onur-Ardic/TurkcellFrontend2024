@@ -1,46 +1,40 @@
 import React from "react";
-
-import Flex from "../../style/FlexColumn.styled";
+import StyledAbout, {
+  AboutSection,
+  AboutParagraph,
+  Icons,
+  Polaroid,
+  Gif,
+} from "./About.styled";
+import FlexColumn from "../../style/FlexColumn.styled";
 import FlexRow from "../../style/FlexRow.styled";
 import { TbCat } from "react-icons/tb";
 import { FaHeart } from "react-icons/fa";
 import AnimatedTitle from "../../style/AnimatedTitle.styled";
-import StyledAbout, {
-  AboutSection,
-  AboutTitle,
-  AboutParagraph,
-  Icons,
-} from "./About.styled";
-import { Logo } from "../header/Header.styled";
-import Foto from "../../assets/pc.png";
+import Foto from "../../assets/ben.png";
+
 const About = () => {
   return (
     <StyledAbout>
       <AnimatedTitle>Hakkımda</AnimatedTitle>
       <FlexRow>
-        <Flex>
-          <Logo src={Foto}></Logo>
-
-          <div>
-            <h3>Yaren Su</h3>
-          </div>
-        </Flex>
+        <FlexColumn>
+          <Polaroid>
+            <img src={Foto} alt="Yaren Su" />
+            <span>Yaren Su</span>
+          </Polaroid>
+        </FlexColumn>
 
         <AboutSection>
-          <Flex>
+          <FlexColumn>
             <Icons>
               <FaHeart />
-
               <TbCat />
               <FaHeart />
-
               <TbCat />
-
               <FaHeart />
+              <TbCat />
 
-              <TbCat />
-              <AboutTitle>Selam</AboutTitle>
-              <TbCat />
               <FaHeart />
               <TbCat />
               <FaHeart />
@@ -49,14 +43,17 @@ const About = () => {
             </Icons>
 
             <AboutParagraph>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              officia, voluptatum, quos, inventore quae quas voluptatem
-              consequuntur dolorum nemo doloremque quidem. Quisquam, doloremque
-              quidem. Quisquam, doloremque quidem. Quisquam, doloremque quidem.
+              Sanata ve yazılıma ilgi duyan bir birey olarak, bu iki tutkumun
+              kesiştiği bir alan olan front-end geliştirme ile ilgileniyorum. Şu
+              anda Turkcell bünyesinde GYGY 3.0-Front End sınıfında eğitim
+              alıyorum. Ayrıca kedileri ve sanat tarihi hakkında okuma yapmayı
+              seviyorum.
             </AboutParagraph>
-          </Flex>
+          </FlexColumn>
         </AboutSection>
       </FlexRow>
+
+      <Gif src="https://i.gifer.com/VeC.gif" alt="Cat Gif" />
     </StyledAbout>
   );
 };

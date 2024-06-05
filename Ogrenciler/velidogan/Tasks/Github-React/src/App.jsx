@@ -13,7 +13,6 @@ function App() {
 
   const fetchUser = async() => {
     const response = await Request.get(`https://api.github.com/users/${user}`);
-    console.log(response)
     if(response.name == "Error") {
       setErrMsg(response.message);
       return;
@@ -23,7 +22,7 @@ function App() {
     setErrMsg("");
   }
   const fetchRepo = async(url) => {
-    const response = await Request.get(url);    
+    const response = await Request.get(url);  
     setUserRepo(response);
   }
   const handleUser = () => {

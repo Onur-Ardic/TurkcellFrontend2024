@@ -1,24 +1,36 @@
 import React from "react";
 import StyledExperience, {
+  StyledExperienceContainer,
   ExperienceImage,
   ExperienceContent,
+  DateText,
   Divider,
+  Gif,
 } from "./Experience.styled";
-import { Logo } from "../header/Header.styled";
-import Foto from "../../assets/pc.png";
+import FlexColumn from "../../style/FlexColumn.styled";
+import experiences from "../../data/experiences";
 
-const Experience = ({ title, body, image, id }) => {
+const Experience = () => {
   return (
-    <StyledExperience odd={id % 2 && "row-reverse"}>
-      <ExperienceImage>
-        <Logo src={Foto} />
-      </ExperienceImage>
+    <StyledExperienceContainer>
       <Divider />
-      <ExperienceContent>
-        <h2>{title}</h2>
-        <p>{body}</p>
-      </ExperienceContent>
-    </StyledExperience>
+
+      <FlexColumn>
+        {experiences.map((exp, index) => (
+          <StyledExperience key={exp.id} odd={index % 2 !== 0}>
+            <ExperienceImage>
+              <img src={exp.image} alt={exp.title} />
+            </ExperienceImage>
+            <ExperienceContent>
+              <DateText>{exp.date}</DateText>
+              <h2>{exp.title}</h2>
+              <p>{exp.description}</p>
+            </ExperienceContent>
+          </StyledExperience>
+        ))}
+      </FlexColumn>
+      <Gif src="https://i.gifer.com/VeC.gif" alt="Animated GIF" />
+    </StyledExperienceContainer>
   );
 };
 
