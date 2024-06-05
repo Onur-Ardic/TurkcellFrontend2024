@@ -143,3 +143,19 @@ js uzantısı kullanınca createElement('div',.....) ile yapman lazım ama jsx o
 Bir state'in değeri set..... methodu kullanılarak değiştirildiğinde o component tekrar render edilir.
 
 useRef
+
+dispathcer nedir
+
+virtual dom gerçek dom farkı
+
+component life cyclelar araştır
+
+javascript motoru nasıl çalışır
+
+microfrontend nx
+
+big oh notation
+
+react router
+
+context

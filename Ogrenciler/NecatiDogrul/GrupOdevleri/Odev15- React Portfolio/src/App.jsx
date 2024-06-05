@@ -1,18 +1,17 @@
 import React from "react";
-import "./css/global.css";
-import "./css/main.css";
-import "./css/responsive.css";
 import Header from "./components/Header";
 import Content from "./components/Content";
 import Projects from "./components/Projects";
+import GlobalStyle from "./components/GlobalStyle";
 
 function App() {
   return (
-    <div>
+    <>
+      <GlobalStyle />
       <Header />
       <Content />
       <Projects />
-    </div>
+    </>
   );
 }
 
