@@ -16,7 +16,7 @@ const ContactIcons = () => {
                     Front-end Developer
                 </p>
                 <p className='text-base text-gray-400 tracking-wide'>
-                    Adres ve İleişim Bilgilerimi Aşağıda Bulabilirsiniz
+                    Adres ve İletişim Bilgilerimi Aşağıda Bulabilirsiniz
                 </p>
                 <p className='text-base text-gray-400 flex items-center gap-2'>
                     Phone: <span className='text-lighText'>+90 553  221 2121</span>
