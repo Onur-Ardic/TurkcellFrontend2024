@@ -1,40 +1,67 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React from "react";
+import styled from "styled-components";
 import { FaGithub } from "react-icons/fa6";
+import { Navbar, Container, Nav, Form, Button } from "react-bootstrap";
 
-function NavbarExample({user, setUser, handleClick }) {
-    
+const StyledNavbar = styled(Navbar)`
+  background-color: #14161a;
+  padding: 16px;
+`;
 
+const StyledBrand = styled(Navbar.Brand)`
+  display: flex;
+  align-items: center;
+`;
+
+const StyledIcon = styled(FaGithub)`
+  color: white;
+  font-size: 30px;
+`;
+
+const StyledForm = styled(Form)`
+  display: flex;
+  align-items: center;
+`;
+
+const StyledFormInput = styled(Form.Control)`
+  margin-right: 8px;
+`;
+
+const StyledNav = styled(Nav)`
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  margin-right: auto;
+`;
+
+const NavbarSection = ({ user, setUser, handleClick }) => {
   return (
-    <>
-    <Navbar expand="lg" className='p-3'>
+    <StyledNavbar expand="lg">
       <Container>
-        <Navbar.Brand href="#"><FaGithub style={{color: "white", fontSize: "30px"}} /></Navbar.Brand>
+        <StyledBrand href="#">
+          <StyledIcon />
+        </StyledBrand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-          </Nav>
-          <Form className="d-flex">
-            <Form.Control
-               type="text"  value={user}  onChange={(e) => setUser(e.target.value)} placeholder="Kullanıcı Adı Giriniz"
-              className="me-2"
+          <StyledNav navbarScroll />
+          <StyledForm>
+            <StyledFormInput
+              type="text"
+              value={user}
+              onChange={(e) => setUser(e.target.value)}
+              placeholder="Kullanıcı Adı Giriniz"
               aria-label="Search"
             />
-            <Button onClick={handleClick} variant="outline-secondary">Search</Button>
-          </Form>
+            <Button
+              onClick={() => handleClick(user)}
+              variant="outline-secondary">
+              Search
+            </Button>
+          </StyledForm>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
-    </>
-    
+    </StyledNavbar>
   );
-}
+};
 
-export default NavbarExample;
+export default NavbarSection;
