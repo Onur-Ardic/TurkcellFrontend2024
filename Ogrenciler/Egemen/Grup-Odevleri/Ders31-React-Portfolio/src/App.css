@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    width: 30%;
+}
+@media screen and (max-width: 768px) {
+    .card{
+        width: 100%;
+    }
+  }
