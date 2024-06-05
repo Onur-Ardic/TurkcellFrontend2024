@@ -8,21 +8,23 @@ const AboutMe = () => {
       bgcolor={secondary}
       direction="column"
       alignitems="center"
+      justifycontent="center"
+      padding="100px 50px"
     >
-      <Title>WHO IS BARIŞ ERKUŞ ?</Title>
-      <Paragraph>
-        Barış Erkuş was born on April 18, 2002 in Adana. He studied at
-        Iskenderun Technical University in 2020 - 2024. During his educational
-        life here, he had an internship in 3 different companies, a full-time
-        job in 1 company and many freelance work experiences. He completed his
-        educational life here with the first place in the department. In the
-        last period of his educational life, he participated in the Front-End
-        Bootcamp Training given by Turkcell. Barış Erkuş&apos;s internships and
-        work experiences so far have been on Web Development and Mobile
-        Development. The career goal is to become a professional trainer and
-        consultant in these fields.
-      </Paragraph>
-      <Paragraph>
+      <Title as="h2">Who is Barış Erkuş?</Title>
+      <Paragraph mw="1400px">
+        Barış Erkuş was born on April 18, 2002, in Adana. He studied at
+        Iskenderun Technical University from 2020 to 2024. During his
+        educational life, he interned at three different companies, held a
+        full-time job at a company, and gained many freelance work experiences.
+        He completed his education as the highest-ranking student. In the last
+        period of his education, he participated in the Front-End Bootcamp
+        Training given by Turkcell. Barış Erkuş&apos;s internships and work
+        experiences to date have been in Web Development and Mobile Development.
+        His career goal is to become a professional trainer and consultant in
+        these fields.
+        <br />
+        <br />
         The most important thing for him is that his name is remembered with
         quality.
       </Paragraph>

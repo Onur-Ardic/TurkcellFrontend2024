@@ -5,16 +5,17 @@ export const Image = styled.img`
   width: 350px;
   height: 350px;
   border-radius: 50%;
-`;
-
-export const Strong = styled.strong`
-  font-size: 1.75rem;
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 200px;
+  }
 `;
 
 export const SocialMediaContainer = styled.div`
   display: flex;
   gap: 50px;
-  margin: 20px 0;
+  margin: 10px 0;
+  flex-wrap: wrap;
 `;
 
 export const SocialMediaLink = styled.a`
@@ -23,5 +24,12 @@ export const SocialMediaLink = styled.a`
   transition: 0.3s;
   &:hover {
     color: ${tertiary};
+  }
+  &:focus {
+    outline: 3px solid ${tertiary};
+    outline-offset: 4px;
+  }
+  @media (max-width: 768px) {
+    font-size: 2rem;
   }
 `;

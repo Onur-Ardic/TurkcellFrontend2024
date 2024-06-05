@@ -1,6 +1,6 @@
 import React from "react";
 import StyledSkill from "./Skill.styled";
-import SkillIcons from "./Skill.styled";
+import { SkillTitle } from "./Skill.styled";
 import FlexRow from "../../style/FlexRow.styled";
 import AnimatedTitle from "../../style/AnimatedTitle.styled";
 import {
@@ -19,22 +19,22 @@ import { SiCanva } from "react-icons/si";
 const Skill = () => {
   return (
     <StyledSkill>
-      <AnimatedTitle>Yetkinliklerim</AnimatedTitle>
+      <SkillTitle>
+        <AnimatedTitle>Yetkinliklerim</AnimatedTitle>
+      </SkillTitle>
       <FlexRow>
-        <SkillIcons>
-          <FaHtml5 />
-          <FaCss3Alt />
-          <IoLogoJavascript />
-          <FaBootstrap />
-          <FaSass />
-          <AiOutlineDotNet />
-          <DiMsqlServer />
-          <DiPhotoshop />
-          <DiIllustrator />
-          <SiCanva />
-          <FaFigma />
-          <FaReact />
-        </SkillIcons>
+        <FaHtml5 />
+        <FaCss3Alt />
+        <IoLogoJavascript />
+        <FaBootstrap />
+        <FaSass />
+        <AiOutlineDotNet />
+        <DiMsqlServer />
+        <DiPhotoshop />
+        <DiIllustrator />
+        <SiCanva />
+        <FaFigma />
+        <FaReact />
       </FlexRow>
     </StyledSkill>
   );

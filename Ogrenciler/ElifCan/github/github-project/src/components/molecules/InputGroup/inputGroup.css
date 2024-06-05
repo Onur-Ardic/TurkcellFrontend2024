@@ -1,0 +1,11 @@
+.group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5.5rem;
+  left: 2rem;
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0);
+  
+}

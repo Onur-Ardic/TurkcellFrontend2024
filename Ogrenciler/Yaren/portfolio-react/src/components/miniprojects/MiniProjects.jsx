@@ -4,12 +4,12 @@ import {
   ProjectCard,
   ProjectImage,
 } from "./MiniProjects.styled";
-import projectImage1 from "../../assets/Hosthub.png";
-import projectImage2 from "../../assets/Hosthub.png";
-import projectImage3 from "../../assets/Hosthub.png";
-import projectImage4 from "../../assets/Hosthub.png";
-import projectImage5 from "../../assets/Hosthub.png";
-import projectImage6 from "../../assets/Hosthub.png";
+import projectImage1 from "../../assets/project1.png";
+import projectImage2 from "../../assets/project2.jpg";
+import projectImage3 from "../../assets/project3.jpg";
+import projectImage4 from "../../assets/project4.png";
+import projectImage5 from "../../assets/project5.png";
+import projectImage6 from "../../assets/project6.png";
 import AnimatedTitle from "../../style/AnimatedTitle.styled";
 import FlexRow from "../../style/FlexRow.styled";
 
