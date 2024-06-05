@@ -23,9 +23,9 @@ export const ProjectCard = styled.div`
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
-
+  margin-top: 1.3rem;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
     z-index: 10;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
   }
@@ -46,7 +46,7 @@ export const ProjectImage = styled.img`
   height: 100%;
   object-fit: cover;
 
-  opacity: 0.7;
+  opacity: 0.6;
   transition: opacity 0.2s ease-in-out;
 
   ${ProjectCard}:hover & {

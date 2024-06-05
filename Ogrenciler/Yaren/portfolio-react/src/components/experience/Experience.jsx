@@ -16,8 +16,8 @@ const Experience = () => {
       <Divider />
 
       <FlexColumn>
-        {experiences.map((exp, index) => (
-          <StyledExperience key={exp.id} odd={index % 2 !== 0}>
+        {experiences.map((exp) => (
+          <StyledExperience key={exp.id}>
             <ExperienceImage>
               <img src={exp.image} alt={exp.title} />
             </ExperienceImage>

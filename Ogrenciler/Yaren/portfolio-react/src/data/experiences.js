@@ -8,7 +8,7 @@ const experiences = [
     title: "Bİlişim Noktası",
     date: "Eylul 2023 - Present",
     description:
-      "Web geliştirme alanında uzun dönem stajımı gerçekleştiriyorum..Net platformunda yazılım geliştirme alanıdna çalışmalar yapıyorum.",
+      "Web geliştirme alanında uzun dönem stajımı gerçekleştiriyorum..Net platformunda yazılım geliştirme alanında çalışmalar yapıyorum.",
     image: img3,
   },
   {

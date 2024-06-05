@@ -55,7 +55,7 @@ export const Logo = styled.img`
 
 export const TypingTitle = styled.h1`
   font-size: 4em;
-  font-family: monospace;
+
   white-space: nowrap;
   overflow: hidden;
   animation: ${typing} 2s steps(20), ${blink} 0.5s step-end infinite alternate;
@@ -71,7 +71,7 @@ export const TypingTitle = styled.h1`
 
 export const Subtitle = styled.p`
   font-size: 1.5em;
-  font-family: monospace;
+
   white-space: nowrap;
   overflow: hidden;
   margin-top: 1rem;
