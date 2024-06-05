@@ -60,7 +60,7 @@ const Description = styled.p`
 const MoreButton = styled.a`
   display: inline-flex;
   align-items: center;
-  background-color: #00adb5;
+  background-color: #813636;
   color: #fff;
   padding: 1rem 2rem;
   border-radius: 50px;
@@ -69,7 +69,7 @@ const MoreButton = styled.a`
   transition: background-color 0.3s, transform 0.3s;
 
   &:hover {
-    background-color: #813636;
+    background-color: #00adb5;
     color: #fff;
     transform: translateY(-3px);
   }

@@ -29,7 +29,9 @@ const NavButton = styled.a`
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px #009aa5;
+    color: #fff;
+    background-color: #009aa5;
+    box-shadow: 0 6px 12px #813636;
   }
 `;
 
