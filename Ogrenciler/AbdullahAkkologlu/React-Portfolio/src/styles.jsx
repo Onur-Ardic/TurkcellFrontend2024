@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   max-width: 1300px;
-  margin: 0 auto 10rem auto;
+  margin: 0 auto 8rem auto;
 `;
 export const LandingContainer = styled(Container)`
   padding-top: 10rem;
@@ -89,7 +89,7 @@ export const ProjectDesc = styled.p`
   text-align: justify;
 `;
 export const PaddingY = styled.div`
-  padding: 5rem 0;
+  padding-bottom: 10rem;
 `;
 export const ArticleDiv = styled(Col)`
   margin: 1rem 0;
@@ -126,4 +126,11 @@ export const ArticleImageDiv = styled(Col)`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+`;
+export const Heading = styled.h2`
+  font-size: 4rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 4rem;
 `;
