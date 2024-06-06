@@ -3,21 +3,22 @@ const inputs = {
   surNameInput: document.getElementById("surNameInput"),
   inputEmail: document.getElementById("inputEmail"),
   inputTc: document.getElementById("inputTc"),
-}; 
+};
+
 class Person {
-    constructor(nameInput, surNameInput, inputEmail, inputTc) {
-      this.name = nameInput;
-      this.surNameInput = surNameInput;
-      this.inputEmail = inputEmail;
-      this.inputTc = inputTc;
-    }
-    static personInfos() {
-      return {
-        nameInput: inputs.nameInput.value.trim(),
-        surNameInput: inputs.surNameInput.value.trim(),
-        inputEmail: inputs.inputEmail.value.trim(),
-        inputTc: inputs.inputTc.value.trim(),
-      };
-    }
-  } 
- 
+  constructor(nameInput, surNameInput, inputEmail, inputTc) {
+    this.name = nameInput;
+    this.surname = surNameInput;
+    this.email = inputEmail;
+    this.tc = inputTc;
+  };
+
+  static personInfos() {
+    return {
+      name: inputs.nameInput.value.trim(),
+      surname: inputs.surNameInput.value.trim(),
+      email: inputs.inputEmail.value.trim(),
+      tc: inputs.inputTc.value.trim(),
+    };
+  }
+}

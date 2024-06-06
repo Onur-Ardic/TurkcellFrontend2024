@@ -1,65 +1,68 @@
-function biletAlClick() {
+
+  function biletAlClick() {
     let buttons = document.getElementsByClassName("biletAlButton");
     buttons = Array.from(buttons);
-
+  
     buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-            let buttonDetails = {
-                id: button.id,
-            };
-            console.log(buttonDetails);
-
-            let card = button.closest('.card');
-            let movieNameText = card.querySelector('.card-header h4').innerText;
-            let movieNameInfo = {
-                innerText: movieNameText,
-            };
-            console.log(movieNameInfo);
-            const nameLabel = document.getElementById("movies-Name");
-            if (nameLabel) {
-              nameLabel.innerText = `Name: ${movieNameInfo.innerText}`};
-        });
+      button.addEventListener("click", () => {
+        let buttonDetails = {
+          id: button.id,
+        };
+        console.log(buttonDetails);
+  
+        let card = button.closest(".card");
+        let movieNameText = card.querySelector(".card-header h4").innerText;
+        let movieNameInfo = {innerText: movieNameText};
+        console.log(movieNameInfo);
+        localStorage.setItem("movieName1", JSON.stringify(movieNameInfo));
+        const nameLabel = document.getElementById("movies-Name");
+        if (nameLabel) {
+          nameLabel.innerText = `Name: ${movieNameInfo.innerText}`;
+        }
+      });
     });
-    
-}
-
-biletAlClick();
-
-
-
-document.getElementById("savePersonInfoBtn").addEventListener("submit", (e) => {
+  }
+  
+  biletAlClick();
+  
+  document.getElementById("savePersonInfoBtn").addEventListener("click", (e) => {
     e.preventDefault();
     const personInfo = Person.personInfos();
     localStorage.setItem("save", JSON.stringify(personInfo));
-    // const targetDiv = e.target.closest('#choosemovie');
+    
+    const chooseChairSection = document.getElementById("chooseChairSection");
+    if (chooseChairSection) {
+        chooseChairSection.scrollIntoView({ behavior: "smooth" });
+    }
 });
 
-// let getMovieName = localStorage.getItem("film");
-// let ChoosenMovieName = document.getElementById("choosenMovieName");
-// ChoosenMovieName.innerText = getMovieName;
-// const chairwrapper = document.getElementById("chair-wrapper");
-// let chairs = [];
+let getMovieName = localStorage.getItem("movieName1", JSON.Parse(movieNameInfo));
 
-// chairwrapper.addEventListener("click", function (e){
-//     if(e.target.classList.contains("chair") && !e.target.classList.contains("reserved")  && !e.target.classList.contains("selected") ){
-//        e.target.classList.toggle("selected");
-//        let selectedChairCount = chairwrapper.querySelectorAll(".chair.selected").length;
-//        let chairName = e.target.innerText;
-//        chairs.push(chairName)
-//        localStorage.setItem("chairName", JSON.stringify(chairs));
-//        localStorage.setItem("chair", selectedChairCount);
-//     }
-//     else if(e.target.classList.contains("chair") && !e.target.classList.contains("reserved") ){
-//        let chairName = e.target.innerText;
-//        chairs.splice(chairs.findIndex(a => a === chairName), 1);
-//        localStorage.setItem("chairName", JSON.stringify(chairs));
+let ChoosenMovieName = document.getElementById("choosenMovieName");
+ChoosenMovieName.innerText = getMovieName;
+const chairwrapper = document.getElementById("chair-wrapper");
+let chairs = [];
 
-//        e.target.classList.toggle("selected");
-//        let selectedChairCount = chairwrapper.querySelectorAll(".chair.selected").length;
+chairwrapper.addEventListener("click", function (e){
+    if(e.target.classList.contains("chair") && !e.target.classList.contains("reserved")  && !e.target.classList.contains("selected") ){
+       e.target.classList.toggle("selected");
+       let selectedChairCount = chairwrapper.querySelectorAll(".chair.selected").length;
+       let chairName = e.target.innerText;
+       chairs.push(chairName)
+       localStorage.setItem("chairName", JSON.stringify(chairs));
+       localStorage.setItem("chair", selectedChairCount);
+    }
+    else if(e.target.classList.contains("chair") && !e.target.classList.contains("reserved") ){
+       let chairName = e.target.innerText;
+       chairs.splice(chairs.findIndex(a => a === chairName), 1);
+       localStorage.setItem("chairName", JSON.stringify(chairs));
 
-//        localStorage.setItem("chair", selectedChairCount);
-//     }
-// });
+       e.target.classList.toggle("selected");
+       let selectedChairCount = chairwrapper.querySelectorAll(".chair.selected").length;
+
+       localStorage.setItem("chair", selectedChairCount);
+    }
+});
 
 
 
