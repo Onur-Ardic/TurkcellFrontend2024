@@ -1,85 +1,78 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import Card from "./Card";
-import styles from "./GameBoard.module.css";
+import { Board, ResetButton } from "../styled/StyleComponent";
 
 const cardImages = [
-  { src: "/src/assets/rick.jpg", matched: false },
-  { src: "/src/assets/morty.png", matched: false },
-  { src: "/src/assets/beth.webp", matched: false },
-  { src: "/src/assets/jerry.png", matched: false },
-  { src: "/src/assets/summer.jpg", matched: false },
+  { id: 1, src: "rick.jpg" },
+  { id: 2, src: "morty.png" },
+  { id: 3, src: "summer.jpg" },
+  { id: 4, src: "beth.webp" },
+  { id: 5, src: "jerry.png" },
 ];
+
+const shuffleCards = () => {
+  const shuffledCards = [...cardImages, ...cardImages]
+    .sort(() => Math.random() - 0.5)
+    .map((card) => ({ ...card, id: Math.random() }));
+  return shuffledCards;
+};
 
 const GameBoard = () => {
   const [cards, setCards] = useState([]);
-  const [turns, setTurns] = useState(0);
-  const [choiceOne, setChoiceOne] = useState(null);
-  const [choiceTwo, setChoiceTwo] = useState(null);
-  const [disabled, setDisabled] = useState(false);
+  const [flippedCards, setFlippedCards] = useState([]);
+  const [matchedCards, setMatchedCards] = useState([]);
 
   useEffect(() => {
-    shuffleCards();
+    setCards(shuffleCards());
   }, []);
 
-  const shuffleCards = () => {
-    const shuffledCards = [...cardImages, ...cardImages]
-      .sort(() => Math.random() - 0.5)
-      .map((card) => ({ ...card, id: Math.random() }));
-
-    setChoiceOne(null);
-    setChoiceTwo(null);
-    setCards(shuffledCards);
-    setTurns(0);
-  };
-
-  const handleChoice = (card) => {
-    choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
-  };
-
   useEffect(() => {
-    if (choiceOne && choiceTwo) {
-      setDisabled(true);
-      if (choiceOne.src === choiceTwo.src) {
-        setCards((prevCards) => {
-          return prevCards.map((card) => {
-            if (card.src === choiceOne.src) {
-              return { ...card, matched: true };
-            } else {
-              return card;
-            }
-          });
-        });
-        resetTurn();
-      } else {
-        setTimeout(() => resetTurn(), 1000);
-      }
+    if (matchedCards.length === cardImages.length * 2) {
+      setTimeout(() => alert("Oyun Bitti!"), 500);
     }
-  }, [choiceOne, choiceTwo]);
+  }, [matchedCards]);
 
-  const resetTurn = () => {
-    setChoiceOne(null);
-    setChoiceTwo(null);
-    setTurns((prevTurns) => prevTurns + 1);
-    setDisabled(false);
+  const handleCardClick = (card) => {
+    if (
+      flippedCards.length === 2 ||
+      flippedCards.includes(card) ||
+      matchedCards.includes(card)
+    ) {
+      return;
+    }
+
+    const newFlippedCards = [...flippedCards, card];
+    setFlippedCards(newFlippedCards);
+
+    if (newFlippedCards.length === 2) {
+      if (newFlippedCards[0].src === newFlippedCards[1].src) {
+        setMatchedCards([...matchedCards, ...newFlippedCards]);
+      }
+      setTimeout(() => setFlippedCards([]), 1000);
+    }
+  };
+
+  const handleResetGame = () => {
+    setCards(shuffleCards());
+    setFlippedCards([]);
+    setMatchedCards([]);
   };
 
   return (
-    <div className={styles.game}>
-      <h1>Rick and Morty Memory Game</h1>
-      <button onClick={shuffleCards}>New Game</button>
-      <div className={styles.cardGrid}>
-        {cards.map((card) => (
-          <Card
-            key={card.id}
-            card={card}
-            handleChoice={handleChoice}
-            flipped={card === choiceOne || card === choiceTwo || card.matched}
-            disabled={disabled}
-          />
-        ))}
-      </div>
-      <p>Turns: {turns}</p>
-    </div>
+    <Board>
+      {cards.map((card) => (
+        <Card
+          key={card.id}
+          card={card}
+          handleCardClick={handleCardClick}
+          flipped={flippedCards.includes(card) || matchedCards.includes(card)}
+          matched={matchedCards.includes(card)}
+        />
+      ))}
+      {matchedCards.length === cardImages.length * 2 && (
+        <ResetButton onClick={handleResetGame}>Tekrar Oyna</ResetButton>
+      )}
+    </Board>
   );
 };
 
