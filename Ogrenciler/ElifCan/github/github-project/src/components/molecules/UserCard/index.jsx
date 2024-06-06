@@ -2,7 +2,6 @@ import React from "react";
 import './index.css'
 
 const UserCard = ({ user }) => {
-  console.log(user);
   return (
     <> 
     <div className="userInfo">
