@@ -12,13 +12,6 @@ export const TitleImage = styled.img`
   margin-bottom: 20px;
   margin-top: 20px;
 `;
-export const AppContainer = styled.div`
-  text-align: center;
-  background: url("background2.png");
-  background-size: cover;
-  width: auto;
-  height: 720px;
-`;
 
 export const CardInner = styled.div`
   position: relative;
