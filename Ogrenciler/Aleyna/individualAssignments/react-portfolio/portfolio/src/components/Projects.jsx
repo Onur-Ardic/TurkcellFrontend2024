@@ -112,6 +112,12 @@ const projectData = [
     image: "mac4.png",
     team: "Aleyna Ertok, Barış Erkuş, Erkan Tokmak",
   },
+  {
+    title: "MEMORY GAME",
+    description: "REACT",
+    image: "memorygame.png",
+    team: "Aleyna Ertok",
+  },
 ];
 
 const Projects = () => {
