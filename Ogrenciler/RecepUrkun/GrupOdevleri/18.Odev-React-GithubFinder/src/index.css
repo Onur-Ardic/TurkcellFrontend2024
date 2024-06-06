@@ -1,0 +1,7 @@
+:root {
+  --bgColor: linear-gradient(50deg, #4158d0 0%, #c850c0 40%, #ffcc70 80%);
+}
+
+.fs-8 {
+  font-size: 0.8rem;
+}
