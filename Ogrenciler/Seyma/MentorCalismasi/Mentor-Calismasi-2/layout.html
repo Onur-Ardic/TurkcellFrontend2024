@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,19 +39,20 @@
       <div id="choose-movie" class="row text-center gap-2">
         <div class="card p-0 col-lg-2 box-shadow">
           <div class="card-header">
-            <h4 id="yesilYol" class="my-0 text-white">Yeşil Yol</h4>
+            <h4 id="yesilYol" class="my-0 text-white movieName">Yeşil Yol</h4>
           </div>
           <div class="card-body">
             <img class="mb-2" src="https://images.justwatch.com/poster/265835203/s332/yesil-yol" alt="" />
             <div class="d-flex justify-content-between align-items-center">
-              <h2 class="fs-5 py-0 text-white">
+              <h2 class="text-white">
                 100 <small>₺</small>
               </h2>
-              <button type="button" data-bs-toggle="modal" data-bs-action="create" data-bs-target="#addPersonInfoModal" data-whatever="@getbootstrap" id="yesilyolButton" class="py-0 btn btn-sm btn-block btn-warning biletAlButton">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#addPersonInfo" id="addPersonInfoModal"
+                class="py-0 btn btn-sm btn-block btn-warning biletAlButton">
                 Buy Ticket
               </button>
               <a type="button" class="btn btn-sm btn-secondary py-0" data-bs-toggle="modal"
-                data-bs-target="#yesilyol"><i class="bi bi-play-circle"></i></a>
+                data-bs-target="#fragmanDiv"><i class="bi bi-play-circle"></i></a>
             </div>
           </div>
         </div>
@@ -62,13 +64,14 @@
             <img class="mb-2"
               src="https://cdn1.ntv.com.tr/gorsel/HFwGwK73tUiXFFG0gdSXcg.jpg?width=1000&mode=crop&scale=both" alt="" />
             <div class="d-flex justify-content-between align-items-center">
-              <h2 class="fs-5 py-0 text-white">220 <small>₺</small>
+              <h2 class="text-white">220 <small>₺</small>
               </h2>
-              <button type="submit" data-bs-toggle="modal" data-bs-action="create" data-bs-target="#addPesonInfoModal" data-whatever="@getbootstrap" id="avatarButton" class="py-0 btn btn-sm btn-block btn-warning biletAlButton">
+              <button type="submit" data-bs-toggle="modal" data-bs-target="#addPesonInfoModal" id="avatarButton"
+                class="py-0 btn btn-sm btn-block btn-warning biletAlButton">
                 Buy Ticket
               </button>
               <a type="button" class="btn btn-sm btn-block btn-secondary py-0" data-bs-toggle="modal"
-                data-bs-target="#avatar"><i class="bi bi-play-circle"></i></a>
+                data-bs-target="#fragmanDiv"><i class="bi bi-play-circle"></i></a>
             </div>
           </div>
         </div>
@@ -79,101 +82,101 @@
           <div class="card-body">
             <img class="mb-2" src="https://m.media-amazon.com/images/I/61sW9OBNRxL._AC_UF1000,1000_QL80_.jpg" alt="" />
             <div class="d-flex justify-content-between align-items-center">
-              <h2 class="fs-5 py-0 text-white">
+              <h2 class="text-white">
                 100 <small>₺</small>
               </h2>
               <button type="button" id="twilightButton" class="py-0 btn btn-sm btn-block btn-warning biletAlButton">
                 Buy Ticket
               </button>
               <a type="button" class="btn btn-sm btn-secondary py-0" data-bs-toggle="modal"
-                data-bs-target="#twilight"><i class="bi bi-play-circle"></i></a>
+                data-bs-target="#fragmanDiv"><i class="bi bi-play-circle"></i></a>
             </div>
           </div>
         </div>
         <div class="card p-0 col-lg-2 box-shadow">
           <div class="card-header">
-            <h4 id="Frozen" class="my-0 ">Frozen</h4>
+            <h4 id="Frozen" class="my-0 text-white">Frozen</h4>
           </div>
           <div class="card-body">
             <img class="mb-2"
               src="https://lumiere-a.akamaihd.net/v1/images/p_frozen_18373_3131259c.jpeg?region=0%2C0%2C540%2C810"
               alt="" />
             <div class="d-flex justify-content-between align-items-center">
-              <h2 class="fs-5 py-0 text-white">
+              <h2 class="text-white">
                 100 <small>₺</small>
               </h2>
               <button type="button" id="frozenButton" class="py-0 btn btn-sm btn-block btn-warning biletAlButton">
                 Buy Ticket
               </button>
-              <a type="button" class="btn btn-sm btn-secondary py-0" data-bs-toggle="modal" data-bs-target="#frozen"><i
+              <a type="button" class="btn btn-sm btn-secondary py-0" data-bs-toggle="modal" data-bs-target="#fragmanDiv"><i
                   class="bi bi-play-circle"></i></a>
             </div>
           </div>
         </div>
         <div class="card p-0 col-lg-2 box-shadow">
           <div class="card-header">
-            <h4 id="Mucize" class="my-0 fs-5 text-white">Mucize</h4>
+            <h4 id="Mucize" class="my-0 text-white">Mucize</h4>
           </div>
           <div class="card-body">
             <img class="mb-2" src="https://tr.web.img2.acsta.net/pictures/17/11/16/14/28/4438843.jpg" alt="" />
             <div class="d-flex justify-content-between align-items-center">
-              <h2 class="fs-5 py-0 text-white">
+              <h2 class="text-white">
                 100 <small>₺</small>
               </h2>
               <button type="button" id="MucizeButton" class="py-0 btn btn-sm btn-block btn-warning biletAlButton">
                 Buy Ticket
               </button>
-              <a type="button" class="btn btn-sm btn-secondary py-0" data-bs-toggle="modal" data-bs-target="#Mucize"><i
+              <a type="button" class="btn btn-sm btn-secondary py-0" data-bs-toggle="modal" data-bs-target="#fragmanDiv"><i
                   class="bi bi-play-circle"></i></a>
             </div>
           </div>
         </div>
         <div class="card p-0 col-lg-2 box-shadow">
           <div class="card-header">
-            <h4 id="gecenYaz" class="my-0 fs-5 text-white">Geçen Yaz</h4>
+            <h4 id="gecenYaz" class="my-0 text-white">Geçen Yaz</h4>
           </div>
           <div class="card-body">
             <img class="mb-2" src="https://upload.wikimedia.org/wikipedia/en/2/20/Last_Summer.jpg" alt="" />
             <div class="d-flex justify-content-between align-items-center">
-              <h2 class="fs-5 py-0 text-white">
+              <h2 class="text-white">
                 100 <small>₺</small>
               </h2>
               <button type="button" id="gecenYazButton" class="py-0 btn btn-sm btn-block btn-warning biletAlButton">
                 Buy Ticket
               </button>
               <a type="button" class="btn btn-sm btn-secondary py-0" data-bs-toggle="modal"
-                data-bs-target="#gecenYaz"><i class="bi bi-play-circle"></i></a>
+                data-bs-target="#fragmanDiv"><i class="bi bi-play-circle"></i></a>
             </div>
           </div>
         </div>
         <div class="card p-0 col-lg-2 box-shadow">
           <div class="card-header">
-            <h4 id="joy" class="my-0 fs-5 text-white">Joy</h4>
+            <h4 id="joy" class="my-0 text-white">Joy</h4>
           </div>
           <div class="card-body">
             <img class="mb-2"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNbRAShbw_wgC8wcSj5bemVPsLq4AWFXjt5MXqm3pZnrBBSzp5Rx02dnop9hpN6CHCulo&usqp=CAU"
               alt="" />
             <div class="d-flex justify-content-between align-items-center">
-              <h2 class="fs-5 py-0 text-white">
+              <h2 class="text-white">
                 120 <small>₺</small>
               </h2>
               <button type="button" id="joyButton" class="py-0 btn btn-sm btn-block btn-warning biletAlButton">
                 Buy Ticket
               </button>
-              <a type="button" class="btn btn-sm btn-secondary py-0" data-bs-toggle="modal" data-bs-target="#joy"><i
+              <a type="button" class="btn btn-sm btn-secondary py-0" data-bs-toggle="modal" data-bs-target="#fragmanDiv"><i
                   class="bi bi-play-circle"></i></a>
             </div>
           </div>
         </div>
         <div class="card p-0 col-lg-2 box-shadow">
           <div class="card-header">
-            <h4 id="sekerPortakali" class="my-0 fs-5 text-white">Şeker Protakalı</h4>
+            <h4 id="sekerPortakali" class="my-0 text-white">Şeker Protakalı</h4>
           </div>
           <div class="card-body">
             <img class="mb-2" src="https://tr.web.img4.acsta.net/pictures/13/12/04/13/04/365520.jpg" alt="" />
             <div class="d-flex justify-content-between align-items-center">
-              <h2 class="fs-5 py-0 text-white">
+              <h2 class="text-white">
                 100 <small>₺</small>
               </h2>
               <button type="button" id="sekerPortakaliButton"
@@ -181,13 +184,13 @@
                 Buy Ticket
               </button>
               <a type="button" class="btn btn-sm btn-secondary py-0" data-bs-toggle="modal"
-                data-bs-target="#sekerPortakali"><i class="bi bi-play-circle"></i></a>
+                data-bs-target="#fragmanDiv"><i class="bi bi-play-circle"></i></a>
             </div>
           </div>
         </div>
         <div class="card p-0 col-lg-2 box-shadow">
           <div class="card-header">
-            <h4 id="ucurtmaAvcisi" class="my-0 fs-5 text-white">Uçurtma Avcısı
+            <h4 id="ucurtmaAvcisi" class="my-0 text-white">Uçurtma Avcısı
             </h4>
           </div>
           <div class="card-body">
@@ -195,7 +198,7 @@
               src="https://upload.wikimedia.org/wikipedia/tr/e/e7/U%C3%A7urtma_Avc%C4%B1s%C4%B1_film_afi%C5%9Fi.jpg"
               alt="" />
             <div class="d-flex justify-content-between align-items-center">
-              <h2 class="fs-5 py-0 text-white">
+              <h2 class="text-white">
                 100 <small>₺</small>
               </h2>
               <button type="button" id="ucurtmaAvcisiButton"
@@ -203,81 +206,203 @@
                 Buy Ticket
               </button>
               <a type="button" class="btn btn-sm btn-secondary py-0" data-bs-toggle="modal"
-                data-bs-target="#ucurtmaAvcisi"><i class="bi bi-play-circle"></i></a>
+                data-bs-target="#fragmanDiv"><i class="bi bi-play-circle"></i></a>
             </div>
           </div>
         </div>
         <div class="card p-0 col-lg-2 box-shadow">
           <div class="card-header">
-            <h4 id="zamanKapani" class="my-0 fs-5 text-white">Zaman Kapanı</h4>
+            <h4 id="zamanKapani" class="my-0 text-white">Zaman Kapanı</h4>
           </div>
           <div class="card-body">
             <img class="mb-2" src="https://images.justwatch.com/poster/239531083/s718/zaman-tuzagi.jpg" alt="" />
             <div class="d-flex justify-content-between align-items-center">
-              <h2 class="fs-5 py-0 text-white">
+              <h2 class="text-white">
                 150 <small>₺</small>
               </h2>
               <button type="button" id="zamanKapaniButton" class="py-0 btn btn-sm btn-block btn-warning biletAlButton">
                 Buy Ticket
               </button>
               <a type="button" class="btn btn-sm btn-secondary py-0" data-bs-toggle="modal"
-                data-bs-target="#zamanKapani"><i class="bi bi-play-circle"></i></a>
+                data-bs-target="#fragmanDiv"><i class="bi bi-play-circle"></i></a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section id="modalSection">
-    <div class="modal" id="addBookModal" tabindex="-1" role="dialog" aria-labelledby="addPersonInfoModal"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content p-3">
-        <div class="modal-header">
-          <h5 class="add-person-modal-title" id="ModalLabel">Please enter your infos</h5>
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="add-person-modal-body">
-          <form>
-            <div class="form-group">
-              <label for="name" class="col-form-label">Name: </label>
-              <input type="text" class="form-control" id="name">
-            </div>
 
-            <div class="form-group">
-              <label for="surName" class="col-form-label">Surname: </label>
-              <input class="form-control" id="author"></input>
-            </div>
-            <div class="form-group">
-              <label for="e-mail" class="col-form-label">e-mail </label>
-              <input class="form-control" id="e-mail"></input>
-            </div>
-            <div class="form-group">
-              <label for="publishedDate" class="col-form-label">Tc No: </label>
-              <input class="form-control" id="personId" placeholder="11111111"></input>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" id="saveBookBtn" class="btn btn-primary" data-bs-dismiss="modal">Save Info</button>
+  <section id="modalSection">
+    <div class="modal fade" id="addPersonInfo" tabindex="-1" aria-labelledby="addPersonInfoModal"
+      data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h4 class="text-dark" id="movies-Name"></h4>
+            </button>
+          </div>
+          <div class="add-person-modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name" class="col-form-label">Name: </label>
+                <input type="text" class="form-control" id="nameInput">
+              </div>
+              <div class="form-group">
+                <label for="surName" class="col-form-label">Surname: </label>
+                <input class="form-control" id="surNameInput"></input>
+              </div>
+              <div class="form-group">
+                <label for="e-mail" class="col-form-label">e-mail </label>
+                <input class="form-control" id="inputEmail"></input>
+              </div>
+              <div class="form-group">
+                <label for="publishedDate" class="col-form-label">Tc No: </label>
+                <input class="form-control" id="inputTc" placeholder="11111111"></input>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" id="savePersonInfoBtn" class="btn btn-primary" data-bs-dismiss="modal">Save
+              Info</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    <div class="modal fade" id="fragmanDiv" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="fragmanLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="fragmanLabel">Fragman</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <video src="https://www.youtube.com/embed/Ki4haFrqSrw"></video>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <script
-  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-  crossorigin="anonymous"
-></script>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-  crossorigin="anonymous"
-></script>
+
+  <section id="chooseChairSection">
+    <div class="container">
+      <div id="choosechair" class="rounded-2">
+        <h3 class="text-white">Koltuk Seçiniz</h3>
+        <h5 class="text-white">Perde</h5>
+        <h5 class="text-white text-start"><span id="choosenMovieName"> </span> filmi İçin Koltuk Seçiniz</h5>
+        <div id="chair-wrapper" class="chair-wrapper text-white grid-container">
+          <div class="chair p-2 rounded-1">A1</div>
+          <div class="chair p-2 rounded-1">A2</div>
+          <div class="chair p-2 rounded-1">A3</div>
+          <div class="chair p-2 rounded-1">A4</div>
+          <div class="chair p-2 rounded-1">A5</div>
+          <div class="chair p-2 rounded-1">A6</div>
+          <div class="chair p-2 rounded-1">A7</div>
+          <div class="chair p-2 rounded-1">A8</div>
+          <div class="chair p-2 rounded-1">A9</div>
+          <div class="chair p-2 rounded-1 reserved">A10</div>
+          <div class="chair p-2 rounded-1 reserved">A11</div>
+          <div class="chair p-2 rounded-1">A12</div>
+          <div class="chair p-2 rounded-1">A13</div>
+          <div class="chair p-2 rounded-1">A14</div>
+          <div class="chair p-2 rounded-1">A15</div>
+          <div class="chair p-2 rounded-1">A16</div>
+          <div class="chair p-2 rounded-1">A17</div>
+          <div class="chair p-2 rounded-1">A18</div>
+          <div class="chair p-2 rounded-1">A19</div>
+          <div class="chair p-2 rounded-1">A20</div> <br>
+
+          <div class="chair p-2 rounded-1">B1</div>
+          <div class="chair p-2 rounded-1">B2</div>
+          <div class="chair p-2 rounded-1">B3</div>
+          <div class="chair p-2 rounded-1">B4</div>
+          <div class="chair p-2 rounded-1">B5</div>
+          <div class="chair p-2 rounded-1">B6</div>
+          <div class="chair p-2 rounded-1">B7</div>
+          <div class="chair p-2 rounded-1">B8</div>
+          <div class="chair p-2 rounded-1">B9</div>
+          <div class="chair p-2 rounded-1">B10</div>
+          <div class="chair p-2 rounded-1">B11</div>
+          <div class="chair p-2 rounded-1">B12</div>
+          <div class="chair p-2 rounded-1">B13</div>
+          <div class="chair p-2 rounded-1">B14</div>
+          <div class="chair p-2 rounded-1">B15</div>
+          <div class="chair p-2 rounded-1">B16</div>
+          <div class="chair p-2 rounded-1">B17</div>
+          <div class="chair p-2 rounded-1">B18</div>
+          <div class="chair p-2 rounded-1">B19</div>
+          <div class="chair p-2 rounded-1">B20</div> <br>
+
+          <div class="chair p-2 rounded-1">C1</div>
+          <div class="chair p-2 rounded-1">C2</div>
+          <div class="chair p-2 rounded-1">C3</div>
+          <div class="chair p-2 rounded-1 reserved">C4</div>
+          <div class="chair p-2 rounded-1 reserved">C5</div>
+          <div class="chair p-2 rounded-1">C6</div>
+          <div class="chair p-2 rounded-1">C7</div>
+          <div class="chair p-2 rounded-1">C8</div>
+          <div class="chair p-2 rounded-1">C9</div>
+          <div class="chair p-2 rounded-1">C10</div>
+          <div class="chair p-2 rounded-1">C11</div>
+          <div class="chair p-2 rounded-1">C12</div>
+          <div class="chair p-2 rounded-1">C13</div>
+          <div class="chair p-2 rounded-1">C14</div>
+          <div class="chair p-2 rounded-1">C15</div>
+          <div class="chair p-2 rounded-1">C16</div>
+          <div class="chair p-2 rounded-1">C17</div>
+          <div class="chair p-2 rounded-1">C18</div>
+          <div class="chair p-2 rounded-1">C19</div>
+          <div class="chair p-2 rounded-1">C20</div>
+        </div>
+
+        <div class="full p-2 rounded-1 mt-3">Dolu</div>
+        <div class="empty p-2 rounded-1 mt-3">Boş</div>
+        <div class="sec p-2 rounded-1 mt-3">Seç</div>
+
+        <div class="d-flex justify-content-end">
+          <button id="saveNextButton1" class="btn btn-danger btn-block mt-2 py-2 w-25" type="button">Kaydet ve
+            İleri</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div id="createticket" class="rounded-2">
+        <h3 id="biletOlusturuldu" class="text-white mb-2">Bilet Oluşturuldu</h3>
+        <div class="row">
+          <div class="col">
+            <div class="card w-100 flex-md-row mb-4 box-shadow h-md-250">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h1>İstanbul Sahne</h1>
+                <h2 class="text-danger" href="#">Film:
+                  <span id="filmAdi"></span>
+                </h2>
+                <h4 class="mb-1 text-muted">Koltuk Seçimi: <span id="koltukBilgi"></span></h4>
+                <h3 class="mb-auto">Bilet Fiyatı: <span id="biletfiyati"></span> tl</h3>
+                <h4 id="personInfoText" class="text-start"></h4>
+              </div>
+              <img id="resim" class="rounded-2 w-25" src="" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button id="buyTicket" class="btn btn-warning btn-block p-2 w-25" type="button">Satın Al</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="ui.js"></script>
   <script src="app.js"></script>
 
 </body>

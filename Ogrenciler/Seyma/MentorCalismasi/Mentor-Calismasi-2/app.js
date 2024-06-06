@@ -1,36 +1,38 @@
-// let buttons = document.getElementsByClassName("biletAlButton");
+function biletAlClick() {
+    let buttons = document.getElementsByClassName("biletAlButton");
+    buttons = Array.from(buttons);
 
-// for (var i = 0; i < buttons.length; i++) {
-//     buttons[i].addEventListener('click', (e) => {
-//         e.preventDefault();
-//         let movieName = "";
-//         switch (e.target.id){
-//             case "yesilyolButton": movieName = "Yeşil Yol"; break;    
-//             case "avatarButton": movieName = "Avatar"; break;  
-//             case "twilightButton": movieName = "Twilight"; break;  
-//             case "frozenButton": movieName = "Frozen"; break;  
-//         }
-//         localStorage.setItem("film", movieName);
-//         window.location.href = "choosechair.html";
-//     }, false);
-// }
-// const saveNextButton = document.getElementById("saveNextButton");
+    buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            let buttonDetails = {
+                id: button.id,
+            };
+            console.log(buttonDetails);
 
-// const inputs = {
-//   nameInput: document.getElementById("nameInput"),
-//   surNameInput: document.getElementById("surNameInput"),
-//   inputEmail: document.getElementById("inputEmail"),
-//   inputTc: document.getElementById("inputTc"),
-// };
+            let card = button.closest('.card');
+            let movieNameText = card.querySelector('.card-header h4').innerText;
+            let movieNameInfo = {
+                innerText: movieNameText,
+            };
+            console.log(movieNameInfo);
+            const nameLabel = document.getElementById("movies-Name");
+            if (nameLabel) {
+              nameLabel.innerText = `Name: ${movieNameInfo.innerText}`};
+        });
+    });
+    
+}
+
+biletAlClick();
 
 
-// document.getElementById("saveNextButton").addEventListener("click", (e) => {
-//   e.preventDefault();
-//   const personInfo = Person.personInfos();
-//   localStorage.setItem("save", JSON.stringify(personInfo));
-//   const targetDiv = e.target.closest('#choosemovie');
-// });
 
+document.getElementById("savePersonInfoBtn").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const personInfo = Person.personInfos();
+    localStorage.setItem("save", JSON.stringify(personInfo));
+    // const targetDiv = e.target.closest('#choosemovie');
+});
 
 // let getMovieName = localStorage.getItem("film");
 // let ChoosenMovieName = document.getElementById("choosenMovieName");
@@ -57,12 +59,8 @@
 
 //        localStorage.setItem("chair", selectedChairCount);
 //     }
-// });  
-
-// document.getElementById("saveNextButton1").addEventListener("click", () => {
-//     window.location.href = "main.html";
-    
 // });
+
 
 
 // let selectedChairs = localStorage.getItem("chair");
@@ -73,7 +71,6 @@
 // let koltukBilgi = document.getElementById("koltukBilgi");
 // koltukBilgi.innerText = getkoltukbilgi;
 // let resim = document.getElementById("resim");
-
 
 // if (getMovieName == "Avatar") {
 //   resim.src =
@@ -93,7 +90,6 @@
 // let totalPriceText = document.getElementById("biletfiyati");
 // totalPriceText.innerText = totalPrice;
 
-
 // function getPersonInfo() {
 //   let personInfoText = document.getElementById("personInfoText");
 //   let personInfoIObject = JSON.parse(localStorage.getItem("save"));
@@ -103,6 +99,6 @@
 
 // let buyTicket = document.getElementById("buyTicket");
 // buyTicket.addEventListener("click", () => {
-  
+
 // });
 // localStorage.getItem("save", JSON.Parse(personInfo));

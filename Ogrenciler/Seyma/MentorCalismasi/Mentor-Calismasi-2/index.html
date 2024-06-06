@@ -1,0 +1,41 @@
+<div class="modal fade" id="addPersonInfo" tabindex="-1" aria-labelledby="addPersonInfoModal" data-bs-backdrop="static" data-bs-keyboard="false" 
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content p-3">
+        <div class="modal-header">
+          <h5 class="add-person-modal-title" id="ModalLabel">Please enter your infos</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="add-person-modal-body">
+          <form>
+            <div class="form-group">
+              <label for="movieName" class="col-form-label">Movie Name: </label>
+              <input type="text" class="form-control" id="movieName">
+            </div>
+            <div class="form-group">
+              <label for="name" class="col-form-label">Name: </label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="surName" class="col-form-label">Surname: </label>
+              <input class="form-control" id="author"></input>
+            </div>
+            <div class="form-group">
+              <label for="e-mail" class="col-form-label">e-mail </label>
+              <input class="form-control" id="e-mail"></input>
+            </div>
+            <div class="form-group">
+              <label for="publishedDate" class="col-form-label">Tc No: </label>
+              <input class="form-control" id="personId" placeholder="11111111"></input>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" id="saveBookBtn" class="btn btn-primary" data-bs-dismiss="modal">Save Info</button>
+        </div>
+      </div>
+    </div>
+  </div>
