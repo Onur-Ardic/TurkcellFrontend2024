@@ -18,4 +18,7 @@
 24-05-2024: Reacte Giriş - Odev: Movie App React'le yapilacak
 27-05-2024: React useEffect & map - Odev: Todo App with React(Add ve Update zamanlari tutulacak)
 29-05-2024: Odev: WeatherApp with React
-31-05-2024: useRef & portal & Styled Component - Odev: Github finder with React
+31-05-2024: useRef & portal & Styled Component - Odev: Github finder with React & Portfolio
+03-05-2024: lesson cancaled
+05-06-2024: Homework(Github Finder) presentations - Chat with Mentors
+07-06-2024: 
