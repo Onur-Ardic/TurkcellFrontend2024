@@ -2,28 +2,53 @@
     "url": [
       {
         "url": "https://www.youtube.com/embed/Ki4haFrqSrw",
-        "name": "yesilyol"
+        "name": "yesilyol",
+        "price": 100
       },
       {
         "url": "https://www.youtube.com/embed/d9MyW72ELq0",
-        "name": "avatar"
+        "name": "avatar",
+        "price": 220
       },
       {
         "url": "https://www.youtube.com/embed/8mnL1wAZMss",
-        "name": "twilight"
+        "name": "twilight",
+        "price": 100
       },
       {
         "url": "https://www.youtube.com/embed/TbQm5doF_Uc",
-        "name": "Frozen"
-
+        "name": "Frozen",
+        "price": 100
       },
       {
-        "url": ""
+        "url": "",
+        "name": "Mucize",
+        "price": 100
       },
       {
-        "url": ""
+        "url": "",
+        "name": "Geçen Yaz",
+        "price": 100
+      },
+      {
+        "url": "",
+        "name": "Joy",
+        "price": 120
+      },
+      {
+        "url": "",
+        "name": "Şeker Portakalı",
+        "price": 100
+      },
+      {
+        "url": "",
+        "name": "Uçurtma Avcısı",
+        "price": 100
+      },
+      {
+        "url": "",
+        "name": "Zaman Kapanı",
+        "price": 150
       }
-
-     
     ]
   }

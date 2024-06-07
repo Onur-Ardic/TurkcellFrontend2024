@@ -243,7 +243,7 @@
         <div class="modal-content p-3">
           <div class="modal-header">
             <h4 class="text-dark" id="movies-Name"></h4>
-            </button>
+            <input type = "hidden" id="selectedMovieId" value="" />
           </div>
           <div class="add-person-modal-body">
             <form>
@@ -290,6 +290,7 @@
         </div>
       </div>
     </div>
+
   </section>
 
   <section id="chooseChairSection">
@@ -298,69 +299,7 @@
         <h3 class="text-white">Koltuk Seçiniz</h3>
         <h5 class="text-white">Perde</h5>
         <h5 class="text-white text-start"><span id="choosenMovieName"> </span> filmi İçin Koltuk Seçiniz</h5>
-        <div id="chair-wrapper" class="chair-wrapper text-white grid-container">
-          <div class="chair p-2 rounded-1">A1</div>
-          <div class="chair p-2 rounded-1">A2</div>
-          <div class="chair p-2 rounded-1">A3</div>
-          <div class="chair p-2 rounded-1">A4</div>
-          <div class="chair p-2 rounded-1">A5</div>
-          <div class="chair p-2 rounded-1">A6</div>
-          <div class="chair p-2 rounded-1">A7</div>
-          <div class="chair p-2 rounded-1">A8</div>
-          <div class="chair p-2 rounded-1">A9</div>
-          <div class="chair p-2 rounded-1 reserved">A10</div>
-          <div class="chair p-2 rounded-1 reserved">A11</div>
-          <div class="chair p-2 rounded-1">A12</div>
-          <div class="chair p-2 rounded-1">A13</div>
-          <div class="chair p-2 rounded-1">A14</div>
-          <div class="chair p-2 rounded-1">A15</div>
-          <div class="chair p-2 rounded-1">A16</div>
-          <div class="chair p-2 rounded-1">A17</div>
-          <div class="chair p-2 rounded-1">A18</div>
-          <div class="chair p-2 rounded-1">A19</div>
-          <div class="chair p-2 rounded-1">A20</div> <br>
-
-          <div class="chair p-2 rounded-1">B1</div>
-          <div class="chair p-2 rounded-1">B2</div>
-          <div class="chair p-2 rounded-1">B3</div>
-          <div class="chair p-2 rounded-1">B4</div>
-          <div class="chair p-2 rounded-1">B5</div>
-          <div class="chair p-2 rounded-1">B6</div>
-          <div class="chair p-2 rounded-1">B7</div>
-          <div class="chair p-2 rounded-1">B8</div>
-          <div class="chair p-2 rounded-1">B9</div>
-          <div class="chair p-2 rounded-1">B10</div>
-          <div class="chair p-2 rounded-1">B11</div>
-          <div class="chair p-2 rounded-1">B12</div>
-          <div class="chair p-2 rounded-1">B13</div>
-          <div class="chair p-2 rounded-1">B14</div>
-          <div class="chair p-2 rounded-1">B15</div>
-          <div class="chair p-2 rounded-1">B16</div>
-          <div class="chair p-2 rounded-1">B17</div>
-          <div class="chair p-2 rounded-1">B18</div>
-          <div class="chair p-2 rounded-1">B19</div>
-          <div class="chair p-2 rounded-1">B20</div> <br>
-
-          <div class="chair p-2 rounded-1">C1</div>
-          <div class="chair p-2 rounded-1">C2</div>
-          <div class="chair p-2 rounded-1">C3</div>
-          <div class="chair p-2 rounded-1 reserved">C4</div>
-          <div class="chair p-2 rounded-1 reserved">C5</div>
-          <div class="chair p-2 rounded-1">C6</div>
-          <div class="chair p-2 rounded-1">C7</div>
-          <div class="chair p-2 rounded-1">C8</div>
-          <div class="chair p-2 rounded-1">C9</div>
-          <div class="chair p-2 rounded-1">C10</div>
-          <div class="chair p-2 rounded-1">C11</div>
-          <div class="chair p-2 rounded-1">C12</div>
-          <div class="chair p-2 rounded-1">C13</div>
-          <div class="chair p-2 rounded-1">C14</div>
-          <div class="chair p-2 rounded-1">C15</div>
-          <div class="chair p-2 rounded-1">C16</div>
-          <div class="chair p-2 rounded-1">C17</div>
-          <div class="chair p-2 rounded-1">C18</div>
-          <div class="chair p-2 rounded-1">C19</div>
-          <div class="chair p-2 rounded-1">C20</div>
+        <div id="chair-wrapper" class="chair-wrapper text-white grid-container" >
         </div>
 
         <div class="full p-2 rounded-1 mt-3">Dolu</div>
@@ -368,8 +307,10 @@
         <div class="sec p-2 rounded-1 mt-3">Seç</div>
 
         <div class="d-flex justify-content-end">
-          <button id="saveNextButton1" class="btn btn-danger btn-block mt-2 py-2 w-25" type="button">Kaydet ve
-            İleri</button>
+            <button type="button" id="saveNextButton1"
+                class="btn btn-danger btn-block mt-2 py-2 w-25">
+                Satın Al
+              </button>
         </div>
       </div>
     </div>
