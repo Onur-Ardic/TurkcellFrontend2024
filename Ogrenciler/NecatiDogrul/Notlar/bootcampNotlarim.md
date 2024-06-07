@@ -159,3 +159,6 @@ big oh notation
 react router
 
 context
+
+virtual dom'un daha hızlı olduğu doğru değil
+sadece değişen yerleri render etmesini ajax da yapıyor gerçek domda
