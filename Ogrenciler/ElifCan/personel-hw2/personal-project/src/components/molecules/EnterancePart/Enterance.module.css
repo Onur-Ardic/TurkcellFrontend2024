@@ -1,0 +1,35 @@
+.enteranceimg {
+  max-width: 75%;
+  display: block;
+}
+.containerr {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+}
+.relative {
+  position: relative;
+}
+.Dflex {
+  display: flex;
+  justify-content: center;
+}
+
+.reachButton {
+  position: absolute;
+  bottom: 10px;
+  background-color: #f87408;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 45px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+.reachButton:hover {
+  background-color: #d66306;
+}

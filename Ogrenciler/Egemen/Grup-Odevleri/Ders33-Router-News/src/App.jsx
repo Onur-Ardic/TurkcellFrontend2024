@@ -1,17 +1,18 @@
-import  { useEffect, useState } from 'react';
-import './App.css';
+import { useEffect, useState } from "react";
+import "./App.css";
 
 function App() {
   const [data, setData] = useState(null);
-  const url = "https://newsapi.org/v2/everything?q=fatih-terim-neden&from=2024-05-07&sortBy=publishedAt";
+  const url =
+    "https://newsapi.org/v2/everything?q=fatih-terim-neden&from=2024-05-07&sortBy=publishedAt";
 
   const readData = async () => {
     try {
       const response = await fetch(url, {
-        method: 'GET',
+        method: "GET",
         headers: {
-          'Authorization': 'apikey 5c66f497a1074197b3d427400e130535'
-        }
+          Authorization: "apikey 5c66f497a1074197b3d427400e130535",
+        },
       });
 
       if (!response.ok) {
@@ -38,7 +39,9 @@ function App() {
             <li key={article.url}>{article.title}</li>
           ))}
         </ul>
-      ) : <p>loading...</p>}
+      ) : (
+        <p>loading...</p>
+      )}
     </div>
   );
 }

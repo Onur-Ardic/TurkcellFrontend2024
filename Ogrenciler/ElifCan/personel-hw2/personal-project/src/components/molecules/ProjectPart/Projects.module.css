@@ -1,0 +1,40 @@
+.Dflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.colorBlack {
+  color: black;
+}
+.card {
+  background-color: #f8f7f5;
+  color: #f67b14;
+  border-radius: 2rem;
+  width: 25rem;
+  height: 20rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid #31303b;
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.cardImg {
+  border-radius: 10px;
+  width: 23rem;
+  height: auto;
+  margin: auto;
+}
+.exp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: #f67b14;
+  transform: translateY(-10px); /* Move the card up */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

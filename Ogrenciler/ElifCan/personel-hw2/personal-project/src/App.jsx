@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { useEffect, useState } from "react";
+import "./App.css";
+import CVPart from "./components/molecules/CVPart";
+import EnterancePart from "./components/molecules/EnterancePart";
+import InfoPart from "./components/molecules/InfoCard";
+import ProjectsPart from "./components/molecules/ProjectPart";
 function App() {
-  const [count, setCount] = useState(0)
+  const [projects, setProjects] = useState([]);
+  async function getProjects() {
+    await fetch(`http://localhost:3000/projects`)
+      .then((data) => data.json())
+      .then((response) => setProjects(response))
+      .catch((e) => alert(e.message));
+  }
+  useEffect(() => {
+    getProjects();
+  }, []);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <EnterancePart />
+      <InfoPart />
+
+      <h1 className="header">My Projects</h1>
+      <hr className="w-75 d-flex mx-auto text-bold" />
+      <div className="projectContainer">
+        {projects.length != 0
+          ? projects.map((item, index) => <ProjectsPart project={item} />)
+          : null}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <CVPart />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
