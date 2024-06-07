@@ -1,7 +1,5 @@
 const EconomyNewView = () => {
-  return (
-    <div>EconomyNewView</div>
-  )
-}
+  return <div>EconomyNewView</div>;
+};
 
-export default EconomyNewView
+export default EconomyNewView;

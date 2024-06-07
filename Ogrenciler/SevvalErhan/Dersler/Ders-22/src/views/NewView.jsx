@@ -1,13 +1,11 @@
-import { Outlet } from "react-router-dom"
-
+import { Outlet } from "react-router-dom";
 const NewView = () => {
   return (
     <>
-    <h2>Haberler</h2>
-    <Router/>
-    <Outlet/>
+      <h2>Haberler</h2>
+      <Outlet />
     </>
-  )
-}
+  );
+};
 
 export default NewView;
