@@ -1,0 +1,64 @@
+{
+    "projects":[
+        {
+        "image": "/images/biniog.png",
+        "title": "BINIOG",
+        "codeLink": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EcemKilic/ders05"
+        },
+        {
+        "image": "/images/druco.png",
+        "title": "DRUCO",
+        "codeLink": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EcemKilic/ders06/odev"
+        },
+        {
+        "image": "/images/agon.png",
+        "title": "AGON",
+        "codeLink": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EcemKilic/ders07/odev"
+        },
+        {
+        "image": "/images/directoryads.png",
+        "title": "DIRECTORYADS",
+        "codeLink": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EcemKilic/ders09"
+        },
+        {
+        "image": "/images/imagine.png",
+        "title": "IMAGINE",
+        "codeLink": "hthttps://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EcemKilic/ders10"
+        },
+        {
+        "image": "/images/cssPortfolio.png",
+        "title": "PORTFOLIO WITH CSS",
+        "codeLink": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EcemKilic/cocobasic"
+        },
+        {
+        "image": "/images/hosthub.png",
+        "title": "HOSTHUB",
+        "codeLink": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EcemKilic/ders11"
+        },
+        {
+        "image": "/images/xoxGame.png",
+        "title": "XOX GAME WITH JAVASCRIPT",
+        "codeLink": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EcemKilic/ders12"
+        },
+        {
+        "image": "/images/jsSnakeGame.png",
+        "title": "SNAKE GAME WITH JAVASCRIPT",
+        "codeLink": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EcemKilic/personal/snake-game-2"
+        },
+        {
+        "image": "/images/movieLibrary.png",
+        "title": "MOVIE LIBRARY WITH JAVASCRIPT",
+        "codeLink": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EcemKilic/ders17-class"
+        },
+        {
+        "image": "/images/reactToDoList.png",
+        "title": "TO DO LIST WITH REACT",
+        "codeLink": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EcemKilic/ders21/odev"
+        },
+        {
+        "image": "/images/reactHavaDurumu.png",
+        "title": "WEATHER APP WITH REACT",
+        "codeLink": "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/EcemKilic/ders22-weatherApp/havaDurumu"
+        }
+    ]
+} 

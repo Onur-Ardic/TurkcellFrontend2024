@@ -25,3 +25,14 @@ https://github.com/cemtatli/lugat  opensources kaynak fork için
 
 "react/prop-types": "off", // eslint proptypes hatası için eslint.cjs 15ten sonraya
 
+https://stackoverflow.com/questions/48699820/how-do-i-hide-an-api-key-in-create-react-app   api key güvenliği
+
+
+yapılabilecek projeler:
+- https://legacy.reactjs.org/community/examples.html
+- https://bilgisayargenetigi.com/categories/sifirdan-react-serisi
+- https://www.udemy.com/course/the-ultimate-react-course/?couponCode=KEEPLEARNING  
+
+https://www.udemy.com/course/the-ultimate-react-course/  eğitim
+
+https://turkcell.webex.com/turkcell-tr/url.php?gourl=https%3a%2f%2fwww%2ei18next%2ecom%2foverview%2fgetting%2dstarted i18n veri yapılandırması için
