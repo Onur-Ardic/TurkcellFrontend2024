@@ -54,7 +54,7 @@ const Aboutme = () => {
                 <div style={{ display: "flex", flexDirection: "row"}}>
                     <Left>
                         <h1><span>Welcome to my portfolio..</span></h1>
-                        <Baslik>Uzman Diyetisyen </Baslik>
+                        <Baslik>UZMAN DİYETİSYEN </Baslik>
                         <CardTitle>Rümeysanur Gültekin</CardTitle>
                         <Baslik> İMÜ Beslenme ve Diyetetik mezunuyum. Bilgi Üniversitesi "Beslenme ve Diyetetik" bölümünü başarıyla bitirerek "Uzman" unvanını aldım.</Baslik>
                     </Left>
