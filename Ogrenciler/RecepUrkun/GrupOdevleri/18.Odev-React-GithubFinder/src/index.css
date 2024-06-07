@@ -1,7 +1,13 @@
 :root {
-  --bgColor: linear-gradient(50deg, #4158d0 0%, #c850c0 40%, #ffcc70 80%);
+  --bgColorFront: linear-gradient(50deg, #4158d0 0%, #c850c0 40%, #ffcc70 80%);
+  --bgColorBack: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
 
 .fs-8 {
   font-size: 0.8rem;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
 }

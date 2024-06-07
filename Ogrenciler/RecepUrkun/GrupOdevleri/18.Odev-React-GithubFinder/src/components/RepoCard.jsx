@@ -1,58 +1,14 @@
-import styled from "styled-components";
+import {
+  Button,
+  Card,
+  CardInner,
+  CardSideFront,
+  CardSideBack,
+  CardContainer,
+  RepoButton,
+} from "./Styled";
 
-const Card = styled.div`
-  perspective: 2000px;
-  width: 300px;
-  height: 250px;
-`;
-
-const CardInner = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-`;
-
-const CardSide = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-  backface-visibility: hidden;
-  padding: 25px;
-  color: #fff;
-`;
-
-const CardSideFront = styled(CardSide)`
-  background-image: var(--bgColor);
-`;
-
-const CardSideBack = styled(CardSide)`
-  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
-  transform: rotateY(180deg);
-`;
-
-const CardContainer = styled.div`
-  &:hover ${CardInner} {
-    transform: rotateY(180deg);
-  }
-`;
-
-const Button = styled.button`
-  background-color: #fff;
-  font-size: 14px;
-  padding: 0.5em 2em;
-  border: 0;
-  border-radius: 7px;
-  cursor: pointer;
-  outline: none;
-  &:hover {
-    filter: brightness(1.1);
-  }
-`;
-
-const RepoCard = ({ repo, dateFormatter }) => {
+const RepoCard = ({ repo, dateFormatter, scrollToTop }) => {
   return (
     <CardContainer>
       <Card className="m-2">
@@ -60,7 +16,7 @@ const RepoCard = ({ repo, dateFormatter }) => {
           <CardSideFront className="d-flex flex-column">
             <div className="d-flex flex-row align-items-center">
               <i className="fa-brands fa-github"></i>
-              <h5 className="m-0 ms-2">{repo.name}</h5>
+              <h6 className="m-0 ms-2 text-break">{repo.name}</h6>
             </div>
             <hr />
             <h6 className="mt-2">
@@ -88,16 +44,17 @@ const RepoCard = ({ repo, dateFormatter }) => {
               <p>Created At: {dateFormatter(repo.created_at)}</p>
               <p>Updated At: {dateFormatter(repo.updated_at)}</p>
             </div>
-            <Button>
+            <RepoButton $primary={true}>
               <a
                 className="text-reset text-decoration-none"
                 href={repo.html_url}
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <i className="fa-solid fa-arrow-up-right-from-square mx-2"></i>
                 Repoya Git
               </a>
-            </Button>
+            </RepoButton>
           </CardSideBack>
         </CardInner>
       </Card>
