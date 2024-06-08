@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "projectName": "Book Store",
+      "languages": "HTML,CSS,JS",
+      "picture": "project1"
+    },
+    {
+      "id": "3",
+      "projectName": "To-Do App",
+      "languages": "HTML,CSS,JS",
+      "picture": "project3"
+    },
+    {
+      "id": "2",
+      "projectName": "Galaxy Estate",
+      "languages": "HTML,CSS",
+      "picture": "project2"
+    }
+  ]
+}

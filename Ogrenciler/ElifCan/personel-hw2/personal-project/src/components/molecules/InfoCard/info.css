@@ -1,0 +1,14 @@
+.info {
+  max-width: 85rem;
+  margin: auto;
+  border-radius: 5rem;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+  color: white;
+  background-color: #feb273;
+  color: rgb(37, 20, 1);
+}

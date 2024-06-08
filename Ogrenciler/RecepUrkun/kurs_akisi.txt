@@ -15,10 +15,10 @@
 17-05-2024: JS Api Request (Fetch-Async&Await-Promise)-JsonServer | Vize 2 verildi(BooksCrud)
 20-05-2024: JS this - Kısa Bir Mulakat Provası
 22-05-2024: JS Vize 2 Sunum
-24-05-2024: Reacte Giriş - Odev: Movie App React'le yapilacak
-27-05-2024: React useEffect & map - Odev: Todo App with React(Add ve Update zamanlari tutulacak)
+24-05-2024: Reacte Giriş - Homework: Movie App React'le yapilacak
+27-05-2024: React useEffect & map - Homework: Todo App with React(Add ve Update zamanlari tutulacak)
 29-05-2024: Odev: WeatherApp with React
-31-05-2024: useRef & portal & Styled Component - Odev: Github finder with React & Portfolio
+31-05-2024: useRef & portal & Styled Component - Homework: Github finder with React & Portfolio
 03-05-2024: lesson cancaled
 05-06-2024: Homework(Github Finder) presentations - Chat with Mentors
-07-06-2024: 
+07-06-2024: React Router - Homework: News Api with React Router

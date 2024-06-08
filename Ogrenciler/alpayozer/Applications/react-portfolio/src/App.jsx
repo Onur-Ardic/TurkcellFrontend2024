@@ -1,7 +1,23 @@
+import { useEffect } from "react";
 import "./App.css";
 import profil from "./assets/profil.png";
 
 function App() {
+  useEffect(() => {
+    const gameFrame = document.getElementById("snakeGame");
+    if (gameFrame) {
+      gameFrame.contentWindow.addEventListener("keydown", function (e) {
+        // arrow keys
+        var keyCodes = [37, 38, 39, 40];
+
+        if (keyCodes.includes(e.keyCode)) {
+          e.preventDefault();
+          return false;
+        }
+        return true;
+      });
+    }
+  }, []);
   return (
     <div className="container">
       <div className="row">
@@ -92,6 +108,7 @@ function App() {
       </div>
       <h1>Yılan oyunu</h1>
       <iframe
+        id="snakeGame"
         src="game.html"
         width="800"
         height="600"
