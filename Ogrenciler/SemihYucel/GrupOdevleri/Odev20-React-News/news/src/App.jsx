@@ -1,25 +1,50 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { getData } from './assets/components/Request'
+import { useEffect, useState } from "react";
+import "./App.css";
+import { getData, getNews, searchNews } from "./service/Request";
+import Router from "./routes/Router";
+import { NavLink, useNavigate } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import HomeView from "./views/HomeView";
 
 function App() {
   const [news, setNews] = useState([]);
-  const fetchData = async () => {
-    const result = await getData();
+  const [query, setQuery] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  const navigate = useNavigate();
+
+  const fetchData = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    const result2 = await searchNews(query);
+    setNews(result2.articles);
+    navigate("/");
+    setIsLoading(false);
+  };
+
+  const topNews = async () => {
+    setIsLoading(true);
+    const result = await getNews();
     setNews(result.articles);
-  }
+    setIsLoading(false);
+  };
 
   useEffect(() => {
-    fetchData();
-  }, [])
-    console.log(news);
+    topNews();
+  }, []);
   return (
     <>
-      
+      <Navbar
+        topNews={topNews}
+        fetchData={fetchData}
+        setQuery={setQuery}
+        query={query}
+      />
+      <div className="container">
+        {isLoading ? <h1>Loading...</h1> : <Router news={news} />}
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
