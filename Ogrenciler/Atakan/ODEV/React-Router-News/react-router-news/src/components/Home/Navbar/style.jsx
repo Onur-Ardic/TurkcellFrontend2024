@@ -8,9 +8,7 @@ export const NavbarWrapper = style.div`
 display : flex;
 justify-content : space-between;
 align-items : center;
-max-width : 1000px;
-width : 100%;
-margin : 0 auto;
+
 
 .logo{
  color : black;
@@ -32,5 +30,29 @@ a{
 text-decoration : none;
 color : black;
 font-size : 20px;
+}
+`
+
+export const SecondNavbarStyle = style.div`
+background-color : #fafafa
+display : flex;
+gap : 10px;
+align-items : center;
+
+.second-navbar-items{
+display : flex;
+gap : 10px;
+
+li{
+list-style-type : none;
+}
+
+a{
+text-decoration : none;
+color : #000;
+font-size : 20px;
+
+}
+
 }
 `
