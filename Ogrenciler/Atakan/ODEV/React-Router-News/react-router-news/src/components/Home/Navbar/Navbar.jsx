@@ -1,8 +1,8 @@
 import { NavbarItems, NavbarStyle, NavbarWrapper, SecondNavbarStyle } from './style'
 import { NavLink } from 'react-router-dom'
-const Navbar = ({ countryHandler, setOnCategory }) => {
+const Navbar = ({ setOnCountry, setOnCategory }) => {
   const changeCountryHandler = (e) => {
-    countryHandler(e.target.value)
+    setOnCountry(e.target.value)
   }
 
   return (
@@ -15,7 +15,7 @@ const Navbar = ({ countryHandler, setOnCategory }) => {
 
           <NavbarItems className="pt-3">
             <li className="navbar-items">
-              <NavLink to="/">Anasayfa</NavLink>
+              <NavLink to="/Home">Anasayfa</NavLink>
             </li>
 
             <select name="country" id="country" onChange={changeCountryHandler}>
@@ -32,7 +32,9 @@ const Navbar = ({ countryHandler, setOnCategory }) => {
         <div className="second-navbar-wrapper container">
           <div className="second-navbar-items">
             <li className="navbar-items">
-              <NavLink to="/haberler/">Haberler</NavLink>
+              <NavLink to="/haberler" onClick={() => setOnCategory('general')}>
+                Haberler
+              </NavLink>
             </li>
             <li className="navbar-items">
               <NavLink

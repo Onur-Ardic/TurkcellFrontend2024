@@ -6,7 +6,7 @@ import Routes from './components/Routes/Routes'
 
 let token = 'fb44ce1bd88740d4990d843834598291'
 function App() {
-  const [onData, setOnData] = useState({})
+  const [onData, setOnData] = useState([])
   const [onCountry, setOnCountry] = useState('tr')
   const [onCategory, setOnCategory] = useState('general')
 
@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <Home countryHandler={setOnCountry} setOnCategory={setOnCategory} />
+      <Home setOnCountry={setOnCountry} setOnCategory={setOnCategory} onData={onData} />
       <Routes onData={onData} />
     </>
   )
