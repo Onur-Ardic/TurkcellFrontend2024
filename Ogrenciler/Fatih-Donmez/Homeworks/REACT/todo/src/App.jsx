@@ -47,7 +47,7 @@ function App() {
       const today = new Date();
       const newTodo = {
         ...currentTodo,
-        id: today.getTime(),
+        id: `${today.getTime()}`,
         date: today.toLocaleDateString(),
       };
       fetch("http://localhost:3000/todos", {
