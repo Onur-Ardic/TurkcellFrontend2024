@@ -1,5 +1,5 @@
 import './App.css'
-import Requests from './Requests'
+import Navbar from './components/Navbar';
 import Router from './routes/Router';
 
 
@@ -12,6 +12,7 @@ function App() {
 
   return (
     <>
+      <Navbar/>
       <Router/>
     </>
   )

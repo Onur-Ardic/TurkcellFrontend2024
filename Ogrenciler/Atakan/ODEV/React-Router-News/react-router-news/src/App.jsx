@@ -1,27 +1,33 @@
-import { useEffect, useState } from 'react'
-import './App.css'
-import Navbar from './components/Home/Navbar/Navbar'
+import { useEffect, useState } from "react";
+import Home from "./components/Home/Home";
+import Routes from "./components/Routes/Routes";
 
-let token = 'fb44ce1bd88740d4990d843834598291'
+let token = "fb44ce1bd88740d4990d843834598291";
 function App() {
-  const [onData, setOnData] = useState({})
-  const [onCountry, setOnCountry] = useState('tr')
+  const [onData, setOnData] = useState([]);
+  const [onCountry, setOnCountry] = useState("tr");
+  const [onCategory, setOnCategory] = useState("general");
 
   useEffect(() => {
-    fetch(`https://newsapi.org/v2/top-headlines?country=${onCountry}&apiKey=${token}`)
+    fetch(
+      `https://newsapi.org/v2/top-headlines?country=${onCountry}&category=${onCategory}&apiKey=${token}`
+    )
       .then((res) => res.json())
       .then((data) => {
-        setOnData(data.articles)
-      })
-  }, [onCountry])
+        setOnData(data.articles);
+      });
+  }, [onCountry, onCategory]);
 
   return (
     <>
-      {console.log(onData)}
-      {console.log(onCountry)}
-      <Navbar countryHandler={setOnCountry} />
+      <Home
+        setOnCountry={setOnCountry}
+        setOnCategory={setOnCategory}
+        onData={onData}
+      />
+      <Routes onData={onData} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
