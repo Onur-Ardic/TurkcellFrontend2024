@@ -1,10 +1,8 @@
-import React from "react";
-import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import NewsCard from "../components/NewsCard";
 
 const HomeView = ({ news }) => {
   const location = useLocation();
-  console.log(location.pathname.endsWith("/"));
   return (
     <>
       {location.pathname.endsWith("/") ? (

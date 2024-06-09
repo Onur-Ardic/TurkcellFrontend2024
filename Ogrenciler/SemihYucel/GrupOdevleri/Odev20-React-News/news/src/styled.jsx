@@ -1,19 +1,15 @@
 import styled from "styled-components";
-
 export const Card = styled.div`
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
   cursor: pointer;
   overflow: hidden;
-
+  display: flex;
+  flex-direction: column;
   h1 {
     font-size: 20px;
     font-weight: bold;
-  }
-  h6 {
-    font-size: 12px;
-    color: #5a99eb;
   }
   p {
     font-size: 15px;
@@ -24,9 +20,7 @@ export const Card = styled.div`
     height: 250px;
     object-fit: cover;
   }
-
-  
-`
+`;
 export const DetailViewContainer = styled.div`
   padding: 20px;
   max-width: 900px;
@@ -60,6 +54,47 @@ export const Image = styled.img`
   height: auto;
   max-height: 400px;
   border-radius: 10px;
-  margin-bottom: 20px;
-  object-fit:cover
+  margin-bottom: 1rem;
+  object-fit: cover;
+`;
+export const NavButton = styled.button`
+  padding: 0.25rem 1rem;
+  background-color: #1a237e;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+`;
+export const NavInput = styled.input`
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #1a237e;
+`;
+export const CategoryName = styled.h1`
+  text-align: center;
+  padding: 1rem 0;
+  font-family: "Newsreader", serif;
+`;
+export const SourceName = styled.h6`
+  background-color: #1a237e;
+  color: black;
+  width: max-content;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  color: white;
+  font-size: 14px;
+`;
+export const CardTitle = styled(Title)`
+  margin: 0.5rem 0;
+`;
+export const CardAuthor = styled.h6`
+  color: #1a237e;
+  font-size: 14px;
+`;
+export const SpinnerDiv = styled.div`
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
