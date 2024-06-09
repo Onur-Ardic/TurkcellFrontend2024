@@ -39,11 +39,11 @@ export const News = styled.div`
 `;
 
 export const NewCard = styled.div`
+position:relative;
   flex: 0 1 22%;
-
   max-width: 300px;
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
@@ -52,6 +52,12 @@ export const NewCard = styled.div`
   a {
     color: black;
     text-decoration: none;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    height: 100%;
+    padding: 2px 10px;
+
   }
   img {
     width: 100%;
@@ -60,7 +66,21 @@ export const NewCard = styled.div`
   }
   h3 {
     text-decoration: none;
+    text-align:left
   }
+  p{
+    text-align:left;
+    padding-bottom: 3rem
+  }
+  i{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  margin: 8px;
+  padding: 10px 5px;
+  font-size: 14px;
+  }
+    
 `;
 
 export const NavbarItem = styled.li`
@@ -71,3 +91,9 @@ export const NavbarItem = styled.li`
     color: ${(props) => (props.active ? "blue" : "black")};
   }
 `;
+
+export const FormGroup = styled.div`
+display:flex;
+align-items:baseline;
+gap:16px
+`

@@ -17,8 +17,8 @@ const Navbar = () => {
   console.log(currPage);
   return (
     <NavBar>
-      <NavbarItem active={currPage == "home"}>
-        <Link to="/">Home</Link>
+      <NavbarItem active={currPage == "general"}>
+        <Link to="/category/general">Home</Link>
       </NavbarItem>
       <NavbarItem active={currPage === "business"}>
         <Link to="/category/business">Business</Link>

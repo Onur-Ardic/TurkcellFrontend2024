@@ -31,6 +31,7 @@ const NewsView = ({ category, selectedLanguage }) => {
     return `${day}/${month}/${year}`;
   };
 
+  //* alttaki fonksiyonun daha anlasilir hali
   // const getImageUrl = (item) => {
   //   if (selectedLanguage === "tr") {
   //     return newsImageTr;
@@ -50,19 +51,20 @@ const NewsView = ({ category, selectedLanguage }) => {
       <h2 className="text-center font-monospace fw-bolder my-3 display-5">
         {category
           ? category.charAt(0).toUpperCase() + category.slice(1)
-          : "Top 20"}{" "}
-        {selectedLanguage == "tr" ? "Haberleri" : "News"}
+          : "Top 20"}
+        {selectedLanguage == "tr" ? " Haberler" : " News"}
       </h2>
 
       {news.length > 0 && (
         <div className="container">
-          <div className="col-12 col-md-12 ">
+          <div className="col-12 col-md-10 mx-auto">
             <div
               id="carouselHaberler"
-              className="carousel slide "
+              className="carousel slide"
               data-bs-ride="carousel"
             >
-              <div className="carousel-inner ">
+              {/* slice ile ilk 5 haberi aliyoruz*/}
+              <div className="carousel-inner  rounded-3">
                 {news
                   .slice(0, 5)
                   .filter(
@@ -80,14 +82,13 @@ const NewsView = ({ category, selectedLanguage }) => {
                         className="d-block w-100 img-fluid"
                         alt="..."
                         style={{
-                          backgroundImage: `url(${getImageUrl(item)})`,
                           backgroundSize: "cover",
                           backgroundPosition: "center",
                           maxHeight: "600px",
                         }}
                       />
                       <div className="carousel-caption d-none d-md-block overlay rounded-3 p-3">
-                        <h5>{item.title.split("-")[0]}</h5>
+                        <p>{item.title.split("-")[0]}</p>
                         <p className={item.description ? "d-block" : "d-none"}>
                           {item.description}
                         </p>
@@ -124,7 +125,8 @@ const NewsView = ({ category, selectedLanguage }) => {
         </div>
       )}
 
-      <div className="d-flex flex-wrap justify-content-center container mt-4">
+      {/*ilk 5 haberi carousale gonderdik geri kalan haberleri slice ile alip cardlara basiyoruz*/}
+      <div className="d-flex flex-wrap justify-content-center container my-4">
         {news.length > 5 &&
           news
             .slice(5)
@@ -132,13 +134,25 @@ const NewsView = ({ category, selectedLanguage }) => {
               (item) => item.title !== "[Removed]" && item.author !== null
             )
             .map((item, index) => (
-              <div className="col-12 col-md-6 col-lg-4 p-4" key={item.title}>
-                <div className="card h-100">
-                  <img
-                    src={getImageUrl(item)}
-                    className="card-img-top img-fluid"
-                    style={{ minHeight: "250px" }}
-                  />
+              <div className="col-12 col-md-6 col-lg-4 p-3" key={item.title}>
+                <div className="card h-100 shadow-lg rounded-3">
+                  {
+                    /*to ile ilgii haberin indexini alip yeni sayfa olarak o indexteki haberi aciyoruz, state ile newDetail'e bilgi gonderebiliyoruz, haberlerin icerigini ve hangi dil secili oldugu bilgisini gonderdik cunku haber resimlerini ona gore bastiriyoruz*/
+                    <Link
+                      to={`/haber/${index}`}
+                      state={{
+                        haber: item,
+                        selectedLanguage: selectedLanguage,
+                      }}
+                      className=""
+                    >
+                      <img
+                        src={getImageUrl(item)}
+                        className="rounded-3 img-fluid"
+                        style={{ minHeight: "250px" }}
+                      ></img>
+                    </Link>
+                  }
                   <div className="card-body">
                     <div className="d-flex flex-row flex-wrap justify-content-between">
                       <p className="fw-bolder text-break">{item.author}</p>
@@ -146,16 +160,17 @@ const NewsView = ({ category, selectedLanguage }) => {
                         {dateFormatter(item.publishedAt)}
                       </p>
                     </div>
+                    <h6 className="card-title text-header fw-bolder">
+                      {item.title.split("-")[0]}
+                    </h6>
                     <hr className="mb-3" />
-                    <h5 className="card-title">{item.title.split("-")[0]}</h5>
-                    <p className="card-text">{item.description}</p>
-
-                    <Link
-                      to={`/haber/${index + 5}`} // carouselde 5 tane haber gösteriyoruz bu yüzden alttaki haberler 5den başlıyor
-                      className="text-decoration-none btn btn-sm btn-success text-light"
-                    >
-                      Haber Detay
-                    </Link>
+                    {item.description ? (
+                      <h6 className="card-text opacity-75">
+                        <b> News Description: </b> <i> {item.description}</i>
+                      </h6>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </div>
               </div>

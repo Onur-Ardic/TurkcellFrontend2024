@@ -7,6 +7,16 @@
 }
 
 body {
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   min-height: 100vh;
+}
+
+.card {
+  transition: all 0.6s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+
+.text-header {
+  color: #1565c0;
 }
