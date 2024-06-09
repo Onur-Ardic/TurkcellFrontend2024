@@ -1,11 +1,4 @@
 import { useRoutes } from "react-router-dom";
-// import Business from "../views/Business";
-// import Entertainment from "../views/Entertainment";
-// import General from "../views/General";
-// import Health from "../views/Health";
-// import Science from "../views/Science";
-// import Sports from "../views/Sports";
-// import Technology from "../views/Technology";
 import ShowView from "../views/ShowView";
 const Router = () => {
   const routes = useRoutes([

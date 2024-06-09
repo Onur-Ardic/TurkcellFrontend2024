@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { readData } from '../api/request';
 import Card from '../components/card';
+import { LoadingP, ShowContainer } from '../StyledComponent';
 
 const ShowView = ({category}) => {
     const [data, setData] = useState([]);
@@ -17,19 +18,18 @@ const ShowView = ({category}) => {
       setLoading(false);
     }
   }
-  // getNews();
   useEffect(() => {
     getNews();
   }, [category]);
   return (
-    <div className="row mx-0 gap-3 justify-content-center">
+    <ShowContainer>
       {loading? (
-        <p className="d-flex justify-content-center align-items-center vh-100 fs-1">
+        <LoadingP>
           Loading...
-        </p>
+        </LoadingP>
       ) : (<>{data.map((item, index) => <Card key={index} data={item} />)}</>)}
       
-    </div>
+    </ShowContainer>
   )
 }
 

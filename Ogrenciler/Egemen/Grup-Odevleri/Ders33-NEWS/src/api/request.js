@@ -1,4 +1,4 @@
-const url = "https://newsapi.org/v2/top-headlines?country=tr&";
+const url = "https://newsapi.org/v2/top-headlines?country=us&";
 export const readData = async (cata) => {
     const response = await fetch(`${url}category=${cata}&apiKey=5c66f497a1074197b3d427400e130535`, {
         method: 'GET',
