@@ -12,16 +12,16 @@ const Home = ({ socialMediaLinks }) => {
       padding="50px 50px 100px 50px"
       className="animate__animated animate__backInUp"
     >
-      <Image src="myPhoto.jpg" alt="Photo of Barış Erkuş" loading="lazy" />
+      <Image src="myPhoto.webp" alt="Photo of Barış Erkuş" loading="lazy" />
       <Title as="h1">BARIŞ ERKUŞ</Title>
       <Subtitle color={tertiary} as="h2">
         Front-End Developer
       </Subtitle>
       <Paragraph>
-        <strong>My philosophy:</strong> Seeing myself as a project and
-        developing this project in the best possible way. Software is my
-        passion. I would like to contribute to myself and your company with the
-        energy that this passion gives me. I hope to work together.
+        <strong>My philosophy:</strong> I see myself as a project and aim to
+        develop this project in the best possible way. Software is my passion. I
+        would like to contribute to both myself and your company with the energy
+        that this passion gives me. I hope to work together.
       </Paragraph>
       <SocialMediaContainer>
         <SocialMediaLink
