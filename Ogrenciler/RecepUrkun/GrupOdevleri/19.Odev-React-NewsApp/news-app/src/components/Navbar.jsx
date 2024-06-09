@@ -7,11 +7,11 @@ function Navbar({ selectedLanguage, setSelectedLanguage }) {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-light">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+      <nav className="navbar navbar-expand-lg">
+        <div className="container">
+          <NavLink to="/" className="navbar-brand" aria-current="page">
+            ENR
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -46,9 +46,24 @@ function Navbar({ selectedLanguage, setSelectedLanguage }) {
                 </NavLink>
               </li>
               <li className="nav-item">
+                <NavLink to="/teknoloji" className="nav-link">
+                  Technology
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/bilim" className="nav-link">
+                  Science
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/eglence" className="nav-link">
+                  Entertainment
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <select
                   className="form-select"
-                  aria-label="Default select example"
+                  aria-label="select for the news language"
                   value={selectedLanguage}
                   onChange={handleLanguageChange}
                 >

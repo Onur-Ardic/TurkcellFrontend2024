@@ -2,11 +2,7 @@ import React from "react";
 import NewsView from "./NewsView";
 
 const SportNewView = ({ selectedLanguage }) => {
-  return (
-    <div>
-      <NewsView category="sport" selectedLanguage={selectedLanguage} />
-    </div>
-  );
+  return <NewsView category="sport" selectedLanguage={selectedLanguage} />;
 };
 
 export default SportNewView;
