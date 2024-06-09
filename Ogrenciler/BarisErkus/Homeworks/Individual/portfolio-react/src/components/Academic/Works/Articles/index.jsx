@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Title } from "../../../../common/styled";
 import ArticleCard from "./ArticleCard";
-import { Helmet } from "react-helmet";
 
 const Articles = () => {
   const [articles, setArticles] = useState([]);
@@ -35,11 +34,6 @@ const Articles = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Baris Erkus - Articles</title>
-        <meta name="description" content="Articles by Baris Erkus on Medium." />
-        {/* Other SEO meta tags */}
-      </Helmet>
       <section aria-labelledby="articles-title">
         <Title as="h2" id="articles-title">
           Articles
