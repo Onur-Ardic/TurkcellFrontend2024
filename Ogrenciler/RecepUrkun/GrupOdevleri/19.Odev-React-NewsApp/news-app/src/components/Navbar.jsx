@@ -7,11 +7,8 @@ function Navbar({ selectedLanguage, setSelectedLanguage }) {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg">
-        <div className="container">
-          <NavLink to="/" className="navbar-brand" aria-current="page">
-            ENR
-          </NavLink>
+      <nav className="navbar navbar-expand-lg py-4 ">
+        <div className="container ">
           <button
             className="navbar-toggler"
             type="button"
@@ -23,41 +20,47 @@ function Navbar({ selectedLanguage, setSelectedLanguage }) {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
+          <div
+            className="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul className="navbar-nav gap-4">
+              <NavLink to="/" className="navbar-brand ms-5" aria-current="page">
+                <h4 className="text-header"> React News</h4>
+              </NavLink>
               <li className="nav-item">
                 <NavLink to="/" className="nav-link active" aria-current="page">
-                  Home
+                  <p className="text-header fw-semibold">Home</p>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink to="/saglik" className="nav-link">
-                  Health
+                  <p className="text-header fw-semibold">Health</p>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink to="/spor" className="nav-link">
-                  Sport
+                  <p className="text-header fw-semibold">Sport</p>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink to="/ekonomi" className="nav-link">
-                  Economy
+                  <p className="text-header fw-semibold">Economy</p>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink to="/teknoloji" className="nav-link">
-                  Technology
+                  <p className="text-header fw-semibold">Technology</p>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink to="/bilim" className="nav-link">
-                  Science
+                  <p className="text-header fw-semibold">Science</p>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink to="/eglence" className="nav-link">
-                  Entertainment
+                  <p className="text-header fw-semibold">Entertainment</p>
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -66,9 +69,14 @@ function Navbar({ selectedLanguage, setSelectedLanguage }) {
                   aria-label="select for the news language"
                   value={selectedLanguage}
                   onChange={handleLanguageChange}
+                  style={{ width: "100px" }}
                 >
-                  <option value="tr">Tr</option>
-                  <option value="us">En</option>
+                  <option value="tr" className="text-header fw-semibold">
+                    TR
+                  </option>
+                  <option value="us" className="text-header fw-semibold">
+                    EN
+                  </option>
                 </select>
               </li>
             </ul>
