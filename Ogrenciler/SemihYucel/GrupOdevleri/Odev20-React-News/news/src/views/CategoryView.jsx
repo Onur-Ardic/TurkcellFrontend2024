@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from "react";
-import {
-  Navigate,
-  Outlet,
-  useLocation,
-  useNavigate,
-  useParams,
-} from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Outlet, useLocation, useParams } from "react-router-dom";
 import { getData } from "../service/Request";
 import NewsCard from "../components/NewsCard";
+import { CategoryName } from "../styled";
+import Spinner from "../components/Spinner";
 
 const CategoryView = () => {
   const { category } = useParams();
@@ -26,17 +22,15 @@ const CategoryView = () => {
   useEffect(() => {
     fetchData();
   }, [category]);
-  console.log(news);
-  console.log("location", location.pathname.endsWith("/"));
   return (
     <>
       {isLoading ? (
-        <h1>Loading...</h1>
+        <Spinner />
       ) : (
         <>
           {location.pathname.endsWith("/") ? (
             <div className="row">
-              <h1>{category}</h1>
+              <CategoryName>{category.toUpperCase()}</CategoryName>
               {news
                 .filter(
                   (item) =>
