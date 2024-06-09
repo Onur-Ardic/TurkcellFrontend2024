@@ -1,9 +1,14 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 function Navbar({ selectedLanguage, setSelectedLanguage }) {
+  const location = useLocation();
+
   const handleLanguageChange = (event) => {
     setSelectedLanguage(event.target.value);
   };
+
+  //anasayfada miyiz?
+  const isHomePage = location.pathname === "/";
 
   return (
     <>
@@ -26,7 +31,7 @@ function Navbar({ selectedLanguage, setSelectedLanguage }) {
           >
             <ul className="navbar-nav gap-4">
               <NavLink to="/" className="navbar-brand ms-5" aria-current="page">
-                <h4 className="text-header"> React News</h4>
+                <h4 className="text-header">React News</h4>
               </NavLink>
               <li className="nav-item">
                 <NavLink to="/" className="nav-link active" aria-current="page">
@@ -63,22 +68,25 @@ function Navbar({ selectedLanguage, setSelectedLanguage }) {
                   <p className="text-header fw-semibold">Entertainment</p>
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <select
-                  className="form-select"
-                  aria-label="select for the news language"
-                  value={selectedLanguage}
-                  onChange={handleLanguageChange}
-                  style={{ width: "100px" }}
-                >
-                  <option value="tr" className="text-header fw-semibold">
-                    TR
-                  </option>
-                  <option value="us" className="text-header fw-semibold">
-                    EN
-                  </option>
-                </select>
-              </li>
+              {/*eger anasayfadaysak dil degistirme secenegini goster. Eger haber kategorilerinin icindeysek dil degistirme secegini gosterme */}
+              {isHomePage && (
+                <li className="nav-item">
+                  <select
+                    className="form-select"
+                    aria-label="select for the news language"
+                    value={selectedLanguage}
+                    onChange={handleLanguageChange}
+                    style={{ width: "100px" }}
+                  >
+                    <option value="tr" className="text-header fw-semibold">
+                      TR
+                    </option>
+                    <option value="us" className="text-header fw-semibold">
+                      EN
+                    </option>
+                  </select>
+                </li>
+              )}
             </ul>
           </div>
         </div>

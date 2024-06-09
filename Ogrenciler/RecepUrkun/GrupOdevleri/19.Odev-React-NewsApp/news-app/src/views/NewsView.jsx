@@ -138,6 +138,7 @@ const NewsView = ({ category, selectedLanguage }) => {
                 <div className="card h-100 shadow-lg rounded-3">
                   {
                     /*to ile ilgii haberin indexini alip yeni sayfa olarak o indexteki haberi aciyoruz, state ile newDetail'e bilgi gonderebiliyoruz, haberlerin icerigini ve hangi dil secili oldugu bilgisini gonderdik cunku haber resimlerini ona gore bastiriyoruz*/
+                    /*haberin resmine tiklarsaniz sizi haber detay sayfasina goturur*/
                     <Link
                       to={`/haber/${index}`}
                       state={{
@@ -163,9 +164,9 @@ const NewsView = ({ category, selectedLanguage }) => {
                     <h6 className="card-title text-header fw-bolder">
                       {item.title.split("-")[0]}
                     </h6>
-                    <hr className="mb-3" />
                     {item.description ? (
                       <h6 className="card-text opacity-75">
+                        <hr className="mb-3" />
                         <b> News Description: </b> <i> {item.description}</i>
                       </h6>
                     ) : (
