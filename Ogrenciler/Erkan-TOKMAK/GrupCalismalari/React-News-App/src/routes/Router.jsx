@@ -3,11 +3,11 @@ import HomeView from '../views/HomeView'
 import NewsView from '../views/NewsView'
 import NewsCategoryView from '../views/NewsCategoryView'
 
-const Router = () => {
+const Router = ({data, loading, searchData}) => {
     const routes = useRoutes([
-        { path: '/', element: <HomeView /> },
+        { path: '/', element: <HomeView data={data} searchData={searchData} loading={loading}/> },
         {
-            path: '/news/', element: <NewsView />,
+            path: '/news/', element: <NewsView data={data}/>,
             children: [
                 { index: true, path: ':category', element: <NewsCategoryView /> }
             ]
