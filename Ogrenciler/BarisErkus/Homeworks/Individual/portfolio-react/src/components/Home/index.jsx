@@ -12,7 +12,7 @@ const Home = ({ socialMediaLinks }) => {
       padding="50px 50px 100px 50px"
       className="animate__animated animate__backInUp"
     >
-      <Image src="myPhoto.webp" alt="Photo of Barış Erkuş" loading="lazy" />
+      <Image src="myPhoto.jpg" alt="Photo of Barış Erkuş" loading="lazy" />
       <Title as="h1">BARIŞ ERKUŞ</Title>
       <Subtitle color={tertiary} as="h2">
         Front-End Developer

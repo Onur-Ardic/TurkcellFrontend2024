@@ -1,46 +1,59 @@
 import { useEffect, useState } from "react";
 import { Title } from "../../../../common/styled";
 import ArticleCard from "./ArticleCard";
+import { Helmet } from "react-helmet";
 
 const Articles = () => {
   const [articles, setArticles] = useState([]);
   const articlesImages = [
-    "package.webp",
-    "gygy.webp",
-    "hat.webp",
-    "evolution.webp",
-    "constructor.webp",
+    "package.png",
+    "gygy.png",
+    "hat.png",
+    "evolution.png",
+    "constructor.png",
   ];
 
   const endpoint =
     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@baris.erkus";
+
   const readArticles = async () => {
-    const response = await fetch(endpoint);
-    if (!response.ok) {
-      throw new Error("Error");
+    try {
+      const response = await fetch(endpoint);
+      if (!response.ok) {
+        throw new Error("Failed to fetch articles.");
+      }
+      const result = await response.json();
+      setArticles(result.items);
+    } catch (error) {
+      console.error("Error fetching articles:", error.message);
     }
-    const result = await response.json();
-    console.log(result);
-    setArticles(result.items);
   };
+
   useEffect(() => {
     readArticles();
   }, []);
 
   return (
-    <section aria-labelledby="articles-title">
-      <Title as="h2" id="articles-title">
-        Articles
-      </Title>
-      {articles.map((article, index) => (
-        <ArticleCard
-          key={index}
-          img={articlesImages[index]}
-          title={article.title}
-          href={article.href}
-        />
-      ))}
-    </section>
+    <>
+      <Helmet>
+        <title>Baris Erkus - Articles</title>
+        <meta name="description" content="Articles by Baris Erkus on Medium." />
+        {/* Other SEO meta tags */}
+      </Helmet>
+      <section aria-labelledby="articles-title">
+        <Title as="h2" id="articles-title">
+          Articles
+        </Title>
+        {articles.map((article, index) => (
+          <ArticleCard
+            key={index}
+            img={articlesImages[index % articlesImages.length]} // Handling if articlesImages is smaller than articles
+            title={article.title}
+            href={article.link}
+          />
+        ))}
+      </section>
+    </>
   );
 };
 
