@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-
+import Card from "../components/card";
 const Entertainment = () => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
   async function getNews() {
     await fetch(
       `https://newsapi.org/v2/top-headlines?country=tr&category=entertainment`,
@@ -14,7 +14,7 @@ const Entertainment = () => {
     )
       .then((data) => data.json())
       .then((response) => {
-        setData(response);
+        setData(response.articles);
       })
       .catch((e) => alert(e.message));
   }
@@ -22,7 +22,17 @@ const Entertainment = () => {
     getNews();
   }, []);
 
-  return <div>Entertainment {console.log(data)}</div>;
+  return (
+    <div className="row mx-0 gap-3 justify-content-center">
+      {data.length > 0 ? (
+        data.map((item, index) => <Card key={index} data={item} />)
+      ) : (
+        <p className="d-flex justify-content-center align-items-center vh-100 fs-1">
+          Loading...
+        </p>
+      )}
+    </div>
+  );
 };
 
 export default Entertainment;

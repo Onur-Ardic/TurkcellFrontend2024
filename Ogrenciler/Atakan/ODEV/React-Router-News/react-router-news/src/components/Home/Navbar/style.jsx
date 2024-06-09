@@ -1,8 +1,9 @@
-import style from 'styled-components'
+import style from "styled-components";
 
 export const NavbarStyle = style.nav`
-background-color : #fafafa
-`
+background-color : #979A9A;
+font-family: "Sedan", serif;
+`;
 
 export const NavbarWrapper = style.div`
 display : flex;
@@ -16,11 +17,11 @@ align-items : center;
  font-size : 30px;
 }
 }
-`
+`;
 
 export const NavbarItems = style.ul`
 display : flex;
-gap : 10px;
+gap : 2rem;
 
 li{
 list-style-type : none;
@@ -31,17 +32,18 @@ text-decoration : none;
 color : black;
 font-size : 20px;
 }
-`
+`;
 
 export const SecondNavbarStyle = style.div`
-background-color : #fafafa
+font-family: "Sedan", serif;
+background-color : #B3B6B7;
 display : flex;
-gap : 10px;
 align-items : center;
+padding-bottom: 1rem;
 
 .second-navbar-items{
 display : flex;
-gap : 10px;
+gap : 2rem;
 
 li{
 list-style-type : none;
@@ -55,4 +57,4 @@ font-size : 20px;
 }
 
 }
-`
+`;

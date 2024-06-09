@@ -18,10 +18,10 @@ const Home = ({ socialMediaLinks }) => {
         Front-End Developer
       </Subtitle>
       <Paragraph>
-        <strong>My philosophy:</strong> Seeing myself as a project and
-        developing this project in the best possible way. Software is my
-        passion. I would like to contribute to myself and your company with the
-        energy that this passion gives me. I hope to work together.
+        <strong>My philosophy:</strong> I see myself as a project and aim to
+        develop this project in the best possible way. Software is my passion. I
+        would like to contribute to both myself and your company with the energy
+        that this passion gives me. I hope to work together.
       </Paragraph>
       <SocialMediaContainer>
         <SocialMediaLink

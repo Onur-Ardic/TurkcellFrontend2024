@@ -1,14 +1,14 @@
-import Carousel from 'react-bootstrap/Carousel'
+import Carousel from "react-bootstrap/Carousel";
 
 function Slider({ onData }) {
   return (
-    <Carousel className="container mt-5" data-bs-theme="dark">
+    <Carousel className="container mt-4" data-bs-theme="dark">
       {onData.slice(0, 5).map((item) => (
         <Carousel.Item key={item.title}>
           <img
-            className="d-block w-100  rounded-2"
-            style={{ height: '500px' }}
-            src={item.urlToImage ? item.urlToImage : 'bg.png'}
+            className="d-block w-100  rounded-3"
+            style={{ height: "26rem" }}
+            src={item.urlToImage ? item.urlToImage : "bg.png"}
             alt={item.title}
           />
           <Carousel.Caption>
@@ -18,7 +18,7 @@ function Slider({ onData }) {
         </Carousel.Item>
       ))}
     </Carousel>
-  )
+  );
 }
 
-export default Slider
+export default Slider;
