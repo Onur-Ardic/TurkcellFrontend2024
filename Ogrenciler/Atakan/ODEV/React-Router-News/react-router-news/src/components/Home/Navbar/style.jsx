@@ -2,6 +2,7 @@ import style from "styled-components";
 
 export const NavbarStyle = style.nav`
 background-color : #979A9A;
+font-family: "Sedan", serif;
 `;
 
 export const NavbarWrapper = style.div`
@@ -34,6 +35,7 @@ font-size : 20px;
 `;
 
 export const SecondNavbarStyle = style.div`
+font-family: "Sedan", serif;
 background-color : #B3B6B7;
 display : flex;
 align-items : center;

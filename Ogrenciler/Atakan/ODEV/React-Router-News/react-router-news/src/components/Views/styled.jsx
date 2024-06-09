@@ -18,4 +18,5 @@ export const Card = styled.div`
 
 export const AccordionWrapper = styled.div`
   padding: 1.5rem 0rem;
+  font-family: "Sedan", serif;
 `;
