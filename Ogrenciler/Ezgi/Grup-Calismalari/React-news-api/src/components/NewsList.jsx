@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { NewsContainer, News, NewCard } from "./styled";
 const NewsList = ({ category }) => {
   const [news, setNews] = useState([]);
-  const [country, setCountry] = useState("tr");
+  const [country, setCountry] = useState("us");
 
   useEffect(() => {
     const getNews = async () => {
@@ -16,7 +16,7 @@ const NewsList = ({ category }) => {
         console.error("Error fetching the news articles", error);
       }
     };
-    // console.log(news);
+    console.log(news);
     getNews();
   }, [category, country]);
 
@@ -30,9 +30,10 @@ const NewsList = ({ category }) => {
         name="country"
         class="form-control"
       >
+        <option value="us">United States</option>
+
         <option value="tr">Turkey</option>
 
-        <option value="us">United States</option>
         <option value="fr">French</option>
         <option value="de">Germany</option>
       </select>
@@ -42,7 +43,13 @@ const NewsList = ({ category }) => {
           {news?.map((article, index) => (
             <NewCard key={index}>
               <a href={article.url} target="_blank">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKETClZdmQpZspywCU7Dki5JiIybQq0wj0IQ&s" />
+                <img
+                  src={
+                    article.urlToImage
+                      ? article.urlToImage
+                      : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKETClZdmQpZspywCU7Dki5JiIybQq0wj0IQ&s"
+                  }
+                />
                 <h3>{article.title}</h3>
                 <p>{article.description}</p>
                 <i>{article.publishedAt.substring(0, 10)}</i>
