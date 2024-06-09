@@ -1,9 +1,15 @@
-import { NavbarItems, NavbarStyle, NavbarWrapper, SecondNavbarStyle } from './style'
-import { NavLink } from 'react-router-dom'
+import {
+  NavbarItems,
+  NavbarStyle,
+  NavbarWrapper,
+  SecondNavbarStyle,
+} from "./style";
+import { NavLink } from "react-router-dom";
+
 const Navbar = ({ setOnCountry, setOnCategory }) => {
   const changeCountryHandler = (e) => {
-    setOnCountry(e.target.value)
-  }
+    setOnCountry(e.target.value);
+  };
 
   return (
     <>
@@ -17,13 +23,16 @@ const Navbar = ({ setOnCountry, setOnCategory }) => {
             <li className="navbar-items">
               <NavLink to="/Home">Anasayfa</NavLink>
             </li>
+            <li className="navbar-items">
+              <NavLink to="/hakkımızda">Hakkımızda</NavLink>
+            </li>
 
             <select name="country" id="country" onChange={changeCountryHandler}>
               <option value="tr">Türkiye</option>
               <option value="us">Amerika</option>
+              <option value="ca">Kanada</option>
               <option value="de">Almanya</option>
               <option value="fr">Fransa</option>
-              <option value="es">İspanya</option>
             </select>
           </NavbarItems>
         </NavbarWrapper>
@@ -32,7 +41,7 @@ const Navbar = ({ setOnCountry, setOnCategory }) => {
         <div className="second-navbar-wrapper container">
           <div className="second-navbar-items">
             <li className="navbar-items">
-              <NavLink to="/haberler" onClick={() => setOnCategory('general')}>
+              <NavLink to="/haberler" onClick={() => setOnCategory("general")}>
                 Haberler
               </NavLink>
             </li>
@@ -40,7 +49,7 @@ const Navbar = ({ setOnCountry, setOnCategory }) => {
               <NavLink
                 to="/haberler/spor"
                 onClick={() => {
-                  setOnCategory('sports')
+                  setOnCategory("sports");
                 }}
               >
                 Spor Haberleri
@@ -51,7 +60,7 @@ const Navbar = ({ setOnCountry, setOnCategory }) => {
               <NavLink
                 to="/haberler/sağlık"
                 onClick={() => {
-                  setOnCategory('health')
+                  setOnCategory("health");
                 }}
               >
                 Sağlık Haberleri
@@ -62,7 +71,7 @@ const Navbar = ({ setOnCountry, setOnCategory }) => {
               <NavLink
                 to="/haberler/ekonomi"
                 onClick={() => {
-                  setOnCategory('business')
+                  setOnCategory("business");
                 }}
               >
                 Ekonomi Haberleri
@@ -72,7 +81,7 @@ const Navbar = ({ setOnCountry, setOnCategory }) => {
         </div>
       </SecondNavbarStyle>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
