@@ -1,30 +1,18 @@
-import { useEffect, useState } from "react";
-import { readData } from "../api/request";
+import { useEffect } from "react";
+// import { getCategory, getSearch } from '../api/request';
 import Card from "../components/card";
 import { LoadingP, ShowContainer } from "../StyledComponent";
 
-const ShowView = ({ category }) => {
-  const [data, setData] = useState([]);
-  //   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const getNews = async () => {
-    try {
-      setLoading(true);
-      const result = await readData(category);
-      setData(result.articles);
-    } catch (error) {
-      //   setError(error.message);
-    } finally {
-      setLoading(false);
-    }
-  };
+const ShowView = ({ showCategory, loading, error, data, setCategory }) => {
   useEffect(() => {
-    getNews();
-  }, [category]);
+    setCategory(showCategory);
+  }, [showCategory]);
   return (
     <ShowContainer>
       {loading ? (
         <LoadingP>Loading...</LoadingP>
+      ) : error ? (
+        <p>Error: {error}</p>
       ) : (
         <>
           {data.map((item, index) => (

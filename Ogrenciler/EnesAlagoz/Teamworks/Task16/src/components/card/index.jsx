@@ -15,7 +15,7 @@ const Card = ({ data }) => {
             ? data.title.substring(0, 110) + "..."
             : data.title}
         </CardTitle>
-        <CardSubtitle>{data.author ? data.author : "CNBC"}</CardSubtitle>
+        <CardSubtitle>{data.author ? data.author.split(",")[0] : "CNBC"}</CardSubtitle>
         <CardBtn href={data.url} target="_blank" rel="noopener noreferrer">
           Read more
         </CardBtn>
