@@ -4,7 +4,7 @@ import HomeView from "../views/HomeView";
 import NewsView from "../views/NewsView";
 import NewsCategoryView from "../views/NewsCategoryView";
 
-const AppRouter = () => {
+const Router = () => {
   const routes = useRoutes([
     { path: "/", element: <HomeView /> },
     {
@@ -18,4 +18,4 @@ const AppRouter = () => {
   return routes;
 };
 
-export default AppRouter;
+export default Router;

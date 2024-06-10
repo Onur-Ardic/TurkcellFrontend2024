@@ -1,12 +1,14 @@
 import React from "react";
-import AppRouter from "./routes/AppRouter";
+import Router from "./routes/Router";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <AppRouter />
+      <Router />
+      <Footer />
     </div>
   );
 }

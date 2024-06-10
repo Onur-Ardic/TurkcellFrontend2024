@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Card = styled.div`
   border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
   padding: 16px;
   max-width: 300px;
   text-align: left;
@@ -36,12 +36,19 @@ const NewsLink = styled.a`
 `;
 
 function NewsCard({ article }) {
+  if (!article.title || article.title === "[Removed]") {
+    return null;
+  }
   return (
     <Card>
-      <Title>{article.title}</Title>
-      <Description>{article.description}</Description>
-      {article.urlToImage && (
+      <Title>{article.title ? article.title : "Haber Bulunamadı."}</Title>
+      <Description>
+        {article.description ? article.description : "Açıklama Bulunamadı."}
+      </Description>
+      {article.urlToImage ? (
         <Image src={article.urlToImage} alt={article.title} />
+      ) : (
+        <Image src="https://i.hizliresim.com/qlb5v2w.jpg" />
       )}
       <NewsLink href={article.url} target="_blank">
         Read More
