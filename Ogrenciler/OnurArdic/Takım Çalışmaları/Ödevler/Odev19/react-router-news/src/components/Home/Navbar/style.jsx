@@ -1,7 +1,7 @@
 import style from 'styled-components'
 
 export const NavbarStyle = style.nav`
-background-color : #fafafa
+  background-color: ${(props) => (props.primary ? props.primary : 'white')};
 `
 
 export const NavbarWrapper = style.div`

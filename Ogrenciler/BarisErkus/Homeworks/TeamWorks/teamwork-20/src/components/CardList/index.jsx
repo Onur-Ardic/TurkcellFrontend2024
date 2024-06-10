@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { CardContainer, Search } from "../../common/styled";
+import { CardContainer, Search } from "./styled";
 import NewsCard from "../NewsCard";
 
 const CardList = ({ category }) => {

@@ -36,9 +36,28 @@ export const Title = styled.h1`
   margin-bottom: 10px;
 `;
 
+export const Image = styled.img`
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+`;
+
 export const Description = styled.p`
   font-size: 1.2rem;
   color: #666;
+  margin-bottom: 20px;
+`;
+
+export const Source = styled.div`
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #1a237e;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 5px;
   margin-bottom: 20px;
 `;
 
@@ -49,14 +68,6 @@ export const Author = styled.div`
   margin-top: 20px;
 `;
 
-export const Image = styled.img`
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  object-fit: cover;
-`;
 export const NavButton = styled.button`
   padding: 0.25rem 1rem;
   background-color: #1a237e;

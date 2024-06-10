@@ -1,23 +1,21 @@
-import React from "react";
+import {CardBody, CardBtn, CardContainer, CardImg, CardSubtitle, CardTitle} from "../../StyledComponent"
 
 const Card = ({ data }) => {
   return (
-    <div className="col-3 mb-4 text-center">
-      <div className="card h-100">
-        <div className="card-body">
-          <h5 className="card-title mx-3 my-3">{data.title}</h5>
-          <h6 className="card-subtitle mb-2 text-muted">{data.author}</h6>
-          <a
+    <CardContainer>
+      <CardImg src={data.urlToImage? data.urlToImage : "https://www.sag.at/wp-content/uploads/2020/05/news.jpg"} alt="news-photo" />
+        <CardBody>
+          <CardTitle>{data.title==="[Removed]"? "Breaking News": data.title.length>110 ?data.title.substring(0,110)+"...": data.title}</CardTitle>
+          <CardSubtitle>{data.author? data.author.split(",")[0]: "CNBC"}</CardSubtitle>
+          <CardBtn
             href={data.url}
-            className="btn btn-primary"
             target="_blank"
             rel="noopener noreferrer"
           >
             Read more
-          </a>
-        </div>
-      </div>
-    </div>
+          </CardBtn>
+        </CardBody>
+    </CardContainer>
   );
 };
 

@@ -6,15 +6,6 @@ export const CardContainer = styled.div`
   justify-content: center;
 `;
 
-export const NavbarContainer = styled.ul`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  background-color: #333;
-  gap: 30px;
-`;
-
 export const Search = styled.input`
   width: 20%;
   padding: 10px;
