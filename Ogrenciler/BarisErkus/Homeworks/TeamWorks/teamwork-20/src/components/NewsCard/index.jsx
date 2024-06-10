@@ -1,7 +1,6 @@
 import { Author, Card, Title, Image } from "./styled";
 
 const NewsCard = ({ item }) => {
-  console.log(item);
   const { title, author, url } = item;
   return (
     <Card href={url} target="_blank">

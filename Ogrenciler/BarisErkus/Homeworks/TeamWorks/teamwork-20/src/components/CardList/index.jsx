@@ -7,7 +7,7 @@ const CardList = ({ category }) => {
   const [loading, setLoading] = useState(true);
   const [text, setText] = useState("");
 
-  const url = `https://newsapi.org/v2/top-headlines?country=tr&category=${category}&q=${text}`;
+  const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&q=${text}`;
   useEffect(() => {
     fetch(url, {
       method: "GET",
