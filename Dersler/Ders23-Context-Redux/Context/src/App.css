@@ -1,0 +1,21 @@
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.app{
+  text-align: center;
+  height: 100vh;
+}
+
+.app.dark{
+  background-color: #222;
+  color: #fff;
+}
+
+.app.light{
+  background-color: #fff;
+  color: #222;
+}
