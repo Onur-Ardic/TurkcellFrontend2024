@@ -36,3 +36,10 @@ yapılabilecek projeler:
 https://www.udemy.com/course/the-ultimate-react-course/  eğitim
 
 https://turkcell.webex.com/turkcell-tr/url.php?gourl=https%3a%2f%2fwww%2ei18next%2ecom%2foverview%2fgetting%2dstarted i18n veri yapılandırması için
+
+
+https://reactrouter.com/en/main/route/lazy      react router lazy route işlemi
+
+Varol Hoca mail varol.maksutoglu@atmosware.tukcell.com.tr
+
+flax mimarisi, big-o notasyonu
