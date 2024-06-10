@@ -7,7 +7,7 @@ const Navbar = ({ setOnCountry, setOnCategory }) => {
 
   return (
     <>
-      <NavbarStyle className="navbar">
+      <NavbarStyle className="navbar" primary={'#fafafa'}>
         <NavbarWrapper className="navbar-wrapper container">
           <div className="logo">
             <h3>NewsApp</h3>
