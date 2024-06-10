@@ -233,7 +233,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: rem;
+  font-size: 1rem;
 }
 
 h3, .h3 {
@@ -8229,7 +8229,7 @@ textarea.form-control-lg {
 }
 
 .fs-2 {
-  font-size: rem !important;
+  font-size: 1rem !important;
 }
 
 .fs-3 {
@@ -11863,6 +11863,7 @@ textarea.form-control-lg {
 }
 
 #chooseChairSection {
+  display: none;
   align-content: center;
   background-image: url(https://r.resimlink.com/kbRmNp6cJ.png);
   background-repeat: no-repeat;
@@ -11916,6 +11917,18 @@ textarea.form-control-lg {
 }
 #chooseChairSection .sec {
   background-color: #f7de05;
+}
+
+#createticket {
+  display: none;
+  width: 50%;
+  height: 100vh;
+}
+#createticket .container {
+  padding-top: 300px;
+  margin-left: 300px;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
