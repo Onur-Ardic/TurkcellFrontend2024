@@ -3,7 +3,7 @@ export const getCategory = async (category) => {
   const response = await fetch(`${categoryUrl}category=${category}`, {
     method: "GET",
     headers: {
-      Authorization: "apikey a7370087f8f84b7da252eb6eba89b46d",
+      Authorization: "apikey fb44ce1bd88740d4990d843834598291",
     },
   });
   if (!response.ok) {
@@ -18,7 +18,7 @@ export const getSearch = async (search) => {
   const response = await fetch(`${searchUrl}q=${search}`, {
     method: "GET",
     headers: {
-      Authorization: "apikey a7370087f8f84b7da252eb6eba89b46d",
+      Authorization: "apikey fb44ce1bd88740d4990d843834598291",
     },
   });
   if (!response.ok) {
