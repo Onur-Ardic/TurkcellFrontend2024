@@ -1,4 +1,25 @@
 import styled from "styled-components";
+export const SearchForm = styled.form`
+margin-bottom: 2rem;
+`
+export const SearchInput = styled.input`
+width: 250px;
+padding: 10px 20px;
+border: none;
+outline: none;
+border-radius: 10px 0 0 10px;
+`
+export const SearchBtn = styled.button`
+    background-color: #ffffff3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 10px 10px 0;
+    &:hover{
+    background-color: #ffffffab;
+    color: black;
+}
+`
 export const Navbar = styled.div`
 display: flex;
 justify-content:center;
