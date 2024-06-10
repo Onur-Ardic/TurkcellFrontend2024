@@ -1,11 +1,6 @@
 import { useLocation } from "react-router-dom";
-import {
-  DetailViewContainer,
-  Title,
-  Description,
-  Author,
-  Image,
-} from "../styled";
+import styled from "styled-components";
+import { DetailViewContainer, Title, Image, Description, Source, Author } from "../styled";
 
 const DetailView = () => {
   const location = useLocation();
@@ -19,12 +14,13 @@ const DetailView = () => {
 
   return (
     <DetailViewContainer>
+      <Title>{data.title}</Title>
       <Image
         src={data.urlToImage ? data.urlToImage : defaultImage}
         alt={data.title}
       />
-      <Title>{data.title}</Title>
       <Description>{data.description}</Description>
+      <Source>{data.source.name}</Source>
       <Author>{data.author}</Author>
     </DetailViewContainer>
   );
