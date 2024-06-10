@@ -32,7 +32,7 @@ const Title = styled.h2`
   text-align: start;
   color: ${(props) => props.color || "white"};
   @media (max-width: 600px) {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 `;
 

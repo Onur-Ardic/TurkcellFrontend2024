@@ -231,7 +231,7 @@ const AboutMe = () => {
       <AboutMeTexts className="about-me-texts">
         <h1>
           Let's <br />
-          Work{" "}
+          Work
           <b
             style={{
               color: "#512354",
@@ -250,14 +250,20 @@ const AboutMe = () => {
       </AboutMeTexts>
       <AboutMeImg className="about-me-img">
         <ImgBox className="img-box">
-          <img src={ebrarImg} alt="Ebrar Nur Çalışkan" />{" "}
+          <img src={ebrarImg} alt="Ebrar Nur Çalışkan" />
         </ImgBox>
         <ImgTexts className="img-texts">
           <h4>Ebrar Nur Çalışkan</h4>
           <p className="subtitle">Front-End Developer</p>
           <div className="social-media">
-            <a href="">Linkedin</a>
-            <a href="">Github</a>
+            <a
+              href="https://www.linkedin.com/in/ebrar-nur-caliskan/"
+              target="_blank">
+              Linkedin
+            </a>
+            <a href="https://github.com/ebrarrc" target="_blank">
+              Github
+            </a>
             <a href="">Instagram</a>
           </div>
         </ImgTexts>

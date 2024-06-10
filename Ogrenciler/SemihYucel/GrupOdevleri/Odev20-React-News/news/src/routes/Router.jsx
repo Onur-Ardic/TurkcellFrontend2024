@@ -1,5 +1,4 @@
-import React from "react";
-import { useRoutes, Navigate } from "react-router-dom";
+import { useRoutes } from "react-router-dom";
 
 import HomeView from "../views/HomeView";
 import CategoryView from "../views/CategoryView";

@@ -1,18 +1,28 @@
-import React from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import styled from "styled-components";
+import { DetailViewContainer, Title, Image, Description, Source, Author } from "../styled";
 
 const DetailView = () => {
-  const { newsId } = useParams();
   const location = useLocation();
   const data = location.state;
-  console.log("detail page", data);
+  const defaultImage =
+    "https://png.pngtree.com/png-vector/20201027/ourmid/pngtree-breaking-news-banner-lower-png-image_2378724.jpg";
+
+  if (!data) {
+    return <div>Loading...</div>;
+  }
+
   return (
-    <>
-      <div>DetailView</div>
-      <div>{data.title}</div>
-      <div>{data.description}</div>
-      <div>{data.author}</div>
-    </>
+    <DetailViewContainer>
+      <Title>{data.title}</Title>
+      <Image
+        src={data.urlToImage ? data.urlToImage : defaultImage}
+        alt={data.title}
+      />
+      <Description>{data.description}</Description>
+      <Source>{data.source.name}</Source>
+      <Author>{data.author}</Author>
+    </DetailViewContainer>
   );
 };
 

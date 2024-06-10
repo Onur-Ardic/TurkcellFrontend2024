@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { getData, getNews, searchNews } from "./service/Request";
+import { getNews, searchNews } from "./service/Request";
 import Router from "./routes/Router";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import HomeView from "./views/HomeView";
+import Spinner from "./components/Spinner";
 
 function App() {
   const [news, setNews] = useState([]);
@@ -20,6 +20,7 @@ function App() {
     setNews(result2.articles);
     navigate("/");
     setIsLoading(false);
+    setQuery("");
   };
 
   const topNews = async () => {
@@ -41,7 +42,7 @@ function App() {
         query={query}
       />
       <div className="container">
-        {isLoading ? <h1>Loading...</h1> : <Router news={news} />}
+        {isLoading ? <Spinner /> : <Router news={news} />}
       </div>
     </>
   );
