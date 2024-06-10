@@ -10,22 +10,13 @@ import {
   LoadingMessage,
 } from "./card-styled";
 import { getNewsCategory } from "../Request";
-import { useNavigate } from "react-router-dom";
-
-const BusinessView = () => {
+const GeneralView = () => {
   const [News, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
-  const navigate = useNavigate();
-
-  const handleCardClick = (article) => {
-    navigate(`/news/business/${encodeURIComponent(article.title)}`, {
-      state: article,
-    });
-  };
 
   const getNews = () => {
     setLoading(true);
-    getNewsCategory("business")
+    getNewsCategory("general")
       .then((response) => {
         if (response.status === "ok") {
           setNews(response.articles);
@@ -52,11 +43,7 @@ const BusinessView = () => {
         ) : (
           <div className="row">
             {News.map((article, index) => (
-              <CardContainer
-                className="col-md-4"
-                key={index}
-                onClick={() => handleCardClick(article)}
-              >
+              <CardContainer className="col-md-4">
                 <CardImage
                   src={
                     article.urlToImage
@@ -86,4 +73,4 @@ const BusinessView = () => {
   );
 };
 
-export default BusinessView;
+export default GeneralView;

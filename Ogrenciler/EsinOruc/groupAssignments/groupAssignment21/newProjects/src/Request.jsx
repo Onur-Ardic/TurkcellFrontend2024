@@ -20,7 +20,7 @@ export async function getNewsCategory(category) {
   }
 }
 
-export async function getNews() {
+export async function getNewsData() {
   try {
     const response = await fetch(
       `https://newsapi.org/v2/top-headlines?country=us`,
