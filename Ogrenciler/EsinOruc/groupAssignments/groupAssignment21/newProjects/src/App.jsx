@@ -1,19 +1,21 @@
 import { useEffect } from "react";
 import "./App.css";
-import { getNews } from "./Request";
+import { getNewsData } from "./Request";
 import Navbar from "./components/Navbar/Navbar";
-import Router from "./routes/Router";
+import { BrowserRouter as Router } from "react-router-dom";
+import RouterConfig from "./routes/Router";
 
 function App() {
   useEffect(() => {
-    const result = getNews();
+    const result = getNewsData();
   });
 
   return (
     <>
       <Navbar />
-      <h2>PROJECT 1</h2>
-      <Router />
+      <div className="container">
+        <RouterConfig />
+      </div>
     </>
   );
 }

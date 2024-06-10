@@ -5,7 +5,6 @@ export const Card = styled.a`
   background-color: #f1f1f1;
   border-radius: 10px;
   margin: 10px;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -20,11 +19,11 @@ export const Title = styled.h3`
   font-size: 1.5rem;
   color: #333;
 `;
-export const Source = styled.h4`
-  font-size: 1rem;
-  color: #666;
-`;
 export const Author = styled.h5`
   font-size: 0.8rem;
   color: #999;
+`;
+export const Image = styled.img`
+  width: 100%;
+  object-fit: contain;
 `;

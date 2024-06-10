@@ -9,6 +9,7 @@ const NewsContainer = styled.div`
   justify-content: center;
   gap: 16px;
   margin-top: 20px;
+  margin-bottom: 50px;
 `;
 
 function NewsList({ category }) {
@@ -24,8 +25,8 @@ function NewsList({ category }) {
 
   return (
     <NewsContainer>
-      {news.map((article, index) => (
-        <NewsCard key={index} article={article} />
+      {news.map((article) => (
+        <NewsCard article={article} />
       ))}
     </NewsContainer>
   );

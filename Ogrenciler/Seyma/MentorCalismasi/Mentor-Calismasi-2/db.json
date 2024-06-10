@@ -1,54 +1,68 @@
 {
-    "url": [
+    "movies": [
       {
-        "url": "https://www.youtube.com/embed/Ki4haFrqSrw",
-        "name": "yesilyol",
-        "price": 100
+        "src": "https://www.youtube.com/embed/Ki4haFrqSrw",
+        "name": "Yeşil Yol",
+        "price": 100,
+        "id": 1
       },
       {
-        "url": "https://www.youtube.com/embed/d9MyW72ELq0",
-        "name": "avatar",
-        "price": 220
+        "src": "https://www.youtube.com/embed/d9MyW72ELq0",
+        "name": "Avatar",
+        "price": 220,
+        "id": 2
       },
       {
-        "url": "https://www.youtube.com/embed/8mnL1wAZMss",
-        "name": "twilight",
-        "price": 100
+        "src": "https://www.youtube.com/embed/QDRLSqm_WVg",
+        "name": "Twilight",
+        "price": 100,
+        "id": 3
       },
       {
-        "url": "https://www.youtube.com/embed/TbQm5doF_Uc",
+        "src": "https://www.youtube.com/embed/TbQm5doF_Uc",
         "name": "Frozen",
-        "price": 100
+        "price": 100,
+        "id": 4
+    
       },
       {
-        "url": "",
+        "src": "https://www.youtube.com/embed/ceUyQoFfhfw",
         "name": "Mucize",
-        "price": 100
+        "imageSrc" : "https://cdn1.ntv.com.tr/gorsel/HFwGwK73tUiXFFG0gdSXcg.jpg?width=1000&mode=crop&scale=both",
+        "price": 100,
+        "id": 5
       },
       {
-        "url": "",
+        "src": "https://www.youtube.com/embed/Ihh-8KahJNc",
         "name": "Geçen Yaz",
-        "price": 100
+        "imageSrc" : "https://cdn1.ntv.com.tr/gorsel/HFwGwK73tUiXFFG0gdSXcg.jpg?width=1000&mode=crop&scale=both",
+        "price": 100,
+        "id": 6
       },
       {
-        "url": "",
+        "src": "https://www.youtube.com/embed/uR-2TiQVY-k",
         "name": "Joy",
-        "price": 120
+        "imageSrc" : "https://cdn1.ntv.com.tr/gorsel/HFwGwK73tUiXFFG0gdSXcg.jpg?width=1000&mode=crop&scale=both",
+        "price": 120,
+        "id": 7
       },
       {
-        "url": "",
+        "src": "https://www.youtube.com/embed/Eyy4UAH59jM",
         "name": "Şeker Portakalı",
-        "price": 100
+        "price": 100,
+        "id": 8
       },
       {
-        "url": "",
+        "src": "https://www.youtube.com/embed/ZF4OG1sY6Bw",
         "name": "Uçurtma Avcısı",
-        "price": 100
+        "price": 100,
+        "id": 9
       },
       {
-        "url": "",
+        "src": "https://www.youtube.com/embed/DYGx3AlK23s",
         "name": "Zaman Kapanı",
-        "price": 150
+        "price": 150,
+        "id": 10
       }
     ]
   }
