@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className={`app ${theme}`}>
-      <h1>Context Uygulama</h1>
+      <h1>Tema Değiştirme Uygulaması</h1>
       <Button />
     </div>
   );
