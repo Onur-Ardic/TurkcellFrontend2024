@@ -10,6 +10,7 @@ function App() {
     <div className={`app ${theme}`}>
       <h1>Tema Değiştirme Uygulaması</h1>
       <Button />
+      <Button></Button>
     </div>
   );
 }
