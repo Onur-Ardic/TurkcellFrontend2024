@@ -2,9 +2,7 @@ import { useState, useEffect } from "react";
 import { get } from "../api";
 import styled from "styled-components";
 
-
 const defaultImage = "https://c1.wallpaperflare.com/preview/21/93/67/news-yellow-newspaper-3d.jpg";
-
 
 const Container = styled.div`
     max-width: 1350px;
@@ -62,6 +60,7 @@ const CardLink = styled.a`
     text-decoration: underline;
   }
 `;
+
 const HomeView = () => {
   const [data, setData] = useState([]);
 
@@ -83,7 +82,6 @@ const HomeView = () => {
          <Card>
            <CardImage src={getImageUrl(article.urlToImage)} alt={article.title || "default image"} />
            <CardText>{article.publishedAt}</CardText>
-
            <CardTitle>{article.title}</CardTitle>
            <CardText>{article.description}</CardText>
            <CardLink href={article.url}>Haberin Detayı...</CardLink>

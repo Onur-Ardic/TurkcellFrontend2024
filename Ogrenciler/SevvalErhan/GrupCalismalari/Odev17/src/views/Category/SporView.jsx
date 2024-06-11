@@ -81,7 +81,6 @@ const SporView = () => {
             <Card>
               <CardImage src={getImageUrl(article.urlToImage)} alt={article.title || "default image"} />
               <CardText>{article.publishedAt}</CardText>
-
               <CardTitle>{article.title}</CardTitle>
               <CardText>{article.description}</CardText>
               <CardLink href={article.url}>Haberin Detayı...</CardLink>
