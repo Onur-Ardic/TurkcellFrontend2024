@@ -1,0 +1,23 @@
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app.dark{
+  background-color: black;
+  color: orangered;
+}
+.app.light{
+  background-color: maroon;
+  color: black;
+}
+
+.btn{
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
