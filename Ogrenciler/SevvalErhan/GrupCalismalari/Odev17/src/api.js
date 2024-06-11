@@ -9,3 +9,4 @@ export const get = async (category) => {
   const result = await response.json();
   return result;
 };
+

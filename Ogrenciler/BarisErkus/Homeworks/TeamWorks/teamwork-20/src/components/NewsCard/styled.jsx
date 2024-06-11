@@ -5,6 +5,7 @@ export const Card = styled.a`
   background-color: #f1f1f1;
   border-radius: 10px;
   margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

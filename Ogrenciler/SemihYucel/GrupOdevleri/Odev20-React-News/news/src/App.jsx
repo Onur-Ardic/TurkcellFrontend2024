@@ -16,8 +16,8 @@ function App() {
   const fetchData = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    const result2 = await searchNews(query);
-    setNews(result2.articles);
+    const result = await searchNews(query);
+    setNews(result.articles);
     navigate("/");
     setIsLoading(false);
     setQuery("");

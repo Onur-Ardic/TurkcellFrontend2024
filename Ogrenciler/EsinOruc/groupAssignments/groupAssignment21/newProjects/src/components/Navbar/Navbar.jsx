@@ -1,25 +1,36 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { NavbarContainer, Brand, NavItem, Nav } from "../Navbar/Navbar-styled";
 
 const Navbar = () => {
   const categoryNewsArrays = [
-    "business",
-    "entertainment",
-    "general",
-    "health",
-    "science",
-    "sports",
-    "technology",
+    "Business",
+    "Entertainment",
+    "General",
+    "Health",
+    "Science",
+    "Sports",
+    "Technology",
   ];
+  const getCurrentDate = () => {
+    const date = new Date();
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    return date.toLocaleDateString(undefined, options);
+  };
   return (
     <>
-      <ul>
-        {categoryNewsArrays.map((item, index) => (
-          <li key={index}>
-            <NavLink to={`${item}`}>{item}</NavLink>
-          </li>
-        ))}
-      </ul>
+      <NavbarContainer>
+        <Brand href="#">CIZ NEWS</Brand>
+        <p>{getCurrentDate()}</p>
+        <Nav>
+          <NavItem to="/">Home</NavItem>
+          {categoryNewsArrays.map((item, index) => (
+            <NavItem to={`/news/${item.toLowerCase()}`} key={index}>
+              {item}
+            </NavItem>
+          ))}
+        </Nav>
+      </NavbarContainer>
     </>
   );
 };

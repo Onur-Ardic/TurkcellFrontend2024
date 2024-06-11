@@ -1,15 +1,21 @@
 import { useLocation } from "react-router-dom";
-import styled from "styled-components";
-import { DetailViewContainer, Title, Image, Description, Source, Author } from "../styled";
+import {
+  DetailViewContainer,
+  Title,
+  Image,
+  Description,
+  Source,
+  Author,
+} from "../styled";
+import Spinner from "../components/Spinner";
 
 const DetailView = () => {
   const location = useLocation();
   const data = location.state;
-  const defaultImage =
-    "https://png.pngtree.com/png-vector/20201027/ourmid/pngtree-breaking-news-banner-lower-png-image_2378724.jpg";
+  const defaultImage = "news.jpeg";
 
   if (!data) {
-    return <div>Loading...</div>;
+    return <Spinner />;
   }
 
   return (

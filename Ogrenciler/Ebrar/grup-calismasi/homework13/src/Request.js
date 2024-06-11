@@ -12,9 +12,9 @@ export async function getNews(category = "") {
     }
 
     const data = await response.json();
-    return data.articles.slice(0, 15);
+    return data.articles.slice(0, 10);
   } catch (error) {
-    console.error("Fetch error: ", error.message);
+    console.error("Fetch error: ", error.message); //pop-up ile değiştir.
     throw error;
   }
 }
