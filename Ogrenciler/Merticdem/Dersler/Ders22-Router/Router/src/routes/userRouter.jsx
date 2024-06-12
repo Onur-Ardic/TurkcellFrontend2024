@@ -1,8 +1,8 @@
-import UserViev from '../views/UserView';
+import UserViev from "../views/UserView";
 
-const userRouter = () => {
-    path: '/user',
-    Element: <UserViev />,
+const userRouter = {
+  path: "/user",
+  element: <UserView />,
 };
 
 export default userRouter;
