@@ -1,24 +1,23 @@
-import {createContext, useState, useEffect, useContext} from 'react'
-import { PropTypes } from 'prop-types';
+import { createContext, useState, useEffect, useContext } from "react";
+import { PropTypes } from "prop-types";
 
-const ThemeContext = createContext()
+const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-
-    const[theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
-
-useEffect(() => {
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+  useEffect(() => {
     localStorage.setItem("theme", theme);
-}, [theme]);
+  }, [theme]);
 
-const values= {theme, setTheme};
+  const values = { theme, setTheme };
+
   return (
-    <ThemeContext.Provider value={values}> {children} </ThemeContext.Provider>
+    <ThemeContext.Provider value={values}>{children}</ThemeContext.Provider>
   );
 };
 
-ThemeProvider.PropTypes = {
-    children: Proptypes.node.isRequired,
+ThemeProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export const useTheme = () => useContext(ThemeContext);
