@@ -1,16 +1,19 @@
-import {useTheme} from "./context/ThemeContext"
-import Button  from "./components/Button"
-import './App.css'
+import Button from './components/Button';
+import "./App.css";
+import { useTheme } from './context/ThemeContext';
+
 
 function App() {
-const {theme}= useTheme();
+  const { theme } = useTheme();
+
   return (
     <>
-      <div className={`app ${theme}`}> </div>
-      <h1>contect uygulaması</h1>
-      <Button/>
+      <div className={`app ${theme}`}>
+        <h1>Context Uygulama</h1>
+        <Button />
+      </div>
     </>
+
   )
 }
-
-export default App
+export default App;
