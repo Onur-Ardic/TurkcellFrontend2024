@@ -1,38 +1,52 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addTodo, updateTodo } from "../redux/slices/todoSlice";
+import { addTodo, updateFormTodo, updateTodo } from "../redux/slices/todoSlice";
 import { useEffect, useState } from "react";
 
 const Form = () => {
-
   const dispatch = useDispatch();
-  const Todo = useSelector(state => state.todo.inputValue);
+  const Todo = useSelector((state) => state.todo.inputValue);
   const handleAddTodo = (todo) => {
     dispatch(addTodo(todo));
+    dispatch(updateFormTodo({})); // Ekleme yaptıktan sonra slicedaki inputValue'nun içini temizler.
   };
-  const [updateValue, setUpdateValue] = useState(Todo.title);
-  useEffect(() => {setUpdateValue(Todo.title)}, [Todo]);
 
-  console.log(updateValue);
+  // const [updateValue, setUpdateValue] = useState(Todo.title);
+  const [updateValue, setUpdateValue] = useState(""); // Controlled to uncontrolled hatası çözümü
+
+  useEffect(() => {
+    // setUpdateValue(Todo.title);
+    setUpdateValue(Todo.title || ""); // Controlled to uncontrolled hatası çözümü
+  }, [Todo]);
+
   const handleUpdateValue = () => {
-    dispatch(updateTodo({
+    dispatch(
+      updateTodo({
         id: Todo.id,
-        title: updateValue
-    }))
-  }
+        title: updateValue,
+      })
+    );
+    dispatch(updateFormTodo({})); // Güncelleme yaptıktan sonra slicedaki inputValue'nun içini temizler.
+  };
 
-  console.log(Todo.id);
   return (
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        Todo.title === "" ? 
-        handleAddTodo({ id: self.crypto.randomUUID(), title: updateValue }) : handleUpdateValue()
+        // Id varlığına göre fonksiyon çalıştırma.
+        Todo.id
+          ? handleUpdateValue()
+          : handleAddTodo({ id: self.crypto.randomUUID(), title: updateValue });
       }}
     >
-      <input type="text" name="todo" value={updateValue} onChange={(e) => setUpdateValue(e.target.value)}/>
+      <input
+        type="text"
+        name="todo"
+        value={updateValue}
+        onChange={(e) => setUpdateValue(e.target.value)}
+      />
       <button type="submit">Add Todo</button>
     </form>
-  )
-}
+  );
+};
 
-export default Form
+export default Form;

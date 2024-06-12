@@ -18,15 +18,25 @@ export const todoSlice = createSlice({
     deleteTodo: (state, action) => {
       state.todos = state.todos.filter((todo) => todo.id !== action.payload);
     },
+    // updateTodo: (state, action) => {
+    //   state.todos = state.todos.map((todo) => todo.id === action.payload.id ? action.payload.todo : todo)
+    // },
+
+    // Formdan gönderdiğimiz değerlerde payload içi todo diye bir şey yok. Bu yüzden gönderdiğimiz objenin id ve title özelliklerini ayrı ayrı payloaddan çekiyoruz. Bu yüzden fonksiyon biraz değişiyor.
     updateTodo: (state, action) => {
-      state.todos = state.todos.map((todo) => todo.id === action.payload.id ? action.payload.todo : todo)
+      state.todos = state.todos.map((todo) =>
+        todo.id === action.payload.id
+          ? { ...todo, title: action.payload.title }
+          : todo
+      );
     },
     updateFormTodo: (state, action) => {
-      state.inputValue = action.payload
-    }
+      state.inputValue = action.payload;
+    },
   },
 });
 
-export const { addTodo, deleteTodo, updateFormTodo, updateTodo } = todoSlice.actions;
+export const { addTodo, deleteTodo, updateFormTodo, updateTodo } =
+  todoSlice.actions;
 
 export default todoSlice.reducer;
