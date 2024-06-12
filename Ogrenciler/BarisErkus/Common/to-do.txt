@@ -31,4 +31,5 @@
 31-05-2024: Make a portfolio and make an app with github api with react
 05-06-2024: Virtual DOM vs Real Dom, How to works javascript engine, Big O explain the examples
 07-06-2024: Big O notation example
-10-06-2024: 
+10-06-2024: Learn Flux, Make a Counter App with Context API
+12-06-2024: Learn SOLID
