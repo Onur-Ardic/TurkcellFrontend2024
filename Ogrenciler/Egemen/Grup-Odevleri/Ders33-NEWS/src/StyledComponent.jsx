@@ -3,7 +3,7 @@ export const SearchForm = styled.form`
 margin-bottom: 2rem;
 `
 export const SearchInput = styled.input`
-width: 250px;
+width: 220px;
 padding: 10px 20px;
 border: none;
 outline: none;
