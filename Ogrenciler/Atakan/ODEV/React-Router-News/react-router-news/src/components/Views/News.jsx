@@ -2,7 +2,6 @@ import { Outlet } from "react-router-dom";
 import { Card, CardWrapper } from "./styled";
 
 const News = ({ onData }) => {
-  console.log(onData);
   return (
     <>
       <section className="news">
@@ -30,7 +29,6 @@ const News = ({ onData }) => {
           </CardWrapper>
         </div>
       </section>
-      <Outlet />
     </>
   );
 };

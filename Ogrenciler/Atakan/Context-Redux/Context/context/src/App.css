@@ -1,0 +1,14 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.app.dark {
+  background-color: black;
+}
+
+.app.light {
+  background-color: white;
+}
