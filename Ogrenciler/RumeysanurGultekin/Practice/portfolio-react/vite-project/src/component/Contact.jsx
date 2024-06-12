@@ -2,18 +2,20 @@ import { useState } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import styled from "styled-components";
 
+const Section = styled.div`
+border: 5px solid darkgrey;
+border-radius: 50px;
+margin-top: 200px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+padding: 50px;
+`;
+
+
 const Contact = () => {
-    const Section = styled.div`
-        border: 5px solid darkgrey;
-        border-radius: 50px;
-        margin-top: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 50px;
-    `;
-    
+   
     const [onname, setOnname] = useState('');
     const [onemail, setOnemail] = useState('');
     const [onmessage, setOnmessage] = useState('');
