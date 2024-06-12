@@ -27,7 +27,7 @@ export const todoSlice = createSlice({
 
       state.todos = [
         ...tempTodos,
-        { id: crypto.randomUUID(), title: "adasdsa" },
+        { id: crypto.randomUUID(), title: action.payload.title },
       ];
     },
     setTodo: (state, action) => {

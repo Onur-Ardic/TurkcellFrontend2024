@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addTodo, updateTodo } from "../redux/slices/todoSlice";
+import { addTodo, updateTodo, setTodo } from "../redux/slices/todoSlice";
 import { useState, useEffect } from "react";
 
 const Form = () => {
-  const todo = useSelector((state) => state.todo.todo);
+  let todo = useSelector((state) => state.todo.todo);
   const [todoTitle, setTodoTitle] = useState("");
   const dispatch = useDispatch();
 
@@ -15,7 +15,10 @@ const Form = () => {
 
   const handleAdd = (newTodo) => {
     if (todo.id === undefined) dispatch(addTodo(newTodo));
-    else dispatch(updateTodo(newTodo));
+    else {
+      dispatch(updateTodo(newTodo));
+      dispatch(setTodo({}));
+    }
   };
 
   return (
@@ -35,10 +38,11 @@ const Form = () => {
         value={todoTitle}
         onChange={(e) => setTodoTitle(e.target.value)}
       />
-
-      <button type="submit">
-        {todo.id !== undefined ? "Edit Todo" : "Add Todo"}
-      </button>
+      {todo.id ? (
+        <button type="submit">Edit</button>
+      ) : (
+        <button type="submit">Add</button>
+      )}
     </form>
   );
 };
