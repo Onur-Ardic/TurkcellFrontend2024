@@ -1,25 +1,26 @@
 import { useDispatch } from "react-redux";
 import { deleteTodo, updateFormTodo } from "../redux/slices/todoSlice";
-
-const List = ({todo}) => {
-
-    const dispatch = useDispatch();
+import { StyledLi, TodoButton, ButtonDiv } from "../../styled";
+const List = ({ todo }) => {
+  const dispatch = useDispatch();
 
   const handleDelete = (id) => {
     dispatch(deleteTodo(id));
   };
 
   const handleUpdate = (todo) => {
-    dispatch(updateFormTodo(todo))
+    dispatch(updateFormTodo(todo));
   };
 
   return (
-    <li key={todo.id}>
-      {todo.title} - {todo.id}
-      <button onClick={() => handleDelete(todo.id)}>Delete</button>
-      <button onClick={() => handleUpdate(todo)}>Update</button>
-    </li>
-  )
-}
+    <StyledLi key={todo.id}>
+      <p>{todo.title}</p>
+      <ButtonDiv>
+        <TodoButton onClick={() => handleDelete(todo.id)}>Delete</TodoButton>
+        <TodoButton onClick={() => handleUpdate(todo)}>Update</TodoButton>
+      </ButtonDiv>
+    </StyledLi>
+  );
+};
 
-export default List
+export default List;

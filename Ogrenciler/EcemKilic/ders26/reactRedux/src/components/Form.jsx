@@ -1,21 +1,20 @@
 import { useDispatch, useSelector } from "react-redux";
 import { addTodo, updateFormTodo, updateTodo } from "../redux/slices/todoSlice";
 import { useEffect, useState } from "react";
+import { StyledForm, Input, FormButton } from "../../styled";
 
 const Form = () => {
   const dispatch = useDispatch();
   const Todo = useSelector((state) => state.todo.inputValue);
   const handleAddTodo = (todo) => {
     dispatch(addTodo(todo));
-    dispatch(updateFormTodo({})); // Ekleme yaptıktan sonra slicedaki inputValue'nun içini temizler.
+    dispatch(updateFormTodo({}));
   };
 
-  // const [updateValue, setUpdateValue] = useState(Todo.title);
-  const [updateValue, setUpdateValue] = useState(""); // Controlled to uncontrolled hatası çözümü
+  const [updateValue, setUpdateValue] = useState("");
 
   useEffect(() => {
-    // setUpdateValue(Todo.title);
-    setUpdateValue(Todo.title || ""); // Controlled to uncontrolled hatası çözümü
+    setUpdateValue(Todo.title || "");
   }, [Todo]);
 
   const handleUpdateValue = () => {
@@ -25,27 +24,27 @@ const Form = () => {
         title: updateValue,
       })
     );
-    dispatch(updateFormTodo({})); // Güncelleme yaptıktan sonra slicedaki inputValue'nun içini temizler.
+    dispatch(updateFormTodo({}));
   };
 
   return (
-    <form
+    <StyledForm
       onSubmit={(e) => {
         e.preventDefault();
-        // Id varlığına göre fonksiyon çalıştırma.
         Todo.id
           ? handleUpdateValue()
           : handleAddTodo({ id: self.crypto.randomUUID(), title: updateValue });
       }}
     >
-      <input
+      <Input
         type="text"
         name="todo"
         value={updateValue}
+        placeholder="Add Todo"
         onChange={(e) => setUpdateValue(e.target.value)}
       />
-      <button type="submit">Add Todo</button>
-    </form>
+      <FormButton type="submit">{Todo.id ? "Update" : "Add"}</FormButton>
+    </StyledForm>
   );
 };
 
