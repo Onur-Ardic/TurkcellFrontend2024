@@ -36,7 +36,7 @@ export const Login = async (email, password) => {
     const { user } = await signInWithEmailAndPassword(auth, email, password)
     return user
   } catch (error) {
-    console.log(error)
+    toast.error(error.message)
   }
 }
 
@@ -45,6 +45,6 @@ export const Logout = async () => {
     await signOut(auth)
     return true
   } catch (error) {
-    console.log(error)
+    toast.error(error)
   }
 }
