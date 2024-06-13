@@ -1,0 +1,19 @@
+import React from "react";
+import { useTheme } from "../context/ThemeContext";
+
+const Button = () => {
+  const { theme, setTheme } = useTheme();
+
+  return (
+    <div>
+      <h2>Aktif Tema {theme} </h2>
+      <button
+        onClick={() => setTheme(() => (theme == "dark" ? "light" : "dark"))}
+      >
+        Temayi Degistir
+      </button>
+    </div>
+  );
+};
+
+export default Button;
