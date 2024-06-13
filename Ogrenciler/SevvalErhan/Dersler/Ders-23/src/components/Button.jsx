@@ -7,7 +7,7 @@ const Button = () => {
     <div>
       <h2>Aktif Tema: {theme}</h2>
       <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
-        Teme Değiştir
+        Tema Değiştir
       </button>
     </div>
   );
