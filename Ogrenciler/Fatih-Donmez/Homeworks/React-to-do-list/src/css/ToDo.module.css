@@ -1,0 +1,44 @@
+.completed{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.todoItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;  
+    transition: all .5s;
+    background-color: #855AFD;
+    margin: 10px 0;
+    div{
+        margin: 0 auto 0 20px;
+        padding: 5px;
+    }
+    button{
+        padding: 8px 15px;
+        margin: 0 5px;
+        width: 50px;
+        text-align: center;
+        border-radius: 5px;
+        transition: all .3s;
+    }
+    button:hover{
+        box-shadow: 0 0 15px 3px rgba(0, 0, 0,.5);
+    }
+}
+.todoItem:hover{
+    background-color: #fff;
+    color:#000
+}
+.item{
+    font-weight: bold;
+    overflow: auto;
+    div{
+        margin: 5px 0;
+        padding: 0;
+    }
+}
