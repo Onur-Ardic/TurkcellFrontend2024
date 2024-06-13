@@ -1,7 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  todos: [],
+  todos: [
+    {
+      id: 1,
+      title: 'onur',
+    },
+  ],
+
+  preview: false,
 }
 
 export const todoSlice = createSlice({
@@ -28,9 +35,13 @@ export const todoSlice = createSlice({
         return todo
       })
     },
+
+    showPage: (state, action) => {
+      state.preview = action.payload
+    },
   },
 })
 
-export const { addTodo, deleteTodo, updateTodo } = todoSlice.actions
+export const { addTodo, deleteTodo, updateTodo, showPage } = todoSlice.actions
 
 export default todoSlice.reducer
