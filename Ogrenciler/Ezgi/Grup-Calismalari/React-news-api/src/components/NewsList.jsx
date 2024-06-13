@@ -52,11 +52,9 @@ const NewsList = ({ category }) => {
                 }
               />
               <a href={article.url} target="_blank">
-                
                   <h3>{article.title}</h3>
                   <p>{article.description}</p>
-                
-                <i>{article.publishedAt.substring(0, 10)}</i>
+                  <i>{article.publishedAt.substring(0, 10)}</i>
               </a>
             </NewCard>
           ))}
