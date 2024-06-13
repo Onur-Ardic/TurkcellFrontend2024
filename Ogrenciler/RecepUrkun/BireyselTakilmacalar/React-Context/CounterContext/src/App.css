@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 6px 20px;
+  margin: 10px;
+  background-color: rgb(219, 80, 80);
+  color: #fff;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.header {
+  font-weight: 500;
+}
+
+.app.dark {
+  background-color: #222;
+  color: #e0dcdc;
+}
+
+.app.light {
+  background-color: #e0dcdc;
+  color: #222;
+}
+
+.themeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.currentTheme {
+  text-transform: capitalize;
+}
+
+.p-20 {
+  padding: 20px;
+}
