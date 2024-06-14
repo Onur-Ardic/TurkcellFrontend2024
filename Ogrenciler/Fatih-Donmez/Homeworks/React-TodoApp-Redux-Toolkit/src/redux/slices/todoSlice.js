@@ -59,10 +59,6 @@ export const todoSlice = createSlice({
   name: "todo",
   initialState,
 
-  reducers: {
-    // Local reducers if needed
-  },
-
   extraReducers: (builder) => {
     builder
       .addCase(fetchTodos.fulfilled, (state, action) => {
