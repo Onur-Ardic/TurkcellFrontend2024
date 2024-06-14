@@ -1,9 +1,8 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { changeTheme } from "../redux/slices/themeSlice"; // Tema değiştirme aksiyonu
-import styled from "styled-components"; // Styled components için kütüphane
+import { changeTheme } from "../redux/slices/themeSlice";
+import styled from "styled-components";
 
-// Styled components tanımları
 const ButtonContainer = styled.div`
   margin-bottom: 20px;
   button {
@@ -16,10 +15,9 @@ const ButtonContainer = styled.div`
 `;
 
 const Theme = () => {
-  const { tema } = useSelector((temas) => temas.theme); // Temayı Redux store'dan alır
-  const dispatch = useDispatch(); // Dispatch fonksiyonu
+  const { tema } = useSelector((temas) => temas.theme);
+  const dispatch = useDispatch();
 
-  // Tema değiştirme işlemi
   const handleTheme = () => {
     dispatch(changeTheme());
   };

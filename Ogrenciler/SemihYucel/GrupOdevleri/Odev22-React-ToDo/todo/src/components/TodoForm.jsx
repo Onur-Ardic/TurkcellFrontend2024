@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { addTodo, updateTodo } from "../redux/slices/todoSlice"; // Todo ekleme ve güncelleme aksiyonları
-import styled from "styled-components"; // Styled components için kütüphane
+import { addTodo, updateTodo } from "../redux/slices/todoSlice";
+import styled from "styled-components";
 
-// Styled components tanımları
 const Form = styled.form`
   display: flex;
   justify-content: center;
@@ -32,10 +31,9 @@ const Button = styled.button`
 `;
 
 const TodoForm = ({ editingTodo, setEditingTodo }) => {
-  const [todoTitle, setTodoTitle] = useState(""); // Todo başlığı için state
-  const dispatch = useDispatch(); // Dispatch fonksiyonu
+  const [todoTitle, setTodoTitle] = useState("");
+  const dispatch = useDispatch();
 
-  // Düzenlenen todo varsa, başlığı input'a yerleştirir
   useEffect(() => {
     if (editingTodo) {
       setTodoTitle(editingTodo.title);
@@ -44,18 +42,17 @@ const TodoForm = ({ editingTodo, setEditingTodo }) => {
     }
   }, [editingTodo]);
 
-  // Todo ekleme veya güncelleme işlemi
   const handleAddTodo = (e) => {
     e.preventDefault();
     if (!todoTitle.trim()) {
-      alert("Boş Bırakılamaz"); // Boş başlık kontrolü
+      alert("Boş Bırakılamaz");
       return;
     }
     if (editingTodo) {
-      dispatch(updateTodo({ id: editingTodo.id, title: todoTitle })); // Todo güncelleme
+      dispatch(updateTodo({ id: editingTodo.id, title: todoTitle }));
       setEditingTodo(null);
     } else {
-      dispatch(addTodo({ id: self.crypto.randomUUID(), title: todoTitle })); // Yeni todo ekleme
+      dispatch(addTodo({ id: self.crypto.randomUUID(), title: todoTitle }));
     }
     setTodoTitle("");
   };

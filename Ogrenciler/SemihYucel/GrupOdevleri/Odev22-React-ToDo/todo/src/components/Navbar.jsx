@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Theme from "./Theme"; // Tema değiştirme bileşeni
+import Theme from "./Theme";
 
-// Styled components tanımları
 const Nav = styled.nav`
   display: flex;
   justify-content: space-evenly;
