@@ -127,10 +127,6 @@ function App() {
   const [editingTodo, setEditingTodo] = useState(null);
   const [newTitle, setNewTitle] = useState("");
 
-  const handleDelete = (id) => {
-    dispatch(deleteTodo(id));
-  };
-
   const handleAddTodo = (todo) => {
     dispatch(addTodo(todo));
     setNewTitle("");
@@ -141,6 +137,10 @@ function App() {
     setEditingTodo(null);
     setNewTitle("");
   };
+  const handleDelete = (id) => {
+    dispatch(deleteTodo(id));
+  };
+
 
   return (
     <Container>
@@ -154,7 +154,7 @@ function App() {
             return;
           }
           handleAddTodo({ id: crypto.randomUUID(), title: todo });
-          e.target.todo.value = ""; // Formu temizle
+          e.target.todo.value = ""; 
         }}
       >
         <Input type="text" name="todo" placeholder="Enter new todo" />
