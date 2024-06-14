@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Yönlendirme için hook
-import { auth } from "../firebaseConfig"; // Firebase authentication nesnesi
-import { createUserWithEmailAndPassword } from "firebase/auth"; // Firebase ile kullanıcı oluşturma fonksiyonu
-import styled from "styled-components"; // Styled components için kütüphane
+import { useNavigate } from "react-router-dom";
+import { auth } from "../firebaseConfig";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import styled from "styled-components";
 
-// Styled components tanımları
 const RegisterContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -37,25 +36,24 @@ const Button = styled.button`
 `;
 
 const Register = () => {
-  const [email, setEmail] = useState(""); // Email için state
-  const [password, setPassword] = useState(""); // Şifre için state
-  const [confirmPassword, setConfirmPassword] = useState(""); // Şifre onay için state
-  const navigate = useNavigate(); // Sayfa yönlendirme hook'u
+  const [email, setEmail] = useState(""); 
+  const [password, setPassword] = useState(""); 
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const navigate = useNavigate(); 
 
-  // Kayıt olma işlemi
   const handleRegister = async (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
-      alert("Şifreler eşleşmiyor"); // Şifrelerin eşleşmemesi durumunda hata mesajı
+      alert("Şifreler eşleşmiyor");
       return;
     }
     await createUserWithEmailAndPassword(auth, email, password)
       .then(() => {
-        alert("Kayıt Olma Başarılı"); // Başarılı kayıt mesajı
-        navigate("/login"); // Kayıt başarılı ise giriş sayfasına yönlendirme
+        alert("Kayıt Olma Başarılı");
+        navigate("/login");
       })
       .catch((error) => {
-        alert(error.message); // Hata mesajı gösterme
+        alert(error.message);
       });
   };
 
