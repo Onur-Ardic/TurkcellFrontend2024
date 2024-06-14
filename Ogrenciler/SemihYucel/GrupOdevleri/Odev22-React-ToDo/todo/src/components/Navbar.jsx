@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Theme from "./Theme";
+import Theme from "./Theme"; // Tema değiştirme bileşeni
 
+// Styled components tanımları
 const Nav = styled.nav`
   display: flex;
   justify-content: space-evenly;
@@ -26,7 +27,7 @@ const Navbar = () => {
       <div>
         <NavLink to="/todos">Ana Sayfa</NavLink>
       </div>
-      <Theme></Theme>
+      <Theme />
       <div>
         <NavLink to="/login">Giriş Yap</NavLink>
         <NavLink to="/">Kayıt Ol</NavLink>

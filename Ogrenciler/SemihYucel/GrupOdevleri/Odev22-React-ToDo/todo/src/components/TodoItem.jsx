@@ -1,8 +1,9 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { deleteTodo } from "../redux/slices/todoSlice";
-import styled from "styled-components";
+import { deleteTodo } from "../redux/slices/todoSlice"; // Todo silme aksiyonu
+import styled from "styled-components"; // Styled components için kütüphane
 
+// Styled components tanımları
 const ListItem = styled.li`
   display: flex;
   justify-content: space-between;
@@ -22,15 +23,16 @@ const Button = styled.button`
   border-radius: 7px;
   color: #fff;
   background-color: red;
-  font-weight:bold;
+  font-weight: bold;
   &:last-child {
     background-color: orange;
   }
 `;
 
 const TodoItem = ({ todo, handleEdit }) => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); // Dispatch fonksiyonu
 
+  // Todo silme işlemi
   const handleDelete = () => {
     dispatch(deleteTodo(todo.id));
   };

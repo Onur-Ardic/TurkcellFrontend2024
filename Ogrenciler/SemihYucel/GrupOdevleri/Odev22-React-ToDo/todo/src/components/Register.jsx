@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { auth } from "../firebaseConfig";
-import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import styled from "styled-components";
+import { useNavigate } from "react-router-dom"; // Yönlendirme için hook
+import { auth } from "../firebaseConfig"; // Firebase authentication nesnesi
+import { createUserWithEmailAndPassword } from "firebase/auth"; // Firebase ile kullanıcı oluşturma fonksiyonu
+import styled from "styled-components"; // Styled components için kütüphane
 
+// Styled components tanımları
 const RegisterContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -29,32 +30,33 @@ const Button = styled.button`
   margin: 10px;
   padding: 10px;
   font-size: 16px;
-  border-radius:5px;
-  border:none;
+  border-radius: 5px;
+  border: none;
   font-weight: bold;
-  background-color: #FFF6E9 ;
+  background-color: #FFF6E9;
 `;
 
 const Register = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
-  const navigate = useNavigate();
+  const [email, setEmail] = useState(""); // Email için state
+  const [password, setPassword] = useState(""); // Şifre için state
+  const [confirmPassword, setConfirmPassword] = useState(""); // Şifre onay için state
+  const navigate = useNavigate(); // Sayfa yönlendirme hook'u
 
+  // Kayıt olma işlemi
   const handleRegister = async (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
-      alert("Şifreler eşleşmiyor");
+      alert("Şifreler eşleşmiyor"); // Şifrelerin eşleşmemesi durumunda hata mesajı
       return;
     }
     await createUserWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      alert("Kayıt Olma Başarılı");
-      navigate("/login");
-    })
-    .catch((error) => {
-      alert(error.message);
-    });
+      .then(() => {
+        alert("Kayıt Olma Başarılı"); // Başarılı kayıt mesajı
+        navigate("/login"); // Kayıt başarılı ise giriş sayfasına yönlendirme
+      })
+      .catch((error) => {
+        alert(error.message); // Hata mesajı gösterme
+      });
   };
 
   return (
@@ -75,7 +77,7 @@ const Register = () => {
         />
         <Input
           type="password"
-          placeholder=" Şifre Tekrar"
+          placeholder="Şifre Tekrar"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
         />
