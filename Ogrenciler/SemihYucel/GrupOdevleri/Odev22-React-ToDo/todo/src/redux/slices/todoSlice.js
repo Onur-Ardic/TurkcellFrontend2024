@@ -1,10 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+// localStorage'dan veriyi çekme fonksiyonu
+const loadTodosFromLocalStorage = () => {
+  const savedTodos = localStorage.getItem("todos");
+  return savedTodos ? JSON.parse(savedTodos) : [];
+};
+
+const saveTodosToLocalStorage = (todos) => {
+  localStorage.setItem("todos", JSON.stringify(todos));
+};
+
 const initialState = {
-  todos: [
-    { id: 1, title: "Todo 1" }, 
-    { id: 2, title: "Todo 2" },
-  ],
+  todos: loadTodosFromLocalStorage(),
 };
 
 export const todoSlice = createSlice({
@@ -12,16 +19,18 @@ export const todoSlice = createSlice({
   initialState,
   reducers: {
     addTodo: (state, action) => {
-      state.todos = [...state.todos, action.payload];
+      state.todos.push(action.payload);
+      saveTodosToLocalStorage(state.todos);
     },
     deleteTodo: (state, action) => {
       state.todos = state.todos.filter((todo) => todo.id !== action.payload);
+      saveTodosToLocalStorage(state.todos);
     },
     updateTodo: (state, action) => {
-      state.todos = state.todos.map((todo) => // { // süslü parantezleri kaldırdım çalıştı
+      state.todos = state.todos.map((todo) =>
         todo.id === action.payload.id ? action.payload : todo
-      // } // 
-       );
+      );
+      saveTodosToLocalStorage(state.todos);
     },
   },
 });

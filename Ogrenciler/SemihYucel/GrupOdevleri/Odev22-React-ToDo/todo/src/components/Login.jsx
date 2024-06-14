@@ -30,10 +30,10 @@ const Button = styled.button`
   margin: 10px;
   padding: 10px;
   font-size: 16px;
-  border-radius:5px;
-  border:none;
+  border-radius: 5px;
   font-weight: bold;
-  background-color: #FFF6E9 ;
+  background-color: #fff6e9;
+  cursor: pointer;
 `;
 
 const Login = () => {

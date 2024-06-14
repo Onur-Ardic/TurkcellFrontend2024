@@ -31,9 +31,9 @@ const Button = styled.button`
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;
-  border: none;
   font-weight: bold;
-  background-color: #FFF6E9;
+  background-color: #fff6e9;
+  cursor: pointer;
 `;
 
 const Register = () => {
