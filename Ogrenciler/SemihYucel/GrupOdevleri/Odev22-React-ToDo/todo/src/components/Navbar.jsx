@@ -23,11 +23,11 @@ const Navbar = () => {
   return (
     <Nav>
       <div>
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/todos">Home</NavLink>
       </div>
       <div>
         <NavLink to="/login">Login</NavLink>
-        <NavLink to="/register">Register</NavLink>
+        <NavLink to="/">Register</NavLink>
       </div>
     </Nav>
   );

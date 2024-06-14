@@ -22,16 +22,16 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/" element={<Register />} />
         <Route
-          path="/"
+          path="/todos"
           element={
-            <>
+            <div className={`app ${tema} `}>
+            <Theme />
               <h1>Redux Todo</h1>
-		      <Theme />
               <TodoForm editingTodo={editingTodo} setEditingTodo={setEditingTodo} />
               <TodoList handleEdit={handleEdit} />
-            </>
+            </div>
           }
         />
       </Routes>

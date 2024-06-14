@@ -41,7 +41,7 @@ const Login = () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       alert("Giriş Başarılı");
-      navigate("/");
+      navigate("/todos");
     } catch (error) {
       alert(error.message);
     }

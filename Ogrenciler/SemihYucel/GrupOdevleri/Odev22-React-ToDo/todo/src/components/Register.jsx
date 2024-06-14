@@ -32,7 +32,6 @@ const Button = styled.button`
 `;
 
 const Register = () => {
-  const [displayName, setDisplayName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -46,7 +45,6 @@ const Register = () => {
     }
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      await updateProfile(userCredential.user, { displayName });
       alert("Kayıt Olma Başarılı");
       navigate("/login");
     } catch (error) {
@@ -58,12 +56,6 @@ const Register = () => {
     <RegisterContainer>
       <h1>Register</h1>
       <Form onSubmit={handleRegister}>
-        <Input
-          type="text"
-          placeholder="Name"
-          value={displayName}
-          onChange={(e) => setDisplayName(e.target.value)}
-        />
         <Input
           type="email"
           placeholder="Email"
