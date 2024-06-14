@@ -1,6 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo, updateTodo } from "../redux/slices/todoSlice";
+import styled from "styled-components";
+
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const Input = styled.input`
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+`;
+
+const Button = styled.button`
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+`;
 
 const TodoForm = ({ editingTodo, setEditingTodo }) => {
   const [todoTitle, setTodoTitle] = useState("");
@@ -26,15 +45,15 @@ const TodoForm = ({ editingTodo, setEditingTodo }) => {
   };
 
   return (
-    <form onSubmit={handleAddTodo}>
-      <input
+    <Form onSubmit={handleAddTodo}>
+      <Input
         type="text"
         name="todo"
         value={todoTitle}
         onChange={(e) => setTodoTitle(e.target.value)}
       />
-      <button type="submit">{editingTodo ? "Update" : "Add"}</button>
-    </form>
+      <Button type="submit">{editingTodo ? "Update" : "Add"}</Button>
+    </Form>
   );
 };
 
