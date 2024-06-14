@@ -1,10 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  todos: [
-    // { id: 1, title: "Title 1" },
-    // { id: 2, title: "Title 2" },
-  ],
+  todos: [],
   todo: {},
 };
 
@@ -19,16 +16,11 @@ export const todoSlice = createSlice({
       state.todos = state.todos.filter((todo) => todo.id !== action.payload);
     },
     updateTodo: (state, action) => {
-      console.log(action.payload);
-
-      const tempTodos = state.todos.filter(
-        (todo) => todo.id !== action.payload.id
+      const tempTodo = state.todos.findIndex(
+        (todo) => todo.id === action.payload.id
       );
 
-      state.todos = [
-        ...tempTodos,
-        { id: crypto.randomUUID(), title: action.payload.title },
-      ];
+      state.todos[tempTodo] = { ...action.payload };
     },
     setTodo: (state, action) => {
       state.todo = action.payload;
