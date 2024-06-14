@@ -28,6 +28,7 @@ const Button = styled.button`
   border-radius: 7px;
   background-color: green;
   color: #fff;
+  cursor: pointer;
 `;
 
 const TodoForm = ({ editingTodo, setEditingTodo }) => {
@@ -49,7 +50,7 @@ const TodoForm = ({ editingTodo, setEditingTodo }) => {
     if (!todoTitle.trim()) {
       alert("Boş Bırakılamaz"); // Boş başlık kontrolü
       return;
-    } 
+    }
     if (editingTodo) {
       dispatch(updateTodo({ id: editingTodo.id, title: todoTitle })); // Todo güncelleme
       setEditingTodo(null);
