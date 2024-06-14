@@ -1,29 +1,29 @@
-import { useDispatch } from "react-redux";
-import { addTodo } from "../Redux/Slices/todoSlice";
-import {Formstyle, Title, Buttons} from "./Styled.jsx"
-
+import { useDispatch } from 'react-redux'
+import { addTodo } from '../Redux/Slices/todoSlice'
+import { Formstyle, Title, Buttons, CustomInput } from './Styled.jsx'
 
 const Form = () => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
   const handleAddTodo = (todo) => {
-    dispatch(addTodo(todo));
-  };
+    dispatch(addTodo(todo))
+  }
 
   return (
-    <Formstyle 
+    <Formstyle
       onSubmit={(e) => {
-        e.preventDefault();
-        const todo = e.target.elements.todo.value;
+        e.preventDefault()
+        const todo = e.target.elements.todo.value
         handleAddTodo({
           id: self.crypto.randomUUID(),
           title: todo,
-        });
-      }}>
-      <Title >To do List </Title>
-      <input name="todo" type="text" />
-      <Buttons type="submit">Submit</Buttons>
+        })
+      }}
+    >
+      <Title>To do List </Title>
+      <CustomInput name="todo" type="text" placeholder="todo ekle" />
+      <Buttons type="submit">Ekle</Buttons>
     </Formstyle>
-  );
-};
+  )
+}
 
-export default Form;
+export default Form
