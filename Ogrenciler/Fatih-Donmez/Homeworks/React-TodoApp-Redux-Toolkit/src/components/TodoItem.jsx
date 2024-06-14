@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import {
   deleteTodo as reduxDeleteTodo,
   updateTodo as reduxUpdateTodo,
-} from "./redux/slices/todoSlice";
+} from "../redux/slices/todoSlice";
 
 const TodoItem = ({ todo }) => {
   const [editMode, setEditMode] = useState(false);

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addTodo as reduxAddTodo } from "./redux/slices/todoSlice";
+import { addTodo as reduxAddTodo } from "../redux/slices/todoSlice";
 
 const TodoForm = () => {
   const [newTodo, setNewTodo] = useState("");
