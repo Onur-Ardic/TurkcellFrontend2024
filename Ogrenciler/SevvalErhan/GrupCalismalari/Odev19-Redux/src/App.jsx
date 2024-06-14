@@ -105,6 +105,20 @@ const TodoButtons = styled.div`
     width: 100%;
     justify-content: space-between;
   }
+  .btn-update{
+    background-color: green;
+    color: white;
+  }
+  .btn-update:hover{
+    background-color: darkgreen;
+  }
+  .btn-delete{
+    background-color: red;
+    color: white;
+  }
+  .btn-delete:hover{
+    background-color: darkred;
+  }
 `;
 
 function App() {
@@ -165,7 +179,7 @@ function App() {
               <>
                 <TodoTitle>{todo.title}</TodoTitle>
                 <TodoButtons>
-                <Button
+                <Button className="btn-update"
                     onClick={() => {
                       setEditingTodo(todo.id);
                       setNewTitle(todo.title);
@@ -173,7 +187,7 @@ function App() {
                   >
                     Update
                   </Button>
-                  <Button onClick={() => handleDelete(todo.id)}>Delete</Button>
+                  <Button className="btn-delete" onClick={() => handleDelete(todo.id)}>Delete</Button>
                 </TodoButtons>
               </>
             )}
