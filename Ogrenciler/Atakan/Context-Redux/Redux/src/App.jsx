@@ -4,7 +4,7 @@ import ToDoCard from "./components/ToDoCard";
 function App() {
   return (
     <>
-      <h1>Redux Todo</h1>
+      <h1>Redux ToDoList</h1>
       <Form />
       <ToDoCard />
     </>
