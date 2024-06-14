@@ -43,6 +43,10 @@ const TodoForm = ({ editingTodo, setEditingTodo }) => {
 
   const handleAddTodo = (e) => {
     e.preventDefault();
+    if (!todoTitle.trim()){
+      alert("Boş Bırakılamaz");
+      return;
+    } 
     if (editingTodo) {
       dispatch(updateTodo({ id: editingTodo.id, title: todoTitle }));
       setEditingTodo(null);
@@ -60,7 +64,7 @@ const TodoForm = ({ editingTodo, setEditingTodo }) => {
         value={todoTitle}
         onChange={(e) => setTodoTitle(e.target.value)}
       />
-      <Button type="submit">{editingTodo ? "Update" : "Add"}</Button>
+      <Button type="submit">{editingTodo ? "Güncelle" : "Ekle"}</Button>
     </Form>
   );
 };

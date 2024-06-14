@@ -9,7 +9,7 @@ const LoginContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  margin-top: 100px;
 `;
 
 const Form = styled.form`
@@ -29,6 +29,10 @@ const Button = styled.button`
   margin: 10px;
   padding: 10px;
   font-size: 16px;
+  border-radius:5px;
+  border:none;
+  font-weight: bold;
+  background-color: #FFF6E9 ;
 `;
 
 const Login = () => {
@@ -38,18 +42,19 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    try {
-      await signInWithEmailAndPassword(auth, email, password);
-      alert("Giriş Başarılı");
-      navigate("/todos");
-    } catch (error) {
-      alert(error.message);
-    }
-  };
+    await signInWithEmailAndPassword(auth, email, password)
+      .then(() => {
+        alert("Giriş Başarılı");
+        navigate("/todos");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  };  
 
   return (
     <LoginContainer>
-      <h1>Login</h1>
+      <h1>Giriş Yap</h1>
       <Form onSubmit={handleLogin}>
         <Input
           type="email"
@@ -59,11 +64,11 @@ const Login = () => {
         />
         <Input
           type="password"
-          placeholder="Password"
+          placeholder="Şifre"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button type="submit">Login</Button>
+        <Button type="submit">Giriş Yap</Button>
       </Form>
     </LoginContainer>
   );

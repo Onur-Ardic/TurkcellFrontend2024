@@ -9,7 +9,7 @@ const RegisterContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  margin-top: 100px;
 `;
 
 const Form = styled.form`
@@ -29,6 +29,10 @@ const Button = styled.button`
   margin: 10px;
   padding: 10px;
   font-size: 16px;
+  border-radius:5px;
+  border:none;
+  font-weight: bold;
+  background-color: #FFF6E9 ;
 `;
 
 const Register = () => {
@@ -43,18 +47,19 @@ const Register = () => {
       alert("Şifreler eşleşmiyor");
       return;
     }
-    try {
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+    await createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
       alert("Kayıt Olma Başarılı");
       navigate("/login");
-    } catch (error) {
+    })
+    .catch((error) => {
       alert(error.message);
-    }
+    });
   };
 
   return (
     <RegisterContainer>
-      <h1>Register</h1>
+      <h1>Kayıt Ol</h1>
       <Form onSubmit={handleRegister}>
         <Input
           type="email"
@@ -64,17 +69,17 @@ const Register = () => {
         />
         <Input
           type="password"
-          placeholder="Password"
+          placeholder="Şifre"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
         <Input
           type="password"
-          placeholder="Confirm Password"
+          placeholder=" Şifre Tekrar"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
         />
-        <Button type="submit">Register</Button>
+        <Button type="submit">Kayıt Ol</Button>
       </Form>
     </RegisterContainer>
   );

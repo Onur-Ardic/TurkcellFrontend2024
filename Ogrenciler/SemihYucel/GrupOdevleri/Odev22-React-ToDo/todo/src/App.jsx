@@ -10,7 +10,7 @@ import Theme from "./components/Theme";
 import "./App.css";
 import styled from "styled-components";
 
-const AppContainer = styled.div`
+const ThemeContainer = styled.div`
 padding: 30px 0;
 `
 
@@ -24,6 +24,7 @@ const App = () => {
 
   return (
     <Router>
+       <div className={`app ${tema} `}>
       <Navbar />
       <Routes>
         <Route path="/login" element={<Login />} />
@@ -31,15 +32,17 @@ const App = () => {
         <Route
           path="/todos"
           element={
-            <AppContainer className={`app ${tema} `}>
-            <Theme />
-              <h1>Redux Todo</h1>
+           <>
+            <ThemeContainer>
+              <h1>Yapılacaklar Listesi</h1>
               <TodoForm editingTodo={editingTodo} setEditingTodo={setEditingTodo} />
               <TodoList handleEdit={handleEdit} />
-            </AppContainer>
+              </ThemeContainer>
+         </>
           }
         />
       </Routes>
+      </div>
     </Router>
   );
 };

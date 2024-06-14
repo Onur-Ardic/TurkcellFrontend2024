@@ -1,19 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Theme from "./Theme";
 
 const Nav = styled.nav`
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #f8f9fa;
+  justify-content: space-evenly;
+  padding: 30px;
+  align-items: baseline;
 `;
 
 const NavLink = styled(Link)`
   margin: 0 10px;
   text-decoration: none;
-  color: #007bff;
-
+  color: orange;
+  font-weight: bold;
   &:hover {
     text-decoration: underline;
   }
@@ -23,11 +24,12 @@ const Navbar = () => {
   return (
     <Nav>
       <div>
-        <NavLink to="/todos">Home</NavLink>
+        <NavLink to="/todos">Ana Sayfa</NavLink>
       </div>
+      <Theme></Theme>
       <div>
-        <NavLink to="/login">Login</NavLink>
-        <NavLink to="/">Register</NavLink>
+        <NavLink to="/login">Giriş Yap</NavLink>
+        <NavLink to="/">Kayıt Ol</NavLink>
       </div>
     </Nav>
   );
