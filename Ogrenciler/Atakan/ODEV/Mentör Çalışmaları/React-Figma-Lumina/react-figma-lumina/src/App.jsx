@@ -8,7 +8,7 @@ function App() {
       <section className="discoverSection ml-10 ">
         <div className="container flex flex-col items-start">
           <h1 className="text-2xl font-semibold py-6">DISCOVER OUR SERVICES</h1>
-          <div className="cardWrapper flex gap-7 justify-center">
+          <div className="cardWrapper flex gap-7 justify-center flex-wrap">
             <DiscoverCard
               topHeading="Lumina's favourite"
               centerHeading="BOTOX"
@@ -26,7 +26,7 @@ function App() {
             />
           </div>
         </div>
-        <div className="btnWrapper flex justify-end gap-1 py-3">
+        <div className="btnWrapper flex justify-end gap-1 py-3 pr-14">
           <Button text={<i class="bi bi-arrow-left-short"></i>}></Button>
           <Button text={<i class="bi bi-arrow-right-short"></i>}></Button>
         </div>

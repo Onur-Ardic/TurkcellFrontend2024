@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteTodo, updateTodo } from "../redux/slices/todoSlice";
 import Button from "./Button";
+import {
+  StyledInput,
+  StyledCard,
+  StyledItem,
+  StyledText,
+  ButtonWrapper,
+} from "./Styled";
 
 const ToDoCard = () => {
   const todos = useSelector((state) => state.todo.todos);
@@ -20,28 +27,44 @@ const ToDoCard = () => {
 
   return (
     <>
-      <ul>
+      <StyledCard>
         {todos.map((todo) => (
-          <li key={todo.id}>
+          <StyledItem key={todo.id}>
             {editingTodoId === todo.id ? (
               <>
-                <input
+                <StyledInput
                   type="text"
                   value={updatedTitle}
                   onChange={(e) => setUpdatedTitle(e.target.value)}
                 />
-                <Button onClick={() => handleUpdate(todo.id)} text="Save" />
+                <Button
+                  style={{ backgroundColor: "#1679ab", color: "white" }}
+                  onClick={() => handleUpdate(todo.id)}
+                  text="Save"
+                />
               </>
             ) : (
               <>
-                {todo.title} - {todo.id}
-                <Button onClick={() => handleDelete(todo.id)} text="Delete" />
-                <Button onClick={() => setEditingTodoId(todo.id)} text="Edit" />
+                <StyledText>
+                  {todo.title} - {todo.id}
+                </StyledText>
+                <ButtonWrapper>
+                  <Button
+                    style={{ backgroundColor: "#059212" }}
+                    onClick={() => setEditingTodoId(todo.id)}
+                    text="Edit"
+                  />
+                  <Button
+                    style={{ backgroundColor: "#C80036", color: "white" }}
+                    onClick={() => handleDelete(todo.id)}
+                    text="Delete"
+                  />
+                </ButtonWrapper>
               </>
             )}
-          </li>
+          </StyledItem>
         ))}
-      </ul>
+      </StyledCard>
     </>
   );
 };

@@ -1,28 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./Button";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addTodo } from "../redux/slices/todoSlice";
+import { StyledInput, StyledForm } from "./Styled";
 
 const Form = () => {
-  const todos = useSelector((state) => state.todo.todos);
   const dispatch = useDispatch();
+  const [todoInput, setTodoInput] = useState("");
 
-  const handleAddTodo = (todo) => {
-    dispatch(addTodo(todo));
+  const handleAddTodo = (e) => {
+    e.preventDefault();
+    if (todoInput.trim() !== "") {
+      dispatch(
+        addTodo({
+          id: Math.random().toString(36).substr(2, 5),
+          title: todoInput.trim(),
+        })
+      );
+      setTodoInput("");
+    }
   };
+
   return (
-    <>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          const todo = e.target.elements.todo.value;
-          handleAddTodo({ id: self.crypto.randomUUID(), title: todo });
-        }}
-      >
-        <input type="text" name="todo" />
-        <Button type="Submit" text="Add" />
-      </form>
-    </>
+    <StyledForm onSubmit={handleAddTodo}>
+      <StyledInput
+        type="text"
+        value={todoInput}
+        onChange={(e) => setTodoInput(e.target.value)}
+        placeholder="Enter todo..."
+      />
+      <Button type="submit" text="Add" style={{ color: "white" }} />
+    </StyledForm>
   );
 };
 
