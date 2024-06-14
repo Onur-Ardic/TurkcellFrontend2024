@@ -25,7 +25,7 @@ const TodoListItem = () => {
 
   return (
     <>
-      <ul className="list-group bg-blue-200 mx-auto w-1/3 p-10 mt-5">
+      <ul className="list-group bg-blue-400 mx-auto w-1/3 p-10 mt-5 rounded-lg">
         {todos.map((todo) => (
           <li className="flex justify-between item-center mt-5" key={todo.id}>
             {editId === todo.id ? (

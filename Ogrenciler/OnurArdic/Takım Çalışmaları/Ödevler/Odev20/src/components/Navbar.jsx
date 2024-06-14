@@ -26,9 +26,14 @@ const Navbar = () => {
     <>
       <CustomNavbar>
         <NavbarWrapper>
-          <CustomButtonSecond onClick={handleShowLogin}>Giriş</CustomButtonSecond>
-          <CustomButtonSecond onClick={showSignupHandler}>Kayıt Ol</CustomButtonSecond>
-          {user && <CustomButtonSecond onClick={logoutHandler}>Çıkış Yap</CustomButtonSecond>}
+          {user ? (
+            <CustomButtonSecond onClick={logoutHandler}>Çıkış Yap</CustomButtonSecond>
+          ) : (
+            <>
+              <CustomButtonSecond onClick={handleShowLogin}>Giriş</CustomButtonSecond>
+              <CustomButtonSecond onClick={showSignupHandler}>Kayıt Ol</CustomButtonSecond>
+            </>
+          )}
         </NavbarWrapper>
       </CustomNavbar>
     </>
