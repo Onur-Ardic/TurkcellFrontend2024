@@ -33,3 +33,4 @@
 07-06-2024: Big O notation example
 10-06-2024: Learn Flux, Make a Counter App with Context API
 12-06-2024: Learn SOLID
+14-06-2024: Learn useTranslation, NextJs, Firebase
