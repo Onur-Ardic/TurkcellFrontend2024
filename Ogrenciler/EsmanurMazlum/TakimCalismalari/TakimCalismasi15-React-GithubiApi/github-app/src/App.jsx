@@ -31,7 +31,7 @@ function App() {
     input.current.focus();
     if (target) { getUsers(target); }
   }, [])
-  return (
+  return ( 
     <>
       <SearchBar target={target} onChange={onChange} getUsers={getUsers} input={input} />
       {users ? <UserList users={users} setError={setError} error={error}/> : (error ? <Errors error={error} /> : <div className='alert alert-info'><h2 className='text-center p-3'>Arama Yapınız</h2></div>)}
