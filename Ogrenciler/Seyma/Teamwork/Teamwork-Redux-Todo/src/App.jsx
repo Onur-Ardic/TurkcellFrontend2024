@@ -2,6 +2,8 @@ import "./App.css";
 import { useSelector, useDispatch } from 'react-redux';
 import { addTodo, deleteTodo, setTodo, updateTodo } from "./redux/slices/todoSlice";
 import { useEffect, useState } from "react";
+import { DeleteButton, UpdateButton, TodoLi, TodoUl } from './styled'
+
 
 function App() {
   const todos = useSelector((state) => state.todo.todos);
@@ -46,15 +48,15 @@ function App() {
         <input value={inputValue} onChange={(e) => setInputValue(e.target.value)} type="text" name="todo" />
         <button type="submit" > {todo && todo.title ? 'Update':'Add Todo'}  </button>
       </form>
-      <ul>
+      <TodoUl>
         {todos.map((todo) => (
-          <li key={todo.id}>
-            {todo.title} - {todo.id}
-            <button onClick={() => handleDelete(todo.id)}>Delete</button>
-            <button onClick={() => handleUpdate(todo)}>Update</button>
-          </li>
+          <TodoLi key={todo.id}>
+            {todo.title}
+            <DeleteButton onClick={() => handleDelete(todo.id)}>Delete</DeleteButton>
+            <UpdateButton onClick={() => handleUpdate(todo)}>Update</UpdateButton>
+          </TodoLi>
         ))}
-      </ul>
+      </TodoUl>
     </>
   );
 }

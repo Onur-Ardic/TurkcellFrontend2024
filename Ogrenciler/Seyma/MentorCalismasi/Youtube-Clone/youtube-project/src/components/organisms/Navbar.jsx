@@ -1,7 +1,14 @@
-import React from 'react'
+import { Background } from "./styled";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
-    <div>Navbar</div>
+   <>
+   <Background> 
+   <div >toggle</div>
+   <div>Logo</div>
+   </Background>
+   </>
   )
 }
+
+export default Navbar

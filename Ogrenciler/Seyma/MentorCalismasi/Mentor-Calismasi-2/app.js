@@ -37,13 +37,13 @@ document.getElementById("savePersonInfoBtn").addEventListener("click", (e) => {
 
   const chairLength = 50;
   let selectedFilmId = document.getElementById("selectedMovieId").value;
-  var reservedChairs = JSON.parse(localStorage.getItem(selectedFilmId));
+  let reservedChairs = JSON.parse(localStorage.getItem(selectedFilmId));
 
   if (reservedChairs == null || reservedChairs == undefined) {
     reservedChairs = [];
   }
-  for (var i = 1; i <= chairLength; i++) {
-    var chair = document.createElement("div");
+  for (let i = 1; i <= chairLength; i++) {
+    let chair = document.createElement("div");
     if (reservedChairs.includes(i.toString())) {
       chair.className = "chair p-2 rounded-1 reserved";
     } else {
