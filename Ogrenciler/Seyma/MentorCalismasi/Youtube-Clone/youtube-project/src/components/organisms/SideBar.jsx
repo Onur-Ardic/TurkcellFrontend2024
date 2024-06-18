@@ -1,5 +1,4 @@
 import { NavLink} from "react-router-dom";
-import Router from "../../routes/Router";
 const SideBar = () => {
   return (
     <>
@@ -20,7 +19,7 @@ const SideBar = () => {
           <NavLink to="/shorts">Shorts</NavLink>
         </li>
       </ul>
-      <Router/>
+      
     </>
   )
 }

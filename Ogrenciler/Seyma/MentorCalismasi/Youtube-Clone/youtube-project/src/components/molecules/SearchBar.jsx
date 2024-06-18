@@ -1,36 +1,24 @@
 import React from 'react';
-import Input from '../atoms/Input';
-import Button from '../atoms/Button';
-import { Middle, SpeakOut, StyledButton, SearchBox, ButtonDiv } from './Styled';
+import { Middle, LabelInput, SearchBox, StyledInput, SearchButton, MaterialIcons } from './Styled';
+import Labels from '../atoms/Label';
 
-const SearchBar = ({ id, type, onChange, value, onClick }) => {
+const SearchBar = () => {
   return (
     <Middle>
       <SearchBox>
-        <Input 
-          id={id}
-          type={type}
-          onChange={onChange}
-          value={value}
+        <StyledInput
         />
+        <Labels as={LabelInput} text="Ara"/>
       </SearchBox>
-      <ButtonDiv>
-      <Button as={StyledButton} onClick={onClick} type={type} aria-label='Ara' text={<img 
-            src="https://img.icons8.com/ios-glyphs/30/search--v1.png" 
-            alt="search--v1"
-          />}>
-          
-        </Button>
-      </ButtonDiv>
-     
-      <SpeakOut>
-        <img 
-          width="24" 
-          height="24" 
-          src="https://img.icons8.com/material-rounded/24/microphone.png" 
-          alt="microphone"
-        />
-      </SpeakOut>
+        <SearchButton aria-label='Ara'><MaterialIcons className="material-symbols-outlined">
+          search
+        </MaterialIcons>
+        </SearchButton>
+   
+      <MaterialIcons className="material-symbols-outlined">
+        mic
+      </MaterialIcons>
+
     </Middle>
   );
 };

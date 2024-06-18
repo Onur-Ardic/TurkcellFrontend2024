@@ -1,13 +1,13 @@
 import React from "react";
-// import styles from "./Label.module.css";
-//{ text, htmlFor } props
-export const Labels = () => {
+
+export const Labels = ({ text, htmlFor, as } ) => {
   return (
     <>
+     <label as={as} htmlFor={htmlFor}>
+      {text}
+    </label>
     </>
-    // <label className={styles.label} htmlFor={htmlFor}>
-    //   {text}
-    // </label>
+   
   );
 };
 export default Labels
