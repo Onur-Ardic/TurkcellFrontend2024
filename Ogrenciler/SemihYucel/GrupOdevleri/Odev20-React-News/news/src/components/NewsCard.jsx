@@ -1,5 +1,12 @@
 import { useNavigate } from "react-router-dom";
-import { Card, CardAuthor, CardTitle, Image, SourceName } from "../styled";
+import {
+  Card,
+  CardAuthor,
+  CardTitle,
+  Description,
+  Image,
+  SourceName,
+} from "../styled";
 
 const NewsCard = ({ news }) => {
   const navigate = useNavigate();
@@ -12,7 +19,7 @@ const NewsCard = ({ news }) => {
       <SourceName>{news.source.name}</SourceName>
       <CardTitle>{news.title}</CardTitle>
       <CardAuthor>{news.author}</CardAuthor>
-      <p>{description}...</p>
+      <Description>{description}...</Description>
     </Card>
   );
 };
