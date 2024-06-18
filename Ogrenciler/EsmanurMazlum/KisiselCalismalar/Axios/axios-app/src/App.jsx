@@ -31,7 +31,29 @@ function App() {
     console.log(response.data);
   }
 
+
+  // ---------------------------------------
+
+  const getUserById = async (id) => {
+    const response = await axios.get(`${BASE_URL}/users/${id}`);
+    return response.data.postId;
+  }
+
+  const getPostById = async (id) => {
+    const response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`);
+    return response.data;
+  }
+
+  const getPost = async () => {
+    const postId = await getUserById(1);
+    const postData = await getPostById(postId);
+    console.log(postData);
+  }
+
+
+
   useEffect(() => {
+    getPost();
     // getAllUsers();
     // getUser(2);
     // const newUser = {username: "fatma", password: "zz"}
