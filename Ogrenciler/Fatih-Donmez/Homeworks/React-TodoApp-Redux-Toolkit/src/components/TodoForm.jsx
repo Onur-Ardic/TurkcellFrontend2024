@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addTodo as reduxAddTodo } from "../redux/slices/todoSlice";
+import { addTodo } from "../redux/slices/todoSlice";
 
 const TodoForm = () => {
   const [newTodo, setNewTodo] = useState("");
@@ -8,13 +8,14 @@ const TodoForm = () => {
 
   const handleAddTodo = () => {
     if (newTodo.trim()) {
-      const id = new Date().getTime();
-      dispatch(
-        reduxAddTodo({
-          id,
-          title: newTodo,
-        })
-      );
+      const todo = {
+        title: newTodo,
+        completed: false,
+        createdAt: new Date(),
+      };
+
+      dispatch(addTodo({ todo }));
+
       setNewTodo("");
     }
   };

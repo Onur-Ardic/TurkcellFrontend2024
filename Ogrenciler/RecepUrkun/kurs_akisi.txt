@@ -23,4 +23,6 @@
 05-06-2024: Homework(Github Finder) presentations - Chat with Mentors
 07-06-2024: React Router - Homework: News Api with React Router
 10-06-2024: React Context
-12-06-2024: React Toolkit
+12-06-2024: React Redux Toolkit
+14-06-2024: Homework(Todo App with Redux Toolkit) presentations - Chat with Varol Hoca
+-- 9 Günlük Bayram Tatili --

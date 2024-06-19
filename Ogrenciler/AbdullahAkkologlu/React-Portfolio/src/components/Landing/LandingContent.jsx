@@ -1,9 +1,8 @@
-import Icon from "../Icon";
 import Techs from "./Techs";
 import {
   LandingTitle,
   LandingDesc,
-  Col,
+
   // SocialsRow,
   RowBetween,
   ConnectButton,
@@ -12,7 +11,7 @@ import {
 
 const LandingContent = () => {
   return (
-    <Col width={40}>
+    <div className="col-lg-5 ">
       <LandingTitle>Frontend Developer</LandingTitle>
       <h3>Abdullah Akkoloğlu</h3>
       <LandingDesc>
@@ -26,26 +25,28 @@ const LandingContent = () => {
           "sass",
           "bootstrap",
           "tailwind",
+          "styledcomponents",
+          "firebase",
           "js",
           "react",
-          "styledcomponents",
+          "redux",
+          "nextjs",
         ]}
       />
       <RowBetween>
-        <Col width={45}>
+        <div className="col-lg-5 col-12">
           <ConnectButton href="mailto:abdullahakkol@gmail.com">
-            <Icon category={"solid"} title={"mug-hot"} size="md" />{" "}
-            <span>Let's Connect</span>
+            Let's Connect
           </ConnectButton>
-        </Col>
-        <Col width={45}>
+        </div>
+        <div className="col-lg-5 col-12">
           <ConnectButton
             href="https://drive.google.com/file/d/17cDyQc90Uew_SuGP47CVCSAydr1ep8Ez/view?usp=sharing"
             target="_blank"
           >
-            <Icon category={"solid"} title={"file"} size="md" /> <span>CV</span>
+            CV
           </ConnectButton>
-        </Col>
+        </div>
       </RowBetween>
       {/* <SocialsRow>
         <Social
@@ -69,7 +70,7 @@ const LandingContent = () => {
           title={"x-twitter"}
         />
       </SocialsRow> */}
-    </Col>
+    </div>
   );
 };
 

@@ -1,10 +1,10 @@
-import { Col, Image } from "../../styles";
+import { Image } from "../../styles";
 
 const ProjectDemo = ({ gif }) => {
   return (
-    <Col width={35}>
+    <div className="col-md-4 col-12">
       <Image src={gif} alt="" />
-    </Col>
+    </div>
   );
 };
 

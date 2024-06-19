@@ -162,3 +162,9 @@ context
 
 virtual dom'un daha hızlı olduğu doğru değil
 sadece değişen yerleri render etmesini ajax da yapıyor gerçek domda
+
+finalde i18 kullan iyi olur react
+
+finalde bootstrap ve styled component
+figma tasarımı verilecek pixel perfect bir sonuç bekleniyor
+next ile yapılabilir

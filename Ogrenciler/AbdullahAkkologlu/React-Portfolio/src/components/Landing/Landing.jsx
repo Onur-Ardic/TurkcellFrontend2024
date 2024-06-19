@@ -1,15 +1,15 @@
 import LandingContent from "./LandingContent";
 import LandingImage from "./LandingImage";
-import { LandingContainer, RowBetween } from "../../styles";
+import { RowBetween, PaddingVertical } from "../../styles";
 
 const Landing = () => {
   return (
-    <LandingContainer>
+    <PaddingVertical className="my-5">
       <RowBetween>
         <LandingContent />
         <LandingImage />
       </RowBetween>
-    </LandingContainer>
+    </PaddingVertical>
   );
 };
 
