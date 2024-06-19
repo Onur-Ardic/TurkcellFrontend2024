@@ -28,7 +28,7 @@ export const data = [
     name: "Tic-Tac-Toe",
     techs: ["css", "js"],
     desc: "Tic-Tac-Toe is a classic game implemented using simple HTML, CSS, and JavaScript. It features a minimalist design and intuitive user interface, making it easy and fun to play. The game allows two players to compete against each other.",
-    demo: "",
+    demo: "https://xox-turkcell.vercel.app/",
     code: "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/AbdullahAkkologlu/Mentor-Odev/TicTacToe",
   },
   {
@@ -44,7 +44,7 @@ export const data = [
     name: "Rock-Paper-Scissors",
     techs: ["css", "js"],
     desc: "Rock-Paper-Scissors is a simple and fun game built with HTML, CSS, and JavaScript. Players can compete against the computer, which uses random choices to play. The interface is designed to be engaging and visually appealing, making it an enjoyable quick game.",
-    demo: "",
+    demo: "https://rock-paper-scissors-turkcell.vercel.app/",
     code: "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/AbdullahAkkologlu/Mentor-Odev/Rock-Paper-Scissors",
   },
   {
@@ -52,7 +52,7 @@ export const data = [
     name: "Memory Game",
     techs: ["css", "js"],
     desc: "Memory Game is an interactive and educational game designed to test and improve memory skills. Built with HTML, CSS, and JavaScript. Players flip cards to find matching pairs, aiming to complete the game in the fewest moves possible.",
-    demo: "",
+    demo: "https://memory-game-turkcell.vercel.app/",
     code: "https://github.com/waroi/TurkcellFrontend2024/tree/main/Ogrenciler/AbdullahAkkologlu/Mentor-Odev/MemoryGame",
   },
   {
@@ -82,7 +82,7 @@ export const data = [
     name: "2000Words",
     techs: ["tailwind", "react", "nodejs", "mongodb", "expressjs"],
     desc: "2000Words is a practical and interactive educational platform for learning the basic 2000 words in the English language. Users can easily learn and practice unfamiliar words with smart flash cards. Enrich your language skills and make your communication more effective with the power of 2000 words.",
-    demo: "",
+    demo: "https://github.com/akkologlu/2000Words",
     code: "https://github.com/akkologlu/2000Words",
   },
 ];
