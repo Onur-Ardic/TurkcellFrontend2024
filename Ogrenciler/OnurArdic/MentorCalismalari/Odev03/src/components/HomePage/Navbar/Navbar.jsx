@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import MusicList from './MusicList'
 import { Icon, IconWrapper, Li, Link, NavbarBottom, NavbarTop, NavbarWrapper, Ul } from './styled'
 
@@ -8,10 +9,12 @@ const Navbar = () => {
         <NavbarTop>
           <Ul>
             <Li>
-              <Link fontSize={'17px'}>
-                <Icon className="bi bi-house-door" fontSize={'17px'} />
-                Ana Sayfa
-              </Link>
+              <NavLink to="/">
+                <Link fontSize={'17px'}>
+                  <Icon className="bi bi-house-door" fontSize={'17px'} />
+                  Ana Sayfa
+                </Link>
+              </NavLink>
             </Li>
             <Li>
               <Link>

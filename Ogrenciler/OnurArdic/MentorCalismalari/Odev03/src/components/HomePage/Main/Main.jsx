@@ -7,9 +7,9 @@ const Main = () => {
   return (
     <>
       <MainWrapper>
-        <MusicAlbums></MusicAlbums>
-        <Foryou></Foryou>
-        <Artist></Artist>
+        <MusicAlbums />
+        <Foryou />
+        <Artist />
       </MainWrapper>
     </>
   )
