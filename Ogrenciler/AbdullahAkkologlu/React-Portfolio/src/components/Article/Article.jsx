@@ -8,7 +8,7 @@ import {
   ArticleDesc,
   ArticleImageDiv,
   RowBetween,
-} from "../../../styles";
+} from "../../styles";
 
 const Article = ({ article, user }) => {
   const firstImage = article.description
@@ -46,18 +46,20 @@ const Article = ({ article, user }) => {
   let formattedDate = formatDate(dateStr);
 
   return (
-    <ArticleDiv width={45} onClick={() => window.open(article.link)}>
+    <ArticleDiv className="col-lg-5" onClick={() => window.open(article.link)}>
       <FlexAlign>
         <MediumPicture src={user.image} />
         <small>Abdullah Akkoloğlu</small>
       </FlexAlign>
       <RowBetween>
-        <ArticleContent width={75}>
+        <ArticleContent className="col-9">
           <ArticleTitle>{article.title.substring(0, 50)}</ArticleTitle>
-          <ArticleDesc>{first90Chars}...</ArticleDesc>
+          <ArticleDesc className="d-none d-lg-block">
+            {first90Chars}...
+          </ArticleDesc>
           <small>{formattedDate}</small>
         </ArticleContent>
-        <ArticleImageDiv width={20}>
+        <ArticleImageDiv className="col-3">
           <ArticleImage src={firstImage} />
         </ArticleImageDiv>
       </RowBetween>

@@ -1,5 +1,4 @@
 import {
-  Col,
   ProjectName,
   ProjectDesc,
   UnderLineDiv,
@@ -10,25 +9,25 @@ import Techs from "../Landing/Techs";
 
 const ProjectContent = ({ name, techs, desc, demo, code }) => {
   return (
-    <Col width={55}>
+    <div className="col-md-7 col-12">
       <UnderLineDiv>
         <ProjectName>{name}</ProjectName>
         <Techs techs={techs} />
       </UnderLineDiv>
       <ProjectDesc>{desc}</ProjectDesc>
       <RowBetween>
-        <Col width={45}>
+        <div className="col-5">
           <ConnectButton href={demo} target="_blank">
             Demo
           </ConnectButton>
-        </Col>
-        <Col width={45}>
+        </div>
+        <div className="col-5">
           <ConnectButton href={code} target="_blank">
             Code
           </ConnectButton>
-        </Col>
+        </div>
       </RowBetween>
-    </Col>
+    </div>
   );
 };
 

@@ -1,10 +1,10 @@
-import { Container, Heading } from "../../styles";
+import { Heading } from "../../styles";
 import Project from "./Project";
 import { data } from "../../data";
 
 const Projects = () => {
   return (
-    <Container>
+    <>
       <Heading id="projectsHeading">— Projects —</Heading>
       {data.map((project, index) => (
         <Project
@@ -17,7 +17,7 @@ const Projects = () => {
           code={project.code}
         />
       ))}
-    </Container>
+    </>
   );
 };
 

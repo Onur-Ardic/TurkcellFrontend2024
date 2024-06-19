@@ -1,15 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  max-width: 1300px;
-  margin: 0 auto 8rem auto;
-`;
-export const LandingContainer = styled(Container)`
-  padding-top: 10rem;
-`;
 export const LandingTitle = styled.h3`
   font-size: 5rem;
   font-weight: bolder;
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
 `;
 export const LandingDesc = styled.h6`
   color: gray;
@@ -26,10 +22,8 @@ export const UnderLineDiv = styled(RowBetween)`
   border-bottom: 2px solid black;
   margin-bottom: 0.75rem;
 `;
-export const Col = styled.div`
-  width: ${(props) => props.width}%;
-`;
-export const LandingImageDiv = styled(Col)`
+
+export const LandingImageDiv = styled.div`
   background-image: url("assets/IMG_2126.JPG");
   animation: morph 3s ease-in-out infinite;
   background-position: center;
@@ -39,6 +33,13 @@ export const LandingImageDiv = styled(Col)`
   height: 35rem;
   width: 35rem;
   transition: all 1s ease-in-out;
+  @media (max-width: 1200px) {
+    height: 30rem;
+    width: 30rem;
+  }
+  @media (max-width: 990px) {
+    display: none;
+  }
 `;
 export const Ul = styled.ul`
   list-style: none;
@@ -46,6 +47,7 @@ export const Ul = styled.ul`
 `;
 export const TechsUl = styled(Ul)`
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 `;
 export const TechLi = styled.li`
@@ -56,8 +58,6 @@ export const TechLi = styled.li`
   }
 `;
 export const SocialsRow = styled(Row)`
-  display: flex;
-  gap: 2rem;
   $a:hover {
     color: orangered;
   }
@@ -78,6 +78,12 @@ export const ConnectButton = styled(Button)`
   color: white;
   background-color: black;
   margin-top: 2.5rem;
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+  }
+`;
+export const FormButton = styled(ConnectButton)`
+  margin-top: 0.5rem;
 `;
 export const Image = styled.img`
   width: 100%;
@@ -91,7 +97,7 @@ export const ProjectDesc = styled.p`
 export const PaddingY = styled.div`
   padding-bottom: 10rem;
 `;
-export const ArticleDiv = styled(Col)`
+export const ArticleDiv = styled.div`
   margin: 1rem 0;
   border-bottom: 1px solid whitesmoke;
   padding-bottom: 1rem;
@@ -101,7 +107,7 @@ export const ArticleImage = styled.img`
   width: 100%;
   margin: auto 0;
 `;
-export const ArticleContent = styled(Col)`
+export const ArticleContent = styled.div`
   padding: 0.5rem 1rem 0.5rem 0;
 `;
 export const MediumPicture = styled.img`
@@ -122,7 +128,7 @@ export const ArticleDesc = styled.p`
   color: gray;
   text-align: justify;
 `;
-export const ArticleImageDiv = styled(Col)`
+export const ArticleImageDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -133,4 +139,13 @@ export const Heading = styled.h2`
   font-weight: 500;
   text-align: center;
   margin-bottom: 4rem;
+`;
+export const PaddingVertical = styled.div`
+  padding: 6rem 0;
+  @media (max-width: 768px) {
+    padding: 3rem 0;
+  }
+  @media (max-width: 576px) {
+    padding: 0;
+  }
 `;

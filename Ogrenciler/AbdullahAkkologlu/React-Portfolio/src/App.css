@@ -20,3 +20,9 @@ a {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
+
+.form-control:focus {
+  border-color: black;
+  outline: none !important;
+  box-shadow: none;
+}

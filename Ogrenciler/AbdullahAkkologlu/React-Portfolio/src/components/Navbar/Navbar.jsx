@@ -22,8 +22,7 @@ const Navbar = () => {
             <NavLink text="Home" href="#" />
             <NavLink text="Projects" href="#projectsHeading" />
             <NavLink text="Articles" href="#articlesHeading" />
-            <NavLink text="About Me" href="#" />
-            <NavLink text="Contact" href="#" />
+            <NavLink text="Contact" href="#contactHeading" />
           </ul>
         </div>
       </div>

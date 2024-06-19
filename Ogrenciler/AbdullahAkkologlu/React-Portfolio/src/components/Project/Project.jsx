@@ -5,7 +5,7 @@ import ProjectDemo from "./ProjectDemo";
 const Project = ({ gif, name, techs, desc, demo, code }) => {
   return (
     <PaddingY>
-      <RowBetween>
+      <RowBetween className="gap-5 gap-md-1">
         <ProjectContent
           name={name}
           techs={techs}
@@ -18,5 +18,4 @@ const Project = ({ gif, name, techs, desc, demo, code }) => {
     </PaddingY>
   );
 };
-
 export default Project;
