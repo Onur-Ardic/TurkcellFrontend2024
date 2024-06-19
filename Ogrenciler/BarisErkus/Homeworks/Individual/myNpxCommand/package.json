@@ -1,0 +1,16 @@
+{
+  "name": "bariserkus",
+  "version": "1.1.0",
+  "description": "About Barış Erkuş",
+  "bin": {
+    "bariserkus": "bariserkus.js"
+  },
+  "author": "Barış Erkuş",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "got": "^14.4.1",
+    "terminal-image": "^2.0.0"
+  },
+  "type": "module"
+}
