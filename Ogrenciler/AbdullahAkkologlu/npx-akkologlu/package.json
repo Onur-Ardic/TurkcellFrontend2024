@@ -1,0 +1,20 @@
+{
+  "name": "akkologlu",
+  "version": "1.0.7",
+  "description": "About Abdullah Akkoloğlu",
+  "bin": {
+    "akkologlu": "akkologlu.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akkologlu/npx-akkologlu"
+  },
+  "author": "Abdullah Akkoloğlu",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "got": "^11.5.0",
+    "terminal-image": "^1.1.0"
+  },
+  "type": "module"
+}
