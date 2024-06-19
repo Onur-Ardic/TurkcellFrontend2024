@@ -1,15 +1,15 @@
 import { CustomImage, Link, MusicCardItem, MusicItemLeft, MusicItemRight } from './styled'
 
-const MusicCard = () => {
+const MusicCard = ({ album }) => {
   return (
     <>
       <MusicCardItem>
-        <Link>
+        <Link href={album.external_urls.spotify}>
           <MusicItemLeft>
-            <CustomImage width={'100px'} height={'100px'} src="https://picsum.photos/200/300" />
+            <CustomImage width={'100px'} height={'100px'} src={album.images[1].url} />
           </MusicItemLeft>
           <MusicItemRight>
-            <h3>Müzik Adı</h3>
+            <h3>{album.name}</h3>
             <span>Onur Ardıç</span>
           </MusicItemRight>
         </Link>

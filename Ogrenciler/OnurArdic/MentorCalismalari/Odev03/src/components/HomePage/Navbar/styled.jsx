@@ -2,9 +2,10 @@ import styled from 'styled-components'
 
 export const NavbarWrapper = styled.nav`
   display: flex;
-  justify-content: center;
   flex-direction: column;
   border-radius: 7px;
+  height: 100%;
+  gap: 10px;
 `
 
 export const NavbarTop = styled.div`
@@ -14,6 +15,7 @@ export const NavbarTop = styled.div`
   height: 112px;
   padding: 9px;
   background-color: #121212;
+  border-radius: 10px;
 `
 
 export const Ul = styled.ul`
@@ -30,6 +32,7 @@ export const Link = styled.a`
   text-decoration: none;
   display: flex;
   gap: 1.3rem;
+  color: #fff;
 `
 
 export const Icon = styled.i`
@@ -41,9 +44,10 @@ export const NavbarBottom = styled.div`
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  padding-left: 39px;
+  padding: 10px 20px 20px 39px;
   background-color: #121212;
   margin-top: 8px;
+  border-radius: 10px;
 `
 
 export const IconWrapper = styled.div`
@@ -56,6 +60,9 @@ export const MusicListWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  align-items: start;
+  overflow-y: scroll;
+  height: 550px;
 `
 
 export const MusicList = styled.div`
@@ -81,5 +88,5 @@ export const MusicItemRight = styled.div`
 export const CustomImage = styled.img`
   width: ${(props) => (props.width ? props.width : '150px')};
   height: ${(props) => (props.height ? props.height : '160px')};
-  border-radius: 5px;
+  border-radius: ${(props) => (props.radius ? props.radius : '10px')};
 `

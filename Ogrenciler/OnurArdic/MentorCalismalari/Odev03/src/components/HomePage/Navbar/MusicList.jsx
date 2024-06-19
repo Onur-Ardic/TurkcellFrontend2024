@@ -1,7 +1,11 @@
+import { useContext } from 'react'
 import MusicCard from './MusicCard'
 import { Icon, IconWrapper, MusicListWrapper } from './styled'
+import { MainContext } from '../../../Context/Context'
 
 const MusicList = () => {
+  const { albums } = useContext(MainContext)
+
   return (
     <>
       <IconWrapper>
@@ -12,9 +16,9 @@ const MusicList = () => {
       </IconWrapper>
 
       <MusicListWrapper>
-        <MusicCard />
-        <MusicCard />
-        <MusicCard />
+        {albums?.map((album) => {
+          return <MusicCard key={album.id} album={album} />
+        })}
       </MusicListWrapper>
     </>
   )
