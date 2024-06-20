@@ -1,11 +1,31 @@
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import MusicList from './MusicList'
-import { Icon, IconWrapper, Li, Link, NavbarBottom, NavbarTop, NavbarWrapper, Ul } from './styled'
+import {
+  Icon,
+  IconWrapper,
+  Li,
+  Link,
+  NavbarBottom,
+  NavbarTop,
+  NavbarWrapper,
+  Ul,
+  ToggleButton,
+} from './styled'
 
 const Navbar = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+
+  const handleToggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen)
+  }
+
   return (
     <>
-      <NavbarWrapper className="navbar-wrapper">
+      <ToggleButton onClick={handleToggleSidebar}>
+        <Icon className="bi bi-list" fontSize={'24px'} />
+      </ToggleButton>
+      <NavbarWrapper className={`navbar-wrapper ${isSidebarOpen ? 'open' : ''}`}>
         <NavbarTop>
           <Ul>
             <Li>
@@ -34,7 +54,6 @@ const Navbar = () => {
               <Icon className="bi bi-arrow-right" fontSize={'30px'} />
             </div>
           </IconWrapper>
-
           <MusicList />
         </NavbarBottom>
       </NavbarWrapper>

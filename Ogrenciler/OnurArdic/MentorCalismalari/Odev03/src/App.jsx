@@ -4,7 +4,6 @@ import PlayerWrap from './components/HomePage/Player/PlayerWrap'
 import { MainContext } from './Context/Context'
 import { useEffect, useState } from 'react'
 import { getAccessToken, getAlbums, getTracks, getArtist } from './Api'
-import Router from './components/Routes/Router'
 
 function App() {
   const [albums, setAlbums] = useState(null)
@@ -47,8 +46,10 @@ function App() {
 
   return (
     <MainContext.Provider value={data}>
-      <Home />
-      <PlayerWrap />
+      <div className="app-container">
+        <Home />
+        <PlayerWrap />
+      </div>
     </MainContext.Provider>
   )
 }
