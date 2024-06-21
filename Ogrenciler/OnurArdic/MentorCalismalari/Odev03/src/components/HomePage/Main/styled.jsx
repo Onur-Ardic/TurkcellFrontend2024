@@ -35,6 +35,7 @@ export const Flexible = styled.div`
   flex-direction: ${(props) => (props.flexDirection ? props.flexDirection : 'row')};
   align-items: ${(props) => (props.alignItems ? props.alignItems : 'normal')};
   gap: ${(props) => (props.gap ? props.gap : '1rem')};
+  flex-wrap: ${(props) => (props.flexWrap ? props.flexWrap : 'no-wrap')};
 `
 
 export const UserAlbumsWrap = styled.div`

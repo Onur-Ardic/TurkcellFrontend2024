@@ -1,4 +1,3 @@
-import { useParams } from 'react-router-dom'
 import {
   AlbumDetailWrapper,
   AlbumsMusicList,
@@ -11,10 +10,26 @@ import {
 } from './styled'
 import { CustomImage } from '../HomePage/Navbar/styled'
 import { AlbumsContent } from '../HomePage/Main/styled'
+import { useContext } from 'react'
+import { MainContext } from '../../Context/Context'
 
 const AlbumDetail = () => {
-  const { id } = useParams()
+  const { tracks, setCurrentTrackInfo } = useContext(MainContext)
+  const formatTime = (timeInSeconds) => {
+    const minutes = Math.floor(timeInSeconds / 60)
+    const seconds = Math.floor(timeInSeconds % 60)
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`
+  }
 
+  const handleTrack = (track) => {
+    setCurrentTrackInfo({
+      uri: track.uri,
+      name: track.name,
+      artists: track.artists.map((artist) => artist.name).join(', '),
+      duration_ms: track.duration_ms,
+      album: track.album,
+    })
+  }
   return (
     <AlbumDetailWrapper>
       <AlbumTop>
@@ -37,15 +52,17 @@ const AlbumDetail = () => {
         </MusicHeader>
 
         <MusicList>
-          {[...Array(6)].map((_, index) => (
-            <MusicRow key={index}>
+          {tracks?.slice(0, 5).map((track, index) => (
+            <MusicRow key={index} onClick={() => handleTrack(track)}>
               <MusicItem>{index + 1}</MusicItem>
               <MusicItem>
-                <CustomImage src="https://picsum.photos/60/60" width={'60px'} height={'60px'} />
-                <p>Song Title {index + 1}</p>
+                <CustomImage src={track.album.images[1].url} width={'60px'} height={'60px'} />
+                <p>
+                  {track.name} {index + 1}
+                </p>
               </MusicItem>
-              <MusicItem>2023-06-20</MusicItem>
-              <MusicItem>3:45</MusicItem>
+              <MusicItem>{track.album.release_date}</MusicItem>
+              <MusicItem>{formatTime(track.duration_ms / 1000)}</MusicItem>
             </MusicRow>
           ))}
         </MusicList>

@@ -25,7 +25,7 @@ const Artist = () => {
   return (
     <ArtisWrap>
       <h3>En sevdiğin sanatçılar</h3>
-      <Flexible display={'flex'} gap={'1rem'} justifyContent={'space-around'}>
+      <Flexible display={'flex'} gap={'1rem'} justifyContent={'space-around'} flexWrap={'wrap'}>
         {artistList.length > 0 ? (
           artistList.slice(0, 4).map((artist) => (
             <Albums key={artist.id}>

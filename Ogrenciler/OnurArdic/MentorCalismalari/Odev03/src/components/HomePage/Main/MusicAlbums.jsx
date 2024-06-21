@@ -7,7 +7,6 @@ const MusicAlbums = () => {
   const { tracks, setCurrentTrackInfo } = useContext(MainContext)
 
   const handleTrack = (track) => {
-    console.log(track)
     setCurrentTrackInfo({
       uri: track.uri,
       name: track.name,

@@ -6,11 +6,12 @@ import { NavLink } from 'react-router-dom'
 
 const Foryou = () => {
   const { albums } = useContext(MainContext)
+  console.log(albums)
 
   return (
     <ForYouWrap>
       <h1>Onur Ardıç için derlendi</h1>
-      <Flexible display={'flex'} gap={'1rem'} justifyContent={'space-around'}>
+      <Flexible display={'flex'} gap={'1rem'} justifyContent={'space-around'} flexWrap={'wrap'}>
         {albums
           ?.slice(0, 3)
           .reverse()
