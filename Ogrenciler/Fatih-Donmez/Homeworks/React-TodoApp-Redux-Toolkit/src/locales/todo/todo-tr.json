@@ -1,0 +1,11 @@
+{
+    "save": "Kaydet",
+    "cancel":"Vazgeç",
+    "edit": "Düzenle",
+    "delete":"Sil",
+    "add":"Yeni Görev Ekle",
+    "title":"React Yapılacak Listesi Uygulaması",
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "todos": "Görevler"
+}

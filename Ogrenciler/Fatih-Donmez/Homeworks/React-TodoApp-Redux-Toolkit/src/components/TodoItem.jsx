@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import {
   deleteTodo as reduxDeleteTodo,
   updateTodo as reduxUpdateTodo,
 } from "../redux/slices/todoSlice";
+import { useTranslation } from "react-i18next";
+import { getAuth } from "firebase/auth";
 
 const TodoItem = ({ todo }) => {
+  const {t} = useTranslation('todo');
   const [editMode, setEditMode] = useState(false);
   const [editTitle, setEditTitle] = useState(todo.title);
   const dispatch = useDispatch();
@@ -26,6 +29,18 @@ const TodoItem = ({ todo }) => {
       setEditTitle("");
     }
   };
+  const [user, setUser] = useState(null);
+  const auth = getAuth();
+  useEffect(() => {
+    auth.onAuthStateChanged((user)=> {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser(null);
+      }
+    })
+  }, [])
+
 
   return (
     <li className="list-group-item d-flex justify-content-between align-items-center">
@@ -42,33 +57,33 @@ const TodoItem = ({ todo }) => {
               onClick={() => handleUpdateTodo(todo.id)}
               className="btn btn-success mr-2"
             >
-              Save
+              {t('save')}
             </button>
             <button
               onClick={() => setEditMode(false)}
               className="btn btn-secondary"
             >
-              Cancel
+             {t('cancel')}
             </button>
           </div>
         </>
       ) : (
         <>
           <span>{todo.title}</span>
-          <div>
+          {user && <div>
             <button
               onClick={() => setEditMode(true)}
               className="btn btn-warning mr-2"
             >
-              Edit
+              {t('edit')}
             </button>
             <button
               onClick={() => handleDelete(todo.id)}
               className="btn btn-danger"
             >
-              Delete
+              {t('delete')}
             </button>
-          </div>
+          </div>}
         </>
       )}
     </li>

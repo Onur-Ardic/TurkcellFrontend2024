@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { auth } from "../firebase/firebase";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { browserLocalPersistence, getAuth, setPersistence, signInWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
 import { useNavigate, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Login() {
+  const {t} = useTranslation('auth');
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
@@ -12,10 +14,11 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await signInWithEmailAndPassword(auth, email, password);
+      const user = getAuth();
+      setPersistence(user, browserLocalPersistence).then(async ()=> await signInWithEmailAndPassword(auth, email, password));
       toast.success("Login successful!");
-      //REDIRECT HOMEPAGE
       navigate("/");
+    
     } catch (err) {
       setError(err.message);
       toast.error(err.message);
@@ -28,10 +31,10 @@ function Login() {
         <div className="col-md-6">
           <div className="card">
             <div className="card-body">
-              <h1 className="card-title text-center">Login</h1>
+              <h1 className="card-title text-center">{t('login')}</h1>
               <form onSubmit={handleLogin}>
                 <div className="form-group">
-                  <label htmlFor="email">Email:</label>
+                  <label htmlFor="email">{t('email')}</label>
                   <input
                     type="email"
                     className="form-control"
@@ -41,7 +44,7 @@ function Login() {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="password">Password:</label>
+                  <label htmlFor="password">{t('password')}</label>
                   <input
                     type="password"
                     className="form-control"
@@ -52,7 +55,7 @@ function Login() {
                 </div>
                 {error && <div className="alert alert-danger">{error}</div>}
                 <button type="submit" className="btn btn-primary btn-block">
-                  Login
+                  {t('login')}
                 </button>
               </form>
             </div>
