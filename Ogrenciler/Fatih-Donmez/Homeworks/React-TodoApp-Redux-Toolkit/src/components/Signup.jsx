@@ -3,8 +3,10 @@ import { auth } from "../firebase/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Signup() {
+  const {t} = useTranslation('auth');
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
@@ -31,10 +33,10 @@ function Signup() {
         <div className="col-md-6">
           <div className="card">
             <div className="card-body">
-              <h1 className="card-title text-center">Signup</h1>
+              <h1 className="card-title text-center">{t('signup')}</h1>
               <form onSubmit={handleSignup}>
                 <div className="form-group">
-                  <label htmlFor="email">Email:</label>
+                  <label htmlFor="email">{t('email')}</label>
                   <input
                     type="email"
                     className="form-control"
@@ -44,7 +46,7 @@ function Signup() {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="password">Password:</label>
+                  <label htmlFor="password">{t('password')}</label>
                   <input
                     type="password"
                     className="form-control"
@@ -55,7 +57,7 @@ function Signup() {
                 </div>
                 {error && <div className="alert alert-danger">{error}</div>}
                 <button type="submit" className="btn btn-primary btn-block">
-                  Sign Up
+                {t('signup')}
                 </button>
               </form>
             </div>
