@@ -10,6 +10,7 @@ function App() {
   const [tracks, setTracks] = useState(null)
   const [artist, setArtist] = useState(null)
   const [currentTrackInfo, setCurrentTrackInfo] = useState(null)
+
   const [error, setError] = useState(null)
 
   useEffect(() => {

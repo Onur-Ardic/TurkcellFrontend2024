@@ -24,7 +24,7 @@ const Home = () => {
           gridTemplateColumns: isSidebarVisible ? '25% 50% 23%' : '25% 75%',
           gap: '0.4rem',
           transition: 'grid-template-columns 0.3s ease',
-          height: '100vh',
+          height: '88vh',
         }}
       >
         <Navbar />

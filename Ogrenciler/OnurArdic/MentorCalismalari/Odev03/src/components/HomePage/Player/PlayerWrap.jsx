@@ -13,7 +13,7 @@ const PlayerWrap = () => {
 
   useEffect(() => {
     const token =
-      'BQC-moqVkUqaxiKFiJk-xCQ7PoE3NcLfv3sD2XRu77DePtB3NrZOxrJjUmSBbSG09LVIIbsWDbe0UD8IhQHpLsyIF-z7peeOiVNMvrCTZrRV3wx9NM2ND9qkc4CuFA3MrvoxiH8kymTfwELAwcEKezcMDZGgYfoPPDDHFJVIHbgrGsDFU9yAVSqMDBLL3UbmMBGD6hgCFS8'
+      'BQDVmxO_HID-5o3_MRLcQekhYumaZmPmZnO2-cC_QQE_a8yJ9eyDDpZrAtOvqc1HnWkbApo1P4zcT3ylQtWwad5y1hCD_BetKaNquihGiJDa_IN5i-Jgw_wc2b1-FU7OroqxE2KcHVIsCbLNlUu9rKjsgYftiXsGCg1-SAIQZEk2YkZJ4CfnxxE2uvB5Ouwgvyh7zPM_P-s'
 
     window.onSpotifyWebPlaybackSDKReady = () => {
       const playerInstance = new window.Spotify.Player({
@@ -71,7 +71,7 @@ const PlayerWrap = () => {
 
   const playTrack = (device_id, track_uri) => {
     const token =
-      'BQC-moqVkUqaxiKFiJk-xCQ7PoE3NcLfv3sD2XRu77DePtB3NrZOxrJjUmSBbSG09LVIIbsWDbe0UD8IhQHpLsyIF-z7peeOiVNMvrCTZrRV3wx9NM2ND9qkc4CuFA3MrvoxiH8kymTfwELAwcEKezcMDZGgYfoPPDDHFJVIHbgrGsDFU9yAVSqMDBLL3UbmMBGD6hgCFS8'
+      'BQDVmxO_HID-5o3_MRLcQekhYumaZmPmZnO2-cC_QQE_a8yJ9eyDDpZrAtOvqc1HnWkbApo1P4zcT3ylQtWwad5y1hCD_BetKaNquihGiJDa_IN5i-Jgw_wc2b1-FU7OroqxE2KcHVIsCbLNlUu9rKjsgYftiXsGCg1-SAIQZEk2YkZJ4CfnxxE2uvB5Ouwgvyh7zPM_P-s'
 
     fetch(`https://api.spotify.com/v1/me/player/play?device_id=${device_id}`, {
       method: 'PUT',
