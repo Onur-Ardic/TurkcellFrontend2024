@@ -1,0 +1,9 @@
+{
+  "MainHeader": "My Todo App with React and react-i18next",
+  "ChangeLanguage": "Change Language",
+  "Login": "Login",
+  "Update": "Update",
+  "Delete": "Delete",
+  "Add": "Add",
+  "Edit": "Edit"
+}

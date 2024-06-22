@@ -4,6 +4,8 @@
 - https://devdocs.io/
 - https://learngitbranching.js.org/
 - https://courseflix.net/
+- https://www.udemy.com/course/the-ultimate-react-course
+- https://www.udemy.com/course/nextjs-react-the-complete-guide
 
 # Challenges
 - https://www.frontendmentor.io/challenges/
