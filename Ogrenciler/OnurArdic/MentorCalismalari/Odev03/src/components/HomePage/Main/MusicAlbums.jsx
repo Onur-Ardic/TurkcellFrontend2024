@@ -18,7 +18,7 @@ const MusicAlbums = () => {
 
   return (
     <UserAlbumsWrap>
-      {tracks?.slice(0, 5).map((track) => (
+      {tracks?.slice(0, 4).map((track) => (
         <Albums
           display={'flex'}
           gap={'1rem'}

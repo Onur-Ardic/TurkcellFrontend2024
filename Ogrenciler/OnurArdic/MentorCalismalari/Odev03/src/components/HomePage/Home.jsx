@@ -1,11 +1,13 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import Main from './Main/Main'
 import Navbar from './Navbar/Navbar'
 import Sidebar from './RightSidebar/Sidebar'
 import { PlayerButton } from './Player/styled'
+import { MainContext } from '../../Context/Context'
 
 const Home = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false)
+  const { currentInfo } = useContext(MainContext)
 
   const toggleSidebar = () => {
     setIsSidebarVisible(!isSidebarVisible)
@@ -13,12 +15,14 @@ const Home = () => {
 
   return (
     <>
-      <PlayerButton
-        onClick={toggleSidebar}
-        style={{ position: 'fixed', top: '10px', right: '10px', zIndex: 1000 }}
-      >
-        MusicInfo
-      </PlayerButton>
+      {currentInfo && (
+        <PlayerButton
+          onClick={toggleSidebar}
+          style={{ position: 'fixed', top: '10px', right: '10px', zIndex: 1000 }}
+        >
+          MusicInfo
+        </PlayerButton>
+      )}
       <section
         style={{
           display: 'grid',

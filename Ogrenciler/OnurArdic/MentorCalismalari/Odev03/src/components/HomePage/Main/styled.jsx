@@ -34,7 +34,7 @@ export const Flexible = styled.div`
   justify-content: ${(props) => (props.justifyContent ? props.justifyContent : 'flex-start')};
   flex-direction: ${(props) => (props.flexDirection ? props.flexDirection : 'row')};
   align-items: ${(props) => (props.alignItems ? props.alignItems : 'normal')};
-  gap: ${(props) => (props.gap ? props.gap : '1rem')};
+  gap: ${(props) => (props.gap ? props.gap : '0rem')};
   flex-wrap: ${(props) => (props.flexWrap ? props.flexWrap : 'no-wrap')};
 `
 
@@ -53,7 +53,7 @@ export const UserAlbumsWrap = styled.div`
 `
 
 export const Albums = styled.div`
-  width: 280px;
+  width: ${(props) => (props.width ? props.width : '280px')};
   display: ${(props) => (props.display ? props.display : 'block')};
   justify-content: ${(props) => (props.justifyContent ? props.justifyContent : 'flex-start')};
   flex-direction: ${(props) => (props.flexDirection ? props.flexDirection : 'row')};
@@ -80,6 +80,7 @@ export const AlbumsContent = styled.div`
 
 export const ForYouWrap = styled.div`
   padding: 1rem;
+  margin: 1rem 0rem;
   background-color: #1d1d1d;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

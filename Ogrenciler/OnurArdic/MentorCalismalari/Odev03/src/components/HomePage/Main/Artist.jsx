@@ -6,10 +6,6 @@ import { MainContext } from '../../../Context/Context'
 const Artist = () => {
   const { artist } = useContext(MainContext)
 
-  // Gelen artist verisinin konsolda kontrol edilmesi
-  console.log('Artists data from context:', artist)
-
-  // Artist verisinin uygun bir diziye dönüştürülmesi (gerekiyorsa)
   let artistList = []
 
   if (artist && typeof artist === 'object' && !Array.isArray(artist)) {
@@ -25,12 +21,21 @@ const Artist = () => {
   return (
     <ArtisWrap>
       <h3>En sevdiğin sanatçılar</h3>
-      <Flexible display={'flex'} gap={'1rem'} justifyContent={'space-around'} flexWrap={'wrap'}>
+      <Flexible display={'flex'} flexWrap={'wrap'} gap={'25px'} justifyContent={'space-between'}>
         {artistList.length > 0 ? (
           artistList.slice(0, 4).map((artist) => (
-            <Albums key={artist.id}>
+            <Albums
+              key={artist.id}
+              width={'max-content'}
+              gap={'20px'}
+              display={'flex'}
+              flexDirection={'column'}
+              alignItems={'center'}
+            >
               <CustomImage
                 src={artist.images?.[1].url || 'https://picsum.photos/200/300'}
+                width={'160px'}
+                height={'160px'}
                 radius={'50%'}
               />
               <AlbumsContent>

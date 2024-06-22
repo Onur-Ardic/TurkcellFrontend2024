@@ -11,12 +11,12 @@ const Foryou = () => {
   return (
     <ForYouWrap>
       <h1>Onur Ardıç için derlendi</h1>
-      <Flexible display={'flex'} gap={'1rem'} justifyContent={'space-around'} flexWrap={'wrap'}>
+      <Flexible display={'flex'} justifyContent={'space-between'} flexWrap={'wrap'}>
         {albums
-          ?.slice(0, 3)
+          ?.slice(0, 4)
           .reverse()
           .map((album) => (
-            <Albums key={album.id}>
+            <Albums key={album.id} alignItems={'start'} display={'flex'} flexDirection={'column'}>
               <NavLink to={`/albums/${album.id}`}>
                 <CustomImage
                   src={album.images[1].url}
@@ -31,18 +31,6 @@ const Foryou = () => {
               </AlbumsContent>
             </Albums>
           ))}
-
-        <Albums>
-          <CustomImage
-            src="https://picsum.photos/200/300"
-            width={'150px'}
-            height={'150px'}
-            radius={'10px'}
-          />
-          <AlbumsContent>
-            <p>Onur Ardıç</p>
-          </AlbumsContent>
-        </Albums>
       </Flexible>
     </ForYouWrap>
   )

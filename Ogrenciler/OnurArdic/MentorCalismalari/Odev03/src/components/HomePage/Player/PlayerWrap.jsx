@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext, useRef } from 'react'
 import { AlbumsContent, Flexible } from '../Main/styled'
 import { CustomImage, Icon } from '../Navbar/styled'
+import toast from 'react-hot-toast'
 import {
   ButtonWrapper,
   MusicLine,
@@ -73,9 +74,9 @@ const PlayerWrap = () => {
 
       playerInstance.connect().then((success) => {
         if (success) {
-          console.log('The Web Playback SDK successfully connected to Spotify!')
+          toast.success('The Web Playback SDK successfully connected to Spotify!')
         } else {
-          console.log('The Web Playback SDK could not connect to Spotify.')
+          toast.error('The Web Playback SDK could not connect to Spotify.')
         }
       })
 
@@ -102,9 +103,9 @@ const PlayerWrap = () => {
       },
     }).then((response) => {
       if (response.ok) {
-        console.log('Track playing')
+        toast.success('Track playing')
       } else {
-        console.error('Failed to play track:', response.statusText)
+        toast.error('Failed to play track:', response.statusText)
       }
     })
   }
@@ -128,9 +129,7 @@ const PlayerWrap = () => {
     const newVolume = e.target.value / 100
     setVolume(newVolume)
     if (player) {
-      player.setVolume(newVolume).then(() => {
-        console.log(`Volume set to ${newVolume}`)
-      })
+      player.setVolume(newVolume).then(() => {})
     }
   }
 

@@ -32,7 +32,6 @@ export const PlayerButton = styled.button`
   color: #fff;
   margin: 10px;
   cursor: pointer;
-
   &:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }

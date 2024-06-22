@@ -29,7 +29,7 @@ const Navbar = () => {
         <NavbarTop>
           <Ul>
             <Li>
-              <NavLink to="/">
+              <NavLink to="/" style={{ textDecoration: 'none' }}>
                 <Link fontSize={'17px'}>
                   <Icon className="bi bi-house-door" fontSize={'17px'} />
                   Ana Sayfa
