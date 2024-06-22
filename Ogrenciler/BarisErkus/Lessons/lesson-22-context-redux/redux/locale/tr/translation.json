@@ -1,0 +1,9 @@
+{
+  "MainHeader": "React ve react-i18next ile yaptığım Todo Uygulamam",
+  "ChangeLanguage": "Dil Değiştir",
+  "Login": "Giriş Yap",
+  "Update": "Güncelle",
+  "Delete": "Sil",
+  "Add": "Ekle",
+  "Edit": "Düzenle"
+}

@@ -2,13 +2,18 @@ import { useDispatch } from "react-redux";
 import { deleteTodo, setTodo } from "../redux/slices/todoSlice";
 import StarRating from "bstarrating";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+// import { doc, deleteDoc } from "firebase/firestore";
+// import { db } from "../firebase";
 
 const ToDoItem = ({ todo }) => {
   const [star, setStar] = useState(0);
+  const { t } = useTranslation();
 
   const dispatch = useDispatch();
 
-  const handleDelete = (id) => {
+  const handleDelete = async (id) => {
+    // await deleteDoc(doc(db, "todos", id));
     dispatch(deleteTodo(id));
   };
 
@@ -34,7 +39,7 @@ const ToDoItem = ({ todo }) => {
         <StarRating
           size={30}
           className="myStar"
-          messages={["", "", ""]}
+          messages={["", "", "", "", ""]}
           onSetRating={(value) => {
             setStar(value);
             alert(
@@ -45,10 +50,10 @@ const ToDoItem = ({ todo }) => {
                 : "Çok çok iyi ilerledim."
             );
           }}
-          maxRating={3}
+          maxRating={5}
         />
-        <button onClick={handleUpdate}>Güncelle</button>
-        <button onClick={() => handleDelete(todo.id)}>Sil</button>
+        <button onClick={handleUpdate}>{t("Update")}</button>
+        <button onClick={() => handleDelete(todo.id)}>{t("Delete")}</button>
       </div>
     </li>
   );
