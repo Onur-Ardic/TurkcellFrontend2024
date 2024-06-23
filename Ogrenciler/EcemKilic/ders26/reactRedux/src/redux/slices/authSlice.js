@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   user: JSON.parse(localStorage.getItem("user")) ?? false,
+  userMail: JSON.parse(localStorage.getItem("userMail")) ?? ""
 };
 
 const authSlice = createSlice({
@@ -14,10 +15,15 @@ const authSlice = createSlice({
     },
     logoutRedux: (state) => {
       localStorage.removeItem("user");
+      localStorage.removeItem("userMail");
       state.user = false;
     },
+    setUserMail:(state,action) => {
+      localStorage.setItem("userMail", JSON.stringify(action.payload));
+      state.userMail = action.payload
+    }
   },
 });
 
-export const { loginRedux, logoutRedux } = authSlice.actions;
+export const { loginRedux, logoutRedux,setUserMail } = authSlice.actions;
 export default authSlice.reducer;

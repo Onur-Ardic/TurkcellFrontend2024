@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { addTodo, updateFormTodo, updateTodo } from "../redux/slices/todoSlice";
 import { useEffect, useState } from "react";
-import { StyledForm, Input, FormButton } from "../../styled";
+import { StyledForm, Input, TodoFormButton } from "../../styled";
 import { addTodoFirebase, updateTodoFirebase } from "../service/firebase";
 
 const Form = () => {
@@ -47,7 +47,7 @@ const Form = () => {
         placeholder="Add Todo"
         onChange={(e) => setUpdateValue(e.target.value)}
       />
-      <FormButton type="submit">{Todo.id ? "Update" : "Add"}</FormButton>
+      <TodoFormButton type="submit">{Todo.id ? "Update" : "Add"}</TodoFormButton>
     </StyledForm>
   );
 };

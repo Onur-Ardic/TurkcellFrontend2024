@@ -18,6 +18,7 @@ import {
 } from "firebase/firestore";
 import store from "../redux/store";
 import { loginRedux, logoutRedux } from "../redux/slices/authSlice";
+import toast from "react-hot-toast";
 const firebaseConfig = {
   apiKey: "AIzaSyCqLkt4Zq4T0OvDjMjWE_bjdhTQIqIMPV0",
   authDomain: "todo-redux-a1109.firebaseapp.com",
@@ -40,25 +41,25 @@ export const register = async (email, password) => {
     );
     return user;
   } catch (e) {
-    console.log(e.message);
+    toast.error(e.message);
   }
 };
 export const signIn = async (email, password) => {
   try {
     const { user } = await signInWithEmailAndPassword(auth, email, password);
-    console.log(user);
+    return user;
   } catch (error) {
-    console.log(error.message);
+    toast.error(error.message);
   }
 };
 
 export const signOutFirebase = () => {
   signOut(auth)
     .then(() => {
-      console.log("Correct");
+      toast.success("Correct");
     })
     .catch((error) => {
-      console.log(error.message);
+      toast.error(error.message);
     });
 };
 
@@ -73,7 +74,6 @@ onAuthStateChanged(auth, (user) => {
 export const addUser = async (data) => {
   const userRef = collection(db, "users");
   const result = await setDoc(doc(userRef, data.uid), data);
-  console.log(result);
 };
 
 export const getDocRef = (id) => {
@@ -86,10 +86,9 @@ export const getUserData = async (id) => {
   const docSnap = await getDoc(docRef);
   if (docSnap.exists()) {
     const data = docSnap.data();
-    console.log("Document data:", docSnap.data());
     return data;
   } else {
-    console.log("No such users!");
+    toast.error("No such users!");
   }
 };
 export const addTodoFirebase = async (id, todoObj) => {
@@ -97,6 +96,7 @@ export const addTodoFirebase = async (id, todoObj) => {
   await updateDoc(docRef, {
     todos: arrayUnion(todoObj),
   });
+  toast.success("Added")
 };
 
 export const deleteTodoFirebase = async (id, todoObj) => {
@@ -104,6 +104,7 @@ export const deleteTodoFirebase = async (id, todoObj) => {
   await updateDoc(docRef, {
     todos: arrayRemove(todoObj),
   });
+  toast.success("Deleted")
 };
 
 export const updateTodoFirebase = async (id) => {
@@ -112,4 +113,5 @@ export const updateTodoFirebase = async (id) => {
   await updateDoc(docRef, {
     todos: todos,
   });
+  toast.success("Updated")
 };

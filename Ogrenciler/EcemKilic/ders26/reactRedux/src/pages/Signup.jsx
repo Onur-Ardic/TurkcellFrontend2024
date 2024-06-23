@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { addUser, register } from "../service/firebase";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { Form, FormButton, FormInput, FormTitle } from "../../styled";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -25,19 +26,20 @@ const Signup = () => {
     }
   }, [user]);
   return (
-    <form onSubmit={handleSubmit}>
-      <input
+    <Form onSubmit={handleSubmit}>
+      <FormTitle>SIGN-UP</FormTitle>
+      <FormInput
         type="text"
         placeholder="email"
         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
       />
-      <input
-        type="text"
+      <FormInput
+        type="password"
         placeholder="password"
         onChange={(e) => setFormData({ ...formData, password: e.target.value })}
       />
-      <button>Submit</button>
-    </form>
+      <FormButton>Submit</FormButton>
+    </Form>
   );
 };
 
