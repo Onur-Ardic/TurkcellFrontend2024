@@ -1,13 +1,13 @@
 import React from "react";
+import {LabelInput} from "./Styled";
 
-export const Labels = ({ text, htmlFor, as } ) => {
+export const Label = ({htmlFor, text} ) => {
   return (
     <>
-     <label as={as} htmlFor={htmlFor}>
-      {text}
-    </label>
+     <LabelInput htmlFor ={htmlFor}>{text}</LabelInput>
+   
     </>
    
   );
 };
-export default Labels
+export default Label

@@ -1,24 +1,48 @@
-import React from 'react';
-import { Middle, LabelInput, SearchBox, StyledInput, SearchButton, MaterialIcons } from './Styled';
-import Labels from '../atoms/Label';
+import React, { useState } from 'react';
+import { Middle, SearchBox, StyledInput, MaterialIcons, SearchButton } from './Styled';
+import { Label } from '../atoms/Label';
 
 const SearchBar = () => {
+  const [inputValue, setInputValue] = useState("");
+  const [isIconVisible, setIsIconVisible] = useState(false);
+
+  const handleFocus = () => {
+    setIsIconVisible(true);
+  };
+
+  const handleBlur = () => {
+    setIsIconVisible(false);
+  };
+
+  const handleChange = (e) => {
+    setInputValue(e.target.value);
+  };
+  
   return (
     <Middle>
       <SearchBox>
-        <StyledInput
+        {isIconVisible && (
+          <MaterialIcons id='displayIcon' className="material-symbols-outlined">
+            search
+          </MaterialIcons>
+        )}
+        <Label htmlFor="searchInput">Ara</Label>
+        <StyledInput 
+          id="searchInput"
+          value={inputValue}
+          onChange={handleChange} 
+          onFocus={handleFocus} 
+          onBlur={handleBlur} 
         />
-        <Labels as={LabelInput} text="Ara"/>
       </SearchBox>
-        <SearchButton aria-label='Ara'><MaterialIcons className="material-symbols-outlined">
+      <SearchButton>
+        <MaterialIcons className="material-symbols-outlined">
           search
         </MaterialIcons>
-        </SearchButton>
-   
+      </SearchButton>
       <MaterialIcons className="material-symbols-outlined">
         mic
       </MaterialIcons>
-
     </Middle>
   );
 };
