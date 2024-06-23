@@ -5,6 +5,7 @@ import { addTodo, deleteTodo, updateTodo } from "./redux/slices/todoSlice";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 import TodoModal from "./components/TodoModal";
+import { CardContainer, Container } from "./style";
 
 function App() {
   const todos = useSelector((state) => state.todo.todos);
@@ -41,18 +42,20 @@ function App() {
   };
 
   return (
-    <>
-      <h1>Redux Todo</h1>
-      <TodoForm onAddTodo={handleAddTodo} />
-      <TodoList todos={todos} onDelete={handleDelete} onEdit={openModal} />
-      {showModal && (
-        <TodoModal
-          todo={currentTodo}
-          onClose={closeModal}
-          onUpdateTodo={handleUpdateTodo}
-        />
-      )}
-    </>
+    <Container>
+      <CardContainer>
+        <h1>Redux Todo</h1>
+        <TodoForm onAddTodo={handleAddTodo} />
+        <TodoList todos={todos} onDelete={handleDelete} onEdit={openModal} />
+        {showModal && (
+          <TodoModal
+            todo={currentTodo}
+            onClose={closeModal}
+            onUpdateTodo={handleUpdateTodo}
+          />
+        )}
+      </CardContainer>
+    </Container>
   );
 }
 

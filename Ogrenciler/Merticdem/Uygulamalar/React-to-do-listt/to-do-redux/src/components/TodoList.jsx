@@ -1,16 +1,21 @@
 import React from "react";
+import { Button, Icon, List, RelativeButton, UL } from "../style";
 
 function TodoList({ todos, onDelete, onEdit }) {
   return (
-    <ul>
+    <UL>
       {todos.map((todo) => (
-        <li key={todo.id}>
-          {todo.title} - {todo.id}
-          <button onClick={() => onDelete(todo.id)}>Delete</button>
-          <button onClick={() => onEdit(todo)}>Edit</button>
-        </li>
+        <List key={todo.id}>
+          {todo.title}
+          <RelativeButton>
+            <Button onClick={() => onDelete(todo.id)}><Icon className="fi fi-rr-trash"></Icon></Button>
+          </RelativeButton>
+          <RelativeButton>
+            <Button onClick={() => onEdit(todo)}><Icon className="fi fi-rr-edit"></Icon></Button>
+          </RelativeButton>
+        </List>
       ))}
-    </ul>
+    </UL>
   );
 }
 
