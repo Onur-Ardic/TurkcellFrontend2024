@@ -3,7 +3,7 @@ let ClientSecret = '510997254b1e42f2a82514aabd17b87a'
 import toast from 'react-hot-toast'
 
 export const getAccessToken = async () => {
-  const response = await fetch('https://accounts.spotify.com/api/tokn', {
+  const response = await fetch('https://accounts.spotify.com/api/token', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',

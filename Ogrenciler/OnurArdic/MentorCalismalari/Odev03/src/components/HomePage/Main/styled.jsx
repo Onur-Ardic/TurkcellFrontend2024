@@ -5,7 +5,6 @@ export const MainWrapper = styled.main`
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
   @media (max-width: 768px) {
     padding: 0.5rem;
     margin: 0.5rem;
