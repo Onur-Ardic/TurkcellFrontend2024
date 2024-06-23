@@ -1,14 +1,16 @@
 import { useEffect } from "react";
 
+import { collection, getDocs } from "firebase/firestore/lite";
+import { db } from "./firebase";
+import { setTodos } from "./redux/slices/todoSlice";
+
+import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
+import { useDispatch } from "react-redux";
+
 import Form from "./components/Form";
 import Header from "./components/Header";
 import ToDoList from "./components/ToDoList";
-import { useTranslation } from "react-i18next";
-import { collection, getDocs } from "firebase/firestore/lite";
-import { db } from "./firebase";
-import { useLocation } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { setTodos } from "./redux/slices/todoSlice";
 
 function App() {
   const location = useLocation();

@@ -46,3 +46,5 @@
 - GYGY - https://medium.com/@baris.erkus/turkcell-gen%C3%A7lere-yat%C4%B1r%C4%B1m-gelece%C4%9Fe-yaz%C4%B1l%C4%B1m-front-end-bootcamp-hikayem-28e56a49b3b8
 - Evolution - https://medium.com/@baris.erkus/yaz%C4%B1l%C4%B1m-alan%C4%B1nda-kendini-geli%C5%9Ftirmek-i%CC%87steyenlerin-bilmesi-gerekenler-fdf77d0e4ae1
 - Six Hat - https://medium.com/@baris.erkus/alt%C4%B1-%C5%9Fapkal%C4%B1-d%C3%BC%C5%9F%C3%BCnme-tekni%C4%9Fi-47e20382ed87
+- Package Managers - https://medium.com/@baris.erkus/npm-pnpm-yarn-bun-bunlar-ne-anlama-geli%CC%87yor-farklari-neler-c479bc478397
+- How to publish a package manager - https://medium.com/@baris.erkus/nas%C4%B1l-npm-paketi-yay%C4%B1nlan%C4%B1r-03d9373203f3
