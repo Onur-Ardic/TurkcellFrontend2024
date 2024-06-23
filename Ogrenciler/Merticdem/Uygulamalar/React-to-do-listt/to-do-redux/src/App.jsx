@@ -1,6 +1,6 @@
 import "./App.css";
 import { useSelector, useDispatch } from "react-redux";
-import { addTodo, deleteTodo } from "./redux/slices/todoSlice";
+import { addTodo, deleteTodo, updateTodo } from "./redux/slices/todoSlice";
 function App() {
   const todos = useSelector((state) => state.todo.todos);
   const dispatch = useDispatch();
@@ -10,6 +10,17 @@ function App() {
   };
   const handleAddTodo = (todo) => {
     dispatch(addTodo(todo));
+  };
+  const handleEdit = (id, title) => {
+    const newTitle = prompt("Enter new title", title);
+    if (newTitle) {
+      dispatch(
+        updateTodo({
+          id,
+          title: newTitle,
+        })
+      );
+    }
   };
   return (
     <>
@@ -29,6 +40,9 @@ function App() {
           <li key={todo.id}>
             {todo.title} - {todo.id}
             <button onClick={() => handleDelete(todo.id)}>Delete</button>
+            <button onClick={() => handleEdit(todo.id, todo.title)}>
+              Edit
+            </button>
           </li>
         ))}
       </ul>
