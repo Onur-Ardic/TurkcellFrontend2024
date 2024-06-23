@@ -2,13 +2,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { addTodo, updateFormTodo, updateTodo } from "../redux/slices/todoSlice";
 import { useEffect, useState } from "react";
 import { StyledForm, Input, FormButton } from "../../styled";
+import { addTodoFirebase, updateTodoFirebase } from "../service/firebase";
 
 const Form = () => {
   const dispatch = useDispatch();
   const Todo = useSelector((state) => state.todo.inputValue);
-  const handleAddTodo = (todo) => {
+  const { user } = useSelector((state) => state.auth);
+  const handleAddTodo = async (todo) => {
     dispatch(addTodo(todo));
     dispatch(updateFormTodo({}));
+    await addTodoFirebase(user, todo);
   };
 
   const [updateValue, setUpdateValue] = useState("");
@@ -17,7 +20,7 @@ const Form = () => {
     setUpdateValue(Todo.title || "");
   }, [Todo]);
 
-  const handleUpdateValue = () => {
+  const handleUpdateValue = async () => {
     dispatch(
       updateTodo({
         id: Todo.id,
@@ -25,6 +28,7 @@ const Form = () => {
       })
     );
     dispatch(updateFormTodo({}));
+    await updateTodoFirebase(user);
   };
 
   return (

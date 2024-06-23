@@ -1,27 +1,32 @@
+import Router from "./route/Router";
 import "./App.css";
-import { useSelector } from "react-redux";
-import List from "./components/List";
-import Form from "./components/Form";
-import { Container, H1, StyledUl } from "../styled";
+import { getUserData } from "./service/firebase";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { addTodo } from "./redux/slices/todoSlice";
 function App() {
-  const todos = useSelector((state) => state.todo.todos);
+  const { user } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
+  const fetchUserData = async () => {
+    console.log("çalıştı");
+    if (user) {
+      const data = await getUserData(user);
+      console.log(data);
+      dispatch(addTodo(data.todos));
+    }
+  };
+  useEffect(() => {
+    fetchUserData();
+  }, [user]);
   return (
     <>
       <div className="ripple-background">
-        <div className="circle xxlarge shade1"></div>
+        {/* <div className="circle xxlarge shade1"></div>
         <div className="circle xlarge shade2"></div>
         <div className="circle large shade3"></div>
         <div className="circle medium shade4"></div>
-        <div className="circle small shade5"></div>
-        <Container>
-          <H1>Redux Todo</H1>
-          <Form />
-          <StyledUl>
-            {todos.map((todo) => (
-              <List key={todo.id} todo={todo} />
-            ))}
-          </StyledUl>
-        </Container>
+        <div className="circle small shade5"></div> */}
+        <Router />
       </div>
     </>
   );

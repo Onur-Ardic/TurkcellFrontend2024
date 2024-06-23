@@ -2,10 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   inputValue: {},
-  todos: [
-    { id: 1, title: "Todo 1" },
-    { id: 2, title: "Todo 2" },
-  ],
+  todos: [],
 };
 
 export const todoSlice = createSlice({
@@ -13,7 +10,11 @@ export const todoSlice = createSlice({
   initialState,
   reducers: {
     addTodo: (state, action) => {
-      state.todos = [...state.todos, action.payload];
+      if (Array.isArray(action.payload)) {
+        state.todos = [...action.payload];
+      } else {
+        state.todos = [...state.todos, action.payload];
+      }
     },
     deleteTodo: (state, action) => {
       state.todos = state.todos.filter((todo) => todo.id !== action.payload);

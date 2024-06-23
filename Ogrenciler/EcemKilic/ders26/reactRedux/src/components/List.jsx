@@ -1,14 +1,16 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { deleteTodo, updateFormTodo } from "../redux/slices/todoSlice";
 import { StyledLi, TodoButton, ButtonDiv } from "../../styled";
+import { deleteTodoFirebase } from "../service/firebase";
 const List = ({ todo }) => {
   const dispatch = useDispatch();
-
-  const handleDelete = (id) => {
-    dispatch(deleteTodo(id));
+  const { user } = useSelector((state) => state.auth);
+  const handleDelete = async (todo) => {
+    dispatch(deleteTodo(todo.id));
+    await deleteTodoFirebase(user, todo);
   };
 
-  const handleUpdate = (todo) => {
+  const handleUpdate = async (todo) => {
     dispatch(updateFormTodo(todo));
   };
 
@@ -16,7 +18,7 @@ const List = ({ todo }) => {
     <StyledLi key={todo.id}>
       <p>{todo.title}</p>
       <ButtonDiv>
-        <TodoButton onClick={() => handleDelete(todo.id)}>Delete</TodoButton>
+        <TodoButton onClick={() => handleDelete(todo)}>Delete</TodoButton>
         <TodoButton onClick={() => handleUpdate(todo)}>Update</TodoButton>
       </ButtonDiv>
     </StyledLi>
