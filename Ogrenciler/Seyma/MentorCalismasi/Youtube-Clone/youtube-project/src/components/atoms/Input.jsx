@@ -1,4 +1,5 @@
-export const Input = ({ id, onChange, value, type }) => {
+export const Input = ({ id, onChange, value, type, onFocus }) => {
+
   return (
     <>
     <input
@@ -6,6 +7,8 @@ export const Input = ({ id, onChange, value, type }) => {
       type={type}
       onChange={onChange}
       value={value}
+      onFocus={onFocus}
+
     />
      </>
   );

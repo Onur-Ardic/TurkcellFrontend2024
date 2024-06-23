@@ -1,41 +1,38 @@
+import { useState, useEffect } from "react";
 import { useTheme } from "../../context/ThemeContext";
 import SearchBar from "../molecules/SearchBar";
-import { NavbarContainer, DivLogo, ImgLogo, NavbarLeft, ToogleDiv, ToggleMenu, NavbarMiddle, NavbarRight, StyledButton, MaterialIcons } from "./styled";
+import { NavbarContainer, DivLogo, ImgLogo, NavbarLeft, NavbarMiddle, NavbarRight, MaterialIcons, HomeIcons } from "./styled";
+import Button from "../atoms/Buttons";
 
-const Navbar = () => {
-  const { setTheme } = useTheme();
+const Navbar = ({ onToggleSideBar }) => {
+  const { theme, setTheme } = useTheme();
+  const [logoSrc, setLogoSrc] = useState("./assets/1.png");
+
+  useEffect(() => {
+    setLogoSrc(theme === 'dark' ? 'src/assets/2.png' : 'src/assets/1.png');
+  }, [theme]);
+
   return (
-    <>
-      <NavbarContainer>
-        <NavbarLeft>
-          <ToogleDiv><ToggleMenu src="https://img.icons8.com/ios/50/menu--v7.png" alt="menu--v7" /> </ToogleDiv>
-          <DivLogo>
-            <ImgLogo src="./src/assets/1.png" alt="" />
-          </DivLogo>
-        </NavbarLeft>
-        <NavbarMiddle>
-          <SearchBar></SearchBar>
-        </NavbarMiddle>
-        <NavbarRight>
-
-          <StyledButton onClick={() => setTheme(theme => theme === 'dark' ? 'light' : 'dark')}>Dark Mode</StyledButton>
-
-          <StyledButton ><MaterialIcons className="material-icons-outlined">video_call
-          </MaterialIcons> </StyledButton>
-
-          <StyledButton><MaterialIcons className="material-symbols-outlined">
-            notifications
-          </MaterialIcons></StyledButton>
-
-          <StyledButton><MaterialIcons className="material-symbols-outlined">
-            circle
-          </MaterialIcons>
-          </StyledButton>
-
-        </NavbarRight>
-      </NavbarContainer>
-    </>
-  )
+    <NavbarContainer>
+      <NavbarLeft>
+        <Button onClick={onToggleSideBar}>
+          <HomeIcons className="material-symbols-outlined">menu</HomeIcons>
+        </Button>
+        <DivLogo>
+          <ImgLogo src={logoSrc} alt="Logo" />
+        </DivLogo>
+      </NavbarLeft>
+      <NavbarMiddle>
+        <SearchBar />
+      </NavbarMiddle>
+      <NavbarRight>
+        <Button onClick={() => setTheme(theme => theme === 'dark' ? 'light' : 'dark')}>Dark Mode</Button>
+        <Button><MaterialIcons className="material-icons-outlined">video_call</MaterialIcons></Button>
+        <Button><MaterialIcons className="material-symbols-outlined">notifications</MaterialIcons></Button>
+        <Button><MaterialIcons className="material-symbols-outlined">circle</MaterialIcons></Button>
+      </NavbarRight>
+    </NavbarContainer>
+  );
 }
 
-export default Navbar
+export default Navbar;

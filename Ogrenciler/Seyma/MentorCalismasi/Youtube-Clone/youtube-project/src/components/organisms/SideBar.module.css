@@ -1,0 +1,51 @@
+.NavLink{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    padding-left: 20px;
+    font-weight: 300;
+    font-size: 0.9rem;
+};
+
+.SideUl{
+    padding-bottom: 10px;
+}
+.SideLi{
+    list-style-type: none;
+    align-items: center;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    color: var(--primary-text-color);
+    &:hover {
+      background-color: var(--foreground-color);
+}}
+
+.SideTop{
+    border-bottom: 1px solid rgb(180, 175, 175);
+    padding: 0 15px 10px 0;
+}
+.icon{
+    font-weight: 200;
+    font-size: 28px;
+}
+
+.SideSubTitle{
+    padding-left: 20px;
+    overflow: hidden;
+    font-size: 0.9rem;
+    scrollbar-gutter: none;
+}
+.SideTitle{
+    display: flex;
+    align-items: center;
+    padding:1rem 1rem 0.5rem 0.5rem;
+}
+.iconSpecial{
+    font-weight: 100;
+    font-size: 16px;
+}
+
+h4{
+    font-weight: 400;
+}

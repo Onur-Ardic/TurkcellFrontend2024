@@ -11,8 +11,8 @@
     --sometext-color: #262626;
     --primary-text-color: #0a0a0a;
     --secondary-text-color: #ffffff;
-    --toggle-bg: #f0eb9d;
-    --toggle-fg: #000000;
+    --toggle-bg: #cdcaca;
+    --toggle-fg: #817e7e;
   }
   
   [data-theme="dark"] {
@@ -21,7 +21,7 @@
     --sometext-color: #ffffff;
     --primary-text-color: #ffffff;
     --secondary-text-color: #ababab;
-    --toggle-bg: #283452;
+    --toggle-bg: #99999b;
     --toggle-fg: #ffffff;
   }
 

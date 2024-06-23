@@ -6,18 +6,6 @@ export const Middle = styled.div`
   align-items: center;
 `;
 
-export const StyledButton = styled.button`
-   border: none;
-  padding: 5px;
-  border-radius: 50%;
-  background-color: var(--background-color);
-  color: var(--primary-text-color);
-  &:hover {
-    background-color: var(--foreground-color);
-    color: var(--secondary-text-color);
-  }
-`;
-
 export const SearchBox = styled.div`
   padding: 10px;
   border: 1px solid var(--foreground-color);
@@ -42,17 +30,20 @@ export const StyledInput = styled.input`
 export const MaterialIcons = styled.span`
   color: var(--primary-text-color);
   font-weight: 100;
-
+  padding: 0 10px 0 10px;
 `;
 export const SearchButton = styled.button`
-   border: none;
+  border: none;
+  border: 1px solid #f2f2f2;
   padding: 5px;
-  border-radius: 50%;
-  background-color: var(--background-color);
+  border-radius: 0 40px 40px 0;
+  background-color: var(--foreground-color);
   color: var(--primary-text-color);
+  &:hover {
+    background-color: var(--foreground-color);
+    color: var(--secondary-text-color);
+  }
+`;
 
-`;
-export const LabelInput = styled.label`
-  color: var(--sometext-color);
-`;
+
 
