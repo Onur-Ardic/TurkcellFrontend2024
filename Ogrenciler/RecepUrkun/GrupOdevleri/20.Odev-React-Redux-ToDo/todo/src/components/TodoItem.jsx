@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { deleteTodo } from "../redux/slices/todoSlice";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const ListItem = styled.li`
   display: flex;
@@ -31,6 +32,7 @@ const Button = styled.button`
 
 const TodoItem = ({ todo, handleEdit }) => {
   const dispatch = useDispatch();
+  const { t } = useTranslation();
 
   const handleDelete = () => {
     dispatch(deleteTodo(todo.id));
@@ -42,8 +44,8 @@ const TodoItem = ({ todo, handleEdit }) => {
         {todo.title} - <i>{todo.id.slice(0, 4)}</i>
       </span>
       <div>
-        <Button onClick={handleDelete}>Sil</Button>
-        <Button onClick={() => handleEdit(todo)}>Güncelle</Button>
+        <Button onClick={handleDelete}>{t("delete")}</Button>
+        <Button onClick={() => handleEdit(todo)}>{t("update")}</Button>
       </div>
     </ListItem>
   );

@@ -37,10 +37,12 @@ const Navbar = () => {
               </NavLink>
             </Li>
             <Li>
-              <Link>
-                <Icon className="bi bi-search" />
-                Ara
-              </Link>
+              <NavLink to="/search">
+                <Link>
+                  <Icon className="bi bi-search" />
+                  Ara
+                </Link>
+              </NavLink>
             </Li>
           </Ul>
         </NavbarTop>

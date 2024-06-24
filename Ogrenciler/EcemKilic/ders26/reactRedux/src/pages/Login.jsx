@@ -2,10 +2,19 @@ import { useEffect, useState } from "react";
 import { signIn } from "../service/firebase";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { Form, FormButton, FormInput, FormQuestion, FormSingUp, FormTitle } from "../../styled";
-import toast from 'react-hot-toast';
+import {
+  Form,
+  FormButton,
+  FormInput,
+  FormQuestion,
+  FormSingUp,
+  FormTitle,
+} from "../../styled";
+import toast from "react-hot-toast";
 import { setUserMail } from "../redux/slices/authSlice";
+import { useTranslation } from "react-i18next";
 const Login = () => {
+  const { t } = useTranslation();
   const { user } = useSelector((state) => state.auth);
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -29,19 +38,24 @@ const Login = () => {
   }, [user]);
   return (
     <Form onSubmit={handleSubmit}>
-      <FormTitle>LOGIN</FormTitle>
+      <FormTitle>{t("login")}</FormTitle>
       <FormInput
         type="text"
-        placeholder="email"
+        placeholder={t("email")}
         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
       />
       <FormInput
         type="password"
-        placeholder="password"
+        placeholder={t("password")}
         onChange={(e) => setFormData({ ...formData, password: e.target.value })}
       />
-      <FormButton>Submit</FormButton>
-      <FormQuestion>Hesabınız yok mu ? <Link to={"/signup"}><FormSingUp>Sign-Up</FormSingUp></Link></FormQuestion>
+      <FormButton>{t("login")}</FormButton>
+      <FormQuestion>
+        {t("noAccount")}
+        <Link to={"/signup"}>
+          <FormSingUp>{t("signup")}</FormSingUp>
+        </Link>
+      </FormQuestion>
     </Form>
   );
 };

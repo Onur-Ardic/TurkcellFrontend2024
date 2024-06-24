@@ -1,9 +1,10 @@
-import React from 'react'
+import {ShortStyle} from "../Styledviews"
+
 
 const Shorts = () => {
   return (
-    <div>Shorts</div>
-  )
+    <ShortStyle>Shorts</ShortStyle>
+  ) 
 }
 
 export default Shorts

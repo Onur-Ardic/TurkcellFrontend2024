@@ -1,4 +1,5 @@
 import React from "react";
+import { Button, Icon, Input, RelativeButton } from "../style";
 
 function TodoForm({ onAddTodo }) {
   return (
@@ -10,8 +11,10 @@ function TodoForm({ onAddTodo }) {
         e.target.reset();
       }}
     >
-      <input type="text" name="todo" required />
-      <button type="submit">Add Todo</button>
+      <RelativeButton>
+        <Input type="text" name="todo" required />
+        <Button type="submit"><Icon className="fi fi-rr-add"></Icon></Button>
+      </RelativeButton>
     </form>
   );
 }

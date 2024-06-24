@@ -20,6 +20,7 @@ const MusicAlbums = () => {
     <UserAlbumsWrap>
       {tracks?.slice(0, 4).map((track) => (
         <Albums
+          width={'max-content'}
           display={'flex'}
           gap={'1rem'}
           alignItems={'center'}

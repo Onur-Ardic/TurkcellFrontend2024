@@ -157,7 +157,7 @@ function App() {
           e.target.todo.value = ""; 
         }}
       >
-        <Input type="text" name="todo" placeholder="Enter new todo" />
+        <Input type="text" name="todo" placeholder="Todo ekleyiniz" />
         <Button type="submit">Add</Button>
       </Form>
       <TodoList>

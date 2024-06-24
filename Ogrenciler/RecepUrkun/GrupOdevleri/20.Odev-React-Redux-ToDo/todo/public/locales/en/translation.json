@@ -1,0 +1,14 @@
+{
+  "welcome": "Welcome JSON",
+  "todos": "Todos",
+  "home": "Home",
+  "login": "Login",
+  "register": "Register",
+  "changeTheme": "Change Theme",
+  "email": "Email",
+  "password": "Password",
+  "passwordAgain": "Password Again",
+  "delete": "Delete",
+  "update": "Update",
+  "add": "Add"
+}

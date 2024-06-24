@@ -1,10 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  todos: [
-    { id: 1, title: "Todo 1" },
-    { id: 2, title: "Todo 2" },
-  ],
+  todos: [],
 };
 
 export const todoSlice = createSlice({

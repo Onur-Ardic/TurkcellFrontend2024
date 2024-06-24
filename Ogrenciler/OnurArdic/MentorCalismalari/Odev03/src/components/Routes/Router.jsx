@@ -1,6 +1,7 @@
 import { useRoutes } from 'react-router-dom'
 import Home from '../HomePage/Home'
 import AlbumDetail from '../AlbumDetailPage/AlbumDetail'
+import Search from '../SearchPage/Search'
 
 const Router = () => {
   const routes = useRoutes([
@@ -15,6 +16,10 @@ const Router = () => {
     {
       path: '*',
       element: <Home />,
+    },
+    {
+      path: '/search',
+      element: <Search />,
     },
   ])
 
