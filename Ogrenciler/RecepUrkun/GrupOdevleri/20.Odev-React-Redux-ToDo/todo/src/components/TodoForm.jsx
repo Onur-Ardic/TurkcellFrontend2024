@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo, updateTodo } from "../redux/slices/todoSlice";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const Form = styled.form`
   display: flex;
@@ -33,6 +34,7 @@ const Button = styled.button`
 const TodoForm = ({ editingTodo, setEditingTodo }) => {
   const [todoTitle, setTodoTitle] = useState("");
   const dispatch = useDispatch();
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (editingTodo) {
@@ -65,7 +67,7 @@ const TodoForm = ({ editingTodo, setEditingTodo }) => {
         value={todoTitle}
         onChange={(e) => setTodoTitle(e.target.value)}
       />
-      <Button type="submit">{editingTodo ? "Güncelle" : "Ekle"}</Button>
+      <Button type="submit">{editingTodo ? t("update") : t("add")}</Button>
     </Form>
   );
 };

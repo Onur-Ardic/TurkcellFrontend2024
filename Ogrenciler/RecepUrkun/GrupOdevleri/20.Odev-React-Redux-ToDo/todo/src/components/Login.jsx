@@ -3,6 +3,7 @@ import { auth } from "../firebaseConfig";
 import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const LoginContainer = styled.div`
   display: flex;
@@ -39,6 +40,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -54,21 +56,21 @@ const Login = () => {
 
   return (
     <LoginContainer>
-      <h1>Giriş Yap</h1>
+      <h1>{t("login")}</h1>
       <Form onSubmit={handleLogin}>
         <Input
           type="email"
-          placeholder="Email"
+          placeholder={t("email")}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <Input
           type="password"
-          placeholder="Şifre"
+          placeholder={t("password")}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button type="submit">Giriş Yap</Button>
+        <Button type="submit">{t("login")}</Button>
       </Form>
     </LoginContainer>
   );

@@ -8,6 +8,7 @@ import Register from "./components/Register";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const ThemeContainer = styled.div`
   padding: 30px 0;
@@ -16,6 +17,7 @@ const ThemeContainer = styled.div`
 const App = () => {
   const { tema } = useSelector((temas) => temas.theme);
   const [editingTodo, setEditingTodo] = useState(null);
+  const { t } = useTranslation();
 
   const handleEdit = (todo) => {
     setEditingTodo(todo);
@@ -32,8 +34,11 @@ const App = () => {
             path="/todos"
             element={
               <ThemeContainer>
-                <h1>Yapılacaklar Listesi</h1>
-                <TodoForm editingTodo={editingTodo} setEditingTodo={setEditingTodo} />
+                <h1>{t("todos")}</h1>
+                <TodoForm
+                  editingTodo={editingTodo}
+                  setEditingTodo={setEditingTodo}
+                />
                 <TodoList handleEdit={handleEdit} />
               </ThemeContainer>
             }
