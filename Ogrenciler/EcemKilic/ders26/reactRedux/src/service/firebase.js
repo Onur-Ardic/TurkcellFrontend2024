@@ -19,6 +19,7 @@ import {
 import store from "../redux/store";
 import { loginRedux, logoutRedux } from "../redux/slices/authSlice";
 import toast from "react-hot-toast";
+import i18next from "../i18n";
 const firebaseConfig = {
   apiKey: "AIzaSyCqLkt4Zq4T0OvDjMjWE_bjdhTQIqIMPV0",
   authDomain: "todo-redux-a1109.firebaseapp.com",
@@ -56,7 +57,7 @@ export const signIn = async (email, password) => {
 export const signOutFirebase = () => {
   signOut(auth)
     .then(() => {
-      toast.success("Correct");
+      toast.success(i18next.t("logoutSuccess"));
     })
     .catch((error) => {
       toast.error(error.message);
@@ -72,8 +73,13 @@ onAuthStateChanged(auth, (user) => {
 });
 
 export const addUser = async (data) => {
-  const userRef = collection(db, "users");
-  const result = await setDoc(doc(userRef, data.uid), data);
+  try {
+    const userRef = collection(db, "users");
+    const result = await setDoc(doc(userRef, data.uid), data);
+    return result;
+  } catch (error) {
+    toast.error(error.message);
+  }
 };
 
 export const getDocRef = (id) => {
@@ -88,30 +94,42 @@ export const getUserData = async (id) => {
     const data = docSnap.data();
     return data;
   } else {
-    toast.error("No such users!");
+    toast.error(i18next.t("noSuchUser"));
   }
 };
 export const addTodoFirebase = async (id, todoObj) => {
-  const docRef = getDocRef(id);
-  await updateDoc(docRef, {
-    todos: arrayUnion(todoObj),
-  });
-  toast.success("Added")
+  try {
+    const docRef = getDocRef(id);
+    await updateDoc(docRef, {
+      todos: arrayUnion(todoObj),
+    });
+    toast.success(i18next.t("successfullyAdded"));
+  } catch (error) {
+    toast.error(error.message);
+  }
 };
 
 export const deleteTodoFirebase = async (id, todoObj) => {
-  const docRef = getDocRef(id);
-  await updateDoc(docRef, {
-    todos: arrayRemove(todoObj),
-  });
-  toast.success("Deleted")
+  try {
+    const docRef = getDocRef(id);
+    await updateDoc(docRef, {
+      todos: arrayRemove(todoObj),
+    });
+    toast.success(i18next.t("successfullyDeleted"));
+  } catch (error) {
+    toast.error(error.message);
+  }
 };
 
 export const updateTodoFirebase = async (id) => {
-  const { todos } = store.getState().todo;
-  const docRef = getDocRef(id);
-  await updateDoc(docRef, {
-    todos: todos,
-  });
-  toast.success("Updated")
+  try {
+    const { todos } = store.getState().todo;
+    const docRef = getDocRef(id);
+    await updateDoc(docRef, {
+      todos: todos,
+    });
+    toast.success(i18next.t("successfullyUpdated"));
+  } catch (error) {
+    toast.error(error.message);
+  }
 };

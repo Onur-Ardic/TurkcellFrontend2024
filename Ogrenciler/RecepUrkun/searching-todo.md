@@ -24,12 +24,12 @@
 - [ ]  formik
 - [ ]  yup
 - [ ]  Zustand (nasıl çalışıyor?)
-- [ ]  Ten stack query - https://tanstack.com/query/latest/docs/framework/react/guides/queries
+- [ ]  Ten stack query - [Doc](https://tanstack.com/query/latest/docs/framework/react/guides/queries)
 ---
 - [ ]  React HOC - Higher order component
 - [ ]  Module federation 
 - [ ]  Webpack
-- [ ]  Nx framework[nx framework (build tool)]
+- [ ]  Nx framework[nx framework (build tool)] :white_check_mark:
 ---
 - [ ]  React Code Optimization
 - [ ]  Explicit Binding
@@ -45,5 +45,5 @@
 - [ ]  DevTools
 ---
 > spotify(belgeseli var) trendyol tech araştır
-> nx framework (nx (build tool) angular tabanından gelmiş . Popülerleşmeye başlıyor.)
+> nx framework (nx (build tool) angular tabanından gelmiş . Popülerleşmeye başlıyor.) :white_check_mark:
 > firebase ile redux toolkit nasıl kullanırız

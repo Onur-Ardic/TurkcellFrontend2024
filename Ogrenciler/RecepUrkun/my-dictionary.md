@@ -6,7 +6,7 @@
   Next.js, React tabanlı bir framework olup, sunucu tarafında render etme (SSR) ve statik site üretme (SSG) gibi özellikler sunarak performansı ve SEO'yu artıran, modern web uygulamaları geliştirmeyi kolaylaştıran bir yapıdır. Next.js, kullanıcıların hem sunucu hem de istemci tarafında JavaScript ile çalışmasına olanak tanır, böylece esnek ve yüksek performanslı uygulamalar oluşturmayı sağlar.
  </details>
 
- # Framework Nedir?
+# Framework Nedir?
 *Bir framework, yazılım geliştirme sürecini kolaylaştıran, hızlandıran ve düzenleyen bir yapı veya araçlar topluluğudur. Frameworkler, belirli bir uygulama veya sistem türünü oluşturmak için gereken temel bileşenleri, kütüphaneleri, araçları ve en iyi uygulamaları içerir. Yazılım geliştirme süreçlerinde tekrar eden görevleri ve işlemleri otomatikleştirir, böylece geliştiricilerin daha hızlı ve verimli çalışmasına olanak tanır.*
 
 #### Framework'lerin Temel Özellikleri
@@ -85,3 +85,23 @@
   - İçeriği sık sık değişen sayfalar için uygundur.
 ---  
 
+# NX Framework
+NX, kendisini akıllı, hızlı ve genişletilebilir sistemler olarak tanımlıyor ve bunu yaparken de bize monorepo desteği sağlıyor. Peki, monorepo nedir? Monorepo, tek bir depo altında birden fazla uygulama ve kütüphane geliştirebildiğimiz bir workspace olarak düşünülebilir. Bu yapı, büyük ve karmaşık projelerin yönetimini kolaylaştırır.
+
+#### Monorepo Avantajları
+Monorepo yapısı, özellikle büyük frontend projelerinde oldukça faydalıdır. Örneğin, birden fazla uygulamanız olduğunu düşünün ve bu uygulamalar ortak bir kod parçasını veya kendi yazdığınız bir UI kütüphanesini paylaşıyor. Bu kod parçalarını tek tek import etmek yerine, NX'in sağladığı monorepo yapısını kullanarak, tüm projeleri tek bir depo altında toplayabilirsiniz. Böylece, kod paylaşımı, bağımlılık yönetimi ve projelerin entegrasyonu çok daha kolay hale gelir.
+
+**Örnek Senaryo**
+Bir proje düşünün, bu projede iki uygulamanız ve iki kütüphaneniz var:
+- Uygulamalar:
+  - Admin
+  - Store
+- Kütüphaneler:
+  - Auth
+  - UI
+
+Bu yapı içerisinde, Admin ve Store uygulamaları, Auth ve UI kütüphanelerini kullanabilir. NX ile bu projeleri yönetmek oldukça basittir. NX'in bize sağladığı kolaylıklarından biri de içerisinde bulunan toollarıdır. Projemizde hangi kütüphanenin nerede kullanıldığını görebilmemiz için komut satırına `nx graph` yazmamiz yeterli oluyor.
+
+<img src="https://i.ibb.co/b5TjdxC/nxframework.png" width="300" height="300">
+  
+[Kaynak](https://www.youtube.com/watch?v=AuYyF-pYo3c)

@@ -12,6 +12,7 @@ export const CardContainer = styled.div`
     border: 1px solid #ddd;
     border-radius: 1rem;
     padding: 1rem 2rem;
+    background-color: white;
 `
 
 export const Input = styled.input`
@@ -27,7 +28,7 @@ export const Input = styled.input`
 `
 export const Button = styled.button`
     position: absolute;
-    left: 72%;
+    left: 70%;
     top: 2px;
     border: none;
     background-color: #fff;
@@ -54,5 +55,31 @@ export const UL = styled.ul`
 
 export const List = styled.li`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 90%;
+    border-bottom: 1px solid #ddd;
+    padding: .5rem;
+    &:last-child{
+        border:none;
+
+    }
+`
+
+export const UpdateButton = styled(Button)`
+    position: static;
+`
+export const UpdateInput = styled(Input)`
+    width: max-content;
+`
+
+export const ModalContent = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+`
+
+export const IconButtons = styled.div`
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
 `

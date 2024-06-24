@@ -1,0 +1,18 @@
+{
+  "title": "Yapılacaklar Listesi",
+  "logout": "Çıkış Yap",
+  "addTodo": "Görev Ekle",
+  "update": "Güncelle",
+  "add": "Ekle",
+  "delete": "Sil",
+  "login": "Giriş Yap",
+  "signup": "Kaydol",
+  "email": "E-posta",
+  "password": "Şifre",
+  "noAccount": "Hesabınız yok mu?",
+  "logoutSuccess": "Başarıyla çıkış yapıldı!",
+  "noSuchUser": "Böyle bir kullanıcı yok!",
+  "successfullyAdded": "Başarıyla eklendi",
+  "successfullyDeleted": "Başarıyla silindi",
+  "successfullyUpdated": "Başarıyla güncellendi"
+}

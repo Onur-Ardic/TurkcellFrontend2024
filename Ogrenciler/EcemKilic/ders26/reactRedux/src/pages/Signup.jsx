@@ -3,9 +3,11 @@ import { addUser, register } from "../service/firebase";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Form, FormButton, FormInput, FormTitle } from "../../styled";
+import { useTranslation } from "react-i18next";
 
 const Signup = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const { user } = useSelector((state) => state.auth);
   const [formData, setFormData] = useState({
     email: "",
@@ -14,7 +16,6 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const result = await register(formData.email, formData.password);
-
     await addUser({
       uid: result.uid,
       todos: [],
@@ -27,18 +28,18 @@ const Signup = () => {
   }, [user]);
   return (
     <Form onSubmit={handleSubmit}>
-      <FormTitle>SIGN-UP</FormTitle>
+      <FormTitle>{t("signup")}</FormTitle>
       <FormInput
         type="text"
-        placeholder="email"
+        placeholder={t("email")}
         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
       />
       <FormInput
         type="password"
-        placeholder="password"
+        placeholder={t("password")}
         onChange={(e) => setFormData({ ...formData, password: e.target.value })}
       />
-      <FormButton>Submit</FormButton>
+      <FormButton>{t("signup")}</FormButton>
     </Form>
   );
 };

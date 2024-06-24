@@ -1,0 +1,18 @@
+{
+  "title": "To-Do List",
+  "logout": "Logout",
+  "addTodo": "Add Todo",
+  "update": "Update",
+  "add": "Add",
+  "delete": "Delete",
+  "login": "Login",
+  "signup": "Sign Up",
+  "email": "Email",
+  "password": "Password",
+  "noAccount": "Don't have an account?",
+  "logoutSuccess": "Successfully logged out!",
+  "noSuchUser": "No such user!",
+  "successfullyAdded": "Successfully added",
+  "successfullyDeleted": "Successfully deleted",
+  "successfullyUpdated": "Successfully updated"
+}
