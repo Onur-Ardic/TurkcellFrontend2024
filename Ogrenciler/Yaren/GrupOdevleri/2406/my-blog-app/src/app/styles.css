@@ -4,7 +4,7 @@ body {
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #921100;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -35,7 +35,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 0.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid #313030;
   box-sizing: border-box;
   transition: transform 0.3s ease;
 }
@@ -52,7 +52,7 @@ body {
 
 .list-group-item a {
   text-decoration: none;
-  color: blue;
+  color: rgb(32, 32, 40);
   margin-top: 0.5rem;
 }
 

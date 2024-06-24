@@ -9,7 +9,7 @@ export default function Layout({ children }) {
       <body>
         <nav className="navbar">
           <a className="navbar-brand" href="/">
-            My Blog
+            Next Homework
           </a>
           <div>
             <a href="/">Home</a>
