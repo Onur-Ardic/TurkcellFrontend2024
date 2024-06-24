@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { deleteTodo, updateTodo } from '../Redux/Slices/todoSlice'
+import { BeautifulButton, BeautifulInput } from './Styled'
 
 const TodoListItem = () => {
   const todos = useSelector((state) => state.todo.todos)
@@ -30,28 +31,31 @@ const TodoListItem = () => {
           <li className="flex justify-between item-center mt-5" key={todo.id}>
             {editId === todo.id ? (
               <div className="flex gap-2">
-                <input
+                <BeautifulInput
                   type="text"
                   value={updatedTodo}
                   onChange={(e) => setUpdatedTodo(e.target.value)}
                 />
-                <button className="p-2 bg-white" onClick={() => handleUpdate(todo.id)}>
+                <BeautifulButton className="p-2 bg-white" onClick={() => handleUpdate(todo.id)}>
                   Update
-                </button>
+                </BeautifulButton>
               </div>
             ) : (
               <>
                 <h2 className="text-xl">{todo.title}</h2>
                 <div className="flex gap-5">
-                  <button
+                  <BeautifulButton
                     className="p-2 bg-white rounded-sm hover:bg-gray-200"
                     onClick={() => handleDelete(todo.id)}
                   >
                     Delete
-                  </button>
-                  <button className="p-2 bg-white" onClick={() => handleEdit(todo.id, todo.title)}>
+                  </BeautifulButton>
+                  <BeautifulButton
+                    className="p-2 bg-white"
+                    onClick={() => handleEdit(todo.id, todo.title)}
+                  >
                     Edit
-                  </button>
+                  </BeautifulButton>
                 </div>
               </>
             )}

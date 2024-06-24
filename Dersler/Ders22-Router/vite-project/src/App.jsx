@@ -1,6 +1,6 @@
-import "./App.css";
-import Router from "./routes/Router";
-import { NavLink } from "react-router-dom";
+import './App.css'
+import Router from './routes/Router'
+import { NavLink } from 'react-router-dom'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         </li>
         <li>
           <NavLink to="/user">User</NavLink>
-        </li>""
+        </li>
         <li>
           <NavLink to="/parametre/123">Parametre</NavLink>
         </li>
@@ -27,7 +27,7 @@ function App() {
       </ul>
       <Router />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

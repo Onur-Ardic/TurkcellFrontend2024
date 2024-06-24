@@ -6,6 +6,8 @@ import TodoListItem from './components/TodoListItem'
 import Navbar from './components/Navbar'
 import LoginArea from './components/Login'
 import { useSelector } from 'react-redux'
+import { Route, Routes } from 'react-router-dom'
+import Home from './components/Home'
 
 function App() {
   const { user } = useSelector((state) => state.auth)
@@ -13,17 +15,17 @@ function App() {
   return (
     <>
       <Navbar />
-      <Sign />
-      <LoginArea />
       {user ? (
         <div className="container mx-auto">
-          <Form />
-          <TodoListItem />
+          <Home />
         </div>
       ) : (
         <h3 className="mx-auto bg-blue-500 text-center text-white p-3">Lütfen giriş yapın</h3>
       )}
-
+      <Routes>
+        <Route path="/login" element={<LoginArea />} />
+        <Route path="/sign" element={<Sign />} />
+      </Routes>
       <Toaster />
     </>
   )
