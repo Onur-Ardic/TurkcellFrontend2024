@@ -43,3 +43,16 @@ https://reactrouter.com/en/main/route/lazy      react router lazy route işlemi
 Varol Hoca mail varol.maksutoglu@atmosware.tukcell.com.tr
 
 flax mimarisi, big-o notasyonu
+
+
+tasarım(template) örnekleri için 
+- https://www.uxcrush.com/figma-login-templates/
+- https://www.uidesigndaily.com/
+- codepen
+- dribble
+
+next eğitim kaynakları
+- https://www.udemy.com/course/the-ultimate-react-course/
+- https://www.youtube.com/@pekcanmehmet
+- https://www.udemy.com/course/nextjs-react-the-complete-guide/
+
