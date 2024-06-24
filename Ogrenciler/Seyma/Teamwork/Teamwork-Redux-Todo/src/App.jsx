@@ -2,7 +2,8 @@ import "./App.css";
 import { useSelector, useDispatch } from 'react-redux';
 import { addTodo, deleteTodo, setTodo, updateTodo } from "./redux/slices/todoSlice";
 import { useEffect, useState } from "react";
-import { DeleteButton, UpdateButton, TodoLi, TodoUl } from './styled'
+import { DeleteButton, UpdateButton, TodoLi, TodoUl } from './styled';
+import { Auth } from './components/auth';
 
 
 function App() {
@@ -36,7 +37,9 @@ function App() {
 
   return (
     <>
-      <h1>Redux Todo</h1>
+    <div className="app">
+      <Auth />
+    <h1>Redux Todo</h1>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -57,6 +60,8 @@ function App() {
           </TodoLi>
         ))}
       </TodoUl>
+    </div>
+     
     </>
   );
 }
