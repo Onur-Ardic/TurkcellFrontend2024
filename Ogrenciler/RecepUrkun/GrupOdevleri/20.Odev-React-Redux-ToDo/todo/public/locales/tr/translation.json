@@ -1,0 +1,14 @@
+{
+  "welcome": "Hoşgeldin JSON",
+  "todos": "Yapılacaklar listesi",
+  "home": "Ana Sayfa",
+  "login": "Giriş Yap",
+  "register": "Kayıt Ol",
+  "changeTheme": "Temayı Değiştir",
+  "email": "Email",
+  "password": "Şifre",
+  "passwordAgain": "Şifre Tekrar",
+  "delete": "Sil",
+  "update": "Güncelle",
+  "add": "Ekle"
+}

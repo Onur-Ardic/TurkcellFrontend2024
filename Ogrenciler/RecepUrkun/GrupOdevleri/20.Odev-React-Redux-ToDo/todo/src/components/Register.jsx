@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { auth } from "../firebaseConfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const RegisterContainer = styled.div`
   display: flex;
@@ -36,10 +37,11 @@ const Button = styled.button`
 `;
 
 const Register = () => {
-  const [email, setEmail] = useState(""); 
-  const [password, setPassword] = useState(""); 
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -59,27 +61,27 @@ const Register = () => {
 
   return (
     <RegisterContainer>
-      <h1>Kayıt Ol</h1>
+      <h1>{t("register")}</h1>
       <Form onSubmit={handleRegister}>
         <Input
           type="email"
-          placeholder="Email"
+          placeholder={t("email")}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <Input
           type="password"
-          placeholder="Şifre"
+          placeholder={t("password")}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
         <Input
           type="password"
-          placeholder="Şifre Tekrar"
+          placeholder={t("passwordAgain")}
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
         />
-        <Button type="submit">Kayıt Ol</Button>
+        <Button type="submit">{t("register")}</Button>
       </Form>
     </RegisterContainer>
   );
