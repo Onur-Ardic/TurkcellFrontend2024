@@ -13,10 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Link href="/">Anasayfa</Link>
-        <Link href="/About">About</Link>
-        <Link href="/blog">Blog</Link>
-        {children}
+     - Genel Layout -
+     <Link href="/">Home</Link>
+     <Link href="/about">About</Link>
+     <Link href="/blog/6546">Blog</Link>
+      {children}
       </body>
     </html>
   );
