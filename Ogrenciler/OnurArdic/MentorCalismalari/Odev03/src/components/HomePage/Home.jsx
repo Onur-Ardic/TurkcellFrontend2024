@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <>
-      {currentInfo && (
+      {!currentInfo && (
         <PlayerButton
           onClick={toggleSidebar}
           style={{ position: 'fixed', top: '10px', right: '10px', zIndex: 1000 }}

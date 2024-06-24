@@ -1,5 +1,4 @@
-import { useState, useEffect, useContext, useRef } from 'react'
-import { AlbumsContent, Flexible } from '../Main/styled'
+import { useState, useEffect, useContext } from 'react'
 import { CustomImage, Icon } from '../Navbar/styled'
 import toast from 'react-hot-toast'
 import {
@@ -11,19 +10,20 @@ import {
   VolumeControl,
 } from './styled'
 import { MainContext } from '../../../Context/Context'
+import { AlbumsContent, Flexible } from '../Main/styled'
 
 const PlayerWrap = () => {
   const [player, setPlayer] = useState(null)
   const [isPaused, setIsPaused] = useState(true)
   const [deviceId, setDeviceId] = useState(null)
-  const [progress, setProgress] = useState(0)
+
   const [volume, setVolume] = useState(50)
-  const progressIntervalRef = useRef(null)
-  const { currentTrackInfo, setCurrentTrackInfo } = useContext(MainContext)
+
+  const { currentTrackInfo } = useContext(MainContext)
 
   useEffect(() => {
     const token =
-      'BQA7Q3NgccHYyGZwExjCYF9bGICQ6B1T8uJQeBvJPlJ4CsY1zvj2svNeu4l63yP6prYrcZsdWTAzr1MBXx2HrsP8l25u4uIIuarNGvcwdNfKaR3tynBn5_fiOe0jaJcF9y_5qlzVNMoUE36HBOASzLdoXOT5KdFDxwW6gwwQPZHjD1I3N0vwQJPTEIUt-2h0jni86zbKI_c'
+      'BQARcI-__FGK5wd71P1UU7tfpWvEICbunoAUJnRIgZaMHhYNAYyKhEVToktqvfxA26Rc8abniCKDb2Lvn-Wu3E_TiY-j8zKpipyz_YuOcab6tvm1xbrBAjMelal-_MBwYFrWDd1yYJ05bq7M8o3KOBnMjxm3WDhCaSpZ0kr4TOekjdj77nBJsYLvqwBT5B5WTTB9DO9pIWE'
 
     window.onSpotifyWebPlaybackSDKReady = () => {
       const playerInstance = new window.Spotify.Player({
@@ -46,37 +46,13 @@ const PlayerWrap = () => {
         if (!state) return
 
         setIsPaused(state.paused)
-
-        if (state.track_window.current_track) {
-          setCurrentTrackInfo({
-            name: state.track_window.current_track.name,
-            artists: state.track_window.current_track.artists
-              .map((artist) => artist.name)
-              .join(', '),
-            album: state.track_window.current_track.album,
-            uri: state.track_window.current_track.uri,
-            duration_ms: state.track_window.current_track.duration_ms,
-          })
-        }
-
-        setProgress(state.position)
-        clearInterval(progressIntervalRef.current)
-        progressIntervalRef.current = setInterval(() => {
-          setProgress((prevProgress) => {
-            if (prevProgress + 1000 >= state.track_window.current_track.duration_ms) {
-              clearInterval(progressIntervalRef.current)
-              return state.track_window.current_track.duration_ms
-            }
-            return prevProgress + 1000
-          })
-        }, 1000)
       })
 
       playerInstance.connect().then((success) => {
         if (success) {
-          toast.success('The Web Playback SDK successfully connected to Spotify!')
+          toast.success('Spotify ile başarıyla bağlantı kuruldu!')
         } else {
-          toast.error('The Web Playback SDK could not connect to Spotify.')
+          toast.error('Spotify ile bağlantı kurulamadı.')
         }
       })
 
@@ -92,7 +68,7 @@ const PlayerWrap = () => {
 
   const playTrack = (device_id, track_uri) => {
     const token =
-      'BQA7Q3NgccHYyGZwExjCYF9bGICQ6B1T8uJQeBvJPlJ4CsY1zvj2svNeu4l63yP6prYrcZsdWTAzr1MBXx2HrsP8l25u4uIIuarNGvcwdNfKaR3tynBn5_fiOe0jaJcF9y_5qlzVNMoUE36HBOASzLdoXOT5KdFDxwW6gwwQPZHjD1I3N0vwQJPTEIUt-2h0jni86zbKI_c'
+      'BQARcI-__FGK5wd71P1UU7tfpWvEICbunoAUJnRIgZaMHhYNAYyKhEVToktqvfxA26Rc8abniCKDb2Lvn-Wu3E_TiY-j8zKpipyz_YuOcab6tvm1xbrBAjMelal-_MBwYFrWDd1yYJ05bq7M8o3KOBnMjxm3WDhCaSpZ0kr4TOekjdj77nBJsYLvqwBT5B5WTTB9DO9pIWE'
 
     fetch(`https://api.spotify.com/v1/me/player/play?device_id=${device_id}`, {
       method: 'PUT',
@@ -103,9 +79,9 @@ const PlayerWrap = () => {
       },
     }).then((response) => {
       if (response.ok) {
-        toast.success('Track playing')
+        toast.success('Şarkı oynatılıyor')
       } else {
-        toast.error('Failed to play track:', response.statusText)
+        toast.error('Şarkı oynatılamadı:', response.statusText)
       }
     })
   }
@@ -131,25 +107,6 @@ const PlayerWrap = () => {
     if (player) {
       player.setVolume(newVolume).then(() => {})
     }
-  }
-
-  const handleSeek = (e) => {
-    if (!player || !currentTrackInfo) return
-    const newPosition =
-      (e.nativeEvent.offsetX / e.currentTarget.offsetWidth) * currentTrackInfo?.duration_ms
-    player.seek(newPosition).then(() => {
-      setProgress(newPosition)
-      clearInterval(progressIntervalRef.current)
-      progressIntervalRef.current = setInterval(() => {
-        setProgress((prevProgress) => {
-          if (prevProgress + 1000 >= currentTrackInfo?.duration_ms) {
-            clearInterval(progressIntervalRef.current)
-            return currentTrackInfo?.duration_ms
-          }
-          return prevProgress + 1000
-        })
-      }, 1000)
-    })
   }
 
   const formatTime = (timeInSeconds) => {
@@ -196,11 +153,8 @@ const PlayerWrap = () => {
         </Flexible>
         <div className="wrap">
           <Flexible display={'flex'} gap={'15px'} alignItems={'center'}>
-            <span>{formatTime(progress / 1000)}</span>
-            <MusicLine
-              progress={(progress / currentTrackInfo?.duration_ms) * 100}
-              onClick={handleSeek}
-            />
+            <span></span>
+            <MusicLine />
             <span>{formatTime(currentTrackInfo?.duration_ms / 1000)}</span>
           </Flexible>
         </div>
