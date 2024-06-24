@@ -12,6 +12,7 @@ export const H1 = style.h1`
     font-size:50px;
     text-align:center;
     margin-top:2rem;
+    color:white;
 `;
 
 export const StyledForm = style.form`
@@ -132,7 +133,7 @@ export const FormQuestion = style.p`
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:4px 10px;
+    padding:5px;
     color:#fff;
     border:1px solid #fff;
     margin:10px 0;
@@ -149,4 +150,21 @@ export const UserHeader = style.div`
     align-items:center;
     width:100%;
     color:#fff;
+`;
+export const StyledLngButtonsDiv = style.div`
+    position:absolute;
+    right: 1rem;
+    top:1rem;
+`;
+
+export const StyledLngButton = style.button`
+    background-color:#FFEEA9;
+    border:none;
+    padding:0.5rem;
+    font-size:12px;
+    cursor:pointer;
+    &.active{
+        background-color:#f03d4e;
+        color:white;
+    }
 `;
