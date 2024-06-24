@@ -1,9 +1,10 @@
 import React from "react";
 
-const aboutLayout = ({children}) => {
+const aboutLayout = ({ children }) => {
   return (
     <div>
       <h2>- About Layout Bölümü -</h2>
+      {children}
     </div>
   );
 };
