@@ -1,17 +1,20 @@
-import "./App.css";
+
 import { useSelector, useDispatch } from 'react-redux';
-import { addTodo, deleteTodo, setTodo, updateTodo } from "./redux/slices/todoSlice";
-import { useEffect, useState } from "react";
-import { DeleteButton, UpdateButton, TodoLi, TodoUl } from './styled';
-import { Auth } from './components/auth';
+import { auth } from "../config/firebase";
+import { signOut } from "firebase/auth";
+import { addTodo, deleteTodo, setTodo, updateTodo } from "../redux/slices/todoSlice";
+import { useState, useEffect } from "react";
+import { DeleteButton, UpdateButton, TodoLi, TodoUl } from '../styled';
 
-
-function App() {
+const UserPage = () => {
   const todos = useSelector((state) => state.todo.todos);
   const dispatch = useDispatch();
   const todo = useSelector((state) => state.todo.todo);
   const [inputValue, setInputValue] = useState("");
 
+  const handleLogout = () => {
+    signOut(auth);
+  };
 
   const handleDelete = (id) => {
     dispatch(deleteTodo(id));
@@ -36,10 +39,9 @@ function App() {
   }, [todo])
 
   return (
-    <>
-    <div className="app">
-      <Auth />
-    <h1>Redux Todo</h1>
+    <div>
+      <button onClick={handleLogout}>Logout</button>
+      <h1>Redux Todo</h1>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -61,9 +63,7 @@ function App() {
         ))}
       </TodoUl>
     </div>
-     
-    </>
   );
-}
+};
 
-export default App;
+export default UserPage;
