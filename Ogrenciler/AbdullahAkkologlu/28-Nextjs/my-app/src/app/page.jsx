@@ -7,7 +7,7 @@ const Blogs = async () => {
   return (
     <div className="container">
       <div className="row">
-        {data.map((blog) => (
+        {data.slice(9, 21).map((blog) => (
           <div key={blog.id} className={`col-lg-4 ${classes.card}`}>
             <BlogCard blog={blog} />
           </div>

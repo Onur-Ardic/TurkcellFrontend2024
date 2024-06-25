@@ -1,0 +1,22 @@
+.cardTitle {
+  background-color: white;
+  width: 70%;
+  padding: 0.8rem 0.8rem 0.8rem 0rem;
+  font-size: 28px;
+}
+
+.cardContent {
+  transform: translateY(-50px);
+}
+
+.cardDate {
+  font-size: 16px;
+  color: #716f6f;
+  border-top: 1px solid #f04b63;
+  display: inline;
+  padding-top: 5px;
+}
+.cardDescription {
+  padding-top: 20px;
+  text-align: justify;
+}
