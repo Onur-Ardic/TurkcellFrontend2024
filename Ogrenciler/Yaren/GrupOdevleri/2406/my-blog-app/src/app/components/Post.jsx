@@ -12,7 +12,7 @@ const Post = ({ id }) => {
       const getPost = async () => {
         const postData = await fetchPostById(id);
         const photosData = await fetchPhotos();
-        const photoUrl = photosData[id % photosData.length].download_url;
+        const photoUrl = photosData[(id-1) % photosData.length].download_url;
         setPost(postData);
         setPhoto(photoUrl);
       };
@@ -21,7 +21,11 @@ const Post = ({ id }) => {
   }, [id]);
 
   if (!post) {
-    return <div>Loading...</div>;
+    return (
+      <div className="loading-container">
+           <img src="/loading.gif" alt="Loading..." className="loading-image" />
+      </div>
+    );
   }
 
   return (

@@ -1,5 +1,6 @@
 import "./styles.css";
 
+
 export default function Layout({ children }) {
   return (
     <html lang="en">
@@ -17,7 +18,6 @@ export default function Layout({ children }) {
           </div>
         </nav>
         <main className="container">{children}</main>
-       
       </body>
     </html>
   );

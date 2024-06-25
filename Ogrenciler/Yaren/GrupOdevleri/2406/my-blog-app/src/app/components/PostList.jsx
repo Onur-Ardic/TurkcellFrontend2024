@@ -16,22 +16,42 @@ const PostList = () => {
     };
     getPostsAndPhotos();
   }, []);
+ 
+  if (posts=="") {
+    return (
+      <div className="loading-container">
+           <img src="/loading.gif" alt="Loading..." className="loading-image" />
+      </div>
+    );    
+  }
 
   return (
     <div>
       <h1 className="title">Blog Posts</h1>
-      <ul className="list-group">
+      <div className="list-group">
         {posts.map((post, index) => (
-          <li key={post.id} className="list-group-item">
-            <img
+            <div className="card" key={post.id}>
+              <a href={`/blog/${post.id}`} rel="noopener noreferrer"> 
+            <img className="card-img"
               src={photos[index % photos.length].download_url}
               alt={post.title}
             />
-            <a href={`/blog/${post.id}`} target="_blank" rel="noopener noreferrer">{post.title}</a>
-          </li>
+            <div class="card-content">
+                <h2 class="card-title">{post.title}</h2>
+                <p class="card-description">{post.body}</p>
+            </div>
+            
+            
+           </a> </div>
+
+      //     <div className="img-desc" style={{ backgroundImage: `url(${photos[index % photos.length].download_url})`}} alt={post.title}
+      // >{post.title}</div>
+          
         ))}
-      </ul>
+      </div>
     </div>
+
+    
   );
 };
 

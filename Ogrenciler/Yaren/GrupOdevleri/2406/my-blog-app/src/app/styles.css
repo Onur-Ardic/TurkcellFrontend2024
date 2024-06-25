@@ -1,24 +1,22 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #c9d2c6;
 }
 
 .navbar {
-  background-color: #921100;
+  background-color: #374f54;
   padding: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
- 
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
-  margin-right: 4rem; 
+  margin-right: 4rem;
   font-size: 1.5rem;
-
 }
 
 .container {
@@ -27,11 +25,19 @@ body {
 
 .list-group {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.2rem;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+@media (max-width: 666px) {
+  .list-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .list-group-item {
@@ -42,7 +48,7 @@ body {
   border: 1px solid #313030;
   box-sizing: border-box;
   transition: transform 0.3s ease;
-  margin:1.15rem;
+  margin: 1.15rem;
 }
 
 .list-group-item:hover {
@@ -63,6 +69,7 @@ body {
 
 .title {
   margin-bottom: 1rem;
+  color: #374f54;
 }
 
 .post-container {
@@ -71,21 +78,65 @@ body {
 
 .post-photo {
   width: 100%;
-  height: 50vh; 
+  height: 50vh;
   object-fit: cover;
 }
 
 .post-title {
   font-size: 2rem;
   margin-top: 3rem;
-  margin-left:2rem;
-  
+  margin-left: 2rem;
 }
 
 .post-body {
-  font-size: 1.25rem; 
+  font-size: 1.25rem;
   margin-top: 1rem;
-  margin-left:2rem;
-  
+  margin-left: 2rem;
 }
 
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  background-color: #84a98d;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+  color: white;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0 0 8px 0;
+}
+
+.card-description {
+  font-size: 1em;
+  color: whitesmoke;
+}
