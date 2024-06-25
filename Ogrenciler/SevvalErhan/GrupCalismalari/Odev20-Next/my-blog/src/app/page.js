@@ -1,7 +1,7 @@
 'use client';
 import styles from "./page.module.css";
 import { useEffect, useState } from "react";
-import Request from "../api/request";
+import {Request} from "../api/request";
 import Card from "../components/Card";
 
 export default function Home() {
@@ -25,9 +25,8 @@ export default function Home() {
   }, [posts]);
 
   return (
-    <main className={styles.main}>
-      <h1>Blog</h1>
-      <div className={styles.grid}>
+    <main className="container">
+      <div className="row">
         {posts.map((post) => (
           <Card key={post.id} post={post} />
         ))}
