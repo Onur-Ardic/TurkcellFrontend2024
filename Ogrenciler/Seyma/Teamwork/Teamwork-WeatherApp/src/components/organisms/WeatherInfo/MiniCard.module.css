@@ -32,6 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 
 .iconImage {
@@ -46,4 +47,10 @@
 .description {
   text-align: center;
   color: rgb(255, 255, 255);
+}
+@media screen and (max-width:600px){
+  .miniCardContainer{
+    background: rgba(44, 44, 241, 0.272);
+
+  }
 }

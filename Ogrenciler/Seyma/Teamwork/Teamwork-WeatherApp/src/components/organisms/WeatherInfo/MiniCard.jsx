@@ -18,7 +18,7 @@ const MiniCard = ({ time, temp, icon, description }) => {
   return (
     <div className={`${styles.miniCard} ${styles.miniCardContainer}`}>
       <p className={styles.textCenter}>{day}</p>
-      <hr />
+     
       <div className={styles.iconContainer}>
         <img
           src={currentIcon}

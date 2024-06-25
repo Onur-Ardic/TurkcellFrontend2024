@@ -9,7 +9,7 @@ function App() {
   const [input, setInput] = useState("");
   const [weather, setWeather] = useState({});
   const [values, setValues] = useState([]);
-  const [place, setPlace] = useState("Ankara");
+  const [place, setPlace] = useState("ANKARA");
   const [thisLocation, setLocation] = useState("");
 
   const parseDate = (dateString) => {
@@ -29,8 +29,8 @@ function App() {
         icon: entry.icon,
         min: entry.min,
         max: entry.max,
+        status: entry.status
       }));
-
       const location = data.city;
 
       setWeather(currentWeather);
@@ -42,11 +42,12 @@ function App() {
     }
   };
 
-  useEffect(() => {
-    fetchWeather();
-  }, [place]);
-
-  const handleInputChange = (e) => setInput(e.target.value);
+  const handleInputChange = (e) => {
+    let sanitizedInput = e.target.value.toUpperCase().replace(/[^A-Z]/g, "");
+    if (sanitizedInput.length <= 30) {
+      setInput(sanitizedInput);
+    }
+  };
 
   const handleKeyUp = (e) => {
     if (e.key === "Enter") {
@@ -59,8 +60,13 @@ function App() {
     setInput("");
   };
 
+  useEffect(() => {
+    fetchWeather();
+  }, [place]);
+
   return (
-    <section className={styles.background}>
+    <div className={styles.background}>
+      <div className={styles.overlay}>
       <div className={styles.navContainer}>
         <nav className={styles.navBar}>
           <h1 className={styles.title}>Weather App</h1>
@@ -72,7 +78,6 @@ function App() {
           />
         </nav>
       </div>
-
       <div className={styles.mainContent}>
         <WeatherCard
           place={thisLocation}
@@ -97,7 +102,8 @@ function App() {
           ))}
         </div>
       </div>
-    </section>
+      </div>
+    </div>
   );
 }
 

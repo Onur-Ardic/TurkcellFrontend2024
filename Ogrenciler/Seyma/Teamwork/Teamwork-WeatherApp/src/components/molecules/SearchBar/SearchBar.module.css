@@ -1,13 +1,13 @@
 .searchBarContainer {
-  background-color: white;
   padding: 8px;
   border-radius: 8px;
   display: flex;
   align-items: center;
-  width: 300px;
+  width: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.218);
 }
 i {
-  color: #212121;
+  color: #ffffff;
 }
 .searchBarInput {
   border: none;
@@ -15,5 +15,9 @@ i {
   font-size: 16px;
   width: 100%;
   margin-left: 8px;
-  color: #212121;
+  background-color: #21212100;
 }
+@media screen and (max-width: 600px) {
+  .searchBarContainer{ 
+  width: 150px;
+  } }

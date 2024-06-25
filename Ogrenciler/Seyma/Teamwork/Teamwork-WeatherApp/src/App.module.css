@@ -1,8 +1,19 @@
 .background {
-  background-image: url(https://r.resimlink.com/5MFLfzDngEw.png);
-  background-repeat: no-repeat;
+  background: url("assets/background.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
   min-height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(119, 107, 107, 0.286); 
 }
 .navContainer {
   padding: 16px;
@@ -22,10 +33,11 @@
   border-radius: 10px;
   border: 1px solid rgba(225, 225, 225, 0.18);
 }
-
+.navBar input::placeholder{
+  color: white;
+}
 .title {
   font-size: 24px;
-  font-weight: bold;
   margin-right: auto;
   color: white;
 }
@@ -37,6 +49,7 @@
   gap: 2rem;
   margin: 3rem auto;
   color: white;
+  height: auto;
 }
 
 .miniCards {
@@ -45,11 +58,39 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  width: 70%;
 }
 
 .weatherCard {
   margin-bottom: 16px;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .background {
+    background: url("assets/n.png");
+    background-repeat: repeat;
+    height: 200vh;
+    position: relative;
+    z-index: 0;
+  }
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .miniCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .navBar{
+    background: rgba(44, 44, 241, 0.272);
+
+  }
 }

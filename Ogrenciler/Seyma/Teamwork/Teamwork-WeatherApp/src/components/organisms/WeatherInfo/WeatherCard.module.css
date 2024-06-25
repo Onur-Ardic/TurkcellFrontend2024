@@ -22,12 +22,10 @@
 
 .temperature {
   font-size: 2rem;
-  font-weight: normal;
 }
 
 .location {
   font-size: 1.25rem;
-  font-weight: normal;
   text-align: center;
 }
 
@@ -35,7 +33,6 @@
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  font-weight: normal;
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
 }
@@ -52,7 +49,6 @@
   justify-content: space-between;
   margin-top: 1rem;
   gap: 1rem;
-  font-weight: normal;
   font-size: 1.5rem;
   color: rgb(255, 255, 255);
 }
@@ -62,27 +58,36 @@
   flex: 1;
   text-align: center;
   padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
 }
 
 .night span,
 .humidity span {
-  font-weight: semibold;
   color: rgb(255, 255, 255);
 }
+.night i,
+.humidity i {
+  margin-right: 5px;
+}
+
 .minMax {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
   font-size: 1.25rem;
   gap: 1rem;
-  font-weight: normal;
   color: rgb(255, 255, 255);
+  margin-bottom: 10px;
 }
-
+.min i,
+.max i{
+  margin-right: 5px;
+}
 .description {
   text-align: center;
   font-size: 1.5rem;
-  font-weight: normal;
   padding: 1rem 0;
 }
 
@@ -94,3 +99,8 @@
   font-size: 1.5rem;
   color: #fdd020;
 }
+@media screen and (max-width: 600px) {
+  .weatherCard {
+    background: rgba(44, 44, 241, 0.272);
+  }
+  }

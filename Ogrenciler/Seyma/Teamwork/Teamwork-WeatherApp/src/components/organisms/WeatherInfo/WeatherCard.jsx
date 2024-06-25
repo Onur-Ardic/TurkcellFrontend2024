@@ -22,19 +22,21 @@ const WeatherCard = ({
         <p className={styles.date}>{new Date().toDateString()}</p>
       </div>
       <div className={styles.nightHumidity}>
-        <p className={styles.night}>
+        <div className={styles.night}>
           <i className="far fa-moon"></i>
-          Night <span>{night}&deg;C </span>
-        </p>
+          <p>Night</p> 
+          <span>{night} &deg;C</span>
+        </div>
         <p className={styles.humidity}>
           <i className="fa-brands fa-drupal"></i>
-          Humidity <span>{humidity} %</span>
+          <p>Humidity</p>
+          <span>{humidity} %</span>
         </p>
       </div>
       <div className={styles.minMax}>
         <p className={styles.min}>
-          <i className="fas fa-minus"></i>
-          Min <span>{min}&deg;C </span>
+          <i className="fas fa-minus"></i> 
+          Min <span>{min} &deg;C </span>
         </p>
         <p className={styles.max}>
           <i className="fas fa-plus"></i>
