@@ -1,0 +1,38 @@
+.card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.cardImage {
+  flex-shrink: 0;
+  position: relative;
+  height: 96px;
+  width: 96px;
+}
+
+.card img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cardBody {
+  margin-left: 16px;
+}
+
+.cardBody p {
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.cardBody h3 {
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.hr {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

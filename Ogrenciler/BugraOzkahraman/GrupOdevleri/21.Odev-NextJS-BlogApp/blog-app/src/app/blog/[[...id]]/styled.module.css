@@ -1,0 +1,47 @@
+.blogContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cardImage {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.cardImage img {
+  object-fit: cover;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+.blogTitle {
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.blogBody {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.notFound {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.notFoundContainer {
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
