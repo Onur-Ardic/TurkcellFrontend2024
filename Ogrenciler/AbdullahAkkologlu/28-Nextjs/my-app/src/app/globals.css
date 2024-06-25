@@ -87,26 +87,13 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-<<<<<<< Updated upstream
   background: white;
-=======
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
->>>>>>> Stashed changes
 }
 
 a {
   color: inherit;
-<<<<<<< Updated upstream
   text-decoration: none !important;
   color: black !important;
-=======
-  text-decoration: none;
->>>>>>> Stashed changes
 }
 
 @media (prefers-color-scheme: dark) {

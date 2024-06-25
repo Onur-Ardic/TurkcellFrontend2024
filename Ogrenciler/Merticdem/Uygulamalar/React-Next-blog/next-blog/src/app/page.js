@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 "use client";
 import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
@@ -37,11 +36,3 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
-=======
-import styles from "./page.module.css";
-
-export default function Home() {
-  return <main className={styles.main}>
-  </main>;
-}
->>>>>>> Stashed changes

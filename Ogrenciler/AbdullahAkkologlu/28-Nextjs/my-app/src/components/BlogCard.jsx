@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 import Image from "next/image";
 import Link from "next/link";
 import Classes from "./blogCard.module.css";
@@ -35,15 +34,6 @@ const BlogCard = ({ blog }) => {
         </p>
         <p className={Classes.cardDescription}>{blog.body}</p>
       </div>
-=======
-import Link from "next/link";
-
-const BlogCard = ({ blog }) => {
-  return (
-    <Link href={`blog/${blog.id}`}>
-      <h3> {blog.title}</h3>
-      <p>{blog.body}</p>
->>>>>>> Stashed changes
     </Link>
   );
 };

@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 import { getBlog } from "@/service/api";
 import Image from "next/image";
 import Classes from "../../../components/blogCard.module.css";
@@ -24,23 +23,6 @@ const Blog = async ({ params }) => {
         <h2 className={Classes.cardTitle}> {data.title}</h2>
         <p className={Classes.cardDescription}>{data.body}</p>
       </div>
-=======
-const Blog = async ({ params }) => {
-  async function getData() {
-    const res = await fetch(
-      `https://jsonplaceholder.typicode.com/posts/${params.id}`
-    );
-    if (!res.ok) {
-      throw new Error("Failed to fetch data");
-    }
-    return res.json();
-  }
-  const data = await getData();
-  return (
-    <div>
-      <h3>{data.title}</h3>
-      <p>{data.body}</p>
->>>>>>> Stashed changes
     </div>
   );
 };

@@ -17,10 +17,7 @@ export default function Layout({ children }) {
           </div>
         </nav>
         <main className="container">{children}</main>
-<<<<<<< Updated upstream
        
-=======
->>>>>>> Stashed changes
       </body>
     </html>
   );
