@@ -17,6 +17,7 @@ export default function Layout({ children }) {
           </div>
         </nav>
         <main className="container">{children}</main>
+       
       </body>
     </html>
   );

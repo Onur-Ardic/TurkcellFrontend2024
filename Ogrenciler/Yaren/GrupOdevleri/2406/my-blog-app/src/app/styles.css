@@ -5,16 +5,20 @@ body {
 
 .navbar {
   background-color: #921100;
-  padding: 1rem;
+  padding: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+ 
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
-  margin-right: 1rem;
+  margin-right: 4rem; 
+  font-size: 1.5rem;
+
 }
 
 .container {
@@ -34,14 +38,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 0.2rem;
   border: 1px solid #313030;
   box-sizing: border-box;
   transition: transform 0.3s ease;
+  margin:1.15rem;
 }
 
 .list-group-item:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 .list-group-item img {
@@ -59,3 +64,28 @@ body {
 .title {
   margin-bottom: 1rem;
 }
+
+.post-container {
+  padding: 1rem;
+}
+
+.post-photo {
+  width: 100%;
+  height: 50vh; 
+  object-fit: cover;
+}
+
+.post-title {
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-left:2rem;
+  
+}
+
+.post-body {
+  font-size: 1.25rem; 
+  margin-top: 1rem;
+  margin-left:2rem;
+  
+}
+
