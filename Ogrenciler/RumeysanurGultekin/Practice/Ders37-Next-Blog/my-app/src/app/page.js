@@ -1,5 +1,6 @@
 'use client';
 
+import Link from "next/link";
 import BlogCard from "./components/BlogCard";
 import styles from "./page.module.css";
 import { useEffect, useState } from "react";
@@ -42,9 +43,13 @@ export default function Home() {
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
       {!loading && !error && (
-        <div >
+        <div className={styles.mainContent}>
           {data.map(post => (
-           <a href="/blog/`{post.id}`"> <BlogCard key={post.id} post={post} /></a>
+           <div className={styles.CardContent} key={post.id}>
+           <Link className={styles.CardLink} href={`/blog/${post.id}`}>
+             <BlogCard post={post} />
+           </Link>
+         </div>
           ))}
         </div>
       )}
