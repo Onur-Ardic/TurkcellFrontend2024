@@ -1,17 +1,17 @@
 import "./styles.css";
 
-
 export default function Layout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>My Blog</title>
+        <title>RAY Blog</title>
       </head>
       <body>
         <nav className="navbar">
           <a className="navbar-brand" href="/">
-            Next Homework
+            RAY Blog
           </a>
+          <img src="/logo.png" alt="Logo" className="navbar-logo" />
           <div>
             <a href="/">Home</a>
             <a href="/blog">Blog</a>
