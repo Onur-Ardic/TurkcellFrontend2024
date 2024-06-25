@@ -1,16 +1,15 @@
+import { getBlog } from "@/service/api";
+import Image from "next/image";
+
 const Blog = async ({ params }) => {
-  async function getData() {
-    const res = await fetch(
-      `https://jsonplaceholder.typicode.com/posts/${params.id}`
-    );
-    if (!res.ok) {
-      throw new Error("Failed to fetch data");
-    }
-    return res.json();
-  }
-  const data = await getData();
+  const data = await getBlog(params.id);
   return (
     <div>
+      <Image
+        src={`https://picsum.photos/id/${data.id}/200/300`}
+        width={200}
+        height={300}
+      />
       <h3>{data.title}</h3>
       <p>{data.body}</p>
     </div>

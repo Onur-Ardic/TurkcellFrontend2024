@@ -1,16 +1,8 @@
 import BlogCard from "@/components/BlogCard";
-import React from "react";
-
-async function getData() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-  return res.json();
-}
+import { getBlogs } from "@/service/api";
 
 const Blogs = async () => {
-  const data = await getData();
+  const data = await getBlogs();
   return (
     <div>
       {data.map((blog) => (
