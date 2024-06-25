@@ -34,4 +34,4 @@
 10-06-2024: Context API
 12-06-2024: Redux
 14-06-2024: Project presentations and have a chat
-24-06-2024: 
+24-06-2024: NextJs
