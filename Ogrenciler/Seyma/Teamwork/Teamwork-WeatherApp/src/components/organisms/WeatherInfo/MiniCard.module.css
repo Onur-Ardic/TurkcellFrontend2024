@@ -50,7 +50,7 @@
 }
 @media screen and (max-width:600px){
   .miniCardContainer{
-    background: rgba(44, 44, 241, 0.272);
-
+    background: rgba(0, 0, 0, 0.371);
+    border: 1px solid rgba(66, 59, 59, 0.18);
   }
 }
