@@ -2,8 +2,6 @@
 
 import styles from "./page.module.css";
 import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { fillPosts } from "./redux/slices/blogSlice";
 
 const url = `https://jsonplaceholder.typicode.com/posts?_limit=20`;
 
@@ -23,14 +21,10 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const dispatch = useDispatch();
-  const posts = useSelector((state) => state.post.posts);
-
   const fetchData = async () => {
     try {
       const data = await get();
       setData(data);
-      dispatch(fillPosts(data));
       setLoading(false);
     } catch (error) {
       setError(error.message);
@@ -41,10 +35,6 @@ export default function Home() {
   useEffect(() => {
     fetchData();
   }, []);
-
-  useEffect(() => {
-    console.log(posts);
-  }, [posts]);
 
   return (
     <main className={styles.main}>
