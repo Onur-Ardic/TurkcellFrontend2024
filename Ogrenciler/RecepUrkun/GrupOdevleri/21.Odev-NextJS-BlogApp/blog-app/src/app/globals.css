@@ -1,0 +1,48 @@
+:root {
+  --white: #fff;
+  --light-gray: rgba(255, 255, 255, 0.42);
+  --gray: #777;
+  --black: #111;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+p {
+  color: var(--gray);
+}
+/* 
+body {
+  background-color: var(--black);
+} */
