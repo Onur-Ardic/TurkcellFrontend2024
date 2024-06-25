@@ -1,0 +1,96 @@
+.weatherCard {
+  width: 22rem;
+  min-width: 22rem;
+  height: 30rem;
+  background: rgba(225, 225, 225, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(225, 225, 225, 0.18);
+  padding: 1rem;
+}
+
+.weatherInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.temperature {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.location {
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.dateTime {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+
+.date,
+.time {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.nightHumidity {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 1rem;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+.night,
+.humidity {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.night span,
+.humidity span {
+  font-weight: semibold;
+  color: rgb(255, 255, 255);
+}
+.minMax {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: 1.25rem;
+  gap: 1rem;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+}
+
+.description {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 1rem 0;
+}
+
+.iconImage {
+  width: 4rem;
+  height: 4rem;
+}
+.weatherCard i {
+  font-size: 1.5rem;
+  color: #fdd020;
+}

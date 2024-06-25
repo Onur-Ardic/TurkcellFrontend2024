@@ -1,4 +1,3 @@
-// src/styled/index.js
 import styled from "styled-components";
 
 export const DeleteButton = styled.button`
