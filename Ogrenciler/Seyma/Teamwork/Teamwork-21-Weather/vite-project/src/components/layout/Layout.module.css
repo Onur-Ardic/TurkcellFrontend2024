@@ -1,9 +1,0 @@
-.backgroundImage {
-    width: 100vw; /* Genişliği tüm görünüm genişliğini kaplayacak şekilde ayarla */
-    height: 100vh; /* Yüksekliği tüm görünüm yüksekliğini kaplayacak şekilde ayarla */
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: -10;
-    object-fit: cover; /* Resmin kırpılmadan tam olarak sığmasını sağlar */
-  }
