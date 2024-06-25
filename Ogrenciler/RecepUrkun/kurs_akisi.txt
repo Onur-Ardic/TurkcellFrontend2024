@@ -26,3 +26,4 @@
 12-06-2024: React Redux Toolkit
 14-06-2024: Homework(Todo App with Redux Toolkit) presentations - Chat with Varol Hoca
 -- 9 Günlük Bayram Tatili --
+25-06-2024: Nextjs'e giriş - Homework: Blog App with NextJs
