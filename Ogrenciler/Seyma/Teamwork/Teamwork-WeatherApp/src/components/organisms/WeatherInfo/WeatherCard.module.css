@@ -22,10 +22,18 @@
 
 .temperature {
   font-size: 2rem;
+<<<<<<< Updated upstream
+=======
+  font-weight: normal;
+>>>>>>> Stashed changes
 }
 
 .location {
   font-size: 1.25rem;
+<<<<<<< Updated upstream
+=======
+  font-weight: normal;
+>>>>>>> Stashed changes
   text-align: center;
 }
 
@@ -33,6 +41,10 @@
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+<<<<<<< Updated upstream
+=======
+  font-weight: normal;
+>>>>>>> Stashed changes
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
 }
@@ -49,6 +61,10 @@
   justify-content: space-between;
   margin-top: 1rem;
   gap: 1rem;
+<<<<<<< Updated upstream
+=======
+  font-weight: normal;
+>>>>>>> Stashed changes
   font-size: 1.5rem;
   color: rgb(255, 255, 255);
 }
@@ -58,13 +74,17 @@
   flex: 1;
   text-align: center;
   padding: 0.5rem;
+<<<<<<< Updated upstream
   display: flex;
   flex-direction: column;
   row-gap: 3px;
+=======
+>>>>>>> Stashed changes
 }
 
 .night span,
 .humidity span {
+<<<<<<< Updated upstream
   color: rgb(255, 255, 255);
 }
 .night i,
@@ -72,12 +92,18 @@
   margin-right: 5px;
 }
 
+=======
+  font-weight: semibold;
+  color: rgb(255, 255, 255);
+}
+>>>>>>> Stashed changes
 .minMax {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
   font-size: 1.25rem;
   gap: 1rem;
+<<<<<<< Updated upstream
   color: rgb(255, 255, 255);
   margin-bottom: 10px;
 }
@@ -88,6 +114,16 @@
 .description {
   text-align: center;
   font-size: 1.5rem;
+=======
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+}
+
+.description {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: normal;
+>>>>>>> Stashed changes
   padding: 1rem 0;
 }
 
@@ -99,8 +135,11 @@
   font-size: 1.5rem;
   color: #fdd020;
 }
+<<<<<<< Updated upstream
 @media screen and (max-width: 600px) {
   .weatherCard {
     background: rgba(0, 0, 0, 0.371);
     border: 1px solid rgba(66, 59, 59, 0.18);  }
   }
+=======
+>>>>>>> Stashed changes

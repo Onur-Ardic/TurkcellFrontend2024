@@ -5,20 +5,31 @@ body {
 
 .navbar {
   background-color: #921100;
+<<<<<<< Updated upstream
   padding: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
  
+=======
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+>>>>>>> Stashed changes
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
+<<<<<<< Updated upstream
   margin-right: 4rem; 
   font-size: 1.5rem;
 
+=======
+  margin-right: 1rem;
+>>>>>>> Stashed changes
 }
 
 .container {
@@ -38,6 +49,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+<<<<<<< Updated upstream
   padding: 0.2rem;
   border: 1px solid #313030;
   box-sizing: border-box;
@@ -47,6 +59,16 @@ body {
 
 .list-group-item:hover {
   transform: scale(1.15);
+=======
+  padding: 0.5rem;
+  border: 1px solid #313030;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.list-group-item:hover {
+  transform: scale(1.2);
+>>>>>>> Stashed changes
 }
 
 .list-group-item img {
@@ -64,6 +86,7 @@ body {
 .title {
   margin-bottom: 1rem;
 }
+<<<<<<< Updated upstream
 
 .post-container {
   padding: 1rem;
@@ -89,3 +112,5 @@ body {
   
 }
 
+=======
+>>>>>>> Stashed changes

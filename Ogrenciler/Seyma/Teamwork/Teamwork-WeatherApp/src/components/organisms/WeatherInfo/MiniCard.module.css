@@ -32,7 +32,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< Updated upstream
   margin: 10px;
+=======
+>>>>>>> Stashed changes
 }
 
 .iconImage {
@@ -48,9 +51,12 @@
   text-align: center;
   color: rgb(255, 255, 255);
 }
+<<<<<<< Updated upstream
 @media screen and (max-width:600px){
   .miniCardContainer{
     background: rgba(0, 0, 0, 0.371);
     border: 1px solid rgba(66, 59, 59, 0.18);
   }
 }
+=======
+>>>>>>> Stashed changes

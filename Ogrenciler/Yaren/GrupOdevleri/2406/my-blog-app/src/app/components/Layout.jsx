@@ -9,7 +9,7 @@ export default function Layout({ children }) {
       <body>
         <nav className="navbar">
           <a className="navbar-brand" href="/">
-            Next Homework
+            My Blog
           </a>
           <div>
             <a href="/">Home</a>
@@ -17,10 +17,6 @@ export default function Layout({ children }) {
           </div>
         </nav>
         <main className="container">{children}</main>
-<<<<<<< Updated upstream
-       
-=======
->>>>>>> Stashed changes
       </body>
     </html>
   );
