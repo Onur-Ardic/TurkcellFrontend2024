@@ -5,6 +5,7 @@ import styled from 'styled-components';
 export const Title = styled.h1`
     font-size: 16px;
     margin: 0 0.5rem;
+    text-transform: capitalize;
 `;
 
 export const BlogImg = styled.img`
@@ -16,7 +17,7 @@ export const TagP = styled.p`
     margin: 0 0.5rem;
 `;
 export const CardBottom = styled.div`
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -26,7 +27,7 @@ export const CardDiv = styled.div`
     display: flex;
     flex-direction: column;
     border: 1px solid white;
-    height: 22rem;
+    height: 24rem;
     border-radius: 10px;
     background-color: rgba(248, 248, 244, 0.331);
 `;

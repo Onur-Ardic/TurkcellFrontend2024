@@ -7,6 +7,7 @@ const BlogCard = ({ post }) => {
   const { id, title, body } = post;
   return (
     <div>
+      <hr className="hr" />
       <Link href={`/blog/${id}`} className={styled.card}>
         <div className={styled.cardImage}>
           <Image
@@ -23,7 +24,6 @@ const BlogCard = ({ post }) => {
           <p>{body}</p>
         </div>
       </Link>
-      <hr className={styled.hr} />
     </div>
   );
 };

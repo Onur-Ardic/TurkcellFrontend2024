@@ -1,5 +1,6 @@
-import Image from 'next/image'
-import Link from 'next/link'
+"use client";
+import Image from "next/image";
+import Link from "next/link";
 
 const BlogCard = ({ data }) => {
   return (
@@ -9,15 +10,17 @@ const BlogCard = ({ data }) => {
           <Image
             src={`https://picsum.photos/id/${data.id}/300`}
             alt="Blog image"
-            layout="fill"
-            objectFit="cover"
+            width={300}
+            height={200}
+            // layout="fill"
+            // objectFit="cover"
           />
         </div>
         <h1 className="mt-4 text-lg font-semibold">{data.title}</h1>
         <p className="text-sm mt-2 line-clamp-2">{data.body}</p>
       </div>
     </Link>
-  )
-}
+  );
+};
 
-export default BlogCard
+export default BlogCard;

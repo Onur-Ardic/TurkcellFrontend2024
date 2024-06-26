@@ -22,26 +22,38 @@
 }
 
 .blogTitle {
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 20px;
-  font-size: 20px;
   margin-bottom: 10px;
 }
 
 .blogBody {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 28px;
 }
 
 .notFound {
   text-align: center;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 64px;
 }
 
 .notFoundContainer {
   display: flex;
+  flex-direction: column;
   height: 70vh;
   justify-content: center;
   align-items: center;
+}
+
+.categoryName {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 7px 20px;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  box-shadow: inset 0 0 0 2000px rgba(34, 14, 92, 0.5);
 }

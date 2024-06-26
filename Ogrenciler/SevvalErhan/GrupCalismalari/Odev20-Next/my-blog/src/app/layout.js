@@ -1,8 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
 import Navbar from "../components/Navbar";
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+// import { ErrorBoundary } from "next/dist/client/components/error-boundary";
+// import Error from "./error";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,9 +16,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="bg-dark">
         <Navbar />
-        {children}
+        {/* <ErrorBoundary fallback={<Error />}> */}
+          {children}
+        {/* </ErrorBoundary> */}
       </body>
     </html>
   );

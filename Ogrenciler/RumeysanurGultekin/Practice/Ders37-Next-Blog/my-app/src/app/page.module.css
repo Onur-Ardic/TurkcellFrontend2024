@@ -1,9 +1,10 @@
 .main {
     min-height: 100vh;
-    max-width: 1240px;
     margin: 0 auto;
 }
 .mainContent{
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -12,11 +13,14 @@
 .CardContent{
   width: 30%;
 }
-/* .CardLink{
-  display: flex;
-  justify-content: center;
-  border: 1px solid white;
-  height:  350px;
-  border-radius: 10px;
-  background-color: rgba(248, 248, 244, 0.331);
-} */
+
+@media screen and (max-width:800px) {
+  .CardContent{
+    width: 45%;
+  }
+}
+@media screen and (max-width:550px) {
+  .CardContent{
+    width: 90%;
+  }
+}
