@@ -1,8 +1,8 @@
-'use client';
+'use client'
 
-import { useEffect, useState } from "react";
+import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import {styled} from 'styled-components';
-import {useRouter} from 'next/navigation';
 
 export const BlogPage = styled.div`
     margin: 0 auto;
@@ -43,7 +43,6 @@ export const Paragraf = styled.p`
 `;
 const BlogItem = ({ params }) => {
   const [post, setPost] = useState(null);
-  const [error, setError] = useState(null);
 
   const readBlog = async () => {
     try {
@@ -54,9 +53,8 @@ const BlogItem = ({ params }) => {
       const data = await response.json();
       setPost(data);
       setError(null);
-    } catch (error) {
+    } catch {
       setPost(null);
-      setError(error.message);
     }
   };
 
@@ -65,10 +63,8 @@ const BlogItem = ({ params }) => {
   }, []);
 
   const router = useRouter();
-
   return (
     <BlogPage>
-      {error && <p>{error}</p>}
       {post ? (
         <BlogPageContent>
           <BlogImg src={`https://picsum.photos/id/${params.id}/500/333`} alt="Blog Image"/>
@@ -79,9 +75,7 @@ const BlogItem = ({ params }) => {
           <button onClick={() => router.back()}>Geri Dön </button>
           </div>
         </BlogPageContent>
-      ) : (
-        !error && <p>Loading...</p>
-      )}
+      ) : null }
     </BlogPage>
   );
 };

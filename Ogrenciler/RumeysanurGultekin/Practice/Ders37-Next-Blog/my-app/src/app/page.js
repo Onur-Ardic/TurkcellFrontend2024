@@ -1,49 +1,22 @@
-'use client';
-
-import Link from "next/link";
-import BlogCard from "./components/BlogCard";
 import styles from "./page.module.css";
-import { useEffect, useState } from "react";
+import BlogCard from "./components/BlogCard";
+import Link from "next/link";
 
-const url = `https://jsonplaceholder.typicode.com/posts?_limit=20`;
-
-export const get = async () => {
-  const response = await fetch(url, {
-    method: 'GET',
-  });
-  if (!response.ok) {
-    throw new Error("404 not found");
+async function getData() {
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=20')
+ 
+  if (!res.ok) {
+    throw new Error('Failed to fetch data')
   }
-  const result = await response.json();
-  return result;
-};
-
-export default function Home() {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  const fetchData = async () => {
-    try {
-      const data = await get();
-      setData(data);
-      setLoading(false);
-    } catch (error) {
-      setError(error.message);
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  return (
-    <main className={styles.main}>
-      {loading && <p>Loading...</p>}
-      {error && <p>Error: {error}</p>}
-      {!loading && !error && (
-        <div className={styles.mainContent}>
+ 
+  return res.json()
+}
+ 
+export default async function Page() {
+  const data = await getData()
+ 
+  return <main className={styles.main}>
+    <div className={styles.mainContent}>
           {data.map(post => (
            <div className={styles.CardContent} key={post.id}>
            <Link className={styles.CardLink} href={`/blog/${post.id}`}>
@@ -52,7 +25,6 @@ export default function Home() {
          </div>
           ))}
         </div>
-      )}
-    </main>
-  );
+  </main>
 }
+
