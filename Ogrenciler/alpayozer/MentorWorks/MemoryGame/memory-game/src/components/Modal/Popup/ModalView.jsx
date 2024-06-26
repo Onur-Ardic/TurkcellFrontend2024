@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Modal from "react-bootstrap/Modal";
-import { Button } from "../styled";
+import { Button } from "../../../styled";
 
-const ModalView = ({ show, setShow, shuffleCards }) => {
+const ModalView = ({ show, setShow, shuffleCards, score }) => {
   const handleClose = () => setShow(false);
   const newGame = () => {
     shuffleCards();
@@ -12,7 +12,7 @@ const ModalView = ({ show, setShow, shuffleCards }) => {
     <>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Skor:50</Modal.Title>
+          <Modal.Title>Skor:{score}</Modal.Title>
         </Modal.Header>
         <Modal.Body>Tebrikler oyunu kazandınız</Modal.Body>
         <Modal.Footer>

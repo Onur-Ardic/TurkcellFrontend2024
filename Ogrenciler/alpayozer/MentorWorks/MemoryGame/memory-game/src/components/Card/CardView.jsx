@@ -1,7 +1,6 @@
 import React from "react";
 import { BackImage, Card, Image } from "./card-styled";
-import backCard from "/logo6.jpeg";
-import "./card.css";
+import backCard from "/logo.jpeg";
 
 const CardView = ({ card, handleChoise, flipped, disabled }) => {
   const handleClick = () => {
@@ -13,12 +12,12 @@ const CardView = ({ card, handleChoise, flipped, disabled }) => {
   return (
     <>
       <Card className={flipped ? "flipped" : ""}>
-        <Image className="front" src={card.src} alt="1" />
+        <Image className="front" src={card.src} alt="front-image" />
         <BackImage
           onClick={handleClick}
           className="back"
           src={backCard}
-          alt="1"
+          alt="back-image"
         />
       </Card>
     </>
