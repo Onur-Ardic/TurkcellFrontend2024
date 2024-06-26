@@ -18,11 +18,7 @@ const MiniCard = ({ time, temp, icon, description }) => {
   return (
     <div className={`${styles.miniCard} ${styles.miniCardContainer}`}>
       <p className={styles.textCenter}>{day}</p>
-<<<<<<< Updated upstream
      
-=======
-      <hr />
->>>>>>> Stashed changes
       <div className={styles.iconContainer}>
         <img
           src={currentIcon}

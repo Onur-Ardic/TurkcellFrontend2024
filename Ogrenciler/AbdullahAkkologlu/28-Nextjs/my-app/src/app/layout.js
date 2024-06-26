@@ -1,11 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
-<<<<<<< Updated upstream
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../components/Navbar";
-=======
->>>>>>> Stashed changes
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,14 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-<<<<<<< Updated upstream
-        {/* <Link href="/">Anasayfa</Link>
-        <Link href="/blog/6464">Blog</Link> */}
         <Navbar />
-=======
-        <Link href="/">Anasayfa</Link>
-        <Link href="/blog/6464">Blog</Link>
->>>>>>> Stashed changes
         {children}
       </body>
     </html>

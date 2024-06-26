@@ -1,0 +1,22 @@
+.main {
+    min-height: 100vh;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.mainContent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.CardContent{
+  width: 30%;
+}
+/* .CardLink{
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  height:  350px;
+  border-radius: 10px;
+  background-color: rgba(248, 248, 244, 0.331);
+} */

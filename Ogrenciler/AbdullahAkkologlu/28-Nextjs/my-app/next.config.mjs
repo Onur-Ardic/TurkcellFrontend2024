@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-<<<<<<< Updated upstream
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -10,8 +9,4 @@ const nextConfig = {
     ],
   },
 };
-=======
-const nextConfig = {};
-
->>>>>>> Stashed changes
 export default nextConfig;

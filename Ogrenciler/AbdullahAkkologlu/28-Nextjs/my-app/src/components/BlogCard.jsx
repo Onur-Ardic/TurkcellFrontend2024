@@ -1,6 +1,4 @@
-<<<<<<< Updated upstream
 import Image from "next/image";
-import Link from "next/link";
 import Classes from "./blogCard.module.css";
 
 const BlogCard = ({ blog }) => {
@@ -14,7 +12,7 @@ const BlogCard = ({ blog }) => {
   }
   const randomDate = getRandomDate("2000-01-01", "2023-12-31");
   return (
-    <Link href={`blog/${blog.id}`}>
+    <>
       <div className="relative">
         <Image
           src={`https://picsum.photos/id/${blog.id}/1500`}
@@ -35,16 +33,7 @@ const BlogCard = ({ blog }) => {
         </p>
         <p className={Classes.cardDescription}>{blog.body}</p>
       </div>
-=======
-import Link from "next/link";
-
-const BlogCard = ({ blog }) => {
-  return (
-    <Link href={`blog/${blog.id}`}>
-      <h3> {blog.title}</h3>
-      <p>{blog.body}</p>
->>>>>>> Stashed changes
-    </Link>
+    </>
   );
 };
 

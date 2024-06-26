@@ -22,7 +22,6 @@ const WeatherCard = ({
         <p className={styles.date}>{new Date().toDateString()}</p>
       </div>
       <div className={styles.nightHumidity}>
-<<<<<<< Updated upstream
         <div className={styles.night}>
           <i className="far fa-moon"></i>
           <p>Night</p> 
@@ -32,26 +31,12 @@ const WeatherCard = ({
           <i className="fa-brands fa-drupal"></i>
           <p>Humidity</p>
           <span>{humidity} %</span>
-=======
-        <p className={styles.night}>
-          <i className="far fa-moon"></i>
-          Night <span>{night}&deg;C </span>
-        </p>
-        <p className={styles.humidity}>
-          <i className="fa-brands fa-drupal"></i>
-          Humidity <span>{humidity} %</span>
->>>>>>> Stashed changes
         </p>
       </div>
       <div className={styles.minMax}>
         <p className={styles.min}>
-<<<<<<< Updated upstream
           <i className="fas fa-minus"></i> 
           Min <span>{min} &deg;C </span>
-=======
-          <i className="fas fa-minus"></i>
-          Min <span>{min}&deg;C </span>
->>>>>>> Stashed changes
         </p>
         <p className={styles.max}>
           <i className="fas fa-plus"></i>
