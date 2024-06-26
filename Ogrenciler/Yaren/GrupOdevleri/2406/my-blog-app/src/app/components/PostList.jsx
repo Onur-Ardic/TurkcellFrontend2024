@@ -1,35 +1,15 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { fetchPosts, fetchPhotos } from "../api";
 
-const PostList = () => {
-  const [posts, setPosts] = useState([]);
-  const [photos, setPhotos] = useState([]);
-
-  useEffect(() => {
-    const getPostsAndPhotos = async () => {
-      const postsData = await fetchPosts();
-      const photosData = await fetchPhotos();
-      setPosts(postsData.slice(0, 20));
-      setPhotos(photosData);
-    };
-    getPostsAndPhotos();
-  }, []);
-
-  if (posts == "") {
-    return (
-      <div className="loading-container">
-        <img src="/loading.gif" alt="Loading..." className="loading-image" />
-      </div>
-    );
-  }
+const PostList = async ({ id }) => {
+  const posts = await fetchPosts();
+  const photos = await fetchPhotos();
 
   return (
     <div>
       <h1 className="title">Blog Posts</h1>
       <div className="list-group">
-        {posts.map((post, index) => (
+        {posts.slice(0, 20).map((post, index) => (
           <div className="card" key={post.id}>
             <a href={`/blog/${post.id}`}>
               <img
