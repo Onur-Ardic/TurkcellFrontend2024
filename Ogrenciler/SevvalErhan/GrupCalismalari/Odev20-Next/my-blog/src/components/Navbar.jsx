@@ -4,7 +4,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-warning">
       <div class="container">
         <a class="navbar-brand" href="#">BLOG</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#blogNavbar" aria-controls="blogNavbar" aria-expanded="false" aria-label="Toggle navigation">
