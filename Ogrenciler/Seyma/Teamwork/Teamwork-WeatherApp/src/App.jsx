@@ -9,7 +9,11 @@ function App() {
   const [input, setInput] = useState("");
   const [weather, setWeather] = useState({});
   const [values, setValues] = useState([]);
+<<<<<<< Updated upstream
   const [place, setPlace] = useState("ANKARA");
+=======
+  const [place, setPlace] = useState("Ankara");
+>>>>>>> Stashed changes
   const [thisLocation, setLocation] = useState("");
 
   const parseDate = (dateString) => {
@@ -29,8 +33,13 @@ function App() {
         icon: entry.icon,
         min: entry.min,
         max: entry.max,
+<<<<<<< Updated upstream
         status: entry.status
       }));
+=======
+      }));
+
+>>>>>>> Stashed changes
       const location = data.city;
 
       setWeather(currentWeather);
@@ -42,12 +51,20 @@ function App() {
     }
   };
 
+<<<<<<< Updated upstream
   const handleInputChange = (e) => {
     let sanitizedInput = e.target.value.toUpperCase().replace(/[^A-Z]/g, "");
     if (sanitizedInput.length <= 30) {
       setInput(sanitizedInput);
     }
   };
+=======
+  useEffect(() => {
+    fetchWeather();
+  }, [place]);
+
+  const handleInputChange = (e) => setInput(e.target.value);
+>>>>>>> Stashed changes
 
   const handleKeyUp = (e) => {
     if (e.key === "Enter") {
@@ -60,6 +77,7 @@ function App() {
     setInput("");
   };
 
+<<<<<<< Updated upstream
   useEffect(() => {
     fetchWeather();
   }, [place]);
@@ -67,6 +85,10 @@ function App() {
   return (
     <div className={styles.background}>
       <div className={styles.overlay}>
+=======
+  return (
+    <section className={styles.background}>
+>>>>>>> Stashed changes
       <div className={styles.navContainer}>
         <nav className={styles.navBar}>
           <h1 className={styles.title}>Weather App</h1>
@@ -78,6 +100,10 @@ function App() {
           />
         </nav>
       </div>
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
       <div className={styles.mainContent}>
         <WeatherCard
           place={thisLocation}
@@ -102,8 +128,12 @@ function App() {
           ))}
         </div>
       </div>
+<<<<<<< Updated upstream
       </div>
     </div>
+=======
+    </section>
+>>>>>>> Stashed changes
   );
 }
 

@@ -15,9 +15,14 @@ export const fetchPhotos = async () => {
 
 export const fetchPostById = async (id) => {
   const response = await fetch(`${API_URL}/posts/${id}`);
+<<<<<<< Updated upstream
   const postData = await response.json();
   const photoResponse = await fetch(PHOTOS_API_URL);
   const photosData = await photoResponse.json();
   const photo = photosData[id % photosData.length].download_url;
   return { ...postData, photo };
+=======
+  const data = await response.json();
+  return data;
+>>>>>>> Stashed changes
 };
