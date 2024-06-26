@@ -2,6 +2,7 @@ import Footer from "@/components/Footer/Footer";
 import BlogCard from "@/components/BlogCard/BlogCard";
 import { getPosts } from "@/api/api";
 
+//loading stateini gorebilmek icin delay fonksiyonu olusturduk
 const delay = async (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
