@@ -83,7 +83,8 @@ body {
 
 body {
   color: black;
-  background-color: rgb(172, 160, 160);
+  background-image: linear-gradient(to top, #b2c1cb 0%, #cbd7de 100%);
+  background-repeat: no-repeat;
 }
 
 a {

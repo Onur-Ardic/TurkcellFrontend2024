@@ -16,17 +16,34 @@
     <div id="container" class="text-center">
       <h1 class="mb-4">Alışveriş Sepetim</h1>
       <div id="form-wrapper" class="mb-4">
-        <form id="form" class="d-flex">
+        <form id="form" class="d-flex flex-column">
           <input
             id="item-input"
             type="text"
-            class="form-control me-2"
-            placeholder="Ürün Ekle"
+            class="form-control mb-2"
+            placeholder="Item"
+          />
+          <input
+            id="category-input"
+            type="text"
+            class="form-control mb-2"
+            placeholder="Kategori Seç"
           />
           <div class="button-wrapper">
-            <button id="btn-add" class="btn btn-primary">Ekle</button>
+            <button id="btn-add" class="btn btn-primary">Add to Cart</button>
           </div>
         </form>
+      </div>
+      <div class="mb-4">
+        <select id="category-filter" class="form-select mb-2">
+          <option value="all">Tüm Kategoriler</option>
+        </select>
+        <input
+          id="search-input"
+          type="text"
+          class="form-control"
+          placeholder="Ürün Ara"
+        />
       </div>
       <div id="product-wrapper" class="list-group"></div>
     </div>
