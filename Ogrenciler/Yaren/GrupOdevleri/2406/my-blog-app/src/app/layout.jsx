@@ -18,6 +18,27 @@ export default function Layout({ children }) {
           </div>
         </nav>
         <main className="container">{children}</main>
+        <footer className="footer">
+          <p>Copyright &copy; 2024</p>
+          <img src="/logo.png" alt="Logo" className="navbar-logo" />
+          <div className="copyright">
+            <a
+              href="https://www.linkedin.com/in/ramazan-%C3%B6zkan-44641b256/"
+              target="_blank"
+            >
+              R {"\u2728"}
+            </a>
+            <a href="https://www.linkedin.com/in/aleynaertok/" target="_blank">
+              A {"\u2728"}
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yaren-su-yavuz/"
+              target="_blank"
+            >
+              Y
+            </a>
+          </div>
+        </footer>
       </body>
     </html>
   );

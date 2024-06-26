@@ -297,3 +297,15 @@ a {
   font-size: 1em;
   color: whitesmoke;
 }
+.footer {
+  background-color: #374f54;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.copyright a {
+  color: white;
+  text-decoration: none;
+}
