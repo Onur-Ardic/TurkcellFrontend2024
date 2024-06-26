@@ -23,16 +23,25 @@
 
 .cardBody p {
   margin-top: 4px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   overflow: hidden;
+  -webkit-line-clamp: 2;
 }
 
 .cardBody h3 {
-  overflow: hidden;
   font-size: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
 }
 
-.hr {
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.card {
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.01);
 }

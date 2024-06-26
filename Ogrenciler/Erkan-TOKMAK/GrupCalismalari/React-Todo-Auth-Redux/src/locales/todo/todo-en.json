@@ -1,0 +1,11 @@
+{
+    "save": "Save",
+    "cancel":"Cancel",
+    "edit": "Edit",
+    "delete":"Delete",
+    "add":"Add New Todo",
+    "title": "React Todo App",
+    "loading": "Loading...",
+    "error": "Error",
+    "todos": "Todos"
+}

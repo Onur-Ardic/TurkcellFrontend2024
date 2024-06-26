@@ -8,6 +8,8 @@ const PostDetails = async ({ params }) => {
   );
   const post = await res.json();
 
+  if (!res.ok) throw new Error("Unexpected response from server");
+
   return (
     <div className="container">
       <div className="imageContainer">
