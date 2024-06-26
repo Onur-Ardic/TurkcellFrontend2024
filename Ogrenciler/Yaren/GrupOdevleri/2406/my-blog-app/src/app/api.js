@@ -1,5 +1,5 @@
 const API_URL = "https://jsonplaceholder.typicode.com";
-const randomImage = "https://picsum.photos/v2/list?page=2&limit=10";
+const randomImage = "https://picsum.photos/v2/list?page=2&limit=20";
 
 export const fetchPosts = async () => {
   const response = await fetch(`${API_URL}/posts`);
