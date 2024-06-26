@@ -7,7 +7,12 @@ const PostCard = async ({ post }) => {
   return (
     <li className={classes.cardContainer}>
       <Link href={`/post/${post.id}`} className={classes.cardSubContainer}>
-        <Image src="/post.png" alt="Post Image" width={500} height={200} />
+        <Image
+          src={`https://picsum.photos/id/${post.id}/200`}
+          alt="Post Image"
+          width={200}
+          height={200}
+        />
         <h2 className={classes.title}>{post.title}</h2>
       </Link>
     </li>

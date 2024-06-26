@@ -9,9 +9,11 @@ export default async function Home() {
 
   return (
     <main className={styles.main}>
-      {posts.map((post) => (
-        <PostCard key={post.id} post={post} />
-      ))}
+      <div className={styles.main}>
+        {posts.map((post) => (
+          <PostCard key={post.id} post={post} />
+        ))}
+      </div>
     </main>
   );
 }

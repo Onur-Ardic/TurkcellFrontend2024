@@ -5,8 +5,16 @@
   flex-wrap: wrap;
   gap: 1rem;
   padding: 5rem;
-  background-color: #333;
-  border-bottom: 1px solid black;
+  max-width: 300px;
+  height: 400px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.cardContainer:hover {
+  background-color: pink;
+  transform: translateY(-20px) scale(1.1);
 }
 
 .cardSubContainer {
@@ -20,7 +28,7 @@
 }
 
 .title {
-  color: white;
-  font-size: 2rem;
+  color: orangered;
+  font-size: 1rem;
   margin-bottom: 2rem;
 }
