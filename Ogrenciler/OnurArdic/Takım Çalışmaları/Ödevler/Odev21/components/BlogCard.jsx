@@ -16,7 +16,7 @@ const BlogCard = ({ data }) => {
             // objectFit="cover"
           />
         </div>
-        <h1 className="mt-4 text-lg font-semibold">{data.title}</h1>
+        <h1 className="mt-4 text-lg font-semibold line-clamp-1">{data.title}</h1>
         <p className="text-sm mt-2 line-clamp-2">{data.body}</p>
       </div>
     </Link>
