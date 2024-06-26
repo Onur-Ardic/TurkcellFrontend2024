@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import "./App.css";
-import CardView from "./components/CardView";
-import { Button, GridContainer, Text, Title } from "./styled";
+import CardView from "./components/Card/CardView";
+import { Background, Button, GridContainer, Text, Title } from "./styled";
 import { images } from "./assets/data";
-import ModalView from "./components/ModalView";
-import InfoModal from "./components/InfoModal";
+import ModalView from "./components/Modal/Popup/ModalView";
+import InfoModal from "./components/Modal/Drawer/InfoModal";
+import { Col, Container, Row } from "react-bootstrap";
 
 function App() {
   const [cards, setCards] = useState([]);
@@ -26,6 +26,7 @@ function App() {
     setChoiseTwo(null);
     setCards(shuffledCards);
     setTurns(0);
+    setScore(0);
   };
 
   function shuffleArray(array) {
@@ -65,6 +66,7 @@ function App() {
       controlScore();
     }
   }, [choiseOne, choiseTwo]);
+
   const resetTurn = () => {
     setChoiseOne(null);
     setChoiseTwo(null);
@@ -84,28 +86,33 @@ function App() {
   };
 
   return (
-    <div className="bg">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-6">
-            <div className="row">
-              <Title>Memory Game</Title>
-            </div>
-            <div className="row">
-              <div className="col-lg-6">
-                <Text>Turns: {turns}</Text>
-              </div>
-              <div className="col-lg-6">
-                <Text>Score: {score}</Text>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 text-white">
+    <Background>
+      <Container>
+        <Row className="py-3">
+          <Title>Memory Game</Title>
+        </Row>
+        <Row className="text-center">
+          <Col lg={6} sm={6} xs={6}>
             <Button onClick={shuffleCards}>New Game</Button>
+          </Col>
+          <Col lg={6} sm={6} xs={6}>
             <InfoModal />
-          </div>
-        </div>
-        <ModalView show={show} setShow={setShow} shuffleCards={shuffleCards} />
+          </Col>
+        </Row>
+        <Row className="text-center my-2">
+          <Col lg={6} sm={6} xs={6}>
+            <Text>Turns: {turns}</Text>
+          </Col>
+          <Col lg={6} sm={6} xs={6}>
+            <Text>Score: {score}</Text>
+          </Col>
+        </Row>
+        <ModalView
+          score={turns}
+          show={show}
+          setShow={setShow}
+          shuffleCards={shuffleCards}
+        />
         <GridContainer>
           {cards.map((card) => (
             <CardView
@@ -117,8 +124,8 @@ function App() {
             />
           ))}
         </GridContainer>
-      </div>
-    </div>
+      </Container>
+    </Background>
   );
 }
 
