@@ -16,7 +16,7 @@ body {
 
 .navbar-brand {
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .navbar-logo {
@@ -32,6 +32,14 @@ body {
   font-size: 1.5rem;
 }
 
+@media (max-width: 666px) {
+  .navbar a {
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+}
 .container {
   padding: 1rem;
 }
