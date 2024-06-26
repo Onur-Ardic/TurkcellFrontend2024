@@ -1,12 +1,24 @@
 {
   "products": [
     {
-      "product": "asdadadas",
-      "id": "9389"
+      "id": "1325",
+      "product": "Cola",
+      "category": "İçecek"
     },
     {
-      "product": "Milk",
-      "id": "8c14"
+      "product": "Portakal",
+      "category": "Meyve",
+      "id": "defc"
+    },
+    {
+      "id": "0667",
+      "product": "Et",
+      "category": "Kasap"
+    },
+    {
+      "id": "be6b",
+      "product": "Tavuk",
+      "category": "Kasap"
     }
   ]
 }
