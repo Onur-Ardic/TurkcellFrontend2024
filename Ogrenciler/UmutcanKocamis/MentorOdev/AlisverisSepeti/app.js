@@ -5,6 +5,8 @@ const productWrapper = document.querySelector("#product-wrapper");
 const categoryFilter = document.querySelector("#category-filter");
 const searchInput = document.querySelector("#search-input");
 
+const categoryColors = loadCategoryColors();
+
 runEvents();
 
 function runEvents() {
@@ -32,6 +34,13 @@ function addProductToUI(newProduct, newCategory, id) {
     "product list-group-item d-flex justify-content-between align-items-center";
   li.dataset.id = id;
   li.dataset.category = newCategory;
+
+  if (!categoryColors[newCategory]) {
+    categoryColors[newCategory] = generateRandomColor();
+    saveCategoryColors();
+  }
+  li.style.backgroundColor = categoryColors[newCategory];
+
   li.innerHTML = `
     <span class="product-name">${newProduct} (${newCategory})</span>
     <input type="text" class="edit-input form-control me-2" style="display: none;" />
@@ -182,4 +191,22 @@ function searchProducts() {
           addProductToUI(product.product, product.category, product.id);
         });
     });
+}
+
+function generateRandomColor() {
+  const letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+function saveCategoryColors() {
+  localStorage.setItem("categoryColors", JSON.stringify(categoryColors));
+}
+
+function loadCategoryColors() {
+  const colors = localStorage.getItem("categoryColors");
+  return colors ? JSON.parse(colors) : {};
 }
