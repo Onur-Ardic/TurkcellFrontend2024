@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../components/Navbar";
 
@@ -15,8 +14,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <Link href="/">Anasayfa</Link>
-        <Link href="/blog/6464">Blog</Link> */}
         <Navbar />
         {children}
       </body>
