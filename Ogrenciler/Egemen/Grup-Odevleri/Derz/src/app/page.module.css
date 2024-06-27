@@ -1,0 +1,26 @@
+.main {
+    min-height: 100vh;
+    margin: 0 auto;
+}
+.mainContent{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.CardContent{
+  width: 30%;
+}
+
+@media screen and (max-width:800px) {
+  .CardContent{
+    width: 45%;
+  }
+}
+@media screen and (max-width:550px) {
+  .CardContent{
+    width: 90%;
+  }
+}
