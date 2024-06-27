@@ -22,7 +22,6 @@ const Navbar = () => {
   return (
     <div>
         <NavbarContainer>
-        
         <Logo src="https://resmim.net/cdn/2024/06/26/WMsftK.png"></Logo>
         <Link href="/">Anasayfa</Link> <br />
           <br />
