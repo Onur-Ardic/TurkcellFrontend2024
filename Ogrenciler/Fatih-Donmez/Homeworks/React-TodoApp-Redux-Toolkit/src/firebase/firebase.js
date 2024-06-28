@@ -4,7 +4,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBxbHVAV86nrZmFYhRusPy__sbbsauyzA8",
+  apiKey: process.env.API_kEY,
   authDomain: "redux-todo-868eb.firebaseapp.com",
   projectId: "redux-todo-868eb",
   storageBucket: "redux-todo-868eb.appspot.com",
