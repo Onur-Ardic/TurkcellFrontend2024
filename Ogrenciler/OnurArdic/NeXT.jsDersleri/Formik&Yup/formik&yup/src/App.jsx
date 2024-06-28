@@ -1,4 +1,3 @@
-import React from 'react'
 import { useFormik } from 'formik'
 import './App.css'
 import { basicSchema } from './components'
