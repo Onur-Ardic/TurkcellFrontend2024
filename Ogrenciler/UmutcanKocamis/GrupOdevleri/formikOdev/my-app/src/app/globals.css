@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container input {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.container select {
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.error {
+  font-size: 14px;
+  color: red;
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+  padding: 12px 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 1.15rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: red;
+}
