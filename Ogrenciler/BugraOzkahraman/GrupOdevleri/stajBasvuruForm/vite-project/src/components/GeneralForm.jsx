@@ -12,21 +12,27 @@ const onSubmit = async (values, actions) => {
 };
 
 function GeneralForm() {
-  const { values, errors, isSubmitting, handleChange, handleSubmit } =
-    useFormik({
-      initialValues: {
-        age: "",
-        name: "",
-        lastName: "",
-        city: "",
-        school: "",
-        internShipDay: "",
-        mandatory: "",
-      },
-      validationSchema: internSchema,
-      onSubmit,
-    });
-
+  const {
+    values,
+    errors,
+    isSubmitting,
+    touched,
+    handleChange,
+    handleSubmit,
+    handleBlur,
+  } = useFormik({
+    initialValues: {
+      age: "",
+      name: "",
+      lastName: "",
+      city: "",
+      school: "",
+      internShipDay: "",
+      mandatory: "",
+    },
+    validationSchema: internSchema,
+    onSubmit,
+  });
   return (
     <form onSubmit={handleSubmit}>
       <div className="inputDiv">
@@ -35,9 +41,10 @@ function GeneralForm() {
           type="text"
           value={values.name}
           onChange={handleChange}
+          onBlur={handleBlur}
           id="name"
           placeholder="Adınızı giriniz"
-          className={errors.name ? "input-error" : ""}
+          className={errors.name && touched.name ? "input-error" : ""}
         />
         {errors.name && <p className="error">{errors.name}</p>}
       </div>
@@ -47,11 +54,14 @@ function GeneralForm() {
           type="text"
           value={values.lastName}
           onChange={handleChange}
+          onBlur={handleBlur}
           id="lastName"
           placeholder="Soyadınızı giriniz"
-          className={errors.lastName ? "input-error" : ""}
+          className={errors.lastName && touched.lastName ? "input-error" : ""}
         />
-        {errors.lastName && <p className="error">{errors.lastName}</p>}
+        {errors.lastName && touched.lastName && (
+          <p className="error">{errors.lastName}</p>
+        )}
       </div>
       <div className="inputDiv">
         <label>Yaş</label>
@@ -59,11 +69,12 @@ function GeneralForm() {
           type="number"
           value={values.age}
           onChange={handleChange}
+          onBlur={handleBlur}
           id="age"
           placeholder="Yaşınızı giriniz"
-          className={errors.age ? "input-error" : ""}
+          className={errors.age && touched.age ? "input-error" : ""}
         />
-        {errors.age && <p className="error">{errors.age}</p>}
+        {errors.age && touched.age && <p className="error">{errors.age}</p>}
       </div>
       <div className="inputDiv">
         <label>Şehir</label>
@@ -71,11 +82,12 @@ function GeneralForm() {
           type="text"
           value={values.city}
           onChange={handleChange}
+          onBlur={handleBlur}
           id="city"
           placeholder="Lütfen şehir giriniz"
-          className={errors.city ? "input-error" : ""}
+          className={errors.city && touched.city ? "input-error" : ""}
         />
-        {errors.city && <p className="error">{errors.city}</p>}
+        {errors.city && touched.city && <p className="error">{errors.city}</p>}
       </div>
       <div className="inputDiv">
         <label>Okul</label>
@@ -83,11 +95,14 @@ function GeneralForm() {
           type="text"
           value={values.school}
           onChange={handleChange}
+          onBlur={handleBlur}
           id="school"
           placeholder="Lütfen okul giriniz"
-          className={errors.school ? "input-error" : ""}
+          className={errors.school && touched.school ? "input-error" : ""}
         />
-        {errors.school && <p className="error">{errors.school}</p>}
+        {errors.school && touched.school && (
+          <p className="error">{errors.school}</p>
+        )}
       </div>
       <div className="inputDiv">
         <label>Gün</label>
@@ -95,11 +110,14 @@ function GeneralForm() {
           type="number"
           value={values.internShipDay}
           onChange={handleChange}
+          onBlur={handleBlur}
           id="internShipDay"
           placeholder="Lütfen gün giriniz"
-          className={errors.internShipDay ? "input-error" : ""}
+          className={
+            errors.internShipDay && touched.internShipDay ? "input-error" : ""
+          }
         />
-        {errors.internShipDay && (
+        {errors.internShipDay && touched.internShipDay && (
           <p className="error">{errors.internShipDay}</p>
         )}
       </div>
@@ -110,9 +128,11 @@ function GeneralForm() {
           type="number"
           value={values.mandatory}
           onChange={handleChange}
+          onBlur={handleBlur}
           id="mandatory"
           placeholder="Lütfen birini seçiniz"
-          className={errors.mandatory ? "input-error" : ""}>
+          className={errors.mandatory ? "input-error" : ""}
+        >
           <option value="Boş"></option>
           <option value="Evet">Evet</option>
           <option value="Hayır">Hayır</option>
