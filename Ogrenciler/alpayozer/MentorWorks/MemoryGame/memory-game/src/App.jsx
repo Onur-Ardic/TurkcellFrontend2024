@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import CardView from "./components/Card/CardView";
+import { Col, Container, Row } from "react-bootstrap";
 import { Background, Button, GridContainer, Text, Title } from "./styled";
-import { images } from "./assets/data";
+import CardView from "./components/Card/CardView";
 import Popup from "./components/Modal/Popup/Popup";
 import Drawer from "./components/Modal/Drawer/Drawer";
-import { Col, Container, Row } from "react-bootstrap";
+import { images } from "./assets/data";
 
 function App() {
   const [cards, setCards] = useState([]);
@@ -54,11 +54,9 @@ function App() {
             }
           });
         });
-        console.log("matched");
         setScore(score + 1);
         resetTurn();
       } else {
-        console.log("dont match");
         setTimeout(() => {
           resetTurn();
         }, 1000);
@@ -79,7 +77,6 @@ function App() {
   }, []);
 
   const controlScore = () => {
-    //düzeltme yapılacak
     if (score === 17) {
       setShow(true);
     }
