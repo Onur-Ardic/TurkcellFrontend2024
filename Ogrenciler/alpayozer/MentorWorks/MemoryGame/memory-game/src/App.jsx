@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import CardView from "./components/Card/CardView";
 import { Background, Button, GridContainer, Text, Title } from "./styled";
 import { images } from "./assets/data";
-import ModalView from "./components/Modal/Popup/ModalView";
-import InfoModal from "./components/Modal/Drawer/InfoModal";
+import Popup from "./components/Modal/Popup/Popup";
+import Drawer from "./components/Modal/Drawer/Drawer";
 import { Col, Container, Row } from "react-bootstrap";
 
 function App() {
@@ -96,7 +96,7 @@ function App() {
             <Button onClick={shuffleCards}>New Game</Button>
           </Col>
           <Col lg={6} sm={6} xs={6}>
-            <InfoModal />
+            <Drawer />
           </Col>
         </Row>
         <Row className="text-center my-2">
@@ -107,7 +107,7 @@ function App() {
             <Text>Score: {score}</Text>
           </Col>
         </Row>
-        <ModalView
+        <Popup
           score={turns}
           show={show}
           setShow={setShow}
