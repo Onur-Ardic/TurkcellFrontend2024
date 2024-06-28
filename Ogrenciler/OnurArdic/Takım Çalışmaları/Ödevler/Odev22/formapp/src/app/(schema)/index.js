@@ -1,17 +1,11 @@
 import * as yup from 'yup'
 
-export const schema = yup.object().shape({
+export const basicSchema = yup.object().shape({
   name: yup.string().required(' isim boş olamaz'),
 
   surname: yup.string().required(' soyisim boş olamaz'),
 
   email: yup.string().required('email boş bırakılamaz').email('Geçerli bir email giriniz'),
-
-  age: yup
-    .number()
-    .positive('lütfen pozitif yaş giriniz')
-    .integer('lütfen yaşınızı tam sayı olarak giriniz')
-    .required('Yaş boş bırakılamaz'),
 
   school: yup.string().required('okul boş olamaz'),
 
@@ -25,8 +19,5 @@ export const schema = yup.object().shape({
     .integer('lütfen tam sayı olarak giriniz')
     .required('Gün boş bırakılamaz'),
 
-  check: yup
-    .boolean()
-    .oneOf([true], 'kullanım koşullarını kabul ediniz')
-    .required('kullanım koşullarını kabul etmek zorunludur'),
+  check: yup.boolean().oneOf([true], 'kullanım koşullarını kabul ediniz'),
 })

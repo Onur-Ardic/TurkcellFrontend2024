@@ -1,6 +1,6 @@
 'use client'
 
-import { schema } from '@/app/(schema)'
+import { basicSchema } from '@/app/(schema)'
 import { useFormik } from 'formik'
 const onSubmit = async (values, action) => {
   console.log(values)
@@ -21,10 +21,10 @@ const Form = () => {
       school: '',
       city: '',
       day: '',
-      stajType: '',
-      Kvkk: '',
+      stajType: 'zorunlu',
+      check: false,
     },
-    validationSchema: schema,
+    validationSchema: basicSchema,
     onSubmit,
   })
 
@@ -38,7 +38,6 @@ const Form = () => {
             type="text"
             id="name"
             name="name"
-            required
             value={values.name}
             className="border"
             onChange={handleChange}
@@ -53,7 +52,6 @@ const Form = () => {
             type="text"
             id="surname"
             name="surname"
-            required
             onChange={handleChange}
             value={values.surname}
           />
@@ -67,7 +65,6 @@ const Form = () => {
             type="email"
             id="email"
             name="email"
-            required
             onChange={handleChange}
             value={values.email}
           />
@@ -112,14 +109,14 @@ const Form = () => {
         <div className="form-input flex">
           <input
             type="checkbox"
-            name="kvkk"
-            id="kvkk"
+            name="check"
+            id="check"
             className="me-2"
             onChange={handleChange}
-            value={values.Kvkk}
+            value={values.check}
           />
           <label htmlFor="kvkk">Kullanıcı Sözleşmesi</label>
-          {errors.Kvkk && <span className="text-red-900">{errors.Kvkk}</span>}
+          {errors.check && <span className="text-red-900">{errors.check}</span>}
         </div>
 
         <div className="form-input">
