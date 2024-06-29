@@ -1,0 +1,30 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input,
+.form select {
+  border: 1px solid #ced1d8;
+  padding: 10px;
+  margin: 0 12px 24px 0;
+  border-radius: 5px;
+  width: 50%;
+}
+.radio {
+  margin: 0;
+  padding: 0;
+  width: 13px !important;
+}
+
+.button {
+  padding: 0.6rem 1.3rem;
+  background-color: #ff5714;
+  color: #fff;
+  border-radius: 4px;
+  margin: 0 0 12px 12px;
+  border: 1px solid #ff5714;
+  width: 10%;
+  float: left;
+  box-shadow: 0 3px 5px 0 rgba(255, 87, 20, 0.1);
+  font-size: 16px;
+}
