@@ -1,5 +1,4 @@
 import * as yup from "yup";
-const passwordRules = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}$/;
 
 export const basicSchema = yup.object().shape({
   name: yup.string().required("İsim girmek zorunludur"),
@@ -17,23 +16,17 @@ export const basicSchema = yup.object().shape({
   university: yup
     .string()
     .oneOf(
-      ["Osmangazi", "bogazici", "gsu", "odtü", "itü"],
+      ["bogazici", "gsu", "odtü", "itü"],
       "Lütfen üniversitenizi seçiniz"
     )
     .required("Lütfen üniversitenizi seçiniz"),
-});
-
-export const advancedSchema = yup.object().shape({
-  username: yup
+  internshipDays: yup
+    .number()
+    .positive("Lütfen pozitif bir gün sayısı giriniz")
+    .integer("Lütfen gün sayısını tam sayı olarak giriniz")
+    .required("Kaç gün staj yapacağınızı belirtiniz"),
+  internshipType: yup
     .string()
-    .min(3, "Kullanıcı adı minunmum 3 karakter uzunluğunda olmadılır")
-    .required("Kullanıcı adı zorunludur"),
-  university: yup
-    .string()
-    .oneOf(
-      ["bogazici", "gsu", "odtü", "itü", "osmangazi"],
-      "Lütfen üniversitenizi seçiniz"
-    )
-    .required("Lütfen üniversitenizi seçiniz"),
-  isAccepted: yup.boolean().oneOf([true], "Kullanım koşullarını kabul ediniz"),
+    .oneOf(["zorunlu", "gönüllü"], "Lütfen staj türünü seçiniz")
+    .required("Lütfen staj türünü seçiniz"),
 });
