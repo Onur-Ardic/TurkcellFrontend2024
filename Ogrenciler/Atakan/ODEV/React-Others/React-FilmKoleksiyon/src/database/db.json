@@ -1,0 +1,28 @@
+{
+  "movies": [
+    {
+      "id": "3cbd",
+      "title": "Arif V 216",
+      "director": "Kivanç Baruönü",
+      "category": "Komedi",
+      "year": "2018",
+      "image": "https://img04.imgsinemalar.com/images/afis_dev/a/arif-v-216-1660924820.jpg"
+    },
+    {
+      "id": "82ee",
+      "title": "The Prestige",
+      "director": "Christopher Nolan",
+      "category": "Bilim-Kurgu",
+      "year": "2006",
+      "image": "https://img01.imgsinemalar.com/images/afis_dev/p/prestij-1660915246.jpg"
+    },
+    {
+      "id": "a593",
+      "title": "Interstellar2",
+      "director": "Christopher Nolan",
+      "category": "Bilim-Kurgu",
+      "year": "2014",
+      "image": "https://img05.imgsinemalar.com/images/afis_dev/y/yildizlararasi-1660915535.jpg"
+    }
+  ]
+}
