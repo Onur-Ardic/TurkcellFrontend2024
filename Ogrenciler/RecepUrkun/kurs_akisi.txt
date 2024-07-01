@@ -28,3 +28,4 @@
 -- 9 Günlük Bayram Tatili --
 25-06-2024: Nextjs'e giriş - Homework: Blog App with NextJs
 28-06-2024: Formik & Yup - Homework: Intership Form
+01-07-2024: Vue & Stelve - Son Ders - Artık Final...
