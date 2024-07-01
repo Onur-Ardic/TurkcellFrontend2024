@@ -1,0 +1,15 @@
+.col {
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    height: 90vh;
+    background-color: rgba(18, 24, 27, 1);
+    font-family: "Itim", cursive;
+}

@@ -1,0 +1,32 @@
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.input-area {
+  background: linear-gradient(rgba(22, 28, 45, 0.5), rgba(22, 28, 45, 0.5)),
+    url("https://ares.shiftdelete.net/2024/01/harry-potter-dizisi-1.jpeg")
+      no-repeat center center/cover;
+  padding: 50px 0px;
+}
+.title {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.subtitle {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin: 80px 0px;
+}
