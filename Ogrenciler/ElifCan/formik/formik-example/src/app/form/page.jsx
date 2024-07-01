@@ -1,6 +1,6 @@
 "use client";
 import { useFormik } from "formik";
-import { basicSchema } from "../../schemas/index"; // Schemas dosyanızın doğru yolu olmalı
+import { basicSchema } from "../../schemas/index";
 import "./page.css";
 
 const onSubmit = async (values, actions) => {
@@ -21,7 +21,9 @@ function GeneralForm() {
         surname: "",
         university: "",
         email: "",
-        age: null,
+        age: "",
+        internshipDays: "",
+        internshipType: "",
       },
       validationSchema: basicSchema,
       onSubmit,
@@ -94,12 +96,35 @@ function GeneralForm() {
         </select>
         {errors.university && <p className="error">{errors.university}</p>}
       </div>
+      <div className="inputDiv">
+        <label>Kaç gün staj yapacaksınız?</label>
+        <input
+          type="number"
+          value={values.internshipDays}
+          onChange={handleChange}
+          id="internshipDays"
+          placeholder="Gün sayısını giriniz"
+          className={errors.internshipDays ? "input-error" : ""}
+        />
+        {errors.internshipDays && <p className="error">{errors.internshipDays}</p>}
+      </div>
+      <div className="inputDiv">
+        <label>Zorunlu veya gönüllü mü?</label>
+        <select
+          value={values.internshipType}
+          onChange={handleChange}
+          id="internshipType"
+          className={errors.internshipType ? "input-error" : ""}
+        >
+          <option value="" label="Staj türünü seçiniz" />
+          <option value="zorunlu" label="Zorunlu" />
+          <option value="gönüllü" label="Gönüllü" />
+        </select>
+        {errors.internshipType && <p className="error">{errors.internshipType}</p>}
+      </div>
       <button disabled={isSubmitting} type="submit">
         Kaydet
       </button>
-      {/* <Link href="/portal">
-        <a className="formLink">Portala Git</a>
-      </Link> */}
     </form>
   );
 }
