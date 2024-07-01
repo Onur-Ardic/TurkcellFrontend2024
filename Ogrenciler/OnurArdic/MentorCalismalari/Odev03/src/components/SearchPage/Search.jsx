@@ -14,14 +14,12 @@ import {
 } from './styled'
 import { MainContext } from '../../Context/Context'
 
-const ACCESS_TOKEN = import.meta.env.VITE_ACCESS_TOKEN
+const ACCESS_TOKEN =
+  'BQCJElVhUAxoLXwM_EmmKf5zLvEeYOdma2OoofcOoBu8Usqb8aEaWdPJN6soKarOdOZtz1qFRkS-sni2Oa1SH7yWa0tpImpIlZN8ba3W5u4KaWk5D0Q'
 
 const Search = () => {
   const [searchQuery, setSearchQuery] = useState('')
   const [searchResults, setSearchResults] = useState(null)
-
-  console.log(searchQuery)
-
   const { setCurrentTrackInfo } = useContext(MainContext)
 
   const getSearchMusic = async () => {

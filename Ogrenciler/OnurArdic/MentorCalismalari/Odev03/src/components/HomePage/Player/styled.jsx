@@ -37,23 +37,22 @@ export const PlayerButton = styled.button`
   }
 `
 
-export const MusicLine = styled.div`
+export const MusicLineContainer = styled.div`
   position: relative;
   width: 600px;
   height: 3px;
   background-color: #fff;
   border-radius: 10px;
   cursor: pointer;
+`
 
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #1db954;
-    width: ${(props) => props.progress}%;
-  }
+export const MusicProgress = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #1db954;
+  width: ${(props) => props.progress}%;
 `
 
 export const VolumeControl = styled.div`
@@ -90,7 +89,6 @@ export const VolumeControl = styled.div`
     background-color: #fff;
     border-radius: 50%;
     border: 2px solid #1db954;
-
     box-shadow: -407px 0 0 400px #1db954;
   }
 

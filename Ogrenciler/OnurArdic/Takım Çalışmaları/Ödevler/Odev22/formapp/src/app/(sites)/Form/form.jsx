@@ -133,14 +133,14 @@ const Form = () => {
         <div className="form-input flex">
           <input
             type="checkbox"
-            name="kvkk"
-            id="kvkk"
+            name="check"
+            id="check"
             className="me-2"
             onChange={handleChange}
-            value={values.Kvkk}
+            value={values.check}
           />
           <label htmlFor="kvkk">Kullanıcı Sözleşmesi</label>
-          {errors.Kvkk && <span className="text-red-900">{errors.Kvkk}</span>}
+          {errors.check && <span className="text-red-900">{errors.check}</span>}
         </div>
 
         <div className="form-input">

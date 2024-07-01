@@ -1,0 +1,5 @@
+input:focus,
+select:focus {
+    box-shadow: none !important;
+    border-color: black !important;
+}

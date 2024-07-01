@@ -1,0 +1,17 @@
+.movie-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.form-button {
+  display: flex;
+  justify-content: start;
+  padding-top: 35px;
+  width: 90%;
+  button {
+    width: 200px;
+  }
+}

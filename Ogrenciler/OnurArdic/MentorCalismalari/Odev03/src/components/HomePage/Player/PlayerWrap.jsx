@@ -2,11 +2,12 @@ import { useState, useEffect, useContext } from 'react'
 import { CustomImage, Icon } from '../Navbar/styled'
 import toast from 'react-hot-toast'
 import {
-  ButtonWrapper,
-  MusicLine,
-  MusicName,
-  PlayerButton,
   PlayerWrapper,
+  MusicName,
+  ButtonWrapper,
+  PlayerButton,
+  MusicLineContainer,
+  MusicProgress,
   VolumeControl,
 } from './styled'
 import { MainContext } from '../../../Context/Context'
@@ -16,49 +17,58 @@ const PlayerWrap = () => {
   const [player, setPlayer] = useState(null)
   const [isPaused, setIsPaused] = useState(true)
   const [deviceId, setDeviceId] = useState(null)
-
   const [volume, setVolume] = useState(50)
+  const [progress, setProgress] = useState(0)
 
   const { currentTrackInfo } = useContext(MainContext)
 
   useEffect(() => {
     const token =
-      'BQARcI-__FGK5wd71P1UU7tfpWvEICbunoAUJnRIgZaMHhYNAYyKhEVToktqvfxA26Rc8abniCKDb2Lvn-Wu3E_TiY-j8zKpipyz_YuOcab6tvm1xbrBAjMelal-_MBwYFrWDd1yYJ05bq7M8o3KOBnMjxm3WDhCaSpZ0kr4TOekjdj77nBJsYLvqwBT5B5WTTB9DO9pIWE'
+      'BQD2IY5xrXAPswBGSfjo1Ct0FswcfHBLu0E_3M04sRu71mSlhQLGykO-16XggIPaNV0DTxfjqA4p9rlaERrY-Vo0SqMMwOT6w1fmAZelhRu9390dnBvw8pXQer9cnYs3P4WLMAmNLJ25f-gtR9O2U1zejUSGVgkluaR6bv596NQ6jdwg7h7uXPtvl4UYY0UOr3hCSUOrzbI'
 
-    window.onSpotifyWebPlaybackSDKReady = () => {
-      const playerInstance = new window.Spotify.Player({
-        name: 'Web Playback SDK Player',
-        getOAuthToken: (cb) => {
-          cb(token)
-        },
-        volume: 0.5,
-        webPlaybackSDKConfig: {
-          name: 'web-playback-sdk',
-          robustnessLevel: 'SW_SECURE_DECODE',
-        },
-      })
-
-      playerInstance.addListener('ready', ({ device_id }) => {
-        setDeviceId(device_id)
-      })
-
-      playerInstance.addListener('player_state_changed', (state) => {
-        if (!state) return
-
-        setIsPaused(state.paused)
-      })
-
-      playerInstance.connect().then((success) => {
-        if (success) {
-          toast.success('Spotify ile başarıyla bağlantı kuruldu!')
-        } else {
-          toast.error('Spotify ile bağlantı kurulamadı.')
-        }
-      })
-
-      setPlayer(playerInstance)
+    if (!window.Spotify) {
+      const script = document.createElement('script')
+      script.src = 'https://sdk.scdn.co/spotify-player.js'
+      script.async = true
+      script.onload = () => initPlayer(token)
+      document.body.appendChild(script)
+    } else {
+      initPlayer(token)
     }
   }, [])
+
+  const initPlayer = (token) => {
+    const playerInstance = new window.Spotify.Player({
+      name: 'Web Playback SDK Player',
+      getOAuthToken: (cb) => {
+        cb(token)
+      },
+      volume: 0.5,
+      webPlaybackSDKConfig: {
+        name: 'web-playback-sdk',
+        getAccessToken: async () => token,
+      },
+    })
+
+    playerInstance.addListener('ready', ({ device_id }) => {
+      setDeviceId(device_id)
+    })
+
+    playerInstance.addListener('player_state_changed', (state) => {
+      if (!state) return
+      setIsPaused(state.paused)
+      setProgress((state.position / state.duration) * 100)
+    })
+
+    playerInstance.connect().then((success) => {
+      if (success) {
+        toast.success('Spotify ile başarıyla bağlantı kuruldu!')
+        setPlayer(playerInstance)
+      } else {
+        toast.error('Spotify ile bağlantı kurulamadı.')
+      }
+    })
+  }
 
   useEffect(() => {
     if (player && deviceId && currentTrackInfo) {
@@ -68,7 +78,7 @@ const PlayerWrap = () => {
 
   const playTrack = (device_id, track_uri) => {
     const token =
-      'BQARcI-__FGK5wd71P1UU7tfpWvEICbunoAUJnRIgZaMHhYNAYyKhEVToktqvfxA26Rc8abniCKDb2Lvn-Wu3E_TiY-j8zKpipyz_YuOcab6tvm1xbrBAjMelal-_MBwYFrWDd1yYJ05bq7M8o3KOBnMjxm3WDhCaSpZ0kr4TOekjdj77nBJsYLvqwBT5B5WTTB9DO9pIWE'
+      'BQD2IY5xrXAPswBGSfjo1Ct0FswcfHBLu0E_3M04sRu71mSlhQLGykO-16XggIPaNV0DTxfjqA4p9rlaERrY-Vo0SqMMwOT6w1fmAZelhRu9390dnBvw8pXQer9cnYs3P4WLMAmNLJ25f-gtR9O2U1zejUSGVgkluaR6bv596NQ6jdwg7h7uXPtvl4UYY0UOr3hCSUOrzbI'
 
     fetch(`https://api.spotify.com/v1/me/player/play?device_id=${device_id}`, {
       method: 'PUT',
@@ -77,13 +87,18 @@ const PlayerWrap = () => {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,
       },
-    }).then((response) => {
-      if (response.ok) {
-        toast.success('Şarkı oynatılıyor')
-      } else {
-        toast.error('Şarkı oynatılamadı:', response.statusText)
-      }
     })
+      .then((response) => {
+        if (response.ok) {
+          toast.success('Şarkı oynatılıyor')
+        } else {
+          toast.error(`Şarkı oynatılamadı: ${response.statusText}`)
+        }
+      })
+      .catch((error) => {
+        toast.error('Bir hata oluştu. Şarkı oynatılamadı.')
+        console.error('Şarkı oynatma hatası:', error)
+      })
   }
 
   const handlePlayPause = () => {
@@ -107,6 +122,16 @@ const PlayerWrap = () => {
     if (player) {
       player.setVolume(newVolume).then(() => {})
     }
+  }
+
+  const handleSeek = (e) => {
+    if (!player) return
+    const rect = e.currentTarget.getBoundingClientRect()
+    const offsetX = e.clientX - rect.left
+    const width = rect.width
+    const percentage = (offsetX / width) * 100
+    const newPosition = (percentage / 100) * currentTrackInfo.duration_ms
+    player.seek(newPosition).then(() => {})
   }
 
   const formatTime = (timeInSeconds) => {
@@ -153,8 +178,10 @@ const PlayerWrap = () => {
         </Flexible>
         <div className="wrap">
           <Flexible display={'flex'} gap={'15px'} alignItems={'center'}>
-            <span></span>
-            <MusicLine />
+            <span>{formatTime(progress)}</span>
+            <MusicLineContainer onClick={(e) => handleSeek(e)}>
+              <MusicProgress progress={progress}></MusicProgress>
+            </MusicLineContainer>
             <span>{formatTime(currentTrackInfo?.duration_ms / 1000)}</span>
           </Flexible>
         </div>

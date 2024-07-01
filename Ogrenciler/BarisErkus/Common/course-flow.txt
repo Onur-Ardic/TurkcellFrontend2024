@@ -36,3 +36,4 @@
 14-06-2024: Project presentations and have a chat
 24-06-2024: NextJs
 26-06-2024: Project presentations and Refactor NextJs app
+28-06-2024: Formik & yup

@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import styled from 'styled-components';
 
@@ -26,12 +27,6 @@ export const BlogTitle = styled.h1`
     font-size: 16px;
   }`
 ;
-
-export const BlogImg = styled.img`
-   border-radius: 10px;
-   max-width: 100%;`
-;
-
 export const Paragraf = styled.p`
   text-transform: capitalize;
   margin-bottom: 10px;
@@ -53,15 +48,17 @@ async function getData(params) {
 
 const BlogItem = async({params}) => {
   const post = await getData(params)
+
   return (
     <div>
         {post ? (
  <BlogPage>
     <BlogPageContent>
     <Image
-        src={`https://picsum.photos/id/${params.id}/500/333`}
+        src={`https://picsum.photos/id/${params.id}/300`}
         alt="Blog image"
-        fill
+        width={200}
+        height={300}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
       <div>

@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgba(223, 199, 199, 0.42);
+}
+
+.container {
+  display: flex;
+  font-size: 20px;
+  border: 1px solid #b7b7a4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(207, 230, 76, 0.788);
+  padding: 2rem;
+  width: 700px;
+  height: 600px;
+  background-color: #fff;
+}
+
+.container form {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-weight: bold;
+  background: rgba(239, 235, 206, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(239, 235, 206, 0.08);
+}
+
+.container input {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #d4a373;
+  text-align: center;
+}
+
+.container select {
+  margin-bottom: 14px;
+  margin-left: 10 px;
+  display: flex;
+}
+
+.error {
+  font-size: 14px;
+  color: red;
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+  padding: 12px 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: red;
+}
