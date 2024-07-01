@@ -1,32 +1,33 @@
-'use client'
+"use client";
 
-import { schema } from '@/app/(schema)'
-import { useFormik } from 'formik'
+import { bschema } from "@/app/(schema)";
+import { useFormik } from "formik";
 const onSubmit = async (values, action) => {
-  console.log(values)
-  console.log(action)
+  console.log(values);
+  console.log(action);
 
   await new Promise((resolve) => {
-    setTimeout(resolve, 1000)
-  })
-  action.resetForm()
-}
+    setTimeout(resolve, 1000);
+  });
+  action.resetForm();
+};
 
 const Form = () => {
-  const { values, errors, handleSubmit, handleChange, isSubmitting } = useFormik({
-    initialValues: {
-      name: '',
-      surname: '',
-      email: '',
-      school: '',
-      city: '',
-      day: '',
-      stajType: '',
-      Kvkk: '',
-    },
-    validationSchema: schema,
-    onSubmit,
-  })
+  const { values, errors, handleSubmit, handleChange, isSubmitting } =
+    useFormik({
+      initialValues: {
+        name: "",
+        surname: "",
+        email: "",
+        school: "",
+        city: "",
+        day: "",
+        stajType: "",
+        Kvkk: "",
+      },
+      validationSchema: bschema,
+      onSubmit,
+    });
 
   return (
     <form onSubmit={handleSubmit}>
@@ -38,7 +39,6 @@ const Form = () => {
             type="text"
             id="name"
             name="name"
-            required
             value={values.name}
             className="border"
             onChange={handleChange}
@@ -53,12 +53,13 @@ const Form = () => {
             type="text"
             id="surname"
             name="surname"
-            required
             onChange={handleChange}
             value={values.surname}
           />
 
-          {errors.surname && <span className="text-red-900">{errors.surname}</span>}
+          {errors.surname && (
+            <span className="text-red-900">{errors.surname}</span>
+          )}
         </div>
 
         <div className="form-input flex flex-col">
@@ -67,7 +68,6 @@ const Form = () => {
             type="email"
             id="email"
             name="email"
-            required
             onChange={handleChange}
             value={values.email}
           />
@@ -85,27 +85,48 @@ const Form = () => {
             value={values.school}
           />
 
-          {errors.school && <span className="text-red-900">{errors.school}</span>}
+          {errors.school && (
+            <span className="text-red-900">{errors.school}</span>
+          )}
         </div>
 
         <div className="form-input flex flex-col">
           <label htmlFor="city">Şehir Bilgisi</label>
-          <input type="text" name="city" id="city" onChange={handleChange} value={values.city} />
+          <input
+            type="text"
+            name="city"
+            id="city"
+            onChange={handleChange}
+            value={values.city}
+          />
           {errors.city && <span className="text-red-900">{errors.city}</span>}
         </div>
 
         <div className="form-input flex flex-col">
           <label htmlFor="stajType">Staj Tipi</label>
-          <select name="stajType" id="stajType" onChange={handleChange} value={values.stajType}>
+          <select
+            name="stajType"
+            id="stajType"
+            onChange={handleChange}
+            value={values.stajType}
+          >
             <option value="zorunlu">Zorunlu</option>
             <option value="gönüllü">Gönüllü</option>
           </select>
-          {errors.stajType && <span className="text-red-900">{errors.stajType}</span>}
+          {errors.stajType && (
+            <span className="text-red-900">{errors.stajType}</span>
+          )}
         </div>
 
         <div className="form-input flex flex-col">
           <label htmlFor="day">Staj Süresi</label>
-          <input type="number" name="day" id="day" onChange={handleChange} value={values.day} />
+          <input
+            type="number"
+            name="day"
+            id="day"
+            onChange={handleChange}
+            value={values.day}
+          />
           {errors.day && <span className="text-red-900">{errors.day}</span>}
         </div>
 
@@ -133,7 +154,7 @@ const Form = () => {
         </div>
       </div>
     </form>
-  )
-}
+  );
+};
 
-export default Form
+export default Form;
