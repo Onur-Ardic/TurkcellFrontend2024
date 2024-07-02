@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <h1>Todo App</h1>
-    <form>
+    <form @submit.prevent="addTodo">
       <div class="field">
         <div class="control">
           <input
