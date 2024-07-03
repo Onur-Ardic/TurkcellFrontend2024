@@ -1,23 +1,38 @@
-import * as yup from 'yup'
+import * as yup from "yup";
 
-export const basicSchema = yup.object().shape({
-  name: yup.string().required(' isim boş olamaz'),
+export const bschema = yup.object().shape({
+  name: yup.string().required(" isim boş olamaz"),
 
-  surname: yup.string().required(' soyisim boş olamaz'),
+  surname: yup.string().required(" soyisim boş olamaz"),
 
-  email: yup.string().required('email boş bırakılamaz').email('Geçerli bir email giriniz'),
+  email: yup
+    .string()
+    .required("email boş bırakılamaz")
+    .email("Geçerli bir email giriniz"),
 
-  school: yup.string().required('okul boş olamaz'),
+  age: yup
+    .number()
+    .positive("lütfen pozitif yaş giriniz")
+    .integer("lütfen yaşınızı tam sayı olarak giriniz")
+    .required("Yaş boş bırakılamaz"),
 
-  city: yup.string().required('şehir boş olamaz'),
+  school: yup.string().required("okul boş olamaz"),
 
-  stajType: yup.string().oneOf(['zorunlu', 'gönüllü']).required('staj türünüzü boş bırakılamaz'),
+  city: yup.string().required("şehir boş olamaz"),
+
+  stajType: yup
+    .string()
+    .oneOf(["zorunlu", "gönüllü"])
+    .required("staj türünüzü boş bırakılamaz"),
 
   day: yup
     .number()
-    .positive('lütfen pozitif gün giriniz')
-    .integer('lütfen tam sayı olarak giriniz')
-    .required('Gün boş bırakılamaz'),
+    .positive("lütfen pozitif gün giriniz")
+    .integer("lütfen tam sayı olarak giriniz")
+    .required("Gün boş bırakılamaz"),
 
-  check: yup.boolean().oneOf([true], 'kullanım koşullarını kabul ediniz'),
-})
+  check: yup
+    .boolean()
+    .oneOf([true], "kullanım koşullarını kabul ediniz")
+    .required("kullanım koşullarını kabul etmek zorunludur"),
+});
