@@ -37,3 +37,4 @@
 24-06-2024: Learn NextJs
 26-06-2024: Refactor NextJs app
 28-06-2024: Learn Formik & yup
+01-07-2024: Svelte & Vue - Veda ...
