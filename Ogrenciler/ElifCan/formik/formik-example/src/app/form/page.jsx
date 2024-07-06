@@ -88,7 +88,6 @@ function GeneralForm() {
           className={errors.university ? "input-error" : ""}
         >
           <option value="" label="Üniversite seçiniz" />
-          <option value="Osmangazi" label="Osmangazi" />
           <option value="bogazici" label="Boğaziçi" />
           <option value="gsu" label="GSU" />
           <option value="odtü" label="ODTÜ" />
