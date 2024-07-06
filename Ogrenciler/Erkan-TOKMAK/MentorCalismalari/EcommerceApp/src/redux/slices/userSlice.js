@@ -9,13 +9,17 @@ const userSlice = createSlice({
     initialState,
     reducers: {
         setUser: (state, action) => {
-            // fonksiyon
+           const user = action.payload
+              state.user = user
+
         },
         removeUser: (state) => {
-            // fonksiyon
+            const user = null
+            state.user = user
         },
         updateUser: (state, action) => {
-            // fonksiyon
+           const updatedUser = action.payload
+              state.user = updatedUser
         }
     }
 

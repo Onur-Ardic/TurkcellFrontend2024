@@ -10,13 +10,16 @@ const productSlice = createSlice(
         initialState,
         reducers: {
             addProduct: (state, action) => {
-                // function
+               const product = action.payload
+                state.products.push(product)
             },
             removeProduct: (state, action) => {
-                // function
+              const productId = action.payload
+                state.products = state.products.filter(product => product.id !== productId)
             },
             updateProduct: (state, action) => {
-                // function
+                const updatedProduct = action.payload
+                state.products = state.products.map(product => product.id === updatedProduct.id ? updatedProduct : product)
             }
         }
     }

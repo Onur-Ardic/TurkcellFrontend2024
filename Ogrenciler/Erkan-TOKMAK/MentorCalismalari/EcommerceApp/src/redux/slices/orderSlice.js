@@ -9,13 +9,16 @@ const orderSlice = createSlice({
     initialState,
     reducers: {
         addOrder: (state, action) => {
-            // function
+           const order = action.payload
+              state.orders.push(order)
         },
         removeOrder: (state, action) => {
-            // function
+           const orderId = action.payload
+              state.orders = state.orders.filter(order => order.id !== orderId)
         },
         updateOrder: (state, action) => {
-            // function
+           const updatedOrder = action.payload
+              state.orders = state.orders.map(order => order.id === updatedOrder.id ? updatedOrder : order)
         }
     }
 })
