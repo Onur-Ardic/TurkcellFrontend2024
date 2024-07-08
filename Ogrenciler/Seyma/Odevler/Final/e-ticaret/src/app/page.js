@@ -1,15 +1,14 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
-import i18next from '../i18n';
+import i18next from 'i18next';
+import Navbar from "@/components/Navbar";
+//import { Background } from './Styled';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-    <div>
-   {i18next.t('defaultText')}
-
-    </div>
+    <main >
+      <div className='background'>
+      <p>{i18next.t('defaultText')}</p>
+      <header> <Navbar></Navbar></header>
+      </div>
     </main>
   );
 }
