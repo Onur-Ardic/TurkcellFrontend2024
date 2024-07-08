@@ -1,9 +1,8 @@
-'use client'
 import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
-import { useState } from 'react';
+import { useTheme } from '@/context/ThemeContext';
 
 const ThemeToggleBtn = () => {
-  const { isDarkMode, toggleTheme } = useState();
+  const { isDarkMode, toggleTheme } = useTheme();
 
   return (
     <button

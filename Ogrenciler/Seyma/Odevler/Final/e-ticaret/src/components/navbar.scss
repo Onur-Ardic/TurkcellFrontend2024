@@ -1,0 +1,12 @@
+
+@import '../app/globals.scss';
+
+.navbarlist{
+    background-color: #fff;
+    color: #000;
+
+    html.dark & {
+      background-color: #000;
+      color: #fff;
+    }
+} 

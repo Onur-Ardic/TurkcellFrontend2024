@@ -7,7 +7,8 @@ i18next.init({
             translation: {
                 "defaultText": "hello world",
                 "layoutTitle": "E-Commerce",
-                "layoutDescription": "turkcell e-commerce"
+                "layoutDescription": "turkcell e-commerce",
+                "menuItem1":"Home"
             }
         },
         tr: {
@@ -15,6 +16,7 @@ i18next.init({
                 "defaultText": "merhaba dunya",
                 "layoutTitle": "E-Ticaret",
                 "layoutDescription": "turkcell e-ticaret",
+                "menuItem1":"Ana Sayfa"
             }
         }
     },
