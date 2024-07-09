@@ -1,9 +1,14 @@
 //import { Inter } from "next/font/google";
-import "./globals.scss";
+import "./globals.sass";
 import { ThemeProvider } from "@/context/ThemeContext";
 import i18next from '../i18n';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ImportBsJS from "../../bs";
+
 //const inter = Inter({ subsets: ["latin"] });
+import Navbar from "@/components/Navbar";
+import TopBar from '@/components/TopBar/TopBar';
+
 
 export const metadata = {
   title: i18next.t('layoutTitle') ,
@@ -13,12 +18,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
   return (
-    <html lang="en" >
+    <html lang="en">
       <body>
-      <ThemeProvider>{children}</ThemeProvider>
+      <ThemeProvider>
+        <ImportBsJS />
+      <TopBar></TopBar>
+        <Navbar></Navbar>
+        {children}
+        </ThemeProvider>
      </body>
     </html>
-  );
+  ); 
 }
 
 

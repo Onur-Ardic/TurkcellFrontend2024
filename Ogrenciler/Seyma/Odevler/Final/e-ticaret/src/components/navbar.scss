@@ -1,12 +1,13 @@
+@import '../app/globals.sass';
 
-@import '../app/globals.scss';
-
-.navbarlist{
+.navbar{
     background-color: #fff;
     color: #000;
+    height: 90px;
 
     html.dark & {
       background-color: #000;
       color: #fff;
+      height: 90px;
     }
-} 
+}

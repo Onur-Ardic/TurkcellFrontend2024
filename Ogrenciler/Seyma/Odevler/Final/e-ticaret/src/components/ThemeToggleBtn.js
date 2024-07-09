@@ -1,4 +1,4 @@
-import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
+
 import { useTheme } from '@/context/ThemeContext';
 
 const ThemeToggleBtn = () => {
@@ -7,13 +7,12 @@ const ThemeToggleBtn = () => {
   return (
     <button
       aria-label="Toggle Dark Mode"
-      className="toggle-button"
       onClick={toggleTheme}
     >
       {isDarkMode ? (
-        <MoonIcon className="icon" />
+        <i className="bi bi-cloud-sun"></i>
       ) : (
-        <SunIcon className="icon" />
+       <i className="bi bi-cloud-moon"></i>
       )}
     </button>
   );

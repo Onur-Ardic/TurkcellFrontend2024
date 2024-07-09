@@ -12,6 +12,7 @@
     "@heroicons/react": "^2.1.4",
     "@reduxjs/toolkit": "^2.2.6",
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "i18next": "^23.11.5",
     "i18next-http-backend": "^2.5.2",
     "next": "14.2.4",
@@ -24,6 +25,7 @@
     "swr": "^2.2.5"
   },
   "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
     "eslint": "^8",
     "eslint-config-next": "14.2.4"
   }
