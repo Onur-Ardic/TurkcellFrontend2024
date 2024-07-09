@@ -1,0 +1,61 @@
+@import '../../app/globals'
+
+
+
+.footerArea
+    font-family: "satoshi"
+    margin-top: 170px
+    height: 499px
+    background-color: $secondary
+    html.dark & 
+        background-color: $danger
+        color: $light
+    a
+        text-decoration: none
+.footerContain
+    position: relative
+
+.footerBrand
+    font-family: "Integral CF Bold"
+    font-size: 33.45px
+    font-weight: 700
+    line-height: 40.15px
+    text-align: left
+
+.footerDescription
+    color: $primary
+    font-family: Satoshi
+    font-size: 14px
+    font-weight: 400
+    line-height: 22px
+    text-align: left
+    padding-right: 55px
+
+.footerTitle
+    font-family: "Integral CF Bold"
+    color: $light
+    html.dark & 
+        color: $danger
+
+.subscribeArea
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: -140px
+    border-radius: 20px
+    width: 1240px
+    height: 180px
+    background-color: $danger
+    html.dark & 
+        background-color: $danger
+        color: $light
+
+.gridArea
+    padding-top: 80px
+    border-bottom: 1px solid $warning
+    
+
+@media  (max-width: 480px)
+  .subscribeArea 
+    width: 358px
+    height: 293px

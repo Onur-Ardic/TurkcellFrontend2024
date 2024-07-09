@@ -8,6 +8,7 @@ import ImportBsJS from "../../bs";
 //const inter = Inter({ subsets: ["latin"] });
 import Navbar from "@/components/Navbar";
 import TopBar from '@/components/TopBar/TopBar';
+import Footer from '@/components/Footer/Footer';
 
 
 export const metadata = {
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
       <TopBar></TopBar>
         <Navbar></Navbar>
         {children}
+        <Footer></Footer>
         </ThemeProvider>
      </body>
     </html>

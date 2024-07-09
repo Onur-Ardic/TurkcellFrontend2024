@@ -1,0 +1,37 @@
+@import '../app/globals'
+
+.navbar
+  background-color: #ffff
+  color: $danger
+  height: 90px
+  font-family: "satoshi"
+
+  html.dark & 
+    background-color: $secondary
+    color: $danger
+  .navbar-brand
+    font-family: "Integral CF Bold"
+    font-size: 32px
+    font-weight: 700
+    line-height: 38.4px
+
+  .navbar-toggler-icon
+    background-color: $light
+    html.dark & 
+      background-color: $danger
+      color: #ffff
+  .nav-link
+    color: $primary
+    &.dark
+     color: #ffff
+
+.collapse
+  background-color: $light
+  html.dark & 
+    background-color: $danger
+    color: #ffff
+
+@media  (max-width: 480px)
+  
+
+  

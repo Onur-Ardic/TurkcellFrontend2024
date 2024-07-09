@@ -1,26 +1,26 @@
 import './main.sass';
 import Image from 'next/image';
 import i18next from '../i18n';
+import pic from "../../public/pic.svg";
+import stars from "../../public/stars.svg";
+import zara from "../../public/zara.svg";
+import calvin from "../../public/calvin.svg";
+import prada from "../../public/prada.svg";
+import gucci from "../../public/gucci.svg";
+import littlestar from "../../public/littlestar.svg";
+
+import TopArrivals from "@/components/TopArrivals/TopArrivals.jsx"
+
+
 
 export default function Home() {
   return (
-    <main className="main">
-      <div className="container col-xxl-9">
-        <div className="row flex-lg-row-reverse align-items-center">
-          <div className="col-10 col-sm-8 col-lg-6">
-            <Image
-              src="/ccfd8aa5825862cdb9604a4fb4930464.jpeg"
-              className="img-fluid"
-              loading="lazy"
-              alt="Picture of the author"
-              width={500}
-              height={500}
-              blurDataURL="data:..."
-              placeholder="blur"
-            />
-          </div>
-          <div className="home-banner-title col-lg-6">
-            <h1 className="display-5 fw-bold">
+    <main>
+      <section className="main">
+      <div className="container-xxl">
+        <div className="row">
+          <div className="home-banner-title col-lg-6 pt-5">
+            <h1 className="home-title">
               {i18next.t('findClothes')}
             </h1>
             <p className="">{i18next.t('browse')}
@@ -28,32 +28,74 @@ export default function Home() {
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
               <button
                 type="button"
-                className="btn btn-secondary fs-6 btn-lg px-5 py-3 me-md-2"
+                className="btn shopBtn fs-6 btn-lg px-5 py-3 me-md-2"
               >
                 {i18next.t('shopnow')}
               </button>
-             
+
             </div>
-            <div class="d-flex justify-content-center mb-10">
-                <div class="px-10">
-                  <span class="text-muted fw-semibold fs-7">Sale</span>
-                  <span class="text-gray-800 fw-bold fs-3 d-block">$650</span>
-                </div>
-                <div class="px-10">
-                  <span class="text-muted fw-semibold fs-7">Commission</span>
-                  <span class="text-gray-800 fw-bold fs-3 d-block">$2,040</span>
-                </div>
-                <div class="px-10">
-                  <span class="text-muted fw-semibold fs-7">Refers</span>
-                  <span class="text-gray-800 fw-bold fs-3 d-block">8,926</span>
-                </div>
+            <div className="d-flex justify-content-center">
+              <div className="">
+              <span className="text-gray-800 fw-bold fs-3 d-block">200+</span>
+                <span className="text-muted fw-semibold fs-7">{i18next.t('internationalBrandas')}</span>
+            
               </div>
+              <div className="">
+              <span className="text-gray-800 fw-bold fs-3 d-block">2,000+</span>
+
+                <span className="text-muted fw-semibold fs-7">Commission</span>
+              </div>
+              <div className="">
+              <span className="text-gray-800 fw-bold fs-3 d-block">30,000+</span>
+
+                <span className="text-muted fw-semibold fs-7">Refers</span>
+              </div>
+            </div>
+          </div>
+          <div className="col-10 col-sm-8 col-lg-6">
+            <Image
+              src="/homeimage.png"
+              className="img-fluid"
+              loading="lazy"
+              alt="Picture of the author"
+              width={700}
+              height={800}
+              blurDataURL="data:..."
+              placeholder="blur"
+            />
           </div>
         </div>
       </div>
-      <svg className="absolute" width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M52 0C53.7654 27.955 76.0448 50.2347 104 52C76.0448 53.7654 53.7654 76.0448 52 104C50.2347 76.0448 27.955 53.7654 0 52C27.955 50.2347 50.2347 27.955 52 0Z" fill="black" />
-      </svg>
+      <Image className="absolute1" src={littlestar} alt={""}/>
+      <Image className="absolute" src={stars} alt={""}/>
+     
+      <div className='brandbanner'>
+       <div className='brandbannerContent flex-wrap container-xxl d-flex align-items-center'>
+      <div className="brand-item">
+        <Image src={pic} alt="Brand 1" layout="responsive" />
+      </div>
+      <div className="brand-item">
+        <Image src={zara} alt="Brand 2" layout="responsive" />
+      </div>
+      <div className="brand-item">
+        <Image src={gucci} alt="Brand 3" layout="responsive" />
+      </div>
+      <div className="brand-item">
+        <Image src={prada} alt="Brand 4" layout="responsive" />
+      </div>
+      <div className="brand-item">
+        <Image src={calvin} alt="Brand 5" layout="responsive" />
+      </div>
+    </div>
+ 
+      </div>
+      </section>
+      <TopArrivals></TopArrivals>
     </main>
   );
 }
+//167 34
+//92 38
+//157 34
+//195 32
+//208 34

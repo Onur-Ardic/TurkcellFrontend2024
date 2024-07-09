@@ -1,4 +1,18 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css")
+@import url('https://fonts.cdnfonts.com/css/satoshi')
+@import url('https://db.onlinewebfonts.com/c/b52804ac57ef6e90d2826a6b0f111133?family=Integral+CF+Bold')
+
+$primary: #00000099 // alt yazı için
+$secondary: #F2F0F1
+$danger: #000000
+$light: #fff
+$warning: #cbc8c9
+
+$h2-font-size: 2.25rem /* 36px */
+$h4-font-size: 1.25rem /* 20px */
+$h5-font-size: 0.875rem /* 14px */
+$h6-font-size: 0.75rem /* 12px */
+
 
 html 
   background-color: #ffff
@@ -20,17 +34,14 @@ html
   margin: auto
   cursor: pointer
   &:hover 
-    background-color: #000
-  
   html.dark & 
     background-color: #ffff
   
 
-  .icon 
-    height: 1.75rem
-    width: 1.75rem
-    color: white
-    html.dark & 
-      background-color: #fff
-      color: #000
+.icon 
+  height: 1.75rem
+  width: 1.75rem
+  html.dark & 
+    background-color: #fff
+    color: #000
     

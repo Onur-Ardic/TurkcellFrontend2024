@@ -1,11 +1,11 @@
 import i18next from 'i18next';
+
 i18next.init({
-    lng: 'en', 
+    lng: 'en',
     debug: true,
-    resources:{
+    resources: {
         en: {
             translation: {
-                
                 "layoutTitle": "E-Commerce",
                 "layoutDescription": "turkcell e-commerce",
                 "reviews": "All Reviews",
@@ -30,8 +30,35 @@ i18next.init({
                 "newArrivalsL": "New Arrivals",
                 "brands": "Brands",
                 "browse": "Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.",
-                "shopnow": "Shop Now"
-
+                "shopnow": "Shop Now",
+                "internationalBrandas": "International Brands",
+                "newsletterTitle": "STAY UPTO DATE ABOUT OUR LATEST OFFERS",
+                "subscribePlaceholder": "Enter your email address",
+                "subscribeButton": "Subscribe to Newsletter",
+                "brand": "SHOP.CO",
+                 //Footer
+                "description": "We have clothes that suits your style and which you’re proud to wear. From women to men.",
+                "companyLinks": "COMPANY",
+                "about": "About",
+                "features": "Features",
+                "works": "Works",
+                "career": "Career",
+                "helpLinks": "HELP",
+                "customerSupport": "Customer Support",
+                "deliveryDetails": "Delivery Details",
+                "termsConditions": "Terms & Conditions",
+                "privacyPolicy": "Privacy Policy",
+                "faqLinks": "FAQ",
+                "account": "Account",
+                "manageDeliveries": "Manage Deliveries",
+                "orders": "Orders",
+                "payments": "Payments",
+                "resourcesLinks": "RESOURCES",
+                "freeEbooks": "Free eBooks",
+                "developmentTutorial": "Development Tutorial",
+                "howToBlog": "How to - Blog",
+                "youtubePlaylist": "Youtube Playlist",
+                "copyright": "Shop.co © 2000-2023, All Rights Reserved"
             }
         },
         tr: {
@@ -60,10 +87,38 @@ i18next.init({
                 "newArrivalsL": "Yeni Gelenler",
                 "brands": "Markalar",
                 "browse": "Bireyselliğinizi ortaya çıkarmak ve stil anlayışınıza hitap etmek için tasarlanmış, titizlikle hazırlanmış çeşitli giysi yelpazemize göz atın.",
-                "shopnow": "Satın Al"
-
+                "shopnow": "Satın Al",
+                "internationalBrandas": "Uluslararası Markalar",
+                "newsletterTitle": "EN SON TEKLİFLERİMİZDEN HABERDAR OLUN",
+                "subscribePlaceholder": "E-posta adresinizi girin",
+                "subscribeButton": "Bültene Abone Olun",
+                "brand": "DÜKKAN.CO",
+                "description": "Tarzınıza uygun ve giymekten gurur duyacağınız kıyafetlerimiz var. Kadınlardan erkeklere.",
+                //Footer
+                "companyLinks": "ŞİRKET",
+                "about": "Hakkında",
+                "features": "Özellikler",
+                "works": "İşler",
+                "career": "Kariyer",
+                "helpLinks": "YARDIM",
+                "customerSupport": "Müşteri Desteği",
+                "deliveryDetails": "Teslimat Detayları",
+                "termsConditions": "Şartlar ve Koşullar",
+                "privacyPolicy": "Gizlilik Politikası",
+                "faqLinks": "S.S.S",
+                "account": "Hesap",
+                "manageDeliveries": "Teslimatları Yönet",
+                "orders": "Siparişler",
+                "payments": "Ödemeler",
+                "resourcesLinks": "KAYNAKLAR",
+                "freeEbooks": "Ücretsiz e-Kitaplar",
+                "developmentTutorial": "Geliştirme Eğitimi",
+                "howToBlog": "Nasıl Yapılır - Blog",
+                "youtubePlaylist": "Youtube Oynatma Listesi",
+                "copyright": "Shop.co © 2000-2023, Tüm Hakları Saklıdır"
             }
         }
-    },
+    }
 });
+
 export default i18next;
