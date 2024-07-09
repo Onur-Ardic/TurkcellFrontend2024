@@ -1,14 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: $font-family-base;
 }
   
 h1, h2, h3, h4, h5, h6 {
    font-family: $headings-font-family;
+}
+
+@mixin btn($padding, $color, $bgColor, $border, $radius){
+    padding: $padding;
+    color: $color;
+    background-color: $bgColor;
+    border: $border;
+    border-radius: $radius;
 }
 
 .anouncement-bar{
@@ -21,4 +24,147 @@ li{
 
 .navbar{
     height: 90px;
+}
+
+.search-input{
+    border: none;
+    padding: 12px 1rem;
+    background-color: $secondary;
+    border-radius: 62px;
+    padding-left: 3rem;
+    outline: none;
+}
+
+.search-button {
+    top: 11px;
+    left: 13px;
+}
+
+.header-container{
+    background-color: #f2f0f1;
+}
+
+.transparent-6{
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.shop-now-btn{
+    @include btn(1rem 54px, #fff, rgba(0, 0, 0, 1), none, 62px);
+    width: 40%;
+}
+
+.view-all-btn{
+    @include btn(1rem 54px, rgba(0, 0, 0, 1), #fff, 1px solid rgba(0, 0, 0, 1), 62px);
+    max-width: 218px;
+}
+
+.discount-badge{
+    @include btn(6px 14px, rgba(255, 51, 51, 1), rgba(255, 51, 51, 0.1), none, 62px);
+    font-size: 12px;
+}
+
+.brand-section{
+    height: 122px;
+}
+
+.fs-20{
+    font-size: 20px;
+}
+
+.fs-24{
+    font-size: 24px;
+}
+
+.discount-color{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.product-card {
+    width: 295px;
+    height: 298px;
+    border-radius: 20px;
+    background-color: $light;
+    overflow: hidden;
+    .product-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.dress-style{
+    width: 100%;
+    background-color: $secondary;
+    height: 866px;
+    border-radius: 40px;
+    padding: 2rem 1rem;
+    .title{
+        padding: 3rem;
+    }
+    .casual{
+        background-color: #fff;
+        width: 100%;
+        height: 289px;
+        border-radius: 20px;
+        overflow: hidden;
+        object-fit: contain;
+        object-position: right center;
+    }
+    .formal{
+        background-color: #fff;
+        width: 100%;
+        height: 289px;
+        border-radius: 20px;
+    }
+    .sm-product-card{
+        max-width: 407px;
+        height: 289px;
+    }
+    .lg-product-card{
+        max-width: 684px;
+        height: 289px;
+    }
+}
+
+.newsletter{
+    background-color: black;
+    height: 180px;
+    padding: 36px 64px;
+    border-radius: 20px;
+    margin-bottom: -80px;
+    z-index: 1;
+    .input{
+        @include btn(12px 16px, black, #fff, none, 62px);
+        outline: none;
+    }
+    .message {
+        top: 11px;
+        left: 1rem;
+    }
+}
+
+.footer-section{
+    height: 500px;
+    padding: 7rem 2rem 0 2rem;
+    .f-lighter{
+        color: #00000099;
+    }
+    .col-9 ul {
+        li {
+            margin-bottom: 1.5rem;
+        }
+    }
+    .col-lg-3 {
+        padding-left: 4rem;
+        .links{
+            display: flex;
+            flex-direction: column;
+            a{
+                margin-bottom: 1.5rem;
+                text-decoration: none;
+            }
+        }
+    }
+    
 }

@@ -1,0 +1,380 @@
+{
+    "products":[
+    {
+      "id": 1,
+      "name": "ONE LIFE GRAPHIC T-SHIRT",
+      "price": 260,
+      "original_price": 300,
+      "discount": 40,
+      "rating": 4.5,
+      "imgUrl": "assets/one-life-tshirt.png",
+      "category":"T-shirt",
+      "style":"Party",
+      "reviews": [
+        {
+          "username": "user1",
+          "rating": 5,
+          "comment": "Great quality and design!",
+          "date": "August 14, 2023"
+        },
+        {
+          "username": "user2",
+          "rating": 4,
+          "comment": "Comfortable but a bit pricey.",
+          "date": "August 15, 2023"
+        }
+      ],
+      "description": "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+      "colors": ["green", "blue", "black"],
+      "imgColor":["green","black"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 2,
+      "name": "T-shirt with Tape Details",
+      "price": 120,
+      "original_price": 120,
+      "discount": 0,
+      "rating": 4.5,
+      "imgUrl": "assets/tshirt-with-tap-details.png",
+      "category":"T-shirt",
+      "style":"Casual",
+      "reviews": [
+        {
+          "username": "user3",
+          "rating": 4,
+          "comment": "Love the retro design!",
+          "date": "August 16, 2023"
+        },
+        {
+          "username": "user4",
+          "rating": 4.5,
+          "comment": "Very stylish and comfortable.",
+          "date": "August 17, 2023"
+        }
+      ],
+      "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
+      "colors": ["black", "white", "blue"],
+      "imgColor":["black"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 3,
+      "name": "Skinny Fit Jeans",
+      "price": 240,
+      "original_price": 260,
+      "discount": 20,
+      "rating": 3.5,
+      "imgUrl": "assets/skinny-jeans.png",
+      "category":"Jean",
+      "style":"Casual",
+      "reviews": [
+        {
+          "username": "user3",
+          "rating": 4,
+          "comment": "Love the retro design!",
+          "date": "August 19, 2023"
+        },
+        {
+          "username": "user4",
+          "rating": 4.5,
+          "comment": "Very stylish and comfortable.",
+          "date": "August 19, 2023"
+        }
+      ],
+      "description": "Bring back the retro vibes with this stylish jeans. Made from premium cotton, it's perfect for everyday wear.",
+      "colors": ["black","blue"],
+      "imgColor":["blue"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 4,
+      "name": "Checkered Shirt",
+      "price": 180,
+      "original_price": 180,
+      "discount": 0,
+      "rating": 4.5,
+      "imgUrl": "assets/checkered-shirt.png",
+      "category":"Shirt",
+      "style":"Formal",
+      "reviews": [
+        {
+          "username": "user3",
+          "rating": 4,
+          "comment": "Love the retro design!",
+          "date": "August 20, 2023"
+        },
+        {
+          "username": "user4",
+          "rating": 4.5,
+          "comment": "Very stylish and comfortable.",
+          "date": "August 21, 2023"
+        }
+      ],
+      "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
+      "colors": ["red", "white", "blue"],
+      "imgColor":["red", "white", "blue"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 5,
+      "name": "Sleeve Striped T-shirt",
+      "price": 130,
+      "original_price": 160,
+      "discount": 30,
+      "rating": 4.5,
+      "imgUrl": "assets/sleeve-tshirt.png",
+      "category":"T-shirt",
+      "style":"Casual",
+      "reviews": [
+        {
+          "username": "user3",
+          "rating": 4,
+          "comment": "Love the retro design!",
+          "date": "August 21, 2023"
+        },
+        {
+          "username": "user4",
+          "rating": 4.5,
+          "comment": "Very stylish and comfortable.",
+          "date": "August 22, 2023"
+        }
+      ],
+      "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
+      "colors": ["black", "orange", "white"],
+      "imgColor":["black","orange"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 6,
+      "name": "Vertical Striped Shirt",
+      "price": 212,
+      "original_price": 232,
+      "discount": 20,
+      "rating": 5,
+      "imgUrl": "assets/vertical-shirt.png",
+      "category":"Shirt",
+      "style":"Formal",
+      "reviews": [
+        {
+          "username": "user3",
+          "rating": 4,
+          "comment": "Love the retro design!",
+          "date": "October 2, 2023"
+        },
+        {
+          "username": "user4",
+          "rating": 4.5,
+          "comment": "Very stylish and comfortable.",
+          "date": "October 4, 2023"
+        }
+      ],
+      "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
+      "colors": ["green", "black"],
+      "imgColor":["black","green"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 7,
+      "name": "Courage Graphic T-shirt",
+      "price": 145,
+      "rating": 4,
+      "imgUrl": "assets/graphic-tshirt.png",
+      "category":"T-shirt",
+      "style":"Party",
+      "reviews": [
+        {
+          "username": "user3",
+          "rating": 4,
+          "comment": "Love the retro design!",
+          "date": "October 5, 2023"
+        },
+        {
+          "username": "user4",
+          "rating": 4.5,
+          "comment": "Very stylish and comfortable.",
+          "date": "October 6, 2023"
+        }
+      ],
+      "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
+      "colors": ["orange", "white"],
+      "imgColor":["orange", "white"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 8,
+      "name": "Loose Fit Bermuda Shorts",
+      "price": 80,
+      "original_price": 80,
+      "discount": 0,
+      "rating": 3,
+      "imgUrl": "assets/bermuda-short.png",
+      "category":"Short",
+      "style":"Casual",
+      "reviews": [
+        {
+          "username": "user3",
+          "rating": 4,
+          "comment": "Love the retro design!",
+          "date": "October 7, 2023"
+        },
+        {
+          "username": "user4",
+          "rating": 4.5,
+          "comment": "Very stylish and comfortable.",
+          "date": "October 8, 2023"
+        }
+      ],
+      "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
+      "colors": ["blue", "black"],
+      "imgColor":["blue"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 9,
+      "name": "Faded Skinny Jeans",
+      "price": 210,
+      "original_price": 210,
+      "discount": 0,
+      "rating": 4.5,
+      "imgUrl": "assets/faded-skinny.png",
+      "category":"Jean",
+      "style":"Casual",
+      "reviews": [
+        {
+          "username": "user3",
+          "rating": 4,
+          "comment": "Love the retro design!",
+          "date": "October 10, 2023"
+        },
+        {
+          "username": "user4",
+          "rating": 4.5,
+          "comment": "Very stylish and comfortable.",
+          "date": "October 11, 2023"
+        }
+      ],
+      "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
+      "colors": ["black", "blue"],
+      "imgColor":["black"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 10,
+      "name": "Polo with Contrast Trims",
+      "price": 212,
+      "original_price": 242,
+      "discount": 30,
+      "rating": 4,
+      "imgUrl": "assets/contrast-trims.png",
+      "category":"T-shirt",
+      "style":"Formal",
+      "reviews": [
+        {
+          "username": "user3",
+          "rating": 4,
+          "comment": "Love the retro design!",
+          "date": "October 12, 2023"
+        },
+        {
+          "username": "user4",
+          "rating": 4.5,
+          "comment": "Very stylish and comfortable.",
+          "date": "October 13, 2023"
+        }
+      ],
+      "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
+      "colors": ["white", "blue"],
+      "imgColor":["white","blue"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 11,
+      "name": "Gradient Graphic T-shirt",
+      "price": 145,
+      "original_price": 145,
+      "discount": 0,
+      "rating": 3.5,
+      "imgUrl": "assets/gradient-graphic-tshirt.png",
+      "category":"T-shirt",
+      "style":"Party",
+      "reviews": [
+        {
+          "username": "user3",
+          "rating": 4,
+          "comment": "Love the retro design!",
+          "date": "October 14, 2023"
+        },
+        {
+          "username": "user4",
+          "rating": 4.5,
+          "comment": "Very stylish and comfortable.",
+          "date": "October 17, 2023"
+        }
+      ],
+      "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
+      "colors": ["white", "pink"],
+      "imgColor":["white","pink"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 12,
+      "name": "Polo with Tipping Details",
+      "price": 180,
+      "original_price": 180,
+      "discount": 0,
+      "rating": 4.5,
+      "imgUrl": "assets/polo-tshirt.png",
+      "category":"T-shirt",
+      "style":"Formal",
+      "reviews": [
+        {
+          "username": "user3",
+          "rating": 4,
+          "comment": "Love the retro design!",
+          "date": "October 14, 2023"
+        },
+        {
+          "username": "user4",
+          "rating": 4.5,
+          "comment": "Very stylish and comfortable.",
+          "date": "October 17, 2023"
+        }
+      ],
+      "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
+      "colors": ["white", "pink"],
+      "imgColor":["white","pink"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 13,
+      "name": "Black Striped T-shirt",
+      "price": 120,
+      "original_price": 150,
+      "discount": 0,
+      "rating": 5,
+      "imgUrl": "assets/striped-tshirt.png",
+      "category":"T-shirt",
+      "style":"Casual",
+      "reviews": [
+        {
+          "username": "user3",
+          "rating": 4,
+          "comment": "Love the retro design!",
+          "date": "October 18, 2023"
+        },
+        {
+          "username": "user4",
+          "rating": 4.5,
+          "comment": "Very stylish and comfortable.",
+          "date": "October 19, 2023"
+        }
+      ],
+      "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
+      "colors": ["white", "black","orange"],
+      "imgColor":["white","black"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    }
+  ]
+}
+  

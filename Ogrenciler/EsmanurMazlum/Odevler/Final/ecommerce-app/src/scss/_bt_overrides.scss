@@ -1,9 +1,12 @@
 @import url('https://db.onlinewebfonts.com/c/b52804ac57ef6e90d2826a6b0f111133?family=Integral+CF+Bold');
 @import url('https://fonts.cdnfonts.com/css/satoshi');
+@import '@smastrom/react-rating/style.css';
 
 $headings-font-family: "Integral CF Bold";
 $font-family-base: 'Satoshi';
 
+$secondary: #F0F0F0;
+$light: #F0EEED;
 
 $container-max-widths: (
   sm: 540px,
