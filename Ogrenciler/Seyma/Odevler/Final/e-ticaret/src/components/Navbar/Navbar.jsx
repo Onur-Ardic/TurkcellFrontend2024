@@ -1,9 +1,9 @@
 "use client"
 
-import ThemeToggleBtn from './ThemeToggleBtn';
+import ThemeToggleBtn from '../ThemeToggleBtn';
 import './navbar.sass';
-import i18next from '../i18n';
-import Input from './Input/Input';
+import i18next from '../../i18n';
+import Input from '../Input/Input';
 
 const Navbar = () => {
 
@@ -16,7 +16,7 @@ const Navbar = () => {
       </button>
 
       <div className="collapse w-100 p-2 navbar-collapse" id="navbarsExample07XL">
-        <ul className="navbar-nav me-auto mb-lg-0 d-flex justify-content-around">
+        <ul className="navbar-nav me-auto mb-lg-0 d-flex gap-4 align-items-center">
         <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">{i18next.t('shop')}</a>
             <ul className="dropdown-menu">
@@ -24,6 +24,9 @@ const Navbar = () => {
               <li><a className="dropdown-item" href="#">{i18next.t('shop')}</a></li>
               <li><a className="dropdown-item" href="#">{i18next.t('shop')}</a></li>
             </ul>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link active" aria-current="page" href="#">{i18next.t('onsale')}</a>
           </li>
           <li className="nav-item">
             <a className="nav-link active" aria-current="page" href="#">{i18next.t('newArrivalsL')}</a>

@@ -26,6 +26,7 @@ i18next.init({
                 "signUpNow": "Sign Up Now",
                 "inputSearch": "Search for products...",
                 "shop": "Shop",
+                "viewbtn": "View All",
                 "onsale": "On Sale",
                 "newArrivalsL": "New Arrivals",
                 "brands": "Brands",
@@ -52,13 +53,18 @@ i18next.init({
                 "account": "Account",
                 "manageDeliveries": "Manage Deliveries",
                 "orders": "Orders",
+                "highqualty": "High-Quality Products",
                 "payments": "Payments",
                 "resourcesLinks": "RESOURCES",
                 "freeEbooks": "Free eBooks",
                 "developmentTutorial": "Development Tutorial",
                 "howToBlog": "How to - Blog",
                 "youtubePlaylist": "Youtube Playlist",
-                "copyright": "Shop.co © 2000-2023, All Rights Reserved"
+                "copyright": "Shop.co © 2000-2023, All Rights Reserved",
+                "casual": "Casual",
+                "party": "Party",
+                "formal":  "Formal",
+                "gym": "Gym"
             }
         },
         tr: {
@@ -72,6 +78,7 @@ i18next.init({
                 "upToDate": "EN SON TEKLİFLERİMİZDEN HABERDAR OLUN",
                 "offers": "TEKLİFLERİMİZ",
                 "shopCo": "DÜKKAN.CO",
+                "viewbtn": "Hepsini Gör",
                 "company": "şirket",
                 "help": "YARDIM",
                 "faq": "SSS",
@@ -94,6 +101,7 @@ i18next.init({
                 "subscribeButton": "Bültene Abone Olun",
                 "brand": "DÜKKAN.CO",
                 "description": "Tarzınıza uygun ve giymekten gurur duyacağınız kıyafetlerimiz var. Kadınlardan erkeklere.",
+                "highqualty": "Yüksek Kaliteli Ürünler",
                 //Footer
                 "companyLinks": "ŞİRKET",
                 "about": "Hakkında",
@@ -115,7 +123,11 @@ i18next.init({
                 "developmentTutorial": "Geliştirme Eğitimi",
                 "howToBlog": "Nasıl Yapılır - Blog",
                 "youtubePlaylist": "Youtube Oynatma Listesi",
-                "copyright": "Shop.co © 2000-2023, Tüm Hakları Saklıdır"
+                "copyright": "Shop.co © 2000-2023, Tüm Hakları Saklıdır",
+                "casual": "Günlük",
+                "party": "Parti",
+                "formal":  "Klasik",
+                "gym": "Spor"
             }
         }
     }

@@ -1,0 +1,51 @@
+@import '../../app/globals.sass'
+
+.gridPlace
+    height: 866px
+    border-radius: 40px
+    background-color: $secondary
+    margin: 0 auto
+    html.dark & 
+        background-color: $danger
+
+.gridPlaceContent
+    margin: 0 auto
+
+.imageContainerLgt
+    position: relative
+    height: 300px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    border: none !important
+    border-radius: 10px
+    
+
+.bannerTitle
+    font-family: "Integral CF Bold"
+    font-size: 48px
+    font-weight: 700
+    text-align: center
+    margin: auto 0
+
+.imgTitle
+    position: absolute
+    font-family: Satoshi
+    font-size: 36px
+    font-weight: 700
+    line-height: 48.6px
+    text-align: left
+    top: 25px
+    left: 36px
+
+  
+@media  (max-width: 480px)
+    .gridPlace
+        height: auto
+    .bannerTitle
+        font-family: "Integral CF Bold"
+        font-size: 30px
+        font-weight: 700
+        text-align: center
+        margin: auto 0

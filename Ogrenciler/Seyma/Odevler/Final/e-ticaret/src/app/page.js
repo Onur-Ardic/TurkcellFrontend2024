@@ -8,9 +8,9 @@ import calvin from "../../public/calvin.svg";
 import prada from "../../public/prada.svg";
 import gucci from "../../public/gucci.svg";
 import littlestar from "../../public/littlestar.svg";
-
 import TopArrivals from "@/components/TopArrivals/TopArrivals.jsx"
-
+import { TopSellings } from '@/components/TopSellings/TopSellings';
+import Banner from '@/components/Banner/Banner';
 
 
 export default function Home() {
@@ -34,21 +34,18 @@ export default function Home() {
               </button>
 
             </div>
-            <div className="d-flex justify-content-center">
-              <div className="">
-              <span className="text-gray-800 fw-bold fs-3 d-block">200+</span>
-                <span className="text-muted fw-semibold fs-7">{i18next.t('internationalBrandas')}</span>
-            
+            <div className="d-flex gap-3">
+              <div className="homeNumbers">
+              <h3 className="d-block">200+</h3>
+                <span className="">{i18next.t('internationalBrandas')}</span>
               </div>
-              <div className="">
-              <span className="text-gray-800 fw-bold fs-3 d-block">2,000+</span>
-
-                <span className="text-muted fw-semibold fs-7">Commission</span>
+              <div className="homeNumbers">
+              <h3 className="">2,000+</h3>
+                <span className="">{i18next.t('highqualty')}</span>
               </div>
-              <div className="">
-              <span className="text-gray-800 fw-bold fs-3 d-block">30,000+</span>
-
-                <span className="text-muted fw-semibold fs-7">Refers</span>
+              <div className="homeNumbers">
+              <h3 className="">30,000+</h3>
+                <span className="">{i18next.t('happyCustomers')}</span>
               </div>
             </div>
           </div>
@@ -91,6 +88,8 @@ export default function Home() {
       </div>
       </section>
       <TopArrivals></TopArrivals>
+      <TopSellings></TopSellings>
+      <Banner></Banner>
     </main>
   );
 }

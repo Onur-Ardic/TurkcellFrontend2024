@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ImportBsJS from "../../bs";
 
 //const inter = Inter({ subsets: ["latin"] });
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar/Navbar";
 import TopBar from '@/components/TopBar/TopBar';
 import Footer from '@/components/Footer/Footer';
 

@@ -1,6 +1,10 @@
-@import '../../app/globals'
+@import '../../app/globals.sass'
 
-
+$primary: #00000099 // alt yazı için
+$secondary: #F2F0F1
+$danger: #000000
+$light: #fff
+$warning: #cbc8c9
 
 .footerArea
     font-family: "satoshi"
@@ -12,6 +16,7 @@
         color: $light
     a
         text-decoration: none
+
 .footerContain
     position: relative
 
@@ -53,9 +58,35 @@
 .gridArea
     padding-top: 80px
     border-bottom: 1px solid $warning
-    
+    h5 
+        font-family: Satoshi
+        font-size: 16px
+        font-weight: 500
+        line-height: 18px
+        letter-spacing: 3px
+        text-align: left
 
-@media  (max-width: 480px)
-  .subscribeArea 
-    width: 358px
-    height: 293px
+
+.liStyleFooter
+    font-family: Satoshi
+    font-size: 16px
+    font-weight: 400
+    a
+        color: $primary
+
+.subscribeBtn
+    background-color: #fff
+    color: $danger
+    html.dark & 
+        background-color: $danger
+        color: $light
+
+
+@media (max-width: 480px)
+    .subscribeArea 
+        width: 358px
+        height: 293px
+    .gridArea
+        padding-top: 200px
+    .footerArea
+        height: auto
