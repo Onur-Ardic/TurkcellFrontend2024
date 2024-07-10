@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar sticky-top navbar-expand-lg bd-navbar" aria-label="Ninth navbar example">
-    <div className="container-xxl">
+    <div className="container-xxl nav-Container">
       <a className="navbar-brand" href="#">{i18next.t('shopCo')}</a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>

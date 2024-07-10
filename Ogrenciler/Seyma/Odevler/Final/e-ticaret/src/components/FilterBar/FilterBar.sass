@@ -1,0 +1,70 @@
+@import '../../app/globals.sass'
+
+.filterBar
+    padding: 20px
+    border: 1px solid $secondary
+    border-radius: 20px
+
+.categories
+    border-bottom: 1px solid $warning
+.dressStyle
+    border-bottom: 1px solid $warning
+
+.filterTitle
+    font-family: Satoshi
+    font-size: 20px
+    font-weight: 700
+    line-height: 27px
+    text-align: left
+
+.colors
+    margin-top: 20px
+    border-bottom: 1px solid $warning
+    .colorsContent
+        padding-right: 30px
+        display: grid
+        grid-template-columns: auto auto auto auto
+        span
+            width: 35px
+            height: 35px
+            border-radius: 50%
+            margin: 5px
+            border: 1px solid $secondary
+            cursor: pointer
+            transition: border 0.3s
+
+.green
+    background: #00C12B
+
+.red
+    background-color: #F50606
+
+.orange
+    background: #F57906
+
+.yellow
+   background: #F5DD06
+
+.blue
+    background: #06CAF5
+
+.darkblue
+    background: #063AF5
+
+.purple
+    background-color: purple
+.pink
+    background-color: pink
+
+.white
+    background-color: white
+
+.black
+    background-color: black
+
+.applybtn
+  background-color: $danger
+  color: $light
+  html.dark & 
+    background-color: $light
+    color: $danger

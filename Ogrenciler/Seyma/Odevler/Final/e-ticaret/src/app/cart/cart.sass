@@ -1,0 +1,65 @@
+@import '../../app/globals.sass'
+
+.productsChoosen
+    border: 1px solid $secondary
+    border-radius: 20px
+    padding: 20px
+    height: auto 
+    
+.cartTitle
+    font-family: "Integral CF Bold"
+    font-size: 40px
+    font-weight: 700
+    line-height: 48px
+    text-align: left
+
+.orderSummary
+    border: 1px solid $secondary
+    border-radius: 20px
+    padding: 20px
+    height: 458px
+
+.productsChoosenDetail
+    padding: 10px
+    border-bottom: 1px solid $secondary
+ 
+.trash
+    position: absolute
+    top: 0
+    right: 0
+
+.addBtn
+    position: absolute
+    bottom: 0
+    right: 0
+
+.prdctDetailBox
+    position: relative
+
+.imgContainerCart
+    height: 124px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    border: none !important
+    border-radius: 10px
+    img
+        object-fit: cover
+        width: 100%
+
+.cartContent
+    display: flex
+
+.cartTotal
+    border-bottom: 1px solid $secondary 
+
+@media (max-width: 480px)
+    .orderSummary
+        height: auto
+    .cartContent
+        display: block
+    .cartTitle
+        font-size: 20px
+    .productsChoosen
+        margin-bottom: 10px

@@ -64,7 +64,22 @@ i18next.init({
                 "casual": "Casual",
                 "party": "Party",
                 "formal":  "Formal",
-                "gym": "Gym"
+                "gym": "Gym",
+                "productDetail": "Product Details",
+                "ratingRevies": "Rating & Reviews",
+                "faqs": "FAQs",
+                "yourcart": "YOUR CART",
+                "size": "Size",
+                "color": "Color",
+                "orderSummary": "Order Summary",
+                "subtotal": "Subtotal",
+                "discount": "Discount",
+                "deliveryfee": "Delivery Fee",
+                "total":   "Total",
+                "addpromocode": "Add Promo Code",
+                "apply": "Apply",
+                "gotocheckout": "Go to Checkout",
+                "exmpleTshirt": "Gradient Graphic T-shirt",
             }
         },
         tr: {
@@ -127,7 +142,21 @@ i18next.init({
                 "casual": "Günlük",
                 "party": "Parti",
                 "formal":  "Klasik",
-                "gym": "Spor"
+                "gym": "Spor",
+                "productDetail": "Ürün Detayı",
+                "ratingRevies": "Ürün Puanları ve Yorumları",
+                "faqs": "S.S.S",
+                "yourcart": "SEPETİNİZ",
+                "size": "Beden",
+                "color": "Renk",
+                "orderSummary": "Sipariş Özeti",
+                "subtotal": "Ara Toplam",
+                "discount": "İndirim",
+                "deliveryfee": "Teslimat Ücreti",
+                "total": "Toplam",
+                "addpromocode": "Promosyon Kodu Ekle",
+                "apply": "Uygula",
+                "gotocheckout": "Ödeme Yap"
             }
         }
     }
