@@ -8,13 +8,12 @@ import calvin from "../../public/calvin.svg";
 import prada from "../../public/prada.svg";
 import gucci from "../../public/gucci.svg";
 import littlestar from "../../public/littlestar.svg";
-import TopArrivals from "@/components/TopArrivals/TopArrivals.jsx"
-import { TopSellings } from '@/components/TopSellings/TopSellings';
+import NewArrivals from "@/components/NewArrivals/NewArrivals.jsx"
+import TopSellings from '@/components/TopSellings/TopSellings';
 import Banner from '@/components/Banner/Banner';
 
 
 export default function Home() {
-  const data = await getData()
   return (
     <main>
       <section className="main">
@@ -88,14 +87,9 @@ export default function Home() {
  
       </div>
       </section>
-      <TopArrivals></TopArrivals>
+      <NewArrivals></NewArrivals>
       <TopSellings></TopSellings>
       <Banner></Banner>
     </main>
   );
 }
-//167 34
-//92 38
-//157 34
-//195 32
-//208 34

@@ -8,9 +8,9 @@ import Input from '../Input/Input';
 const Navbar = () => {
 
   return (
-    <nav className="navbar sticky-top navbar-expand-lg bd-navbar" aria-label="Ninth navbar example">
-    <div className="container-xxl nav-Container">
-      <a className="navbar-brand" href="#">{i18next.t('shopCo')}</a>
+    <nav className="navbar sticky-top navbar-expand-lg bd-navbar bottomLine" aria-label="Ninth navbar example">
+    <div className="container-xxl" >
+      <a className="navbar-brand" href="/">{i18next.t('shopCo')}</a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
       </button>
@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="collapse w-100 p-2 navbar-collapse" id="navbarsExample07XL">
         <ul className="navbar-nav me-auto mb-lg-0 d-flex gap-4 align-items-center">
         <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">{i18next.t('shop')}</a>
+            <a className="nav-link dropdown-toggle" href="/categories" data-bs-toggle="dropdown" aria-expanded="false">{i18next.t('shop')}</a>
             <ul className="dropdown-menu">
               <li><a className="dropdown-item" href="#">{i18next.t('onsale')}</a></li>
               <li><a className="dropdown-item" href="#">{i18next.t('shop')}</a></li>
@@ -26,13 +26,13 @@ const Navbar = () => {
             </ul>
           </li>
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">{i18next.t('onsale')}</a>
+            <a className="nav-link active" aria-current="page" href="/categories">{i18next.t('onsale')}</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">{i18next.t('newArrivalsL')}</a>
+            <a className="nav-link active" aria-current="page" href="/categories">{i18next.t('newArrivalsL')}</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">{i18next.t('brands')}</a>
+            <a className="nav-link" href="/categories">{i18next.t('brands')}</a>
           </li>
           <li>
             <Input></Input>

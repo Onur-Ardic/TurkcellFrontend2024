@@ -4,6 +4,10 @@ input
     background-color: $secondary
     outline: #00000000
     border: none
+    html.dark & 
+        background-color: $light
+        color: #ffff
+
 .searchForm
     width: 577px
     border-radius: 20px
@@ -11,7 +15,12 @@ input
     background-color: $secondary
     color: #cbc8c9
     html.dark & 
-        background-color: $danger
+        background-color: $light
+        color: #ffff
+    i
+        margin: 0 5px
+        html.dark & 
+        color: $danger
 
 @media  (max-width: 480px)
   .searchForm

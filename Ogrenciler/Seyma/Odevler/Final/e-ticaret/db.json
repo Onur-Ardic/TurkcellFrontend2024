@@ -6,7 +6,7 @@
         "price": 145,
         "rating": 3.5,
         "category": "Casual",
-        "image": "http://localhost:3000/public/graphic.png",
+        "image": "https://r.resimlink.com/IgTX9EcWYP.png",
         "sizes": ["S", "M", "L", "XL"],
         "colors": "white",
         "description": "A stylish graphic t-shirt with gradient colors.",
@@ -35,7 +35,7 @@
         "price": 180,
         "rating": 4.5,
         "category": "Casual",
-        "image": "http://localhost:3000/public/graphic.png",
+        "image": "https://r.resimlink.com/U301JgGW2S9r.png",
         "sizes": ["S", "M", "L", "XL"],
         "colors": ["color1", "color2"],
         "description": "A classic polo shirt with tipping details.",
@@ -64,7 +64,7 @@
         "price": 120,
         "rating": 5.0,
         "category": "Casual",
-        "image": "http://localhost:3000/public/graphic.png",
+        "image": "https://r.resimlink.com/ieDNjP3vVzG.png",
         "sizes": ["S", "M", "L", "XL"],
         "colors": ["color1", "color2"],
         "description": "A comfortable striped t-shirt.",
@@ -93,12 +93,12 @@
         "price": 240,
         "rating": 3.5,
         "category": "Casual",
-        "image": "http://localhost:3000/public/graphic.png",
+        "image": "https://r.resimlink.com/AoRd4.png",
         "sizes": ["S", "M", "L", "XL"],
         "colors": ["color1", "color2"],
         "description": "Skinny fit jeans for a modern look.",
-        "newArrivals": false,
-        "topSelling": true,
+        "newArrivals": true,
+        "topSelling": false,
         "reviews": [
           {
             "id": 1,
@@ -122,7 +122,7 @@
         "price": 180,
         "rating": 4.5,
         "category": "Casual",
-        "image": "http://localhost:3000/public/graphic.png",
+        "image": "https://r.resimlink.com/dyiSf.png",
         "sizes": ["S", "M", "L", "XL"],
         "colors": ["color1", "color2"],
         "description": "A stylish checkered shirt.",
@@ -151,12 +151,12 @@
         "price": 130,
         "rating": 4.5,
         "category": "Casual",
-        "image": "http://localhost:3000/public/graphic.png",
+        "image": "https://r.resimlink.com/xZL8k2.png",
         "sizes": ["S", "M", "L", "XL"],
         "colors": ["color1", "color2"],
         "description": "A t-shirt with striped sleeves.",
-        "newArrivals": false,
-        "topSelling": true,
+        "newArrivals": true,
+        "topSelling": false,
         "reviews": [
           {
             "id": 1,
@@ -180,7 +180,7 @@
         "price": 212,
         "rating": 5.0,
         "category": "Casual",
-        "image": "http://localhost:3000/public/graphic.png",
+        "image": "https://r.resimlink.com/uE_p1n.png",
         "sizes": ["S", "M", "L", "XL"],
         "colors": ["color1", "color2"],
         "description": "A vertical striped shirt for a stylish look.",
@@ -208,8 +208,8 @@
         "name": "Courage Graphic T-shirt",
         "price": 145,
         "rating": 4.0,
-        "category": "Casual",
-        "image": "http://localhost:3000/public/graphic.png",
+        "category": "Gym",
+        "image": "https://r.resimlink.com/r07nF-ThfvV6.png",
         "sizes": ["S", "M", "L", "XL"],
         "colors": ["color1", "color2"],
         "description": "A graphic t-shirt with a motivational message.",
@@ -238,7 +238,7 @@
         "price": 145,
         "rating": 4.5,
         "category": "Casual",
-        "image": "http://localhost:3000/public/graphic.png",
+        "image": "https://r.resimlink.com/r07nF-ThfvV6.png",
         "sizes": ["S", "M", "L", "XL"],
         "colors": ["color1", "color2"],
         "description": "A graphic t-shirt that boosts confidence.",
@@ -266,11 +266,98 @@
         "name": "Inspire Graphic T-shirt",
         "price": 145,
         "rating": 5.0,
-        "category": "Casual",
-        "image": "http://localhost:3000/public/graphic.png",
+        "category": "Formal",
+        "image": "https://r.resimlink.com/1TqWP_C.png",
         "sizes": ["S", "M", "L", "XL"],
         "colors": ["color1", "color2"],
         "description": "A graphic t-shirt to inspire others.",
+        "newArrivals": false,
+        "topSelling": true,
+        "reviews": [
+          {
+            "id": 1,
+            "name": "Sophia G.",
+            "rating": 5.0,
+            "comment": "This t-shirt is amazing. The design is beautiful and it inspires me every day.",
+            "date": "December 10, 2022"
+          },
+          {
+            "id": 2,
+            "name": "James L.",
+            "rating": 4.5,
+            "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
+            "date": "December 11, 2022"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Loose Fit Bermuda Shorts",
+        "price": 210,
+        "rating": 4.5,
+        "category": "Formal",
+        "image": "https://r.resimlink.com/w_qKm5h.png",
+        "sizes": ["S", "M", "L", "XL"],
+        "colors": ["black", "blue"],
+        "description": "A black Jeans for Formal Use.",
+        "newArrivals": false,
+        "topSelling": true,
+        "reviews": [
+          {
+            "id": 1,
+            "name": "Sophia G.",
+            "rating": 5.0,
+            "comment": "This t-shirt is amazing. The design is beautiful and it inspires me every day.",
+            "date": "December 10, 2022"
+          },
+          {
+            "id": 2,
+            "name": "James L.",
+            "rating": 4.5,
+            "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
+            "date": "December 11, 2022"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Fadded Skiny Jeans",
+        "price": 210,
+        "rating": 4.5,
+        "category": "Gym",
+        "image": "https://r.resimlink.com/dSI2GRYoA.png",
+        "sizes": ["S", "M", "L", "XL"],
+        "colors": ["black", "blue"],
+        "description": "A black Jeans for Formal Use.",
+        "newArrivals": false,
+        "topSelling": true,
+        "reviews": [
+          {
+            "id": 1,
+            "name": "Sophia G.",
+            "rating": 5.0,
+            "comment": "This t-shirt is amazing. The design is beautiful and it inspires me every day.",
+            "date": "December 10, 2022"
+          },
+          {
+            "id": 2,
+            "name": "James L.",
+            "rating": 4.5,
+            "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
+            "date": "December 11, 2022"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Polo with Tipping Details",
+        "price": 180,
+        "rating": 4.5,
+        "category": "Formal",
+        "image": "https://r.resimlink.com/wxkjI.png",
+        "sizes": ["S", "M", "L", "XL"],
+        "colors": ["black", "blue"],
+        "description": "A black Jeans for Formal Use.",
         "newArrivals": false,
         "topSelling": true,
         "reviews": [
