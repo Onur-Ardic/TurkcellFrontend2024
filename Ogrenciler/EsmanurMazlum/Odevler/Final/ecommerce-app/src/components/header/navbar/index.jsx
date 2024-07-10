@@ -1,25 +1,9 @@
+import Link from "next/link";
 import React from "react";
 
 function Navbar() {
     return (
         <>
-            {/* <div className="container navbar">
-        <div className="d-flex  align-items-center col-5">
-          <h4>SHOP.CO</h4>
-          <ul className="mt-3 w-100 d-flex align-items-center justify-content-between">
-            <li>
-                <select>
-                    <option>Shop</option>
-                </select>
-            </li>
-            <li>On Sale</li>
-            <li>New Arrivals</li>
-            <li>Brands</li>
-          </ul>
-        </div>
-        <div className="col-5"></div>
-        <div className="col-2"></div>
-      </div> */}
             <nav className="navbar navbar-expand-lg">
                     <div className="col-5 d-flex">
                         <h4 className="navbar-brand fs-4">SHOP.CO</h4>
@@ -60,7 +44,9 @@ function Navbar() {
                     </div>
                     <div className="col-1 d-flex justify-content-end">
                         <img src="icons/basket.svg" className="mx-3" alt="Basket"/>
-                        <img src="icons/user.svg" alt="User"/>
+                        <Link href="/register">
+                           <img src="icons/user.svg" alt="User"/>
+                        </Link>
                     </div>
             </nav>
         </>

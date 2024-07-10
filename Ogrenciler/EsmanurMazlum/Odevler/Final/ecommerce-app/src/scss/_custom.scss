@@ -165,6 +165,20 @@ li{
                 text-decoration: none;
             }
         }
-    }
-    
+    }   
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+  
+.form-control {
+   border: 1px solid #000;
+}
+
+.register-wrapper{
+    width: 50%;
+    background-color: $secondary;
+    border-radius: 40px;
+    padding: 2rem 2rem;
 }
