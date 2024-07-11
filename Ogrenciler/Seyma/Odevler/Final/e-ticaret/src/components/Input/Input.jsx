@@ -17,6 +17,7 @@ const Input = () => {
       <div className='d-flex searchForm'>
         <i className="bi bi-search"></i>
         <input
+        className='searchInput'
           typeof="text"
           onKeyUp={handleKeyPress}
           placeholder={i18next.t('inputSearch')}

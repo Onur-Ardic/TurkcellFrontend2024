@@ -16,7 +16,8 @@ export default async function AdviceBanner() {
                    <Link href={`/productdetail/${item.id}`}>
                     <div className="mb-6">
                             <div className="imgContainer">
-                                <a href="#"><img src={item.image} alt="" className="w-100"/></a>
+                              <img src={item.image} alt="" 
+                             />
                         </div>
                         <div>
                             <h2 className="mt-3 fs-6"><a href="#" className="productTitle">{item.name}</a></h2>

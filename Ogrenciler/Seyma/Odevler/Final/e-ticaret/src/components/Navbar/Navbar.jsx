@@ -19,9 +19,7 @@ const Navbar = () => {
         <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="/categories" data-bs-toggle="dropdown" aria-expanded="false">{i18next.t('shop')}</a>
             <ul className="dropdown-menu">
-              <li><a className="dropdown-item" href="#">{i18next.t('onsale')}</a></li>
-              <li><a className="dropdown-item" href="#">{i18next.t('shop')}</a></li>
-              <li><a className="dropdown-item" href="#">{i18next.t('shop')}</a></li>
+              <li><a className="dropdown-item" href="/categories">{i18next.t('onsale')}</a></li>
             </ul>
           </li>
           <li className="nav-item">
@@ -39,7 +37,7 @@ const Navbar = () => {
         </ul>
         <div className='d-flex'>
         <ThemeToggleBtn />
-        <button className="btn "><i className="bi bi-cart2 md"></i></button>
+        <button className="btn"><i className="bi bi-cart2 md"></i></button>
         <button className="btn"> <i className="bi bi-person-circle md"></i></button>
         </div>
       </div>

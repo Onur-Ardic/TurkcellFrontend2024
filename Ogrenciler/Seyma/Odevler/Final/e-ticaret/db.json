@@ -6,7 +6,7 @@
       "price": 145,
       "rating": 3.5,
       "category": "Casual",
-      "image": "https://r.resimlink.com/IgTX9EcWYP.png",
+      "image": "https://r.resimlink.com/lqGKMgsX2y.png",
       "sizes": [
         "S",
         "M",
@@ -25,7 +25,7 @@
       "price": 180,
       "rating": 4.5,
       "category": "Casual",
-      "image": "https://r.resimlink.com/U301JgGW2S9r.png",
+      "image": "https://r.resimlink.com/eJcjU9A.png",
       "sizes": [
         "S",
         "M",
@@ -61,9 +61,7 @@
       "description": "A comfortable striped t-shirt.",
       "newArrivals": false,
       "topSelling": true,
-      "reviews": [
-        
-      ]
+      "reviews": []
     },
     {
       "id": "4",
@@ -85,9 +83,7 @@
       "description": "Skinny fit jeans for a modern look.",
       "newArrivals": true,
       "topSelling": false,
-      "reviews": [
-       
-      ]
+      "reviews": []
     },
     {
       "id": "5",
@@ -109,9 +105,7 @@
       "description": "A stylish checkered shirt.",
       "newArrivals": true,
       "topSelling": false,
-      "reviews": [
-
-      ]
+      "reviews": []
     },
     {
       "id": "6",
@@ -133,9 +127,7 @@
       "description": "A t-shirt with striped sleeves.",
       "newArrivals": true,
       "topSelling": false,
-      "reviews": [
-      
-      ]
+      "reviews": []
     },
     {
       "id": "7",
@@ -143,7 +135,7 @@
       "price": 212,
       "rating": 5,
       "category": "Casual",
-      "image": "https://r.resimlink.com/uE_p1n.png",
+      "image": "https://r.resimlink.com/ijAcEt.png",
       "sizes": [
         "S",
         "M",
@@ -157,9 +149,7 @@
       "description": "A vertical striped shirt for a stylish look.",
       "newArrivals": true,
       "topSelling": false,
-      "reviews": [
-        
-      ]
+      "reviews": []
     },
     {
       "id": "8",
@@ -181,9 +171,7 @@
       "description": "A graphic t-shirt with a motivational message.",
       "newArrivals": false,
       "topSelling": true,
-      "reviews": [
-       
-      ]
+      "reviews": []
     },
     {
       "id": "9",
@@ -205,9 +193,7 @@
       "description": "A graphic t-shirt that boosts confidence.",
       "newArrivals": true,
       "topSelling": false,
-      "reviews": [
-       
-      ]
+      "reviews": []
     },
     {
       "id": "10",
@@ -229,9 +215,7 @@
       "description": "A graphic t-shirt to inspire others.",
       "newArrivals": false,
       "topSelling": true,
-      "reviews": [
-     
-      ]
+      "reviews": []
     },
     {
       "id": "11",
@@ -239,7 +223,7 @@
       "price": 210,
       "rating": 4.5,
       "category": "Formal",
-      "image": "https://r.resimlink.com/w_qKm5h.png",
+      "image": "https://r.resimlink.com/ASuW0QhyD.png",
       "sizes": [
         "S",
         "M",
@@ -253,9 +237,7 @@
       "description": "A black Jeans for Formal Use.",
       "newArrivals": false,
       "topSelling": true,
-      "reviews": [
-      
-      ]
+      "reviews": []
     },
     {
       "id": "12",
@@ -277,9 +259,7 @@
       "description": "A black Jeans for Formal Use.",
       "newArrivals": false,
       "topSelling": true,
-      "reviews": [
-       
-      ]
+      "reviews": []
     },
     {
       "id": "13",
@@ -301,9 +281,7 @@
       "description": "A black Jeans for Formal Use.",
       "newArrivals": false,
       "topSelling": true,
-      "reviews": [
-      
-      ]
+      "reviews": []
     }
   ],
   "reviews": [
@@ -323,7 +301,6 @@
       "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
       "date": "August 15, 2023"
     },
-   
     {
       "productId": 2,
       "id": 1,
@@ -579,6 +556,14 @@
       "rating": 4.5,
       "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
       "date": "December 11, 2022"
+    },
+    {
+      "id": "26dd",
+      "name": "",
+      "surname": "",
+      "rating": "",
+      "comment": "",
+      "productId": "4"
     }
   ]
 }

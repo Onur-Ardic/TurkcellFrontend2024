@@ -1,4 +1,3 @@
-// import Image from "next/image";
 import i18next from "../../../i18n";
 // import pic from '../../../public/darkgreentshirt.png';
 import { getProduct } from '@/api';
@@ -25,26 +24,21 @@ const page = async ({ params }) => {
                 <div className="col-lg-6 col-10 d-flex gap-2">
                   <div className="col-lg-3 row">
                     <div className="imgContainerPrd">
-                      <a href="#">
-                        <img src={data.image} alt="" className="w-100" />
-                      </a>
+                     <img src={data.image} alt="" className="w-100" />
                     </div>
                     <div className="imgContainerPrd">
-                      <a href="#"><img src={data.image} alt="" className="w-100" /></a>
+                <img src={data.image} alt="" className="w-100" />
                     </div>
                     <div className="imgContainerPrd">
-                      <a href="#"><img src={data.image} alt="" className="w-100" /></a>
+                    <img src={data.image} alt="" className="w-100" />
                     </div>
                   </div>
                   <div className="col-lg-8">
-                    <div className="">
-                      <a href="#"><img src={data.image} alt="" className="w-100" /></a>
-                    </div>
+                   <img src={data.image} alt="" className="w-100" />
                   </div>
                 </div>
                 <div className="col-lg-6 col-10">
                   <div className="ps-md-4 ps-xl-5">
-
                     <a className="d-none d-md-flex align-items-center gap-2 text-decoration-none mb-3" href="#reviews">
                       <div className="d-flex gap-1 fs-sm">
                         <i className="ci-star-filled text-warning"></i>

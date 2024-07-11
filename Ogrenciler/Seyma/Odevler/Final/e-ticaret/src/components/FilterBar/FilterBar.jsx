@@ -29,6 +29,7 @@ const FilterBar = () => {
             <div>
                 <h4 className='filterTitle'>Price</h4>
                 <input
+                className='rangeInput'
                     onChange={handleInputChange}
                     typeof="range"
                     min={0}
