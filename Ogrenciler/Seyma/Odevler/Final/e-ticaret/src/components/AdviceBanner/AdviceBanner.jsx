@@ -38,7 +38,6 @@ export default async function AdviceBanner() {
                         </div>
                     </div></Link>
                 </div>))}
-            
             </div>
             <div className="d-flex justify-content-center">
             <ViewBtn></ViewBtn>

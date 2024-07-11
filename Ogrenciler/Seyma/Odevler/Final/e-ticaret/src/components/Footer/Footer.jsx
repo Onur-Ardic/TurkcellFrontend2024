@@ -15,9 +15,7 @@ import Image from 'next/image';
 
 const Footer = () => {
     return (
-
         <footer className="bd-footer footerArea py-4 py-md-5">
-
             <div className="container-xxl footerContain">
                 <div className='subscribeArea d-flex flex-wrap p-4 justify-content-around'>
                     <div className='col-lg-6 titleArea'>
@@ -26,7 +24,7 @@ const Footer = () => {
                     <div className='col-lg-4 row rightArea'>
                         <form className='subEmail text-left d-flex align-items-center' action="">
                             <Image src={email}></Image> <input  placeholder={i18next.t('subscribePlaceholder')}></input></form>
-                       <button type='button' className='subscribeBtn btn'>{i18next.t('subscribeButton')}</button>
+                       <button typeof='button' className='subscribeBtn btn'>{i18next.t('subscribeButton')}</button>
                     </div>
                 </div>
                 <div className="row gridArea gap-2">
@@ -67,7 +65,6 @@ const Footer = () => {
                             <li className="mb-2 liStyleFooter"><a href="#">{i18next.t('manageDeliveries')}</a></li>
                             <li className="mb-2 liStyleFooter"><a href="#">{i18next.t('orders')}</a></li>
                             <li className="mb-2 liStyleFooter"><a href="#">{i18next.t('payments')}</a></li>
-                           
                         </ul>
                     </div>
                     <div className="col-4 col-lg-2 mb-3">
@@ -77,7 +74,6 @@ const Footer = () => {
                             <li className="mb-2 liStyleFooter"><a href="#"  >{i18next.t('developmentTutorial')}</a></li>
                             <li className="mb-2 liStyleFooter"><a href="#"  >{i18next.t('howToBlog')}</a></li>
                             <li className="mb-2 liStyleFooter"><a href="#"  >{i18next.t('youtubePlaylist')}</a></li>
-                           
                         </ul>
                     </div>
                 </div>
@@ -92,7 +88,6 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-
         </footer>
     )
 }

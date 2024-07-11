@@ -14,7 +14,6 @@ const Banner = () => {
                 <div className='gridPlace row'>
                     <h4 className='bannerTitle'>{i18next.t('dressStyle')}</h4>
                     <div className='gridPlaceContent d-flex justify-content-center flex-wrap'>
-                        
                         <div className='imageContainerLgt m-2 col-lg-4 col-10'>
                             <h5 className='imgTitle'>{i18next.t('casual')}</h5>
                             <Image className="w-100" src={manBanner} alt={""} />
@@ -32,7 +31,6 @@ const Banner = () => {
                             <Image className="w-100" src={manBanner3} alt={""} />
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>

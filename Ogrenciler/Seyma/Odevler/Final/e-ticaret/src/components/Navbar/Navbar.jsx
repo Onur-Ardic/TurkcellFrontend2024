@@ -11,10 +11,9 @@ const Navbar = () => {
     <nav className="navbar sticky-top navbar-expand-lg bd-navbar bottomLine" aria-label="Ninth navbar example">
     <div className="container-xxl" >
       <a className="navbar-brand" href="/">{i18next.t('shopCo')}</a>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+      <button className="navbar-toggler" typeof="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
       </button>
-
       <div className="collapse w-100 p-2 navbar-collapse" id="navbarsExample07XL">
         <ul className="navbar-nav me-auto mb-lg-0 d-flex gap-4 align-items-center">
         <li className="nav-item dropdown">
@@ -38,7 +37,6 @@ const Navbar = () => {
             <Input></Input>
           </li>
         </ul>
-        
         <div className='d-flex'>
         <ThemeToggleBtn />
         <button className="btn "><i className="bi bi-cart2 md"></i></button>

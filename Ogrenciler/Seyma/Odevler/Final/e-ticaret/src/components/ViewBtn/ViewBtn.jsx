@@ -4,7 +4,7 @@ import i18next from '../../i18n';
 const ViewBtn = () => {
     return (
         <div>
-            <button type='button' style={{
+            <button typeof='button' style={{
                 margin: '25px',
                 padding: '16px 54px',
                 borderRadius: '62px',
@@ -12,7 +12,6 @@ const ViewBtn = () => {
             }} className='btn btn-lg'>
                 {i18next.t('viewbtn')}
             </button>
-
         </div>
     )
 }

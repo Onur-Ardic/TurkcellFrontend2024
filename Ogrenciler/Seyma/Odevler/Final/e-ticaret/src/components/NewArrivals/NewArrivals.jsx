@@ -17,10 +17,10 @@ export default async function page() {
             <Link href={`/productdetail/${item.id}`}>
                     <div className="mb-6">
                             <div className="imgContainer">
-                                <a href="#"><img src={item.image} className="w-100" alt=""/></a>
+                               <img src={item.image} className="w-100" alt=""/>
                         </div>
                         <div>
-                            <h2 className="mt-3 fs-6"><a href="#" className="productTitle">{item.name}</a></h2>
+                            <h2 className="mt-3 fs-6">{item.name}</h2>
                             <div className="d-flex align-items-center">
                                 <span className="price">${item.price}</span>
                                 <span className="discountPrice">$24</span> 
@@ -28,13 +28,11 @@ export default async function page() {
                             </div>
                             <div className="text-warning">
                                 <small>
-                                <small>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-half"></i>
-                        </small>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-half"></i>
                                 </small>
                                 <span className="text-muted small">{item.rating}</span>
                             </div>
@@ -47,7 +45,6 @@ export default async function page() {
             <ViewBtn ></ViewBtn>
             </div>
         </div>
-
     )
 }
 

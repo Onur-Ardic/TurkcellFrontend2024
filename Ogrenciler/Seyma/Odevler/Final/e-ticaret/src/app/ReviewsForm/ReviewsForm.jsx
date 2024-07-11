@@ -41,9 +41,6 @@ export const ReviewsForm = ({ productId }) => {
   };
 
   return (
-    <div>
- 
-
       <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog">
           <div className="modal-content">
@@ -57,13 +54,11 @@ export const ReviewsForm = ({ productId }) => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder={i18next.t('name')} />
-
                 <input className="form-control mb-2"
                   type="text"
                   value={surname}
                   onChange={(e) => setSurname(e.target.value)}
                   placeholder={i18next.t('surname')} />
-
                 <input className="form-control"
                   type="number"
                   value={rating}
@@ -76,16 +71,14 @@ export const ReviewsForm = ({ productId }) => {
                     onChange={(e) => setComment(e.target.value)}
                     id="comment-text"></textarea>
                 </div>
-
               </div>
               <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">{i18next.t('close')}</button>
-                <button type="submit" className="btn btn-primary">{i18next.t('applyreview')}</button>
+                <button typeof="button" className="btn btn-secondary" data-bs-dismiss="modal">{i18next.t('close')}</button>
+                <button typeof="submit" className="btn btn-primary">{i18next.t('applyreview')}</button>
               </div>
             </form>
           </div>
         </div>
       </div>
-    </div>
   )
 }

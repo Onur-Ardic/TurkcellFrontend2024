@@ -26,13 +26,12 @@ export default function Home() {
             <p className="">{i18next.t('browse')}
             </p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button
-                type="button"
+              <a href="/categories"
+                typeof="button"
                 className="btn shopBtn fs-6 btn-lg px-5 py-3 me-md-2"
               >
                 {i18next.t('shopnow')}
-              </button>
-
+              </a>
             </div>
             <div className="d-flex gap-3">
               <div className="homeNumbers">
@@ -54,7 +53,6 @@ export default function Home() {
               src="/homeimage.png"
               className="img-fluid"
               loading="lazy"
-              alt="Picture of the author"
               width={700}
               height={800}
               blurDataURL="data:..."
@@ -65,7 +63,6 @@ export default function Home() {
       </div>
       <Image className="absolute1" src={littlestar} alt={""}/>
       <Image className="absolute" src={stars} alt={""}/>
-     
       <div className='brandbanner'>
        <div className='brandbannerContent flex-wrap container-xxl d-flex align-items-center'>
       <div className="brand-item">
@@ -84,7 +81,6 @@ export default function Home() {
         <Image src={calvin} alt="Brand 5" layout="responsive" />
       </div>
     </div>
- 
       </div>
       </section>
       <NewArrivals></NewArrivals>
