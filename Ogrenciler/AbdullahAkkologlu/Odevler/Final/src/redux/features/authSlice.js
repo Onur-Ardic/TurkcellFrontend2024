@@ -46,7 +46,7 @@ const authSlice = createSlice({
         } else {
           const existingProduct = newBasket.find(
             (item) =>
-              item.cartId === action.payload.cartId &&
+              item.id === action.payload.id &&
               item.selectedSize === action.payload.selectedSize &&
               item.selectedColor === action.payload.selectedColor
           );
