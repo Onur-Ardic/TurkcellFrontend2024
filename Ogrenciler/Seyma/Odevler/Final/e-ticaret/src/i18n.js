@@ -81,8 +81,15 @@ i18next.init({
                 "gotocheckout": "Go to Checkout",
                 "exmpleTshirt": "Gradient Graphic T-shirt",
                 "sizeguide": "Size Guide",
-                "addtocart" : "Add to cart"
-
+                "addtocart" : "Add to cart",
+                "leavereview": "Leave a review",
+                "applyreview": "Send Review",
+                "newreview": "Add New Review",
+                "close": "Close",
+                "comment": "Your Comment",
+                "rating": "Rating",
+                "name":   "Name",
+                "surname": "Surname"
             }
         },
         tr: {
@@ -161,7 +168,15 @@ i18next.init({
                 "apply": "Uygula",
                 "gotocheckout": "Ödeme Yap",
                  "sizeguide": "Beden Tablosu",
-                 "addtocart" : "Sepete Ekle"
+                 "addtocart" : "Sepete Ekle",
+                "leavereview": "Yorum Bırak",
+                "applyreview": "Send Review",
+                "newreview": "Yeni Yorum Ekle",
+                "close": "Kapat",
+                "comment": "Yorumunuz",
+                "rating": "Puan",
+                "name":   "Adınız",
+                "surname": "Soyadınız"
             }
         }
     }

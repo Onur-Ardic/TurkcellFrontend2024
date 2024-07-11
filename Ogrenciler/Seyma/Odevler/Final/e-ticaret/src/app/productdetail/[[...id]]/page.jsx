@@ -12,7 +12,6 @@ import Reviews from "@/components/Reviews/Reviews";
 const page  = async({params}) => {
     const data = await getProduct(params)
     const reviews = data.reviews || [];
-    console.log(reviews)
   return (
     <div>
       <section>
