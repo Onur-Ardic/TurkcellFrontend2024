@@ -29,7 +29,7 @@ const Navbar = () => {
             <a className="nav-link active" aria-current="page" href="/categories">{i18next.t('onsale')}</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="/categories">{i18next.t('newArrivalsL')}</a>
+            <a className="nav-link active" aria-current="page" href="/newarrivals">{i18next.t('newArrivalsL')}</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="/categories">{i18next.t('brands')}</a>
@@ -39,12 +39,11 @@ const Navbar = () => {
           </li>
         </ul>
         
-        <div className='d-flex gap-2'>
+        <div className='d-flex'>
         <ThemeToggleBtn />
-        <i className="bi bi-cart2 md"></i>
-        <i className="bi bi-person-circle md"></i>
+        <button className="btn"><i className="bi bi-cart2 md"></i></button>
+        <button className="btn"> <i className="bi bi-person-circle md"></i></button>
         </div>
-       
       </div>
     </div>
   </nav>

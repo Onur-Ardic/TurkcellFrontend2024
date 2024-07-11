@@ -36,12 +36,10 @@ export default async function page() {
                         </div>
                     </div>
                 </div>))}
-              
             </div>
             <div className="d-flex justify-content-center">
             <ViewBtn ></ViewBtn>
             </div>
-           
         </div>
 
     )

@@ -9,6 +9,7 @@ import instagram from "../../../public/instagram.svg";
 import github from "../../../public/github.svg";
 import facebook from "../../../public/facebook.svg";
 import twitter from "../../../public/twitter.svg";
+import email from "../../../public/email.svg";
 import Image from 'next/image';
 
 
@@ -18,13 +19,14 @@ const Footer = () => {
         <footer className="bd-footer footerArea py-4 py-md-5">
 
             <div className="container-xxl footerContain">
-                <div className='subscribeArea row p-4'>
-                    <div className='col-lg-7 p-4'>
+                <div className='subscribeArea d-flex flex-wrap p-4 justify-content-around'>
+                    <div className='col-lg-6 titleArea'>
                         <h2 className='footerTitle'>{i18next.t('newsletterTitle')}</h2>
                     </div>
-                    <div className='col-lg-5'>
-                        <form action=""> <input placeholder={i18next.t('subscribePlaceholder')}></input></form>
-                       <button type='button' className='subscribeBtn btn btn-lg px-5 py-3 me-md-2'>{i18next.t('subscribeButton')}</button>
+                    <div className='col-lg-4 row rightArea'>
+                        <form className='subEmail text-left d-flex align-items-center' action="">
+                            <Image src={email}></Image> <input  placeholder={i18next.t('subscribePlaceholder')}></input></form>
+                       <button type='button' className='subscribeBtn btn'>{i18next.t('subscribeButton')}</button>
                     </div>
                 </div>
                 <div className="row gridArea gap-2">

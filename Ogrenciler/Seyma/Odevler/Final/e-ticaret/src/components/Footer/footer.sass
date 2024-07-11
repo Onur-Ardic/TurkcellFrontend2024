@@ -1,10 +1,6 @@
 @import '../../app/globals.sass'
 
-$primary: #00000099 // alt yazı için
-$secondary: #F2F0F1
-$danger: #000000
-$light: #fff
-$warning: #cbc8c9
+
 
 .footerArea
     font-family: "satoshi"
@@ -26,6 +22,8 @@ $warning: #cbc8c9
     font-weight: 700
     line-height: 40.15px
     text-align: left
+    html.dark & 
+        color: $light
 
 .footerDescription
     color: $primary
@@ -35,12 +33,18 @@ $warning: #cbc8c9
     line-height: 22px
     text-align: left
     padding-right: 55px
+    html.dark & 
+        color: $light
 
 .footerTitle
     font-family: "Integral CF Bold"
     color: $light
     html.dark & 
         color: $danger
+
+.rightArea
+    padding: 10px
+    gap: 10px
 
 .subscribeArea
     position: absolute
@@ -52,8 +56,7 @@ $warning: #cbc8c9
     height: 180px
     background-color: $danger
     html.dark & 
-        background-color: $danger
-        color: $light
+        background-color: $secondary
 
 .gridArea
     padding-top: 80px
@@ -66,6 +69,20 @@ $warning: #cbc8c9
         letter-spacing: 3px
         text-align: left
 
+.subEmail
+    background-color: $light
+    border-radius: 25px
+    padding: 5px 10px
+    html.dark & 
+        background-color: $danger
+        color: $light
+    input
+        width: 200px
+        background-color: $light 
+        html.dark & 
+            background-color: $danger
+            color: $light 
+
 
 .liStyleFooter
     font-family: Satoshi
@@ -73,14 +90,22 @@ $warning: #cbc8c9
     font-weight: 400
     a
         color: $primary
+        html.dark & 
+            color: $light
 
 .subscribeBtn
-    background-color: #fff
+    font-family: Satoshi
+    font-size: 16px
+    border-radius: 25px !important
+    padding: 10px
+    background-color: $light !important
     color: $danger
     html.dark & 
-        background-color: $danger
+        background-color: $danger !important
         color: $light
 
+.titleArea
+    padding: 15px
 
 @media (max-width: 480px)
     .subscribeArea 
@@ -90,3 +115,5 @@ $warning: #cbc8c9
         padding-top: 200px
     .footerArea
         height: auto
+    .titleArea
+        padding: 5px
