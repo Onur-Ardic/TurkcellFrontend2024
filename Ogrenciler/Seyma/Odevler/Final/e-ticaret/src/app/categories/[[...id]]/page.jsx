@@ -5,9 +5,27 @@ import { getData } from '@/api'
 import Link from 'next/link'
 
 
-export default async function page(){    
-    const data = await getData()
+export default async function page({params}){    
+    let data = await getData()
+    if(params.id != "" && params.id != null && params.id != undefined && params.id[0] != "all" )
+    {
+    let searchParam = params.id[0].toLowerCase();
+      data =  data.filter(item => 
+        item.name.toLowerCase().includes(searchParam) && 
+        item.description.toLowerCase().includes(searchParam)
+    )
+    }
 
+    // if (filter.Type != null){
+    //   data =  data.filter(item => 
+    //     item.type == filter.Type
+    // )
+    // }
+    // if (filter.Color != null){
+    //   data =  data.filter(item => 
+    //     item.color == filter.Color
+    // )
+    // }
   return (
     <section className='background'>
       <div className='container-xxl'>
@@ -20,8 +38,8 @@ export default async function page(){
           <div className='col-lg-9 productList'>
             <div className='d-flex justify-content-between'>
             <h4>Casual</h4>
-          <div class="mb-3 d-flex align-items-center"><span class="d-inline-block me-2">Sort by</span>
-              <div class="dropdown bootstrap-select dropup"><select class="selectpicker" name="sort" id="form_sort" data-style="btn-selectpicker border-0" title="" tabindex="null">
+          <div className="mb-3 d-flex align-items-center"><span className="d-inline-block me-2">Sort by</span>
+              <div className="dropdown bootstrap-select dropup"><select className="selectpicker" name="sort" id="form_sort" data-style="btn-selectpicker border-0" title="" tabindex="null">
                 <option value="sortBy_0">Default  </option>
                 <option value="sortBy_1">Popularity </option>
                 <option value="sortBy_2">Rating </option>

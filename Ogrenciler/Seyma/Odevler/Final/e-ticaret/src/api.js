@@ -16,6 +16,15 @@ export async function getData() {
     return res.json()
   }
 
+  export async function getReviews(productId) {
+    const res = await fetch(`http://localhost:8000/reviews/?productId=${productId}`)
+    if (!res.ok) {
+      throw new Error('Failed to fetch data')
+    }
+  
+    return res.json()
+  }
+
 export async function postComment(){
   const response = await fetch(`http://localhost:3000/${id}reviews`, {
     method: 'POST',

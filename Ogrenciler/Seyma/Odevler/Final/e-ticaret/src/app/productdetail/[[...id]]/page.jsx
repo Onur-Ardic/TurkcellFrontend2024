@@ -6,12 +6,14 @@ import '../../productdetail/productDetail.sass';
 import AdviceBanner from '@/components/AdviceBanner/AdviceBanner'
 import BreadCrumbs from '@/components/Breadcrumbs/BreadCrumbs';
 import Reviews from "@/components/Reviews/Reviews";
+import { ReviewsForm } from "@/app/ReviewsForm/ReviewsForm";
 
 
 
 const page  = async({params}) => {
     const data = await getProduct(params)
     const reviews = data.reviews || [];
+    const selectedProductId = data.id;
   return (
     <div>
       <section>
@@ -124,8 +126,9 @@ const page  = async({params}) => {
       </section>
         <section>
         
-           <Reviews reviews={reviews}></Reviews>
+           <Reviews productId={selectedProductId}></Reviews>
       
+           <ReviewsForm productId={selectedProductId}></ReviewsForm>
          
         </section>
       <section>

@@ -1,36 +1,8 @@
-'use client'
-
-import { useState } from "react";
 import i18next from "../../i18n";
+import { getReviews } from "@/api";
 
-  const Reviews = ({reviews}) => {
-    const [id, setId] = useState('');
-
-    const [name, setName] = useState('');
-    const [surname, setSurname] = useState('');
-    const [rating, setRating] = useState('');
-    const [comment, setComment] = useState('');
-  
-    const handleSubmit = async (e) => {
-      e.preventDefault(); 
-  
-      try {
-        const response = await fetch('http://localhost:3000/reviews', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ name, surname, rating, comment }),
-        });
-  
-        if (!response.ok) {
-          throw new Error('Review submission failed');
-        }
-  
-      } catch (error) {
-        console.error('Error submitting review:', error);
-      }
-    };
+  const Reviews =  async ({productId}) => {
+    let reviews = await getReviews(productId);
   return (
    
     <section className="container-xxl pt-5 mt-2 mt-sm-3 mt-lg-4 mt-xl-5">
@@ -63,56 +35,7 @@ import i18next from "../../i18n";
             <h2 className="h5 pb-2 mb-1">{i18next.t('reviews')}</h2><span>{reviews.length} </span>
            
           </div>
-        
-         <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">{i18next.t('leavereview')}</button>
-
-<div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div className="modal-dialog">
-    <div className="modal-content">
-      <div className="modal-header">
-        <h1 className="modal-title fs-5" id="exampleModalLabel">{i18next.t('newreview')}</h1>
-      </div>
-      <div className="modal-body">
-        <form onSubmit={handleSubmit}>
-
-        <input className="form-control hidden mb-2" 
-        type="id" 
-        value={id}
-        onChange={(e) => setId(e.target.value)}/>
-
-        <input className="form-control mb-2" 
-        type="name" 
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder={i18next.t('name')}/>
-
-        <input className="form-control mb-2" 
-        type="surname"
-        value={surname}
-        onChange={(e) => setSurname(e.target.value)}
-        placeholder={i18next.t('surname')}/>
-
-        <input className="form-control"
-         type="number" 
-         value={rating}
-         onChange={(e) => setRating(e.target.value)}
-         placeholder={i18next.t('rating')}/>
-          <div className="mb-3">
-          <label for="comment-text" className="col-form-label">{i18next.t('comment')}</label>
-          <textarea className="form-control"
-          value={comment}
-          onChange={(e) => setComment(e.target.value)}
-           id="comment-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div className="modal-footer">
-        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">{i18next.t('close')}</button>
-        <button type="submit" className="btn btn-primary">{i18next.t('applyreview')}</button>
-      </div>
-    </div>
-  </div>
-</div>
+        <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">{i18next.t('leavereview')}</button>
         </div>
         <div className="mt-3 d-flex flex-wrap justify-content-around" >
         {reviews.map((review, index) => (
