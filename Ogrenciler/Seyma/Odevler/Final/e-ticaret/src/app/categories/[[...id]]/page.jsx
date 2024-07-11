@@ -2,15 +2,14 @@ import FilterBar from '@/components/FilterBar/FilterBar'
 import '../../categories/Categories.sass'
 import BreadCrumbs from '@/components/Breadcrumbs/BreadCrumbs'
 import { getData } from '@/api'
-
+import Link from 'next/link'
 
 
 export default async function page(){    
     const data = await getData()
 
   return (
-    <section>
-
+    <section className='background'>
       <div className='container-xxl'>
         <BreadCrumbs></BreadCrumbs>
         <div className='d-flex gap-3'>
@@ -33,7 +32,8 @@ export default async function page(){
             </div>
             <div className='categoriesContainer'>
             {data.map(item => (
-            <div className="boxPrd">
+                 <Link href={`/productdetail/${item.id}`}>
+            <div className="boxPrd" key={item.id}>
                     <div className="mb-6">
                             <div className="imgContainer">
                                 <a href="#"><img src={item.image} alt="" className="w-100"/></a>
@@ -60,6 +60,7 @@ export default async function page(){
                         </div>
                     </div>
                 </div>
+                </Link>
             ))}
               
             </div>

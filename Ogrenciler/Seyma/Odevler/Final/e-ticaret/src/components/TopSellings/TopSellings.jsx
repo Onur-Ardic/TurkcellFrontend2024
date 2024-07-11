@@ -2,18 +2,22 @@ import { getData } from "@/api";
 import i18next from "../../i18n";
 import ViewBtn from "../ViewBtn/ViewBtn";
 import "./topSellings.sass";
+import Link from "next/link";
 
 
-export default async function TopSellings() {
+
+export default async function page() {
     const data = await getData()
     const topSelling =  data.filter(item => item.topSelling === true).slice(0, 4)
+
 
   return (
     <div className="container-xxl">
     <h1 className="text-center title py-5">{i18next.t('topSelling')}</h1>
     <div className="row row-cols-xl-4 row-cols-lg-3 g-4">
-    {topSelling.map(item => (
+    {topSelling?.map(item => (
     <div className="col" key={item.id}>
+         <Link href={`/productdetail/${item.id}`}>
             <div className="mb-6">
                     <div className="imgContainer">
                         <a href="#"><img src={item.image} alt="" className="w-100"/></a>
@@ -38,6 +42,7 @@ export default async function TopSellings() {
                     </div>
                 </div>
             </div>
+            </Link>
         </div>))}
      
     </div>

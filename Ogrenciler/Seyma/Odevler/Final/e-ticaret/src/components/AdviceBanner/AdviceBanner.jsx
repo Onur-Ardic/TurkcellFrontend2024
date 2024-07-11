@@ -2,16 +2,18 @@ import { getData } from "@/api";
 import i18next from "../../i18n";
 import ViewBtn from "../ViewBtn/ViewBtn";
 import "./AdviceBanner.sass"
+import Link from "next/link";
 
 export default async function AdviceBanner() {
     const data = (await getData()).slice(0, 4)
     
     return (
         <div className="container-xxl">
-            <h1 className="text-center title py-5">{i18next.t('newArrivals')}</h1>
+            <h1 className="text-center title py-5">{i18next.t('youmight')}</h1>
             <div className="row row-cols-xl-4 row-cols-lg-3 g-4">
             {data.map(item => (
             <div className="col" key={item.id}>
+                   <Link href={`/productdetail/${item.id}`}>
                     <div className="mb-6">
                             <div className="imgContainer">
                                 <a href="#"><img src={item.image} alt="" className="w-100"/></a>
@@ -34,7 +36,7 @@ export default async function AdviceBanner() {
                                 <span className="text-muted small">{item.rating}</span>
                             </div>
                         </div>
-                    </div>
+                    </div></Link>
                 </div>))}
             
             </div>

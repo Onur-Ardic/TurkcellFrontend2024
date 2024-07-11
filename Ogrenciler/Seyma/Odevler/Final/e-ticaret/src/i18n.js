@@ -89,7 +89,8 @@ i18next.init({
                 "comment": "Your Comment",
                 "rating": "Rating",
                 "name":   "Name",
-                "surname": "Surname"
+                "surname": "Surname",
+                "youmight":  "You Might Also Like"
             }
         },
         tr: {
@@ -176,7 +177,9 @@ i18next.init({
                 "comment": "Yorumunuz",
                 "rating": "Puan",
                 "name":   "Adınız",
-                "surname": "Soyadınız"
+                "surname": "Soyadınız",
+                "youmight":  "Bunları Da Sevebilirsiniz"
+
             }
         }
     }

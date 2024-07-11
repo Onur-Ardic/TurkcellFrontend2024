@@ -28,10 +28,13 @@ export default async function page() {
                             </div>
                             <div className="text-warning">
                                 <small>
-                                {/* {Array.from({ length: Math.floor(item.rating) }).map((_, index) => (
-                                            <i className="bi bi-star-fill" key={index}></i>
-                                        ))}
-                                        {item.rating % 1 !== 0 && <i className="bi bi-star-half"></i>} */}
+                                <small>
+                            <i className="bi bi-star-fill"></i>
+                            <i className="bi bi-star-fill"></i>
+                            <i className="bi bi-star-fill"></i>
+                            <i className="bi bi-star-fill"></i>
+                            <i className="bi bi-star-half"></i>
+                        </small>
                                 </small>
                                 <span className="text-muted small">{item.rating}</span>
                             </div>

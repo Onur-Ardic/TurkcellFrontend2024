@@ -32,7 +32,7 @@ const Navbar = () => {
             <a className="nav-link active" aria-current="page" href="/newarrivals">{i18next.t('newArrivalsL')}</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/categories">{i18next.t('brands')}</a>
+            <a className="nav-link" href="/brands">{i18next.t('brands')}</a>
           </li>
           <li>
             <Input></Input>
