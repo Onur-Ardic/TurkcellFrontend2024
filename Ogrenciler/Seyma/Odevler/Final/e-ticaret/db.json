@@ -39,22 +39,7 @@
       "description": "A classic polo shirt with tipping details.",
       "newArrivals": true,
       "topSelling": false,
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John D.",
-          "rating": 4.5,
-          "comment": "This polo shirt is great! The tipping detail adds a nice touch and the fabric is very comfortable.",
-          "date": "September 10, 2023"
-        },
-        {
-          "id": 2,
-          "name": "Emma W.",
-          "rating": 4,
-          "comment": "I love this polo shirt. It's stylish and fits well. Will buy again.",
-          "date": "September 11, 2023"
-        }
-      ]
+      "reviews": []
     },
     {
       "id": "3",
@@ -77,20 +62,7 @@
       "newArrivals": false,
       "topSelling": true,
       "reviews": [
-        {
-          "id": 1,
-          "name": "Michael B.",
-          "rating": 5,
-          "comment": "This striped t-shirt is perfect. Great fit and comfortable to wear.",
-          "date": "July 5, 2023"
-        },
-        {
-          "id": 2,
-          "name": "Sophia L.",
-          "rating": 5,
-          "comment": "Love the stripes! The t-shirt is soft and the colors are vibrant.",
-          "date": "July 6, 2023"
-        }
+        
       ]
     },
     {
@@ -114,20 +86,7 @@
       "newArrivals": true,
       "topSelling": false,
       "reviews": [
-        {
-          "id": 1,
-          "name": "David K.",
-          "rating": 4,
-          "comment": "Nice jeans, fit well and are comfortable.",
-          "date": "June 15, 2023"
-        },
-        {
-          "id": 2,
-          "name": "Olivia P.",
-          "rating": 3.5,
-          "comment": "Good jeans but a bit tight. Overall, still nice.",
-          "date": "June 16, 2023"
-        }
+       
       ]
     },
     {
@@ -151,20 +110,7 @@
       "newArrivals": true,
       "topSelling": false,
       "reviews": [
-        {
-          "id": 1,
-          "name": "Jack R.",
-          "rating": 4.5,
-          "comment": "Love this checkered shirt! It looks great and feels comfortable.",
-          "date": "May 20, 2023"
-        },
-        {
-          "id": 2,
-          "name": "Isabella T.",
-          "rating": 4,
-          "comment": "Nice shirt, fits well. The pattern is stylish.",
-          "date": "May 21, 2023"
-        }
+
       ]
     },
     {
@@ -188,20 +134,7 @@
       "newArrivals": true,
       "topSelling": false,
       "reviews": [
-        {
-          "id": 1,
-          "name": "Emily C.",
-          "rating": 4.5,
-          "comment": "The striped sleeves add a nice touch to this t-shirt. Very comfortable.",
-          "date": "April 10, 2023"
-        },
-        {
-          "id": 2,
-          "name": "Liam H.",
-          "rating": 4,
-          "comment": "Great t-shirt, fits well and looks stylish.",
-          "date": "April 11, 2023"
-        }
+      
       ]
     },
     {
@@ -225,20 +158,7 @@
       "newArrivals": true,
       "topSelling": false,
       "reviews": [
-        {
-          "id": 1,
-          "name": "Ava H.",
-          "rating": 5,
-          "comment": "This shirt is perfect. Love the vertical stripes and the fit.",
-          "date": "March 25, 2023"
-        },
-        {
-          "id": 2,
-          "name": "Ethan R.",
-          "rating": 5,
-          "comment": "Great shirt! The stripes make it look very stylish.",
-          "date": "March 26, 2023"
-        }
+        
       ]
     },
     {
@@ -262,20 +182,7 @@
       "newArrivals": false,
       "topSelling": true,
       "reviews": [
-        {
-          "id": 1,
-          "name": "Olivia M.",
-          "rating": 4,
-          "comment": "Nice graphic t-shirt. The message is inspiring and the fabric is good.",
-          "date": "February 15, 2023"
-        },
-        {
-          "id": 2,
-          "name": "Liam K.",
-          "rating": 4.5,
-          "comment": "Love this t-shirt! The design is great and it fits well.",
-          "date": "February 16, 2023"
-        }
+       
       ]
     },
     {
@@ -299,20 +206,7 @@
       "newArrivals": true,
       "topSelling": false,
       "reviews": [
-        {
-          "id": 1,
-          "name": "Emma W.",
-          "rating": 4.5,
-          "comment": "Love this shirt! The message is empowering and it fits perfectly.",
-          "date": "January 20, 2023"
-        },
-        {
-          "id": 2,
-          "name": "Noah T.",
-          "rating": 4,
-          "comment": "Great t-shirt with a positive message. Very comfortable to wear.",
-          "date": "January 21, 2023"
-        }
+       
       ]
     },
     {
@@ -336,20 +230,7 @@
       "newArrivals": false,
       "topSelling": true,
       "reviews": [
-        {
-          "id": 1,
-          "name": "Sophia G.",
-          "rating": 5,
-          "comment": "This t-shirt is amazing. The design is beautiful and it inspires me every day.",
-          "date": "December 10, 2022"
-        },
-        {
-          "id": 2,
-          "name": "James L.",
-          "rating": 4.5,
-          "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
-          "date": "December 11, 2022"
-        }
+     
       ]
     },
     {
@@ -373,20 +254,7 @@
       "newArrivals": false,
       "topSelling": true,
       "reviews": [
-        {
-          "id": 1,
-          "name": "Sophia G.",
-          "rating": 5,
-          "comment": "This t-shirt is amazing. The design is beautiful and it inspires me every day.",
-          "date": "December 10, 2022"
-        },
-        {
-          "id": 2,
-          "name": "James L.",
-          "rating": 4.5,
-          "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
-          "date": "December 11, 2022"
-        }
+      
       ]
     },
     {
@@ -410,20 +278,7 @@
       "newArrivals": false,
       "topSelling": true,
       "reviews": [
-        {
-          "id": 1,
-          "name": "Sophia G.",
-          "rating": 5,
-          "comment": "This t-shirt is amazing. The design is beautiful and it inspires me every day.",
-          "date": "December 10, 2022"
-        },
-        {
-          "id": 2,
-          "name": "James L.",
-          "rating": 4.5,
-          "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
-          "date": "December 11, 2022"
-        }
+       
       ]
     },
     {
@@ -447,20 +302,7 @@
       "newArrivals": false,
       "topSelling": true,
       "reviews": [
-        {
-          "id": 1,
-          "name": "Sophia G.",
-          "rating": 5,
-          "comment": "This t-shirt is amazing. The design is beautiful and it inspires me every day.",
-          "date": "December 10, 2022"
-        },
-        {
-          "id": 2,
-          "name": "James L.",
-          "rating": 4.5,
-          "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
-          "date": "December 11, 2022"
-        }
+      
       ]
     }
   ],
@@ -481,37 +323,262 @@
       "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
       "date": "August 15, 2023"
     },
+   
     {
-      "id": "48d1",
-      "name": "fdsfs",
-      "surname": "fdfd",
-      "rating": "23",
-      "comment": "dsaffa",
-      "productId": "1"
+      "productId": 2,
+      "id": 1,
+      "name": "John D.",
+      "rating": 4.5,
+      "comment": "This polo shirt is great! The tipping detail adds a nice touch and the fabric is very comfortable.",
+      "date": "September 10, 2023"
     },
     {
-      "id": "9349",
-      "name": "yasin",
-      "surname": "yilmaz",
-      "rating": "5",
-      "comment": "çok iyi",
-      "productId": "1"
+      "productId": 2,
+      "id": 2,
+      "name": "Emma W.",
+      "rating": 4,
+      "comment": "I love this polo shirt. It's stylish and fits well. Will buy again.",
+      "date": "September 11, 2023"
     },
     {
-      "id": "707f",
-      "name": "seyma",
-      "surname": "bayezit",
-      "rating": "4",
-      "comment": "dsaffdafa",
-      "productId": "1"
+      "productId": 2,
+      "id": 1,
+      "name": "John D.",
+      "rating": 4.5,
+      "comment": "This polo shirt is great! The tipping detail adds a nice touch and the fabric is very comfortable.",
+      "date": "September 10, 2023"
     },
     {
-      "id": "63b1",
-      "name": "test",
-      "surname": "test",
-      "rating": "3",
-      "comment": "fdsfdasfda",
-      "productId": "1"
+      "productId": 2,
+      "id": 2,
+      "name": "Emma W.",
+      "rating": 4,
+      "comment": "I love this polo shirt. It's stylish and fits well. Will buy again.",
+      "date": "September 11, 2023"
+    },
+    {
+      "productId": 3,
+      "id": 1,
+      "name": "Michael B.",
+      "rating": 5,
+      "comment": "This striped t-shirt is perfect. Great fit and comfortable to wear.",
+      "date": "July 5, 2023"
+    },
+    {
+      "productId": 3,
+      "id": 2,
+      "name": "Sophia L.",
+      "rating": 5,
+      "comment": "Love the stripes! The t-shirt is soft and the colors are vibrant.",
+      "date": "July 6, 2023"
+    },
+    {
+      "productId": 4,
+      "id": 1,
+      "name": "David K.",
+      "rating": 4,
+      "comment": "Nice jeans, fit well and are comfortable.",
+      "date": "June 15, 2023"
+    },
+    {
+      "productId": 4,
+      "id": 2,
+      "name": "Olivia P.",
+      "rating": 3.5,
+      "comment": "Good jeans but a bit tight. Overall, still nice.",
+      "date": "June 16, 2023"
+    },
+    {
+      "productId": 4,
+      "id": 3,
+      "name": "David K.",
+      "rating": 4,
+      "comment": "Nice jeans, fit well and are comfortable.",
+      "date": "June 15, 2023"
+    },
+    {
+      "productId": 4,
+      "id": 4,
+      "name": "Olivia P.",
+      "rating": 3.5,
+      "comment": "Good jeans but a bit tight. Overall, still nice.",
+      "date": "June 16, 2023"
+    },
+    {
+      "productId": 5,
+      "id": 1,
+      "name": "Jack R.",
+      "rating": 4.5,
+      "comment": "Love this checkered shirt! It looks great and feels comfortable.",
+      "date": "May 20, 2023"
+    },
+    {
+      "productId": 5,
+      "id": 1,
+      "name": "Isabella T.",
+      "rating": 4,
+      "comment": "Nice shirt, fits well. The pattern is stylish.",
+      "date": "May 21, 2023"
+    },
+    {
+      "productId": 5,
+      "id": 1,
+      "name": "Jack R.",
+      "rating": 4.5,
+      "comment": "Love this checkered shirt! It looks great and feels comfortable.",
+      "date": "May 20, 2023"
+    },
+    {
+      "productId": 5,
+      "id": 1,
+      "name": "Isabella T.",
+      "rating": 4,
+      "comment": "Nice shirt, fits well. The pattern is stylish.",
+      "date": "May 21, 2023"
+    },
+    {
+      "productId": 6,
+      "id": 1,
+      "name": "Emily C.",
+      "rating": 4.5,
+      "comment": "The striped sleeves add a nice touch to this t-shirt. Very comfortable.",
+      "date": "April 10, 2023"
+    },
+    {
+      "productId": 6,
+      "id": 2,
+      "name": "Liam H.",
+      "rating": 4,
+      "comment": "Great t-shirt, fits well and looks stylish.",
+      "date": "April 11, 2023"
+    },
+    {
+      "productId": 6,
+      "id": 3,
+      "name": "Emily C.",
+      "rating": 4.5,
+      "comment": "The striped sleeves add a nice touch to this t-shirt. Very comfortable.",
+      "date": "April 10, 2023"
+    },
+    {
+      "productId": 6,
+      "id": 4,
+      "name": "Liam H.",
+      "rating": 4,
+      "comment": "Great t-shirt, fits well and looks stylish.",
+      "date": "April 11, 2023"
+    },
+    {
+      "productId": 7,
+      "id": 1,
+      "name": "Ava H.",
+      "rating": 5,
+      "comment": "This shirt is perfect. Love the vertical stripes and the fit.",
+      "date": "March 25, 2023"
+    },
+    {
+      "productId": 7,
+      "id": 2,
+      "name": "Ethan R.",
+      "rating": 5,
+      "comment": "Great shirt! The stripes make it look very stylish.",
+      "date": "March 26, 2023"
+    },
+    {
+      "productId": 8,
+      "id": 1,
+      "name": "Olivia M.",
+      "rating": 4,
+      "comment": "Nice graphic t-shirt. The message is inspiring and the fabric is good.",
+      "date": "February 15, 2023"
+    },
+    {
+      "productId": 8,
+      "id": 2,
+      "name": "Liam K.",
+      "rating": 4.5,
+      "comment": "Love this t-shirt! The design is great and it fits well.",
+      "date": "February 16, 2023"
+    },
+    {
+      "productId": 9,
+      "id": 1,
+      "name": "Emma W.",
+      "rating": 4.5,
+      "comment": "Love this shirt! The message is empowering and it fits perfectly.",
+      "date": "January 20, 2023"
+    },
+    {
+      "productId": 9,
+      "id": 2,
+      "name": "Noah T.",
+      "rating": 4,
+      "comment": "Great t-shirt with a positive message. Very comfortable to wear.",
+      "date": "January 21, 2023"
+    },
+    {
+      "productId": 10,
+      "id": 1,
+      "name": "Sophia G.",
+      "rating": 5,
+      "comment": "This t-shirt is amazing. The design is beautiful and it inspires me every day.",
+      "date": "December 10, 2022"
+    },
+    {
+      "productId": 10,
+      "id": 2,
+      "name": "James L.",
+      "rating": 4.5,
+      "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
+      "date": "December 11, 2022"
+    },
+    {
+      "productId": 11,
+      "id": 1,
+      "name": "Sophia G.",
+      "rating": 5,
+      "comment": "This t-shirt is amazing. The design is beautiful and it inspires me every day.",
+      "date": "December 10, 2022"
+    },
+    {
+      "productId": 11,
+      "id": 2,
+      "name": "James L.",
+      "rating": 4.5,
+      "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
+      "date": "December 11, 2022"
+    },
+    {
+      "productId": 12,
+      "id": 1,
+      "name": "Sophia G.",
+      "rating": 5,
+      "comment": "This t-shirt is amazing. The design is beautiful and it inspires me every day.",
+      "date": "December 10, 2022"
+    },
+    {
+      "productId": 12,
+      "id": 2,
+      "name": "James L.",
+      "rating": 4.5,
+      "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
+      "date": "December 11, 2022"
+    },
+    {
+      "productId": 13,
+      "id": 1,
+      "name": "Sophia G.",
+      "rating": 5,
+      "comment": "This t-shirt is amazing. The design is beautiful and it inspires me every day.",
+      "date": "December 10, 2022"
+    },
+    {
+      "productId": 13,
+      "id": 2,
+      "name": "James L.",
+      "rating": 4.5,
+      "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
+      "date": "December 11, 2022"
     }
   ]
 }

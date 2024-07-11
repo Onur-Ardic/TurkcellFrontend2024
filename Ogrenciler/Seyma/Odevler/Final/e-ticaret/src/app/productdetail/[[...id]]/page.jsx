@@ -12,8 +12,8 @@ import { ReviewsForm } from "@/app/ReviewsForm/ReviewsForm";
 
 const page  = async({params}) => {
     const data = await getProduct(params)
-    const reviews = data.reviews || [];
     const selectedProductId = data.id;
+    
   return (
     <div>
       <section>
