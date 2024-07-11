@@ -80,6 +80,9 @@ i18next.init({
                 "apply": "Apply",
                 "gotocheckout": "Go to Checkout",
                 "exmpleTshirt": "Gradient Graphic T-shirt",
+                "sizeguide": "Size Guide",
+                "addtocart" : "Add to cart"
+
             }
         },
         tr: {
@@ -156,7 +159,9 @@ i18next.init({
                 "total": "Toplam",
                 "addpromocode": "Promosyon Kodu Ekle",
                 "apply": "Uygula",
-                "gotocheckout": "Ödeme Yap"
+                "gotocheckout": "Ödeme Yap",
+                 "sizeguide": "Beden Tablosu",
+                 "addtocart" : "Sepete Ekle"
             }
         }
     }

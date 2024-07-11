@@ -1,7 +1,7 @@
 import i18next from "../../i18n";
 
 
-const Reviews = () => {
+const Reviews = (reviews) => {
   return (
     <section className="container-xxl pt-5 mt-2 mt-sm-3 mt-lg-4 mt-xl-5">
 
@@ -103,17 +103,8 @@ const Reviews = () => {
     
         <div className="d-sm-flex align-items-center justify-content-between border-bottom pb-2 pb-sm-3">
           <div className="mb-3 me-sm-3">
-            <h2 className="h5 pb-2 mb-1">Customer reviews</h2>
-            <div className="d-flex align-items-center text-body-secondary fs-sm">
-              <div className="d-flex gap-1 me-2">
-                <i className="ci-star-filled text-warning"></i>
-                <i className="ci-star-filled text-warning"></i>
-                <i className="ci-star-filled text-warning"></i>
-                <i className="ci-star-filled text-warning"></i>
-                <i className="ci-star text-body-tertiary opacity-75"></i>
-              </div>
-              Based on 23 reviews
-            </div>
+            <h2 className="h5 pb-2 mb-1">{i18next.t('reviews')}</h2><span>{reviews.length} </span>
+           
           </div>
           <button type="button" className="btn btn-outline-dark mb-3" data-bs-toggle="modal" data-bs-target="#reviewForm">Leave a review</button>
         </div>

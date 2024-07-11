@@ -1,10 +1,11 @@
+import Link from "next/link";
 import i18next from "../../i18n";
 import ViewBtn from "../ViewBtn/ViewBtn";
 import "./topArrivals.sass"
 import { getData } from '@/api';
 
 export default async function page() {
-    const data = await getData()
+    const data = await getData('http://localhost:3000/products')
     const newarrivals =  data.filter(item => item.newArrivals === true).slice(0, 4)
 
     return (
@@ -13,6 +14,7 @@ export default async function page() {
             <div className="row row-cols-xl-4 row-cols-lg-3 g-4">
             {newarrivals.map(item => (
             <div className="col" key={item.id}>
+            <Link href={`/productdetail/${item.id}`}>
                     <div className="mb-6">
                             <div className="imgContainer">
                                 <a href="#"><img src={item.image} className="w-100" alt=""/></a>
@@ -34,7 +36,8 @@ export default async function page() {
                                 <span className="text-muted small">{item.rating}</span>
                             </div>
                         </div>
-                    </div>
+                    </div>   
+                    </Link>
                 </div>))}
             </div>
             <div className="d-flex justify-content-center">
