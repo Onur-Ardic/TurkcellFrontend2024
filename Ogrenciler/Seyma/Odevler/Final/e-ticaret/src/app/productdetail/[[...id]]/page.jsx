@@ -1,23 +1,18 @@
 import i18next from "../../../i18n";
-// import pic from '../../../public/darkgreentshirt.png';
 import { getProduct } from '@/api';
 import '../../productdetail/productDetail.sass';
 import AdviceBanner from '@/components/AdviceBanner/AdviceBanner'
-import BreadCrumbs from '@/components/Breadcrumbs/BreadCrumbs';
 import Reviews from "@/components/Reviews/Reviews";
 import { ReviewsForm } from "@/app/ReviewsForm/ReviewsForm";
-
-
 
 const page = async ({ params }) => {
   const data = await getProduct(params)
   const selectedProductId = data.id;
 
   return (
-    <div>
+    <section className="productDtl">
       <section>
         <div className="container-xxl">
-          <BreadCrumbs></BreadCrumbs>
           <div className="d-flex productDetail">
             {data ? (
               <div className="row productPic">
@@ -33,7 +28,7 @@ const page = async ({ params }) => {
                     <img src={data.image} alt="" className="w-100" />
                     </div>
                   </div>
-                  <div className="col-lg-8">
+                  <div className="col-lg-8 biggerImg">
                    <img src={data.image} alt="" className="w-100" />
                   </div>
                 </div>
@@ -57,7 +52,7 @@ const page = async ({ params }) => {
                         <i className="bi bi-star-fill"></i>
                         <i className="bi bi-star-half"></i>
                       </small>
-                      <span className="text-muted small">4.5</span>
+                      <span className="ratingShw small">{data.rating}</span>
                     </div>
                     <div className="d-flex align-items-center">
                       <span className="price">${data.price}</span>
@@ -118,7 +113,7 @@ const page = async ({ params }) => {
       <section>
         <AdviceBanner></AdviceBanner>
       </section>
-    </div>
+    </section>
   )
 }
 

@@ -1,6 +1,6 @@
 import i18next from "../../i18n";
 import { getReviews } from "@/api";
-
+import './Reviews.sass'
 const Reviews = async ({ productId }) => {
   let reviews = await getReviews(productId);
 
@@ -29,7 +29,7 @@ const Reviews = async ({ productId }) => {
             <div className="mb-3 me-sm-3">
               <h2 className="h5 pb-2 mb-1">{i18next.t('reviews')}</h2><span>{reviews.length} </span>
             </div>
-            <button typeof="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">{i18next.t('leavereview')}</button>
+            <button typeof="button" className="btn writeReviewBtn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">{i18next.t('leavereview')}</button>
           </div>
           <div className="mt-3 d-flex flex-wrap justify-content-around" >
             {reviews.map((review, index) => (
@@ -50,31 +50,7 @@ const Reviews = async ({ productId }) => {
               </div>
             ))}
           </div>
-          {/* <nav className="mt-3 pt-2 pt-md-3" aria-label="Reviews pagination">
-          <ul className="pagination">
-            <li className="page-item active" aria-current="page">
-              <span className="page-link">
-                1
-                <span className="visually-hidden">(current)</span>
-              </span>
-            </li>
-            <li className="page-item">
-              <a className="page-link" href="#!">2</a>
-            </li>
-            <li className="page-item">
-              <a className="page-link" href="#!">3</a>
-            </li>
-            <li className="page-item">
-              <a className="page-link" href="#!">4</a>
-            </li>
-            <li className="page-item">
-              <span className="page-link pe-none">...</span>
-            </li>
-            <li className="page-item">
-              <a className="page-link" href="#!">6</a>
-            </li>
-          </ul>
-        </nav> */}
+         
         </div>
       </div>
     </section>

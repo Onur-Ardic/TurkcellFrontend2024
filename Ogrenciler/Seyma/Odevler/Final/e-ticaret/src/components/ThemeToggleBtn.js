@@ -1,6 +1,6 @@
 
 import { useTheme } from '@/context/ThemeContext';
-
+import '../app/globals.sass'
 const ThemeToggleBtn = () => {
   const { isDarkMode, toggleTheme } = useTheme();
 
@@ -11,9 +11,9 @@ const ThemeToggleBtn = () => {
     >
       {isDarkMode ? (
         
-        <i className="bi bi-cloud-sun"></i>
+        <i className="bi bi-cloud-sun toggle"></i>
       ) : (
-       <i className="bi bi-cloud-moon"></i>
+       <i className="bi bi-cloud-moon toggle"></i>
       )}
     </button>
   );

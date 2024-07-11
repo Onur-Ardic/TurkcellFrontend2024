@@ -1,19 +1,40 @@
 @import '../../app/globals.sass'
 
+.productDtl
+    margin-top: 15px
+    background-color: $light
+    color: $danger
+    html.dark &
+        background-color: $danger
+        color: $light
+
 .productDetail
     height: auto
 
 .productPic
     height: 550px
 
+.ratingShw
+    margin-left: 5px
+    color: $secondary
+    html.dark &
+        color: $primary
+
+.discountPrice
+    margin-left: 5px
+    color: $primary
+    html.dark &
+        color: $light
 
 .imgContainerPrd
     display: flex
     align-items: center
     justify-content: center
+    border-radius: 15px
     overflow: hidden
     border: none !important
-    border-radius: 20px
     img
         object-fit: cover
-        
+
+.biggerImg
+      border-radius: 25px

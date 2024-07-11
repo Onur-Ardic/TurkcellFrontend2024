@@ -37,8 +37,8 @@ const Navbar = () => {
         </ul>
         <div className='d-flex'>
         <ThemeToggleBtn />
-        <button className="btn"><i className="bi bi-cart2 md"></i></button>
-        <button className="btn"> <i className="bi bi-person-circle md"></i></button>
+        <button className="btn cartBtn"><i className="bi bi-cart2 md"></i></button>
+        <button className="btn profileBtn"> <i className="bi bi-person-circle md"></i></button>
         </div>
       </div>
     </div>

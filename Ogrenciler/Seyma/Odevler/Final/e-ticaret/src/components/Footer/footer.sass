@@ -76,9 +76,15 @@
     html.dark & 
         background-color: $danger
         color: $light
-    input
+    .emailInput
         width: 200px
         background-color: $light 
+        outline-offset: none
+        outline-color: none
+        border: none
+        &:focus
+        outline: none
+
         html.dark & 
             background-color: $danger
             color: $light 

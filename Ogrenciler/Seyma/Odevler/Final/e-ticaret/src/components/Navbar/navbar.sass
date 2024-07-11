@@ -1,7 +1,7 @@
 @import '../../app/globals'
 
 .navbar
-  background-color: #ffff
+  background-color: $light
   color: $danger
   height: 90px
   font-family: "satoshi"
@@ -22,13 +22,22 @@
     background-color: $light
     html.dark & 
       background-color: $danger
-      color: #ffff
+      color: $light
 
   .nav-link
     color: $primary
     html.dark & 
-      color: #ffff
+      color: $light
 
+.cartBtn
+  color: $danger
+  html.dark & 
+    color: $light
+
+.profileBtn
+  color: $danger
+  html.dark & 
+    color: $light
 .bottomLine
   position: relative
   &:after 

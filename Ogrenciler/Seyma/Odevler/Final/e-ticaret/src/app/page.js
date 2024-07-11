@@ -83,9 +83,11 @@ export default function Home() {
     </div>
       </div>
       </section>
+      <section className='mainCnt'>
       <NewArrivals></NewArrivals>
       <TopSellings></TopSellings>
       <Banner></Banner>
+      </section>
     </main>
   );
 }

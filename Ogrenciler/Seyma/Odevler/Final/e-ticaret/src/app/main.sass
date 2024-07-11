@@ -1,10 +1,14 @@
 @import './globals.sass'
 
-
 .main
   position: relative
   height: 100%
   background-color: $secondary
+  html.dark & 
+    background-color: $danger
+
+.mainCnt
+  background-color: $light
   html.dark & 
     background-color: $danger
 

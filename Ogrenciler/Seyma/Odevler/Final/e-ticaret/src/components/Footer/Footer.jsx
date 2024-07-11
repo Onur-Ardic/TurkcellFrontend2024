@@ -23,9 +23,9 @@ const Footer = () => {
                     </div>
                     <div className='col-lg-4 row rightArea'>
                         <form className='subEmail text-left d-flex align-items-center' action="">
-                            <Image src={email}></Image> <input  placeholder={i18next.t('subscribePlaceholder')}></input></form>
+                            <Image src={email}></Image> <input className='emailInput' placeholder={i18next.t('subscribePlaceholder')}></input></form>
                        <button typeof='button' className='subscribeBtn btn'>{i18next.t('subscribeButton')}</button>
-                    </div>
+                    </div>*
                 </div>
                 <div className="row gridArea gap-2">
                     <div className="col-6 col-lg-3 mb-3">
@@ -70,10 +70,10 @@ const Footer = () => {
                     <div className="col-4 col-lg-2 mb-3">
                         <h5 className="titleofFooter">{i18next.t('resourcesLinks')}</h5>
                         <ul className="list-unstyled ">
-                            <li className="mb-2 liStyleFooter"><a href="#"  >{i18next.t('freeEbooks')}</a></li>
-                            <li className="mb-2 liStyleFooter"><a href="#"  >{i18next.t('developmentTutorial')}</a></li>
-                            <li className="mb-2 liStyleFooter"><a href="#"  >{i18next.t('howToBlog')}</a></li>
-                            <li className="mb-2 liStyleFooter"><a href="#"  >{i18next.t('youtubePlaylist')}</a></li>
+                            <li className="mb-2 liStyleFooter"><a href="#">{i18next.t('freeEbooks')}</a></li>
+                            <li className="mb-2 liStyleFooter"><a href="#">{i18next.t('developmentTutorial')}</a></li>
+                            <li className="mb-2 liStyleFooter"><a href="#">{i18next.t('howToBlog')}</a></li>
+                            <li className="mb-2 liStyleFooter"><a href="#">{i18next.t('youtubePlaylist')}</a></li>
                         </ul>
                     </div>
                 </div>

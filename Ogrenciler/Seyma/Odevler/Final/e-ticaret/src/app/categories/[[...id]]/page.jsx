@@ -28,7 +28,6 @@ export default async function page({ params }) {
   return (
     <section className='background'>
       <div className='container-xxl'>
-        <BreadCrumbs></BreadCrumbs>
         <div className='d-flex gap-3'>
           <div className='col-lg-3'>
             <FilterBar></FilterBar>
