@@ -16,7 +16,7 @@ const Hero = () => {
             <div className="hero-left col-lg-6 col-md-12 col-sm-12">
               <div className="hero-content py-5">
                 <h1
-                  className={`font-integral fw-bold${
+                  className={`font-integral fw-bold ${
                     darkMode ? " text-dark" : "text-dark"
                   } `}
                 >
