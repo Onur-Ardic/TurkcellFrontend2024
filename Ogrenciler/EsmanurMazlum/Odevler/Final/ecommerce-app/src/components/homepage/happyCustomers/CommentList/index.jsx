@@ -10,15 +10,9 @@ const CommentList = () => {
   const [reviews, setReviews] = useState([]);
 
   const fetchCustomers = async () => {
-    const res = await fetch("http://localhost:3000/products");
+    const res = await fetch("http://localhost:4000/reviews");
     const data = await res.json();
-
-    // Tüm ürünlerden gelen yorumları birleştiriyoruz
-    const allReviews = data.reduce((acc, product) => {
-      return acc.concat(product.reviews);
-    }, []);
-
-    setReviews(allReviews);
+    setReviews(data);
   };
 
   useEffect(() => {
@@ -73,7 +67,7 @@ const CommentList = () => {
           }}
         >
           {reviews.map((review, index) => (
-            <Comment key={index} review={review} />
+            <Comment key={index} review={review} customClass="col-4" />
           ))}
         </div>
       </div>

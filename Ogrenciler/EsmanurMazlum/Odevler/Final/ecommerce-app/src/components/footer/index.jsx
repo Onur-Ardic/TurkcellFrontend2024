@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
       <div className="container mt-5 position-relative">
-        <div className="newsletter">
+        <div className="newsletter w-100">
           <div className="row">
             <div className="col-lg-7 col-sm-12">
               <h3 className="text-white">
@@ -44,20 +44,20 @@ function Footer() {
               </p>
               <div className="row w-75 mt-5">
                 <div className="col-3">
-                  <img src="icons/twitter.svg" />
+                  <img src="/icons/twitter.svg" />
                 </div>
                 <div className="col-3">
-                  <img src="icons/facebook.svg" />
+                  <img src="/icons/facebook.svg" />
                 </div>
                 <div className="col-3">
-                  <img src="icons/instagram.svg" />
+                  <img src="/icons/instagram.svg" />
                 </div>
                 <div className="col-3">
-                  <img src="icons/github.svg" />
+                  <img src="/icons/github.svg" />
                 </div>
               </div>
             </div>
-            <div className="col-9 d-flex justify-content-between align-items-center">
+            <div className="col-9 row d-flex justify-content-between align-items-center">
               <div className="col-lg-3 col-sm-6">
                 <p className="fw-medium">COMPANY</p>
                 <div className="links">
@@ -67,7 +67,7 @@ function Footer() {
                   <a className="f-lighter">Career</a>
                 </div>
               </div>
-              <div className="col-lg-3 col-sm-6">
+              <div className="col-lg-3 col-md-4  col-sm-6">
                 <p className="fw-medium">HELP</p>
                 <div className="links">
                   <a className="f-lighter">Customer Support</a>
@@ -76,7 +76,7 @@ function Footer() {
                   <a className="f-lighter">Privacy Policy</a>
                 </div>
               </div>
-              <div className="col-lg-3 col-sm-6">
+              <div className="col-lg-3 col-md-4  col-sm-6">
                 <p className="fw-medium">FAQ</p>
                 <div className="links">
                   <a className="f-lighter">Account</a>
@@ -85,7 +85,7 @@ function Footer() {
                   <a className="f-lighter">Payments</a>
                 </div>
               </div>
-              <div className="col-lg-3 col-sm-6">
+              <div className="col-lg-3 col-md-4 col-sm-6">
                 <p className="fw-medium">RESOURCES</p>
                 <div className="links">
                   <a className="f-lighter">Free eBooks</a>
@@ -96,15 +96,15 @@ function Footer() {
               </div>
             </div>
           </div>
-          <img src="icons/line.svg" />
+          <img src="/icons/line.svg" className="img-fluid"/>
           <div className="d-flex justify-content-between align-items-center">
             <p className="f-lighter">Shop.co © 2000-2023, All Rights Reserved</p>
-            <div className="d-flex">
-              <img src="icons/visa.svg" alt="visa" />
-              <img src="icons/mastercard.svg" alt="visa" />
-              <img src="icons/paypal.svg" alt="visa" />
-              <img src="icons/applepay.svg" alt="visa" />
-              <img src="icons/googlepay.svg" alt="visa" />
+            <div className="d-flex flex-wrap">
+              <img src="/icons/visa.svg" alt="visa" />
+              <img src="/icons/mastercard.svg" alt="mastercard" />
+              <img src="/icons/paypal.svg" alt="paypal" />
+              <img src="/icons/applepay.svg" alt="applepay" />
+              <img src="/icons/googlepay.svg" alt="googlepay" />
             </div>
           </div>
         </div>

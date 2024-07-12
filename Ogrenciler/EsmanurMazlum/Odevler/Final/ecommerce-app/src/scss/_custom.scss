@@ -14,12 +14,26 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: $radius;
 }
 
+.size-badge{
+    @include btn(12px 24px, #00000099, $secondary, none, 62px)
+}
+
+.amount-btn{
+    @include btn(14px 20px, black, $secondary, none, 62px);
+    width: 30%;
+}
+
 .anouncement-bar{
     height: 38px;
 }
 
 li{
     list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .navbar{
@@ -36,6 +50,11 @@ li{
 }
 
 .search-button {
+    top: 11px;
+    left: 13px;
+}
+
+.ticket-icon{
     top: 11px;
     left: 13px;
 }
@@ -86,17 +105,68 @@ li{
     background-color: $light;
     overflow: hidden;
     .product-img{
+        position: relative;
         width: 100%;
         height: 100%;
-        object-fit: cover;
-        object-position: center;
+        img{
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.product-detail-card{
+    width: 444px;
+    height: 530px;
+    border-radius: 20px;
+    overflow: hidden;
+    .product-img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img{
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.basket-list-img{
+    width: 124px;
+    height: 124px;
+    border-radius: 8px;
+    overflow: hidden;
+    .basket-img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img{
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.product-detail-card-sm{
+    width: 152px;
+    height: 167px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 2rem;
+    .product-img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img{
+            object-fit: cover;
+            object-position: center;
+        }
     }
 }
 
 .dress-style{
     width: 100%;
     background-color: $secondary;
-    height: 866px;
     border-radius: 40px;
     padding: 2rem 1rem;
     .title{
@@ -105,7 +175,6 @@ li{
     .casual{
         background-color: #fff;
         width: 100%;
-        height: 289px;
         border-radius: 20px;
         overflow: hidden;
         object-fit: contain;
@@ -114,22 +183,18 @@ li{
     .formal{
         background-color: #fff;
         width: 100%;
-        height: 289px;
         border-radius: 20px;
     }
     .sm-product-card{
-        max-width: 407px;
-        height: 289px;
+        width: 100%;
     }
     .lg-product-card{
-        max-width: 684px;
-        height: 289px;
+        width: 100%;
     }
 }
 
 .newsletter{
     background-color: black;
-    height: 180px;
     padding: 36px 64px;
     border-radius: 20px;
     margin-bottom: -80px;
@@ -145,7 +210,7 @@ li{
 }
 
 .footer-section{
-    height: 500px;
+    height: 50vh;
     padding: 7rem 2rem 0 2rem;
     .f-lighter{
         color: #00000099;
@@ -181,4 +246,22 @@ li{
     background-color: $secondary;
     border-radius: 40px;
     padding: 2rem 2rem;
+}
+
+.color-circle{
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+
+.order-summary {
+    border: 1px solid #0000001A;
+    border-radius: 20px;
+    padding: 20px 24px;
+}
+
+.basket-list{
+    border: 1px solid #0000001A;
+    border-radius: 20px;
+    padding: 20px 24px;
 }

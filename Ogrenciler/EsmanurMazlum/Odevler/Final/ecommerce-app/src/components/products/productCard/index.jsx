@@ -1,5 +1,7 @@
 import React from "react";
 import { Rating, ThinStar } from "@smastrom/react-rating";
+import Link from "next/link";
+import Image from "next/image";
 
 const thinStarStyles = {
   itemShapes: ThinStar,
@@ -7,21 +9,25 @@ const thinStarStyles = {
   inactiveFillColor: "#ffedd5",
 };
 
+export const calculateDiscount = (price, originalPrice) => {
+  return ((originalPrice - price) / originalPrice) * 100;
+};
+
 function ProductCard({ product }) {
 
-    const calculateDiscount = (price, originalPrice) => {
-        return ((originalPrice - price) / originalPrice) * 100;
-    };
+    
 
   return (
-    <div className="col-lg-3 col-md-4 col-sm-6 p-0">
+    <Link href={`/productDetail/${product.id}`} className="col-lg-3 col-md-4 col-sm-6 p-0">
       <div>
         <div className="product-card">
-          <img
-            className="product-img img-fluid"
-            src={product.imgUrl}
+          <div className="product-img img-fluid">
+          <Image
+            src={`/${product.imgUrl}`}
             alt={product.name}
+            fill
           />
+          </div>
         </div>
         <div>
           <p className="fw-bold m-0 mt-2 fs-20">{product.name}</p>
@@ -46,7 +52,7 @@ function ProductCard({ product }) {
           </p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
