@@ -24,16 +24,16 @@ import '../../app/categories/Categories.sass'
             item.description.toLowerCase().includes(searchParam)
         )
     }
-    const [selectedSort, setSelectedSort] = useState('sortBy_0');
+    const [selectedSort, setSelectedSort] = useState('Products');
 
     switch (selectedSort) {
-        case 'sortBy_1':
+        case 'Popular':
             data = data.filter(item => item.topSelling === true);
             break;
-        case 'sortBy_2':
+        case 'Highest Rating':
             data.sort((a, b) => b.rating - a.rating);
             break;
-        case 'sortBy_3':
+        case 'Newest':
             data = data.filter(item => item.newArrivals === true);
             break;
         default:
@@ -41,6 +41,7 @@ import '../../app/categories/Categories.sass'
     }
    ;
 
+   
     const handleSortChange = (event) => {
         setSelectedSort(event.target.value);
       };
@@ -51,7 +52,7 @@ import '../../app/categories/Categories.sass'
     return (
         <div>
             <div className='d-flex justify-content-between'>
-                <h4>{i18next.t('casual')}</h4>
+                <h4 className="pageTitle">{selectedSort}</h4>
                 <div className="mb-3 d-flex align-items-center"><span className="d-inline-block me-2">Sort by</span>
                     <div className="dropdown bootstrap-select dropup">
                         <select className="selectpicker" 
@@ -59,10 +60,10 @@ import '../../app/categories/Categories.sass'
                         value={selectedSort}
                         onChange={handleSortChange}
                         data-style="btn-selectpicker border-0" title="" tabIndex="null">
-                            <option value="sortBy_0">{i18next.t('default')}</option>
-                            <option value="sortBy_1">{i18next.t('popularity')}</option>
-                            <option value="sortBy_2">{i18next.t('rating')}</option>
-                            <option value="sortBy_3">{i18next.t('newestfirst')}</option>
+                            <option value="Products">{i18next.t('default')}</option>
+                            <option value="Popular">{i18next.t('popularity')}</option>
+                            <option value="Highest Rating">{i18next.t('rating')}</option>
+                            <option value="Newest">{i18next.t('newestfirst')}</option>
                         </select>
                     </div>
                 </div>
