@@ -12,15 +12,15 @@ export default async function AdviceBanner() {
             <h1 className="text-center adviceTitle py-5">{i18next.t('youmight')}</h1>
             <div className="row row-cols-xl-4 row-cols-lg-3 g-4">
             {data.map(item => (
-            <div className="col" key={item.id}>
-                   <Link href={`/productdetail/${item.id}`}>
+            <div className="col" >
+                   <Link key={item.id} href={`/productdetail/${item.id}`} >
                     <div className="mb-6">
                             <div className="imgContainer">
                               <img src={item.image} className="w-100" alt="" 
                              />
                         </div>
                         <div>
-                            <h2 className="mt-3 fs-6"><a href="#" className="productTitle">{item.name}</a></h2>
+                            <h2 className="mt-3 fs-6">{item.name}</h2>
                             <div className="d-flex align-items-center">
                                 <span className="price">${item.price}</span>
                                 <span className="discountPrice">$24</span> 

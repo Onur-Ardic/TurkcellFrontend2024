@@ -1,6 +1,6 @@
 'use client'
 
-import './viewBtn.sass'
+import './viewbtn.sass'
 import i18next from '../../i18n';
 
 const ViewBtn = () => {

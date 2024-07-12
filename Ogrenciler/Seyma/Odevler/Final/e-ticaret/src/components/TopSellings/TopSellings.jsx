@@ -15,8 +15,8 @@ export default async function page() {
             <h1 className="text-center topSellTitle py-5">{i18next.t('topSelling')}</h1>
             <div className="row row-cols-xl-4 row-cols-lg-3 g-4">
                 {topSelling?.map(item => (
-                    <div className="col" key={item.id}>
-                        <Link href={`/productdetail/${item.id}`}>
+                    <div className="col" >
+                        <Link key={item.id} href={`/productdetail/${item.id}`}>
                             <div className="mb-6">
                                 <div className="imgContainer">
                                     <img src={item.image} alt="" className="w-100" />
