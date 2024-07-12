@@ -1,0 +1,17 @@
+.topSelling-container {
+    h2 {
+        margin: 70px 0 40px 0;
+        font-family: 'Integral CF', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 57.6px;
+        color: #000000;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 32px;
+        line-height: 38.4px;
+    }
+}
