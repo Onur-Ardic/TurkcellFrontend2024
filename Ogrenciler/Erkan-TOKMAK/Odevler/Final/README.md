@@ -2,6 +2,12 @@
 
 Final klasörü içerisinde:
 
+Öncelikle node-modules yüklenmesi için
+
+- npm install
+
+ daha sonra projeyi başlatmak için 
+
 - npm run dev
 
 ## Yeni bir terminal açarak json serverin çalıştırılması için
