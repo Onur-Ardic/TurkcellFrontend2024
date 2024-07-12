@@ -1,0 +1,1218 @@
+{
+  "products": [
+    {
+      "__comment__": "ID:1 T-shirt with Tape Details",
+      "id": 1,
+      "name": "T-shirt with Tape Details",
+      "price": 80,
+      "originalPrice": null,
+      "rating": 4.5,
+      "image": "https://s3-alpha-sig.figma.com/img/d40d/a9a3/a7234235e66d6695d9d7098fc3289872?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V3387n5eLrKg4uI6IrcL19Q0VFERk1F1ZEgQU86bhvkw892HZ8GXvcjWNdgV7kypoCGjpgMnxV6QjilqSmJeOr4GtIpQ7dwZUOYPGXo6vwqpr8ckC63-rJYuh0Cndq7rzBiKwDKWAssAMQwx~BxVWQYjqCXhA6SyrTvj1ywEsvhMFpXXkBW7RjyVSY-acdS8-n-BKpJ6~qQR7-uVeBkyEJTsaagCPb7PRlDiWP9xbv1h1U0p6NpK0kseOHz-Fz8sHKvMlF~5zBjx-jbR1SkWm0YnHcZOnyaRzt0l1zkolDlJXhke44qc8MPYSx6hPe3Pz7QCjiVPG4HRviEAfvq-FQ__",
+      "discount": null,
+      "style": "Casual",
+      "color": "Blue",
+      "size": "S",
+      "details": [
+        "Ağartıcı Kullanmayınız",
+        "Tamburlu Kurutma Yapmayınız",
+        "Düşük Sıcaklıkta Ütüleyiniz",
+        "Kuru Temizleme Yapılamaz",
+        "Maksimum 30 °c Sıcaklıkta Yıkayınız",
+        "Ana Kumaş İçeriği: : Pamuk 100%"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:2 Skinny Fit Jeans",
+      "id": 2,
+      "name": "Skinny Fit Jeans",
+      "price": 70,
+      "originalPrice": 100,
+      "rating": 3.5,
+      "image": "https://s3-alpha-sig.figma.com/img/769b/9d60/ff941dde9bc0e54431b8d8fe3182f5e9?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RgPBBRzNwb99a9qa8-r2dGtwXCHgBzGOrl5L3AtPSwUzBqMF6xr~e9-C~Ggh6Ae3LWdViyqx5efu1bLbp75pBVCCiSQvImLMe-m2z1srdmlLvUfL9c5WWxdIXYMQ-ccNMeNJGmNAnjNUOo3Zzn8sIJ6ze5mg0IlpMwUdsdpQ0y2EcUVlrw9EFZUb9lGpuEbm3IVavuv9-vCSEJzhQ8HNnPDjwf9ikpPdHS3go75XzspQfL9Ru23frXoUtPxKdqzEGYn0TDkvxFKHsQIG5LG3V5SULwpAs5WNh92EjvTynzCsaVSLL9ZzYmhhfbWmYWhen9m5vdQzr1xE2-bAudKQKw__",
+      "discount": -30,
+      "style": "Casual",
+      "color": "Red",
+      "size": "M",
+      "details": [
+        "Orta Sıcaklıkta Ütüleyiniz",
+        "Maksimum 40 °c Sıcaklıkta Yıkayınız",
+        "Tamburda Düşük Sıcaklıkta Kurutulabilir",
+        "Ağartıcı Kullanmayınız",
+        "Ana Kumaş İçeriği: : Elastan 2%,Pamuk 98%"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:3 Leather Jacket",
+      "id": 3,
+      "name": "Leather Jacket",
+      "price": 50,
+      "originalPrice": 70,
+      "rating": 4.8,
+      "image": "https://s3-alpha-sig.figma.com/img/bbf4/11c2/5fc84f87eeac1062fbe47f49c192d4f2?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BB7vsOFdM4trs0znEjD~H8bF1KH94uEjdOif55DUU2UdvPIE6UunrvutndOvB2uO7ZogEeQYB762VRuDWUabbenIJw3tZnTBUY-JF1EKKl5rVlcL3slRY5PmnC1qaKKy5z3FzVT9bTxMFQWVsCD1L1lnVUCUizlLCpsNoIbnfCs7gC9UxpF0bJPy7b-jMtIXJ1u8npvxBKqW~YCjVfOYiBhcJLHu~wVE2PtFpdAeLE3r4Ebv117zJeDKxWrseWGE~HI6HYep~5SnDMCJw~FEsMcRZVksIqBukXtVtO1FMKhd1JNRSsrxItoefAG9zygiqO3EuOmDcAYW~Pv2rcOFHQ__",
+      "discount": -30,
+      "style": "Casual",
+      "color": "Blue",
+      "size": "S",
+      "details": [
+        "%55 pamuk %45 keten",
+        "30C/86F'a kadar makinada yıkayınız",
+        "çamaşır suyu kullanmayın",
+        "110C/230F'a kadar ütüleyin",
+        "Baskı/Nakış/Süsleme üzerinden doğrudan geçmeyin",
+        "Kuru Temizleme Yapılamaz"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:4 Sleeve triped T-shirt",
+      "id": 4,
+      "name": "Sleeve Striped T-shirt",
+      "price": 60,
+      "originalPrice": 80,
+      "rating": 4.5,
+      "image": "https://s3-alpha-sig.figma.com/img/3457/42c2/7cc557f42cf1d489f7cc811856b90e9f?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hXymYz5j1VZVmt~mztAXRGqbLgCeZz6cn1hPaP5tXJI93Bof9OJ~aa0isXknvLz00KuBu4pHH--q95mMN2OWxO09CKMxZAgoMeKPPEEnZ7ix03E1LZqa~GfX8qQ~mnMC8wq1lEVwSsxucDHLQeOfOzXwQ02vCZ04SoVpL5-amCXUlRFWDX1EzdF7DtPEmCg5RPl6f7i7jXNyx6KQrFphwesbBmvTL6XzKyyFOWVsGiRWuQCfxbNEjbsdGr2pX-a3QGNX9mGGH9v9pdN7aN9JliaqJruhZliqxYYAYgY7Zaub-b~8MEPlCq7UUybPKWLXaU8QwBTyTv5xU02ZM36v~w__",
+      "discount": -30,
+      "style": "Casual",
+      "color": "Orange",
+      "size": "M",
+      "details": [
+        "%100 Pamuk",
+        "Kısa Kollu",
+        "Yüksek Kaliteli Kumaş",
+        "Son Derece Rahat",
+        "Nefes Alabilen ve Hafif",
+        "Elde yıkama veya makinede yıkama"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:5 JAM BLAZER SİYAH CEKET",
+      "id": 5,
+      "name": "JAM BLAZER SİYAH CEKET",
+      "price": 130,
+      "originalPrice": 160,
+      "rating": 4.5,
+      "image": "https://cdn.sarar.com/sarar-jam-siyah-blazer-ceket-4388-slim-fit-ceket-sarar-3774-43-O.jpg",
+      "discount": -30,
+      "style": "Formal",
+      "color": "Black",
+      "size": "M",
+      "details": [
+        "Sarar klasik kalıp",
+        "mono kapama",
+        "mono yaka",
+        "Kapaklı fileto cep iki düğmeli",
+        "İçeriğindeki yün dört mevsim rahat kullanım sağlar"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:6 Fırçalanmış pamuklu fitilli gömlek",
+      "id": 6,
+      "name": "Fırçalanmış pamuklu fitilli gömlek",
+      "price": 110,
+      "originalPrice": 140,
+      "rating": 4.5,
+      "image": "https://shop.mango.com/assets/rcs/pics/static/T6/fotos/S/67080635_99_B.jpg?imwidth=2048&imdensity=1&ts=1699263210956",
+      "discount": -15,
+      "style": "Formal",
+      "color": "Black",
+      "size": "L",
+      "details": [
+        "Regular kesim",
+        "Pamuk ve liyosel karışımlı kumaş",
+        "Fıçalanmış pamuklu dimi. Gömlek yakalı",
+        "Göğsü yama cepli",
+        "Uzun kollu ve manşetleri düğmeli",
+        "Etek ucu yuvarlak"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:7 Rahat Kalıp Siyah Erkek Kumaş Pantolon",
+      "id": 7,
+      "name": "Rahat Kalıp Siyah Erkek Kumaş Pantolon",
+      "price": 100,
+      "originalPrice": 120,
+      "rating": 4.5,
+      "image": "https://cdn.cimri.io/image/240x240/suvari-slim-fit-siyah-erkek-kumas-pantolon-kumas-17724_363699225.jpg",
+      "discount": -20,
+      "style": "Formal",
+      "color": "Black",
+      "size": "L",
+      "details": [
+        "Kalıp Tipi:Regular Fit",
+        "Materyal:%100 YÜN",
+        "Desen Tipi:Düz",
+        "Cinsiyet:Erkek",
+        "Menşei:Türkiye"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:8 VARNA C DROP CEKET",
+      "id": 8,
+      "name": "VARNA C DROP CEKET",
+      "price": 150,
+      "originalPrice": 180,
+      "rating": 4.5,
+      "image": "https://sarar.com/thita-ceket-15563-regular-fit-ceket-sarar-40263-15-O.jpg",
+      "discount": -15,
+      "style": "Formal",
+      "color": "Blue",
+      "size": "XS",
+      "details": [
+        "yün karışımlı kumaşı ile hem şıklığı hem de konforu bir arada sunar",
+        "her mevsim giyime uygun yapısıyla stilinizi tamamlayacak"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:9 Chicago Bulls Statement Edition",
+      "id": 9,
+      "name": "Chicago Bulls Statement Edition",
+      "price": 180,
+      "originalPrice": 200,
+      "rating": 3.5,
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fcc56c33-40df-4d61-806f-95cd7e900d4a/chicago-bulls-statement-edition-jordan-nba-swingman-%C5%9Fortu-9RRD3F.png",
+      "discount": -10,
+      "style": "gym",
+      "color": "Black",
+      "size": "S",
+      "details": [
+        "Isı aktarımıyla basılmış logolara sahiptir",
+        "Yanda dikişli cepler bulunur",
+        "%100 geri dönüştürülmüş polyester",
+        "Makinede yıkanabilir",
+        "İthal edilmiştir",
+        "Gösterilen Renk: Siyah/University Red/Beyaz",
+        "Stil: CV9555-010",
+        "Menşe Ülke/Bölge: Honduras"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:10 Oklahoma City Thunder Icon Edition 2022/23",
+      "id": 10,
+      "name": "Oklahoma City Thunder Icon Edition 2022/23",
+      "price": 210,
+      "originalPrice": 250,
+      "rating": 3.5,
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2781f10e-7397-42b8-8b97-ec03cac00695/oklahoma-city-thunder-icon-edition-2022-23-dri-fit-nba-swingman-formas%C4%B1-xM6bnF.png",
+      "discount": -10,
+      "style": "gym",
+      "color": "Blue",
+      "size": "XS",
+      "details": [
+        "Fitilli oyuncu adı ve numarası",
+        "Isı aktarımıyla basılmış grafikler",
+        "Bel kısmında etiket bulunur",
+        "%100 polyester",
+        "Makinede yıkanabilir",
+        "İthal edilmiştir",
+        "Gösterilen Renk: Signal Blue",
+        "Stil: DN2016-403"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:11 Team 31 Nike NBA Erkek Tişörtü",
+      "id": 11,
+      "name": "Team 31 Nike NBA Erkek Tişörtü",
+      "price": 140,
+      "originalPrice": 160,
+      "rating": 3.5,
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/acba0c56-2ec6-4d6b-9e7e-a104f442e141/team-31-nba-ti%C5%9F%C3%B6rt%C3%BC-tNmk2Z.png",
+      "discount": -15,
+      "style": "gym",
+      "color": "Black",
+      "size": "S",
+      "details": [
+        "%100 pamuk",
+        "Makinede yıkanabilir",
+        "İthal edilmiştir",
+        "Gösterilen Renk: Dark Pony",
+        "Günlük kullanıma uygun pamuklu kumaş yumuşak ve hafiftir.",
+        "Team 31, NBA sevgimizi temsil eder ve ligi, kendi 31. serisi gibi sunar.",
+        "Stil: FJ0595-231",
+        "Menşe Ülke/Bölge: Vietnam"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:12 Team 13 Nike NBA Erkek Tişörtü",
+      "id": 12,
+      "name": "Team 13 Nike NBA Erkek Tişörtü",
+      "price": 120,
+      "originalPrice": 140,
+      "rating": 3.5,
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/584b67e7-bc2c-40e2-8877-35c6cef7386f/team-13-wnba-ti%C5%9F%C3%B6rt-WVWR0Z.png",
+      "discount": -15,
+      "style": "gym",
+      "color": "Orange",
+      "size": "XL",
+      "details": [
+        "%50-100 pamuk/%0-50 polyester",
+        "Malzeme yüzdelerinde değişiklikler olabilir. Gerçek içerik için etiketi kontrol et.",
+        "Makinede yıkanabilir",
+        "İthal edilmiştir",
+        "Yumuşak ve rahat pamuklu kumaş, günlük kullanım için idealdir.",
+        "Gösterilen Renk: Brilliant Orange",
+        "Stil: FB9833-820",
+        "Menşe ülke/Bölge: Meksika"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:13 LaMelo Ball Charlotte Hornets 2023/24",
+      "id": 13,
+      "name": "LaMelo Ball Charlotte Hornets 2023/24",
+      "price": 200,
+      "originalPrice": 220,
+      "rating": 3.5,
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cc493662-38cf-4980-9a0b-2134362255fa/lamelo-ball-charlotte-hornets-2023-24-dri-fit-nba-swingman-forma-fwLjV5.png",
+      "discount": -10,
+      "style": "gym",
+      "color": "Blue",
+      "size": "M",
+      "details": [
+        "Bel kısmında dokuma etiket",
+        "%100 polyester",
+        "Makinede yıkanabilir",
+        "İthal edilmiştir",
+        "Nefes alabilen file hem sahada hem saha dışında serin kalmana yardımcı olur.",
+        "Gösterilen Renk: Rapid Teal",
+        "Stil: DX8610-415",
+        "Menşe Ülke/Bölge: Tayland"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:14 Brooklyn Nets Starting 5 Courtside Nike NBA Grafikli Erkek Eşofmanı",
+      "id": 14,
+      "name": "Brooklyn Nets Starting 5 Courtside Nike NBA Grafikli Erkek Eşofmanı",
+      "price": 110,
+      "originalPrice": 170,
+      "rating": 3.5,
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b3115c2c-62c1-4cf2-b6bd-33305b017696/brooklyn-nets-starting-5-courtside-nba-grafikli-e%C5%9Fofman%C4%B1-Jdwrjs.png",
+      "discount": -35,
+      "style": "gym",
+      "color": "Gray",
+      "size": "M",
+      "details": [
+        "Eşofman altı, kordonlu elastik bel bandına sahiptir",
+        "Ceketin manşetleri ve eşofman altının paçaları elastiktir",
+        "Gövde/Astar: %100 polyester",
+        "Makinede yıkanabilir",
+        "İthal edilmiştir",
+        "Gösterilen Renk: Siyah/Flat Silver/Beyaz",
+        "Stil: FD8546-010",
+        "Menşe Ülke/Bölge: Vietnam"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:15 Los Angeles Lakers Courtside",
+      "id": 15,
+      "name": "Los Angeles Lakers Courtside Nike NBA Erkek Tişörtü",
+      "price": 200,
+      "originalPrice": 240,
+      "rating": 3.5,
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7feaddcc-3e5d-4572-9bcb-e2766b1b04bd/los-angeles-lakers-courtside-nba-ti%C5%9F%C3%B6rt%C3%BC-CGP7XF.png",
+      "discount": -20,
+      "style": "gym",
+      "color": "Black",
+      "size": "XS",
+      "details": [
+        "%100 pamuk",
+        "Makinede yıkanabilir",
+        "İthal edilmiştir",
+        "Gösterilen Renk: Siyah",
+        "Stil: HF0878-010",
+        "Menşe Ülke/Bölge: Pakistan"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:16 Yazlık Hawaii Gömlek Erkek",
+      "id": 16,
+      "name": "Yazlık Hawaii Gömlek Erkek",
+      "price": 220,
+      "originalPrice": 300,
+      "rating": 3.5,
+      "image": "https://m.media-amazon.com/images/I/71ixwGslsqS._AC_SX522_.jpg",
+      "discount": -25,
+      "style": "Party",
+      "color": "Blue",
+      "size": "M",
+      "details": [
+        "polyester malzemeden yapılmıştır ve günlük giyiminizi karşılayacak kadar dayanıklıdır.",
+        "geniş yaka",
+        "kavisli etek ucu",
+        "düz kesim tasarıma sahiptir",
+        "Kısa kollu elde veya makinede yıkanabilir",
+        "Perfect for casual wear",
+        "ütülemeye gerek yoktur",
+        "ılık su kullanın, kırışmaz"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    },
+    {
+      "__comment__": "ID:17 Kısa Kollu Çiçek Aloha Gömlekler",
+      "id": 17,
+      "name": "Kısa Kollu Çiçek Aloha Gömlekler",
+      "price": 230,
+      "originalPrice": 290,
+      "rating": 3.5,
+      "image": "https://img.fruugo.com/product/8/18/210224188_max.jpg",
+      "discount": -25,
+      "style": "Party",
+      "color": "Red",
+      "size": "XL",
+      "details": [
+        "küba yakalı",
+        "tropikal baskı",
+        "%100 Pamuk",
+        "yaka Stili: Klasik",
+        "serin kumaştan",
+        "yumuşak ve rahattır"
+      ],
+      "reviews": [
+        {
+          "username": "User1",
+          "review": "Great product!",
+          "rating": 5,
+          "postedOn": "Posted on August 14, 2023"
+        },
+        {
+          "username": "User2",
+          "review": "Very comfortable.",
+          "rating": 4,
+          "postedOn": "Posted on August 15, 2023"
+        },
+        {
+          "username": "User3",
+          "review": "Good value for money.",
+          "rating": 4,
+          "postedOn": "Posted on August 16, 2023"
+        },
+        {
+          "username": "User4",
+          "review": "Love the design.",
+          "rating": 5,
+          "postedOn": "Posted on August 17, 2023"
+        },
+        {
+          "username": "User5",
+          "review": "Will buy again.",
+          "rating": 4,
+          "postedOn": "Posted on August 18, 2023"
+        },
+        {
+          "username": "User6",
+          "review": "Highly recommend.",
+          "rating": 5,
+          "postedOn": "Posted on August 19, 2023"
+        },
+        {
+          "username": "User7",
+          "review": "Nice quality.",
+          "rating": 4,
+          "postedOn": "Posted on August 20, 2023"
+        },
+        {
+          "username": "User8",
+          "review": "Fits perfectly.",
+          "rating": 5,
+          "postedOn": "Posted on August 21, 2023"
+        }
+      ]
+    }
+  ]
+}

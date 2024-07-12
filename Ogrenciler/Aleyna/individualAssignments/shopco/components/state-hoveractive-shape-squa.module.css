@@ -1,0 +1,29 @@
+.number {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xs);
+  box-sizing: border-box;
+}
+.statehoveractiveShapesqua {
+  border-radius: var(--br-5xs);
+  background-color: var(--primary-50);
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--text-sm-medium-size);
+  color: var(--primary-600);
+  font-family: var(--text-sm-medium);
+  flex: 1;
+}

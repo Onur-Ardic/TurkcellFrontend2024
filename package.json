@@ -2,10 +2,15 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.6",
     "app": "^0.1.0",
+    "bootstrap": "^5.3.3",
     "create": "^0.0.2",
     "formik": "^2.4.6",
     "jquery": "^3.7.1",
+    "next": "^14.2.5",
+    "next-i18next": "^15.3.0",
     "nuxt": "^3.12.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "yup": "^1.4.0"
   }
 }

@@ -12,13 +12,8 @@ import {
 } from "./card-styled";
 
 const NewsDetailView = () => {
-  const { id } = useParams();
   const location = useLocation();
   const article = location.state;
-
-  if (!article) {
-    return <div>Article not found</div>;
-  }
 
   return (
     <DetailContainer className="container">

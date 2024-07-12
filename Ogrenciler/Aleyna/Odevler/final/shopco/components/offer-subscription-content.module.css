@@ -1,0 +1,137 @@
+.stayUptoDate {
+  margin: 0;
+  height: 94px;
+  width: 551px;
+  position: relative;
+  font-size: inherit;
+  line-height: 45px;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.emailPlaceholderIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 24px;
+}
+.enterYourEmail {
+  flex: 1;
+  position: relative;
+}
+.emailInput {
+  align-self: stretch;
+  border-radius: var(--br-43xl);
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-105xl) var(--padding-xs)
+    var(--padding-base);
+  gap: var(--gap-xs);
+  white-space: nowrap;
+}
+.subscribeToNewsletter {
+  width: 349px;
+  position: relative;
+  font-weight: 500;
+  align-self: stretch;
+  border-radius: var(--br-43xl);
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xs) var(--padding-xl);
+  white-space: nowrap;
+  color: var(--color-black);
+  cursor: pointer;
+  width: Fixed (349px)px;
+gap: 12px;
+
+
+}
+
+.emailField {
+  width: 349px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+  min-width: 349px;
+  max-width: 100%;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  font-family: var(--font-satoshi);
+}
+.offerSubscriptionContent,
+.offerSubscriptionForm {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.offerSubscriptionForm {
+  width: 1240px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-black);
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-17xl) var(--padding-45xl);
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+.offerSubscriptionContent {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 0 var(--padding-2xl);
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-white);
+  font-family: var(--font-integral-cf);
+}
+@media screen and (max-width: 1200px) {
+  .emailField {
+    flex: 1;
+  }
+  .offerSubscriptionForm {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .stayUptoDate {
+    font-size: var(--font-size-13xl);
+    line-height: 36px;
+  }
+  .offerSubscriptionForm {
+    padding-left: var(--padding-13xl);
+    padding-right: var(--padding-13xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .emailField {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .stayUptoDate {
+    font-size: var(--font-size-5xl);
+    line-height: 27px;
+  }
+  .emailInput {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
