@@ -14,21 +14,21 @@ const Banner = () => {
                 <div className='gridPlace row'>
                     <h4 className='bannerTitle'>{i18next.t('dressStyle')}</h4>
                     <div className='gridPlaceContent d-flex justify-content-center flex-wrap'>
-                        <div className='imageContainerLgt m-2 col-lg-4 col-10'>
+                        <div className='imageContainerLgt1 m-2 col-lg-4 col-10'>
                             <h5 className='imgTitle'>{i18next.t('casual')}</h5>
-                            <Image className="w-100" src={manBanner} alt={""} />
+                            <Image className="w-100 second" src={manBanner} alt={"casual"} />
                         </div>
-                        <div className='imageContainerLgt m-2 col-lg-7 col-10'>
-                            <h5 className='imgTitle'>{i18next.t('party')}</h5>
-                            <Image className="w-100" src={manBanner2} alt={""} />
+                        <div className='imageContainerLgt1 m-2 col-lg-7 col-10'>
+                            <h5 className='imgTitle'>{i18next.t('formal')}</h5>
+                            <Image className="w-100 second" src={manBanner2} alt={"formal"} />
                         </div>
                         <div className='imageContainerLgt col-lg-7 col-10 m-2 '>
-                            <h5 className='imgTitle'>{i18next.t('formal')}</h5>
-                            <Image className="w-100" src={girlBanner} alt={""} />
+                            <h5 className='imgTitle'>{i18next.t('party')}</h5>
+                            <Image className="w-100" src={girlBanner} alt={"party"} />
                         </div>
                         <div className='imageContainerLgt col-10 col-lg-4 m-2'>
                             <h5 className='imgTitle'>{i18next.t('gym')}</h5>
-                            <Image className="w-100" src={manBanner3} alt={""} />
+                            <Image className="w-100" src={manBanner3} alt={"gym"} />
                         </div>
                     </div>
                 </div>
