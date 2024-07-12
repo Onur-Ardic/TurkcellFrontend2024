@@ -93,7 +93,7 @@ const LoginForm = () => {
           {successMessage && <p className="success">{successMessage}</p>}
           <div className="links">
             <a href="#forgot-password">{t("forgotPassword")}</a>
-            <a href="signup">{t("register")}</a>
+            <a href="register">{t("signup")}</a>
           </div>
         </div>
       </div>
