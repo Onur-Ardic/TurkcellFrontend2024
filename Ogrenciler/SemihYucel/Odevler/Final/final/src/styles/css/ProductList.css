@@ -1,0 +1,35 @@
+.productList .product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.productList .products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.productList .productCard {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fff;
+  width: 295px;
+  height: 408px;
+}
+.productList .productCard img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.productList .productCard h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+.productList .productCard p {
+  margin: 0.2rem 0;
+}
+
+/*# sourceMappingURL=ProductList.css.map */

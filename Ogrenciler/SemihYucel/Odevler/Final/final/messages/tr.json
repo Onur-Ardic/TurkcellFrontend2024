@@ -1,0 +1,159 @@
+{
+  "Index": {
+    "title": "Turkcell Final",
+    "loading": "Sayfa Yükleniyor"
+  },
+
+  "LoginRegister": {
+    "logout": "Çıkış Yap",
+    "register": "Kayıt Ol",
+    "registerSuccess": "Kayıt Başarılı!",
+    "login": "Giriş Yap",
+    "loginSuccess": "Giriş Başarılı!",
+    "rememberMe": "Beni Hatırla",
+    "forgotPassword": "Şifreni Mi Unuttun?",
+    "signup": "Kayıt Ol",
+
+    "emailPlaceholder": "Lütfen mail adresi giriniz",
+    "passwordPlaceholder": "Lütfen şifre giriniz",
+    "firstNamePlaceholder": "Adınızı giriniz",
+    "lastNamePlaceholder": "Soyadınızı giriniz",
+
+    "inputMin": "Lütfen minimum 2 karakter giriniz.",
+    "inputMax": "Maximum 255 karakter girebilirsiniz.",
+    "firstNameRequired": "İsim girmek zorunludur.",
+    "lastNameRequired": "Soyisim girmek zorunludur.",
+    "emailRequired": "E-posta girmek zorunludur.",
+    "passwordRequired": "Şifre girmek zorunludur.",
+    "emailFormat": "Geçerli bir e-posta formatı girin.",
+    "passwordMatches": "Şifre en az bir harf, bir rakam ve bir özel karakterden oluşmalıdır",
+    "passwordMin": "şifre çok kısa - en az 8 karakterli olmalıdır.",
+    "passwordMax": "Şifre çok uzun - en fazla 12 karakterli olmalıdır",
+
+    "wrongPassword": "Girilen şifre hatalı. Lütfen şifrenizi kontrol ediniz.",
+    "userNotFound": "Bu kullanıcı bulunamadı. Lütfen kayıt olmayı deneyiniz.",
+    "emailAlreadyInUse": "Bu email adresi zaten kullanılıyor. Lütfen başka bir email deneyiniz.",
+    "operationNotAllowed": "Bu işlem şu anda etkin değil. Lütfen daha sonra tekrar deneyiniz.",
+    "defaultError": "Bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.",
+
+    "controlLogin": "Hesabınız yok mu? Kayıt ol",
+    "controlRegister": "Hesabını var mı? Giriş yap"
+  },
+  "navbar": {
+    "navbarTopTitle": "Kaydolun ve ilk siparişinizde %20 indirim kazanın.",
+    "searchPlaceholder": "Ürün arayabilirsiniz...",
+    "singUpNow": "Şimdi Kaydol",
+    "shop": "Mağaza",
+    "onSale": "İndirimde",
+    "anotherAction": "Başka Bir İşlem",
+    "somethingElseHere": "Burada Başka Bir Şey",
+    "NewArrival": "Yeni Gelenler",
+    "Brands": "Markalar"
+  },
+  "hero": {
+    "heroTitle": "TARZINIZA UYGUN KIYAFETLER BULUN",
+    "heroDescription": "Bireyselliğinizi ortaya çıkaracak ve tarzınıza hitap edecek şekilde titizlikle tasarlanmış çeşitli giysilerimiz arasında gezinin.",
+    "shopNow": "Şimdi Alışveriş Yap",
+    "counterBrands": "Uluslararası Markalar",
+    "counterProducts": "Yüksek Kaliteli Ürünler",
+    "counterCustomers": "Mutlu Müşteriler"
+  },
+  "cardList": {
+    "firstCardTitle": "YENİ GELENLER",
+    "lastCardTitle": "EN ÇOK SATANLAR",
+    "viewAll": "Hepsini Gör"
+  },
+  "dressStyle": {
+    "title": "ELBİSE STİLİNE GÖRE GÖZ ATIN",
+    "casual": "Gündelik",
+    "formal": "Resmi",
+    "gym": "Spor",
+    "party": "Parti"
+  },
+  "ourHappyCustomers": {
+    "title": "MUTLU MÜŞTERİLERİMİZ"
+  },
+  "footer": {
+    "formTitle": "SON TEKLİFLERİMİZ HAKKINDA GÜNCEL KALIN",
+    "inputPlaceholder": "mail adresinizi giriniz ",
+    "formButton": "Bültenlere abone olun",
+    "title": "Tarzınıza uygun, giymekten gurur duyacağınız kıyafetlerimiz var. Kadınlardan erkeklere.",
+    "about": "Hakkında",
+    "features": "Özellikler",
+    "works": "Çalışmalar",
+    "career": "Kariyer",
+    "help": "Yardım",
+    "customerSupport": "Müşteri Desteği",
+    "deliveryDetails": "Teslimat Detayları",
+    "termConditions": "Şartlar ve Koşullar",
+    "PrivacyPolicy": "Gizlilik Politikası",
+    "refundPolicy": "Şartlar ve Koşullar",
+    "faq": "SSS",
+    "account": "Hesap",
+    "manageDeliveries": "Teslimatları Yönet",
+    "orders": "Siparişler",
+    "payments": "Ödemeler",
+    "resources": "KAYNAKLAR",
+    "freeeBooks": "Ücretsiz e-Kitaplar",
+    "developmentTutorial": "Geliştirme Eğitimi",
+    "howtoBlog": "Blog Nasıl Yazılır",
+    "youtubePlaylist": "Youtube Oynatma Listesi",
+    "copyright": "Shop.co © 2000-2023, Tüm Hakları Saklıdır"
+  },
+  "category": {
+    "casual": "Gündelik",
+    "sortBy": "Sırala",
+    "mostPopular": "En Popüler",
+    "lowtoHigh": "Fiyat: Düşükten Yükseğe",
+    "hightoLow": "Fiyat: Yüksekten Düşüğe",
+    "filter": "Filtreler",
+    "price": "Fiyat",
+    "color": "Renk",
+    "priceRange": "Fiyat Aralığı",
+    "sizes": "Bedenler",
+    "dressStyle": "Elbise Tarzı",
+    "applyFilter": "Filtreyi Uygula"
+},
+  "boxes": {
+    "home": "Ana Sayfa",
+    "cart": "Sepet",
+    "yourCart": "Sepetiniz",
+    "Subtotal": "Ara Toplam",
+    "total": "Toplam",
+    "Discount": "İndirim (-20%)",
+    "deliveryFee": "Teslimat Ücreti",
+    "inputPlaceholder": "promosyon kodu girin",
+    "apply": "uygula",
+    "checkout": "Ödemeye Git",
+    "orderSummary": "Sipariş Özeti"
+  },
+
+  "productDetail": {
+    "selectedColor": "Renk Seçin",
+    "chooseSize": "Beden Seçin",
+    "addToCart": "Sepete Ekle",
+    "productDetails": "Ürün Detayları",
+    "ratingReviews": "Derecelendirme ve Yorumlar",
+    "faqs": "Sıkça Sorulan Sorular",
+    "allReviews": "Tüm Yorumlar",
+    "writeReview": "Yorum Yaz",
+    "postedOn": "Yayınlanma Tarihi",
+    "loadMoreReviews": "Daha Fazla Yorum Yükle",
+    "comment": "Yorum",
+    "close": "Kapat",
+    "save": "Kaydet",
+    "oldest": "Son Yorumlar",
+    "latest": "İlk Yorumlar",
+    "faq1": "İade politikası nedir?",
+    "faq1Answer": "Tüm ürünlerimiz için 30 günlük bir iade politikası sunuyoruz. Satın aldığınız üründen memnun kalmazsanız, ürünü orijinal durumunda olması koşuluyla 30 gün içinde tam para iadesi veya değişim için iade edebilirsiniz.",
+    "faq2": "Kargo ne kadar sürer?",
+    "faq2Answer": "Kargo süreleri bulunduğunuz yere bağlı olarak değişir. Genellikle, siparişler 2-3 iş günü içinde işlenir ve teslimat, yurt içi gönderiler için 5-7 iş günü, yurt dışı gönderiler için 10-15 iş günü sürer.",
+    "faq3": "Siparişimi nasıl takip edebilirim?",
+    "faq3Answer": "Siparişiniz gönderildikten sonra, bir takip numarası ve paketinizin takibini yapabileceğiniz bir bağlantı içeren bir e-posta alacaksınız. Ayrıca, web sitemize giriş yaparak ve sipariş geçmişinizi görüntüleyerek siparişinizi takip edebilirsiniz.",
+    "faq4": "Kargo ücreti nedir?",
+    "faq4Answer": "Kargo ücretleri bulunduğunuz yere bağlı olarak değişir. Genellikle, siparişler 2-3 iş günü içinde işlenir ve teslimat süreleri değişiklik gösterebilir.",
+    "faq5": "Siparişimi nasıl takip edebilirim?",
+    "faq5Answer": "Tüm ürünlerimiz için 30 günlük bir iade politikası sunuyoruz. Satın aldığınız üründen memnun kalmazsanız, ürünü orijinal durumunda olması koşuluyla 30 gün içinde tam para iadesi veya değişim için iade edebilirsiniz."
+  }
+}
+
