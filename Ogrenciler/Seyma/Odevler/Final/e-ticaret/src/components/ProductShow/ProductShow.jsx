@@ -51,15 +51,14 @@ import '../../app/categories/Categories.sass'
     
     return (
         <div>
-            <div className='d-flex justify-content-between'>
+            <div className='d-flex justify-content-between flex-wrap'>
                 <h4 className="pageTitle">{selectedSort}</h4>
-                <div className="mb-3 d-flex align-items-center"><span className="d-inline-block me-2">Sort by</span>
+                <div className="mb-3 d-flex flex-wrap align-items-center"><span className="d-inline-block me-2 sortByTitle">{i18next.t('showingproducts')}</span>
                     <div className="dropdown bootstrap-select dropup">
-                        <select className="selectpicker" 
+                        <select className="selectpicker btn-selectpicker border-0" 
                         name="sort" id="form_sort" 
                         value={selectedSort}
-                        onChange={handleSortChange}
-                        data-style="btn-selectpicker border-0" title="" tabIndex="null">
+                        onChange={handleSortChange} tabIndex="null">
                             <option value="Products">{i18next.t('default')}</option>
                             <option value="Popular">{i18next.t('popularity')}</option>
                             <option value="Highest Rating">{i18next.t('rating')}</option>
