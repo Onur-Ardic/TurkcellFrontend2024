@@ -1,0 +1,97 @@
+@import '../../app/globals.sass'
+
+.background
+  background-color: $light
+  html.dark &
+    background-color: $danger
+
+
+.imgContainer
+    height: 300px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    border: none !important
+    border-radius: 20px
+    img
+        object-fit: cover
+
+.title
+    font-family: "Integral CF Bold"
+    font-size: 48px
+    font-weight: 700
+    line-height: 57.6px
+    text-align: center
+   
+.badge
+    background: #FF33331A
+    color:  #FF3333      
+
+.productTitle
+    color: $danger
+    text-decoration: none
+    font-family: Satoshi
+    font-size: 20px
+    font-weight: 700
+    line-height: 27px
+    html.dark &
+        color: $light
+
+.pageTitle
+    color: $danger
+    html.dark &
+        color: $light
+
+.ratingPrd
+    margin-left: 5px
+    color: $primary
+    html.dark &
+        color: $light
+.price
+    font-family: Satoshi
+    font-size: 24px
+    font-weight: 700
+    line-height: 32.4px
+    margin-right: 5px
+
+.badgePrd
+    html.dark &
+        background-color: $light 
+
+
+.discountPrice
+    font-family: Satoshi
+    font-size: 20px
+    font-weight: 600
+    line-height: 32.4px
+    color: $primary
+    text-decoration: line-through
+    margin-right: 5px
+    html.dark &
+        color: $light
+
+.sortByTitle
+    font-family: Satoshi
+    font-size: 16px
+    font-weight: 400
+    line-height: 21.6px
+    color: $primary
+    html.dark &
+        color: $light
+
+.categoriesContainer
+    display: grid
+    grid-template-columns: auto auto auto
+    gap: 10px
+
+.boxPrd
+    margin-bottom: 30px
+
+.productList
+    border-bottom: 1px solid $secondary
+
+@media (max-width: 480px) 
+    .categoriesContainer
+        display: flex
+        flex-direction: column

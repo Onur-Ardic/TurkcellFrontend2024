@@ -1,9 +1,10 @@
+@charset "UTF-8";
 .bg-shape {
   background-color: #e5fff9;
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -17,133 +18,6 @@
   overflow: hidden;
 }
 
-.my-project-content {
-  justify-content: center;
-}
-
-@media (min-width: 869px) {
-  .flex {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 3220px) {
-  .logo {
-    display: flex;
-    width: 120px;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .headtittle {
-    font-size: 3.75rem;
-    color: #0c7f86;
-    font-weight: 900;
-    font-size: 120px;
-    font-weight: 700;
-    line-height: 120px;
-    letter-spacing: -4px;
-    text-align: left;
-  }
-  .wave {
-    width: 40%;
-    height: 50px;
-    background: url("https://demo.cocobasic.com/seppo-html/demo-5/images/wavy-shape.png") repeat-x;
-    animation: wave-animation 10s linear infinite;
-    margin: 15px 0;
-  }
-  @keyframes wave-animation {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 300px 0;
-    }
-  }
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  .substittle {
-    color: #0c7f86;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 35px;
-    letter-spacing: 30px;
-    text-transform: uppercase;
-    padding-top: 15px;
-    font-family: "Poppins", sans-serif;
-  }
-  .coming-form {
-    width: 100%;
-    margin: 16px;
-  }
-  .coming-form input {
-    position: relative;
-    width: 35%;
-    font-size: 18px;
-    padding: 20px 24px;
-    flex-grow: 1;
-    margin: 0 16px;
-    border: none;
-    outline: none;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0px 0px 30px 7px rgba(12, 127, 134, 0.2509803922);
-    transition: 0.5s ease;
-  }
-  .btn-filled {
-    width: 30%;
-    margin: 16px;
-    font-family: "Poppins", sans-serif;
-    padding: 25px 24px;
-    border-radius: 10px;
-    color: #fff;
-    background-color: #0c7f86;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    cursor: pointer;
-    border: none;
-    transition: 0.5s ease;
-  }
-  .my-image {
-    width: 346px;
-    height: 346px;
-  }
-  .coming-image img {
-    position: relative;
-    max-width: 80%;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  .coming-image .body {
-    line-height: 30px;
-    margin-bottom: 24px;
-  }
-  .imgh4 {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 30px;
-    color: #084b4f;
-  }
-  .coming-links {
-    color: #084b4f;
-    padding: 8px 8px 0px 0px;
-    text-decoration: none;
-    transition: color 0.5s ease;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 5px;
-  }
-}
 @media (max-width: 768px) {
   .logo {
     display: block;
@@ -154,41 +28,40 @@
     font-size: 3.75rem;
     color: #0c7f86;
     font-weight: 900;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 60px;
-    letter-spacing: -4px;
-    text-align: left;
   }
-  .wave-container {
-    width: 100%;
+  .wave {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    position: relative;
     overflow: hidden;
   }
   .wave-container {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100px; /* Dalga yüksekliği ayarlayabilirsiniz */
     overflow: hidden;
   }
   .wave {
-    width: 100%;
-    height: 50px;
-    background: url("https://demo.cocobasic.com/seppo-html/demo-5/images/wavy-shape.png") repeat-x;
-    animation: wave-animation 10s linear infinite;
-    margin: 15px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%; /* Dalga genişliği ayarlayabilirsiniz */
+    height: 100%;
+    background: radial-gradient(circle, #ffd373 0%, #ff9b00 100%);
+    animation: wave-animation 3s infinite linear;
   }
   @keyframes wave-animation {
     0% {
-      background-position: 0 0;
+      transform: translateX(0) translateY(10px);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-10px);
     }
     100% {
-      background-position: 300px 0;
-    }
-  }
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
+      transform: translateX(-100%) translateY(10px);
     }
   }
   .substittle {
@@ -205,7 +78,6 @@
     margin: 16px;
   }
   .coming-form input {
-    width: 70%;
     font-size: 18px;
     padding: 20px 24px;
     flex-grow: 1;

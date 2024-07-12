@@ -1,0 +1,88 @@
+@import '../../app/globals.sass'
+
+.productsChoosen
+    border: 1px solid $secondary
+    border-radius: 20px
+    padding: 20px
+    height: auto
+    html.dark & 
+        color: $light
+    
+.cartTitle
+    font-family: "Integral CF Bold"
+    font-size: 40px
+    font-weight: 700
+    line-height: 48px
+    text-align: left
+    html.dark & 
+        color: $light
+
+.orderSummary
+    border: 1px solid $secondary
+    border-radius: 20px
+    padding: 20px
+    height: 458px
+    html.dark & 
+        color: $light
+
+.productsChoosenDetail
+    padding: 10px
+    border-bottom: 1px solid $secondary
+    html.dark & 
+        color: $light
+ 
+.trash
+    position: absolute
+    top: 0
+    right: 0
+
+.addBtn
+    position: absolute
+    bottom: 0
+    right: 0
+    html.dark & 
+        color: $light
+
+.prdctDetailBox
+    position: relative
+
+.checkOutBtn
+    html.dark & 
+        background-color: $light
+        color: $danger
+.applyBtn
+    html.dark & 
+        background-color: $light
+        color: $danger
+.imgContainerCart
+    height: 124px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    border: none !important
+    border-radius: 10px
+    img
+        object-fit: cover
+        width: 100%
+
+.cartContent
+    display: flex
+
+.cartTotal
+    border-bottom: 1px solid $secondary 
+    html.dark & 
+        color: $light
+
+@media (max-width: 480px)
+    .orderSummary
+        height: auto
+    .cartContent
+        display: block
+    .cartTitle
+        font-size: 20px
+    .productsChoosen
+        margin-bottom: 10px
+    .imgContainerCart
+        width: 300px
+        height: 300px

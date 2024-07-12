@@ -1,0 +1,125 @@
+@import '../../app/globals.sass'
+
+
+
+.footerArea
+    font-family: "satoshi"
+    margin-top: 170px
+    height: 499px
+    background-color: $secondary
+    html.dark & 
+        background-color: $danger
+        color: $light
+    a
+        text-decoration: none
+
+.footerContain
+    position: relative
+
+.footerBrand
+    font-family: "Integral CF Bold"
+    font-size: 33.45px
+    font-weight: 700
+    line-height: 40.15px
+    text-align: left
+    html.dark & 
+        color: $light
+
+.footerDescription
+    color: $primary
+    font-family: Satoshi
+    font-size: 14px
+    font-weight: 400
+    line-height: 22px
+    text-align: left
+    padding-right: 55px
+    html.dark & 
+        color: $light
+
+.footerTitle
+    font-family: "Integral CF Bold"
+    color: $light
+    html.dark & 
+        color: $danger
+
+.rightArea
+    padding: 10px
+    gap: 10px
+
+.subscribeArea
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: -140px
+    border-radius: 20px
+    width: 1240px
+    height: 180px
+    background-color: $danger
+    html.dark & 
+        background-color: $secondary
+
+.gridArea
+    padding-top: 80px
+    border-bottom: 1px solid $warning
+    h5 
+        font-family: Satoshi
+        font-size: 16px
+        font-weight: 500
+        line-height: 18px
+        letter-spacing: 3px
+        text-align: left
+
+.subEmail
+    background-color: $light
+    border-radius: 25px
+    padding: 5px 10px
+    html.dark & 
+        background-color: $danger
+        color: $light
+    .emailInput
+        width: 200px
+        background-color: $light 
+        outline-offset: none
+        outline-color: none
+        border: none
+        &:focus
+        outline: none
+
+        html.dark & 
+            background-color: $danger
+            color: $light 
+
+
+.liStyleFooter
+    font-family: Satoshi
+    font-size: 16px
+    font-weight: 400
+    a
+        color: $primary
+        html.dark & 
+            color: $light
+
+.subscribeBtn
+    font-family: Satoshi
+    font-size: 16px
+    border-radius: 25px !important
+    padding: 10px
+    background-color: $light !important
+    color: $danger
+    html.dark & 
+        background-color: $danger !important
+        color: $light
+
+.titleArea
+    padding: 15px
+
+@media (max-width: 480px)
+    .subscribeArea 
+        width: 358px
+        height: 293px
+    .gridArea
+        padding-top: 200px
+    .footerArea
+        height: auto
+    .titleArea
+        padding: 5px

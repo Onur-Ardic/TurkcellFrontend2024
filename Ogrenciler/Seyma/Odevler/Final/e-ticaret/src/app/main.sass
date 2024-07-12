@@ -1,0 +1,80 @@
+@import './globals.sass'
+
+.main
+  position: relative
+  height: 100%
+  background-color: $secondary
+  html.dark & 
+    background-color: $danger
+
+.mainCnt
+  background-color: $light
+  html.dark & 
+    background-color: $danger
+
+.absolute
+  position: absolute
+  top: 100px
+  right: 100px
+
+.absolute1
+  position: absolute
+  top: 300px
+  right: 650px
+
+.shopBtn
+  background-color: $danger
+  color: $light
+  html.dark & 
+    background-color: $light
+    color: $danger
+
+.home-banner-title
+    color: #000
+    html.dark & 
+      color: #ffffff
+
+.homeNumbers
+  padding-right: 5px
+  border-right: 1px solid #d2ccce
+  margin: 2rem 0
+
+.home-title
+    font-family: "Integral CF Bold"
+    font-size: 64px
+    font-weight: 800
+
+.brandbanner
+    position: absolute
+    bottom: 0
+    right: 0
+    left: 0
+    height: 122px
+    background-color: #000
+    html.dark & 
+      background-color: $secondary
+
+.divider
+  width: 2px
+  height: 15px
+  background-color: black 
+
+.brandbannerContent 
+  justify-content: space-between
+  height: 122px
+  @media (max-width: 768px)
+      justify-content: space-around
+  .brand-item
+    @media (max-width: 768px)
+      max-width: 100px 
+    img
+      display: block
+      margin: 0 auto
+  
+@media  (max-width: 480px)
+  .home-title
+    font-size: 36px
+  .absolute
+    display: none
+
+  

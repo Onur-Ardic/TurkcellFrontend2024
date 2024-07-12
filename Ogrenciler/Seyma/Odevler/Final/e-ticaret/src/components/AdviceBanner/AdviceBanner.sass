@@ -1,0 +1,60 @@
+@import '../../app/globals.sass'
+
+.imgContainer
+    height: 300px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    border: none !important
+    border-radius: 10px
+    img
+        object-fit: cover
+
+.ratingAdvice
+    color: $secondary
+    html.dark &
+        color: $primary 
+
+.adviceTitle
+    font-family: "Integral CF Bold"
+    font-size: 48px
+    font-weight: 700
+    line-height: 57.6px
+    text-align: center
+    color: $danger
+    html.dark & 
+        color: $light
+
+.badge
+    background: #FF33331A
+    color:  #FF3333
+    html.dark & 
+        background: #7e6e6e1a
+
+.productTitle
+    color: black
+    text-decoration: none
+    font-family: Satoshi
+    font-size: 20px
+    font-weight: 700
+    line-height: 27px
+
+.price
+    font-family: Satoshi
+    font-size: 24px
+    font-weight: 700
+    line-height: 32.4px
+    margin-right: 5px
+
+.discountPrice
+    font-family: Satoshi
+    font-size: 24px
+    font-weight: 700
+    line-height: 32.4px
+    text-decoration: line-through
+    margin-right: 5px
+    color: $primary
+    html.dark &
+        color: $light
+

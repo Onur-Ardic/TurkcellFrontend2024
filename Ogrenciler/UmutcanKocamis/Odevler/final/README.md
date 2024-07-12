@@ -1,1 +1,0 @@
-Hocam bilgisayarımın problem çıkarması dolayısıyla ödevi bitiremediğimi üzülerek bildiriyorum. Çarşamba günü tekrar başlamıştım fakat yetiştiremedim. Sadece mobile responsive var. Yönlendirmeleri de yapmaya çalıştım elimden geldiği kadar, fakat yetişmedi. Bana öğrettiğiniz her şey için çok teşekkür ederim. Ödevi bitiremediğim için çok üzgünüm, çok özür dilerim

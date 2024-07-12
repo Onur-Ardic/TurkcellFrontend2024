@@ -1,0 +1,34 @@
+@import '../../app/globals.sass'
+
+.searchInput
+    background-color: $secondary
+    outline: #00000000
+    border: none
+    width: 550px
+    html.dark & 
+        background-color: $light
+        color: $light
+
+.searchForm
+    width: 577px
+    border-radius: 20px
+    padding: 10px
+    background-color: $secondary
+    color: #cbc8c9
+    html.dark & 
+        background-color: $light
+        color: #ffff
+    i
+        margin: 0 5px
+        html.dark & 
+        color: $danger
+
+@media  (max-width: 480px)
+  .searchForm
+    width: auto
+    input
+        width: auto
+
+    
+
+  

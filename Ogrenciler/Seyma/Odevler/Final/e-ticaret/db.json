@@ -1,0 +1,562 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Gradient Graphic T-shirt",
+      "price": 145,
+      "rating": 3.5,
+      "category": "Casual",
+      "image": "https://r.resimlink.com/lqGKMgsX2y.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": "white",
+      "description": "A stylish graphic t-shirt with gradient colors.",
+      "newArrivals": true,
+      "topSelling": false,
+      "reviews": []
+    },
+    {
+      "id": "2",
+      "name": "Polo with Tipping Detail",
+      "price": 180,
+      "rating": 4.5,
+      "category": "Casual",
+      "image": "https://r.resimlink.com/eJcjU9A.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "color1",
+        "color2"
+      ],
+      "description": "A classic polo shirt with tipping details.",
+      "newArrivals": true,
+      "topSelling": false,
+      "reviews": []
+    },
+    {
+      "id": "3",
+      "name": "Striped T-shirt",
+      "price": 120,
+      "rating": 5,
+      "category": "Casual",
+      "image": "https://r.resimlink.com/ieDNjP3vVzG.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "color1",
+        "color2"
+      ],
+      "description": "A comfortable striped t-shirt.",
+      "newArrivals": false,
+      "topSelling": true,
+      "reviews": []
+    },
+    {
+      "id": "4",
+      "name": "Skinny Fit Jeans",
+      "price": 240,
+      "rating": 3.5,
+      "category": "Casual",
+      "image": "https://r.resimlink.com/AoRd4.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "color1",
+        "color2"
+      ],
+      "description": "Skinny fit jeans for a modern look.",
+      "newArrivals": true,
+      "topSelling": false,
+      "reviews": []
+    },
+    {
+      "id": "5",
+      "name": "Checkered Shirt",
+      "price": 180,
+      "rating": 4.5,
+      "category": "Casual",
+      "image": "https://r.resimlink.com/dyiSf.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "color1",
+        "color2"
+      ],
+      "description": "A stylish checkered shirt.",
+      "newArrivals": true,
+      "topSelling": false,
+      "reviews": []
+    },
+    {
+      "id": "6",
+      "name": "Sleeve Striped T-shirt",
+      "price": 130,
+      "rating": 4.5,
+      "category": "Casual",
+      "image": "https://r.resimlink.com/xZL8k2.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "color1",
+        "color2"
+      ],
+      "description": "A t-shirt with striped sleeves.",
+      "newArrivals": true,
+      "topSelling": false,
+      "reviews": []
+    },
+    {
+      "id": "7",
+      "name": "Vertical Striped Shirt",
+      "price": 212,
+      "rating": 5,
+      "category": "Casual",
+      "image": "https://r.resimlink.com/ijAcEt.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "color1",
+        "color2"
+      ],
+      "description": "A vertical striped shirt for a stylish look.",
+      "newArrivals": true,
+      "topSelling": false,
+      "reviews": []
+    },
+    {
+      "id": "8",
+      "name": "Courage Graphic T-shirt",
+      "price": 145,
+      "rating": 4,
+      "category": "Gym",
+      "image": "https://r.resimlink.com/r07nF-ThfvV6.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "color1",
+        "color2"
+      ],
+      "description": "A graphic t-shirt with a motivational message.",
+      "newArrivals": false,
+      "topSelling": true,
+      "reviews": []
+    },
+    {
+      "id": "9",
+      "name": "Confidence Graphic T-shirt",
+      "price": 145,
+      "rating": 4.5,
+      "category": "Casual",
+      "image": "https://r.resimlink.com/r07nF-ThfvV6.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "color1",
+        "color2"
+      ],
+      "description": "A graphic t-shirt that boosts confidence.",
+      "newArrivals": true,
+      "topSelling": false,
+      "reviews": []
+    },
+    {
+      "id": "10",
+      "name": "Inspire Graphic T-shirt",
+      "price": 145,
+      "rating": 5,
+      "category": "Formal",
+      "image": "https://r.resimlink.com/1TqWP_C.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "color1",
+        "color2"
+      ],
+      "description": "A graphic t-shirt to inspire others.",
+      "newArrivals": false,
+      "topSelling": true,
+      "reviews": []
+    },
+    {
+      "id": "11",
+      "name": "Loose Fit Bermuda Shorts",
+      "price": 210,
+      "rating": 4.5,
+      "category": "Formal",
+      "image": "https://r.resimlink.com/ASuW0QhyD.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "black",
+        "blue"
+      ],
+      "description": "A black Jeans for Formal Use.",
+      "newArrivals": false,
+      "topSelling": true,
+      "reviews": []
+    },
+    {
+      "id": "12",
+      "name": "Fadded Skiny Jeans",
+      "price": 210,
+      "rating": 4.5,
+      "category": "Gym",
+      "image": "https://r.resimlink.com/dSI2GRYoA.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "black",
+        "blue"
+      ],
+      "description": "A black Jeans for Formal Use.",
+      "newArrivals": false,
+      "topSelling": true,
+      "reviews": []
+    },
+    {
+      "id": "13",
+      "name": "Polo with Tipping Details",
+      "price": 180,
+      "rating": 4.5,
+      "category": "Formal",
+      "image": "https://r.resimlink.com/wxkjI.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "black",
+        "blue"
+      ],
+      "description": "A black Jeans for Formal Use.",
+      "newArrivals": false,
+      "topSelling": true,
+      "reviews": []
+    }
+  ],
+  "reviews": [
+    {
+      "productId": 1,
+      "id": "1",
+      "name": "Samantha D.",
+      "rating": 4.5,
+      "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It’s become my favorite go-to shirt.",
+      "date": "August 14, 2023"
+    },
+    {
+      "productId": 1,
+      "id": "2",
+      "name": "Alex M.",
+      "rating": 5,
+      "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+      "date": "August 15, 2023"
+    },
+    {
+      "productId": 2,
+      "id": "1",
+      "name": "John D.",
+      "rating": 4.5,
+      "comment": "This polo shirt is great! The tipping detail adds a nice touch and the fabric is very comfortable.",
+      "date": "September 10, 2023"
+    },
+    {
+      "productId": 2,
+      "id": "2",
+      "name": "Emma W.",
+      "rating": 4,
+      "comment": "I love this polo shirt. It's stylish and fits well. Will buy again.",
+      "date": "September 11, 2023"
+    },
+    {
+      "productId": 2,
+      "id": "1",
+      "name": "John D.",
+      "rating": 4.5,
+      "comment": "This polo shirt is great! The tipping detail adds a nice touch and the fabric is very comfortable.",
+      "date": "September 10, 2023"
+    },
+    {
+      "productId": 2,
+      "id": "2",
+      "name": "Emma W.",
+      "rating": 4,
+      "comment": "I love this polo shirt. It's stylish and fits well. Will buy again.",
+      "date": "September 11, 2023"
+    },
+    {
+      "productId": 3,
+      "id": "1",
+      "name": "Michael B.",
+      "rating": 5,
+      "comment": "This striped t-shirt is perfect. Great fit and comfortable to wear.",
+      "date": "July 5, 2023"
+    },
+    {
+      "productId": 3,
+      "id": "2",
+      "name": "Sophia L.",
+      "rating": 5,
+      "comment": "Love the stripes! The t-shirt is soft and the colors are vibrant.",
+      "date": "July 6, 2023"
+    },
+    {
+      "productId": 4,
+      "id": "1",
+      "name": "David K.",
+      "rating": 4,
+      "comment": "Nice jeans, fit well and are comfortable.",
+      "date": "June 15, 2023"
+    },
+    {
+      "productId": 4,
+      "id": "2",
+      "name": "Olivia P.",
+      "rating": 3.5,
+      "comment": "Good jeans but a bit tight. Overall, still nice.",
+      "date": "June 16, 2023"
+    },
+    {
+      "productId": 4,
+      "id": "3",
+      "name": "David K.",
+      "rating": 4,
+      "comment": "Nice jeans, fit well and are comfortable.",
+      "date": "June 15, 2023"
+    },
+    {
+      "productId": 4,
+      "id": "4",
+      "name": "Olivia P.",
+      "rating": 3.5,
+      "comment": "Good jeans but a bit tight. Overall, still nice.",
+      "date": "June 16, 2023"
+    },
+    {
+      "productId": 5,
+      "id": "1",
+      "name": "Jack R.",
+      "rating": 4.5,
+      "comment": "Love this checkered shirt! It looks great and feels comfortable.",
+      "date": "May 20, 2023"
+    },
+    {
+      "productId": 5,
+      "id": "1",
+      "name": "Isabella T.",
+      "rating": 4,
+      "comment": "Nice shirt, fits well. The pattern is stylish.",
+      "date": "May 21, 2023"
+    },
+    {
+      "productId": 5,
+      "id": "1",
+      "name": "Jack R.",
+      "rating": 4.5,
+      "comment": "Love this checkered shirt! It looks great and feels comfortable.",
+      "date": "May 20, 2023"
+    },
+    {
+      "productId": 5,
+      "id": "1",
+      "name": "Isabella T.",
+      "rating": 4,
+      "comment": "Nice shirt, fits well. The pattern is stylish.",
+      "date": "May 21, 2023"
+    },
+    {
+      "productId": 6,
+      "id": "1",
+      "name": "Emily C.",
+      "rating": 4.5,
+      "comment": "The striped sleeves add a nice touch to this t-shirt. Very comfortable.",
+      "date": "April 10, 2023"
+    },
+    {
+      "productId": 6,
+      "id": "2",
+      "name": "Liam H.",
+      "rating": 4,
+      "comment": "Great t-shirt, fits well and looks stylish.",
+      "date": "April 11, 2023"
+    },
+    {
+      "productId": 6,
+      "id": "3",
+      "name": "Emily C.",
+      "rating": 4.5,
+      "comment": "The striped sleeves add a nice touch to this t-shirt. Very comfortable.",
+      "date": "April 10, 2023"
+    },
+    {
+      "productId": 6,
+      "id": "4",
+      "name": "Liam H.",
+      "rating": 4,
+      "comment": "Great t-shirt, fits well and looks stylish.",
+      "date": "April 11, 2023"
+    },
+    {
+      "productId": 7,
+      "id": "1",
+      "name": "Ava H.",
+      "rating": 5,
+      "comment": "This shirt is perfect. Love the vertical stripes and the fit.",
+      "date": "March 25, 2023"
+    },
+    {
+      "productId": 7,
+      "id": "2",
+      "name": "Ethan R.",
+      "rating": 5,
+      "comment": "Great shirt! The stripes make it look very stylish.",
+      "date": "March 26, 2023"
+    },
+    {
+      "productId": 8,
+      "id": "1",
+      "name": "Olivia M.",
+      "rating": 4,
+      "comment": "Nice graphic t-shirt. The message is inspiring and the fabric is good.",
+      "date": "February 15, 2023"
+    },
+    {
+      "productId": 8,
+      "id": "2",
+      "name": "Liam K.",
+      "rating": 4.5,
+      "comment": "Love this t-shirt! The design is great and it fits well.",
+      "date": "February 16, 2023"
+    },
+    {
+      "productId": 9,
+      "id": "1",
+      "name": "Emma W.",
+      "rating": 4.5,
+      "comment": "Love this shirt! The message is empowering and it fits perfectly.",
+      "date": "January 20, 2023"
+    },
+    {
+      "productId": 9,
+      "id": "2",
+      "name": "Noah T.",
+      "rating": 4,
+      "comment": "Great t-shirt with a positive message. Very comfortable to wear.",
+      "date": "January 21, 2023"
+    },
+    {
+      "productId": 10,
+      "id": "1",
+      "name": "Sophia G.",
+      "rating": 5,
+      "comment": "This t-shirt is amazing. The design is beautiful and it inspires me every day.",
+      "date": "December 10, 2022"
+    },
+    {
+      "productId": 10,
+      "id": "2",
+      "name": "James L.",
+      "rating": 4.5,
+      "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
+      "date": "December 11, 2022"
+    },
+    {
+      "productId": 11,
+      "id": "1",
+      "name": "Sophia G.",
+      "rating": 5,
+      "comment": "This t-shirt is amazing. The design is beautiful and it inspires me every day.",
+      "date": "December 10, 2022"
+    },
+    {
+      "productId": 11,
+      "id": "2",
+      "name": "James L.",
+      "rating": 4.5,
+      "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
+      "date": "December 11, 2022"
+    },
+    {
+      "productId": 12,
+      "id": "1",
+      "name": "Sophia G.",
+      "rating": 5,
+      "comment": "This t-shirt is amazing. The design is beautiful and it inspires me every day.",
+      "date": "December 10, 2022"
+    },
+    {
+      "productId": 12,
+      "id": "2",
+      "name": "James L.",
+      "rating": 4.5,
+      "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
+      "date": "December 11, 2022"
+    },
+    {
+      "productId": 13,
+      "id": "1",
+      "name": "Sophia G.",
+      "rating": 5,
+      "comment": "This t-shirt is amazing. The design is beautiful and it inspires me every day.",
+      "date": "December 10, 2022"
+    },
+    {
+      "productId": 13,
+      "id": "2",
+      "name": "James L.",
+      "rating": 4.5,
+      "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
+      "date": "December 11, 2022"
+    }
+
+  ]
+}

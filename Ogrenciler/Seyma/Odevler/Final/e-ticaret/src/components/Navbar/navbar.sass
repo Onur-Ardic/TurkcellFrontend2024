@@ -1,0 +1,73 @@
+@import '../../app/globals'
+
+.navbar
+  background-color: $light
+  color: $danger
+  height: 90px
+  font-family: "satoshi"
+  html.dark & 
+    background-color: $danger
+    color: $danger
+
+
+  .navbar-brand
+    font-family: "Integral CF Bold"
+    font-size: 32px
+    font-weight: 700
+    line-height: 38.4px
+    html.dark & 
+      color: $light
+
+  .navbar-toggler-icon
+    background-color: $light
+    html.dark & 
+      background-color: $light
+      color: $light
+
+  .nav-link
+    color: $primary
+    html.dark & 
+      color: $light
+    &:active
+      html.dark & 
+      color: $light
+
+.cartBtn
+  color: $danger
+  html.dark & 
+    color: $light
+
+.profileBtn
+  color: $danger
+  html.dark & 
+    color: $light
+
+.bottomLine
+  position: relative
+  &:after 
+    content: ''
+    display: block
+    height: 2px
+    width: 90%
+    background-color: $secondary
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    html.dark & 
+      background-color: $danger
+
+.collapse
+  background-color: $light
+  html.dark & 
+    background-color: $danger
+    color: $light
+
+
+
+@media (max-width: 480px)
+  .bottomLine
+    &:after 
+      display: none
+
+  
