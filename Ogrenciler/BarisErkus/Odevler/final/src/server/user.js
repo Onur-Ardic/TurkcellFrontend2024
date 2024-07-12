@@ -19,9 +19,7 @@ export const addUser = async (user) => {
 };
 
 export const getUser = async (id) => {
-  const res = await fetch(`${BASE_URL}/users?id=${id}`, {
-    cache: "no-store",
-  });
+  const res = await fetch(`${BASE_URL}/users?id=${id}`);
 
   if (res.status !== 200) {
     throw new Error("Failed to fetch");

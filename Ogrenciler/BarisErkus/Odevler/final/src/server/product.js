@@ -3,17 +3,13 @@ import { revalidatePath } from "next/cache";
 import { BASE_URL } from "./baseUrl";
 
 export const getProducts = async (query) => {
-  const res = await fetch(`${BASE_URL}/products?${query}`, {
-    cache: "no-store",
-  });
+  const res = await fetch(`${BASE_URL}/products?${query}`);
   const data = await res.json();
   return data;
 };
 
 export const getProduct = async (slug) => {
-  const res = await fetch(`${BASE_URL}/products?id=${slug}`, {
-    cache: "no-store",
-  });
+  const res = await fetch(`${BASE_URL}/products?id=${slug}`);
 
   if (res.status !== 200) {
     throw new Error("Failed to fetch");
@@ -24,7 +20,7 @@ export const getProduct = async (slug) => {
 };
 
 export const getHappyComments = async () => {
-  const res = await fetch(`${BASE_URL}/products`, { cache: "no-store" });
+  const res = await fetch(`${BASE_URL}/products`);
   const data = await res.json();
   const happyComments = [];
 
@@ -42,7 +38,7 @@ export const getHappyComments = async () => {
 };
 
 export const getNewArrivals = async () => {
-  const res = await fetch(`${BASE_URL}/products`, { cache: "no-store" });
+  const res = await fetch(`${BASE_URL}/products`);
   const data = await res.json();
   const newArrivals =
     data.length > 0
@@ -53,7 +49,7 @@ export const getNewArrivals = async () => {
 };
 
 export const getTopSelling = async () => {
-  const res = await fetch(`${BASE_URL}/products`, { cache: "no-store" });
+  const res = await fetch(`${BASE_URL}/products`);
   const data = await res.json();
   const topSelling =
     data.length > 0
@@ -64,7 +60,7 @@ export const getTopSelling = async () => {
 };
 
 export const getMightLike = async () => {
-  const res = await fetch(`${BASE_URL}/products`, { cache: "no-store" });
+  const res = await fetch(`${BASE_URL}/products`);
   const data = await res.json();
   const mightLike = data.length > 0 ? data.slice(0, 4) : [];
 
