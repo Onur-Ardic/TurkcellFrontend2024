@@ -19,6 +19,9 @@ Bu proje, modern web teknolojilerini kullanarak geliştirilmiş bir e-ticaret pl
 - **Yorumlar**: Kullanıcıların ürünler hakkında yorum yapabilmesi ve yıldız puan verebilmesi.
 - **Bildirimler**: Toastify ile ekleme bildirimleri.
 
+## Site Linki
+
+https://finalturkcell.vercel.app/
 
 ## Yerelde Çalıştırma
 
