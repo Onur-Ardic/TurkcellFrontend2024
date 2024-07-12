@@ -1,0 +1,265 @@
+.browseByDress,
+.browseStyleHeader {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.browseByDress {
+  margin: 0;
+  width: 687px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  align-items: center;
+}
+.browseStyleHeader {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.image11Icon {
+  height: 649px;
+  width: 973px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -238px;
+  left: -347px;
+  object-fit: contain;
+  z-index: 1;
+  cursor: pointer;
+}
+.casual,
+.casualPartyImages {
+  display: flex;
+  position: relative;
+}
+.casual {
+  margin: 0;
+  height: 49px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  align-items: center;
+  min-width: 114px;
+  z-index: 1;
+}
+.casualPartyImages {
+  height: 289px;
+  width: 407px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xl) var(--padding-17xl);
+  box-sizing: border-box;
+  min-width: 407px;
+  max-width: 100%;
+}
+.image13Icon {
+  position: absolute;
+  top: -146px;
+  left: 0;
+  width: 1306px;
+  height: 870px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.formal {
+  margin: 0;
+  position: absolute;
+  top: 25px;
+  left: 36px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  min-width: 116px;
+  z-index: 1;
+}
+.formalGymImages {
+  height: 289px;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  overflow: hidden;
+  min-width: 445px;
+  max-width: 100%;
+}
+.styleImagePairOne {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.image12Icon {
+  position: absolute;
+  top: -163px;
+  left: 42px;
+  width: 770px;
+  height: 616px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.party {
+  margin: 0;
+  position: absolute;
+  top: 25px;
+  left: 36px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  min-width: 89px;
+  z-index: 1;
+}
+.image12Parent {
+  height: 289px;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  overflow: hidden;
+  min-width: 445px;
+  max-width: 100%;
+}
+.image14Icon {
+  position: absolute;
+  top: -148px;
+  left: 53px;
+  width: 452px;
+  height: 677px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.gym {
+  margin: 0;
+  position: absolute;
+  top: 25px;
+  left: 36px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  min-width: 80px;
+  z-index: 1;
+}
+.image14Parent {
+  height: 289px;
+  width: 407px;
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-shrink: 0;
+  min-width: 407px;
+  max-width: 100%;
+}
+.browseStyle,
+.styleImageGrid,
+.styleImagePairOne1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.browseStyle,
+.styleImageGrid {
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  font-family: var(--font-satoshi);
+}
+.browseStyle {
+  border-radius: var(--br-21xl);
+  background-color: var(--color-whitesmoke-100);
+  overflow: hidden;
+  padding: var(--padding-51xl) var(--padding-45xl) var(--padding-57xl);
+  box-sizing: border-box;
+  gap: var(--gap-45xl);
+  text-align: center;
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  font-family: var(--font-integral-cf);
+}
+@media screen and (max-width: 1200px) {
+  .browseStyle {
+    padding-left: var(--padding-13xl);
+    padding-right: var(--padding-13xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .browseByDress {
+    font-size: var(--font-size-19xl);
+  }
+  .casual {
+    font-size: var(--font-size-10xl);
+  }
+  .casualPartyImages {
+    flex: 1;
+  }
+  .formal {
+    font-size: var(--font-size-10xl);
+  }
+  .styleImagePairOne {
+    flex-wrap: wrap;
+  }
+  .gym,
+  .party {
+    font-size: var(--font-size-10xl);
+  }
+  .image14Parent {
+    flex: 1;
+  }
+  .styleImagePairOne1 {
+    flex-wrap: wrap;
+  }
+  .browseStyle {
+    padding-top: var(--padding-26xl);
+    padding-bottom: var(--padding-30xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .casualPartyImages,
+  .formalGymImages,
+  .image12Parent,
+  .image14Parent {
+    min-width: 100%;
+  }
+  .browseStyle {
+    gap: var(--gap-13xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .browseByDress {
+    font-size: var(--font-size-10xl);
+  }
+  .casual,
+  .formal,
+  .gym,
+  .party {
+    font-size: var(--font-size-3xl);
+  }
+  .browseStyle {
+    gap: var(--gap-base);
+    padding-top: var(--padding-10xl);
+    padding-bottom: var(--padding-13xl);
+    box-sizing: border-box;
+  }
+}
