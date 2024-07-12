@@ -5,7 +5,7 @@ import React from "react";
 import { Rating, ThinStar } from "@smastrom/react-rating";
 import { calculateDiscount } from "../../../../src/components/products/productCard";
 import ProductsColor from "@/components/products/productsColor";
-import ProductSize from "@/components/products/productsSize";
+import ProductSize from "@/components/products/productSize";
 import BasketAmount from "@/components/basket/basketAmount";
 import ProductNavTabs from "@/components/products/productNavTabs";
 import ProductList from "@/components/products/productList";
@@ -93,7 +93,9 @@ const ProductDetail = async ({ params: { id } }) => {
               className="img-fluid"
             />
             <div className="mb-1">
-              <ProductsColor product={product} />
+              <ProductsColor
+                product={products}
+              />
             </div>
             <img
               src="/icons/category-line.svg"
@@ -101,7 +103,7 @@ const ProductDetail = async ({ params: { id } }) => {
               className="img-fluid"
             />
             <div>
-              <ProductSize product={product} />
+              <ProductSize product={products} />
             </div>
             <img
               src="/icons/category-line.svg"

@@ -249,10 +249,26 @@ a{
 }
 
 .color-circle{
-  width: 37px;
-  height: 37px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
+  border: 1px solid $secondary;
 }
+
+.products-color {
+    margin-bottom: 20px;
+  }
+  
+  .color-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  .color-circle .checkmark {
+    color: white;
+    font-size: 18px;
+    left: 5px;
+  }
 
 .order-summary {
     border: 1px solid #0000001A;
@@ -265,3 +281,31 @@ a{
     border-radius: 20px;
     padding: 20px 24px;
 }
+
+.filters{
+    border: 1px solid #0000001A;
+    padding: 20px 14px;
+    border-radius: 20px;
+}
+
+.products-size {
+    margin-bottom: 20px;
+  }
+  
+  .size-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .size-box {
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .size-box.selected {
+    background-color: #000;
+    color: white;
+  }

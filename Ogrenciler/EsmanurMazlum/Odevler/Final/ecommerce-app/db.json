@@ -1,5 +1,5 @@
 {
-    "products":[
+  "products": [
     {
       "id": 1,
       "name": "ONE LIFE GRAPHIC T-SHIRT",
@@ -7,13 +7,25 @@
       "original_price": 300,
       "discount": 40,
       "rating": 4.5,
-      "imgUrl": "/assets/one-life-tshirt.png",
-      "category":"T-shirt",
-      "style":"Party",
+      "imgUrl": "assets/one-life-tshirt.png",
+      "category": "T-shirt",
+      "style": "Party",
       "description": "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
-      "colors": ["green", "blue", "black"],
-      "imgColor":["green","black"],
-      "sizes": ["Small", "Medium", "Large", "X-Large"],
+      "colors": [
+        "green",
+        "blue",
+        "black"
+      ],
+      "imgColor": [
+        "green",
+        "black"
+      ],
+      "sizes": [
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
       "size": "Medium"
     },
     {
@@ -23,13 +35,24 @@
       "original_price": 120,
       "discount": 0,
       "rating": 4.5,
-      "imgUrl": "/assets/tshirt-with-tap-details.png",
-      "category":"T-shirt",
-      "style":"Casual",
+      "imgUrl": "assets/tshirt-with-tap-details.png",
+      "category": "T-shirt",
+      "style": "Casual",
       "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
-      "colors": ["black", "white", "blue"],
-      "imgColor":["black"],
-      "sizes": ["Small", "Medium", "Large", "X-Large"],
+      "colors": [
+        "black",
+        "white",
+        "blue"
+      ],
+      "imgColor": [
+        "black"
+      ],
+      "sizes": [
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
       "size": "Large"
     },
     {
@@ -39,13 +62,23 @@
       "original_price": 260,
       "discount": 20,
       "rating": 3.5,
-      "imgUrl": "/assets/skinny-jeans.png",
-      "category":"Jean",
-      "style":"Casual",
+      "imgUrl": "assets/skinny-jeans.png",
+      "category": "Jean",
+      "style": "Casual",
       "description": "Bring back the retro vibes with this stylish jeans. Made from premium cotton, it's perfect for everyday wear.",
-      "colors": ["black","blue"],
-      "imgColor":["blue"],
-      "sizes": ["Small", "Medium", "Large", "X-Large"],
+      "colors": [
+        "black",
+        "blue"
+      ],
+      "imgColor": [
+        "blue"
+      ],
+      "sizes": [
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
       "size": "Medium"
     },
     {
@@ -55,13 +88,26 @@
       "original_price": 180,
       "discount": 0,
       "rating": 4.5,
-      "imgUrl": "/assets/checkered-shirt.png",
-      "category":"Shirt",
-      "style":"Formal",
+      "imgUrl": "assets/checkered-shirt.png",
+      "category": "Shirt",
+      "style": "Formal",
       "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
-      "colors": ["red", "white", "blue"],
-      "imgColor":["red", "white", "blue"],
-      "sizes": ["Small", "Medium", "Large", "X-Large"],
+      "colors": [
+        "red",
+        "white",
+        "blue"
+      ],
+      "imgColor": [
+        "red",
+        "white",
+        "blue"
+      ],
+      "sizes": [
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
       "size": "Medium"
     },
     {
@@ -71,13 +117,25 @@
       "original_price": 160,
       "discount": 30,
       "rating": 4.5,
-      "imgUrl": "/assets/sleeve-tshirt.png",
-      "category":"T-shirt",
-      "style":"Casual",
+      "imgUrl": "assets/sleeve-tshirt.png",
+      "category": "T-shirt",
+      "style": "Casual",
       "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
-      "colors": ["black", "orange", "white"],
-      "imgColor":["black","orange"],
-      "sizes": ["Small", "Medium", "Large", "X-Large"],
+      "colors": [
+        "black",
+        "orange",
+        "white"
+      ],
+      "imgColor": [
+        "black",
+        "orange"
+      ],
+      "sizes": [
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
       "size": "Small"
     },
     {
@@ -87,13 +145,24 @@
       "original_price": 232,
       "discount": 20,
       "rating": 5,
-      "imgUrl": "/assets/vertical-shirt.png",
-      "category":"Shirt",
-      "style":"Formal",
+      "imgUrl": "assets/vertical-shirt.png",
+      "category": "Shirt",
+      "style": "Formal",
       "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
-      "colors": ["green", "black"],
-      "imgColor":["black","green"],
-      "sizes": ["Small", "Medium", "Large", "X-Large"],
+      "colors": [
+        "green",
+        "black"
+      ],
+      "imgColor": [
+        "black",
+        "green"
+      ],
+      "sizes": [
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
       "size": "X-Large"
     },
     {
@@ -101,13 +170,24 @@
       "name": "Courage Graphic T-shirt",
       "price": 145,
       "rating": 4,
-      "imgUrl": "/assets/graphic-tshirt.png",
-      "category":"T-shirt",
-      "style":"Party",
+      "imgUrl": "assets/graphic-tshirt.png",
+      "category": "T-shirt",
+      "style": "Party",
       "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
-      "colors": ["orange", "white"],
-      "imgColor":["orange", "white"],
-      "sizes": ["Small", "Medium", "Large", "X-Large"],
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "imgColor": [
+        "orange",
+        "white"
+      ],
+      "sizes": [
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
       "size": "Large"
     },
     {
@@ -117,13 +197,23 @@
       "original_price": 80,
       "discount": 0,
       "rating": 3,
-      "imgUrl": "/assets/bermuda-short.png",
-      "category":"Short",
-      "style":"Casual",
+      "imgUrl": "assets/bermuda-short.png",
+      "category": "Short",
+      "style": "Casual",
       "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
-      "colors": ["blue", "black"],
-      "imgColor":["blue"],
-      "sizes": ["Small", "Medium", "Large", "X-Large"],
+      "colors": [
+        "blue",
+        "black"
+      ],
+      "imgColor": [
+        "blue"
+      ],
+      "sizes": [
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
       "size": "Large"
     },
     {
@@ -133,13 +223,23 @@
       "original_price": 210,
       "discount": 0,
       "rating": 4.5,
-      "imgUrl": "/assets/faded-skinny.png",
-      "category":"Jean",
-      "style":"Casual",
+      "imgUrl": "assets/faded-skinny.png",
+      "category": "Jean",
+      "style": "Casual",
       "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
-      "colors": ["black", "blue"],
-      "imgColor":["black"],
-      "sizes": ["Small", "Medium", "Large", "X-Large"],
+      "colors": [
+        "black",
+        "blue"
+      ],
+      "imgColor": [
+        "black"
+      ],
+      "sizes": [
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
       "size": "Medium"
     },
     {
@@ -149,13 +249,24 @@
       "original_price": 242,
       "discount": 30,
       "rating": 4,
-      "imgUrl": "/assets/contrast-trims.png",
-      "category":"T-shirt",
-      "style":"Formal",
+      "imgUrl": "assets/contrast-trims.png",
+      "category": "T-shirt",
+      "style": "Formal",
       "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
-      "colors": ["white", "blue"],
-      "imgColor":["white","blue"],
-      "sizes": ["Small", "Medium", "Large", "X-Large"],
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "imgColor": [
+        "white",
+        "blue"
+      ],
+      "sizes": [
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
       "size": "Small"
     },
     {
@@ -165,13 +276,24 @@
       "original_price": 145,
       "discount": 0,
       "rating": 3.5,
-      "imgUrl": "/assets/gradient-graphic-tshirt.png",
-      "category":"T-shirt",
-      "style":"Party",
+      "imgUrl": "assets/gradient-graphic-tshirt.png",
+      "category": "T-shirt",
+      "style": "Party",
       "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
-      "colors": ["white", "pink"],
-      "imgColor":["white","pink"],
-      "sizes": ["Small", "Medium", "Large", "X-Large"],
+      "colors": [
+        "white",
+        "pink"
+      ],
+      "imgColor": [
+        "white",
+        "pink"
+      ],
+      "sizes": [
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
       "size": "Small"
     },
     {
@@ -181,13 +303,24 @@
       "original_price": 180,
       "discount": 0,
       "rating": 4.5,
-      "imgUrl": "/assets/polo-tshirt.png",
-      "category":"T-shirt",
-      "style":"Formal",
+      "imgUrl": "assets/polo-tshirt.png",
+      "category": "T-shirt",
+      "style": "Formal",
       "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
-      "colors": ["white", "pink"],
-      "imgColor":["white","pink"],
-      "sizes": ["Small", "Medium", "Large", "X-Large"],
+      "colors": [
+        "white",
+        "pink"
+      ],
+      "imgColor": [
+        "white",
+        "pink"
+      ],
+      "sizes": [
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
       "size": "Large"
     },
     {
@@ -197,13 +330,25 @@
       "original_price": 150,
       "discount": 0,
       "rating": 5,
-      "imgUrl": "/assets/striped-tshirt.png",
-      "category":"T-shirt",
-      "style":"Casual",
+      "imgUrl": "assets/striped-tshirt.png",
+      "category": "T-shirt",
+      "style": "Casual",
       "description": "Bring back the retro vibes with this stylish t-shirt. Made from premium cotton, it's perfect for everyday wear.",
-      "colors": ["white", "black","orange"],
-      "imgColor":["white","black"],
-      "sizes": ["Small", "Medium", "Large", "X-Large"],
+      "colors": [
+        "white",
+        "black",
+        "orange"
+      ],
+      "imgColor": [
+        "white",
+        "black"
+      ],
+      "sizes": [
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
       "size": "Medium"
     }
   ],
@@ -219,7 +364,7 @@
       "rating": 4.5,
       "comment": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
       "date": "August 4, 2023"
-    },    
+    },
     {
       "username": "Alex K.",
       "rating": 4,
@@ -267,8 +412,25 @@
       "rating": 4.5,
       "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
       "date": "August 19, 2023"
+    },
+    {
+      "id": "9077",
+      "name": "Esmanur",
+      "rating": "",
+      "comment": "Nayss"
+    },
+    {
+      "id": "b791",
+      "name": "Esmanur",
+      "rating": "",
+      "comment": "harika"
+    },
+    {
+      "id": "a482",
+      "name": "Esmanur",
+      "rating": 0,
+      "comment": "fdsfsdf"
     }
   ],
   "basket": []
 }
-  

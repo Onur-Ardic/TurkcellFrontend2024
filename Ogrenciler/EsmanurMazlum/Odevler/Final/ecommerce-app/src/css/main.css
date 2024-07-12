@@ -12121,9 +12121,25 @@ a {
 }
 
 .color-circle {
-  width: 37px;
-  height: 37px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
+  border: 1px solid #F0F0F0;
+}
+
+.products-color {
+  margin-bottom: 20px;
+}
+
+.color-container {
+  display: flex;
+  gap: 10px;
+}
+
+.color-circle .checkmark {
+  color: white;
+  font-size: 18px;
+  left: 5px;
 }
 
 .order-summary {
@@ -12136,6 +12152,34 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1019607843);
   border-radius: 20px;
   padding: 20px 24px;
+}
+
+.filters {
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  padding: 20px 14px;
+  border-radius: 20px;
+}
+
+.products-size {
+  margin-bottom: 20px;
+}
+
+.size-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.size-box {
+  padding: 10px;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.size-box.selected {
+  background-color: #000;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,11 +1,11 @@
 import React from "react";
 
-function ProductsColor({product}) {
+function ProductsColor({ product }) {
   return (
     <>
       <p className="mb-1 transparent-6">Select Colors</p>
       <div className="d-flex gap-2">
-        {product.colors.map((color, index) => (
+        {product && product.colors && product.colors.map((color, index) => (
           <div
             key={index}
             className="color-circle"

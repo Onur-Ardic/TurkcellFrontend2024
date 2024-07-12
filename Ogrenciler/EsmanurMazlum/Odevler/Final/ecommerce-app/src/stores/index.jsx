@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import {reducer as productsReducer} from './products-store'
+import productsReducer from './products-store'
 import {reducer as basketReducer} from './basket-store'
 import {reducer as userReducer} from './user-store'
 
