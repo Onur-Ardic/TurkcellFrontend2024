@@ -1,0 +1,661 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "image": "tshirt-with-tape-details.png",
+      "title": "T-shirt with Tape Details",
+      "description": "Short sleeve t-shirt with tape details on the sleeves. Made of 100% cotton.",
+      "rating": 4.5,
+      "price": 120,
+      "discount": 0,
+      "discountPercentage": 0,
+      "colors": [
+        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+      ],
+      "sizes": [
+        "Small,Medium,Large,X-Large"
+      ],
+      "stock": 93,
+      "topSeller": false,
+      "newArrival": true,
+      "alsoLike": false,
+      "comments": [
+        {
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
+        }
+      ],
+      "type": "tshirt",
+      "category": "T-Shirts",
+      "dressStyle": "formal"
+    },
+    {
+      "id": "2",
+      "image": "skinny-fit-jeans.png",
+      "title": "Skinny Fit Jeans",
+      "description": "Comfortable and stylish blue jeans for everyday wear.",
+      "rating": 3.5,
+      "price": 240,
+      "discount": 0,
+      "discountPercentage": 20,
+      "colors": [
+        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+      ],
+      "sizes": [
+        "Small,Medium,Large,X-Large"
+      ],
+      "stock": 150,
+      "topSeller": false,
+      "newArrival": true,
+      "alsoLike": false,
+      "comments": [
+        {
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
+        }
+      ],
+      "type": "jeans",
+      "category": "Jeans",
+      "dressStyle": "casual"
+    },
+    {
+      "id": "3",
+      "image": "checkered-shirt.png",
+      "title": "Checkered Shirt",
+      "description": "A stunning black dress perfect for evening events.",
+      "rating": 4.5,
+      "price": 180,
+      "discount": 0,
+      "discountPercentage": 0,
+      "colors": [
+        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+      ],
+      "sizes": [
+        "Small,Medium,Large,X-Large"
+      ],
+      "stock": 50,
+      "topSeller": true,
+      "newArrival": true,
+      "alsoLike": false,
+      "comments": [
+        {
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
+        }
+      ],
+      "type": "shirt",
+      "category": "Shirts",
+      "dressStyle": "formal"
+    },
+    {
+      "id": "4",
+      "image": "sleeve-striped-tshirt.png",
+      "title": "Sleeve Striped T-shirt",
+      "description": "Perfect t-shirt for everyday use.",
+      "rating": 4.5,
+      "price": 160,
+      "discount": 0,
+      "discountPercentage": 30,
+      "colors": [
+        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+      ],
+      "sizes": [
+        "Small,Medium,Large,X-Large"
+      ],
+      "stock": 200,
+      "topSeller": false,
+      "newArrival": true,
+      "alsoLike": false,
+      "comments": [
+        {
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
+        }
+      ],
+      "type": "tshirt ",
+      "category": "T-Shirts",
+      "dressStyle": "casual"
+    },
+    {
+      "id": "5",
+      "image": "vertical-striped-shirt.png",
+      "title": "Vertical Striped Shirt",
+      "description": "A classic striped shirt for a timeless look.",
+      "rating": 5,
+      "price": 232,
+      "discount": 0,
+      "discountPercentage": 20,
+      "colors": [
+        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+      ],
+      "sizes": [
+        "Small,Medium,Large,X-Large"
+      ],
+      "stock": 75,
+      "topSeller": true,
+      "newArrival": false,
+      "alsoLike": false,
+      "comments": [
+        {
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
+        }
+      ],
+      "type": "shirt",
+      "category": "Shirts",
+      "dressStyle": "casual"
+    },
+    {
+      "id": "6",
+      "image": "courage-graphic-tshirt.png",
+      "title": "Courage Graphic T-shirt",
+      "description": "A graphic t-shirt to inspire courage and strength.",
+      "rating": 4,
+      "price": 145,
+      "discount": 0,
+      "discountPercentage": 0,
+      "colors": [
+        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+      ],
+      "sizes": [
+        "Small,Medium,Large,X-Large"
+      ],
+      "stock": 120,
+      "topSeller": true,
+      "newArrival": true,
+      "alsoLike": false,
+      "comments": [
+        {
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
+        }
+      ],
+      "type": "tshirt",
+      "category": "T-Shirts",
+      "dressStyle": "casual"
+    },
+    {
+      "id": "7",
+      "image": "loose-fit-bermuda-shorts.png",
+      "title": "Loose Fit Bermuda Shorts",
+      "description": "Comfortable and stylish shorts for a casual look.",
+      "rating": 3,
+      "price": 80,
+      "discount": 0,
+      "discountPercentage": 0,
+      "colors": [
+        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+      ],
+      "sizes": [
+        "Small,Medium,Large,X-Large"
+      ],
+      "stock": 60,
+      "topSeller": true,
+      "newArrival": false,
+      "alsoLike": false,
+      "comments": [
+        {
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
+        }
+      ],
+      "type": "shorts",
+      "category": "Shorts",
+      "dressStyle": "casual"
+    },
+    {
+      "id": "8",
+      "image": "faded-skinny-jeans.png",
+      "title": "Faded Skinny Jeans",
+      "description": "Stylish skinny jeans for a trendy look.",
+      "rating": 4.5,
+      "price": 210,
+      "discount": 0,
+      "discountPercentage": 0,
+      "colors": [
+        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+      ],
+      "sizes": [
+        "Small,Medium,Large,X-Large"
+      ],
+      "stock": 110,
+      "topSeller": true,
+      "newArrival": false,
+      "alsoLike": false,
+      "comments": [
+        {
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
+        }
+      ],
+      "type": "jeans",
+      "category": "Jeans",
+      "dressStyle": "casual"
+    },
+    {
+      "id": "9",
+      "image": "gradient-graphic-tshirt.png",
+      "title": "Gradient Graphic T-shirt",
+      "description": "A unique graphic t-shirt with a gradient design.",
+      "rating": 3.5,
+      "price": 145,
+      "discount": 0,
+      "discountPercentage": 0,
+      "colors": [
+        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+      ],
+      "sizes": [
+        "Small,Medium,Large,X-Large"
+      ],
+      "stock": 90,
+      "topSeller": false,
+      "newArrival": true,
+      "alsoLike": true,
+      "comments": [
+        {
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
+        }
+      ],
+      "type": "tshirt",
+      "category": "T-Shirts",
+      "dressStyle": "formal"
+    },
+    {
+      "id": "10",
+      "image": "polo-with-tipping-details.png",
+      "title": "Polo with Tipping Details",
+      "description": "A classic polo shirt with tipping details on the collar and sleeves.",
+      "rating": 4.5,
+      "price": 180,
+      "discount": 0,
+      "discountPercentage": 0,
+      "colors": [
+        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+      ],
+      "sizes": [
+        "Small,Medium,Large,X-Large"
+      ],
+      "stock": 80,
+      "topSeller": true,
+      "newArrival": false,
+      "alsoLike": true,
+      "comments": [
+        {
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
+        }
+      ],
+      "type": "tshirts",
+      "category": "T-Shirts",
+      "dressStyle": "formal"
+    },
+    {
+      "id": "11",
+      "image": "black-stripped-tshirt.png",
+      "title": "Black Striped T-shirt",
+      "description": "A classic black t-shirt with striped design.",
+      "rating": 5,
+      "price": 150,
+      "discount": 0,
+      "discountPercentage": 30,
+      "colors": [
+        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+      ],
+      "sizes": [
+        "Small,Medium,Large,X-Large"
+      ],
+      "stock": 130,
+      "topSeller": true,
+      "newArrival": false,
+      "alsoLike": true,
+      "comments": [
+        {
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
+        }
+      ],
+      "type": "tshirt",
+      "category": "T-Shirts",
+      "dressStyle": "formal"
+    },
+    {
+      "id": "12",
+      "image": "polo-with-contrast-trims.png",
+      "title": "Polo with Contrast Trims",
+      "description": "A classic polo shirt with contrast trims on the collar and sleeves.",
+      "rating": 4,
+      "price": 212,
+      "discount": 0,
+      "discountPercentage": 20,
+      "colors": [
+        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+      ],
+      "sizes": [
+        "Small,Medium,Large,X-Large"
+      ],
+      "stock": 130,
+      "topSeller": true,
+      "newArrival": false,
+      "alsoLike": true,
+      "comments": [
+        {
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
+        }
+      ],
+      "type": "tshirt",
+      "category": "T-Shirts",
+      "dressStyle": "formal"
+    }
+  ],
+  "customerComments": [
+    {
+      "id": "1",
+      "username": "Sarah M.",
+      "comment": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+      "rating": 5
+    },
+    {
+      "id": "2",
+      "username": "Alex K.",
+      "comment": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.",
+      "rating": 5
+    },
+    {
+      "id": "3",
+      "username": "James L.",
+      "comment": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+      "rating": 5
+    },
+    {
+      "id": "4",
+      "username": "Michael Brown",
+      "comment": "I am so happy to have discovered Shop.co! Finding so many options in different styles is fantastic. It's truly enjoyable to find trendy yet affordable items.",
+      "rating": 5
+    },
+    {
+      "id": "5",
+      "username": "Anna White",
+      "comment": "Shop.co's wide range of products is really impressive. They offer options that keep up with fashion trends and cater to every taste. I feel like a style icon every time I shop here.",
+      "rating": 5
+    },
+    {
+      "id": "6",
+      "username": "Ethan Black",
+      "comment": "I always find what I'm looking for at Shop.co. As someone who closely follows trends, it makes me very happy to always find the newest and most stylish pieces here.",
+      "rating": 5
+    },
+    {
+      "id": "7",
+      "username": "Sophia Blue",
+      "comment": "The collections at Shop.co are truly unique. It's possible to find many pieces in both classic and modern styles. My shopping experience is perfect every time.",
+      "rating": 5
+    }
+  ],
+  "users": [
+  
+  ],
+  "promoCodes": [
+    {
+      "code": "gelecegiyazanlar20",
+      "discount": "20"
+    },
+    {
+      "code": "gelecegiyazanlar40",
+      "discount": "40"
+    },
+    {
+      "code": "gelecegiyazanlar60",
+      "discount": "60"
+    },
+    {
+      "code": "gelecegiyazanlar80",
+      "discount": "80"
+    },
+    {
+      "code": "gelecegiyazanlar100",
+      "discount": "100"
+    }
+  ]
+}
