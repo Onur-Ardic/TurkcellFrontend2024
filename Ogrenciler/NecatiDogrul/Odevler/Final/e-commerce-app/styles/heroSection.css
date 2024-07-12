@@ -1,0 +1,75 @@
+.hero-container {
+  background: url("../public/images/background-image.png") no-repeat center
+    center;
+  background-size: cover;
+  text-align: center;
+  padding: 50px 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 90px;
+}
+
+.hero-title {
+  font-family: "Integral CF", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.hero-subtitle {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.shop-now-btn {
+  padding: 16px 54px;
+  border-radius: 62px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.shop-now-btn:hover {
+  background-color: #333;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.stat {
+  text-align: center;
+
+  min-width: 150px;
+  margin: 10px;
+}
+
+.stat h3 {
+  font-family: "Satoshi", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+}
+
+.stat p {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}

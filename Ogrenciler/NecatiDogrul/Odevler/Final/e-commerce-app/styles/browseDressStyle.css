@@ -1,0 +1,49 @@
+.browse-container {
+  background-color: #f0f0f0;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin: 20px auto;
+  text-align: center;
+  width: 1239px;
+  height: 866px;
+}
+
+.browse-title {
+  font-family: "Integral CF", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.browse-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.browse-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.browse-img-container {
+  position: relative;
+}
+
+.browse-img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.browse-text {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: "Satoshi", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+}

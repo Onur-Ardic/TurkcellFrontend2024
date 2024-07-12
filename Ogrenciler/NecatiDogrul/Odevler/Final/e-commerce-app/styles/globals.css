@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Integral CF";
+  src: url("/fonts/IntegralCF-Regular.woff2") format("woff2"),
+    url("/fonts/IntegralCF-Regular.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
