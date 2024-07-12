@@ -55,14 +55,10 @@ const Header = () => {
               placeholder="Search for products..."
             />
           </form>
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li>
-              <i className="nav-item bi bi-cart"></i>
-            </li>
-            <li>
-              <i className="nav-item bi bi-person-circle"></i>
-            </li>
-          </ul>
+          <div className="header_icons">
+            <i className="nav-item bi bi-cart "></i>
+            <i className="nav-item bi bi-person-circle "></i>
+          </div>
         </div>
       </div>
     </nav>
