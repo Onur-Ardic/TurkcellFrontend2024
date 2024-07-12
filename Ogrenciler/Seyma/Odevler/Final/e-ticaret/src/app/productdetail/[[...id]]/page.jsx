@@ -70,7 +70,7 @@ const page = async ({ params }) => {
                         <label className="form-label fw-semibold mb-0">{i18next.t('size')}</label>
                       </div>
                     </div>
-                    <div className="d-flex gap-3 pb-3 pb-lg-4 mb-3">
+                    <div className="d-flex flex-wrap gap-3 pb-3 pb-lg-4 mb-3">
                       <div className="count-input flex-shrink-0">
                         <button typeof="button" className="btn btn-icon btn-lg" data-decrement="" aria-label="Decrement quantity" disabled="">
                           <i className="ci-minus"></i>
@@ -80,7 +80,7 @@ const page = async ({ params }) => {
                           <i className="ci-plus"></i>
                         </button>
                       </div>
-                      <button typeof="button" className="btn btn-dark w-100">{i18next.t('addtocart')}</button>
+                      <button typeof="button" className="btn addBtn">{i18next.t('addtocart')}</button>
                     </div>
                   </div>
                 </div>
@@ -91,7 +91,7 @@ const page = async ({ params }) => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="reviewsSCTN">
         <Reviews productId={selectedProductId}></Reviews>
         <ReviewsForm productId={selectedProductId}></ReviewsForm>
       </section>

@@ -16,15 +16,23 @@
 
 .ratingShw
     margin-left: 5px
-    color: $secondary
+    color: $primary
     html.dark &
-        color: $primary
+        color: $light
 
 .discountPrice
     margin-left: 5px
     color: $primary
     html.dark &
         color: $light
+
+.addBtn
+    margin: 20px
+    background-color: $danger
+    color: $light
+    html.dark &
+        background-color: $light
+        color: $danger
 
 .imgContainerPrd
     display: flex
@@ -38,3 +46,7 @@
 
 .biggerImg
       border-radius: 25px
+
+@media (max-width:480px)
+    .reviewsSCTN
+        margin-top: 150px
