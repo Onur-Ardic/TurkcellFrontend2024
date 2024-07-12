@@ -1,0 +1,1226 @@
+{
+  "clothesProduct": [
+    {
+      "id": "1",
+      "name": "T-shirt with Tape Details",
+      "rating": "4.5",
+      "category": "T-shirt",
+      "style": "gym",
+      "price": "$120",
+      "discount": {
+        "available": false,
+        "percentage": null,
+        "discount_price": null
+      },
+      "definition": "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+      "gender": "Man",
+      "color": ["red", "blue", "green"],
+      "size": ["small", "medium", "large", "X-large"],
+      "comments": [
+        {
+          "user": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          "rating": 4.5,
+          "date": "2023-08-14"
+        },
+        {
+          "user": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "rating": 4,
+          "date": "2023-08-15"
+        },
+        {
+          "user": "Ethan R.",
+          "comment": "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          "rating": 3.5,
+          "date": "2023-08-16"
+        },
+        {
+          "user": "Olivia P.",
+          "comment": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          "rating": 4,
+          "date": "2023-08-17"
+        },
+        {
+          "user": "Liam K.",
+          "comment": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          "rating": 4,
+          "date": "2023-08-18"
+        },
+        {
+          "user": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "John Doe",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of * philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 2,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Michael Brown",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Emily Johnson",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 3.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "deneme01@gmail.com",
+          "comment": "Modal Deneme Product Son Denemeler",
+          "rating": 0,
+          "date": "2024-07-12"
+        }
+      ],
+      "img": "/assets/Product/NewArrivals/image1.png",
+      "numberOfSales": "120",
+      "stock": "79"
+    },
+    {
+      "id": "2",
+      "name": "Skinny Fit Jeans",
+      "rating": "3.5",
+      "category": "Jeans",
+      "style": "casual",
+      "price": "$260",
+      "discount": {
+        "available": true,
+        "percentage": "20%",
+        "discount_price": "$240"
+      },
+      "definition": "A skinny fit made from high-quality fabric, perfect for everyday wear.",
+      "color": ["#34485e", "#838c97", "#0f1a28"],
+      "gender": "Man",
+      "size": ["medium", "large", "X-large"],
+      "comments": [
+        {
+          "user": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          "rating": 4.5,
+          "date": "2023-08-14"
+        },
+        {
+          "user": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "rating": 4,
+          "date": "2023-08-15"
+        },
+        {
+          "user": "Ethan R.",
+          "comment": "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          "rating": 3.5,
+          "date": "2023-08-16"
+        },
+        {
+          "user": "Olivia P.",
+          "comment": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          "rating": 4,
+          "date": "2023-08-17"
+        },
+        {
+          "user": "Liam K.",
+          "comment": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          "rating": 4,
+          "date": "2023-08-18"
+        },
+        {
+          "user": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "John Doe",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of * philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 2,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Michael Brown",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Emily Johnson",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 3.5,
+          "date": "2023-08-19"
+        }
+      ],
+      "img": "/assets/Product/NewArrivals/image2.png",
+      "numberOfSales": "250",
+      "stock": "29"
+    },
+    {
+      "id": "3",
+      "name": "Checkered Shirt",
+      "rating": "4.5",
+      "category": "Shirt",
+      "style": "casual",
+      "price": "$180",
+      "discount": {
+        "available": false,
+        "percentage": null,
+        "discount_price": null
+      },
+      "definition": "A sleek checkered shirt suitable for business meetings and formal events.",
+      "gender": "Man",
+      "color": ["navy", "black", "green"],
+      "size": ["small", "large", "x-large"],
+      "comments": [
+        {
+          "user": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          "rating": 4.5,
+          "date": "2023-08-14"
+        },
+        {
+          "user": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "rating": 4,
+          "date": "2023-08-15"
+        },
+        {
+          "user": "Ethan R.",
+          "comment": "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          "rating": 3.5,
+          "date": "2023-08-16"
+        },
+        {
+          "user": "Olivia P.",
+          "comment": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          "rating": 4,
+          "date": "2023-08-17"
+        },
+        {
+          "user": "Liam K.",
+          "comment": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          "rating": 4,
+          "date": "2023-08-18"
+        },
+        {
+          "user": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "John Doe",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of * philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 2,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Michael Brown",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Emily Johnson",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 3.5,
+          "date": "2023-08-19"
+        }
+      ],
+      "img": "/assets/Product/NewArrivals/image3.png",
+      "numberOfSales": "150",
+      "stock": "39"
+    },
+    {
+      "id": "4",
+      "name": "Sleeve Striped T-shirt",
+      "rating": "4.5",
+      "category": "T-shirt",
+      "style": "casual",
+      "price": "$160",
+      "discount": {
+        "available": true,
+        "percentage": "30%",
+        "discount_price": "$130"
+      },
+      "definition": "Comfortable denim jeans that offer a great fit and style.",
+      "gender": "Man",
+      "color": ["blue", "black"],
+      "size": ["medium", "large", "X-large"],
+      "comments": [
+        {
+          "user": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          "rating": 4.5,
+          "date": "2023-08-14"
+        },
+        {
+          "user": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "rating": 4,
+          "date": "2023-08-15"
+        },
+        {
+          "user": "Ethan R.",
+          "comment": "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          "rating": 3.5,
+          "date": "2023-08-16"
+        },
+        {
+          "user": "Olivia P.",
+          "comment": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          "rating": 4,
+          "date": "2023-08-17"
+        },
+        {
+          "user": "Liam K.",
+          "comment": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          "rating": 4,
+          "date": "2023-08-18"
+        },
+        {
+          "user": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "John Doe",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of * philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 2,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Michael Brown",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Emily Johnson",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 3.5,
+          "date": "2023-08-19"
+        }
+      ],
+      "img": "/assets/Product/NewArrivals/image4.png",
+      "numberOfSales": "26",
+      "stock": "69"
+    },
+    {
+      "id": "5",
+      "name": "Vertical Striped Shirt",
+      "rating": "5",
+      "category": "Shirt",
+      "style": "casual",
+      "price": "$232",
+      "discount": {
+        "available": true,
+        "percentage": "20%",
+        "discount_price": "$212"
+      },
+      "definition": "A light and breezy vertical striped shirt, perfect for hot days.",
+      "gender": "Woman",
+      "color": ["yellow", "white", "blue"],
+      "size": ["small", "medium", "large"],
+      "comments": [
+        {
+          "user": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          "rating": 4.5,
+          "date": "2023-08-14"
+        },
+        {
+          "user": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "rating": 4,
+          "date": "2023-08-15"
+        },
+        {
+          "user": "Ethan R.",
+          "comment": "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          "rating": 3.5,
+          "date": "2023-08-16"
+        },
+        {
+          "user": "Olivia P.",
+          "comment": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          "rating": 4,
+          "date": "2023-08-17"
+        },
+        {
+          "user": "Liam K.",
+          "comment": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          "rating": 4,
+          "date": "2023-08-18"
+        },
+        {
+          "user": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "John Doe",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of * philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 2,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Michael Brown",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Emily Johnson",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 3.5,
+          "date": "2023-08-19"
+        }
+      ],
+      "img": "/assets/Product/TopSelling/image5.png",
+      "numberOfSales": "10",
+      "stock": "65"
+    },
+    {
+      "id": "6",
+      "name": "Courage Graphic T-shirt",
+      "rating": "4.0",
+      "category": "T-shirt",
+      "style": "casual",
+      "price": "$145",
+      "discount": {
+        "available": false,
+        "percentage": null,
+        "discount_price": null
+      },
+      "definition": "A warm winter coat to keep you cozy during the cold months.",
+      "gender": "Man",
+      "color": ["black", "grey"],
+      "size": ["small", "large", "X-large"],
+      "comments": [
+        {
+          "user": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          "rating": 4.5,
+          "date": "2023-08-14"
+        },
+        {
+          "user": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "rating": 4,
+          "date": "2023-08-15"
+        },
+        {
+          "user": "Ethan R.",
+          "comment": "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          "rating": 3.5,
+          "date": "2023-08-16"
+        },
+        {
+          "user": "Olivia P.",
+          "comment": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          "rating": 4,
+          "date": "2023-08-17"
+        },
+        {
+          "user": "Liam K.",
+          "comment": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          "rating": 4,
+          "date": "2023-08-18"
+        },
+        {
+          "user": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "John Doe",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of * philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 2,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Michael Brown",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Emily Johnson",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 3.5,
+          "date": "2023-08-19"
+        }
+      ],
+      "img": "/assets/Product/TopSelling/image6.png",
+      "numberOfSales": "20",
+      "stock": "10"
+    },
+    {
+      "id": "7",
+      "name": "Loose Fit Bermuda Shorts",
+      "rating": "3",
+      "category": "Shorts",
+      "style": "casual",
+      "price": "$80",
+      "discount": {
+        "available": false,
+        "percentage": null,
+        "discount_price": null
+      },
+      "definition": "A lightweight sports jacket for outdoor activities and workouts.",
+      "gender": "Man",
+      "color": ["red", "blue", "green"],
+      "size": ["small", "medium", "large", "X-large"],
+      "comments": [
+        {
+          "user": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          "rating": 4.5,
+          "date": "2023-08-14"
+        },
+        {
+          "user": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "rating": 4,
+          "date": "2023-08-15"
+        },
+        {
+          "user": "Ethan R.",
+          "comment": "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          "rating": 3.5,
+          "date": "2023-08-16"
+        },
+        {
+          "user": "Olivia P.",
+          "comment": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          "rating": 4,
+          "date": "2023-08-17"
+        },
+        {
+          "user": "Liam K.",
+          "comment": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          "rating": 4,
+          "date": "2023-08-18"
+        },
+        {
+          "user": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "John Doe",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of * philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 2,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Michael Brown",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Emily Johnson",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 3.5,
+          "date": "2023-08-19"
+        }
+      ],
+      "img": "/assets/Product/TopSelling/image7.png",
+      "numberOfSales": "39",
+      "stock": "21"
+    },
+    {
+      "id": "8",
+      "name": "Faded Skinny Jeans",
+      "rating": "4.5",
+      "category": "Jeans",
+      "style": "party",
+      "price": "$210",
+      "discount": {
+        "available": false,
+        "percentage": null,
+        "discount_price": null
+      },
+      "definition": "Stylish leather boots that are both durable and comfortable.",
+      "gender": "Woman",
+      "color": ["brown", "black", "blue"],
+      "size": ["medium", "large"],
+      "comments": [
+        {
+          "user": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          "rating": 4.5,
+          "date": "2023-08-14"
+        },
+        {
+          "user": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "rating": 4,
+          "date": "2023-08-15"
+        },
+        {
+          "user": "Ethan R.",
+          "comment": "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          "rating": 3.5,
+          "date": "2023-08-16"
+        },
+        {
+          "user": "Olivia P.",
+          "comment": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          "rating": 4,
+          "date": "2023-08-17"
+        },
+        {
+          "user": "Liam K.",
+          "comment": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          "rating": 4,
+          "date": "2023-08-18"
+        },
+        {
+          "user": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "John Doe",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of * philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 2,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Michael Brown",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Emily Johnson",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 3.5,
+          "date": "2023-08-19"
+        }
+      ],
+      "img": "/assets/Product/TopSelling/image8.png",
+      "numberOfSales": "11",
+      "stock": "9"
+    },
+    {
+      "id": "9",
+      "name": "Gradient Graphic T-shirt",
+      "rating": "3.5",
+      "category": "T-shirt",
+      "style": "casual",
+      "price": "$145",
+      "discount": {
+        "available": false,
+        "percentage": "0%",
+        "discount_price": null
+      },
+      "definition": "A cozy sweatshirt for casual wear.",
+      "gender": "Man",
+      "color": ["grey", "blue", "black"],
+      "size": ["large", "X-large"],
+      "comments": [
+        {
+          "user": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          "rating": 4.5,
+          "date": "2023-08-14"
+        },
+        {
+          "user": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "rating": 4,
+          "date": "2023-08-15"
+        },
+        {
+          "user": "Ethan R.",
+          "comment": "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          "rating": 3.5,
+          "date": "2023-08-16"
+        },
+        {
+          "user": "Olivia P.",
+          "comment": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          "rating": 4,
+          "date": "2023-08-17"
+        },
+        {
+          "user": "Liam K.",
+          "comment": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          "rating": 4,
+          "date": "2023-08-18"
+        },
+        {
+          "user": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "John Doe",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of * philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 2,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Michael Brown",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Emily Johnson",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 3.5,
+          "date": "2023-08-19"
+        }
+      ],
+      "img": "/assets/Product/image9.png",
+      "numberOfSales": "110",
+      "stock": "29"
+    },
+    {
+      "id": "10",
+      "name": "Polo with Tipping Details",
+      "rating": "4.5",
+      "category": "T-shirt",
+      "style": "casual",
+      "price": "$180",
+      "discount": {
+        "available": false,
+        "percentage": null,
+        "discount_price": "$130"
+      },
+      "definition": "A warm cardigan that adds a stylish layer to your outfit.",
+      "gender": "Man",
+      "color": ["red", "white", "grey"],
+      "size": ["small", "medium", "large"],
+      "comments": [
+        {
+          "user": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          "rating": 4.5,
+          "date": "2023-08-14"
+        },
+        {
+          "user": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "rating": 4,
+          "date": "2023-08-15"
+        },
+        {
+          "user": "Ethan R.",
+          "comment": "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          "rating": 3.5,
+          "date": "2023-08-16"
+        },
+        {
+          "user": "Olivia P.",
+          "comment": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          "rating": 4,
+          "date": "2023-08-17"
+        },
+        {
+          "user": "Liam K.",
+          "comment": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          "rating": 4,
+          "date": "2023-08-18"
+        },
+        {
+          "user": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "John Doe",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of * philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 2,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Michael Brown",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Emily Johnson",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 3.5,
+          "date": "2023-08-19"
+        }
+      ],
+      "img": "/assets/Product/image10.png",
+      "numberOfSales": "40",
+      "stock": "47"
+    },
+    {
+      "id": "11",
+      "name": "Black Striped T-shirt",
+      "rating": "5",
+      "category": "T-shirt",
+      "style": "casual",
+      "price": "$150",
+      "discount": {
+        "available": true,
+        "percentage": "30%",
+        "discount_price": "$120"
+      },
+      "definition": "A classic polo shirt suitable for both casual and semi-formal occasions.",
+      "gender": "Man",
+      "color": ["blue", "black", "white"],
+      "size": ["small", "medium", "large", "X-large"],
+      "comments": [
+        {
+          "user": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          "rating": 4.5,
+          "date": "2023-08-14"
+        },
+        {
+          "user": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "rating": 4,
+          "date": "2023-08-15"
+        },
+        {
+          "user": "Ethan R.",
+          "comment": "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          "rating": 3.5,
+          "date": "2023-08-16"
+        },
+        {
+          "user": "Olivia P.",
+          "comment": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          "rating": 4,
+          "date": "2023-08-17"
+        },
+        {
+          "user": "Liam K.",
+          "comment": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          "rating": 4,
+          "date": "2023-08-18"
+        },
+        {
+          "user": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "John Doe",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of * philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 2,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Michael Brown",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Emily Johnson",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 3.5,
+          "date": "2023-08-19"
+        }
+      ],
+      "img": "/assets/Product/image11.png",
+      "numberOfSales": "37",
+      "stock": "9"
+    },
+    {
+      "id": "12",
+      "name": "Running Shoes",
+      "rating": "4.7",
+      "category": "T-shirt",
+      "style": "party",
+      "price": "$250",
+      "discount": {
+        "available": true,
+        "percentage": "30%",
+        "discount_price": "$130"
+      },
+      "definition": "Lightweight and comfortable running shoes for all terrains.",
+      "gender": "Woman",
+      "color": ["black", "white", "yellow"],
+      "size": ["small", "medium"],
+      "comments": [
+        {
+          "user": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          "rating": 4.5,
+          "date": "2023-08-14"
+        },
+        {
+          "user": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "rating": 4,
+          "date": "2023-08-15"
+        },
+        {
+          "user": "Ethan R.",
+          "comment": "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          "rating": 3.5,
+          "date": "2023-08-16"
+        },
+        {
+          "user": "Olivia P.",
+          "comment": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          "rating": 4,
+          "date": "2023-08-17"
+        },
+        {
+          "user": "Liam K.",
+          "comment": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          "rating": 4,
+          "date": "2023-08-18"
+        },
+        {
+          "user": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "John Doe",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of * philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 2,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Michael Brown",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Emily Johnson",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 3.5,
+          "date": "2023-08-19"
+        }
+      ],
+      "img": "/assets/Product/image11.png",
+      "numberOfSales": "40",
+      "stock": "19"
+    },
+    {
+      "id": "13",
+      "name": "2Running Shoes",
+      "rating": "4.7",
+      "category": "T-shirt",
+      "style": "formal",
+      "price": "$250",
+      "discount": {
+        "available": true,
+        "percentage": "30%",
+        "discount_price": "$130"
+      },
+      "definition": "Lightweight and comfortable running shoes for all terrains.",
+      "gender": "Woman",
+      "color": ["green", "purple"],
+      "size": ["small", "medium"],
+      "comments": [
+        {
+          "user": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          "rating": 4.5,
+          "date": "2023-08-14"
+        },
+        {
+          "user": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "rating": 4,
+          "date": "2023-08-15"
+        },
+        {
+          "user": "Ethan R.",
+          "comment": "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          "rating": 3.5,
+          "date": "2023-08-16"
+        },
+        {
+          "user": "Olivia P.",
+          "comment": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          "rating": 4,
+          "date": "2023-08-17"
+        },
+        {
+          "user": "Liam K.",
+          "comment": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          "rating": 4,
+          "date": "2023-08-18"
+        },
+        {
+          "user": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "John Doe",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of * philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 2,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Michael Brown",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Emily Johnson",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 3.5,
+          "date": "2023-08-19"
+        }
+      ],
+      "img": "/assets/Product/image11.png",
+      "numberOfSales": "71",
+      "stock": "11"
+    },
+    {
+      "id": "14",
+      "name": "Black Hoodie",
+      "rating": "5.0",
+      "category": "Hoodie",
+      "style": "Party",
+      "price": "$350",
+      "discount": {
+        "available": true,
+        "percentage": "30%",
+        "discount_price": "$130"
+      },
+      "definition": "Lightweight and comfortable black hoodie with a big one white logo",
+      "gender": "Woman",
+      "color": ["black", "white"],
+      "size": ["medium"],
+      "comments": [
+        {
+          "user": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+          "rating": 4.5,
+          "date": "2023-08-14"
+        },
+        {
+          "user": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "rating": 4,
+          "date": "2023-08-15"
+        },
+        {
+          "user": "Ethan R.",
+          "comment": "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+          "rating": 3.5,
+          "date": "2023-08-16"
+        },
+        {
+          "user": "Olivia P.",
+          "comment": "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+          "rating": 4,
+          "date": "2023-08-17"
+        },
+        {
+          "user": "Liam K.",
+          "comment": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+          "rating": 4,
+          "date": "2023-08-18"
+        },
+        {
+          "user": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "John Doe",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4.5,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of * philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 2,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Michael Brown",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 4,
+          "date": "2023-08-19"
+        },
+        {
+          "user": "Emily Johnson",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "rating": 3.5,
+          "date": "2023-08-19"
+        }
+      ],
+      "img": "/assets/Product/image11.png",
+      "numberOfSales": "71",
+      "stock": "11"
+    }
+  ],
+  "homepageComment": [
+    {
+      "id": "0001",
+      "name": "1Sarah M.",
+      "comment": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+      "rating": "5"
+    },
+    {
+      "id": "0002",
+      "name": "2Sarah M.",
+      "comment": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+      "rating": "5"
+    },
+    {
+      "id": "0003",
+      "name": "Alex K.",
+      "comment": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.",
+      "rating": "5"
+    },
+    {
+      "id": "0004",
+      "name": "James L.",
+      "comment": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+      "rating": "5"
+    },
+    {
+      "id": "0005",
+      "name": "Mooen",
+      "comment": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+      "rating": "5"
+    },
+    {
+      "id": "0006",
+      "name": "6Mooen",
+      "comment": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+      "rating": "5"
+    },
+    {
+      "id": "0007",
+      "name": "7Mooen",
+      "comment": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+      "rating": "5"
+    },
+    {
+      "id": "0008",
+      "name": "8Mooen",
+      "comment": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+      "rating": "5"
+    },
+    {
+      "id": "0009",
+      "name": "9Mooen",
+      "comment": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+      "rating": "5"
+    }
+  ],
+  "users": [
+    {
+      "userid": "1",
+      "username": "admin",
+      "sepet": {}
+    },
+    {
+      "userid": "2",
+      "username": "deneme",
+      "sepet": {}
+    }
+  ]
+}
