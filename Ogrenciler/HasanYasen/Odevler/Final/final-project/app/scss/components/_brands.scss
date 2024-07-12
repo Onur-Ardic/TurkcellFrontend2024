@@ -1,0 +1,15 @@
+.brands-container {
+    min-height: 122px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .brands-container {
+        .brand-image {
+            width: 100px;
+            height: 25px;
+        }
+    }
+}
