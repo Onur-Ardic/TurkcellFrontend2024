@@ -12,8 +12,8 @@ export default async function AdviceBanner() {
             <h1 className="text-center adviceTitle py-5">{i18next.t('youmight')}</h1>
             <div className="row row-cols-xl-4 row-cols-lg-3 g-4">
             {data.map(item => (
-            <div className="col" >
-                   <Link key={item.id} href={`/productdetail/${item.id}`} >
+            <div key={item.id} className="col" >
+                   <Link href={`/productdetail/${item.id}`} >
                     <div className="mb-6">
                             <div className="imgContainer">
                               <img src={item.image} className="w-100" alt="" 

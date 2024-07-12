@@ -16,8 +16,8 @@ displayViewAlll = 'none'
             <h1 className="text-center newArvTitle py-5">{i18next.t('newArrivals')}</h1>
             <div className="row row-cols-xl-4 row-cols-lg-3 g-4">
             {newarrivals.map(item => (
-            <div className="col" >
-            <Link key={item.id} href={`/productdetail/${item.id}`}>
+            <div key={item.id} className="col" >
+            <Link href={`/productdetail/${item.id}`}>
                     <div className="mb-6">
                             <div className="imgContainer">
                                <img src={item.image} className="w-100" alt=""/>

@@ -67,8 +67,8 @@ import Link from "next/link";
             </div>
             <div className='categoriesContainer'>
                 {data.map(item => (
-                    <Link href={`/productdetail/${item.id}`}>
-                        <div className="boxPrd" key={item.id}>
+                    <Link key={item.id} href={`/productdetail/${item.id}`}>
+                        <div className="boxPrd">
                             <div className="mb-6">
                                 <div className="imgContainer">
                                     <img src={item.image} alt="" className="w-100" />
