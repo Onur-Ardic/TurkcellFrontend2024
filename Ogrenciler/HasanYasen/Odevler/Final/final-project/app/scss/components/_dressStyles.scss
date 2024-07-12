@@ -1,0 +1,29 @@
+.dressStyles-container {
+    background-color: #F0F0F0;
+    font-size: 100px;
+    border-radius: 40px;
+
+    h2 {
+        margin: 70px 0 40px 0;
+        font-family: 'Integral CF', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 57.6px;
+        color: #000000;
+    }
+
+    .image {
+        max-height: 289px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .image {
+        max-height: 190px;
+    }
+}
