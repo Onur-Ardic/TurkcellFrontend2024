@@ -1,0 +1,162 @@
+{
+  "Index": {
+    "title": "Turkcell Final",
+    "loading": "Loading Page"
+  },
+
+  "LoginRegister": {
+    "logout": "Log out",
+    "register": "Register",
+    "signup":"Don't have an account? Sign up",
+    "registerSuccess": "Registration Successful!",
+    "login": "Login",
+    "loginSuccess": "Login Successful!",
+    "forgotPassword": "Forgot Password",
+    "rememberMe":"Remember Me",
+
+    "emailPlaceholder": "Please enter your email address",
+    "passwordPlaceholder": "Please enter your password",
+    "firstNamePlaceholder": "Enter your first name",
+    "lastNamePlaceholder": "Enter your last name",
+
+    "inputMin": "Please enter at least 2 characters.",
+    "inputMax": "Maximum 255 characters are allowed.",
+    "firstNameRequired": "First name is required.",
+    "lastNameRequired": "Last name is required.",
+    "emailRequired": "Email is required.",
+    "passwordRequired": "Password is required.",
+    "emailFormat": "Enter a valid email format.",
+    "passwordMatches": "Password must contain at least one letter, one number, and one special character",
+    "passwordMin": "Password too short - must be at least 8 characters.",
+    "passwordMax": "Password too long - maximum of 12 characters allowed",
+
+    "wrongPassword": "The entered password is incorrect. Please check your password.",
+    "userNotFound": "This user was not found. Please try to register.",
+    "emailAlreadyInUse": "This email address is already in use. Please try another email.",
+    "operationNotAllowed": "This operation is not currently enabled. Please try again later.",
+    "defaultError": "An error occurred. Please try again later.",
+
+    "controlLogin": "Don't you have a game? Register",
+    "controlRegister": "Don't not you have a game? Login"
+  },
+  "navbar": {
+    "navbarTitle": "Sign up and get 20% off to your first order.",
+    "searchPlaceholder": "Search for products...",
+    "shopNow": " Sign Up Now",
+    "shopping": "Shop",
+    "discount": " On Sale",
+    "anotherTransaction": "Another action",
+    "anotherThing": "Something else here",
+    "NewArrival": "New Arrivals",
+    "Brands": "Brands"
+  },
+  "hero": {
+    "heroHeader": "FIND CLOTHES THAT MATCHES YOUR STYLE ",
+    "heroText": " Browse through our diverse range of meticulously crafted  garments, designed to bring out your individuality and cater to your sense of style.",
+    "shopBtn": "Shop Now",
+    "counterInternational": "International Brands",
+    "counterQuality": "High-Quality Products",
+    "counterHappy": "Happy Customers"
+  },
+  "cardList": {
+    "viewBtn": "View All"
+  },
+  "dressStyle": {
+    "dresstTitle": "BROWSE BY DRESS STYLE",
+    "casual": "Casual",
+    "formal": "Formal",
+    "gym": "Gym",
+    "party": "Party"
+  },
+  "ourHappyCustomers": {
+    "happyTitle": "OUR HAPPY CUSTOMERS"
+  },
+  "footer": {
+    "footerTitle": "STAY UPTO DATE ABOUT OUR LATEST OFFERS",
+    "footerInput": "Enter your email address",
+    "formBtn": "Subscribe to Newsletter",
+    "text": "We have clothes that suits your style and which you’re proud to wear. From women to men.",
+    "company": "Şirket",
+    "about": "About",
+    "features": "Features",
+    "works": "Works",
+    "career": "Career",
+    "help": "Help",
+    "customerSupport": "Customer Support",
+    "deliveryDetails": "Delivery Details",
+    "termConditions": "Terms & Conditions",
+    "PrivacyPolicy": "Privacy Policy",
+    "faq": "FAQ",
+    "account": "Account",
+    "manageDeliveries": "Manage Deliveries",
+    "orders": "Orders",
+    "payments": "Payments",
+    "resources": "RESOURCES",
+    "freeeBooks": "Free eBooks",
+    "developmentTutorial": "Development Tutorial",
+    "howtoBlog": "How to - Blog",
+    "youtubePlaylist": "Youtube Playlist",
+    "copyright": "Shop.co © 2000-2023, All Rights Reserved"
+  },
+  
+  "category": {
+    "casual": "Casual",
+    "sortBy": "Sort by",
+    "mostPopular": "Most Popular",
+    "lowtoHigh": "Price: Low to High",
+    "hightoLow": "Price: High to Low",
+    "filter": "Filters",
+    "price": "Price",
+    "color": "Color",
+    "priceRange": "Price Range",
+    "sizes": "Sizes",
+    "dressStyle": "dressStyle",
+    "applyFilter": "applyFilter"
+  },
+  "boxes": {
+    "home": "Home",
+    "basket": "Cart",
+    "youCart": "Your cart",
+    "subTotal": "Subtotal",
+    "total": "Total",
+    "Discount": "Discount (-20%)",
+    "deliveryFee": "Delivery Fee",
+    "boxesPlaceholder": "add promo code",
+    "apply": "apply",
+    "checkout": "Go to Checkout"
+  },
+  
+    "productDetail": {
+      "selectedColor": "Select Colors",
+      "chooseSize": "Choose Size",
+      "addToCart": "Add To Cart",
+      "productDetails": "Product Details",
+      "ratingReviews": "Rating & Reviews",
+      "faqs": "faQs",
+      "allReviews": "All Reviews",
+      "writeReview": "Write a Reviews",
+      "postedOn":"Posted on",
+    "loadMoreReviews":"Load More Reviews",
+    "comment": "Comment",
+    "close": "Close",
+    "save": "Save",
+    "latest": "latest",
+    "oldest": "oldest",
+    "faq1": "What is your return policy?",
+    "faq2Answer": "Shipping times vary depending on your location. Generally, orders are processed within 2-3 business days and delivery takes 5-7 business days for domestic shipments and 10-15 business days for international shipments.",
+    "faq2": "How long does shipping take?",
+    "faq3Answer": " Once your order has been shipped, you will receive an email with a tracking number and a link to track your package. You can also track your order by logging into your account on our website and viewing your order history.",
+    "faq4": "What is the shipping cost?",
+    "faq4Answer": " Generally, orders are processed within 2-3 business days and delivery takesShipping costs vary depending on your location. Generally, orders are processed within 2-3 business days and delivery takes",
+    "faq3": "How can I track my order?",
+    "faq1Answer": "We offer a 30-day return policy for all our products. If you are not satisfied with your purchase, you can return it within 30 days for a full refund or exchange, provided the item is in its original condition.",
+    "faq5": "How can I track my order?",
+    "faq5Answer": "We offer a 30-day return policy for all our products. If you are not satisfied with your purchase, you can return it within 30 days for a full refund or exchange, provided the item is in its original condition."
+    }
+  
+
+}
+  
+   
+  
+

@@ -1,0 +1,227 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: white;
+  height: fit-content;
+}
+
+.filterHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filterHeader h3 {
+  margin: 0;
+  color: black;
+  font-weight: bold;
+}
+
+.filterIcon {
+  font-size: 1.2rem;
+  color: black;
+}
+
+hr {
+  margin: 0.5rem 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.filterSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.filterSection h3 {
+  margin-bottom: 0.75rem;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filterSection h3 .arrow {
+  font-size: 0.8rem;
+  color: gray;
+  cursor: pointer;
+}
+
+.categories,
+.dress-style {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.category-item,
+.style-item {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 0.5rem 0;
+}
+
+.category-item:hover,
+.style-item:hover {
+  text-decoration: underline;
+}
+
+.category-item .arrow,
+.style-item .arrow {
+  font-size: 1rem;
+  color: gray;
+}
+
+.price .priceRange {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 10px 0;
+}
+
+.price .priceRange .slider {
+  width: calc(100% - 50px);
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+  position: relative;
+  margin: 0 30px;
+}
+
+.price .priceRange .thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+  cursor: pointer;
+}
+
+.price .price-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.colors {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 sütunlu grid */
+  gap: 10px; /* Renkler arası boşluk */
+}
+
+.colors .color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  position: relative;
+  background-color: inherit;
+}
+
+.colors .color.selected {
+  border-color: black;
+}
+
+.colors .color::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.colors .color.selected::before {
+  display: block;
+}
+
+.colors .color-check {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.colors .white-check {
+  background-color: white;
+}
+
+.sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.sizes .size-option {
+  width: 48%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  cursor: pointer;
+  color: black;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s; /* Geçiş efektlerini ekledik */
+  text-align: center;
+  font-size: 14px;
+}
+
+.sizes .size-option.selected {
+  background-color: black !important; /* !important ekledik */
+  color: white !important; /* !important ekledik */
+  border-color: black !important; /* !important ekledik */
+}
+
+.sizes .size-option:hover {
+  background-color: #e0e0e0;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: black;
+}
+
+input[type='checkbox'] {
+  margin-right: 0.5rem;
+}
+
+.filterSection::after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.applyFilterBtn {
+  padding: 0.75rem;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+}
