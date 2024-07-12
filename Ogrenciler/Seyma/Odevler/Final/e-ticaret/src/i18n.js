@@ -90,7 +90,11 @@ i18next.init({
                 "rating": "Rating",
                 "name":   "Name",
                 "surname": "Surname",
-                "youmight":  "You Might Also Like"
+                "youmight":  "You Might Also Like",
+                "default": "Order",
+                "popularity": "Popularity",
+                "rating": "Rating",
+                "newestfirst": "Newest first"
             }
         },
         tr: {
@@ -178,7 +182,11 @@ i18next.init({
                 "rating": "Puan",
                 "name":   "Adınız",
                 "surname": "Soyadınız",
-                "youmight":  "Bunları Da Sevebilirsiniz"
+                "youmight":  "Bunları Da Sevebilirsiniz",
+                "default": "Sırala",
+                "popularity": "Popüler",
+                "rating": "Puan",
+                "newestfirst": "Yeni Gelenler"
 
             }
         }

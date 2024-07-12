@@ -20,15 +20,15 @@ const FilterBar = () => {
             
             <div className='categories'>
                 <ul className='list-unstyled mb-2'>
-                    <li className='d-flex justify-content-between'><span>Tshirts</span> <i className="bi bi-chevron-right"></i></li>
-                    <li className='d-flex justify-content-between'> <span>Shorts</span> <i className="bi bi-chevron-right"></i></li>
-                    <li className='d-flex justify-content-between'> <span>Shirts</span> <i className="bi bi-chevron-right"></i></li>
-                    <li className='d-flex justify-content-between'><span>Hoodie</span> <i className="bi bi-chevron-right"></i></li>
-                    <li className='d-flex justify-content-between'><span>Jeans</span> <i className="bi bi-chevron-right"></i></li>
+                    <li className='d-flex justify-content-between ctgSubTitle'><span>Tshirts</span> <i className="bi bi-chevron-right"></i></li>
+                    <li className='ctgSubTitle d-flex justify-content-between'> <span>Shorts</span> <i className="bi bi-chevron-right"></i></li>
+                    <li className='ctgSubTitle d-flex justify-content-between'> <span>Shirts</span> <i className="bi bi-chevron-right"></i></li>
+                    <li className='d-flex ctgSubTitle justify-content-between'><span>Hoodie</span> <i className="bi bi-chevron-right"></i></li>
+                    <li className='d-flex ctgSubTitle justify-content-between'><span>Jeans</span> <i className="bi bi-chevron-right"></i></li>
                 </ul>
             </div>
-            <div>
             <h4 className='filterTitle'>Price</h4>
+            <div className='d-flex align-items-center gap-2'>
                 <input
                     onChange={handleInputChange}
                     type="range"
@@ -43,7 +43,7 @@ const FilterBar = () => {
                         <option key={index} value={index}>{value}</option>
                     ))}
                 </datalist>
-                <span id="output">{rangeValues[currentRangeValue]}</span>
+                <span className="rangNum">$ {rangeValues[currentRangeValue]}</span>
             </div>
             <div className='colors'>
             <h4 className="filterTitle">Colors</h4>

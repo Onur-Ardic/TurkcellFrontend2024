@@ -1,7 +1,9 @@
 'use client'
 
+import i18next from "../../i18n";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import '../../app/categories/Categories.sass'
 // if (filter.Type != null){
 //   data =  data.filter(item => 
 //     item.type == filter.Type
@@ -49,7 +51,7 @@ import Link from "next/link";
     return (
         <div>
             <div className='d-flex justify-content-between'>
-                <h4>Casual</h4>
+                <h4>{i18next.t('casual')}</h4>
                 <div className="mb-3 d-flex align-items-center"><span className="d-inline-block me-2">Sort by</span>
                     <div className="dropdown bootstrap-select dropup">
                         <select className="selectpicker" 
@@ -57,10 +59,10 @@ import Link from "next/link";
                         value={selectedSort}
                         onChange={handleSortChange}
                         data-style="btn-selectpicker border-0" title="" tabIndex="null">
-                            <option value="sortBy_0">Default</option>
-                            <option value="sortBy_1">Popularity</option>
-                            <option value="sortBy_2">Rating</option>
-                            <option value="sortBy_3">Newest first</option>
+                            <option value="sortBy_0">{i18next.t('default')}</option>
+                            <option value="sortBy_1">{i18next.t('popularity')}</option>
+                            <option value="sortBy_2">{i18next.t('rating')}</option>
+                            <option value="sortBy_3">{i18next.t('newestfirst')}</option>
                         </select>
                     </div>
                 </div>
@@ -83,12 +85,12 @@ import Link from "next/link";
                                             <i className="bi bi-star-fill"></i>
                                             <i className="bi bi-star-half"></i>
                                         </small>
-                                        <span className="text-muted small">{item.rating}</span>
+                                        <span className="small ratingPrd">{item.rating}</span>
                                     </div>
                                     <div className="d-flex align-items-center">
                                         <span className="price">${item.price}</span>
                                         <span className="discountPrice">$24</span>
-                                        <span className="badge rounded-pill">-45%</span>
+                                        <span className="badgePrd badge rounded-pill">-45%</span>
                                     </div>
                                 </div>
                             </div>

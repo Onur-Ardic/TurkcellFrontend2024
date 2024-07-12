@@ -2,7 +2,7 @@
 
 .background
   background-color: $light
-  &.dark
+  html.dark &
     background-color: $danger
 
 
@@ -29,13 +29,20 @@
     color:  #FF3333      
 
 .productTitle
-    color: black
+    color: $danger
     text-decoration: none
     font-family: Satoshi
     font-size: 20px
     font-weight: 700
     line-height: 27px
+    html.dark &
+        color: $light
 
+.ratingPrd
+    margin-left: 5px
+    color: $primary
+    html.dark &
+        color: $light
 .price
     font-family: Satoshi
     font-size: 24px
@@ -43,15 +50,21 @@
     line-height: 32.4px
     margin-right: 5px
 
+.badgePrd
+    html.dark &
+        background-color: $light 
+
+
 .discountPrice
     font-family: Satoshi
-    font-size: 24px
-    font-weight: 700
+    font-size: 20px
+    font-weight: 600
     line-height: 32.4px
-    color: #00000066
+    color: $primary
     text-decoration: line-through
     margin-right: 5px
-
+    html.dark &
+        color: $light
 
 .categoriesContainer
     display: grid
