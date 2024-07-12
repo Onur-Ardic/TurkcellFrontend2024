@@ -39,7 +39,7 @@ displayViewAlll = 'none'
                                             <i className="bi bi-star-fill"></i>
                                             <i className="bi bi-star-half"></i>
                                         </small>
-                                        <span className="text-muted small">{item.rating}</span>
+                                        <span className="ratingTop small">{item.rating}</span>
                                     </div>
                                 </div>
                             </div>

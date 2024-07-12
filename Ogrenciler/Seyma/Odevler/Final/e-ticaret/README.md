@@ -23,7 +23,7 @@ Kullanılan araçlar ve frameworkler;
 Scss
 Bootstrap
 Json-Server
-i18next
+i18next kullanıldı
 
 
 Projede yapılan geliştirmeler;
