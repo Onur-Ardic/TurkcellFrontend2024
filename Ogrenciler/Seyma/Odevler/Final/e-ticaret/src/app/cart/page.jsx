@@ -6,12 +6,13 @@ import Image from 'next/image';
 const page = () => {
   return (
     <div className='container-xxl'>
-      <h1 className='cartTitle'>{i18next.t('yourcart')}</h1>
-      <div className='gap-4 cartContent'>
+      <div >
+      <h1 className='cartTitle my-4'>{i18next.t('yourcart')}</h1>
+      <div className='gap-4 cartContent d-flex flex-wrap justify-content-center'>
         <div className='col-lg-6 col-md-10 col productsChoosen'>
           <div className='row productsChoosenDetail'>
             <div className='col-lg-3 col-md-10 col'>
-              <div className="imgContainerCart">
+              <div className="imgContainerCart mb-3">
                 <a href="#"><img src="blacktshirt.png" alt="" className="w-100" /></a>
               </div>
             </div>
@@ -34,14 +35,14 @@ const page = () => {
             <p> {i18next.t('deliveryfee')}</p>
           </div>
           <p>{i18next.t('total')}</p>
-          <div>
+          <div className='d-flex gap-2 mb-2'>
             <input type="text" />
-            <button className='btn btn-lg'>{i18next.t('apply')}</button>
+            <button className='btn applyBtn'>{i18next.t('apply')}</button>
           </div>
-          <button className="btn btn-lg">{i18next.t('gotocheckout')}</button>
+          <button className="btn checkOutBtn">{i18next.t('gotocheckout')}</button>
         </div>
       </div>
-
+      </div>
     </div>
   )
 }

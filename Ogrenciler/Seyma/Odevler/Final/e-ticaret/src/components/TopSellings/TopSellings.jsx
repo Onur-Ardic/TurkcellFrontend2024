@@ -12,7 +12,7 @@ export default async function page() {
 
     return (
         <div className="container-xxl">
-            <h1 className="text-center title py-5">{i18next.t('topSelling')}</h1>
+            <h1 className="text-center topSellTitle py-5">{i18next.t('topSelling')}</h1>
             <div className="row row-cols-xl-4 row-cols-lg-3 g-4">
                 {topSelling?.map(item => (
                     <div className="col" key={item.id}>

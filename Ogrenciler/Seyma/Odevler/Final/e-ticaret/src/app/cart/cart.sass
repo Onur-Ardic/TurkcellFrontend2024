@@ -4,7 +4,9 @@
     border: 1px solid $secondary
     border-radius: 20px
     padding: 20px
-    height: auto 
+    height: auto
+    html.dark & 
+        color: $light
     
 .cartTitle
     font-family: "Integral CF Bold"
@@ -12,16 +14,22 @@
     font-weight: 700
     line-height: 48px
     text-align: left
+    html.dark & 
+        color: $light
 
 .orderSummary
     border: 1px solid $secondary
     border-radius: 20px
     padding: 20px
     height: 458px
+    html.dark & 
+        color: $light
 
 .productsChoosenDetail
     padding: 10px
     border-bottom: 1px solid $secondary
+    html.dark & 
+        color: $light
  
 .trash
     position: absolute
@@ -32,10 +40,20 @@
     position: absolute
     bottom: 0
     right: 0
+    html.dark & 
+        color: $light
 
 .prdctDetailBox
     position: relative
 
+.checkOutBtn
+    html.dark & 
+        background-color: $light
+        color: $danger
+.applyBtn
+    html.dark & 
+        background-color: $light
+        color: $danger
 .imgContainerCart
     height: 124px
     display: flex
@@ -53,6 +71,8 @@
 
 .cartTotal
     border-bottom: 1px solid $secondary 
+    html.dark & 
+        color: $light
 
 @media (max-width: 480px)
     .orderSummary
@@ -63,3 +83,6 @@
         font-size: 20px
     .productsChoosen
         margin-bottom: 10px
+    .imgContainerCart
+        width: 300px
+        height: 300px

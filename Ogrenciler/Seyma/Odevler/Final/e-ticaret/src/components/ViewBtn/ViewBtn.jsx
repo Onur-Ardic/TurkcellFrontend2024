@@ -1,15 +1,12 @@
 'use client'
+
+import './viewBtn.sass'
 import i18next from '../../i18n';
 
 const ViewBtn = () => {
     return (
         <div>
-            <button typeof='button' style={{
-                margin: '25px',
-                padding: '16px 54px',
-                borderRadius: '62px',
-                border: '1px solid black',
-            }} className='btn btn-lg'>
+            <button typeof='button' className='btn btn-lg viewBtn'>
                 {i18next.t('viewbtn')}
             </button>
         </div>

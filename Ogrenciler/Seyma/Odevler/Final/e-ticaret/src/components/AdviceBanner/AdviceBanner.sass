@@ -10,17 +10,27 @@
     border-radius: 10px
     img
         object-fit: cover
-        
-.title
+
+.ratingAdvice
+    color: $secondary
+    html.dark &
+        color: $primary 
+
+.adviceTitle
     font-family: "Integral CF Bold"
     font-size: 48px
     font-weight: 700
     line-height: 57.6px
     text-align: center
+    color: $danger
+    html.dark & 
+        color: $light
 
 .badge
     background: #FF33331A
     color:  #FF3333
+    html.dark & 
+        background: #7e6e6e1a
 
 .productTitle
     color: black
@@ -42,7 +52,9 @@
     font-size: 24px
     font-weight: 700
     line-height: 32.4px
-    color: #00000066
     text-decoration: line-through
     margin-right: 5px
+    color: $primary
+    html.dark &
+        color: $light
 

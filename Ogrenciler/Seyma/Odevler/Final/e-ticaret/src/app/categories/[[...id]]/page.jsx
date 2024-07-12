@@ -1,6 +1,5 @@
 import FilterBar from '@/components/FilterBar/FilterBar'
 import '../../categories/Categories.sass'
-import BreadCrumbs from '@/components/Breadcrumbs/BreadCrumbs'
 import { getData } from '@/api'
 import Link from 'next/link'
 
@@ -36,7 +35,8 @@ export default async function page({ params }) {
             <div className='d-flex justify-content-between'>
               <h4>Casual</h4>
               <div className="mb-3 d-flex align-items-center"><span className="d-inline-block me-2">Sort by</span>
-                <div className="dropdown bootstrap-select dropup"><select className="selectpicker" name="sort" id="form_sort" data-style="btn-selectpicker border-0" title="" tabIndex="null">
+                <div className="dropdown bootstrap-select dropup">
+                  <select className="selectpicker" name="sort" id="form_sort" data-style="btn-selectpicker border-0" title="" tabIndex="null">
                   <option value="sortBy_0">Default </option>
                   <option value="sortBy_1">Popularity </option>
                   <option value="sortBy_2">Rating </option>
