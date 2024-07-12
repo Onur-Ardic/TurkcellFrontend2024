@@ -1,0 +1,96 @@
+{
+  "Index": {
+    "title": "Hello world!"
+  },
+  "Header": {
+    "nav1": "Shop",
+    "nav2": "On Sale",
+    "nav3": "New Arrivals",
+    "nav4": "Category",
+    "placeholder": "Search for products..."
+  },
+  "Section1": {
+    "title1": "FIND CLOTHES THAT MATCHES YOUR STYLE",
+    "title2": "Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.",
+    "bannerText1": "Shop Now",
+    "bannerText2": "International Brands",
+    "bannerText3": "High-Quality Products",
+    "bannerText4": "Happy Customers"
+  },
+  "Section3": {
+    "title": "BROWSE BY DRESS STYLE",
+    "subt1": "Casual",
+    "subt2": "Formal",
+    "subt3": "Party",
+    "subt4": "Gym"
+  },
+  "Section4": {
+    "title": "Our Happy Customers",
+    "commnets": "Comments"
+  },
+  "Section5": {
+    "title": "STAY UPTO DATE ABOUT OUR LATEST OFFERS",
+    "placeholder": "Enter Mail Adress..",
+    "button": "Subscribe"
+  },
+  "Footer": {
+    "descText": "We have clothes that suit your style and which you're proud to wear. From women to men.",
+    "subTitle1": "COMPANY",
+    "subTitle2": "HELP",
+    "subTitle3": "FAQ",
+    "subTitle4": "RESOURCES",
+    "about": "About",
+    "features": "Features",
+    "works": "Works",
+    "career": "Career",
+    "customerSupport": "Customer Support",
+    "deliveryDetails": "Delivery Details",
+    "termsConditions": "Terms & Conditions",
+    "privacyPolicy": "Privacy Policy",
+    "account": "Account",
+    "manageDeliveries": "Manage Deliveries",
+    "orders": "Orders",
+    "payments": "Payments",
+    "freeEbooks": "Free eBooks",
+    "developmentTutorial": "Development Tutorial",
+    "howToBlog": "How to - Blog",
+    "youtubePlaylist": "YouTube Playlist"
+  },
+  "Filter": {
+    "title": "Filters",
+    "price": "Price",
+    "colors": "Colors",
+    "size": "Size",
+    "dreStyle": "Dress Style",
+    "button": "Apply Filter",
+    "casual": "Casual",
+    "formal": "Formal",
+    "party": "Party",
+    "gym": "Gym"
+  },
+  "ProductArea": {
+    "title": "NEW ARRIVALS",
+    "button": "View All"
+  },
+  "ProductDetail": {
+    "colorTit": "Select Colors",
+    "sizeTit": "Choose Size",
+    "buttonTit": "Add to Cart"
+  },
+  "TopBanner": {
+    "text": "Sign up and get 20% off to your first order.",
+    "linktit": "Sign Up Now"
+  },
+  "ShopBasket": {
+    "size": "Size",
+    "color": "Color",
+    "Order Summary": "Order Summary",
+    "Subtotal": "Subtotal",
+    "Discount": "Discount",
+    "Delivery Fee:": "Delivery Fee",
+    "Total": "Total",
+    "Apply": "Apply",
+    "Go to Checkout": "Go to Checkout",
+    "placeholder": "Add Promo Code"
+  }
+}
