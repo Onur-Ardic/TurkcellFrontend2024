@@ -1,0 +1,92 @@
+.happy-customers-container {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin: 20px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.happy-customers-title {
+  font-family: "Integral CF", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.happy-customers-carousel {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.happy-customer-item {
+  flex: 0 0 300px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.happy-customer-item.blurred {
+  filter: blur(5px);
+  opacity: 0.5;
+}
+
+.customer-review {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.stars-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.star-img {
+  margin: 0 2px;
+}
+
+.customer-name {
+  font-family: "Satoshi", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.verified {
+  color: green;
+}
+
+.customer-text {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  margin-top: 10px;
+}
+
+.happy-customers-carousel::before,
+.happy-customers-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.happy-customers-carousel::before {
+  left: 0;
+  background: linear-gradient(to right, #fff, transparent);
+}
+
+.happy-customers-carousel::after {
+  right: 0;
+  background: linear-gradient(to left, #fff, transparent);
+}

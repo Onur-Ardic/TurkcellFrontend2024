@@ -1,0 +1,184 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 11",
+      "description": "Description 1",
+      "price": 100,
+      "category": "casual"
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "description": "Description 2",
+      "price": 200,
+      "category": "Gym"
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "description": "Description 3",
+      "price": 300,
+      "category": "casual"
+    },
+    {
+      "id": 4,
+      "name": "Product 4",
+      "description": "Description 4",
+      "price": 150,
+      "category": "Casual"
+    },
+    {
+      "id": 5,
+      "name": "Product 5",
+      "description": "Description 5",
+      "price": 250,
+      "category": "Formal"
+    },
+    {
+      "id": 6,
+      "name": "Product 6",
+      "description": "Description 6",
+      "price": 350,
+      "category": "Category 3"
+    },
+    {
+      "id": 7,
+      "name": "Product 7",
+      "description": "Description 7",
+      "price": 50,
+      "category": "Category 1"
+    },
+    {
+      "id": 8,
+      "name": "Product 8",
+      "description": "Description 8",
+      "price": 450,
+      "category": "Category 2"
+    },
+    {
+      "id": 9,
+      "name": "Product 9",
+      "description": "Description 9",
+      "price": 400,
+      "category": "Formal"
+    },
+    {
+      "id": 10,
+      "name": "Product 10",
+      "description": "Description 10",
+      "price": 500,
+      "category": "Formal"
+    },
+    {
+      "id": 11,
+      "name": "Product 11",
+      "description": "Description 11",
+      "price": 200,
+      "category": "Gym"
+    },
+    {
+      "id": 21,
+      "name": "Product 12",
+      "description": "Description 12",
+      "price": 260,
+      "category": "Gym"
+    }
+  ],
+  "newArrival": [
+    {
+      "id": 1,
+      "title": "T-shirt with Tape Details",
+      "price": 120,
+      "rating": 4.5,
+      "image": "/images/tshirt.svg",
+      "oldPrice": null,
+      "discount": null
+    },
+    {
+      "id": 2,
+      "title": "Skinny Fit Jeans",
+      "price": 240,
+      "rating": 3.5,
+      "image": "/images/jeans.svg",
+      "oldPrice": 260,
+      "discount": "20%"
+    },
+    {
+      "id": 3,
+      "title": "Checkered Shirt",
+      "price": 180,
+      "rating": 4.5,
+      "image": "/images/shirt.svg",
+      "oldPrice": null,
+      "discount": null
+    },
+    {
+      "id": 4,
+      "title": "Sleeve Striped T-shirt",
+      "price": 130,
+      "rating": 4.5,
+      "image": "/images/striped_tshirt.svg",
+      "oldPrice": 160,
+      "discount": "30%"
+    }
+  ],
+  "topSelling": [
+    {
+      "id": 1,
+      "title": "Vertical Striped Shirt",
+      "rating": 5,
+      "price": 212,
+      "oldPrice": 232,
+      "discount": "20%",
+      "image": "/images/green_shirt.svg"
+    },
+    {
+      "id": 2,
+      "title": "Courage Graphic T-shirt",
+      "rating": 4,
+      "price": 145,
+      "oldPrice": null,
+      "discount": null,
+      "image": "/images/orange_tshirt.svg"
+    },
+    {
+      "id": 3,
+      "title": "Loose Fit Bermuda Shorts",
+      "rating": 3,
+      "price": 80,
+      "oldPrice": null,
+      "discount": null,
+      "image": "/images/short.svg"
+    },
+    {
+      "id": 4,
+      "title": "Faded Skinny Jeans",
+      "rating": 4.5,
+      "price": 210,
+      "oldPrice": null,
+      "discount": null,
+      "image": "/images/jean.svg"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "productId": 1,
+      "author": "Samantha D.",
+      "text": "I absolutely love this t-shirt!"
+    },
+    {
+      "id": 2,
+      "productId": 1,
+      "author": "Ethan R.",
+      "text": "This t-shirt is a must-have for anyone who appreciates good design."
+    },
+    {
+      "id": "db3d",
+      "productId": "1",
+      "author": "Necati",
+      "text": "Selam"
+    }
+  ]
+}

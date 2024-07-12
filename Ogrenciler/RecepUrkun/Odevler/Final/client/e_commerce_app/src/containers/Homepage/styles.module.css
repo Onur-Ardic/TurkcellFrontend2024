@@ -1,0 +1,12 @@
+.yukari {
+  margin-top: 170px;
+}
+.main {
+  height: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  .yukari {
+    margin-top: 140px;
+  }
+}

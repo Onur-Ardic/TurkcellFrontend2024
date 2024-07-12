@@ -20,6 +20,7 @@ function App() {
     <div className="App">
       <h1>GitHub User Profile</h1>
       <UserInput onSearch={fetchUserData} />
+      <br />
       <UserProfile userData={userData} />
     </div>
   );

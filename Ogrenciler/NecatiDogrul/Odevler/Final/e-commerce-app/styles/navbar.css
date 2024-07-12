@@ -1,0 +1,64 @@
+.navbar-container {
+  width: 100%;
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50px;
+  z-index: 999;
+  transition: top 0.3s ease;
+}
+
+.logo {
+  font-family: "Integral CF", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  color: black;
+  text-align: left;
+}
+
+.nav-menu a {
+  color: black;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+.search-input-container {
+  position: relative;
+  width: 300px;
+}
+
+.search-input-container input {
+  width: 100%;
+  padding: 10px 40px 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+.search-input-container input:focus {
+  outline: none;
+  background-color: #e1e1e1;
+}
+
+.search-input-container svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.icon-container svg {
+  font-size: 24px;
+  margin-left: 20px;
+  cursor: pointer;
+}
