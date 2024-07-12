@@ -1,4 +1,15 @@
-# Proje Kurulumu ve Çalıştırma
+## Proje Canlı Link
+
+[Proje Canlı Link](https://turkcell-final.vercel.app/en)
+
+## Giriş Bilgileri
+
+- Varolan kullanıcı:
+
+  - Kullanıcı Adı: admin@gmail.com
+  - Şifre: 123123
+
+- İsterseniz yeni bir kullanıcı oluşturup giriş yapabilirsiniz.
 
 ## Projeyi Ayağa Kaldırmak için Adımlar
 
@@ -23,16 +34,3 @@
      ```sh
      json-server --watch db.json --port 3002
      ```
-
-## Proje Canlı Link
-
-[Proje Canlı Link](https://turkcell-final.vercel.app/en)
-
-## Giriş Bilgileri
-
-- Varolan kullanıcı:
-
-  - Kullanıcı Adı: admin@gmail.com
-  - Şifre: 123123
-
-- İsterseniz yeni bir kullanıcı oluşturup giriş yapabilirsiniz.

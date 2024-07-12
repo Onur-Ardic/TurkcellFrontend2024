@@ -9,6 +9,7 @@
   line-height: 64px;
   color: #000;
   margin-bottom: 32px;
+  padding-top: 50px;
 }
 
 .subtitle {
@@ -125,4 +126,108 @@
   gap: 0px;
   border: 1px;
   border: 1px solid #0000001a;
+}
+
+.browse {
+  width: 1239px;
+  height: 866px;
+  border-radius: 40px;
+  background: #f0f0f0;
+}
+
+.casual {
+  width: 407px;
+  height: 289px;
+  border-radius: 20px;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+.casual_img {
+  position: absolute;
+  transform: scaleX(-1);
+  width: 973px;
+  height: 649px;
+  top: 0;
+  right: -200px;
+  top: -150px;
+}
+.formal {
+  width: 684px;
+  height: 289px;
+  border-radius: 20px;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+.formal_img {
+  position: absolute;
+  width: 1306px;
+  height: 870px;
+  top: -146px;
+}
+.browse_text {
+  font-family: "Satoshi", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48.6px;
+  text-align: left;
+  color: #000;
+  position: absolute;
+  top: 25px;
+  left: 36px;
+  z-index: 1;
+}
+.browse_row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 0px;
+}
+.browse_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.party {
+  position: relative;
+  overflow: hidden;
+  width: 684px;
+  height: 289px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+.gym {
+  position: relative;
+  overflow: hidden;
+  width: 407px;
+  height: 289px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+.party_img {
+  position: absolute;
+  width: 770px;
+  height: 616px;
+  top: -163px;
+  left: 42px;
+}
+
+.gym_img {
+  position: absolute;
+  width: 452px;
+  height: 677px;
+  top: -148px;
+  left: 53px;
+}
+
+.comment_title {
+  margin-top: 72px;
+  margin-bottom: 55px;
+  font-family: "Integral CF Bold";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  color: #000;
 }
