@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Shop.co - E-ticaret Projesi
 
-## Getting Started
+Shop.co'ya hoş geldiniz, bir online alışveriş deneyimi sunmak için tasarlanmış yenilikçi bir e-ticaret platformudur. Bu doküman, Shop.co projesini anlamak, kurmak ve katkıda bulunmak için kapsamlı bir rehber niteliğindedir.
 
-First, run the development server:
+## Kurulum
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Test Hesapları:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- abdullah@gmail.com 123456
+- bilal@gmail.com 123456
+- zumre@gmail.com 123456
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Canlı projeye erişmek için:
+https://turkcell-final-shopco.vercel.app/en
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Canlıdaki db.json dosyasını incelemek için: https://vercel-json-deneme.vercel.app/
 
-## Learn More
+Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Gerekli Bağımlılıkları Yükleyin:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **json-server'ı çalıştırın**
+   Bu komut 3001 portunda çalışır. json-server'ın tüm özelliklerine erişebilmek için beta sürümü yerine stable versiyonu kullanılmıştır.(json-server@0.17.4). Proje bağımlılıklarında bu sürüm vardır.
 
-## Deploy on Vercel
+   ```bash
+   npm run json-server
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Uygulamayı Başlatın:**
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Özellikler
+
+- **Kullanıcı Yönetimi:** Kullanıcı kayıt ve girişi için firebase kullanıldı.
+- **Ürün Kataloğu:** Kategorilere ayrılmış geniş ürün yelpazesi.
+- **Sepet:** Kullanıcı dostu sepet yönetimi.
+- **Yorum ve Değerlendirme:** Ürünler hakkında kullanıcı yorumları ve puanlama sistemi.
+- **Responsive Tasarım:** Mobil ve masaüstü cihazlar için optimize edilmiş kullanıcı arayüzü.
+
+## Kullanım
+
+Projeyi yerel ortamda çalıştırdıktan sonra, tarayıcınızda `http://localhost:3000` adresine giderek uygulamayı kullanmaya başlayabilirsiniz.
+
+## Katkıda Bulunma
+
+Projeye katkıda bulunmak isterseniz, lütfen aşağıdaki adımları izleyin:
+
+1. **Bir Fork Oluşturun:**
+   Depoyu kendi GitHub hesabınıza fork'layın.
+
+2. **Yeni Bir Dal Oluşturun:**
+
+   ```bash
+   git checkout -b yeni-özellik
+   ```
+
+3. **Değişikliklerinizi Yapın:**
+   Kodunuzu geliştirin ve test edin.
+
+4. **Commit ve Push Yapın:**
+
+   ```bash
+   git commit -m "Yeni özellik eklendi"
+   git push origin yeni-özellik
+   ```
+
+5. **Pull Request Oluşturun:**
+   GitHub'da orijinal depo için bir pull request oluşturun.

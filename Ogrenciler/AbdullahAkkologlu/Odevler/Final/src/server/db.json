@@ -82,6 +82,13 @@
       "newArrivals": true,
       "comments": [
         {
+          "id": "d73ae33a-ae18-4cdd-abf9-fcd73e4689dd",
+          "rating": 4,
+          "name": "Abdullah",
+          "testimonial": "Muhteşem bir gömlek",
+          "date": "2024-07-12T12:40:18.022Z"
+        },
+        {
           "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
           "rating": 3,
           "name": "Emma",

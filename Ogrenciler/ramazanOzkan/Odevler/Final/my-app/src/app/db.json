@@ -1,0 +1,211 @@
+{
+  "carts": [],
+  "products": [
+    {
+      "id": "1",
+      "name": "T-SHIRT WITH TAPE DETAILS",
+      "colors": ["black"],
+      "sizes": ["S", "L"],
+      "category": "tshirt",
+      "price": 120,
+      "priceOld": "",
+      "rate": 4.5,
+      "type": "casual",
+      "img": "/img/product/1.png",
+      "description": "description"
+    },
+    {
+      "id": "2",
+      "name": "SKINNY FIT JEANS",
+      "colors": ["blue"],
+      "sizes": ["S", "M", "L"],
+      "category": "jeans",
+      "price": 240,
+      "priceOld": 260,
+      "rate": 3.5,
+      "type": "casual",
+      "img": "/img/product/2.png",
+      "description": "description"
+    },
+    {
+      "id": "3",
+      "name": "CHECKERED SHIRT",
+      "colors": ["red", "blue"],
+      "sizes": ["S", "L"],
+      "category": "shirt",
+      "price": 180,
+      "priceOld": "",
+      "rate": 4.5,
+      "type": "casual",
+      "img": "/img/product/3.png",
+      "description": "description"
+    },
+    {
+      "id": "4",
+      "name": "SLEEVE STRIPED T-SHIRT",
+      "colors": ["orange"],
+      "sizes": ["S"],
+      "category": "tshirt",
+      "price": 130,
+      "priceOld": 160,
+      "rate": 4.5,
+      "type": "casual",
+      "img": "/img/product/4.png",
+      "description": "description"
+    },
+    {
+      "id": "5",
+      "name": "VERTICAL STRIPED SHIRT",
+      "colors": ["green"],
+      "sizes": ["S", "L", "M"],
+      "category": "shirt",
+      "price": 212,
+      "priceOld": 232,
+      "rate": 5,
+      "type": "casual",
+      "img": "/img/product/5.png",
+      "description": "description"
+    },
+    {
+      "id": "6",
+      "name": "COURAGE GRAPHIC T-SHIRT",
+      "colors": ["orange"],
+      "sizes": ["L", "M"],
+      "category": "shirt",
+      "price": 145,
+      "priceOld": "",
+      "rate": 4,
+      "type": "casual",
+      "img": "/img/product/6.png",
+      "description": "description"
+    },
+    {
+      "id": "7",
+      "name": "LOOSE FIT BERMUDA SHORTS",
+      "colors": ["blue"],
+      "sizes": ["L", "M", "S"],
+      "category": "shorts",
+      "price": 80,
+      "priceOld": "",
+      "rate": 3,
+      "type": "party",
+      "img": "/img/product/7.png",
+      "description": "description"
+    },
+    {
+      "id": "8",
+      "name": "FADED SKINNY JEANS",
+      "colors": ["black"],
+      "sizes": ["L", "M", "S"],
+      "category": "jeans",
+      "price": 210,
+      "priceOld": "",
+      "rate": 5,
+      "type": "casual",
+      "img": "/img/product/8.png",
+      "description": "description"
+    },
+    {
+      "id": "9",
+      "name": "Polo with Contrast Trims",
+      "colors": ["blue"],
+      "sizes": ["L", "M", "S"],
+      "category": "tshirt",
+      "price": 212,
+      "priceOld": 242,
+      "rate": 4,
+      "type": "casual",
+      "img": "/img/product/9.png",
+      "description": "description"
+    },
+    {
+      "id": "10",
+      "name": "Gradient Graphic T-shirt",
+      "colors": ["white"],
+      "sizes": ["L", "M", "S"],
+      "category": "tshirt",
+      "price": 145,
+      "priceOld": "",
+      "rate": 3.5,
+      "type": "casual",
+      "img": "/img/product/10.png",
+      "description": "description"
+    },
+    {
+      "id": "11",
+      "name": "Polo with Tipping Details",
+      "colors": ["red"],
+      "sizes": ["L", "M", "S"],
+      "category": "tshirt",
+      "price": 180,
+      "priceOld": "",
+      "rate": 4.5,
+      "type": "casual",
+      "img": "/img/product/11.png",
+      "description": "description"
+    },
+    {
+      "id": "12",
+      "name": "Black Striped T-shirt",
+      "colors": ["white"],
+      "sizes": ["L", "S"],
+      "category": "tshirt",
+      "price": 120,
+      "priceOld": 150,
+      "rate": 5,
+      "type": "casual",
+      "img": "/img/product/12.png",
+      "description": "description"
+    },
+    {
+      "id": "13",
+      "name": "One Life Graphic T-shirt",
+      "colors": ["white"],
+      "sizes": ["L", "S"],
+      "category": "tshirt",
+      "price": 260,
+      "priceOld": 300,
+      "rate": 4.5,
+      "type": "casual",
+      "img": "/img/product/12.png",
+      "description": "description"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "content": "I'm blown away by the quality and style of the clothes I received from ShopCo. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations",
+      "user": "Sarah M.",
+      "productId": 1,
+      "rating": 4
+    },
+    {
+      "id": "2",
+      "content": "I'm blown away by the quality and style of the clothes I received from ShopCo. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations",
+      "user": "Sarah M.",
+      "productId": 1,
+      "rating": 3
+    },
+    {
+      "id": "3",
+      "content": "I'm blown away by the quality and style of the clothes I received from ShopCo. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations",
+      "user": "Sarah M.",
+      "productId": 1,
+      "rating": 1
+    },
+    {
+      "id": "4",
+      "content": "I'm blown away by the quality and style of the clothes I received from ShopCo. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations",
+      "user": "Sarah M.",
+      "productId": 2,
+      "rating": 2
+    },
+    {
+      "id": "5",
+      "content": "I'm blown away by the quality and style of the clothes I received from ShopCo. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations",
+      "user": "Sarah M.",
+      "productId": 3,
+      "rating": 4
+    }
+  ]
+}

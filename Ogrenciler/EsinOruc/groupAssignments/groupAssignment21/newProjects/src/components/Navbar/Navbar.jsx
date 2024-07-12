@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <>
       <NavbarContainer>
-        <Brand href="#">CIZ NEWS</Brand>
+        <Brand href="#">YEU NEWS</Brand>
         <p>{getCurrentDate()}</p>
         <Nav>
           <NavItem to="/">Home</NavItem>

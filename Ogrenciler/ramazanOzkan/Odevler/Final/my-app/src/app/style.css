@@ -1,0 +1,57 @@
+.custom-container {
+  margin: 0 auto;
+}
+.bg-black {
+  background-color: #000;
+}
+.footer-bg {
+  background-color: #f0f0f0;
+}
+/* FIND CLOTHES THAT MATCHES YOUR STYLE 
+
+position: absolute;
+width: 577px;
+height: 173px;
+left: 100px;
+top: 237px;
+
+font-family: 'Integral CF';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 64px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #000000;
+/* Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style. 
+
+position: absolute;
+width: 545px;
+height: 33px;
+left: 100px;
+top: 442px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+/* or 138% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+
+leading-trim: both;
+text-edge: cap;
+
+color: rgba(0, 0, 0, 0.6);
+*/
+/* Frame 32 */
+
+/* Frame 32 */
+/* Frame 32 */
+/* Casual */
+/* HELP MENU */

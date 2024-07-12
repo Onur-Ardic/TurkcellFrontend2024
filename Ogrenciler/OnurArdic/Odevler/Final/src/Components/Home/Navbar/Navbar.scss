@@ -1,0 +1,133 @@
+@import '../Home.scss';
+
+.navbar {
+  @include typography('Satoshi', 14px, normal);
+
+  .navbar-top {
+    @include colors(#fff, #000);
+    @include padding(10px 0);
+    text-align: center;
+  }
+
+  .navbar-wrapper {
+    @include flexible(flex, space-between, center);
+    @include padding(10px 0);
+    position: relative;
+
+    .logo {
+      @include typography('Integral CF Regular', 32px, 700, uppercase, 1px);
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .navbar-links {
+      @include typography('Satoshi', 16px, 400);
+      @include flexible(flex, space-between, center);
+      gap: 24px;
+
+      @media (max-width: 768px) {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        padding: 10px 20px;
+
+        &.open {
+          display: flex;
+        }
+
+        a {
+          padding: 10px 0;
+          border-bottom: 1px solid #ddd;
+          color: #333;
+        }
+      }
+    }
+
+    .navbar-search {
+      position: relative;
+      input {
+        padding: 10px 30px;
+        width: 450px;
+        background-color: #f0f0f0;
+        border: none;
+        border-radius: 30px;
+        outline: none;
+      }
+
+      i {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        font-size: 17px;
+      }
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .buttons-wrapper {
+      @include flexible(flex, center);
+      gap: 14px;
+      i {
+        font-size: 24px;
+      }
+
+      select {
+        @include padding(2px 15px);
+        background-color: #f0f0f0;
+        border: none;
+        border: 1px solid #000;
+        border-radius: 4px;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+
+    .user-buttons {
+      @include flexible(flex, center);
+      font-size: 24px;
+      a {
+        margin-left: 10px;
+      }
+
+      .search {
+        background-color: transparent;
+        border: none;
+        font-size: 22px;
+
+        @media (min-width: 900px) {
+          display: none;
+        }
+      }
+    }
+
+    .cart-btn {
+      position: relative;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      i {
+        font-size: 24px;
+      }
+    }
+
+    .logout-btn {
+      @extend .cart-btn;
+      margin-top: 2px;
+    }
+  }
+}
