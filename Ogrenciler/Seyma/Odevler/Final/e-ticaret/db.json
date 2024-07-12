@@ -556,22 +556,7 @@
       "rating": 4.5,
       "comment": "Great t-shirt with an inspiring message. Fits well and is comfortable.",
       "date": "December 11, 2022"
-    },
-    {
-      "id": "dbbb",
-      "name": "",
-      "surname": "",
-      "rating": "",
-      "comment": "",
-      "productId": "4"
-    },
-    {
-      "id": "5b1e",
-      "name": "",
-      "surname": "",
-      "rating": "",
-      "comment": "",
-      "productId": "4"
     }
+
   ]
 }

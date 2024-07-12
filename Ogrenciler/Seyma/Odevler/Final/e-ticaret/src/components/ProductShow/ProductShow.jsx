@@ -95,7 +95,6 @@ import '../../app/categories/Categories.sass'
                                 </div>
                             </div>
                         </div>
-
                     </Link>
                 ))}
             </div>

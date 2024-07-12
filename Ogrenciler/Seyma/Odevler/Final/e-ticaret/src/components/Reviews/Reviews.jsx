@@ -31,9 +31,9 @@ const Reviews = async ({ productId }) => {
             </div>
             <button typeof="button" className="btn writeReviewBtn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">{i18next.t('leavereview')}</button>
           </div>
-          <div className="mt-3 d-flex flex-wrap justify-content-around" >
+          <div className="mt-3 d-flex flex-wrap gap-5" >
             {reviews.map((review, index) => (
-              <div className="col-5 border p-2 rounded" key={index}>
+              <div className="reviewBox border p-2 rounded" key={index}>
                 <div className="text-warning">
                   <small>
                     <i className="bi bi-star-fill"></i>
@@ -42,7 +42,7 @@ const Reviews = async ({ productId }) => {
                     <i className="bi bi-star-fill"></i>
                     <i className="bi bi-star-half"></i>
                   </small>
-                  <span className="text-muted small">4.5</span>
+                  <span className="rvwRAnge small">4.5</span>
                 </div>
                 <h4>{review.name}</h4>
                 <p>{review.comment}</p>
