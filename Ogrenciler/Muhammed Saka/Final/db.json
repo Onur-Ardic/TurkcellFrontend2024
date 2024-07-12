@@ -1,0 +1,76 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Blue men shirt",
+            "stars": 4.5,
+            "price": 420,
+            "newPrice": 360,
+            "discount": 20
+        },
+        {
+            "id": 2,
+            "name": "Red men shirt",
+            "stars": 4.5,
+            "price": 500,
+            "newPrice": 0,
+            "discount": 20
+        },
+        {
+            "id": 3,
+            "name": "Midnight blue men shirt",
+            "stars": 5,
+            "price": 300,
+            "newPrice": 0,
+            "discount": 0
+        },
+        {
+            "id": 4,
+            "name": "White men shirt",
+            "stars": 4.5,
+            "price": 430,
+            "newPrice": 300,
+            "discount": 30
+        },
+        {
+            "id": 5,
+            "name": "Light men shirt",
+            "stars": 3,
+            "price": 345,
+            "newPrice": 0,
+            "discount": 0
+        },
+        {
+            "id": 6,
+            "name": "Men shirt",
+            "stars": 4.5,
+            "price": 400,
+            "newPrice": 0,
+            "discount": 0
+        },
+        {
+            "id": 7,
+            "name": "Red men shirt",
+            "stars": 4.5,
+            "price": 420,
+            "newPrice": 0,
+            "discount": 0
+        },
+        {
+            "id": 8,
+            "name": "Midnight blue men shirt",
+            "stars": 5,
+            "price": 329,
+            "newPrice": 0,
+            "discount": 0
+        },
+        {
+            "id": 9,
+            "name": "White men shirt",
+            "stars": 3,
+            "price": 360,
+            "newPrice": 150,
+            "discount": 20
+        }
+    ]
+}

@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 const nextConfig = {};
 
 export default nextConfig;
