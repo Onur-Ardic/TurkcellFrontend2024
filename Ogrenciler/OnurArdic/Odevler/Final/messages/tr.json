@@ -1,0 +1,106 @@
+{
+  "Navbar": {
+    "NavbarTopTitle": "Kayıt ol ve %20 indirim fırsatını kaçırma!",
+    "NavbarLogo": "SHOP.CO",
+    "LinkShop": "Alışveriş",
+    "LinkOnSale": "İndirimdekiler",
+    "LinkArrivals": "Yeni Gelenler",
+    "Brands": "Markalar",
+    "Search": "Ürünleri Ara...",
+    "Login": "Giriş",
+    "Sign": "Kayıt Ol",
+    "CartText": "Sepetim",
+    "GoCart": "Sepete Git",
+    "Clear": "Sepeti Temizle"
+  },
+
+  "Hero": {
+    "HeroBigTitle": "TARZINA UYGUN KIYAFETİ BUL",
+    "HeroSmallTitle": "Bireyselliğinizi ortaya çıkarmak ve stil anlayışınıza hitap etmek için tasarlanmış, titizlikle hazırlanmış çeşitli giysi yelpazemize göz atın.",
+    "HeroButton": "Alışverişe Başla",
+    "HeroCountBrands": "200+",
+    "HeroBrandsText": "Uluslararası Marka",
+    "HeroCountProducts": "2.000+",
+    "HeroProductsText": "Yüksek Kalite Ürün",
+    "HeroCountCustomers": "30.000+",
+    "HeroCustomersText": "Mutlu Müşteri"
+  },
+
+  "HomePageText": {
+    "ArrivalsTitle": "YENİ ÇIKANLAR",
+    "TopSellingTitle": "ÇOK SATANLAR",
+    "DressStyleTitle": "KIYAFET STİLİNİZE GÖRE GÖZ ATIN",
+    "Casual": "Gündelik",
+    "Formal": "Resmi",
+    "Party": "Parti",
+    "Gym": "Spor",
+    "HappyCustomersText": "Mutlu Müşterilerimiz"
+  },
+
+  "Footer": {
+    "FooterTopTitle": "SON TEKLİFLERİMİZ HAKKINDA GÜNCEL KALIN",
+    "FooterInput": "Email adresinizi giriniz",
+    "FooterButton": "Haberler için kayıt ol",
+    "FooterLogo": "SHOP.CO",
+    "FooterAbout": "Kadınlar ve erkekler için tarzınıza uygun giymekten gurur duyacağınız kıyafetler satıyoruz.",
+
+    "FooterLinksTitleCompany": "Şirketimiz",
+    "FooterLinksTitleAbout": "Hakkımızda",
+    "FooterLinksFeatures": "Özelliklerimiz",
+    "FooterLinksWorks": "İşlerimiz",
+    "FooterLinksCareer": "Kariyer",
+
+    "FooterLinksTitleHelp": "Yardım",
+    "FooterLinksCustomer": "Müşteri Desteği",
+    "FooterLinksDelivery": "Teslimat Detayları",
+    "FooterLinksTerm": "Şartlar ve Koşullar",
+    "FooterLinksPrivacy": "Gizlilik Politikası",
+
+    "FooterLinksTitleTerms": "Sıkça SS.",
+    "FooterLinksAccount": "Hesap",
+    "FooterLinksShipping": "Teslimatları Yönet",
+    "FooterLinksReturns": "Siparişler",
+    "FooterLinksContact": "Ödeme",
+
+    "FooterLinksResoruces": "Kaynaklar",
+    "FooterLinksBooks": "Ücretsiz e-kitaplar",
+    "FooterLinksDevelopment": "Geliştirme Eğitimi",
+    "FooterLinksBlog": "Nasıl - Blog",
+    "FooterLinksYoutube": "Youtube Playlist"
+  },
+
+  "DetailPage": {
+    "AlsoLikeText": "Bunları da beğenebilirsin",
+    "AddToCart": "Sepete Ekle",
+    "WriteReview": "Yorum Yap",
+    "Oldest": "Eskiden Yeniye",
+    "New": "Yeniden Eskiye",
+    "SelecetColor": "Renk",
+    "SelectSize": "Beden",
+    "Details": "Ürün Bilgileri",
+    "Reviews": "Yorumlar",
+    "FAQ": "Sıkça SS",
+    "Close": "Kapat"
+  },
+
+  "CartPage": {
+    "CartTitle": "Sepetim",
+    "CartEmpty": "Sepetinizde ürün bulunmamaktadır.",
+    "CartTotal": "Toplam",
+    "Discount": "İndirim",
+    "Total": "Toplam",
+    "Size": "Beden",
+    "Color": "Renk",
+    "Price": "Fiyat",
+    "Summary": "Sipariş Özeti"
+  },
+
+  "Shop": {
+    "filter": "Ürünleri Filtrele",
+    "price": "Fiyat Aralığı",
+    "color": "Renkler",
+    "size": "Beden",
+    "style": "Kıyafet Tarzı",
+    "filterBtn": "Filtrele"
+  }
+}
