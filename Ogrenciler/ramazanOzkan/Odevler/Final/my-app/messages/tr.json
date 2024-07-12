@@ -1,0 +1,96 @@
+{
+  "Index": {
+    "title": "Merhaba dünya!"
+  },
+  "Header": {
+    "nav1": "Mağaza",
+    "nav2": "İndirimde",
+    "nav3": "Yeni Gelenler",
+    "nav4": "Kategori",
+    "placeholder": "Ürün arayın..."
+  },
+  "Section1": {
+    "title1": "STİLİNİZE UYGUN KIYAFETLER BULUN",
+    "title2": "Kişiliğinizi ortaya çıkarmak ve tarzınıza hitap etmek için tasarlanmış, titizlikle hazırlanmış çeşitli kıyafetlerimizi inceleyin.",
+    "bannerText1": "Şimdi Alışveriş Yapın",
+    "bannerText2": "Uluslararası Markalar",
+    "bannerText3": "Yüksek Kaliteli Ürünler",
+    "bannerText4": "Mutlu Müşteriler"
+  },
+  "Section3": {
+    "title": "ELBİSE STİLİNE GÖRE GÖZ AT",
+    "subt1": "Günlük",
+    "subt2": "Resmi",
+    "subt3": "Parti",
+    "subt4": "Spor"
+  },
+  "Section4": {
+    "title": "Mutlu Müşterilerimiz",
+    "commnets": "Yorumlar"
+  },
+  "Section5": {
+    "title": "EN SON TEKLİFLERİMİZDEN HABERDAR OLUN",
+    "placeholder": "E-posta Adresi Girin..",
+    "button": "Abone Ol"
+  },
+  "Footer": {
+    "descText": "Tarzınıza uygun ve gururla giyeceğiniz kıyafetlerimiz var. Kadınlardan erkeklere.",
+    "subTitle1": "ŞİRKET",
+    "subTitle2": "YARDIM",
+    "subTitle3": "SSS",
+    "subTitle4": "KAYNAKLAR",
+    "about": "Hakkında",
+    "features": "Özellikler",
+    "works": "Çalışmalar",
+    "career": "Kariyer",
+    "customerSupport": "Müşteri Desteği",
+    "deliveryDetails": "Teslimat Detayları",
+    "termsConditions": "Şartlar ve Koşullar",
+    "privacyPolicy": "Gizlilik Politikası",
+    "account": "Hesap",
+    "manageDeliveries": "Teslimatları Yönet",
+    "orders": "Siparişler",
+    "payments": "Ödemeler",
+    "freeEbooks": "Ücretsiz e-Kitaplar",
+    "developmentTutorial": "Geliştirme Eğitimi",
+    "howToBlog": "Blog Nasıl Yapılır",
+    "youtubePlaylist": "YouTube Oynatma Listesi"
+  },
+  "Filter": {
+    "title": "Filtreler",
+    "price": "Fiyat",
+    "colors": "Renkler",
+    "size": "Beden",
+    "dreStyle": "Elbise Stili",
+    "button": "Filtreyi Uygula",
+    "casual": "Günlük",
+    "formal": "Resmi",
+    "party": "Parti",
+    "gym": "Spor"
+  },
+  "ProductArea": {
+    "title": "YENİ GELENLER",
+    "button": "Tümünü Gör"
+  },
+  "ProductDetail": {
+    "colorTit": "Renk Seç",
+    "sizeTit": "Beden Seç",
+    "buttonTit": "Sepete Ekle"
+  },
+  "TopBanner": {
+    "text": "Kaydolun ve ilk siparişinizde %20 indirim kazanın.",
+    "linktit": "Şimdi Kaydolun"
+  },
+  "ShopBasket": {
+    "size": "Beden",
+    "color": "Renk",
+    "Order Summary": "Sipariş Özeti",
+    "Subtotal": "Ara Toplam",
+    "Discount": "İndirim",
+    "Delivery Fee:": "Teslimat Ücreti",
+    "Total": "Toplam",
+    "Apply": "Uygula",
+    "Go to Checkout": "Ödeme Sayfasına Git",
+    "placeholder": "Promosyon Kodu Ekle"
+  }
+}
