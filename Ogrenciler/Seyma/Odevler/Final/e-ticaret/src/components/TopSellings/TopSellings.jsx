@@ -5,10 +5,13 @@ import "./topSellings.sass";
 import Link from "next/link";
 
 
-export default async function page() {
+export default async function page({count}) {
     const data = await getData()
-    const topSelling = data.filter(item => item.topSelling === true).slice(0, 4)
-
+    const topSelling = data.filter(item => item.topSelling === true).slice(0, count)
+    let displayViewAlll = 'block';
+    if(count> 4){
+displayViewAlll = 'none'
+    }
 
     return (
         <div className="container-xxl">
@@ -44,7 +47,11 @@ export default async function page() {
                     </div>))}
                 </div>
             <div className="d-flex justify-content-center">
-                <ViewBtn></ViewBtn>
+            <div style={{display: displayViewAlll}}> 
+            <Link href={'/topSellings/'}>
+                    <ViewBtn ></ViewBtn>
+                    </Link>
+                    </div>
             </div>
         </div>
     )

@@ -3,7 +3,7 @@ import NewArrivals from '../../components/NewArrivals/NewArrivals';
 const page = () => {
   return (
     <div>
-        <NewArrivals></NewArrivals>
+        <NewArrivals count={100}></NewArrivals>
     </div>
   )
 }

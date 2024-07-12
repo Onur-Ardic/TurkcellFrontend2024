@@ -28,7 +28,7 @@ const page = async ({ params }) => {
                     <img src={data.image} alt="" className="w-100" />
                     </div>
                   </div>
-                  <div className="col-lg-8 biggerImg">
+                  <div className="col-lg-8 col-10 biggerImg">
                    <img src={data.image} alt="" className="w-100" />
                   </div>
                 </div>

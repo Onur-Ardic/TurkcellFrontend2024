@@ -84,8 +84,8 @@ export default function Home() {
       </div>
       </section>
       <section className='mainCnt'>
-      <NewArrivals></NewArrivals>
-      <TopSellings></TopSellings>
+      <NewArrivals count={4}></NewArrivals>
+      <TopSellings count={4}></TopSellings>
       <Banner></Banner>
       </section>
     </main>

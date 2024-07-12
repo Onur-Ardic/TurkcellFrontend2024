@@ -558,7 +558,7 @@
       "date": "December 11, 2022"
     },
     {
-      "id": "26dd",
+      "id": "dbbb",
       "name": "",
       "surname": "",
       "rating": "",
@@ -566,50 +566,12 @@
       "productId": "4"
     },
     {
-      "id": "dc10",
+      "id": "5b1e",
       "name": "",
       "surname": "",
       "rating": "",
       "comment": "",
-      "productId": "2"
-    },
-    {
-      "id": "74dd",
-      "name": "",
-      "surname": "",
-      "rating": "",
-      "comment": "",
-      "productId": "2"
-    },
-    {
-      "id": "5846",
-      "name": "",
-      "surname": "",
-      "rating": "",
-      "comment": ""
-    },
-    {
-      "id": "e2c3",
-      "name": "",
-      "surname": "",
-      "rating": "",
-      "comment": ""
-    },
-    {
-      "id": "cc61",
-      "name": "",
-      "surname": "",
-      "rating": "",
-      "comment": "",
-      "productId": "2"
-    },
-    {
-      "id": "e91f",
-      "name": "",
-      "surname": "",
-      "rating": "",
-      "comment": "",
-      "productId": "2"
+      "productId": "4"
     }
   ]
 }
