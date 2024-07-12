@@ -46,3 +46,9 @@
 # react toastify
 
     * npm install react-toastify
+
+# Tasarım Linki
+
+https://www.figma.com/design/wODGuTGGQEmiEuiOIyXtIX/E-commerce-Website-Template-(Freebie)-(Community)?node-id=39-1402&t=xHQ9YtG90qzXa6tm-0
+
+Sepete ürün ekleme, sepetten ürün silme ve yorum yapma işlemleri, kullanıcının giriş yapmış olmasına göre kodlanmıştır. Responsive tasarıma uygun kodlanmıştır.
