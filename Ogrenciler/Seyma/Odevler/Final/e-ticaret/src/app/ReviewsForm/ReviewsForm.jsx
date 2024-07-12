@@ -74,7 +74,7 @@ export const ReviewsForm = ({ productId }) => {
               </div>
               <div className="modal-footer">
                 <button typeof="button" className="btn btn-secondary" data-bs-dismiss="modal">{i18next.t('close')}</button>
-                <button typeof="submit" className="btn">{i18next.t('applyreview')}</button>
+                <button typeof="submit" className="btn btn-primary">{i18next.t('applyreview')}</button>
               </div>
             </form>
           </div>
