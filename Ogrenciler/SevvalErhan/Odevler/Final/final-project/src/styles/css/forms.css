@@ -1,0 +1,102 @@
+.main-container {
+  width: 35%;
+  display: flex;
+  padding: 60px;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: transparent;
+  flex-direction: column;
+}
+
+.login-container,
+.register-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.login-container .form-section h2,
+.register-container .form-section h2 {
+  margin-bottom: 20px;
+}
+.login-container .form-section form,
+.register-container .form-section form {
+  display: flex;
+  flex-direction: column;
+}
+.login-container .form-section form .input-field,
+.register-container .form-section form .input-field {
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+.login-container .form-section form .remember-me,
+.register-container .form-section form .remember-me {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.login-container .form-section form .login-button,
+.login-container .form-section form .register-button,
+.register-container .form-section form .login-button,
+.register-container .form-section form .register-button {
+  margin-top: 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.login-container .form-section form .error,
+.register-container .form-section form .error {
+  color: red;
+  margin-top: 10px;
+}
+.login-container .form-section form .success,
+.register-container .form-section form .success {
+  color: green;
+  margin-top: 10px;
+}
+.login-container .form-section form .links,
+.register-container .form-section form .links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.login-container .image-section,
+.register-container .image-section {
+  position: relative;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-container .image-section .image,
+.register-container .image-section .image {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .image-section {
+    display: none;
+  }
+  .form-section {
+    width: 100%;
+  }
+  .login-container,
+  .register-container {
+    flex-direction: column;
+  }
+  .main-container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=forms.css.map */
