@@ -1,0 +1,9 @@
+@media screen and (max-width: 767px) {
+  .transition-transform.flex-column {
+    flex-direction: column;
+  }
+}
+
+.comment-container:not(:last-child) {
+  margin-right: 1rem;
+}
