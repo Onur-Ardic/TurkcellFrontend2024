@@ -3,6 +3,7 @@ import Filters from '@/components/products/filters'
 import React from 'react'
 
 function Shop() {
+
   return (
     <div className='container'>
         <div className='row'>
@@ -16,5 +17,7 @@ function Shop() {
     </div>
   )
 }
+
+
 
 export default Shop

@@ -16,8 +16,8 @@ function FilterProduct() {
   return (
     <div className="product-list row">
       {products.map((product) => (
-        <div className='col-lg-4'>
-            <ProductCard product={product} />
+        <div key={product.id} className="col-lg-4">
+          <ProductCard product={product} />
         </div>
       ))}
     </div>

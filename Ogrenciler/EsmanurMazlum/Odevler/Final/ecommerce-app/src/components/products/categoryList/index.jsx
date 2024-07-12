@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCategory } from '@/stores/products-store';
 
-const categories = ["T-shirts", "Shorts", "Shirts", "Hoodie", "Jeans"];
+const categories = ["T-shirts", "Shorts", "Shirts", "Jeans"];
 
 const CategoryList = () => {
   const dispatch = useDispatch();
@@ -14,17 +14,17 @@ const CategoryList = () => {
 
   return (
     <div className="category-list">
-      <ul>
+      <div className="list-group">
         {categories.map((category) => (
-          <li 
+          <button 
             key={category} 
             onClick={() => handleCategoryClick(category)} 
-            className={selectedCategory === category ? 'selected' : ''}
+            className={`list-group-item list-group-item-action ${selectedCategory === category ? 'selected' : ''}`}
           >
             {category}
-          </li>
+          </button>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

@@ -34,19 +34,17 @@ function Filters() {
     dispatch(setSizes([size]));
   };
 
-
-
   return (
     <div className="filters">
-      <div className='d-flex justify-content-between align-items-center'>
-        <p className='fs-20 fw-bold m-0'>Filters</p>
-        <img src='/icons/filter-icon.svg' />
+      <div className="d-flex justify-content-between align-items-center">
+        <p className="fs-20 fw-bold m-0">Filters</p>
+        <img src="/icons/filter-icon.svg" />
       </div>
-      <hr/>
+      <hr />
       <CategoryList />
-      <hr/>
+      <hr />
       <div>
-        <p className='fs-20 fw-bold m-0'>Price</p>
+        <p className="fs-20 fw-bold m-0">Price</p>
         <Range
           step={5}
           min={minPrice}
@@ -60,7 +58,7 @@ function Filters() {
                 ...props.style,
                 height: '6px',
                 background: '#ccc',
-                marginTop: '15px'
+                marginTop: '15px',
               }}
             >
               {children}
@@ -75,7 +73,7 @@ function Filters() {
                 width: '20px',
                 backgroundColor: '#000',
                 borderRadius: '50%',
-                outline: 'none'
+                outline: 'none',
               }}
             />
           )}
@@ -96,14 +94,14 @@ function Filters() {
         onSelectSize={handleSizeSelect}
       />
       <div>
-        <p className='fs-20 fw-bold m-0'>Sort</p>
+        <p className="fs-20 fw-bold m-0">Sort</p>
         <select onChange={handleSortChange} value={filters.sort}>
           <option value="Most Popular">Most Popular</option>
           <option value="Price: Low to High">Price: Low to High</option>
           <option value="Price: High to Low">Price: High to Low</option>
         </select>
       </div>
-      <button className='shop-now-btn w-100 p-2 mt-3' onClick={() => dispatch(setSort('Most Popular'))}>Apply Filter</button>
+      <button className="shop-now-btn w-100 p-2 mt-3" onClick={() => dispatch(setSort('Most Popular'))}>Apply Filter</button>
     </div>
   );
 }
