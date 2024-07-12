@@ -1,0 +1,200 @@
+.shopco,
+.weHaveClothes {
+  position: relative;
+}
+.weHaveClothes {
+  width: 248px;
+  font-size: var(--font-size-sm);
+  line-height: 22px;
+  font-family: var(--font-satoshi);
+  color: var(--color-gray-300);
+  display: inline-block;
+}
+.shopcoParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xl);
+}
+.icon,
+.icon1,
+.icon2,
+.icon3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+}
+.icon1,
+.icon2,
+.icon3 {
+  left: 40px;
+}
+.icon2,
+.icon3 {
+  left: 80px;
+}
+.icon3 {
+  left: 120px;
+}
+.social {
+  width: 148px;
+  position: relative;
+  height: 28px;
+}
+.frameGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-16xl);
+  font-size: var(--font-size-14xl-5);
+  font-family: var(--font-integral-cf);
+}
+.helpMenu {
+  position: relative;
+  letter-spacing: 3px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.about {
+  white-space: pre-wrap;
+}
+.about,
+.blankLine {
+  margin: 0;
+}
+.features {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.blankLine1 {
+  margin: 0;
+}
+.works {
+  white-space: pre-wrap;
+}
+.blankLine2,
+.career,
+.works {
+  margin: 0;
+}
+.career {
+  white-space: pre-wrap;
+}
+.aboutFeaturesWorksContainer {
+  position: relative;
+  line-height: 19px;
+  color: var(--color-gray-300);
+}
+.helpMenuParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xl);
+}
+.helpMenu1 {
+  position: relative;
+  letter-spacing: 3px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.blankLine3,
+.blankLine4,
+.blankLine5,
+.customerSupport,
+.deliveryDetails,
+.privacyPolicy,
+.termsConditions {
+  margin: 0;
+}
+.aboutFeaturesWorksContainer1 {
+  position: relative;
+  line-height: 19px;
+  color: var(--color-gray-300);
+}
+.helpMenuGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xl);
+}
+.helpMenu2 {
+  position: relative;
+  letter-spacing: 3px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.account,
+.blankLine6,
+.blankLine7,
+.blankLine8,
+.manageDeliveries,
+.orders,
+.payments {
+  margin: 0;
+}
+.aboutFeaturesWorksContainer2 {
+  width: 149px;
+  position: relative;
+  line-height: 19px;
+  color: var(--color-gray-300);
+  display: inline-block;
+}
+.helpMenuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xl);
+}
+.helpMenu3 {
+  position: relative;
+  letter-spacing: 3px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.blankLine10,
+.blankLine11,
+.blankLine9,
+.developmentTutorial,
+.freeEbooks,
+.howTo,
+.youtubePlaylist {
+  margin: 0;
+}
+.aboutFeaturesWorksContainer3 {
+  position: relative;
+  line-height: 19px;
+  color: var(--color-gray-300);
+}
+.frameDiv,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+}
+.frameDiv {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-7xl);
+}
+.frameParent {
+  position: absolute;
+  top: 2707px;
+  left: 100px;
+  width: 1240px;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-satoshi);
+}

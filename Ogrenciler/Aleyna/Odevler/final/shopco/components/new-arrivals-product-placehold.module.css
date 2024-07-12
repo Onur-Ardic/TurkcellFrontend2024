@@ -1,0 +1,124 @@
+.newArrivalsProductPlaceholdChild {
+  width: 295px;
+  height: 298px;
+  position: relative;
+  border-radius: var(--br-xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  cursor: pointer;
+}
+.leeve,
+.shirt,
+.triped {
+  text-transform: lowercase;
+}
+.sleeveStripedTShirtContainer {
+  position: relative;
+}
+.frameChild,
+.frameInner,
+.frameItem,
+.starIcon {
+  height: 18.5px;
+  width: 18.5px;
+  position: relative;
+  min-height: 19px;
+}
+.frameChild1 {
+  height: 16.7px;
+  width: 8.8px;
+  position: relative;
+}
+.starParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs-3);
+}
+.span {
+  color: var(--color-gray-300);
+}
+.div {
+  position: relative;
+  display: inline-block;
+  min-width: 33px;
+}
+.frameParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-smi);
+  font-size: var(--font-size-sm);
+}
+.b {
+  min-width: 55px;
+  white-space: nowrap;
+}
+.b,
+.b1,
+.div1 {
+  position: relative;
+  display: inline-block;
+}
+.b1 {
+  text-decoration: line-through;
+  color: var(--color-gray-100);
+  min-width: 56px;
+  white-space: nowrap;
+}
+.div1 {
+  font-weight: 500;
+  min-width: 32px;
+}
+.wrapper {
+  border-radius: var(--br-43xl);
+  background-color: var(--color-tomato-200);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-7xs) var(--padding-smi);
+}
+.frameWrapper,
+.parent,
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameWrapper {
+  flex-direction: column;
+  padding: var(--padding-11xs) 0 0;
+  font-size: var(--font-size-xs);
+  color: var(--color-tomato-100);
+}
+.parent {
+  flex-direction: row;
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-5xl);
+}
+.newArrivalsProductPlacehold,
+.sleeveStripedTShirtParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.newArrivalsProductPlacehold {
+  gap: var(--gap-base);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-satoshi);
+}
+@media screen and (max-width: 450px) {
+  .sleeveStripedTShirtContainer {
+    font-size: var(--font-size-base);
+  }
+  .b,
+  .b1 {
+    font-size: var(--font-size-lgi);
+  }
+}
