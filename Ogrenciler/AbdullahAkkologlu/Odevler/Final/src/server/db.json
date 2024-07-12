@@ -7,7 +7,7 @@
       "rating": 4.5,
       "price": 50,
       "discountPercentage": 10,
-      "description": "A comfortable and stylish basic t-shirt.",
+      "description": "This classic crew neck t-shirt is a wardrobe essential. Made from soft, breathable cotton, it provides all-day comfort and versatile style.",
       "colors": "white,black,blue,red",
       "sizes": "XX-Small,X-Small,Large,X-Large",
       "numberOfSales": 100,
@@ -15,29 +15,10 @@
       "newArrivals": true,
       "comments": [
         {
-          "id": "e530cc4d-71a5-46b7-86c2-52037dd45864",
-          "rating": 4,
-          "testimonial": "müthis",
-          "date": "2024-07-10T20:47:12.211Z"
-        },
-        {
-          "id": "5073db7c-672a-42f0-839d-91ec16f08f7b",
-          "rating": 3,
-          "testimonial": "new review",
-          "date": "2024-07-08T18:51:46.673Z"
-        },
-        {
-          "id": "a304f758-8f77-41e3-86db-03971d2b2798",
-          "rating": 4,
-          "name": "Abdullah",
-          "testimonial": "yeni bir yorum",
-          "date": "2024-07-08T16:59:22.437Z"
-        },
-        {
           "id": "eef8d5c1-77db-492b-aadd-11a1c8c7f473",
           "rating": 4,
           "name": "Abdullah",
-          "testimonial": "new comment",
+          "testimonial": "The quality of the products from this store is outstanding! Every item I've purchased has been comfortable, stylish, and durable. I'm always impressed with the fit and the material.",
           "date": "2024-07-08T09:46:28.131Z"
         },
         {
@@ -49,7 +30,7 @@
         {
           "rating": 4,
           "name": "JaneSmith",
-          "testimonial": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+          "testimonial": "I can't get enough of the clothes from this shop! The variety and design are fantastic. Each piece is unique and always garners compliments. A truly great shopping experience.",
           "date": "2024-07-05"
         }
       ],
@@ -63,7 +44,7 @@
       "rating": 3.5,
       "price": 70,
       "discountPercentage": 20,
-      "description": "Slim fit jeans for a modern look.",
+      "description": "These slim-fit jeans offer a modern, tailored look without sacrificing comfort. Made from stretch denim, they move with you for all-day wear.",
       "colors": "pink,black",
       "sizes": "X-Small,Large,3X-Large",
       "numberOfSales": 80,
@@ -93,7 +74,7 @@
       "rating": 4,
       "price": 35,
       "discountPercentage": 15,
-      "description": "Lightweight and comfortable summer shirt.",
+      "description": "This casual button-down shirt, ideal for both work and weekend outings. Made from a lightweight, breathable cotton blend, it ensures all-day comfort and a polished look.",
       "colors": "green,yellow,white",
       "sizes": "X-Small,Large,XX-Large",
       "numberOfSales": 120,
@@ -103,64 +84,16 @@
         {
           "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
           "rating": 3,
-          "name": "Abdullah",
-          "testimonial": "asdasd",
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
           "date": "2024-07-11T18:12:43.621Z"
         },
         {
           "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
           "rating": 4,
-          "name": "Abdullah",
-          "testimonial": "asdasd",
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
           "date": "2024-07-11T17:49:57.944Z"
-        },
-        {
-          "id": "6c9d3e84-13db-401c-943f-da4cac319a01",
-          "rating": 4,
-          "name": "Abdullah",
-          "testimonial": "coment",
-          "date": "2024-07-11T17:49:31.173Z"
-        },
-        {
-          "id": "d75b4d7f-4408-442b-a375-975d868189ee",
-          "rating": 4,
-          "name": "Abdullah",
-          "testimonial": "coment",
-          "date": "2024-07-11T17:49:14.381Z"
-        },
-        {
-          "id": "76a940c6-98d5-4523-bfa0-087277b8a9b1",
-          "rating": 4,
-          "name": "Abdullah",
-          "testimonial": "coment",
-          "date": "2024-07-11T17:49:11.640Z"
-        },
-        {
-          "id": "f151d5b1-e30a-4410-bfd9-d54ffc6dea62",
-          "rating": 0,
-          "name": "Abdullah",
-          "testimonial": "",
-          "date": "2024-07-11T17:43:20.624Z"
-        },
-        {
-          "id": "4b2ad8d2-0981-43c6-8c33-6e835c4175ee",
-          "rating": 3,
-          "name": "Abdullah",
-          "testimonial": "iyiymiş",
-          "date": "2024-07-10T21:49:32.842Z"
-        },
-        {
-          "id": "36fecd4d-dec6-4878-84cd-dd4404bff749",
-          "rating": 4,
-          "name": "",
-          "testimonial": "güzelmiş",
-          "date": "2024-07-10T21:48:51.897Z"
-        },
-        {
-          "id": "39aaeede-f528-42fc-b3f3-bb8f31817393",
-          "rating": 4,
-          "testimonial": "new review",
-          "date": "2024-07-10T21:39:46.598Z"
         }
       ],
       "type": "Shirts",
@@ -173,13 +106,40 @@
       "rating": 4.5,
       "price": 60,
       "discountPercentage": 10,
-      "description": "Perfect hoodie for your gym workouts.",
+      "description": "This pullover hoodie is perfect for layering in cooler weather. Made from a soft cotton blend, it features a kangaroo pocket and adjustable drawstring hood.",
       "colors": "black,gray,red",
       "sizes": "Large,X-Large,3X-Large",
       "numberOfSales": 200,
       "topSelling": true,
       "newArrivals": false,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Hoodie",
       "dressStyle": "Gym"
     },
@@ -190,13 +150,40 @@
       "rating": 4,
       "price": 80,
       "discountPercentage": 5,
-      "description": "Elegant and comfortable office pants.",
+      "description": "Classic and versatile, these straight-leg jeans are a staple for any wardrobe. The durable fabric and timeless cut make them perfect for any occasion.",
       "colors": "black,gray,blue",
       "sizes": "X-Small,Large,4X-Large",
       "numberOfSales": 90,
       "topSelling": true,
       "newArrivals": true,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Jeans",
       "dressStyle": "Formal"
     },
@@ -207,13 +194,40 @@
       "rating": 3.5,
       "price": 45,
       "discountPercentage": 20,
-      "description": "Stylish shorts for your summer parties.",
+      "description": "These cargo shorts combine functionality and style. Made from durable fabric, they feature multiple pockets for convenience and a comfortable fit.",
       "colors": "pink,orange,white",
       "sizes": "XX-Small,Large,3X-Large",
       "numberOfSales": 70,
       "topSelling": false,
       "newArrivals": false,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Shorts",
       "dressStyle": "Party"
     },
@@ -224,13 +238,47 @@
       "rating": 5,
       "price": 65,
       "discountPercentage": 15,
-      "description": "Casual and comfy hoodie for everyday wear.",
+      "description": "Stay comfortable and stylish with this zip-up hoodie. Its versatile design and cozy fabric make it a go-to for any casual occasion.",
       "colors": "blue,black,green",
       "sizes": "Large,X-Large,XX-Large",
       "numberOfSales": 110,
       "topSelling": true,
       "newArrivals": true,
-      "comments": [],
+      "comments": [
+        {
+          "id": "16be7cc3-2abf-4437-bd62-c28b77a30ba9",
+          "rating": 5,
+          "name": "Bilal",
+          "testimonial": "Çok güzel bir ürün.",
+          "date": "2024-07-12T11:14:54.237Z"
+        },
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Hoodie",
       "dressStyle": "Casual"
     },
@@ -241,13 +289,40 @@
       "rating": 4,
       "price": 55,
       "discountPercentage": 10,
-      "description": "Perfect for office and formal events.",
+      "description": " Perfect for cooler weather, this plaid flannel shirt is crafted from soft, warm fabric. It features a classic design that pairs well with jeans or chinos.",
       "colors": "white,gray,blue",
       "sizes": "X-Small,Large,XX-Large",
       "numberOfSales": 85,
       "topSelling": false,
       "newArrivals": false,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Shirts",
       "dressStyle": "Formal"
     },
@@ -258,13 +333,40 @@
       "rating": 4.5,
       "price": 70,
       "discountPercentage": 5,
-      "description": "Stylish shirt for your next party.",
+      "description": "This denim western shirt adds a rugged touch to any outfit. Made from durable denim, it offers a comfortable fit and timeless style.",
       "colors": "pink,blue,red",
       "sizes": "Large,X-Large,3X-Large",
       "numberOfSales": 140,
       "topSelling": true,
       "newArrivals": true,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Shirts",
       "dressStyle": "Party"
     },
@@ -275,13 +377,40 @@
       "rating": 3.5,
       "price": 25,
       "discountPercentage": 10,
-      "description": "Comfortable t-shirt for gym workouts.",
+      "description": "Elevate your casual look with this v-neck t-shirt. Its comfortable fabric and flattering neckline make it a stylish choice for any occasion.",
       "colors": "gray,black,green",
       "sizes": "X-Small,Large,XX-Large",
       "numberOfSales": 75,
       "topSelling": false,
       "newArrivals": false,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "T-Shirts",
       "dressStyle": "Gym"
     },
@@ -292,13 +421,40 @@
       "rating": 4,
       "price": 30,
       "discountPercentage": 15,
-      "description": "Lightweight t-shirt for casual wear.",
+      "description": "Make a statement with this graphic t-shirt. Crafted from soft, durable fabric, it features eye-catching designs that showcase your unique style.",
       "colors": "yellow,white,blue",
       "sizes": "Large,XX-Large,3X-Large",
       "numberOfSales": 90,
       "topSelling": false,
       "newArrivals": true,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "T-Shirts",
       "dressStyle": "Casual"
     },
@@ -309,13 +465,40 @@
       "rating": 4,
       "price": 40,
       "discountPercentage": 20,
-      "description": "Perfect shorts for gym workouts.",
+      "description": "Perfect for warm weather, these chino shorts offer a smart-casual look. Crafted from breathable cotton, they provide comfort and versatility.",
       "colors": "black,gray,blue",
       "sizes": "X-Small,Large,XX-Large",
       "numberOfSales": 60,
       "topSelling": true,
       "newArrivals": false,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Shorts",
       "dressStyle": "Gym"
     },
@@ -326,13 +509,40 @@
       "rating": 4.5,
       "price": 65,
       "discountPercentage": 5,
-      "description": "Elegant shirt for formal events.",
+      "description": "Stay cool and stylish with this linen short-sleeve shirt. Its breathable material and relaxed fit make it a great choice for summer days.",
       "colors": "white,black,gray",
       "sizes": "Large,X-Large,4X-Large",
       "numberOfSales": 130,
       "topSelling": true,
       "newArrivals": true,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Shirts",
       "dressStyle": "Formal"
     },
@@ -343,13 +553,40 @@
       "rating": 4,
       "price": 75,
       "discountPercentage": 15,
-      "description": "Stylish jeans for parties.",
+      "description": "Add an edge to your style with these distressed skinny jeans. The comfortable stretch fabric and distressed details create a trendy, casual look.",
       "colors": "blue,black,gray",
       "sizes": "X-Small,Large,XX-Large",
       "numberOfSales": 95,
       "topSelling": false,
       "newArrivals": false,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Jeans",
       "dressStyle": "Party"
     },
@@ -360,13 +597,40 @@
       "rating": 3.5,
       "price": 35,
       "discountPercentage": 20,
-      "description": "Comfortable shorts for casual wear.",
+      "description": "These denim shorts are a summer staple. Made from durable denim, they offer a comfortable fit and a classic, laid-back style.",
       "colors": "green,yellow,white",
       "sizes": "X-Small,Large,XX-Large",
       "numberOfSales": 85,
       "topSelling": false,
       "newArrivals": true,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Shorts",
       "dressStyle": "Casual"
     },
@@ -377,13 +641,40 @@
       "rating": 4.5,
       "price": 85,
       "discountPercentage": 5,
-      "description": "Elegant jeans perfect for the office.",
+      "description": "Designed to fit over boots, these bootcut jeans feature a slight flare at the hem. Made from durable denim, they offer a comfortable and stylish fit.",
       "colors": "blue,black,gray",
       "sizes": "X-Small,Large,4X-Large",
       "numberOfSales": 100,
       "topSelling": true,
       "newArrivals": true,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Jeans",
       "dressStyle": "Formal"
     },
@@ -394,13 +685,40 @@
       "rating": 3.5,
       "price": 60,
       "discountPercentage": 10,
-      "description": "Stylish hoodie for parties.",
+      "description": "Show off your personality with this graphic hoodie. Crafted from soft, durable fabric, it features bold designs that make a statement.",
       "colors": "pink,blue,red",
       "sizes": "Large,X-Large,XX-Large",
       "numberOfSales": 55,
       "topSelling": false,
       "newArrivals": false,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Hoodie",
       "dressStyle": "Party"
     },
@@ -411,13 +729,40 @@
       "rating": 4.5,
       "price": 45,
       "discountPercentage": 15,
-      "description": "Lightweight and comfortable shirt for summer.",
+      "description": "This oxford dress shirt is a wardrobe essential for formal occasions. Its crisp, clean lines and premium fabric ensure you look sharp and feel comfortable.",
       "colors": "green,white,blue",
       "sizes": "X-Small,Large,3X-Large",
       "numberOfSales": 110,
       "topSelling": true,
       "newArrivals": true,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Shirts",
       "dressStyle": "Casual"
     },
@@ -428,13 +773,40 @@
       "rating": 4,
       "price": 38,
       "discountPercentage": 20,
-      "description": "Comfortable shorts for gym workouts.",
+      "description": "Designed for performance, these athletic shorts are made from moisture-wicking fabric. They provide comfort and flexibility for any workout or sport.",
       "colors": "gray,black,green",
       "sizes": "X-Small,Large,XX-Large",
       "numberOfSales": 80,
       "topSelling": true,
       "newArrivals": false,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Shorts",
       "dressStyle": "Gym"
     },
@@ -445,13 +817,40 @@
       "rating": 4,
       "price": 70,
       "discountPercentage": 15,
-      "description": "Comfortable jeans for casual wear.",
+      "description": "These relaxed fit jeans provide ultimate comfort with a roomy, laid-back silhouette. Perfect for casual days, they are crafted from soft, durable denim.",
       "colors": "blue,black,gray",
       "sizes": "X-Small,Large,XX-Large",
       "numberOfSales": 95,
       "topSelling": false,
       "newArrivals": true,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Jeans",
       "dressStyle": "Casual"
     },
@@ -462,13 +861,40 @@
       "rating": 4.5,
       "price": 60,
       "discountPercentage": 10,
-      "description": "Comfortable hoodie for casual office wear.",
+      "description": "Keep warm with this fleece hoodie, made from ultra-soft material. Its relaxed fit and cozy feel make it ideal for lounging or outdoor activities.",
       "colors": "blue,black,green",
       "sizes": "Large,X-Large,XX-Large",
       "numberOfSales": 100,
       "topSelling": true,
       "newArrivals": true,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "Hoodie",
       "dressStyle": "Casual"
     },
@@ -479,13 +905,40 @@
       "rating": 3.5,
       "price": 35,
       "discountPercentage": 10,
-      "description": "Stylish t-shirt for parties.",
+      "description": "Add a touch of detail with this pocket t-shirt. Its comfortable, breathable material and functional pocket make it a great everyday option.",
       "colors": "pink,blue,red",
       "sizes": "Large,X-Large,3X-Large",
       "numberOfSales": 70,
       "topSelling": false,
       "newArrivals": false,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "T-Shirts",
       "dressStyle": "Party"
     },
@@ -496,13 +949,40 @@
       "rating": 3.5,
       "price": 35,
       "discountPercentage": 10,
-      "description": "Stylish t-shirt for parties.",
+      "description": "This henley t-shirt offers a blend of casual and refined style. Made from soft, lightweight fabric, it features a buttoned placket for a classic look.",
       "colors": "pink,blue,red",
       "sizes": "Large,X-Large,3X-Large",
       "numberOfSales": 70,
       "topSelling": false,
       "newArrivals": false,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "T-Shirts",
       "dressStyle": "Party"
     },
@@ -513,13 +993,40 @@
       "rating": 3.5,
       "price": 35,
       "discountPercentage": 10,
-      "description": "Stylish t-shirt for parties.",
+      "description": "This classic crew neck t-shirt is a wardrobe essential. Made from soft, breathable cotton, it provides all-day comfort and versatile style.",
       "colors": "pink,blue,red",
       "sizes": "Large,X-Large,3X-Large",
       "numberOfSales": 70,
       "topSelling": false,
       "newArrivals": false,
-      "comments": [],
+      "comments": [
+        {
+          "rating": 4,
+          "name": "EmilyGreen",
+          "testimonial": "Love the fit, but a bit tight around the waist.",
+          "date": "2024-07-04"
+        },
+        {
+          "rating": 4.5,
+          "name": "SamBrown",
+          "testimonial": "Great quality denim.",
+          "date": "2024-07-03"
+        },
+        {
+          "id": "deb6ee96-6991-426a-b51e-ece64edc68bd",
+          "rating": 3,
+          "name": "Emma",
+          "testimonial": "I'm extremely satisfied with my purchases. The clothes are well-made and look exactly as advertised. The customer service is also top-notch, making shopping here a pleasure.",
+          "date": "2024-07-11T18:12:43.621Z"
+        },
+        {
+          "id": "82f86001-0a4c-4a26-b7be-902092c151ff",
+          "rating": 4,
+          "name": "William",
+          "testimonial": "This store never disappoints. The attention to detail and quality in their clothing is evident. Everything fits perfectly and feels great to wear. Highly recommend to anyone looking for reliable fashion.",
+          "date": "2024-07-11T17:49:57.944Z"
+        }
+      ],
       "type": "T-Shirts",
       "dressStyle": "Party"
     }
@@ -534,32 +1041,32 @@
     {
       "id": "2",
       "rating": 4,
-      "name": "Abdullah",
-      "testimonial": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      "name": "Alice",
+      "testimonial": "Shopping at Shop.co has been an incredible experience. The variety and quality of the clothing are unmatched. Whether it's trendy tops or classic jeans, everything I've purchased has been fantastic."
     },
     {
       "id": "3",
       "rating": 4,
-      "name": "Abdullah",
-      "testimonial": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      "name": "Emma",
+      "testimonial": "I've never been more satisfied with an online shopping experience than I have with Shop.co. The clothes are stylish, comfortable, and durable. Each item I've received has been a perfect addition to my wardrobe."
     },
     {
       "id": "4",
       "rating": 4,
-      "name": "Abdullah",
-      "testimonial": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      "name": "Jack",
+      "testimonial": "Shop.co offers the best in fashion! The fabrics are top-notch, and the designs are always on point. Every piece I've bought fits perfectly and has become a staple in my closet."
     },
     {
       "id": "5",
       "rating": 4,
-      "name": "Abdullah",
-      "testimonial": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      "name": "Michael",
+      "testimonial": "The customer service at Shop.co is exceptional, and the quality of their clothes is superb. From casual to formal wear, every purchase has been a delightful surprise in terms of style and comfort."
     },
     {
       "id": "6",
       "rating": 4,
-      "name": "Abdullah",
-      "testimonial": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      "name": "Daniel",
+      "testimonial": "I love everything about Shop.co! The attention to detail and quality in their clothing is evident in every piece. From cozy hoodies to chic dresses, my wardrobe has never looked better."
     }
   ],
   "users": [
@@ -567,99 +1074,25 @@
       "id": "2vyant8etGUjztiOOLolBdVlChU2",
       "email": "abdullah@gmail.com",
       "name": "Abdullah",
-      "basket": [
-        {
-          "cartId": "eb8c3430-1377-49e4-88c8-fa25fb926640",
-          "id": "1",
-          "image": "tsihrt-tape-details.png",
-          "title": "Tshirt With Tepe Details",
-          "price": 50,
-          "selectedColor": "white",
-          "selectedSize": "XX-Small",
-          "count": 4
-        }
-      ]
+      "basket": []
     },
     {
       "id": "RIkJex06VEYDKIu4rIvaBbFunHG2",
       "email": "talha@gmail.com",
       "name": "Talha",
-      "basket": [
-        {
-          "cartId": "6b0fa89e-a381-48c8-a4e2-3005397a6a9a",
-          "id": "6",
-          "image": "image.png",
-          "title": "Party Shorts",
-          "price": 45,
-          "selectedColor": "pink",
-          "selectedSize": "Large",
-          "count": 1
-        },
-        {
-          "cartId": "4dab555c-af78-49a1-81fc-db82169c3d6f",
-          "id": "6",
-          "image": "image.png",
-          "title": "Party Shorts",
-          "price": 45,
-          "selectedColor": "pink",
-          "selectedSize": "XX-Small",
-          "count": 3
-        }
-      ]
+      "basket": []
     },
     {
       "id": "ToD1fpJ5NhTz6KKSQMBnXssw8dS2",
       "email": "bilal@gmail.com",
       "name": "Bilal",
-      "basket": [
-        {
-          "cartId": "e1f146fa-d1d0-469e-9c28-2b5bc34c6a37",
-          "id": "1",
-          "image": "tsihrt-tape-details.png",
-          "title": "Tshirt With Tepe Details",
-          "price": 50,
-          "selectedColor": "blue",
-          "selectedSize": "X-Small",
-          "count": 1
-        }
-      ]
+      "basket": []
     },
     {
       "id": "2wagZ4OpKgfshMQfonUWSPnW2Lo1",
       "email": "zumre@gmail.com",
       "name": "Zumre",
-      "basket": [
-        {
-          "cartId": "591bdc10-0e57-4089-a31f-63e6dc71a068",
-          "id": "1",
-          "image": "tsihrt-tape-details.png",
-          "title": "Tshirt With Tepe Details",
-          "price": 50,
-          "selectedColor": "blue",
-          "selectedSize": "XX-Small",
-          "count": 1
-        },
-        {
-          "cartId": "183a6169-e2bc-4538-9129-f5e5b8ff5996",
-          "id": "10",
-          "image": "image.png",
-          "title": "Gym T-Shirt",
-          "price": 25,
-          "selectedColor": "gray",
-          "selectedSize": "X-Small",
-          "count": 2
-        },
-        {
-          "cartId": "2700e05e-4a1d-49f4-905d-a5f55aaf6e2c",
-          "id": "2",
-          "image": "skinniy-fit-jean.png",
-          "title": "SKINNY FIT JEANS",
-          "price": 70,
-          "selectedColor": "pink",
-          "selectedSize": "X-Small",
-          "count": 1
-        }
-      ]
+      "basket": []
     }
   ],
   "faq": [
