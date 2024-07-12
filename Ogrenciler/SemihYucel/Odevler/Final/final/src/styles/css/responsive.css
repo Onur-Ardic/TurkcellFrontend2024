@@ -1,0 +1,168 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+@font-face {
+  font-family: "Integral CF Regular";
+  src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot");
+  src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff") format("woff"), url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.svg#Integral CF Regular") format("svg");
+}
+body {
+  font-family: "Satoshi", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-integral {
+  font-family: "Integral CF Regular", sans-serif;
+}
+
+.font-satoshi {
+  font-family: "Satoshi", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Integral CF Regular", sans-serif;
+}
+
+* {
+  font-style: normal;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.limited-width {
+  max-width: 92%;
+  word-wrap: break-word;
+}
+
+.btn-round {
+  padding: 16px 54px 16px 54px;
+  border-radius: 62px;
+  border: 1px 0px 0px 0px;
+}
+
+@media (max-width: 768px) {
+  .navBarMessage {
+    font-size: 12px;
+  }
+  .navBarMessage .xIcon {
+    display: none;
+  }
+  .navbar-brand {
+    font-size: 25.2px;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+  }
+  .navbarIcons {
+    gap: 0rem;
+  }
+  .navbarIcons .searchIcon svg,
+  .navbarIcons .basketIcon,
+  .navbarIcons .searchIconMobile,
+  .navbarIcons .dropdown {
+    width: 24px;
+    height: 24px;
+  }
+  .navbar-collapse {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80vh;
+    z-index: 999;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+  }
+  .navbar-collapse.show {
+    transform: translateX(0);
+  }
+  .hero {
+    background-image: none;
+    background: rgb(242, 240, 241);
+  }
+  .hero .hero-left .hero-content .btn {
+    width: 100%;
+  }
+  .hero .hero-left .hero-content .hero-counter {
+    justify-content: center;
+  }
+  .hero .hero-left .hero-content .hero-counter .counter.border-end {
+    border-right: none !important;
+  }
+  .hero .hero-right {
+    background-image: url("../../../public/assets/img/heroHuman.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; /* Centers the background image */
+    height: 100vh;
+    bottom: 0;
+  }
+  .brand .container .brand-list {
+    justify-content: center !important;
+    gap: 0.5rem !important;
+  }
+  .brand .container .brand-list li svg {
+    width: 100px;
+    height: 26px;
+  }
+  .dress-style .container .content {
+    padding: 0 !important;
+  }
+  .dress-style .container .content .card {
+    height: 200px !important;
+  }
+  .footer-text {
+    text-align: center;
+  }
+  .payload {
+    justify-content: center !important;
+  }
+  .bd-footer {
+    margin-top: 5rem !important;
+  }
+  .cartItem .cartItem-image {
+    width: 100px;
+    height: 100px;
+  }
+  .cartItem .details {
+    font-size: 14px !important;
+  }
+  .cartItem .details p:first-child {
+    font-size: 16px !important;
+  }
+  .cartItem .actions {
+    background-color: #f9f9f9;
+  }
+  .product-card .card-body .price-info span {
+    font-size: 14px;
+  }
+  .product-card .card-body .price-info .price-count span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .hero .hero-left .hero-counter .counter.border-end {
+    border-right: none !important;
+    border-left: none !important;
+  }
+  .new-arrivals .view-all .btn {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
